@@ -46,6 +46,13 @@ DROP = [
     r"^vicuna", r"^llama-?[23](\.\d)?-?\d*b?-?(chat|instruct|ins\.)",
     r"^qwen-?\d*\.?\d*-?\d*b-?(chat|instruct)", r"^gemma-?\d*b?$", r"^qwen$", r"^gemma$",
     r"^qwen\d?$", r"^qwen-?\d+(\.\d+)?-?\d*b$", r"^mistral", r"^chatgpt$", r"^asr-?chatgpt$",
+    r"^olmo", r"^llama-?3\.\d+-?\d*b$", r"^granite-?\d", r"^baseline\b",
+    # vision-language models evaluated without audio: out of scope for a spoken-LLM table
+    r"-vl(-|$)", r"^qwen\d?(\.\d)?-vl", r"^internvl", r"^llava",
+    # bare one-word column headers that name a family, not a system: "GPT", "Kimi",
+    # "Flamingo", "Flash", "Pro", "GLM", "MF". Attributing these would be a guess.
+    r"^(gpt|kimi|flamingo|flash|pro|glm|mf|af|qw|gem|omni|audio|speech|model|system|ours?|phi|naive|naive-4o|must|qwen2\.5|gemma ?[34]?)$",
+    r"^gemma-?[34]", r"^mmduet",
 ]
 DROP_RE = [re.compile(p, re.I) for p in DROP]
 
@@ -57,7 +64,7 @@ REGISTRY = [
     ("gpt-audio-mini", "GPT-Audio-mini", "OpenAI", "e2e", [r"gpt-?audio-?mini"]),
     ("gpt-audio", "GPT-Audio", "OpenAI", "e2e", [r"gpt-?audio(-?\d[\.\d]*)?\b"]),
     ("gpt-4o-audio", "GPT-4o-Audio", "OpenAI", "e2e",
-     [r"gpt-?4o[- ]?audio", r"gpt-?4o \(audio\)", r"gpt-?4o-?voice", r"gpt-?4o-?s2s"]),
+     [r"gpt-?4o?[- ]?audio", r"gpt-?4o \(audio\)", r"gpt-?4o-?voice", r"gpt-?4o-?s2s"]),
     ("gpt-4o", "GPT-4o", "OpenAI", "text", [r"^gpt-?4o(-\d{4}-\d{2}-\d{2})?$", r"^gpt-?4o-?mini$"]),
     # --- Google. Gemini is written a dozen ways across papers ("Gemini Live 2.5",
     # "Gemini-2.5", "Gemini Pro v1.5"), so match the version token wherever it lands.
@@ -104,9 +111,9 @@ REGISTRY = [
     ("video-salmonn", "video-SALMONN", "Tsinghua/ByteDance", "e2e", [r"video-?salmonn"]),
     ("llama-omni2", "LLaMA-Omni2", "ICT/CAS", "e2e", [r"llama-?omni-?2"]),
     ("llama-omni", "LLaMA-Omni", "ICT/CAS", "e2e", [r"llama-?omni"]),
-    ("freeze-omni", "Freeze-Omni", "Tencent", "e2e", [r"freeze-?omni"]),
+    ("freeze-omni", "Freeze-Omni", "Tencent", "e2e", [r"freeze-?omni", r"^freeze-?o"]),
     ("vita-audio", "VITA-Audio", "Tencent", "e2e", [r"vita-?audio"]),
-    ("vita", "VITA", "Tencent", "e2e", [r"^vita(-1\.5)?\b"]),
+    ("vita", "VITA", "Tencent", "e2e", [r"^vita(-?1\.5)?(?![a-z])"]),
     ("moshi", "Moshi", "Kyutai", "e2e", [r"^moshi"]),
     ("mini-omni2", "Mini-Omni2", "Tsinghua", "e2e", [r"mini-?omni-?2"]),
     ("mini-omni", "Mini-Omni", "Tsinghua", "e2e", [r"mini-?omni"]),
@@ -190,6 +197,28 @@ REGISTRY = [
     ("stresslm", "StresSLM", "—", "e2e", [r"stresslm"]),
     ("phi-4", "Phi-4", "Microsoft", "e2e", [r"^phi-?4$"]),
     ("qwen3-5-omni", "Qwen3.5-Omni", "Alibaba", "e2e", [r"qwen-?3\.5-?omni"]),
+    # --- third sweep: models surfaced by the 268-paper extraction pass
+    ("onellm", "OneLLM", "Shanghai AI Lab", "e2e", [r"^one-?llm"]),
+    ("dashenglm", "DashengLM", "Xiaomi", "e2e", [r"^dasheng-?lm"]),
+    ("avicuna", "AVicuna", "—", "e2e", [r"^avicuna"]),
+    ("x-instructblip", "X-InstructBLIP", "Salesforce", "e2e", [r"x-?instructblip"]),
+    ("chatbridge", "ChatBridge", "—", "e2e", [r"^chatbridge"]),
+    ("lat-audio", "LAT-Audio", "—", "e2e", [r"^lat-?audio"]),
+    ("gemini-audio", "Gemini (audio)", "Google", "e2e", [r"^gemini[- ]?audio"]),
+    ("claude-sonnet", "Claude Sonnet", "Anthropic", "text", [r"^claude[- ]?(sonnet|opus|haiku)"]),
+    ("gpt-5", "GPT-5", "OpenAI", "text", [r"^gpt-?5(\.\d)?(-mini|-nano)?$"]),
+    ("gpt-4-1", "GPT-4.1", "OpenAI", "text", [r"^gpt-?4\.1"]),
+    ("midashenglm", "MiDashengLM", "Xiaomi", "e2e", [r"midasheng-?lm"]),
+    ("video-llama2", "Video-LLaMA2", "Alibaba", "e2e", [r"video-?llama-?2"]),
+    ("video-llama3", "Video-LLaMA3", "Alibaba", "e2e", [r"video-?llama-?3"]),
+    ("video-llama", "Video-LLaMA", "Alibaba", "e2e", [r"video-?llama(?!-?[23])"]),
+    ("music-flamingo", "Music Flamingo", "NVIDIA", "e2e", [r"music-?flamingo"]),
+    ("mimo-v2-omni", "MiMo-V2-Omni", "Xiaomi", "e2e", [r"mimo-?v2(\.5)?(-?omni)?"]),
+    ("omnivinci", "OmniVinci", "NVIDIA", "e2e", [r"omnivinci"]),
+    ("gazelle", "Gazelle", "Tincans", "e2e", [r"^gazelle"]),
+    ("vae-gslm", "VAE-GSLM", "—", "speech-lm", [r"vae-?gslm"]),
+    ("granite-speech", "Granite Speech", "IBM", "e2e", [r"granite(-?speech)?"]),
+    ("nextgpt-omni", "AnyGPT/NExT-style omni", "—", "e2e", [r"^unified-?io"]),
     ("balsa", "BALSa", "NTU", "e2e", [r"^balsa"]),
     # named cascades: specific pairings are real systems and belong in the table; the
     # generic word "cascade" is still dropped, because it names no system in particular.
@@ -242,6 +271,20 @@ def slug_id(s):
     return re.sub(r"-{2,}", "-", out)[:48]
 
 
+def variants(s):
+    """The same model is printed as 'Qwen2.5-Omni', 'Qwen 2.5 Omni', 'Qwen2.5 Omni'.
+    Try the string as written, and with separators normalised to hyphens, so a pattern
+    does not have to anticipate every spacing convention a paper might use."""
+    out = [s]
+    hyph = re.sub(r"[\s_]+", "-", s)
+    if hyph != s:
+        out.append(hyph)
+    tight = re.sub(r"[\s_-]+", "", s)
+    if tight not in out:
+        out.append(tight)
+    return out
+
+
 def match(raw):
     s = clean(raw)
     if not s:
@@ -252,10 +295,12 @@ def match(raw):
     for p in DROP_ANYWHERE:
         if p.search(s):
             return None
+    forms = variants(s)
     for mid, name, org, kind, pats in COMPILED:
         for p in pats:
-            if p.search(s):
-                return mid, name, org, kind
+            for f in forms:
+                if p.search(f):
+                    return mid, name, org, kind
     # named cascade pipelines: keep them, each under its own id
     if CASCADE_RE.match(s) and CASCADE_HINT.search(s) or re.match(
             r"^(whisper|asr)[- ]?(llm|llama|gpt)", s, re.I):

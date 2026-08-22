@@ -2,6 +2,11 @@
  "entries": [
   {
    "date": "2026-08-22",
+   "change": "Extraction extended to every catalogued benchmark paper, not just the well-known ones: 268 further papers read. Benchmarks with at least one sourced score went from 90 to 327 of 360, and the tables from 2,913 to 7,858 cells over 179 models. Model-name matching now tolerates spacing variants (Qwen 2.5 Omni = Qwen2.5-Omni).",
+   "source": "coverage"
+  },
+  {
+   "date": "2026-08-22",
    "change": "Second registry audit after the SALMon report. Found a silent Unicode fault: papers using U+2011 non-breaking hyphens (SpeechR) produced model names that looked identical to matched ones but never matched, dropping every row. Also recovered Gemini variants, J-Moshi, Megrez-3B-Omni, Grok, Fun-Audio-Chat and others, gave each named cascade pipeline its own row instead of discarding it, and explicitly excluded CLAP/VAD/encoder/TTS rows that are out of scope. Dropped cells fell from 1,031 to 263; the tables gained 480 cells and 70 models.",
    "source": "coverage audit"
   },
