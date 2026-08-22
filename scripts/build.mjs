@@ -104,6 +104,8 @@ const html = template.replace('"__ATLAS_DATA__"', payload);
 
 mkdirSync(join(ROOT, 'site'), { recursive: true });
 writeFileSync(join(ROOT, 'site', 'index.html'), html);
+// GitHub Pages serves this repo from the root, so publish a copy there too.
+writeFileSync(join(ROOT, 'index.html'), html);
 console.log(
   `[atlas] built site/index.html: ${stats.benchmarks} benchmarks ` +
   `(${stats.since_2025} since 2025), ${stats.models} models, ${stats.result_cells} result cells, ` +
