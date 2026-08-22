@@ -179,6 +179,21 @@ def main():
 
     if args.rebuild:
         subprocess.run(["node", str(ROOT / "scripts" / "build.mjs")], check=True)
+        # Publish. Best effort: a push failure must never break the local update, and
+        # nothing is committed unless the build above succeeded.
+        try:
+            def git(*a):
+                return subprocess.run(["git", "-C", str(ROOT), *a], check=True,
+                                      capture_output=True, text=True, timeout=120).stdout
+            git("add", "-A")
+            if git("status", "--porcelain").strip():
+                git("commit", "-m", f"daily update {now.date().isoformat()}")
+                git("push", "origin", "main")
+                print("[atlas] published")
+            else:
+                print("[atlas] nothing changed, nothing pushed")
+        except Exception as e:  # noqa: BLE001
+            warnings.append(f"publish: {str(e).splitlines()[0][:120]}")
 
     status = f"WARN({'; '.join(warnings)})" if warnings else "OK"
     with (LOGS / "daily.log").open("a", encoding="utf-8") as f:
