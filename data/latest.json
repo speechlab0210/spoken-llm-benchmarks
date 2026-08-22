@@ -1,8 +1,8 @@
 {
-  "fetched_at": "2026-08-22T05:42:06Z",
-  "window_days": 2,
-  "scanned": 5,
-  "flagged_today": 2,
+  "fetched_at": "2026-08-22T22:47:02Z",
+  "window_days": 3,
+  "scanned": 6,
+  "flagged_today": 0,
   "candidates": [
     {
       "id": "2608.19936",
