@@ -1,0 +1,148 @@
+{
+  "intro": "Benchmarks are grouped by <strong>what ability they interrogate</strong>, not by what data they ship. The six groups below run from the most model-internal question to the most deployment-facing one. This scheme reconciles the two existing taxonomies: the evaluation-paradigm split of Arora et al. (likelihood-based / generative / interactivity / trustworthiness) supplies the outer arc, while the capability dimensions of Yang, Ho &amp; Lee (auditory awareness and processing / knowledge and reasoning / dialogue-oriented ability / fairness, safety and trustworthiness) supply the resolution inside it. Two things it adds: a separate home for <em>audio-grounding diagnostics</em>, which ask whether a model is listening at all rather than reading a transcript, and a cross-cutting <em>coverage</em> group, because multilinguality and long-form audio are not capabilities so much as conditions under which every other capability is re-tested. Benchmarks routinely belong to more than one category, and are listed under each.",
+
+  "group_blurbs": {
+    "1 · Is it a good model of speech?": "Model-internal measures that need no task and no instruction — the closest thing the field has to perplexity for speech.",
+    "2 · Can it hear?": "Whether the model perceives what is in the audio: the events, the voice, and the information that never appears in a transcript.",
+    "3 · Can it think?": "Whether it can use what it heard — answering, reasoning, and doing what it was told.",
+    "4 · Can it hold a conversation?": "Whether it behaves like a participant in a spoken exchange rather than a very fast turn-based responder.",
+    "5 · Can it be trusted?": "Whether it fails safely, fairly, and honestly — and whether audio opens attack surfaces that text does not.",
+    "6 · Where does it work?": "Cross-cutting conditions that re-test every other capability: language, length, and domain."
+  },
+
+  "categories": [
+    {
+      "id": "likelihood",
+      "name": "Likelihood-based judgment",
+      "group": "1 · Is it a good model of speech?",
+      "blurb": "Present the model with a natural and an unnatural version of the same utterance and check whether it assigns higher likelihood to the natural one. Because speech has no shared tokenizer, raw perplexity is not comparable across models — minimal pairs are the workaround.",
+      "example_metrics": "pairwise accuracy (% of pairs ranked correctly)"
+    },
+    {
+      "id": "generation-quality",
+      "name": "Intrinsic generation quality",
+      "group": "1 · Is it a good model of speech?",
+      "blurb": "Quality of the speech the model produces, judged without reference to any particular task: naturalness, intelligibility, and whether the generated voice stays consistent with the prompt in speaker identity, acoustics and sentiment.",
+      "example_metrics": "MOS / MOSNet · generative PPL · VERT · speaker & emotion consistency · UTMOS"
+    },
+    {
+      "id": "auditory-perception",
+      "name": "Auditory awareness & scene understanding",
+      "group": "2 · Can it hear?",
+      "blurb": "Does the model notice what is in the audio — events, environments, music, multiple sources, and the difference between speech and everything else. The foundation layer: failures here propagate into every downstream category.",
+      "example_metrics": "accuracy · captioning CIDEr / SPICE · LLM-as-judge"
+    },
+    {
+      "id": "paralinguistics",
+      "name": "Paralinguistic & speaker attributes",
+      "group": "2 · Can it hear?",
+      "blurb": "Information carried by <em>how</em> something is said rather than what is said: emotion, intonation, stress, accent, age, gender, timbre, volume, speaking rate, laughter, sarcasm and persona. The clearest dividing line between a spoken LLM and a transcription pipeline.",
+      "example_metrics": "accuracy · macro-F1 · LLM-as-judge · human preference"
+    },
+    {
+      "id": "audio-grounding",
+      "name": "Audio-grounding diagnostics",
+      "group": "2 · Can it hear?",
+      "blurb": "Adversarial checks on whether the model is actually listening. These construct cases where a text prior, a plausible guess, or the transcript alone would produce the right answer — and measure how much of the reported score survives when that shortcut is removed.",
+      "example_metrics": "accuracy drop under audio ablation · text-only baseline gap"
+    },
+    {
+      "id": "spoken-qa",
+      "name": "Spoken QA & world knowledge",
+      "group": "3 · Can it think?",
+      "blurb": "Knowledge questions delivered by voice, and questions about the content of an audio clip. Often built by rendering an existing text benchmark to speech, which makes them a direct measure of how much capability is lost in the move from text input to speech input.",
+      "example_metrics": "accuracy · exact match · GPT-judged score"
+    },
+    {
+      "id": "reasoning",
+      "name": "Reasoning over audio",
+      "group": "3 · Can it think?",
+      "blurb": "Multi-step inference that the audio is necessary for: temporal and compositional relations between sounds, causal and deductive chains, multi-hop questions, and reasoning that must combine acoustic evidence with linguistic content.",
+      "example_metrics": "accuracy · chain-of-thought correctness · LLM-as-judge"
+    },
+    {
+      "id": "instruction-following",
+      "name": "Speech instruction following",
+      "group": "3 · Can it think?",
+      "blurb": "Whether the model obeys instructions that arrive as speech, including format and style constraints — answer in one word, speak slowly, respond as a pirate. Distinct from knowing the answer: models frequently know it and ignore the constraint.",
+      "example_metrics": "strict / loose instruction accuracy · constraint satisfaction rate"
+    },
+    {
+      "id": "holistic",
+      "name": "Holistic multi-task suites",
+      "group": "3 · Can it think?",
+      "blurb": "Umbrella benchmarks that bundle many tasks into one score, usually to make general-purpose claims comparable. Their aggregate numbers are the ones most often quoted, and the ones that most reward reading the per-task breakdown.",
+      "example_metrics": "aggregate score across sub-tasks · per-task accuracy"
+    },
+    {
+      "id": "dialogue",
+      "name": "Spoken dialogue quality",
+      "group": "4 · Can it hold a conversation?",
+      "blurb": "Multi-turn spoken conversation judged as conversation: coherence across turns, context retention, appropriateness of the response, and whether the model reacts to the speaker's emotional state rather than only to their words.",
+      "example_metrics": "LLM-as-judge · human preference · win rate"
+    },
+    {
+      "id": "interactivity",
+      "name": "Real-time interaction & full duplex",
+      "group": "4 · Can it hold a conversation?",
+      "blurb": "The timing layer of conversation: when to start speaking, when to stop, how to handle an interruption, whether to backchannel, and how long the user waits. Turn-based evaluation cannot see any of this, because it assumes the turns are already segmented.",
+      "example_metrics": "latency (ms) · turn-taking F1 · barge-in success rate · backchannel timing"
+    },
+    {
+      "id": "voice-agent",
+      "name": "Voice agents & task completion",
+      "group": "4 · Can it hold a conversation?",
+      "blurb": "Spoken interfaces evaluated on whether the user's goal was achieved: tool and function calling from voice, multi-turn task completion, form filling, and grounded assistance in a real application.",
+      "example_metrics": "task success rate · tool-call accuracy · turns to completion"
+    },
+    {
+      "id": "safety",
+      "name": "Safety, jailbreak & toxicity",
+      "group": "5 · Can it be trusted?",
+      "blurb": "Refusal behaviour under harmful requests, and attacks that exploit the audio channel specifically — adversarial perturbation, prosodic and emotional framing, and instructions hidden in a modality the safety training never covered.",
+      "example_metrics": "refusal rate · attack success rate · harmfulness score"
+    },
+    {
+      "id": "fairness",
+      "name": "Bias & fairness",
+      "group": "5 · Can it be trusted?",
+      "blurb": "Whether performance and treatment vary with the speaker: accent, dialect, gender, age, race and native language. Audio carries speaker identity that text does not, so a spoken LLM can discriminate on cues a text model never receives.",
+      "example_metrics": "performance gap across groups · stereotype score · disparity ratio"
+    },
+    {
+      "id": "hallucination",
+      "name": "Hallucination & faithfulness",
+      "group": "5 · Can it be trusted?",
+      "blurb": "Assertions about audio that the audio does not support: sounds that are not present, words that were not said, confident answers to unanswerable questions, and objects invented to satisfy a leading prompt.",
+      "example_metrics": "hallucination rate · yes/no bias · abstention accuracy"
+    },
+    {
+      "id": "robustness",
+      "name": "Robustness, spoofing & privacy",
+      "group": "5 · Can it be trusted?",
+      "blurb": "Behaviour under degraded or manipulated input — noise, reverberation, packet loss, codec artefacts, accented or disordered speech — plus whether the model can recognise synthetic and spoofed audio, and whether it leaks speaker identity or private attributes.",
+      "example_metrics": "accuracy under perturbation · degradation curve · detection accuracy"
+    },
+    {
+      "id": "multilingual",
+      "name": "Multilingual & dialectal coverage",
+      "group": "6 · Where does it work?",
+      "blurb": "The same capabilities re-tested outside English: other languages, regional dialects, code-switching, and culturally grounded knowledge. Consistently the largest gap between what spoken LLMs claim and what they deliver.",
+      "example_metrics": "per-language accuracy · cross-lingual gap · macro-average over languages"
+    },
+    {
+      "id": "long-form",
+      "name": "Long-form & multi-audio",
+      "group": "6 · Where does it work?",
+      "blurb": "Audio too long to fit comfortably in context, and tasks that require holding several clips in mind at once: lectures, meetings, podcasts, comparison between recordings, and retrieval of a detail from deep inside a long file.",
+      "example_metrics": "accuracy vs. duration · needle-in-a-haystack recall"
+    },
+    {
+      "id": "domain",
+      "name": "Domain-specific evaluation",
+      "group": "6 · Where does it work?",
+      "blurb": "Capability inside a professional setting where the cost of error is concrete: clinical and mental-health speech, education and tutoring, legal and financial dialogue, call centres, and accessibility for atypical speech.",
+      "example_metrics": "domain accuracy · expert rating · task-specific rubric"
+    }
+  ]
+}

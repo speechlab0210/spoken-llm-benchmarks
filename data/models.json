@@ -1,0 +1,418 @@
+{
+ "entries": [
+  {
+   "id": "qwen2-audio",
+   "name": "Qwen2-Audio",
+   "org": "Alibaba",
+   "type": "e2e"
+  },
+  {
+   "id": "qwen2-5-omni",
+   "name": "Qwen2.5-Omni",
+   "org": "Alibaba",
+   "type": "e2e"
+  },
+  {
+   "id": "salmonn",
+   "name": "SALMONN",
+   "org": "Tsinghua/ByteDance",
+   "type": "e2e"
+  },
+  {
+   "id": "gpt-4o-audio",
+   "name": "GPT-4o-Audio",
+   "org": "OpenAI",
+   "type": "e2e"
+  },
+  {
+   "id": "kimi-audio",
+   "name": "Kimi-Audio",
+   "org": "Moonshot",
+   "type": "e2e"
+  },
+  {
+   "id": "freeze-omni",
+   "name": "Freeze-Omni",
+   "org": "Tencent",
+   "type": "e2e"
+  },
+  {
+   "id": "qwen3-omni",
+   "name": "Qwen3-Omni",
+   "org": "Alibaba",
+   "type": "e2e"
+  },
+  {
+   "id": "minicpm-o",
+   "name": "MiniCPM-o",
+   "org": "OpenBMB",
+   "type": "e2e"
+  },
+  {
+   "id": "moshi",
+   "name": "Moshi",
+   "org": "Kyutai",
+   "type": "e2e"
+  },
+  {
+   "id": "qwen-audio",
+   "name": "Qwen-Audio",
+   "org": "Alibaba",
+   "type": "e2e"
+  },
+  {
+   "id": "gemini-2-5-flash",
+   "name": "Gemini 2.5 Flash",
+   "org": "Google",
+   "type": "e2e"
+  },
+  {
+   "id": "glm-4-voice",
+   "name": "GLM-4-Voice",
+   "org": "Zhipu",
+   "type": "e2e"
+  },
+  {
+   "id": "audio-flamingo-3",
+   "name": "Audio Flamingo 3",
+   "org": "NVIDIA",
+   "type": "e2e"
+  },
+  {
+   "id": "gemini-2-5-pro",
+   "name": "Gemini 2.5 Pro",
+   "org": "Google",
+   "type": "e2e"
+  },
+  {
+   "id": "mimo-audio",
+   "name": "MiMo-Audio",
+   "org": "Xiaomi",
+   "type": "e2e"
+  },
+  {
+   "id": "gpt-4o",
+   "name": "GPT-4o",
+   "org": "OpenAI",
+   "type": "text"
+  },
+  {
+   "id": "gama",
+   "name": "GAMA",
+   "org": "UMD",
+   "type": "e2e"
+  },
+  {
+   "id": "ltu-as",
+   "name": "LTU-AS",
+   "org": "MIT",
+   "type": "e2e"
+  },
+  {
+   "id": "llama-omni",
+   "name": "LLaMA-Omni",
+   "org": "ICT/CAS",
+   "type": "e2e"
+  },
+  {
+   "id": "step-audio-2",
+   "name": "Step-Audio 2",
+   "org": "StepFun",
+   "type": "e2e"
+  },
+  {
+   "id": "mini-omni",
+   "name": "Mini-Omni",
+   "org": "Tsinghua",
+   "type": "e2e"
+  },
+  {
+   "id": "gpt-realtime",
+   "name": "GPT-Realtime",
+   "org": "OpenAI",
+   "type": "e2e"
+  },
+  {
+   "id": "phi-4-multimodal",
+   "name": "Phi-4-multimodal",
+   "org": "Microsoft",
+   "type": "e2e"
+  },
+  {
+   "id": "baichuan-omni",
+   "name": "Baichuan-Omni",
+   "org": "Baichuan",
+   "type": "e2e"
+  },
+  {
+   "id": "step-audio",
+   "name": "Step-Audio",
+   "org": "StepFun",
+   "type": "e2e"
+  },
+  {
+   "id": "vita",
+   "name": "VITA",
+   "org": "Tencent",
+   "type": "e2e"
+  },
+  {
+   "id": "diva",
+   "name": "DiVA",
+   "org": "Stanford",
+   "type": "e2e"
+  },
+  {
+   "id": "gemini-2-flash",
+   "name": "Gemini 2.0 Flash",
+   "org": "Google",
+   "type": "e2e"
+  },
+  {
+   "id": "mini-omni2",
+   "name": "Mini-Omni2",
+   "org": "Tsinghua",
+   "type": "e2e"
+  },
+  {
+   "id": "ultravox",
+   "name": "Ultravox",
+   "org": "Fixie",
+   "type": "e2e"
+  },
+  {
+   "id": "gemini-1-5-pro",
+   "name": "Gemini 1.5 Pro",
+   "org": "Google",
+   "type": "e2e"
+  },
+  {
+   "id": "speechgpt",
+   "name": "SpeechGPT",
+   "org": "Fudan",
+   "type": "e2e"
+  },
+  {
+   "id": "audio-flamingo-2",
+   "name": "Audio Flamingo 2",
+   "org": "NVIDIA",
+   "type": "e2e"
+  },
+  {
+   "id": "blsp",
+   "name": "BLSP",
+   "org": "Alibaba",
+   "type": "e2e"
+  },
+  {
+   "id": "baichuan-audio",
+   "name": "Baichuan-Audio",
+   "org": "Baichuan",
+   "type": "e2e"
+  },
+  {
+   "id": "ltu",
+   "name": "LTU",
+   "org": "MIT",
+   "type": "e2e"
+  },
+  {
+   "id": "meralion",
+   "name": "MERaLiON",
+   "org": "A*STAR",
+   "type": "e2e"
+  },
+  {
+   "id": "musilingo",
+   "name": "MusiLingo",
+   "org": "—",
+   "type": "e2e"
+  },
+  {
+   "id": "gpt-4o-mini-audio",
+   "name": "GPT-4o-mini-Audio",
+   "org": "OpenAI",
+   "type": "e2e"
+  },
+  {
+   "id": "voxtral",
+   "name": "Voxtral",
+   "org": "Mistral",
+   "type": "e2e"
+  },
+  {
+   "id": "desta2",
+   "name": "DeSTA2",
+   "org": "NTU",
+   "type": "e2e"
+  },
+  {
+   "id": "llama-omni2",
+   "name": "LLaMA-Omni2",
+   "org": "ICT/CAS",
+   "type": "e2e"
+  },
+  {
+   "id": "vocalnet",
+   "name": "VocalNet",
+   "org": "—",
+   "type": "e2e"
+  },
+  {
+   "id": "audio-flamingo",
+   "name": "Audio Flamingo",
+   "org": "NVIDIA",
+   "type": "e2e"
+  },
+  {
+   "id": "gemma-3n",
+   "name": "Gemma-3n",
+   "org": "Google",
+   "type": "e2e"
+  },
+  {
+   "id": "gemini-3-pro",
+   "name": "Gemini 3 Pro",
+   "org": "Google",
+   "type": "e2e"
+  },
+  {
+   "id": "wavllm",
+   "name": "WavLLM",
+   "org": "Microsoft",
+   "type": "e2e"
+  },
+  {
+   "id": "mellow",
+   "name": "Mellow",
+   "org": "—",
+   "type": "e2e"
+  },
+  {
+   "id": "m2ugen",
+   "name": "M2UGen",
+   "org": "NUS",
+   "type": "e2e"
+  },
+  {
+   "id": "slam-omni",
+   "name": "SLAM-Omni",
+   "org": "SJTU",
+   "type": "e2e"
+  },
+  {
+   "id": "pengi",
+   "name": "Pengi",
+   "org": "Microsoft",
+   "type": "e2e"
+  },
+  {
+   "id": "spirit-lm",
+   "name": "SpiRit-LM",
+   "org": "Meta",
+   "type": "e2e"
+  },
+  {
+   "id": "audio-reasoner",
+   "name": "Audio-Reasoner",
+   "org": "—",
+   "type": "e2e"
+  },
+  {
+   "id": "lyra",
+   "name": "Lyra",
+   "org": "—",
+   "type": "e2e"
+  },
+  {
+   "id": "bert-gslm",
+   "name": "BERT-GSLM",
+   "org": "—",
+   "type": "e2e"
+  },
+  {
+   "id": "gemini-1-5-flash",
+   "name": "Gemini 1.5 Flash",
+   "org": "Google",
+   "type": "e2e"
+  },
+  {
+   "id": "personaplex",
+   "name": "PersonaPlex",
+   "org": "—",
+   "type": "e2e"
+  },
+  {
+   "id": "imagebind-llm",
+   "name": "ImageBind-LLM",
+   "org": "—",
+   "type": "e2e"
+  },
+  {
+   "id": "nextgpt",
+   "name": "NExT-GPT",
+   "org": "NUS",
+   "type": "e2e"
+  },
+  {
+   "id": "pandagpt",
+   "name": "PandaGPT",
+   "org": "—",
+   "type": "e2e"
+  },
+  {
+   "id": "sensedialog",
+   "name": "SenseDialog",
+   "org": "SenseTime",
+   "type": "e2e"
+  },
+  {
+   "id": "opens2s",
+   "name": "OpenS2S",
+   "org": "—",
+   "type": "e2e"
+  },
+  {
+   "id": "vita-audio",
+   "name": "VITA-Audio",
+   "org": "Tencent",
+   "type": "e2e"
+  },
+  {
+   "id": "moss-audio",
+   "name": "MOSS-Audio",
+   "org": "Fudan",
+   "type": "e2e"
+  },
+  {
+   "id": "step-audio-r1",
+   "name": "Step-Audio-R1",
+   "org": "StepFun",
+   "type": "e2e"
+  },
+  {
+   "id": "speechgpt2",
+   "name": "SpeechGPT-2",
+   "org": "Fudan",
+   "type": "e2e"
+  },
+  {
+   "id": "video-salmonn",
+   "name": "video-SALMONN",
+   "org": "Tsinghua/ByteDance",
+   "type": "e2e"
+  },
+  {
+   "id": "ming-omni",
+   "name": "Ming-Omni",
+   "org": "Ant Group",
+   "type": "e2e"
+  },
+  {
+   "id": "ola",
+   "name": "Ola",
+   "org": "Tsinghua",
+   "type": "e2e"
+  }
+ ]
+}

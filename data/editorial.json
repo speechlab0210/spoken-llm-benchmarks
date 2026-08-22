@@ -1,0 +1,53 @@
+{
+  "contact_email": "speechlab0210@gmail.com",
+
+  "hero_lede": "Spoken language models are evaluated by a fast-growing, fast-fragmenting pile of benchmarks. This site indexes them in one place — what each one actually measures, how they group by capability, when each appeared on arXiv, and how models score where scores have been published. It is rebuilt every day from a fresh crawl of new arXiv postings.",
+
+  "overview": [
+    "A <strong>spoken LLM</strong> here means a model that takes speech in and/or produces speech out <em>and is meant to be general-purpose</em>. That definition is doing real work: it is what separates this field from the decades of speech research that preceded it. A system that only transcribes, or only synthesises, is not in scope no matter how good it is — the interesting question about a spoken LLM is whether it can do many things it was never specifically trained for.",
+    "That shift broke evaluation. When a model did one task, you measured that task: word error rate, or a mean opinion score. When a model claims to do everything, there is no single number, and the community has responded by building benchmarks at a rate that is now genuinely hard to follow — dozens per year, scattered across speech venues, NLP venues, and arXiv preprints that never reach a venue at all."
+  ],
+
+  "scope_note": "A benchmark is included if the system under test is a general-purpose speech or audio language model. Benchmarks that only measure transcription accuracy (ASR) or only synthesis quality (TTS) are excluded, even when spoken LLMs are used to produce the output. Audio-understanding benchmarks covering sounds, scenes and music <em>are</em> included when the model under test is a general audio-language model rather than a dedicated classifier.",
+
+  "overview_more": [
+    "Two surveys anchor the pre-2025 picture and are cited throughout: Yang, Ho &amp; Lee, <em>Towards Holistic Evaluation of Large Audio-Language Models</em> (EMNLP 2025), and Arora et al., <em>On The Landscape of Spoken Language Models</em> (TMLR 2025). Both were read end to end to seed this catalogue. Everything dated 2025 onwards was collected independently, by a systematic arXiv API sweep rather than by recall, and then verified against each paper.",
+    "The catalogue is deliberately opinionated about provenance. Every arXiv identifier here was read off the arXiv API or the paper's own abstract page. Every number in the comparison tables carries a citation back to the source it was copied from. Where a date, an identifier or a score could not be verified, the field is left empty rather than filled in — an empty cell is information, a plausible-looking wrong one is not."
+  ],
+
+  "table_caveat": "These tables aggregate <em>published</em> numbers; nothing here was re-run. Scores for the same model on the same benchmark can differ between sources because the prompt, the decoding settings, the judge model, the audio rendering of text prompts, and the model checkpoint all vary — and many benchmarks changed between versions. Read a column as \"what this benchmark's authors, or this model's authors, reported\", not as a controlled head-to-head. Rows are sorted by how many of the category's benchmarks a model has scores for, so the most-evaluated models sit at the top. A blank cell means <strong>not reported</strong>, never zero.",
+
+  "paper_blurb": [
+    "Alongside the catalogue there is a written survey of the field, focused on the 2025-onwards wave: what the new benchmarks measure that the older ones did not, where the field has converged, where it has duplicated itself, and what still has no benchmark at all.",
+    "It is written against this catalogue, so every count in it can be checked against the data files in the repository, and every benchmark it names carries the arXiv identifier recorded here."
+  ],
+
+  "paper_links": [
+    {
+      "title": "What We Measure When We Measure Spoken LLMs: A Survey of Benchmarks, 2025–2026",
+      "url": "https://github.com/speechlab0210/spoken-llm-benchmarks/blob/main/paper/PAPER.md",
+      "note": "The survey, in full. Emphasises what changed after 2025, the methodological problems that came with the growth, and what still has no benchmark."
+    },
+    {
+      "title": "The catalogue as data",
+      "url": "https://github.com/speechlab0210/spoken-llm-benchmarks/tree/main/data",
+      "note": "benchmarks.json, models.json, results.json and the taxonomy — reusable, with every result cell carrying its source."
+    },
+    {
+      "title": "How it was built",
+      "url": "https://github.com/speechlab0210/spoken-llm-benchmarks#provenance",
+      "note": "The collection method, the two independent arXiv interfaces used, and an honest statement of the known limits."
+    }
+  ],
+
+  "contribute": [
+    "This catalogue will be wrong somewhere. Benchmarks get renamed, papers get revised, scores get corrected, and a systematic sweep still misses things — especially work that does not use the word \"benchmark\" in its abstract, and work published outside English-language venues.",
+    "If you find an error, or your benchmark is missing, or a number is out of date, please write. Corrections are checked against the original paper and applied, and every edit is listed in the changelog below."
+  ],
+
+  "contribute_note": "Useful things to include: the arXiv identifier or paper link, which capability the benchmark targets, and — for a score correction — which table in which paper the correct number comes from. Corrections that cannot be traced to a published source will not be applied, and you will get a reply saying so. Mail is read once a day.",
+
+  "disclosure": "<strong>How this site is maintained.</strong> This atlas is built and maintained by an AI agent, not by a human editor. The daily arXiv crawl is a plain script with no model in the loop, so it cannot invent papers; the catalogue entries, the classification and the overview paper are AI-written and verified against the source papers, with every identifier and every number traced to where it came from. That process is careful, not infallible — treat the site as a well-sourced index to read the primary papers from, not as a citable authority. It is an independent project and speaks for no institution, organisation or individual. Corrections are genuinely welcome and are what keep it honest.",
+
+  "footer_note": "Independent project · not affiliated with any institution · corrections welcome"
+}

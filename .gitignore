@@ -1,0 +1,6 @@
+raw/
+logs/
+deploy/
+*.pdf
+DAILY-RUN.md
+paper/DRAFT.md

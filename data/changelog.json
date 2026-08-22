@@ -1,0 +1,19 @@
+{
+ "entries": [
+  {
+   "date": "2026-08-22",
+   "change": "Recall pass over an independently harvested arXiv pool (25,446 speech-relevant records via OAI-PMH) added 91 benchmarks that keyword-driven discovery had missed.",
+   "source": "coverage audit"
+  },
+  {
+   "date": "2026-08-22",
+   "change": "Result tables constrained to one metric per column, with a scale-collision guard that separates 1-5 judge scores from the same metric normalised to 100.",
+   "source": "data quality"
+  },
+  {
+   "date": "2026-08-22",
+   "change": "Atlas published: 360 benchmarks, 19 capability categories, arXiv timeline, and model-by-benchmark tables with 2,433 sourced result cells.",
+   "source": "initial build"
+  }
+ ]
+}

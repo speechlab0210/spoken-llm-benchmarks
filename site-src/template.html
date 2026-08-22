@@ -1,0 +1,757 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spoken LLM Benchmark Atlas</title>
+<meta name="description" content="A living, daily-updated index of benchmarks for spoken language models: what each one measures, how they are classified, when they appeared on arXiv, and how models score.">
+<style>
+:root{
+  --bg:#fbfbfa; --panel:#fff; --panel-2:#f5f5f3; --ink:#1a1a19; --ink-2:#55534e;
+  --ink-3:#87847d; --line:#e4e2dd; --line-2:#d3d0c9; --accent:#0b6b5f; --accent-2:#0d8a79;
+  --accent-soft:#e6f2f0; --warn:#8a5a00; --radius:10px;
+  --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace;
+  --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --serif:ui-serif,Georgia,Cambria,"Times New Roman",serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#16181a;--panel:#1d2022;--panel-2:#24282a;--ink:#eceae5;--ink-2:#b3b0a9;
+    --ink-3:#85827c;--line:#2e3336;--line-2:#3b4145;--accent:#4fd1bd;--accent-2:#6fe0cf;
+    --accent-soft:#17332f;--warn:#e0b062;}
+}
+:root[data-theme=dark]{--bg:#16181a;--panel:#1d2022;--panel-2:#24282a;--ink:#eceae5;--ink-2:#b3b0a9;
+  --ink-3:#85827c;--line:#2e3336;--line-2:#3b4145;--accent:#4fd1bd;--accent-2:#6fe0cf;
+  --accent-soft:#17332f;--warn:#e0b062;}
+:root[data-theme=light]{--bg:#fbfbfa;--panel:#fff;--panel-2:#f5f5f3;--ink:#1a1a19;--ink-2:#55534e;
+  --ink-3:#87847d;--line:#e4e2dd;--line-2:#d3d0c9;--accent:#0b6b5f;--accent-2:#0d8a79;
+  --accent-soft:#e6f2f0;--warn:#8a5a00;}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);
+  font-size:15px;line-height:1.62;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3,h4{line-height:1.25;margin:0 0 .5em;font-weight:650;letter-spacing:-.011em}
+h2{font-size:1.5rem;margin-top:0}
+h3{font-size:1.06rem}
+p{margin:0 0 1em}
+code,.mono{font-family:var(--mono);font-size:.88em}
+
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+header.top{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--bg) 88%,transparent);
+  backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.topbar{display:flex;align-items:center;gap:14px;height:56px}
+.brand{font-weight:700;letter-spacing:-.02em;white-space:nowrap;color:var(--ink);font-size:.98rem}
+.brand span{color:var(--accent)}
+nav.main{display:flex;gap:2px;margin-left:auto;overflow-x:auto;scrollbar-width:none}
+nav.main::-webkit-scrollbar{display:none}
+nav.main a{padding:6px 10px;border-radius:7px;color:var(--ink-2);font-size:.87rem;white-space:nowrap}
+nav.main a:hover{background:var(--panel-2);color:var(--ink);text-decoration:none}
+.theme-btn{background:var(--panel-2);border:1px solid var(--line);color:var(--ink-2);
+  border-radius:7px;padding:5px 9px;cursor:pointer;font-size:.85rem;line-height:1}
+section{padding:52px 0;border-bottom:1px solid var(--line)}
+section:last-of-type{border-bottom:0}
+.eyebrow{font-family:var(--mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.12em;
+  color:var(--accent);margin-bottom:8px;font-weight:600}
+.lede{font-size:1.02rem;color:var(--ink-2);max-width:74ch}
+
+/* hero */
+.hero{padding:60px 0 44px}
+.hero h1{font-size:clamp(1.9rem,4.6vw,3rem);letter-spacing:-.03em;margin-bottom:.35em}
+.hero .lede{font-size:1.1rem;max-width:78ch}
+.statgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(128px,1fr));gap:10px;margin-top:26px}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:13px 15px}
+.stat .n{font-size:1.6rem;font-weight:680;letter-spacing:-.03em;font-family:var(--mono)}
+.stat .l{font-size:.76rem;color:var(--ink-3);text-transform:uppercase;letter-spacing:.06em}
+.badge{display:inline-block;background:var(--accent-soft);color:var(--accent);border-radius:99px;
+  padding:3px 10px;font-size:.75rem;font-weight:600;font-family:var(--mono)}
+
+.callout{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--accent);
+  border-radius:var(--radius);padding:15px 18px;margin:18px 0}
+.callout p:last-child{margin-bottom:0}
+.callout.warn{border-left-color:var(--warn)}
+
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(268px,1fr));gap:16px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px}
+.card h3{margin-bottom:.3em}
+.card .meta{font-family:var(--mono);font-size:.76rem;color:var(--ink-3)}
+
+/* taxonomy */
+.taxgroup{margin-bottom:26px}
+.taxgroup > h3{font-size:.8rem;text-transform:uppercase;letter-spacing:.1em;color:var(--ink-3);
+  font-family:var(--mono);border-bottom:1px solid var(--line);padding-bottom:7px;margin-bottom:14px}
+.taxcard{cursor:pointer;transition:border-color .12s,transform .12s}
+.taxcard:hover{border-color:var(--accent);transform:translateY(-1px)}
+.taxcard .cnt{float:right;font-family:var(--mono);font-size:.82rem;color:var(--accent);font-weight:650}
+
+/* timeline */
+.tl-chart{display:flex;align-items:flex-end;gap:3px;height:210px;padding:22px 0 0;
+  overflow-x:auto;border-bottom:1px solid var(--line-2)}
+.tl-bar{flex:1 0 22px;min-width:22px;display:flex;flex-direction:column;justify-content:flex-end;
+  align-items:center;height:100%;cursor:pointer;position:relative}
+.tl-bar i{display:block;width:100%;background:var(--accent);border-radius:3px 3px 0 0;opacity:.82;
+  transition:opacity .12s;min-height:2px}
+.tl-bar:hover i,.tl-bar.on i{opacity:1;background:var(--accent-2)}
+.tl-bar.pre i{background:var(--ink-3);opacity:.5}
+.tl-bar b{position:absolute;top:-16px;font-family:var(--mono);font-size:.68rem;color:var(--ink-2);
+  opacity:0;transition:opacity .12s}
+.tl-bar:hover b,.tl-bar.on b{opacity:1}
+.tl-axis{display:flex;gap:3px;overflow-x:auto;font-family:var(--mono);font-size:.63rem;
+  color:var(--ink-3);padding-top:5px;scrollbar-width:none}
+.tl-axis::-webkit-scrollbar{display:none}
+.tl-axis span{flex:1 0 22px;min-width:22px;text-align:center;writing-mode:vertical-rl;height:42px}
+.tl-axis span.jan{color:var(--ink);font-weight:650}
+.tl-list{margin-top:22px}
+.tl-month{display:grid;grid-template-columns:82px 1fr;gap:14px;padding:9px 0;border-top:1px solid var(--line)}
+.tl-month > .m{font-family:var(--mono);font-size:.8rem;color:var(--ink-3);padding-top:2px}
+.tl-items{display:flex;flex-wrap:wrap;gap:6px}
+.chip{display:inline-block;background:var(--panel-2);border:1px solid var(--line);border-radius:99px;
+  padding:2px 10px;font-size:.8rem;cursor:pointer;color:var(--ink)}
+.chip:hover{border-color:var(--accent);color:var(--accent)}
+.chip.on{background:var(--accent);color:var(--bg);border-color:var(--accent)}
+
+/* controls */
+.controls{display:flex;flex-wrap:wrap;gap:9px;align-items:center;margin-bottom:16px}
+input[type=search],select{background:var(--panel);border:1px solid var(--line-2);border-radius:8px;
+  padding:7px 11px;color:var(--ink);font-size:.9rem;font-family:inherit}
+input[type=search]{min-width:230px;flex:1 1 230px}
+input[type=search]:focus,select:focus{outline:2px solid var(--accent);outline-offset:-1px}
+.chiprow{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px}
+.count-note{font-family:var(--mono);font-size:.78rem;color:var(--ink-3);margin-bottom:10px}
+
+/* benchmark list */
+.bench{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:14px 17px;margin-bottom:9px}
+.bench-h{display:flex;flex-wrap:wrap;align-items:baseline;gap:9px;cursor:pointer}
+.bench-h .nm{font-weight:660;font-size:1.02rem}
+.bench-h .dt{font-family:var(--mono);font-size:.78rem;color:var(--ink-3);margin-left:auto}
+.bench-h .yr{font-family:var(--mono);font-size:.72rem;background:var(--panel-2);border:1px solid var(--line);
+  border-radius:5px;padding:1px 6px;color:var(--ink-2)}
+.bench-sum{color:var(--ink-2);margin:7px 0 0;font-size:.92rem}
+.bench-body{margin-top:11px;padding-top:11px;border-top:1px solid var(--line);display:none}
+.bench.open .bench-body{display:block}
+.kv{display:grid;grid-template-columns:118px 1fr;gap:4px 12px;font-size:.87rem}
+.kv dt{color:var(--ink-3);font-family:var(--mono);font-size:.78rem}
+.kv dd{margin:0}
+.taglist{display:flex;flex-wrap:wrap;gap:5px}
+.tag{background:var(--accent-soft);color:var(--accent);border-radius:5px;padding:1px 7px;
+  font-size:.74rem;font-family:var(--mono)}
+.tag.n{background:var(--panel-2);color:var(--ink-2);border:1px solid var(--line)}
+
+/* tables */
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);background:var(--panel)}
+table{border-collapse:collapse;width:100%;font-size:.85rem}
+th,td{padding:7px 11px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}
+thead th{position:sticky;top:0;background:var(--panel-2);z-index:2;font-size:.78rem;
+  color:var(--ink-2);font-weight:640;border-bottom:1px solid var(--line-2)}
+tbody th{position:sticky;left:0;background:var(--panel);z-index:1;font-weight:600;
+  border-right:1px solid var(--line-2);max-width:230px;overflow:hidden;text-overflow:ellipsis}
+thead th:first-child{left:0;z-index:3}
+tbody tr:hover td{background:var(--panel-2)}
+td.num{font-family:var(--mono);text-align:right}
+td.na{color:var(--ink-3);text-align:center}
+.best{font-weight:700;color:var(--accent)}
+th .metric{display:block;font-weight:400;font-size:.7rem;color:var(--ink-3);font-family:var(--mono)}
+.srcdot{font-size:.62rem;color:var(--ink-3);vertical-align:super;margin-left:3px;
+  text-decoration:none;cursor:help}
+a.srcdot:hover{color:var(--accent);text-decoration:none}
+td.num{max-width:150px;overflow:hidden}
+
+details.acc{border:1px solid var(--line);border-radius:var(--radius);background:var(--panel);
+  padding:11px 15px;margin-bottom:9px}
+details.acc[open]{padding-bottom:15px}
+details.acc > summary{cursor:pointer;font-weight:640;list-style:none;display:flex;align-items:center;gap:9px}
+details.acc > summary::-webkit-details-marker{display:none}
+details.acc > summary::before{content:"▸";color:var(--accent);transition:transform .15s;display:inline-block}
+details.acc[open] > summary::before{transform:rotate(90deg)}
+details.acc > summary .sub{margin-left:auto;font-family:var(--mono);font-size:.76rem;color:var(--ink-3);font-weight:400}
+
+.feedrow{display:grid;grid-template-columns:78px 1fr;gap:12px;padding:8px 0;border-top:1px solid var(--line);font-size:.88rem}
+.feedrow .d{font-family:var(--mono);font-size:.76rem;color:var(--ink-3)}
+
+footer{padding:34px 0 54px;color:var(--ink-3);font-size:.85rem}
+footer a{color:var(--ink-2)}
+.disclosure{background:var(--panel-2);border:1px solid var(--line);border-radius:var(--radius);
+  padding:14px 17px;font-size:.88rem;color:var(--ink-2)}
+.empty{color:var(--ink-3);font-style:italic;padding:22px 0}
+@media(max-width:640px){
+  .kv{grid-template-columns:1fr}
+  .kv dt{margin-top:6px}
+  .tl-month{grid-template-columns:1fr}
+  nav.main{display:none}
+}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap topbar">
+    <a class="brand" href="#top">Spoken&nbsp;LLM <span>Benchmark&nbsp;Atlas</span></a>
+    <nav class="main">
+      <a href="#overview">Overview</a>
+      <a href="#taxonomy">Taxonomy</a>
+      <a href="#timeline">Timeline</a>
+      <a href="#benchmarks">Benchmarks</a>
+      <a href="#tables">Model&nbsp;×&nbsp;Benchmark</a>
+      <a href="#paper">Survey</a>
+      <a href="#feed">New&nbsp;on&nbsp;arXiv</a>
+      <a href="#contribute">Contribute</a>
+    </nav>
+    <button class="theme-btn" id="themeBtn" title="Toggle theme">◐</button>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <div class="eyebrow" id="heroEyebrow"></div>
+    <h1>A living atlas of spoken&nbsp;LLM benchmarks</h1>
+    <p class="lede" id="heroLede"></p>
+    <div class="statgrid" id="stats"></div>
+  </div>
+</section>
+
+<section id="overview">
+  <div class="wrap">
+    <div class="eyebrow">Overview</div>
+    <h2>What counts, and why this exists</h2>
+    <div id="overviewBody"></div>
+  </div>
+</section>
+
+<section id="taxonomy">
+  <div class="wrap">
+    <div class="eyebrow">Taxonomy</div>
+    <h2>How the benchmarks are classified</h2>
+    <p class="lede" id="taxIntro"></p>
+    <div id="taxBody" style="margin-top:22px"></div>
+  </div>
+</section>
+
+<section id="timeline">
+  <div class="wrap">
+    <div class="eyebrow">Timeline</div>
+    <h2>When each benchmark hit arXiv</h2>
+    <p class="lede">Bars count benchmarks by the month of their first arXiv posting (v1). Click a bar to filter the list below; click again to clear.</p>
+    <div class="tl-chart" id="tlChart"></div>
+    <div class="tl-axis" id="tlAxis"></div>
+    <div class="count-note" id="tlNote"></div>
+    <div class="tl-list" id="tlList"></div>
+  </div>
+</section>
+
+<section id="benchmarks">
+  <div class="wrap">
+    <div class="eyebrow">Catalogue</div>
+    <h2>Every benchmark</h2>
+    <div class="controls">
+      <input type="search" id="q" placeholder="Search name, description, task, language…">
+      <select id="sortBy">
+        <option value="date-desc">Newest first</option>
+        <option value="date-asc">Oldest first</option>
+        <option value="name">Name A→Z</option>
+      </select>
+      <select id="eraSel">
+        <option value="all">All years</option>
+        <option value="2025+">2025 onwards</option>
+        <option value="pre2025">Before 2025</option>
+      </select>
+    </div>
+    <div class="chiprow" id="catChips"></div>
+    <div class="count-note" id="benchCount"></div>
+    <div id="benchList"></div>
+  </div>
+</section>
+
+<section id="tables">
+  <div class="wrap">
+    <div class="eyebrow">Results</div>
+    <h2>Model × benchmark, by category</h2>
+    <p class="lede">Rows are spoken LLMs, columns are benchmarks. Every number is copied from a published source and links back to it — hover a cell for the citation. Blanks mean <em>not reported</em>, not zero.</p>
+    <div class="callout warn" id="tableCaveat"></div>
+    <div id="tablesBody"></div>
+  </div>
+</section>
+
+<section id="paper">
+  <div class="wrap">
+    <div class="eyebrow">Survey</div>
+    <h2>The accompanying overview paper</h2>
+    <div id="paperBody"></div>
+  </div>
+</section>
+
+<section id="feed">
+  <div class="wrap">
+    <div class="eyebrow">Daily crawl</div>
+    <h2>Fresh from arXiv</h2>
+    <p class="lede">An automated crawl scans new arXiv postings in <span class="mono">eess.AS</span>, <span class="mono">cs.SD</span>, <span class="mono">cs.CL</span> and <span class="mono">cs.MM</span> every day and flags anything that looks like a spoken-LLM benchmark. Flagged items are reviewed before they enter the catalogue above.</p>
+    <div id="feedBody"></div>
+  </div>
+</section>
+
+<section id="contribute">
+  <div class="wrap">
+    <div class="eyebrow">Contribute</div>
+    <h2>Found an error? Missing a benchmark?</h2>
+    <div id="contributeBody"></div>
+    <h3 style="margin-top:26px">Changelog</h3>
+    <div id="changelogBody"></div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="disclosure" id="disclosure"></div>
+    <p style="margin-top:16px" id="footerLine"></p>
+  </div>
+</footer>
+
+<script id="atlas-data" type="application/json">"__ATLAS_DATA__"</script>
+<script>
+(function(){
+"use strict";
+var D = JSON.parse(document.getElementById('atlas-data').textContent);
+var E = D.editorial, T = D.taxonomy, B = D.benchmarks.entries, M = D.models.entries,
+    R = D.results.cells, S = D.stats;
+
+// ---------- helpers ----------
+function el(tag, cls, txt){ var n=document.createElement(tag); if(cls)n.className=cls;
+  if(txt!==undefined&&txt!==null)n.textContent=txt; return n; }
+function esc(s){ return String(s==null?'':s).replace(/[&<>"']/g,function(c){
+  return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); }
+function link(href,txt,cls){ if(!href) return ''; return '<a href="'+esc(href)+'" target="_blank" rel="noopener"'+
+  (cls?' class="'+cls+'"':'')+'>'+esc(txt||href)+'</a>'; }
+function paras(arr,cls){ return (arr||[]).map(function(p){
+  return '<p'+(cls?' class="'+cls+'"':'')+'>'+p+'</p>'; }).join(''); }
+function monthOf(b){ return b.arxiv_date ? b.arxiv_date.slice(0,7) : null; }
+
+var catById = {}; T.categories.forEach(function(c){ catById[c.id]=c; });
+var benchById = {}; B.forEach(function(b){ benchById[b.id]=b; });
+var modelById = {}; M.forEach(function(m){ modelById[m.id]=m; });
+
+// ---------- theme ----------
+var tb = document.getElementById('themeBtn');
+var saved = null; try{ saved = localStorage.getItem('atlas-theme'); }catch(e){}
+if(saved) document.documentElement.setAttribute('data-theme', saved);
+tb.addEventListener('click', function(){
+  var cur = document.documentElement.getAttribute('data-theme');
+  if(!cur) cur = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  var next = cur === 'dark' ? 'light' : 'dark';
+  document.documentElement.setAttribute('data-theme', next);
+  try{ localStorage.setItem('atlas-theme', next); }catch(e){}
+});
+
+// ---------- hero ----------
+document.getElementById('heroEyebrow').textContent =
+  'Updated ' + (D.built_at||'').slice(0,10) + ' · maintained automatically';
+document.getElementById('heroLede').innerHTML = E.hero_lede || '';
+var statDefs = [
+  ['benchmarks','Benchmarks indexed'],
+  ['since_2025','Posted 2025 onwards'],
+  ['pre_2025','Posted before 2025'],
+  ['categories','Capability categories'],
+  ['models','Models tracked'],
+  ['result_cells','Sourced result cells']
+];
+var sg = document.getElementById('stats');
+statDefs.forEach(function(d){
+  var c = el('div','stat');
+  c.appendChild(el('div','n', String(S[d[0]])));
+  c.appendChild(el('div','l', d[1]));
+  sg.appendChild(c);
+});
+
+// ---------- overview ----------
+document.getElementById('overviewBody').innerHTML =
+  paras(E.overview, 'lede') +
+  (E.scope_note ? '<div class="callout"><p><strong>Scope rule.</strong> '+E.scope_note+'</p></div>' : '') +
+  (E.overview_more ? paras(E.overview_more) : '');
+
+// ---------- taxonomy ----------
+document.getElementById('taxIntro').innerHTML = T.intro || '';
+var groups = [];
+T.categories.forEach(function(c){ if(groups.indexOf(c.group)<0) groups.push(c.group); });
+var tbody = document.getElementById('taxBody');
+groups.forEach(function(g){
+  var gw = el('div','taxgroup');
+  var gh = el('h3', null, g);
+  gw.appendChild(gh);
+  if(T.group_blurbs && T.group_blurbs[g]){
+    var p = el('p'); p.className='lede'; p.style.marginTop='-6px'; p.innerHTML = T.group_blurbs[g];
+    gw.appendChild(p);
+  }
+  var grid = el('div','cols');
+  T.categories.filter(function(c){ return c.group===g; }).forEach(function(c){
+    var card = el('div','card taxcard');
+    card.innerHTML = '<span class="cnt">'+(S.by_category[c.id]||0)+'</span>'+
+      '<h3>'+esc(c.name)+'</h3><p style="margin:0;color:var(--ink-2);font-size:.9rem">'+c.blurb+'</p>'+
+      (c.example_metrics?'<p class="meta" style="margin:8px 0 0">'+esc(c.example_metrics)+'</p>':'');
+    card.addEventListener('click', function(){
+      activeCats = {}; activeCats[c.id]=true; activeMonth=null;
+      renderChips(); renderBench();
+      document.getElementById('benchmarks').scrollIntoView();
+    });
+    grid.appendChild(card);
+  });
+  gw.appendChild(grid);
+  tbody.appendChild(gw);
+});
+
+// ---------- timeline ----------
+var monthCounts = {};
+B.forEach(function(b){ var m=monthOf(b); if(m) monthCounts[m]=(monthCounts[m]||0)+1; });
+var months = Object.keys(monthCounts).sort();
+var activeMonth = null;
+if(months.length){
+  // fill gaps so the axis is continuous
+  var full=[], cur=months[0], last=months[months.length-1], guard=0;
+  while(cur<=last && guard++<600){
+    full.push(cur);
+    var y=+cur.slice(0,4), mo=+cur.slice(5,7);
+    mo++; if(mo>12){mo=1;y++;}
+    cur = y+'-'+String(mo).padStart(2,'0');
+  }
+  var max = Math.max.apply(null, full.map(function(m){return monthCounts[m]||0;}));
+  var chart = document.getElementById('tlChart'), axis = document.getElementById('tlAxis');
+  full.forEach(function(m){
+    var n = monthCounts[m]||0;
+    var bar = el('div','tl-bar'+(m<'2025-01'?' pre':''));
+    bar.title = m+': '+n+' benchmark'+(n===1?'':'s');
+    bar.innerHTML = '<b>'+n+'</b>';
+    var i = el('i'); i.style.height = (max? Math.max(n/max*100,n?2:0):0)+'%';
+    bar.appendChild(i);
+    if(n){ bar.addEventListener('click', function(){
+      activeMonth = (activeMonth===m)?null:m;
+      renderTLBars(); renderTLList();
+      }); }
+    bar.dataset.m = m;
+    chart.appendChild(bar);
+    var a = el('span', m.slice(5) === '01' ? 'jan' : null,
+               m.slice(5) === '01' ? m.slice(0,4) : m.slice(5));
+    axis.appendChild(a);
+  });
+  // the story is at the recent end — start there, and keep the axis in step with the chart
+  chart.scrollLeft = chart.scrollWidth;
+  axis.scrollLeft = chart.scrollWidth;
+  chart.addEventListener('scroll', function(){ axis.scrollLeft = chart.scrollLeft; });
+}
+function renderTLBars(){
+  [].forEach.call(document.querySelectorAll('.tl-bar'), function(b){
+    b.classList.toggle('on', b.dataset.m===activeMonth); });
+}
+function renderTLList(){
+  var host = document.getElementById('tlList'); host.innerHTML='';
+  var note = document.getElementById('tlNote');
+  var show = months.slice().reverse();
+  if(activeMonth) show = [activeMonth];
+  note.textContent = activeMonth ? ('Showing '+activeMonth+' — click the bar again to show all months')
+    : (months.length + ' active months · ' + (S.benchmarks - S.undated) + ' dated benchmarks'
+       + (S.undated ? ' · ' + S.undated + ' without a confirmed arXiv date' : ''));
+  show.forEach(function(m){
+    var row = el('div','tl-month');
+    row.appendChild(el('div','m', m));
+    var items = el('div','tl-items');
+    B.filter(function(b){ return monthOf(b)===m; })
+     .sort(function(a,b){ return a.name.localeCompare(b.name); })
+     .forEach(function(b){
+       var c = el('span','chip', b.name);
+       c.title = b.summary;
+       c.addEventListener('click', function(){ openBenchmark(b.id); });
+       items.appendChild(c);
+     });
+    row.appendChild(items);
+    host.appendChild(row);
+  });
+}
+renderTLList();
+
+// ---------- benchmark catalogue ----------
+var activeCats = {};
+function renderChips(){
+  var host = document.getElementById('catChips'); host.innerHTML='';
+  var all = el('span','chip'+(Object.keys(activeCats).length?'':' on'),'All categories');
+  all.addEventListener('click', function(){ activeCats={}; renderChips(); renderBench(); });
+  host.appendChild(all);
+  T.categories.forEach(function(c){
+    var n = S.by_category[c.id]||0;
+    if(!n) return;
+    var ch = el('span','chip'+(activeCats[c.id]?' on':''), c.name+' ('+n+')');
+    ch.addEventListener('click', function(){
+      if(activeCats[c.id]) delete activeCats[c.id]; else activeCats[c.id]=true;
+      renderChips(); renderBench();
+    });
+    host.appendChild(ch);
+  });
+}
+function benchMatches(b){
+  var q = document.getElementById('q').value.trim().toLowerCase();
+  var era = document.getElementById('eraSel').value;
+  var cats = Object.keys(activeCats);
+  if(cats.length && !cats.some(function(c){ return b.categories.indexOf(c)>=0; })) return false;
+  if(era==='2025+' && !(b.arxiv_date && b.arxiv_date>='2025-01')) return false;
+  if(era==='pre2025' && !(b.arxiv_date && b.arxiv_date<'2025-01')) return false;
+  if(q){
+    var hay = [b.name,b.full_title,b.summary,(b.tasks||[]).join(' '),(b.languages||[]).join(' '),
+               (b.metrics||[]).join(' '),b.arxiv_id,(b.aka||[]).join(' ')].join(' ').toLowerCase();
+    if(hay.indexOf(q)<0) return false;
+  }
+  return true;
+}
+function benchCard(b){
+  var d = el('div','bench'); d.id = 'b-'+b.id;
+  var cats = b.categories.map(function(c){
+    return '<span class="tag">'+esc(catById[c]?catById[c].name:c)+'</span>'; }).join('');
+  var head = '<div class="bench-h"><span class="nm">'+esc(b.name)+'</span>'+
+    (b.arxiv_date? '<span class="yr">'+esc(b.arxiv_date)+'</span>':'<span class="yr">date n/a</span>')+
+    '<span class="dt">'+(b.arxiv_id?('arXiv:'+esc(b.arxiv_id)):(b.venue?esc(b.venue):''))+'</span></div>'+
+    '<p class="bench-sum">'+esc(b.summary)+'</p>';
+  var rows = [];
+  if(b.full_title) rows.push(['Paper', esc(b.full_title)]);
+  rows.push(['Categories','<span class="taglist">'+cats+'</span>']);
+  if(b.tasks&&b.tasks.length) rows.push(['Tasks','<span class="taglist">'+b.tasks.map(function(t){
+    return '<span class="tag n">'+esc(t)+'</span>';}).join('')+'</span>']);
+  if(b.languages&&b.languages.length) rows.push(['Languages', esc(b.languages.join(', '))]);
+  if(b.io) rows.push(['Modality', esc(b.io)]);
+  if(b.size) rows.push(['Size', esc(b.size)]);
+  if(b.metrics&&b.metrics.length) rows.push(['Metrics', esc(b.metrics.join(', '))]);
+  if(b.venue) rows.push(['Venue', esc(b.venue)]);
+  var links = [];
+  if(b.url) links.push(link(b.url, b.arxiv_id?('arXiv:'+b.arxiv_id):'paper'));
+  if(b.code) links.push(link(b.code,'code'));
+  if(b.data) links.push(link(b.data,'data'));
+  if(b.leaderboard) links.push(link(b.leaderboard,'leaderboard'));
+  if(links.length) rows.push(['Links', links.join(' · ')]);
+  var nRes = R.filter(function(r){ return r.benchmark===b.id; }).length;
+  if(nRes) rows.push(['In tables', nRes+' sourced score'+(nRes===1?'':'s')+
+    ' — see <a href="#tables">Model × benchmark</a>']);
+  if(b.note) rows.push(['Note', esc(b.note)]);
+  var body = '<div class="bench-body"><dl class="kv">'+rows.map(function(r){
+    return '<dt>'+r[0]+'</dt><dd>'+r[1]+'</dd>'; }).join('')+'</dl></div>';
+  d.innerHTML = head + body;
+  d.querySelector('.bench-h').addEventListener('click', function(){ d.classList.toggle('open'); });
+  return d;
+}
+function renderBench(){
+  var host = document.getElementById('benchList'); host.innerHTML='';
+  var sort = document.getElementById('sortBy').value;
+  var list = B.filter(benchMatches);
+  list.sort(function(a,b){
+    if(sort==='name') return a.name.localeCompare(b.name);
+    var da=a.arxiv_date||'0000-00', db=b.arxiv_date||'0000-00';
+    return sort==='date-asc' ? da.localeCompare(db) : db.localeCompare(da);
+  });
+  document.getElementById('benchCount').textContent =
+    list.length+' of '+B.length+' benchmarks shown';
+  if(!list.length){ host.appendChild(el('p','empty','Nothing matches those filters.')); return; }
+  list.forEach(function(b){ host.appendChild(benchCard(b)); });
+}
+function openBenchmark(id){
+  activeCats={}; document.getElementById('q').value=''; document.getElementById('eraSel').value='all';
+  renderChips(); renderBench();
+  var n = document.getElementById('b-'+id);
+  if(n){ n.classList.add('open'); n.scrollIntoView({block:'center'});
+    n.style.borderColor='var(--accent)';
+    setTimeout(function(){ n.style.borderColor=''; }, 1600); }
+}
+['q','sortBy','eraSel'].forEach(function(id){
+  document.getElementById(id).addEventListener('input', renderBench);
+  document.getElementById(id).addEventListener('change', renderBench);
+});
+renderChips(); renderBench();
+
+// ---------- model x benchmark tables ----------
+document.getElementById('tableCaveat').innerHTML =
+  '<p><strong>Read these tables carefully.</strong> '+(E.table_caveat||'')+'</p>';
+
+// Index by benchmark -> metric -> model. A column must use ONE metric: mixing metrics
+// (or scales) in a single column would put incommensurable numbers side by side.
+var byBenchMetric = {};
+R.forEach(function(r){
+  var ms = (byBenchMetric[r.benchmark] = byBenchMetric[r.benchmark] || {});
+  (ms[r.metric] = ms[r.metric] || {})[r.model] = r;
+});
+// The benchmark's primary metric = best model coverage, but an aggregate ("Overall",
+// "Average") beats a sub-score at similar coverage — a headline number is what a reader
+// of a cross-benchmark table actually wants.
+var AGG = /(overall|average|\bavg\b|\btotal\b|\bmean\b|macro|weighted|composite|final)/i;
+var primaryMetric = {}, cellIndex = {};
+Object.keys(byBenchMetric).forEach(function(bid){
+  var ms = byBenchMetric[bid], best = null, bestScore = -1;
+  Object.keys(ms).forEach(function(k){
+    var c = Object.keys(ms[k]).length;
+    var s = c * (AGG.test(k) ? 1.6 : 1);
+    if (s > bestScore || (s === bestScore && best !== null && k.length < best.length)) {
+      bestScore = s; best = k;
+    }
+  });
+  if (best !== null) { primaryMetric[bid] = best; cellIndex[bid] = ms[best]; }
+});
+// how many distinct metrics exist per benchmark, so the UI can admit what it is hiding
+var metricCount = {};
+Object.keys(byBenchMetric).forEach(function(b){ metricCount[b] = Object.keys(byBenchMetric[b]).length; });
+
+function fmtVal(v){ return typeof v === 'number' ? String(v) : String(v); }
+
+function buildTable(catId){
+  // columns: densest first — the benchmarks most models have been run on are the ones
+  // a reader can actually compare across, so they earn the left-hand side
+  var benches = B.filter(function(b){
+    return b.categories.indexOf(catId)>=0 && cellIndex[b.id]; })
+    .sort(function(a,b){
+      var na = Object.keys(cellIndex[a.id]||{}).length,
+          nb = Object.keys(cellIndex[b.id]||{}).length;
+      if(nb!==na) return nb-na;
+      return (b.arxiv_date||'').localeCompare(a.arxiv_date||'');
+    });
+  if(!benches.length) return null;
+  var modelSet = {};
+  benches.forEach(function(b){ Object.keys(cellIndex[b.id]).forEach(function(m){ modelSet[m]=1; }); });
+  var mods = Object.keys(modelSet).map(function(id){ return modelById[id]; })
+    .filter(Boolean)
+    .sort(function(a,b){
+      var ca = benches.filter(function(x){ return cellIndex[x.id][a.id]; }).length;
+      var cb = benches.filter(function(x){ return cellIndex[x.id][b.id]; }).length;
+      if(cb!==ca) return cb-ca;
+      return a.name.localeCompare(b.name);
+    });
+  var wrap = el('div','tablewrap');
+  var t = el('table');
+  var thead = el('thead'), hr = el('tr');
+  hr.appendChild(el('th',null,'Spoken LLM'));
+  benches.forEach(function(b){
+    var th = el('th');
+    var pm = primaryMetric[b.id] || 'score';
+    var extra = (metricCount[b.id]||1) - 1;
+    th.innerHTML = '<a href="#b-'+esc(b.id)+'">'+esc(b.name)+'</a>'+
+      '<span class="metric">'+esc(pm)+
+      (extra>0 ? ' <span title="'+extra+' other metric'+(extra===1?'':'s')+
+                  ' reported for this benchmark are not shown, to keep the column comparable">(+'+extra+')</span>' : '')+
+      '</span>';
+    th.addEventListener('click', function(){ openBenchmark(b.id); });
+    th.style.cursor='pointer';
+    hr.appendChild(th);
+  });
+  thead.appendChild(hr); t.appendChild(thead);
+  // best-per-column (only when the benchmark declares a direction)
+  var best = {};
+  benches.forEach(function(b){
+    if(!b.higher_is_better && b.higher_is_better!==false) return;
+    var vals = mods.map(function(m){ var c=cellIndex[b.id][m.id];
+      return c && typeof c.value==='number' ? c.value : null; }).filter(function(v){ return v!==null; });
+    if(vals.length<2) return;
+    best[b.id] = b.higher_is_better ? Math.max.apply(null,vals) : Math.min.apply(null,vals);
+  });
+  var tb2 = el('tbody');
+  mods.forEach(function(m){
+    var tr = el('tr');
+    var th = el('th');
+    th.innerHTML = esc(m.name) + (m.org? ' <span class="metric" style="display:inline;margin-left:5px">'+esc(m.org)+'</span>':'');
+    th.title = [m.name, m.org, m.type, m.date].filter(Boolean).join(' · ');
+    tr.appendChild(th);
+    benches.forEach(function(b){
+      var c = cellIndex[b.id][m.id];
+      if(!c){ var td0=el('td','na','—'); tr.appendChild(td0); return; }
+      var td = el('td','num');
+      var isBest = best[b.id]!==undefined && typeof c.value==='number' && c.value===best[b.id];
+      // the citation is a compact marker; the full source lives in the tooltip so a long
+      // source string can never bleed across neighbouring cells
+      var srcTxt = c.source_url
+        ? '<a href="'+esc(c.source_url)+'" target="_blank" rel="noopener" class="srcdot" title="'+esc(c.source)+'">↗</a>'
+        : '<span class="srcdot" title="'+esc(c.source)+'">†</span>';
+      td.innerHTML = '<span'+(isBest?' class="best"':'')+'>'+esc(fmtVal(c.value))+'</span>'+srcTxt;
+      td.title = m.name+' on '+b.name+' — '+c.metric+' = '+c.value+
+        '\nsource: '+c.source + (c.note? '\nnote: '+c.note : '');
+      tr.appendChild(td);
+    });
+    tb2.appendChild(tr);
+  });
+  t.appendChild(tb2);
+  wrap.appendChild(t);
+  return { node: wrap, nBench: benches.length, nModel: mods.length };
+}
+
+var tHost = document.getElementById('tablesBody');
+var anyTable = false;
+T.categories.forEach(function(c){
+  var built = buildTable(c.id);
+  if(!built) return;
+  anyTable = true;
+  var d = el('details','acc'); d.open = true;
+  var sum = el('summary');
+  sum.innerHTML = esc(c.name)+'<span class="sub">'+built.nModel+' models × '+built.nBench+' benchmarks</span>';
+  d.appendChild(sum);
+  var p = el('p'); p.style.cssText='color:var(--ink-2);font-size:.9rem;margin:9px 0 12px';
+  p.innerHTML = c.blurb;
+  d.appendChild(p);
+  d.appendChild(built.node);
+  tHost.appendChild(d);
+});
+if(!anyTable) tHost.appendChild(el('p','empty','No sourced results yet.'));
+
+// ---------- paper ----------
+document.getElementById('paperBody').innerHTML =
+  paras(E.paper_blurb,'lede') +
+  (E.paper_links && E.paper_links.length
+    ? '<div class="cols" style="margin-top:16px">'+E.paper_links.map(function(l){
+        return '<div class="card"><h3>'+link(l.url,l.title)+'</h3><p style="margin:0;color:var(--ink-2);font-size:.9rem">'+esc(l.note||'')+'</p></div>';
+      }).join('')+'</div>'
+    : '');
+
+// ---------- feed ----------
+(function(){
+  var host = document.getElementById('feedBody');
+  var L = D.latest||{};
+  var head = el('p','count-note');
+  head.textContent = L.fetched_at ? ('Last crawl: '+L.fetched_at.slice(0,16).replace('T',' ')+' UTC'+
+    (L.scanned!=null?(' · '+L.scanned+' new papers scanned'):'')) : 'No crawl has run yet.';
+  host.appendChild(head);
+  var items = (L.candidates||[]).slice(0,40);
+  if(!items.length){ host.appendChild(el('p','empty','Nothing flagged in the latest window.')); return; }
+  items.forEach(function(p){
+    var row = el('div','feedrow');
+    row.appendChild(el('div','d', (p.published||'').slice(0,10)));
+    var r = el('div');
+    r.innerHTML = link(p.url||('https://arxiv.org/abs/'+p.id), p.title) +
+      ' <span class="srcdot mono">'+esc(p.id||'')+'</span>' +
+      (p.status? ' <span class="tag n">'+esc(p.status)+'</span>':'');
+    row.appendChild(r);
+    host.appendChild(row);
+  });
+})();
+
+// ---------- contribute ----------
+(function(){
+  var mail = E.contact_email;
+  var subj = encodeURIComponent('[Atlas] correction / new benchmark');
+  document.getElementById('contributeBody').innerHTML =
+    paras(E.contribute,'lede') +
+    '<div class="callout"><p style="margin-bottom:.4em"><strong>Email:</strong> '+
+      '<a href="mailto:'+esc(mail)+'?subject='+subj+'"><span class="mono">'+esc(mail)+'</span></a>'+
+      ' — please put <span class="mono">[Atlas]</span> in the subject line.</p>'+
+      '<p style="margin:0;color:var(--ink-2);font-size:.9rem">'+(E.contribute_note||'')+'</p></div>';
+  var host = document.getElementById('changelogBody');
+  var ch = (D.changelog && D.changelog.entries) || [];
+  if(!ch.length){ host.appendChild(el('p','empty','No edits recorded yet.')); return; }
+  ch.slice(0,60).forEach(function(c){
+    var row = el('div','feedrow');
+    row.appendChild(el('div','d', c.date||''));
+    var r = el('div'); r.innerHTML = esc(c.change) + (c.source? ' <span class="tag n">'+esc(c.source)+'</span>':'');
+    row.appendChild(r);
+    host.appendChild(row);
+  });
+})();
+
+// ---------- footer ----------
+document.getElementById('disclosure').innerHTML = E.disclosure || '';
+document.getElementById('footerLine').innerHTML =
+  'Built ' + (D.built_at||'').slice(0,10) + ' · ' + S.benchmarks + ' benchmarks · ' +
+  S.result_cells + ' sourced result cells · ' + (E.footer_note||'');
+
+// deep link support (#b-<id>)
+if(location.hash.indexOf('#b-')===0){ openBenchmark(location.hash.slice(3)); }
+})();
+</script>
+</body>
+</html>
