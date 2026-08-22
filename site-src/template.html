@@ -121,15 +121,23 @@ input[type=search]:focus,select:focus{outline:2px solid var(--accent);outline-of
 .count-note{font-family:var(--mono);font-size:.78rem;color:var(--ink-3);margin-bottom:10px}
 
 /* benchmark list */
-.bench{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
-  padding:14px 17px;margin-bottom:9px}
-.bench-h{display:flex;flex-wrap:wrap;align-items:baseline;gap:9px;cursor:pointer}
-.bench-h .nm{font-weight:660;font-size:1.02rem}
-.bench-h .dt{font-family:var(--mono);font-size:.78rem;color:var(--ink-3);margin-left:auto}
-.bench-h .yr{font-family:var(--mono);font-size:.72rem;background:var(--panel-2);border:1px solid var(--line);
-  border-radius:5px;padding:1px 6px;color:var(--ink-2)}
-.bench-sum{color:var(--ink-2);margin:7px 0 0;font-size:.92rem}
-.bench-body{margin-top:11px;padding-top:11px;border-top:1px solid var(--line);display:none}
+/* compact one-line rows: 360 cards is a wall, 360 lines is a list */
+.bench{background:var(--panel);border:1px solid var(--line);border-radius:7px;
+  padding:7px 13px;margin-bottom:4px}
+.bench.open{padding-bottom:13px}
+.bench-h{display:flex;flex-wrap:nowrap;align-items:baseline;gap:9px;cursor:pointer;
+  overflow:hidden;white-space:nowrap}
+/* the name is the thing you scan for, so it gives up width last */
+.bench-h .nm{font-weight:640;font-size:.94rem;flex:0 1 auto;overflow:hidden;
+  text-overflow:ellipsis;min-width:min(26ch,52%)}
+.bench-h .cats{font-size:.78rem;color:var(--ink-3);flex:1 1 0;overflow:hidden;
+  text-overflow:ellipsis;min-width:0}
+.bench-h .hasres{font-family:var(--mono);font-size:.68rem;background:var(--accent-soft);
+  color:var(--accent);border-radius:99px;padding:0 6px;flex:none}
+.bench-h .dt{font-family:var(--mono);font-size:.74rem;color:var(--ink-3);margin-left:auto;flex:none}
+.bench-h .yr{font-family:var(--mono);font-size:.7rem;color:var(--ink-2);flex:none}
+.bench-body{margin-top:9px;padding-top:9px;border-top:1px solid var(--line);display:none;
+  white-space:normal}
 .bench.open .bench-body{display:block}
 .kv{display:grid;grid-template-columns:118px 1fr;gap:4px 12px;font-size:.87rem}
 .kv dt{color:var(--ink-3);font-family:var(--mono);font-size:.78rem}
@@ -153,6 +161,22 @@ td.num{font-family:var(--mono);text-align:right}
 td.na{color:var(--ink-3);text-align:center}
 .best{font-weight:700;color:var(--accent)}
 th .metric{display:block;font-weight:400;font-size:.7rem;color:var(--ink-3);font-family:var(--mono)}
+/* per-table width controls */
+.tctl{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:0 0 9px}
+.tctl-n + .tctl-n::before{content:"·";margin-right:8px;color:var(--line-2)}
+.tctl-b{background:var(--panel-2);border:1px solid var(--line-2);color:var(--ink-2);
+  border-radius:99px;padding:3px 11px;font-size:.78rem;font-family:var(--mono);cursor:pointer}
+.tctl-b:hover{border-color:var(--accent);color:var(--accent)}
+.tctl-n{font-family:var(--mono);font-size:.76rem;color:var(--ink-3)}
+/* metric picker lives in the column header when a benchmark reports several */
+select.metricsel{display:block;margin-top:3px;max-width:180px;background:transparent;
+  border:1px solid var(--line);border-radius:5px;padding:1px 3px;
+  font-family:var(--mono);font-size:.68rem;color:var(--ink-3);font-weight:400;cursor:pointer}
+select.metricsel:hover{border-color:var(--accent);color:var(--accent)}
+.morebtn{display:block;width:100%;margin-top:10px;background:var(--panel);
+  border:1px dashed var(--line-2);color:var(--ink-2);border-radius:var(--radius);
+  padding:11px;font-size:.88rem;font-family:inherit;cursor:pointer}
+.morebtn:hover{border-color:var(--accent);color:var(--accent)}
 .srcdot{font-size:.62rem;color:var(--ink-3);vertical-align:super;margin-left:3px;
   text-decoration:none;cursor:help}
 a.srcdot:hover{color:var(--accent);text-decoration:none}
@@ -175,11 +199,16 @@ footer a{color:var(--ink-2)}
 .disclosure{background:var(--panel-2);border:1px solid var(--line);border-radius:var(--radius);
   padding:14px 17px;font-size:.88rem;color:var(--ink-2)}
 .empty{color:var(--ink-3);font-style:italic;padding:22px 0}
+@media(max-width:820px){
+  .bench-h .cats{display:none}          /* categories are in the expanded record anyway */
+}
 @media(max-width:640px){
   .kv{grid-template-columns:1fr}
   .kv dt{margin-top:6px}
   .tl-month{grid-template-columns:1fr}
   nav.main{display:none}
+  .bench-h .dt{display:none}            /* keep name + date; the id is in the record */
+  .bench-h .nm{min-width:0}
 }
 </style>
 </head>
@@ -191,11 +220,11 @@ footer a{color:var(--ink-2)}
       <a href="#overview">Overview</a>
       <a href="#taxonomy">Taxonomy</a>
       <a href="#timeline">Timeline</a>
-      <a href="#benchmarks">Benchmarks</a>
       <a href="#tables">Model&nbsp;×&nbsp;Benchmark</a>
       <a href="#paper">Survey</a>
       <a href="#feed">New&nbsp;on&nbsp;arXiv</a>
       <a href="#contribute">Contribute</a>
+      <a href="#benchmarks">Full&nbsp;catalogue</a>
     </nav>
     <button class="theme-btn" id="themeBtn" title="Toggle theme">◐</button>
   </div>
@@ -240,29 +269,6 @@ footer a{color:var(--ink-2)}
   </div>
 </section>
 
-<section id="benchmarks">
-  <div class="wrap">
-    <div class="eyebrow">Catalogue</div>
-    <h2>Every benchmark</h2>
-    <div class="controls">
-      <input type="search" id="q" placeholder="Search name, description, task, language…">
-      <select id="sortBy">
-        <option value="date-desc">Newest first</option>
-        <option value="date-asc">Oldest first</option>
-        <option value="name">Name A→Z</option>
-      </select>
-      <select id="eraSel">
-        <option value="all">All years</option>
-        <option value="2025+">2025 onwards</option>
-        <option value="pre2025">Before 2025</option>
-      </select>
-    </div>
-    <div class="chiprow" id="catChips"></div>
-    <div class="count-note" id="benchCount"></div>
-    <div id="benchList"></div>
-  </div>
-</section>
-
 <section id="tables">
   <div class="wrap">
     <div class="eyebrow">Results</div>
@@ -297,6 +303,31 @@ footer a{color:var(--ink-2)}
     <div id="contributeBody"></div>
     <h3 style="margin-top:26px">Changelog</h3>
     <div id="changelogBody"></div>
+  </div>
+</section>
+
+<section id="benchmarks">
+  <div class="wrap">
+    <div class="eyebrow">Full catalogue</div>
+    <h2>Every benchmark</h2>
+    <p class="lede">All <span id="benchTotal"></span> entries, newest first. One line each — click to open the full record.</p>
+    <div class="controls">
+      <input type="search" id="q" placeholder="Search name, description, task, language…">
+      <select id="sortBy">
+        <option value="date-desc">Newest first</option>
+        <option value="date-asc">Oldest first</option>
+        <option value="name">Name A→Z</option>
+      </select>
+      <select id="eraSel">
+        <option value="all">All years</option>
+        <option value="2025+">2025 onwards</option>
+        <option value="pre2025">Before 2025</option>
+      </select>
+    </div>
+    <div class="chiprow" id="catChips"></div>
+    <div class="count-note" id="benchCount"></div>
+    <div id="benchList"></div>
+    <div id="benchMore"></div>
   </div>
 </section>
 </main>
@@ -503,11 +534,15 @@ function benchCard(b){
   var d = el('div','bench'); d.id = 'b-'+b.id;
   var cats = b.categories.map(function(c){
     return '<span class="tag">'+esc(catById[c]?catById[c].name:c)+'</span>'; }).join('');
+  var nRes0 = R.filter(function(r){ return r.benchmark===b.id; }).length;
   var head = '<div class="bench-h"><span class="nm">'+esc(b.name)+'</span>'+
-    (b.arxiv_date? '<span class="yr">'+esc(b.arxiv_date)+'</span>':'<span class="yr">date n/a</span>')+
-    '<span class="dt">'+(b.arxiv_id?('arXiv:'+esc(b.arxiv_id)):(b.venue?esc(b.venue):''))+'</span></div>'+
-    '<p class="bench-sum">'+esc(b.summary)+'</p>';
+    '<span class="cats">'+b.categories.slice(0,2).map(function(c){
+      return esc(catById[c]?catById[c].name:c); }).join(' · ')+'</span>'+
+    (nRes0? '<span class="hasres" title="'+nRes0+' sourced score'+(nRes0===1?'':'s')+' in the tables">'+nRes0+'</span>':'')+
+    (b.arxiv_date? '<span class="yr">'+esc(b.arxiv_date)+'</span>':'<span class="yr">n/a</span>')+
+    '<span class="dt">'+(b.arxiv_id?('arXiv:'+esc(b.arxiv_id)):(b.venue?esc(b.venue):''))+'</span></div>';
   var rows = [];
+  rows.push(['Summary', esc(b.summary)]);
   if(b.full_title) rows.push(['Paper', esc(b.full_title)]);
   rows.push(['Categories','<span class="taglist">'+cats+'</span>']);
   if(b.tasks&&b.tasks.length) rows.push(['Tasks','<span class="taglist">'+b.tasks.map(function(t){
@@ -533,8 +568,11 @@ function benchCard(b){
   d.querySelector('.bench-h').addEventListener('click', function(){ d.classList.toggle('open'); });
   return d;
 }
-function renderBench(){
+var PAGE = 80, shown = PAGE;
+function renderBench(reset){
+  if(reset !== false) shown = PAGE;
   var host = document.getElementById('benchList'); host.innerHTML='';
+  var more = document.getElementById('benchMore'); more.innerHTML='';
   var sort = document.getElementById('sortBy').value;
   var list = B.filter(benchMatches);
   list.sort(function(a,b){
@@ -543,22 +581,32 @@ function renderBench(){
     return sort==='date-asc' ? da.localeCompare(db) : db.localeCompare(da);
   });
   document.getElementById('benchCount').textContent =
-    list.length+' of '+B.length+' benchmarks shown';
+    list.length+' of '+B.length+' benchmarks match'+
+    (list.length>shown ? ' — showing the first '+shown : '');
   if(!list.length){ host.appendChild(el('p','empty','Nothing matches those filters.')); return; }
-  list.forEach(function(b){ host.appendChild(benchCard(b)); });
+  list.slice(0, shown).forEach(function(b){ host.appendChild(benchCard(b)); });
+  if(list.length > shown){
+    var btn = el('button','morebtn','Show '+Math.min(PAGE, list.length-shown)+
+      ' more  ('+(list.length-shown)+' remaining)');
+    btn.addEventListener('click', function(){ shown += PAGE; renderBench(false); });
+    more.appendChild(btn);
+  }
 }
 function openBenchmark(id){
   activeCats={}; document.getElementById('q').value=''; document.getElementById('eraSel').value='all';
-  renderChips(); renderBench();
+  renderChips();
+  shown = B.length;          // the target may sit past the paging cut-off
+  renderBench(false);
   var n = document.getElementById('b-'+id);
   if(n){ n.classList.add('open'); n.scrollIntoView({block:'center'});
     n.style.borderColor='var(--accent)';
     setTimeout(function(){ n.style.borderColor=''; }, 1600); }
 }
 ['q','sortBy','eraSel'].forEach(function(id){
-  document.getElementById(id).addEventListener('input', renderBench);
-  document.getElementById(id).addEventListener('change', renderBench);
+  document.getElementById(id).addEventListener('input', function(){ renderBench(true); });
+  document.getElementById(id).addEventListener('change', function(){ renderBench(true); });
 });
+document.getElementById('benchTotal').textContent = String(B.length);
 renderChips(); renderBench();
 
 // ---------- model x benchmark tables ----------
@@ -594,74 +642,126 @@ Object.keys(byBenchMetric).forEach(function(b){ metricCount[b] = Object.keys(byB
 
 function fmtVal(v){ return typeof v === 'number' ? String(v) : String(v); }
 
-function buildTable(catId){
-  // columns: densest first — the benchmarks most models have been run on are the ones
-  // a reader can actually compare across, so they earn the left-hand side
-  var benches = B.filter(function(b){
-    return b.categories.indexOf(catId)>=0 && cellIndex[b.id]; })
+// A 27-column matrix is not readable. Each table therefore opens narrow — the
+// best-covered benchmarks and the most-evaluated models — and widens on request.
+var COL0 = 6, ROW0 = 12;
+var tState = {};   // catId -> {cols, rows, metric:{benchId:metricName}}
+
+function benchesFor(catId){
+  return B.filter(function(b){
+    return b.categories.indexOf(catId)>=0 && byBenchMetric[b.id]; })
     .sort(function(a,b){
       var na = Object.keys(cellIndex[a.id]||{}).length,
           nb = Object.keys(cellIndex[b.id]||{}).length;
       if(nb!==na) return nb-na;
       return (b.arxiv_date||'').localeCompare(a.arxiv_date||'');
     });
-  if(!benches.length) return null;
+}
+function colFor(catId, bid){
+  var st = tState[catId];
+  var metric = (st.metric && st.metric[bid]) || primaryMetric[bid];
+  return { metric: metric, cells: (byBenchMetric[bid]||{})[metric] || {} };
+}
+
+function renderTable(catId, host){
+  var st = tState[catId];
+  var allB = benchesFor(catId);
+  var benches = st.cols === 'all' ? allB : allB.slice(0, st.cols);
+
+  // model order: coverage across the VISIBLE columns, so narrowing the table also
+  // re-ranks the rows to the models those columns actually have numbers for
+  var cols = benches.map(function(b){ return { b: b, c: colFor(catId, b.id) }; });
   var modelSet = {};
-  benches.forEach(function(b){ Object.keys(cellIndex[b.id]).forEach(function(m){ modelSet[m]=1; }); });
-  var mods = Object.keys(modelSet).map(function(id){ return modelById[id]; })
-    .filter(Boolean)
+  cols.forEach(function(x){ Object.keys(x.c.cells).forEach(function(m){ modelSet[m]=1; }); });
+  var allM = Object.keys(modelSet).map(function(id){ return modelById[id]; }).filter(Boolean)
     .sort(function(a,b){
-      var ca = benches.filter(function(x){ return cellIndex[x.id][a.id]; }).length;
-      var cb = benches.filter(function(x){ return cellIndex[x.id][b.id]; }).length;
+      var ca = cols.filter(function(x){ return x.c.cells[a.id]; }).length;
+      var cb = cols.filter(function(x){ return x.c.cells[b.id]; }).length;
       if(cb!==ca) return cb-ca;
       return a.name.localeCompare(b.name);
     });
+  var mods = st.rows === 'all' ? allM : allM.slice(0, st.rows);
+
+  host.innerHTML = '';
+
+  var bar = el('div','tctl');
+  function ctl(label, cur, total, key){
+    if(total <= (key==='cols'?COL0:ROW0)) { bar.appendChild(el('span','tctl-n', label+': '+total)); return; }
+    var b = el('button','tctl-b', cur==='all' ? label+': all '+total+' — show fewer'
+                                              : label+': '+cur+' of '+total+' — show all');
+    b.addEventListener('click', function(){
+      st[key] = (st[key]==='all') ? (key==='cols'?COL0:ROW0) : 'all';
+      renderTable(catId, host);
+    });
+    bar.appendChild(b);
+  }
+  ctl('Benchmarks', st.cols, allB.length, 'cols');
+  ctl('Models', st.rows, allM.length, 'rows');
+  var filled = 0;
+  cols.forEach(function(x){ mods.forEach(function(m){ if(x.c.cells[m.id]) filled++; }); });
+  bar.appendChild(el('span','tctl-n', filled+' of '+(cols.length*mods.length)+' cells filled'));
+  host.appendChild(bar);
+
   var wrap = el('div','tablewrap');
   var t = el('table');
   var thead = el('thead'), hr = el('tr');
   hr.appendChild(el('th',null,'Spoken LLM'));
-  benches.forEach(function(b){
-    var th = el('th');
-    var pm = primaryMetric[b.id] || 'score';
-    var extra = (metricCount[b.id]||1) - 1;
-    th.innerHTML = '<a href="#b-'+esc(b.id)+'">'+esc(b.name)+'</a>'+
-      '<span class="metric">'+esc(pm)+
-      (extra>0 ? ' <span title="'+extra+' other metric'+(extra===1?'':'s')+
-                  ' reported for this benchmark are not shown, to keep the column comparable">(+'+extra+')</span>' : '')+
-      '</span>';
-    th.addEventListener('click', function(){ openBenchmark(b.id); });
-    th.style.cursor='pointer';
+  cols.forEach(function(x){
+    var b = x.b, th = el('th');
+    var metrics = Object.keys(byBenchMetric[b.id]||{});
+    var link = el('a'); link.href = '#b-'+b.id; link.textContent = b.name;
+    link.addEventListener('click', function(e){ e.preventDefault(); openBenchmark(b.id); });
+    th.appendChild(link);
+    if(metrics.length > 1){
+      // several metrics reported and no single aggregate: let the reader choose which
+      // one the column shows, rather than picking for them and hiding the rest
+      var sel = el('select','metricsel');
+      metrics.sort().forEach(function(mn){
+        var o = el('option', null, mn.length>34 ? mn.slice(0,32)+'…' : mn);
+        o.value = mn; o.title = mn;
+        if(mn === x.c.metric) o.selected = true;
+        sel.appendChild(o);
+      });
+      sel.title = metrics.length+' metrics reported — pick which one this column shows';
+      sel.addEventListener('change', function(){
+        st.metric = st.metric || {}; st.metric[b.id] = sel.value;
+        renderTable(catId, host);
+      });
+      th.appendChild(sel);
+    } else {
+      th.appendChild(el('span','metric', x.c.metric || 'score'));
+    }
     hr.appendChild(th);
   });
   thead.appendChild(hr); t.appendChild(thead);
-  // best-per-column (only when the benchmark declares a direction)
+
   var best = {};
-  benches.forEach(function(b){
+  cols.forEach(function(x){
+    var b = x.b;
     if(!b.higher_is_better && b.higher_is_better!==false) return;
-    var vals = mods.map(function(m){ var c=cellIndex[b.id][m.id];
+    var vals = mods.map(function(m){ var c=x.c.cells[m.id];
       return c && typeof c.value==='number' ? c.value : null; }).filter(function(v){ return v!==null; });
     if(vals.length<2) return;
     best[b.id] = b.higher_is_better ? Math.max.apply(null,vals) : Math.min.apply(null,vals);
   });
+
   var tb2 = el('tbody');
   mods.forEach(function(m){
     var tr = el('tr');
     var th = el('th');
     th.innerHTML = esc(m.name) + (m.org? ' <span class="metric" style="display:inline;margin-left:5px">'+esc(m.org)+'</span>':'');
-    th.title = [m.name, m.org, m.type, m.date].filter(Boolean).join(' · ');
+    th.title = [m.name, m.org, m.type].filter(Boolean).join(' · ');
     tr.appendChild(th);
-    benches.forEach(function(b){
-      var c = cellIndex[b.id][m.id];
-      if(!c){ var td0=el('td','na','—'); tr.appendChild(td0); return; }
+    cols.forEach(function(x){
+      var c = x.c.cells[m.id];
+      if(!c){ tr.appendChild(el('td','na','—')); return; }
       var td = el('td','num');
-      var isBest = best[b.id]!==undefined && typeof c.value==='number' && c.value===best[b.id];
-      // the citation is a compact marker; the full source lives in the tooltip so a long
-      // source string can never bleed across neighbouring cells
+      var isBest = best[x.b.id]!==undefined && typeof c.value==='number' && c.value===best[x.b.id];
       var srcTxt = c.source_url
         ? '<a href="'+esc(c.source_url)+'" target="_blank" rel="noopener" class="srcdot" title="'+esc(c.source)+'">↗</a>'
         : '<span class="srcdot" title="'+esc(c.source)+'">†</span>';
       td.innerHTML = '<span'+(isBest?' class="best"':'')+'>'+esc(fmtVal(c.value))+'</span>'+srcTxt;
-      td.title = m.name+' on '+b.name+' — '+c.metric+' = '+c.value+
+      td.title = m.name+' on '+x.b.name+' — '+c.metric+' = '+c.value+
         '\nsource: '+c.source + (c.note? '\nnote: '+c.note : '');
       tr.appendChild(td);
     });
@@ -669,23 +769,26 @@ function buildTable(catId){
   });
   t.appendChild(tb2);
   wrap.appendChild(t);
-  return { node: wrap, nBench: benches.length, nModel: mods.length };
+  host.appendChild(wrap);
+  return { nBench: allB.length, nModel: allM.length };
 }
 
 var tHost = document.getElementById('tablesBody');
 var anyTable = false;
 T.categories.forEach(function(c){
-  var built = buildTable(c.id);
-  if(!built) return;
+  if(!benchesFor(c.id).length) return;
   anyTable = true;
+  tState[c.id] = { cols: COL0, rows: ROW0, metric: {} };
   var d = el('details','acc'); d.open = true;
   var sum = el('summary');
-  sum.innerHTML = esc(c.name)+'<span class="sub">'+built.nModel+' models × '+built.nBench+' benchmarks</span>';
   d.appendChild(sum);
   var p = el('p'); p.style.cssText='color:var(--ink-2);font-size:.9rem;margin:9px 0 12px';
   p.innerHTML = c.blurb;
   d.appendChild(p);
-  d.appendChild(built.node);
+  var holder = el('div');
+  d.appendChild(holder);
+  var info = renderTable(c.id, holder);
+  sum.innerHTML = esc(c.name)+'<span class="sub">'+info.nModel+' models × '+info.nBench+' benchmarks</span>';
   tHost.appendChild(d);
 });
 if(!anyTable) tHost.appendChild(el('p','empty','No sourced results yet.'));

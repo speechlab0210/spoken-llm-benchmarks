@@ -2,6 +2,11 @@
  "entries": [
   {
    "date": "2026-08-22",
+   "change": "Presentation: the full catalogue moved to the foot of the page and is now one line per benchmark, paged. Result tables open at 6 benchmarks by 12 models with controls to widen, and a column whose benchmark reports several metrics now carries a metric picker instead of silently showing one.",
+   "source": "reader feedback"
+  },
+  {
+   "date": "2026-08-22",
    "change": "Fixed a model-registry gap that silently dropped the pure speech-LM family (TWIST, LAST, pGSLM, dGSLM, GSLM, AudioLM, Spectron, SpiRit-LM Expressive) — the family that likelihood-based benchmarks actually evaluate. SALMon went from 1 model to 8; 152 result cells and 17 models recovered overall.",
    "source": "reader report"
   },
