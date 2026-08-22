@@ -1,0 +1,188 @@
+{
+ "schema": "airr/results_manifest/v1",
+ "paper": "paper/PAPER.md",
+ "regenerate": "python scripts/verify_paper_numbers.py --write-manifest",
+ "note": "Every number in the paper is recomputed from data/*.json by this script. The data files are themselves derived: data/benchmarks.json from the arXiv API (harvest_arxiv.py, harvest_oai.py, fetch_meta.py) plus agent triage, and data/results.json from tables copied out of the papers listed in each cell's source_url (fetch_paper.py, canon_models.py). No number was produced by running a model on a benchmark; every cell is a published claim by the cited paper.",
+ "inputs": {
+  "data/benchmarks.json": "catalogue, one entry per benchmark",
+  "data/results.json": "flat model x benchmark cells; every cell carries source + source_url",
+  "data/models.json": "model registry (row labels)",
+  "data/taxonomy.json": "19 categories in 6 groups"
+ },
+ "claims": [
+  {
+   "claim": "benchmarks_total",
+   "value": 360,
+   "recompute": "len(data/benchmarks.json.entries)"
+  },
+  {
+   "claim": "by_year",
+   "value": {
+    "2020": 1,
+    "2021": 2,
+    "2022": 1,
+    "2023": 11,
+    "2024": 32,
+    "2025": 147,
+    "2026": 166
+   },
+   "recompute": "Counter(arxiv_date[:4])"
+  },
+  {
+   "claim": "pre_2025",
+   "value": 47,
+   "recompute": "arxiv_date < 2025-01"
+  },
+  {
+   "claim": "since_2025",
+   "value": 313,
+   "recompute": "arxiv_date >= 2025-01"
+  },
+  {
+   "claim": "by_quarter_2024plus",
+   "value": {
+    "2024Q1": 2,
+    "2024Q2": 5,
+    "2024Q3": 10,
+    "2024Q4": 15,
+    "2025Q1": 20,
+    "2025Q2": 28,
+    "2025Q3": 46,
+    "2025Q4": 53,
+    "2026Q1": 68,
+    "2026Q2": 72,
+    "2026Q3": 26
+   },
+   "recompute": "quarter of arxiv_date"
+  },
+  {
+   "claim": "multi_category",
+   "value": 344,
+   "recompute": "len(categories) > 1"
+  },
+  {
+   "claim": "categories",
+   "value": 19,
+   "recompute": "len(data/taxonomy.json.categories)"
+  },
+  {
+   "claim": "category_slots_by_group",
+   "value": {
+    "2 · Can it hear?": 263,
+    "3 · Can it think?": 235,
+    "5 · Can it be trusted?": 155,
+    "4 · Can it hold a conversation?": 144,
+    "6 · Where does it work?": 102,
+    "1 · Is it a good model of speech?": 43
+   },
+   "recompute": "count of (benchmark, category) pairs per group"
+  },
+  {
+   "claim": "result_cells",
+   "value": 15220,
+   "recompute": "len(data/results.json.cells)"
+  },
+  {
+   "claim": "models",
+   "value": 197,
+   "recompute": "len(data/models.json.entries)"
+  },
+  {
+   "claim": "benchmarks_with_results",
+   "value": 341,
+   "recompute": "distinct cells[].benchmark"
+  },
+  {
+   "claim": "benchmarks_without_results",
+   "value": 19,
+   "recompute": "benchmarks minus the above"
+  },
+  {
+   "claim": "distinct_source_papers",
+   "value": 686,
+   "recompute": "distinct cells[].source_url"
+  },
+  {
+   "claim": "cells_every_one_sourced",
+   "value": true,
+   "recompute": "all cells carry a source"
+  },
+  {
+   "claim": "cells_from_third_party",
+   "value": 7565,
+   "recompute": "cells whose source_url is NOT the benchmark's own arXiv id"
+  },
+  {
+   "claim": "benchmarks_run_by_others",
+   "value": 96,
+   "recompute": "benchmarks with >=1 cell from a paper other than their own"
+  },
+  {
+   "claim": "benchmarks_only_self_reported",
+   "value": 245,
+   "recompute": "have results, but every cell is from their own paper"
+  },
+  {
+   "claim": "benchmarks_used_by_5plus_papers",
+   "value": 30,
+   "recompute": "third-party source count >= 5"
+  },
+  {
+   "claim": "most_reused_benchmarks",
+   "value": {
+    "MMAU": 94,
+    "VoiceBench": 45,
+    "MMSU": 42,
+    "WorldSense": 42,
+    "MMAR": 42,
+    "Daily-Omni": 38
+   },
+   "recompute": "top benchmarks by third-party paper count"
+  },
+  {
+   "claim": "top9_models",
+   "value": {
+    "Qwen2.5-Omni": 1327,
+    "Qwen2-Audio": 880,
+    "Qwen3-Omni": 678,
+    "Kimi-Audio": 546,
+    "Audio Flamingo 3": 544,
+    "SALMONN": 500,
+    "Gemini 2.5 Flash": 457,
+    "MiniCPM-o": 449,
+    "GPT-4o-Audio": 442
+   },
+   "recompute": "Counter(cells[].model).most_common(9)"
+  },
+  {
+   "claim": "top9_share_pct",
+   "value": 38,
+   "recompute": "share of cells held by the top 9 models"
+  },
+  {
+   "claim": "median_models_per_benchmark",
+   "value": 6,
+   "recompute": "median distinct models per benchmark with results"
+  },
+  {
+   "claim": "matrix_density_pct",
+   "value": 22.7,
+   "recompute": "cells / (benchmarks_with_results * models)"
+  },
+  {
+   "claim": "benchmarks_reporting_an_aggregate",
+   "value": 185,
+   "recompute": "benchmarks with >=1 aggregate-named metric"
+  },
+  {
+   "claim": "aggregate_pairs_with_4plus_components",
+   "value": 250,
+   "recompute": "(benchmark, model, source) groups with an aggregate + >=4 in-range components"
+  },
+  {
+   "claim": "median_component_spread",
+   "value": 28.7,
+   "recompute": "median of (max-min) over those components"
+  }
+ ]
+}
