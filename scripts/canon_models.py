@@ -34,6 +34,18 @@ DROP = [
     r"^f5-?tts", r"^fish-?speech", r"^sensevoice$",
     # column-header truncations too ambiguous to attribute
     r"^(sal|qwa|sifl|step-?fun|qwen-?a|bal|ds\d?)$",
+    # Out of scope by the site's own inclusion rule: audio-text retrieval encoders,
+    # representation encoders, VAD, and TTS systems are not general-purpose spoken LLMs.
+    r"clap", r"^wavlm", r"^ssast", r"^ast$", r"^hubert", r"^wav2vec", r"^whisperx",
+    r"vad\b", r"^maskgct", r"^e2[- ]?tts", r"^vall-?e", r"^xtts", r"^styletts",
+    r"^mmt$", r"^ml-?act$", r"^stela",
+    # ablation / hyper-parameter rows, not systems
+    r"^\(?\s*(α|alpha|β|beta|λ|lambda|k|n|temp)\s*=", r"^\(.*\)$",
+    r"topline", r"upper[- ]?bound", r"lower[- ]?bound",
+    # text-only LLM baselines quoted for reference; the site is about spoken models
+    r"^vicuna", r"^llama-?[23](\.\d)?-?\d*b?-?(chat|instruct|ins\.)",
+    r"^qwen-?\d*\.?\d*-?\d*b-?(chat|instruct)", r"^gemma-?\d*b?$", r"^qwen$", r"^gemma$",
+    r"^qwen\d?$", r"^qwen-?\d+(\.\d+)?-?\d*b$", r"^mistral", r"^chatgpt$", r"^asr-?chatgpt$",
 ]
 DROP_RE = [re.compile(p, re.I) for p in DROP]
 
@@ -42,17 +54,30 @@ REGISTRY = [
     # --- OpenAI
     ("gpt-realtime", "GPT-Realtime", "OpenAI", "e2e", [r"gpt-?realtime", r"gpt-?4o-?realtime"]),
     ("gpt-4o-mini-audio", "GPT-4o-mini-Audio", "OpenAI", "e2e", [r"gpt-?4o[- ]?mini[- ]?audio"]),
+    ("gpt-audio-mini", "GPT-Audio-mini", "OpenAI", "e2e", [r"gpt-?audio-?mini"]),
+    ("gpt-audio", "GPT-Audio", "OpenAI", "e2e", [r"gpt-?audio(-?\d[\.\d]*)?\b"]),
     ("gpt-4o-audio", "GPT-4o-Audio", "OpenAI", "e2e",
      [r"gpt-?4o[- ]?audio", r"gpt-?4o \(audio\)", r"gpt-?4o-?voice", r"gpt-?4o-?s2s"]),
     ("gpt-4o", "GPT-4o", "OpenAI", "text", [r"^gpt-?4o(-\d{4}-\d{2}-\d{2})?$", r"^gpt-?4o-?mini$"]),
-    # --- Google
-    ("gemini-3-pro", "Gemini 3 Pro", "Google", "e2e", [r"gemini[- ]?3[- ]?pro"]),
+    # --- Google. Gemini is written a dozen ways across papers ("Gemini Live 2.5",
+    # "Gemini-2.5", "Gemini Pro v1.5"), so match the version token wherever it lands.
+    ("gemini-live-3", "Gemini Live 3.x", "Google", "e2e", [r"gemini[- ]?live[- ]?3[\.\d]*"]),
+    ("gemini-live-2-5", "Gemini Live 2.5", "Google", "e2e", [r"gemini[- ]?live[- ]?2\.5"]),
+    ("gemini-live", "Gemini Live", "Google", "e2e",
+     [r"gemini[- ]?live\b", r"gemini[- ]?\d[\.\d]*[- ]?(pro|flash)?[- ]?live"]),
+    ("gemini-3-pro", "Gemini 3 Pro", "Google", "e2e", [r"gemini[- ]?3(\.\d)?[- ]?pro"]),
+    ("gemini-3-flash", "Gemini 3 Flash", "Google", "e2e", [r"gemini[- ]?3(\.\d)?[- ]?flash"]),
+    ("gemini-3", "Gemini 3", "Google", "e2e", [r"gemini[- ]?3(\.\d)?\b"]),
     ("gemini-2-5-pro", "Gemini 2.5 Pro", "Google", "e2e", [r"gemini[- ]?2\.5[- ]?pro"]),
     ("gemini-2-5-flash", "Gemini 2.5 Flash", "Google", "e2e", [r"gemini[- ]?2\.5[- ]?flash"]),
+    ("gemini-2-5", "Gemini 2.5", "Google", "e2e", [r"gemini[- ]?2\.5\b"]),
     ("gemini-2-flash", "Gemini 2.0 Flash", "Google", "e2e", [r"gemini[- ]?2\.?0?[- ]?flash"]),
-    ("gemini-1-5-pro", "Gemini 1.5 Pro", "Google", "e2e", [r"gemini[- ]?1\.5[- ]?pro"]),
+    ("gemini-2", "Gemini 2.0", "Google", "e2e", [r"gemini[- ]?2\.0\b"]),
+    ("gemini-1-5-pro", "Gemini 1.5 Pro", "Google", "e2e",
+     [r"gemini[- ]?1\.5[- ]?pro", r"gemini[- ]?pro[- ]?v?1\.5"]),
     ("gemini-1-5-flash", "Gemini 1.5 Flash", "Google", "e2e", [r"gemini[- ]?1\.5[- ]?flash"]),
-    ("gemma-3n", "Gemma-3n", "Google", "e2e", [r"gemma-?3n"]),
+    ("gemini-flash", "Gemini Flash (version unstated)", "Google", "e2e", [r"gemini[- ]?flash"]),
+    ("gemma-3n", "Gemma-3n", "Google", "e2e", [r"gemma-?3n", r"gemma-?e[24]b"]),
     # --- Alibaba / Qwen
     ("qwen3-omni", "Qwen3-Omni", "Alibaba", "e2e", [r"qwen-?3[.\-]?omni"]),
     ("qwen2-5-omni", "Qwen2.5-Omni", "Alibaba", "e2e",
@@ -73,7 +98,8 @@ REGISTRY = [
     ("mimo-audio", "MiMo-Audio", "Xiaomi", "e2e", [r"mi?mo-?audio"]),
     ("moss-audio", "MOSS-Audio", "Fudan", "e2e", [r"moss-?audio"]),
     # --- academic / open e2e
-    ("salmonn", "SALMONN", "Tsinghua/ByteDance", "e2e", [r"^salmonn(?!-omni)"]),
+    # "SALAMONN" is how the MMAU paper spells it; same model, and dropping it lost 5 cells
+    ("salmonn", "SALMONN", "Tsinghua/ByteDance", "e2e", [r"^sala?monn(?!-omni)"]),
     ("salmonn-omni", "SALMONN-omni", "Tsinghua/ByteDance", "e2e", [r"salmonn-?omni"]),
     ("video-salmonn", "video-SALMONN", "Tsinghua/ByteDance", "e2e", [r"video-?salmonn"]),
     ("llama-omni2", "LLaMA-Omni2", "ICT/CAS", "e2e", [r"llama-?omni-?2"]),
@@ -141,6 +167,29 @@ REGISTRY = [
     ("imagebind-llm", "ImageBind-LLM", "—", "e2e", [r"imagebind-?llm"]),
     ("bert-gslm", "BERT-GSLM", "—", "e2e", [r"bert-?gslm"]),
     ("mu-llama", "MU-LLaMA", "—", "e2e", [r"mu-?llama"]),
+    # --- second sweep: real spoken/omni models the first registry missed
+    ("j-moshi", "J-Moshi", "Nagoya", "e2e", [r"^j-?moshi"]),
+    ("llm-jp-moshi", "LLM-jp-Moshi", "LLM-jp", "e2e", [r"llm-?jp-?moshi"]),
+    ("megrez-omni", "Megrez-3B-Omni", "Infinigence", "e2e", [r"megrez-?(3b-?)?omni"]),
+    ("grok", "Grok", "xAI", "e2e", [r"^grok"]),
+    ("fun-audio-chat", "Fun-Audio-Chat", "Alibaba", "e2e", [r"fun-?audio-?chat"]),
+    ("doubao", "Doubao (realtime)", "ByteDance", "e2e", [r"^doubao"]),
+    ("ixc-omnilive", "IXC2.5-OmniLive", "Shanghai AI Lab", "e2e", [r"ixc-?2\.5-?omnilive"]),
+    ("anygpt", "AnyGPT", "Fudan", "e2e", [r"^anygpt"]),
+    ("mio-instruct", "MIO-Instruct", "—", "e2e", [r"^mio-?instruct"]),
+    ("unified-io-2", "UnifiedIO2", "AI2", "e2e", [r"unified-?io-?2"]),
+    ("macaw-llm", "Macaw-LLM", "Tencent", "e2e", [r"macaw-?llm"]),
+    ("reka-core", "Reka Core", "Reka", "e2e", [r"^reka-?core"]),
+    ("openmu", "OpenMU", "Sony", "e2e", [r"^openmu(?!-bench)"]),
+    ("r1-aqa", "R1-AQA", "Xiaomi", "e2e", [r"^r1-?aqa"]),
+    ("bat", "BAT", "CMU", "e2e", [r"^bat$"]),
+    ("sonic", "Sonic", "Cartesia", "e2e", [r"^sonic(\s?\d)?$"]),
+    ("desta", "DeSTA", "NTU", "e2e", [r"^desta(?!-?2)"]),
+    ("step-2-mini", "Step-2-mini", "StepFun", "e2e", [r"step-?2-?mini"]),
+    ("speechjudge", "SpeechJudge", "—", "e2e", [r"speechjudge"]),
+    ("stresslm", "StresSLM", "—", "e2e", [r"stresslm"]),
+    ("phi-4", "Phi-4", "Microsoft", "e2e", [r"^phi-?4$"]),
+    ("qwen3-5-omni", "Qwen3.5-Omni", "Alibaba", "e2e", [r"qwen-?3\.5-?omni"]),
     ("balsa", "BALSa", "NTU", "e2e", [r"^balsa"]),
     # named cascades: specific pairings are real systems and belong in the table; the
     # generic word "cascade" is still dropped, because it names no system in particular.
@@ -160,10 +209,37 @@ COMPILED = [(i, n, o, k, [re.compile(p, re.I) for p in ps]) for i, n, o, k, ps i
 
 def clean(raw):
     s = (raw or "").strip()
+    # 🔴 Papers use non-ASCII dashes that LOOK identical to a hyphen: U+2011 non-breaking
+    # hyphen, en/em dashes, minus sign. A pattern written with "-" silently fails to match
+    # them, so a model already in the registry vanishes from the table. Normalise first.
+    s = s.translate({0x2010: "-", 0x2011: "-", 0x2012: "-", 0x2013: "-", 0x2014: "-",
+                     0x2015: "-", 0x2212: "-", 0x00AD: "-", 0xFE63: "-", 0xFF0D: "-",
+                     0x00A0: " ", 0x2007: " ", 0x202F: " ", 0x2009: " "})
     s = re.sub(r"\s*\((?:text|speech|T\.|S\.)\)\s*$", "", s, flags=re.I)
+    s = re.sub(r"\s*\[\d+\]\s*$", "", s)            # trailing citation markers "[27]"
     s = re.sub(r"\s*[†*‡§¶^]+\s*$", "", s)
+    s = re.sub(r"\s*\((?:ours|proposed|our model)\)\s*$", "", s, flags=re.I)
     s = re.sub(r"\s+", " ", s)
     return s.strip()
+
+
+# Retrieval/encoder/VAD families whose name can sit anywhere in the string.
+DROP_ANYWHERE = [re.compile(p, re.I) for p in [
+    r"\bclap\b", r"\bvad\b", r"topline", r"upper[- ]?bound", r"\bhuman\b",
+]]
+
+# A cascade is "component + component". Each distinct pairing is a distinct system, so
+# instead of enumerating them (or worse, merging them under one "cascade" row, which
+# would invent comparisons nobody ran) generate a faithful id from the printed name.
+CASCADE_RE = re.compile(
+    r"^(?:(?:whisper|nova|parakeet|scribe|ink-?whisper|sensevoice|qwen\d?-?asr|asr|captions?)"
+    r"[\w.\- ]*)\s*(?:\+|-|\band\b)\s*\w", re.I)
+CASCADE_HINT = re.compile(r"\+|\bcap\.|\bcaption", re.I)
+
+
+def slug_id(s):
+    out = re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")
+    return re.sub(r"-{2,}", "-", out)[:48]
 
 
 def match(raw):
@@ -173,10 +249,17 @@ def match(raw):
     for p in DROP_RE:
         if p.match(s):
             return None
+    for p in DROP_ANYWHERE:
+        if p.search(s):
+            return None
     for mid, name, org, kind, pats in COMPILED:
         for p in pats:
             if p.search(s):
                 return mid, name, org, kind
+    # named cascade pipelines: keep them, each under its own id
+    if CASCADE_RE.match(s) and CASCADE_HINT.search(s) or re.match(
+            r"^(whisper|asr)[- ]?(llm|llama|gpt)", s, re.I):
+        return "cascade:" + slug_id(s), s + " (cascade)", "—", "cascade"
     return "UNMAPPED"
 
 

@@ -2,6 +2,11 @@
  "entries": [
   {
    "date": "2026-08-22",
+   "change": "Second registry audit after the SALMon report. Found a silent Unicode fault: papers using U+2011 non-breaking hyphens (SpeechR) produced model names that looked identical to matched ones but never matched, dropping every row. Also recovered Gemini variants, J-Moshi, Megrez-3B-Omni, Grok, Fun-Audio-Chat and others, gave each named cascade pipeline its own row instead of discarding it, and explicitly excluded CLAP/VAD/encoder/TTS rows that are out of scope. Dropped cells fell from 1,031 to 263; the tables gained 480 cells and 70 models.",
+   "source": "coverage audit"
+  },
+  {
+   "date": "2026-08-22",
    "change": "Presentation: the full catalogue moved to the foot of the page and is now one line per benchmark, paged. Result tables open at 6 benchmarks by 12 models with controls to widen, and a column whose benchmark reports several metrics now carries a metric picker instead of silently showing one.",
    "source": "reader feedback"
   },
