@@ -2,7 +2,7 @@
  "entries": [
   {
    "date": "2026-08-22",
-   "change": "Started adding results from papers that CITE each benchmark, not only the benchmark paper itself. 648 citing papers read so far; 255 of them actually ran one of the catalogued benchmarks. Tables: 7,858 to 13,272 cells over 189 models, with 338 of 360 benchmarks now carrying at least one sourced score. Surveys are deliberately skipped so numbers stay first-hand.",
+   "change": "Results now include papers that USE each benchmark, not only the paper that introduced it. All 1,619 citing papers on arXiv were read; 509 of them (31%) actually ran a catalogued benchmark, the rest only cite it in prose. Tables: 2,433 to 15,220 sourced cells over 197 models and 686 distinct source papers, with 341 of 360 benchmarks now carrying at least one score. Surveys were skipped so every number stays first-hand.",
    "source": "coverage"
   },
   {
