@@ -1,6 +1,11 @@
 {
  "entries": [
   {
+   "date": "2026-08-23",
+   "change": "Daily review: two flagged arXiv candidates read in full and both ruled out of scope. arXiv:2608.19936 probes benchmark optimization in ASR transcription, and arXiv:2608.20326 is a confidence-estimation method for music information retrieval; neither evaluates general-purpose spoken LLMs. Catalogue unchanged at 360 benchmarks.",
+   "source": "daily review"
+  },
+  {
    "date": "2026-08-22",
    "change": "Results now include papers that USE each benchmark, not only the paper that introduced it. All 1,619 citing papers on arXiv were read; 509 of them (31%) actually ran a catalogued benchmark, the rest only cite it in prose. Tables: 2,433 to 15,220 sourced cells over 197 models and 686 distinct source papers, with 341 of 360 benchmarks now carrying at least one score. Surveys were skipped so every number stays first-hand.",
    "source": "coverage"

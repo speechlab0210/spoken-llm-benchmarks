@@ -20,7 +20,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2608.19936",
       "score": 18,
-      "status": "new — under review"
+      "status": "reviewed — out of scope"
     },
     {
       "id": "2608.20326",
@@ -36,7 +36,7 @@
       "primary_category": "eess.AS",
       "url": "https://arxiv.org/abs/2608.20326",
       "score": 18,
-      "status": "new — under review"
+      "status": "reviewed — out of scope"
     }
   ],
   "warnings": []
