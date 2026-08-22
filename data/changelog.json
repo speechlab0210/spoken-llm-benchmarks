@@ -2,6 +2,11 @@
  "entries": [
   {
    "date": "2026-08-22",
+   "change": "Fixed a model-registry gap that silently dropped the pure speech-LM family (TWIST, LAST, pGSLM, dGSLM, GSLM, AudioLM, Spectron, SpiRit-LM Expressive) — the family that likelihood-based benchmarks actually evaluate. SALMon went from 1 model to 8; 152 result cells and 17 models recovered overall.",
+   "source": "reader report"
+  },
+  {
+   "date": "2026-08-22",
    "change": "Recall pass over an independently harvested arXiv pool (25,446 speech-relevant records via OAI-PMH) added 91 benchmarks that keyword-driven discovery had missed.",
    "source": "coverage audit"
   },

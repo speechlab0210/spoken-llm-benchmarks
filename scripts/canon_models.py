@@ -102,7 +102,25 @@ REGISTRY = [
     ("meralion", "MERaLiON", "A*STAR", "e2e", [r"meralion"]),
     ("desta2", "DeSTA2", "NTU", "e2e", [r"desta-?2"]),
     ("blsp", "BLSP", "Alibaba", "e2e", [r"^blsp"]),
-    ("spirit-lm", "SpiRit-LM", "Meta", "e2e", [r"spirit[- ]?lm"]),
+    # --- pure speech LMs (no instruction tuning). These are what likelihood-based
+    # benchmarks (SALMon, sWUGGY, sBLIMP, spoken StoryCloze) actually evaluate, and they
+    # are a different family from the instruction-following LALMs above. Size variants are
+    # kept DISTINCT here because these papers compare sizes deliberately.
+    ("spirit-lm-expressive", "SpiRit-LM Expressive", "Meta", "speech-lm",
+     [r"spirit[- ]?lm[- ]?(expr|expressive)"]),
+    ("spirit-lm", "SpiRit-LM", "Meta", "speech-lm", [r"spirit[- ]?lm"]),
+    ("twist-7b", "TWIST 7B", "HUJI", "speech-lm", [r"twist[- ]?7b"]),
+    ("twist-1-3b", "TWIST 1.3B", "HUJI", "speech-lm", [r"twist[- ]?1\.3b"]),
+    ("twist-350m", "TWIST 350M", "HUJI", "speech-lm", [r"twist[- ]?350m"]),
+    ("twist", "TWIST", "HUJI", "speech-lm", [r"^twist\b"]),
+    ("last-1-3b", "LAST 1.3B", "HUJI", "speech-lm", [r"^last[- ]?1\.3b"]),
+    ("last-350m", "LAST 350M", "HUJI", "speech-lm", [r"^last[- ]?350m"]),
+    ("pgslm", "pGSLM", "Meta", "speech-lm", [r"^p-?gslm"]),
+    ("dgslm", "dGSLM", "Meta", "speech-lm", [r"^d-?gslm"]),
+    ("gslm", "GSLM", "Meta", "speech-lm", [r"^gslm\b"]),
+    ("audiolm", "AudioLM", "Google", "speech-lm", [r"^audiolm"]),
+    ("spectron", "Spectron", "Google", "speech-lm", [r"^spectron"]),
+    ("moshi-base", "Moshi (base LM)", "Kyutai", "speech-lm", [r"moshi[- ]?(base|bert)"]),
     ("audio-reasoner", "Audio-Reasoner", "—", "e2e", [r"audio-?reasoner"]),
     ("sensedialog", "SenseDialog", "SenseTime", "e2e", [r"sensedialog"]),
     ("personaplex", "PersonaPlex", "—", "e2e", [r"personaplex"]),
@@ -122,6 +140,19 @@ REGISTRY = [
     ("pandagpt", "PandaGPT", "—", "e2e", [r"pandagpt"]),
     ("imagebind-llm", "ImageBind-LLM", "—", "e2e", [r"imagebind-?llm"]),
     ("bert-gslm", "BERT-GSLM", "—", "e2e", [r"bert-?gslm"]),
+    ("mu-llama", "MU-LLaMA", "—", "e2e", [r"mu-?llama"]),
+    ("balsa", "BALSa", "NTU", "e2e", [r"^balsa"]),
+    # named cascades: specific pairings are real systems and belong in the table; the
+    # generic word "cascade" is still dropped, because it names no system in particular.
+    ("whisper-gpt4o", "Whisper + GPT-4o (cascade)", "—", "cascade",
+     [r"whisper.{0,6}\+.{0,6}gpt-?4o", r"asr.{0,3}\+.{0,3}gpt-?4o"]),
+    ("whisper-gpt4", "Whisper + GPT-4 (cascade)", "—", "cascade", [r"whisper.{0,6}\+.{0,6}gpt-?4\b"]),
+    ("whisper-llama3", "Whisper + LLaMA-3 (cascade)", "—", "cascade", [r"whisper.{0,6}\+.{0,6}llama-?3"]),
+    # text-only LLM baselines: an upper bound on the text channel, useful as a reference row
+    ("qwen2-7b-instruct", "Qwen2-7B-Instruct (text)", "Alibaba", "text", [r"qwen-?2-?7b-?instruct"]),
+    ("qwen2-5-7b-instruct", "Qwen2.5-7B-Instruct (text)", "Alibaba", "text", [r"qwen-?2\.5-?7b-?instruct"]),
+    # bare "Gemini" with no version — last resort, after every specific Gemini entry above
+    ("gemini-unversioned", "Gemini (version unstated)", "Google", "e2e", [r"^gemini$"]),
 ]
 
 COMPILED = [(i, n, o, k, [re.compile(p, re.I) for p in ps]) for i, n, o, k, ps in REGISTRY]

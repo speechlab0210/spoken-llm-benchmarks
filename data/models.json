@@ -55,15 +55,15 @@
    "type": "e2e"
   },
   {
-   "id": "qwen-audio",
-   "name": "Qwen-Audio",
-   "org": "Alibaba",
-   "type": "e2e"
-  },
-  {
    "id": "gemini-2-5-flash",
    "name": "Gemini 2.5 Flash",
    "org": "Google",
+   "type": "e2e"
+  },
+  {
+   "id": "qwen-audio",
+   "name": "Qwen-Audio",
+   "org": "Alibaba",
    "type": "e2e"
   },
   {
@@ -145,15 +145,15 @@
    "type": "e2e"
   },
   {
-   "id": "step-audio",
-   "name": "Step-Audio",
-   "org": "StepFun",
-   "type": "e2e"
-  },
-  {
    "id": "vita",
    "name": "VITA",
    "org": "Tencent",
+   "type": "e2e"
+  },
+  {
+   "id": "step-audio",
+   "name": "Step-Audio",
+   "org": "StepFun",
    "type": "e2e"
   },
   {
@@ -193,6 +193,12 @@
    "type": "e2e"
   },
   {
+   "id": "mu-llama",
+   "name": "MU-LLaMA",
+   "org": "—",
+   "type": "e2e"
+  },
+  {
    "id": "audio-flamingo-2",
    "name": "Audio Flamingo 2",
    "org": "NVIDIA",
@@ -217,10 +223,22 @@
    "type": "e2e"
   },
   {
+   "id": "gemini-unversioned",
+   "name": "Gemini (version unstated)",
+   "org": "Google",
+   "type": "e2e"
+  },
+  {
    "id": "meralion",
    "name": "MERaLiON",
    "org": "A*STAR",
    "type": "e2e"
+  },
+  {
+   "id": "whisper-llama3",
+   "name": "Whisper + LLaMA-3 (cascade)",
+   "org": "—",
+   "type": "cascade"
   },
   {
    "id": "musilingo",
@@ -241,15 +259,9 @@
    "type": "e2e"
   },
   {
-   "id": "desta2",
-   "name": "DeSTA2",
-   "org": "NTU",
-   "type": "e2e"
-  },
-  {
-   "id": "llama-omni2",
-   "name": "LLaMA-Omni2",
-   "org": "ICT/CAS",
+   "id": "audio-flamingo",
+   "name": "Audio Flamingo",
+   "org": "NVIDIA",
    "type": "e2e"
   },
   {
@@ -259,21 +271,21 @@
    "type": "e2e"
   },
   {
-   "id": "audio-flamingo",
-   "name": "Audio Flamingo",
-   "org": "NVIDIA",
-   "type": "e2e"
-  },
-  {
    "id": "gemma-3n",
    "name": "Gemma-3n",
    "org": "Google",
    "type": "e2e"
   },
   {
-   "id": "gemini-3-pro",
-   "name": "Gemini 3 Pro",
-   "org": "Google",
+   "id": "llama-omni2",
+   "name": "LLaMA-Omni2",
+   "org": "ICT/CAS",
+   "type": "e2e"
+  },
+  {
+   "id": "desta2",
+   "name": "DeSTA2",
+   "org": "NTU",
    "type": "e2e"
   },
   {
@@ -283,9 +295,15 @@
    "type": "e2e"
   },
   {
-   "id": "mellow",
-   "name": "Mellow",
-   "org": "—",
+   "id": "gemini-3-pro",
+   "name": "Gemini 3 Pro",
+   "org": "Google",
+   "type": "e2e"
+  },
+  {
+   "id": "pengi",
+   "name": "Pengi",
+   "org": "Microsoft",
    "type": "e2e"
   },
   {
@@ -301,16 +319,22 @@
    "type": "e2e"
   },
   {
-   "id": "pengi",
-   "name": "Pengi",
-   "org": "Microsoft",
+   "id": "mellow",
+   "name": "Mellow",
+   "org": "—",
    "type": "e2e"
+  },
+  {
+   "id": "qwen2-7b-instruct",
+   "name": "Qwen2-7B-Instruct (text)",
+   "org": "Alibaba",
+   "type": "text"
   },
   {
    "id": "spirit-lm",
    "name": "SpiRit-LM",
    "org": "Meta",
-   "type": "e2e"
+   "type": "speech-lm"
   },
   {
    "id": "audio-reasoner",
@@ -331,9 +355,9 @@
    "type": "e2e"
   },
   {
-   "id": "gemini-1-5-flash",
-   "name": "Gemini 1.5 Flash",
-   "org": "Google",
+   "id": "imagebind-llm",
+   "name": "ImageBind-LLM",
+   "org": "—",
    "type": "e2e"
   },
   {
@@ -343,9 +367,9 @@
    "type": "e2e"
   },
   {
-   "id": "imagebind-llm",
-   "name": "ImageBind-LLM",
-   "org": "—",
+   "id": "gemini-1-5-flash",
+   "name": "Gemini 1.5 Flash",
+   "org": "Google",
    "type": "e2e"
   },
   {
@@ -367,10 +391,10 @@
    "type": "e2e"
   },
   {
-   "id": "opens2s",
-   "name": "OpenS2S",
+   "id": "whisper-gpt4o",
+   "name": "Whisper + GPT-4o (cascade)",
    "org": "—",
-   "type": "e2e"
+   "type": "cascade"
   },
   {
    "id": "vita-audio",
@@ -379,8 +403,38 @@
    "type": "e2e"
   },
   {
+   "id": "opens2s",
+   "name": "OpenS2S",
+   "org": "—",
+   "type": "e2e"
+  },
+  {
+   "id": "balsa",
+   "name": "BALSa",
+   "org": "NTU",
+   "type": "e2e"
+  },
+  {
+   "id": "qwen2-5-7b-instruct",
+   "name": "Qwen2.5-7B-Instruct (text)",
+   "org": "Alibaba",
+   "type": "text"
+  },
+  {
    "id": "moss-audio",
    "name": "MOSS-Audio",
+   "org": "Fudan",
+   "type": "e2e"
+  },
+  {
+   "id": "whisper-gpt4",
+   "name": "Whisper + GPT-4 (cascade)",
+   "org": "—",
+   "type": "cascade"
+  },
+  {
+   "id": "speechgpt2",
+   "name": "SpeechGPT-2",
    "org": "Fudan",
    "type": "e2e"
   },
@@ -391,16 +445,58 @@
    "type": "e2e"
   },
   {
-   "id": "speechgpt2",
-   "name": "SpeechGPT-2",
-   "org": "Fudan",
-   "type": "e2e"
+   "id": "dgslm",
+   "name": "dGSLM",
+   "org": "Meta",
+   "type": "speech-lm"
+  },
+  {
+   "id": "twist-7b",
+   "name": "TWIST 7B",
+   "org": "HUJI",
+   "type": "speech-lm"
+  },
+  {
+   "id": "pgslm",
+   "name": "pGSLM",
+   "org": "Meta",
+   "type": "speech-lm"
   },
   {
    "id": "video-salmonn",
    "name": "video-SALMONN",
    "org": "Tsinghua/ByteDance",
    "type": "e2e"
+  },
+  {
+   "id": "twist-1-3b",
+   "name": "TWIST 1.3B",
+   "org": "HUJI",
+   "type": "speech-lm"
+  },
+  {
+   "id": "spirit-lm-expressive",
+   "name": "SpiRit-LM Expressive",
+   "org": "Meta",
+   "type": "speech-lm"
+  },
+  {
+   "id": "last-1-3b",
+   "name": "LAST 1.3B",
+   "org": "HUJI",
+   "type": "speech-lm"
+  },
+  {
+   "id": "twist-350m",
+   "name": "TWIST 350M",
+   "org": "HUJI",
+   "type": "speech-lm"
+  },
+  {
+   "id": "last-350m",
+   "name": "LAST 350M",
+   "org": "HUJI",
+   "type": "speech-lm"
   },
   {
    "id": "ming-omni",
@@ -413,6 +509,12 @@
    "name": "Ola",
    "org": "Tsinghua",
    "type": "e2e"
+  },
+  {
+   "id": "twist",
+   "name": "TWIST",
+   "org": "HUJI",
+   "type": "speech-lm"
   }
  ]
 }

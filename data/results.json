@@ -572,6 +572,15 @@
   },
   {
    "benchmark": "full-duplex-bench",
+   "model": "dgslm",
+   "metric": "Pause Handling TOR (Candor)",
+   "value": 0.935,
+   "source": "Table III (models comparison, main results)",
+   "source_url": "https://arxiv.org/abs/2503.04721",
+   "note": "Lower TOR = better pause handling"
+  },
+  {
+   "benchmark": "full-duplex-bench",
    "model": "moshi",
    "metric": "Pause Handling TOR (Candor)",
    "value": 0.98,
@@ -583,6 +592,14 @@
    "model": "freeze-omni",
    "metric": "Pause Handling TOR (Candor)",
    "value": 0.481,
+   "source": "Table III (models comparison, main results)",
+   "source_url": "https://arxiv.org/abs/2503.04721"
+  },
+  {
+   "benchmark": "full-duplex-bench",
+   "model": "dgslm",
+   "metric": "Pause Handling TOR (Synthetic)",
+   "value": 0.934,
    "source": "Table III (models comparison, main results)",
    "source_url": "https://arxiv.org/abs/2503.04721"
   },
@@ -604,6 +621,15 @@
   },
   {
    "benchmark": "full-duplex-bench",
+   "model": "dgslm",
+   "metric": "Backchannel JSD (ICC)",
+   "value": 0.934,
+   "source": "Table III (models comparison, main results)",
+   "source_url": "https://arxiv.org/abs/2503.04721",
+   "note": "JSD vs human backchannel timing; lower = better"
+  },
+  {
+   "benchmark": "full-duplex-bench",
    "model": "moshi",
    "metric": "Backchannel JSD (ICC)",
    "value": 0.957,
@@ -615,6 +641,14 @@
    "model": "freeze-omni",
    "metric": "Backchannel JSD (ICC)",
    "value": 0.997,
+   "source": "Table III (models comparison, main results)",
+   "source_url": "https://arxiv.org/abs/2503.04721"
+  },
+  {
+   "benchmark": "full-duplex-bench",
+   "model": "dgslm",
+   "metric": "Smooth Turn Taking Latency (Candor, seconds)",
+   "value": 0.352,
    "source": "Table III (models comparison, main results)",
    "source_url": "https://arxiv.org/abs/2503.04721"
   },
@@ -633,6 +667,15 @@
    "value": 0.953,
    "source": "Table III (models comparison, main results)",
    "source_url": "https://arxiv.org/abs/2503.04721"
+  },
+  {
+   "benchmark": "full-duplex-bench",
+   "model": "dgslm",
+   "metric": "User Interruption GPT-4o Score (Synthetic)",
+   "value": 0.201,
+   "source": "Table III (models comparison, main results)",
+   "source_url": "https://arxiv.org/abs/2503.04721",
+   "note": "0-5 scale per Sec. III-B"
   },
   {
    "benchmark": "full-duplex-bench",
@@ -796,6 +839,14 @@
   },
   {
    "benchmark": "talking-turns",
+   "model": "whisper-gpt4o",
+   "metric": "Predict Turn Change (Acc.)",
+   "value": 62.2,
+   "source": "Table 4 (predicting future turn-taking events)",
+   "source_url": "https://arxiv.org/abs/2503.01174"
+  },
+  {
+   "benchmark": "talking-turns",
    "model": "salmonn",
    "metric": "Predict BackChannel (Acc.)",
    "value": 50,
@@ -815,6 +866,14 @@
    "model": "qwen-audio",
    "metric": "Predict BackChannel (Acc.)",
    "value": 52.1,
+   "source": "Table 4 (predicting future turn-taking events)",
+   "source_url": "https://arxiv.org/abs/2503.01174"
+  },
+  {
+   "benchmark": "talking-turns",
+   "model": "whisper-gpt4o",
+   "metric": "Predict BackChannel (Acc.)",
+   "value": 48.6,
    "source": "Table 4 (predicting future turn-taking events)",
    "source_url": "https://arxiv.org/abs/2503.01174"
   },
@@ -844,6 +903,14 @@
   },
   {
    "benchmark": "talking-turns",
+   "model": "whisper-gpt4o",
+   "metric": "Predict Interruption (Acc.)",
+   "value": 49.3,
+   "source": "Table 4 (predicting future turn-taking events)",
+   "source_url": "https://arxiv.org/abs/2503.01174"
+  },
+  {
+   "benchmark": "talking-turns",
    "model": "salmonn",
    "metric": "Predict Floor-Taking Interruption (Acc.)",
    "value": 50.4,
@@ -863,6 +930,14 @@
    "model": "qwen-audio",
    "metric": "Predict Floor-Taking Interruption (Acc.)",
    "value": 50.8,
+   "source": "Table 4 (predicting future turn-taking events)",
+   "source_url": "https://arxiv.org/abs/2503.01174"
+  },
+  {
+   "benchmark": "talking-turns",
+   "model": "whisper-gpt4o",
+   "metric": "Predict Floor-Taking Interruption (Acc.)",
+   "value": 50,
    "source": "Table 4 (predicting future turn-taking events)",
    "source_url": "https://arxiv.org/abs/2503.01174"
   },
@@ -892,6 +967,14 @@
   },
   {
    "benchmark": "talking-turns",
+   "model": "whisper-gpt4o",
+   "metric": "Understand Turn Change (Acc.)",
+   "value": 66.3,
+   "source": "Table 3 (understanding turn-taking events)",
+   "source_url": "https://arxiv.org/abs/2503.01174"
+  },
+  {
+   "benchmark": "talking-turns",
    "model": "salmonn",
    "metric": "Understand Backchannel (Acc.)",
    "value": 50.1,
@@ -916,6 +999,14 @@
   },
   {
    "benchmark": "talking-turns",
+   "model": "whisper-gpt4o",
+   "metric": "Understand Backchannel (Acc.)",
+   "value": 49.1,
+   "source": "Table 3 (understanding turn-taking events)",
+   "source_url": "https://arxiv.org/abs/2503.01174"
+  },
+  {
+   "benchmark": "talking-turns",
    "model": "salmonn",
    "metric": "Understand Interruption (Acc.)",
    "value": 51.3,
@@ -935,6 +1026,14 @@
    "model": "qwen-audio",
    "metric": "Understand Interruption (Acc.)",
    "value": 69.5,
+   "source": "Table 3 (understanding turn-taking events)",
+   "source_url": "https://arxiv.org/abs/2503.01174"
+  },
+  {
+   "benchmark": "talking-turns",
+   "model": "whisper-gpt4o",
+   "metric": "Understand Interruption (Acc.)",
+   "value": 52.9,
    "source": "Table 3 (understanding turn-taking events)",
    "source_url": "https://arxiv.org/abs/2503.01174"
   },
@@ -1411,6 +1510,39 @@
    "source_url": "https://arxiv.org/abs/2606.01016"
   },
   {
+   "benchmark": "polyspeech-100",
+   "model": "whisper-llama3",
+   "metric": "Overall (Acc. %)",
+   "value": 43.59,
+   "source": "Table 1 (main results: Summary of Performance on PolySpeech-100)",
+   "source_url": "https://arxiv.org/abs/2606.01016",
+   "note": "Row label prints only '+ Llama-3.1'; under the Whisper-v3 group."
+  },
+  {
+   "benchmark": "polyspeech-100",
+   "model": "whisper-llama3",
+   "metric": "High-Res (Acc. %)",
+   "value": 62.74,
+   "source": "Table 1 (main results: Summary of Performance on PolySpeech-100)",
+   "source_url": "https://arxiv.org/abs/2606.01016"
+  },
+  {
+   "benchmark": "polyspeech-100",
+   "model": "whisper-llama3",
+   "metric": "CN-Dialect (Acc. %)",
+   "value": 46.86,
+   "source": "Table 1 (main results: Summary of Performance on PolySpeech-100)",
+   "source_url": "https://arxiv.org/abs/2606.01016"
+  },
+  {
+   "benchmark": "polyspeech-100",
+   "model": "whisper-llama3",
+   "metric": "Low-Res (Acc. %)",
+   "value": 40.46,
+   "source": "Table 1 (main results: Summary of Performance on PolySpeech-100)",
+   "source_url": "https://arxiv.org/abs/2606.01016"
+  },
+  {
    "benchmark": "sagi",
    "model": "gpt-4o",
    "metric": "Auto-Speech Recognition (WER, L1)",
@@ -1438,7 +1570,7 @@
   {
    "benchmark": "sagi",
    "model": "gpt-4o",
-   "metric": "Language Identification (Acc. %, L1)",
+   "metric": "Language Identification (Acc. %, L1) [0-100 scale]",
    "value": 88.5,
    "source": "Table 3 (main results: Performance of Speech LLMs on SAGI Benchmark)",
    "source_url": "https://arxiv.org/abs/2410.13268",
@@ -1446,8 +1578,16 @@
   },
   {
    "benchmark": "sagi",
+   "model": "mu-llama",
+   "metric": "Language Identification (Acc. %, L1) [0-10 scale]",
+   "value": 8.48,
+   "source": "Table 3 (main results: Performance of Speech LLMs on SAGI Benchmark)",
+   "source_url": "https://arxiv.org/abs/2410.13268"
+  },
+  {
+   "benchmark": "sagi",
    "model": "salmonn",
-   "metric": "Language Identification (Acc. %, L1)",
+   "metric": "Language Identification (Acc. %, L1) [0-100 scale]",
    "value": 35.17,
    "source": "Table 3 (main results: Performance of Speech LLMs on SAGI Benchmark)",
    "source_url": "https://arxiv.org/abs/2410.13268"
@@ -1455,7 +1595,7 @@
   {
    "benchmark": "sagi",
    "model": "qwen2-audio",
-   "metric": "Language Identification (Acc. %, L1)",
+   "metric": "Language Identification (Acc. %, L1) [0-100 scale]",
    "value": 96.44,
    "source": "Table 3 (main results: Performance of Speech LLMs on SAGI Benchmark)",
    "source_url": "https://arxiv.org/abs/2410.13268"
@@ -1465,6 +1605,14 @@
    "model": "gpt-4o",
    "metric": "Pitch Perception (Acc. %, L2)",
    "value": 29.33,
+   "source": "Table 3 (main results: Performance of Speech LLMs on SAGI Benchmark)",
+   "source_url": "https://arxiv.org/abs/2410.13268"
+  },
+  {
+   "benchmark": "sagi",
+   "model": "mu-llama",
+   "metric": "Pitch Perception (Acc. %, L2)",
+   "value": 33.78,
    "source": "Table 3 (main results: Performance of Speech LLMs on SAGI Benchmark)",
    "source_url": "https://arxiv.org/abs/2410.13268"
   },
@@ -1502,6 +1650,14 @@
   },
   {
    "benchmark": "sagi",
+   "model": "mu-llama",
+   "metric": "Speech Emotion Recognition (Acc. %, L3) [0-10 scale]",
+   "value": 9.2,
+   "source": "Table 3 (main results: Performance of Speech LLMs on SAGI Benchmark)",
+   "source_url": "https://arxiv.org/abs/2410.13268"
+  },
+  {
+   "benchmark": "sagi",
    "model": "gama",
    "metric": "Speech Emotion Recognition (Acc. %, L3) [0-10 scale]",
    "value": 3.68,
@@ -1530,6 +1686,14 @@
    "model": "gpt-4o",
    "metric": "Cough Severity Assessment (Acc. %, L4)",
    "value": 24.12,
+   "source": "Table 3 (main results: Performance of Speech LLMs on SAGI Benchmark)",
+   "source_url": "https://arxiv.org/abs/2410.13268"
+  },
+  {
+   "benchmark": "sagi",
+   "model": "mu-llama",
+   "metric": "Cough Severity Assessment (Acc. %, L4)",
+   "value": 30.85,
    "source": "Table 3 (main results: Performance of Speech LLMs on SAGI Benchmark)",
    "source_url": "https://arxiv.org/abs/2410.13268"
   },
@@ -1730,6 +1894,15 @@
   },
   {
    "benchmark": "voxeval",
+   "model": "twist",
+   "metric": "Accuracy (%) — Alloy speaker",
+   "value": 4.8,
+   "source": "Table 5 (main results: accuracy across input audio conditions)",
+   "source_url": "https://arxiv.org/abs/2501.04962",
+   "note": "Models are columns in this table; Alloy is the reference/default speaker condition"
+  },
+  {
+   "benchmark": "voxeval",
    "model": "spirit-lm",
    "metric": "Accuracy (%) — Alloy speaker",
    "value": 20.84,
@@ -1766,6 +1939,15 @@
   },
   {
    "benchmark": "voxeval",
+   "model": "twist",
+   "metric": "Accuracy (%) — Pitch shift",
+   "value": 5.44,
+   "source": "Table 5 (main results: accuracy across input audio conditions)",
+   "source_url": "https://arxiv.org/abs/2501.04962",
+   "note": "Speaking-styles row 'Pitch'"
+  },
+  {
+   "benchmark": "voxeval",
    "model": "spirit-lm",
    "metric": "Accuracy (%) — Pitch shift",
    "value": 17.88,
@@ -1796,6 +1978,15 @@
    "model": "speechgpt",
    "metric": "Accuracy (%) — Noise",
    "value": 0,
+   "source": "Table 5 (main results: accuracy across input audio conditions)",
+   "source_url": "https://arxiv.org/abs/2501.04962",
+   "note": "Audio-qualities row 'Noise'"
+  },
+  {
+   "benchmark": "voxeval",
+   "model": "twist",
+   "metric": "Accuracy (%) — Noise",
+   "value": 3.68,
    "source": "Table 5 (main results: accuracy across input audio conditions)",
    "source_url": "https://arxiv.org/abs/2501.04962",
    "note": "Audio-qualities row 'Noise'"
@@ -1958,6 +2149,33 @@
    "model": "musilingo",
    "metric": "Music (%) [0-10 scale]",
    "value": 7.28,
+   "source": "Table 2 (main results across five model categories)",
+   "source_url": "https://arxiv.org/abs/2505.13032",
+   "note": "Size column: 7B"
+  },
+  {
+   "benchmark": "mmar",
+   "model": "mu-llama",
+   "metric": "Avg (%) [0-100 scale]",
+   "value": 13.9,
+   "source": "Table 2 (main results across five model categories)",
+   "source_url": "https://arxiv.org/abs/2505.13032",
+   "note": "Size column: 7B"
+  },
+  {
+   "benchmark": "mmar",
+   "model": "mu-llama",
+   "metric": "Speech (%) [0-100 scale]",
+   "value": 14.97,
+   "source": "Table 2 (main results across five model categories)",
+   "source_url": "https://arxiv.org/abs/2505.13032",
+   "note": "Size column: 7B"
+  },
+  {
+   "benchmark": "mmar",
+   "model": "mu-llama",
+   "metric": "Music (%) [0-100 scale]",
+   "value": 13.59,
    "source": "Table 2 (main results across five model categories)",
    "source_url": "https://arxiv.org/abs/2505.13032",
    "note": "Size column: 7B"
@@ -2602,6 +2820,14 @@
   },
   {
    "benchmark": "full-duplex-bench-v1-5",
+   "model": "gemini-unversioned",
+   "metric": "user_intr Respond",
+   "value": 0.33,
+   "source": "Table 2 (behavioral response distribution across overlap scenarios, main results)",
+   "source_url": "https://arxiv.org/abs/2507.23159"
+  },
+  {
+   "benchmark": "full-duplex-bench-v1-5",
    "model": "gpt-4o",
    "metric": "user_intr Respond",
    "value": 0.78,
@@ -2622,6 +2848,14 @@
    "model": "moshi",
    "metric": "user_backch Resume",
    "value": 0.06,
+   "source": "Table 2 (behavioral response distribution across overlap scenarios, main results)",
+   "source_url": "https://arxiv.org/abs/2507.23159"
+  },
+  {
+   "benchmark": "full-duplex-bench-v1-5",
+   "model": "gemini-unversioned",
+   "metric": "user_backch Resume",
+   "value": 0.93,
    "source": "Table 2 (behavioral response distribution across overlap scenarios, main results)",
    "source_url": "https://arxiv.org/abs/2507.23159"
   },
@@ -2652,6 +2886,14 @@
   },
   {
    "benchmark": "full-duplex-bench-v1-5",
+   "model": "gemini-unversioned",
+   "metric": "talking_other Resume",
+   "value": 0.99,
+   "source": "Table 2 (behavioral response distribution across overlap scenarios, main results)",
+   "source_url": "https://arxiv.org/abs/2507.23159"
+  },
+  {
+   "benchmark": "full-duplex-bench-v1-5",
    "model": "gpt-4o",
    "metric": "talking_other Resume",
    "value": 0.02,
@@ -2677,6 +2919,14 @@
   },
   {
    "benchmark": "full-duplex-bench-v1-5",
+   "model": "gemini-unversioned",
+   "metric": "bkg_speech Resume",
+   "value": 0.3,
+   "source": "Table 2 (behavioral response distribution across overlap scenarios, main results)",
+   "source_url": "https://arxiv.org/abs/2507.23159"
+  },
+  {
+   "benchmark": "full-duplex-bench-v1-5",
    "model": "gpt-4o",
    "metric": "bkg_speech Resume",
    "value": 0.04,
@@ -2697,6 +2947,14 @@
    "model": "moshi",
    "metric": "user_intr Stop (s)",
    "value": 1.16,
+   "source": "Table 2 (behavioral response distribution across overlap scenarios, main results)",
+   "source_url": "https://arxiv.org/abs/2507.23159"
+  },
+  {
+   "benchmark": "full-duplex-bench-v1-5",
+   "model": "gemini-unversioned",
+   "metric": "user_intr Stop (s)",
+   "value": 2.2,
    "source": "Table 2 (behavioral response distribution across overlap scenarios, main results)",
    "source_url": "https://arxiv.org/abs/2507.23159"
   },
@@ -5069,6 +5327,246 @@
   },
   {
    "benchmark": "salmon",
+   "model": "twist-350m",
+   "metric": "Sentiment (Acoustic Consistency)",
+   "value": 59,
+   "source": "Table II (comparison of leading SLMs on SALMon, main results)",
+   "source_url": "https://arxiv.org/abs/2409.07437"
+  },
+  {
+   "benchmark": "salmon",
+   "model": "twist-350m",
+   "metric": "Speaker (Acoustic Consistency)",
+   "value": 69.5,
+   "source": "Table II (comparison of leading SLMs on SALMon, main results)",
+   "source_url": "https://arxiv.org/abs/2409.07437"
+  },
+  {
+   "benchmark": "salmon",
+   "model": "twist-350m",
+   "metric": "Room (Acoustic Consistency)",
+   "value": 59,
+   "source": "Table II (comparison of leading SLMs on SALMon, main results)",
+   "source_url": "https://arxiv.org/abs/2409.07437"
+  },
+  {
+   "benchmark": "salmon",
+   "model": "twist-350m",
+   "metric": "Sentiment (Semantic-Acoustic Alignment)",
+   "value": 51.5,
+   "source": "Table II (comparison of leading SLMs on SALMon, main results)",
+   "source_url": "https://arxiv.org/abs/2409.07437"
+  },
+  {
+   "benchmark": "salmon",
+   "model": "twist-350m",
+   "metric": "Background (Semantic-Acoustic Alignment)",
+   "value": 56.5,
+   "source": "Table II (comparison of leading SLMs on SALMon, main results)",
+   "source_url": "https://arxiv.org/abs/2409.07437"
+  },
+  {
+   "benchmark": "salmon",
+   "model": "twist-1-3b",
+   "metric": "Sentiment (Acoustic Consistency)",
+   "value": 61.5,
+   "source": "Table II (comparison of leading SLMs on SALMon, main results)",
+   "source_url": "https://arxiv.org/abs/2409.07437"
+  },
+  {
+   "benchmark": "salmon",
+   "model": "twist-1-3b",
+   "metric": "Speaker (Acoustic Consistency)",
+   "value": 69,
+   "source": "Table II (comparison of leading SLMs on SALMon, main results)",
+   "source_url": "https://arxiv.org/abs/2409.07437"
+  },
+  {
+   "benchmark": "salmon",
+   "model": "twist-1-3b",
+   "metric": "Room (Acoustic Consistency)",
+   "value": 59,
+   "source": "Table II (comparison of leading SLMs on SALMon, main results)",
+   "source_url": "https://arxiv.org/abs/2409.07437"
+  },
+  {
+   "benchmark": "salmon",
+   "model": "twist-1-3b",
+   "metric": "Sentiment (Semantic-Acoustic Alignment)",
+   "value": 53,
+   "source": "Table II (comparison of leading SLMs on SALMon, main results)",
+   "source_url": "https://arxiv.org/abs/2409.07437"
+  },
+  {
+   "benchmark": "salmon",
+   "model": "twist-1-3b",
+   "metric": "Background (Semantic-Acoustic Alignment)",
+   "value": 56.5,
+   "source": "Table II (comparison of leading SLMs on SALMon, main results)",
+   "source_url": "https://arxiv.org/abs/2409.07437"
+  },
+  {
+   "benchmark": "salmon",
+   "model": "twist-7b",
+   "metric": "Sentiment (Acoustic Consistency)",
+   "value": 61.5,
+   "source": "Table II (comparison of leading SLMs on SALMon, main results)",
+   "source_url": "https://arxiv.org/abs/2409.07437"
+  },
+  {
+   "benchmark": "salmon",
+   "model": "twist-7b",
+   "metric": "Speaker (Acoustic Consistency)",
+   "value": 71,
+   "source": "Table II (comparison of leading SLMs on SALMon, main results)",
+   "source_url": "https://arxiv.org/abs/2409.07437"
+  },
+  {
+   "benchmark": "salmon",
+   "model": "twist-7b",
+   "metric": "Room (Acoustic Consistency)",
+   "value": 62,
+   "source": "Table II (comparison of leading SLMs on SALMon, main results)",
+   "source_url": "https://arxiv.org/abs/2409.07437"
+  },
+  {
+   "benchmark": "salmon",
+   "model": "twist-7b",
+   "metric": "Sentiment (Semantic-Acoustic Alignment)",
+   "value": 51.5,
+   "source": "Table II (comparison of leading SLMs on SALMon, main results)",
+   "source_url": "https://arxiv.org/abs/2409.07437"
+  },
+  {
+   "benchmark": "salmon",
+   "model": "twist-7b",
+   "metric": "Background (Semantic-Acoustic Alignment)",
+   "value": 54.5,
+   "source": "Table II (comparison of leading SLMs on SALMon, main results)",
+   "source_url": "https://arxiv.org/abs/2409.07437"
+  },
+  {
+   "benchmark": "salmon",
+   "model": "last-350m",
+   "metric": "Sentiment (Acoustic Consistency)",
+   "value": 64,
+   "source": "Table II (comparison of leading SLMs on SALMon, main results)",
+   "source_url": "https://arxiv.org/abs/2409.07437"
+  },
+  {
+   "benchmark": "salmon",
+   "model": "last-350m",
+   "metric": "Speaker (Acoustic Consistency)",
+   "value": 63,
+   "source": "Table II (comparison of leading SLMs on SALMon, main results)",
+   "source_url": "https://arxiv.org/abs/2409.07437"
+  },
+  {
+   "benchmark": "salmon",
+   "model": "last-350m",
+   "metric": "Room (Acoustic Consistency)",
+   "value": 61,
+   "source": "Table II (comparison of leading SLMs on SALMon, main results)",
+   "source_url": "https://arxiv.org/abs/2409.07437"
+  },
+  {
+   "benchmark": "salmon",
+   "model": "last-350m",
+   "metric": "Sentiment (Semantic-Acoustic Alignment)",
+   "value": 51.5,
+   "source": "Table II (comparison of leading SLMs on SALMon, main results)",
+   "source_url": "https://arxiv.org/abs/2409.07437"
+  },
+  {
+   "benchmark": "salmon",
+   "model": "last-350m",
+   "metric": "Background (Semantic-Acoustic Alignment)",
+   "value": 54.5,
+   "source": "Table II (comparison of leading SLMs on SALMon, main results)",
+   "source_url": "https://arxiv.org/abs/2409.07437"
+  },
+  {
+   "benchmark": "salmon",
+   "model": "last-1-3b",
+   "metric": "Sentiment (Acoustic Consistency)",
+   "value": 65,
+   "source": "Table II (comparison of leading SLMs on SALMon, main results)",
+   "source_url": "https://arxiv.org/abs/2409.07437"
+  },
+  {
+   "benchmark": "salmon",
+   "model": "last-1-3b",
+   "metric": "Speaker (Acoustic Consistency)",
+   "value": 64.5,
+   "source": "Table II (comparison of leading SLMs on SALMon, main results)",
+   "source_url": "https://arxiv.org/abs/2409.07437"
+  },
+  {
+   "benchmark": "salmon",
+   "model": "last-1-3b",
+   "metric": "Room (Acoustic Consistency)",
+   "value": 62.5,
+   "source": "Table II (comparison of leading SLMs on SALMon, main results)",
+   "source_url": "https://arxiv.org/abs/2409.07437"
+  },
+  {
+   "benchmark": "salmon",
+   "model": "last-1-3b",
+   "metric": "Sentiment (Semantic-Acoustic Alignment)",
+   "value": 53.5,
+   "source": "Table II (comparison of leading SLMs on SALMon, main results)",
+   "source_url": "https://arxiv.org/abs/2409.07437"
+  },
+  {
+   "benchmark": "salmon",
+   "model": "last-1-3b",
+   "metric": "Background (Semantic-Acoustic Alignment)",
+   "value": 53,
+   "source": "Table II (comparison of leading SLMs on SALMon, main results)",
+   "source_url": "https://arxiv.org/abs/2409.07437"
+  },
+  {
+   "benchmark": "salmon",
+   "model": "pgslm",
+   "metric": "Sentiment (Acoustic Consistency)",
+   "value": 40.5,
+   "source": "Table II (comparison of leading SLMs on SALMon, main results)",
+   "source_url": "https://arxiv.org/abs/2409.07437"
+  },
+  {
+   "benchmark": "salmon",
+   "model": "pgslm",
+   "metric": "Speaker (Acoustic Consistency)",
+   "value": 83,
+   "source": "Table II (comparison of leading SLMs on SALMon, main results)",
+   "source_url": "https://arxiv.org/abs/2409.07437"
+  },
+  {
+   "benchmark": "salmon",
+   "model": "pgslm",
+   "metric": "Room (Acoustic Consistency)",
+   "value": 53.5,
+   "source": "Table II (comparison of leading SLMs on SALMon, main results)",
+   "source_url": "https://arxiv.org/abs/2409.07437"
+  },
+  {
+   "benchmark": "salmon",
+   "model": "pgslm",
+   "metric": "Sentiment (Semantic-Acoustic Alignment)",
+   "value": 55.5,
+   "source": "Table II (comparison of leading SLMs on SALMon, main results)",
+   "source_url": "https://arxiv.org/abs/2409.07437"
+  },
+  {
+   "benchmark": "salmon",
+   "model": "pgslm",
+   "metric": "Background (Semantic-Acoustic Alignment)",
+   "value": 53.5,
+   "source": "Table II (comparison of leading SLMs on SALMon, main results)",
+   "source_url": "https://arxiv.org/abs/2409.07437"
+  },
+  {
+   "benchmark": "salmon",
    "model": "spirit-lm",
    "metric": "Sentiment (Acoustic Consistency)",
    "value": 54.5,
@@ -5104,6 +5602,46 @@
    "model": "spirit-lm",
    "metric": "Background (Semantic-Acoustic Alignment)",
    "value": 51.5,
+   "source": "Table II (comparison of leading SLMs on SALMon, main results)",
+   "source_url": "https://arxiv.org/abs/2409.07437"
+  },
+  {
+   "benchmark": "salmon",
+   "model": "spirit-lm-expressive",
+   "metric": "Sentiment (Acoustic Consistency)",
+   "value": 73.5,
+   "source": "Table II (comparison of leading SLMs on SALMon, main results)",
+   "source_url": "https://arxiv.org/abs/2409.07437"
+  },
+  {
+   "benchmark": "salmon",
+   "model": "spirit-lm-expressive",
+   "metric": "Speaker (Acoustic Consistency)",
+   "value": 81,
+   "source": "Table II (comparison of leading SLMs on SALMon, main results)",
+   "source_url": "https://arxiv.org/abs/2409.07437"
+  },
+  {
+   "benchmark": "salmon",
+   "model": "spirit-lm-expressive",
+   "metric": "Room (Acoustic Consistency)",
+   "value": 54.5,
+   "source": "Table II (comparison of leading SLMs on SALMon, main results)",
+   "source_url": "https://arxiv.org/abs/2409.07437"
+  },
+  {
+   "benchmark": "salmon",
+   "model": "spirit-lm-expressive",
+   "metric": "Sentiment (Semantic-Acoustic Alignment)",
+   "value": 52,
+   "source": "Table II (comparison of leading SLMs on SALMon, main results)",
+   "source_url": "https://arxiv.org/abs/2409.07437"
+  },
+  {
+   "benchmark": "salmon",
+   "model": "spirit-lm-expressive",
+   "metric": "Background (Semantic-Acoustic Alignment)",
+   "value": 59.5,
    "source": "Table II (comparison of leading SLMs on SALMon, main results)",
    "source_url": "https://arxiv.org/abs/2409.07437"
   },
@@ -5274,6 +5812,46 @@
    "source": "Table 3 (main results, LALMs and LLMs on MMAU)",
    "source_url": "https://arxiv.org/abs/2410.19168",
    "note": "printed as 05.88"
+  },
+  {
+   "benchmark": "mmau",
+   "model": "mu-llama",
+   "metric": "Avg (Test-mini)",
+   "value": 31.9,
+   "source": "Table 3 (main results, LALMs and LLMs on MMAU)",
+   "source_url": "https://arxiv.org/abs/2410.19168"
+  },
+  {
+   "benchmark": "mmau",
+   "model": "mu-llama",
+   "metric": "Avg (Test)",
+   "value": 30.66,
+   "source": "Table 3 (main results, LALMs and LLMs on MMAU)",
+   "source_url": "https://arxiv.org/abs/2410.19168"
+  },
+  {
+   "benchmark": "mmau",
+   "model": "mu-llama",
+   "metric": "Sound (Test-mini) [0-100 scale]",
+   "value": 40.84,
+   "source": "Table 3 (main results, LALMs and LLMs on MMAU)",
+   "source_url": "https://arxiv.org/abs/2410.19168"
+  },
+  {
+   "benchmark": "mmau",
+   "model": "mu-llama",
+   "metric": "Music (Test-mini)",
+   "value": 32.63,
+   "source": "Table 3 (main results, LALMs and LLMs on MMAU)",
+   "source_url": "https://arxiv.org/abs/2410.19168"
+  },
+  {
+   "benchmark": "mmau",
+   "model": "mu-llama",
+   "metric": "Speech (Test-mini)",
+   "value": 22.22,
+   "source": "Table 3 (main results, LALMs and LLMs on MMAU)",
+   "source_url": "https://arxiv.org/abs/2410.19168"
   },
   {
    "benchmark": "mmau",
@@ -5683,6 +6261,46 @@
    "source_url": "https://arxiv.org/abs/2411.05361"
   },
   {
+   "benchmark": "dynamic-superb-phase-2",
+   "model": "mu-llama",
+   "metric": "PR (PER)",
+   "value": 110.3,
+   "source": "Table 2 (evaluation on SUPERB core tasks; main model-comparison table)",
+   "source_url": "https://arxiv.org/abs/2411.05361"
+  },
+  {
+   "benchmark": "dynamic-superb-phase-2",
+   "model": "mu-llama",
+   "metric": "KS (Acc) [0-10 scale]",
+   "value": 4,
+   "source": "Table 2 (evaluation on SUPERB core tasks; main model-comparison table)",
+   "source_url": "https://arxiv.org/abs/2411.05361"
+  },
+  {
+   "benchmark": "dynamic-superb-phase-2",
+   "model": "mu-llama",
+   "metric": "IC (Acc)",
+   "value": 3.5,
+   "source": "Table 2 (evaluation on SUPERB core tasks; main model-comparison table)",
+   "source_url": "https://arxiv.org/abs/2411.05361"
+  },
+  {
+   "benchmark": "dynamic-superb-phase-2",
+   "model": "mu-llama",
+   "metric": "ER (Acc) [0-100 scale]",
+   "value": 12.9,
+   "source": "Table 2 (evaluation on SUPERB core tasks; main model-comparison table)",
+   "source_url": "https://arxiv.org/abs/2411.05361"
+  },
+  {
+   "benchmark": "dynamic-superb-phase-2",
+   "model": "mu-llama",
+   "metric": "ASR (WER) [0-100 scale]",
+   "value": 103.7,
+   "source": "Table 2 (evaluation on SUPERB core tasks; main model-comparison table)",
+   "source_url": "https://arxiv.org/abs/2411.05361"
+  },
+  {
    "benchmark": "uro-bench",
    "model": "glm-4-voice",
    "metric": "Basic Understanding (En)",
@@ -6019,6 +6637,81 @@
    "model": "gpt-4o-audio",
    "metric": "Pro Oral Conversation (En)",
    "value": 73.63,
+   "source": "Table 4 (main results, Task Accomplish Scores)",
+   "source_url": "https://arxiv.org/abs/2502.17810"
+  },
+  {
+   "benchmark": "uro-bench",
+   "model": "whisper-llama3",
+   "metric": "Basic Understanding (En)",
+   "value": 50.35,
+   "source": "Table 4 (main results, Task Accomplish Scores)",
+   "source_url": "https://arxiv.org/abs/2502.17810",
+   "note": "cascaded reference baseline; pro track not tested"
+  },
+  {
+   "benchmark": "uro-bench",
+   "model": "whisper-llama3",
+   "metric": "Basic Reasoning (En)",
+   "value": 75.14,
+   "source": "Table 4 (main results, Task Accomplish Scores)",
+   "source_url": "https://arxiv.org/abs/2502.17810"
+  },
+  {
+   "benchmark": "uro-bench",
+   "model": "whisper-llama3",
+   "metric": "Basic Oral Conversation (En)",
+   "value": 88.72,
+   "source": "Table 4 (main results, Task Accomplish Scores)",
+   "source_url": "https://arxiv.org/abs/2502.17810"
+  },
+  {
+   "benchmark": "uro-bench",
+   "model": "qwen2-7b-instruct",
+   "metric": "Basic Understanding (En)",
+   "value": 64.99,
+   "source": "Table 4 (main results, Task Accomplish Scores)",
+   "source_url": "https://arxiv.org/abs/2502.17810",
+   "note": "cascaded reference baseline; pro track not tested"
+  },
+  {
+   "benchmark": "uro-bench",
+   "model": "qwen2-7b-instruct",
+   "metric": "Basic Reasoning (En)",
+   "value": 77.94,
+   "source": "Table 4 (main results, Task Accomplish Scores)",
+   "source_url": "https://arxiv.org/abs/2502.17810"
+  },
+  {
+   "benchmark": "uro-bench",
+   "model": "qwen2-7b-instruct",
+   "metric": "Basic Oral Conversation (En)",
+   "value": 91.52,
+   "source": "Table 4 (main results, Task Accomplish Scores)",
+   "source_url": "https://arxiv.org/abs/2502.17810"
+  },
+  {
+   "benchmark": "uro-bench",
+   "model": "whisper-gpt4o",
+   "metric": "Basic Understanding (En)",
+   "value": 92.62,
+   "source": "Table 4 (main results, Task Accomplish Scores)",
+   "source_url": "https://arxiv.org/abs/2502.17810",
+   "note": "cascaded upper-bound reference; pro track not tested"
+  },
+  {
+   "benchmark": "uro-bench",
+   "model": "whisper-gpt4o",
+   "metric": "Basic Reasoning (En)",
+   "value": 82.91,
+   "source": "Table 4 (main results, Task Accomplish Scores)",
+   "source_url": "https://arxiv.org/abs/2502.17810"
+  },
+  {
+   "benchmark": "uro-bench",
+   "model": "whisper-gpt4o",
+   "metric": "Basic Oral Conversation (En)",
+   "value": 94.6,
    "source": "Table 4 (main results, Task Accomplish Scores)",
    "source_url": "https://arxiv.org/abs/2502.17810"
   },
@@ -6778,6 +7471,24 @@
    "source_url": "https://arxiv.org/abs/2402.07729"
   },
   {
+   "benchmark": "air-bench",
+   "model": "whisper-gpt4",
+   "metric": "Foundation Speech (Acc., %)",
+   "value": 53.6,
+   "source": "Table 3 (main results, comparison of LALMs on AIR-Bench)",
+   "source_url": "https://arxiv.org/abs/2402.07729",
+   "note": "printed as 53.6%; sound/music/average cells printed as '/' (not evaluated)"
+  },
+  {
+   "benchmark": "air-bench",
+   "model": "whisper-gpt4",
+   "metric": "Chat Speech (GPT-4 score, 1-10)",
+   "value": 7.54,
+   "source": "Table 3 (main results, comparison of LALMs on AIR-Bench)",
+   "source_url": "https://arxiv.org/abs/2402.07729",
+   "note": "cascaded reference baseline; other chat cells printed as '/'"
+  },
+  {
    "benchmark": "sd-eval",
    "model": "salmonn",
    "metric": "test-emo / Emotion (GPT-4o LLM judge)",
@@ -7054,8 +7765,17 @@
   },
   {
    "benchmark": "audiobench",
+   "model": "whisper-llama3",
+   "metric": "LibriSpeech-Clean (WER) [0-100 scale]",
+   "value": 55.58,
+   "source": "Table 2 (main results of four AudioLLMs and one cascade model)",
+   "source_url": "https://arxiv.org/abs/2406.16020",
+   "note": "Table 2 is flattened in the source text with NO cell delimiters; values recovered by the only segmentation valid under the table's uniform 2-decimal format. Column order taken from the flattened header: Whisper+Llama3, SALMONN, Qwen-Audio-Chat, WavLLM, Qwen2-Audio-Instruct."
+  },
+  {
+   "benchmark": "audiobench",
    "model": "salmonn",
-   "metric": "LibriSpeech-Clean (WER)",
+   "metric": "LibriSpeech-Clean (WER) [0-10 scale]",
    "value": 2.25,
    "source": "Table 2 (main results of four AudioLLMs and one cascade model)",
    "source_url": "https://arxiv.org/abs/2406.16020",
@@ -7064,7 +7784,7 @@
   {
    "benchmark": "audiobench",
    "model": "qwen-audio",
-   "metric": "LibriSpeech-Clean (WER)",
+   "metric": "LibriSpeech-Clean (WER) [0-10 scale]",
    "value": 2.1,
    "source": "Table 2 (main results of four AudioLLMs and one cascade model)",
    "source_url": "https://arxiv.org/abs/2406.16020",
@@ -7073,7 +7793,7 @@
   {
    "benchmark": "audiobench",
    "model": "wavllm",
-   "metric": "LibriSpeech-Clean (WER)",
+   "metric": "LibriSpeech-Clean (WER) [0-10 scale]",
    "value": 3.2,
    "source": "Table 2 (main results of four AudioLLMs and one cascade model)",
    "source_url": "https://arxiv.org/abs/2406.16020",
@@ -7082,8 +7802,17 @@
   {
    "benchmark": "audiobench",
    "model": "qwen2-audio",
-   "metric": "LibriSpeech-Clean (WER)",
+   "metric": "LibriSpeech-Clean (WER) [0-10 scale]",
    "value": 1.83,
+   "source": "Table 2 (main results of four AudioLLMs and one cascade model)",
+   "source_url": "https://arxiv.org/abs/2406.16020",
+   "note": "delimiter-free flattened table; unique segmentation"
+  },
+  {
+   "benchmark": "audiobench",
+   "model": "whisper-llama3",
+   "metric": "CN-College-Listen (SQA, model-as-judge, 0-100)",
+   "value": 50.51,
    "source": "Table 2 (main results of four AudioLLMs and one cascade model)",
    "source_url": "https://arxiv.org/abs/2406.16020",
    "note": "delimiter-free flattened table; unique segmentation"
@@ -7126,6 +7855,15 @@
   },
   {
    "benchmark": "audiobench",
+   "model": "whisper-llama3",
+   "metric": "Clotho-AQA (model-as-judge, 0-100)",
+   "value": 51.18,
+   "source": "Table 2 (main results of four AudioLLMs and one cascade model)",
+   "source_url": "https://arxiv.org/abs/2406.16020",
+   "note": "delimiter-free flattened table; unique segmentation"
+  },
+  {
+   "benchmark": "audiobench",
    "model": "salmonn",
    "metric": "Clotho-AQA (model-as-judge, 0-100)",
    "value": 58.2,
@@ -7162,6 +7900,15 @@
   },
   {
    "benchmark": "audiobench",
+   "model": "whisper-llama3",
+   "metric": "IEMOCAP-Emotion (model-as-judge, 0-100)",
+   "value": 21.56,
+   "source": "Table 2 (main results of four AudioLLMs and one cascade model)",
+   "source_url": "https://arxiv.org/abs/2406.16020",
+   "note": "delimiter-free flattened table; unique segmentation"
+  },
+  {
+   "benchmark": "audiobench",
    "model": "salmonn",
    "metric": "IEMOCAP-Emotion (model-as-judge, 0-100)",
    "value": 27.34,
@@ -7192,6 +7939,15 @@
    "model": "qwen2-audio",
    "metric": "IEMOCAP-Emotion (model-as-judge, 0-100)",
    "value": 34.43,
+   "source": "Table 2 (main results of four AudioLLMs and one cascade model)",
+   "source_url": "https://arxiv.org/abs/2406.16020",
+   "note": "delimiter-free flattened table; unique segmentation"
+  },
+  {
+   "benchmark": "audiobench",
+   "model": "whisper-llama3",
+   "metric": "VoxCeleb1-Accent (model-as-judge, 0-100)",
+   "value": 28.06,
    "source": "Table 2 (main results of four AudioLLMs and one cascade model)",
    "source_url": "https://arxiv.org/abs/2406.16020",
    "note": "delimiter-free flattened table; unique segmentation"
@@ -7397,6 +8153,38 @@
    "source": "Table 3 (overall benchmarking results)",
    "source_url": "https://arxiv.org/abs/2408.01337",
    "note": "instruction following rate"
+  },
+  {
+   "benchmark": "muchomusic",
+   "model": "mu-llama",
+   "metric": "Accuracy (All)",
+   "value": 32.4,
+   "source": "Table 3 (overall benchmarking results)",
+   "source_url": "https://arxiv.org/abs/2408.01337"
+  },
+  {
+   "benchmark": "muchomusic",
+   "model": "mu-llama",
+   "metric": "Accuracy (Knowledge)",
+   "value": 32.3,
+   "source": "Table 3 (overall benchmarking results)",
+   "source_url": "https://arxiv.org/abs/2408.01337"
+  },
+  {
+   "benchmark": "muchomusic",
+   "model": "mu-llama",
+   "metric": "Accuracy (Reasoning)",
+   "value": 31.3,
+   "source": "Table 3 (overall benchmarking results)",
+   "source_url": "https://arxiv.org/abs/2408.01337"
+  },
+  {
+   "benchmark": "muchomusic",
+   "model": "mu-llama",
+   "metric": "IFR (All)",
+   "value": 79.4,
+   "source": "Table 3 (overall benchmarking results)",
+   "source_url": "https://arxiv.org/abs/2408.01337"
   },
   {
    "benchmark": "muchomusic",
@@ -7901,6 +8689,92 @@
   },
   {
    "benchmark": "adu-bench",
+   "model": "whisper-llama3",
+   "metric": "Average",
+   "value": 6.5,
+   "source": "Table 2 (main results: average GPT-4-evaluator scores, 16 LALMs)",
+   "source_url": "https://arxiv.org/abs/2412.05167",
+   "note": "Size column says 8B — first of two Whisper+LLaMA-3 rows. Human Evaluation column = 6.85"
+  },
+  {
+   "benchmark": "adu-bench",
+   "model": "whisper-llama3",
+   "metric": "General",
+   "value": 6.94,
+   "source": "Table 2 (main results: average GPT-4-evaluator scores, 16 LALMs)",
+   "source_url": "https://arxiv.org/abs/2412.05167",
+   "note": "Size 8B row"
+  },
+  {
+   "benchmark": "adu-bench",
+   "model": "whisper-llama3",
+   "metric": "Skill",
+   "value": 7.88,
+   "source": "Table 2 (main results: average GPT-4-evaluator scores, 16 LALMs)",
+   "source_url": "https://arxiv.org/abs/2412.05167",
+   "note": "Size 8B row"
+  },
+  {
+   "benchmark": "adu-bench",
+   "model": "whisper-llama3",
+   "metric": "Multilingual",
+   "value": 6.27,
+   "source": "Table 2 (main results: average GPT-4-evaluator scores, 16 LALMs)",
+   "source_url": "https://arxiv.org/abs/2412.05167",
+   "note": "Size 8B row"
+  },
+  {
+   "benchmark": "adu-bench",
+   "model": "whisper-llama3",
+   "metric": "Ambiguity",
+   "value": 4.92,
+   "source": "Table 2 (main results: average GPT-4-evaluator scores, 16 LALMs)",
+   "source_url": "https://arxiv.org/abs/2412.05167",
+   "note": "Size 8B row"
+  },
+  {
+   "benchmark": "adu-bench",
+   "model": "whisper-gpt4",
+   "metric": "Average",
+   "value": 7.66,
+   "source": "Table 2 (main results: average GPT-4-evaluator scores, 16 LALMs)",
+   "source_url": "https://arxiv.org/abs/2412.05167",
+   "note": "Size column '-'. Human Evaluation column = 8.02"
+  },
+  {
+   "benchmark": "adu-bench",
+   "model": "whisper-gpt4",
+   "metric": "General",
+   "value": 8.42,
+   "source": "Table 2 (main results: average GPT-4-evaluator scores, 16 LALMs)",
+   "source_url": "https://arxiv.org/abs/2412.05167"
+  },
+  {
+   "benchmark": "adu-bench",
+   "model": "whisper-gpt4",
+   "metric": "Skill",
+   "value": 8.62,
+   "source": "Table 2 (main results: average GPT-4-evaluator scores, 16 LALMs)",
+   "source_url": "https://arxiv.org/abs/2412.05167"
+  },
+  {
+   "benchmark": "adu-bench",
+   "model": "whisper-gpt4",
+   "metric": "Multilingual",
+   "value": 8.07,
+   "source": "Table 2 (main results: average GPT-4-evaluator scores, 16 LALMs)",
+   "source_url": "https://arxiv.org/abs/2412.05167"
+  },
+  {
+   "benchmark": "adu-bench",
+   "model": "whisper-gpt4",
+   "metric": "Ambiguity",
+   "value": 5.54,
+   "source": "Table 2 (main results: average GPT-4-evaluator scores, 16 LALMs)",
+   "source_url": "https://arxiv.org/abs/2412.05167"
+  },
+  {
+   "benchmark": "adu-bench",
    "model": "gpt-4o",
    "metric": "Average",
    "value": 8.16,
@@ -8101,6 +8975,78 @@
    "source": "Table 2 (main results: accuracies of the baselines on SAKURA)",
    "source_url": "https://arxiv.org/abs/2505.13237",
    "note": "Printed as 46.6 +/- 4.4"
+  },
+  {
+   "benchmark": "speech-ifeval",
+   "model": "qwen2-7b-instruct",
+   "metric": "IFrate (%)",
+   "value": 83.11,
+   "source": "Table 2 (main results: instruction-following rate of SLMs and reference systems)",
+   "source_url": "https://arxiv.org/abs/2505.19037",
+   "note": "Reference system"
+  },
+  {
+   "benchmark": "speech-ifeval",
+   "model": "qwen2-7b-instruct",
+   "metric": "Closed-ended questions (ALL)",
+   "value": 95.82,
+   "source": "Table 2 (main results: instruction-following rate of SLMs and reference systems)",
+   "source_url": "https://arxiv.org/abs/2505.19037",
+   "note": "Reference system"
+  },
+  {
+   "benchmark": "speech-ifeval",
+   "model": "qwen2-7b-instruct",
+   "metric": "Creative writing (ALL)",
+   "value": 86,
+   "source": "Table 2 (main results: instruction-following rate of SLMs and reference systems)",
+   "source_url": "https://arxiv.org/abs/2505.19037",
+   "note": "Reference system"
+  },
+  {
+   "benchmark": "speech-ifeval",
+   "model": "qwen2-7b-instruct",
+   "metric": "CoT (ALL)",
+   "value": 67.5,
+   "source": "Table 2 (main results: instruction-following rate of SLMs and reference systems)",
+   "source_url": "https://arxiv.org/abs/2505.19037",
+   "note": "Reference system"
+  },
+  {
+   "benchmark": "speech-ifeval",
+   "model": "qwen2-5-7b-instruct",
+   "metric": "IFrate (%)",
+   "value": 88.49,
+   "source": "Table 2 (main results: instruction-following rate of SLMs and reference systems)",
+   "source_url": "https://arxiv.org/abs/2505.19037",
+   "note": "Reference system"
+  },
+  {
+   "benchmark": "speech-ifeval",
+   "model": "qwen2-5-7b-instruct",
+   "metric": "Closed-ended questions (ALL)",
+   "value": 95.71,
+   "source": "Table 2 (main results: instruction-following rate of SLMs and reference systems)",
+   "source_url": "https://arxiv.org/abs/2505.19037",
+   "note": "Reference system"
+  },
+  {
+   "benchmark": "speech-ifeval",
+   "model": "qwen2-5-7b-instruct",
+   "metric": "Creative writing (ALL)",
+   "value": 83.25,
+   "source": "Table 2 (main results: instruction-following rate of SLMs and reference systems)",
+   "source_url": "https://arxiv.org/abs/2505.19037",
+   "note": "Reference system"
+  },
+  {
+   "benchmark": "speech-ifeval",
+   "model": "qwen2-5-7b-instruct",
+   "metric": "CoT (ALL)",
+   "value": 86.5,
+   "source": "Table 2 (main results: instruction-following rate of SLMs and reference systems)",
+   "source_url": "https://arxiv.org/abs/2505.19037",
+   "note": "Reference system"
   },
   {
    "benchmark": "speech-ifeval",
@@ -8416,6 +9362,24 @@
    "source": "Table 2 (main results: SSR accuracy on StressTest and StressPresso)",
    "source_url": "https://arxiv.org/abs/2505.22765",
    "note": "Text LLM with oracle transcript+stress; StressPresso is the paper's complementary real-speech eval set"
+  },
+  {
+   "benchmark": "stresstest",
+   "model": "qwen2-7b-instruct",
+   "metric": "SSR accuracy (StressTest)",
+   "value": 67.8,
+   "source": "Table 2 (main results: SSR accuracy on StressTest and StressPresso)",
+   "source_url": "https://arxiv.org/abs/2505.22765",
+   "note": "Text LLM, oracle transcript+stress"
+  },
+  {
+   "benchmark": "stresstest",
+   "model": "qwen2-7b-instruct",
+   "metric": "SSR accuracy (StressPresso)",
+   "value": 74.2,
+   "source": "Table 2 (main results: SSR accuracy on StressTest and StressPresso)",
+   "source_url": "https://arxiv.org/abs/2505.22765",
+   "note": "Text LLM, oracle transcript+stress"
   },
   {
    "benchmark": "stresstest",
@@ -9479,6 +10443,15 @@
   },
   {
    "benchmark": "omnibench",
+   "model": "mu-llama",
+   "metric": "Accuracy (Image Caption & Audio, all audio types)",
+   "value": "1.58%",
+   "source": "Table 5 (textual image approximation — audio-language models)",
+   "source_url": "https://arxiv.org/abs/2409.15272",
+   "note": "Approximated setting: images replaced by captions."
+  },
+  {
+   "benchmark": "omnibench",
    "model": "musilingo",
    "metric": "Accuracy (Image Caption & Audio, all audio types)",
    "value": "13.66%",
@@ -9555,6 +10528,38 @@
    "source": "Table 5 (MuChoMusic accuracy and instruction-following rate)",
    "source_url": "https://arxiv.org/abs/2410.15573",
    "note": "IFR = instruction-following rate."
+  },
+  {
+   "benchmark": "openmu-bench",
+   "model": "mu-llama",
+   "metric": "MuChoMusic Accuracy (All)",
+   "value": 32.4,
+   "source": "Table 5 (MuChoMusic accuracy and instruction-following rate)",
+   "source_url": "https://arxiv.org/abs/2410.15573"
+  },
+  {
+   "benchmark": "openmu-bench",
+   "model": "mu-llama",
+   "metric": "MuChoMusic Accuracy (Knowledge)",
+   "value": 32.3,
+   "source": "Table 5 (MuChoMusic accuracy and instruction-following rate)",
+   "source_url": "https://arxiv.org/abs/2410.15573"
+  },
+  {
+   "benchmark": "openmu-bench",
+   "model": "mu-llama",
+   "metric": "MuChoMusic Accuracy (Reasoning)",
+   "value": 31.3,
+   "source": "Table 5 (MuChoMusic accuracy and instruction-following rate)",
+   "source_url": "https://arxiv.org/abs/2410.15573"
+  },
+  {
+   "benchmark": "openmu-bench",
+   "model": "mu-llama",
+   "metric": "MuChoMusic IFR (All)",
+   "value": 79.4,
+   "source": "Table 5 (MuChoMusic accuracy and instruction-following rate)",
+   "source_url": "https://arxiv.org/abs/2410.15573"
   },
   {
    "benchmark": "openmu-bench",
@@ -10376,6 +11381,60 @@
    "value": 24.9,
    "source": "Table 2 (main results)",
    "source_url": "https://arxiv.org/abs/2502.19759"
+  },
+  {
+   "benchmark": "contextdialog",
+   "model": "qwen2-7b-instruct",
+   "metric": "GPT Score (Overall, text T→T)",
+   "value": 4.03,
+   "source": "Table 2 (main results, text-LLM backbone reference rows)",
+   "source_url": "https://arxiv.org/abs/2502.19759",
+   "note": "±0.05; Freeze-Omni backbone"
+  },
+  {
+   "benchmark": "contextdialog",
+   "model": "qwen2-7b-instruct",
+   "metric": "GPT Score (User, text T→T)",
+   "value": 4.26,
+   "source": "Table 2 (main results, text-LLM backbone reference rows)",
+   "source_url": "https://arxiv.org/abs/2502.19759",
+   "note": "±0.06"
+  },
+  {
+   "benchmark": "contextdialog",
+   "model": "qwen2-7b-instruct",
+   "metric": "GPT Score (System, text T→T)",
+   "value": 3.81,
+   "source": "Table 2 (main results, text-LLM backbone reference rows)",
+   "source_url": "https://arxiv.org/abs/2502.19759",
+   "note": "±0.07"
+  },
+  {
+   "benchmark": "contextdialog",
+   "model": "qwen2-5-7b-instruct",
+   "metric": "GPT Score (Overall, text T→T)",
+   "value": 4.06,
+   "source": "Table 2 (main results, text-LLM backbone reference rows)",
+   "source_url": "https://arxiv.org/abs/2502.19759",
+   "note": "±0.04; MiniCPM-o backbone"
+  },
+  {
+   "benchmark": "contextdialog",
+   "model": "qwen2-5-7b-instruct",
+   "metric": "GPT Score (User, text T→T)",
+   "value": 4.28,
+   "source": "Table 2 (main results, text-LLM backbone reference rows)",
+   "source_url": "https://arxiv.org/abs/2502.19759",
+   "note": "±0.05"
+  },
+  {
+   "benchmark": "contextdialog",
+   "model": "qwen2-5-7b-instruct",
+   "metric": "GPT Score (System, text T→T)",
+   "value": 3.84,
+   "source": "Table 2 (main results, text-LLM backbone reference rows)",
+   "source_url": "https://arxiv.org/abs/2502.19759",
+   "note": "±0.06"
   },
   {
    "benchmark": "worldsense",
@@ -11528,6 +12587,14 @@
    "metric": "Speech",
    "value": 73.4,
    "source": "Table 3 (main results, accuracy across subsets)",
+   "source_url": "https://arxiv.org/abs/2508.13992"
+  },
+  {
+   "benchmark": "mmau-pro",
+   "model": "qwen2-5-7b-instruct",
+   "metric": "MMAU-Pro (accuracy, text-only LLM)",
+   "value": 16.27,
+   "source": "Table 5 (text-only LLMs across four audio benchmarks)",
    "source_url": "https://arxiv.org/abs/2508.13992"
   },
   {
@@ -13179,6 +14246,15 @@
   },
   {
    "benchmark": "vibe",
+   "model": "gemini-unversioned",
+   "metric": "Gender-induced nTVD — Advisory (Adv.)",
+   "value": 20.19,
+   "source": "TABLE II(a) (main results: gender-induced bias, CREMA-D)",
+   "source_url": "https://arxiv.org/abs/2604.17248",
+   "note": "printed with **; = Gemini 2.5 Flash Lite"
+  },
+  {
+   "benchmark": "vibe",
    "model": "phi-4-multimodal",
    "metric": "Gender-induced nTVD — Story",
    "value": 19.65,
@@ -13230,6 +14306,15 @@
    "source": "TABLE II(a) (main results: gender-induced bias, CREMA-D)",
    "source_url": "https://arxiv.org/abs/2604.17248",
    "note": "printed as 07.14**"
+  },
+  {
+   "benchmark": "vibe",
+   "model": "gemini-unversioned",
+   "metric": "Gender-induced nTVD — Story",
+   "value": 7.17,
+   "source": "TABLE II(a) (main results: gender-induced bias, CREMA-D)",
+   "source_url": "https://arxiv.org/abs/2604.17248",
+   "note": "printed as 07.17**"
   },
   {
    "benchmark": "vibe",
@@ -13287,6 +14372,15 @@
   },
   {
    "benchmark": "vibe",
+   "model": "gemini-unversioned",
+   "metric": "Gender-induced nTVD — Candidate Review (Cand.)",
+   "value": 1.2,
+   "source": "TABLE II(a) (main results: gender-induced bias, CREMA-D)",
+   "source_url": "https://arxiv.org/abs/2604.17248",
+   "note": "printed as 01.20"
+  },
+  {
+   "benchmark": "vibe",
    "model": "phi-4-multimodal",
    "metric": "Accent-induced nTVD — Advisory (Adv.)",
    "value": 12.01,
@@ -13338,6 +14432,15 @@
    "source": "TABLE II(b) (accent-induced bias, Speech Accent Archive)",
    "source_url": "https://arxiv.org/abs/2604.17248",
    "note": "no significance marker"
+  },
+  {
+   "benchmark": "vibe",
+   "model": "gemini-unversioned",
+   "metric": "Accent-induced nTVD — Advisory (Adv.)",
+   "value": 22.46,
+   "source": "TABLE II(b) (accent-induced bias, Speech Accent Archive)",
+   "source_url": "https://arxiv.org/abs/2604.17248",
+   "note": "printed with **"
   },
   {
    "benchmark": "ultraeval-audio",
@@ -15160,6 +16263,55 @@
   },
   {
    "benchmark": "msteb",
+   "model": "gemini-unversioned",
+   "metric": "Speech LID (acc), Average (macro)",
+   "value": 89.8,
+   "source": "Table III (overall speech-based results by region) — Average (macro) row",
+   "source_url": "https://arxiv.org/abs/2506.08400",
+   "note": "column header printed as 'Gemini'; caption says Gemini-2-Flash"
+  },
+  {
+   "benchmark": "msteb",
+   "model": "gemini-unversioned",
+   "metric": "Speech Topic class. (acc), Average (macro)",
+   "value": 76.4,
+   "source": "Table III (overall speech-based results by region) — Average (macro) row",
+   "source_url": "https://arxiv.org/abs/2506.08400"
+  },
+  {
+   "benchmark": "msteb",
+   "model": "gemini-unversioned",
+   "metric": "Speech RC-QA (acc), Average (macro)",
+   "value": 71.2,
+   "source": "Table III (overall speech-based results by region) — Average (macro) row",
+   "source_url": "https://arxiv.org/abs/2506.08400"
+  },
+  {
+   "benchmark": "msteb",
+   "model": "gemini-unversioned",
+   "metric": "Speech ASR (CER), Average (macro)",
+   "value": 11.3,
+   "source": "Table III (overall speech-based results by region) — Average (macro) row",
+   "source_url": "https://arxiv.org/abs/2506.08400"
+  },
+  {
+   "benchmark": "msteb",
+   "model": "gemini-unversioned",
+   "metric": "Speech S2TT (ChrF++), Average (macro)",
+   "value": 51.2,
+   "source": "Table III (overall speech-based results by region) — Average (macro) row",
+   "source_url": "https://arxiv.org/abs/2506.08400"
+  },
+  {
+   "benchmark": "msteb",
+   "model": "gemini-unversioned",
+   "metric": "Speech Ave. (class. tasks), Average (macro)",
+   "value": 79.1,
+   "source": "Table III (overall speech-based results by region) — Average (macro) row",
+   "source_url": "https://arxiv.org/abs/2506.08400"
+  },
+  {
+   "benchmark": "msteb",
    "model": "gpt-4o",
    "metric": "Text LID (acc), Average (macro)",
    "value": 91,
@@ -15205,6 +16357,56 @@
    "model": "gpt-4o",
    "metric": "Text Ave. (class. tasks), Average (macro)",
    "value": 82.5,
+   "source": "Table IV (overall text-based results by region) — Average (macro) row",
+   "source_url": "https://arxiv.org/abs/2506.08400"
+  },
+  {
+   "benchmark": "msteb",
+   "model": "gemini-unversioned",
+   "metric": "Text LID (acc), Average (macro)",
+   "value": 93.5,
+   "source": "Table IV (overall text-based results by region) — Average (macro) row",
+   "source_url": "https://arxiv.org/abs/2506.08400",
+   "note": "column header printed as 'Gemini'; caption says Gemini-2-Flash"
+  },
+  {
+   "benchmark": "msteb",
+   "model": "gemini-unversioned",
+   "metric": "Text Topic class. (acc), Average (macro)",
+   "value": 85,
+   "source": "Table IV (overall text-based results by region) — Average (macro) row",
+   "source_url": "https://arxiv.org/abs/2506.08400"
+  },
+  {
+   "benchmark": "msteb",
+   "model": "gemini-unversioned",
+   "metric": "Text RC-QA (acc), Average (macro)",
+   "value": 83.9,
+   "source": "Table IV (overall text-based results by region) — Average (macro) row",
+   "source_url": "https://arxiv.org/abs/2506.08400"
+  },
+  {
+   "benchmark": "msteb",
+   "model": "gemini-unversioned",
+   "metric": "Text NLI (acc), Average (macro)",
+   "value": 71.1,
+   "source": "Table IV (overall text-based results by region) — Average (macro) row",
+   "source_url": "https://arxiv.org/abs/2506.08400"
+  },
+  {
+   "benchmark": "msteb",
+   "model": "gemini-unversioned",
+   "metric": "Text Machine Transl. (ChrF++), Average (macro)",
+   "value": "58/42.9",
+   "source": "Table IV (overall text-based results by region) — Average (macro) row",
+   "source_url": "https://arxiv.org/abs/2506.08400",
+   "note": "two slash-separated values as printed; directions unlabelled in the table"
+  },
+  {
+   "benchmark": "msteb",
+   "model": "gemini-unversioned",
+   "metric": "Text Ave. (class. tasks), Average (macro)",
+   "value": 83.4,
    "source": "Table IV (overall text-based results by region) — Average (macro) row",
    "source_url": "https://arxiv.org/abs/2506.08400"
   },
@@ -16757,6 +17959,38 @@
   },
   {
    "benchmark": "aqua-bench",
+   "model": "balsa",
+   "metric": "MMAU (Ori., Acc.)",
+   "value": 64.6,
+   "source": "Table 1 (main results: accuracy on original answerable tasks and the three unanswerable scenarios)",
+   "source_url": "https://arxiv.org/abs/2601.12248"
+  },
+  {
+   "benchmark": "aqua-bench",
+   "model": "balsa",
+   "metric": "MMAU (AAD, CA) [0-100 scale]",
+   "value": 70.7,
+   "source": "Table 1 (main results: accuracy on original answerable tasks and the three unanswerable scenarios)",
+   "source_url": "https://arxiv.org/abs/2601.12248"
+  },
+  {
+   "benchmark": "aqua-bench",
+   "model": "balsa",
+   "metric": "MMAU (IASD, CA) [0-100 scale]",
+   "value": 55.8,
+   "source": "Table 1 (main results: accuracy on original answerable tasks and the three unanswerable scenarios)",
+   "source_url": "https://arxiv.org/abs/2601.12248"
+  },
+  {
+   "benchmark": "aqua-bench",
+   "model": "balsa",
+   "metric": "MMAU (IAQD, CA) [0-100 scale]",
+   "value": 89.8,
+   "source": "Table 1 (main results: accuracy on original answerable tasks and the three unanswerable scenarios)",
+   "source_url": "https://arxiv.org/abs/2601.12248"
+  },
+  {
+   "benchmark": "aqua-bench",
    "model": "qwen2-5-omni",
    "metric": "MMAU (Ori., Acc.) [CoT]",
    "value": 75.4,
@@ -16823,6 +18057,42 @@
    "model": "audio-flamingo-3",
    "metric": "MMAU (IAQD, CA) [CoT]",
    "value": 66.3,
+   "source": "Table 1, 'Reasoning Models' block (CoT prompting)",
+   "source_url": "https://arxiv.org/abs/2601.12248",
+   "note": "Separate CoT-prompted row."
+  },
+  {
+   "benchmark": "aqua-bench",
+   "model": "balsa",
+   "metric": "MMAU (Ori., Acc.) [CoT]",
+   "value": 64.6,
+   "source": "Table 1, 'Reasoning Models' block (CoT prompting)",
+   "source_url": "https://arxiv.org/abs/2601.12248",
+   "note": "Separate CoT-prompted row."
+  },
+  {
+   "benchmark": "aqua-bench",
+   "model": "balsa",
+   "metric": "MMAU (AAD, CA) [CoT]",
+   "value": 74.5,
+   "source": "Table 1, 'Reasoning Models' block (CoT prompting)",
+   "source_url": "https://arxiv.org/abs/2601.12248",
+   "note": "Separate CoT-prompted row."
+  },
+  {
+   "benchmark": "aqua-bench",
+   "model": "balsa",
+   "metric": "MMAU (IASD, CA) [CoT]",
+   "value": 95.1,
+   "source": "Table 1, 'Reasoning Models' block (CoT prompting)",
+   "source_url": "https://arxiv.org/abs/2601.12248",
+   "note": "Separate CoT-prompted row."
+  },
+  {
+   "benchmark": "aqua-bench",
+   "model": "balsa",
+   "metric": "MMAU (IAQD, CA) [CoT]",
+   "value": 91.8,
    "source": "Table 1, 'Reasoning Models' block (CoT prompting)",
    "source_url": "https://arxiv.org/abs/2601.12248",
    "note": "Separate CoT-prompted row."
