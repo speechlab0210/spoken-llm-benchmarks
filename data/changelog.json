@@ -2,6 +2,11 @@
  "entries": [
   {
    "date": "2026-08-22",
+   "change": "Started adding results from papers that CITE each benchmark, not only the benchmark paper itself. 648 citing papers read so far; 255 of them actually ran one of the catalogued benchmarks. Tables: 7,858 to 13,272 cells over 189 models, with 338 of 360 benchmarks now carrying at least one sourced score. Surveys are deliberately skipped so numbers stay first-hand.",
+   "source": "coverage"
+  },
+  {
+   "date": "2026-08-22",
    "change": "Extraction extended to every catalogued benchmark paper, not just the well-known ones: 268 further papers read. Benchmarks with at least one sourced score went from 90 to 327 of 360, and the tables from 2,913 to 7,858 cells over 179 models. Model-name matching now tolerates spacing variants (Qwen 2.5 Omni = Qwen2.5-Omni).",
    "source": "coverage"
   },
