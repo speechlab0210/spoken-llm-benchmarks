@@ -177,9 +177,10 @@ select.metricsel:hover{border-color:var(--accent);color:var(--accent)}
   border:1px dashed var(--line-2);color:var(--ink-2);border-radius:var(--radius);
   padding:11px;font-size:.88rem;font-family:inherit;cursor:pointer}
 .morebtn:hover{border-color:var(--accent);color:var(--accent)}
-.srcdot{font-size:.62rem;color:var(--ink-3);vertical-align:super;margin-left:3px;
-  text-decoration:none;cursor:help}
-a.srcdot:hover{color:var(--accent);text-decoration:none}
+/* every number is a citation: dotted underline signals "click me for the source paper" */
+a.cellval{color:inherit;text-decoration:none;border-bottom:1px dotted var(--line-2);cursor:pointer}
+a.cellval:hover{color:var(--accent);border-bottom:1px solid var(--accent);text-decoration:none}
+.cellval.nosrc{border-bottom:1px dotted transparent;cursor:help}
 td.num{max-width:150px;overflow:hidden}
 
 details.acc{border:1px solid var(--line);border-radius:var(--radius);background:var(--panel);
@@ -273,7 +274,7 @@ footer a{color:var(--ink-2)}
   <div class="wrap">
     <div class="eyebrow">Results</div>
     <h2>Model × benchmark, by category</h2>
-    <p class="lede">Rows are spoken LLMs, columns are benchmarks. Every number is copied from a published source and links back to it — hover a cell for the citation. Blanks mean <em>not reported</em>, not zero.</p>
+    <p class="lede">Rows are spoken LLMs, columns are benchmarks. <strong>Every number is a link: click it to open the paper it was copied from</strong>, and hover for the exact table it came from. Blanks mean <em>not reported</em>, not zero.</p>
     <div class="callout warn" id="tableCaveat"></div>
     <div id="tablesBody"></div>
   </div>
@@ -757,12 +758,15 @@ function renderTable(catId, host){
       if(!c){ tr.appendChild(el('td','na','—')); return; }
       var td = el('td','num');
       var isBest = best[x.b.id]!==undefined && typeof c.value==='number' && c.value===best[x.b.id];
-      var srcTxt = c.source_url
-        ? '<a href="'+esc(c.source_url)+'" target="_blank" rel="noopener" class="srcdot" title="'+esc(c.source)+'">↗</a>'
-        : '<span class="srcdot" title="'+esc(c.source)+'">†</span>';
-      td.innerHTML = '<span'+(isBest?' class="best"':'')+'>'+esc(fmtVal(c.value))+'</span>'+srcTxt;
-      td.title = m.name+' on '+x.b.name+' — '+c.metric+' = '+c.value+
-        '\nsource: '+c.source + (c.note? '\nnote: '+c.note : '');
+      // the number IS the citation: clicking it opens the paper the number was copied from
+      var tip = m.name+' on '+x.b.name+'\n'+c.metric+' = '+c.value+
+        '\nsource: '+c.source + (c.note? '\nnote: '+c.note : '') +
+        (c.source_url ? '\n\nClick to open the source paper.' : '');
+      var cls = 'cellval'+(isBest?' best':'');
+      td.innerHTML = c.source_url
+        ? '<a class="'+cls+'" href="'+esc(c.source_url)+'" target="_blank" rel="noopener" title="'+
+            esc(tip)+'">'+esc(fmtVal(c.value))+'</a>'
+        : '<span class="'+cls+' nosrc" title="'+esc(tip)+'">'+esc(fmtVal(c.value))+'</span>';
       tr.appendChild(td);
     });
     tb2.appendChild(tr);
