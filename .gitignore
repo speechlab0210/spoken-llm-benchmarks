@@ -1,6 +1,7 @@
 raw/
 logs/
 deploy/
+__pycache__/
 *.pdf
 DAILY-RUN.md
 paper/DRAFT.md

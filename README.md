@@ -68,7 +68,9 @@ and checkpoint all vary. Two safeguards are applied mechanically:
   aggregate over a sub-score — so a column never blends incommensurable quantities. The `(+n)` in a
   header counts the other metrics reported for that benchmark that are *not* shown.
 - **Scale-collision guard.** Where the same metric name appears on two scales (a 1–5 judge score and
-  the same thing normalised to 100), the cells are relabelled and kept in separate columns.
+  the same thing normalised to 100), the cells are relabelled and kept in separate columns. The
+  split requires seeing one model reported at both magnitudes by two different sources; a low
+  score on a single published scale is a low score, not a different unit, and is left alone.
 
 A blank cell means **not reported**, never zero.
 

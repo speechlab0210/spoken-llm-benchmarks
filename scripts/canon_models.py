@@ -376,26 +376,43 @@ def main():
     # Scale-collision guard: papers report the same metric on different scales (a 1-5 GPT
     # judge score vs the same thing normalised to 100). Averaging or listing them together
     # would be meaningless, so split them into distinct metrics and let the UI keep them apart.
-    groups = {}
-    for c in final:
+    #
+    # The split needs DIRECT evidence of rescaling: one model reported both <=10 and >=50 for
+    # the same metric, by two DIFFERENT sources. Magnitude alone cannot carry it — under a
+    # plain "spread is wide" test, a model that genuinely scores 4.5% accuracy gets relabelled
+    # as being on a different scale, which is simply false. That test previously mislabelled
+    # hundreds of accuracy, WER, F1 and rate cells (audit, 2026-08-23). Two magnitudes inside
+    # one table are not two scales either — that is a row mix-up, not a unit change.
+    pre_dedup = {}
+    for c in mapped:
         try:
-            groups.setdefault((c["benchmark"], c["metric"]), []).append(float(c["value"]))
+            pre_dedup.setdefault((c["benchmark"], c["metric"]), {}).setdefault(
+                c["model"], []).append((float(c["value"]), c.get("source_url"), c.get("source")))
         except (TypeError, ValueError):
             pass
+    rescaled = set()
+    for key, per_model in pre_dedup.items():
+        if "%" in key[1]:
+            continue        # a metric published as a percentage is not on some other scale
+        for vals in per_model.values():
+            lo = {(u, s) for v, u, s in vals if v <= 10}
+            hi = {(u, s) for v, u, s in vals if v >= 50}
+            if lo and hi and (lo - hi):     # both magnitudes, and not from the same table
+                rescaled.add(key)
+                break
     split = 0
     for c in final:
-        vals = groups.get((c["benchmark"], c["metric"]))
-        if not vals or len(vals) < 3:
+        if (c["benchmark"], c["metric"]) not in rescaled:
             continue
-        if min(vals) <= 10 and max(vals) >= 50:      # two incompatible scales in one metric
-            try:
-                v = float(c["value"])
-            except (TypeError, ValueError):
-                continue
-            c["metric"] = f"{c['metric']} [0-10 scale]" if v <= 10 else f"{c['metric']} [0-100 scale]"
-            split += 1
+        try:
+            v = float(c["value"])
+        except (TypeError, ValueError):
+            continue
+        c["metric"] = f"{c['metric']} [0-10 scale]" if v <= 10 else f"{c['metric']} [0-100 scale]"
+        split += 1
     if split:
-        print(f"  scale-collision guard: relabelled {split} cells across mixed-scale metrics")
+        print(f"  scale-collision guard: relabelled {split} cells across "
+              f"{len(rescaled)} metrics with observed rescaling")
 
     counts = Counter(c["model"] for c in final)
     keep = {m for m, n in counts.items() if n >= args.min_cells}
