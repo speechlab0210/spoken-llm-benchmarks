@@ -126963,6 +126963,105 @@
    "value": 85.27,
    "source": "Table 2 (overall performance of different LALMs on VCB Bench; v5, checked 2026-08-23)",
    "source_url": "https://arxiv.org/abs/2510.11098"
+  },
+  {
+   "benchmark": "omniassistbench",
+   "model": "gemini-3-pro",
+   "metric": "Overall Avg (0-100)",
+   "value": 66.4,
+   "source": "Tables 2 and 3 (Overall Avg. column; GPT-5 judge on a 5-point rubric, normalized by the authors to 0-100; v1, checked 2026-08-25)",
+   "source_url": "https://arxiv.org/abs/2608.21360",
+   "note": "Printed in the paper as \"Gemini-3-Pro\". Higher is better."
+  },
+  {
+   "benchmark": "omniassistbench",
+   "model": "gemini-2-5-pro",
+   "metric": "Overall Avg (0-100)",
+   "value": 64.6,
+   "source": "Tables 2 and 3 (Overall Avg. column; GPT-5 judge on a 5-point rubric, normalized by the authors to 0-100; v1, checked 2026-08-25)",
+   "source_url": "https://arxiv.org/abs/2608.21360",
+   "note": "Printed in the paper as \"Gemini-2.5-Pro\". Higher is better."
+  },
+  {
+   "benchmark": "omniassistbench",
+   "model": "doubao-seed-2-0-lite",
+   "metric": "Overall Avg (0-100)",
+   "value": 57.3,
+   "source": "Tables 2 and 3 (Overall Avg. column; GPT-5 judge on a 5-point rubric, normalized by the authors to 0-100; v1, checked 2026-08-25)",
+   "source_url": "https://arxiv.org/abs/2608.21360",
+   "note": "Printed in the paper as \"Doubao-Seed-2.0-lite\". Higher is better."
+  },
+  {
+   "benchmark": "omniassistbench",
+   "model": "mimo-v2-omni",
+   "metric": "Overall Avg (0-100)",
+   "value": 53.8,
+   "source": "Tables 2 and 3 (Overall Avg. column; GPT-5 judge on a 5-point rubric, normalized by the authors to 0-100; v1, checked 2026-08-25)",
+   "source_url": "https://arxiv.org/abs/2608.21360",
+   "note": "Printed in the paper as \"MiMo-V2-Omni\". Higher is better."
+  },
+  {
+   "benchmark": "omniassistbench",
+   "model": "qwen3-5-omni-plus",
+   "metric": "Overall Avg (0-100)",
+   "value": 51.6,
+   "source": "Tables 2 and 3 (Overall Avg. column; GPT-5 judge on a 5-point rubric, normalized by the authors to 0-100; v1, checked 2026-08-25)",
+   "source_url": "https://arxiv.org/abs/2608.21360",
+   "note": "Printed in the paper as \"Qwen3.5-Omni-Plus\". Higher is better."
+  },
+  {
+   "benchmark": "omniassistbench",
+   "model": "qwen3-omni",
+   "metric": "Overall Avg (0-100)",
+   "value": 51.2,
+   "source": "Tables 2 and 3 (Overall Avg. column; GPT-5 judge on a 5-point rubric, normalized by the authors to 0-100; v1, checked 2026-08-25)",
+   "source_url": "https://arxiv.org/abs/2608.21360",
+   "note": "Printed in the paper as \"Qwen3-Omni-Instruct (30B-A3B)\". Higher is better."
+  },
+  {
+   "benchmark": "omniassistbench",
+   "model": "qwen2-5-omni",
+   "metric": "Overall Avg (0-100)",
+   "value": 43.2,
+   "source": "Tables 2 and 3 (Overall Avg. column; GPT-5 judge on a 5-point rubric, normalized by the authors to 0-100; v1, checked 2026-08-25)",
+   "source_url": "https://arxiv.org/abs/2608.21360",
+   "note": "Printed in the paper as \"Qwen2.5-Omni (7B)\". Higher is better."
+  },
+  {
+   "benchmark": "omniassistbench",
+   "model": "minicpm-o-4-5",
+   "metric": "Overall Avg (0-100)",
+   "value": 46.0,
+   "source": "Tables 2 and 3 (Overall Avg. column; GPT-5 judge on a 5-point rubric, normalized by the authors to 0-100; v1, checked 2026-08-25)",
+   "source_url": "https://arxiv.org/abs/2608.21360",
+   "note": "Printed in the paper as \"MiniCPM-o-4.5 (9B)\". Higher is better."
+  },
+  {
+   "benchmark": "omniassistbench",
+   "model": "minicpm-o",
+   "metric": "Overall Avg (0-100)",
+   "value": 40.2,
+   "source": "Tables 2 and 3 (Overall Avg. column; GPT-5 judge on a 5-point rubric, normalized by the authors to 0-100; v1, checked 2026-08-25)",
+   "source_url": "https://arxiv.org/abs/2608.21360",
+   "note": "Printed in the paper as \"MiniCPM-o-2.6 (8B)\". Higher is better."
+  },
+  {
+   "benchmark": "omniassistbench",
+   "model": "vita",
+   "metric": "Overall Avg (0-100)",
+   "value": 24.6,
+   "source": "Tables 2 and 3 (Overall Avg. column; GPT-5 judge on a 5-point rubric, normalized by the authors to 0-100; v1, checked 2026-08-25)",
+   "source_url": "https://arxiv.org/abs/2608.21360",
+   "note": "Printed in the paper as \"VITA-1.5 (7B)\". Higher is better."
+  },
+  {
+   "benchmark": "omniassistbench",
+   "model": "baichuan-omni",
+   "metric": "Overall Avg (0-100)",
+   "value": 43.2,
+   "source": "Tables 2 and 3 (Overall Avg. column; GPT-5 judge on a 5-point rubric, normalized by the authors to 0-100; v1, checked 2026-08-25)",
+   "source_url": "https://arxiv.org/abs/2608.21360",
+   "note": "Printed in the paper as \"Baichuan-Omni-1.5 (7B)\". Higher is better."
   }
  ]
 }

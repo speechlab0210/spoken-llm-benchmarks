@@ -1181,6 +1181,24 @@
    "name": "Whisper-GPT-TTS (cascade)",
    "org": "—",
    "type": "cascade"
+  },
+  {
+   "id": "doubao-seed-2-0-lite",
+   "name": "Doubao-Seed-2.0-lite",
+   "org": "ByteDance",
+   "type": "e2e"
+  },
+  {
+   "id": "minicpm-o-4-5",
+   "name": "MiniCPM-o-4.5",
+   "org": "OpenBMB",
+   "type": "e2e"
+  },
+  {
+   "id": "qwen3-5-omni-plus",
+   "name": "Qwen3.5-Omni-Plus",
+   "org": "Alibaba",
+   "type": "e2e"
   }
  ]
 }

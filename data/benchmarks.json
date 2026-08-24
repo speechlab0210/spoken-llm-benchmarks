@@ -8886,6 +8886,37 @@
    "io": "music audio in, text out",
    "size": "5,042 Q&A pairs",
    "note": "Automated data curation plus imbalance-aware training helps, but models still miss fine-grained acoustic features, showing a gap between surface alignment and deep musical comprehension."
+  },
+  {
+   "id": "omniassistbench",
+   "name": "OmniAssistBench",
+   "full_title": "OmniAssistBench: Assistant-style Interaction Benchmark for Omni-LLMs",
+   "arxiv_id": "2608.21360",
+   "arxiv_date": "2026-08",
+   "arxiv_date_full": "2026-08-21",
+   "url": "https://arxiv.org/abs/2608.21360",
+   "summary": "A benchmark for omni-modal LLMs acting as real-time video assistants that guide a user toward a goal, rather than passively answering questions about a clip. User instructions are embedded into the test video as audio (gesture prompts replace speech in the non-audio prompt-following tasks), and the model must decide whether and when to respond at all. To keep interaction paths from diverging, models are given a prior derived from the source video and must guide the user along that exact route; the data was built by reverse-engineering internet videos into multi-turn clips, plus three filmed real-world cases averaging 15 turns. Two tiers cover 7 major tasks and 16 sub-tasks; scoring is an open-ended GPT-5 judge on a 5-point rubric normalized to 100.",
+   "categories": [
+    "voice-agent",
+    "dialogue",
+    "interactivity"
+   ],
+   "tasks": [
+    "assistant-style multi-turn guidance",
+    "proactive response (deciding whether and when to speak)",
+    "process tracking across turns",
+    "social, temporal and referential perception",
+    "gesture and on-screen prompt following"
+   ],
+   "languages": [
+    "not stated"
+   ],
+   "io": "video with embedded speech prompts in, text out",
+   "size": "300 videos / 685 QA pairs / avg 182.25 s per video, incl. 3 filmed real-world cases",
+   "metrics": [
+    "GPT-5 judge, 5-point rubric normalized to 0-100"
+   ],
+   "note": "Gemini-3-Pro leads at 66.4 and the best open-source model, Qwen3-Omni-Instruct, reaches 51.2, both far below the rubric's threshold for a fully valid answer. Reported failure modes: gesture prompts, losing history across multi-turn interaction, mistaking background speech in the video for a new user instruction, and failing to delay a response until the target event. Building the set took over 1000 expert person-hours."
   }
  ]
 }

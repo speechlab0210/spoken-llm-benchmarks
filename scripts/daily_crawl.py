@@ -28,6 +28,8 @@ ATOM = "{http://www.w3.org/2005/Atom}"
 ARX = "{http://arxiv.org/schemas/atom}"
 API = "http://export.arxiv.org/api/query?"
 SLEEP = 3.2
+# Never look back less than this, whatever --days says. See the note in main().
+INDEX_LAG_FLOOR_DAYS = 10
 
 QUERIES = [
     '(cat:eess.AS OR cat:cs.SD) AND (abs:benchmark OR ti:benchmark OR abs:evaluation OR ti:evaluation OR abs:testbed) AND {D}',
@@ -115,7 +117,13 @@ def main():
     LOGS.mkdir(exist_ok=True)
     RAWD.mkdir(exist_ok=True)
     now = datetime.now(timezone.utc)
-    lo = (now - timedelta(days=args.days)).strftime("%Y%m%d%H%M")
+    # arXiv makes a submission searchable several days after its submittedDate. A window
+    # shorter than that lag returns nothing at all (three consecutive scanned=0 days in
+    # 2026-08), and a paper that becomes visible after the window has moved past its
+    # submission date is never seen again. Dedup is by id against seen.jsonl, so a wider
+    # window costs API time and nothing else.
+    days = max(args.days, INDEX_LAG_FLOOR_DAYS)
+    lo = (now - timedelta(days=days)).strftime("%Y%m%d%H%M")
     hi = now.strftime("%Y%m%d%H%M")
     dclause = f"submittedDate:[{lo} TO {hi}]"
 
@@ -162,7 +170,7 @@ def main():
 
     latest = {
         "fetched_at": now.isoformat(timespec="seconds").replace("+00:00", "Z"),
-        "window_days": args.days,
+        "window_days": days,
         "scanned": len(pool),
         "flagged_today": len(fresh),
         "candidates": candidates,

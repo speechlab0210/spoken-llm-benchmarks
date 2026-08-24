@@ -1,6 +1,11 @@
 {
  "entries": [
   {
+   "date": "2026-08-25",
+   "source": "daily review",
+   "change": "Daily review: OmniAssistBench (arXiv 2608.21360) catalogued, with 11 overall-average result cells read off Tables 2 and 3 and three new model entries (Doubao-Seed-2.0-lite, MiniCPM-o-4.5, Qwen3.5-Omni-Plus). It evaluates omni-modal LLMs as real-time video assistants whose user instructions arrive as audio embedded in the test video. Five further flagged papers were read and ruled out of scope: a Chinese abusive-language benchmark over text rather than speech, a multi-turn conversational AI survey, an audio-chapterization training method, a shared-task system description, and a debate-practice HCI system. Separately, the crawler window was widened after three consecutive empty days: arXiv makes a submission searchable several days after its submittedDate, so a three-day window could close before a paper became visible. Six papers recovered from that gap are included in this review."
+  },
+  {
    "date": "2026-08-23",
    "change": "Corrections from an external data audit, each re-checked against the current arXiv version before applying. AudioTrust: 26 fairness cells showed 1-Gamma under the published Gamma symbol, which reversed the model ordering; the printed Gamma values are restored and the column now states that higher is fairer. Nine result values had gone stale as their source papers were revised (VCB Bench Fun-Audio-Chat GK and ML, OmniBench MIO-Instruct across three settings, SpeechRole Qwen2.5-Omni and GPT-4o-Audio in both languages), and Fun-Audio-Chat's MTD score, absent from the earlier version, is now recorded. 87 cells pointed at table numbers that had shifted under unversioned arXiv links (VCB Bench, OmniBench, OpenOmni, AudioMarathon); locators are corrected and now name the version they were checked against.",
    "source": "external audit"
