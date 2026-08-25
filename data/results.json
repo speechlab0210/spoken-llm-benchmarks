@@ -127062,6 +127062,924 @@
    "source": "Tables 2 and 3 (Overall Avg. column; GPT-5 judge on a 5-point rubric, normalized by the authors to 0-100; v1, checked 2026-08-25)",
    "source_url": "https://arxiv.org/abs/2608.21360",
    "note": "Printed in the paper as \"Baichuan-Omni-1.5 (7B)\". Higher is better."
+  },
+  {
+   "benchmark": "mrmad",
+   "model": "salmonn",
+   "metric": "DTI accuracy, Avg (%)",
+   "value": 25.14,
+   "source": "Table 4 (Avg. columns; output-based multiple-choice accuracy over 8,400 questions; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.22236",
+   "note": "Printed in the paper as \"SALMONN (7B)\". Higher is better; chance is 25.00."
+  },
+  {
+   "benchmark": "mrmad",
+   "model": "salmonn",
+   "metric": "DSC accuracy, Avg (%)",
+   "value": 49.61,
+   "source": "Table 4 (Avg. columns; output-based multiple-choice accuracy over 8,400 questions; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.22236",
+   "note": "Printed in the paper as \"SALMONN (7B)\". Higher is better; chance is 50.00."
+  },
+  {
+   "benchmark": "mrmad",
+   "model": "salmonn",
+   "metric": "DSR accuracy, Avg (%)",
+   "value": 23.0,
+   "source": "Table 4 (Avg. columns; output-based multiple-choice accuracy over 8,400 questions; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.22236",
+   "note": "Printed in the paper as \"SALMONN (7B)\". Higher is better; chance is 25.00."
+  },
+  {
+   "benchmark": "mrmad",
+   "model": "qwen2-audio",
+   "metric": "DTI accuracy, Avg (%)",
+   "value": 26.0,
+   "source": "Table 4 (Avg. columns; output-based multiple-choice accuracy over 8,400 questions; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.22236",
+   "note": "Printed in the paper as \"Qwen2-Audio (8.4B)\". Higher is better; chance is 25.00."
+  },
+  {
+   "benchmark": "mrmad",
+   "model": "qwen2-audio",
+   "metric": "DSC accuracy, Avg (%)",
+   "value": 45.53,
+   "source": "Table 4 (Avg. columns; output-based multiple-choice accuracy over 8,400 questions; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.22236",
+   "note": "Printed in the paper as \"Qwen2-Audio (8.4B)\". Higher is better; chance is 50.00."
+  },
+  {
+   "benchmark": "mrmad",
+   "model": "qwen2-audio",
+   "metric": "DSR accuracy, Avg (%)",
+   "value": 27.25,
+   "source": "Table 4 (Avg. columns; output-based multiple-choice accuracy over 8,400 questions; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.22236",
+   "note": "Printed in the paper as \"Qwen2-Audio (8.4B)\". Higher is better; chance is 25.00."
+  },
+  {
+   "benchmark": "mrmad",
+   "model": "step-audio-2",
+   "metric": "DTI accuracy, Avg (%)",
+   "value": 27.36,
+   "source": "Table 4 (Avg. columns; output-based multiple-choice accuracy over 8,400 questions; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.22236",
+   "note": "Printed in the paper as \"Step-Audio-2-mini (8B)\". Higher is better; chance is 25.00."
+  },
+  {
+   "benchmark": "mrmad",
+   "model": "step-audio-2",
+   "metric": "DSC accuracy, Avg (%)",
+   "value": 51.33,
+   "source": "Table 4 (Avg. columns; output-based multiple-choice accuracy over 8,400 questions; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.22236",
+   "note": "Printed in the paper as \"Step-Audio-2-mini (8B)\". Higher is better; chance is 50.00."
+  },
+  {
+   "benchmark": "mrmad",
+   "model": "step-audio-2",
+   "metric": "DSR accuracy, Avg (%)",
+   "value": 28.17,
+   "source": "Table 4 (Avg. columns; output-based multiple-choice accuracy over 8,400 questions; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.22236",
+   "note": "Printed in the paper as \"Step-Audio-2-mini (8B)\". Higher is better; chance is 25.00."
+  },
+  {
+   "benchmark": "mrmad",
+   "model": "audio-flamingo-3",
+   "metric": "DTI accuracy, Avg (%)",
+   "value": 26.31,
+   "source": "Table 4 (Avg. columns; output-based multiple-choice accuracy over 8,400 questions; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.22236",
+   "note": "Printed in the paper as \"Audio Flamingo 3 (7B)\". Higher is better; chance is 25.00."
+  },
+  {
+   "benchmark": "mrmad",
+   "model": "audio-flamingo-3",
+   "metric": "DSC accuracy, Avg (%)",
+   "value": 50.5,
+   "source": "Table 4 (Avg. columns; output-based multiple-choice accuracy over 8,400 questions; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.22236",
+   "note": "Printed in the paper as \"Audio Flamingo 3 (7B)\". Higher is better; chance is 50.00."
+  },
+  {
+   "benchmark": "mrmad",
+   "model": "audio-flamingo-3",
+   "metric": "DSR accuracy, Avg (%)",
+   "value": 27.17,
+   "source": "Table 4 (Avg. columns; output-based multiple-choice accuracy over 8,400 questions; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.22236",
+   "note": "Printed in the paper as \"Audio Flamingo 3 (7B)\". Higher is better; chance is 25.00."
+  },
+  {
+   "benchmark": "mrmad",
+   "model": "audio-flamingo-next",
+   "metric": "DTI accuracy, Avg (%)",
+   "value": 25.94,
+   "source": "Table 4 (Avg. columns; output-based multiple-choice accuracy over 8,400 questions; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.22236",
+   "note": "Printed in the paper as \"Audio Flamingo Next (8B)\". Higher is better; chance is 25.00."
+  },
+  {
+   "benchmark": "mrmad",
+   "model": "audio-flamingo-next",
+   "metric": "DSC accuracy, Avg (%)",
+   "value": 50.14,
+   "source": "Table 4 (Avg. columns; output-based multiple-choice accuracy over 8,400 questions; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.22236",
+   "note": "Printed in the paper as \"Audio Flamingo Next (8B)\". Higher is better; chance is 50.00."
+  },
+  {
+   "benchmark": "mrmad",
+   "model": "audio-flamingo-next",
+   "metric": "DSR accuracy, Avg (%)",
+   "value": 29.25,
+   "source": "Table 4 (Avg. columns; output-based multiple-choice accuracy over 8,400 questions; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.22236",
+   "note": "Printed in the paper as \"Audio Flamingo Next (8B)\". Higher is better; chance is 25.00."
+  },
+  {
+   "benchmark": "mrmad",
+   "model": "mimo-audio",
+   "metric": "DTI accuracy, Avg (%)",
+   "value": 33.58,
+   "source": "Table 4 (Avg. columns; output-based multiple-choice accuracy over 8,400 questions; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.22236",
+   "note": "Printed in the paper as \"MiMo-Audio-Instruct (7B)\". Higher is better; chance is 25.00."
+  },
+  {
+   "benchmark": "mrmad",
+   "model": "mimo-audio",
+   "metric": "DSC accuracy, Avg (%)",
+   "value": 52.64,
+   "source": "Table 4 (Avg. columns; output-based multiple-choice accuracy over 8,400 questions; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.22236",
+   "note": "Printed in the paper as \"MiMo-Audio-Instruct (7B)\". Higher is better; chance is 50.00."
+  },
+  {
+   "benchmark": "mrmad",
+   "model": "mimo-audio",
+   "metric": "DSR accuracy, Avg (%)",
+   "value": 31.5,
+   "source": "Table 4 (Avg. columns; output-based multiple-choice accuracy over 8,400 questions; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.22236",
+   "note": "Printed in the paper as \"MiMo-Audio-Instruct (7B)\". Higher is better; chance is 25.00."
+  },
+  {
+   "benchmark": "mrmad",
+   "model": "voxtral",
+   "metric": "DTI accuracy, Avg (%)",
+   "value": 25.64,
+   "source": "Table 4 (Avg. columns; output-based multiple-choice accuracy over 8,400 questions; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.22236",
+   "note": "Printed in the paper as \"Voxtral-Mini (4.7B)\". Higher is better; chance is 25.00."
+  },
+  {
+   "benchmark": "mrmad",
+   "model": "voxtral",
+   "metric": "DSC accuracy, Avg (%)",
+   "value": 44.11,
+   "source": "Table 4 (Avg. columns; output-based multiple-choice accuracy over 8,400 questions; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.22236",
+   "note": "Printed in the paper as \"Voxtral-Mini (4.7B)\". Higher is better; chance is 50.00."
+  },
+  {
+   "benchmark": "mrmad",
+   "model": "voxtral",
+   "metric": "DSR accuracy, Avg (%)",
+   "value": 28.17,
+   "source": "Table 4 (Avg. columns; output-based multiple-choice accuracy over 8,400 questions; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.22236",
+   "note": "Printed in the paper as \"Voxtral-Mini (4.7B)\". Higher is better; chance is 25.00."
+  },
+  {
+   "benchmark": "mrmad",
+   "model": "step-audio-r1",
+   "metric": "DTI accuracy, Avg (%)",
+   "value": 29.44,
+   "source": "Table 4 (Avg. columns; output-based multiple-choice accuracy over 8,400 questions; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.22236",
+   "note": "Printed in the paper as \"Step-Audio-R1 (33B)\". Higher is better; chance is 25.00."
+  },
+  {
+   "benchmark": "mrmad",
+   "model": "step-audio-r1",
+   "metric": "DSC accuracy, Avg (%)",
+   "value": 53.81,
+   "source": "Table 4 (Avg. columns; output-based multiple-choice accuracy over 8,400 questions; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.22236",
+   "note": "Printed in the paper as \"Step-Audio-R1 (33B)\". Higher is better; chance is 50.00."
+  },
+  {
+   "benchmark": "mrmad",
+   "model": "step-audio-r1",
+   "metric": "DSR accuracy, Avg (%)",
+   "value": 27.67,
+   "source": "Table 4 (Avg. columns; output-based multiple-choice accuracy over 8,400 questions; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.22236",
+   "note": "Printed in the paper as \"Step-Audio-R1 (33B)\". Higher is better; chance is 25.00."
+  },
+  {
+   "benchmark": "mrmad",
+   "model": "audio-reasoner",
+   "metric": "DTI accuracy, Avg (%)",
+   "value": 21.92,
+   "source": "Table 4 (Avg. columns; output-based multiple-choice accuracy over 8,400 questions; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.22236",
+   "note": "Printed in the paper as \"Audio-Reasoner (8.4B)\". Higher is better; chance is 25.00."
+  },
+  {
+   "benchmark": "mrmad",
+   "model": "audio-reasoner",
+   "metric": "DSC accuracy, Avg (%)",
+   "value": 38.56,
+   "source": "Table 4 (Avg. columns; output-based multiple-choice accuracy over 8,400 questions; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.22236",
+   "note": "Printed in the paper as \"Audio-Reasoner (8.4B)\". Higher is better; chance is 50.00."
+  },
+  {
+   "benchmark": "mrmad",
+   "model": "audio-reasoner",
+   "metric": "DSR accuracy, Avg (%)",
+   "value": 13.67,
+   "source": "Table 4 (Avg. columns; output-based multiple-choice accuracy over 8,400 questions; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.22236",
+   "note": "Printed in the paper as \"Audio-Reasoner (8.4B)\". Higher is better; chance is 25.00."
+  },
+  {
+   "benchmark": "mrmad",
+   "model": "qwen3-omni-thinking",
+   "metric": "DTI accuracy, Avg (%)",
+   "value": 36.58,
+   "source": "Table 4 (Avg. columns; output-based multiple-choice accuracy over 8,400 questions; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.22236",
+   "note": "Printed in the paper as \"Qwen3-Omni-Thinking (30B-A3B)\". Higher is better; chance is 25.00."
+  },
+  {
+   "benchmark": "mrmad",
+   "model": "qwen3-omni-thinking",
+   "metric": "DSC accuracy, Avg (%)",
+   "value": 60.7,
+   "source": "Table 4 (Avg. columns; output-based multiple-choice accuracy over 8,400 questions; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.22236",
+   "note": "Printed in the paper as \"Qwen3-Omni-Thinking (30B-A3B)\". Higher is better; chance is 50.00."
+  },
+  {
+   "benchmark": "mrmad",
+   "model": "qwen3-omni-thinking",
+   "metric": "DSR accuracy, Avg (%)",
+   "value": 32.42,
+   "source": "Table 4 (Avg. columns; output-based multiple-choice accuracy over 8,400 questions; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.22236",
+   "note": "Printed in the paper as \"Qwen3-Omni-Thinking (30B-A3B)\". Higher is better; chance is 25.00."
+  },
+  {
+   "benchmark": "mrmad",
+   "model": "audio-flamingo-3-think",
+   "metric": "DTI accuracy, Avg (%)",
+   "value": 27.53,
+   "source": "Table 4 (Avg. columns; output-based multiple-choice accuracy over 8,400 questions; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.22236",
+   "note": "Printed in the paper as \"Audio Flamingo 3-Think (7B)\". Higher is better; chance is 25.00."
+  },
+  {
+   "benchmark": "mrmad",
+   "model": "audio-flamingo-3-think",
+   "metric": "DSC accuracy, Avg (%)",
+   "value": 50.86,
+   "source": "Table 4 (Avg. columns; output-based multiple-choice accuracy over 8,400 questions; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.22236",
+   "note": "Printed in the paper as \"Audio Flamingo 3-Think (7B)\". Higher is better; chance is 50.00."
+  },
+  {
+   "benchmark": "mrmad",
+   "model": "audio-flamingo-3-think",
+   "metric": "DSR accuracy, Avg (%)",
+   "value": 26.5,
+   "source": "Table 4 (Avg. columns; output-based multiple-choice accuracy over 8,400 questions; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.22236",
+   "note": "Printed in the paper as \"Audio Flamingo 3-Think (7B)\". Higher is better; chance is 25.00."
+  },
+  {
+   "benchmark": "mrmad",
+   "model": "audio-flamingo-next-think",
+   "metric": "DTI accuracy, Avg (%)",
+   "value": 23.58,
+   "source": "Table 4 (Avg. columns; output-based multiple-choice accuracy over 8,400 questions; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.22236",
+   "note": "Printed in the paper as \"Audio Flamingo Next-Think (8B)\". Higher is better; chance is 25.00."
+  },
+  {
+   "benchmark": "mrmad",
+   "model": "audio-flamingo-next-think",
+   "metric": "DSC accuracy, Avg (%)",
+   "value": 50.06,
+   "source": "Table 4 (Avg. columns; output-based multiple-choice accuracy over 8,400 questions; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.22236",
+   "note": "Printed in the paper as \"Audio Flamingo Next-Think (8B)\". Higher is better; chance is 50.00."
+  },
+  {
+   "benchmark": "mrmad",
+   "model": "audio-flamingo-next-think",
+   "metric": "DSR accuracy, Avg (%)",
+   "value": 25.25,
+   "source": "Table 4 (Avg. columns; output-based multiple-choice accuracy over 8,400 questions; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.22236",
+   "note": "Printed in the paper as \"Audio Flamingo Next-Think (8B)\". Higher is better; chance is 25.00."
+  },
+  {
+   "benchmark": "mrmad",
+   "model": "mimo-audio-think",
+   "metric": "DTI accuracy, Avg (%)",
+   "value": 32.47,
+   "source": "Table 4 (Avg. columns; output-based multiple-choice accuracy over 8,400 questions; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.22236",
+   "note": "Printed in the paper as \"MiMo-Audio-Think (7B)\". Higher is better; chance is 25.00."
+  },
+  {
+   "benchmark": "mrmad",
+   "model": "mimo-audio-think",
+   "metric": "DSC accuracy, Avg (%)",
+   "value": 48.03,
+   "source": "Table 4 (Avg. columns; output-based multiple-choice accuracy over 8,400 questions; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.22236",
+   "note": "Printed in the paper as \"MiMo-Audio-Think (7B)\". Higher is better; chance is 50.00."
+  },
+  {
+   "benchmark": "mrmad",
+   "model": "mimo-audio-think",
+   "metric": "DSR accuracy, Avg (%)",
+   "value": 26.5,
+   "source": "Table 4 (Avg. columns; output-based multiple-choice accuracy over 8,400 questions; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.22236",
+   "note": "Printed in the paper as \"MiMo-Audio-Think (7B)\". Higher is better; chance is 25.00."
+  },
+  {
+   "benchmark": "mrmad",
+   "model": "qwen2-5-omni",
+   "metric": "DTI accuracy, Avg (%)",
+   "value": 29.14,
+   "source": "Table 4 (Avg. columns; output-based multiple-choice accuracy over 8,400 questions; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.22236",
+   "note": "Printed in the paper as \"Qwen2.5-Omni (10.7B)\". Higher is better; chance is 25.00."
+  },
+  {
+   "benchmark": "mrmad",
+   "model": "qwen2-5-omni",
+   "metric": "DSC accuracy, Avg (%)",
+   "value": 50.17,
+   "source": "Table 4 (Avg. columns; output-based multiple-choice accuracy over 8,400 questions; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.22236",
+   "note": "Printed in the paper as \"Qwen2.5-Omni (10.7B)\". Higher is better; chance is 50.00."
+  },
+  {
+   "benchmark": "mrmad",
+   "model": "qwen2-5-omni",
+   "metric": "DSR accuracy, Avg (%)",
+   "value": 33.58,
+   "source": "Table 4 (Avg. columns; output-based multiple-choice accuracy over 8,400 questions; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.22236",
+   "note": "Printed in the paper as \"Qwen2.5-Omni (10.7B)\". Higher is better; chance is 25.00."
+  },
+  {
+   "benchmark": "mrmad",
+   "model": "audiomcq-weak-to-strong",
+   "metric": "DTI accuracy, Avg (%)",
+   "value": 27.78,
+   "source": "Table 4 (Avg. columns; output-based multiple-choice accuracy over 8,400 questions; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.22236",
+   "note": "Printed in the paper as \"AudioMCQ-Weak-To-Strong (10.7B)\". Higher is better; chance is 25.00."
+  },
+  {
+   "benchmark": "mrmad",
+   "model": "audiomcq-weak-to-strong",
+   "metric": "DSC accuracy, Avg (%)",
+   "value": 51.53,
+   "source": "Table 4 (Avg. columns; output-based multiple-choice accuracy over 8,400 questions; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.22236",
+   "note": "Printed in the paper as \"AudioMCQ-Weak-To-Strong (10.7B)\". Higher is better; chance is 50.00."
+  },
+  {
+   "benchmark": "mrmad",
+   "model": "audiomcq-weak-to-strong",
+   "metric": "DSR accuracy, Avg (%)",
+   "value": 31.58,
+   "source": "Table 4 (Avg. columns; output-based multiple-choice accuracy over 8,400 questions; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.22236",
+   "note": "Printed in the paper as \"AudioMCQ-Weak-To-Strong (10.7B)\". Higher is better; chance is 25.00."
+  },
+  {
+   "benchmark": "mrmad",
+   "model": "omni-r1",
+   "metric": "DTI accuracy, Avg (%)",
+   "value": 29.19,
+   "source": "Table 4 (Avg. columns; output-based multiple-choice accuracy over 8,400 questions; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.22236",
+   "note": "Printed in the paper as \"Omni-R1 (10.7B)\". Higher is better; chance is 25.00."
+  },
+  {
+   "benchmark": "mrmad",
+   "model": "omni-r1",
+   "metric": "DSC accuracy, Avg (%)",
+   "value": 50.61,
+   "source": "Table 4 (Avg. columns; output-based multiple-choice accuracy over 8,400 questions; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.22236",
+   "note": "Printed in the paper as \"Omni-R1 (10.7B)\". Higher is better; chance is 50.00."
+  },
+  {
+   "benchmark": "mrmad",
+   "model": "omni-r1",
+   "metric": "DSR accuracy, Avg (%)",
+   "value": 29.42,
+   "source": "Table 4 (Avg. columns; output-based multiple-choice accuracy over 8,400 questions; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.22236",
+   "note": "Printed in the paper as \"Omni-R1 (10.7B)\". Higher is better; chance is 25.00."
+  },
+  {
+   "benchmark": "mrmad",
+   "model": "qwen3-omni",
+   "metric": "DTI accuracy, Avg (%)",
+   "value": 35.31,
+   "source": "Table 4 (Avg. columns; output-based multiple-choice accuracy over 8,400 questions; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.22236",
+   "note": "Printed in the paper as \"Qwen3-Omni-Instruct (30B-A3B)\". Higher is better; chance is 25.00."
+  },
+  {
+   "benchmark": "mrmad",
+   "model": "qwen3-omni",
+   "metric": "DSC accuracy, Avg (%)",
+   "value": 52.64,
+   "source": "Table 4 (Avg. columns; output-based multiple-choice accuracy over 8,400 questions; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.22236",
+   "note": "Printed in the paper as \"Qwen3-Omni-Instruct (30B-A3B)\". Higher is better; chance is 50.00."
+  },
+  {
+   "benchmark": "mrmad",
+   "model": "qwen3-omni",
+   "metric": "DSR accuracy, Avg (%)",
+   "value": 25.92,
+   "source": "Table 4 (Avg. columns; output-based multiple-choice accuracy over 8,400 questions; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.22236",
+   "note": "Printed in the paper as \"Qwen3-Omni-Instruct (30B-A3B)\". Higher is better; chance is 25.00."
+  },
+  {
+   "benchmark": "mrmad",
+   "model": "gpt-audio-1-5",
+   "metric": "DTI accuracy, Avg (%)",
+   "value": 28.06,
+   "source": "Table 4 (Avg. columns; output-based multiple-choice accuracy over 8,400 questions; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.22236",
+   "note": "Printed in the paper as \"GPT-Audio-1.5\". Higher is better; chance is 25.00."
+  },
+  {
+   "benchmark": "mrmad",
+   "model": "gpt-audio-1-5",
+   "metric": "DSC accuracy, Avg (%)",
+   "value": 33.28,
+   "source": "Table 4 (Avg. columns; output-based multiple-choice accuracy over 8,400 questions; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.22236",
+   "note": "Printed in the paper as \"GPT-Audio-1.5\". Higher is better; chance is 50.00."
+  },
+  {
+   "benchmark": "mrmad",
+   "model": "gpt-audio-1-5",
+   "metric": "DSR accuracy, Avg (%)",
+   "value": 22.83,
+   "source": "Table 4 (Avg. columns; output-based multiple-choice accuracy over 8,400 questions; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.22236",
+   "note": "Printed in the paper as \"GPT-Audio-1.5\". Higher is better; chance is 25.00."
+  },
+  {
+   "benchmark": "mrmad",
+   "model": "gemini-3-flash",
+   "metric": "DTI accuracy, Avg (%)",
+   "value": 48.97,
+   "source": "Table 4 (Avg. columns; output-based multiple-choice accuracy over 8,400 questions; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.22236",
+   "note": "Printed in the paper as \"Gemini 3 Flash\". Higher is better; chance is 25.00."
+  },
+  {
+   "benchmark": "mrmad",
+   "model": "gemini-3-flash",
+   "metric": "DSC accuracy, Avg (%)",
+   "value": 63.17,
+   "source": "Table 4 (Avg. columns; output-based multiple-choice accuracy over 8,400 questions; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.22236",
+   "note": "Printed in the paper as \"Gemini 3 Flash\". Higher is better; chance is 50.00."
+  },
+  {
+   "benchmark": "mrmad",
+   "model": "gemini-3-flash",
+   "metric": "DSR accuracy, Avg (%)",
+   "value": 39.67,
+   "source": "Table 4 (Avg. columns; output-based multiple-choice accuracy over 8,400 questions; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.22236",
+   "note": "Printed in the paper as \"Gemini 3 Flash\". Higher is better; chance is 25.00."
+  },
+  {
+   "benchmark": "mrmad",
+   "model": "gemini-3-1-flash-lite",
+   "metric": "DTI accuracy, Avg (%)",
+   "value": 33.72,
+   "source": "Table 4 (Avg. columns; output-based multiple-choice accuracy over 8,400 questions; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.22236",
+   "note": "Printed in the paper as \"Gemini 3.1 Flash-Lite\". Higher is better; chance is 25.00."
+  },
+  {
+   "benchmark": "mrmad",
+   "model": "gemini-3-1-flash-lite",
+   "metric": "DSC accuracy, Avg (%)",
+   "value": 52.47,
+   "source": "Table 4 (Avg. columns; output-based multiple-choice accuracy over 8,400 questions; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.22236",
+   "note": "Printed in the paper as \"Gemini 3.1 Flash-Lite\". Higher is better; chance is 50.00."
+  },
+  {
+   "benchmark": "mrmad",
+   "model": "gemini-3-1-flash-lite",
+   "metric": "DSR accuracy, Avg (%)",
+   "value": 31.92,
+   "source": "Table 4 (Avg. columns; output-based multiple-choice accuracy over 8,400 questions; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.22236",
+   "note": "Printed in the paper as \"Gemini 3.1 Flash-Lite\". Higher is better; chance is 25.00."
+  },
+  {
+   "benchmark": "mrmad",
+   "model": "gemini-3-1-pro",
+   "metric": "DTI accuracy, Avg (%)",
+   "value": 86.22,
+   "source": "Table 4 (Avg. columns; output-based multiple-choice accuracy over 8,400 questions; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.22236",
+   "note": "Printed in the paper as \"Gemini 3.1 Pro\". Higher is better; chance is 25.00."
+  },
+  {
+   "benchmark": "mrmad",
+   "model": "gemini-3-1-pro",
+   "metric": "DSC accuracy, Avg (%)",
+   "value": 90.81,
+   "source": "Table 4 (Avg. columns; output-based multiple-choice accuracy over 8,400 questions; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.22236",
+   "note": "Printed in the paper as \"Gemini 3.1 Pro\". Higher is better; chance is 50.00."
+  },
+  {
+   "benchmark": "mrmad",
+   "model": "gemini-3-1-pro",
+   "metric": "DSR accuracy, Avg (%)",
+   "value": 64.25,
+   "source": "Table 4 (Avg. columns; output-based multiple-choice accuracy over 8,400 questions; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.22236",
+   "note": "Printed in the paper as \"Gemini 3.1 Pro\". Higher is better; chance is 25.00."
+  },
+  {
+   "benchmark": "mrmad",
+   "model": "gemini-3-5-flash",
+   "metric": "DTI accuracy, Avg (%)",
+   "value": 60.64,
+   "source": "Table 4 (Avg. columns; output-based multiple-choice accuracy over 8,400 questions; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.22236",
+   "note": "Printed in the paper as \"Gemini 3.5 Flash\". Higher is better; chance is 25.00."
+  },
+  {
+   "benchmark": "mrmad",
+   "model": "gemini-3-5-flash",
+   "metric": "DSC accuracy, Avg (%)",
+   "value": 78.11,
+   "source": "Table 4 (Avg. columns; output-based multiple-choice accuracy over 8,400 questions; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.22236",
+   "note": "Printed in the paper as \"Gemini 3.5 Flash\". Higher is better; chance is 50.00."
+  },
+  {
+   "benchmark": "mrmad",
+   "model": "gemini-3-5-flash",
+   "metric": "DSR accuracy, Avg (%)",
+   "value": 51.08,
+   "source": "Table 4 (Avg. columns; output-based multiple-choice accuracy over 8,400 questions; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.22236",
+   "note": "Printed in the paper as \"Gemini 3.5 Flash\". Higher is better; chance is 25.00."
+  },
+  {
+   "benchmark": "puma",
+   "model": "phi-4-multimodal",
+   "metric": "ASR strict score (%)",
+   "value": 0,
+   "source": "Table 1 (strict scores, audio columns; 100 tasks per category, deterministic rule-based scoring; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.21853",
+   "note": "Printed in the paper as \"Phi-4-Multimodal-Instruct\". Higher is better. Strict credit requires word accuracy above 0.9 (WAcc = max(0, 1 - WER))."
+  },
+  {
+   "benchmark": "puma",
+   "model": "phi-4-multimodal",
+   "metric": "Speech QA strict score (%)",
+   "value": 0,
+   "source": "Table 1 (strict scores, audio columns; 100 tasks per category, deterministic rule-based scoring; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.21853",
+   "note": "Printed in the paper as \"Phi-4-Multimodal-Instruct\". Higher is better. Strict credit requires every verification rule for the task to pass."
+  },
+  {
+   "benchmark": "puma",
+   "model": "phi-4-multimodal",
+   "metric": "Sound & music QA strict score (%)",
+   "value": 2,
+   "source": "Table 1 (strict scores, audio columns; 100 tasks per category, deterministic rule-based scoring; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.21853",
+   "note": "Printed in the paper as \"Phi-4-Multimodal-Instruct\". Higher is better. Strict credit requires every verification rule for the task to pass."
+  },
+  {
+   "benchmark": "puma",
+   "model": "mimo-v2-omni",
+   "metric": "ASR strict score (%)",
+   "value": 3,
+   "source": "Table 1 (strict scores, audio columns; 100 tasks per category, deterministic rule-based scoring; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.21853",
+   "note": "Printed in the paper as \"MiMo-V2-Omni\". Higher is better. Strict credit requires word accuracy above 0.9 (WAcc = max(0, 1 - WER))."
+  },
+  {
+   "benchmark": "puma",
+   "model": "mimo-v2-omni",
+   "metric": "Speech QA strict score (%)",
+   "value": 14,
+   "source": "Table 1 (strict scores, audio columns; 100 tasks per category, deterministic rule-based scoring; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.21853",
+   "note": "Printed in the paper as \"MiMo-V2-Omni\". Higher is better. Strict credit requires every verification rule for the task to pass."
+  },
+  {
+   "benchmark": "puma",
+   "model": "mimo-v2-omni",
+   "metric": "Sound & music QA strict score (%)",
+   "value": 23,
+   "source": "Table 1 (strict scores, audio columns; 100 tasks per category, deterministic rule-based scoring; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.21853",
+   "note": "Printed in the paper as \"MiMo-V2-Omni\". Higher is better. Strict credit requires every verification rule for the task to pass."
+  },
+  {
+   "benchmark": "puma",
+   "model": "mimo-v2-5",
+   "metric": "ASR strict score (%)",
+   "value": 1,
+   "source": "Table 1 (strict scores, audio columns; 100 tasks per category, deterministic rule-based scoring; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.21853",
+   "note": "Printed in the paper as \"MiMo-V2.5\". Higher is better. Strict credit requires word accuracy above 0.9 (WAcc = max(0, 1 - WER))."
+  },
+  {
+   "benchmark": "puma",
+   "model": "mimo-v2-5",
+   "metric": "Speech QA strict score (%)",
+   "value": 15,
+   "source": "Table 1 (strict scores, audio columns; 100 tasks per category, deterministic rule-based scoring; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.21853",
+   "note": "Printed in the paper as \"MiMo-V2.5\". Higher is better. Strict credit requires every verification rule for the task to pass."
+  },
+  {
+   "benchmark": "puma",
+   "model": "mimo-v2-5",
+   "metric": "Sound & music QA strict score (%)",
+   "value": 22,
+   "source": "Table 1 (strict scores, audio columns; 100 tasks per category, deterministic rule-based scoring; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.21853",
+   "note": "Printed in the paper as \"MiMo-V2.5\". Higher is better. Strict credit requires every verification rule for the task to pass."
+  },
+  {
+   "benchmark": "puma",
+   "model": "gemini-2-5-flash",
+   "metric": "ASR strict score (%)",
+   "value": 69,
+   "source": "Table 1 (strict scores, audio columns; 100 tasks per category, deterministic rule-based scoring; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.21853",
+   "note": "Printed in the paper as \"Gemini-2.5-Flash\". Higher is better. Strict credit requires word accuracy above 0.9 (WAcc = max(0, 1 - WER))."
+  },
+  {
+   "benchmark": "puma",
+   "model": "gemini-2-5-flash",
+   "metric": "Speech QA strict score (%)",
+   "value": 41,
+   "source": "Table 1 (strict scores, audio columns; 100 tasks per category, deterministic rule-based scoring; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.21853",
+   "note": "Printed in the paper as \"Gemini-2.5-Flash\". Higher is better. Strict credit requires every verification rule for the task to pass."
+  },
+  {
+   "benchmark": "puma",
+   "model": "gemini-2-5-flash",
+   "metric": "Sound & music QA strict score (%)",
+   "value": 23,
+   "source": "Table 1 (strict scores, audio columns; 100 tasks per category, deterministic rule-based scoring; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.21853",
+   "note": "Printed in the paper as \"Gemini-2.5-Flash\". Higher is better. Strict credit requires every verification rule for the task to pass."
+  },
+  {
+   "benchmark": "puma",
+   "model": "gemini-3-1-flash-lite",
+   "metric": "ASR strict score (%)",
+   "value": 70,
+   "source": "Table 1 (strict scores, audio columns; 100 tasks per category, deterministic rule-based scoring; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.21853",
+   "note": "Printed in the paper as \"Gemini-3.1-Flash-Lite\". Higher is better. Strict credit requires word accuracy above 0.9 (WAcc = max(0, 1 - WER))."
+  },
+  {
+   "benchmark": "puma",
+   "model": "gemini-3-1-flash-lite",
+   "metric": "Speech QA strict score (%)",
+   "value": 35,
+   "source": "Table 1 (strict scores, audio columns; 100 tasks per category, deterministic rule-based scoring; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.21853",
+   "note": "Printed in the paper as \"Gemini-3.1-Flash-Lite\". Higher is better. Strict credit requires every verification rule for the task to pass."
+  },
+  {
+   "benchmark": "puma",
+   "model": "gemini-3-1-flash-lite",
+   "metric": "Sound & music QA strict score (%)",
+   "value": 31,
+   "source": "Table 1 (strict scores, audio columns; 100 tasks per category, deterministic rule-based scoring; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.21853",
+   "note": "Printed in the paper as \"Gemini-3.1-Flash-Lite\". Higher is better. Strict credit requires every verification rule for the task to pass."
+  },
+  {
+   "benchmark": "puma",
+   "model": "gemini-2-5-pro",
+   "metric": "ASR strict score (%)",
+   "value": 81,
+   "source": "Table 1 (strict scores, audio columns; 100 tasks per category, deterministic rule-based scoring; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.21853",
+   "note": "Printed in the paper as \"Gemini-2.5-Pro\". Higher is better. Strict credit requires word accuracy above 0.9 (WAcc = max(0, 1 - WER))."
+  },
+  {
+   "benchmark": "puma",
+   "model": "gemini-2-5-pro",
+   "metric": "Speech QA strict score (%)",
+   "value": 65,
+   "source": "Table 1 (strict scores, audio columns; 100 tasks per category, deterministic rule-based scoring; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.21853",
+   "note": "Printed in the paper as \"Gemini-2.5-Pro\". Higher is better. Strict credit requires every verification rule for the task to pass."
+  },
+  {
+   "benchmark": "puma",
+   "model": "gemini-2-5-pro",
+   "metric": "Sound & music QA strict score (%)",
+   "value": 45,
+   "source": "Table 1 (strict scores, audio columns; 100 tasks per category, deterministic rule-based scoring; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.21853",
+   "note": "Printed in the paper as \"Gemini-2.5-Pro\". Higher is better. Strict credit requires every verification rule for the task to pass."
+  },
+  {
+   "benchmark": "puma",
+   "model": "gemini-3-5-flash",
+   "metric": "ASR strict score (%)",
+   "value": 77,
+   "source": "Table 1 (strict scores, audio columns; 100 tasks per category, deterministic rule-based scoring; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.21853",
+   "note": "Printed in the paper as \"Gemini-3.5-Flash\". Higher is better. Strict credit requires word accuracy above 0.9 (WAcc = max(0, 1 - WER))."
+  },
+  {
+   "benchmark": "puma",
+   "model": "gemini-3-5-flash",
+   "metric": "Speech QA strict score (%)",
+   "value": 81,
+   "source": "Table 1 (strict scores, audio columns; 100 tasks per category, deterministic rule-based scoring; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.21853",
+   "note": "Printed in the paper as \"Gemini-3.5-Flash\". Higher is better. Strict credit requires every verification rule for the task to pass."
+  },
+  {
+   "benchmark": "puma",
+   "model": "gemini-3-5-flash",
+   "metric": "Sound & music QA strict score (%)",
+   "value": 47,
+   "source": "Table 1 (strict scores, audio columns; 100 tasks per category, deterministic rule-based scoring; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.21853",
+   "note": "Printed in the paper as \"Gemini-3.5-Flash\". Higher is better. Strict credit requires every verification rule for the task to pass."
+  },
+  {
+   "benchmark": "puma",
+   "model": "gemini-3-1-pro",
+   "metric": "ASR strict score (%)",
+   "value": 77,
+   "source": "Table 1 (strict scores, audio columns; 100 tasks per category, deterministic rule-based scoring; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.21853",
+   "note": "Printed in the paper as \"Gemini-3.1-Pro\". Higher is better. Strict credit requires word accuracy above 0.9 (WAcc = max(0, 1 - WER))."
+  },
+  {
+   "benchmark": "puma",
+   "model": "gemini-3-1-pro",
+   "metric": "Speech QA strict score (%)",
+   "value": 91,
+   "source": "Table 1 (strict scores, audio columns; 100 tasks per category, deterministic rule-based scoring; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.21853",
+   "note": "Printed in the paper as \"Gemini-3.1-Pro\". Higher is better. Strict credit requires every verification rule for the task to pass."
+  },
+  {
+   "benchmark": "puma",
+   "model": "gemini-3-1-pro",
+   "metric": "Sound & music QA strict score (%)",
+   "value": 56,
+   "source": "Table 1 (strict scores, audio columns; 100 tasks per category, deterministic rule-based scoring; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.21853",
+   "note": "Printed in the paper as \"Gemini-3.1-Pro\". Higher is better. Strict credit requires every verification rule for the task to pass."
+  },
+  {
+   "benchmark": "puma",
+   "model": "voxtral",
+   "metric": "ASR strict score (%)",
+   "value": 36,
+   "source": "Table 1 (strict scores, audio columns; 100 tasks per category, deterministic rule-based scoring; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.21853",
+   "note": "Printed in the paper as \"Voxtral-24B\". Higher is better. Strict credit requires word accuracy above 0.9 (WAcc = max(0, 1 - WER)). The audio member of the Mistral-3.2-24B + Voxtral-24B pair; the audio columns are its scores alone."
+  },
+  {
+   "benchmark": "puma",
+   "model": "voxtral",
+   "metric": "Speech QA strict score (%)",
+   "value": 23,
+   "source": "Table 1 (strict scores, audio columns; 100 tasks per category, deterministic rule-based scoring; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.21853",
+   "note": "Printed in the paper as \"Voxtral-24B\". Higher is better. Strict credit requires every verification rule for the task to pass. The audio member of the Mistral-3.2-24B + Voxtral-24B pair; the audio columns are its scores alone."
+  },
+  {
+   "benchmark": "puma",
+   "model": "voxtral",
+   "metric": "Sound & music QA strict score (%)",
+   "value": 4,
+   "source": "Table 1 (strict scores, audio columns; 100 tasks per category, deterministic rule-based scoring; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.21853",
+   "note": "Printed in the paper as \"Voxtral-24B\". Higher is better. Strict credit requires every verification rule for the task to pass. The audio member of the Mistral-3.2-24B + Voxtral-24B pair; the audio columns are its scores alone."
+  },
+  {
+   "benchmark": "puma",
+   "model": "gpt-4o-audio",
+   "metric": "ASR strict score (%)",
+   "value": 64,
+   "source": "Table 1 (strict scores, audio columns; 100 tasks per category, deterministic rule-based scoring; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.21853",
+   "note": "Printed in the paper as \"GPT-4o-Audio\". Higher is better. Strict credit requires word accuracy above 0.9 (WAcc = max(0, 1 - WER)). The audio member of the GPT-4o + GPT-4o-Audio pair; the audio columns are its scores alone."
+  },
+  {
+   "benchmark": "puma",
+   "model": "gpt-4o-audio",
+   "metric": "Speech QA strict score (%)",
+   "value": 50,
+   "source": "Table 1 (strict scores, audio columns; 100 tasks per category, deterministic rule-based scoring; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.21853",
+   "note": "Printed in the paper as \"GPT-4o-Audio\". Higher is better. Strict credit requires every verification rule for the task to pass. The audio member of the GPT-4o + GPT-4o-Audio pair; the audio columns are its scores alone."
+  },
+  {
+   "benchmark": "puma",
+   "model": "gpt-4o-audio",
+   "metric": "Sound & music QA strict score (%)",
+   "value": 34,
+   "source": "Table 1 (strict scores, audio columns; 100 tasks per category, deterministic rule-based scoring; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.21853",
+   "note": "Printed in the paper as \"GPT-4o-Audio\". Higher is better. Strict credit requires every verification rule for the task to pass. The audio member of the GPT-4o + GPT-4o-Audio pair; the audio columns are its scores alone."
+  },
+  {
+   "benchmark": "puma",
+   "model": "gpt-audio-mini",
+   "metric": "ASR strict score (%)",
+   "value": 62,
+   "source": "Table 1 (strict scores, audio columns; 100 tasks per category, deterministic rule-based scoring; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.21853",
+   "note": "Printed in the paper as \"GPT-Audio-Mini\". Higher is better. Strict credit requires word accuracy above 0.9 (WAcc = max(0, 1 - WER)). The audio member of the GPT-5.4-Mini + GPT-Audio-Mini pair; the audio columns are its scores alone."
+  },
+  {
+   "benchmark": "puma",
+   "model": "gpt-audio-mini",
+   "metric": "Speech QA strict score (%)",
+   "value": 23,
+   "source": "Table 1 (strict scores, audio columns; 100 tasks per category, deterministic rule-based scoring; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.21853",
+   "note": "Printed in the paper as \"GPT-Audio-Mini\". Higher is better. Strict credit requires every verification rule for the task to pass. The audio member of the GPT-5.4-Mini + GPT-Audio-Mini pair; the audio columns are its scores alone."
+  },
+  {
+   "benchmark": "puma",
+   "model": "gpt-audio-mini",
+   "metric": "Sound & music QA strict score (%)",
+   "value": 16,
+   "source": "Table 1 (strict scores, audio columns; 100 tasks per category, deterministic rule-based scoring; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.21853",
+   "note": "Printed in the paper as \"GPT-Audio-Mini\". Higher is better. Strict credit requires every verification rule for the task to pass. The audio member of the GPT-5.4-Mini + GPT-Audio-Mini pair; the audio columns are its scores alone."
+  },
+  {
+   "benchmark": "puma",
+   "model": "gpt-audio",
+   "metric": "ASR strict score (%)",
+   "value": 66,
+   "source": "Table 1 (strict scores, audio columns; 100 tasks per category, deterministic rule-based scoring; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.21853",
+   "note": "Printed in the paper as \"GPT-Audio\". Higher is better. Strict credit requires word accuracy above 0.9 (WAcc = max(0, 1 - WER)). The audio member of the GPT-5.5 + GPT-Audio pair; the audio columns are its scores alone."
+  },
+  {
+   "benchmark": "puma",
+   "model": "gpt-audio",
+   "metric": "Speech QA strict score (%)",
+   "value": 41,
+   "source": "Table 1 (strict scores, audio columns; 100 tasks per category, deterministic rule-based scoring; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.21853",
+   "note": "Printed in the paper as \"GPT-Audio\". Higher is better. Strict credit requires every verification rule for the task to pass. The audio member of the GPT-5.5 + GPT-Audio pair; the audio columns are its scores alone."
+  },
+  {
+   "benchmark": "puma",
+   "model": "gpt-audio",
+   "metric": "Sound & music QA strict score (%)",
+   "value": 29,
+   "source": "Table 1 (strict scores, audio columns; 100 tasks per category, deterministic rule-based scoring; v1, checked 2026-08-26)",
+   "source_url": "https://arxiv.org/abs/2608.21853",
+   "note": "Printed in the paper as \"GPT-Audio\". Higher is better. Strict credit requires every verification rule for the task to pass. The audio member of the GPT-5.5 + GPT-Audio pair; the audio columns are its scores alone."
   }
  ]
 }

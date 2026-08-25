@@ -1,6 +1,11 @@
 {
  "entries": [
   {
+   "date": "2026-08-26",
+   "source": "daily review",
+   "change": "Daily review: two benchmarks catalogued. MRMAD (arXiv 2608.22236) tests whether audio-language models can hear how audio is degraded - nine degradation types at three severities across speech, music and sound, posed as multi-turn dialogues over multiple clips - and contributes 66 result cells read off Table 4 for 22 systems. PUMA (arXiv 2608.21853) is a Polish benchmark whose three audio categories (ASR, speech QA, sound and music QA) contribute 36 strict-score cells from Table 1; for the same-family model pairs the audio columns are recorded against the audio member. Twelve new model entries were needed. Nine further flagged papers were read and ruled out of scope: a coding-agent game-development benchmark, a KV-cache method for long-form speech LLMs, a LoRA post-training study on DCASE audio QA, two video benchmarks (Southeast Asian cultural moments, Hollywood narrative understanding) where audio is an auxiliary condition for vision models rather than the object of evaluation, a text-only Bengali safety benchmark, an ASR-error study of multi-hop RAG pipelines, a clinical on-device meeting-summarisation system, and an audio deepfake detection challenge."
+  },
+  {
    "date": "2026-08-25",
    "source": "daily review",
    "change": "Daily review: OmniAssistBench (arXiv 2608.21360) catalogued, with 11 overall-average result cells read off Tables 2 and 3 and three new model entries (Doubao-Seed-2.0-lite, MiniCPM-o-4.5, Qwen3.5-Omni-Plus). It evaluates omni-modal LLMs as real-time video assistants whose user instructions arrive as audio embedded in the test video. Five further flagged papers were read and ruled out of scope: a Chinese abusive-language benchmark over text rather than speech, a multi-turn conversational AI survey, an audio-chapterization training method, a shared-task system description, and a debate-practice HCI system. Separately, the crawler window was widened after three consecutive empty days: arXiv makes a submission searchable several days after its submittedDate, so a three-day window could close before a paper became visible. Six papers recovered from that gap are included in this review."

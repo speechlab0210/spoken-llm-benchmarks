@@ -8917,6 +8917,72 @@
     "GPT-5 judge, 5-point rubric normalized to 0-100"
    ],
    "note": "Gemini-3-Pro leads at 66.4 and the best open-source model, Qwen3-Omni-Instruct, reaches 51.2, both far below the rubric's threshold for a fully valid answer. Reported failure modes: gesture prompts, losing history across multi-turn interaction, mistaking background speech in the video for a new user instruction, and failing to delay a response until the target event. Building the set took over 1000 expert person-hours."
+  },
+  {
+   "id": "mrmad",
+   "name": "MRMAD",
+   "full_title": "MRMAD: A Multi-Round Multi-Audio Benchmark for Evaluating Acoustic Degradation Perception in Large Audio-Language Models",
+   "arxiv_id": "2608.22236",
+   "arxiv_date": "2026-08",
+   "arxiv_date_full": "2026-08-23",
+   "url": "https://arxiv.org/abs/2608.22236",
+   "code": "https://github.com/Bose/MRMAD",
+   "summary": "A benchmark asking whether audio-language models hear how an audio signal is damaged, not what it says. Clean speech, music and sound clips are re-issued at three severity levels under nine degradation types (ambient noise, low-pass and band-pass filtering, MP3 compression, reverberation, echo, neural vocoder artifacts, DSP denoising artifacts, packet loss; music drops echo, sound drops ambient noise and denoising artifacts). Each item is a multi-turn dialogue in which the reference clip arrives in an earlier turn and the degraded clips in later ones, so the model has to carry a hypothesis about quality across turns rather than judge a single file. Three tasks: identify the degradation type (DTI), compare severity between two clips (DSC), and rank several clips by severity (DSR).",
+   "categories": [
+    "auditory-perception",
+    "long-form",
+    "reasoning"
+   ],
+   "tasks": [
+    "degradation type identification (DTI)",
+    "degradation severity comparison (DSC)",
+    "degradation severity ranking (DSR)"
+   ],
+   "languages": [
+    "English"
+   ],
+   "io": "multi-round multi-audio in, text (multiple-choice label) out",
+   "size": "8,400 multiple-choice questions (speech : music : sound = 9 : 8 : 7; DTI : DSC : DSR = 3 : 3 : 1); built from 5,400 speech clips (VCTK, LibriSpeech, HiFi-TTS, LJSpeech; 192 speakers), 4,800 music clips (MUSDB18-HQ, URMP, FMA-small) and 4,200 sound clips (TAU Urban 2019, FSD50K); average audio 9.1 s, average question 73.8 words",
+   "metrics": [
+    "multiple-choice accuracy per task (%)"
+   ],
+   "note": "18 models were evaluated across LALM, reasoning-LALM and omni families. Most open-source models sit within a few points of chance on all three tasks (chance is 25 / 50 / 25 for DTI / DSC / DSR), while Gemini 3.1 Pro reaches 86.22 / 90.81 / 64.25. Reasoning training does not rescue it: Audio-Reasoner scores below chance on every task, and the Think variants of Audio Flamingo and MiMo-Audio land at or below their instruct counterparts. The authors' diagnostic is that several models score no worse when the first-turn reference audio is deleted, suggesting degradation cues are attenuated before the audio encoder's output reaches the language model."
+  },
+  {
+   "id": "puma",
+   "name": "PUMA",
+   "full_title": "PUMA: A Polish Benchmark for Culturally Grounded Multimodal Understanding",
+   "arxiv_id": "2608.21853",
+   "arxiv_date": "2026-08",
+   "arxiv_date_full": "2026-08-22",
+   "url": "https://arxiv.org/abs/2608.21853",
+   "code": "https://github.com/OPI-AILab/puma-app",
+   "data": "https://huggingface.co/spaces/OPI-PIB/puma",
+   "summary": "A hand-built Polish benchmark covering audio, images and documents, of which the three audio categories are what the Atlas tracks: Polish ASR, Speech QA over one- to several-minute recordings (comprehension, information extraction, speaker intent and emotion, tied back to Polish cultural knowledge), and Sound & music QA over non-speech recordings of Polish provenance - ambient noise, instruments, animals, jingles, machinery. Scoring is deterministic and rule-based with no LLM judge: each task reports a strict score (all conditions met, with ASR requiring word accuracy above 0.9) alongside a softer partial-credit score. Models that cannot take audio are evaluated as same-family pairs, one member for vision and one for audio.",
+   "categories": [
+    "multilingual",
+    "spoken-qa",
+    "auditory-perception"
+   ],
+   "tasks": [
+    "Polish ASR",
+    "speech QA (comprehension, extraction, intent and emotion)",
+    "sound and music QA",
+    "image QA",
+    "OCR",
+    "document QA",
+    "structured extraction"
+   ],
+   "languages": [
+    "Polish"
+   ],
+   "io": "audio, image or document plus text in, text out",
+   "size": "900 hand-crafted tasks, 100 per category across nine categories; three of the nine (ASR, Speech QA, Sound & music QA) are audio",
+   "metrics": [
+    "strict score (%)",
+    "soft score (%)"
+   ],
+   "note": "Audio is the weakest modality for nearly every system tested. Sound & music QA is the hardest category in the whole benchmark - the best strict score is 56 (Gemini-3.1-Pro) - and the authors read that as non-speech audio being a low priority for model developers. The OpenAI pairs lose most of their ground to Gemini on the audio columns specifically. On ASR the paper reports Whisper-Large-v3, released in 2023, beating newer open-weight transcription models on Polish, which the authors take as evidence that Open ASR Leaderboard standings on high-resource languages do not transfer to less-resourced ones. Gemini-3.1-Pro leads overall at 79.7 strict. Claude-Fable-5 was run on the vision and document categories only, having no audio support, and Gemma 4's 30-second audio limit ruled it out of the audio categories."
   }
  ]
 }

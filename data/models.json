@@ -1199,6 +1199,78 @@
    "name": "Qwen3.5-Omni-Plus",
    "org": "Alibaba",
    "type": "e2e"
+  },
+  {
+   "id": "gemini-3-1-pro",
+   "name": "Gemini 3.1 Pro",
+   "org": "Google",
+   "type": "e2e"
+  },
+  {
+   "id": "gemini-3-5-flash",
+   "name": "Gemini 3.5 Flash",
+   "org": "Google",
+   "type": "e2e"
+  },
+  {
+   "id": "gemini-3-1-flash-lite",
+   "name": "Gemini 3.1 Flash-Lite",
+   "org": "Google",
+   "type": "e2e"
+  },
+  {
+   "id": "gpt-audio-1-5",
+   "name": "GPT-Audio-1.5",
+   "org": "OpenAI",
+   "type": "e2e"
+  },
+  {
+   "id": "audio-flamingo-next",
+   "name": "Audio Flamingo Next",
+   "org": "NVIDIA",
+   "type": "e2e"
+  },
+  {
+   "id": "audio-flamingo-next-think",
+   "name": "Audio Flamingo Next-Think",
+   "org": "NVIDIA",
+   "type": "e2e"
+  },
+  {
+   "id": "audio-flamingo-3-think",
+   "name": "Audio Flamingo 3-Think",
+   "org": "NVIDIA",
+   "type": "e2e"
+  },
+  {
+   "id": "qwen3-omni-thinking",
+   "name": "Qwen3-Omni-Thinking",
+   "org": "Alibaba",
+   "type": "e2e"
+  },
+  {
+   "id": "mimo-audio-think",
+   "name": "MiMo-Audio-Think",
+   "org": "Xiaomi",
+   "type": "e2e"
+  },
+  {
+   "id": "mimo-v2-5",
+   "name": "MiMo-V2.5",
+   "org": "Xiaomi",
+   "type": "e2e"
+  },
+  {
+   "id": "omni-r1",
+   "name": "Omni-R1",
+   "org": "—",
+   "type": "e2e"
+  },
+  {
+   "id": "audiomcq-weak-to-strong",
+   "name": "AudioMCQ-Weak-to-Strong",
+   "org": "—",
+   "type": "e2e"
   }
  ]
 }
