@@ -1,9 +1,206 @@
 {
-  "fetched_at": "2026-08-24T23:26:59Z",
+  "fetched_at": "2026-08-25T22:47:02Z",
   "window_days": 10,
-  "scanned": 49,
-  "flagged_today": 0,
+  "scanned": 78,
+  "flagged_today": 11,
   "candidates": [
+    {
+      "id": "2608.22236",
+      "title": "MRMAD: A Multi-Round Multi-Audio Benchmark for Evaluating Acoustic Degradation Perception in Large Audio-Language Models",
+      "abstract": "Large audio-language models (LALMs) have shown promising progress in understanding speech, music, and general sound events, yet their ability to reason about how audio signals are degraded remains underexplored. Existing benchmarks primarily evaluate semantic understanding, event recognition, or high-level audio reasoning, leaving a basic question unanswered: Do LALMs understand the differences in audio quality? We introduce MRMAD, a Multi-Round Multi-Audio Degradation benchmark for evaluating audio degradation perception and understanding in LALMs. MRMAD spans speech, music, and sound, and frames evaluation as multi-turn dialogues over multiple audio inputs, requiring models to identify degradation types, compare severity, and perceive corruption changes across turns. Unlike current single-turn audio-language benchmarks, MRMAD evaluates whether LALMs can maintain consistent degradation hypotheses with new evidence and explain low-level acoustic phenomena in natural language. Through a systematic evaluation of 18 representative LALMs from non-thinking to reasoning and Omni models, we find that current models often recognize coarse content while failing to diagnose, compare, or reason about degradations reliably. MRMAD reveals an important yet overlooked aspect of audio-language understanding and provides a diagnostic foundation for building future LALMs that are robust to real-world acoustic conditions.",
+      "published": "2026-08-23T06:23:31Z",
+      "authors": [
+        "Yize Li",
+        "Ningyuan Yang",
+        "Sile Yin",
+        "Sindhuja Thogarrati",
+        "Sung-En Chang",
+        "Andrew C. Singer",
+        "Xue Lin",
+        "Chuan-Che Huang"
+      ],
+      "primary_category": "cs.SD",
+      "url": "https://arxiv.org/abs/2608.22236",
+      "score": 42,
+      "status": "new — under review"
+    },
+    {
+      "id": "2608.21833",
+      "title": "GameXpert-Bench: How Far Are Coding Agents from Expert Game Development?",
+      "abstract": "Recent large language models (LLMs) can operate as coding agents that build complete games from natural language requests. Game development is especially demanding because program logic, visual and audio content, interfaces, interaction and playability must function together in one executable artifact. Measuring this capability therefore requires evaluation of both game product and the development process. Existing benchmarks often assess the game development capabilities of LLMs by evaluating the final artifact or an isolated development stage. Our analysis of complete human-agent development trajectories identifies three stages that together span the lifecycle of game development with a coding agent: initial game generation, bug diagnosis and repair, and optimization over multiple turns. Therefore, we introduce GameXpert-Bench, which operationalizes the three lifecycle stages as three complementary benchmark tracks. GameGen evaluates complete game creation from a single request in an empty workspace. GameFix evaluates diagnosis and repair when defects are reported or left for the agent to discover. GameOpt evaluates cumulative optimization through request chains seeded by real development trajectories between users and agents. We evaluate each track using live game interaction, deterministic behavioral tests, or final product criteria with regression checks. The suite contains 97 generation tasks across 11 genres; 100 repair tasks from 50 game levels verified by humans, each with 19-27 injected bugs; and 17 optimization chains with six turns and 102 requests. Across the three tracks, current agents are more reliable at producing playable foundations and implementing explicit requirements than at discovering defects, verifying runtime behavior, and preserving functionality across changes.",
+      "published": "2026-08-22T08:05:16Z",
+      "authors": [
+        "Kun Chen",
+        "Haorong Hong",
+        "Peizhong Gao",
+        "Jianfeng Lin",
+        "Tongxu Luo",
+        "Yuxuan Xie",
+        "Chenxu Liu",
+        "Jieling He"
+      ],
+      "primary_category": "cs.AI",
+      "url": "https://arxiv.org/abs/2608.21833",
+      "score": 36,
+      "status": "new — under review"
+    },
+    {
+      "id": "2608.22704",
+      "title": "WnW: Waxing-and-Waning KV Cache for Long-Form Speech LLMs",
+      "abstract": "Long-form audio inputs make the KV cache the dominant memory cost of speech LLMs. Prefill-only KV compression methods permanently discard audio KV positions once evicted, with no pathway to recover them during decoding. We show this is fragile on long-form audio: prefill attention concentrates near the audio start (an attention-sink effect), while decode-time attention distributes broadly, and the two rankings overlap weakly. We propose WnW (Waxing-and-Waning KV cache), which classifies KV-heads into anchor, tidal, and fixed roles via offline calibration. Anchor heads remain on GPU and serve as a decode-time importance observer; tidal heads keep a CPU-resident complement that is recalled chunk-by-chunk based on aggregated anchor-head scores; fixed heads keep only an on-GPU subset, with the rest permanently discarded. On LibriSpeech-Long with two 3B backbones (Voxtral-mini-3b and Qwen2.5-Omni-3B), WnW preserves near-Full-Cache accuracy while keeping only 20% of audio tokens on GPU, where prefill-only baselines fail to terminate. Results generalize across language, task, and domain shifts, and CPU-GPU recall adds little decode-time overhead in our measurements.",
+      "published": "2026-08-24T01:48:30Z",
+      "authors": [
+        "Yiming Yao",
+        "Chenyang Lyu",
+        "Xuanfan Ni",
+        "Longyue Wang",
+        "Weihua Luo",
+        "Yazheng Yang",
+        "Jinsong Su"
+      ],
+      "primary_category": "cs.CL",
+      "url": "https://arxiv.org/abs/2608.22704",
+      "score": 27,
+      "status": "new — under review"
+    },
+    {
+      "id": "2608.23092",
+      "title": "Reasoning-Oriented Post-Training and Inference-Time LoRA Rescaling for Audio-Dependent Question Answering",
+      "abstract": "Audio-Dependent Question Answering (ADQA) requires Large Audio-Language Models (LALMs) to answer questions whose correct answers depend on the given audio content. Successful ADQA requires accurate audio perception, identification of question-relevant evidence, and cross-modal reasoning. Using the official ADQA dataset of DCASE 2026 Task 5, we investigate reasoning-oriented post-training with Low-Rank Adaptation (LoRA) and inference-time LoRA rescaling for both Qwen2.5-Omni and MOSS-Audio-8B-Thinking. We introduce a structured Chain-of-Thought (CoT) framework that decomposes the reasoning process into question analysis, question type, audio evidence, and reasoning. We then analyze how task-specific LoRA adaptation affects the two backbones and further explore inference-time rescaling of trained LoRA adapters. Experiments on the development set reveal markedly backbone-dependent behavior: post-training improves the Qwen-based systems but substantially degrades MOSS-Audio under our supervised fine-tuning configuration. Moderate LoRA rescaling further improves the best Qwen system's top-1 accuracy from 58.93% to 61.05% and partially restores the performance of the fine-tuned MOSS-Audio models, while the best MOSS-Audio system achieves 67.70% top-1 accuracy. Our submitted systems ranked third overall and second among lightweight systems under 10B parameters in the challenge.",
+      "published": "2026-08-24T10:57:12Z",
+      "authors": [
+        "Weiteng Hu",
+        "Yin Cao",
+        "Jun Yang"
+      ],
+      "primary_category": "cs.SD",
+      "url": "https://arxiv.org/abs/2608.23092",
+      "score": 27,
+      "status": "new — under review"
+    },
+    {
+      "id": "2608.21853",
+      "title": "PUMA: A Polish Benchmark for Culturally Grounded Multimodal Understanding",
+      "abstract": "Large language models are increasingly moving beyond text processing, adding support for other modalities such as images and audio. While text understanding and generation have been extensively studied, multimodal data processing capabilities, particularly in the context of cultures and languages other than English, have not yet been evaluated comprehensively. In this paper, we propose PUMA (Polish Unified Multimodal Assessment), a novel benchmark of 900 hand-crafted tasks designed to probe the limits of multimodal models in the Polish cultural and linguistic context. The dataset evaluates both cultural understanding and practical skill in processing text, images, audio, and visually rich documents. Our extensive evaluation of frontier commercial models, open-weights models, and specialized smaller systems highlights a significant performance gap. While top commercial models achieve high scores in visual question answering, most models struggle with complex audio or document understanding. We open-source our evaluation framework to advance localized multimodal AI research.",
+      "published": "2026-08-22T08:55:56Z",
+      "authors": [
+        "Sławomir Dadas",
+        "Michał Perełkiewicz",
+        "Rafał Poświata",
+        "Małgorzata Grębowiec",
+        "Bartłomiej Jaworski",
+        "Izabela Woźniakowska"
+      ],
+      "primary_category": "cs.CL",
+      "url": "https://arxiv.org/abs/2608.21853",
+      "score": 24,
+      "status": "new — under review"
+    },
+    {
+      "id": "2608.23065",
+      "title": "Cultural Moment Benchmark: Evaluating Video Cultural Reasoning and Grounding in Southeast Asia",
+      "abstract": "Cultural understanding in video means more than recognizing what is visible; it requires grasping the symbolic and temporal significance of cultural concepts. We decompose this into three abilities: naming what a concept symbolizes, visually recognizing it on video, and locating its sub-events in time. Existing video-cultural benchmarks tend to test what is seen, collapsing these three abilities into a single score that hides the bottleneck. We introduce the Cultural Moment Benchmark (CMB): 306 expert-curated concepts from seven countries in Southeast Asia across five categories. We evaluate each concept through three stages, one per ability. Given a description, Stage 1 (S1) selects from four candidate concept names, Stage 2 (S2) selects from four candidate video moments, and Stage 3 (S3) predicts the start and end times of the moment in a video. To keep each stage focused on a distinct ability, we use three design choices: semantic-similarity distractors (S1, S2), unlabeled video moments (S2), and free-form localization on a different example video (S3). Across six vision-language models, failure modes vary by ability and modality. i) Even the strongest closed-source models score below 30% when all three stages must be correct; ii) The three abilities do not fully cascade: naming a concept correctly helps half the models recognize it on video, but recognizing it has little effect on locating the sub-event in time; iii) Audio is complementary, redundant, or distracting depending on the concept, more often distracting in non-Latin-script countries; removing both audio and subtitles hurts Games and Music the most. Our 14-rater human study shows that even Expert raters score below chance on concepts from a neighboring country, indicating that CMB requires country-specific cultural knowledge. CMB acts as a diagnostic harness, attributing failures to a specific ability or modality.",
+      "published": "2026-08-24T10:11:16Z",
+      "authors": [
+        "Burak Satar",
+        "Zhixin Ma",
+        "Cheng Yu-Tong",
+        "Huy Hoang Tran",
+        "Phuong Anh Nguyen",
+        "Chong-Wah Ngo"
+      ],
+      "primary_category": "cs.CV",
+      "url": "https://arxiv.org/abs/2608.23065",
+      "score": 24,
+      "status": "new — under review"
+    },
+    {
+      "id": "2608.22335",
+      "title": "Register Shifts Break LLM Safety: A Bengali Benchmark with Culturally Grounded Harms",
+      "abstract": "Bengali is the seventh-most-spoken language globally, yet LLM safety evaluation remains overwhelmingly English-centric. We introduce BanglaSafe, a benchmark of 879 Bengali prompts combining 309 natively authored prompts with 570 expert-reviewed prompts, spanning 17 culturally grounded harm categories and five prompting conditions that vary language, writing style, and authority framing. Evaluating 18 frontier LLMs, we find that over half of all responses are unsafe or partially unsafe (53.6%) while 14.7% contains strictly harmful content, and that the strongest observed effect is not the switch from English to Bengali but the choice of writing style within Bengali: the same harmful request phrased as a formal newspaper investigation succeeds 17 percentage points more often than the same request phrased as a casual message, with no adversarial engineering involved. We further show that existing safety classifiers struggle to reliably evaluate Bengali content, with even frontier models failing on nearly half of all cases.",
+      "published": "2026-08-23T10:09:00Z",
+      "authors": [
+        "Naymul Islam",
+        "Nusrat Jahan Lia",
+        "Shubhashis Roy Dipta",
+        "Sabik Bin Sultan",
+        "Abdullah Khan Zehady"
+      ],
+      "primary_category": "cs.CL",
+      "url": "https://arxiv.org/abs/2608.22335",
+      "score": 21,
+      "status": "new — under review"
+    },
+    {
+      "id": "2608.22872",
+      "title": "Better Retrieval, Worse Robustness:How Multi-hop RAG Amplifies Upstream ASR Errors",
+      "abstract": "Speech-based applications pass spoken queries through automatic speech recognition (ASR) before any retrieval module, so ASR errors enter the pipeline as a fixed upstream constraint. We empirically test whether two extensions to standard retrieval-augmented generation (RAG), entity-graph linking and iterative reformulation, absorb or amplify these errors. Using four English accents synthesized through neural TTS, we evaluate four RAG configurations on three multi-hop QA benchmarks (HotpotQA, 2WikiMultiHopQA and MuSiQue) against a clean-text oracle. Although the structurally richer configurations generally retain higher absolute F1 under ASR input, both extensions amplify the error: the F1 gap from clean text to the highest-WER accent is 36-67% larger under their combination than under naive dense retrieval, on all three benchmarks. The dominant failure mode is corruption of one or more query entities, accounting for 87-96% of degradation cases on 2WikiMultiHopQA across all four methods. Two lightweight surface-form mitigations leave most of the gap intact, indicating that downstream retrieval structure amplifies remaining entity errors. We release code and data at https://github.com/ZhenghuaBao/spoken-multihop-rag .",
+      "published": "2026-08-24T06:59:34Z",
+      "authors": [
+        "Zhenghua Bao"
+      ],
+      "primary_category": "cs.CL",
+      "url": "https://arxiv.org/abs/2608.22872",
+      "score": 21,
+      "status": "new — under review"
+    },
+    {
+      "id": "2608.21430",
+      "title": "Evaluating Multimodal Narrative Understanding of Popular Hollywood Films",
+      "abstract": "Multimodal language models increasingly show promise for enabling the large-scale computational analysis of film, opening up new avenues for learning about film history and the evolution of narrative techniques. But the creation of stable benchmarks built around Hollywood films is complicated by copyright protections. In this work, we address these concerns directly, by building a new collection of Hollywood films defined by two criteria: box office popularity (where we publish the first large-scale, open collection of weekly box office earnings reported by Variety magazine from 1922-1979); and likely public domain status (by researching copyright registrations and renewals in the US Catalog of Copyright Entries). We build a new multimodal MCQ benchmark on top of this collection that focuses on narrative elements that directly evaluate the abilities of models to inform meaningful research on film narrative; we find that many vision-language models struggle on this task (with many performing at near-chance levels of accuracy), while audio-visual models (including those that use audio in captioning scenes) reach a maximum accuracy of 61.1%, well below human-level performance.",
+      "published": "2026-08-17T04:04:22Z",
+      "authors": [
+        "David Bamman",
+        "Kent K. Chang",
+        "Allison Cooper",
+        "Juishan Hsu",
+        "Reina Kushihashi",
+        "Madison Mar",
+        "Arnav Podichetty",
+        "Rachael Samberg"
+      ],
+      "primary_category": "cs.AI",
+      "url": "https://arxiv.org/abs/2608.21430",
+      "score": 18,
+      "status": "new — under review"
+    },
+    {
+      "id": "2608.22108",
+      "title": "Development and Feasibility Evaluation of an Edge AI as Medical Device System for Breast Cancer Multidisciplinary Team Meetings",
+      "abstract": "Breast Cancer Multidisciplinary Team (MDT) meetings manage increasingly complex cases under considerable time pressure, and documentation requirements can reduce clinical efficiency and decision quality. Existing AI based MDT workflows rely on cloud-based processing, limiting their use because patient discussions contain identifiable information. We developed a fully on-device AI pipeline using open-source Automatic Speech Recognition (ASR) and Large Language Models (LLMs) that transcribes breast cancer MDT discussions, structures clinical information, and generates treatment recommendations using retrieval-augmented generation (RAG) grounded in National Institute for Health and Care Excellence (NICE) guidance. The pipeline runs on a single NVIDIA Jetson AGX Orin, ensuring that patient audio, transcripts, and outputs remain within institutional infrastructure. Evaluation included two recorded simulated MDT discussions, ten clinically validated synthetic discussions, and 1,270 acoustically augmented recordings. Optimisation of Whisper large-v3 reduced word error rate by 20.7% and 24.4% on the recorded discussions and achieved performance within 0.58% WER and 1.58% word information lost of a commercial clinical ASR benchmark on augmented audio. MedGemma-RAG identified 2.3 times more MDT-concordant interventions than a proprietary cloud comparator (p = 0.020), with no significant difference in overall accuracy. Stakeholders identified automated documentation, treatment recommendation support, and case triage as the most credible near-term applications while highlighting workflow integration, governance, and clinician trust as key implementation challenges. These findings demonstrate the feasibility of privacy-preserving, fully on-device AI for MDT documentation and guideline-informed decision support, providing a foundation for prospective clinical evaluation.",
+      "published": "2026-08-22T21:20:51Z",
+      "authors": [
+        "Aarzoo Dhiman",
+        "Farzana Haque",
+        "Kartikae Grover",
+        "Lydia Brian Smith",
+        "William Stephen Jones"
+      ],
+      "primary_category": "cs.AI",
+      "url": "https://arxiv.org/abs/2608.22108",
+      "score": 18,
+      "status": "new — under review"
+    },
+    {
+      "id": "2608.23437",
+      "title": "AT-ADD: A Benchmark and Challenge for Robust and All-Type Audio Deepfake Detection",
+      "abstract": "Recent audio generation models can synthesize high-fidelity speech, environmental sound, singing voice, and music, creating new risks for multimedia trust. Existing audio deepfake detection (ADD) benchmarks remain predominantly speech-centric and often underrepresent realistic channel variation and diverse audio types. This paper presents AT-ADD, a large-scale benchmark and challenge designed to evaluate both robust speech deepfake detection and all-type audio deepfake detection. Track 1 evaluates binary speech detection under unseen generators, diverse recording conditions, signal perturbations, and replay effects. Track 2 evaluates type-agnostic real/fake detection over speech, sound, singing, and music when the audio type is unknown at test time. We detail the dataset construction, evaluation protocol, and reproducible baselines, and analyze the final systems submitted to the ACM Multimedia 2026 Grand Challenge. The strongest official baseline obtains 76.73% and 79.47% Macro-F1 on the Track 1 and Track 2 evaluation sets, respectively, whereas the winning challenge systems reach 90.71% and 96.10%. Beyond aggregate rankings, sample-level analysis of the top five submissions examines generator- and type-level difficulty, cross-system error complementarity, and ranking stability. The results show that large-scale self-supervised representations, condition-aware augmentation, multi-crop inference, and structured fusion or routing are central to generalization, while generator-specific robustness and consistent performance across diverse audio types remain unresolved.",
+      "published": "2026-08-24T16:11:43Z",
+      "authors": [
+        "Yuankun Xie",
+        "Haonan Cheng",
+        "Jiayi Zhou",
+        "Xiaoxuan Guo",
+        "Tao Wang",
+        "Changhao Zhang",
+        "Jian Liu",
+        "Weiqiang Wang"
+      ],
+      "primary_category": "cs.SD",
+      "url": "https://arxiv.org/abs/2608.23437",
+      "score": 18,
+      "status": "new — under review"
+    },
     {
       "id": "2608.21360",
       "title": "OmniAssistBench: Assistant-style Interaction Benchmark for Omni-LLMs",
