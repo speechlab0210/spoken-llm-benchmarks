@@ -1,9 +1,76 @@
 {
-  "fetched_at": "2026-08-25T22:47:02Z",
+  "fetched_at": "2026-08-26T22:47:02Z",
   "window_days": 10,
-  "scanned": 78,
-  "flagged_today": 11,
+  "scanned": 90,
+  "flagged_today": 4,
   "candidates": [
+    {
+      "id": "2608.23758",
+      "title": "EXAM$^2$: $\\underline{Ex}tending$ $\\underline{A}udio$ $Understanding$ $in$ $\\underline{M}ultilingual$ $and$ $\\underline{M}ultimodal$ $Analysis$",
+      "abstract": "Recent large audio language models (LALMs) have achieved impressive progress in audio understanding. However, existing evaluations remain largely constrained to English and narrow audio domains. Prior benchmarks typically focus on a single audio modality, i.e., speech, sound, or music, limiting the systematic investigation into how these models generalize across diverse visual scenarios. In this paper, we introduce EXAM$^2$, a benchmark for multilingual and multimodal audio understanding spanning six languages and multiple modalities, including speech, sound, music, mixed-audio settings, and visual images. By incorporating visual information alongside heterogeneous audio inputs, EXAM$^2$ enables more realistic evaluation of scene-aware audio reasoning and cross-modal comprehension. EXAM$^2$ comprises $5,667$ multiple-choice questions, $22,614$ image instances, and $135,684$ multilingual translations. We evaluate state-of-the-art open-source and proprietary LALMs as well as multimodal LLMs, revealing substantial performance gaps in multilingual and cross-modal understanding. Furthermore, we propose Gemma3n-EXAM$^2$, a lightweight fusion-model fine-tuned on EXAM$^2$-train, achieves up to $12.4\\%$ improvement in multilingual settings and $21.7\\%$ gains in multimodal evaluation over a strong baseline. Empirical results establish EXAM$^2$ as a challenging benchmark and pioneer future multilingual and multimodal audio intelligence research.",
+      "published": "2026-08-24T18:52:22Z",
+      "authors": [
+        "Jiawen Wang",
+        "Xiaoxue Gao",
+        "Zi Haur Pang",
+        "Nancy F. Chen"
+      ],
+      "primary_category": "cs.SD",
+      "url": "https://arxiv.org/abs/2608.23758",
+      "score": 36,
+      "status": "new — under review"
+    },
+    {
+      "id": "2608.24314",
+      "title": "Benchmarking LLM Judges for Voice-Agent Evaluation: Reliability, Calibration, and Human Oversight",
+      "abstract": "Evaluating conversational voice agents at scale re- quires reliable assessment methods that capture both observ- able interaction quality and the contextual judgment typically provided by human evaluators. We investigate LLM-as-a-Judge evaluation by comparing human judgments with GPT-4.1 and GPT-5 on telecom and retail voice-agent conversations, across conversational quality and safety dimensions. The same interac- tions are scored under three evaluation configurations, p0, p1, and p2, to test whether automated judgments are sensitive to the evaluation setup and whether observed patterns generalize across configurations and judge models. Beyond aggregate agreement, we examine metric-level correlations, evaluator consistency, and systematic human-LLM disagreement to identify which conver- sational attributes can be judged reliably by automation and which remain sensitive to interpretation and context. Effective voice-agent evaluation is also shaped by pipeline-level factors such as speech generation, streaming, and error propagation across ASR, reasoning, and tool-calling stages, motivating our focus on comparing how human and LLM judges score the same interactions end to end. Our results show that LLM- based evaluation can serve as an effective component of large- scale voice-agent assessment, but that its reliability is metric- and configuration-dependent rather than uniform. This pro- vides an empirical framework for identifying which metrics suit automated evaluation and supports hybrid pipelines in which LLM judges handle scalable assessment while human evaluators remain engaged for metrics that demand contextual interpretation and higher-confidence judgment.",
+      "published": "2026-08-25T09:44:36Z",
+      "authors": [
+        "Anupam Purwar",
+        "Shashank Singh",
+        "Kritika Srivastava"
+      ],
+      "primary_category": "cs.AI",
+      "url": "https://arxiv.org/abs/2608.24314",
+      "score": 24,
+      "status": "new — under review"
+    },
+    {
+      "id": "2608.24048",
+      "title": "Don't Just Listen, Try Planning: Graph-based Retrieval-Generation Agent for Long-form Audio Meeting Understanding",
+      "abstract": "While long-form audio meeting understanding (LAMU) is garnering growing attention, task-specific question answering (QA) datasets remain scarce. Existing speech QA paradigms and state-of-the-art Speech LLMs suffer from acoustic information loss and poor long-term context memory. To address these issues, we construct the LongAudioQA dataset and propose the GRGA model, which models heterogeneous audio features into a multi-dimensional graph and leverages agent planning for retrieval and answer generation.",
+      "published": "2026-08-25T04:16:42Z",
+      "authors": [
+        "Quanwei Tang",
+        "Dong Zhang",
+        "Shoushan Li",
+        "Guodong Zhou"
+      ],
+      "primary_category": "cs.SD",
+      "url": "https://arxiv.org/abs/2608.24048",
+      "score": 21,
+      "status": "new — under review"
+    },
+    {
+      "id": "2608.24168",
+      "title": "FireRedAudio: A General-Purpose Audio Language Model with Decoupled Continuous Representations for Understanding and Generation",
+      "abstract": "A unified audio model must recognize and understand linguistic, paralinguistic, and environmental information while supporting speech synthesis and editing. A key challenge is representation: understanding favors compact features suited to long-context modeling, whereas speech generation requires reconstructible features that preserve fine-grained acoustic detail. We introduce FireRedAudio, a general-purpose audio language model with a shared 9B-parameter LLM. To the best of our knowledge, it is the first publicly disclosed unified audio-language model to provide separate continuous input representations for understanding and generation within a single trainable autoregressive LLM. Audio to be recognized or analyzed is processed by a dedicated Audio Encoder, while speech inputs for generation use a RedAE-based pathway. The LLM directly generates text or conditions a flow-matching DiT to produce continuous acoustic latents. Through progressive multitask training, FireRedAudio supports ASR and audio understanding, with the latter extending to recordings of up to one hour, as well as zero-shot TTS, Instruct TTS, and semantic and acoustic speech editing. Its structured organization of long-form audio achieves second-level timestamp accuracy. Across comprehensive evaluations, FireRedAudio achieves competitive or leading performance in audio understanding and multilingual ASR, strong content accuracy and speaker preservation in zero-shot TTS, leading instruction following in Instruct TTS, and substantial improvements over Ming-UniAudio-Edit in both semantic and acoustic speech editing. These results demonstrate the viability of decoupled continuous input representations for unifying audio understanding and continuous-latent speech generation in a model of moderate scale. Our code is available at https://github.com/FireRedTeam/FireRedAudio.",
+      "published": "2026-08-25T07:37:15Z",
+      "authors": [
+        "Junjie Li",
+        "Xuelong Geng",
+        "Kun Xie",
+        "Feiyu Shen",
+        "Yichen Wu",
+        "Ziqi Dai",
+        "Yichen Han",
+        "Yan Jia"
+      ],
+      "primary_category": "cs.CL",
+      "url": "https://arxiv.org/abs/2608.24168",
+      "score": 18,
+      "status": "new — under review"
+    },
     {
       "id": "2608.22236",
       "title": "MRMAD: A Multi-Round Multi-Audio Benchmark for Evaluating Acoustic Degradation Perception in Large Audio-Language Models",
