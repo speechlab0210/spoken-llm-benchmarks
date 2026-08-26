@@ -8983,6 +8983,78 @@
     "soft score (%)"
    ],
    "note": "Audio is the weakest modality for nearly every system tested. Sound & music QA is the hardest category in the whole benchmark - the best strict score is 56 (Gemini-3.1-Pro) - and the authors read that as non-speech audio being a low priority for model developers. The OpenAI pairs lose most of their ground to Gemini on the audio columns specifically. On ASR the paper reports Whisper-Large-v3, released in 2023, beating newer open-weight transcription models on Polish, which the authors take as evidence that Open ASR Leaderboard standings on high-resource languages do not transfer to less-resourced ones. Gemini-3.1-Pro leads overall at 79.7 strict. Claude-Fable-5 was run on the vision and document categories only, having no audio support, and Gemma 4's 30-second audio limit ruled it out of the audio categories."
+  },
+  {
+   "id": "exam2",
+   "name": "EXAM2",
+   "full_title": "EXAM2: Extending Audio Understanding in Multilingual and Multimodal Analysis",
+   "arxiv_id": "2608.23758",
+   "arxiv_date": "2026-08",
+   "arxiv_date_full": "2026-08-24",
+   "url": "https://arxiv.org/abs/2608.23758",
+   "code": "https://github.com/werywjw/EXAM-2",
+   "summary": "A multiple-choice audio-understanding benchmark that adds two axes existing audio MCQ sets leave fixed: language and visual grounding. Every question and every answer choice is rendered in six languages (English, German, Spanish, Japanese, Malay, Chinese), and every answer choice also carries a generated image, so a model can be scored on audio alone, on images alone, or on both together. Items are rebuilt from four existing corpora rather than recorded fresh: the 998-question test split is a cleaned restructuring of MMAU-test-mini (two music items dropped, duplicate choices removed), and the 4,669-question train split is filtered from MMAR (129 of 1,000 items discarded for dead audio links) and AudioMCQ-Clotho. Translation is by GPT-5-mini with native-speaker or advanced-proficiency review; answer images come from Stable Diffusion (MMAU and MMAR subsets) and GPT-image-2 (Clotho subset), with misleading images manually replaced. The paper also releases OmniLoRA, a LoRA recipe that samples one of the six languages per training instance, and Gemma3n-EXAM2, a fine-tune of Gemma-3n-E4B on EXAM2-train.",
+   "categories": [
+    "multilingual",
+    "auditory-perception",
+    "reasoning"
+   ],
+   "tasks": [
+    "multilingual audio MCQ (speech)",
+    "multilingual audio MCQ (sound)",
+    "multilingual audio MCQ (music)",
+    "mixed-audio MCQ (train split only)",
+    "cross-modal MCQ with image answer choices"
+   ],
+   "languages": [
+    "English",
+    "German",
+    "Spanish",
+    "Japanese",
+    "Malay",
+    "Chinese"
+   ],
+   "io": "audio (optionally plus one image per answer choice) and text question in, choice index out",
+   "size": "5,667 multiple-choice questions total (998 test / 4,669 train), 22,614 image answer choices, 135,684 multilingual question-and-choice instances; average audio 12.9 s, average question 10.7 words",
+   "metrics": [
+    "multiple-choice accuracy (%), reported per audio domain and per language"
+   ],
+   "note": "Because every item exists in an audio version, an image version and a transcript or caption version, the paper can put native-audio models and cascaded transcript-fed models on the same questions. The cascade is often the stronger configuration for open-weight models: Qwen-2.5-Omni scores 40.71 average on raw audio but 58.10 when fed a transcript, and Gemma-3n goes from 45.44 to 59.91 the same way, i.e. these models do better on the text of the question than on the sound it describes. GPT-4o-audio leads overall at 73.83. The authors' own Gemma3n-EXAM2 fine-tune reaches 61.24 average, best among open-source entries and best on speech (64.31) and music (60.14), but plain Gemma-3n fed a caption still wins the sound column (67.12 vs 59.26). Caveat worth flagging: the test split is derived from MMAU-test-mini, so scores here are not independent of MMAU."
+  },
+  {
+   "id": "longaudioqa",
+   "name": "LongAudioQA",
+   "full_title": "Don't Just Listen, Try Planning: Graph-based Retrieval-Generation Agent for Long-form Audio Meeting Understanding",
+   "arxiv_id": "2608.24048",
+   "arxiv_date": "2026-08",
+   "arxiv_date_full": "2026-08-25",
+   "url": "https://arxiv.org/abs/2608.24048",
+   "code": "https://github.com/tangquanwei/GRGA",
+   "data": "https://github.com/tangquanwei/GRGA",
+   "summary": "A question-answering set for long-form meeting audio, built over three existing corpora: AliMeeting (Mandarin far-field meetings), AMI (English far-field meetings with mostly non-native speakers) and DailyTalk (clean dyadic conversations, 20 clips concatenated to reach roughly ten minutes). Recordings average about 32 minutes for the two meeting corpora, so the task is explicitly about answering without knowing which segment holds the evidence. Questions fall into five types: factual retrieval, inferential multi-hop reasoning (causal links, coreference, stance change), temporal (absolute localisation, relative sequencing, frequency counts), summarisation (topic consensus, speaker profiling) and acoustic-aware, the last of which cannot be answered from a transcript because it asks who sounded agitated or why a voice suddenly rose at a given minute. Questions are LLM-generated from localised evidence and then human-verified: hallucinated items discarded, ambiguous references rewritten, hop count checked, and generated timestamp evidence required to reach IoU above 0.9 with ground truth; reported inter-annotator agreement is Cohen's kappa 0.91. Scoring is semantic accuracy judged by GPT-OSS-120B rather than exact match.",
+   "categories": [
+    "long-form",
+    "spoken-qa",
+    "reasoning"
+   ],
+   "tasks": [
+    "factual QA over long meetings",
+    "multi-hop inferential QA",
+    "temporal localisation and sequencing",
+    "meeting and speaker summarisation",
+    "acoustic-aware QA (emotion, intensity, cross-modal cause)"
+   ],
+   "languages": [
+    "English",
+    "Mandarin Chinese"
+   ],
+   "io": "long-form meeting audio (or its transcript) plus a text question in, free-form text answer out",
+   "size": "16,456 question-answer pairs over 190 dialogues and 54.74 hours: AliMeeting 3,013 Q&A / 28 dialogues / 14.91 h, AMI 3,243 / 34 / 18.24 h, DailyTalk 10,200 / 128 / 21.59 h",
+   "metrics": [
+    "semantic accuracy (%) judged by GPT-OSS-120B",
+    "human ratings of correctness, coherence and groundedness"
+   ],
+   "note": "Introduced alongside a method (GRGA, a graph-based retrieval-generation agent), so every number in the paper comes from the authors of the dataset - treat the baseline column as a first data point, not as an independent leaderboard. The results do isolate one clean effect: end-to-end spoken LLMs given the whole recording as audio collapse on temporal questions (Qwen3-Omni 2.43, Audio Flamingo 3 3.83, MiMo-Audio 5.58 on DailyTalk) while the same models fed the transcript instead score in the 58-63 range, i.e. the failure is context length and time-indexing, not the questions. The reverse holds on the acoustic-aware split, where audio input beats transcript input for Audio Flamingo 3 (40.09 vs 15.85) and MiMo-Audio (31.44 vs 17.52) on DailyTalk. Reported ASR and diarisation error on the underlying audio (WER 18.84-20.38, DER 13.10-17.60 on the two meeting corpora) bounds how much any transcript-based route can recover."
   }
  ]
 }

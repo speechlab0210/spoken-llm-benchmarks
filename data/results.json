@@ -127980,6 +127980,591 @@
    "source": "Table 1 (strict scores, audio columns; 100 tasks per category, deterministic rule-based scoring; v1, checked 2026-08-26)",
    "source_url": "https://arxiv.org/abs/2608.21853",
    "note": "Printed in the paper as \"GPT-Audio\". Higher is better. Strict credit requires every verification rule for the task to pass. The audio member of the GPT-5.5 + GPT-Audio pair; the audio columns are its scores alone."
+  },
+  {
+   "benchmark": "exam2",
+   "model": "gpt-4o-mini-audio",
+   "metric": "Accuracy (%) - Avg over Speech/Sound/Music, audio input, avg of 6 languages",
+   "value": 63.94,
+   "source": "Table 3 (average over the six languages, EXAM2-test, 998 questions)",
+   "source_url": "https://arxiv.org/abs/2608.23758",
+   "note": "raw audio waveform input, no image answer choices"
+  },
+  {
+   "benchmark": "exam2",
+   "model": "gpt-4o-mini-audio",
+   "metric": "Accuracy (%) - Speech, audio input, avg of 6 languages",
+   "value": 73.67,
+   "source": "Table 3 (average over the six languages, EXAM2-test, 998 questions)",
+   "source_url": "https://arxiv.org/abs/2608.23758",
+   "note": "raw audio waveform input, no image answer choices"
+  },
+  {
+   "benchmark": "exam2",
+   "model": "gpt-4o-mini-audio",
+   "metric": "Accuracy (%) - Sound, audio input, avg of 6 languages",
+   "value": 61.01,
+   "source": "Table 3 (average over the six languages, EXAM2-test, 998 questions)",
+   "source_url": "https://arxiv.org/abs/2608.23758",
+   "note": "raw audio waveform input, no image answer choices"
+  },
+  {
+   "benchmark": "exam2",
+   "model": "gpt-4o-mini-audio",
+   "metric": "Accuracy (%) - Music, audio input, avg of 6 languages",
+   "value": 57.13,
+   "source": "Table 3 (average over the six languages, EXAM2-test, 998 questions)",
+   "source_url": "https://arxiv.org/abs/2608.23758",
+   "note": "raw audio waveform input, no image answer choices"
+  },
+  {
+   "benchmark": "exam2",
+   "model": "gpt-4o-audio",
+   "metric": "Accuracy (%) - Avg over Speech/Sound/Music, audio input, avg of 6 languages",
+   "value": 73.83,
+   "source": "Table 3 (average over the six languages, EXAM2-test, 998 questions)",
+   "source_url": "https://arxiv.org/abs/2608.23758",
+   "note": "raw audio waveform input, no image answer choices"
+  },
+  {
+   "benchmark": "exam2",
+   "model": "gpt-4o-audio",
+   "metric": "Accuracy (%) - Speech, audio input, avg of 6 languages",
+   "value": 77.93,
+   "source": "Table 3 (average over the six languages, EXAM2-test, 998 questions)",
+   "source_url": "https://arxiv.org/abs/2608.23758",
+   "note": "raw audio waveform input, no image answer choices"
+  },
+  {
+   "benchmark": "exam2",
+   "model": "gpt-4o-audio",
+   "metric": "Accuracy (%) - Sound, audio input, avg of 6 languages",
+   "value": 73.17,
+   "source": "Table 3 (average over the six languages, EXAM2-test, 998 questions)",
+   "source_url": "https://arxiv.org/abs/2608.23758",
+   "note": "raw audio waveform input, no image answer choices"
+  },
+  {
+   "benchmark": "exam2",
+   "model": "gpt-4o-audio",
+   "metric": "Accuracy (%) - Music, audio input, avg of 6 languages",
+   "value": 70.38,
+   "source": "Table 3 (average over the six languages, EXAM2-test, 998 questions)",
+   "source_url": "https://arxiv.org/abs/2608.23758",
+   "note": "raw audio waveform input, no image answer choices"
+  },
+  {
+   "benchmark": "exam2",
+   "model": "phi-4-multimodal",
+   "metric": "Accuracy (%) - Avg over Speech/Sound/Music, audio input, avg of 6 languages",
+   "value": 56.47,
+   "source": "Table 3 (average over the six languages, EXAM2-test, 998 questions)",
+   "source_url": "https://arxiv.org/abs/2608.23758",
+   "note": "raw audio waveform input, no image answer choices"
+  },
+  {
+   "benchmark": "exam2",
+   "model": "phi-4-multimodal",
+   "metric": "Accuracy (%) - Speech, audio input, avg of 6 languages",
+   "value": 59.91,
+   "source": "Table 3 (average over the six languages, EXAM2-test, 998 questions)",
+   "source_url": "https://arxiv.org/abs/2608.23758",
+   "note": "raw audio waveform input, no image answer choices"
+  },
+  {
+   "benchmark": "exam2",
+   "model": "phi-4-multimodal",
+   "metric": "Accuracy (%) - Sound, audio input, avg of 6 languages",
+   "value": 54.47,
+   "source": "Table 3 (average over the six languages, EXAM2-test, 998 questions)",
+   "source_url": "https://arxiv.org/abs/2608.23758",
+   "note": "raw audio waveform input, no image answer choices"
+  },
+  {
+   "benchmark": "exam2",
+   "model": "phi-4-multimodal",
+   "metric": "Accuracy (%) - Music, audio input, avg of 6 languages",
+   "value": 55.02,
+   "source": "Table 3 (average over the six languages, EXAM2-test, 998 questions)",
+   "source_url": "https://arxiv.org/abs/2608.23758",
+   "note": "raw audio waveform input, no image answer choices"
+  },
+  {
+   "benchmark": "exam2",
+   "model": "qwen2-5-omni",
+   "metric": "Accuracy (%) - Avg over Speech/Sound/Music, audio input, avg of 6 languages",
+   "value": 40.71,
+   "source": "Table 3 (average over the six languages, EXAM2-test, 998 questions)",
+   "source_url": "https://arxiv.org/abs/2608.23758",
+   "note": "raw audio waveform input, no image answer choices"
+  },
+  {
+   "benchmark": "exam2",
+   "model": "qwen2-5-omni",
+   "metric": "Accuracy (%) - Speech, audio input, avg of 6 languages",
+   "value": 39.64,
+   "source": "Table 3 (average over the six languages, EXAM2-test, 998 questions)",
+   "source_url": "https://arxiv.org/abs/2608.23758",
+   "note": "raw audio waveform input, no image answer choices"
+  },
+  {
+   "benchmark": "exam2",
+   "model": "qwen2-5-omni",
+   "metric": "Accuracy (%) - Sound, audio input, avg of 6 languages",
+   "value": 49.9,
+   "source": "Table 3 (average over the six languages, EXAM2-test, 998 questions)",
+   "source_url": "https://arxiv.org/abs/2608.23758",
+   "note": "raw audio waveform input, no image answer choices"
+  },
+  {
+   "benchmark": "exam2",
+   "model": "qwen2-5-omni",
+   "metric": "Accuracy (%) - Music, audio input, avg of 6 languages",
+   "value": 32.58,
+   "source": "Table 3 (average over the six languages, EXAM2-test, 998 questions)",
+   "source_url": "https://arxiv.org/abs/2608.23758",
+   "note": "raw audio waveform input, no image answer choices"
+  },
+  {
+   "benchmark": "exam2",
+   "model": "gemma-3n",
+   "metric": "Accuracy (%) - Avg over Speech/Sound/Music, audio input, avg of 6 languages",
+   "value": 45.44,
+   "source": "Table 3 (average over the six languages, EXAM2-test, 998 questions)",
+   "source_url": "https://arxiv.org/abs/2608.23758",
+   "note": "raw audio waveform input, no image answer choices"
+  },
+  {
+   "benchmark": "exam2",
+   "model": "gemma-3n",
+   "metric": "Accuracy (%) - Speech, audio input, avg of 6 languages",
+   "value": 41.99,
+   "source": "Table 3 (average over the six languages, EXAM2-test, 998 questions)",
+   "source_url": "https://arxiv.org/abs/2608.23758",
+   "note": "raw audio waveform input, no image answer choices"
+  },
+  {
+   "benchmark": "exam2",
+   "model": "gemma-3n",
+   "metric": "Accuracy (%) - Sound, audio input, avg of 6 languages",
+   "value": 47.35,
+   "source": "Table 3 (average over the six languages, EXAM2-test, 998 questions)",
+   "source_url": "https://arxiv.org/abs/2608.23758",
+   "note": "raw audio waveform input, no image answer choices"
+  },
+  {
+   "benchmark": "exam2",
+   "model": "gemma-3n",
+   "metric": "Accuracy (%) - Music, audio input, avg of 6 languages",
+   "value": 46.99,
+   "source": "Table 3 (average over the six languages, EXAM2-test, 998 questions)",
+   "source_url": "https://arxiv.org/abs/2608.23758",
+   "note": "raw audio waveform input, no image answer choices"
+  },
+  {
+   "benchmark": "longaudioqa",
+   "model": "qwen3-omni",
+   "metric": "Semantic accuracy (%) - AliMeeting / Factual",
+   "value": 29.31,
+   "source": "Table 3 (main results, accuracy %, 'Speech as Context' block)",
+   "source_url": "https://arxiv.org/abs/2608.24048",
+   "note": "whole recording supplied as audio (end-to-end spoken LLM baseline reported by the dataset authors)"
+  },
+  {
+   "benchmark": "longaudioqa",
+   "model": "qwen3-omni",
+   "metric": "Semantic accuracy (%) - AliMeeting / Inferential",
+   "value": 27.33,
+   "source": "Table 3 (main results, accuracy %, 'Speech as Context' block)",
+   "source_url": "https://arxiv.org/abs/2608.24048",
+   "note": "whole recording supplied as audio (end-to-end spoken LLM baseline reported by the dataset authors)"
+  },
+  {
+   "benchmark": "longaudioqa",
+   "model": "qwen3-omni",
+   "metric": "Semantic accuracy (%) - AliMeeting / Temporal",
+   "value": 15.81,
+   "source": "Table 3 (main results, accuracy %, 'Speech as Context' block)",
+   "source_url": "https://arxiv.org/abs/2608.24048",
+   "note": "whole recording supplied as audio (end-to-end spoken LLM baseline reported by the dataset authors)"
+  },
+  {
+   "benchmark": "longaudioqa",
+   "model": "qwen3-omni",
+   "metric": "Semantic accuracy (%) - AliMeeting / Summarization",
+   "value": 19.06,
+   "source": "Table 3 (main results, accuracy %, 'Speech as Context' block)",
+   "source_url": "https://arxiv.org/abs/2608.24048",
+   "note": "whole recording supplied as audio (end-to-end spoken LLM baseline reported by the dataset authors)"
+  },
+  {
+   "benchmark": "longaudioqa",
+   "model": "qwen3-omni",
+   "metric": "Semantic accuracy (%) - AliMeeting / Acoustic-aware",
+   "value": 16.5,
+   "source": "Table 3 (main results, accuracy %, 'Speech as Context' block)",
+   "source_url": "https://arxiv.org/abs/2608.24048",
+   "note": "whole recording supplied as audio (end-to-end spoken LLM baseline reported by the dataset authors)"
+  },
+  {
+   "benchmark": "longaudioqa",
+   "model": "qwen3-omni",
+   "metric": "Semantic accuracy (%) - AMI / Factual",
+   "value": 20.96,
+   "source": "Table 3 (main results, accuracy %, 'Speech as Context' block)",
+   "source_url": "https://arxiv.org/abs/2608.24048",
+   "note": "whole recording supplied as audio (end-to-end spoken LLM baseline reported by the dataset authors)"
+  },
+  {
+   "benchmark": "longaudioqa",
+   "model": "qwen3-omni",
+   "metric": "Semantic accuracy (%) - AMI / Inferential",
+   "value": 26.38,
+   "source": "Table 3 (main results, accuracy %, 'Speech as Context' block)",
+   "source_url": "https://arxiv.org/abs/2608.24048",
+   "note": "whole recording supplied as audio (end-to-end spoken LLM baseline reported by the dataset authors)"
+  },
+  {
+   "benchmark": "longaudioqa",
+   "model": "qwen3-omni",
+   "metric": "Semantic accuracy (%) - AMI / Temporal",
+   "value": 15.12,
+   "source": "Table 3 (main results, accuracy %, 'Speech as Context' block)",
+   "source_url": "https://arxiv.org/abs/2608.24048",
+   "note": "whole recording supplied as audio (end-to-end spoken LLM baseline reported by the dataset authors)"
+  },
+  {
+   "benchmark": "longaudioqa",
+   "model": "qwen3-omni",
+   "metric": "Semantic accuracy (%) - AMI / Summarization",
+   "value": 16.67,
+   "source": "Table 3 (main results, accuracy %, 'Speech as Context' block)",
+   "source_url": "https://arxiv.org/abs/2608.24048",
+   "note": "whole recording supplied as audio (end-to-end spoken LLM baseline reported by the dataset authors)"
+  },
+  {
+   "benchmark": "longaudioqa",
+   "model": "qwen3-omni",
+   "metric": "Semantic accuracy (%) - AMI / Acoustic-aware",
+   "value": 12.15,
+   "source": "Table 3 (main results, accuracy %, 'Speech as Context' block)",
+   "source_url": "https://arxiv.org/abs/2608.24048",
+   "note": "whole recording supplied as audio (end-to-end spoken LLM baseline reported by the dataset authors)"
+  },
+  {
+   "benchmark": "longaudioqa",
+   "model": "qwen3-omni",
+   "metric": "Semantic accuracy (%) - DailyTalk / Factual",
+   "value": 34.26,
+   "source": "Table 3 (main results, accuracy %, 'Speech as Context' block)",
+   "source_url": "https://arxiv.org/abs/2608.24048",
+   "note": "whole recording supplied as audio (end-to-end spoken LLM baseline reported by the dataset authors)"
+  },
+  {
+   "benchmark": "longaudioqa",
+   "model": "qwen3-omni",
+   "metric": "Semantic accuracy (%) - DailyTalk / Inferential",
+   "value": 38.43,
+   "source": "Table 3 (main results, accuracy %, 'Speech as Context' block)",
+   "source_url": "https://arxiv.org/abs/2608.24048",
+   "note": "whole recording supplied as audio (end-to-end spoken LLM baseline reported by the dataset authors)"
+  },
+  {
+   "benchmark": "longaudioqa",
+   "model": "qwen3-omni",
+   "metric": "Semantic accuracy (%) - DailyTalk / Temporal",
+   "value": 2.43,
+   "source": "Table 3 (main results, accuracy %, 'Speech as Context' block)",
+   "source_url": "https://arxiv.org/abs/2608.24048",
+   "note": "whole recording supplied as audio (end-to-end spoken LLM baseline reported by the dataset authors)"
+  },
+  {
+   "benchmark": "longaudioqa",
+   "model": "qwen3-omni",
+   "metric": "Semantic accuracy (%) - DailyTalk / Summarization",
+   "value": 2.11,
+   "source": "Table 3 (main results, accuracy %, 'Speech as Context' block)",
+   "source_url": "https://arxiv.org/abs/2608.24048",
+   "note": "whole recording supplied as audio (end-to-end spoken LLM baseline reported by the dataset authors)"
+  },
+  {
+   "benchmark": "longaudioqa",
+   "model": "qwen3-omni",
+   "metric": "Semantic accuracy (%) - DailyTalk / Acoustic-aware",
+   "value": 9.39,
+   "source": "Table 3 (main results, accuracy %, 'Speech as Context' block)",
+   "source_url": "https://arxiv.org/abs/2608.24048",
+   "note": "whole recording supplied as audio (end-to-end spoken LLM baseline reported by the dataset authors)"
+  },
+  {
+   "benchmark": "longaudioqa",
+   "model": "audio-flamingo-3",
+   "metric": "Semantic accuracy (%) - AliMeeting / Factual",
+   "value": 35.7,
+   "source": "Table 3 (main results, accuracy %, 'Speech as Context' block)",
+   "source_url": "https://arxiv.org/abs/2608.24048",
+   "note": "whole recording supplied as audio (end-to-end spoken LLM baseline reported by the dataset authors)"
+  },
+  {
+   "benchmark": "longaudioqa",
+   "model": "audio-flamingo-3",
+   "metric": "Semantic accuracy (%) - AliMeeting / Inferential",
+   "value": 35.23,
+   "source": "Table 3 (main results, accuracy %, 'Speech as Context' block)",
+   "source_url": "https://arxiv.org/abs/2608.24048",
+   "note": "whole recording supplied as audio (end-to-end spoken LLM baseline reported by the dataset authors)"
+  },
+  {
+   "benchmark": "longaudioqa",
+   "model": "audio-flamingo-3",
+   "metric": "Semantic accuracy (%) - AliMeeting / Temporal",
+   "value": 13.19,
+   "source": "Table 3 (main results, accuracy %, 'Speech as Context' block)",
+   "source_url": "https://arxiv.org/abs/2608.24048",
+   "note": "whole recording supplied as audio (end-to-end spoken LLM baseline reported by the dataset authors)"
+  },
+  {
+   "benchmark": "longaudioqa",
+   "model": "audio-flamingo-3",
+   "metric": "Semantic accuracy (%) - AliMeeting / Summarization",
+   "value": 18.09,
+   "source": "Table 3 (main results, accuracy %, 'Speech as Context' block)",
+   "source_url": "https://arxiv.org/abs/2608.24048",
+   "note": "whole recording supplied as audio (end-to-end spoken LLM baseline reported by the dataset authors)"
+  },
+  {
+   "benchmark": "longaudioqa",
+   "model": "audio-flamingo-3",
+   "metric": "Semantic accuracy (%) - AliMeeting / Acoustic-aware",
+   "value": 32.89,
+   "source": "Table 3 (main results, accuracy %, 'Speech as Context' block)",
+   "source_url": "https://arxiv.org/abs/2608.24048",
+   "note": "whole recording supplied as audio (end-to-end spoken LLM baseline reported by the dataset authors)"
+  },
+  {
+   "benchmark": "longaudioqa",
+   "model": "audio-flamingo-3",
+   "metric": "Semantic accuracy (%) - AMI / Factual",
+   "value": 16.04,
+   "source": "Table 3 (main results, accuracy %, 'Speech as Context' block)",
+   "source_url": "https://arxiv.org/abs/2608.24048",
+   "note": "whole recording supplied as audio (end-to-end spoken LLM baseline reported by the dataset authors)"
+  },
+  {
+   "benchmark": "longaudioqa",
+   "model": "audio-flamingo-3",
+   "metric": "Semantic accuracy (%) - AMI / Inferential",
+   "value": 27.94,
+   "source": "Table 3 (main results, accuracy %, 'Speech as Context' block)",
+   "source_url": "https://arxiv.org/abs/2608.24048",
+   "note": "whole recording supplied as audio (end-to-end spoken LLM baseline reported by the dataset authors)"
+  },
+  {
+   "benchmark": "longaudioqa",
+   "model": "audio-flamingo-3",
+   "metric": "Semantic accuracy (%) - AMI / Temporal",
+   "value": 12.62,
+   "source": "Table 3 (main results, accuracy %, 'Speech as Context' block)",
+   "source_url": "https://arxiv.org/abs/2608.24048",
+   "note": "whole recording supplied as audio (end-to-end spoken LLM baseline reported by the dataset authors)"
+  },
+  {
+   "benchmark": "longaudioqa",
+   "model": "audio-flamingo-3",
+   "metric": "Semantic accuracy (%) - AMI / Summarization",
+   "value": 10.24,
+   "source": "Table 3 (main results, accuracy %, 'Speech as Context' block)",
+   "source_url": "https://arxiv.org/abs/2608.24048",
+   "note": "whole recording supplied as audio (end-to-end spoken LLM baseline reported by the dataset authors)"
+  },
+  {
+   "benchmark": "longaudioqa",
+   "model": "audio-flamingo-3",
+   "metric": "Semantic accuracy (%) - AMI / Acoustic-aware",
+   "value": 17.06,
+   "source": "Table 3 (main results, accuracy %, 'Speech as Context' block)",
+   "source_url": "https://arxiv.org/abs/2608.24048",
+   "note": "whole recording supplied as audio (end-to-end spoken LLM baseline reported by the dataset authors)"
+  },
+  {
+   "benchmark": "longaudioqa",
+   "model": "audio-flamingo-3",
+   "metric": "Semantic accuracy (%) - DailyTalk / Factual",
+   "value": 65.13,
+   "source": "Table 3 (main results, accuracy %, 'Speech as Context' block)",
+   "source_url": "https://arxiv.org/abs/2608.24048",
+   "note": "whole recording supplied as audio (end-to-end spoken LLM baseline reported by the dataset authors)"
+  },
+  {
+   "benchmark": "longaudioqa",
+   "model": "audio-flamingo-3",
+   "metric": "Semantic accuracy (%) - DailyTalk / Inferential",
+   "value": 61.31,
+   "source": "Table 3 (main results, accuracy %, 'Speech as Context' block)",
+   "source_url": "https://arxiv.org/abs/2608.24048",
+   "note": "whole recording supplied as audio (end-to-end spoken LLM baseline reported by the dataset authors)"
+  },
+  {
+   "benchmark": "longaudioqa",
+   "model": "audio-flamingo-3",
+   "metric": "Semantic accuracy (%) - DailyTalk / Temporal",
+   "value": 3.83,
+   "source": "Table 3 (main results, accuracy %, 'Speech as Context' block)",
+   "source_url": "https://arxiv.org/abs/2608.24048",
+   "note": "whole recording supplied as audio (end-to-end spoken LLM baseline reported by the dataset authors)"
+  },
+  {
+   "benchmark": "longaudioqa",
+   "model": "audio-flamingo-3",
+   "metric": "Semantic accuracy (%) - DailyTalk / Summarization",
+   "value": 2.44,
+   "source": "Table 3 (main results, accuracy %, 'Speech as Context' block)",
+   "source_url": "https://arxiv.org/abs/2608.24048",
+   "note": "whole recording supplied as audio (end-to-end spoken LLM baseline reported by the dataset authors)"
+  },
+  {
+   "benchmark": "longaudioqa",
+   "model": "audio-flamingo-3",
+   "metric": "Semantic accuracy (%) - DailyTalk / Acoustic-aware",
+   "value": 40.09,
+   "source": "Table 3 (main results, accuracy %, 'Speech as Context' block)",
+   "source_url": "https://arxiv.org/abs/2608.24048",
+   "note": "whole recording supplied as audio (end-to-end spoken LLM baseline reported by the dataset authors)"
+  },
+  {
+   "benchmark": "longaudioqa",
+   "model": "mimo-audio",
+   "metric": "Semantic accuracy (%) - AliMeeting / Factual",
+   "value": 54.5,
+   "source": "Table 3 (main results, accuracy %, 'Speech as Context' block)",
+   "source_url": "https://arxiv.org/abs/2608.24048",
+   "note": "whole recording supplied as audio (end-to-end spoken LLM baseline reported by the dataset authors)"
+  },
+  {
+   "benchmark": "longaudioqa",
+   "model": "mimo-audio",
+   "metric": "Semantic accuracy (%) - AliMeeting / Inferential",
+   "value": 54.5,
+   "source": "Table 3 (main results, accuracy %, 'Speech as Context' block)",
+   "source_url": "https://arxiv.org/abs/2608.24048",
+   "note": "whole recording supplied as audio (end-to-end spoken LLM baseline reported by the dataset authors)"
+  },
+  {
+   "benchmark": "longaudioqa",
+   "model": "mimo-audio",
+   "metric": "Semantic accuracy (%) - AliMeeting / Temporal",
+   "value": 16.92,
+   "source": "Table 3 (main results, accuracy %, 'Speech as Context' block)",
+   "source_url": "https://arxiv.org/abs/2608.24048",
+   "note": "whole recording supplied as audio (end-to-end spoken LLM baseline reported by the dataset authors)"
+  },
+  {
+   "benchmark": "longaudioqa",
+   "model": "mimo-audio",
+   "metric": "Semantic accuracy (%) - AliMeeting / Summarization",
+   "value": 39.91,
+   "source": "Table 3 (main results, accuracy %, 'Speech as Context' block)",
+   "source_url": "https://arxiv.org/abs/2608.24048",
+   "note": "whole recording supplied as audio (end-to-end spoken LLM baseline reported by the dataset authors)"
+  },
+  {
+   "benchmark": "longaudioqa",
+   "model": "mimo-audio",
+   "metric": "Semantic accuracy (%) - AliMeeting / Acoustic-aware",
+   "value": 25.15,
+   "source": "Table 3 (main results, accuracy %, 'Speech as Context' block)",
+   "source_url": "https://arxiv.org/abs/2608.24048",
+   "note": "whole recording supplied as audio (end-to-end spoken LLM baseline reported by the dataset authors)"
+  },
+  {
+   "benchmark": "longaudioqa",
+   "model": "mimo-audio",
+   "metric": "Semantic accuracy (%) - AMI / Factual",
+   "value": 52.75,
+   "source": "Table 3 (main results, accuracy %, 'Speech as Context' block)",
+   "source_url": "https://arxiv.org/abs/2608.24048",
+   "note": "whole recording supplied as audio (end-to-end spoken LLM baseline reported by the dataset authors)"
+  },
+  {
+   "benchmark": "longaudioqa",
+   "model": "mimo-audio",
+   "metric": "Semantic accuracy (%) - AMI / Inferential",
+   "value": 64.74,
+   "source": "Table 3 (main results, accuracy %, 'Speech as Context' block)",
+   "source_url": "https://arxiv.org/abs/2608.24048",
+   "note": "whole recording supplied as audio (end-to-end spoken LLM baseline reported by the dataset authors)"
+  },
+  {
+   "benchmark": "longaudioqa",
+   "model": "mimo-audio",
+   "metric": "Semantic accuracy (%) - AMI / Temporal",
+   "value": 35.34,
+   "source": "Table 3 (main results, accuracy %, 'Speech as Context' block)",
+   "source_url": "https://arxiv.org/abs/2608.24048",
+   "note": "whole recording supplied as audio (end-to-end spoken LLM baseline reported by the dataset authors)"
+  },
+  {
+   "benchmark": "longaudioqa",
+   "model": "mimo-audio",
+   "metric": "Semantic accuracy (%) - AMI / Summarization",
+   "value": 38.3,
+   "source": "Table 3 (main results, accuracy %, 'Speech as Context' block)",
+   "source_url": "https://arxiv.org/abs/2608.24048",
+   "note": "whole recording supplied as audio (end-to-end spoken LLM baseline reported by the dataset authors)"
+  },
+  {
+   "benchmark": "longaudioqa",
+   "model": "mimo-audio",
+   "metric": "Semantic accuracy (%) - AMI / Acoustic-aware",
+   "value": 17.17,
+   "source": "Table 3 (main results, accuracy %, 'Speech as Context' block)",
+   "source_url": "https://arxiv.org/abs/2608.24048",
+   "note": "whole recording supplied as audio (end-to-end spoken LLM baseline reported by the dataset authors)"
+  },
+  {
+   "benchmark": "longaudioqa",
+   "model": "mimo-audio",
+   "metric": "Semantic accuracy (%) - DailyTalk / Factual",
+   "value": 81.57,
+   "source": "Table 3 (main results, accuracy %, 'Speech as Context' block)",
+   "source_url": "https://arxiv.org/abs/2608.24048",
+   "note": "whole recording supplied as audio (end-to-end spoken LLM baseline reported by the dataset authors)"
+  },
+  {
+   "benchmark": "longaudioqa",
+   "model": "mimo-audio",
+   "metric": "Semantic accuracy (%) - DailyTalk / Inferential",
+   "value": 78.65,
+   "source": "Table 3 (main results, accuracy %, 'Speech as Context' block)",
+   "source_url": "https://arxiv.org/abs/2608.24048",
+   "note": "whole recording supplied as audio (end-to-end spoken LLM baseline reported by the dataset authors)"
+  },
+  {
+   "benchmark": "longaudioqa",
+   "model": "mimo-audio",
+   "metric": "Semantic accuracy (%) - DailyTalk / Temporal",
+   "value": 5.58,
+   "source": "Table 3 (main results, accuracy %, 'Speech as Context' block)",
+   "source_url": "https://arxiv.org/abs/2608.24048",
+   "note": "whole recording supplied as audio (end-to-end spoken LLM baseline reported by the dataset authors)"
+  },
+  {
+   "benchmark": "longaudioqa",
+   "model": "mimo-audio",
+   "metric": "Semantic accuracy (%) - DailyTalk / Summarization",
+   "value": 3.46,
+   "source": "Table 3 (main results, accuracy %, 'Speech as Context' block)",
+   "source_url": "https://arxiv.org/abs/2608.24048",
+   "note": "whole recording supplied as audio (end-to-end spoken LLM baseline reported by the dataset authors)"
+  },
+  {
+   "benchmark": "longaudioqa",
+   "model": "mimo-audio",
+   "metric": "Semantic accuracy (%) - DailyTalk / Acoustic-aware",
+   "value": 31.44,
+   "source": "Table 3 (main results, accuracy %, 'Speech as Context' block)",
+   "source_url": "https://arxiv.org/abs/2608.24048",
+   "note": "whole recording supplied as audio (end-to-end spoken LLM baseline reported by the dataset authors)"
   }
  ]
 }
