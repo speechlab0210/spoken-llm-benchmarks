@@ -1,9 +1,69 @@
 {
-  "fetched_at": "2026-08-26T22:47:02Z",
+  "fetched_at": "2026-08-27T22:47:03Z",
   "window_days": 10,
   "scanned": 90,
-  "flagged_today": 4,
+  "flagged_today": 3,
   "candidates": [
+    {
+      "id": "2608.25218",
+      "title": "TurnBench: A Multi-Domain Benchmark for Turn-Taking Dynamics in Spoken Dialogue",
+      "abstract": "Speakers in natural conversation take turns speaking and listening, deciding in real time when to take, hold, or yield the floor. However, turn-taking evaluation remains limited due to the lack of a consistent, linguistically grounded evaluation protocol and hand-annotated data covering diverse conversation types. To address this, we present TurnBench, a multi-domain benchmark that pairs a 30-hour, hand-labeled corpus of dyadic human conversation with a standardized evaluation protocol for end-of-turn and interruption detection. We set conversation type as a controllable experimental variable, covering six distinct interaction styles, and triple-annotate each conversation. Benchmarking 14 heterogeneous turn-taking systems, we find end-of-turn recall stable across types, while interruption false positives are strongly type-dependent and concentrated in backchannel-dense interaction styles. Although in smooth floor transfers human listeners begin speaking a median 151 ms before the current turn ends, no current system performs equivalently without incurring excessive false positives. We release our corpus, a 104-hour training set, and a public leaderboard with an interactive dataset viewer at https://turnbench.sesame.com",
+      "published": "2026-08-25T23:14:36Z",
+      "authors": [
+        "Freeman Jiang",
+        "Ramon Sanabria",
+        "Soham Deshmukh",
+        "Bandhav Veluri",
+        "Simon Michael Vuch Williams",
+        "Elliott K. Suen",
+        "Garreth Lee",
+        "Kevin Yoonho Choi"
+      ],
+      "primary_category": "eess.AS",
+      "url": "https://arxiv.org/abs/2608.25218",
+      "score": 42,
+      "status": "new — under review"
+    },
+    {
+      "id": "2608.24958",
+      "title": "Can We Read the Mind of an Audio LLM? A Verbalizable, Multilingual Middle-Layer Workspace",
+      "abstract": "An audio language model is a black box in a specific way: we see what it says, never what it works out on the way there, and chain-of-thought monitoring helps only if the model writes its reasoning down. Reading a base Qwen3-Omni with a logit lens at the audio-token positions, we find that the answer to a spoken question becomes legible - in words - in the model's middle layers, before it emits any token. Five findings follow. (1) The readout carries concepts in neither the question, the options, nor the model's own transcription: on a clip whose verbatim transcription is empty garbling, it reconstructs Watergate and scandal, passes through the role president, and resolves to Nixon - a hidden multi-hop chain, read with no chain-of-thought. (2) The content is language-agnostic: one audio-inferred concept surfaces in several scripts at once, and 38% of top-1 readouts are Chinese on English inputs. (3) It is paralinguistic: given the same clip as audio and as the model's own emotion-free caption, the audio mind forms the sound source, speaker role, or affect that the caption discards, and answers correctly more often. (4) The audio-driven signal is absent at the input, turns on about a tenth of the way into the network, separates most cleanly from the text prior in the middle band (35-80% of depth), and activation patching shows it is causally used and committed before the last fifth of the layers. (5) Deleting single layers maps the pipeline: reading the sound in is localized to the entry layers and answer delivery to the output layer, while retrieval is distributed across the interior. Throughout, a waveform-swap control - identical text, only the sound changed - isolates the audio-driven signal from a prior over the printed options. This is a qualitative account of what an audio model works out before it speaks: the quantities are controls, not benchmark scores.",
+      "published": "2026-08-25T06:17:28Z",
+      "authors": [
+        "Jiajun Fan",
+        "Jingyuan Li",
+        "Prashanth Gurunath Shivakumar",
+        "Qi Luo",
+        "Jia-Hong Huang",
+        "M. Maruf",
+        "Roger Ren",
+        "Yile Gu"
+      ],
+      "primary_category": "cs.SD",
+      "url": "https://arxiv.org/abs/2608.24958",
+      "score": 30,
+      "status": "new — under review"
+    },
+    {
+      "id": "2608.25114",
+      "title": "Flower Hub: A Reproducible Benchmarking Platform for Federated Learning in Simulation and Deployment",
+      "abstract": "Federated learning (FL) has emerged as a key approach for training models across decentralized data, yet benchmarking in FL remains difficult to reproduce, compare, and extend. Existing evaluations are often tied to custom infrastructure, released as incomplete research code, and conducted primarily in simulation, which limits portability and practical relevance. We present Flower Hub, a platform for publishing, discovering, and executing decentralized and federated applications. We show how it enables reproducible benchmarking by packaging benchmarks as executable, versioned applications with standardized metadata, pinned dependencies, and explicit evaluation workflows. We instantiate this approach with a multi-domain benchmark suite spanning cross-silo and cross-device settings, and including tasks in medical imaging, financial tabular learning, legal instruction tuning, phishing URL detection, and audio tagging. We further demonstrate that the same benchmarking application can run across both simulation and deployment runtimes without changing the application code, enabling unified evaluation across varying learning environments. Beyond model quality, our benchmark design supports system-aware reporting, including runtime and communication metrics. This work advances benchmarking in FL settings from ad hoc code artifacts towards portable, executable, and reusable benchmark applications.",
+      "published": "2026-08-25T20:09:44Z",
+      "authors": [
+        "Yan Gao",
+        "Mohammad Naseri",
+        "Javier Fernandez-Marques",
+        "Dimitris Stripelis",
+        "Lorenzo Sani",
+        "Davide Eynard",
+        "Fan Zhang",
+        "Hong Jia"
+      ],
+      "primary_category": "cs.LG",
+      "url": "https://arxiv.org/abs/2608.25114",
+      "score": 21,
+      "status": "new — under review"
+    },
     {
       "id": "2608.23758",
       "title": "EXAM$^2$: $\\underline{Ex}tending$ $\\underline{A}udio$ $Understanding$ $in$ $\\underline{M}ultilingual$ $and$ $\\underline{M}ultimodal$ $Analysis$",
