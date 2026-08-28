@@ -1,9 +1,173 @@
 {
-  "fetched_at": "2026-08-27T22:47:03Z",
+  "fetched_at": "2026-08-28T22:47:03Z",
   "window_days": 10,
-  "scanned": 90,
-  "flagged_today": 3,
+  "scanned": 102,
+  "flagged_today": 9,
   "candidates": [
+    {
+      "id": "2608.26336",
+      "title": "StreamAV-Bench: A Comprehensive Benchmark for Streaming Audio-Video Generation",
+      "abstract": "Recent advancements in generative models are pushing video generation toward unbounded streaming audio-video generation for real-time interactive worlds. However, existing benchmarks primarily evaluate completed sequences and struggle to capture streaming properties. To bridge this gap, we introduce StreamAV-Bench, the first comprehensive benchmark tailored for streaming audio-video generation. StreamAV-Bench establishes a unified evaluation framework, including the progressive track for instruction adherence and long-horizon stability, and the interactive track for interactive response and state retention and reuse. With expert-verified evaluation cases across 32 fine-grained dimensions, we conduct an extensive evaluation of 13 representative systems. Our analysis reveals that current models suffer from temporal drift in progressive generation and responsiveness bottlenecks during interactive control. Based on a comprehensive failure analysis, we share insights to advance the development of native joint audio-video streaming models.",
+      "published": "2026-08-26T19:16:24Z",
+      "authors": [
+        "Kaiqi Liu",
+        "Haoxuan Zeng",
+        "Jingqi Liu",
+        "Jiacong Fang",
+        "Ziqi Cai",
+        "Yunyao Mao",
+        "Henglin Liu",
+        "Yu Sheng"
+      ],
+      "primary_category": "cs.SD",
+      "url": "https://arxiv.org/abs/2608.26336",
+      "score": 39,
+      "status": "new — under review"
+    },
+    {
+      "id": "2608.26317",
+      "title": "Modality Maturity Index: A benchmark for assessing multimodal capabilities of omni models",
+      "abstract": "Frontier language models are increasingly marketed as omni systems that can perceive and respond across modalities. Existing evaluation frameworks, however, focus almost exclusively on bimodal understanding, typically text plus one other modality. We propose the Modality Maturity Index (MMI), a benchmark designed to evaluate the multimodal capabilities of large language models across five modalities (text, image, audio, video and document) and combinations of up to three modalities in both inputs and outputs. MMI consists of 893 questions, each carefully crafted to require the model to demonstrate its understanding of multiple input modalities and to generate responses that incorporate various output formats. The questions are designed to be self-contained, with clear expectations for the correct modality or mix of modalities required for an accurate response. Every MMI prompt carries human-authored rubric criteria for each output modality expected in the response; a model's MMI Value expresses the average of the per-modality scores for each prompt. Because low scores can reflect either failure to generate a modality (lack of presence) or failure to generate correct content, we introduce also a supplementary Modality Presence Score (MPS), a per-prompt F1 over the expected output modalities. Applying MMI to five frontier multimodal models, we find that the MPS ranges from only 15.6 (Claude Opus 4.6) to 34.9 (GPT-5.4). Given the low availability of returned modalities to even grade, we report MPS as our main result pending model improvements. To assess the viability of judging output correctness with LLM judges and rubrics, we run a separate experiment with custom generation tools. On the assets that generates, we find that an LLM judge applying the rubrics agrees with rubric-blind human annotators (who score the outputs directly and never see the criteria) on 70.8% of judgments.",
+      "published": "2026-08-26T18:48:52Z",
+      "authors": [
+        "Rohit Patel",
+        "Dieuwke Hupkes",
+        "Sloan Strader"
+      ],
+      "primary_category": "cs.CV",
+      "url": "https://arxiv.org/abs/2608.26317",
+      "score": 33,
+      "status": "new — under review"
+    },
+    {
+      "id": "2608.26431",
+      "title": "AudioSpan: Spanning the Duration and Depth of Audio Comprehension",
+      "abstract": "General audio comprehension now covers speech, sound, and music over durations from seconds to hours, driven by large audio-language models (LALMs) that are increasingly omni-modal. Yet the benchmarks that test them still rely on clips of seconds, where scores saturate and models converge; recent long-form efforts extend duration but evaluate long audio much as short clips are. We introduce AudioSpan, a benchmark that spans both duration and depth: it pairs audio from 10 minutes to over 2 hours with 3,240 questions across three cognitive levels, namely perception, understanding, and reasoning. Two paths supply the questions, differing in how question content is sourced and how ground truth is obtained. Native QA extracts questions from the audio's content, posing each as a multiple-choice item and an open-ended one graded by detailed rubrics. Anchor QA instead injects ground truth, planting acoustic anchors into the audio and building a perception-to-reasoning chain scored only to the first error. A fully automated pipeline constructs every item through structured captioning, QA generation, and adversarial critic feedback. Evaluating 12 LALMs on AudioSpan, we find the hard part comes before reasoning: distilling a few relevant facts from a long, redundant signal. This difficulty grows with audio length and falls hardest on perception, especially temporal grounding. AudioSpan is available at https://huggingface.co/datasets/holvan/AudioSpan.",
+      "published": "2026-08-26T22:15:48Z",
+      "authors": [
+        "Wen Huang",
+        "Yunfei Chu",
+        "Meng Gao",
+        "Haolin He",
+        "Jin Xu"
+      ],
+      "primary_category": "cs.SD",
+      "url": "https://arxiv.org/abs/2608.26431",
+      "score": 27,
+      "status": "new — under review"
+    },
+    {
+      "id": "2608.26432",
+      "title": "SpeechGym: An Audio-Native Gym for Training Voice Agents via Reinforcement Learning",
+      "abstract": "Voice agents must call tools and hold multi-turn dialogue entirely through speech, yet the dominant paradigm trains them in text. Existing frameworks either cascade TTS and ASR around a proprietary voice API, where gradients cannot flow and per-call cost makes on-policy reinforcement learning prohibitive, or stay in text: they measure voice agents but cannot improve them. We present SpeechGym, an audio-native agentic environment in which two omni-modal models converse in native audio, with no external ASR or TTS and no API boundary, over the unmodified tasks, tools and success check of an established text agentic benchmark, so that the interaction modality is the only variable and the loop stays local and trainable end to end. Audio agentic capability does not follow from audio understanding. The failures speech introduces are perceptual rather than reasoning deficits: the agent picks the right tool and the right argument slot but fills it with a value misheard from the waveform, and that single error cascades into a failed call, a retry of the same call, and a wasted step budget. A second failure is behavioural: under an insistent caller the agent performs an unauthorised write and ends the episode believing it helped. Both are trainable, because the environment labels them for free: a call with a misheard argument fails against the database while a correct one succeeds. The obstacle is sparsity, not signal. Outcome-only GRPO is gradient-starved here, since almost every rollout group fails identically, while a per-turn process reward crediting each successful tool call restores variance to nearly every group. Trained this way, the agent transfers with no further tuning to an independently implemented voice benchmark, more than doubling task success and carrying an open-weights model from last place to second on that leaderboard, while using fewer turns and tokens than before training.",
+      "published": "2026-08-26T22:16:05Z",
+      "authors": [
+        "Jiajun Fan",
+        "Jingyuan Li",
+        "Prashanth Gurunath Shivakumar",
+        "Jia-Hong Huang",
+        "Qi Luo",
+        "M. Maruf",
+        "Ivan Bulyko",
+        "Ge Liu"
+      ],
+      "primary_category": "cs.SD",
+      "url": "https://arxiv.org/abs/2608.26432",
+      "score": 21,
+      "status": "new — under review"
+    },
+    {
+      "id": "2608.26434",
+      "title": "AfriSwitch: A Benchmark for In-the-Wild African Code-Switched Speech Recognition",
+      "abstract": "Code-switching is pervasive in bilingual African conversation, yet most ASR systems assume monolingual input and are evaluated on curated monolingual benchmarks. We present AfriSwitch, a 61.36-hour human-transcribed benchmark of in-the-wild code-switched speech spanning 16 African languages and language varieties, released with switch-level English span tags, perutterance Code-Mixing Index (CMI), and switch-point counts. Corpus statistics show that mixing behaviour varies widely across African languages along two largely independent axes: how often speakers alternate, and how balanced the mixture is. No single scalar captures how code-switched a language is. Benchmarking five open and commercial multilingual ASR systems zero-shot yields word error rates far above published monolingual figures for the same languages, with the best system averaging 35.93% WER and no system falling below 24% on any language. Africa-targeted training, not model scale or nominal language coverage, best predicts performance.",
+      "published": "2026-08-26T22:20:58Z",
+      "authors": [
+        "Gabrial Zencha Ashungafac",
+        "Busayo Awobade",
+        "Tobi Olatunji"
+      ],
+      "primary_category": "cs.CL",
+      "url": "https://arxiv.org/abs/2608.26434",
+      "score": 21,
+      "status": "new — under review"
+    },
+    {
+      "id": "2608.26535",
+      "title": "Multi2AV-Safety: Benchmarking Safety in Multimodal-to-Audio-Video Generation",
+      "abstract": "Audio-video generation is rapidly moving from prompt-driven synthesis toward multimodal conditioning, where text, images, audio, and video can jointly shape the generated output. This shift changes the nature of safety evaluation: harmful intent may no longer reside in any single input, but instead emerge from how otherwise benign or weakly harmful conditions interact across modalities and time. Existing safety benchmarks, however, remain largely prompt-centric or tied to fixed conditioning interfaces, leaving such compositional risks difficult to study systematically. To bridge this gap, we introduce Multi2AV-Safety, the first safety benchmark, to the best of our knowledge, to cover all 11 non-singleton T/I/A/V conditioning configurations for audio-video generation, comprising 11,024 attack instances. Evaluation on Multi2AV-Safety reveals systematic weaknesses in representative multimodal safety guards across attack mechanisms and harm-evidence structures. Our evaluation reveals two complementary failure modes: harmful semantics can emerge from the combination of individually benign inputs, while explicit harmful cues can become harder to detect when mixed with benign multimodal context. Together, these results identify \\emph{compositional risk perception} as a central capability gap in safeguarding multimodal-conditioned audio-video generation: current safety guards fail to reliably integrate safety evidence across modalities and time, even when all conditioning inputs are observable. The dataset will be publicly released in October 2026.",
+      "published": "2026-08-27T02:12:25Z",
+      "authors": [
+        "Kaichao Jiang",
+        "Changtao Miao",
+        "Baiqi Wu",
+        "Zhiyuan Lu",
+        "Kang Yang",
+        "Peiwei Zhao",
+        "Junchi Chen",
+        "Yunfeng Diao"
+      ],
+      "primary_category": "cs.AI",
+      "url": "https://arxiv.org/abs/2608.26535",
+      "score": 21,
+      "status": "new — under review"
+    },
+    {
+      "id": "2608.26992",
+      "title": "Benchmarking_Fast_Domain_Adaptation_for_Unsupervised_Speech_Units",
+      "abstract": "Representation learning has attracted great atten- tion and managed to reach good performances as a pretraining method for downstream tasks or as a first step towards unsu- pervised speech modeling. Yet, little is known about how such methods deal with out-of-domain speech and how could they be adapted in a few shot to new domains. This is important especially for accented speech where one observes a long tail of accents that diverge from the standard ones. We introduce ABX- Accent, a benchmark based on the AESRC dataset that features 10 different accents of English. It includes a small (< 10 hours) unlabelled training set in each of the accents and adaptations of the Zero Resources Challenge ABX evaluation metrics to each of the accents. We illustrate this benchmark with a baseline model that uses adaptive domain normalization to fine tune a pretrained Contrastive Predictive Coding model on the accents. This method is first developed on LibriSpeech using a male/female split. When applied to the new benchmark, the proposed method yields a relative improvement of 23.6% on across-speaker ABX scores on average compared to non adapted models. The data and metrics will be open sourced upon paper acceptance",
+      "published": "2026-08-27T11:40:18Z",
+      "authors": [
+        "Robin San Roman",
+        "Manel Khentout",
+        "Tu Anh Nguyen",
+        "Paul Michel",
+        "Yossi Adi",
+        "Emmanuel Dupoux"
+      ],
+      "primary_category": "cs.LG",
+      "url": "https://arxiv.org/abs/2608.26992",
+      "score": 21,
+      "status": "new — under review"
+    },
+    {
+      "id": "2608.27026",
+      "title": "Direct or Mediated? Task-Dependent Audio Information Routing in Large Audio Language Models",
+      "abstract": "Large Audio Language Models (LALMs) have demonstrated strong performance across a wide range of audio understanding tasks. However, they are typically evaluated on single, coherent audio segments, leaving their behavior under less familiar input configurations underexplored. We study this issue through a controlled setting in which two audio segments are concatenated into a single input. Across multiple LALMs, we observe a striking task-dependent robustness gap: automatic speech recognition (ASR) remains comparatively stable, whereas audio question answering (AQA) degrades substantially. To investigate the mechanisms underlying this disparity, we analyze how audio information is routed through LALM decoders using layer-wise attention knockout. The results reveal distinct task-dependent pathways. ASR relies primarily on direct retrieval from audio tokens by answer tokens, whereas AQA depends more strongly on a mediated route in which audio information is first integrated into prompt tokens and subsequently accessed during generation. We further probe prompt-token representations under audio concatenation and find that task-relevant audio attributes remain readily decodable, particularly in middle and later decoder layers, even when AQA performance deteriorates sharply. This dissociation indicates that the failure cannot be explained by complete loss of audio information from the decoder states and is instead consistent with a downstream bottleneck in retrieving or utilizing prompt-mediated information during answer generation. Together, our findings reveal task-dependent audio information routing in LALMs and highlight information utilization as a potential limitation on their generalization.",
+      "published": "2026-08-27T12:12:26Z",
+      "authors": [
+        "Yizhou Zhang",
+        "Wangjin Zhou",
+        "Xin Gu",
+        "Yichi Wang",
+        "Wei Tan",
+        "Yi Zhao",
+        "Zhi Gong",
+        "Keisuke Imoto"
+      ],
+      "primary_category": "cs.SD",
+      "url": "https://arxiv.org/abs/2608.27026",
+      "score": 21,
+      "status": "new — under review"
+    },
+    {
+      "id": "2608.27044",
+      "title": "Omni-Interactive Universal Embedder",
+      "abstract": "Multimodal representation learning has been shifting from traditional two-tower architectures to large language model (LLM)-based embedders due to their strong instruction-following capabilities. Despite this progress, existing approaches primarily focus on language and image modalities, which also remain the dominant modalities for user-conditioned interactions in current embedders. In this paper, we propose the first Omni-Interactive Universal Embedder (OmniUE), which not only learns a unified embedding space across text, video, and audio by leveraging intermediate-layer representations from dedicated learnable tokens, but also supports omni-interactive querying, enabling users to provide inputs in the form of text, visual regions of interest, and audio spans. Within OmniUE, visual and audio segmenters process diverse user interactions and integrate them with an omni-LLM to produce user-conditioned any-to-any embeddings via context aggregation. To evaluate OmniUE's omni-interactive capabilities, we introduce OmniCHOIR, benchmarking models for omni-interactive compositional audio retrieval based on the given text, video, and audio as well as unimodal or multimodal interaction prompts. OmniUE consistently surpasses state-of-the-art baselines across diverse modalities, with average improvements of 10.5% on textual-interactive video benchmarks (MMEB-v2-video), 1.1% on audio tasks (MAEB), 83.7% on visual-interactive benchmarks (SCaR), and 24.1% on our omni-interactive OmniCHOIR benchmark. We believe that jointly advancing omni-modal representation learning and omni-interactive querying paves the way toward universal embedders.",
+      "published": "2026-08-27T12:31:55Z",
+      "authors": [
+        "Wei-Yao Wang",
+        "Kazuya Tateishi",
+        "Shuyang Cui",
+        "Christian Simon",
+        "Takashi Shibuya",
+        "Shusuke Takahashi",
+        "Yuki Mitsufuji"
+      ],
+      "primary_category": "cs.AI",
+      "url": "https://arxiv.org/abs/2608.27044",
+      "score": 18,
+      "status": "new — under review"
+    },
     {
       "id": "2608.25218",
       "title": "TurnBench: A Multi-Domain Benchmark for Turn-Taking Dynamics in Spoken Dialogue",
