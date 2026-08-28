@@ -9086,6 +9086,75 @@
         "English"
       ],
       "note": "English, studio-recorded and dyadic by design, and the majority-consensus gold drops events the three annotators disagreed on. Full-duplex spoken dialogue models are scored on end-of-turn only, and their latency includes response generation (and, for hosted models, network delay), so it is not comparable with a predictor's decision latency. Data is under a custom non-commercial licence prohibiting voice cloning. A public leaderboard and dataset viewer are at turnbench.sesame.com."
+    },
+    {
+      "id": "audiospan",
+      "name": "AudioSpan",
+      "full_title": "AudioSpan: Spanning the Duration and Depth of Audio Comprehension",
+      "arxiv_id": "2608.26431",
+      "arxiv_date": "2026-08",
+      "arxiv_date_full": "2026-08-26",
+      "url": "https://arxiv.org/abs/2608.26431",
+      "data": "https://huggingface.co/datasets/holvan/AudioSpan",
+      "summary": "A long-form audio comprehension benchmark that varies two axes at once: how long the audio is, and how deep the question goes. Recordings run from 10 minutes to 2.7 hours and are split evenly across three duration tiers (S 10-30 min, M 30-60 min, L 60+ min) and two languages, and every item is tagged with one of three cognitive levels - perception, understanding, reasoning. Two question paths sit on the same taxonomy but obtain ground truth differently. Native QA derives questions from what the recording actually contains, asking each one twice: as a multiple-choice item scored by accuracy, and as an open-ended item graded against detailed rubric criteria with separate semantic and temporal axes. Anchor QA instead plants ground truth into the audio - each recording also exists in an anchor-modified version under one of three edit operations (addition, deletion, modification) - and builds a three-question chain from grounding the anchor to reasoning about it, scored only up to the first error so a lucky later answer cannot rescue a broken chain. Construction is fully automated: structured captioning, then QA generation, then adversarial critic feedback that refines items rather than only filtering them. Twelve LALMs are run under a single native-audio protocol in which the model always receives the waveform, truncated to its own input limit when it cannot ingest the whole clip, and never a transcript standing in for it; models with a thinking mode are run in both configurations. The headline result is that the bottleneck sits before reasoning: a text-only solver handed the authoring caption beats every audio model, the gap widens with duration, and the steepest drop from multiple-choice to open-ended grading falls on localisation, where models can pick a timestamp they cannot themselves produce.",
+      "categories": [
+        "long-form",
+        "audio-grounding",
+        "reasoning"
+      ],
+      "tasks": [
+        "long-form audio multiple-choice QA",
+        "long-form audio open-ended QA (rubric-graded)",
+        "anchor-grounded perception-to-reasoning chain"
+      ],
+      "io": "long-form audio in, text out",
+      "size": "360 in-the-wild recordings plus one anchor-modified version of each, 720 audio files totalling roughly 600 h (avg ~50 min, longest 2.7 h), balanced across three duration tiers (120 each) and English/Chinese (180 each), spanning 7 genres and 9 topics; 3,240 QA items = 1,080 Native MCQ + 1,080 Native OEQ + 1,080 Anchor MCQ organised as 360 three-question chains",
+      "metrics": [
+        "Accuracy (%)",
+        "Rubric (%)",
+        "Chain (%)"
+      ],
+      "languages": [
+        "English",
+        "Chinese"
+      ],
+      "note": "Open-source models are capped at 30-80 minute audio inputs and are scored on truncated audio for much of the M and L tiers, while the closed models run untruncated, so open-vs-closed rows in the main table are not a like-for-like comparison. The text-only caption baseline (GPT-5.4 reading the dense authoring caption) outscores every audio model on Accuracy and Rubric, which is the paper's point rather than a leaderboard entry. Coverage is limited to English and Chinese in-the-wild speech-centric audio; low-resource languages, cross-lingual questions, and long music or environmental recordings are out of scope. Native QA coverage is bounded by caption fidelity, and Anchor QA is confined to one chain template. Artifacts (QA items, rubric criteria, anchor edit manifests, sound events, evaluation scripts) are CC BY-NC-SA 4.0; the source recordings stay under the original creators' copyright and may not be redistributed or used commercially."
+    },
+    {
+      "id": "modality-maturity-index",
+      "name": "MMI (Modality Maturity Index)",
+      "full_title": "Modality Maturity Index: A benchmark for assessing multimodal capabilities of omni models",
+      "arxiv_id": "2608.26317",
+      "arxiv_date": "2026-08",
+      "arxiv_date_full": "2026-08-26",
+      "url": "https://arxiv.org/abs/2608.26317",
+      "code": "https://github.com/facebookresearch/modality-maturity-index",
+      "data": "https://huggingface.co/datasets/facebook/mmi",
+      "summary": "A cross-modal benchmark that asks a question most omni evaluations skip: given a prompt that implicitly calls for a particular output modality, does the model return that modality at all, and is what it returns correct? It spans five modalities - text, image, audio, video and document - with up to three modalities on each side of the exchange, and its prompts are written to make the required output modality unambiguous without ever naming it, so asking how a word is pronounced should draw speech rather than a phonetic spelling. Two scores sit on top. The MMI Value is the intended headline: an LLM judge grades each returned asset against human-authored rubric criteria written per output modality and judgeable in isolation, and the per-prompt value macro-averages over the expected output modalities so each counts equally regardless of how many criteria it carries. The Modality Presence Score (MPS) decomposes that, measuring production alone as a per-prompt F1 between the returned and the required modality sets, and bounding the MMI Value from above. Applied to five frontier models queried through bare provider APIs, presence turns out to be the binding constraint: precision is near-perfect but recall collapses, so the MPS lands between 15.6 and 34.9 and models default to text even when the prompt clearly calls for something else. Audio is the hardest output modality of the five. Because so few assets come back, the paper reports MPS as its main result and leaves the MMI Value defined but effectively untested.",
+      "categories": [
+        "holistic",
+        "instruction-following",
+        "generation-quality"
+      ],
+      "tasks": [
+        "output-modality selection",
+        "cross-modal instruction following",
+        "rubric-graded asset correctness"
+      ],
+      "io": "text/image/audio/video/document in, text/image/audio/video/document out",
+      "size": "893 human-written prompts (475 single-input/single-output, 264 multi-input/single-output, 76 single-input/multi-output, 78 multi-input/multi-output; 152 document prompts across six file types), each reviewed by at least two authors; 7,165 rubric criteria over 1,099 (prompt, modality) groups, median 6 criteria per group",
+      "metrics": [
+        "MMI Value",
+        "MPS (per-prompt F1)",
+        "recall",
+        "precision",
+        "pass rate",
+        "input failure rate"
+      ],
+      "languages": [
+        "English"
+      ],
+      "note": "Audio is one of five modalities rather than the subject of the suite, so this measures a spoken LLM only as far as speech input and speech output figure in the prompt mix. The reported numbers are MPS (presence), not the benchmark's own main index: the evaluated models returned too few assets for an MMI Value to carry signal, so the Value is defined but not meaningfully tested, and rubric-blind judge-human agreement is 70.8%. All five models are queried through their provider API with no system prompt and no tools, so the scores characterise the API rather than the deployed assistant, which often wraps the model in separate image, audio or video generators and would likely score far higher. Presence numbers are lenient-detection unless stated. Input failure rates vary widely across models (8.0% to 37.0%), so a low score partly reflects failure to ingest the prompt rather than failure to generate."
     }
   ]
 }

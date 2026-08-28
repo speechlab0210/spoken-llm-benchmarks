@@ -1277,6 +1277,54 @@
       "name": "Gemini 3.1 Flash Live",
       "org": "Google",
       "type": "e2e"
+    },
+    {
+      "id": "voxtral-mini",
+      "name": "Voxtral-Mini",
+      "org": "Mistral",
+      "type": "e2e"
+    },
+    {
+      "id": "voxtral-small",
+      "name": "Voxtral-Small",
+      "org": "Mistral",
+      "type": "e2e"
+    },
+    {
+      "id": "baichuan-omni-1-5",
+      "name": "Baichuan-Omni-1.5",
+      "org": "Baichuan",
+      "type": "e2e"
+    },
+    {
+      "id": "qwen3-5-omni-flash",
+      "name": "Qwen3.5-Omni-Flash",
+      "org": "Alibaba",
+      "type": "e2e"
+    },
+    {
+      "id": "gpt-5-4",
+      "name": "GPT-5.4",
+      "org": "OpenAI",
+      "type": "e2e"
+    },
+    {
+      "id": "claude-opus-4-6",
+      "name": "Claude Opus 4.6",
+      "org": "Anthropic",
+      "type": "e2e"
+    },
+    {
+      "id": "gemini-3-1-flash",
+      "name": "Gemini 3.1 Flash",
+      "org": "Google",
+      "type": "e2e"
+    },
+    {
+      "id": "llama-4-maverick",
+      "name": "Llama 4 Maverick",
+      "org": "Meta",
+      "type": "e2e"
     }
   ]
 }

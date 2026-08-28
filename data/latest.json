@@ -22,7 +22,8 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2608.26336",
       "score": 39,
-      "status": "new — under review"
+      "status": "reviewed — out of scope",
+      "review_note": "benchmark for streaming audio-video generation systems, not spoken LLMs"
     },
     {
       "id": "2608.26317",
@@ -37,7 +38,8 @@
       "primary_category": "cs.CV",
       "url": "https://arxiv.org/abs/2608.26317",
       "score": 33,
-      "status": "new — under review"
+      "status": "catalogued 2026-08-29",
+      "catalogued_as": "modality-maturity-index"
     },
     {
       "id": "2608.26431",
@@ -54,7 +56,8 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2608.26431",
       "score": 27,
-      "status": "new — under review"
+      "status": "catalogued 2026-08-29",
+      "catalogued_as": "audiospan"
     },
     {
       "id": "2608.26432",
@@ -74,7 +77,8 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2608.26432",
       "score": 21,
-      "status": "new — under review"
+      "status": "reviewed — out of scope",
+      "review_note": "audio-native RL training environment; reuses an existing text benchmark's tasks and evaluator unchanged rather than proposing a benchmark"
     },
     {
       "id": "2608.26434",
@@ -89,7 +93,8 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2608.26434",
       "score": 21,
-      "status": "new — under review"
+      "status": "reviewed — out of scope",
+      "review_note": "code-switched ASR benchmark; subjects are ASR systems, not general spoken LLMs"
     },
     {
       "id": "2608.26535",
@@ -109,7 +114,8 @@
       "primary_category": "cs.AI",
       "url": "https://arxiv.org/abs/2608.26535",
       "score": 21,
-      "status": "new — under review"
+      "status": "reviewed — out of scope",
+      "review_note": "safety benchmark for audio-video generation guards, not spoken LLMs"
     },
     {
       "id": "2608.26992",
@@ -127,7 +133,8 @@
       "primary_category": "cs.LG",
       "url": "https://arxiv.org/abs/2608.26992",
       "score": 21,
-      "status": "new — under review"
+      "status": "reviewed — out of scope",
+      "review_note": "ABX benchmark for unsupervised speech units / self-supervised representations, not spoken LLMs"
     },
     {
       "id": "2608.27026",
@@ -147,7 +154,8 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2608.27026",
       "score": 21,
-      "status": "new — under review"
+      "status": "reviewed — out of scope",
+      "review_note": "mechanistic analysis of audio routing in LALMs; proposes no benchmark"
     },
     {
       "id": "2608.27044",
@@ -166,7 +174,8 @@
       "primary_category": "cs.AI",
       "url": "https://arxiv.org/abs/2608.27044",
       "score": 18,
-      "status": "new — under review"
+      "status": "reviewed — out of scope",
+      "review_note": "proposes a model (OmniUE) plus a retrieval benchmark for embedders, not a spoken-LLM evaluation"
     },
     {
       "id": "2608.25218",
