@@ -1325,6 +1325,24 @@
       "name": "Llama 4 Maverick",
       "org": "Meta",
       "type": "e2e"
+    },
+    {
+      "id": "qwen-audio-chat",
+      "name": "Qwen-Audio-Chat",
+      "org": "Alibaba",
+      "type": "e2e"
+    },
+    {
+      "id": "gemini-2-5-flash-lite",
+      "name": "Gemini 2.5 Flash-Lite",
+      "org": "Google",
+      "type": "e2e"
+    },
+    {
+      "id": "muse-spark-1-2",
+      "name": "Muse Spark 1.2",
+      "org": "Meta",
+      "type": "e2e"
     }
   ]
 }

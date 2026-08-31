@@ -15,7 +15,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2608.27817",
       "score": 39,
-      "status": "new — under review"
+      "status": "reviewed - out of scope: no new benchmark or evaluation set - audits the marginal value of generative audio calls on existing suites (Dynamic-SUPERB VocalSound, ESC-50, AudioBench PQA/ESD, STM)"
     },
     {
       "id": "2608.27783",
@@ -28,7 +28,7 @@
       "primary_category": "eess.AS",
       "url": "https://arxiv.org/abs/2608.27783",
       "score": 36,
-      "status": "new — under review"
+      "status": "accepted - in catalogue as sure-challenge"
     },
     {
       "id": "2608.28212",
@@ -43,7 +43,7 @@
       "primary_category": "cs.MM",
       "url": "https://arxiv.org/abs/2608.28212",
       "score": 36,
-      "status": "new — under review"
+      "status": "accepted - in catalogue as musp-bench"
     },
     {
       "id": "2608.27698",
@@ -60,7 +60,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2608.27698",
       "score": 21,
-      "status": "new — under review"
+      "status": "reviewed - out of scope: not a spoken-LLM evaluation - differentiable synthesizer sound-matching loss functions"
     },
     {
       "id": "2608.28040",
@@ -75,7 +75,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2608.28040",
       "score": 18,
-      "status": "new — under review"
+      "status": "accepted - in catalogue as dualevasion"
     },
     {
       "id": "2608.28508",
@@ -90,7 +90,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2608.28508",
       "score": 18,
-      "status": "new — under review"
+      "status": "reviewed - out of scope: not a spoken-LLM evaluation - reference-free metrics for forced-alignment quality"
     },
     {
       "id": "2608.26336",

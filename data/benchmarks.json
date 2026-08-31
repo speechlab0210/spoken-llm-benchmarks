@@ -9155,6 +9155,92 @@
         "English"
       ],
       "note": "Audio is one of five modalities rather than the subject of the suite, so this measures a spoken LLM only as far as speech input and speech output figure in the prompt mix. The reported numbers are MPS (presence), not the benchmark's own main index: the evaluated models returned too few assets for an MMI Value to carry signal, so the Value is defined but not meaningfully tested, and rubric-blind judge-human agreement is 70.8%. All five models are queried through their provider API with no system prompt and no tools, so the scores characterise the API rather than the deployed assistant, which often wraps the model in separate image, audio or video generators and would likely score far higher. Presence numbers are lenient-detection unless stated. Input failure rates vary widely across models (8.0% to 37.0%), so a low score partly reflects failure to ingest the prompt rather than failure to generate."
+    },
+    {
+      "id": "sure-challenge",
+      "name": "SURE-Challenge",
+      "full_title": "SURE-Challenge: Evaluating Speech Evidence Before Speech-LLM Generation",
+      "arxiv_id": "2608.27783",
+      "arxiv_date": "2026-08",
+      "arxiv_date_full": "2026-08-27",
+      "url": "https://arxiv.org/abs/2608.27783",
+      "code": "https://github.com/MENGZHEGENG/sure-challenge",
+      "summary": "Evaluates the admission decision that precedes generation: given a waveform and a prompt, should the clip be sent to a speech LLM at all. LibriSpeech-derived transcription and first-word QA items (supported) are paired with silence, colored noise, synthetic tones and source-ambiguous babble (unsupported) under source-disjoint splits, at two sizes (SURE-Core for ablation, SURE-Extended for held-out evaluation; the headline split is 474 leakage-screened test rows). Six speech/audio LLM backbones answer supported rows accurately but almost never abstain on unsupported ones, while a fixed energy-plus-Whisper-score front end rejects 196/204 unsupported inputs without lowering supported accuracy.",
+      "categories": [
+        "robustness",
+        "hallucination"
+      ],
+      "tasks": [
+        "unsupported-input rejection",
+        "supported transcription / first-word QA",
+        "front-end admission-rule comparison"
+      ],
+      "metrics": [
+        "supported accuracy",
+        "unsupported rejection rate",
+        "WER on answered supported rows"
+      ],
+      "io": "speech in, text out",
+      "size": "SURE-Extended: 474 screened test rows (270 supported / 210 unsupported before screening); SURE-Core: smaller ablation split",
+      "note": "Answer-only scoring misses this error mode entirely: for Qwen2-Audio it leaves 181 unsupported decisions uncounted."
+    },
+    {
+      "id": "musp-bench",
+      "name": "MuSP-Bench",
+      "full_title": "MuSP-Bench: Advanced Multimodal Benchmarking of Music Understanding across Score and Performance",
+      "arxiv_id": "2608.28212",
+      "arxiv_date": "2026-08",
+      "arxiv_date_full": "2026-08-28",
+      "url": "https://arxiv.org/abs/2608.28212",
+      "data": "https://musp.vaclis.net/",
+      "summary": "A human-authored benchmark of 490 questions, written by two professional musicians over 18 classical piano pieces or movements and 6 orchestral excerpts, that asks whether a model can reason about a musical score, a performance, or both together. Questions span score-based, performance-based, interpretive and long-horizon reasoning; each item is served under several input conditions (ABC notation, score images, MIDI-as-text, performance audio, and their combinations) with metadata stripped, plus a title-and-composer-only baseline. Audio input is the weakest condition for every model that supports it.",
+      "categories": [
+        "auditory-perception",
+        "reasoning",
+        "domain"
+      ],
+      "tasks": [
+        "score understanding",
+        "performance-audio understanding",
+        "joint score-and-performance reasoning",
+        "tonality/style identification",
+        "composer/title identification"
+      ],
+      "metrics": [
+        "accuracy (%) per input condition",
+        "question-weighted aggregate accuracy"
+      ],
+      "io": "audio / score image / symbolic notation in, text out",
+      "size": "490 questions (460 open-ended within a fixed answer format, 30 multiple-choice)",
+      "note": "A metadata-only baseline (3.0-6.6% across models) bounds how much can be answered from composer and title alone."
+    },
+    {
+      "id": "dualevasion",
+      "name": "DualEvasion",
+      "full_title": "A Shaky Voice Is Not Always a Dodge: Benchmarking Textual and Vocal Evasion Detection in Earnings Calls",
+      "arxiv_id": "2608.28040",
+      "arxiv_date": "2026-08",
+      "arxiv_date_full": "2026-08-28",
+      "url": "https://arxiv.org/abs/2608.28040",
+      "summary": "505 analyst-question / executive-answer pairs from 60 earnings calls, each carrying two independent expert labels: textual evasion (direct vs. evasive) and vocal confidence (confident vs. unconfident). The two channels disagree on 32.1% of instances, so the audio label cannot be recovered from the transcript. Text models come close to human agreement on textual evasion, while the best audio model reaches only 58.5 macro F1 on vocal confidence; an acoustic analysis shows models read absolute pitch and tempo values rather than deviations from each speaker's own baseline, and supplying same-speaker reference utterances only partly closes the gap.",
+      "categories": [
+        "paralinguistics",
+        "domain"
+      ],
+      "tasks": [
+        "vocal confidence detection",
+        "textual evasion detection",
+        "speaker-relative acoustic calibration"
+      ],
+      "metrics": [
+        "macro F1",
+        "per-class precision / recall / F1",
+        "accuracy",
+        "Cohen's kappa against human annotators"
+      ],
+      "io": "speech in, label out",
+      "size": "505 question-answer pairs from 60 earnings calls (49 tickers, 2023-2025)",
+      "note": "Audio is licensed from a commercial provider, so the benchmark ships annotations rather than redistributable audio."
     }
   ]
 }

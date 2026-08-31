@@ -129186,6 +129186,238 @@
       "source": "Table 4 (summary model scores, per-model sample-level averages, sorted by MPS)",
       "source_url": "https://arxiv.org/abs/2608.26317",
       "note": "Lenient modality detection; MPS is reported in place of the MMI Value because too few assets were returned for the Value to carry signal"
+    },
+    {
+      "benchmark": "sure-challenge",
+      "model": "qwen2-audio",
+      "metric": "supported accuracy (raw, no front end)",
+      "value": 0.93,
+      "source": "Table 2 (backbone-agnostic replay, leakage-screened SURE-Extended, 474 rows)",
+      "source_url": "https://arxiv.org/abs/2608.27783"
+    },
+    {
+      "benchmark": "sure-challenge",
+      "model": "qwen2-audio",
+      "metric": "unsupported rejection (raw, no front end)",
+      "value": 0.074,
+      "source": "Table 2 (backbone-agnostic replay, leakage-screened SURE-Extended, 474 rows)",
+      "source_url": "https://arxiv.org/abs/2608.27783"
+    },
+    {
+      "benchmark": "sure-challenge",
+      "model": "qwen2-audio",
+      "metric": "WER on answered supported rows (raw)",
+      "value": 0.043,
+      "source": "Table 2 (backbone-agnostic replay, leakage-screened SURE-Extended, 474 rows)",
+      "source_url": "https://arxiv.org/abs/2608.27783"
+    },
+    {
+      "benchmark": "sure-challenge",
+      "model": "qwen2-5-omni",
+      "metric": "supported accuracy (raw, no front end)",
+      "value": 0.967,
+      "source": "Table 2 (backbone-agnostic replay, leakage-screened SURE-Extended, 474 rows)",
+      "source_url": "https://arxiv.org/abs/2608.27783"
+    },
+    {
+      "benchmark": "sure-challenge",
+      "model": "qwen2-5-omni",
+      "metric": "unsupported rejection (raw, no front end)",
+      "value": 0.0,
+      "source": "Table 2 (backbone-agnostic replay, leakage-screened SURE-Extended, 474 rows)",
+      "source_url": "https://arxiv.org/abs/2608.27783"
+    },
+    {
+      "benchmark": "sure-challenge",
+      "model": "qwen2-5-omni",
+      "metric": "WER on answered supported rows (raw)",
+      "value": 0.035,
+      "source": "Table 2 (backbone-agnostic replay, leakage-screened SURE-Extended, 474 rows)",
+      "source_url": "https://arxiv.org/abs/2608.27783"
+    },
+    {
+      "benchmark": "sure-challenge",
+      "model": "qwen-audio-chat",
+      "metric": "supported accuracy (raw, no front end)",
+      "value": 0.919,
+      "source": "Table 2 (backbone-agnostic replay, leakage-screened SURE-Extended, 474 rows)",
+      "source_url": "https://arxiv.org/abs/2608.27783"
+    },
+    {
+      "benchmark": "sure-challenge",
+      "model": "qwen-audio-chat",
+      "metric": "unsupported rejection (raw, no front end)",
+      "value": 0.0,
+      "source": "Table 2 (backbone-agnostic replay, leakage-screened SURE-Extended, 474 rows)",
+      "source_url": "https://arxiv.org/abs/2608.27783"
+    },
+    {
+      "benchmark": "sure-challenge",
+      "model": "qwen-audio-chat",
+      "metric": "WER on answered supported rows (raw)",
+      "value": 0.202,
+      "source": "Table 2 (backbone-agnostic replay, leakage-screened SURE-Extended, 474 rows)",
+      "source_url": "https://arxiv.org/abs/2608.27783"
+    },
+    {
+      "benchmark": "sure-challenge",
+      "model": "audio-flamingo-next",
+      "metric": "supported accuracy (raw, no front end)",
+      "value": 0.956,
+      "source": "Table 2 (backbone-agnostic replay, leakage-screened SURE-Extended, 474 rows)",
+      "source_url": "https://arxiv.org/abs/2608.27783"
+    },
+    {
+      "benchmark": "sure-challenge",
+      "model": "audio-flamingo-next",
+      "metric": "unsupported rejection (raw, no front end)",
+      "value": 0.0,
+      "source": "Table 2 (backbone-agnostic replay, leakage-screened SURE-Extended, 474 rows)",
+      "source_url": "https://arxiv.org/abs/2608.27783"
+    },
+    {
+      "benchmark": "sure-challenge",
+      "model": "audio-flamingo-next",
+      "metric": "WER on answered supported rows (raw)",
+      "value": 0.045,
+      "source": "Table 2 (backbone-agnostic replay, leakage-screened SURE-Extended, 474 rows)",
+      "source_url": "https://arxiv.org/abs/2608.27783"
+    },
+    {
+      "benchmark": "sure-challenge",
+      "model": "audio-flamingo-3",
+      "metric": "supported accuracy (raw, no front end)",
+      "value": 0.97,
+      "source": "Table 2 (backbone-agnostic replay, leakage-screened SURE-Extended, 474 rows)",
+      "source_url": "https://arxiv.org/abs/2608.27783"
+    },
+    {
+      "benchmark": "sure-challenge",
+      "model": "audio-flamingo-3",
+      "metric": "unsupported rejection (raw, no front end)",
+      "value": 0.0,
+      "source": "Table 2 (backbone-agnostic replay, leakage-screened SURE-Extended, 474 rows)",
+      "source_url": "https://arxiv.org/abs/2608.27783"
+    },
+    {
+      "benchmark": "sure-challenge",
+      "model": "audio-flamingo-3",
+      "metric": "WER on answered supported rows (raw)",
+      "value": 0.029,
+      "source": "Table 2 (backbone-agnostic replay, leakage-screened SURE-Extended, 474 rows)",
+      "source_url": "https://arxiv.org/abs/2608.27783"
+    },
+    {
+      "benchmark": "sure-challenge",
+      "model": "minicpm-o",
+      "metric": "supported accuracy (raw, no front end)",
+      "value": 0.948,
+      "source": "Table 2 (backbone-agnostic replay, leakage-screened SURE-Extended, 474 rows)",
+      "source_url": "https://arxiv.org/abs/2608.27783"
+    },
+    {
+      "benchmark": "sure-challenge",
+      "model": "minicpm-o",
+      "metric": "unsupported rejection (raw, no front end)",
+      "value": 0.167,
+      "source": "Table 2 (backbone-agnostic replay, leakage-screened SURE-Extended, 474 rows)",
+      "source_url": "https://arxiv.org/abs/2608.27783"
+    },
+    {
+      "benchmark": "sure-challenge",
+      "model": "minicpm-o",
+      "metric": "WER on answered supported rows (raw)",
+      "value": 0.04,
+      "source": "Table 2 (backbone-agnostic replay, leakage-screened SURE-Extended, 474 rows)",
+      "source_url": "https://arxiv.org/abs/2608.27783"
+    },
+    {
+      "benchmark": "musp-bench",
+      "model": "qwen3-5-omni-plus",
+      "metric": "overall accuracy, audio input (%)",
+      "value": 35.7,
+      "source": "Table 1 (Overall / Audio input, 238 questions)",
+      "source_url": "https://arxiv.org/abs/2608.28212"
+    },
+    {
+      "benchmark": "musp-bench",
+      "model": "muse-spark-1-2",
+      "metric": "overall accuracy, audio input (%)",
+      "value": 8.0,
+      "source": "Table 1 (Overall / Audio input, 238 questions)",
+      "source_url": "https://arxiv.org/abs/2608.28212"
+    },
+    {
+      "benchmark": "musp-bench",
+      "model": "audio-flamingo-next",
+      "metric": "overall accuracy, audio input (%)",
+      "value": 5.0,
+      "source": "Table 1 (Overall / Audio input, 238 questions)",
+      "source_url": "https://arxiv.org/abs/2608.28212"
+    },
+    {
+      "benchmark": "dualevasion",
+      "model": "qwen2-audio",
+      "metric": "macro F1 (vocal confidence)",
+      "value": 28.0,
+      "source": "Table 2 (zero-shot, vocal cues: confident vs. unconfident)",
+      "source_url": "https://arxiv.org/abs/2608.28040"
+    },
+    {
+      "benchmark": "dualevasion",
+      "model": "audio-flamingo-3",
+      "metric": "macro F1 (vocal confidence)",
+      "value": 51.7,
+      "source": "Table 2 (zero-shot, vocal cues: confident vs. unconfident)",
+      "source_url": "https://arxiv.org/abs/2608.28040"
+    },
+    {
+      "benchmark": "dualevasion",
+      "model": "gemini-2-5-flash-lite",
+      "metric": "macro F1 (vocal confidence)",
+      "value": 51.9,
+      "source": "Table 2 (zero-shot, vocal cues: confident vs. unconfident)",
+      "source_url": "https://arxiv.org/abs/2608.28040"
+    },
+    {
+      "benchmark": "dualevasion",
+      "model": "gemini-2-5-flash",
+      "metric": "macro F1 (vocal confidence)",
+      "value": 57.9,
+      "source": "Table 2 (zero-shot, vocal cues: confident vs. unconfident)",
+      "source_url": "https://arxiv.org/abs/2608.28040"
+    },
+    {
+      "benchmark": "dualevasion",
+      "model": "gemini-3-flash",
+      "metric": "macro F1 (vocal confidence)",
+      "value": 56.8,
+      "source": "Table 2 (zero-shot, vocal cues: confident vs. unconfident)",
+      "source_url": "https://arxiv.org/abs/2608.28040"
+    },
+    {
+      "benchmark": "dualevasion",
+      "model": "gemini-3-5-flash",
+      "metric": "macro F1 (vocal confidence)",
+      "value": 43.8,
+      "source": "Table 2 (zero-shot, vocal cues: confident vs. unconfident)",
+      "source_url": "https://arxiv.org/abs/2608.28040"
+    },
+    {
+      "benchmark": "dualevasion",
+      "model": "gpt-audio-mini",
+      "metric": "macro F1 (vocal confidence)",
+      "value": 27.3,
+      "source": "Table 2 (zero-shot, vocal cues: confident vs. unconfident)",
+      "source_url": "https://arxiv.org/abs/2608.28040"
+    },
+    {
+      "benchmark": "dualevasion",
+      "model": "gpt-audio",
+      "metric": "macro F1 (vocal confidence)",
+      "value": 58.5,
+      "source": "Table 2 (zero-shot, vocal cues: confident vs. unconfident)",
+      "source_url": "https://arxiv.org/abs/2608.28040"
     }
   ]
 }
