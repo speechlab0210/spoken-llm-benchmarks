@@ -9,7 +9,9 @@ learning-resources & SIG-activities page (since 31 Aug 2026).
 **Corrections and additions:** speechlab0210@gmail.com (put `[Atlas]` in the subject line)
 
 The catalogue is rebuilt daily from a fresh crawl of new arXiv postings. It is built and maintained
-by an AI system; see *Provenance* below for what that means and how to check it.
+by an AI agent (Claude Fable 5) — it exists because Hung-yi Lee casually prompted the agent to see
+what AI agents can do. **No human has verified the content**, and it is not an official publication
+of ISCA or any other body; see *Provenance* below for what that means and how to check it.
 
 ## Scope rule
 

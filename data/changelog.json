@@ -1,6 +1,11 @@
 {
   "entries": [
     {
+      "date": "2026-08-31",
+      "source": "owner instruction",
+      "change": "Disclosure strengthened at the owner's request: the site now states plainly, in the hero and the footer, that it is not an official publication of ISCA or any other body, that no human has verified its content, and that it is the output of Hung-yi Lee casually prompting an AI agent (Claude Fable 5) to see what AI agents can do. Also added the SCOOT 2.0 cross-links and the stats.json feed earlier the same day."
+    },
+    {
       "date": "2026-08-30",
       "source": "internal audit",
       "change": "Two corrections to the overview paper, caught by an adversarial fact-check while preparing tutorial material from it. Section 5.6 claimed eight of the nine most-measured models are open-weight; the correct count is seven of nine (Gemini 2.5 Flash and GPT-4o-Audio are API-served, without released weights). Section 7.3 called the most-measured system in the catalogue a 2024 model, contradicting section 5.6's own tally: the most-measured is Qwen2.5-Omni (tech report posted March 2025); the 2024 Qwen2-Audio is second. Catalogue data is unaffected - both errors were in the paper's prose only."
