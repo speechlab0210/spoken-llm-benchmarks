@@ -44,6 +44,9 @@ header.top{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--b
 .topbar{display:flex;align-items:center;gap:14px;height:56px}
 .brand{font-weight:700;letter-spacing:-.02em;white-space:nowrap;color:var(--ink);font-size:.98rem}
 .brand span{color:var(--accent)}
+.crumb{color:var(--ink-3);font-size:.85rem;white-space:nowrap}
+.crumb:hover{color:var(--ink)}
+.crumb-sep{color:var(--ink-3);user-select:none}
 nav.main{display:flex;gap:2px;margin-left:auto;overflow-x:auto;scrollbar-width:none}
 nav.main::-webkit-scrollbar{display:none}
 nav.main a{padding:6px 10px;border-radius:7px;color:var(--ink-2);font-size:.87rem;white-space:nowrap}
@@ -216,6 +219,7 @@ footer a{color:var(--ink-2)}
 <body>
 <header class="top">
   <div class="wrap topbar">
+    <a class="crumb" href="https://speechlab0210.github.io/scoot/#benchmark-atlas">SCOOT&nbsp;2.0</a><span class="crumb-sep" aria-hidden="true">›</span>
     <a class="brand" href="#top">Spoken&nbsp;LLM <span>Benchmark&nbsp;Atlas</span></a>
     <nav class="main">
       <a href="#overview">Overview</a>

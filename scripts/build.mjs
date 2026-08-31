@@ -100,12 +100,18 @@ const template = readFileSync(join(ROOT, 'site-src', 'template.html'), 'utf8');
 if (!template.includes('__ATLAS_DATA__')) fail('template.html missing __ATLAS_DATA__ placeholder');
 // </ escaped so embedded JSON can never close the script tag
 const payload = JSON.stringify(data).replace(/</g, '\\u003c');
-const html = template.replace('"__ATLAS_DATA__"', payload);
+// function replacement: with a plain string, $&/$'/$` inside the payload would
+// be ACTIVE replacement patterns and silently corrupt the page
+const html = template.replace('"__ATLAS_DATA__"', () => payload);
 
 mkdirSync(join(ROOT, 'site'), { recursive: true });
 writeFileSync(join(ROOT, 'site', 'index.html'), html);
 // GitHub Pages serves this repo from the root, so publish a copy there too.
 writeFileSync(join(ROOT, 'index.html'), html);
+// tiny same-origin stats file so sibling SCOOT 2.0 pages can show live counts
+const statsOut = JSON.stringify({ built_at: data.built_at, ...stats }) + '\n';
+writeFileSync(join(ROOT, 'site', 'stats.json'), statsOut);
+writeFileSync(join(ROOT, 'stats.json'), statsOut);
 console.log(
   `[atlas] built site/index.html: ${stats.benchmarks} benchmarks ` +
   `(${stats.since_2025} since 2025), ${stats.models} models, ${stats.result_cells} result cells, ` +

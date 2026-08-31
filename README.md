@@ -4,6 +4,8 @@ A living index of **spoken LLM benchmarks** — what each one measures, how they
 appeared on arXiv, and how models score where scores have been published.
 
 **Site:** https://speechlab0210.github.io/spoken-llm-benchmarks/
+**Part of [SCOOT 2.0](https://speechlab0210.github.io/scoot/#benchmark-atlas)** — the speech-communication
+learning-resources & SIG-activities page (since 31 Aug 2026).
 **Corrections and additions:** speechlab0210@gmail.com (put `[Atlas]` in the subject line)
 
 The catalogue is rebuilt daily from a fresh crawl of new arXiv postings. It is built and maintained
