@@ -1,9 +1,97 @@
 {
-  "fetched_at": "2026-08-30T22:47:02Z",
+  "fetched_at": "2026-08-31T22:47:02Z",
   "window_days": 10,
-  "scanned": 89,
-  "flagged_today": 0,
+  "scanned": 92,
+  "flagged_today": 6,
   "candidates": [
+    {
+      "id": "2608.27817",
+      "title": "Auditing Generative Audio Calls for Known-Task Audio-LLM Evaluation",
+      "abstract": "Speech and audio LLMs are often evaluated by asking whether a waveform prompt beats an automatic speech recognition (ASR) transcript. For known closed-set tasks, that comparison conflates two factors: access to acoustic evidence and the need to call a generative audio model. We evaluate this distinction as a controlled call-decision problem. For each example, a policy chooses among keeping a transcript label, using encoder evidence from Contrastive Language-Audio Pretraining (CLAP), Audio Spectrogram Transformer (AST), or WavLM, and calling Qwen2-Audio, Qwen2.5-Omni, or MOSS-Audio; the decisive ablation removes all generative actions while keeping the selector and development protocol fixed. On VocalSound, transcripts reach 0.296 accuracy, so waveform information is needed. Yet supervised CLAP and WavLM controls reach 0.850 and 0.854 with no generative audio calls. A selector with generative actions reaches 0.925 accuracy using 12.5% calls, compared with 0.921 for the matched no-call selector (paired difference 0.004; 95% CI [-0.025,0.033]). Agreement and stacking features improve weaker selectors but do not beat the strongest no-call control. For known-task endpoint claims, the relevant quantity is the marginal value of the generative call after transcript and encoder evidence have already been used.",
+      "published": "2026-08-28T01:33:47Z",
+      "authors": [
+        "Mengzhe Geng"
+      ],
+      "primary_category": "cs.SD",
+      "url": "https://arxiv.org/abs/2608.27817",
+      "score": 39,
+      "status": "new — under review"
+    },
+    {
+      "id": "2608.27783",
+      "title": "SURE-Challenge: Evaluating Speech Evidence Before Speech-LLM Generation",
+      "abstract": "Speech LLMs are usually graded after they answer, although an operating system first has to decide whether a waveform should be sent to the model. We define the Speech-Unsupported Rejection Evaluation Challenge (SURE-Challenge) for this admission step. The benchmark pairs LibriSpeech-derived transcription and first-word question answering with unsupported silence, colored noise, synthetic tones, and source-ambiguous babble under disjoint source splits. Front-end ablations use Qwen2-Audio; the selected energy-plus-Whisper-score rule is then replayed before six speech/audio LLMs. On the 474-row leakage-screened SURE-Extended test set, raw Qwen2-Audio rejects 15/204 unsupported inputs, whereas the fixed rule rejects 196/204 and leaves supported accuracy unchanged. External checks delimit this number: Common Voice retention drops as the Whisper-score threshold is tightened, and no-speed babble gives 18 to 24 rejected clips out of 54 across regenerated seeds. The result identifies a pre-generation error mode missed by answer-only scoring.",
+      "published": "2026-08-27T23:28:42Z",
+      "authors": [
+        "Mengzhe Geng"
+      ],
+      "primary_category": "eess.AS",
+      "url": "https://arxiv.org/abs/2608.27783",
+      "score": 36,
+      "status": "new — under review"
+    },
+    {
+      "id": "2608.28212",
+      "title": "MuSP-Bench: Advanced Multimodal Benchmarking of Music Understanding across Score and Performance",
+      "abstract": "Musicians commonly communicate music through scores and performances. Scores encode musical intent, while performances realize it in sound. To investigate whether models can meaningfully engage with both modalities, we introduce MuSP-Bench, a human-authored benchmark of 490 questions targeting understanding across Musical Scores and Performances. The benchmark distinguishes itself by spanning score-based, performance-based, interpretive, and long-horizon reasoning across classical piano and orchestral works. We evaluate frontier multimodal large language models under multiple input conditions. Our results show that these models struggle substantially to understand scores, while facing even greater challenges when reasoning about performance audio. The benchmark is available at https://musp.vaclis.net/.",
+      "published": "2026-08-28T11:31:51Z",
+      "authors": [
+        "Milan Liessens Dujardin",
+        "Song-Ze Yu",
+        "Kevin Miao"
+      ],
+      "primary_category": "cs.MM",
+      "url": "https://arxiv.org/abs/2608.28212",
+      "score": 36,
+      "status": "new — under review"
+    },
+    {
+      "id": "2608.27698",
+      "title": "Evaluating Loss Functions in Differentiable Out-of-Domain Sound-Matching with Partial Parameter Distance",
+      "abstract": "In out-of-domain (OOD) sound-matching, a synthesizer is optimized to mimic a sound it did not generate. OOD evaluation of loss functions is underexplored in part because the standard \"parameter loss\" metric requires a shared parameter space between target and imitator, which OOD settings lack. We introduce Partial Parameter Distance (PPD), which applies parameter loss only to the critical parameters that mismatched synthesizers share (e.g., filter cutoffs), enabling automatically evaluated OOD experiments; we verify its results with blinded listening tests. Across seven scenarios involving band-pass filtering, amplitude modulation, and pitch-bending, we evaluate four differentiable loss functions (SIMSE_Spec, L1_Spec, JTFS, DTW_Envelope). Loss-function effectiveness remains tightly coupled to the method of synthesis: SIMSE_Spec excels at filter-cutoff recovery, DTW_Envelope at amplitude-modulation recovery, and JTFS at smooth pitch trajectories. Parameter-based evaluation agrees with listening tests on the top-ranked loss function in five of seven scenarios, demonstrating its utility as a diagnostic tool.",
+      "published": "2026-08-27T20:33:40Z",
+      "authors": [
+        "Amir Salimi",
+        "Daniel Penner",
+        "Kalvin Eng",
+        "Abram Hindle",
+        "Osmar R. Zaïane"
+      ],
+      "primary_category": "cs.SD",
+      "url": "https://arxiv.org/abs/2608.27698",
+      "score": 21,
+      "status": "new — under review"
+    },
+    {
+      "id": "2608.28040",
+      "title": "A Shaky Voice Is Not Always a Dodge: Benchmarking Textual and Vocal Evasion Detection in Earnings Calls",
+      "abstract": "Existing approaches to evasion detection in earnings calls focus on textual transcripts, treating evasion as a single-dimensional phenomenon. We argue that evasion in spoken communication is inherently multidimensional: beyond what executives say, how they say it carries independent and complementary information. To study these dimensions jointly, we introduce DualEvasion, a benchmark for evasion detection across text and audio in earnings call Q&A. The benchmark contains 505 annotated question-answer pairs from 60 earnings calls, each with two independent labels: textual evasion (direct vs. evasive) and vocal cues operationalized as speaker confidence (confident vs. unconfident). Our experiments show that state-of-the-art multimodal models struggle to detect vocal confidence, particularly on unconfident responses. Our analysis suggests these models interpret acoustic cues in isolation rather than relative to each speaker's baseline. Providing speaker-level references yields modest improvements, but a substantial gap with human performance remains.",
+      "published": "2026-08-28T07:58:36Z",
+      "authors": [
+        "Mirae Kim",
+        "Seonghun Jeong",
+        "Youngjun Kwak"
+      ],
+      "primary_category": "cs.CL",
+      "url": "https://arxiv.org/abs/2608.28040",
+      "score": 18,
+      "status": "new — under review"
+    },
+    {
+      "id": "2608.28508",
+      "title": "Phoneme- and Word-Level Metrics Using Self-Supervised Speech Representations for Forced Alignment Evaluation",
+      "abstract": "Forced alignment evaluation typically requires manually annotated timestamps, limiting large-scale and multilingual analysis. We introduce two corpus-level metrics based on self-supervised (SSL) speech representations for reference-free forced alignment evaluation: Phoneme-Cluster Mutual Information (PCMI) and Word Acoustic Consistency Score (WACS). PCMI measures agreement between aligned phoneme labels and clusters induced from SSL-speech representations, while WACS measures consistency of repeated word realizations using dynamic time warping similarity between word representation sequences. Using both random and systematic perturbations, we show that PCMI and WACS degrade consistently under alignment perturbations. We further analyze the metrics across multiple alignment systems on 85 languages from FLEURS, validate them against manually annotated alignments from 45 languages in DoReCo, and evaluate them on two phonologically complex low-resource languages. The metrics effectively separate high- and low-quality alignments and correlate strongly with timestamp-based alignment quality measures. Our results demonstrate that SSL-speech representations enable scalable, reference-free forced alignment evaluation. The metrics are available as an open-source Python package at https://github.com/mahesh-ak/forced-aligner-metrics.",
+      "published": "2026-08-28T16:39:22Z",
+      "authors": [
+        "V. S. D. S. Mahesh Akavarapu",
+        "Michael Daniel",
+        "Gerhard Jäger"
+      ],
+      "primary_category": "cs.CL",
+      "url": "https://arxiv.org/abs/2608.28508",
+      "score": 18,
+      "status": "new — under review"
+    },
     {
       "id": "2608.26336",
       "title": "StreamAV-Bench: A Comprehensive Benchmark for Streaming Audio-Video Generation",
