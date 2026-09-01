@@ -1,9 +1,184 @@
 {
-  "fetched_at": "2026-08-31T22:47:02Z",
+  "fetched_at": "2026-09-01T22:47:02Z",
   "window_days": 10,
-  "scanned": 92,
-  "flagged_today": 6,
+  "scanned": 124,
+  "flagged_today": 10,
   "candidates": [
+    {
+      "id": "2608.28932",
+      "title": "VocalAffectBench: Evaluating Vocal Emotion Recognition in AI Audio Models",
+      "abstract": "Voice products increasingly need affective cues that are present in speech but absent from transcripts. We introduce VocalAffectBench, a public, test-only benchmark for evaluating whether AI audio models can identify expressed vocal emotion from raw audio. The benchmark contains 273 human-recorded English WAV clips from 51 speaker accounts totaling 1.95 hours across seven labels: angry, disgusted, fearful, happy, neutral, sad, and surprised, with 39 clips per class. All baselines are evaluated from audio alone, without transcripts or contextual metadata. Across six released baselines, average accuracy is 35.5%. The strongest baseline, gemini_3_5_flash, reaches 46.5% on the seven-way task, above the 14.3% random baseline but far from robust emotion recognition. A secondary valence-bucket analysis maps labels into positive, neutral, and negative classes, excluding surprised because its valence is ambiguous. Aggregate accuracy under this coarser view is 50.9%. Performance is highly uneven across classes. By recall, neutral is identified most reliably at 75.6% averaged across baselines, while surprised and fearful reach only 10.7% and 15.4%, respectively. These results show that the evaluated baselines can extract some affective signal from speech, but discrete expressed-emotion recognition remains fragile, especially for non-neutral emotions that are often most important in voice agent workflows.",
+      "published": "2026-08-28T23:03:43Z",
+      "authors": [
+        "Models Luc Debaupte",
+        "Tyler Baumgartner",
+        "Brandon Tai",
+        "Candice Fan",
+        "Bill Wang",
+        "Yi Zhong"
+      ],
+      "primary_category": "cs.CL",
+      "url": "https://arxiv.org/abs/2608.28932",
+      "score": 48,
+      "status": "new — under review"
+    },
+    {
+      "id": "2608.29999",
+      "title": "TEMPO: Temporally-grounded Multi-task Post-training for Large Audio-Language Models",
+      "abstract": "Large audio-language models (LALMs) describe audio at the clip level but cannot assign timestamps to the events, speakers, or sounds they identify. Despite being essential for downstream tasks like speech recognition and dense audio captioning, timestamping remains a key limitation of most LALMs. We present TEMPO (Temporally-grounded Multi-task Post-training), the first unified model to handle audio, speech, and music timestamping tasks. Our core contribution is a supervised fine-tuning (SFT) stage built on three innovations: atomic timestamp tokens, a time-aware projector that injects sinusoidal wall-clock encodings into audio frame embeddings, and a distance-aware Gaussian loss. Our training is based on a synthetic-to-real curriculum. We further introduce, to our knowledge, the first application of reinforcement learning to unified audio timestamping, using GRPO with verifiable temporal rewards that directly optimize the evaluation objectives. Rather than serving as the primary source of performance gains, GRPO acts as a refinement stage on top of the SFT checkpoint, providing modest additional improvements. To support this work, we build a training dataset containing 119K samples and an evaluation benchmark containing 10K samples, drawn from established corpora across five tasks. On this benchmark, TEMPO outperforms Audio Flamingo Next and Qwen3-Omni, two state-of-the-art LALMs explicitly trained on timestamped data. Experiments confirm that SFT delivers most of these gains, with GRPO providing consistent but moderate refinements.",
+      "published": "2026-08-30T19:49:21Z",
+      "authors": [
+        "Apoorva Kulkarni",
+        "Kaousheik Jayakumar",
+        "Sreyan Ghosh",
+        "Utathya Aich",
+        "Ramani Duraiswami",
+        "Dinesh Manocha"
+      ],
+      "primary_category": "cs.SD",
+      "url": "https://arxiv.org/abs/2608.29999",
+      "score": 42,
+      "status": "new — under review"
+    },
+    {
+      "id": "2608.28916",
+      "title": "VoiceCodeBench: Evaluating Exact Structured-Token Recovery in Automatic Speech Recognition",
+      "abstract": "Automatic speech recognition (ASR) systems are commonly evaluated with word error rate (WER), yet many voice workflows depend on exact written values for identifiers, paths, and measured quantities. A transcript can appear fluent and achieve low WER while corrupting a value that a downstream system must parse, store, or execute. We introduce VoiceCodeBench, a benchmark for evaluating exact structured-token recovery in English ASR. It contains 300 human-recorded workplace segments spanning eight workflow domains and 1,482 audited target entities across 26 entity types, each with a canonical written form recoverable from the audio. Under a raw-audio-only protocol, systems receive audio bytes without additional context or metadata. Alongside WER, we evaluate Canonical Token/Entity Match (CTEM), Task Success Rate (TSR), and per-type exact recovery. Across 12 baseline ASR systems, lower WER generally corresponded to better structured-token recovery but did not fully determine it: Spearman correlations were -0.73 for both WER versus CTEM and WER versus TSR. The strongest baseline by TSR reached only 68.7%, leaving nearly one third of recordings with at least one unrecovered workflow-critical value. These results show that entity-sensitive metrics are needed to assess whether ASR output preserves exact values that production systems must parse, route, store, compare, or execute.",
+      "published": "2026-08-28T22:23:42Z",
+      "authors": [
+        "Tyler Baumgartner",
+        "Brandon Tai",
+        "Lisa Kaelin-Martin",
+        "Candice Fan",
+        "Luc Debaupte",
+        "Bill Wang",
+        "Yi Zhong"
+      ],
+      "primary_category": "cs.CL",
+      "url": "https://arxiv.org/abs/2608.28916",
+      "score": 36,
+      "status": "new — under review"
+    },
+    {
+      "id": "2608.30204",
+      "title": "When Models Hear What They Expect: Diagnosing Prosodic Heuristics in Multimodal Sarcasm Detection",
+      "abstract": "Multimodal Large Language Models (MLLMs) process speech and text jointly, yet whether they exploit prosodic cues for pragmatic inference or rely on surface acoustic patterns has received little systematic investigation. We address this through sarcasm detection, evaluating Qwen2.5-Omni and Qwen3-Omni on Mandarin Chinese and English under five modality conditions that decompose the contributions of lexical content, vocal semantics, and prosodic structure. Adding audio systematically inflates false positives without improving true positive detection. Acoustic error diagnosis reveals that model errors cluster on a shared stereotype of expressive prosody, namely elevated pitch and irregular pausing, that diverges from the actual cues marking sarcasm in both languages. Targeted manipulation of only these two dimensions causally confirms the heuristic, inducing false positive rates of up to 60%. Applying the same manipulation template to Gemini~3 Flash Preview without modification replicates the effect, suggesting that the stereotype extends beyond the Qwen Omni family rather than arising from a single model architecture.",
+      "published": "2026-08-31T03:34:35Z",
+      "authors": [
+        "Yongjian Chen",
+        "Pengfei Wei",
+        "Yiqun Sun",
+        "Zhu Li",
+        "Lawrence B. Hsieh"
+      ],
+      "primary_category": "cs.CL",
+      "url": "https://arxiv.org/abs/2608.30204",
+      "score": 27,
+      "status": "new — under review"
+    },
+    {
+      "id": "2608.29480",
+      "title": "What Are You Listening to? Temporal Music Grounding for Audio-to-Text Large Language Models",
+      "abstract": "Large audio-language models can produce fluent and musically plausible responses, yet it often remains unclear whether those responses are grounded in the audio input. We introduce temporal music grounding, a task in which a model returns one or more time spans corresponding to a queried musical note, event, or pattern. To evaluate this capability, we present MusicGroundingBench, a controlled benchmark suite built by rendering algorithmically generated piano MIDI to audio, yielding exact symbolic-to-audio alignment. The suite comprises two subsets: MGBench-3N, which evaluates note-level grounding in clips containing up to three notes, and MGBench-2B, which evaluates structured grounding and short-form music understanding in two-bar excerpts. Experiments show that temporal music grounding remains challenging for current audio-language models, whereas task-specific training yields substantial gains. We further report exploratory evidence on the relationship between grounding supervision and music understanding. These results establish MusicGroundingBench as a controlled testbed for assessing whether audio-language models ground their responses in temporally localized musical evidence.",
+      "published": "2026-08-30T00:17:28Z",
+      "authors": [
+        "Kun Fang",
+        "Ziyu Wang",
+        "Ichiro Fujinaga"
+      ],
+      "primary_category": "cs.SD",
+      "url": "https://arxiv.org/abs/2608.29480",
+      "score": 21,
+      "status": "new — under review"
+    },
+    {
+      "id": "2608.30940",
+      "title": "MusGU+: Toward a Musician-Centered Evaluation Framework and Discovery Tool for Generative Music AI",
+      "abstract": "Generative music systems are increasingly presented as tools that democratize music creation, yet their practical suitability for musicians remains underexplored. Prior work includes openness-focused evaluation frameworks, such as MusGO (Music-Generative Open AI), as well as qualitative studies of musicians' experiences with generative systems. However, these approaches do not support systematic comparison or early-stage discovery of models for creative use. Motivated by such limitations, we introduce MusGU+, a musician-centered evaluation framework organized around three dimensions: Adaptability, Usability, and Controllability. Together, these capture whether a model can be feasibly trained or fine-tuned on personal data, integrated into real-world music workflows, and controlled in musically meaningful ways. We evaluate 10 representative generative music systems and present an interactive discovery tool that enables musicians to explore and filter models according to these criteria. While MusGO remains valuable for promoting responsible research practices, MusGU+ supports informed selection and practical adoption of generative systems by musicians.",
+      "published": "2026-08-31T15:12:51Z",
+      "authors": [
+        "Laura Ibáñez-Martínez",
+        "Roser Batlle-Roca",
+        "Xavier Serra",
+        "Martín Rocamora"
+      ],
+      "primary_category": "cs.SD",
+      "url": "https://arxiv.org/abs/2608.30940",
+      "score": 21,
+      "status": "new — under review"
+    },
+    {
+      "id": "2608.28966",
+      "title": "When Vocal Tone and Literal Meaning Diverge: An Acoustic-Semantic Incongruity Study for Large Audio-Language Models",
+      "abstract": "Affective cues across modalities may be incongruous (e.g., sarcasm or mocking praise), potentially leading to misinterpretation when relying on a single modality. Large Audio-Language Models (LALMs) have recently gained popularity and been applied to multimodal emotion recognition, but their ability to disentangle acoustic and semantic cues, especially in incongruent cases, remains underexplored. To address this gap, we introduce CREMA-ASIS, a dataset specifically created to investigate incongruence between acoustic emotion and semantic sentiment cues. It pairs acoustic emotion labels with semantic sentiment polarities. Using this dataset, we evaluate LALM biases within a multitask framework and conduct a layer-wise analysis to identify modality dominance across layers. Our findings reveal that LALMs struggle with semantic-acoustic incongruent cases, rarely predicting incongruity, and that LALMs are predominantly influenced by semantic information. However, supervised fine-tuning significantly improves LALM performance on our CREMA-ASIS test set while preserving transcription accuracy and joint emotion recognition. Results demonstrate potential for enhancing both acoustic and semantic understanding on out-of-domain data.",
+      "published": "2026-08-29T00:36:12Z",
+      "authors": [
+        "Yu-Wen Chen",
+        "William Ho",
+        "Maxim Topaz",
+        "Zoran Kostic",
+        "Julia Hirschberg"
+      ],
+      "primary_category": "eess.AS",
+      "url": "https://arxiv.org/abs/2608.28966",
+      "score": 18,
+      "status": "new — under review"
+    },
+    {
+      "id": "2608.29120",
+      "title": "HEAR Who Said What: Unlocking Speaker-Attributed Reasoning via Counterfactual Voice Grounding",
+      "abstract": "Speech Language Models (SLMs) are increasingly deployed in multi-speaker environments, yet their ability to attribute speech to the correct speaker and reason over speaker identities remains unclear. Hence, we introduce HEAR, a conceptually hierarchical benchmark diagnosing the foundational capabilities of speaker-attributed reasoning, comprising 2.4K human-verified samples from 887 diverse multi-party audio clips. Evaluating 20 leading SLMs on HEAR reveals they struggle with these foundational tasks, often relying on semantic priors rather than actual vocal cues. To address this, we present A2R, a 30B model optimized on Counterfactual Audio with Speaker-level Hard negatives (CASH), a dataset designed to guide the model to prioritize acoustic vocal cues over linguistic signals. A2R achieves strong performance on HEAR and exhibits zero-shot generalization to diverse multi-speaker downstream tasks, demonstrating that learned speaker attribution unlocks the model's latent capacity for speaker-aware reasoning. All resources are available at https://attributetoreason.github.io/AttributeToReason/",
+      "published": "2026-08-29T08:01:20Z",
+      "authors": [
+        "Dongwook Lee",
+        "Sangkwon Park",
+        "Eunwoo Song",
+        "Che Hyun Lee",
+        "Youngho Cho",
+        "Junho Kim",
+        "June Young Yi",
+        "Heeseung Kim"
+      ],
+      "primary_category": "cs.CL",
+      "url": "https://arxiv.org/abs/2608.29120",
+      "score": 18,
+      "status": "new — under review"
+    },
+    {
+      "id": "2608.30475",
+      "title": "ImageEval 2026: Culturally Grounded Arabic Multimodal Evaluation",
+      "abstract": "We present an overview of the ImageEval 2026 shared task on culturally grounded Arabic multimodal evaluation. It includes two tasks: (i) AynVQA, covering spoken visual question answering and image-grounded hallucination detection in English and Modern Standard Arabic (MSA), and (ii) CRAI-Bench, evaluating the cultural accuracy of text-to-image generation. A total of 14 teams participated in the test phase, with 12 teams submitting system description papers. Participating systems used a range of approaches, including zero-shot prompting, fine-tuning of vision-language models, speech-recognition pipelines, ensembling, and score calibration. We describe the task setup, datasets, evaluation procedure, and participating systems, and summarize the main results across the different tracks. All datasets and evaluation scripts from the shared task are released to the research community. The shared task highlights the challenges of culturally grounded multimodal evaluation, particularly for Arabic speech and image-text reasoning.",
+      "published": "2026-08-31T09:02:28Z",
+      "authors": [
+        "Samir Abdaljalil",
+        "Hunzalah Hassan Bhatti",
+        "Ahlam Bashiti",
+        "Farina Amir",
+        "Md Arid Hasan",
+        "Basel Mousi",
+        "Nadir Durrani",
+        "Fahim Dalvi"
+      ],
+      "primary_category": "cs.CL",
+      "url": "https://arxiv.org/abs/2608.30475",
+      "score": 18,
+      "status": "new — under review"
+    },
+    {
+      "id": "2608.30927",
+      "title": "Stride-k Subsampling: Train-Free Audio Token Reduction for Whisper",
+      "abstract": "Whisper exposes speech through a fixed 1500-token encoder interface, now a default representation for ASR decoders and Whisper-based speech language models (SpeechLMs), yet its redundancy remains largely unexamined. We propose stride-k subsampling, a deterministic indexing operation that retains every k-th token after the convolutional stem or encoder transformer. Across five Whisper scales, k=2 preserves baseline WER at both positions, with CKA attributing this stability to acoustic overlap at the stem and attention-induced redistribution at the encoder output. Applying stride-2 at both positions cuts audio tokens by 75% and total GFLOPs by 52-58%, with small WER costs on most ASR benchmarks and larger costs on harder ones. The same configuration extends to three Whisper-based SpeechLMs, yielding modest accuracy drops on stronger baselines and larger drops on weaker ones, while reducing end-to-end latency by 19.6-27.4%. Requiring no training or auxiliary computation, stride-k subsampling exploits Whisper's preprocessing redundancy, indicating that its audio-token interface carries more capacity than downstream tasks require.",
+      "published": "2026-08-31T15:04:29Z",
+      "authors": [
+        "Chanhee Cho",
+        "Junhyuk Choi",
+        "Bugeun Kim"
+      ],
+      "primary_category": "cs.SD",
+      "url": "https://arxiv.org/abs/2608.30927",
+      "score": 18,
+      "status": "new — under review"
+    },
     {
       "id": "2608.27817",
       "title": "Auditing Generative Audio Calls for Known-Task Audio-LLM Evaluation",
