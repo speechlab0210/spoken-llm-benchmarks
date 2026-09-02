@@ -20,7 +20,7 @@
       "primary_category": "eess.AS",
       "url": "https://arxiv.org/abs/2609.01542",
       "score": 54,
-      "status": "new — under review"
+      "status": "accepted - in catalogue as tag-bench"
     },
     {
       "id": "2609.00727",
@@ -36,7 +36,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2609.00727",
       "score": 39,
-      "status": "new — under review"
+      "status": "reviewed - out of scope: no benchmark or evaluation set proposed - mechanistic probing (CKA, linear probes) of paralinguistic encoding in four models plus a content-prosody leakage metric"
     },
     {
       "id": "2609.01315",
@@ -55,7 +55,7 @@
       "primary_category": "cs.AI",
       "url": "https://arxiv.org/abs/2609.01315",
       "score": 27,
-      "status": "new — under review"
+      "status": "reviewed - out of scope: not a spoken-LLM benchmark - OmniEvaluator is an evaluation harness wrapping existing toolkits and states it is not a new benchmark suite"
     },
     {
       "id": "2609.00276",
@@ -75,7 +75,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2609.00276",
       "score": 25,
-      "status": "new — under review"
+      "status": "reviewed - out of scope: subjects are not spoken LLMs - Pitt-corpus preprocessing study for Alzheimer's-disease speech classifiers"
     },
     {
       "id": "2609.00330",
@@ -91,7 +91,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2609.00330",
       "score": 21,
-      "status": "new — under review"
+      "status": "reviewed - out of scope: subjects are not spoken LLMs - text matchers over ASR transcripts of call-centre audio"
     },
     {
       "id": "2609.00570",
@@ -106,7 +106,7 @@
       "primary_category": "cs.AI",
       "url": "https://arxiv.org/abs/2609.00570",
       "score": 21,
-      "status": "new — under review"
+      "status": "accepted - in catalogue as voicelongmemeval"
     },
     {
       "id": "2609.01113",
@@ -126,7 +126,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2609.01113",
       "score": 21,
-      "status": "new — under review"
+      "status": "reviewed - out of scope: subjects are not spoken LLMs - EDRAC is a text MRC benchmark; passages derive from spoken dialect but the evaluated models are text LLMs"
     },
     {
       "id": "2608.28932",

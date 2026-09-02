@@ -129650,6 +129650,126 @@
       "value": 0.0006,
       "source": "MusicGroundingBench Table 3 (MGBench-3N grounding test set, 900 items; external audio-LLM baselines)",
       "source_url": "https://arxiv.org/abs/2608.29480v1"
+    },
+    {
+      "benchmark": "tag-bench",
+      "model": "audio-flamingo-2",
+      "metric": "mIoU, overall (%)",
+      "value": 0.5,
+      "source": "TAG-Bench Table 2 (overall mIoU across all 1,750 queries, free-form output track)",
+      "source_url": "https://arxiv.org/abs/2609.01542v1"
+    },
+    {
+      "benchmark": "tag-bench",
+      "model": "audio-flamingo-3",
+      "metric": "mIoU, overall (%)",
+      "value": 8.7,
+      "source": "TAG-Bench Table 2 (overall mIoU across all 1,750 queries, free-form output track)",
+      "source_url": "https://arxiv.org/abs/2609.01542v1"
+    },
+    {
+      "benchmark": "tag-bench",
+      "model": "firered-audio",
+      "metric": "mIoU, overall (%)",
+      "value": 31.2,
+      "source": "TAG-Bench Table 2 (overall mIoU across all 1,750 queries, free-form output track)",
+      "source_url": "https://arxiv.org/abs/2609.01542v1"
+    },
+    {
+      "benchmark": "tag-bench",
+      "model": "glm-4-voice",
+      "metric": "mIoU, overall (%)",
+      "value": 3.4,
+      "source": "TAG-Bench Table 2 (overall mIoU across all 1,750 queries, free-form output track)",
+      "source_url": "https://arxiv.org/abs/2609.01542v1"
+    },
+    {
+      "benchmark": "tag-bench",
+      "model": "kimi-audio",
+      "metric": "mIoU, overall (%)",
+      "value": 1.4,
+      "source": "TAG-Bench Table 2 (overall mIoU across all 1,750 queries, free-form output track)",
+      "source_url": "https://arxiv.org/abs/2609.01542v1"
+    },
+    {
+      "benchmark": "tag-bench",
+      "model": "midashenglm",
+      "metric": "mIoU, overall (%)",
+      "value": 4.6,
+      "source": "TAG-Bench Table 2 (overall mIoU across all 1,750 queries, free-form output track)",
+      "source_url": "https://arxiv.org/abs/2609.01542v1"
+    },
+    {
+      "benchmark": "tag-bench",
+      "model": "mimo-audio",
+      "metric": "mIoU, overall (%)",
+      "value": 12.2,
+      "source": "TAG-Bench Table 2 (overall mIoU across all 1,750 queries, free-form output track)",
+      "source_url": "https://arxiv.org/abs/2609.01542v1"
+    },
+    {
+      "benchmark": "tag-bench",
+      "model": "step-audio-2-mini",
+      "metric": "mIoU, overall (%)",
+      "value": 6.3,
+      "source": "TAG-Bench Table 2 (overall mIoU across all 1,750 queries, free-form output track)",
+      "source_url": "https://arxiv.org/abs/2609.01542v1"
+    },
+    {
+      "benchmark": "tag-bench",
+      "model": "step-audio-r1",
+      "metric": "mIoU, overall (%)",
+      "value": 11.0,
+      "source": "TAG-Bench Table 2 (overall mIoU across all 1,750 queries, free-form output track)",
+      "source_url": "https://arxiv.org/abs/2609.01542v1"
+    },
+    {
+      "benchmark": "tag-bench",
+      "model": "llama-omni2",
+      "metric": "mIoU, overall (%)",
+      "value": 1.6,
+      "source": "TAG-Bench Table 2 (overall mIoU across all 1,750 queries, free-form output track)",
+      "source_url": "https://arxiv.org/abs/2609.01542v1"
+    },
+    {
+      "benchmark": "tag-bench",
+      "model": "gemini-3-1-pro",
+      "metric": "mIoU, overall (%)",
+      "value": 26.4,
+      "source": "TAG-Bench Table 2 (overall mIoU across all 1,750 queries, free-form output track)",
+      "source_url": "https://arxiv.org/abs/2609.01542v1"
+    },
+    {
+      "benchmark": "voicelongmemeval",
+      "model": "qwen2-audio",
+      "metric": "Accuracy, audio only (0-1)",
+      "value": 0.354,
+      "source": "VoiceLongMemEval Table 8 (indirect v2, evidence-only regime; 104 items with valid TTS; 3-seed mean)",
+      "source_url": "https://arxiv.org/abs/2609.00570v1"
+    },
+    {
+      "benchmark": "voicelongmemeval",
+      "model": "qwen2-5-omni",
+      "metric": "Accuracy, audio only (0-1)",
+      "value": 0.412,
+      "source": "VoiceLongMemEval Table 8 (indirect v2, evidence-only regime; 104 items with valid TTS; 3-seed mean)",
+      "source_url": "https://arxiv.org/abs/2609.00570v1"
+    },
+    {
+      "benchmark": "voicelongmemeval",
+      "model": "qwen2-audio",
+      "metric": "Accuracy, audio + metadata (0-1)",
+      "value": 0.509,
+      "source": "VoiceLongMemEval Table 8 (indirect v2, evidence-only regime; 104 items with valid TTS; 3-seed mean)",
+      "source_url": "https://arxiv.org/abs/2609.00570v1"
+    },
+    {
+      "benchmark": "voicelongmemeval",
+      "model": "qwen2-5-omni",
+      "metric": "Accuracy, audio + metadata (0-1)",
+      "value": 0.541,
+      "source": "VoiceLongMemEval Table 8 (indirect v2, evidence-only regime; 104 items with valid TTS; 3-seed mean)",
+      "source_url": "https://arxiv.org/abs/2609.00570v1"
     }
   ]
 }

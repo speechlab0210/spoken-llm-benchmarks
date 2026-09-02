@@ -1,6 +1,11 @@
 {
   "entries": [
     {
+      "date": "2026-09-03",
+      "source": "daily crawl review",
+      "change": "Catalogued TAG-Bench (2609.01542) and VoiceLongMemEval (2609.00570) from the 2026-09-03 daily round; added 11 TAG-Bench overall-mIoU cells (Table 2) and 4 VoiceLongMemEval audio-native cells (Table 8). Five other flagged candidates ruled out of scope (2609.00727 probing study, 2609.01315 evaluation harness, 2609.00276 AD-detection classifiers, 2609.00330 text matchers over ASR transcripts, 2609.01113 text MRC)."
+    },
+    {
       "date": "2026-09-02",
       "source": "daily crawl review",
       "change": "Six benchmarks added from the 2026-08-28/31 arXiv batch: VocalAffectBench (2608.28932, vocal emotion from audio alone), MusicGroundingBench (2608.29480, temporal music grounding), CREMA-ASIS (2608.28966, acoustic and semantic affective cues put in conflict), HEAR (2608.29120, speaker-attributed reasoning over multi-party audio), a prosodic-heuristic diagnostic for sarcasm detection (2608.30204), and AynVQA from the ImageEval 2026 shared task (2608.30475, spoken VQA in English and Modern Standard Arabic). 29 sourced result cells and three models (Step-Audio 2 mini, Gemma-4-E4B-it, GPT-Realtime 2) were added with them. VocalAffectBench cells are read off v2 of that paper, which revised the clip count and the headline accuracy downward from v1. Four further flagged papers were reviewed and left out of scope: TEMPO (2608.29999) and stride-k subsampling (2608.30927) propose a model and a method rather than a benchmark, VoiceCodeBench (2608.28916) evaluates twelve ASR systems and no general spoken LLM, and MusGU+ (2608.30940) evaluates generative music systems."

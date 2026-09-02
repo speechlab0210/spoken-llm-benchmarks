@@ -9426,6 +9426,72 @@
       "io": "speech and image in, text out",
       "size": "shared task with 14 teams in the test phase and 12 system description papers",
       "note": "Shared-task overview. Only Task 1a is spoken; the paper's other track (CRAI-Bench, cultural accuracy of text-to-image generation) is outside this atlas's scope and is not catalogued. Most leaderboard entries are task-specific fine-tuned submissions rather than general spoken LLMs, so no result cells are recorded."
+    },
+    {
+      "id": "tag-bench",
+      "name": "TAG-Bench",
+      "full_title": "TAG-Bench: Benchmarking Temporal Audio Grounding in Large Audio Language Models",
+      "arxiv_id": "2609.01542",
+      "arxiv_date": "2026-09",
+      "arxiv_date_full": "2026-09-01",
+      "url": "https://arxiv.org/abs/2609.01542",
+      "summary": "Temporal audio grounding: given a recording and a natural-language query, the model must return every start-end interval that matches. 1,750 human-verified query-recording pairs over 149.5 hours, in eight source-dependent subsets spanning single words, acoustic events and descriptions, semantics and emotion, with audio from 7 s to 20 min; 22.1% of queries have multiple ground-truth intervals, and the target segment covers a median 7% of the recording. Construction is PANNs/Whisper pre-annotation refined by annotators in Label Studio, then cross-validated. Output is free-form, so a deterministic rule-based parser recovers timestamps and unrecoverable responses stay in the metrics as empty predictions, with the parsing-failure rate reported alongside. 21 systems are evaluated under one protocol, spanning general-purpose audio LLMs, omni-modal models and temporal-grounding specialists. Localization is weak everywhere: the best system reaches 31.2 mIoU but only 21.5% recall at IoU>=0.7, 9 of 21 systems fall below 5 mIoU, and no system exceeds 13.2% count accuracy on one-to-many queries because models find one occurrence and stop.",
+      "categories": [
+        "auditory-perception",
+        "long-form"
+      ],
+      "tasks": [
+        "temporal audio grounding (single interval)",
+        "one-to-many interval grounding with occurrence enumeration",
+        "long-form (7-20 min) grounding"
+      ],
+      "languages": [
+        "English"
+      ],
+      "metrics": [
+        "mIoU",
+        "R@0.3/0.5/0.7",
+        "gIoU",
+        "midpoint MAE with coverage",
+        "count accuracy",
+        "parsing-failure rate"
+      ],
+      "io": "audio + natural-language query in, timestamp intervals as free-form text out",
+      "size": "1,750 human-verified query-recording pairs over 1,750 distinct recordings, 149.5 hours, eight subsets",
+      "note": "Data and evaluation code announced for release; not yet public at the time of cataloguing. The authors state the cross-subset comparisons are descriptive, not controlled: query category, source domain, duration and recurrence rate are not varied independently. Result cells record overall mIoU (Table 2) for the models with an unambiguous entry in this atlas; the MOSS-Audio rows are omitted because the paper reports four variants (4B/8B x instruct/thinking) that do not map onto one model id."
+    },
+    {
+      "id": "voicelongmemeval",
+      "name": "VoiceLongMemEval",
+      "aka": [
+        "VLME"
+      ],
+      "full_title": "VoiceLongMemEval: Do Assistants Remember How You Sounded?",
+      "arxiv_id": "2609.00570",
+      "arxiv_date": "2026-09",
+      "arxiv_date_full": "2026-09-01",
+      "url": "https://arxiv.org/abs/2609.00570",
+      "summary": "Long-term conversational recall of how something was said rather than what was said. Built on LongMemEval, every one of the 523 items hides a paralinguistic needle (emotion label, prosody descriptor or voice event) in a haystack of conversational sessions, so the answer is unrecoverable from the words alone; six question types cover affect recall, affective preference, affect update, cross-session affect, temporal-affective reasoning and prosody-disambiguated interpretation, each with abstention variants. A three-stage adversarial gate certifies that a strong blind text model fails: 0 of 175 non-abstention taxonomy items are blind-solvable. The headline finding is an affect gap of +0.09 to +0.38 accuracy across eight text models when the paralinguistic metadata track is supplied. An audio-native section synthesises 114 evidence sessions with TTS conditioned on emotion-matched reference clips and shows that 7B audio-native models beat the blind text baseline (0.354 and 0.412 vs. 0.325) while a Whisper cascade falls below it (0.254), because the transcript strips every delivery cue.",
+      "categories": [
+        "paralinguistics",
+        "voice-agent",
+        "long-form"
+      ],
+      "tasks": [
+        "paralinguistic recall QA across multi-session histories",
+        "affect update and cross-session affect tracking",
+        "abstention when the cue is absent"
+      ],
+      "languages": [
+        "English"
+      ],
+      "metrics": [
+        "accuracy (judge-scored)",
+        "affect gap vs. blind text baseline"
+      ],
+      "io": "multi-session conversation history (audio or transcript + paralinguistic metadata) + question in, text answer out",
+      "size": "523 adversarially validated items across six question types; audio-native track uses 104 of 114 indirect-v2 evidence sessions with valid TTS",
+      "note": "The main evaluation runs text LLMs over transcripts plus a metadata track; only Section 5.6 / Table 8 evaluates spoken LLMs end-to-end on synthesised audio, and those are the only result cells recorded here. Audio is TTS-rendered, not human-recorded. Code and dataset announced for release upon acceptance."
     }
   ]
 }

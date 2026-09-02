@@ -1361,6 +1361,12 @@
       "name": "GPT-Realtime 2",
       "org": "OpenAI",
       "type": "e2e"
+    },
+    {
+      "id": "firered-audio",
+      "name": "FireRedAudio",
+      "org": "FireRed",
+      "type": "e2e"
     }
   ]
 }
