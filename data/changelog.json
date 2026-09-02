@@ -1,6 +1,11 @@
 {
   "entries": [
     {
+      "date": "2026-09-02",
+      "source": "daily crawl review",
+      "change": "Six benchmarks added from the 2026-08-28/31 arXiv batch: VocalAffectBench (2608.28932, vocal emotion from audio alone), MusicGroundingBench (2608.29480, temporal music grounding), CREMA-ASIS (2608.28966, acoustic and semantic affective cues put in conflict), HEAR (2608.29120, speaker-attributed reasoning over multi-party audio), a prosodic-heuristic diagnostic for sarcasm detection (2608.30204), and AynVQA from the ImageEval 2026 shared task (2608.30475, spoken VQA in English and Modern Standard Arabic). 29 sourced result cells and three models (Step-Audio 2 mini, Gemma-4-E4B-it, GPT-Realtime 2) were added with them. VocalAffectBench cells are read off v2 of that paper, which revised the clip count and the headline accuracy downward from v1. Four further flagged papers were reviewed and left out of scope: TEMPO (2608.29999) and stride-k subsampling (2608.30927) propose a model and a method rather than a benchmark, VoiceCodeBench (2608.28916) evaluates twelve ASR systems and no general spoken LLM, and MusGU+ (2608.30940) evaluates generative music systems."
+    },
+    {
       "date": "2026-09-01",
       "source": "daily crawl review",
       "change": "Three benchmarks added from the 2026-08-27/28 arXiv batch: SURE-Challenge (2608.27783, pre-generation rejection of audio that carries no evidence), MuSP-Bench (2608.28212, music understanding across scores and performances), and DualEvasion (2608.28040, textual evasion vs. vocal confidence in earnings calls). 29 sourced result cells and three models (Qwen-Audio-Chat, Gemini 2.5 Flash-Lite, Muse Spark 1.2) added with them. Three further flagged papers were reviewed and left out of scope."

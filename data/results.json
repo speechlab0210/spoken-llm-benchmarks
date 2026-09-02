@@ -129418,6 +129418,238 @@
       "value": 58.5,
       "source": "Table 2 (zero-shot, vocal cues: confident vs. unconfident)",
       "source_url": "https://arxiv.org/abs/2608.28040"
+    },
+    {
+      "benchmark": "hear",
+      "model": "gemini-3-1-pro",
+      "metric": "overall accuracy (%, unpaired)",
+      "value": 88.8,
+      "source": "HEAR Table 1 (Avg. %, unpaired; 20 SLMs)",
+      "source_url": "https://arxiv.org/abs/2608.29120v1"
+    },
+    {
+      "benchmark": "hear",
+      "model": "gemini-3-flash",
+      "metric": "overall accuracy (%, unpaired)",
+      "value": 73.1,
+      "source": "HEAR Table 1 (Avg. %, unpaired; 20 SLMs)",
+      "source_url": "https://arxiv.org/abs/2608.29120v1"
+    },
+    {
+      "benchmark": "hear",
+      "model": "gpt-4o-audio",
+      "metric": "overall accuracy (%, unpaired)",
+      "value": 48.5,
+      "source": "HEAR Table 1 (Avg. %, unpaired; 20 SLMs)",
+      "source_url": "https://arxiv.org/abs/2608.29120v1"
+    },
+    {
+      "benchmark": "hear",
+      "model": "qwen3-omni-thinking",
+      "metric": "overall accuracy (%, unpaired)",
+      "value": 45.0,
+      "source": "HEAR Table 1 (Avg. %, unpaired; 20 SLMs)",
+      "source_url": "https://arxiv.org/abs/2608.29120v1"
+    },
+    {
+      "benchmark": "hear",
+      "model": "step-audio-r1",
+      "metric": "overall accuracy (%, unpaired)",
+      "value": 43.2,
+      "source": "HEAR Table 1 (Avg. %, unpaired; 20 SLMs)",
+      "source_url": "https://arxiv.org/abs/2608.29120v1"
+    },
+    {
+      "benchmark": "hear",
+      "model": "qwen3-omni",
+      "metric": "overall accuracy (%, unpaired)",
+      "value": 35.4,
+      "source": "HEAR Table 1 (Avg. %, unpaired; 20 SLMs)",
+      "source_url": "https://arxiv.org/abs/2608.29120v1"
+    },
+    {
+      "benchmark": "hear",
+      "model": "minicpm-o-4-5",
+      "metric": "overall accuracy (%, unpaired)",
+      "value": 36.8,
+      "source": "HEAR Table 1 (Avg. %, unpaired; 20 SLMs)",
+      "source_url": "https://arxiv.org/abs/2608.29120v1"
+    },
+    {
+      "benchmark": "hear",
+      "model": "fun-audio-chat",
+      "metric": "overall accuracy (%, unpaired)",
+      "value": 33.4,
+      "source": "HEAR Table 1 (Avg. %, unpaired; 20 SLMs)",
+      "source_url": "https://arxiv.org/abs/2608.29120v1"
+    },
+    {
+      "benchmark": "hear",
+      "model": "kimi-audio",
+      "metric": "overall accuracy (%, unpaired)",
+      "value": 30.6,
+      "source": "HEAR Table 1 (Avg. %, unpaired; 20 SLMs)",
+      "source_url": "https://arxiv.org/abs/2608.29120v1"
+    },
+    {
+      "benchmark": "hear",
+      "model": "voxtral-small",
+      "metric": "overall accuracy (%, unpaired)",
+      "value": 28.8,
+      "source": "HEAR Table 1 (Avg. %, unpaired; 20 SLMs)",
+      "source_url": "https://arxiv.org/abs/2608.29120v1"
+    },
+    {
+      "benchmark": "hear",
+      "model": "qwen2-5-omni",
+      "metric": "overall accuracy (%, unpaired)",
+      "value": 28.6,
+      "source": "HEAR Table 1 (Avg. %, unpaired; 20 SLMs)",
+      "source_url": "https://arxiv.org/abs/2608.29120v1"
+    },
+    {
+      "benchmark": "hear",
+      "model": "voxtral-mini",
+      "metric": "overall accuracy (%, unpaired)",
+      "value": 26.1,
+      "source": "HEAR Table 1 (Avg. %, unpaired; 20 SLMs)",
+      "source_url": "https://arxiv.org/abs/2608.29120v1"
+    },
+    {
+      "benchmark": "hear",
+      "model": "midashenglm",
+      "metric": "overall accuracy (%, unpaired)",
+      "value": 25.1,
+      "source": "HEAR Table 1 (Avg. %, unpaired; 20 SLMs)",
+      "source_url": "https://arxiv.org/abs/2608.29120v1"
+    },
+    {
+      "benchmark": "hear",
+      "model": "step-audio-2-mini",
+      "metric": "overall accuracy (%, unpaired)",
+      "value": 23.4,
+      "source": "HEAR Table 1 (Avg. %, unpaired; 20 SLMs)",
+      "source_url": "https://arxiv.org/abs/2608.29120v1"
+    },
+    {
+      "benchmark": "hear",
+      "model": "audio-flamingo-3",
+      "metric": "overall accuracy (%, unpaired)",
+      "value": 22.0,
+      "source": "HEAR Table 1 (Avg. %, unpaired; 20 SLMs)",
+      "source_url": "https://arxiv.org/abs/2608.29120v1"
+    },
+    {
+      "benchmark": "hear",
+      "model": "gemma-4-e4b",
+      "metric": "overall accuracy (%, unpaired)",
+      "value": 23.9,
+      "source": "HEAR Table 1 (Avg. %, unpaired; 20 SLMs)",
+      "source_url": "https://arxiv.org/abs/2608.29120v1"
+    },
+    {
+      "benchmark": "hear",
+      "model": "phi-4-multimodal",
+      "metric": "overall accuracy (%, unpaired)",
+      "value": 23.5,
+      "source": "HEAR Table 1 (Avg. %, unpaired; 20 SLMs)",
+      "source_url": "https://arxiv.org/abs/2608.29120v1"
+    },
+    {
+      "benchmark": "hear",
+      "model": "minicpm-o",
+      "metric": "overall accuracy (%, unpaired)",
+      "value": 25.3,
+      "source": "HEAR Table 1 (Avg. %, unpaired; 20 SLMs)",
+      "source_url": "https://arxiv.org/abs/2608.29120v1"
+    },
+    {
+      "benchmark": "hear",
+      "model": "qwen2-audio",
+      "metric": "overall accuracy (%, unpaired)",
+      "value": 23.1,
+      "source": "HEAR Table 1 (Avg. %, unpaired; 20 SLMs)",
+      "source_url": "https://arxiv.org/abs/2608.29120v1"
+    },
+    {
+      "benchmark": "vocalaffectbench",
+      "model": "gemini-3-5-flash",
+      "metric": "seven-class accuracy (%)",
+      "value": 44.3,
+      "source": "VocalAffectBench Table 2 (v2, 280 clips)",
+      "source_url": "https://arxiv.org/abs/2608.28932v2"
+    },
+    {
+      "benchmark": "vocalaffectbench",
+      "model": "qwen3-5-omni-plus",
+      "metric": "seven-class accuracy (%)",
+      "value": 37.9,
+      "source": "VocalAffectBench Table 2 (v2, 280 clips)",
+      "source_url": "https://arxiv.org/abs/2608.28932v2"
+    },
+    {
+      "benchmark": "vocalaffectbench",
+      "model": "voxtral-small",
+      "metric": "seven-class accuracy (%)",
+      "value": 34.3,
+      "source": "VocalAffectBench Table 2 (v2, 280 clips)",
+      "source_url": "https://arxiv.org/abs/2608.28932v2"
+    },
+    {
+      "benchmark": "vocalaffectbench",
+      "model": "gpt-realtime-2",
+      "metric": "seven-class accuracy (%)",
+      "value": 27.9,
+      "source": "VocalAffectBench Table 2 (v2, 280 clips)",
+      "source_url": "https://arxiv.org/abs/2608.28932v2"
+    },
+    {
+      "benchmark": "crema-asis",
+      "model": "gpt-audio-mini",
+      "metric": "Acc_dual, zero-shot (0-1)",
+      "value": 0.153,
+      "source": "CREMA-ASIS Table 4 (test set, before SFT)",
+      "source_url": "https://arxiv.org/abs/2608.28966v1"
+    },
+    {
+      "benchmark": "crema-asis",
+      "model": "qwen2-audio",
+      "metric": "Acc_dual, zero-shot (0-1)",
+      "value": 0.207,
+      "source": "CREMA-ASIS Table 4 (test set, before SFT)",
+      "source_url": "https://arxiv.org/abs/2608.28966v1"
+    },
+    {
+      "benchmark": "crema-asis",
+      "model": "kimi-audio",
+      "metric": "Acc_dual, zero-shot (0-1)",
+      "value": 0.285,
+      "source": "CREMA-ASIS Table 4 (test set, before SFT)",
+      "source_url": "https://arxiv.org/abs/2608.28966v1"
+    },
+    {
+      "benchmark": "crema-asis",
+      "model": "audio-flamingo-3",
+      "metric": "Acc_dual, zero-shot (0-1)",
+      "value": 0.32,
+      "source": "CREMA-ASIS Table 4 (test set, before SFT)",
+      "source_url": "https://arxiv.org/abs/2608.28966v1"
+    },
+    {
+      "benchmark": "musicgroundingbench",
+      "model": "music-flamingo",
+      "metric": "MergedIoU, MGBench-3N grounding (0-1)",
+      "value": 0.0842,
+      "source": "MusicGroundingBench Table 3 (MGBench-3N grounding test set, 900 items; external audio-LLM baselines)",
+      "source_url": "https://arxiv.org/abs/2608.29480v1"
+    },
+    {
+      "benchmark": "musicgroundingbench",
+      "model": "qwen2-audio",
+      "metric": "MergedIoU, MGBench-3N grounding (0-1)",
+      "value": 0.0006,
+      "source": "MusicGroundingBench Table 3 (MGBench-3N grounding test set, 900 items; external audio-LLM baselines)",
+      "source_url": "https://arxiv.org/abs/2608.29480v1"
     }
   ]
 }

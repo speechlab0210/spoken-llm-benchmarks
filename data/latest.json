@@ -20,7 +20,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2608.28932",
       "score": 48,
-      "status": "new — under review"
+      "status": "reviewed — catalogued"
     },
     {
       "id": "2608.29999",
@@ -38,7 +38,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2608.29999",
       "score": 42,
-      "status": "new — under review"
+      "status": "reviewed — out of scope"
     },
     {
       "id": "2608.28916",
@@ -57,7 +57,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2608.28916",
       "score": 36,
-      "status": "new — under review"
+      "status": "reviewed — out of scope"
     },
     {
       "id": "2608.30204",
@@ -74,7 +74,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2608.30204",
       "score": 27,
-      "status": "new — under review"
+      "status": "reviewed — catalogued"
     },
     {
       "id": "2608.29480",
@@ -89,7 +89,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2608.29480",
       "score": 21,
-      "status": "new — under review"
+      "status": "reviewed — catalogued"
     },
     {
       "id": "2608.30940",
@@ -105,7 +105,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2608.30940",
       "score": 21,
-      "status": "new — under review"
+      "status": "reviewed — out of scope"
     },
     {
       "id": "2608.28966",
@@ -122,7 +122,7 @@
       "primary_category": "eess.AS",
       "url": "https://arxiv.org/abs/2608.28966",
       "score": 18,
-      "status": "new — under review"
+      "status": "reviewed — catalogued"
     },
     {
       "id": "2608.29120",
@@ -142,7 +142,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2608.29120",
       "score": 18,
-      "status": "new — under review"
+      "status": "reviewed — catalogued"
     },
     {
       "id": "2608.30475",
@@ -162,7 +162,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2608.30475",
       "score": 18,
-      "status": "new — under review"
+      "status": "reviewed — catalogued"
     },
     {
       "id": "2608.30927",
@@ -177,7 +177,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2608.30927",
       "score": 18,
-      "status": "new — under review"
+      "status": "reviewed — out of scope"
     },
     {
       "id": "2608.27817",

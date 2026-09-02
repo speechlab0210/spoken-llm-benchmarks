@@ -1343,6 +1343,24 @@
       "name": "Muse Spark 1.2",
       "org": "Meta",
       "type": "e2e"
+    },
+    {
+      "id": "step-audio-2-mini",
+      "name": "Step-Audio 2 mini",
+      "org": "StepFun",
+      "type": "e2e"
+    },
+    {
+      "id": "gemma-4-e4b",
+      "name": "Gemma-4-E4B-it",
+      "org": "Google",
+      "type": "e2e"
+    },
+    {
+      "id": "gpt-realtime-2",
+      "name": "GPT-Realtime 2",
+      "org": "OpenAI",
+      "type": "e2e"
     }
   ]
 }

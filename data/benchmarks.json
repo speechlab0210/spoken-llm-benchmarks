@@ -9241,6 +9241,191 @@
       "io": "speech in, label out",
       "size": "505 question-answer pairs from 60 earnings calls (49 tickers, 2023-2025)",
       "note": "Audio is licensed from a commercial provider, so the benchmark ships annotations rather than redistributable audio."
+    },
+    {
+      "id": "vocalaffectbench",
+      "name": "VocalAffectBench",
+      "full_title": "VocalAffectBench: Evaluating Vocal Emotion Recognition in AI Audio Models",
+      "arxiv_id": "2608.28932",
+      "arxiv_date": "2026-08",
+      "arxiv_date_full": "2026-08-28",
+      "url": "https://arxiv.org/abs/2608.28932",
+      "summary": "A public, test-only benchmark for expressed vocal emotion recognition from raw audio alone, with no transcript and no contextual metadata: 280 human-recorded English WAV clips from 52 speaker accounts (2.32 hours) over seven emotion labels, 40 clips per class. Six released baselines average 35.1% on the seven-way task against a 14.3% random floor, and the strongest, Gemini 3.5 Flash, reaches 44.3%. Recall is very uneven: neutral is recovered at 76.2% averaged across baselines while surprised and fearful reach only 15.0% each.",
+      "categories": [
+        "paralinguistics",
+        "auditory-perception"
+      ],
+      "tasks": [
+        "seven-way expressed vocal emotion classification from audio only",
+        "valence-bucket (positive/neutral/negative) classification"
+      ],
+      "languages": [
+        "English"
+      ],
+      "metrics": [
+        "accuracy",
+        "per-class recall"
+      ],
+      "io": "speech in, text out",
+      "size": "280 clips / 2.32 hours / 52 speaker accounts / 40 clips per class",
+      "note": "Figures are from v2 (2026-09-01). The v1 abstract reported a smaller set (273 clips, 1.95 hours, 39 per class) and 46.5% for the top baseline; the result cells here are pinned to the v2 table."
+    },
+    {
+      "id": "musicgroundingbench",
+      "name": "MusicGroundingBench",
+      "full_title": "What Are You Listening to? Temporal Music Grounding for Audio-to-Text Large Language Models",
+      "arxiv_id": "2608.29480",
+      "arxiv_date": "2026-08",
+      "arxiv_date_full": "2026-08-30",
+      "url": "https://arxiv.org/abs/2608.29480",
+      "summary": "A controlled benchmark for temporal music grounding: the model must return the time spans of a queried note, event or pattern, so an answer can be checked against audio evidence rather than only for musical plausibility. It is built by rendering algorithmically generated piano MIDI to audio, which gives exact symbolic-to-audio alignment. Two subsets: MGBench-3N (note-level grounding in clips of up to three notes) and MGBench-2B (monophonic two-bar excerpts covering rhythm, tonality, interval, bar comparison, chord, repetition and harmonic pattern, with both grounding and understanding questions). Existing audio-LLM baselines are close to unusable at grounding, while small task-trained models reach useful IoU.",
+      "categories": [
+        "audio-grounding",
+        "auditory-perception",
+        "reasoning"
+      ],
+      "tasks": [
+        "temporal grounding of queried notes, events and patterns",
+        "short-form music understanding QA"
+      ],
+      "languages": [
+        "English"
+      ],
+      "metrics": [
+        "MergedIoU",
+        "precision/recall/F1 at IoU thresholds",
+        "onset/offset MAE",
+        "instruction-following rate",
+        "accuracy"
+      ],
+      "io": "audio in, text out",
+      "size": "MGBench-3N grounding 102,900 QA pairs; MGBench-2B grounding 63,240; MGBench-2B understanding 82,204 (test sets of 900 and 1,124)",
+      "note": "The audio is synthetic piano by construction, which is what buys the exact alignment; the paper presents the suite as a controlled first step rather than a general music-grounding benchmark. Datasets, code and models were announced as forthcoming at the time of the preprint."
+    },
+    {
+      "id": "crema-asis",
+      "name": "CREMA-ASIS",
+      "full_title": "When Vocal Tone and Literal Meaning Diverge: An Acoustic-Semantic Incongruity Study for Large Audio-Language Models",
+      "arxiv_id": "2608.28966",
+      "arxiv_date": "2026-08",
+      "arxiv_date_full": "2026-08-29",
+      "url": "https://arxiv.org/abs/2608.28966",
+      "code": "https://github.com/yuwchen/CREMA-ASIS",
+      "summary": "A dataset that deliberately separates how something is said from what is said, pairing an acoustic emotion label with a semantic sentiment polarity so congruent and incongruent combinations can be tested against each other. It is built on CREMA-D with a zero-shot TTS system cloning the original speaker while the text is swapped, which is what makes the two cues independently controllable. Evaluated LALMs rarely predict incongruity and are dominated by the semantic cue; layer-wise probing shows acoustic decodability falling in deeper layers while semantic decodability rises, widening the gap. Fine-tuning on the synthetic data narrows it without measurably harming transcription.",
+      "categories": [
+        "audio-grounding",
+        "paralinguistics"
+      ],
+      "tasks": [
+        "acoustic emotion classification",
+        "semantic sentiment classification",
+        "dual (both-correct) prediction under incongruity",
+        "layer-wise probing of modality dominance"
+      ],
+      "languages": [
+        "English"
+      ],
+      "metrics": [
+        "Acc_acou",
+        "Acc_sem",
+        "Acc_dual",
+        "WER (transcription preservation check)"
+      ],
+      "io": "speech in, text out",
+      "size": "77,559 samples over 91 actors (train 65,534 / val 6,146 / test 5,879)",
+      "note": "The speech is TTS-synthesised, so acoustic emotion is inherited from a reference clip rather than acted afresh; the paper reports a subjective test arguing the cloned emotion survives. GPT-audio-mini's low acoustic score is partly a processing failure: 928 of 5,879 samples were not processed and are counted as wrong."
+    },
+    {
+      "id": "hear",
+      "name": "HEAR",
+      "full_title": "HEAR Who Said What: Unlocking Speaker-Attributed Reasoning via Counterfactual Voice Grounding",
+      "arxiv_id": "2608.29120",
+      "arxiv_date": "2026-08",
+      "arxiv_date_full": "2026-08-29",
+      "url": "https://arxiv.org/abs/2608.29120",
+      "summary": "A hierarchical benchmark for speaker-attributed reasoning in multi-party audio, organised after Erber's auditory hierarchy into discrimination (telling voice identities apart), attribution (binding what was said to the right voice) and reasoning (inference over speaker-attributed utterances). It holds 2.4K human-verified multiple-choice items over 887 real multi-party clips from conversations, meetings and documentaries. Twenty leading speech LLMs are evaluated: most sit near the 20% random floor on the foundational tasks and lean on semantic priors rather than vocal cues, and the paired scoring, where an item counts only if both the original clip and its semantic-hallucination counterpart are right, pulls scores down further.",
+      "categories": [
+        "paralinguistics",
+        "audio-grounding",
+        "reasoning"
+      ],
+      "tasks": [
+        "voice discrimination",
+        "content-to-speaker attribution",
+        "reasoning over speaker-attributed utterances"
+      ],
+      "languages": [
+        "English"
+      ],
+      "metrics": [
+        "accuracy",
+        "paired accuracy"
+      ],
+      "io": "speech in, text out",
+      "size": "2.4K human-verified MCQA items over 887 multi-party clips",
+      "note": "The same paper also proposes CASH (a 60K counterfactual training corpus) and A2R, a 30B model trained on it; A2R is the authors' own system and is excluded from the result cells here, as is the random-choice row."
+    },
+    {
+      "id": "prosodic-sarcasm-heuristic-diagnostic",
+      "name": "Prosodic Sarcasm Heuristic Diagnostic",
+      "full_title": "When Models Hear What They Expect: Diagnosing Prosodic Heuristics in Multimodal Sarcasm Detection",
+      "arxiv_id": "2608.30204",
+      "arxiv_date": "2026-08",
+      "arxiv_date_full": "2026-08-31",
+      "url": "https://arxiv.org/abs/2608.30204",
+      "summary": "A diagnostic protocol asking whether a multimodal LLM uses prosody for pragmatic inference or just pattern-matches expressive-sounding speech. Sarcasm detection on Mandarin (MSCD) and English (MUStARD++) is decomposed into five modality conditions that separate lexical content, vocal semantics and prosodic structure; 66 acoustic features extracted from both corpora give language-specific ground truths for what sarcasm actually sounds like; model errors are then diagnosed against those profiles, and the identified heuristic is verified causally by manipulating prosody directly. Adding audio inflates false positives without improving true positives, and the errors cluster on a shared stereotype of elevated pitch and irregular pauses that matches neither corpus's real signature.",
+      "categories": [
+        "paralinguistics",
+        "audio-grounding",
+        "multilingual"
+      ],
+      "tasks": [
+        "sarcasm detection under five modality conditions",
+        "acoustic error diagnosis against corpus-derived profiles",
+        "causal prosodic manipulation"
+      ],
+      "languages": [
+        "English",
+        "Mandarin Chinese"
+      ],
+      "metrics": [
+        "F1",
+        "false-positive shift vs. text-only",
+        "flip rate"
+      ],
+      "io": "speech in, text out",
+      "size": "MUStARD++ 1,202 samples; MSCD 2,705 samples (existing corpora, evaluated zero-shot over five folds)",
+      "note": "A diagnostic framework over existing corpora rather than a newly released evaluation set; catalogued alongside the other probe-style entries. No result cells are recorded, because the per-model tables are reported per fold on the training partition across five modality conditions and do not reduce to one comparable column."
+    },
+    {
+      "id": "aynvqa-imageeval-2026",
+      "name": "AynVQA (ImageEval 2026)",
+      "full_title": "ImageEval 2026: Culturally Grounded Arabic Multimodal Evaluation",
+      "arxiv_id": "2608.30475",
+      "arxiv_date": "2026-08",
+      "arxiv_date_full": "2026-08-31",
+      "url": "https://arxiv.org/abs/2608.30475",
+      "summary": "The spoken half of the ImageEval 2026 shared task: AynVQA asks a model to answer a spoken question about an image in English and Modern Standard Arabic, with an image-grounded hallucination-detection track alongside it. Qwen2.5-Omni-3B is the official end-to-end baseline. MSA is markedly harder than English (best accuracy 0.875 against 0.962), and the organisers attribute most of that gap to Arabic ASR errors and to the mismatch between synthetic training and development speech and human-recorded test speech; the MSA baseline falls below the majority-position reference. 14 teams took part in the test phase.",
+      "categories": [
+        "spoken-qa",
+        "multilingual"
+      ],
+      "tasks": [
+        "spoken visual question answering (English, MSA)",
+        "image-grounded hallucination detection"
+      ],
+      "languages": [
+        "English",
+        "Modern Standard Arabic"
+      ],
+      "metrics": [
+        "accuracy",
+        "macro-F1",
+        "consistency index"
+      ],
+      "io": "speech and image in, text out",
+      "size": "shared task with 14 teams in the test phase and 12 system description papers",
+      "note": "Shared-task overview. Only Task 1a is spoken; the paper's other track (CRAI-Bench, cultural accuracy of text-to-image generation) is outside this atlas's scope and is not catalogued. Most leaderboard entries are task-specific fine-tuned submissions rather than general spoken LLMs, so no result cells are recorded."
     }
   ]
 }
