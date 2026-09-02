@@ -1,9 +1,133 @@
 {
-  "fetched_at": "2026-09-01T22:47:02Z",
+  "fetched_at": "2026-09-02T22:47:03Z",
   "window_days": 10,
-  "scanned": 124,
-  "flagged_today": 10,
+  "scanned": 137,
+  "flagged_today": 7,
   "candidates": [
+    {
+      "id": "2609.01542",
+      "title": "TAG-Bench: Benchmarking Temporal Audio Grounding in Large Audio Language Models",
+      "abstract": "Large audio language models (LALMs) can describe what is heard, but their ability to localize when queried content occurs remains less systematically evaluated. We present TAG-Bench, a benchmark for temporal audio grounding in which a model returns every time interval that matches a natural-language query. TAG-Bench contains 1,750 human-verified query-recording pairs covering 149.5 hours, with eight source-dependent subsets spanning query categories and audio durations from 7 s to 20 min; 22.1% of the queries have multiple ground-truth intervals. Across 21 evaluated systems, the best-performing model achieves 31.2 mIoU and is the only system above 20 mIoU on the two long subsets, yet even this top performer reaches only 21.5% recall at IoU >= 0.7. Moreover, 9 of 21 systems fall below 5 mIoU, and every model under-reports the number of occurrences on one-to-many queries, with none exceeding 13.2% count accuracy. Because responses are free-form, we report parsing-failure rate and MAE coverage: parsing failures remain in mIoU, Recall, gIoU, and count metrics as empty predictions but do not enter MAE. The results separate precise localization, occurrence enumeration, and output-format reliability within a benchmark whose cross-subset comparisons are descriptive rather than controlled estimates of query abstraction or duration. We will release the TAG-Bench data and evaluation code to support future research.",
+      "published": "2026-09-01T17:07:52Z",
+      "authors": [
+        "Yuhang Dai",
+        "Xin Shu",
+        "Zengxi Li",
+        "Lei Xie",
+        "Xiangang Li",
+        "Jianwei Yu"
+      ],
+      "primary_category": "eess.AS",
+      "url": "https://arxiv.org/abs/2609.01542",
+      "score": 54,
+      "status": "new — under review"
+    },
+    {
+      "id": "2609.00727",
+      "title": "Heard but Not Heeded: Paralinguistic Information Encoding and Loss in Audio-Language Models",
+      "abstract": "Audio language models are designed to understand speech, yet it remains unclear whether they capture how something is said beyond what is said. We present a mechanistic analysis of paralinguistic information in four open source models, Whisper-large-v2, Qwen2-Audio-7B Instruct, Qwen2.5-Omni-7B, and Chroma-4B, using the Expresso dataset with controlled speaking styles. We combine centered kernel alignment, linear probing with leave one speaker out evaluation, open ended tone prediction, and a content prosody leakage metric to trace how style information moves from the audio encoder to the final output. All models strongly encode speaking style in the late encoder, that is, the top third of the audio encoder's layers, but this information is consistently degraded before reaching the output. The projector reshapes representation geometry without removing information, while decoders differ in how much style they preserve depending on architecture and training objective. At the output level, models fall into two behaviors. Some are content driven, where predictions depend mainly on text. Others are acoustic driven, where predictions vary with speaking style. The leakage metric quantifies this difference, and qualitative results confirm it. Overall, we identify a gap between what models encode and what they use, highlighting a key limitation in current audio language models.",
+      "published": "2026-09-01T05:03:33Z",
+      "authors": [
+        "Bhuvan Koduru",
+        "Dareen Safar B Alharthi",
+        "Rita Singh",
+        "Bhiksha Raj"
+      ],
+      "primary_category": "cs.SD",
+      "url": "https://arxiv.org/abs/2609.00727",
+      "score": 39,
+      "status": "new — under review"
+    },
+    {
+      "id": "2609.01315",
+      "title": "A Composable Evaluation System for Reproducible Omni-Modal Foundation Model Evaluation",
+      "abstract": "Building an omni-modal foundation model means evaluating it across text, image, video, and audio. Excellent evaluation toolkits exist for each modality, but their inference engines, prompt conventions, and metric implementations are mutually incompatible, so practitioners end up maintaining separate environments for every toolchain and still struggle to compare results across them. OmniEvaluator grew out of this need in our own model development: rather than reimplementing benchmarks, it connects existing inference engines and curated evaluation libraries at a higher level, exposing four inference backends, four evaluation frameworks, and over a thousand benchmarks through a single interface. Every run is recorded as an artifact capturing the full configuration for exact reproduction, and results flow into a shared dashboard for cross-model comparison. A federated mode shares GPU inference servers across concurrent evaluations, and a built-in verifier, small enough to run on CPU, keeps its score stable across engines and prompts where rule-based scoring fluctuates under configuration mismatch, matching cost-efficient commercial LLM judges without their recurring API cost. The system, demo video, and dashboard are publicly available. (https://github.com/naver-ai/omni-evaluator)",
+      "published": "2026-09-01T14:37:57Z",
+      "authors": [
+        "Hodong Lee",
+        "Sanghee Park",
+        "Dohoon Ryu",
+        "Jungwhan Kim",
+        "Junyeob Kim",
+        "Soyoon Kim",
+        "Geewook Kim"
+      ],
+      "primary_category": "cs.AI",
+      "url": "https://arxiv.org/abs/2609.01315",
+      "score": 27,
+      "status": "new — under review"
+    },
+    {
+      "id": "2609.00276",
+      "title": "Cleaner Speech, Weaker Generalization: Revisiting Pitt-Derived Benchmarks for Alzheimer's Disease Detection",
+      "abstract": "Speech-based Alzheimer's disease (AD) detection increasingly relies on speech-enhanced and curated versions of the Pitt Corpus, where speech enhancement, sample selection, and demographic balancing are often treated as beneficial preprocessing steps. However, whether these transformations improve real-world AD detection or instead affect model generalization and prediction behavior remains unclear. In this work, we revisit the role of speech preprocessing and dataset curation across widely used benchmarks for speech-based AD detection. We evaluate the speech quality of different datasets, the cross-dataset generalization of multiple deep learning models under matched and mismatched enhancement settings, and the behavior of several recent large audio-language models (LALMs). Experimental results show that across multiple supervised speech models, speech-enhanced datasets often improve in-domain performance while reducing robustness in cross-domain evaluation. Matched enhancement between training and test data alleviates, but does not eliminate, this degradation. LALMs show a similar sensitivity: enhanced datasets induce stronger class imbalance and prediction shifts than unprocessed data. These results suggest that speech preprocessing and dataset curation can substantially influence downstream AD detection behavior, indicating that ``cleaner'' speech datasets are not necessarily more reliable for real-world AD detection.",
+      "published": "2026-08-31T19:19:00Z",
+      "authors": [
+        "Luqi Sun",
+        "Shreeram Suresh Chandra",
+        "Lin Zhang",
+        "You-Jin Li",
+        "Brian MacWhinney",
+        "Yu Tsao",
+        "Emily Mower Provost",
+        "Berrak Sisman"
+      ],
+      "primary_category": "cs.SD",
+      "url": "https://arxiv.org/abs/2609.00276",
+      "score": 25,
+      "status": "new — under review"
+    },
+    {
+      "id": "2609.00330",
+      "title": "Topic Matching in the Wild: Benchmark and Lessons from Real-World ASR Transcripts",
+      "abstract": "In contact centers, real-time agent-assist tools determine, for each of many predefined topics, whether a live customer utterance is relevant and display a coaching card to the agent when it is. The input is noisy and challenging: ASR(Automatic Speech Recognition) transcripts of spontaneous phone conversations, which can be unclear, repetitive, and mostly lack punctuation. To systematically study this real-world task, we curate a human-annotated topic-utterance judgments dataset sourced from real call-center transcripts. We compare three types of matchers: a regex-based baseline, zero-shot sentence embedding encoders, and Gemini-based LLM matchers. In addition, two types of topic representations are studied in our benchmark:keyphrases and natural language description. Our empirical experiments highlight the superior performance of lightweight LLM matchers over embedding and regex models when equipped with natural language descriptions.",
+      "published": "2026-08-27T21:55:50Z",
+      "authors": [
+        "Saman Rahbar",
+        "Xiliang Zhu",
+        "Irvin Cardoza",
+        "David Rossouw"
+      ],
+      "primary_category": "cs.CL",
+      "url": "https://arxiv.org/abs/2609.00330",
+      "score": 21,
+      "status": "new — under review"
+    },
+    {
+      "id": "2609.00570",
+      "title": "VoiceLongMemEval: Do Assistants Remember How You Sounded?",
+      "abstract": "With the growing scale of multi-agent architectures and large language models, deployed AI assistants are increasingly tasked with reasoning over long, continuous, multi-session conversation histories. Current benchmarks evaluate this dialogue history as information retrieval over long horizon, temporal reasoning, or knowledge updates, while crucially ignoring the fundamental dynamics of human-agent interaction, i.e. how they said it. To address this gap, we present VoiceLongMemEval (VLME) benchmark, where every answer depends on paralinguistic metadata (emotion labels, prosody descriptors, and voice events) attached to conversational turns, which is otherwise unrecoverable from the words alone. Every item passes a three-stage adversarial gate, ensuring that a strong language model fails when given only the transcript. Evaluating leading frontier and open-weight models reveals a pervasive affect gap; providing text-track paralinguistic metadata yields a 0.09 to 0.38 accuracy boost (0.61 to 0.69 when prompted with evidence hints), while standard ASR pipelines systematically discard this signal. Additionally, audio-native models successfully extract these cues directly from speech (0.354 to 0.412 vs. 0.325 blind). Code and dataset will be made available upon acceptance.",
+      "published": "2026-09-01T02:06:10Z",
+      "authors": [
+        "Ramit Pahwa",
+        "Parivesh Priye",
+        "Apoorva Beedu"
+      ],
+      "primary_category": "cs.AI",
+      "url": "https://arxiv.org/abs/2609.00570",
+      "score": 21,
+      "status": "new — under review"
+    },
+    {
+      "id": "2609.01113",
+      "title": "EDRAC: Benchmarking Arabic Dialect Reading Comprehension",
+      "abstract": "Dialectal Arabic (DA) remains under-resourced compared to Modern Standard Arabic (MSA), particularly for machine reading comprehension (MRC) and question answering (QA). Existing Arabic QA benchmarks primarily focus on formal written MSA or multiple-choice QA, with limited coverage of naturally spoken dialects. Here, we aim to bridge this gap. We introduce EDRAC, the first large-scale benchmark for dialectal Arabic machine reading comprehension (MRC) and generative QA, covering five major dialects: Egyptian, Moroccan, Emirati, Syrian, and Saudi Arabic. EDRAC contains 499 passages derived from naturally occurring spoken interactions and 4,977 corresponding QA pairs generated through a human--LLM collaborative pipeline combining iterative generation, LLM-as-a-judge evaluation, and human verification. We benchmark Arabic-centric and multilingual LLMs on EDRAC using lexical and semantic metrics. Our results reveal substantial gaps between semantic answer quality and dialectal fidelity, highlighting the limitations of existing evaluation metrics for dialectal Arabic generation. EDRAC provides a realistic and challenging MRC benchmark for future research on dialectal Arabic NLP.",
+      "published": "2026-09-01T11:51:49Z",
+      "authors": [
+        "Noor Abo Mokh",
+        "Kirill Chirkunov",
+        "Teresa Lynn",
+        "Nizar Habash",
+        "Reham Marzouk",
+        "Malik H. Altakrori",
+        "Younes Samih",
+        "Muhammed Abu Odeh"
+      ],
+      "primary_category": "cs.CL",
+      "url": "https://arxiv.org/abs/2609.01113",
+      "score": 21,
+      "status": "new — under review"
+    },
     {
       "id": "2608.28932",
       "title": "VocalAffectBench: Evaluating Vocal Emotion Recognition in AI Audio Models",
