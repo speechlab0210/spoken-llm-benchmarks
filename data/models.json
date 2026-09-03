@@ -1,1372 +1,1378 @@
 {
-  "entries": [
-    {
-      "id": "qwen2-5-omni",
-      "name": "Qwen2.5-Omni",
-      "org": "Alibaba",
-      "type": "e2e"
-    },
-    {
-      "id": "qwen2-audio",
-      "name": "Qwen2-Audio",
-      "org": "Alibaba",
-      "type": "e2e"
-    },
-    {
-      "id": "qwen3-omni",
-      "name": "Qwen3-Omni",
-      "org": "Alibaba",
-      "type": "e2e"
-    },
-    {
-      "id": "kimi-audio",
-      "name": "Kimi-Audio",
-      "org": "Moonshot",
-      "type": "e2e"
-    },
-    {
-      "id": "audio-flamingo-3",
-      "name": "Audio Flamingo 3",
-      "org": "NVIDIA",
-      "type": "e2e"
-    },
-    {
-      "id": "salmonn",
-      "name": "SALMONN",
-      "org": "Tsinghua/ByteDance",
-      "type": "e2e"
-    },
-    {
-      "id": "gemini-2-5-flash",
-      "name": "Gemini 2.5 Flash",
-      "org": "Google",
-      "type": "e2e"
-    },
-    {
-      "id": "minicpm-o",
-      "name": "MiniCPM-o",
-      "org": "OpenBMB",
-      "type": "e2e"
-    },
-    {
-      "id": "gpt-4o-audio",
-      "name": "GPT-4o-Audio",
-      "org": "OpenAI",
-      "type": "e2e"
-    },
-    {
-      "id": "moshi",
-      "name": "Moshi",
-      "org": "Kyutai",
-      "type": "e2e"
-    },
-    {
-      "id": "gemini-2-5-pro",
-      "name": "Gemini 2.5 Pro",
-      "org": "Google",
-      "type": "e2e"
-    },
-    {
-      "id": "freeze-omni",
-      "name": "Freeze-Omni",
-      "org": "Tencent",
-      "type": "e2e"
-    },
-    {
-      "id": "glm-4-voice",
-      "name": "GLM-4-Voice",
-      "org": "Zhipu",
-      "type": "e2e"
-    },
-    {
-      "id": "phi-4-multimodal",
-      "name": "Phi-4-multimodal",
-      "org": "Microsoft",
-      "type": "e2e"
-    },
-    {
-      "id": "qwen-audio",
-      "name": "Qwen-Audio",
-      "org": "Alibaba",
-      "type": "e2e"
-    },
-    {
-      "id": "gpt-4o",
-      "name": "GPT-4o",
-      "org": "OpenAI",
-      "type": "text"
-    },
-    {
-      "id": "step-audio-2",
-      "name": "Step-Audio 2",
-      "org": "StepFun",
-      "type": "e2e"
-    },
-    {
-      "id": "gemini-2-flash",
-      "name": "Gemini 2.0 Flash",
-      "org": "Google",
-      "type": "e2e"
-    },
-    {
-      "id": "baichuan-omni",
-      "name": "Baichuan-Omni",
-      "org": "Baichuan",
-      "type": "e2e"
-    },
-    {
-      "id": "gemini-3-pro",
-      "name": "Gemini 3 Pro",
-      "org": "Google",
-      "type": "e2e"
-    },
-    {
-      "id": "vita",
-      "name": "VITA",
-      "org": "Tencent",
-      "type": "e2e"
-    },
-    {
-      "id": "gemini-1-5-pro",
-      "name": "Gemini 1.5 Pro",
-      "org": "Google",
-      "type": "e2e"
-    },
-    {
-      "id": "desta2",
-      "name": "DeSTA2",
-      "org": "NTU",
-      "type": "e2e"
-    },
-    {
-      "id": "mimo-audio",
-      "name": "MiMo-Audio",
-      "org": "Xiaomi",
-      "type": "e2e"
-    },
-    {
-      "id": "ltu-as",
-      "name": "LTU-AS",
-      "org": "MIT",
-      "type": "e2e"
-    },
-    {
-      "id": "video-llama2",
-      "name": "Video-LLaMA2",
-      "org": "Alibaba",
-      "type": "e2e"
-    },
-    {
-      "id": "gemini-3-flash",
-      "name": "Gemini 3 Flash",
-      "org": "Google",
-      "type": "e2e"
-    },
-    {
-      "id": "audio-reasoner",
-      "name": "Audio-Reasoner",
-      "org": "—",
-      "type": "e2e"
-    },
-    {
-      "id": "gama",
-      "name": "GAMA",
-      "org": "UMD",
-      "type": "e2e"
-    },
-    {
-      "id": "voxtral",
-      "name": "Voxtral",
-      "org": "Mistral",
-      "type": "e2e"
-    },
-    {
-      "id": "audio-flamingo-2",
-      "name": "Audio Flamingo 2",
-      "org": "NVIDIA",
-      "type": "e2e"
-    },
-    {
-      "id": "llama-omni",
-      "name": "LLaMA-Omni",
-      "org": "ICT/CAS",
-      "type": "e2e"
-    },
-    {
-      "id": "video-salmonn",
-      "name": "video-SALMONN",
-      "org": "Tsinghua/ByteDance",
-      "type": "e2e"
-    },
-    {
-      "id": "gemini-unversioned",
-      "name": "Gemini (version unstated)",
-      "org": "Google",
-      "type": "e2e"
-    },
-    {
-      "id": "gpt-realtime",
-      "name": "GPT-Realtime",
-      "org": "OpenAI",
-      "type": "e2e"
-    },
-    {
-      "id": "personaplex",
-      "name": "PersonaPlex",
-      "org": "—",
-      "type": "e2e"
-    },
-    {
-      "id": "pandagpt",
-      "name": "PandaGPT",
-      "org": "—",
-      "type": "e2e"
-    },
-    {
-      "id": "mini-omni",
-      "name": "Mini-Omni",
-      "org": "Tsinghua",
-      "type": "e2e"
-    },
-    {
-      "id": "dgslm",
-      "name": "dGSLM",
-      "org": "Meta",
-      "type": "speech-lm"
-    },
-    {
-      "id": "diva",
-      "name": "DiVA",
-      "org": "Stanford",
-      "type": "e2e"
-    },
-    {
-      "id": "ltu",
-      "name": "LTU",
-      "org": "MIT",
-      "type": "e2e"
-    },
-    {
-      "id": "spirit-lm",
-      "name": "SpiRit-LM",
-      "org": "Meta",
-      "type": "speech-lm"
-    },
-    {
-      "id": "gpt-4o-mini-audio",
-      "name": "GPT-4o-mini-Audio",
-      "org": "OpenAI",
-      "type": "e2e"
-    },
-    {
-      "id": "mini-omni2",
-      "name": "Mini-Omni2",
-      "org": "Tsinghua",
-      "type": "e2e"
-    },
-    {
-      "id": "gemini-live",
-      "name": "Gemini Live",
-      "org": "Google",
-      "type": "e2e"
-    },
-    {
-      "id": "speechgpt",
-      "name": "SpeechGPT",
-      "org": "Fudan",
-      "type": "e2e"
-    },
-    {
-      "id": "nextgpt",
-      "name": "NExT-GPT",
-      "org": "NUS",
-      "type": "e2e"
-    },
-    {
-      "id": "r1-aqa",
-      "name": "R1-AQA",
-      "org": "Xiaomi",
-      "type": "e2e"
-    },
-    {
-      "id": "step-audio",
-      "name": "Step-Audio",
-      "org": "StepFun",
-      "type": "e2e"
-    },
-    {
-      "id": "blsp",
-      "name": "BLSP",
-      "org": "Alibaba",
-      "type": "e2e"
-    },
-    {
-      "id": "ola",
-      "name": "Ola",
-      "org": "Tsinghua",
-      "type": "e2e"
-    },
-    {
-      "id": "meralion",
-      "name": "MERaLiON",
-      "org": "A*STAR",
-      "type": "e2e"
-    },
-    {
-      "id": "midashenglm",
-      "name": "MiDashengLM",
-      "org": "Xiaomi",
-      "type": "e2e"
-    },
-    {
-      "id": "llama-omni2",
-      "name": "LLaMA-Omni2",
-      "org": "ICT/CAS",
-      "type": "e2e"
-    },
-    {
-      "id": "ultravox",
-      "name": "Ultravox",
-      "org": "Fixie",
-      "type": "e2e"
-    },
-    {
-      "id": "gpt-audio",
-      "name": "GPT-Audio",
-      "org": "OpenAI",
-      "type": "e2e"
-    },
-    {
-      "id": "fun-audio-chat",
-      "name": "Fun-Audio-Chat",
-      "org": "Alibaba",
-      "type": "e2e"
-    },
-    {
-      "id": "baichuan-audio",
-      "name": "Baichuan-Audio",
-      "org": "Baichuan",
-      "type": "e2e"
-    },
-    {
-      "id": "unified-io-2",
-      "name": "UnifiedIO2",
-      "org": "AI2",
-      "type": "e2e"
-    },
-    {
-      "id": "wavllm",
-      "name": "WavLLM",
-      "org": "Microsoft",
-      "type": "e2e"
-    },
-    {
-      "id": "qwen3-5-omni",
-      "name": "Qwen3.5-Omni",
-      "org": "Alibaba",
-      "type": "e2e"
-    },
-    {
-      "id": "omnivinci",
-      "name": "OmniVinci",
-      "org": "NVIDIA",
-      "type": "e2e"
-    },
-    {
-      "id": "mu-llama",
-      "name": "MU-LLaMA",
-      "org": "—",
-      "type": "e2e"
-    },
-    {
-      "id": "mellow",
-      "name": "Mellow",
-      "org": "—",
-      "type": "e2e"
-    },
-    {
-      "id": "twist-7b",
-      "name": "TWIST 7B",
-      "org": "HUJI",
-      "type": "speech-lm"
-    },
-    {
-      "id": "step-audio-r1",
-      "name": "Step-Audio-R1",
-      "org": "StepFun",
-      "type": "e2e"
-    },
-    {
-      "id": "twist-1-3b",
-      "name": "TWIST 1.3B",
-      "org": "HUJI",
-      "type": "speech-lm"
-    },
-    {
-      "id": "phi-4",
-      "name": "Phi-4",
-      "org": "Microsoft",
-      "type": "e2e"
-    },
-    {
-      "id": "gemini-1-5-flash",
-      "name": "Gemini 1.5 Flash",
-      "org": "Google",
-      "type": "e2e"
-    },
-    {
-      "id": "audio-flamingo",
-      "name": "Audio Flamingo",
-      "org": "NVIDIA",
-      "type": "e2e"
-    },
-    {
-      "id": "gemma-3n",
-      "name": "Gemma-3n",
-      "org": "Google",
-      "type": "e2e"
-    },
-    {
-      "id": "spirit-lm-expressive",
-      "name": "SpiRit-LM Expressive",
-      "org": "Meta",
-      "type": "speech-lm"
-    },
-    {
-      "id": "ming-omni",
-      "name": "Ming-Omni",
-      "org": "Ant Group",
-      "type": "e2e"
-    },
-    {
-      "id": "vita-audio",
-      "name": "VITA-Audio",
-      "org": "Tencent",
-      "type": "e2e"
-    },
-    {
-      "id": "gemini-2-5",
-      "name": "Gemini 2.5",
-      "org": "Google",
-      "type": "e2e"
-    },
-    {
-      "id": "cascade:asr-llm",
-      "name": "ASR + LLM (cascade)",
-      "org": "—",
-      "type": "cascade"
-    },
-    {
-      "id": "vocalnet",
-      "name": "VocalNet",
-      "org": "—",
-      "type": "e2e"
-    },
-    {
-      "id": "musilingo",
-      "name": "MusiLingo",
-      "org": "—",
-      "type": "e2e"
-    },
-    {
-      "id": "gslm",
-      "name": "GSLM",
-      "org": "Meta",
-      "type": "speech-lm"
-    },
-    {
-      "id": "twist",
-      "name": "TWIST",
-      "org": "HUJI",
-      "type": "speech-lm"
-    },
-    {
-      "id": "slam-omni",
-      "name": "SLAM-Omni",
-      "org": "SJTU",
-      "type": "e2e"
-    },
-    {
-      "id": "onellm",
-      "name": "OneLLM",
-      "org": "Shanghai AI Lab",
-      "type": "e2e"
-    },
-    {
-      "id": "video-llama",
-      "name": "Video-LLaMA",
-      "org": "Alibaba",
-      "type": "e2e"
-    },
-    {
-      "id": "speechgpt2",
-      "name": "SpeechGPT-2",
-      "org": "Fudan",
-      "type": "e2e"
-    },
-    {
-      "id": "doubao",
-      "name": "Doubao (realtime)",
-      "org": "ByteDance",
-      "type": "e2e"
-    },
-    {
-      "id": "gemini-flash",
-      "name": "Gemini Flash (version unstated)",
-      "org": "Google",
-      "type": "e2e"
-    },
-    {
-      "id": "anygpt",
-      "name": "AnyGPT",
-      "org": "Fudan",
-      "type": "e2e"
-    },
-    {
-      "id": "opens2s",
-      "name": "OpenS2S",
-      "org": "—",
-      "type": "e2e"
-    },
-    {
-      "id": "whisper-gpt4o",
-      "name": "Whisper + GPT-4o (cascade)",
-      "org": "—",
-      "type": "cascade"
-    },
-    {
-      "id": "imagebind-llm",
-      "name": "ImageBind-LLM",
-      "org": "—",
-      "type": "e2e"
-    },
-    {
-      "id": "pengi",
-      "name": "Pengi",
-      "org": "Microsoft",
-      "type": "e2e"
-    },
-    {
-      "id": "whisper-llama3",
-      "name": "Whisper + LLaMA-3 (cascade)",
-      "org": "—",
-      "type": "cascade"
-    },
-    {
-      "id": "audiolm",
-      "name": "AudioLM",
-      "org": "Google",
-      "type": "speech-lm"
-    },
-    {
-      "id": "last-1-3b",
-      "name": "LAST 1.3B",
-      "org": "HUJI",
-      "type": "speech-lm"
-    },
-    {
-      "id": "m2ugen",
-      "name": "M2UGen",
-      "org": "NUS",
-      "type": "e2e"
-    },
-    {
-      "id": "cascade:whisper-llm",
-      "name": "Whisper-LLM (cascade)",
-      "org": "—",
-      "type": "cascade"
-    },
-    {
-      "id": "desta",
-      "name": "DeSTA",
-      "org": "NTU",
-      "type": "e2e"
-    },
-    {
-      "id": "cascade:asr-aac-llm",
-      "name": "ASR + AAC + LLM (cascade)",
-      "org": "—",
-      "type": "cascade"
-    },
-    {
-      "id": "music-flamingo",
-      "name": "Music Flamingo",
-      "org": "NVIDIA",
-      "type": "e2e"
-    },
-    {
-      "id": "granite-speech",
-      "name": "Granite Speech",
-      "org": "IBM",
-      "type": "e2e"
-    },
-    {
-      "id": "dashenglm",
-      "name": "DashengLM",
-      "org": "Xiaomi",
-      "type": "e2e"
-    },
-    {
-      "id": "macaw-llm",
-      "name": "Macaw-LLM",
-      "org": "Tencent",
-      "type": "e2e"
-    },
-    {
-      "id": "gemini-3",
-      "name": "Gemini 3",
-      "org": "Google",
-      "type": "e2e"
-    },
-    {
-      "id": "gemini-2",
-      "name": "Gemini 2.0",
-      "org": "Google",
-      "type": "e2e"
-    },
-    {
-      "id": "claude-sonnet",
-      "name": "Claude Sonnet",
-      "org": "Anthropic",
-      "type": "text"
-    },
-    {
-      "id": "bat",
-      "name": "BAT",
-      "org": "CMU",
-      "type": "e2e"
-    },
-    {
-      "id": "moss-audio",
-      "name": "MOSS-Audio",
-      "org": "Fudan",
-      "type": "e2e"
-    },
-    {
-      "id": "whisper-gpt4",
-      "name": "Whisper + GPT-4 (cascade)",
-      "org": "—",
-      "type": "cascade"
-    },
-    {
-      "id": "lyra",
-      "name": "Lyra",
-      "org": "—",
-      "type": "e2e"
-    },
-    {
-      "id": "gpt-5",
-      "name": "GPT-5",
-      "org": "OpenAI",
-      "type": "text"
-    },
-    {
-      "id": "mimo-v2-omni",
-      "name": "MiMo-V2-Omni",
-      "org": "Xiaomi",
-      "type": "e2e"
-    },
-    {
-      "id": "megrez-omni",
-      "name": "Megrez-3B-Omni",
-      "org": "Infinigence",
-      "type": "e2e"
-    },
-    {
-      "id": "minmo",
-      "name": "MinMo",
-      "org": "Alibaba",
-      "type": "e2e"
-    },
-    {
-      "id": "qwen2-7b-instruct",
-      "name": "Qwen2-7B-Instruct (text)",
-      "org": "Alibaba",
-      "type": "text"
-    },
-    {
-      "id": "video-llama3",
-      "name": "Video-LLaMA3",
-      "org": "Alibaba",
-      "type": "e2e"
-    },
-    {
-      "id": "gpt-audio-mini",
-      "name": "GPT-Audio-mini",
-      "org": "OpenAI",
-      "type": "e2e"
-    },
-    {
-      "id": "grok",
-      "name": "Grok",
-      "org": "xAI",
-      "type": "e2e"
-    },
-    {
-      "id": "twist-350m",
-      "name": "TWIST 350M",
-      "org": "HUJI",
-      "type": "speech-lm"
-    },
-    {
-      "id": "pgslm",
-      "name": "pGSLM",
-      "org": "Meta",
-      "type": "speech-lm"
-    },
-    {
-      "id": "x-instructblip",
-      "name": "X-InstructBLIP",
-      "org": "Salesforce",
-      "type": "e2e"
-    },
-    {
-      "id": "j-moshi",
-      "name": "J-Moshi",
-      "org": "Nagoya",
-      "type": "e2e"
-    },
-    {
-      "id": "sonic",
-      "name": "Sonic",
-      "org": "Cartesia",
-      "type": "e2e"
-    },
-    {
-      "id": "chatbridge",
-      "name": "ChatBridge",
-      "org": "—",
-      "type": "e2e"
-    },
-    {
-      "id": "cascade:whisper-llama",
-      "name": "Whisper-LLaMA (cascade)",
-      "org": "—",
-      "type": "cascade"
-    },
-    {
-      "id": "gpt-4-1",
-      "name": "GPT-4.1",
-      "org": "OpenAI",
-      "type": "text"
-    },
-    {
-      "id": "bert-gslm",
-      "name": "BERT-GSLM",
-      "org": "—",
-      "type": "e2e"
-    },
-    {
-      "id": "sensedialog",
-      "name": "SenseDialog",
-      "org": "SenseTime",
-      "type": "e2e"
-    },
-    {
-      "id": "speechjudge",
-      "name": "SpeechJudge",
-      "org": "—",
-      "type": "e2e"
-    },
-    {
-      "id": "gazelle",
-      "name": "Gazelle",
-      "org": "Tincans",
-      "type": "e2e"
-    },
-    {
-      "id": "gemini-live-2-5",
-      "name": "Gemini Live 2.5",
-      "org": "Google",
-      "type": "e2e"
-    },
-    {
-      "id": "reka-core",
-      "name": "Reka Core",
-      "org": "Reka",
-      "type": "e2e"
-    },
-    {
-      "id": "ixc-omnilive",
-      "name": "IXC2.5-OmniLive",
-      "org": "Shanghai AI Lab",
-      "type": "e2e"
-    },
-    {
-      "id": "gemini-audio",
-      "name": "Gemini (audio)",
-      "org": "Google",
-      "type": "e2e"
-    },
-    {
-      "id": "mio-instruct",
-      "name": "MIO-Instruct",
-      "org": "—",
-      "type": "e2e"
-    },
-    {
-      "id": "cascade:asr-text-llm",
-      "name": "ASR + Text LLM (cascade)",
-      "org": "—",
-      "type": "cascade"
-    },
-    {
-      "id": "cascade:captioning-scratch",
-      "name": "Captioning-scratch (cascade)",
-      "org": "—",
-      "type": "cascade"
-    },
-    {
-      "id": "qwen2-5-7b-instruct",
-      "name": "Qwen2.5-7B-Instruct (text)",
-      "org": "Alibaba",
-      "type": "text"
-    },
-    {
-      "id": "balsa",
-      "name": "BALSa",
-      "org": "NTU",
-      "type": "e2e"
-    },
-    {
-      "id": "vae-gslm",
-      "name": "VAE-GSLM",
-      "org": "—",
-      "type": "speech-lm"
-    },
-    {
-      "id": "cascade:whisper-llama-2",
-      "name": "Whisper + LLaMA 2 (cascade)",
-      "org": "—",
-      "type": "cascade"
-    },
-    {
-      "id": "avicuna",
-      "name": "AVicuna",
-      "org": "—",
-      "type": "e2e"
-    },
-    {
-      "id": "llm-jp-moshi",
-      "name": "LLM-jp-Moshi",
-      "org": "LLM-jp",
-      "type": "e2e"
-    },
-    {
-      "id": "spectron",
-      "name": "Spectron",
-      "org": "Google",
-      "type": "speech-lm"
-    },
-    {
-      "id": "lat-audio",
-      "name": "LAT-Audio",
-      "org": "—",
-      "type": "e2e"
-    },
-    {
-      "id": "gemini-live-3",
-      "name": "Gemini Live 3.x",
-      "org": "Google",
-      "type": "e2e"
-    },
-    {
-      "id": "cascade:whisper-qwen3-8b",
-      "name": "Whisper + Qwen3-8B (cascade)",
-      "org": "—",
-      "type": "cascade"
-    },
-    {
-      "id": "openmu",
-      "name": "OpenMU",
-      "org": "Sony",
-      "type": "e2e"
-    },
-    {
-      "id": "cascade:whisperpro-qwen2-5-7b",
-      "name": "WhisperPro + Qwen2.5-7B (cascade)",
-      "org": "—",
-      "type": "cascade"
-    },
-    {
-      "id": "cascade:whisper-bge",
-      "name": "Whisper+BGE (cascade)",
-      "org": "—",
-      "type": "cascade"
-    },
-    {
-      "id": "cascade:whisper-v3-turbo-llama-3-1-8b",
-      "name": "Whisper-v3-turbo+LLaMA-3.1-8B (cascade)",
-      "org": "—",
-      "type": "cascade"
-    },
-    {
-      "id": "cascade:whisper-qwen-inst-7b",
-      "name": "Whisper + Qwen-Inst-7B (cascade)",
-      "org": "—",
-      "type": "cascade"
-    },
-    {
-      "id": "last-350m",
-      "name": "LAST 350M",
-      "org": "HUJI",
-      "type": "speech-lm"
-    },
-    {
-      "id": "cascade:captioning-init",
-      "name": "Captioning-init (cascade)",
-      "org": "—",
-      "type": "cascade"
-    },
-    {
-      "id": "cascade:caption-deepseek-v3",
-      "name": "Caption + DeepSeek-V3 (cascade)",
-      "org": "—",
-      "type": "cascade"
-    },
-    {
-      "id": "cascade:whisper-v3-qwen3",
-      "name": "Whisper-v3 + Qwen3 (cascade)",
-      "org": "—",
-      "type": "cascade"
-    },
-    {
-      "id": "cascade:nova-3-gpt-5-4-sonic-3",
-      "name": "Nova-3 + GPT-5.4 + Sonic 3 (cascade)",
-      "org": "—",
-      "type": "cascade"
-    },
-    {
-      "id": "cascade:parakeet-1-1-gemma-4-31b-kokoro",
-      "name": "Parakeet-1.1 + Gemma-4-31B + Kokoro (cascade)",
-      "org": "—",
-      "type": "cascade"
-    },
-    {
-      "id": "stresslm",
-      "name": "StresSLM",
-      "org": "—",
-      "type": "e2e"
-    },
-    {
-      "id": "cascade:ink-whisper-haiku-4-5-sonic-3",
-      "name": "Ink-whisper + Haiku-4.5 + Sonic 3 (cascade)",
-      "org": "—",
-      "type": "cascade"
-    },
-    {
-      "id": "cascade:qwen3-asr-qwen2-5",
-      "name": "Qwen3-ASR + Qwen2.5 (cascade)",
-      "org": "—",
-      "type": "cascade"
-    },
-    {
-      "id": "cascade:whisper-gpt",
-      "name": "Whisper+GPT (cascade)",
-      "org": "—",
-      "type": "cascade"
-    },
-    {
-      "id": "step-2-mini",
-      "name": "Step-2-mini",
-      "org": "StepFun",
-      "type": "e2e"
-    },
-    {
-      "id": "cascade:whisper-v3-qwen2-5",
-      "name": "Whisper-v3 + Qwen2.5 (cascade)",
-      "org": "—",
-      "type": "cascade"
-    },
-    {
-      "id": "cascade:nova-3-gpt-5-4-mini-aura-2",
-      "name": "Nova-3 + GPT-5.4-mini + Aura-2 (cascade)",
-      "org": "—",
-      "type": "cascade"
-    },
-    {
-      "id": "cascade:qwen3-asr-qwen3",
-      "name": "Qwen3-ASR + Qwen3 (cascade)",
-      "org": "—",
-      "type": "cascade"
-    },
-    {
-      "id": "cascade:caption-gpt-4o",
-      "name": "Caption + GPT-4o (cascade)",
-      "org": "—",
-      "type": "cascade"
-    },
-    {
-      "id": "cascade:qwen3-asr-llama-3-1",
-      "name": "Qwen3-ASR + Llama-3.1 (cascade)",
-      "org": "—",
-      "type": "cascade"
-    },
-    {
-      "id": "cascade:whisper-large-v3-gpt-oss-20b",
-      "name": "Whisper-Large-v3 + GPT-oSS-20B (cascade)",
-      "org": "—",
-      "type": "cascade"
-    },
-    {
-      "id": "cascade:caption-openai-o1",
-      "name": "Caption + OpenAI o1 (cascade)",
-      "org": "—",
-      "type": "cascade"
-    },
-    {
-      "id": "cascade:caption-deepseek-r1",
-      "name": "Caption + DeepSeek-R1 (cascade)",
-      "org": "—",
-      "type": "cascade"
-    },
-    {
-      "id": "cascade:qwen3-asr-llama-3-2",
-      "name": "Qwen3-ASR + Llama-3.2 (cascade)",
-      "org": "—",
-      "type": "cascade"
-    },
-    {
-      "id": "cascade:whisper-v3-sea-lion-v3-8b-it",
-      "name": "Whisper-v3 + SEA-LION-v3-8B-IT (cascade)",
-      "org": "—",
-      "type": "cascade"
-    },
-    {
-      "id": "cascade:caption-openai-o3",
-      "name": "Caption + OpenAI o3 (cascade)",
-      "org": "—",
-      "type": "cascade"
-    },
-    {
-      "id": "cascade:captions-qwen235b-a22b",
-      "name": "Captions + Qwen235B-A22B (cascade)",
-      "org": "—",
-      "type": "cascade"
-    },
-    {
-      "id": "cascade:sensevoicesmall-gpt4o",
-      "name": "SenseVoiceSmall+GPT4o (cascade)",
-      "org": "—",
-      "type": "cascade"
-    },
-    {
-      "id": "cascade:caption-gpt4o",
-      "name": "Caption + GPT4o (cascade)",
-      "org": "—",
-      "type": "cascade"
-    },
-    {
-      "id": "cascade:whisper-qwen3-32b",
-      "name": "Whisper + Qwen3-32B (cascade)",
-      "org": "—",
-      "type": "cascade"
-    },
-    {
-      "id": "cascade:whisperv3-gemma-12b",
-      "name": "whisperv3 + Gemma 12B (cascade)",
-      "org": "—",
-      "type": "cascade"
-    },
-    {
-      "id": "cascade:whisper-qwen3-1-7b",
-      "name": "Whisper + Qwen3-1.7B (cascade)",
-      "org": "—",
-      "type": "cascade"
-    },
-    {
-      "id": "cascade:whisper-qwen3-4b",
-      "name": "Whisper + Qwen3-4B (cascade)",
-      "org": "—",
-      "type": "cascade"
-    },
-    {
-      "id": "cascade:whisper-large-v3-qwen3-4b-instruct-2507",
-      "name": "whisper-large-v3 + Qwen3-4B-Instruct-2507 (cascade)",
-      "org": "—",
-      "type": "cascade"
-    },
-    {
-      "id": "cascade:whisper-glm-4-9b-chat-hf",
-      "name": "Whisper + GLM-4-9B-Chat-HF (cascade)",
-      "org": "—",
-      "type": "cascade"
-    },
-    {
-      "id": "cascade:captioning-scratch-tseng-et-al-2025",
-      "name": "Captioning-scratch (Tseng et al. 2025) (cascade)",
-      "org": "—",
-      "type": "cascade"
-    },
-    {
-      "id": "cascade:asr-llm-low",
-      "name": "ASR + LLM (Low) (cascade)",
-      "org": "—",
-      "type": "cascade"
-    },
-    {
-      "id": "cascade:asr-llm-high",
-      "name": "ASR + LLM (High) (cascade)",
-      "org": "—",
-      "type": "cascade"
-    },
-    {
-      "id": "cascade:whisper-llama-3-modular",
-      "name": "Whisper-Llama-3 (modular) (cascade)",
-      "org": "—",
-      "type": "cascade"
-    },
-    {
-      "id": "cascade:whisper-qwen3-4b-instruct-2507",
-      "name": "Whisper + Qwen3-4B-Instruct-2507 (cascade)",
-      "org": "—",
-      "type": "cascade"
-    },
-    {
-      "id": "cascade:asr-chatgpt",
-      "name": "ASR+ChatGPT (cascade)",
-      "org": "—",
-      "type": "cascade"
-    },
-    {
-      "id": "cascade:whisperv3-qwen-1-7b",
-      "name": "whisperv3 + Qwen 1.7B (cascade)",
-      "org": "—",
-      "type": "cascade"
-    },
-    {
-      "id": "cascade:whisperv3-gemma-27b",
-      "name": "whisperv3 + Gemma 27B (cascade)",
-      "org": "—",
-      "type": "cascade"
-    },
-    {
-      "id": "cascade:whisper-qwen-3",
-      "name": "Whisper + Qwen 3 (cascade)",
-      "org": "—",
-      "type": "cascade"
-    },
-    {
-      "id": "cascade:whisperv3-qwen-4b",
-      "name": "whisperv3 + Qwen 4B (cascade)",
-      "org": "—",
-      "type": "cascade"
-    },
-    {
-      "id": "typhoon-audio",
-      "name": "Typhoon-Audio",
-      "org": "SCB10X",
-      "type": "e2e"
-    },
-    {
-      "id": "cascade:whisper-qwen2-5",
-      "name": "Whisper+Qwen2.5 (cascade)",
-      "org": "—",
-      "type": "cascade"
-    },
-    {
-      "id": "cascade:whisper-qwen2-0-5b-instruct",
-      "name": "Whisper + Qwen2-0.5B-Instruct (cascade)",
-      "org": "—",
-      "type": "cascade"
-    },
-    {
-      "id": "cascade:whisperv3-qwen-8b",
-      "name": "whisperv3 + Qwen 8B (cascade)",
-      "org": "—",
-      "type": "cascade"
-    },
-    {
-      "id": "cascade:whisper-gpt-tts",
-      "name": "Whisper-GPT-TTS (cascade)",
-      "org": "—",
-      "type": "cascade"
-    },
-    {
-      "id": "doubao-seed-2-0-lite",
-      "name": "Doubao-Seed-2.0-lite",
-      "org": "ByteDance",
-      "type": "e2e"
-    },
-    {
-      "id": "minicpm-o-4-5",
-      "name": "MiniCPM-o-4.5",
-      "org": "OpenBMB",
-      "type": "e2e"
-    },
-    {
-      "id": "qwen3-5-omni-plus",
-      "name": "Qwen3.5-Omni-Plus",
-      "org": "Alibaba",
-      "type": "e2e"
-    },
-    {
-      "id": "gemini-3-1-pro",
-      "name": "Gemini 3.1 Pro",
-      "org": "Google",
-      "type": "e2e"
-    },
-    {
-      "id": "gemini-3-5-flash",
-      "name": "Gemini 3.5 Flash",
-      "org": "Google",
-      "type": "e2e"
-    },
-    {
-      "id": "gemini-3-1-flash-lite",
-      "name": "Gemini 3.1 Flash-Lite",
-      "org": "Google",
-      "type": "e2e"
-    },
-    {
-      "id": "gpt-audio-1-5",
-      "name": "GPT-Audio-1.5",
-      "org": "OpenAI",
-      "type": "e2e"
-    },
-    {
-      "id": "audio-flamingo-next",
-      "name": "Audio Flamingo Next",
-      "org": "NVIDIA",
-      "type": "e2e"
-    },
-    {
-      "id": "audio-flamingo-next-think",
-      "name": "Audio Flamingo Next-Think",
-      "org": "NVIDIA",
-      "type": "e2e"
-    },
-    {
-      "id": "audio-flamingo-3-think",
-      "name": "Audio Flamingo 3-Think",
-      "org": "NVIDIA",
-      "type": "e2e"
-    },
-    {
-      "id": "qwen3-omni-thinking",
-      "name": "Qwen3-Omni-Thinking",
-      "org": "Alibaba",
-      "type": "e2e"
-    },
-    {
-      "id": "mimo-audio-think",
-      "name": "MiMo-Audio-Think",
-      "org": "Xiaomi",
-      "type": "e2e"
-    },
-    {
-      "id": "mimo-v2-5",
-      "name": "MiMo-V2.5",
-      "org": "Xiaomi",
-      "type": "e2e"
-    },
-    {
-      "id": "omni-r1",
-      "name": "Omni-R1",
-      "org": "—",
-      "type": "e2e"
-    },
-    {
-      "id": "audiomcq-weak-to-strong",
-      "name": "AudioMCQ-Weak-to-Strong",
-      "org": "—",
-      "type": "e2e"
-    },
-    {
-      "id": "gemini-live-3-1-flash",
-      "name": "Gemini 3.1 Flash Live",
-      "org": "Google",
-      "type": "e2e"
-    },
-    {
-      "id": "voxtral-mini",
-      "name": "Voxtral-Mini",
-      "org": "Mistral",
-      "type": "e2e"
-    },
-    {
-      "id": "voxtral-small",
-      "name": "Voxtral-Small",
-      "org": "Mistral",
-      "type": "e2e"
-    },
-    {
-      "id": "baichuan-omni-1-5",
-      "name": "Baichuan-Omni-1.5",
-      "org": "Baichuan",
-      "type": "e2e"
-    },
-    {
-      "id": "qwen3-5-omni-flash",
-      "name": "Qwen3.5-Omni-Flash",
-      "org": "Alibaba",
-      "type": "e2e"
-    },
-    {
-      "id": "gpt-5-4",
-      "name": "GPT-5.4",
-      "org": "OpenAI",
-      "type": "e2e"
-    },
-    {
-      "id": "claude-opus-4-6",
-      "name": "Claude Opus 4.6",
-      "org": "Anthropic",
-      "type": "e2e"
-    },
-    {
-      "id": "gemini-3-1-flash",
-      "name": "Gemini 3.1 Flash",
-      "org": "Google",
-      "type": "e2e"
-    },
-    {
-      "id": "llama-4-maverick",
-      "name": "Llama 4 Maverick",
-      "org": "Meta",
-      "type": "e2e"
-    },
-    {
-      "id": "qwen-audio-chat",
-      "name": "Qwen-Audio-Chat",
-      "org": "Alibaba",
-      "type": "e2e"
-    },
-    {
-      "id": "gemini-2-5-flash-lite",
-      "name": "Gemini 2.5 Flash-Lite",
-      "org": "Google",
-      "type": "e2e"
-    },
-    {
-      "id": "muse-spark-1-2",
-      "name": "Muse Spark 1.2",
-      "org": "Meta",
-      "type": "e2e"
-    },
-    {
-      "id": "step-audio-2-mini",
-      "name": "Step-Audio 2 mini",
-      "org": "StepFun",
-      "type": "e2e"
-    },
-    {
-      "id": "gemma-4-e4b",
-      "name": "Gemma-4-E4B-it",
-      "org": "Google",
-      "type": "e2e"
-    },
-    {
-      "id": "gpt-realtime-2",
-      "name": "GPT-Realtime 2",
-      "org": "OpenAI",
-      "type": "e2e"
-    },
-    {
-      "id": "firered-audio",
-      "name": "FireRedAudio",
-      "org": "FireRed",
-      "type": "e2e"
-    }
-  ]
+ "entries": [
+  {
+   "id": "qwen2-5-omni",
+   "name": "Qwen2.5-Omni",
+   "org": "Alibaba",
+   "type": "e2e"
+  },
+  {
+   "id": "qwen2-audio",
+   "name": "Qwen2-Audio",
+   "org": "Alibaba",
+   "type": "e2e"
+  },
+  {
+   "id": "qwen3-omni",
+   "name": "Qwen3-Omni",
+   "org": "Alibaba",
+   "type": "e2e"
+  },
+  {
+   "id": "kimi-audio",
+   "name": "Kimi-Audio",
+   "org": "Moonshot",
+   "type": "e2e"
+  },
+  {
+   "id": "audio-flamingo-3",
+   "name": "Audio Flamingo 3",
+   "org": "NVIDIA",
+   "type": "e2e"
+  },
+  {
+   "id": "salmonn",
+   "name": "SALMONN",
+   "org": "Tsinghua/ByteDance",
+   "type": "e2e"
+  },
+  {
+   "id": "gemini-2-5-flash",
+   "name": "Gemini 2.5 Flash",
+   "org": "Google",
+   "type": "e2e"
+  },
+  {
+   "id": "minicpm-o",
+   "name": "MiniCPM-o",
+   "org": "OpenBMB",
+   "type": "e2e"
+  },
+  {
+   "id": "gpt-4o-audio",
+   "name": "GPT-4o-Audio",
+   "org": "OpenAI",
+   "type": "e2e"
+  },
+  {
+   "id": "moshi",
+   "name": "Moshi",
+   "org": "Kyutai",
+   "type": "e2e"
+  },
+  {
+   "id": "gemini-2-5-pro",
+   "name": "Gemini 2.5 Pro",
+   "org": "Google",
+   "type": "e2e"
+  },
+  {
+   "id": "freeze-omni",
+   "name": "Freeze-Omni",
+   "org": "Tencent",
+   "type": "e2e"
+  },
+  {
+   "id": "glm-4-voice",
+   "name": "GLM-4-Voice",
+   "org": "Zhipu",
+   "type": "e2e"
+  },
+  {
+   "id": "phi-4-multimodal",
+   "name": "Phi-4-multimodal",
+   "org": "Microsoft",
+   "type": "e2e"
+  },
+  {
+   "id": "qwen-audio",
+   "name": "Qwen-Audio",
+   "org": "Alibaba",
+   "type": "e2e"
+  },
+  {
+   "id": "gpt-4o",
+   "name": "GPT-4o",
+   "org": "OpenAI",
+   "type": "text"
+  },
+  {
+   "id": "step-audio-2",
+   "name": "Step-Audio 2",
+   "org": "StepFun",
+   "type": "e2e"
+  },
+  {
+   "id": "gemini-2-flash",
+   "name": "Gemini 2.0 Flash",
+   "org": "Google",
+   "type": "e2e"
+  },
+  {
+   "id": "baichuan-omni",
+   "name": "Baichuan-Omni",
+   "org": "Baichuan",
+   "type": "e2e"
+  },
+  {
+   "id": "gemini-3-pro",
+   "name": "Gemini 3 Pro",
+   "org": "Google",
+   "type": "e2e"
+  },
+  {
+   "id": "vita",
+   "name": "VITA",
+   "org": "Tencent",
+   "type": "e2e"
+  },
+  {
+   "id": "gemini-1-5-pro",
+   "name": "Gemini 1.5 Pro",
+   "org": "Google",
+   "type": "e2e"
+  },
+  {
+   "id": "desta2",
+   "name": "DeSTA2",
+   "org": "NTU",
+   "type": "e2e"
+  },
+  {
+   "id": "mimo-audio",
+   "name": "MiMo-Audio",
+   "org": "Xiaomi",
+   "type": "e2e"
+  },
+  {
+   "id": "ltu-as",
+   "name": "LTU-AS",
+   "org": "MIT",
+   "type": "e2e"
+  },
+  {
+   "id": "video-llama2",
+   "name": "Video-LLaMA2",
+   "org": "Alibaba",
+   "type": "e2e"
+  },
+  {
+   "id": "gemini-3-flash",
+   "name": "Gemini 3 Flash",
+   "org": "Google",
+   "type": "e2e"
+  },
+  {
+   "id": "audio-reasoner",
+   "name": "Audio-Reasoner",
+   "org": "—",
+   "type": "e2e"
+  },
+  {
+   "id": "gama",
+   "name": "GAMA",
+   "org": "UMD",
+   "type": "e2e"
+  },
+  {
+   "id": "voxtral",
+   "name": "Voxtral",
+   "org": "Mistral",
+   "type": "e2e"
+  },
+  {
+   "id": "audio-flamingo-2",
+   "name": "Audio Flamingo 2",
+   "org": "NVIDIA",
+   "type": "e2e"
+  },
+  {
+   "id": "llama-omni",
+   "name": "LLaMA-Omni",
+   "org": "ICT/CAS",
+   "type": "e2e"
+  },
+  {
+   "id": "video-salmonn",
+   "name": "video-SALMONN",
+   "org": "Tsinghua/ByteDance",
+   "type": "e2e"
+  },
+  {
+   "id": "gemini-unversioned",
+   "name": "Gemini (version unstated)",
+   "org": "Google",
+   "type": "e2e"
+  },
+  {
+   "id": "gpt-realtime",
+   "name": "GPT-Realtime",
+   "org": "OpenAI",
+   "type": "e2e"
+  },
+  {
+   "id": "personaplex",
+   "name": "PersonaPlex",
+   "org": "—",
+   "type": "e2e"
+  },
+  {
+   "id": "pandagpt",
+   "name": "PandaGPT",
+   "org": "—",
+   "type": "e2e"
+  },
+  {
+   "id": "mini-omni",
+   "name": "Mini-Omni",
+   "org": "Tsinghua",
+   "type": "e2e"
+  },
+  {
+   "id": "dgslm",
+   "name": "dGSLM",
+   "org": "Meta",
+   "type": "speech-lm"
+  },
+  {
+   "id": "diva",
+   "name": "DiVA",
+   "org": "Stanford",
+   "type": "e2e"
+  },
+  {
+   "id": "ltu",
+   "name": "LTU",
+   "org": "MIT",
+   "type": "e2e"
+  },
+  {
+   "id": "spirit-lm",
+   "name": "SpiRit-LM",
+   "org": "Meta",
+   "type": "speech-lm"
+  },
+  {
+   "id": "gpt-4o-mini-audio",
+   "name": "GPT-4o-mini-Audio",
+   "org": "OpenAI",
+   "type": "e2e"
+  },
+  {
+   "id": "mini-omni2",
+   "name": "Mini-Omni2",
+   "org": "Tsinghua",
+   "type": "e2e"
+  },
+  {
+   "id": "gemini-live",
+   "name": "Gemini Live",
+   "org": "Google",
+   "type": "e2e"
+  },
+  {
+   "id": "speechgpt",
+   "name": "SpeechGPT",
+   "org": "Fudan",
+   "type": "e2e"
+  },
+  {
+   "id": "nextgpt",
+   "name": "NExT-GPT",
+   "org": "NUS",
+   "type": "e2e"
+  },
+  {
+   "id": "r1-aqa",
+   "name": "R1-AQA",
+   "org": "Xiaomi",
+   "type": "e2e"
+  },
+  {
+   "id": "step-audio",
+   "name": "Step-Audio",
+   "org": "StepFun",
+   "type": "e2e"
+  },
+  {
+   "id": "blsp",
+   "name": "BLSP",
+   "org": "Alibaba",
+   "type": "e2e"
+  },
+  {
+   "id": "ola",
+   "name": "Ola",
+   "org": "Tsinghua",
+   "type": "e2e"
+  },
+  {
+   "id": "meralion",
+   "name": "MERaLiON",
+   "org": "A*STAR",
+   "type": "e2e"
+  },
+  {
+   "id": "midashenglm",
+   "name": "MiDashengLM",
+   "org": "Xiaomi",
+   "type": "e2e"
+  },
+  {
+   "id": "llama-omni2",
+   "name": "LLaMA-Omni2",
+   "org": "ICT/CAS",
+   "type": "e2e"
+  },
+  {
+   "id": "ultravox",
+   "name": "Ultravox",
+   "org": "Fixie",
+   "type": "e2e"
+  },
+  {
+   "id": "gpt-audio",
+   "name": "GPT-Audio",
+   "org": "OpenAI",
+   "type": "e2e"
+  },
+  {
+   "id": "fun-audio-chat",
+   "name": "Fun-Audio-Chat",
+   "org": "Alibaba",
+   "type": "e2e"
+  },
+  {
+   "id": "baichuan-audio",
+   "name": "Baichuan-Audio",
+   "org": "Baichuan",
+   "type": "e2e"
+  },
+  {
+   "id": "unified-io-2",
+   "name": "UnifiedIO2",
+   "org": "AI2",
+   "type": "e2e"
+  },
+  {
+   "id": "wavllm",
+   "name": "WavLLM",
+   "org": "Microsoft",
+   "type": "e2e"
+  },
+  {
+   "id": "qwen3-5-omni",
+   "name": "Qwen3.5-Omni",
+   "org": "Alibaba",
+   "type": "e2e"
+  },
+  {
+   "id": "omnivinci",
+   "name": "OmniVinci",
+   "org": "NVIDIA",
+   "type": "e2e"
+  },
+  {
+   "id": "mu-llama",
+   "name": "MU-LLaMA",
+   "org": "—",
+   "type": "e2e"
+  },
+  {
+   "id": "mellow",
+   "name": "Mellow",
+   "org": "—",
+   "type": "e2e"
+  },
+  {
+   "id": "twist-7b",
+   "name": "TWIST 7B",
+   "org": "HUJI",
+   "type": "speech-lm"
+  },
+  {
+   "id": "step-audio-r1",
+   "name": "Step-Audio-R1",
+   "org": "StepFun",
+   "type": "e2e"
+  },
+  {
+   "id": "twist-1-3b",
+   "name": "TWIST 1.3B",
+   "org": "HUJI",
+   "type": "speech-lm"
+  },
+  {
+   "id": "phi-4",
+   "name": "Phi-4",
+   "org": "Microsoft",
+   "type": "e2e"
+  },
+  {
+   "id": "gemini-1-5-flash",
+   "name": "Gemini 1.5 Flash",
+   "org": "Google",
+   "type": "e2e"
+  },
+  {
+   "id": "audio-flamingo",
+   "name": "Audio Flamingo",
+   "org": "NVIDIA",
+   "type": "e2e"
+  },
+  {
+   "id": "gemma-3n",
+   "name": "Gemma-3n",
+   "org": "Google",
+   "type": "e2e"
+  },
+  {
+   "id": "spirit-lm-expressive",
+   "name": "SpiRit-LM Expressive",
+   "org": "Meta",
+   "type": "speech-lm"
+  },
+  {
+   "id": "ming-omni",
+   "name": "Ming-Omni",
+   "org": "Ant Group",
+   "type": "e2e"
+  },
+  {
+   "id": "vita-audio",
+   "name": "VITA-Audio",
+   "org": "Tencent",
+   "type": "e2e"
+  },
+  {
+   "id": "gemini-2-5",
+   "name": "Gemini 2.5",
+   "org": "Google",
+   "type": "e2e"
+  },
+  {
+   "id": "cascade:asr-llm",
+   "name": "ASR + LLM (cascade)",
+   "org": "—",
+   "type": "cascade"
+  },
+  {
+   "id": "vocalnet",
+   "name": "VocalNet",
+   "org": "—",
+   "type": "e2e"
+  },
+  {
+   "id": "musilingo",
+   "name": "MusiLingo",
+   "org": "—",
+   "type": "e2e"
+  },
+  {
+   "id": "gslm",
+   "name": "GSLM",
+   "org": "Meta",
+   "type": "speech-lm"
+  },
+  {
+   "id": "twist",
+   "name": "TWIST",
+   "org": "HUJI",
+   "type": "speech-lm"
+  },
+  {
+   "id": "slam-omni",
+   "name": "SLAM-Omni",
+   "org": "SJTU",
+   "type": "e2e"
+  },
+  {
+   "id": "onellm",
+   "name": "OneLLM",
+   "org": "Shanghai AI Lab",
+   "type": "e2e"
+  },
+  {
+   "id": "video-llama",
+   "name": "Video-LLaMA",
+   "org": "Alibaba",
+   "type": "e2e"
+  },
+  {
+   "id": "speechgpt2",
+   "name": "SpeechGPT-2",
+   "org": "Fudan",
+   "type": "e2e"
+  },
+  {
+   "id": "doubao",
+   "name": "Doubao (realtime)",
+   "org": "ByteDance",
+   "type": "e2e"
+  },
+  {
+   "id": "gemini-flash",
+   "name": "Gemini Flash (version unstated)",
+   "org": "Google",
+   "type": "e2e"
+  },
+  {
+   "id": "anygpt",
+   "name": "AnyGPT",
+   "org": "Fudan",
+   "type": "e2e"
+  },
+  {
+   "id": "opens2s",
+   "name": "OpenS2S",
+   "org": "—",
+   "type": "e2e"
+  },
+  {
+   "id": "whisper-gpt4o",
+   "name": "Whisper + GPT-4o (cascade)",
+   "org": "—",
+   "type": "cascade"
+  },
+  {
+   "id": "imagebind-llm",
+   "name": "ImageBind-LLM",
+   "org": "—",
+   "type": "e2e"
+  },
+  {
+   "id": "pengi",
+   "name": "Pengi",
+   "org": "Microsoft",
+   "type": "e2e"
+  },
+  {
+   "id": "whisper-llama3",
+   "name": "Whisper + LLaMA-3 (cascade)",
+   "org": "—",
+   "type": "cascade"
+  },
+  {
+   "id": "audiolm",
+   "name": "AudioLM",
+   "org": "Google",
+   "type": "speech-lm"
+  },
+  {
+   "id": "last-1-3b",
+   "name": "LAST 1.3B",
+   "org": "HUJI",
+   "type": "speech-lm"
+  },
+  {
+   "id": "m2ugen",
+   "name": "M2UGen",
+   "org": "NUS",
+   "type": "e2e"
+  },
+  {
+   "id": "cascade:whisper-llm",
+   "name": "Whisper-LLM (cascade)",
+   "org": "—",
+   "type": "cascade"
+  },
+  {
+   "id": "desta",
+   "name": "DeSTA",
+   "org": "NTU",
+   "type": "e2e"
+  },
+  {
+   "id": "cascade:asr-aac-llm",
+   "name": "ASR + AAC + LLM (cascade)",
+   "org": "—",
+   "type": "cascade"
+  },
+  {
+   "id": "music-flamingo",
+   "name": "Music Flamingo",
+   "org": "NVIDIA",
+   "type": "e2e"
+  },
+  {
+   "id": "granite-speech",
+   "name": "Granite Speech",
+   "org": "IBM",
+   "type": "e2e"
+  },
+  {
+   "id": "dashenglm",
+   "name": "DashengLM",
+   "org": "Xiaomi",
+   "type": "e2e"
+  },
+  {
+   "id": "macaw-llm",
+   "name": "Macaw-LLM",
+   "org": "Tencent",
+   "type": "e2e"
+  },
+  {
+   "id": "gemini-3",
+   "name": "Gemini 3",
+   "org": "Google",
+   "type": "e2e"
+  },
+  {
+   "id": "gemini-2",
+   "name": "Gemini 2.0",
+   "org": "Google",
+   "type": "e2e"
+  },
+  {
+   "id": "claude-sonnet",
+   "name": "Claude Sonnet",
+   "org": "Anthropic",
+   "type": "text"
+  },
+  {
+   "id": "bat",
+   "name": "BAT",
+   "org": "CMU",
+   "type": "e2e"
+  },
+  {
+   "id": "moss-audio",
+   "name": "MOSS-Audio",
+   "org": "Fudan",
+   "type": "e2e"
+  },
+  {
+   "id": "whisper-gpt4",
+   "name": "Whisper + GPT-4 (cascade)",
+   "org": "—",
+   "type": "cascade"
+  },
+  {
+   "id": "lyra",
+   "name": "Lyra",
+   "org": "—",
+   "type": "e2e"
+  },
+  {
+   "id": "gpt-5",
+   "name": "GPT-5",
+   "org": "OpenAI",
+   "type": "text"
+  },
+  {
+   "id": "mimo-v2-omni",
+   "name": "MiMo-V2-Omni",
+   "org": "Xiaomi",
+   "type": "e2e"
+  },
+  {
+   "id": "megrez-omni",
+   "name": "Megrez-3B-Omni",
+   "org": "Infinigence",
+   "type": "e2e"
+  },
+  {
+   "id": "minmo",
+   "name": "MinMo",
+   "org": "Alibaba",
+   "type": "e2e"
+  },
+  {
+   "id": "qwen2-7b-instruct",
+   "name": "Qwen2-7B-Instruct (text)",
+   "org": "Alibaba",
+   "type": "text"
+  },
+  {
+   "id": "video-llama3",
+   "name": "Video-LLaMA3",
+   "org": "Alibaba",
+   "type": "e2e"
+  },
+  {
+   "id": "gpt-audio-mini",
+   "name": "GPT-Audio-mini",
+   "org": "OpenAI",
+   "type": "e2e"
+  },
+  {
+   "id": "grok",
+   "name": "Grok",
+   "org": "xAI",
+   "type": "e2e"
+  },
+  {
+   "id": "twist-350m",
+   "name": "TWIST 350M",
+   "org": "HUJI",
+   "type": "speech-lm"
+  },
+  {
+   "id": "pgslm",
+   "name": "pGSLM",
+   "org": "Meta",
+   "type": "speech-lm"
+  },
+  {
+   "id": "x-instructblip",
+   "name": "X-InstructBLIP",
+   "org": "Salesforce",
+   "type": "e2e"
+  },
+  {
+   "id": "j-moshi",
+   "name": "J-Moshi",
+   "org": "Nagoya",
+   "type": "e2e"
+  },
+  {
+   "id": "sonic",
+   "name": "Sonic",
+   "org": "Cartesia",
+   "type": "e2e"
+  },
+  {
+   "id": "chatbridge",
+   "name": "ChatBridge",
+   "org": "—",
+   "type": "e2e"
+  },
+  {
+   "id": "cascade:whisper-llama",
+   "name": "Whisper-LLaMA (cascade)",
+   "org": "—",
+   "type": "cascade"
+  },
+  {
+   "id": "gpt-4-1",
+   "name": "GPT-4.1",
+   "org": "OpenAI",
+   "type": "text"
+  },
+  {
+   "id": "bert-gslm",
+   "name": "BERT-GSLM",
+   "org": "—",
+   "type": "e2e"
+  },
+  {
+   "id": "sensedialog",
+   "name": "SenseDialog",
+   "org": "SenseTime",
+   "type": "e2e"
+  },
+  {
+   "id": "speechjudge",
+   "name": "SpeechJudge",
+   "org": "—",
+   "type": "e2e"
+  },
+  {
+   "id": "gazelle",
+   "name": "Gazelle",
+   "org": "Tincans",
+   "type": "e2e"
+  },
+  {
+   "id": "gemini-live-2-5",
+   "name": "Gemini Live 2.5",
+   "org": "Google",
+   "type": "e2e"
+  },
+  {
+   "id": "reka-core",
+   "name": "Reka Core",
+   "org": "Reka",
+   "type": "e2e"
+  },
+  {
+   "id": "ixc-omnilive",
+   "name": "IXC2.5-OmniLive",
+   "org": "Shanghai AI Lab",
+   "type": "e2e"
+  },
+  {
+   "id": "gemini-audio",
+   "name": "Gemini (audio)",
+   "org": "Google",
+   "type": "e2e"
+  },
+  {
+   "id": "mio-instruct",
+   "name": "MIO-Instruct",
+   "org": "—",
+   "type": "e2e"
+  },
+  {
+   "id": "cascade:asr-text-llm",
+   "name": "ASR + Text LLM (cascade)",
+   "org": "—",
+   "type": "cascade"
+  },
+  {
+   "id": "cascade:captioning-scratch",
+   "name": "Captioning-scratch (cascade)",
+   "org": "—",
+   "type": "cascade"
+  },
+  {
+   "id": "qwen2-5-7b-instruct",
+   "name": "Qwen2.5-7B-Instruct (text)",
+   "org": "Alibaba",
+   "type": "text"
+  },
+  {
+   "id": "balsa",
+   "name": "BALSa",
+   "org": "NTU",
+   "type": "e2e"
+  },
+  {
+   "id": "vae-gslm",
+   "name": "VAE-GSLM",
+   "org": "—",
+   "type": "speech-lm"
+  },
+  {
+   "id": "cascade:whisper-llama-2",
+   "name": "Whisper + LLaMA 2 (cascade)",
+   "org": "—",
+   "type": "cascade"
+  },
+  {
+   "id": "avicuna",
+   "name": "AVicuna",
+   "org": "—",
+   "type": "e2e"
+  },
+  {
+   "id": "llm-jp-moshi",
+   "name": "LLM-jp-Moshi",
+   "org": "LLM-jp",
+   "type": "e2e"
+  },
+  {
+   "id": "spectron",
+   "name": "Spectron",
+   "org": "Google",
+   "type": "speech-lm"
+  },
+  {
+   "id": "lat-audio",
+   "name": "LAT-Audio",
+   "org": "—",
+   "type": "e2e"
+  },
+  {
+   "id": "gemini-live-3",
+   "name": "Gemini Live 3.x",
+   "org": "Google",
+   "type": "e2e"
+  },
+  {
+   "id": "cascade:whisper-qwen3-8b",
+   "name": "Whisper + Qwen3-8B (cascade)",
+   "org": "—",
+   "type": "cascade"
+  },
+  {
+   "id": "openmu",
+   "name": "OpenMU",
+   "org": "Sony",
+   "type": "e2e"
+  },
+  {
+   "id": "cascade:whisperpro-qwen2-5-7b",
+   "name": "WhisperPro + Qwen2.5-7B (cascade)",
+   "org": "—",
+   "type": "cascade"
+  },
+  {
+   "id": "cascade:whisper-bge",
+   "name": "Whisper+BGE (cascade)",
+   "org": "—",
+   "type": "cascade"
+  },
+  {
+   "id": "cascade:whisper-v3-turbo-llama-3-1-8b",
+   "name": "Whisper-v3-turbo+LLaMA-3.1-8B (cascade)",
+   "org": "—",
+   "type": "cascade"
+  },
+  {
+   "id": "cascade:whisper-qwen-inst-7b",
+   "name": "Whisper + Qwen-Inst-7B (cascade)",
+   "org": "—",
+   "type": "cascade"
+  },
+  {
+   "id": "last-350m",
+   "name": "LAST 350M",
+   "org": "HUJI",
+   "type": "speech-lm"
+  },
+  {
+   "id": "cascade:captioning-init",
+   "name": "Captioning-init (cascade)",
+   "org": "—",
+   "type": "cascade"
+  },
+  {
+   "id": "cascade:caption-deepseek-v3",
+   "name": "Caption + DeepSeek-V3 (cascade)",
+   "org": "—",
+   "type": "cascade"
+  },
+  {
+   "id": "cascade:whisper-v3-qwen3",
+   "name": "Whisper-v3 + Qwen3 (cascade)",
+   "org": "—",
+   "type": "cascade"
+  },
+  {
+   "id": "cascade:nova-3-gpt-5-4-sonic-3",
+   "name": "Nova-3 + GPT-5.4 + Sonic 3 (cascade)",
+   "org": "—",
+   "type": "cascade"
+  },
+  {
+   "id": "cascade:parakeet-1-1-gemma-4-31b-kokoro",
+   "name": "Parakeet-1.1 + Gemma-4-31B + Kokoro (cascade)",
+   "org": "—",
+   "type": "cascade"
+  },
+  {
+   "id": "stresslm",
+   "name": "StresSLM",
+   "org": "—",
+   "type": "e2e"
+  },
+  {
+   "id": "cascade:ink-whisper-haiku-4-5-sonic-3",
+   "name": "Ink-whisper + Haiku-4.5 + Sonic 3 (cascade)",
+   "org": "—",
+   "type": "cascade"
+  },
+  {
+   "id": "cascade:qwen3-asr-qwen2-5",
+   "name": "Qwen3-ASR + Qwen2.5 (cascade)",
+   "org": "—",
+   "type": "cascade"
+  },
+  {
+   "id": "cascade:whisper-gpt",
+   "name": "Whisper+GPT (cascade)",
+   "org": "—",
+   "type": "cascade"
+  },
+  {
+   "id": "step-2-mini",
+   "name": "Step-2-mini",
+   "org": "StepFun",
+   "type": "e2e"
+  },
+  {
+   "id": "cascade:whisper-v3-qwen2-5",
+   "name": "Whisper-v3 + Qwen2.5 (cascade)",
+   "org": "—",
+   "type": "cascade"
+  },
+  {
+   "id": "cascade:nova-3-gpt-5-4-mini-aura-2",
+   "name": "Nova-3 + GPT-5.4-mini + Aura-2 (cascade)",
+   "org": "—",
+   "type": "cascade"
+  },
+  {
+   "id": "cascade:qwen3-asr-qwen3",
+   "name": "Qwen3-ASR + Qwen3 (cascade)",
+   "org": "—",
+   "type": "cascade"
+  },
+  {
+   "id": "cascade:caption-gpt-4o",
+   "name": "Caption + GPT-4o (cascade)",
+   "org": "—",
+   "type": "cascade"
+  },
+  {
+   "id": "cascade:qwen3-asr-llama-3-1",
+   "name": "Qwen3-ASR + Llama-3.1 (cascade)",
+   "org": "—",
+   "type": "cascade"
+  },
+  {
+   "id": "cascade:whisper-large-v3-gpt-oss-20b",
+   "name": "Whisper-Large-v3 + GPT-oSS-20B (cascade)",
+   "org": "—",
+   "type": "cascade"
+  },
+  {
+   "id": "cascade:caption-openai-o1",
+   "name": "Caption + OpenAI o1 (cascade)",
+   "org": "—",
+   "type": "cascade"
+  },
+  {
+   "id": "cascade:caption-deepseek-r1",
+   "name": "Caption + DeepSeek-R1 (cascade)",
+   "org": "—",
+   "type": "cascade"
+  },
+  {
+   "id": "cascade:qwen3-asr-llama-3-2",
+   "name": "Qwen3-ASR + Llama-3.2 (cascade)",
+   "org": "—",
+   "type": "cascade"
+  },
+  {
+   "id": "cascade:whisper-v3-sea-lion-v3-8b-it",
+   "name": "Whisper-v3 + SEA-LION-v3-8B-IT (cascade)",
+   "org": "—",
+   "type": "cascade"
+  },
+  {
+   "id": "cascade:caption-openai-o3",
+   "name": "Caption + OpenAI o3 (cascade)",
+   "org": "—",
+   "type": "cascade"
+  },
+  {
+   "id": "cascade:captions-qwen235b-a22b",
+   "name": "Captions + Qwen235B-A22B (cascade)",
+   "org": "—",
+   "type": "cascade"
+  },
+  {
+   "id": "cascade:sensevoicesmall-gpt4o",
+   "name": "SenseVoiceSmall+GPT4o (cascade)",
+   "org": "—",
+   "type": "cascade"
+  },
+  {
+   "id": "cascade:caption-gpt4o",
+   "name": "Caption + GPT4o (cascade)",
+   "org": "—",
+   "type": "cascade"
+  },
+  {
+   "id": "cascade:whisper-qwen3-32b",
+   "name": "Whisper + Qwen3-32B (cascade)",
+   "org": "—",
+   "type": "cascade"
+  },
+  {
+   "id": "cascade:whisperv3-gemma-12b",
+   "name": "whisperv3 + Gemma 12B (cascade)",
+   "org": "—",
+   "type": "cascade"
+  },
+  {
+   "id": "cascade:whisper-qwen3-1-7b",
+   "name": "Whisper + Qwen3-1.7B (cascade)",
+   "org": "—",
+   "type": "cascade"
+  },
+  {
+   "id": "cascade:whisper-qwen3-4b",
+   "name": "Whisper + Qwen3-4B (cascade)",
+   "org": "—",
+   "type": "cascade"
+  },
+  {
+   "id": "cascade:whisper-large-v3-qwen3-4b-instruct-2507",
+   "name": "whisper-large-v3 + Qwen3-4B-Instruct-2507 (cascade)",
+   "org": "—",
+   "type": "cascade"
+  },
+  {
+   "id": "cascade:whisper-glm-4-9b-chat-hf",
+   "name": "Whisper + GLM-4-9B-Chat-HF (cascade)",
+   "org": "—",
+   "type": "cascade"
+  },
+  {
+   "id": "cascade:captioning-scratch-tseng-et-al-2025",
+   "name": "Captioning-scratch (Tseng et al. 2025) (cascade)",
+   "org": "—",
+   "type": "cascade"
+  },
+  {
+   "id": "cascade:asr-llm-low",
+   "name": "ASR + LLM (Low) (cascade)",
+   "org": "—",
+   "type": "cascade"
+  },
+  {
+   "id": "cascade:asr-llm-high",
+   "name": "ASR + LLM (High) (cascade)",
+   "org": "—",
+   "type": "cascade"
+  },
+  {
+   "id": "cascade:whisper-llama-3-modular",
+   "name": "Whisper-Llama-3 (modular) (cascade)",
+   "org": "—",
+   "type": "cascade"
+  },
+  {
+   "id": "cascade:whisper-qwen3-4b-instruct-2507",
+   "name": "Whisper + Qwen3-4B-Instruct-2507 (cascade)",
+   "org": "—",
+   "type": "cascade"
+  },
+  {
+   "id": "cascade:asr-chatgpt",
+   "name": "ASR+ChatGPT (cascade)",
+   "org": "—",
+   "type": "cascade"
+  },
+  {
+   "id": "cascade:whisperv3-qwen-1-7b",
+   "name": "whisperv3 + Qwen 1.7B (cascade)",
+   "org": "—",
+   "type": "cascade"
+  },
+  {
+   "id": "cascade:whisperv3-gemma-27b",
+   "name": "whisperv3 + Gemma 27B (cascade)",
+   "org": "—",
+   "type": "cascade"
+  },
+  {
+   "id": "cascade:whisper-qwen-3",
+   "name": "Whisper + Qwen 3 (cascade)",
+   "org": "—",
+   "type": "cascade"
+  },
+  {
+   "id": "cascade:whisperv3-qwen-4b",
+   "name": "whisperv3 + Qwen 4B (cascade)",
+   "org": "—",
+   "type": "cascade"
+  },
+  {
+   "id": "typhoon-audio",
+   "name": "Typhoon-Audio",
+   "org": "SCB10X",
+   "type": "e2e"
+  },
+  {
+   "id": "cascade:whisper-qwen2-5",
+   "name": "Whisper+Qwen2.5 (cascade)",
+   "org": "—",
+   "type": "cascade"
+  },
+  {
+   "id": "cascade:whisper-qwen2-0-5b-instruct",
+   "name": "Whisper + Qwen2-0.5B-Instruct (cascade)",
+   "org": "—",
+   "type": "cascade"
+  },
+  {
+   "id": "cascade:whisperv3-qwen-8b",
+   "name": "whisperv3 + Qwen 8B (cascade)",
+   "org": "—",
+   "type": "cascade"
+  },
+  {
+   "id": "cascade:whisper-gpt-tts",
+   "name": "Whisper-GPT-TTS (cascade)",
+   "org": "—",
+   "type": "cascade"
+  },
+  {
+   "id": "doubao-seed-2-0-lite",
+   "name": "Doubao-Seed-2.0-lite",
+   "org": "ByteDance",
+   "type": "e2e"
+  },
+  {
+   "id": "minicpm-o-4-5",
+   "name": "MiniCPM-o-4.5",
+   "org": "OpenBMB",
+   "type": "e2e"
+  },
+  {
+   "id": "qwen3-5-omni-plus",
+   "name": "Qwen3.5-Omni-Plus",
+   "org": "Alibaba",
+   "type": "e2e"
+  },
+  {
+   "id": "gemini-3-1-pro",
+   "name": "Gemini 3.1 Pro",
+   "org": "Google",
+   "type": "e2e"
+  },
+  {
+   "id": "gemini-3-5-flash",
+   "name": "Gemini 3.5 Flash",
+   "org": "Google",
+   "type": "e2e"
+  },
+  {
+   "id": "gemini-3-1-flash-lite",
+   "name": "Gemini 3.1 Flash-Lite",
+   "org": "Google",
+   "type": "e2e"
+  },
+  {
+   "id": "gpt-audio-1-5",
+   "name": "GPT-Audio-1.5",
+   "org": "OpenAI",
+   "type": "e2e"
+  },
+  {
+   "id": "audio-flamingo-next",
+   "name": "Audio Flamingo Next",
+   "org": "NVIDIA",
+   "type": "e2e"
+  },
+  {
+   "id": "audio-flamingo-next-think",
+   "name": "Audio Flamingo Next-Think",
+   "org": "NVIDIA",
+   "type": "e2e"
+  },
+  {
+   "id": "audio-flamingo-3-think",
+   "name": "Audio Flamingo 3-Think",
+   "org": "NVIDIA",
+   "type": "e2e"
+  },
+  {
+   "id": "qwen3-omni-thinking",
+   "name": "Qwen3-Omni-Thinking",
+   "org": "Alibaba",
+   "type": "e2e"
+  },
+  {
+   "id": "mimo-audio-think",
+   "name": "MiMo-Audio-Think",
+   "org": "Xiaomi",
+   "type": "e2e"
+  },
+  {
+   "id": "mimo-v2-5",
+   "name": "MiMo-V2.5",
+   "org": "Xiaomi",
+   "type": "e2e"
+  },
+  {
+   "id": "omni-r1",
+   "name": "Omni-R1",
+   "org": "—",
+   "type": "e2e"
+  },
+  {
+   "id": "audiomcq-weak-to-strong",
+   "name": "AudioMCQ-Weak-to-Strong",
+   "org": "—",
+   "type": "e2e"
+  },
+  {
+   "id": "gemini-live-3-1-flash",
+   "name": "Gemini 3.1 Flash Live",
+   "org": "Google",
+   "type": "e2e"
+  },
+  {
+   "id": "voxtral-mini",
+   "name": "Voxtral-Mini",
+   "org": "Mistral",
+   "type": "e2e"
+  },
+  {
+   "id": "voxtral-small",
+   "name": "Voxtral-Small",
+   "org": "Mistral",
+   "type": "e2e"
+  },
+  {
+   "id": "baichuan-omni-1-5",
+   "name": "Baichuan-Omni-1.5",
+   "org": "Baichuan",
+   "type": "e2e"
+  },
+  {
+   "id": "qwen3-5-omni-flash",
+   "name": "Qwen3.5-Omni-Flash",
+   "org": "Alibaba",
+   "type": "e2e"
+  },
+  {
+   "id": "gpt-5-4",
+   "name": "GPT-5.4",
+   "org": "OpenAI",
+   "type": "e2e"
+  },
+  {
+   "id": "claude-opus-4-6",
+   "name": "Claude Opus 4.6",
+   "org": "Anthropic",
+   "type": "e2e"
+  },
+  {
+   "id": "gemini-3-1-flash",
+   "name": "Gemini 3.1 Flash",
+   "org": "Google",
+   "type": "e2e"
+  },
+  {
+   "id": "llama-4-maverick",
+   "name": "Llama 4 Maverick",
+   "org": "Meta",
+   "type": "e2e"
+  },
+  {
+   "id": "qwen-audio-chat",
+   "name": "Qwen-Audio-Chat",
+   "org": "Alibaba",
+   "type": "e2e"
+  },
+  {
+   "id": "gemini-2-5-flash-lite",
+   "name": "Gemini 2.5 Flash-Lite",
+   "org": "Google",
+   "type": "e2e"
+  },
+  {
+   "id": "muse-spark-1-2",
+   "name": "Muse Spark 1.2",
+   "org": "Meta",
+   "type": "e2e"
+  },
+  {
+   "id": "step-audio-2-mini",
+   "name": "Step-Audio 2 mini",
+   "org": "StepFun",
+   "type": "e2e"
+  },
+  {
+   "id": "gemma-4-e4b",
+   "name": "Gemma-4-E4B-it",
+   "org": "Google",
+   "type": "e2e"
+  },
+  {
+   "id": "gpt-realtime-2",
+   "name": "GPT-Realtime 2",
+   "org": "OpenAI",
+   "type": "e2e"
+  },
+  {
+   "id": "firered-audio",
+   "name": "FireRedAudio",
+   "org": "FireRed",
+   "type": "e2e"
+  },
+  {
+   "id": "mullama",
+   "name": "MU-LLaMA",
+   "org": "NTU Singapore",
+   "type": "e2e"
+  }
+ ]
 }

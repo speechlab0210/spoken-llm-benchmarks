@@ -1,109 +1,114 @@
 {
-  "entries": [
-    {
-      "date": "2026-09-03",
-      "source": "daily crawl review",
-      "change": "Catalogued TAG-Bench (2609.01542) and VoiceLongMemEval (2609.00570) from the 2026-09-03 daily round; added 11 TAG-Bench overall-mIoU cells (Table 2) and 4 VoiceLongMemEval audio-native cells (Table 8). Five other flagged candidates ruled out of scope (2609.00727 probing study, 2609.01315 evaluation harness, 2609.00276 AD-detection classifiers, 2609.00330 text matchers over ASR transcripts, 2609.01113 text MRC)."
-    },
-    {
-      "date": "2026-09-02",
-      "source": "daily crawl review",
-      "change": "Six benchmarks added from the 2026-08-28/31 arXiv batch: VocalAffectBench (2608.28932, vocal emotion from audio alone), MusicGroundingBench (2608.29480, temporal music grounding), CREMA-ASIS (2608.28966, acoustic and semantic affective cues put in conflict), HEAR (2608.29120, speaker-attributed reasoning over multi-party audio), a prosodic-heuristic diagnostic for sarcasm detection (2608.30204), and AynVQA from the ImageEval 2026 shared task (2608.30475, spoken VQA in English and Modern Standard Arabic). 29 sourced result cells and three models (Step-Audio 2 mini, Gemma-4-E4B-it, GPT-Realtime 2) were added with them. VocalAffectBench cells are read off v2 of that paper, which revised the clip count and the headline accuracy downward from v1. Four further flagged papers were reviewed and left out of scope: TEMPO (2608.29999) and stride-k subsampling (2608.30927) propose a model and a method rather than a benchmark, VoiceCodeBench (2608.28916) evaluates twelve ASR systems and no general spoken LLM, and MusGU+ (2608.30940) evaluates generative music systems."
-    },
-    {
-      "date": "2026-09-01",
-      "source": "daily crawl review",
-      "change": "Three benchmarks added from the 2026-08-27/28 arXiv batch: SURE-Challenge (2608.27783, pre-generation rejection of audio that carries no evidence), MuSP-Bench (2608.28212, music understanding across scores and performances), and DualEvasion (2608.28040, textual evasion vs. vocal confidence in earnings calls). 29 sourced result cells and three models (Qwen-Audio-Chat, Gemini 2.5 Flash-Lite, Muse Spark 1.2) added with them. Three further flagged papers were reviewed and left out of scope."
-    },
-    {
-      "date": "2026-08-31",
-      "source": "owner instruction",
-      "change": "Disclosure strengthened at the owner's request: the site now states plainly, in the hero and the footer, that it is not an official publication of ISCA or any other body, that no human has verified its content, and that it is the output of Hung-yi Lee casually prompting an AI agent (Claude Fable 5) to see what AI agents can do. Also added the SCOOT 2.0 cross-links and the stats.json feed earlier the same day."
-    },
-    {
-      "date": "2026-08-30",
-      "source": "internal audit",
-      "change": "Two corrections to the overview paper, caught by an adversarial fact-check while preparing tutorial material from it. Section 5.6 claimed eight of the nine most-measured models are open-weight; the correct count is seven of nine (Gemini 2.5 Flash and GPT-4o-Audio are API-served, without released weights). Section 7.3 called the most-measured system in the catalogue a 2024 model, contradicting section 5.6's own tally: the most-measured is Qwen2.5-Omni (tech report posted March 2025); the 2024 Qwen2-Audio is second. Catalogue data is unaffected - both errors were in the paper's prose only."
-    },
-    {
-      "date": "2026-08-29",
-      "source": "daily review",
-      "change": "Daily review: nine flagged papers read, two catalogued. AudioSpan (arXiv 2608.26431) pairs 360 in-the-wild recordings of 10 minutes to 2.7 hours - each also released in an anchor-modified version - with 3,240 items split across perception, understanding and reasoning, and scores them three ways: multiple choice, rubric-graded open-ended, and an anchor chain cut off at the first error. MMI (arXiv 2608.26317) tests whether an omni model returns the right output modality at all across text, image, audio, video and document, with audio the hardest of the five. They contribute 36 and 15 result cells respectively. AudioSpan cells are the Avg columns of Table 3 and are recorded only for rows where the model name is printed on the row itself, since the table's grouped standard/thinking pairs leave the unnamed rows ambiguous; every cell is labelled with the model's thinking configuration and audio input limit, because open models are scored on truncated audio while closed models run untruncated. MMI cells are Table 4 and record MPS, pass rate and input failure rate rather than the MMI Value, which the paper defines but leaves untested because too few assets came back to grade. Eight models added to the registry. The other seven papers were ruled out of scope: two benchmark audio-video generation, one is a code-switched ASR benchmark, one evaluates unsupervised speech units, one is a mechanistic analysis with no benchmark, one proposes a retrieval embedder, and SpeechGym is an RL training environment that reuses an existing text benchmark's tasks and evaluator unchanged."
-    },
-    {
-      "date": "2026-08-28",
-      "source": "daily review",
-      "change": "Daily review: one benchmark catalogued from three flagged papers. TurnBench (arXiv 2608.25218) pairs a 30-hour, triple-annotated corpus of 154 dyadic conversations with a standardised protocol for end-of-turn and interruption detection, and makes conversation type a controlled variable across six interaction styles; it contributes 18 result cells read off the Overall pooled test columns of Table IV. Only the three deployed spoken-LLM systems in that table are recorded - Gemini 3.1 Flash Live and Moshi, scored on end-of-turn only because a full-duplex model's decisions are read off its produced audio, and the two endpointing modes of the gpt-realtime API, whose cells are labelled by mode and noted as a component of the deployed API rather than the model's own speech. The remaining eleven baselines are energy VADs, endpointing heads and trained turn-taking predictors, not general spoken LLMs, so they are left in the paper. One new model entry was needed (Gemini 3.1 Flash Live). Full-duplex latency is not comparable with a predictor's decision latency because it includes response generation, which is recorded in the benchmark note. Two further flagged papers were read and ruled out of scope: a logit-lens interpretability study of Qwen3-Omni's middle layers (2608.24958), which states outright that its quantities are controls rather than benchmark scores, and Flower Hub (2608.25114), a federated-learning benchmarking platform with no speech or audio content at all."
-    },
-    {
-      "date": "2026-08-27",
-      "source": "daily review",
-      "change": "Daily review: two benchmarks catalogued from four flagged papers. EXAM2 (arXiv 2608.23758) is a six-language multiple-choice audio-understanding set of 5,667 questions in which every answer choice also exists as a generated image, letting the same items be scored on audio, on images, on transcripts or on combinations; it contributes 20 result cells read off Table 3 (the raw-audio rows only, averaged over the six languages), and its test split is derived from MMAU-test-mini so scores are not independent of MMAU. LongAudioQA (arXiv 2608.24048) is a 16,456-question set over long meeting audio from AliMeeting, AMI and DailyTalk with a five-way question taxonomy including an acoustic-aware split that a transcript cannot answer; it contributes 45 result cells from the 'Speech as Context' block of Table 3. LongAudioQA is introduced alongside a method (GRGA) by the same authors, which is recorded in its note - every number on it so far comes from the paper that proposed it. Two further flagged papers were ruled out of scope: a human-versus-LLM-judge agreement study for voice agents (2608.24314), which proposes no benchmark of its own and scores text judges rather than spoken LLMs, and FireRedAudio (2608.24168), which is a unified audio language model rather than an evaluation. No model entries were needed; all eight evaluated systems were already in the model table."
-    },
-    {
-      "date": "2026-08-26",
-      "source": "daily review",
-      "change": "Daily review: two benchmarks catalogued. MRMAD (arXiv 2608.22236) tests whether audio-language models can hear how audio is degraded - nine degradation types at three severities across speech, music and sound, posed as multi-turn dialogues over multiple clips - and contributes 66 result cells read off Table 4 for 22 systems. PUMA (arXiv 2608.21853) is a Polish benchmark whose three audio categories (ASR, speech QA, sound and music QA) contribute 36 strict-score cells from Table 1; for the same-family model pairs the audio columns are recorded against the audio member. Twelve new model entries were needed. Nine further flagged papers were read and ruled out of scope: a coding-agent game-development benchmark, a KV-cache method for long-form speech LLMs, a LoRA post-training study on DCASE audio QA, two video benchmarks (Southeast Asian cultural moments, Hollywood narrative understanding) where audio is an auxiliary condition for vision models rather than the object of evaluation, a text-only Bengali safety benchmark, an ASR-error study of multi-hop RAG pipelines, a clinical on-device meeting-summarisation system, and an audio deepfake detection challenge."
-    },
-    {
-      "date": "2026-08-25",
-      "source": "daily review",
-      "change": "Daily review: OmniAssistBench (arXiv 2608.21360) catalogued, with 11 overall-average result cells read off Tables 2 and 3 and three new model entries (Doubao-Seed-2.0-lite, MiniCPM-o-4.5, Qwen3.5-Omni-Plus). It evaluates omni-modal LLMs as real-time video assistants whose user instructions arrive as audio embedded in the test video. Five further flagged papers were read and ruled out of scope: a Chinese abusive-language benchmark over text rather than speech, a multi-turn conversational AI survey, an audio-chapterization training method, a shared-task system description, and a debate-practice HCI system. Separately, the crawler window was widened after three consecutive empty days: arXiv makes a submission searchable several days after its submittedDate, so a three-day window could close before a paper became visible. Six papers recovered from that gap are included in this review."
-    },
-    {
-      "date": "2026-08-23",
-      "change": "Corrections from an external data audit, each re-checked against the current arXiv version before applying. AudioTrust: 26 fairness cells showed 1-Gamma under the published Gamma symbol, which reversed the model ordering; the printed Gamma values are restored and the column now states that higher is fairer. Nine result values had gone stale as their source papers were revised (VCB Bench Fun-Audio-Chat GK and ML, OmniBench MIO-Instruct across three settings, SpeechRole Qwen2.5-Omni and GPT-4o-Audio in both languages), and Fun-Audio-Chat's MTD score, absent from the earlier version, is now recorded. 87 cells pointed at table numbers that had shifted under unversioned arXiv links (VCB Bench, OmniBench, OpenOmni, AudioMarathon); locators are corrected and now name the version they were checked against.",
-      "source": "external audit"
-    },
-    {
-      "date": "2026-08-23",
-      "change": "Scale-collision guard rewritten. It had been splitting any metric whose values spanned 10 and 50 into '0-10 scale' and '0-100 scale' columns, which mislabelled accuracy, WER, F1, exact-match and rate metrics where a low number is simply a low score: 1,251 cells carried a scale the source never states. A split now requires seeing one model reported at both magnitudes by two different sources, and never applies to a metric published as a percentage. 166 cells across 11 metrics still split; the rest read as their papers printed them.",
-      "source": "external audit"
-    },
-    {
-      "date": "2026-08-23",
-      "change": "Daily review: two flagged arXiv candidates read in full and both ruled out of scope. arXiv:2608.19936 probes benchmark optimization in ASR transcription, and arXiv:2608.20326 is a confidence-estimation method for music information retrieval; neither evaluates general-purpose spoken LLMs. Catalogue unchanged at 360 benchmarks.",
-      "source": "daily review"
-    },
-    {
-      "date": "2026-08-22",
-      "change": "Results now include papers that USE each benchmark, not only the paper that introduced it. All 1,619 citing papers on arXiv were read; 509 of them (31%) actually ran a catalogued benchmark, the rest only cite it in prose. Tables: 2,433 to 15,220 sourced cells over 197 models and 686 distinct source papers, with 341 of 360 benchmarks now carrying at least one score. Surveys were skipped so every number stays first-hand.",
-      "source": "coverage"
-    },
-    {
-      "date": "2026-08-22",
-      "change": "Extraction extended to every catalogued benchmark paper, not just the well-known ones: 268 further papers read. Benchmarks with at least one sourced score went from 90 to 327 of 360, and the tables from 2,913 to 7,858 cells over 179 models. Model-name matching now tolerates spacing variants (Qwen 2.5 Omni = Qwen2.5-Omni).",
-      "source": "coverage"
-    },
-    {
-      "date": "2026-08-22",
-      "change": "Second registry audit after the SALMon report. Found a silent Unicode fault: papers using U+2011 non-breaking hyphens (SpeechR) produced model names that looked identical to matched ones but never matched, dropping every row. Also recovered Gemini variants, J-Moshi, Megrez-3B-Omni, Grok, Fun-Audio-Chat and others, gave each named cascade pipeline its own row instead of discarding it, and explicitly excluded CLAP/VAD/encoder/TTS rows that are out of scope. Dropped cells fell from 1,031 to 263; the tables gained 480 cells and 70 models.",
-      "source": "coverage audit"
-    },
-    {
-      "date": "2026-08-22",
-      "change": "Presentation: the full catalogue moved to the foot of the page and is now one line per benchmark, paged. Result tables open at 6 benchmarks by 12 models with controls to widen, and a column whose benchmark reports several metrics now carries a metric picker instead of silently showing one.",
-      "source": "reader feedback"
-    },
-    {
-      "date": "2026-08-22",
-      "change": "Fixed a model-registry gap that silently dropped the pure speech-LM family (TWIST, LAST, pGSLM, dGSLM, GSLM, AudioLM, Spectron, SpiRit-LM Expressive) — the family that likelihood-based benchmarks actually evaluate. SALMon went from 1 model to 8; 152 result cells and 17 models recovered overall.",
-      "source": "reader report"
-    },
-    {
-      "date": "2026-08-22",
-      "change": "Recall pass over an independently harvested arXiv pool (25,446 speech-relevant records via OAI-PMH) added 91 benchmarks that keyword-driven discovery had missed.",
-      "source": "coverage audit"
-    },
-    {
-      "date": "2026-08-22",
-      "change": "Result tables constrained to one metric per column, with a scale-collision guard that separates 1-5 judge scores from the same metric normalised to 100.",
-      "source": "data quality"
-    },
-    {
-      "date": "2026-08-22",
-      "change": "Atlas published: 360 benchmarks, 19 capability categories, arXiv timeline, and model-by-benchmark tables with 2,433 sourced result cells.",
-      "source": "initial build"
-    }
-  ]
+ "entries": [
+  {
+   "date": "2026-09-04",
+   "source": "daily crawl review",
+   "change": "Catalogued AIB (2609.02277), the auditory illusion benchmark for LALMs, with 36 Table 2 average-column cells (HLA / RA / ISI / control accuracy for 8 LALMs plus Gemini 3.1 Pro); Pengi excluded because >20% of its replies were unparseable. Three other flagged candidates ruled out of scope (2609.02343 SonicCaps captioning training dataset, 2609.01788 VakyArth text-only Indic pragmatics, 2609.01810 TalkFa text Farsi dialogue)."
+  },
+  {
+   "date": "2026-09-03",
+   "source": "daily crawl review",
+   "change": "Catalogued TAG-Bench (2609.01542) and VoiceLongMemEval (2609.00570) from the 2026-09-03 daily round; added 11 TAG-Bench overall-mIoU cells (Table 2) and 4 VoiceLongMemEval audio-native cells (Table 8). Five other flagged candidates ruled out of scope (2609.00727 probing study, 2609.01315 evaluation harness, 2609.00276 AD-detection classifiers, 2609.00330 text matchers over ASR transcripts, 2609.01113 text MRC)."
+  },
+  {
+   "date": "2026-09-02",
+   "source": "daily crawl review",
+   "change": "Six benchmarks added from the 2026-08-28/31 arXiv batch: VocalAffectBench (2608.28932, vocal emotion from audio alone), MusicGroundingBench (2608.29480, temporal music grounding), CREMA-ASIS (2608.28966, acoustic and semantic affective cues put in conflict), HEAR (2608.29120, speaker-attributed reasoning over multi-party audio), a prosodic-heuristic diagnostic for sarcasm detection (2608.30204), and AynVQA from the ImageEval 2026 shared task (2608.30475, spoken VQA in English and Modern Standard Arabic). 29 sourced result cells and three models (Step-Audio 2 mini, Gemma-4-E4B-it, GPT-Realtime 2) were added with them. VocalAffectBench cells are read off v2 of that paper, which revised the clip count and the headline accuracy downward from v1. Four further flagged papers were reviewed and left out of scope: TEMPO (2608.29999) and stride-k subsampling (2608.30927) propose a model and a method rather than a benchmark, VoiceCodeBench (2608.28916) evaluates twelve ASR systems and no general spoken LLM, and MusGU+ (2608.30940) evaluates generative music systems."
+  },
+  {
+   "date": "2026-09-01",
+   "source": "daily crawl review",
+   "change": "Three benchmarks added from the 2026-08-27/28 arXiv batch: SURE-Challenge (2608.27783, pre-generation rejection of audio that carries no evidence), MuSP-Bench (2608.28212, music understanding across scores and performances), and DualEvasion (2608.28040, textual evasion vs. vocal confidence in earnings calls). 29 sourced result cells and three models (Qwen-Audio-Chat, Gemini 2.5 Flash-Lite, Muse Spark 1.2) added with them. Three further flagged papers were reviewed and left out of scope."
+  },
+  {
+   "date": "2026-08-31",
+   "source": "owner instruction",
+   "change": "Disclosure strengthened at the owner's request: the site now states plainly, in the hero and the footer, that it is not an official publication of ISCA or any other body, that no human has verified its content, and that it is the output of Hung-yi Lee casually prompting an AI agent (Claude Fable 5) to see what AI agents can do. Also added the SCOOT 2.0 cross-links and the stats.json feed earlier the same day."
+  },
+  {
+   "date": "2026-08-30",
+   "source": "internal audit",
+   "change": "Two corrections to the overview paper, caught by an adversarial fact-check while preparing tutorial material from it. Section 5.6 claimed eight of the nine most-measured models are open-weight; the correct count is seven of nine (Gemini 2.5 Flash and GPT-4o-Audio are API-served, without released weights). Section 7.3 called the most-measured system in the catalogue a 2024 model, contradicting section 5.6's own tally: the most-measured is Qwen2.5-Omni (tech report posted March 2025); the 2024 Qwen2-Audio is second. Catalogue data is unaffected - both errors were in the paper's prose only."
+  },
+  {
+   "date": "2026-08-29",
+   "source": "daily review",
+   "change": "Daily review: nine flagged papers read, two catalogued. AudioSpan (arXiv 2608.26431) pairs 360 in-the-wild recordings of 10 minutes to 2.7 hours - each also released in an anchor-modified version - with 3,240 items split across perception, understanding and reasoning, and scores them three ways: multiple choice, rubric-graded open-ended, and an anchor chain cut off at the first error. MMI (arXiv 2608.26317) tests whether an omni model returns the right output modality at all across text, image, audio, video and document, with audio the hardest of the five. They contribute 36 and 15 result cells respectively. AudioSpan cells are the Avg columns of Table 3 and are recorded only for rows where the model name is printed on the row itself, since the table's grouped standard/thinking pairs leave the unnamed rows ambiguous; every cell is labelled with the model's thinking configuration and audio input limit, because open models are scored on truncated audio while closed models run untruncated. MMI cells are Table 4 and record MPS, pass rate and input failure rate rather than the MMI Value, which the paper defines but leaves untested because too few assets came back to grade. Eight models added to the registry. The other seven papers were ruled out of scope: two benchmark audio-video generation, one is a code-switched ASR benchmark, one evaluates unsupervised speech units, one is a mechanistic analysis with no benchmark, one proposes a retrieval embedder, and SpeechGym is an RL training environment that reuses an existing text benchmark's tasks and evaluator unchanged."
+  },
+  {
+   "date": "2026-08-28",
+   "source": "daily review",
+   "change": "Daily review: one benchmark catalogued from three flagged papers. TurnBench (arXiv 2608.25218) pairs a 30-hour, triple-annotated corpus of 154 dyadic conversations with a standardised protocol for end-of-turn and interruption detection, and makes conversation type a controlled variable across six interaction styles; it contributes 18 result cells read off the Overall pooled test columns of Table IV. Only the three deployed spoken-LLM systems in that table are recorded - Gemini 3.1 Flash Live and Moshi, scored on end-of-turn only because a full-duplex model's decisions are read off its produced audio, and the two endpointing modes of the gpt-realtime API, whose cells are labelled by mode and noted as a component of the deployed API rather than the model's own speech. The remaining eleven baselines are energy VADs, endpointing heads and trained turn-taking predictors, not general spoken LLMs, so they are left in the paper. One new model entry was needed (Gemini 3.1 Flash Live). Full-duplex latency is not comparable with a predictor's decision latency because it includes response generation, which is recorded in the benchmark note. Two further flagged papers were read and ruled out of scope: a logit-lens interpretability study of Qwen3-Omni's middle layers (2608.24958), which states outright that its quantities are controls rather than benchmark scores, and Flower Hub (2608.25114), a federated-learning benchmarking platform with no speech or audio content at all."
+  },
+  {
+   "date": "2026-08-27",
+   "source": "daily review",
+   "change": "Daily review: two benchmarks catalogued from four flagged papers. EXAM2 (arXiv 2608.23758) is a six-language multiple-choice audio-understanding set of 5,667 questions in which every answer choice also exists as a generated image, letting the same items be scored on audio, on images, on transcripts or on combinations; it contributes 20 result cells read off Table 3 (the raw-audio rows only, averaged over the six languages), and its test split is derived from MMAU-test-mini so scores are not independent of MMAU. LongAudioQA (arXiv 2608.24048) is a 16,456-question set over long meeting audio from AliMeeting, AMI and DailyTalk with a five-way question taxonomy including an acoustic-aware split that a transcript cannot answer; it contributes 45 result cells from the 'Speech as Context' block of Table 3. LongAudioQA is introduced alongside a method (GRGA) by the same authors, which is recorded in its note - every number on it so far comes from the paper that proposed it. Two further flagged papers were ruled out of scope: a human-versus-LLM-judge agreement study for voice agents (2608.24314), which proposes no benchmark of its own and scores text judges rather than spoken LLMs, and FireRedAudio (2608.24168), which is a unified audio language model rather than an evaluation. No model entries were needed; all eight evaluated systems were already in the model table."
+  },
+  {
+   "date": "2026-08-26",
+   "source": "daily review",
+   "change": "Daily review: two benchmarks catalogued. MRMAD (arXiv 2608.22236) tests whether audio-language models can hear how audio is degraded - nine degradation types at three severities across speech, music and sound, posed as multi-turn dialogues over multiple clips - and contributes 66 result cells read off Table 4 for 22 systems. PUMA (arXiv 2608.21853) is a Polish benchmark whose three audio categories (ASR, speech QA, sound and music QA) contribute 36 strict-score cells from Table 1; for the same-family model pairs the audio columns are recorded against the audio member. Twelve new model entries were needed. Nine further flagged papers were read and ruled out of scope: a coding-agent game-development benchmark, a KV-cache method for long-form speech LLMs, a LoRA post-training study on DCASE audio QA, two video benchmarks (Southeast Asian cultural moments, Hollywood narrative understanding) where audio is an auxiliary condition for vision models rather than the object of evaluation, a text-only Bengali safety benchmark, an ASR-error study of multi-hop RAG pipelines, a clinical on-device meeting-summarisation system, and an audio deepfake detection challenge."
+  },
+  {
+   "date": "2026-08-25",
+   "source": "daily review",
+   "change": "Daily review: OmniAssistBench (arXiv 2608.21360) catalogued, with 11 overall-average result cells read off Tables 2 and 3 and three new model entries (Doubao-Seed-2.0-lite, MiniCPM-o-4.5, Qwen3.5-Omni-Plus). It evaluates omni-modal LLMs as real-time video assistants whose user instructions arrive as audio embedded in the test video. Five further flagged papers were read and ruled out of scope: a Chinese abusive-language benchmark over text rather than speech, a multi-turn conversational AI survey, an audio-chapterization training method, a shared-task system description, and a debate-practice HCI system. Separately, the crawler window was widened after three consecutive empty days: arXiv makes a submission searchable several days after its submittedDate, so a three-day window could close before a paper became visible. Six papers recovered from that gap are included in this review."
+  },
+  {
+   "date": "2026-08-23",
+   "change": "Corrections from an external data audit, each re-checked against the current arXiv version before applying. AudioTrust: 26 fairness cells showed 1-Gamma under the published Gamma symbol, which reversed the model ordering; the printed Gamma values are restored and the column now states that higher is fairer. Nine result values had gone stale as their source papers were revised (VCB Bench Fun-Audio-Chat GK and ML, OmniBench MIO-Instruct across three settings, SpeechRole Qwen2.5-Omni and GPT-4o-Audio in both languages), and Fun-Audio-Chat's MTD score, absent from the earlier version, is now recorded. 87 cells pointed at table numbers that had shifted under unversioned arXiv links (VCB Bench, OmniBench, OpenOmni, AudioMarathon); locators are corrected and now name the version they were checked against.",
+   "source": "external audit"
+  },
+  {
+   "date": "2026-08-23",
+   "change": "Scale-collision guard rewritten. It had been splitting any metric whose values spanned 10 and 50 into '0-10 scale' and '0-100 scale' columns, which mislabelled accuracy, WER, F1, exact-match and rate metrics where a low number is simply a low score: 1,251 cells carried a scale the source never states. A split now requires seeing one model reported at both magnitudes by two different sources, and never applies to a metric published as a percentage. 166 cells across 11 metrics still split; the rest read as their papers printed them.",
+   "source": "external audit"
+  },
+  {
+   "date": "2026-08-23",
+   "change": "Daily review: two flagged arXiv candidates read in full and both ruled out of scope. arXiv:2608.19936 probes benchmark optimization in ASR transcription, and arXiv:2608.20326 is a confidence-estimation method for music information retrieval; neither evaluates general-purpose spoken LLMs. Catalogue unchanged at 360 benchmarks.",
+   "source": "daily review"
+  },
+  {
+   "date": "2026-08-22",
+   "change": "Results now include papers that USE each benchmark, not only the paper that introduced it. All 1,619 citing papers on arXiv were read; 509 of them (31%) actually ran a catalogued benchmark, the rest only cite it in prose. Tables: 2,433 to 15,220 sourced cells over 197 models and 686 distinct source papers, with 341 of 360 benchmarks now carrying at least one score. Surveys were skipped so every number stays first-hand.",
+   "source": "coverage"
+  },
+  {
+   "date": "2026-08-22",
+   "change": "Extraction extended to every catalogued benchmark paper, not just the well-known ones: 268 further papers read. Benchmarks with at least one sourced score went from 90 to 327 of 360, and the tables from 2,913 to 7,858 cells over 179 models. Model-name matching now tolerates spacing variants (Qwen 2.5 Omni = Qwen2.5-Omni).",
+   "source": "coverage"
+  },
+  {
+   "date": "2026-08-22",
+   "change": "Second registry audit after the SALMon report. Found a silent Unicode fault: papers using U+2011 non-breaking hyphens (SpeechR) produced model names that looked identical to matched ones but never matched, dropping every row. Also recovered Gemini variants, J-Moshi, Megrez-3B-Omni, Grok, Fun-Audio-Chat and others, gave each named cascade pipeline its own row instead of discarding it, and explicitly excluded CLAP/VAD/encoder/TTS rows that are out of scope. Dropped cells fell from 1,031 to 263; the tables gained 480 cells and 70 models.",
+   "source": "coverage audit"
+  },
+  {
+   "date": "2026-08-22",
+   "change": "Presentation: the full catalogue moved to the foot of the page and is now one line per benchmark, paged. Result tables open at 6 benchmarks by 12 models with controls to widen, and a column whose benchmark reports several metrics now carries a metric picker instead of silently showing one.",
+   "source": "reader feedback"
+  },
+  {
+   "date": "2026-08-22",
+   "change": "Fixed a model-registry gap that silently dropped the pure speech-LM family (TWIST, LAST, pGSLM, dGSLM, GSLM, AudioLM, Spectron, SpiRit-LM Expressive) — the family that likelihood-based benchmarks actually evaluate. SALMon went from 1 model to 8; 152 result cells and 17 models recovered overall.",
+   "source": "reader report"
+  },
+  {
+   "date": "2026-08-22",
+   "change": "Recall pass over an independently harvested arXiv pool (25,446 speech-relevant records via OAI-PMH) added 91 benchmarks that keyword-driven discovery had missed.",
+   "source": "coverage audit"
+  },
+  {
+   "date": "2026-08-22",
+   "change": "Result tables constrained to one metric per column, with a scale-collision guard that separates 1-5 judge scores from the same metric normalised to 100.",
+   "source": "data quality"
+  },
+  {
+   "date": "2026-08-22",
+   "change": "Atlas published: 360 benchmarks, 19 capability categories, arXiv timeline, and model-by-benchmark tables with 2,433 sourced result cells.",
+   "source": "initial build"
+  }
+ ]
 }
