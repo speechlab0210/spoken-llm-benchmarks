@@ -1,9 +1,77 @@
 {
-  "fetched_at": "2026-09-02T22:47:03Z",
+  "fetched_at": "2026-09-03T22:47:01Z",
   "window_days": 10,
-  "scanned": 137,
-  "flagged_today": 7,
+  "scanned": 133,
+  "flagged_today": 4,
   "candidates": [
+    {
+      "id": "2609.02277",
+      "title": "Auditory Illusion Benchmark for Large Audio Language Models",
+      "abstract": "Perceptual illusions have long served as crucial probes into human cognition, revealing biases and limitations of perception. In the auditory domain, such illusions provide a unique lens for testing whether Large Audio Language Models (LALMs) replicate human perceptual tendencies. Despite their importance, most benchmarks focus on visual illusions or general audio tasks, leaving auditory illusions underexplored. To this end, we present AIB, the first auditory illusion benchmark for LALMs, covering ten representative illusions across music, sound, and speech, each annotated for the presence of knowledge-based priors. Our methodology pairs model evaluation with controlled human listening studies, enabling direct comparison of responses. Results show systematic differences: while most LALMs remain signal-faithful on low-level acoustic illusions, several exhibit more human-like responses when linguistic or musical priors are involved, although no model matches the human perceptual profile. These findings highlight the current limitations of LALMs as cognitive models. By establishing auditory illusions as a rigorous testbed, our work offers a new perspective for probing neural black-box models and advancing understanding of auditory cognition. AIB is publicly available at https://github.com/gillosae/aib.",
+      "published": "2026-09-02T08:23:36Z",
+      "authors": [
+        "Hayoon Kim",
+        "Eunice Hong",
+        "Kyogu Lee"
+      ],
+      "primary_category": "cs.SD",
+      "url": "https://arxiv.org/abs/2609.02277",
+      "score": 45,
+      "status": "new — under review"
+    },
+    {
+      "id": "2609.02343",
+      "title": "SonicCaps: Large-Scale Diverse and Fine-Grained Captioning for Improved Audio-Retrieval",
+      "abstract": "Recent advances in audio-language modeling have been driven by large-scale audio captioning datasets. However, existing datasets remain limited by low semantic diversity, generic descriptions lacking acoustic details, and one-to-one audio-caption mappings that poorly reflect the inherent ambiguity of auditory perception. We introduce SonicCaps, a large-scale audio captioning dataset comprising ~15M captions paired with ~700k audio clips, generated using a multi-modal large language model (Qwen3-Omni) conditioned on both audio and text. To explicitly promote diversity, we generate around 24 captions per audio via structured prompt engineering and few- shot generation, spanning main descriptions, rephrased variants (verbosity, style) and semantic tags. Human evaluation shows that SonicCaps is rated significantly higher than existing captioning datasets, with fine-grained analyses indicating that our captions are perceived as more descriptive and precise, which strongly correlates with quality judgments. Finally, training CLAP models on SonicCaps with a multi-caption sampling strategy consistently improves audio retrieval and zero-shot classification, with stronger generalization across public and commercial benchmarks. We release both SonicCaps and two specialized CLAP models on hugging face: https://huggingface.co/datasets/Zineb/SonicCaps.",
+      "published": "2026-09-02T09:18:27Z",
+      "authors": [
+        "Zineb Lahrichi",
+        "Marc Ferras",
+        "Gaël Richard",
+        "Geoffroy Peeters"
+      ],
+      "primary_category": "cs.SD",
+      "url": "https://arxiv.org/abs/2609.02343",
+      "score": 42,
+      "status": "new — under review"
+    },
+    {
+      "id": "2609.01788",
+      "title": "VakyArth: Evaluating Pragmatic Competence in LLMs across Indic Languages",
+      "abstract": "Real-world communication often requires pragmatic reasoning: interpreting meanings implied through context and cultural convention rather than stated literally. Existing pragmatic evaluation remains largely limited to English and high-resource languages, leaving Indic languages unexplored despite their linguistic and cultural diversity. We introduce VakyArth, the first pragmatic benchmark for Indic languages, designed as a diagnostic evaluation covering Hindi, Punjabi, Tamil, and Malayalam. VakyArth evaluates models across five phenomena: deixis, speech acts, implicature, social pragmatics, and coherence; through multiple-choice questions, natural language inference, and translation, with all items authored by native speakers. Across multilingual large language models (LLMs) of varying families and sizes, we find consistent failures on pragmatic meanings rooted in Indic linguistic and cultural conventions. Our analysis shows systematic differences across languages and tasks: MCQ accuracy exceeds NLI accuracy in all model-language combinations, translation performance does not reliably track pragmatic understanding, and Indo-Aryan languages show a translation advantage over Dravidian languages. We further show that automatic translation metrics can miss fluent but pragmatically unfaithful outputs, especially for implicature and deixis.",
+      "published": "2026-09-01T19:00:32Z",
+      "authors": [
+        "Usneek Singh",
+        "Poorvaja Veera Balaji Kumar",
+        "Parth Nanda",
+        "Anand Madhusoodanan",
+        "Geyang Guo",
+        "Wei Xu",
+        "Junyi Jessy L"
+      ],
+      "primary_category": "cs.CL",
+      "url": "https://arxiv.org/abs/2609.01788",
+      "score": 24,
+      "status": "new — under review"
+    },
+    {
+      "id": "2609.01810",
+      "title": "TalkFa: A Unified Benchmark for Farsi Dialogue Generation and Understanding",
+      "abstract": "Farsi, spoken by more than 120 million people, lacks a comprehensive benchmark for dialogue generation and understanding. We introduce TALKFA, a unified benchmark comprising three complementary datasets: (1) WIKI-FADIAL, 4.2K Wikipedia-grounded dialogues for knowledge-grounded generation; (2) DAILYDIALOG-FA, 6.6K dialogues annotated for dialogue acts and emotions; and (3) PLAYDIAL-FA, 2.1K theatrical dialogues with sentiment labels. While LLMs assist data construction, every dialogue undergoes multi-stage review and revision by native Farsi speakers, and only the final human-approved dialogues are released. Experiments with six LLAMA and MISTRAL models show that LoRA substantially improves dialogue generation while requiring only 25-50% of the training data to recover over 90% of the final performance gains. Across classification tasks, FABERT achieves the best dialogue-act performance, LORA-MISTRAL-7B performs best on emotion recognition, and MISTRAL-24B achieves the highest sentiment score. Human evaluation and independent external validation demonstrate the reliability of the benchmark, while comparisons with GPT-4.1 as an LLM judge reveal that automatic metrics substantially overestimate dialogue quality. Zero-shot evaluation with frontier LLMs further shows that TalkFa remains a challenging benchmark. We will release all datasets, annotation guidelines, code, and checkpoints.",
+      "published": "2026-09-01T19:35:25Z",
+      "authors": [
+        "Neda Jamshidi",
+        "Kamyar Zeinalipour",
+        "Fahimeh Akbari",
+        "Monica Bianchini",
+        "Marco Maggini",
+        "Marco Gori"
+      ],
+      "primary_category": "cs.CL",
+      "url": "https://arxiv.org/abs/2609.01810",
+      "score": 21,
+      "status": "new — under review"
+    },
     {
       "id": "2609.01542",
       "title": "TAG-Bench: Benchmarking Temporal Audio Grounding in Large Audio Language Models",
@@ -1001,40 +1069,6 @@
       "score": 18,
       "status": "reviewed — out of scope",
       "review_note": "HCI system for debate practice, not a spoken-LLM benchmark"
-    },
-    {
-      "id": "2608.19936",
-      "title": "Towards Quantifying Benchmark Optimization in ASR Models",
-      "abstract": "Public benchmarks are important measures of Automatic Speech Recognition (ASR) model capabilities. However, by nature of being public, there is risk of models being optimized for these benchmarks in ways that do not generalize well to real-world data. We present a methodology for quantifying benchmark optimization, focusing on cases where the audio underdetermines the reference transcript. We identify three families of behavioral probes that reveal models' capabilities of reproducing benchmark reference spans despite underdetermined audio: reference disagreement, masked-number recovery, and orthographic switching. We find that the highest-scoring open source models output verbatim reference transcript spans even when the relevant audio is contradictory, masked, or ambiguous. Using a variety of mechanistic probes, we show that models respond to narrow acoustic cues to override the faithful representation of the audio in favor of a benchmark-optimized policy. We show the benchmark-optimized behavior can be causally manipulated via low-rank linear steering or simply appending audio to the end of a segment in some cases. Overall, our results indicate that high-performing models exhibit benchmark-conditioned behaviors that can inflate benchmark performance without reflecting improved general-purpose transcription ability.",
-      "published": "2026-08-20T11:54:39Z",
-      "authors": [
-        "Theo Lebryk",
-        "David Ayllon",
-        "Alice Baird",
-        "Jakub Piotr Cłapa",
-        "Jens Madsen",
-        "Panagiotis Tzirakis"
-      ],
-      "primary_category": "cs.SD",
-      "url": "https://arxiv.org/abs/2608.19936",
-      "score": 18,
-      "status": "reviewed — out of scope"
-    },
-    {
-      "id": "2608.20326",
-      "title": "$TCP_α$: Margin-Controlled Confidence estimation for reliable Music Information Retrieval",
-      "abstract": "Deep neural networks are often overconfident, assigning high confidence even to incorrect predictions. Consequently, users lack a reliable signal for deciding when a prediction can be trusted. Post-hoc confidence estimation addresses this by training a lightweight auxiliary head over a frozen classifier. Existing targets, however, suffer from inherent ambiguity: they assign overlapping confidence values to correct and incorrect predictions, while errors near the decision boundary receive confidence scores indistinguishable from correct predictions. In this work, we propose $TCP_α$, a novel confidence target that resolves these limitations by introducing a margin-controlled penalty for misclassified samples. We prove that $TCP_α$ guarantees complete separation between the target values of correct and incorrect predictions, with a separation margin that is independent of the number of classes and increases monotonically with the penalty parameter. Since accurate classifiers naturally produce very few errors, learning these targets results in a severely imbalanced regression problem. We therefore present a systematic study of training strategies for learning under this imbalance and identify an effective training configuration through extensive ablation studies. We evaluate the proposed approach on rāga identification, investigate its robustness under domain shift, and further validate it on frame-wise ornamentation detection without modifying the selected configuration. Across all settings, $TCP_α$ consistently outperforms existing confidence targets for failure prediction. Rejecting only the least-confident 8\\% of predictions improves the base model's macro-F1 from 0.89 to 0.98, while fine-tuning the confidence head with only 5\\% labeled samples from a new corpus effectively restores performance under domain shift.",
-      "published": "2026-08-20T17:58:50Z",
-      "authors": [
-        "Parampreet Singh",
-        "Anushka Singh",
-        "Sumit Kumar",
-        "Vipul Arora"
-      ],
-      "primary_category": "eess.AS",
-      "url": "https://arxiv.org/abs/2608.20326",
-      "score": 18,
-      "status": "reviewed — out of scope"
     }
   ],
   "warnings": []
