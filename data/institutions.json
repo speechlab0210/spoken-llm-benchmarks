@@ -7165,6 +7165,35 @@
    ]
   },
   {
+   "id": "natwest",
+   "name": "NatWest Group",
+   "short": "NatWest",
+   "type": "industry",
+   "country": "GB",
+   "parent": null,
+   "confidence": "medium",
+   "sites": [
+    {
+     "city": "Edinburgh",
+     "lat": 55.94,
+     "lon": -3.35,
+     "country": "GB"
+    }
+   ],
+   "aliases": [
+    {
+     "raw": "NatWest",
+     "country": "GB",
+     "city": "Edinburgh",
+     "lat": 55.94,
+     "lon": -3.35,
+     "type": "industry",
+     "confidence": "medium",
+     "note": "F-Actor paper prints the bare string 'NatWest' with no city or country; placed at the group's registered head office (Gogarburn, Edinburgh) as a default, not a printed location."
+    }
+   ]
+  },
+  {
    "id": "naver",
    "name": "NAVER",
    "short": "NAVER",

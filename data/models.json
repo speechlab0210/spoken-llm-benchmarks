@@ -1373,6 +1373,12 @@
    "name": "MU-LLaMA",
    "org": "NTU Singapore",
    "type": "e2e"
+  },
+  {
+   "id": "f-actor",
+   "name": "F-Actor",
+   "org": "KIT / Edinburgh",
+   "type": "e2e"
   }
  ]
 }

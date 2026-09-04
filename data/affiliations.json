@@ -21794,6 +21794,135 @@
    "verify_note": "PDF first page prints one shared affiliation line for all three authors: 'Graduate Institute of Communication Engineering, National Taiwan University, Taiwan', with emails chunyi.kaun.tw@gmail.com, r11942102@ntu.edu.tw, hungyilee@ntu.edu.tw. The extraction correctly records National Taiwan Universit",
    "note": "PDF first page prints one shared affiliation line for all three authors: 'Graduate Institute of Communication Engineering, National Taiwan University, Taiwan'. Consistent with printed emails r11942102@ntu.edu.tw and hungyilee@ntu.edu.tw (first author uses a gmail address). No city printed.",
    "n_authors": 3
+  },
+  "dsb-ifeval": {
+   "status": "ok",
+   "verified": "confirmed",
+   "publishable": true,
+   "institutions": [
+    {
+     "inst": "university-of-maryland-college-park",
+     "unit": null,
+     "raw": "University of Maryland College Park",
+     "country": "US",
+     "city": "College Park",
+     "lat": 38.99,
+     "lon": -76.94,
+     "placed": "printed",
+     "printed_city": "College Park",
+     "printed_country": "USA",
+     "lead": true,
+     "first_author": true,
+     "last": true,
+     "evidence": "printed"
+    }
+   ],
+   "countries_complete": true,
+   "verify_note": "PDF page 1: 'Puneet Mathur, Dinesh Manocha / University of Maryland College Park, USA / Project Page: dsb-ifeval.github.io'. Single affiliation line covering both authors.",
+   "note": "Only one organisation is printed, so first author, last author and lead all resolve to it. The city is printed inside the institution name ('College Park'); 'USA' is the printed country.",
+   "n_authors": 2
+  },
+  "omnievaluator": {
+   "status": "ok",
+   "verified": "confirmed",
+   "publishable": true,
+   "institutions": [
+    {
+     "inst": "naver",
+     "unit": "NAVER Cloud AI",
+     "raw": "NAVER Cloud AI",
+     "country": "KR",
+     "city": "Seongnam",
+     "lat": 37.42,
+     "lon": 127.13,
+     "placed": "default",
+     "printed_city": null,
+     "printed_country": null,
+     "lead": true,
+     "first_author": true,
+     "last": true,
+     "evidence": "printed"
+    },
+    {
+     "inst": "korea-university",
+     "unit": null,
+     "raw": "Korea University",
+     "country": "KR",
+     "city": "Seoul",
+     "lat": 37.57,
+     "lon": 126.98,
+     "placed": "default",
+     "printed_city": null,
+     "printed_country": null,
+     "lead": false,
+     "first_author": true,
+     "last": false,
+     "evidence": "printed"
+    },
+    {
+     "inst": "kaist",
+     "unit": "KAIST AI",
+     "raw": "KAIST AI",
+     "country": "KR",
+     "city": "Daejeon",
+     "lat": 36.35,
+     "lon": 127.38,
+     "placed": "default",
+     "printed_city": null,
+     "printed_country": null,
+     "lead": false,
+     "first_author": false,
+     "last": true,
+     "evidence": "printed"
+    },
+    {
+     "inst": "seoul-national-university",
+     "unit": null,
+     "raw": "Seoul National University",
+     "country": "KR",
+     "city": "Seoul",
+     "lat": 37.57,
+     "lon": 126.98,
+     "placed": "default",
+     "printed_city": null,
+     "printed_country": null,
+     "lead": false,
+     "first_author": false,
+     "last": false,
+     "evidence": "printed"
+    }
+   ],
+   "countries_complete": true,
+   "verify_note": "PDF page 1: 'Hodong Lee(1,2), Sanghee Park(1,3), Dohoon Ryu(1), Jungwhan Kim(1), Junyeob Kim(4), Soyoon Kim(1), Geewook Kim(1,3) / 1NAVER Cloud AI, 2Korea University, 3KAIST AI, 4Seoul National University'.",
+   "note": "No city or country is printed for any affiliation, so all four are placed at their default sites. First author Hodong Lee lists NAVER Cloud AI first (superscript 1,2), so lead is NAVER; corresponding/last author Geewook Kim is 1,3 (NAVER + KAIST AI).",
+   "n_authors": 7
+  },
+  "generative-call-decision-test": {
+   "status": "ok",
+   "verified": "confirmed",
+   "publishable": true,
+   "institutions": [
+    {
+     "inst": "national-research-council-canada",
+     "unit": null,
+     "raw": "National Research Council Canada",
+     "country": "CA",
+     "city": "Ottawa",
+     "lat": 45.42,
+     "lon": -75.7,
+     "placed": "default",
+     "printed_city": null,
+     "printed_country": null,
+     "lead": true,
+     "first_author": true,
+     "last": true,
+     "evidence": "printed"
+    }
+   ],
+   "countries_complete": true,
+   "verify_note": "HTML author block: 'Mengzhe Geng' with address line 'National Research Council Canada' and contact Mengzhe.Geng@nrc-cnrc.gc.ca.",
+   "note": "Single author, single organisation. No city printed; placed at the NRC default site (Ottawa). 'Canada' is carried by the organisation name rather than a separate country line.",
+   "n_authors": 1
   }
  },
  "models": {
@@ -26957,6 +27086,48 @@
    "evidence_url": "https://arxiv.org/abs/2308.11276",
    "evidence_quote": "1 ARC Lab, Tencent PCG  2 National University of Singapore",
    "note": "Paper 'Music Understanding LLaMA' (arXiv 2308.11276v1, first page): authors Shansong Liu (1, corresponding), Atin Sakkeer Hussain (2), Chenshuo Sun (2), Ying Shan (1); affiliations 1 = ARC Lab, Tencent PCG, 2 = National University of Singapore. Org on file 'NTU Singapore' is wrong: it is NUS, and Te"
+  },
+  "f-actor": {
+   "status": "ok",
+   "publishable": true,
+   "builders": [
+    {
+     "inst": "karlsruhe-institute-of-technology",
+     "unit": null,
+     "raw": "Karlsruhe Institute of Technology",
+     "lead": true,
+     "country": "DE",
+     "city": "Karlsruhe",
+     "lat": 49.01,
+     "lon": 8.4,
+     "placed": "default"
+    },
+    {
+     "inst": "university-of-edinburgh",
+     "unit": null,
+     "raw": "University of Edinburgh",
+     "lead": false,
+     "country": "GB",
+     "city": "Edinburgh",
+     "lat": 55.95,
+     "lon": -3.19,
+     "placed": "default"
+    },
+    {
+     "inst": "natwest",
+     "unit": null,
+     "raw": "NatWest",
+     "lead": false,
+     "country": "GB",
+     "city": "Edinburgh",
+     "lat": 55.94,
+     "lon": -3.35,
+     "placed": "default"
+    }
+   ],
+   "evidence_url": "https://arxiv.org/html/2601.11329v3",
+   "evidence_quote": "Karlsruhe Institute of Technology University of Edinburgh NatWest",
+   "note": "Model introduced in 'F-Actor: Controllable Conversational Behaviour in Full-Duplex Models' (Zufle, Klejch, Sanders, Niehues, Birch, Lam; Findings of ACL 2026), the paper DSB-IFEval cites for the system. Three organisations are printed as one affiliation line with no per-author superscripts; first author Maike Zufle uses a kit.edu address, so KIT is taken as lead. Last author Tsz Kin Lam carries a footnote 'Work done while at the University of Edinburgh'. Weights at huggingface.co/maikezu/f-actor. No cities printed; all three placed at default sites."
   }
  }
 }

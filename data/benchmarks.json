@@ -9526,6 +9526,96 @@
    "io": "audio stimulus + multiple-choice question in, categorical choice out",
    "size": "14,829 stimuli in the full set (10,385 illusion + 4,444 control) across 10 illusions; 1,566-item mini subset (1,032 illusion + 534 control)",
    "note": "ISI is framed by the authors as a descriptive human-likeness measure, not a performance score — higher is not simply better. Pengi's free-text replies failed to map onto the answer set on more than 20% of trials, so its numbers understate failure rather than measure perception; its cells are not recorded here. Human reference is 20 absolute-pitch listeners, chosen so note-level judgements are reliable; illusions depending on binaural physiology (e.g. the octave illusion) were excluded. A 'refined prompt wording' re-run of three checkpoints in the same table shows the scores move a lot with prompt phrasing (Qwen2-Audio-Instruct's average ISI goes from −0.297 to −0.896); only the main-setting rows are recorded here."
+  },
+  {
+   "id": "dsb-ifeval",
+   "name": "DSB-IFEval",
+   "full_title": "DuplexSpeechBench-IFEval: Evaluating Implicit Instruction Following in Full-Duplex Voice Agents",
+   "arxiv_id": "2609.03423",
+   "arxiv_date": "2026-09",
+   "arxiv_date_full": "2026-09-03",
+   "url": "https://arxiv.org/abs/2609.03423",
+   "summary": "A full-duplex benchmark that asks whether a voice agent can infer the right floor-management behaviour from the role it has been given, rather than being told the behaviour outright. Eight behaviourally contrastive assistant personas (ER triage nurse, grief counsellor, 911 dispatcher, meditation instructor, Socratic tutor, drive-thru order taker, simultaneous interpreter, improv partner) are each paired with six conversational probes - four shared (mid-turn pause, structured dictation, user barge-in, attention check) and two role-specific - and five instances per pair, giving 240 user-side conversations. Each is synthesised once with pauses, inter-chunk gaps and barge-in events injected programmatically rather than left to TTS prosody, then re-used across five conditioning levels: bare assistant (L0), explicit instruction (L1), persona only (L2, the primary condition), persona plus the entailed instruction restated (L3), and persona-directive conflict (L4a benign, L4b safety), for 1,038 evaluation cases. Floor management is scored deterministically from the two-channel recording against construction-time probe timestamps by an Instruction Adherence Score over nine actions (Listen, Backchannel, No-Backchannel, Interrupt, Take-Turn, Readback, Yield, Continue, Accept-Overlap); an LLM judge assigns a 0-100 Persona Adherence Score and, for L4, one of Directive-Wins / Persona-Wins / Balanced / Incoherent. Three paired metrics sit on top: Entailment Gap (L1 minus L2), Redundancy Gain (L3 minus L2) and Role Tax (L3 minus L1). A matched-audio subset re-uses byte-identical user audio across three roles so that only the persona changes.",
+   "categories": [
+    "interactivity",
+    "instruction-following",
+    "dialogue"
+   ],
+   "tasks": [
+    "implicit instruction following",
+    "turn-taking and floor management",
+    "persona-consistent response",
+    "conflicting-instruction resolution"
+   ],
+   "languages": [
+    "English"
+   ],
+   "io": "speech in, speech out",
+   "size": "1,038 evaluation cases built from 240 synthesised user-side conversations (8 roles x 6 probes x 5 instances), plus a matched-audio subset over 3 roles",
+   "metrics": [
+    "IAS (Instruction Adherence Score, %)",
+    "PAS (Persona Adherence Score, 0-100)",
+    "Entailment Gap (pp)",
+    "Redundancy Gain (pp)",
+    "Role Tax (pp)",
+    "Conflict Profile",
+    "SafetyOverride"
+   ],
+   "note": "Moshi is included as a persona-blind negative control, so its 0.0 pp Entailment Gap is a noise floor rather than a result; the paper shows its per-role gaps ranging from -13.3 to +13.3 pp and cancelling to that zero, which is a caution against reading single-role wins as evidence of persona conditioning. The user side is entirely synthetic TTS with one voice held fixed per conversation. IAS depends on verifier thresholds; the authors sweep 180 threshold configurations and compare model rankings by Kendall's tau. Personas pass two blocking leakage checks by construction (no second-person turn-management imperatives; Jaccard overlap with the matching L1 instruction below 0.15). Project page: dsb-ifeval.github.io."
+  },
+  {
+   "id": "omnievaluator",
+   "name": "OmniEvaluator",
+   "full_title": "A Composable Evaluation System for Reproducible Omni-Modal Foundation Model Evaluation",
+   "arxiv_id": "2609.01315",
+   "arxiv_date": "2026-09",
+   "arxiv_date_full": "2026-09-01",
+   "url": "https://arxiv.org/abs/2609.01315",
+   "code": "https://github.com/naver-ai/omni-evaluator",
+   "summary": "An evaluation harness rather than a new test set: it composes four inference backends and four evaluation frameworks over more than a thousand existing benchmarks spanning text, image, video and audio, so that one model can be run across every modality it supports under a single configuration. Evaluation is decomposed into data iteration, inference, postprocessing and metric computation, with all inter-stage exchange mediated by one intermediate schema whose record shape does not change with modality (an audio sample differs only by carrying a sampling rate). Audio, omni-modal and tool-calling tasks that the external frameworks do not cover run on a built-in engine. Every run is emitted as an artifact recording prompt template, generation configuration, model revision, benchmark version and metric parameters, so a score can be reproduced exactly, and results flow into a shared dashboard. A federated mode shares GPU inference servers across concurrent evaluations, and a built-in verifier - Qwen3-0.6B distributed as an 8-bit GGUF and runnable on CPU via llama.cpp - ships as a default scorer whose score holds steadier than rule-based scoring when engine or prompt configuration changes.",
+   "categories": [
+    "holistic"
+   ],
+   "tasks": [
+    "cross-modal benchmark orchestration",
+    "reproducible run specification",
+    "answer verification"
+   ],
+   "io": "text, image, video and audio in, text out",
+   "size": "4 inference backends, 4 evaluation frameworks, 1,000+ wrapped benchmarks (8 audio benchmarks in the paper's own coverage table)",
+   "note": "A harness, not a benchmark: it wraps upstream evaluators rather than contributing data, so an upstream bug flows into the scores it reports, and audio is one of four modalities rather than the subject of the system. Coverage is limited to omni-modal understanding, where predictions are text; the paper states that extending evaluation and the verifier to speech or image generation is future work, so intrinsic speech-output quality is out of scope. Built for and used in the development of HyperCLOVA X 8B Omni."
+  },
+  {
+   "id": "generative-call-decision-test",
+   "name": "Generative-Call Decision Test",
+   "full_title": "Auditing Generative Audio Calls for Known-Task Audio-LLM Evaluation",
+   "arxiv_id": "2608.27817",
+   "arxiv_date": "2026-08",
+   "arxiv_date_full": "2026-08-28",
+   "url": "https://arxiv.org/abs/2608.27817",
+   "summary": "An audit protocol aimed at a claim audio-LLM papers routinely make: a waveform prompt beats an ASR transcript, therefore the generative audio model earned its call. The paper argues that comparison conflates two things - whether acoustic evidence is needed at all, and whether a generative model is needed to use it - and separates them by casting evaluation as a budgeted call-decision problem. For each example a routing policy chooses among keeping the transcript-side label, scoring the waveform with a local encoder (CLAP, AST or WavLM), or calling a generative audio LLM (Qwen2-Audio, Qwen2.5-Omni, MOSS-Audio); the decisive ablation is a matched no-call selector fitted under the identical protocol with the generative actions removed. Splits are locked before evaluation along with parser, label normalisation, features, weights, thresholds and regularisation, and reporting uses paired 10k-row bootstraps, exact McNemar tests, Wilson intervals and Holm correction over the eight headline contrasts, with sequential wall-clock cost recorded per policy. Evaluation runs on Dynamic-SUPERB VocalSound (six-way human vocalisation; development rows 0-479, holdout 480-719), ESC-50 Animals (n=200), an AudioBench paralinguistic-QA subset drawn from English ESD (development 90, holdout 120), and Dynamic-SUPERB SpeechTextMatching over LibriSpeech test-clean (n=100).",
+   "categories": [
+    "audio-grounding",
+    "auditory-perception"
+   ],
+   "tasks": [
+    "generative-call decision",
+    "selective prediction and routing",
+    "closed-set audio classification"
+   ],
+   "languages": [
+    "English"
+   ],
+   "io": "audio plus ASR transcript in, closed-set label out",
+   "size": "VocalSound 720 rows (240 holdout), ESC-50 Animals 200, ESD paralinguistic QA 210, SpeechTextMatching 100",
+   "metrics": [
+    "accuracy",
+    "macro F1",
+    "generative-call rate",
+    "paired accuracy delta with 95% CI",
+    "sequential seconds"
+   ],
+   "note": "A protocol plus matched controls over existing datasets, not a new corpus. The headline result is a null: on VocalSound the full selector reaches 0.925 accuracy at a 12.5% call rate against 0.921 for the matched no-call selector (paired delta 0.004, 95% CI -0.025 to 0.033), while a supervised WavLM probe alone reaches 0.854 with no generative calls at all. Of the eight headline paired tests only the raw full-versus-WavLM contrast survives Holm correction. The ordering reverses on SpeechTextMatching, where transcripts (0.960) beat Qwen2-Audio (0.850), so the conclusion is scoped to known closed-set label decisions and says nothing about open dialogue quality, instruction following or general audio reasoning. The authors note that the VocalSound split is locked for this study and will harden into a fixed test set under repeated use, and that the fresh-ESD rerun is small and not speaker-disjoint."
   }
  ]
 }

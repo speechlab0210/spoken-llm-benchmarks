@@ -130058,6 +130058,175 @@
    "value": 0.554,
    "source": "AIB Table 2 (Average column, main setting; human reference HLA=1.000, ISI=1.000)",
    "source_url": "https://arxiv.org/abs/2609.02277v1"
+  },
+  {
+   "benchmark": "dsb-ifeval",
+   "model": "personaplex",
+   "metric": "IAS at L2, persona-only (%)",
+   "value": 6.5,
+   "source": "Table 3(a), column L2 (persona-only conditioning, the benchmark's primary condition)",
+   "source_url": "https://arxiv.org/abs/2609.03423"
+  },
+  {
+   "benchmark": "dsb-ifeval",
+   "model": "f-actor",
+   "metric": "IAS at L2, persona-only (%)",
+   "value": 25.8,
+   "source": "Table 3(a), column L2 (persona-only conditioning, the benchmark's primary condition)",
+   "source_url": "https://arxiv.org/abs/2609.03423"
+  },
+  {
+   "benchmark": "dsb-ifeval",
+   "model": "moshi",
+   "metric": "IAS at L2, persona-only (%)",
+   "value": 31.6,
+   "source": "Table 3(a), column L2 (persona-only conditioning, the benchmark's primary condition)",
+   "source_url": "https://arxiv.org/abs/2609.03423"
+  },
+  {
+   "benchmark": "dsb-ifeval",
+   "model": "gpt-realtime",
+   "metric": "IAS at L2, persona-only (%)",
+   "value": 20.6,
+   "source": "Table 3(a), column L2 (persona-only conditioning, the benchmark's primary condition)",
+   "source_url": "https://arxiv.org/abs/2609.03423"
+  },
+  {
+   "benchmark": "dsb-ifeval",
+   "model": "minicpm-o-4-5",
+   "metric": "IAS at L2, persona-only (%)",
+   "value": 43.2,
+   "source": "Table 3(a), column L2 (persona-only conditioning, the benchmark's primary condition)",
+   "source_url": "https://arxiv.org/abs/2609.03423"
+  },
+  {
+   "benchmark": "dsb-ifeval",
+   "model": "fun-audio-chat",
+   "metric": "IAS at L2, persona-only (%)",
+   "value": 47.1,
+   "source": "Table 3(a), column L2 (persona-only conditioning, the benchmark's primary condition)",
+   "source_url": "https://arxiv.org/abs/2609.03423"
+  },
+  {
+   "benchmark": "dsb-ifeval",
+   "model": "personaplex",
+   "metric": "PAS at L2, persona-only (0-100)",
+   "value": 22.9,
+   "source": "Table 3(b), column L2 (LLM-judged persona adherence)",
+   "source_url": "https://arxiv.org/abs/2609.03423"
+  },
+  {
+   "benchmark": "dsb-ifeval",
+   "model": "f-actor",
+   "metric": "PAS at L2, persona-only (0-100)",
+   "value": 7.6,
+   "source": "Table 3(b), column L2 (LLM-judged persona adherence)",
+   "source_url": "https://arxiv.org/abs/2609.03423"
+  },
+  {
+   "benchmark": "dsb-ifeval",
+   "model": "moshi",
+   "metric": "PAS at L2, persona-only (0-100)",
+   "value": 13.7,
+   "source": "Table 3(b), column L2 (LLM-judged persona adherence)",
+   "source_url": "https://arxiv.org/abs/2609.03423"
+  },
+  {
+   "benchmark": "dsb-ifeval",
+   "model": "gpt-realtime",
+   "metric": "PAS at L2, persona-only (0-100)",
+   "value": 62.6,
+   "source": "Table 3(b), column L2 (LLM-judged persona adherence)",
+   "source_url": "https://arxiv.org/abs/2609.03423"
+  },
+  {
+   "benchmark": "dsb-ifeval",
+   "model": "minicpm-o-4-5",
+   "metric": "PAS at L2, persona-only (0-100)",
+   "value": 66.2,
+   "source": "Table 3(b), column L2 (LLM-judged persona adherence)",
+   "source_url": "https://arxiv.org/abs/2609.03423"
+  },
+  {
+   "benchmark": "dsb-ifeval",
+   "model": "fun-audio-chat",
+   "metric": "PAS at L2, persona-only (0-100)",
+   "value": 65.9,
+   "source": "Table 3(b), column L2 (LLM-judged persona adherence)",
+   "source_url": "https://arxiv.org/abs/2609.03423"
+  },
+  {
+   "benchmark": "dsb-ifeval",
+   "model": "personaplex",
+   "metric": "Entailment Gap, L1 minus L2 (pp, lower is better)",
+   "value": 4.5,
+   "source": "Table 5 (behavioural effects across prompt conditions)",
+   "source_url": "https://arxiv.org/abs/2609.03423"
+  },
+  {
+   "benchmark": "dsb-ifeval",
+   "model": "f-actor",
+   "metric": "Entailment Gap, L1 minus L2 (pp, lower is better)",
+   "value": 9.7,
+   "source": "Table 5 (behavioural effects across prompt conditions)",
+   "source_url": "https://arxiv.org/abs/2609.03423"
+  },
+  {
+   "benchmark": "dsb-ifeval",
+   "model": "moshi",
+   "metric": "Entailment Gap, L1 minus L2 (pp, lower is better)",
+   "value": 0.0,
+   "source": "Table 5 (behavioural effects across prompt conditions)",
+   "source_url": "https://arxiv.org/abs/2609.03423",
+   "note": "Persona-blind negative control: 0.0 pp holds by construction and marks the noise floor, not adherence."
+  },
+  {
+   "benchmark": "dsb-ifeval",
+   "model": "gpt-realtime",
+   "metric": "Entailment Gap, L1 minus L2 (pp, lower is better)",
+   "value": -1.2,
+   "source": "Table 5 (behavioural effects across prompt conditions)",
+   "source_url": "https://arxiv.org/abs/2609.03423"
+  },
+  {
+   "benchmark": "dsb-ifeval",
+   "model": "minicpm-o-4-5",
+   "metric": "Entailment Gap, L1 minus L2 (pp, lower is better)",
+   "value": 2.6,
+   "source": "Table 5 (behavioural effects across prompt conditions)",
+   "source_url": "https://arxiv.org/abs/2609.03423"
+  },
+  {
+   "benchmark": "dsb-ifeval",
+   "model": "fun-audio-chat",
+   "metric": "Entailment Gap, L1 minus L2 (pp, lower is better)",
+   "value": -0.6,
+   "source": "Table 5 (behavioural effects across prompt conditions)",
+   "source_url": "https://arxiv.org/abs/2609.03423"
+  },
+  {
+   "benchmark": "generative-call-decision-test",
+   "model": "qwen2-5-omni",
+   "metric": "VocalSound holdout accuracy (0-1)",
+   "value": 0.883,
+   "source": "Section 4, VocalSound row holdout (n=240); compare the supervised WavLM-base+ control at 0.854 with no generative calls",
+   "source_url": "https://arxiv.org/abs/2608.27817"
+  },
+  {
+   "benchmark": "generative-call-decision-test",
+   "model": "qwen2-audio",
+   "metric": "VocalSound holdout accuracy (0-1)",
+   "value": 0.838,
+   "source": "Section 4, VocalSound row holdout (n=240); compare the supervised WavLM-base+ control at 0.854 with no generative calls",
+   "source_url": "https://arxiv.org/abs/2608.27817"
+  },
+  {
+   "benchmark": "generative-call-decision-test",
+   "model": "moss-audio",
+   "metric": "VocalSound holdout accuracy (0-1)",
+   "value": 0.808,
+   "source": "Section 4, VocalSound row holdout (n=240); compare the supervised WavLM-base+ control at 0.854 with no generative calls",
+   "source_url": "https://arxiv.org/abs/2608.27817"
   }
  ]
 }

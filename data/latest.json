@@ -16,7 +16,7 @@
       "primary_category": "cs.AI",
       "url": "https://arxiv.org/abs/2609.03423",
       "score": 54,
-      "status": "new — under review"
+      "status": "accepted - added to the atlas as dsb-ifeval"
     },
     {
       "id": "2609.03502",
@@ -34,7 +34,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2609.03502",
       "score": 30,
-      "status": "new — under review"
+      "status": "reviewed - out of scope: builds and evaluates a fixed-voice Thai TTS system distilled from a voice-cloning teacher; a TTS system, not an evaluation of a general spoken LLM."
     },
     {
       "id": "2609.04173",
@@ -54,7 +54,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2609.04173",
       "score": 21,
-      "status": "new — under review"
+      "status": "reviewed - out of scope: a machine-translation benchmark (3,456 inputs, 109 languages) evaluating MT systems and text LLMs; audio is an optional attachment modality with no reported audio subset or spoken-LLM-specific evaluation."
     },
     {
       "id": "2609.03734",
@@ -70,7 +70,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2609.03734",
       "score": 18,
-      "status": "new — under review"
+      "status": "reviewed - out of scope: proposes a QA-based metric for sign language translation, evaluated on SLT models over Phoenix-2014T and CSL-Daily; the models take video, not speech."
     },
     {
       "id": "2609.02277",
@@ -191,7 +191,7 @@
       "primary_category": "cs.AI",
       "url": "https://arxiv.org/abs/2609.01315",
       "score": 27,
-      "status": "reviewed - out of scope: not a spoken-LLM benchmark - OmniEvaluator is an evaluation harness wrapping existing toolkits and states it is not a new benchmark suite"
+      "status": "accepted - added to the atlas as omnievaluator"
     },
     {
       "id": "2609.00276",
@@ -450,7 +450,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2608.27817",
       "score": 39,
-      "status": "reviewed - out of scope: no new benchmark or evaluation set - audits the marginal value of generative audio calls on existing suites (Dynamic-SUPERB VocalSound, ESC-50, AudioBench PQA/ESD, STM)"
+      "status": "accepted - added to the atlas as generative-call-decision-test"
     },
     {
       "id": "2608.27783",
