@@ -1,6 +1,11 @@
 {
  "entries": [
   {
+   "date": "2026-09-05",
+   "change": "New section 'Who builds them': every benchmark traced to the institutions on its paper (377 of 380 counted after an independent second read; 408 organisations in 40 countries/territories) and every non-cascade model to its releasing organisation with an evidence link. World map (country totals + institution circles placed at the site the paper names, three counting modes), ranked institutions and countries, academic/company split, lead region by year, organisations in both lists, and an 'Institutions' row on each benchmark record. Affiliations were read from the papers' own author blocks and independently re-checked; canonical names, countries and coordinates were cross-checked against OpenStreetMap and reviewed in three rounds by a second model (Codex), whose corrections are applied. New files: institutions.json, affiliations.json, world.json.",
+   "source": "site update"
+  },
+  {
    "date": "2026-09-04",
    "source": "daily crawl review",
    "change": "Catalogued AIB (2609.02277), the auditory illusion benchmark for LALMs, with 36 Table 2 average-column cells (HLA / RA / ISI / control accuracy for 8 LALMs plus Gemini 3.1 Pro); Pengi excluded because >20% of its replies were unparseable. Three other flagged candidates ruled out of scope (2609.02343 SonicCaps captioning training dataset, 2609.01788 VakyArth text-only Indic pragmatics, 2609.01810 TalkFa text Farsi dialogue)."

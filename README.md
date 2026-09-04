@@ -33,6 +33,9 @@ before it, and applying it removed a large number of otherwise plausible candida
 | `data/models.json` | the spoken LLMs that appear as table rows |
 | `data/results.json` | flat model × benchmark cells; **every cell carries a source** |
 | `data/latest.json` | output of the daily arXiv crawl (generated — do not hand-edit) |
+| `data/institutions.json` | canonical organisations behind the benchmarks and models: type, country, sites (city, lat, lon), raw aliases |
+| `data/affiliations.json` | per benchmark: the institutions on its paper with lead/last-author flags; per model: the releasing organisation(s) with an evidence URL |
+| `data/world.json` | country outlines for the map (world-atlas 110m, Natural Earth, public domain), pre-projected |
 | `site/index.html` | the built site: a single file, no external requests, no build step |
 | `paper/` | an accompanying survey of the 2025–2026 wave |
 
@@ -46,7 +49,14 @@ python scripts/harvest_oai.py --from 2025-01-01 --until 2026-08-21 --sets eess
 ```
 
 `build.mjs` validates before it writes and **fails the build** on: an unknown category, a malformed
-arXiv id or date, a duplicate id, a non-http link, or a result cell with no `source`.
+arXiv id or date, a duplicate id, a non-http link, a result cell with no `source`, or an affiliation
+record that points at an unknown benchmark, model or institution. A catalogue entry with no affiliation
+record yet is allowed (new entries arrive daily) and is reported as *not yet attributed*.
+
+```bash
+node scripts/make_world.mjs raw/countries-110m.json data/world.json   # regenerate the map outlines
+python scripts/build_affiliations.py ...                             # workflow output -> institutions.json + affiliations.json
+```
 
 ## Data contract
 
@@ -61,6 +71,15 @@ A benchmark may sit in up to three categories; most do sit in more than one, del
 
 > **A number without a source cannot enter the site.** This is the most important rule in the repo.
 > The tables are only worth anything if every cell is traceable.
+
+**Institution** — required: `id`, `name`, `type` (`academia` | `industry` | `government` | `nonprofit` | `other` | `unresolved`),
+`country` (ISO 3166-1 alpha-2), `sites[]` (`city`, `lat`, `lon`), `aliases[]` (the raw strings that map here), `confidence`.
+Optional: `short`, `parent` (umbrella body such as the Chinese Academy of Sciences).
+
+**Affiliation record** — `affiliations.benchmarks[<id>]`: `status`, `institutions[]` (`inst`, `unit`, `city`, `lead`, `last`,
+`evidence` = `printed` | `email_domain` | `footnote`, `raw`), `verified` (`confirmed` | `corrected` | `cannot_verify`).
+`affiliations.models[<id>]`: `status` (`ok` | `unknown` | `composite`), `builders[]` (`inst`, `unit`, `lead`), `evidence_url`.
+*Lead* means the first author's affiliation(s). Cascades of third-party parts are `composite` and carry no builder.
 
 ## How to read the tables
 
@@ -92,6 +111,14 @@ A blank cell means **not reported**, never zero.
 - **Every arXiv identifier** was read off the arXiv API or the paper's own abstract page. None were
   filled in from model memory. Titles matched by automatic search were re-checked against the paper,
   which is how several bad matches were caught and discarded rather than published.
+
+- **Institutions** were read off each paper's own author block (arXiv HTML, or the PDF first page where the
+  HTML omits affiliations), then independently re-read by a second pass that tried to refute the first. Raw
+  affiliation strings were mapped to canonical organisations (whole university; parent company; member
+  institute for umbrella bodies) with a recorded confidence, and placed at the campus or lab site named on
+  the paper. Model builders come from the model's own paper, report or model card, with the evidence URL
+  kept in `affiliations.json`. Counting is whole, not fractional: a benchmark counts once per distinct
+  institution on its paper, or once for its first author's institution in *lead* mode.
 
 **Known limits.** Discovery is biased toward English-language arXiv preprints; benchmarks that never
 preprint, or that appear only in non-English venues, are under-represented. Keyword-driven search has

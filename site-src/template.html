@@ -198,6 +198,75 @@ details.acc > summary .sub{margin-left:auto;font-family:var(--mono);font-size:.7
 .feedrow{display:grid;grid-template-columns:78px 1fr;gap:12px;padding:8px 0;border-top:1px solid var(--line);font-size:.88rem}
 .feedrow .d{font-family:var(--mono);font-size:.76rem;color:var(--ink-3)}
 
+
+/* geography */
+:root{--q1:#bfe0d8;--q2:#8fcbc0;--q3:#5fb0a2;--q4:#348c7f;--q5:#0b6b5f;--bub:#eb6834;
+  --s1:#2a78d6;--s2:#eb6834;--s3:#1baf7a;--s4:#eda100;--s5:#e87ba4;--s6:#008300;--s7:#4a3aa7;--s8:#e34948}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme=light]){--q1:#2b5f57;--q2:#387f74;--q3:#45a292;--q4:#5fc7b5;--q5:#84ead8;--bub:#d95926;
+    --s1:#3987e5;--s2:#d95926;--s3:#199e70;--s4:#c98500;--s5:#d55181;--s6:#008300;--s7:#9085e9;--s8:#e66767}
+}
+:root[data-theme=dark]{--q1:#2b5f57;--q2:#387f74;--q3:#45a292;--q4:#5fc7b5;--q5:#84ead8;--bub:#d95926;
+  --s1:#3987e5;--s2:#d95926;--s3:#199e70;--s4:#c98500;--s5:#d55181;--s6:#008300;--s7:#9085e9;--s8:#e66767}
+.geo-ctl{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin:20px 0 10px}
+.seg{display:inline-flex;flex-wrap:wrap;border:1px solid var(--line-2);border-radius:8px;overflow:hidden;max-width:100%}
+.seg button{background:var(--panel);border:0;border-right:1px solid var(--line-2);color:var(--ink-2);
+  padding:6px 12px;font-size:.84rem;font-family:inherit;cursor:pointer}
+.seg button:last-child{border-right:0}
+.seg button:hover{color:var(--ink);background:var(--panel-2)}
+.seg button:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+.seg button[aria-pressed=true]{background:var(--accent);color:var(--bg)}
+.mapwrap{position:relative;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:8px 8px 4px}
+.mapwrap svg{width:100%;height:auto;display:block}
+.geo-land{fill:var(--panel-2);stroke:var(--line-2);stroke-width:.6;vector-effect:non-scaling-stroke;transition:fill .15s}
+.geo-land.q1{fill:var(--q1)}.geo-land.q2{fill:var(--q2)}.geo-land.q3{fill:var(--q3)}.geo-land.q4{fill:var(--q4)}.geo-land.q5{fill:var(--q5)}
+.geo-land:hover{stroke:var(--ink-2)}
+.geo-bub{fill:var(--bub);fill-opacity:.55;stroke:var(--panel);stroke-width:1;cursor:pointer;vector-effect:non-scaling-stroke}
+.geo-bub:hover,.geo-bub.on,.geo-bub:focus{fill-opacity:.9;stroke:var(--ink);outline:none}
+.geo-hit{fill:transparent;stroke:none;cursor:pointer}
+.maplegend{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center;padding:8px 6px 4px;font-size:.76rem;color:var(--ink-3);font-family:var(--mono)}
+.maplegend .sw{display:inline-block;width:14px;height:11px;border-radius:2px;vertical-align:-1px;margin-right:4px;border:1px solid var(--line)}
+.maplegend .bsw{display:inline-block;width:11px;height:11px;border-radius:50%;background:var(--bub);opacity:.7;vertical-align:-1px;margin-right:4px}
+.maptip{position:absolute;pointer-events:none;background:var(--ink);color:var(--bg);font-size:.78rem;line-height:1.4;
+  padding:6px 9px;border-radius:6px;max-width:260px;z-index:5;box-shadow:0 2px 10px rgba(0,0,0,.18)}
+.maptip b{font-weight:650}
+.geo-sel{margin:12px 0 0}
+.geo-sel .card{border-left:3px solid var(--bub)}
+.geo-sel .chips{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px}
+.geo-cols{margin-top:16px}
+.rank{display:grid;grid-template-columns:minmax(110px,44%) 1fr 40px;gap:8px;align-items:center;font-size:.84rem;padding:2px 0}
+.rank .nm{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;cursor:pointer;color:var(--ink);background:none;border:0;
+  padding:1px 0;text-align:left;font:inherit;font-size:.84rem}
+.rank .nm:hover{color:var(--accent)}
+.rank .nm:focus-visible{color:var(--accent);outline:2px solid var(--accent);outline-offset:1px}
+.rank .nm small{color:var(--ink-3);font-family:var(--mono);font-size:.7rem;margin-left:5px}
+.rank .bar{height:9px;border-radius:0 4px 4px 0;background:var(--accent);opacity:.85;min-width:2px}
+.rank .bar.m{background:var(--bub)}
+.rank .n{font-family:var(--mono);font-size:.78rem;text-align:right;color:var(--ink-2)}
+.stack{display:flex;height:18px;gap:2px;margin:6px 0 4px}
+.stack i{display:block;height:100%;border-radius:2px;min-width:1px}
+.stack i.a{background:var(--s1)}.stack i.b{background:var(--s3)}.stack i.c{background:var(--s2)}.stack i.o{background:var(--line-2)}
+.yrow{display:grid;grid-template-columns:40px 1fr 34px;gap:8px;align-items:center;font-size:.8rem;padding:2px 0}
+.yrow .y{font-family:var(--mono);color:var(--ink-2)}
+.yrow .n{font-family:var(--mono);color:var(--ink-3);text-align:right;font-size:.74rem}
+.yrow .stack{margin:0;height:14px}
+.yrow i.r0{background:var(--s1)}.yrow i.r1{background:var(--s2)}.yrow i.r2{background:var(--s3)}.yrow i.r3{background:var(--s4)}
+.yrow i.r4{background:var(--s5)}.yrow i.r5{background:var(--s6)}.yrow i.r6{background:var(--s7)}.yrow i.r7{background:var(--s8)}.yrow i.r8{background:var(--line-2)}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:.76rem;color:var(--ink-2);margin-top:8px}
+.legend .sw{display:inline-block;width:11px;height:11px;border-radius:2px;vertical-align:-1px;margin-right:5px}
+.legend .r0{background:var(--s1)}.legend .r1{background:var(--s2)}.legend .r2{background:var(--s3)}.legend .r3{background:var(--s4)}
+.legend .r4{background:var(--s5)}.legend .r5{background:var(--s6)}.legend .r6{background:var(--s7)}.legend .r7{background:var(--s8)}.legend .r8{background:var(--line-2)}
+.legend .a{background:var(--s1)}.legend .b{background:var(--s3)}.legend .c{background:var(--s2)}.legend .o{background:var(--line-2)}
+.geo-more{background:none;border:0;color:var(--accent);cursor:pointer;font-family:var(--mono);font-size:.76rem;padding:6px 0 0}
+.geo-more:hover{text-decoration:underline}
+.inst-tag{display:inline-block;background:var(--panel-2);border:1px solid var(--line);border-radius:5px;padding:1px 7px;font-size:.78rem;margin:0 4px 4px 0}
+.inst-tag.lead{border-color:var(--bub);background:color-mix(in srgb,var(--bub) 12%,var(--panel))}
+.inst-tag .k{font-family:var(--mono);font-size:.66rem;color:var(--ink-3);margin-left:4px}
+.geo-table{width:auto;font-size:.8rem;margin-top:8px}
+.geo-table th,.geo-table td{padding:3px 9px}
+details.tbl{margin-top:8px;font-size:.8rem;color:var(--ink-3)}
+details.tbl summary{cursor:pointer;font-family:var(--mono);font-size:.74rem}
+@media(max-width:640px){ .rank{grid-template-columns:minmax(90px,50%) 1fr 36px} .maplegend{gap:8px 14px} .seg button{padding:6px 9px;font-size:.8rem} }
 footer{padding:34px 0 54px;color:var(--ink-3);font-size:.85rem}
 footer a{color:var(--ink-2)}
 .disclosure{background:var(--panel-2);border:1px solid var(--line);border-radius:var(--radius);
@@ -225,6 +294,7 @@ footer a{color:var(--ink-2)}
       <a href="#overview">Overview</a>
       <a href="#taxonomy">Taxonomy</a>
       <a href="#timeline">Timeline</a>
+      <a href="#geography">Who&nbsp;builds&nbsp;them</a>
       <a href="#tables">Model&nbsp;×&nbsp;Benchmark</a>
       <a href="#paper">Survey</a>
       <a href="#feed">New&nbsp;on&nbsp;arXiv</a>
@@ -272,6 +342,41 @@ footer a{color:var(--ink-2)}
     <div class="tl-axis" id="tlAxis"></div>
     <div class="count-note" id="tlNote"></div>
     <div class="tl-list" id="tlList"></div>
+  </div>
+</section>
+
+<section id="geography">
+  <div class="wrap">
+    <div class="eyebrow">Who builds them</div>
+    <h2>Where the benchmarks come from</h2>
+    <p class="lede" id="geoLede"></p>
+    <div class="statgrid" id="geoStats"></div>
+    <div class="callout" id="geoCoverage" style="margin:16px 0 0"></div>
+    <div class="geo-ctl">
+      <div class="seg" id="geoMode" role="group" aria-label="What the map counts">
+        <button type="button" data-mode="bench_all" aria-pressed="true">Benchmarks · any author</button>
+        <button type="button" data-mode="bench_lead" aria-pressed="false">Benchmarks · lead institution</button>
+        <button type="button" data-mode="models_all" aria-pressed="false">Models · builder</button>
+      </div>
+      <span class="count-note" id="geoModeNote" style="margin:0"></span>
+    </div>
+    <div class="mapwrap">
+      <svg id="geoMap" role="group" aria-label="World map: countries shaded by count, circles are institutions sized by count; circles are keyboard-focusable"></svg>
+      <div class="maplegend" id="geoLegend"></div>
+      <div class="maptip" id="geoTip" hidden></div>
+    </div>
+    <div class="count-note" style="margin-top:8px" id="geoMapNote"></div>
+    <div id="geoSel" class="geo-sel" aria-live="polite"></div>
+    <div class="cols geo-cols">
+      <div class="card"><h3>Institutions</h3><div class="count-note" id="geoInstNote"></div><div id="geoInst"></div></div>
+      <div class="card"><h3>Countries &amp; territories</h3><div class="count-note" id="geoCountryNote"></div><div id="geoCountry"></div></div>
+    </div>
+    <div class="cols geo-cols">
+      <div class="card"><h3>Academic institutions, companies, or both</h3><div id="geoType"></div></div>
+      <div class="card"><h3>Lead institution's region, by year</h3><div id="geoYear"></div></div>
+    </div>
+    <div class="card" style="margin-top:16px"><h3>In both lists: model builders that also publish benchmarks</h3><div id="geoBoth"></div></div>
+    <details class="acc" style="margin-top:18px"><summary>How institutions were attributed<span class="sub">method &amp; limits</span></summary><div id="geoMethod" style="margin-top:10px;font-size:.9rem;color:var(--ink-2)"></div></details>
   </div>
 </section>
 
@@ -367,6 +472,8 @@ function monthOf(b){ return b.arxiv_date ? b.arxiv_date.slice(0,7) : null; }
 var catById = {}; T.categories.forEach(function(c){ catById[c.id]=c; });
 var benchById = {}; B.forEach(function(b){ benchById[b.id]=b; });
 var modelById = {}; M.forEach(function(m){ modelById[m.id]=m; });
+var resCount = {}; R.forEach(function(r){ resCount[r.benchmark] = (resCount[r.benchmark]||0)+1; });
+var instIndex = {}; ((D.institutions&&D.institutions.entries)||[]).forEach(function(i){ instIndex[i.id]=i; });
 
 // ---------- theme ----------
 var tb = document.getElementById('themeBtn');
@@ -390,10 +497,12 @@ var statDefs = [
   ['pre_2025','Posted before 2025'],
   ['categories','Capability categories'],
   ['models','Models tracked'],
-  ['result_cells','Sourced result cells']
+  ['result_cells','Sourced result cells'],
+  ['institutions','Institutions']
 ];
 var sg = document.getElementById('stats');
 statDefs.forEach(function(d){
+  if(S[d[0]]===undefined) return;
   var c = el('div','stat');
   c.appendChild(el('div','n', String(S[d[0]])));
   c.appendChild(el('div','l', d[1]));
@@ -540,7 +649,7 @@ function benchCard(b){
   var d = el('div','bench'); d.id = 'b-'+b.id;
   var cats = b.categories.map(function(c){
     return '<span class="tag">'+esc(catById[c]?catById[c].name:c)+'</span>'; }).join('');
-  var nRes0 = R.filter(function(r){ return r.benchmark===b.id; }).length;
+  var nRes0 = resCount[b.id]||0;
   var head = '<div class="bench-h"><span class="nm">'+esc(b.name)+'</span>'+
     '<span class="cats">'+b.categories.slice(0,2).map(function(c){
       return esc(catById[c]?catById[c].name:c); }).join(' · ')+'</span>'+
@@ -558,13 +667,29 @@ function benchCard(b){
   if(b.size) rows.push(['Size', esc(b.size)]);
   if(b.metrics&&b.metrics.length) rows.push(['Metrics', esc(b.metrics.join(', '))]);
   if(b.venue) rows.push(['Venue', esc(b.venue)]);
+  (function(){
+    var AFM = D.affiliations && D.affiliations.benchmarks; var IB = D.institutions && D.institutions.entries;
+    if(!AFM || !IB || !IB.length) return;
+    var AF = AFM[b.id];
+    var cn = (D.institutions.country_names)||{};
+    var st = !AF ? 'not_attributed' : (AF.status==='no_affiliation_text' || !(AF.institutions||[]).length) ? 'no_affiliation' : (!AF.publishable ? 'pending' : (AF.status==='partial' ? 'partial' : 'attributed'));
+    var STATE_TXT = { not_attributed:'not yet attributed (new entry — affiliations are added in the next pass)',
+      no_affiliation:'no affiliation printed on the paper', pending:'extracted, but the independent second read did not confirm it — not counted' };
+    if(st==='not_attributed' || st==='no_affiliation' || st==='pending'){
+      rows.push(['Institutions', '<span class="mono" style="font-size:.78rem;color:var(--ink-3)">'+STATE_TXT[st]+'</span>']); return; }
+    rows.push(['Institutions', AF.institutions.map(function(a){
+      var i = instIndex[a.inst]; if(!i) return '';
+      return '<span class="inst-tag'+(a.lead?' lead':'')+'" title="'+esc((a.unit?a.unit+' · ':'')+(a.city?a.city+', ':'')+(cn[a.country||i.country]||a.country||i.country||''))+'">'+
+        esc(i.name)+(a.lead?'<span class="k">lead</span>':'')+'</span>'; }).join('')+
+      (st==='partial' ? '<span class="mono" style="font-size:.7rem;color:var(--ink-3)"> (some authors\u2019 affiliations could not be read)</span>' : '')]);
+  })();
   var links = [];
   if(b.url) links.push(link(b.url, b.arxiv_id?('arXiv:'+b.arxiv_id):'paper'));
   if(b.code) links.push(link(b.code,'code'));
   if(b.data) links.push(link(b.data,'data'));
   if(b.leaderboard) links.push(link(b.leaderboard,'leaderboard'));
   if(links.length) rows.push(['Links', links.join(' · ')]);
-  var nRes = R.filter(function(r){ return r.benchmark===b.id; }).length;
+  var nRes = resCount[b.id]||0;
   if(nRes) rows.push(['In tables', nRes+' sourced score'+(nRes===1?'':'s')+
     ' — see <a href="#tables">Model × benchmark</a>']);
   if(b.note) rows.push(['Note', esc(b.note)]);
@@ -601,7 +726,13 @@ function renderBench(reset){
 function openBenchmark(id){
   activeCats={}; document.getElementById('q').value=''; document.getElementById('eraSel').value='all';
   renderChips();
-  shown = B.length;          // the target may sit past the paging cut-off
+  // render only as far as the target sits in the current sort, not all 380 cards
+  var sortNow = document.getElementById('sortBy').value, ordered = B.slice().sort(function(a,b){
+    if(sortNow==='name') return a.name.localeCompare(b.name);
+    var da=a.arxiv_date||'0000-00', db=b.arxiv_date||'0000-00';
+    return sortNow==='date-asc' ? da.localeCompare(db) : db.localeCompare(da); });
+  var at = ordered.findIndex(function(x){ return x.id===id; });
+  shown = Math.max(PAGE, at+1);
   renderBench(false);
   var n = document.getElementById('b-'+id);
   if(n){ n.classList.add('open'); n.scrollIntoView({block:'center'});
@@ -860,6 +991,259 @@ document.getElementById('disclosure').innerHTML = E.disclosure || '';
 document.getElementById('footerLine').innerHTML =
   'Built ' + (D.built_at||'').slice(0,10) + ' · ' + S.benchmarks + ' benchmarks · ' +
   S.result_cells + ' sourced result cells · ' + (E.footer_note||'');
+
+
+// ---------- geography: who builds the benchmarks, and where ----------
+(function(){
+  var G = D.geo, I = D.institutions, WM = D.world;
+  var sec = document.getElementById('geography');
+  if(!G || !WM || !I || !G.institutions || !G.institutions.length){ if(sec) sec.style.display='none'; return; }
+  var instById = {}; (I.entries||[]).forEach(function(i){ instById[i.id]=i; });
+  var cname = I.country_names || {}, iso2num = I.iso_numeric || {};
+  var rowById = {}; G.institutions.forEach(function(r){ rowById[r.id]=r; });
+  var mode = 'bench_all', selected = null;
+  var MODE_LABEL = { bench_all:'benchmarks (any author)', bench_lead:'benchmarks (lead institution)', models_all:'models (builder)' };
+  function pct(a,b){ return b ? Math.round(a/b*100)+'%' : '—'; }
+  function cLabel(cc){ return cname[cc] || cc || 'unknown'; }
+  function instVal(r){ return r[mode]||0; }
+  function siteVal(s){ return s[mode]||0; }
+  function countryVal(c){ return mode==='models_all' ? c.models : c[mode]; }
+  function plural(n, s){ return n+' '+(n===1? s : (s.slice(-1)==='y' ? s.slice(0,-1)+'ies' : s+'s')); }
+
+  document.getElementById('geoLede').innerHTML = E.geo_intro || '';
+  var acad = G.types.academia||{}, ind = G.types.industry||{};
+  var N = G.counted_benchmarks, ST = G.states;
+  var tiles = [
+    [G.institutions.length, 'Institutions'],
+    [G.countries.length, 'Countries / territories'],
+    [N+' of '+G.total_benchmarks, 'Benchmarks attributed'],
+    [pct(acad.bench_lead||0, G.lead_known), 'Led from academia'],
+    [pct(G.multi_country_benchmarks, G.multi_country_denominator), 'Resolve to ≥2 countries'],
+    [G.attributed_models+' of '+(G.total_models-G.composite_models), 'Models with a builder on file']
+  ];
+  var sg = document.getElementById('geoStats');
+  tiles.forEach(function(t){ var c=el('div','stat'); c.appendChild(el('div','n',String(t[0]))); c.appendChild(el('div','l',t[1])); sg.appendChild(c); });
+  document.getElementById('geoCoverage').innerHTML = '<p style="margin:0"><strong>Coverage, stated plainly.</strong> '+
+    N+' of '+G.total_benchmarks+' benchmarks are counted below: their affiliations were read from the paper and confirmed by an independent second read'+
+    (ST.partial? ' ('+ST.partial+' of them only partly — some authors’ affiliations could not be read)':'')+'. Not counted: '+
+    [ST.no_affiliation? plural(ST.no_affiliation,'paper')+' that print no affiliation':null,
+     ST.pending? plural(ST.pending,'record')+' the second read did not confirm':null,
+     ST.not_attributed? plural(ST.not_attributed,'new entry')+' not yet attributed':null].filter(Boolean).join(', ')+
+    (ST.no_affiliation||ST.pending||ST.not_attributed ? '. ' : 'none. ')+
+    'Models: '+G.attributed_models+' attributed with an evidence link, '+G.composite_models+' cascades of third-party parts (not attributed by design)'+
+    (G.incomplete_models? ', '+G.incomplete_models+' with a builder named but no acceptable evidence (not counted)':'')+
+    (G.unknown_models? ', '+G.unknown_models+' whose builder could not be established':'')+
+    (G.models_no_record? ', '+G.models_no_record+' not yet looked up':'')+'. A benchmark has at most one lead institution (the first author’s first-listed organisation); lead-based figures use the '+G.lead_known+' benchmarks that have one.</p>';
+
+  // ----- map -----
+  var svg = document.getElementById('geoMap');
+  var W = WM.width, H = WM.height;
+  svg.setAttribute('viewBox','0 0 '+W+' '+H);
+  function px(lon){ return (lon+180)/360*W; }
+  function py(lat){ return (WM.lat_north-lat)/(WM.lat_north-WM.lat_south)*H; }
+  var NS='http://www.w3.org/2000/svg';
+  function sv(tag, attrs){ var n=document.createElementNS(NS,tag); for(var k in attrs) n.setAttribute(k, attrs[k]); return n; }
+  var gLand = sv('g',{}), gBub = sv('g',{});
+  svg.appendChild(gLand); svg.appendChild(gBub);
+  var landByNum = {}, countryByCode = {};
+  WM.countries.forEach(function(c){
+    var p = sv('path',{d:c.d,'class':'geo-land'}); p.dataset.name=c.name; if(c.id) landByNum[c.id]=p; gLand.appendChild(p);
+    var t = sv('title',{}); p.appendChild(t);
+    p.addEventListener('mousemove', function(ev){ var cr = c.id ? countryByCode[c.id] : null;
+      tip(ev, '<b>'+esc(c.name)+'</b><br>'+(cr? countryVal(cr)+' '+MODE_LABEL[mode] : 'none catalogued')); });
+    p.addEventListener('mouseleave', hideTip);
+  });
+  var BREAKS = [1,2,5,10,25];   // q1: 1 · q2: 2–4 · q3: 5–9 · q4: 10–24 · q5: 25+
+  function qClass(v){ if(!v) return ''; var q=0; BREAKS.forEach(function(b){ if(v>=b) q++; }); return 'q'+q; }
+  var tipEl = document.getElementById('geoTip'), wrapEl = tipEl.parentNode;
+  function tip(ev, html){ tipEl.innerHTML = html; tipEl.hidden=false;
+    var r = wrapEl.getBoundingClientRect(); var x = ev.clientX-r.left+12, y = ev.clientY-r.top+12;
+    if(x+270>r.width) x = Math.max(4, ev.clientX-r.left-270); if(y+80>r.height) y = ev.clientY-r.top-70;
+    tipEl.style.left=x+'px'; tipEl.style.top=y+'px'; }
+  function hideTip(){ tipEl.hidden=true; }
+  var K = 3.6;   // r = K*sqrt(v): circle AREA is proportional to the count; a transparent hit circle keeps tiny ones clickable
+
+  function renderMap(){
+    countryByCode = {};
+    G.countries.forEach(function(c){ var num = iso2num[c.code]; if(num) countryByCode[num]=c; });
+    Object.keys(landByNum).forEach(function(num){ var c = countryByCode[num]; var p = landByNum[num];
+      p.setAttribute('class','geo-land '+(c? qClass(countryVal(c)) : ''));
+      p.querySelector('title').textContent = p.dataset.name+': '+(c? countryVal(c)+' '+MODE_LABEL[mode] : 'none'); });
+    while(gBub.firstChild) gBub.removeChild(gBub.firstChild);
+    var pts = [];
+    G.institutions.forEach(function(r){ (r.sites||[]).forEach(function(s){ var v = siteVal(s); if(v>0) pts.push({r:r, s:s, v:v}); }); });
+    pts.sort(function(a,b){ return b.v-a.v; });   // big circles first, so small ones stay clickable on top
+    var vmax = pts.length ? pts[0].v : 1;
+    pts.forEach(function(p){
+      var rad = K*Math.sqrt(p.v), cx = px(p.s.lon).toFixed(1), cy = py(p.s.lat).toFixed(1);
+      var label = p.r.name+(p.s.city? ', '+p.s.city:'')+': '+p.v+' '+MODE_LABEL[mode];
+      var c = sv('circle',{cx:cx, cy:cy, r:rad.toFixed(1), 'class':'geo-bub'+(selected===p.r.id?' on':''), tabindex:'0', role:'button', 'aria-label':label});
+      var hit = rad < 5 ? sv('circle',{cx:cx, cy:cy, r:'5', 'class':'geo-hit'}) : null;
+      function showTip(ev){ tip(ev, '<b>'+esc(p.r.name)+'</b>'+(p.s.city? ' · '+esc(p.s.city):'')+'<br>'+p.v+' '+MODE_LABEL[mode]+
+        (p.r.sites.length>1 ? '<br><span style="opacity:.75">'+instVal(p.r)+' across all '+p.r.sites.length+' sites</span>':'')+
+        (p.s.defaulted && !p.s.named ? '<br><span style="opacity:.75">placed at the organisation’s main site (paper names no city)</span>':'')+
+        '<br><span style="opacity:.75">click for the list</span>'); }
+      var grp = sv('g',{'class':'geo-bg'});
+      [hit, c].forEach(function(n){ if(!n) return;
+        n.addEventListener('mousemove', showTip); n.addEventListener('mouseleave', hideTip);
+        n.addEventListener('click', function(){ select(p.r.id); }); });
+      c.addEventListener('keydown', function(ev){ if(ev.key==='Enter'||ev.key===' '){ ev.preventDefault(); select(p.r.id); } });
+      c.addEventListener('focus', function(){ var r = c.getBoundingClientRect(); showTip({clientX:r.left+r.width/2, clientY:r.top+r.height/2}); });
+      c.addEventListener('blur', hideTip);
+      if(hit) grp.appendChild(hit);   // hit target first, visible circle on top so :hover still lands on it
+      grp.appendChild(c); gBub.appendChild(grp);
+    });
+    var lg = document.getElementById('geoLegend');
+    lg.innerHTML = '<span>Country total:</span>'+
+      [['q1','1'],['q2','2–4'],['q3','5–9'],['q4','10–24'],['q5','25+']].map(function(q){ return '<span><i class="sw" style="background:var(--'+q[0]+')"></i>'+q[1]+'</span>'; }).join('')+
+      '<span style="margin-left:6px"><i class="bsw"></i>institution — circle area ∝ '+MODE_LABEL[mode]+' (largest: '+vmax+')</span>';
+    document.getElementById('geoModeNote').textContent =
+      mode==='bench_all' ? 'A benchmark counts once for every distinct institution on its paper.' :
+      mode==='bench_lead' ? 'A benchmark counts once, for the first-listed affiliation of its first author.' :
+      'A model counts once for each organisation that released it; cascades of third-party parts are not attributed.';
+    var noPoly = G.countries.filter(function(c){ return !c.has_polygon && countryVal(c)>0; }).map(function(c){ return c.name; });
+    var offMap = G.institutions.filter(function(r){ return !r.on_map && instVal(r)>0; }).length;
+    document.getElementById('geoMapNote').textContent = 'Circles are institutions, sized by count and placed at the site the paper names when it names one, otherwise at the organisation’s main campus or headquarters. Shading is the country total, counted where each occurrence sits (a company’s London lab counts for the United Kingdom). Hover or focus for numbers; click a circle for the list.'+
+      (noPoly.length? ' No polygon at this map resolution for '+noPoly.join(', ')+' — circles only.':'')+(offMap? ' '+plural(offMap,'institution')+' without coordinates appear in the ranking but not on the map.':'');
+  }
+
+  // ----- selection panel -----
+  function select(id){
+    selected = (selected===id) ? null : id;
+    renderMap(); renderInst();
+    var host = document.getElementById('geoSel'); host.innerHTML='';
+    if(!selected) return;
+    var r = rowById[selected], i = instById[selected];
+    var card = el('div','card');
+    var cities = (r.sites||[]).map(function(s){return s.city;}).filter(Boolean).filter(function(x,k,a){return a.indexOf(x)===k;});
+    var meta = [i.type, cities.slice(0,4).join(' / ')+(cities.length>4?' …':''), cLabel(i.country)].filter(Boolean).join(' · ');
+    card.innerHTML = '<h3 style="margin-bottom:2px">'+esc(i.name)+(i.short?' <span class="meta">'+esc(i.short)+'</span>':'')+'</h3>'+
+      '<div class="meta">'+esc(meta)+(i.parent?' · part of '+esc(i.parent):'')+(i.confidence&&i.confidence!=='high'?' · name resolved with '+esc(i.confidence)+' confidence':'')+'</div>'+
+      '<p style="margin:8px 0 0;font-size:.9rem;color:var(--ink-2)">'+plural(r.bench_all,'benchmark')+' with an author here ('+r.bench_lead+' led from here) · '+plural(r.models_all,'model')+' released here</p>';
+    if(r.bench_ids.length){
+      var ch = el('div','chips');
+      r.bench_ids.map(function(b){ return benchById[b]; }).filter(Boolean).sort(function(a,b){ return (b.arxiv_date||'').localeCompare(a.arxiv_date||''); }).forEach(function(b){
+        var s = el('button','chip'+(r.lead_ids.indexOf(b.id)>=0?' on':''), b.name); s.type='button'; s.title = (r.lead_ids.indexOf(b.id)>=0?'lead institution · ':'')+(b.arxiv_date||'');
+        s.addEventListener('click', function(){ openBenchmark(b.id); }); ch.appendChild(s); });
+      card.appendChild(ch);
+      card.appendChild(el('div','count-note','filled chips = led from this institution · click a chip to open the record'));
+    }
+    if(r.model_ids.length){
+      var mm = el('p'); mm.style.cssText='margin:8px 0 0;font-size:.86rem'; mm.innerHTML='<span class="meta">Models:</span> '+
+        r.model_ids.map(function(m){ return modelById[m]? esc(modelById[m].name) : esc(m); }).join(', ');
+      card.appendChild(mm);
+    }
+    var x = el('button','geo-more','clear selection'); x.type='button'; x.addEventListener('click', function(){ select(selected); }); card.appendChild(x);
+    host.appendChild(card);
+    host.scrollIntoView({block:'nearest'});
+  }
+
+  // ----- ranked lists -----
+  var showAllInst = false, showAllCountry = false;
+  function rankRows(host, rows, valFn, labelFn, onClick, cls){
+    host.innerHTML='';
+    var max = rows.length ? valFn(rows[0]) : 1;
+    rows.forEach(function(r){
+      var v = valFn(r); if(!v) return;
+      var d = el('div','rank');
+      var nm = el(onClick?'button':'span','nm'); if(onClick) nm.type='button'; nm.innerHTML = labelFn(r); nm.title = nm.textContent;
+      if(onClick) nm.addEventListener('click', function(){ onClick(r); });
+      d.appendChild(nm);
+      var bar = el('div','bar'+(cls?' '+cls:'')); bar.style.width = Math.max(2, v/max*100)+'%'; bar.setAttribute('aria-hidden','true'); d.appendChild(bar);
+      d.appendChild(el('span','n', String(v)));
+      host.appendChild(d);
+    });
+  }
+  function renderInst(){
+    var rows = G.institutions.slice().sort(function(a,b){ return instVal(b)-instVal(a) || a.name.localeCompare(b.name); }).filter(function(r){ return instVal(r)>0; });
+    var NI = 20, host = document.getElementById('geoInst');
+    rankRows(host, showAllInst ? rows : rows.slice(0,NI), instVal, function(r){
+      return (selected===r.id?'<strong>':'')+esc(r.short && r.short.length<=14 ? r.short : r.name)+(selected===r.id?'</strong>':'')+'<small>'+esc(r.country||'')+(r.on_map?'':' · not on map')+'</small>'; }, function(r){ select(r.id); }, mode==='models_all'?'m':'');
+    document.getElementById('geoInstNote').textContent = rows.length+' institutions with at least one '+(mode==='models_all'?'model':'benchmark')+' — '+MODE_LABEL[mode]+'. The country tag is where the organisation is based; a company’s regional lab is counted where it sits in the country list and on the map. Click a name to see it on the map.';
+    if(rows.length>NI){ var b = el('button','geo-more', showAllInst ? 'show top '+NI : 'show all '+rows.length); b.type='button'; b.addEventListener('click', function(){ showAllInst=!showAllInst; renderInst(); }); host.appendChild(b); }
+  }
+  function renderCountry(){
+    var rows = G.countries.slice().sort(function(a,b){ return countryVal(b)-countryVal(a) || a.name.localeCompare(b.name); }).filter(function(c){ return countryVal(c)>0; });
+    var NC = 12, host = document.getElementById('geoCountry');
+    rankRows(host, showAllCountry ? rows : rows.slice(0,NC), countryVal, function(c){ return esc(c.name)+'<small>'+c.institutions+' inst.</small>'; }, null, mode==='models_all'?'m':'');
+    document.getElementById('geoCountryNote').textContent = rows.length+' countries / territories — '+MODE_LABEL[mode]+', counted where each institution’s site sits. Hong Kong and Macau are listed separately from mainland China here; the year chart groups them.';
+    if(rows.length>NC){ var b = el('button','geo-more', showAllCountry ? 'show top '+NC : 'show all '+rows.length); b.type='button'; b.addEventListener('click', function(){ showAllCountry=!showAllCountry; renderCountry(); }); host.appendChild(b); }
+  }
+
+  // ----- universities / companies -----
+  (function(){
+    var ts = G.type_split, tot = ts.univ_only+ts.company_only+ts.univ_and_company+ts.neither;
+    var host = document.getElementById('geoType');
+    var segs = [['a','Academic, no company',ts.univ_only],['b','Academic + company',ts.univ_and_company],['c','Company, no academic',ts.company_only],['o','Neither (government lab / non-profit only)',ts.neither]];
+    var gov = G.types.government||{}, npo = G.types.nonprofit||{}, oth = G.types.other||{};
+    host.innerHTML = '<p style="margin:0 0 4px;font-size:.88rem;color:var(--ink-2)">The '+tot+' counted benchmarks, by the kinds of organisation on the author list. <em>Academic</em> = universities and academic research institutes; national labs and agencies (A*STAR, the CAS institutes, CNRS) are <em>government</em>, so a paper with a university and a CAS institute falls in the first bucket:</p>'+
+      '<div class="stack" role="img" aria-label="'+esc(segs.map(function(s){ return s[1]+' '+s[2]; }).join(', '))+'">'+segs.map(function(s){ return s[2]? '<i class="'+s[0]+'" style="width:'+(s[2]/tot*100)+'%" title="'+esc(s[1]+': '+s[2]+' ('+pct(s[2],tot)+')')+'"></i>':''; }).join('')+'</div>'+
+      '<div class="legend">'+segs.map(function(s){ return '<span><i class="sw '+s[0]+'"></i>'+esc(s[1])+' — '+s[2]+' ('+pct(s[2],tot)+')</span>'; }).join('')+'</div>'+
+      '<p style="margin:12px 0 0;font-size:.88rem;color:var(--ink-2)">By the lead institution (at most one per benchmark; '+G.lead_known+' of '+tot+' have one): academic institutions '+(acad.bench_lead||0)+' ('+pct(acad.bench_lead||0,G.lead_known)+'), companies '+(ind.bench_lead||0)+' ('+pct(ind.bench_lead||0,G.lead_known)+')'+
+      (gov.bench_lead? ', government labs '+gov.bench_lead:'')+(npo.bench_lead? ', non-profits '+npo.bench_lead:'')+(oth.bench_lead? ', other '+oth.bench_lead:'')+'. '+
+      'Among the '+G.attributed_models+' attributed models, '+(ind.models||0)+' have a company among their builders and '+(acad.models||0)+' an academic institution.</p>';
+  })();
+
+  // ----- lead region by year -----
+  (function(){
+    var host = document.getElementById('geoYear');
+    var order = G.region_order.filter(function(r){ return (G.region_totals[r]||0)>0; });
+    var FOLD = 4;   // regions with fewer than this many benchmarks overall fold into Other, to keep the legend readable
+    var keep = order.filter(function(r){ return r==='Other' || r==='Unknown' || (G.region_totals[r]||0)>=FOLD; });
+    var fold = order.filter(function(r){ return keep.indexOf(r)<0; });
+    if(fold.length && keep.indexOf('Other')<0) keep.push('Other');
+    var cls = {}; G.region_order.forEach(function(r,i){ cls[r]='r'+i; });
+    host.innerHTML = '<p style="margin:0 0 4px;font-size:.88rem;color:var(--ink-2)">Where the lead institution sits, per year of first arXiv posting ('+G.lead_known+' benchmarks with a readable lead'+(G.lead_undated? ', '+G.lead_undated+' undated omitted':'')+'). Groups are the ones this field actually clusters in, not a standard region list'+(fold.length? '; '+fold.join(', ')+' (fewer than '+FOLD+' each) folded into Other':'')+'.</p>';
+    var tbl = '<table class="geo-table"><thead><tr><th>Year</th>'+keep.map(function(r){ return '<th>'+esc(r)+'</th>'; }).join('')+'<th>Total</th></tr></thead><tbody>';
+    G.by_year_region.forEach(function(y){
+      var row = el('div','yrow'); row.appendChild(el('span','y', y.year));
+      var st = el('div','stack'); st.setAttribute('role','img');
+      var cells = [];
+      keep.forEach(function(r){
+        var n = y.regions[r]||0;
+        if(r==='Other') fold.forEach(function(f){ n += y.regions[f]||0; });
+        cells.push(n);
+        if(!n) return;
+        var i = document.createElement('i'); i.className = cls[r]; i.style.width = (n/y.total*100)+'%'; i.title = r+': '+n+' of '+y.total+' ('+pct(n,y.total)+')'; st.appendChild(i);
+      });
+      st.setAttribute('aria-label', y.year+': '+keep.map(function(r,k){ return r+' '+cells[k]; }).join(', '));
+      row.appendChild(st); row.appendChild(el('span','n', String(y.total))); host.appendChild(row);
+      tbl += '<tr><td>'+y.year+'</td>'+cells.map(function(n){ return '<td class="num">'+n+'</td>'; }).join('')+'<td class="num">'+y.total+'</td></tr>';
+    });
+    tbl += '</tbody></table>';
+    var lg = el('div','legend');
+    lg.innerHTML = keep.map(function(r){ var n = G.region_totals[r]||0; if(r==='Other') fold.forEach(function(f){ n += G.region_totals[f]||0; });
+      return '<span><i class="sw '+cls[r]+'"></i>'+esc(r)+' — '+n+'</span>'; }).join('');
+    host.appendChild(lg);
+    var det = el('details','tbl'); det.innerHTML = '<summary>table view · group definitions</summary>'+tbl+
+      '<p style="margin:8px 0 0">'+keep.map(function(r){
+        var def = G.region_def[r]||'';
+        if(r==='Other' && fold.length) def = def+'; plus the folded groups '+fold.map(function(f){ return f+' ('+esc(G.region_def[f]||'')+')'; }).join(', ');
+        return '<b>'+esc(r)+'</b>: '+esc(def); }).join(' · ')+'</p>';
+    host.appendChild(det);
+  })();
+
+  // ----- in both lists -----
+  (function(){
+    var host = document.getElementById('geoBoth');
+    var rows = G.builders_and_benchmarkers.slice().sort(function(a,b){ return (b.bench_all+b.models_all)-(a.bench_all+a.models_all); });
+    if(!rows.length){ host.appendChild(el('p','empty','None yet.')); return; }
+    host.innerHTML = '<p style="margin:0 0 8px;font-size:.88rem;color:var(--ink-2)">'+rows.length+' organisations appear both as the builder of a model in the tables and as an author institution of at least one benchmark. This is co-occurrence in the two lists, not a claim that a benchmark evaluated its builder’s own model. Click to see which.</p>';
+    var ch = el('div','chips'); ch.style.cssText='display:flex;flex-wrap:wrap;gap:5px';
+    rows.forEach(function(r){ var s = el('button','chip', r.name+' · '+r.bench_all+' bench / '+plural(r.models_all,'model')); s.type='button'; s.addEventListener('click', function(){ select(r.id); }); ch.appendChild(s); });
+    host.appendChild(ch);
+  })();
+
+  document.getElementById('geoMethod').innerHTML = E.geo_method || '';
+  [].forEach.call(document.querySelectorAll('#geoMode button'), function(b){
+    b.addEventListener('click', function(){
+      mode = b.dataset.mode;
+      [].forEach.call(document.querySelectorAll('#geoMode button'), function(x){ x.setAttribute('aria-pressed', x===b ? 'true' : 'false'); });
+      renderMap(); renderInst(); renderCountry();
+    });
+  });
+  renderMap(); renderInst(); renderCountry();
+})();
 
 // deep link support (#b-<id>)
 if(location.hash.indexOf('#b-')===0){ openBenchmark(location.hash.slice(3)); }

@@ -7,6 +7,7 @@
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
+import { validateGeo, computeGeo } from './geo.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const read = (p) => JSON.parse(readFileSync(join(ROOT, p), 'utf8'));
@@ -19,6 +20,10 @@ const results = read('data/results.json');
 const editorial = read('data/editorial.json');
 const changelog = readOpt('data/changelog.json', { entries: [] });
 const latest = readOpt('data/latest.json', { fetched_at: null, candidates: [] });
+// geography layer (optional files: the site simply omits the section if they are absent)
+const institutions = readOpt('data/institutions.json', { entries: [], country_names: {}, iso_numeric: {} });
+const affiliations = readOpt('data/affiliations.json', { benchmarks: {}, models: {} });
+const world = readOpt('data/world.json', null);
 
 const fail = (msg) => { throw new Error(`[build] ${msg}`); };
 
@@ -66,6 +71,12 @@ if (badCells.length) fail(`results.json has ${badCells.length} bad cells:\n  ` +
 
 if (!editorial.contact_email) fail('editorial.contact_email missing');
 
+// affiliation records must point at real benchmarks / models / institutions and carry an explicit
+// publishable state; a catalogue entry without a record is allowed (new entries arrive daily) but
+// is reported, never silently dropped
+const warn = (msg) => console.warn(`[build] warning: ${msg}`);
+validateGeo({ institutions, affiliations, benchmarks, models, fail, warn });
+
 // ---------- derived ----------
 const byCat = Object.fromEntries(taxonomy.categories.map((c) => [c.id, 0]));
 for (const b of benchmarks.entries) for (const c of b.categories) byCat[c] += 1;
@@ -83,6 +94,12 @@ const stats = {
   categories: taxonomy.categories.length,
   by_category: byCat,
 };
+const geo = computeGeo({ institutions, affiliations, benchmarks, models, world });
+if (geo.institutions.length) {
+  stats.institutions = geo.institutions.length;
+  stats.countries = geo.countries.length;
+  stats.attributed_benchmarks = geo.counted_benchmarks;
+}
 
 const data = {
   built_at: new Date().toISOString(),
@@ -94,6 +111,10 @@ const data = {
   editorial,
   changelog,
   latest,
+  institutions,
+  affiliations,
+  world,
+  geo,
 };
 
 const template = readFileSync(join(ROOT, 'site-src', 'template.html'), 'utf8');
@@ -115,5 +136,6 @@ writeFileSync(join(ROOT, 'stats.json'), statsOut);
 console.log(
   `[atlas] built site/index.html: ${stats.benchmarks} benchmarks ` +
   `(${stats.since_2025} since 2025), ${stats.models} models, ${stats.result_cells} result cells, ` +
-  `${(html.length / 1024).toFixed(0)} KB`,
+  `${(html.length / 1024).toFixed(0)} KB` +
+  (geo.institutions.length ? `; geo: ${geo.institutions.length} institutions / ${geo.countries.length} countries, ${geo.counted_benchmarks}/${stats.benchmarks} benchmarks counted (${JSON.stringify(geo.states)})` : ''),
 );
