@@ -792,6 +792,17 @@
    ]
   },
   {
+   "id": "aiwaves",
+   "name": "AIWaves",
+   "short": "AIWaves",
+   "type": "industry",
+   "country": null,
+   "parent": null,
+   "confidence": "high",
+   "sites": [],
+   "aliases": []
+  },
+  {
    "id": "alexandru-ioan-cuza-university-of-iasi",
    "name": "Alexandru Ioan Cuza University of Iași",
    "short": "UAIC",
@@ -3029,35 +3040,6 @@
    ]
   },
   {
-   "id": "cornell-tech",
-   "name": "Cornell Tech",
-   "short": "Cornell Tech",
-   "type": "academia",
-   "country": "US",
-   "parent": "Cornell University",
-   "confidence": "high",
-   "sites": [
-    {
-     "city": "New York",
-     "lat": 40.76,
-     "lon": -73.95,
-     "country": "US"
-    }
-   ],
-   "aliases": [
-    {
-     "raw": "Cornell Tech",
-     "country": "US",
-     "city": "New York",
-     "lat": 40.76,
-     "lon": -73.95,
-     "type": "academia",
-     "confidence": "high",
-     "note": "Cornell University's New York City (Roosevelt Island) campus; kept separate from the Ithaca campus per campus rule"
-    }
-   ]
-  },
-  {
    "id": "cornell-university",
    "name": "Cornell University",
    "short": "Cornell",
@@ -3071,6 +3053,12 @@
      "lat": 42.45,
      "lon": -76.48,
      "country": "US"
+    },
+    {
+     "city": "New York",
+     "lat": 40.76,
+     "lon": -73.95,
+     "country": "US"
     }
    ],
    "aliases": [
@@ -3083,6 +3071,16 @@
      "type": "academia",
      "confidence": "high",
      "note": null
+    },
+    {
+     "raw": "Cornell Tech",
+     "country": "US",
+     "city": "New York",
+     "lat": 40.76,
+     "lon": -73.95,
+     "type": "academia",
+     "confidence": "high",
+     "note": "Campus of Cornell University; counted under the whole university, retaining its own site."
     }
    ]
   },
@@ -4041,6 +4039,12 @@
      "lat": 45.74,
      "lon": 126.63,
      "country": "CN"
+    },
+    {
+     "city": "Shenzhen",
+     "lat": 22.54,
+     "lon": 114.06,
+     "country": "CN"
     }
    ],
    "aliases": [
@@ -4053,26 +4057,7 @@
      "type": "academia",
      "confidence": "high",
      "note": null
-    }
-   ]
-  },
-  {
-   "id": "harbin-institute-of-technology-shenzhen",
-   "name": "Harbin Institute of Technology, Shenzhen",
-   "short": "HIT (Shenzhen)",
-   "type": "academia",
-   "country": "CN",
-   "parent": "Harbin Institute of Technology",
-   "confidence": "high",
-   "sites": [
-    {
-     "city": "Shenzhen",
-     "lat": 22.54,
-     "lon": 114.06,
-     "country": "CN"
-    }
-   ],
-   "aliases": [
+    },
     {
      "raw": "Harbin Institute of Technology, Shenzhen",
      "country": "CN",
@@ -4081,7 +4066,7 @@
      "lon": 114.06,
      "type": "academia",
      "confidence": "high",
-     "note": "Separate campus of Harbin Institute of Technology; kept distinct from the Harbin campus."
+     "note": "Campus of Harbin Institute of Technology; counted under the whole university, retaining its own site."
     },
     {
      "raw": "The Harbin Institute of Technology, Shenzhen",
@@ -4091,7 +4076,7 @@
      "lon": 113.97,
      "type": "academia",
      "confidence": "high",
-     "note": "Shenzhen campus kept separate from the Harbin main campus; Nanshan University Town."
+     "note": "Campus of Harbin Institute of Technology; counted under the whole university, retaining its own site."
     }
    ]
   },
@@ -5094,6 +5079,24 @@
      "note": "Key Laboratory of Intelligent Information Processing / ICT NLP group (ictnlp) are units within the institute."
     }
    ]
+  },
+  {
+   "id": "institute-of-high-performance-computing",
+   "name": "Institute of High Performance Computing",
+   "short": "IHPC",
+   "type": "government",
+   "country": "SG",
+   "parent": "Agency for Science, Technology and Research (A*STAR)",
+   "confidence": "high",
+   "sites": [
+    {
+     "city": "Singapore",
+     "lat": 1.3,
+     "lon": 103.79,
+     "country": "SG"
+    }
+   ],
+   "aliases": []
   },
   {
    "id": "institute-of-information-engineering-chinese-academy-of-sciences",
@@ -9070,7 +9073,7 @@
    "id": "shenzhen-research-institute-of-big-data",
    "name": "Shenzhen Research Institute of Big Data",
    "short": "SRIBD",
-   "type": "academia",
+   "type": "government",
    "country": "CN",
    "parent": null,
    "confidence": "medium",
@@ -10884,6 +10887,17 @@
      "note": null
     }
    ]
+  },
+  {
+   "id": "university-of-alberta",
+   "name": "University of Alberta",
+   "short": "UAlberta",
+   "type": "academia",
+   "country": "CA",
+   "parent": null,
+   "confidence": "high",
+   "sites": [],
+   "aliases": []
   },
   {
    "id": "university-of-auckland",

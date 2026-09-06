@@ -1273,7 +1273,7 @@
   },
   "sd-eval": {
    "status": "ok",
-   "verified": "confirmed",
+   "verified": "corrected",
    "publishable": true,
    "institutions": [
     {
@@ -1307,11 +1307,27 @@
      "first_author": false,
      "last": false,
      "evidence": "printed"
+    },
+    {
+     "inst": "shenzhen-research-institute-of-big-data",
+     "unit": null,
+     "raw": "SRIBD",
+     "country": "CN",
+     "city": "Shenzhen",
+     "lat": 22.54,
+     "lon": 114.05,
+     "placed": "named",
+     "printed_city": "Shenzhen",
+     "printed_country": "China",
+     "lead": false,
+     "first_author": true,
+     "last": true,
+     "evidence": "printed"
     }
    ],
    "countries_complete": true,
-   "verify_note": "Per-author lines in the batch HTML block: 'Junyi Ao ... Affiliation: School of Data Science, SRIBD,The Chinese University of Hong Kong, Shenzhen, Guangdong 518172, China'; 'Xiaohai Tian Affiliation: Bytedance'; 'Jun ZhangAffiliation: Bytedance'; 'Lu LuAffiliation: Bytedance'; 'Yuxuan WangAffiliation",
-   "note": "Per-author 'Affiliation:' lines in the HTML block. SRIBD is printed together with School of Data Science and kept in unit; printed address 'Shenzhen, Guangdong 518172, China'. Names glued to 'Affiliation:' (Jun Zhang, Lu Lu, Yuxuan Wang, Haizhou Li) segmented with the arXiv list. Corresponding-autho",
+   "verify_note": "The byline names both CUHK Shenzhen and SRIBD. SRIBD is a separate public research institution and was missing from the institution set.",
+   "note": "The byline names both CUHK Shenzhen and SRIBD. SRIBD is a separate public research institution and was missing from the institution set.",
    "n_authors": 9
   },
   "speech-specific-risk-benchmark": {
@@ -1660,7 +1676,7 @@
   },
   "mae": {
    "status": "ok",
-   "verified": "confirmed",
+   "verified": "corrected",
    "publishable": true,
    "institutions": [
     {
@@ -1728,9 +1744,9 @@
      "evidence": "printed"
     },
     {
-     "inst": "agency-for-science-technology-and-research",
-     "unit": "I2R",
-     "raw": "Agency for Science, Technology, and Research (A*STAR)",
+     "inst": "institute-for-infocomm-research",
+     "unit": null,
+     "raw": "I2R, Agency for Science, Technology, and Research (A*STAR)",
      "country": "SG",
      "city": "Singapore",
      "lat": 1.29,
@@ -1745,8 +1761,8 @@
     }
    ],
    "countries_complete": true,
-   "verify_note": "Verified against the arXiv PDF v3 first page: 'Yiming Chen† / Xianghu Yue†* / Xiaoxue Gao¶ / Chen Zhang† / Luis Fernando D’Haro⋆ / Robby T. Tan‡,† / Haizhou Li♮,† / †National University of Singapore / ♮The Chinese University of Hong Kong, Shenzhen / ⋆Universidad Politécnica de Madrid / ‡ASUS Intelli",
-   "note": "Batch HTML block lost Xianghu Yue's affiliation and glued the e-mail addresses; resolved from the PDF first page (arXiv v3): † National University of Singapore, ♮ The Chinese University of Hong Kong, Shenzhen, ⋆ Universidad Politécnica de Madrid, ‡ ASUS Intelligent Cloud Services, ¶ I2R, A*STAR. Sup",
+   "verify_note": "The paper names Institute for Infocomm Research. Apply the existing member-institute policy instead of collapsing it into A*STAR.",
+   "note": "The paper names Institute for Infocomm Research. Apply the existing member-institute policy instead of collapsing it into A*STAR.",
    "n_authors": 7
   },
   "omnibench": {
@@ -1998,7 +2014,7 @@
   },
   "cmm": {
    "status": "ok",
-   "verified": "confirmed",
+   "verified": "corrected",
    "publishable": true,
    "institutions": [
     {
@@ -2034,9 +2050,9 @@
      "evidence": "printed"
     },
     {
-     "inst": "agency-for-science-technology-and-research",
-     "unit": "IHPC",
-     "raw": "A*STAR",
+     "inst": "institute-of-high-performance-computing",
+     "unit": null,
+     "raw": "IHPC A*STAR, Singapore",
      "country": "SG",
      "city": "Singapore",
      "lat": 1.29,
@@ -2051,8 +2067,8 @@
     }
    ],
    "countries_complete": true,
-   "verify_note": "Verified against the arXiv PDF v1 first page: 'Sicong Leng 1,2∗ / Yun Xing 2∗ / Zesen Cheng 1,4∗ / Yang Zhou 3 / Hang Zhang 1,4 / Xin Li 1,4 / Deli Zhao 1,4 / Shijian Lu 2,† / Chunyan Miao 2 / Lidong Bing 1,4 / 1 DAMO Academy, Alibaba Group / 2 Nanyang Technological University / 3 IHPC A*STAR, Singa",
-   "note": "Batch HTML block lost Yun Xing's affiliation and Zesen Cheng's second one; resolved from the PDF first page: 1 DAMO Academy, Alibaba Group; 2 Nanyang Technological University; 3 IHPC A*STAR, Singapore; 4 Hupan Lab, Hangzhou, China. Sicong Leng 1,2; Yun Xing 2; Zesen Cheng 1,4; Yang Zhou 3; Hang Zhan",
+   "verify_note": "The paper names Institute of High Performance Computing. Apply the existing member-institute policy instead of collapsing it into A*STAR.",
+   "note": "The paper names Institute of High Performance Computing. Apply the existing member-institute policy instead of collapsing it into A*STAR.",
    "n_authors": 10
   },
   "mmau": {
@@ -5526,7 +5542,7 @@
   },
   "msteb": {
    "status": "ok",
-   "verified": "confirmed",
+   "verified": "corrected",
    "publishable": true,
    "institutions": [
     {
@@ -5672,27 +5688,11 @@
      "first_author": false,
      "last": true,
      "evidence": "printed"
-    },
-    {
-     "inst": "canadian-institute-for-advanced-research",
-     "unit": null,
-     "raw": "Canada CIFAR AI Chair",
-     "country": "CA",
-     "city": "Toronto",
-     "lat": 43.65,
-     "lon": -79.38,
-     "placed": "default",
-     "printed_city": null,
-     "printed_country": null,
-     "lead": false,
-     "first_author": false,
-     "last": true,
-     "evidence": "printed"
     }
    ],
    "countries_complete": true,
-   "verify_note": "'Luel Hagos Beyene1,2*, Vivek Verma3,4*, Min Ma5, Jesujoba O. Alabi6, Fabian David Schmidt7, Joyce Nakatumba-Nabende8, David Ifeoluwa Adelani3,9,10' with legend '1AIMS RIC, 2NM-AIST, 3Mila - Quebec AI Institute, 4Université de Montréal, 5Google DeepMind, 6Saarland University 7University of Würzburg,",
-   "note": "Numeric superscripts mapped from the flattened line: Beyene 1,2; Verma 3,4; Ma 5; Alabi 6; Schmidt 7; Nakatumba-Nabende 8; Adelani 3,9,10. Legend: 1 AIMS RIC, 2 NM-AIST, 3 Mila - Quebec AI Institute, 4 Université de Montréal, 5 Google DeepMind (recorded as Google / unit Google DeepMind per catalogue",
+   "verify_note": "Canada CIFAR AI Chair is a funded research-chair title, not an additional research institution. Retain the author's printed Mila and McGill affiliations and remove the chair from institution counts.",
+   "note": "Canada CIFAR AI Chair is a funded research-chair title, not an additional research institution. Retain the author's printed Mila and McGill affiliations and remove the chair from institution counts.",
    "n_authors": 7
   },
   "omnieval": {
@@ -8089,7 +8089,7 @@
   },
   "speech-continuation-bias-probe": {
    "status": "ok",
-   "verified": "confirmed",
+   "verified": "corrected",
    "publishable": true,
    "institutions": [
     {
@@ -8123,11 +8123,27 @@
      "first_author": false,
      "last": false,
      "evidence": "printed"
+    },
+    {
+     "inst": "french-national-centre-for-scientific-research",
+     "unit": "GIPSA-lab",
+     "raw": "CNRS",
+     "country": "FR",
+     "city": "Grenoble",
+     "lat": 45.19,
+     "lon": 5.74,
+     "placed": "named",
+     "printed_city": "Grenoble",
+     "printed_country": "France",
+     "lead": false,
+     "first_author": false,
+     "last": false,
+     "evidence": "printed"
     }
    ],
    "countries_complete": true,
-   "verify_note": "PDF: \"Shree Harsha Bokkahalli Satish1, Harm Lameris1, Olivier Perrotin2 / Gustav Eje Henter1, Éva Székely1 / 1Department of Speech, Music and Hearing, KTH Royal Institute of Technology, Stockholm, Sweden / 2Univ. Grenoble Alpes, CNRS, Grenoble INP, GIPSA-lab, Grenoble, France\".",
-   "note": "Mapping from PDF superscripts (1 KTH, 2 Grenoble). Affiliation 2 is printed as the French joint-lab string 'Univ. Grenoble Alpes, CNRS, Grenoble INP, GIPSA-lab'; the three parent bodies are kept together as the organisation name and GIPSA-lab as the unit.",
+   "verify_note": "The joint Grenoble affiliation explicitly includes CNRS, which was omitted. Grenoble INP remains a named component in the university affiliation; CNRS is counted separately.",
+   "note": "The joint Grenoble affiliation explicitly includes CNRS, which was omitted. Grenoble INP remains a named component in the university affiliation; CNRS is counted separately.",
    "n_authors": 5
   },
   "speechllm-bias-transferability": {
@@ -8986,12 +9002,12 @@
   },
   "isa-bench": {
    "status": "ok",
-   "verified": "confirmed",
+   "verified": "corrected",
    "publishable": true,
    "institutions": [
     {
      "inst": "shanghai-jiao-tong-university",
-     "unit": "X-LANCE Lab, School of Computer Science",
+     "unit": "X-LANCE Lab; MoE Key Lab of Artificial Intelligence; Jiangsu Key Lab of Language Computing (as printed)",
      "raw": "Shanghai Jiao Tong University",
      "country": "CN",
      "city": "Shanghai",
@@ -9004,27 +9020,11 @@
      "first_author": true,
      "last": true,
      "evidence": "printed"
-    },
-    {
-     "inst": "soochow-university",
-     "unit": null,
-     "raw": "Jiangsu Key Lab of Language Computing",
-     "country": "CN",
-     "city": "Suzhou",
-     "lat": 31.3,
-     "lon": 120.58,
-     "placed": "default",
-     "printed_city": null,
-     "printed_country": "China",
-     "lead": false,
-     "first_author": true,
-     "last": true,
-     "evidence": "printed"
     }
    ],
    "countries_complete": true,
-   "verify_note": "PDF first page: author line with no numeric markers ('Bohan Li∗, Wenbin Huang∗, Yuhang Qiu∗, ... Kai Yu †') followed by 'X-LANCE Lab, School of Computer Science, Shanghai Jiao Tong University, China / MoE Key Lab of Artificial Intelligence; Jiangsu Key Lab of Language Computing, China'. SJTU with un",
-   "note": "No per-author markers; two affiliation lines apply to the whole author list. The second line names two key labs without a parent organisation, so they are kept as separate printed entries (SJTU is the only university printed). * = equal contribution, dagger = corresponding.",
+   "verify_note": "The byline names Shanghai Jiao Tong University and two laboratories. It does not name Soochow University. Remove the unsupported Soochow mapping; retain the laboratory wording with the printed SJTU affiliation.",
+   "note": "The byline names Shanghai Jiao Tong University and two laboratories. It does not name Soochow University. Remove the unsupported Soochow mapping; retain the laboratory wording with the printed SJTU affiliation.",
    "n_authors": 10
   },
   "lalm-mcqa-robustness": {
@@ -11646,7 +11646,7 @@
   },
   "aeq-bench": {
    "status": "ok",
-   "verified": "confirmed",
+   "verified": "corrected",
    "publishable": true,
    "institutions": [
     {
@@ -11666,8 +11666,8 @@
      "evidence": "printed"
     },
     {
-     "inst": "harbin-institute-of-technology-shenzhen",
-     "unit": null,
+     "inst": "harbin-institute-of-technology",
+     "unit": "Harbin Institute of Technology, Shenzhen",
      "raw": "The Harbin Institute of Technology, Shenzhen",
      "country": "CN",
      "city": "Shenzhen",
@@ -11731,8 +11731,8 @@
     }
    ],
    "countries_complete": true,
-   "verify_note": "'Xuan Luo Affiliation: The Hong Kong Polytechnic University, Hong Kong / Affiliation: The Harbin Institute of Technology, Shenzhen', 'Lewei Yao Affiliation: Huawei, Hong Kong', 'Kai Chen Affiliation: Hong Kong University of Science and Technology, Hong Kong', 'Ruifeng Xu Affiliation: The Harbin Inst",
-   "note": "Clean per-author Affiliation lines with city printed after each. 'Correspondence: jing-amelia.li@polyu.edu.hk' was glued in front of the last author's name; treated as footnote. Institution names kept as printed (with leading 'The').",
+   "verify_note": "University campus was counted as a separate institution. Consolidated under Harbin Institute of Technology and retained the campus location.",
+   "note": "University campus was counted as a separate institution. Consolidated under Harbin Institute of Technology and retained the campus location.",
    "n_authors": 9
   },
   "agl1k": {
@@ -11968,7 +11968,7 @@
   },
   "futureomni": {
    "status": "ok",
-   "verified": "confirmed",
+   "verified": "corrected",
    "publishable": true,
    "institutions": [
     {
@@ -12004,8 +12004,8 @@
      "evidence": "printed"
     },
     {
-     "inst": "harbin-institute-of-technology-shenzhen",
-     "unit": null,
+     "inst": "harbin-institute-of-technology",
+     "unit": "Harbin Institute of Technology, Shenzhen",
      "raw": "Harbin Institute of Technology, Shenzhen",
      "country": "CN",
      "city": "Shenzhen",
@@ -12037,8 +12037,8 @@
     }
    ],
    "countries_complete": true,
-   "verify_note": "Header legend \"1]Fudan University 2]Shanghai Innovation Institute 3]Harbin Institute of Technology, Shenzhen 4]National University of Singapore\" with \"Qian Chen1 / Jinlan Fu1† / Changsong Li1,2 / Min Zhang3 / See-Kiong Ng4 / Xipeng Qiu1,2\". All four institutions listed, lead = Fudan (Qian Chen 1), l",
-   "note": "Superscripts 1-4 preserved in HTML: Qian Chen 1, Jinlan Fu 1 (dagger), Changsong Li 1,2, Min Zhang 3, See-Kiong Ng 4, Xipeng Qiu 1,2. 'Shenzhen' appears only inside the campus name, so city field left null. No separate city/country printed.",
+   "verify_note": "University campus was counted as a separate institution. Consolidated under Harbin Institute of Technology and retained the campus location.",
+   "note": "University campus was counted as a separate institution. Consolidated under Harbin Institute of Technology and retained the campus location.",
    "n_authors": 6
   },
   "hearsay": {
@@ -13414,7 +13414,7 @@
   },
   "audiorag": {
    "status": "ok",
-   "verified": "confirmed",
+   "verified": "corrected",
    "publishable": true,
    "institutions": [
     {
@@ -13464,11 +13464,27 @@
      "first_author": false,
      "last": true,
      "evidence": "printed"
+    },
+    {
+     "inst": "shenzhen-research-institute-of-big-data",
+     "unit": null,
+     "raw": "SRIBD",
+     "country": "CN",
+     "city": "Shenzhen",
+     "lat": 22.54,
+     "lon": 114.05,
+     "placed": "named",
+     "printed_city": "Shenzhen",
+     "printed_country": null,
+     "lead": false,
+     "first_author": false,
+     "last": true,
+     "evidence": "printed"
     }
    ],
    "countries_complete": true,
-   "verify_note": "Four blocks separated by 'and': 'Department of Electrical and Computer Engineering, National University of Singapore, Singapore' (x2), 'College of Intelligence and Computing, Tianjin University, China', then 'Department of Electrical and Computer Engineering, National University of Singapore, Singap",
-   "note": "HTML extraction glued all four affiliation blocks under the first author, separated by 'and'. Mapped in author order (NUS / NUS / Tianjin / NUS + CUHK-Shenzhen); e-mail domains confirm (u.nus.edu, u.nus.edu, tju.edu.cn, nus.edu.sg). 'Guangdong' printed after Shenzhen is a province, not recorded as c",
+   "verify_note": "The byline names both CUHK Shenzhen and SRIBD. SRIBD is a separate public research institution and was missing from the institution set.",
+   "note": "The byline names both CUHK Shenzhen and SRIBD. SRIBD is a separate public research institution and was missing from the institution set.",
    "n_authors": 4
   },
   "bass": {
@@ -13810,7 +13826,7 @@
   },
   "unicbench": {
    "status": "ok",
-   "verified": "confirmed",
+   "verified": "corrected",
    "publishable": true,
    "institutions": [
     {
@@ -13878,8 +13894,8 @@
      "evidence": "printed"
     },
     {
-     "inst": "harbin-institute-of-technology-shenzhen",
-     "unit": null,
+     "inst": "harbin-institute-of-technology",
+     "unit": "Harbin Institute of Technology, Shenzhen",
      "raw": "Harbin Institute of Technology, Shenzhen",
      "country": "CN",
      "city": "Shenzhen",
@@ -13895,8 +13911,8 @@
     }
    ],
    "countries_complete": true,
-   "verify_note": "PDF: 'Chenggang Rong1* Tao Han2* Zhiyuan Zhao3* Yaowu Fan4 / Jia Wan5 Song Guo2 Yuan Yuan1 Junyu Gao1,† / 1Northwestern Polytechnical University 2Hong Kong University of Science and Technology / 3Institute of Artificial Intelligence (TeleAI), China Telecom 4Sun Yat-sen University 5Harbin Institute o",
-   "note": "Numeric indices 1-5 from PDF; '*' equal contribution (Rong, Han, Zhao), dagger corresponding (Junyu Gao). TeleAI is treated as a lab of China Telecom. No countries printed.",
+   "verify_note": "University campus was counted as a separate institution. Consolidated under Harbin Institute of Technology and retained the campus location.",
+   "note": "University campus was counted as a separate institution. Consolidated under Harbin Institute of Technology and retained the campus location.",
    "n_authors": 8
   },
   "voices-of-civilizations": {
@@ -14416,7 +14432,7 @@
   },
   "ecog-bench": {
    "status": "ok",
-   "verified": "confirmed",
+   "verified": "corrected",
    "publishable": true,
    "institutions": [
     {
@@ -14468,8 +14484,8 @@
      "evidence": "printed"
     },
     {
-     "inst": "harbin-institute-of-technology-shenzhen",
-     "unit": null,
+     "inst": "harbin-institute-of-technology",
+     "unit": "Harbin Institute of Technology, Shenzhen",
      "raw": "Harbin Institute of Technology, Shenzhen",
      "country": "CN",
      "city": "Shenzhen",
@@ -14501,8 +14517,8 @@
     }
    ],
    "countries_complete": true,
-   "verify_note": "Per-author lines: 'Weijie Zhou / Affiliation: Beijing Jiaotong University / Affiliation: Foundation Model Research Center, Institute of Automation, Chinese Academy of Sciences (CASIA)'; Xiong and Zhang 'Tencent Robotics X'; Hu 'Harbin Institute of Technology, Shenzhen'; Zhu 'Department of Computer S",
-   "note": "Per-author 'Affiliation:' lines printed explicitly. The last author is printed 'Jinqiao Wnag' (typo) and the fourth 'XiaoMeng Zhu'; names normalised to the arXiv API forms. The GitHub URL and the e-mail line (nlpr.ia.ac.cn for Zhao and Wang) were glued onto Zhu's entry but are not affiliations. '(CA",
+   "verify_note": "University campus was counted as a separate institution. Consolidated under Harbin Institute of Technology and retained the campus location.",
+   "note": "University campus was counted as a separate institution. Consolidated under Harbin Institute of Technology and retained the campus location.",
    "n_authors": 9
   },
   "erm-minmaxgap": {
@@ -15301,7 +15317,7 @@
   },
   "scenebench": {
    "status": "ok",
-   "verified": "confirmed",
+   "verified": "corrected",
    "publishable": true,
    "institutions": [
     {
@@ -15321,8 +15337,8 @@
      "evidence": "printed"
     },
     {
-     "inst": "cornell-tech",
-     "unit": null,
+     "inst": "cornell-university",
+     "unit": "Cornell Tech",
      "raw": "Cornell Tech",
      "country": "US",
      "city": "New York",
@@ -15338,8 +15354,8 @@
     }
    ],
    "countries_complete": true,
-   "verify_note": "HTML: 'Laya IyerAffiliation: Stanford University / Angelina WangAffiliation: Cornell Techlaya, sanmi@stanford.eduangelina.wang@cornell.edu / Sanmi KoyejoAffiliation: Stanford University'. Mapping matches; no city/country printed.",
-   "note": "HTML glues names to 'Affiliation:' lines; emails (laya, sanmi @stanford.edu; angelina.wang@cornell.edu) corroborate the mapping.",
+   "verify_note": "University campus was counted as a separate institution. Consolidated under Cornell University and retained the campus location.",
+   "note": "University campus was counted as a separate institution. Consolidated under Cornell University and retained the campus location.",
    "n_authors": 3
   },
   "sdiareward": {
@@ -17031,29 +17047,33 @@
   },
   "mseb": {
    "status": "ok",
-   "verified": "confirmed",
+   "verified": "corrected",
    "publishable": true,
    "institutions": [
     {
      "inst": "google",
      "unit": null,
      "raw": "Google",
-     "country": "US",
-     "city": "Mountain View",
-     "lat": 37.42,
-     "lon": -122.08,
-     "placed": "default",
+     "country": null,
+     "city": null,
+     "lat": null,
+     "lon": null,
+     "placed": "unplaced",
      "printed_city": null,
      "printed_country": "USA & Germany",
      "lead": true,
      "first_author": true,
      "last": true,
-     "evidence": "printed"
+     "evidence": "printed",
+     "countries": [
+      "US",
+      "DE"
+     ]
     }
    ],
    "countries_complete": true,
-   "verify_note": "PDF: 'The MSEB Team* / Google USA & Germany / variani@google.com'. Only organisation is Google; 'USA & Germany' is printed verbatim. Names come from the arXiv API, all assigned to Google.",
-   "note": "Paper byline is collective: 'The MSEB Team*, Google USA & Germany, variani@google.com'; individual names come from the arXiv API (presumably the '*' footnote). All assigned to Google. Country printed as 'USA & Germany' (kept verbatim; per-author country split not printed).",
+   "verify_note": "The team byline prints Google USA & Germany without assigning authors to either country. Count Google once and both printed countries in any-author mode; leave the lead country and city unassigned.",
+   "note": "The team byline prints Google USA & Germany without assigning authors to either country. Count Google once and both printed countries in any-author mode; leave the lead country and city unassigned.",
    "n_authors": 5
   },
   "mtavg-bench-2-0": {
@@ -23527,7 +23547,7 @@
     },
     {
      "inst": "ehess",
-     "unit": "EHESS, ENS-PSL, CNRS (Paris)",
+     "unit": null,
      "raw": "EHESS",
      "lead": false,
      "country": "FR",
@@ -23535,11 +23555,33 @@
      "lat": 48.85,
      "lon": 2.35,
      "placed": "default"
+    },
+    {
+     "inst": "ecole-normale-superieure",
+     "unit": null,
+     "raw": "ENS-PSL",
+     "lead": false,
+     "country": "FR",
+     "city": "Paris",
+     "lat": 48.84,
+     "lon": 2.34,
+     "placed": "default"
+    },
+    {
+     "inst": "french-national-centre-for-scientific-research",
+     "unit": null,
+     "raw": "CNRS",
+     "lead": false,
+     "country": "FR",
+     "city": "Paris",
+     "lat": 48.86,
+     "lon": 2.35,
+     "placed": "default"
     }
    ],
-   "evidence_url": "https://arxiv.org/html/2402.05755",
-   "evidence_quote": "Meta AI, † Inria, Paris, ‡ EHESS, ENS-PSL, CNRS, Paris",
-   "note": "Paper 'Spirit LM: Interleaved Spoken and Written Language Model' (Nguyen, Muller, Yu, Costa-jussa, ... Sagot, Dupoux). Primary affiliation for the author list is Meta AI; daggered co-affiliations are Inria (Paris) and the joint EHESS / ENS-PSL / CNRS lab in Paris (Dupoux). Org on file (Meta) confirm"
+   "evidence_url": "https://arxiv.org/pdf/2402.05755",
+   "evidence_quote": null,
+   "note": "The shared SPIRIT LM report names Meta, Inria, EHESS, ENS-PSL and CNRS. Base and Expressive variants must include the same collaboration."
   },
   "gpt-4o-mini-audio": {
    "status": "ok",
@@ -23792,20 +23834,20 @@
    "publishable": true,
    "builders": [
     {
-     "inst": "agency-for-science-technology-and-research",
-     "unit": "Institute for Infocomm Research (I2R)",
-     "raw": "A*STAR",
+     "inst": "institute-for-infocomm-research",
+     "unit": null,
+     "raw": "Institute for Infocomm Research",
      "lead": true,
      "country": "SG",
      "city": "Singapore",
-     "lat": 1.29,
-     "lon": 103.85,
+     "lat": 1.3,
+     "lon": 103.79,
      "placed": "default"
     }
    ],
    "evidence_url": "https://arxiv.org/html/2412.09818",
-   "evidence_quote": "Institute for Infocomm Research (I2R), A*STAR, Singapore",
-   "note": "Org on file (A*STAR) confirmed. Authored as 'MERaLiON Team' (core contributors alphabetical), corresponding emails @i2r.a-star.edu.sg; developed under Singapore's National Large Language Models Funding Initiative."
+   "evidence_quote": null,
+   "note": "The MERaLiON report identifies I2R within A*STAR. Count the named member institute consistently with other I2R work."
   },
   "midashenglm": {
    "status": "ok",
@@ -24577,7 +24619,7 @@
    "builders": [
     {
      "inst": "meta",
-     "unit": "Facebook AI Research (FAIR)",
+     "unit": null,
      "raw": "Meta",
      "lead": true,
      "country": "US",
@@ -24585,53 +24627,64 @@
      "lat": 37.45,
      "lon": -122.18,
      "placed": "default"
+    },
+    {
+     "inst": "inria",
+     "unit": null,
+     "raw": "Inria",
+     "lead": false,
+     "country": "FR",
+     "city": "Paris",
+     "lat": 48.86,
+     "lon": 2.35,
+     "placed": "default"
+    },
+    {
+     "inst": "ehess",
+     "unit": null,
+     "raw": "EHESS",
+     "lead": false,
+     "country": "FR",
+     "city": "Paris",
+     "lat": 48.85,
+     "lon": 2.35,
+     "placed": "default"
     }
    ],
    "evidence_url": "https://arxiv.org/pdf/2102.01192",
-   "evidence_quote": "Facebook AI Research",
-   "note": "'On Generative Spoken Language Modeling from Raw Audio' (Lakhotia et al., TACL 2021). Single affiliation printed: Facebook AI Research (now Meta). Org on file 'Meta' confirmed."
+   "evidence_quote": null,
+   "note": "The GSLM byline footnotes explicitly add Inria and EHESS to Facebook AI Research. Both academic collaborators were omitted."
   },
   "twist": {
    "status": "ok",
    "publishable": true,
    "builders": [
     {
+     "inst": "the-hebrew-university-of-jerusalem",
+     "unit": null,
+     "raw": "The Hebrew University of Jerusalem",
+     "lead": true,
+     "country": "IL",
+     "city": "Jerusalem",
+     "lat": 31.77,
+     "lon": 35.21,
+     "placed": "default"
+    },
+    {
      "inst": "meta",
      "unit": "FAIR Team",
      "raw": "Meta",
-     "lead": true,
+     "lead": false,
      "country": "US",
      "city": "Menlo Park",
      "lat": 37.45,
      "lon": -122.18,
      "placed": "default"
-    },
-    {
-     "inst": "the-hebrew-university-of-jerusalem",
-     "unit": null,
-     "raw": "Hebrew University of Jerusalem",
-     "lead": false,
-     "country": "IL",
-     "city": "Jerusalem",
-     "lat": 31.77,
-     "lon": 35.22,
-     "placed": "default"
-    },
-    {
-     "inst": "openai",
-     "unit": null,
-     "raw": "OpenAI",
-     "lead": false,
-     "country": "US",
-     "city": "San Francisco",
-     "lat": 37.77,
-     "lon": -122.42,
-     "placed": "default"
     }
    ],
    "evidence_url": "https://arxiv.org/pdf/2305.13009",
-   "evidence_quote": "FAIR Team, Meta ... OpenAI ... The Hebrew University of Jerusalem",
-   "note": "'Textually Pretrained Speech Language Models' (NeurIPS 2023). Affiliation block lists FAIR Team, Meta first; 9 of 12 authors are Meta. First author Michael Hassid is dual HUJI+Meta (contact email huji.ac.il, project page hosted at HUJI adiyoss-lab), so the org on file 'HUJI' is a defensible alternat"
+   "evidence_quote": null,
+   "note": "The first author lists Hebrew University before Meta. The OpenAI-marked author explicitly did this work at Meta; harmonized all TWIST checkpoints with that report."
   },
   "slam-omni": {
    "status": "ok",
@@ -25509,31 +25562,31 @@
    "publishable": true,
    "builders": [
     {
-     "inst": "meta",
-     "unit": "FAIR",
-     "raw": "Meta",
+     "inst": "the-hebrew-university-of-jerusalem",
+     "unit": null,
+     "raw": "The Hebrew University of Jerusalem",
      "lead": true,
+     "country": "IL",
+     "city": "Jerusalem",
+     "lat": 31.77,
+     "lon": 35.21,
+     "placed": "default"
+    },
+    {
+     "inst": "meta",
+     "unit": "FAIR Team",
+     "raw": "Meta",
+     "lead": false,
      "country": "US",
      "city": "Menlo Park",
      "lat": 37.45,
      "lon": -122.18,
      "placed": "default"
-    },
-    {
-     "inst": "the-hebrew-university-of-jerusalem",
-     "unit": null,
-     "raw": "Hebrew University of Jerusalem",
-     "lead": false,
-     "country": "IL",
-     "city": "Jerusalem",
-     "lat": 31.77,
-     "lon": 35.22,
-     "placed": "default"
     }
    ],
-   "evidence_url": "https://arxiv.org/abs/2305.13009",
-   "evidence_quote": "FAIR Team, Meta",
-   "note": "Paper 'Textually Pretrained Speech Language Models' (arxiv.org/pdf/2305.13009): affiliations listed in order 'FAIR Team, Meta', 'OpenAI', 'The Hebrew University of Jerusalem'; first author Michael Hassid is HUJI+Meta (contact email huji.ac.il), 9 of 12 authors are FAIR. Project page pages.cs.huji.ac"
+   "evidence_url": "https://arxiv.org/pdf/2305.13009",
+   "evidence_quote": null,
+   "note": "The first author lists Hebrew University before Meta. The OpenAI-marked author explicitly did this work at Meta; harmonized all TWIST checkpoints with that report."
   },
   "pgslm": {
    "status": "ok",
@@ -25986,19 +26039,107 @@
     },
     {
      "inst": "multimodal-art-projection-m-a-p",
-     "unit": "Multimodal Art Projection",
-     "raw": "M-A-P",
+     "unit": null,
+     "raw": "Multimodal Art Projection (M-A-P)",
      "lead": false,
      "country": null,
      "city": null,
      "lat": null,
      "lon": null,
-     "placed": "none"
+     "placed": "unplaced"
+    },
+    {
+     "inst": "the-hong-kong-polytechnic-university",
+     "unit": null,
+     "raw": "The Hong Kong Polytechnic University",
+     "lead": false,
+     "country": "HK",
+     "city": "Hong Kong",
+     "lat": 22.3,
+     "lon": 114.18,
+     "placed": "default"
+    },
+    {
+     "inst": "aiwaves",
+     "unit": null,
+     "raw": "AIWaves",
+     "lead": false,
+     "country": null,
+     "city": null,
+     "lat": null,
+     "lon": null,
+     "placed": "unplaced"
+    },
+    {
+     "inst": "university-of-alberta",
+     "unit": null,
+     "raw": "University of Alberta",
+     "lead": false,
+     "country": "CA",
+     "city": null,
+     "lat": null,
+     "lon": null,
+     "placed": "unplaced"
+    },
+    {
+     "inst": "university-of-waterloo",
+     "unit": null,
+     "raw": "University of Waterloo",
+     "lead": false,
+     "country": "CA",
+     "city": "Waterloo",
+     "lat": 43.47,
+     "lon": -80.54,
+     "placed": "default"
+    },
+    {
+     "inst": "university-of-manchester",
+     "unit": null,
+     "raw": "University of Manchester",
+     "lead": false,
+     "country": "GB",
+     "city": "Manchester",
+     "lat": 53.47,
+     "lon": -2.23,
+     "placed": "default"
+    },
+    {
+     "inst": "institute-of-automation-chinese-academy-of-sciences",
+     "unit": null,
+     "raw": "Institute of Automation, Chinese Academy of Sciences",
+     "lead": false,
+     "country": "CN",
+     "city": "Beijing",
+     "lat": 39.9,
+     "lon": 116.4,
+     "placed": "default"
+    },
+    {
+     "inst": "peking-university",
+     "unit": null,
+     "raw": "Peking University",
+     "lead": false,
+     "country": "CN",
+     "city": "Beijing",
+     "lat": 39.99,
+     "lon": 116.31,
+     "placed": "default"
+    },
+    {
+     "inst": "hong-kong-university-of-science-and-technology",
+     "unit": null,
+     "raw": "Hong Kong University of Science and Technology",
+     "lead": false,
+     "country": "HK",
+     "city": "Hong Kong",
+     "lat": 22.34,
+     "lon": 114.26,
+     "placed": "default"
     }
    ],
-   "evidence_url": "https://arxiv.org/html/2409.17692v3",
-   "evidence_quote": "Beihang University; 01.AI; M-A-P",
-   "note": "MIO: A Foundation Model on Multimodal Tokens (arXiv 2409.17692, EMNLP 2025 Oral); MIO-Instruct is its instruction-tuned release (GitHub org MIO-Team). First author Zekun Wang and corresponding author Wenhao Huang are affiliated 'Beihang University; 01.AI; M-A-P'; co-corresponding author Jie Fu is Pe"
+   "evidence_url": "https://arxiv.org/pdf/2409.17692v3",
+   "evidence_quote": null,
+   "note": "The MIO v3 report lists eleven organisations. Restored all listed collaborators, rather than only the first author's three affiliations. AIWaves has no location assigned by this audit."
   },
   "qwen2-5-7b-instruct": {
    "status": "ok",
@@ -26183,7 +26324,7 @@
    "builders": [
     {
      "inst": "google",
-     "unit": "Google Research",
+     "unit": null,
      "raw": "Google",
      "lead": true,
      "country": "US",
@@ -26191,11 +26332,33 @@
      "lat": 37.42,
      "lon": -122.08,
      "placed": "default"
+    },
+    {
+     "inst": "verily",
+     "unit": null,
+     "raw": "Verily",
+     "lead": false,
+     "country": "US",
+     "city": "South San Francisco",
+     "lat": 37.65,
+     "lon": -122.41,
+     "placed": "default"
+    },
+    {
+     "inst": "tel-aviv-university",
+     "unit": null,
+     "raw": "Tel Aviv University",
+     "lead": false,
+     "country": "IL",
+     "city": "Tel Aviv",
+     "lat": 32.11,
+     "lon": 34.8,
+     "placed": "default"
     }
    ],
-   "evidence_url": "https://research.google/blog/spoken-question-answering-and-speech-continuation-using-a-spectrogram-powered-llm/",
-   "evidence_quote": "Posted by Eliya Nachmani, Research Scientist, and Alon Levkovitch, Student Researcher, Google Research",
-   "note": "Confirms org on file. Paper 'Spoken Question Answering and Speech Continuation Using Spectrogram-Powered LLM' (arXiv 2305.15255, ICLR 2024); arXiv abs page shows no affiliations, so the Google Research blog byline is used as evidence."
+   "evidence_url": "https://arxiv.org/pdf/2305.15255",
+   "evidence_quote": null,
+   "note": "The Spectron paper explicitly lists Google Research, Verily AI and Tel Aviv University; the company blog alone omitted the academic and Verily collaborators."
   },
   "lat-audio": {
    "status": "ok",
@@ -27112,22 +27275,11 @@
      "lat": 55.95,
      "lon": -3.19,
      "placed": "default"
-    },
-    {
-     "inst": "natwest",
-     "unit": null,
-     "raw": "NatWest",
-     "lead": false,
-     "country": "GB",
-     "city": "Edinburgh",
-     "lat": 55.94,
-     "lon": -3.35,
-     "placed": "default"
     }
    ],
-   "evidence_url": "https://arxiv.org/html/2601.11329v3",
-   "evidence_quote": "Karlsruhe Institute of Technology University of Edinburgh NatWest",
-   "note": "Model introduced in 'F-Actor: Controllable Conversational Behaviour in Full-Duplex Models' (Zufle, Klejch, Sanders, Niehues, Birch, Lam; Findings of ACL 2026), the paper DSB-IFEval cites for the system. Three organisations are printed as one affiliation line with no per-author superscripts; first author Maike Zufle uses a kit.edu address, so KIT is taken as lead. Last author Tsz Kin Lam carries a footnote 'Work done while at the University of Edinburgh'. Weights at huggingface.co/maikezu/f-actor. No cities printed; all three placed at default sites."
+   "evidence_url": "https://arxiv.org/pdf/2601.11329v3",
+   "evidence_quote": null,
+   "note": "The only NatWest-marked author states that the work was done at the University of Edinburgh. Credit KIT and Edinburgh as builders; NatWest is a later employer."
   }
  }
 }

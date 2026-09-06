@@ -26,6 +26,7 @@ import json, re, sys, os, unicodedata
 from collections import defaultdict, Counter
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from country_iso import iso_of, norm_city
+from metadata_corrections import apply_corrections
 
 wf_path, midx_path, world_path, ROOT, report_path = sys.argv[1:6]
 allow_missing = set()
@@ -310,6 +311,10 @@ if hard:
     json.dump({"hard": hard, "issues": issues}, open(report_path, "w", encoding="utf-8"), ensure_ascii=False, indent=1, default=list)
     sys.exit(1)
 inst_list = sorted(inst.values(), key=lambda i: i["name"].lower())
+corrected_inst = apply_corrections('institutions', {'entries': inst_list}, ROOT)
+corrected_aff = apply_corrections('affiliations', {'benchmarks': aff_b, 'models': aff_m}, ROOT)
+inst_list = sorted(corrected_inst['entries'], key=lambda i: i['name'].lower())
+aff_b, aff_m = corrected_aff['benchmarks'], corrected_aff['models']
 json.dump({"generated": "workflow atlas-institutions: paper author blocks (arXiv HTML / PDF first page) + model reports; raw strings canonicalised with a per-alias confidence; see README",
            "country_names": COUNTRY_NAME, "iso_numeric": {k: v for k, v in ISO_NUM.items() if v},
            "entries": inst_list}, open(os.path.join(ROOT, "data/institutions.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)

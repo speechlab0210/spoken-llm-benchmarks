@@ -105,8 +105,8 @@ Optional: `short`, `parent` (umbrella body such as the Chinese Academy of Scienc
 
 > **A venue claim without a link cannot be counted.** `published` and `accepted` are shown as fact only when a
 > second, independent read confirmed or corrected them *and* the record carries a URL that opens; the build fails
-> otherwise. `accepted` means the authors say so and the meeting has not happened — it is not the same as
-> `published`, and the site never merges the two.
+> otherwise. `accepted` covers an author-reported acceptance or an official acceptance/presentation record without a
+> confirmed proceedings publication. It remains distinct from `published`, even after an event has taken place.
 
 ## How to read the tables
 
@@ -171,3 +171,28 @@ changelog on the site.
 
 Catalogue data (`data/`) is offered under CC BY 4.0; code under MIT. The underlying papers belong to
 their authors — this is an index, and every entry links back to the source.
+
+## Metadata audit, 2026-09-06
+
+GPT-6 reviewed all 383 benchmark institution sets and venue records, plus all 230 model records
+(57 component cascades remain excluded from single-builder attribution). See
+[`audit-2026-09-06.html`](audit-2026-09-06.html) and the per-record ledger in
+[`data/metadata-audit-2026-09-06.json`](data/metadata-audit-2026-09-06.json).
+This is an AI audit, not human validation. A no-discrepancy result is bounded by the cited sources;
+unresolved parent mappings, absent bylines and access failures are listed separately.
+
+Reviewed changes live in `data/metadata-corrections.json`, with before/after values, reasons and
+source links. Both metadata generators apply these patches transactionally. `build.mjs` rejects
+missing or diverging corrections. When stronger new evidence arrives, reconcile the affected patch
+with the data; do not silently overwrite the review or freeze an old acceptance forever.
+
+For a team affiliation that names multiple countries without mapping individual authors to them,
+`countries` preserves the full set while `country` stays null. Any-author totals include each printed
+country once; lead-country totals stay unknown when no single country can be assigned. Explicit
+`placed: "unplaced"` prevents a corporate-headquarters fallback.
+
+```sh
+node --test scripts/metadata-audit.test.mjs
+python -m unittest discover -s scripts -p "test_metadata_corrections.py"
+node scripts/build.mjs
+```

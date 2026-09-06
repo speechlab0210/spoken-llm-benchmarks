@@ -15,6 +15,7 @@ Pipeline order:
  -> audit_venues.py        (arithmetic and consistency findings)
 """
 import json, os, re, sys, collections
+from metadata_corrections import apply_corrections
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 V = os.path.join(ROOT, 'raw', 'venue')
@@ -339,6 +340,8 @@ def main():
         'venues': sorted(registry, key=lambda v: (v['community'], v['name'].lower())),
         'benchmarks': recs,
     }
+    payload = apply_corrections('venues', payload, ROOT)
+    payload['venues'].sort(key=lambda v: (v['community'], v['name'].lower()))
     json.dump(payload, open(OUT, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
     print('WROTE %s  benchmarks=%d  venues=%d' % (OUT, len(recs), len(registry)))
     print(json.dumps(dict(stats), indent=1, sort_keys=True))

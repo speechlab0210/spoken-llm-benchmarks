@@ -309,7 +309,7 @@
   {
    "id": "meralion",
    "name": "MERaLiON",
-   "org": "A*STAR",
+   "org": "I2R, A*STAR",
    "type": "e2e"
   },
   {
@@ -801,7 +801,7 @@
   {
    "id": "mio-instruct",
    "name": "MIO-Instruct",
-   "org": "—",
+   "org": "Beihang University",
    "type": "e2e"
   },
   {

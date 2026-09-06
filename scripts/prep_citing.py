@@ -80,7 +80,7 @@ def main():
             chunk.append({
                 "arxiv_id": w["arxiv_id"],
                 "title": w["title"],
-                "paper_text": f"C:/Users/tlkag/.openclaw/workspace/spoken-llm-benchmarks/raw/papers/{w['arxiv_id']}.txt",
+                "paper_text": (ROOT / "raw" / "papers" / f"{w['arxiv_id']}.txt").as_posix(),
                 "look_for": [{"benchmark_id": b["id"], "name": b["name"]} for b in w["benchmarks"]],
             })
         (outdir / f"c_{n:03d}.json").write_text(

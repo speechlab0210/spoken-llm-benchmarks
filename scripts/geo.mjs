@@ -57,6 +57,8 @@ export function validateGeo({ institutions, affiliations, benchmarks, models, fa
     for (const a of rec.institutions || []) {
       if (!instIds.has(a.inst)) fail(`affiliations.benchmarks[${bid}]: unknown institution "${a.inst}"`);
       if (a.country && !/^[A-Z]{2}$/.test(a.country)) fail(`affiliations.benchmarks[${bid}]: bad country "${a.country}"`);
+      if (a.countries && (!Array.isArray(a.countries) || !a.countries.length || a.countries.some(cc => !/^[A-Z]{2}$/.test(cc)) || a.country)) fail(`affiliations.benchmarks[${bid}]: countries must be non-empty ISO codes with country unset`);
+      if (a.placed === 'unplaced' && (a.lat != null || a.lon != null)) fail(`affiliations.benchmarks[${bid}]: explicitly unplaced occurrence has coordinates`);
       if ((a.lat == null) !== (a.lon == null)) fail(`affiliations.benchmarks[${bid}]: half a coordinate for ${a.inst}`);
       if (a.lat != null && (a.lat < -90 || a.lat > 90 || a.lon < -180 || a.lon > 180)) fail(`affiliations.benchmarks[${bid}]: coordinate out of range for ${a.inst}`);
     }
@@ -94,6 +96,7 @@ export function computeGeo({ institutions, affiliations, benchmarks, models, wor
   const acc = {};
   const touch = (id) => (acc[id] = acc[id] || { bench_all: new Set(), bench_lead: new Set(), models_all: new Set(), models_lead: new Set(), sites: {} });
   const occSite = (a, i) => {
+    if (a.placed === 'unplaced') return null;
     if (a.lat != null && a.lon != null) return { city: a.city || null, lat: a.lat, lon: a.lon, placed: a.placed || 'default' };
     const s = (i.sites && i.sites[0]) || null;
     return s ? { city: s.city || null, lat: s.lat, lon: s.lon, placed: 'default' } : null;
@@ -123,8 +126,8 @@ export function computeGeo({ institutions, affiliations, benchmarks, models, wor
       const i = instById[a.inst]; if (!i) continue;
       touch(a.inst).bench_all.add(b.id);
       bumpSite(a.inst, a, 'bench_all', b.id);
-      const cc = a.country || i.country || null;
-      if (cc) { countries.add(cc); (cAll[cc] = cAll[cc] || new Set()).add(b.id); (cInst[cc] = cInst[cc] || new Set()).add(a.inst); }
+      const occurrenceCountries = a.countries || [a.country || i.country].filter(Boolean);
+      for (const cc of occurrenceCountries) { countries.add(cc); (cAll[cc] = cAll[cc] || new Set()).add(b.id); (cInst[cc] = cInst[cc] || new Set()).add(a.inst); }
       if (i.type === 'academia') hasU = true;
       if (i.type === 'industry') hasC = true;
       if (!occSite(a, i)) unplaced++;
@@ -136,7 +139,7 @@ export function computeGeo({ institutions, affiliations, benchmarks, models, wor
       leadKnown++;
       acc[lead.inst].bench_lead.add(b.id);
       bumpSite(lead.inst, lead, 'bench_lead', b.id);
-      const cc = lead.country || instById[lead.inst].country || null;
+      const cc = lead.countries ? (lead.countries.length === 1 ? lead.countries[0] : null) : lead.country || instById[lead.inst].country || null;
       if (cc) (cLead[cc] = cLead[cc] || new Set()).add(b.id);
       const yr = b.arxiv_date ? b.arxiv_date.slice(0, 4) : null;
       if (!yr) undated++;

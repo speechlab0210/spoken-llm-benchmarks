@@ -19,6 +19,7 @@ import re
 import sys
 from collections import Counter
 from pathlib import Path
+from metadata_corrections import apply_corrections
 
 sys.stdout.reconfigure(encoding="utf-8")
 ROOT = Path(__file__).resolve().parents[1]
@@ -420,10 +421,11 @@ def main():
     models = [{"id": m, "name": used[m][0], "org": used[m][1], "type": used[m][2]}
               for m in sorted(keep, key=lambda x: -counts[x])]
 
+    reviewed_models = apply_corrections('models', {'entries': models}, ROOT)
     (ROOT / args.out_cells).write_text(
         json.dumps({"cells": final}, ensure_ascii=False, indent=1), encoding="utf-8")
     (ROOT / args.out_models).write_text(
-        json.dumps({"entries": models}, ensure_ascii=False, indent=1), encoding="utf-8")
+        json.dumps(reviewed_models, ensure_ascii=False, indent=1), encoding="utf-8")
 
     print(f"raw cells        : {len(raw_cells)}")
     print(f"  unknown benchmark : {sum(unknown_bench.values())} cells / {len(unknown_bench)} names")

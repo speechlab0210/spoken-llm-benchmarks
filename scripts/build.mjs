@@ -9,6 +9,8 @@ import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 import { validateGeo, computeGeo } from './geo.mjs';
 import { validateVenues, computeVenues } from './venues.mjs';
+import { validateCorrections } from './metadata-corrections.mjs';
+import { renderMetadataAudit } from './render_metadata_audit.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const read = (p) => JSON.parse(readFileSync(join(ROOT, p), 'utf8'));
@@ -29,6 +31,7 @@ const world = readOpt('data/world.json', null);
 const venues = readOpt('data/venues.json', null);
 
 const fail = (msg) => { throw new Error(`[build] ${msg}`); };
+validateCorrections(readOpt('data/metadata-corrections.json', null), { institutions, affiliations, venues, models }, fail);
 
 // ---------- gates ----------
 if (!Array.isArray(taxonomy.categories) || !taxonomy.categories.length) fail('taxonomy.categories empty');
@@ -148,6 +151,11 @@ writeFileSync(join(ROOT, 'index.html'), html);
 const statsOut = JSON.stringify({ built_at: data.built_at, ...stats }) + '\n';
 writeFileSync(join(ROOT, 'site', 'stats.json'), statsOut);
 writeFileSync(join(ROOT, 'stats.json'), statsOut);
+const metadataAudit = readOpt('data/metadata-audit-2026-09-06.json', null);
+if (metadataAudit) {
+  const auditHtml = renderMetadataAudit(metadataAudit, read('data/metadata-corrections.json'), institutions);
+  for (const dir of [ROOT, join(ROOT, 'site')]) writeFileSync(join(dir, 'audit-2026-09-06.html'), auditHtml);
+}
 console.log(
   `[atlas] built site/index.html: ${stats.benchmarks} benchmarks ` +
   `(${stats.since_2025} since 2025), ${stats.models} models, ${stats.result_cells} result cells, ` +
