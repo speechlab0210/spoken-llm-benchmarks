@@ -243,6 +243,12 @@ details.acc > summary .sub{margin-left:auto;font-family:var(--mono);font-size:.7
 .rank .bar{height:9px;border-radius:0 4px 4px 0;background:var(--accent);opacity:.85;min-width:2px}
 .rank .bar.m{background:var(--bub)}
 .rank .n{font-family:var(--mono);font-size:.78rem;text-align:right;color:var(--ink-2)}
+.ven{font-family:var(--mono);font-size:.7rem;padding:1px 6px;border-radius:999px;border:1px solid var(--line-2);
+  color:var(--ink-2);white-space:nowrap;flex:none}
+.ven.pub{border-color:var(--accent);color:var(--accent)}
+.ven.acc{border-style:dashed}
+.ven-ev{font-family:var(--mono);font-size:.72rem;color:var(--ink-3)}
+.ven-flag{font-family:var(--mono);font-size:.72rem;color:var(--warn)}
 .stack{display:flex;height:18px;gap:2px;margin:6px 0 4px}
 .stack i{display:block;height:100%;border-radius:2px;min-width:1px}
 .stack i.a{background:var(--s1)}.stack i.b{background:var(--s3)}.stack i.c{background:var(--s2)}.stack i.o{background:var(--line-2)}
@@ -295,6 +301,7 @@ footer a{color:var(--ink-2)}
       <a href="#taxonomy">Taxonomy</a>
       <a href="#timeline">Timeline</a>
       <a href="#geography">Who&nbsp;builds&nbsp;them</a>
+      <a href="#venues" id="navVenues">Where&nbsp;published</a>
       <a href="#tables">Model&nbsp;×&nbsp;Benchmark</a>
       <a href="#paper">Survey</a>
       <a href="#feed">New&nbsp;on&nbsp;arXiv</a>
@@ -380,6 +387,25 @@ footer a{color:var(--ink-2)}
   </div>
 </section>
 
+<section id="venues">
+  <div class="wrap">
+    <div class="eyebrow">Where they were published</div>
+    <h2>From preprint to proceedings</h2>
+    <p class="lede" id="venLede"></p>
+    <div class="statgrid" id="venStats"></div>
+    <div class="callout" id="venCoverage" style="margin:16px 0 0"></div>
+    <div class="cols geo-cols">
+      <div class="card"><h3>Venues</h3><div class="count-note" id="venRankNote"></div><div id="venRank"></div></div>
+      <div class="card"><h3>Which community they publish in</h3><div id="venComm"></div></div>
+    </div>
+    <div class="cols geo-cols">
+      <div class="card"><h3>Status, by year of first arXiv posting</h3><div id="venYear"></div></div>
+      <div class="card"><h3>Preprint to proceedings, and what the claims rest on</h3><div id="venLag"></div></div>
+    </div>
+    <details class="acc" style="margin-top:18px"><summary>How each paper&#8217;s venue was established<span class="sub">method &amp; limits</span></summary><div id="venMethod" style="margin-top:10px;font-size:.9rem;color:var(--ink-2)"></div></details>
+  </div>
+</section>
+
 <section id="tables">
   <div class="wrap">
     <div class="eyebrow">Results</div>
@@ -433,6 +459,9 @@ footer a{color:var(--ink-2)}
         <option value="all">All years</option>
         <option value="2025+">2025 onwards</option>
         <option value="pre2025">Before 2025</option>
+      </select>
+      <select id="venueSel" hidden>
+        <option value="all">Any publication status</option>
       </select>
     </div>
     <div class="chiprow" id="catChips"></div>
@@ -498,6 +527,7 @@ var statDefs = [
   ['categories','Capability categories'],
   ['models','Models tracked'],
   ['result_cells','Sourced result cells'],
+  ['venue_published','Published at a venue'],
   ['institutions','Institutions']
 ];
 var sg = document.getElementById('stats');
@@ -613,6 +643,168 @@ function renderTLList(){
 }
 renderTLList();
 
+// ---------- where they were published ----------
+var VS = D.venueStats || null;
+var VREC = (D.venues && D.venues.benchmarks) || {};
+var venById = {};
+if(VS) VS.venues.forEach(function(v){ venById[v.id] = v; });
+var VEN_LABEL = { published:'Published', accepted:'Accepted, not out yet', preprint:'Preprint',
+                  unclear:'Unresolved', unchecked:'Not yet checked' };
+function venOf(b){ return VS ? (VREC[b.id] || null) : null; }
+function venShown(b){                     // the record only speaks on the site once a second read backed it
+  var r = venOf(b); return (r && r.publishable) ? r : null;
+}
+
+(function(){
+  var sec = document.getElementById('venues');
+  if(!VS){ if(sec) sec.remove(); var nv = document.getElementById('navVenues'); if(nv) nv.remove(); return; }
+  var TOT = VS.total, ST = VS.status;
+  // this block runs before the geo section defines its own pct()
+  function pct(n,d){ return d ? Math.round(n/d*100)+'%' : '0%'; }
+
+  document.getElementById('venLede').innerHTML =
+    'Every entry here starts life as an arXiv preprint, and the catalogue is built from arXiv — so the question '+
+    '&#8220;did this benchmark ever clear peer review, and where?&#8221; is not answerable from the listing itself. '+
+    'It was looked up, paper by paper. Of the '+TOT+' benchmarks, <strong>'+ST.published+'</strong> have appeared in '+
+    'proceedings or a journal, <strong>'+ST.accepted+'</strong> are accepted but their meeting has not happened yet, and '+
+    '<strong>'+ST.preprint+'</strong> are still preprints with no publication found'+
+    (ST.unchecked? ', while '+ST.unchecked+' could not be settled either way':'')+'. Checked '+esc(VS.as_of||'')+'.';
+
+  var sg = document.getElementById('venStats');
+  [[ST.published,'Published'],[ST.accepted,'Accepted, not out'],[ST.preprint,'Still preprint'],
+   [VS.venues.length,'Distinct venues'],[VS.counted+' / '+TOT,'Papers checked']].forEach(function(d){
+    var c = el('div','stat'); c.appendChild(el('div','n', String(d[0]))); c.appendChild(el('div','l', d[1])); sg.appendChild(c);
+  });
+
+  document.getElementById('venCoverage').innerHTML =
+    '<p><strong>What the numbers count.</strong> A paper enters these counts only when a second, independent pass '+
+    'reached the same answer or corrected it, and only when the claim has a URL you can open &#8212; the venue&#8217;s own '+
+    'listing, the publisher&#8217;s record, or the authors&#8217; own statement on arXiv. '+
+    (VS.states.cannot_verify? VS.states.cannot_verify+' record'+(VS.states.cannot_verify===1?'':'s')+' where the second read could not reach a primary record '+
+      (VS.states.cannot_verify===1?'is':'are')+' shown on the entry and excluded from every number here. ':'')+
+    (VS.states.no_record? VS.states.no_record+' new entr'+(VS.states.no_record===1?'y has':'ies have')+' not been checked yet. ':'')+
+    '<strong>&#8220;Preprint&#8221; means nothing was found, not that nothing exists</strong> &#8212; a paper published without its '+
+    'authors updating the arXiv comment is the hardest case, and is exactly what the second pass hunts for.</p>';
+
+  // ----- venue ranking -----
+  var showAllVen = false;
+  function renderVenRank(){
+    var host = document.getElementById('venRank'); host.innerHTML='';
+    var rows = VS.venues, NV = 18, list = showAllVen ? rows : rows.slice(0, NV);
+    var max = rows.length ? rows[0].total : 1;
+    list.forEach(function(v){
+      var d = el('div','rank');
+      var nm = el('button','nm'); nm.type='button';
+      nm.innerHTML = esc(v.name)+'<small>'+esc(v.community==='speech'?'speech':v.community==='nlp'?'NLP':
+        v.community==='ml'?'ML/AI':v.community==='vision-mm'?'vision/MM':v.community==='audio-music'?'audio/music':'other')+
+        (v.kind==='journal'?' &middot; journal':v.kind==='workshop'?' &middot; workshop':'')+'</small>';
+      nm.title = v.full || v.name;
+      nm.addEventListener('click', function(){
+        document.getElementById('venueSel').value = 'v:'+v.id;
+        renderBench(); document.getElementById('benchmarks').scrollIntoView({behavior:'smooth', block:'start'});
+      });
+      d.appendChild(nm);
+      var bar = el('div','bar'); bar.style.width = Math.max(2, v.total/max*100)+'%'; bar.setAttribute('aria-hidden','true'); d.appendChild(bar);
+      d.appendChild(el('span','n', String(v.total)));
+      host.appendChild(d);
+    });
+    if(rows.length>NV){
+      var b = el('button','geo-more', showAllVen ? 'show top '+NV : 'show all '+rows.length);
+      b.type='button'; b.addEventListener('click', function(){ showAllVen=!showAllVen; renderVenRank(); }); host.appendChild(b);
+    }
+  }
+  renderVenRank();
+  document.getElementById('venRankNote').textContent =
+    VS.venues.length+' venues hold the '+(ST.published+ST.accepted)+' papers that cleared review. A workshop is counted as '+
+    'itself, not as the conference it sits inside, and Findings is counted with its conference but labelled on the entry. '+
+    'Click a venue to filter the catalogue.';
+
+  // ----- community split -----
+  (function(){
+    var host = document.getElementById('venComm');
+    var rows = VS.communities, tot = rows.reduce(function(a,r){ return a+r.n; },0);
+    var cls = ['a','b','c','o','r4','r5'];
+    if(!tot){ host.innerHTML = '<p style="margin:0;font-size:.88rem;color:var(--ink-2)">Nothing confirmed yet.</p>'; return; }
+    host.innerHTML =
+      '<p style="margin:0 0 4px;font-size:.88rem;color:var(--ink-2)">Spoken-LLM evaluation is claimed by several '+
+      'communities at once. This is where the '+tot+' reviewed papers actually landed:</p>'+
+      '<div class="stack" role="img" aria-label="'+esc(rows.map(function(r){ return r.name+' '+r.n; }).join(', '))+'">'+
+      rows.map(function(r,i){ return '<i class="'+cls[i%cls.length]+'" style="width:'+(r.n/tot*100)+'%" title="'+
+        esc(r.name+': '+r.n+' ('+pct(r.n,tot)+')')+'"></i>'; }).join('')+'</div>'+
+      '<div class="legend">'+rows.map(function(r,i){ return '<span><i class="sw '+cls[i%cls.length]+'"></i>'+
+        esc(r.name)+' &#8212; '+r.n+' ('+pct(r.n,tot)+')</span>'; }).join('')+'</div>'+
+      '<p style="margin:12px 0 0;font-size:.88rem;color:var(--ink-2)">By kind: '+
+      VS.kinds.conference+' at conferences, '+VS.kinds.workshop+' at workshops, '+VS.kinds.journal+' in journals'+
+      (VS.kinds.other? ', '+VS.kinds.other+' elsewhere':'')+'.</p>';
+  })();
+
+  // ----- status by arXiv year -----
+  (function(){
+    var host = document.getElementById('venYear');
+    var keys = [['published','Published','a'],['accepted','Accepted, not out','b'],['preprint','Preprint','c'],['unchecked','Not settled','o']];
+    host.innerHTML = '<p style="margin:0 0 6px;font-size:.88rem;color:var(--ink-2)">Each bar is one year of first arXiv '+
+      'posting. <strong>The recent years are censored, not unpublishable</strong>: a paper posted in 2026 may simply still '+
+      'be under review, so the shrinking published share on the right is a clock, not a quality signal.</p>';
+    VS.by_year.forEach(function(y){
+      var row = el('div','yrow'); row.appendChild(el('span','y', y.year));
+      var st = el('div','stack'); st.setAttribute('role','img');
+      st.setAttribute('aria-label', y.year+': '+keys.map(function(k){ return k[1]+' '+(y[k[0]]||0); }).join(', '));
+      keys.forEach(function(k){
+        var n = y[k[0]]||0; if(!n) return;
+        var i = document.createElement('i'); i.className = k[2]; i.style.width = (n/y.total*100)+'%';
+        i.title = k[1]+': '+n+' of '+y.total+' ('+pct(n,y.total)+')'; st.appendChild(i);
+      });
+      row.appendChild(st); row.appendChild(el('span','n', String(y.total))); host.appendChild(row);
+    });
+    var lg = el('div','legend');
+    lg.innerHTML = keys.map(function(k){ return '<span><i class="sw '+k[2]+'"></i>'+k[1]+'</span>'; }).join('');
+    host.appendChild(lg);
+  })();
+
+  // ----- lag + evidence -----
+  (function(){
+    var host = document.getElementById('venLag');
+    var hist = VS.lag.hist || {}, ks = Object.keys(hist).map(Number).sort(function(a,b){ return a-b; });
+    var tot = ks.reduce(function(a,k){ return a+hist[k]; },0), max = ks.reduce(function(a,k){ return Math.max(a,hist[k]); },1);
+    var lbl = function(k){ return k<=0 ? 'same year as the preprint' : k===1 ? 'one year later' : k+' years later'; };
+    var h = '<p style="margin:0 0 6px;font-size:.88rem;color:var(--ink-2)">Proceedings carry an edition <em>year</em>, not a '+
+      'date, so the gap is only measurable in whole years. Of the '+tot+' published papers'+
+      (VS.lag.median!==null? ', the median appears '+(VS.lag.median<=0?'in the same year':VS.lag.median+' year'+(VS.lag.median===1?'':'s')+' later'):'')+':</p>';
+    host.innerHTML = h;
+    ks.forEach(function(k){
+      var d = el('div','rank');
+      var nm = el('span','nm'); nm.textContent = lbl(k); d.appendChild(nm);
+      var bar = el('div','bar'); bar.style.width = Math.max(2, hist[k]/max*100)+'%'; bar.setAttribute('aria-hidden','true'); d.appendChild(bar);
+      d.appendChild(el('span','n', String(hist[k])));
+      host.appendChild(d);
+    });
+    var ev = VS.evidence||{}, evk = Object.keys(ev).sort(function(a,b){ return ev[b]-ev[a]; });
+    var EVN = { acl_anthology:'ACL Anthology', isca_archive:'ISCA Archive', openreview:'OpenReview',
+                arxiv_comment:'the authors\u2019 own arXiv comment', arxiv_journal_ref:'the arXiv journal reference',
+                ieee:'IEEE Xplore', acm:'the ACM Digital Library', dblp:'DBLP', publisher:'the publisher\u2019s record',
+                other:'other records' };
+    if(evk.length){
+      var p = el('p'); p.style.cssText='margin:12px 0 0;font-size:.88rem;color:var(--ink-2)';
+      p.innerHTML = 'What the '+(ST.published+ST.accepted)+' venue claims rest on: '+
+        evk.map(function(k){ return (EVN[k]||esc(k))+' '+ev[k]; }).join(', ')+'.';
+      host.appendChild(p);
+    }
+  })();
+
+  document.getElementById('venMethod').innerHTML =
+    '<p>'+esc(VS.method||'')+'</p>'+
+    '<p>The lookup ladder, in order of authority: an arXiv <em>journal reference</em> field; the venue&#8217;s own listing '+
+    '(ACL Anthology, ISCA Archive, OpenReview, IEEE Xplore, the ACM Digital Library, a publisher DOI); a DBLP record whose '+
+    'venue is not <span class="mono">CoRR</span>; and, last, the authors&#8217; own &#8220;Accepted to &#8230;&#8221; note on arXiv, which '+
+    'establishes <em>accepted</em> but not <em>published</em>. Semantic Scholar and OpenAlex were used to generate candidates '+
+    'and were never accepted as proof: both name venues before proceedings exist and both get edition years wrong.</p>'+
+    '<p><strong>Limits.</strong> A publication in a venue with no open listing, in a non-English venue, or under a changed '+
+    'title will read here as a preprint. &#8220;Accepted&#8221; rests on the authors&#8217; own claim, which is not independently '+
+    'checkable until the proceedings appear. Tracks (Main, Findings, Oral, Datasets &amp; Benchmarks) are recorded only when '+
+    'the source page states one, so a blank track is missing information, not a claim about the track. Corrections to any of '+
+    'this are welcome &#8212; see <a href="#contribute">Contribute</a>.</p>';
+})();
+
 // ---------- benchmark catalogue ----------
 var activeCats = {};
 function renderChips(){
@@ -631,6 +823,23 @@ function renderChips(){
     host.appendChild(ch);
   });
 }
+(function(){                                   // publication filter, only if the layer is present
+  var sel = document.getElementById('venueSel');
+  if(!VS){ sel.remove(); return; }
+  sel.hidden = false;
+  [['published','Published only'],['accepted','Accepted, not out yet'],['preprint','Preprint only'],
+   ['none','Not settled / not checked']].forEach(function(o){
+    var op = document.createElement('option'); op.value=o[0]; op.textContent=o[1]; sel.appendChild(op);
+  });
+  var og = document.createElement('optgroup'); og.label = 'At a specific venue';
+  VS.venues.forEach(function(v){
+    var op = document.createElement('option'); op.value='v:'+v.id;
+    op.textContent = v.name+' ('+v.total+')'; og.appendChild(op);
+  });
+  sel.appendChild(og);
+  sel.addEventListener('change', function(){ renderBench(); });
+})();
+
 function benchMatches(b){
   var q = document.getElementById('q').value.trim().toLowerCase();
   var era = document.getElementById('eraSel').value;
@@ -638,9 +847,18 @@ function benchMatches(b){
   if(cats.length && !cats.some(function(c){ return b.categories.indexOf(c)>=0; })) return false;
   if(era==='2025+' && !(b.arxiv_date && b.arxiv_date>='2025-01')) return false;
   if(era==='pre2025' && !(b.arxiv_date && b.arxiv_date<'2025-01')) return false;
+  var vsel = document.getElementById('venueSel');
+  if(vsel && !vsel.hidden && vsel.value!=='all'){
+    var vr = venShown(b);
+    if(vsel.value==='none'){ if(vr) return false; }
+    else if(vsel.value.slice(0,2)==='v:'){ if(!vr || vr.venue!==vsel.value.slice(2)) return false; }
+    else if(!vr || vr.status!==vsel.value) return false;
+  }
   if(q){
+    var vd = venShown(b);
     var hay = [b.name,b.full_title,b.summary,(b.tasks||[]).join(' '),(b.languages||[]).join(' '),
-               (b.metrics||[]).join(' '),b.arxiv_id,(b.aka||[]).join(' ')].join(' ').toLowerCase();
+               (b.metrics||[]).join(' '),b.arxiv_id,(b.aka||[]).join(' '),
+               vd?(vd.display||''):'', vd?(vd.venue_full||''):''].join(' ').toLowerCase();
     if(hay.indexOf(q)<0) return false;
   }
   return true;
@@ -654,8 +872,12 @@ function benchCard(b){
     '<span class="cats">'+b.categories.slice(0,2).map(function(c){
       return esc(catById[c]?catById[c].name:c); }).join(' · ')+'</span>'+
     (nRes0? '<span class="hasres" title="'+nRes0+' sourced score'+(nRes0===1?'':'s')+' in the tables">'+nRes0+'</span>':'')+
+    (function(){ var v = venShown(b); return v && v.display ?
+      '<span class="ven '+(v.status==='published'?'pub':'acc')+'" title="'+
+      esc(v.status==='published'?'Published at this venue':'Accepted here; the meeting has not happened yet')+
+      '">'+esc(v.display)+'</span>' : ''; })()+
     (b.arxiv_date? '<span class="yr">'+esc(b.arxiv_date)+'</span>':'<span class="yr">n/a</span>')+
-    '<span class="dt">'+(b.arxiv_id?('arXiv:'+esc(b.arxiv_id)):(b.venue?esc(b.venue):''))+'</span></div>';
+    '<span class="dt">'+(b.arxiv_id?('arXiv:'+esc(b.arxiv_id)):'')+'</span></div>';
   var rows = [];
   rows.push(['Summary', esc(b.summary)]);
   if(b.full_title) rows.push(['Paper', esc(b.full_title)]);
@@ -666,7 +888,30 @@ function benchCard(b){
   if(b.io) rows.push(['Modality', esc(b.io)]);
   if(b.size) rows.push(['Size', esc(b.size)]);
   if(b.metrics&&b.metrics.length) rows.push(['Metrics', esc(b.metrics.join(', '))]);
-  if(b.venue) rows.push(['Venue', esc(b.venue)]);
+  (function(){
+    if(!VS) return;
+    var v = VREC[b.id];
+    if(!v){ rows.push(['Published in','<span class="ven-ev">not checked yet &#8212; new entries are looked up in the next pass</span>']); return; }
+    var url = v.evidence_url || v.check_url;
+    if(v.status==='published' || v.status==='accepted'){
+      var head = (v.status==='published' ? '' : 'accepted at ')+
+        (url ? link(url, v.display||v.venue_name_raw||'') : esc(v.display||v.venue_name_raw||''));
+      var bits = [];
+      if(v.venue_full && v.venue_full!==v.display) bits.push(esc(v.venue_full));
+      if(v.track) bits.push('track: '+esc(v.track));
+      if(v.parent_venue) bits.push('co-located with '+esc(v.parent_venue));
+      if(v.doi) bits.push(link('https://doi.org/'+String(v.doi).replace(/^https?:\/\/(dx\.)?doi\.org\//,''), 'doi:'+esc(v.doi)));
+      if(v.status==='accepted') bits.push('the meeting has not taken place yet');
+      if(!v.publishable) bits.push('<span class="ven-flag">the second read could not confirm this &#8212; not counted</span>');
+      rows.push(['Published in', head+(bits.length? '<div class="ven-ev">'+bits.join(' &middot; ')+'</div>':'')]);
+    } else if(v.status==='preprint'){
+      rows.push(['Published in','<span class="ven-ev">no publication found as of '+esc(VS.as_of||'')+
+        ' &#8212; arXiv preprint'+(url? ' ('+link(url,'checked here')+')':'')+'</span>']);
+    } else {
+      rows.push(['Published in','<span class="ven-flag">unresolved</span>'+
+        (v.note? '<div class="ven-ev">'+esc(v.note)+'</div>':'')]);
+    }
+  })();
   (function(){
     var AFM = D.affiliations && D.affiliations.benchmarks; var IB = D.institutions && D.institutions.entries;
     if(!AFM || !IB || !IB.length) return;

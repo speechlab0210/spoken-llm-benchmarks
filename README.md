@@ -36,6 +36,7 @@ before it, and applying it removed a large number of otherwise plausible candida
 | `data/institutions.json` | canonical organisations behind the benchmarks and models: type, country, sites (city, lat, lon), raw aliases |
 | `data/affiliations.json` | per benchmark: the institutions on its paper with lead/last-author flags; per model: the releasing organisation(s) with an evidence URL |
 | `data/world.json` | country outlines for the map (world-atlas 110m, Natural Earth, public domain), pre-projected |
+| `data/venues.json` | where each paper was finally published: the venue registry, and one record per benchmark with its status and the evidence link |
 | `site/index.html` | the built site: a single file, no external requests, no build step |
 | `paper/` | an accompanying survey of the 2025–2026 wave |
 
@@ -56,13 +57,25 @@ record yet is allowed (new entries arrive daily) and is reported as *not yet att
 ```bash
 node scripts/make_world.mjs raw/countries-110m.json data/world.json   # regenerate the map outlines
 python scripts/build_affiliations.py ...                             # workflow output -> institutions.json + affiliations.json
+python scripts/harvest_arxiv_meta.py                                 # arXiv comment / journal-ref / doi for every entry
+python scripts/harvest_anthology.py                                  # the whole ACL Anthology, matched offline
+python scripts/harvest_isca.py                                       # ISCA Archive proceedings indexes
+python scripts/harvest_crossref.py && python scripts/harvest_openreview.py
+python scripts/harvest_dblp.py && python scripts/harvest_s2.py && python scripts/harvest_openalex.py
+python scripts/resolve_venues.py 2026-09-06                          # deterministic verdicts from that evidence
+python scripts/adjudicate_weak.py                                    # settle same-author/different-title cases
+python scripts/verify_venues.py                                      # mechanical second read
+python scripts/build_venues.py 2026-09-06                            # -> data/venues.json
+python scripts/audit_venues.py                                       # arithmetic + consistency findings
 ```
 
 ## Data contract
 
 **Benchmark entry** — required: `id`, `name`, `summary`, `categories` (≥1, must exist in the
-taxonomy). Optional: `full_title`, `arxiv_id`, `arxiv_date`, `venue`, `url`, `code`, `data`,
+taxonomy). Optional: `full_title`, `arxiv_id`, `arxiv_date`, `url`, `code`, `data`,
 `leaderboard`, `tasks[]`, `languages[]`, `metrics[]`, `io`, `size`, `aka[]`, `note`.
+Publication venue is **not** a field here — it lives in `data/venues.json`, so there is one place to edit it
+and every claim carries its evidence.
 A benchmark may sit in up to three categories; most do sit in more than one, deliberately.
 
 **Result cell** — required: `benchmark`, `model`, `metric`, `value`, `source`.
@@ -80,6 +93,20 @@ Optional: `short`, `parent` (umbrella body such as the Chinese Academy of Scienc
 `evidence` = `printed` | `email_domain` | `footnote`, `raw`), `verified` (`confirmed` | `corrected` | `cannot_verify`).
 `affiliations.models[<id>]`: `status` (`ok` | `unknown` | `composite`), `builders[]` (`inst`, `unit`, `lead`), `evidence_url`.
 *Lead* means the first author's affiliation(s). Cascades of third-party parts are `composite` and carry no builder.
+
+**Venue registry entry** — required: `id`, `name`, `full`, `kind` (`conference` | `workshop` | `journal` | `other`),
+`community` (`speech` | `nlp` | `ml` | `vision-mm` | `audio-music` | `other`).
+
+**Venue record** — `venues.benchmarks[<id>]`: `status` (`published` | `accepted` | `preprint` | `unclear`),
+`venue` (a registry id; present only for `published`/`accepted`), `display` (what the site prints, e.g.
+`Findings of ACL 2026`), `year`, `kind`, `track`, `parent_venue`, `evidence`, `evidence_url`, `evidence_quote`,
+`doi`, `confidence`, `verified` (`confirmed` | `corrected` | `cannot_verify` | `not_reviewed`), `publishable`,
+`check_url`, `note`.
+
+> **A venue claim without a link cannot be counted.** `published` and `accepted` are shown as fact only when a
+> second, independent read confirmed or corrected them *and* the record carries a URL that opens; the build fails
+> otherwise. `accepted` means the authors say so and the meeting has not happened — it is not the same as
+> `published`, and the site never merges the two.
 
 ## How to read the tables
 
@@ -112,6 +139,15 @@ A blank cell means **not reported**, never zero.
   filled in from model memory. Titles matched by automatic search were re-checked against the paper,
   which is how several bad matches were caught and discarded rather than published.
 
+- **Publication venues** were resolved per paper, not looked up in bulk. Candidates came from the arXiv
+  journal-reference and author-comment fields, DBLP, OpenAlex and Semantic Scholar; a candidate was only ever a
+  lead. What settled it was the venue's own record — an ACL Anthology page, an ISCA Archive page, an OpenReview
+  forum, a publisher DOI — read and quoted. Semantic Scholar and OpenAlex name venues before proceedings exist
+  and get edition years wrong, so neither was accepted as proof on its own. Every verdict was then re-read by a
+  second, independent pass whose job was to refute it, with most of its effort aimed at the *preprint* verdicts:
+  a paper published without its authors updating the arXiv comment is the failure mode that a shallow lookup
+  cannot see. Only confirmed or corrected records are counted.
+
 - **Institutions** were read off each paper's own author block (arXiv HTML, or the PDF first page where the
   HTML omits affiliations), then independently re-read by a second pass that tried to refute the first. Raw
   affiliation strings were mapped to canonical organisations (whole university; parent company; member
@@ -121,7 +157,9 @@ A blank cell means **not reported**, never zero.
   institution on its paper, or once for its first author's institution in *lead* mode.
 
 **Known limits.** Discovery is biased toward English-language arXiv preprints; benchmarks that never
-preprint, or that appear only in non-English venues, are under-represented. Keyword-driven search has
+preprint, or that appear only in non-English venues, are under-represented. The same bias applies to the venue
+layer: a publication in a venue with no open listing, or under a changed title, reads here as a preprint, and
+the published share of any recent year is censored by review timelines rather than by quality. Keyword-driven search has
 a recall ceiling, and a triage pass over an independently harvested pool was run specifically to
 measure and partly close it. Result coverage is uneven: most catalogued benchmarks have no published
 cross-model comparison to extract.

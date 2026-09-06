@@ -8,6 +8,7 @@ import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 import { validateGeo, computeGeo } from './geo.mjs';
+import { validateVenues, computeVenues } from './venues.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const read = (p) => JSON.parse(readFileSync(join(ROOT, p), 'utf8'));
@@ -24,6 +25,8 @@ const latest = readOpt('data/latest.json', { fetched_at: null, candidates: [] })
 const institutions = readOpt('data/institutions.json', { entries: [], country_names: {}, iso_numeric: {} });
 const affiliations = readOpt('data/affiliations.json', { benchmarks: {}, models: {} });
 const world = readOpt('data/world.json', null);
+// publication-venue layer (optional: the site omits the section if the file is absent)
+const venues = readOpt('data/venues.json', null);
 
 const fail = (msg) => { throw new Error(`[build] ${msg}`); };
 
@@ -76,6 +79,7 @@ if (!editorial.contact_email) fail('editorial.contact_email missing');
 // is reported, never silently dropped
 const warn = (msg) => console.warn(`[build] warning: ${msg}`);
 validateGeo({ institutions, affiliations, benchmarks, models, fail, warn });
+validateVenues({ venues, benchmarks, fail, warn });
 
 // ---------- derived ----------
 const byCat = Object.fromEntries(taxonomy.categories.map((c) => [c.id, 0]));
@@ -94,6 +98,15 @@ const stats = {
   categories: taxonomy.categories.length,
   by_category: byCat,
 };
+const venueStats = computeVenues({ venues, benchmarks });
+if (venueStats) {
+  stats.venue_published = venueStats.status.published;
+  stats.venue_accepted = venueStats.status.accepted;
+  stats.venue_preprint = venueStats.status.preprint;
+  stats.venue_checked = venueStats.counted;
+  stats.venue_count = venueStats.venues.length;
+}
+
 const geo = computeGeo({ institutions, affiliations, benchmarks, models, world });
 if (geo.institutions.length) {
   stats.institutions = geo.institutions.length;
@@ -115,6 +128,8 @@ const data = {
   affiliations,
   world,
   geo,
+  venues,
+  venueStats,
 };
 
 const template = readFileSync(join(ROOT, 'site-src', 'template.html'), 'utf8');
@@ -137,5 +152,6 @@ console.log(
   `[atlas] built site/index.html: ${stats.benchmarks} benchmarks ` +
   `(${stats.since_2025} since 2025), ${stats.models} models, ${stats.result_cells} result cells, ` +
   `${(html.length / 1024).toFixed(0)} KB` +
-  (geo.institutions.length ? `; geo: ${geo.institutions.length} institutions / ${geo.countries.length} countries, ${geo.counted_benchmarks}/${stats.benchmarks} benchmarks counted (${JSON.stringify(geo.states)})` : ''),
+  (geo.institutions.length ? `; geo: ${geo.institutions.length} institutions / ${geo.countries.length} countries, ${geo.counted_benchmarks}/${stats.benchmarks} benchmarks counted (${JSON.stringify(geo.states)})` : '') +
+  (venueStats ? `; venues: ${venueStats.status.published} published / ${venueStats.status.accepted} accepted / ${venueStats.status.preprint} preprint across ${venueStats.venues.length} venues, ${venueStats.counted}/${stats.benchmarks} checked (${JSON.stringify(venueStats.states)})` : ''),
 );
