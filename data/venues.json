@@ -9470,6 +9470,31 @@
     "semantic_scholar"
    ],
    "check_note": "evidence record carries this paper’s title; cross-checked against crossref, dblp, semantic_scholar"
+  },
+  "warmth-mediated-harm-probe": {
+   "status": "preprint",
+   "venue": null,
+   "venue_name_raw": null,
+   "venue_full": null,
+   "year": "2026",
+   "kind": null,
+   "track": null,
+   "parent_venue": null,
+   "display": "arXiv preprint",
+   "evidence": "arxiv",
+   "evidence_raw": "arxiv",
+   "evidence_url": null,
+   "evidence_quote": null,
+   "doi": null,
+   "confidence": "high",
+   "verified": "confirmed",
+   "publishable": true,
+   "note": "venue_probe 2026-09-08: arXiv API returns no comment, no journal-ref and no DOI; Semantic Scholar 429 and DBLP unreachable from this host, and neither would be evidence anyway. No venue claim made.",
+   "check_url": "https://arxiv.org/abs/2609.04256",
+   "cross_checked": [
+    "arxiv"
+   ],
+   "check_note": "arXiv metadata only; no acceptance or publication signal anywhere."
   }
  }
 }

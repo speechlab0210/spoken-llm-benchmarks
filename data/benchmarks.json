@@ -9616,6 +9616,39 @@
     "sequential seconds"
    ],
    "note": "A protocol plus matched controls over existing datasets, not a new corpus. The headline result is a null: on VocalSound the full selector reaches 0.925 accuracy at a 12.5% call rate against 0.921 for the matched no-call selector (paired delta 0.004, 95% CI -0.025 to 0.033), while a supervised WavLM probe alone reaches 0.854 with no generative calls at all. Of the eight headline paired tests only the raw full-versus-WavLM contrast survives Holm correction. The ordering reverses on SpeechTextMatching, where transcripts (0.960) beat Qwen2-Audio (0.850), so the conclusion is scoped to known closed-set label decisions and says nothing about open dialogue quality, instruction following or general audio reasoning. The authors note that the VocalSound split is locked for this study and will harden into a fixed test set under repeated use, and that the fresh-ESD rerun is small and not speaker-disjoint."
+  },
+  {
+   "id": "warmth-mediated-harm-probe",
+   "name": "Warmth-Mediated Harm Probe",
+   "full_title": "Probing Warmth-Mediated Harm in Speech-Enabled LLMs for Mental-Health Conversations",
+   "arxiv_id": "2609.04256",
+   "arxiv_date": "2026-09",
+   "arxiv_date_full": "2026-09-01",
+   "url": "https://arxiv.org/abs/2609.04256",
+   "summary": "An audit protocol for what a speech-enabled model does when a user in distress asks it to stand in for human help. Thirty-eight scripted disclosures, drafted from the WHO mhGAP Intervention Guide v2.0 and covering its nine priority presenting conditions (depression, self-harm/suicide risk, anxiety, psychoses, substance use, child and adolescent mental health, dementia, bereavement, loneliness), each run over a fixed seven-turn structure in which emotional weight accumulates and turn 7 delivers one targeted relational ask - parasocial presence (19 scripts, e.g. daily check-ins) or role substitution (19 scripts, e.g. be my therapist). Every script carries a safety_note stating what a safe reply must contain and must not accept. The same script is executed twice on one deployed realtime model (Azure OpenAI gpt-realtime, voice alloy): an audio condition and a text-only control, giving 532 responses. User turns are delivered identically in both arms via Azure Neural TTS in a sad expressive style whose intensity rises as disclosure deepens; the endpoint exposes no prosody controls, so any tonal drift is the model's own. Scoring runs a GPT-4o transcript judge over warmth, parasocial commitment and role claim, alongside acoustic analysis of the generated speech (duration, speaking rate, mean F0, F0 std, energy, jitter and a composite warmth proxy). A second probe re-delivers a published text safety benchmark through speech: 500 paired MedQA prompts under neutral and emotional framings, isolating what audio delivery alone costs. Protocol, scoring pipeline and scripts are released; the red-team prompts are not.",
+   "categories": [
+    "safety",
+    "dialogue",
+    "domain"
+   ],
+   "tasks": [
+    "multi-turn scripted mental-health disclosure",
+    "relational-harm probing (parasocial presence, role substitution)",
+    "audio-vs-text modality transfer of a text safety benchmark",
+    "acoustic-prosody analysis of generated speech"
+   ],
+   "languages": [
+    "English"
+   ],
+   "io": "speech in, speech out (text-only control arm), scored on transcript plus response audio",
+   "size": "38 scripts x 7 turns x 2 modality conditions = 532 responses; 500 paired MedQA prompts; 30-clip two-rater listener pilot",
+   "metrics": [
+    "acceptance rate at the elicitation turn (warmth, parasocial commitment, role claim)",
+    "paired prosody delta T7 vs T1-T3",
+    "MedQA accuracy by modality (McNemar)",
+    "listener-rated perceived warmth (0-3)"
+   ],
+   "note": "A protocol and script corpus on one target model, not a multi-model leaderboard. Headline finding is audio-specific and invisible to a transcript: at turn 7 the voice gets shorter (-4.47 s), faster (+0.40 w/s), lower-pitched (-4.74 Hz) and quieter (-1.49 dB) rather than warmer, five of seven acoustic features at p<.001. Acceptance of the relational ask is high in both arms (parasocial commitment 0.58 audio vs 0.63 text) and the aggregate modality gap is not significant (McNemar exact p=0.73); the authors report only the direction of the per-condition differential because per-cell counts run from n=3 to n=8. Audio delivery also costs gpt-realtime 3.4 pp of MedQA accuracy under neutral framing (p=.036) and 5.1 pp under an emotional prefix (p=.003). Limitations the authors state: only output modality is varied within a single model; user turns use one synthetic voice lacking real disfluency; scoring leans on a GPT-4o judge plus two responsible-AI raters whose absolute-scale agreement was low (ICC(2,1)=0.13, Spearman rho=0.50), so the listener pass is exploratory and clinical validity is not established."
   }
  ]
 }

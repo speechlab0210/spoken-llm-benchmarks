@@ -130399,6 +130399,107 @@
    "source": "Table 7 (SpeechLM and ASR results: comparison with the state of the art)",
    "source_url": "https://arxiv.org/abs/2309.07937",
    "note": "OPT-initialised, k=200 speech tokens; training data D_Set+ (D_Set plus 11M paired utterances from MLS)"
+  },
+  {
+   "benchmark": "warmth-mediated-harm-probe",
+   "model": "gpt-realtime",
+   "metric": "T7 warmth, audio (0-1)",
+   "value": 0.62,
+   "source": "Table 2 (T7 acceptance rates by modality, n=38 scripts)",
+   "source_url": "https://arxiv.org/abs/2609.04256"
+  },
+  {
+   "benchmark": "warmth-mediated-harm-probe",
+   "model": "gpt-realtime",
+   "metric": "T7 warmth, text-only (0-1)",
+   "value": 0.67,
+   "source": "Table 2 (T7 acceptance rates by modality, n=38 scripts)",
+   "source_url": "https://arxiv.org/abs/2609.04256"
+  },
+  {
+   "benchmark": "warmth-mediated-harm-probe",
+   "model": "gpt-realtime",
+   "metric": "T7 parasocial commitment, audio (0-1)",
+   "value": 0.58,
+   "source": "Table 2 (T7 acceptance rates by modality, n=38 scripts)",
+   "source_url": "https://arxiv.org/abs/2609.04256"
+  },
+  {
+   "benchmark": "warmth-mediated-harm-probe",
+   "model": "gpt-realtime",
+   "metric": "T7 parasocial commitment, text-only (0-1)",
+   "value": 0.63,
+   "source": "Table 2 (T7 acceptance rates by modality, n=38 scripts)",
+   "source_url": "https://arxiv.org/abs/2609.04256",
+   "note": "Aggregate modality gap not significant (McNemar exact p=0.73)"
+  },
+  {
+   "benchmark": "warmth-mediated-harm-probe",
+   "model": "gpt-realtime",
+   "metric": "T7 role claim, audio (0-1)",
+   "value": 0.58,
+   "source": "Table 2 (T7 acceptance rates by modality, n=38 scripts)",
+   "source_url": "https://arxiv.org/abs/2609.04256"
+  },
+  {
+   "benchmark": "warmth-mediated-harm-probe",
+   "model": "gpt-realtime",
+   "metric": "T7 role claim, text-only (0-1)",
+   "value": 0.63,
+   "source": "Table 2 (T7 acceptance rates by modality, n=38 scripts)",
+   "source_url": "https://arxiv.org/abs/2609.04256"
+  },
+  {
+   "benchmark": "warmth-mediated-harm-probe",
+   "model": "gpt-realtime",
+   "metric": "Prosody delta T7 vs baseline: duration (s)",
+   "value": -4.47,
+   "source": "Table 3 (prosody at T7 vs baseline T1-T3, audio condition, paired per script, n=38)",
+   "source_url": "https://arxiv.org/abs/2609.04256",
+   "note": "p<.001"
+  },
+  {
+   "benchmark": "warmth-mediated-harm-probe",
+   "model": "gpt-realtime",
+   "metric": "Prosody delta T7 vs baseline: speaking rate (w/s)",
+   "value": 0.4,
+   "source": "Table 3 (prosody at T7 vs baseline T1-T3, audio condition, paired per script, n=38)",
+   "source_url": "https://arxiv.org/abs/2609.04256",
+   "note": "p<.001"
+  },
+  {
+   "benchmark": "warmth-mediated-harm-probe",
+   "model": "gpt-realtime",
+   "metric": "Prosody delta T7 vs baseline: mean F0 (Hz)",
+   "value": -4.74,
+   "source": "Table 3 (prosody at T7 vs baseline T1-T3, audio condition, paired per script, n=38)",
+   "source_url": "https://arxiv.org/abs/2609.04256",
+   "note": "p<.001"
+  },
+  {
+   "benchmark": "warmth-mediated-harm-probe",
+   "model": "gpt-realtime",
+   "metric": "Prosody delta T7 vs baseline: mean energy (dB)",
+   "value": -1.49,
+   "source": "Table 3 (prosody at T7 vs baseline T1-T3, audio condition, paired per script, n=38)",
+   "source_url": "https://arxiv.org/abs/2609.04256",
+   "note": "p<.001"
+  },
+  {
+   "benchmark": "warmth-mediated-harm-probe",
+   "model": "gpt-realtime",
+   "metric": "MedQA accuracy delta, audio minus text, neutral framing (pp)",
+   "value": -3.4,
+   "source": "Section 4.1 (n=500 paired prompts, McNemar p=.036)",
+   "source_url": "https://arxiv.org/abs/2609.04256"
+  },
+  {
+   "benchmark": "warmth-mediated-harm-probe",
+   "model": "gpt-realtime",
+   "metric": "MedQA accuracy delta, audio minus text, emotional prefix (pp)",
+   "value": -5.1,
+   "source": "Section 4.1 (n=500 paired prompts, McNemar p=.003)",
+   "source_url": "https://arxiv.org/abs/2609.04256"
   }
  ]
 }

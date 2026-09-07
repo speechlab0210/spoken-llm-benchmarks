@@ -21943,6 +21943,33 @@
    "verify_note": "HTML author block: 'Mengzhe Geng' with address line 'National Research Council Canada' and contact Mengzhe.Geng@nrc-cnrc.gc.ca.",
    "note": "Single author, single organisation. No city printed; placed at the NRC default site (Ottawa). 'Canada' is carried by the organisation name rather than a separate country line.",
    "n_authors": 1
+  },
+  "warmth-mediated-harm-probe": {
+   "status": "ok",
+   "verified": "confirmed",
+   "publishable": true,
+   "institutions": [
+    {
+     "inst": "microsoft",
+     "unit": null,
+     "raw": "Microsoft, Redmond, WA, USA",
+     "country": "US",
+     "city": "Redmond",
+     "lat": 47.67,
+     "lon": -122.12,
+     "placed": "printed",
+     "printed_city": "Redmond",
+     "printed_country": "USA",
+     "lead": true,
+     "first_author": true,
+     "last": true,
+     "evidence": "printed"
+    }
+   ],
+   "countries_complete": true,
+   "verify_note": "HTML author block: all five authors carry the identical line 'Affiliation: Microsoft, Redmond, WA, USA'; corresponding address eugenia.kim@microsoft.com.",
+   "note": "Single organisation across all five authors; city and country are printed on the paper, not defaulted.",
+   "n_authors": 5
   }
  },
  "models": {
