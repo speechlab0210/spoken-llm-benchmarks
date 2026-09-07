@@ -27373,6 +27373,68 @@
    "evidence_url": "https://arxiv.org/abs/2508.09350",
    "evidence_quote": "Toyota Technological Institute at Chicago",
    "note": "Flow-SLM's own paper (arXiv 2508.09350). Ju-Chieh Chou and Karen Livescu list Toyota Technological Institute at Chicago, Jiawei Zhou lists Stony Brook University; the first author is at TTIC, so TTIC is the lead."
+  },
+  "voxtlm-1-3b": {
+   "status": "ok",
+   "publishable": true,
+   "builders": [
+    {
+     "inst": "carnegie-mellon-university",
+     "unit": null,
+     "raw": "Carnegie Mellon University",
+     "lead": true,
+     "country": "US",
+     "city": "Pittsburgh",
+     "lat": 40.44,
+     "lon": -79.99,
+     "placed": "default"
+    },
+    {
+     "inst": "42dot",
+     "unit": null,
+     "raw": "42dot Inc.",
+     "lead": false,
+     "country": "KR",
+     "city": "Seoul",
+     "lat": 37.57,
+     "lon": 126.98,
+     "placed": "default"
+    }
+   ],
+   "evidence_url": "https://arxiv.org/pdf/2309.07937",
+   "evidence_quote": "1Carnegie Mellon University, USA 242dot Inc., Republic of Korea",
+   "note": "VoxtLM's own paper. The arXiv HTML omits affiliations; the PDF first page carries the superscript block above. Five of the six authors, including first author Soumi Maiti, are at CMU, so CMU is the lead; Shukjae Choi is at 42dot. The paper prints no city for either, so both sit at their default site."
+  },
+  "voxtlm-1-3b-plus": {
+   "status": "ok",
+   "publishable": true,
+   "builders": [
+    {
+     "inst": "carnegie-mellon-university",
+     "unit": null,
+     "raw": "Carnegie Mellon University",
+     "lead": true,
+     "country": "US",
+     "city": "Pittsburgh",
+     "lat": 40.44,
+     "lon": -79.99,
+     "placed": "default"
+    },
+    {
+     "inst": "42dot",
+     "unit": null,
+     "raw": "42dot Inc.",
+     "lead": false,
+     "country": "KR",
+     "city": "Seoul",
+     "lat": 37.57,
+     "lon": 126.98,
+     "placed": "default"
+    }
+   ],
+   "evidence_url": "https://arxiv.org/pdf/2309.07937",
+   "evidence_quote": "1Carnegie Mellon University, USA 242dot Inc., Republic of Korea",
+   "note": "VoxtLM's own paper. The arXiv HTML omits affiliations; the PDF first page carries the superscript block above. Five of the six authors, including first author Soumi Maiti, are at CMU, so CMU is the lead; Shukjae Choi is at 42dot. The paper prints no city for either, so both sit at their default site."
   }
  }
 }

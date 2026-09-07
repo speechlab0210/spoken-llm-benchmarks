@@ -130363,6 +130363,42 @@
    "source": "Table III (Salmon benchmark accuracy)",
    "source_url": "https://arxiv.org/abs/2508.09350",
    "note": "extended training set: MLS-En 45k h + The People's Speech clean 20k h; only the semantic-token predictor is used for the SALMon likelihood; the CFM head provides no explicit likelihood, which the authors note may understate acoustic tasks"
+  },
+  {
+   "benchmark": "zerospeech-2021",
+   "model": "voxtlm-1-3b",
+   "metric": "sWUGGY↑",
+   "value": 66.1,
+   "source": "Table 7 (SpeechLM and ASR results: comparison with the state of the art)",
+   "source_url": "https://arxiv.org/abs/2309.07937",
+   "note": "OPT-initialised, k=200 speech tokens; training data D_Set (LibriLight + LibriSpeech + LibriTTS + VCTK)"
+  },
+  {
+   "benchmark": "zerospeech-2021",
+   "model": "voxtlm-1-3b",
+   "metric": "sBLIMP↑",
+   "value": 56.7,
+   "source": "Table 7 (SpeechLM and ASR results: comparison with the state of the art)",
+   "source_url": "https://arxiv.org/abs/2309.07937",
+   "note": "OPT-initialised, k=200 speech tokens; training data D_Set (LibriLight + LibriSpeech + LibriTTS + VCTK)"
+  },
+  {
+   "benchmark": "zerospeech-2021",
+   "model": "voxtlm-1-3b-plus",
+   "metric": "sWUGGY↑",
+   "value": 65.6,
+   "source": "Table 7 (SpeechLM and ASR results: comparison with the state of the art)",
+   "source_url": "https://arxiv.org/abs/2309.07937",
+   "note": "OPT-initialised, k=200 speech tokens; training data D_Set+ (D_Set plus 11M paired utterances from MLS)"
+  },
+  {
+   "benchmark": "zerospeech-2021",
+   "model": "voxtlm-1-3b-plus",
+   "metric": "sBLIMP↑",
+   "value": 57.1,
+   "source": "Table 7 (SpeechLM and ASR results: comparison with the state of the art)",
+   "source_url": "https://arxiv.org/abs/2309.07937",
+   "note": "OPT-initialised, k=200 speech tokens; training data D_Set+ (D_Set plus 11M paired utterances from MLS)"
   }
  ]
 }

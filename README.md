@@ -33,6 +33,7 @@ before it, and applying it removed a large number of otherwise plausible candida
 | `data/models.json` | the spoken LLMs that appear as table rows |
 | `data/results.json` | flat model × benchmark cells; **every cell carries a source** |
 | `data/latest.json` | output of the daily arXiv crawl (generated — do not hand-edit) |
+| `data/unmapped-models.json` | every table row the canonicaliser refused to place, and why (generated) — the work list for what is missing |
 | `data/institutions.json` | canonical organisations behind the benchmarks and models: type, country, sites (city, lat, lon), raw aliases |
 | `data/affiliations.json` | per benchmark: the institutions on its paper with lead/last-author flags; per model: the releasing organisation(s) with an evidence URL |
 | `data/world.json` | country outlines for the map (world-atlas 110m, Natural Earth, public domain), pre-projected |
@@ -56,6 +57,8 @@ record yet is allowed (new entries arrive daily) and is reported as *not yet att
 
 ```bash
 node scripts/make_world.mjs raw/countries-110m.json data/world.json   # regenerate the map outlines
+python scripts/canon_models.py --cells raw/cells_raw.json \
+  --out-cells data/results.json --out-models data/models.json --dry-run   # reconcile the pool, refresh the ledger
 python scripts/build_affiliations.py ...                             # workflow output -> institutions.json + affiliations.json
 python scripts/harvest_arxiv_meta.py                                 # arXiv comment / journal-ref / doi for every entry
 python scripts/harvest_anthology.py                                  # the whole ACL Anthology, matched offline

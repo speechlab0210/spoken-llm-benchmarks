@@ -327,6 +327,10 @@ def main():
     ap.add_argument("--out-cells", required=True)
     ap.add_argument("--out-models", required=True)
     ap.add_argument("--min-cells", type=int, default=3)
+    ap.add_argument("--out-unmapped", default="data/unmapped-models.json",
+                    help="ledger of every row this run refused to place (always written)")
+    ap.add_argument("--dry-run", action="store_true",
+                    help="reconcile and write the ledger only; leave results.json/models.json alone")
     args = ap.parse_args()
 
     raw_cells = json.loads((ROOT / args.cells).read_text(encoding="utf-8"))
@@ -335,19 +339,42 @@ def main():
     def nb(s):
         return re.sub(r"[^a-z0-9]", "", (s or "").lower())
 
+    # A refused row used to exist only as a number in a Counter printed to the terminal, so a
+    # real model that no pattern happened to match vanished without leaving anything behind:
+    # Flow-SLM's tables were read in August 2026 and every one of its rows was thrown away
+    # here, unnoticed until a reader asked why the model was missing (2026-09-08). Every
+    # refusal is now recorded with the evidence needed to triage it — where it was seen and
+    # which paper it came from — so "not in the catalogue" is a decision someone can review
+    # rather than a silence.
     mapped, unmapped, dropped_row, unknown_bench = [], Counter(), Counter(), Counter()
+    ledger = {}
+
+    def note(bucket, name, c):
+        e = ledger.setdefault((bucket, name), {"bucket": bucket, "name": name, "cells": 0,
+                                               "benchmarks": set(), "papers": set(),
+                                               "metrics": set()})
+        e["cells"] += 1
+        e["benchmarks"].add(c.get("benchmark"))
+        if c.get("source_arxiv"):
+            e["papers"].add(c["source_arxiv"])
+        if c.get("metric"):
+            e["metrics"].add(str(c["metric"]).strip())
+
     used = {}
     for c in raw_cells:
         bid = bench_idx.get(nb(c.get("benchmark")))
         if not bid:
             unknown_bench[c.get("benchmark")] += 1
+            note("unknown_benchmark", c.get("benchmark"), c)
             continue
         m = match(c.get("model_raw"))
         if m is None:
             dropped_row[clean(c.get("model_raw"))] += 1
+            note("not_a_model", clean(c.get("model_raw")), c)
             continue
         if m == "UNMAPPED":
             unmapped[clean(c.get("model_raw"))] += 1
+            note("unmapped_model", clean(c.get("model_raw")), c)
             continue
         mid, name, org, kind = m
         used[mid] = (name, org, kind)
@@ -417,15 +444,51 @@ def main():
 
     counts = Counter(c["model"] for c in final)
     keep = {m for m, n in counts.items() if n >= args.min_cells}
+    # the second, quieter drop: a model that WAS recognised but appears in too few tables to
+    # be worth a row. Thin is not the same as wrong, so these go on the ledger too.
+    for c in final:
+        if c["model"] not in keep:
+            note("below_min_cells", f"{c['model']} ({used[c['model']][0]})",
+                 {"benchmark": c["benchmark"], "metric": c["metric"],
+                  "source_arxiv": (c.get("source_url") or "").rsplit("/", 1)[-1] or None})
     final = [c for c in final if c["model"] in keep]
+    # id breaks ties so two runs over the same pool emit the same file (a set's iteration
+    # order is not stable between interpreter runs)
     models = [{"id": m, "name": used[m][0], "org": used[m][1], "type": used[m][2]}
-              for m in sorted(keep, key=lambda x: -counts[x])]
+              for m in sorted(keep, key=lambda x: (-counts[x], x))]
 
     reviewed_models = apply_corrections('models', {'entries': models}, ROOT)
-    (ROOT / args.out_cells).write_text(
-        json.dumps({"cells": final}, ensure_ascii=False, indent=1), encoding="utf-8")
-    (ROOT / args.out_models).write_text(
-        json.dumps(reviewed_models, ensure_ascii=False, indent=1), encoding="utf-8")
+    if args.dry_run:
+        print("  --dry-run: results.json / models.json left untouched")
+    else:
+        (ROOT / args.out_cells).write_text(
+            json.dumps({"cells": final}, ensure_ascii=False, indent=1), encoding="utf-8")
+        (ROOT / args.out_models).write_text(
+            json.dumps(reviewed_models, ensure_ascii=False, indent=1), encoding="utf-8")
+
+    # the ledger is written on every run, dry or not: it is the record of what was refused
+    BUCKET_ORDER = ["unmapped_model", "below_min_cells", "unknown_benchmark", "not_a_model"]
+    rows = sorted(ledger.values(),
+                  key=lambda e: (BUCKET_ORDER.index(e["bucket"]), -e["cells"], e["name"] or ""))
+    (ROOT / args.out_unmapped).write_text(json.dumps({
+        "generated": f"canon_models.py --cells {args.cells} --min-cells {args.min_cells}",
+        "note": ("Rows the canonicaliser refused to place, with where each was seen. "
+                 "unmapped_model = no REGISTRY pattern matched (add one if it is a real "
+                 "spoken LLM); below_min_cells = recognised but under --min-cells; "
+                 "unknown_benchmark = the extracted benchmark name is not in the catalogue; "
+                 "not_a_model = matched a DROP rule (Human, Random, an ASR system...). "
+                 "Triage the first two; the last two are usually correct refusals."),
+        "counts": {b: sum(e["cells"] for e in rows if e["bucket"] == b) for b in BUCKET_ORDER},
+        # enough evidence to triage a name, not the whole trail: a handful of examples of
+        # where it was seen answers "is this a real system or one paper's ablation row?"
+        "entries": [{"bucket": e["bucket"], "name": e["name"], "cells": e["cells"],
+                     "n_benchmarks": len(e["benchmarks"]), "n_papers": len(e["papers"]),
+                     "benchmarks": sorted(x for x in e["benchmarks"] if x)[:8],
+                     "papers": sorted(e["papers"])[:8],
+                     "metrics": sorted(e["metrics"])[:4]}
+                    for e in rows],
+    }, ensure_ascii=False, indent=1), encoding="utf-8")
+    print(f"  ledger written    : {args.out_unmapped} ({len(rows)} distinct names)")
 
     print(f"raw cells        : {len(raw_cells)}")
     print(f"  unknown benchmark : {sum(unknown_bench.values())} cells / {len(unknown_bench)} names")

@@ -323,6 +323,35 @@
    ]
   },
   {
+   "id": "42dot",
+   "name": "42dot Inc.",
+   "short": "42dot",
+   "type": "industry",
+   "country": "KR",
+   "parent": null,
+   "confidence": "high",
+   "sites": [
+    {
+     "city": "Seoul",
+     "lat": 37.57,
+     "lon": 126.98,
+     "country": "KR"
+    }
+   ],
+   "aliases": [
+    {
+     "raw": "42dot Inc.",
+     "country": "KR",
+     "city": "Seoul",
+     "lat": 37.57,
+     "lon": 126.98,
+     "type": "industry",
+     "confidence": "high",
+     "note": "The VoxtLM paper prints '42dot Inc., Republic of Korea' with no city; placed at the company's Seoul headquarters. Hyundai Motor Group subsidiary, kept as its own organisation."
+    }
+   ]
+  },
+  {
    "id": "4paradigm",
    "name": "4Paradigm",
    "short": "4Paradigm",

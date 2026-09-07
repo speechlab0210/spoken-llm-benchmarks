@@ -1397,6 +1397,18 @@
    "name": "Flow-SLM 1B (extended)",
    "org": "TTIC",
    "type": "speech-lm"
+  },
+  {
+   "id": "voxtlm-1-3b",
+   "name": "VoxtLM 1.3B",
+   "org": "CMU",
+   "type": "speech-lm"
+  },
+  {
+   "id": "voxtlm-1-3b-plus",
+   "name": "VoxtLM 1.3B (extra paired data)",
+   "org": "CMU",
+   "type": "speech-lm"
   }
  ]
 }
