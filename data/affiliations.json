@@ -27280,6 +27280,99 @@
    "evidence_url": "https://arxiv.org/pdf/2601.11329v3",
    "evidence_quote": null,
    "note": "The only NatWest-marked author states that the work was done at the University of Edinburgh. Credit KIT and Edinburgh as builders; NatWest is a later employer."
+  },
+  "flow-slm-270m": {
+   "status": "ok",
+   "publishable": true,
+   "builders": [
+    {
+     "inst": "toyota-technological-institute-at-chicago",
+     "unit": null,
+     "raw": "Toyota Technological Institute at Chicago",
+     "lead": true,
+     "country": "US",
+     "city": "Chicago",
+     "lat": 41.79,
+     "lon": -87.6,
+     "placed": "default"
+    },
+    {
+     "inst": "stony-brook-university",
+     "unit": null,
+     "raw": "Stony Brook University",
+     "lead": false,
+     "country": "US",
+     "city": "Stony Brook",
+     "lat": 40.91,
+     "lon": -73.12,
+     "placed": "default"
+    }
+   ],
+   "evidence_url": "https://arxiv.org/abs/2508.09350",
+   "evidence_quote": "Toyota Technological Institute at Chicago",
+   "note": "Flow-SLM's own paper (arXiv 2508.09350). Ju-Chieh Chou and Karen Livescu list Toyota Technological Institute at Chicago, Jiawei Zhou lists Stony Brook University; the first author is at TTIC, so TTIC is the lead."
+  },
+  "flow-slm-1b": {
+   "status": "ok",
+   "publishable": true,
+   "builders": [
+    {
+     "inst": "toyota-technological-institute-at-chicago",
+     "unit": null,
+     "raw": "Toyota Technological Institute at Chicago",
+     "lead": true,
+     "country": "US",
+     "city": "Chicago",
+     "lat": 41.79,
+     "lon": -87.6,
+     "placed": "default"
+    },
+    {
+     "inst": "stony-brook-university",
+     "unit": null,
+     "raw": "Stony Brook University",
+     "lead": false,
+     "country": "US",
+     "city": "Stony Brook",
+     "lat": 40.91,
+     "lon": -73.12,
+     "placed": "default"
+    }
+   ],
+   "evidence_url": "https://arxiv.org/abs/2508.09350",
+   "evidence_quote": "Toyota Technological Institute at Chicago",
+   "note": "Flow-SLM's own paper (arXiv 2508.09350). Ju-Chieh Chou and Karen Livescu list Toyota Technological Institute at Chicago, Jiawei Zhou lists Stony Brook University; the first author is at TTIC, so TTIC is the lead."
+  },
+  "flow-slm-1b-ext": {
+   "status": "ok",
+   "publishable": true,
+   "builders": [
+    {
+     "inst": "toyota-technological-institute-at-chicago",
+     "unit": null,
+     "raw": "Toyota Technological Institute at Chicago",
+     "lead": true,
+     "country": "US",
+     "city": "Chicago",
+     "lat": 41.79,
+     "lon": -87.6,
+     "placed": "default"
+    },
+    {
+     "inst": "stony-brook-university",
+     "unit": null,
+     "raw": "Stony Brook University",
+     "lead": false,
+     "country": "US",
+     "city": "Stony Brook",
+     "lat": 40.91,
+     "lon": -73.12,
+     "placed": "default"
+    }
+   ],
+   "evidence_url": "https://arxiv.org/abs/2508.09350",
+   "evidence_quote": "Toyota Technological Institute at Chicago",
+   "note": "Flow-SLM's own paper (arXiv 2508.09350). Ju-Chieh Chou and Karen Livescu list Toyota Technological Institute at Chicago, Jiawei Zhou lists Stony Brook University; the first author is at TTIC, so TTIC is the lead."
   }
  }
 }

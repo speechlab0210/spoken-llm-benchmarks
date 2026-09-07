@@ -104717,27 +104717,30 @@
   },
   {
    "benchmark": "salmon",
-   "model": "spirit-lm",
+   "model": "spirit-lm-expressive",
    "metric": "Consist. ↑ (acoustic consistency, avg of all categories, %)",
    "value": 69,
    "source": "Table III (Salmon benchmark accuracy)",
-   "source_url": "https://arxiv.org/abs/2508.09350"
+   "source_url": "https://arxiv.org/abs/2508.09350",
+   "note": "printed as 'SpiritLM-exp-7B' in Table III"
   },
   {
    "benchmark": "salmon",
-   "model": "spirit-lm",
+   "model": "spirit-lm-expressive",
    "metric": "sent. alignment ↑ (%)",
    "value": 52,
    "source": "Table III (Salmon benchmark accuracy)",
-   "source_url": "https://arxiv.org/abs/2508.09350"
+   "source_url": "https://arxiv.org/abs/2508.09350",
+   "note": "printed as 'SpiritLM-exp-7B' in Table III"
   },
   {
    "benchmark": "salmon",
-   "model": "spirit-lm",
+   "model": "spirit-lm-expressive",
    "metric": "bg. alignment ↑ (%)",
    "value": 59.5,
    "source": "Table III (Salmon benchmark accuracy)",
-   "source_url": "https://arxiv.org/abs/2508.09350"
+   "source_url": "https://arxiv.org/abs/2508.09350",
+   "note": "printed as 'SpiritLM-exp-7B' in Table III"
   },
   {
    "benchmark": "zerospeech-2021-zero-resource-speech-challenge-2021",
@@ -130227,6 +130230,139 @@
    "value": 0.808,
    "source": "Section 4, VocalSound row holdout (n=240); compare the supervised WavLM-base+ control at 0.854 with no generative calls",
    "source_url": "https://arxiv.org/abs/2608.27817"
+  },
+  {
+   "benchmark": "zerospeech-2021",
+   "model": "flow-slm-270m",
+   "metric": "sWUGGY↑",
+   "value": 68.7,
+   "source": "Table I (ZeroSpeech metrics)",
+   "source_url": "https://arxiv.org/abs/2508.09350",
+   "note": "sWUGGY uses the full vocabulary (all-words split), not the in-vocab split"
+  },
+  {
+   "benchmark": "zerospeech-2021",
+   "model": "flow-slm-270m",
+   "metric": "sBLIMP↑",
+   "value": 57.3,
+   "source": "Table I (ZeroSpeech metrics)",
+   "source_url": "https://arxiv.org/abs/2508.09350"
+  },
+  {
+   "benchmark": "zerospeech-2021",
+   "model": "flow-slm-1b",
+   "metric": "sWUGGY↑",
+   "value": 69.8,
+   "source": "Table I (ZeroSpeech metrics)",
+   "source_url": "https://arxiv.org/abs/2508.09350",
+   "note": "sWUGGY uses the full vocabulary (all-words split), not the in-vocab split"
+  },
+  {
+   "benchmark": "zerospeech-2021",
+   "model": "flow-slm-1b",
+   "metric": "sBLIMP↑",
+   "value": 60.0,
+   "source": "Table I (ZeroSpeech metrics)",
+   "source_url": "https://arxiv.org/abs/2508.09350"
+  },
+  {
+   "benchmark": "zerospeech-2021",
+   "model": "flow-slm-1b-ext",
+   "metric": "sWUGGY↑",
+   "value": 65.7,
+   "source": "Table I (ZeroSpeech metrics)",
+   "source_url": "https://arxiv.org/abs/2508.09350",
+   "note": "extended training set: MLS-En 45k h + The People's Speech clean 20k h; sWUGGY uses the full vocabulary (all-words split), not the in-vocab split"
+  },
+  {
+   "benchmark": "zerospeech-2021",
+   "model": "flow-slm-1b-ext",
+   "metric": "sBLIMP↑",
+   "value": 60.9,
+   "source": "Table I (ZeroSpeech metrics)",
+   "source_url": "https://arxiv.org/abs/2508.09350",
+   "note": "extended training set: MLS-En 45k h + The People's Speech clean 20k h"
+  },
+  {
+   "benchmark": "salmon",
+   "model": "flow-slm-270m",
+   "metric": "Consist. ↑ (acoustic consistency, avg of all categories, %)",
+   "value": 70.8,
+   "source": "Table III (Salmon benchmark accuracy)",
+   "source_url": "https://arxiv.org/abs/2508.09350",
+   "note": "only the semantic-token predictor is used for the SALMon likelihood; the CFM head provides no explicit likelihood, which the authors note may understate acoustic tasks"
+  },
+  {
+   "benchmark": "salmon",
+   "model": "flow-slm-270m",
+   "metric": "sent. alignment ↑ (%)",
+   "value": 60.0,
+   "source": "Table III (Salmon benchmark accuracy)",
+   "source_url": "https://arxiv.org/abs/2508.09350",
+   "note": "only the semantic-token predictor is used for the SALMon likelihood; the CFM head provides no explicit likelihood, which the authors note may understate acoustic tasks"
+  },
+  {
+   "benchmark": "salmon",
+   "model": "flow-slm-270m",
+   "metric": "bg. alignment ↑ (%)",
+   "value": 55.5,
+   "source": "Table III (Salmon benchmark accuracy)",
+   "source_url": "https://arxiv.org/abs/2508.09350",
+   "note": "only the semantic-token predictor is used for the SALMon likelihood; the CFM head provides no explicit likelihood, which the authors note may understate acoustic tasks"
+  },
+  {
+   "benchmark": "salmon",
+   "model": "flow-slm-1b",
+   "metric": "Consist. ↑ (acoustic consistency, avg of all categories, %)",
+   "value": 71.6,
+   "source": "Table III (Salmon benchmark accuracy)",
+   "source_url": "https://arxiv.org/abs/2508.09350",
+   "note": "only the semantic-token predictor is used for the SALMon likelihood; the CFM head provides no explicit likelihood, which the authors note may understate acoustic tasks"
+  },
+  {
+   "benchmark": "salmon",
+   "model": "flow-slm-1b",
+   "metric": "sent. alignment ↑ (%)",
+   "value": 57.0,
+   "source": "Table III (Salmon benchmark accuracy)",
+   "source_url": "https://arxiv.org/abs/2508.09350",
+   "note": "only the semantic-token predictor is used for the SALMon likelihood; the CFM head provides no explicit likelihood, which the authors note may understate acoustic tasks"
+  },
+  {
+   "benchmark": "salmon",
+   "model": "flow-slm-1b",
+   "metric": "bg. alignment ↑ (%)",
+   "value": 56.0,
+   "source": "Table III (Salmon benchmark accuracy)",
+   "source_url": "https://arxiv.org/abs/2508.09350",
+   "note": "only the semantic-token predictor is used for the SALMon likelihood; the CFM head provides no explicit likelihood, which the authors note may understate acoustic tasks"
+  },
+  {
+   "benchmark": "salmon",
+   "model": "flow-slm-1b-ext",
+   "metric": "Consist. ↑ (acoustic consistency, avg of all categories, %)",
+   "value": 71.6,
+   "source": "Table III (Salmon benchmark accuracy)",
+   "source_url": "https://arxiv.org/abs/2508.09350",
+   "note": "extended training set: MLS-En 45k h + The People's Speech clean 20k h; only the semantic-token predictor is used for the SALMon likelihood; the CFM head provides no explicit likelihood, which the authors note may understate acoustic tasks"
+  },
+  {
+   "benchmark": "salmon",
+   "model": "flow-slm-1b-ext",
+   "metric": "sent. alignment ↑ (%)",
+   "value": 57.0,
+   "source": "Table III (Salmon benchmark accuracy)",
+   "source_url": "https://arxiv.org/abs/2508.09350",
+   "note": "extended training set: MLS-En 45k h + The People's Speech clean 20k h; only the semantic-token predictor is used for the SALMon likelihood; the CFM head provides no explicit likelihood, which the authors note may understate acoustic tasks"
+  },
+  {
+   "benchmark": "salmon",
+   "model": "flow-slm-1b-ext",
+   "metric": "bg. alignment ↑ (%)",
+   "value": 53.0,
+   "source": "Table III (Salmon benchmark accuracy)",
+   "source_url": "https://arxiv.org/abs/2508.09350",
+   "note": "extended training set: MLS-En 45k h + The People's Speech clean 20k h; only the semantic-token predictor is used for the SALMon likelihood; the CFM head provides no explicit likelihood, which the authors note may understate acoustic tasks"
   }
  ]
 }

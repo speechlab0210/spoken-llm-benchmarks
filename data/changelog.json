@@ -1,6 +1,10 @@
 {
  "entries": [
   {
+   "date": "2026-09-08",
+   "change": "Added Flow-SLM (arXiv 2508.09350, Toyota Technological Institute at Chicago and Stony Brook University) in three variants — 270M, 1B and 1B trained on the extended set — with the 15 scores its paper reports: sWUGGY and sBLIMP on the ZeroSpeech 2021 benchmark (Table I) and acoustic consistency, sentiment alignment and background alignment on SALMon (Table III). Flow-SLM is a textless spoken language model that predicts a semantic token and a continuous acoustic vector at each step with a flow-matching head, instead of handing acoustic detail to a separate vocoder. Two caveats the paper states are carried on every cell: sWUGGY is the all-words split, and only the semantic-token predictor is scored on SALMon because the flow-matching head yields no explicit likelihood. The paper's third results table (generated-speech quality: genPPL, speaker similarity, Fréchet speech distance on LibriSpeech continuations) is its own protocol rather than a catalogued benchmark, so it is not shown here. This entry was already in the citing-paper pool and its tables had been read — every Flow-SLM row was dropped because the model had no id in the roster, which is why a model can be missing from the tables while the paper it comes from is not. Fixed at the same time: Table III's \"SpiritLM-exp-7B\" row had been recorded against SpiRit-LM rather than SpiRit-LM Expressive."
+  },
+  {
    "date": "2026-09-06",
    "change": "GPT-6 metadata audit covered all 383 benchmark institution sets and publication records, and all 230 model records. Corrected 13 benchmark institution sets and 8 model builder records. Updated 80 venue records, including 37 status changes plus track and source corrections. Removed the Vox-Profile and MSEB follow-up paper mismatches; separated Audio-AAAI, CVPR Findings and ISMIR LBD from main-conference counts; restored official proceedings missed by stale arXiv comments. Added a complete per-record audit with remaining uncertainties at audit-2026-09-06.html and guarded corrections for regeneration. This AI audit is not human validation."
   },
