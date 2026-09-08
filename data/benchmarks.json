@@ -9649,6 +9649,39 @@
     "listener-rated perceived warmth (0-3)"
    ],
    "note": "A protocol and script corpus on one target model, not a multi-model leaderboard. Headline finding is audio-specific and invisible to a transcript: at turn 7 the voice gets shorter (-4.47 s), faster (+0.40 w/s), lower-pitched (-4.74 Hz) and quieter (-1.49 dB) rather than warmer, five of seven acoustic features at p<.001. Acceptance of the relational ask is high in both arms (parasocial commitment 0.58 audio vs 0.63 text) and the aggregate modality gap is not significant (McNemar exact p=0.73); the authors report only the direction of the per-condition differential because per-cell counts run from n=3 to n=8. Audio delivery also costs gpt-realtime 3.4 pp of MedQA accuracy under neutral framing (p=.036) and 5.1 pp under an emotional prefix (p=.003). Limitations the authors state: only output modality is varied within a single model; user turns use one synthetic voice lacking real disfluency; scoring leans on a GPT-4o judge plus two responsible-AI raters whose absolute-scale agreement was low (ICC(2,1)=0.13, Spearman rho=0.50), so the listener pass is exploratory and clinical validity is not established."
+  },
+  {
+   "id": "audiocrag",
+   "name": "AudioCRAG",
+   "full_title": "Stream RAG: Instant and Accurate Spoken Dialogue Systems with Streaming Tool Usage",
+   "arxiv_id": "2510.02044",
+   "arxiv_date": "2025-10",
+   "arxiv_date_full": "2025-10-02",
+   "url": "https://arxiv.org/abs/2510.02044",
+   "aka": [
+    "Audio CRAG",
+    "AudioCRAG-Synthetic",
+    "AudioCRAG-Human"
+   ],
+   "summary": "A spoken version of the CRAG factual question-answering dataset, built to test whether a speech-in speech-out model can reach for external tools and stay factual. Queries from CRAG are re-issued as speech in two variants: AudioCRAG-Synthetic, 1,862 spoken queries produced with an in-house TTS system and then filtered, and AudioCRAG-Human, 618 queries recorded by human speakers; the paper states the human set will be released on acceptance. Models answer under three conditions - closed book with no tools, open book with web-search and knowledge-graph APIs following CRAG's own tool setup and mock API, and the paper's own Streaming RAG condition in which tool queries are issued in parallel with the incoming user speech. Scoring follows CRAG's methodology with an LLM judge, and responses are separated into accurate, hallucinated and missing, so a model that guesses is not rewarded for coverage. Alongside accuracy the benchmark reports first-token latency, which is the point of the exercise: tool use raised first-token time by 2.3x in the authors' own measurements, so accuracy and responsiveness have to be read together.",
+   "categories": [
+    "spoken-qa",
+    "voice-agent"
+   ],
+   "tasks": [
+    "tool-augmented factual QA",
+    "web search tool use",
+    "knowledge-graph tool use",
+    "response latency"
+   ],
+   "io": "speech in, speech out",
+   "size": "1,862 synthetic spoken queries (AudioCRAG-Synthetic) + 618 human-recorded spoken queries (AudioCRAG-Human)",
+   "metrics": "accuracy under CRAG's LLM-judge methodology (responses split into accurate / hallucinated / missing); first-token latency and percentage latency saving",
+   "languages": [
+    "English"
+   ],
+   "code": null,
+   "note": "Derived from the text CRAG dataset (Yang et al. 2024) by re-issuing its queries as speech; the tool back end reuses CRAG's own web corpus and mock knowledge-graph API. The human-recorded half is stated as to be released on acceptance, so only the synthetic half was publicly available at the time of writing."
   }
  ]
 }

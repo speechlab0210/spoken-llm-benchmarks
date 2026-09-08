@@ -1529,6 +1529,24 @@
    "name": "AudSemThinker",
    "org": "Maastricht University",
    "type": "e2e"
+  },
+  {
+   "id": "moshirag",
+   "name": "MoshiRAG",
+   "org": "TTIC / Kyutai",
+   "type": "e2e"
+  },
+  {
+   "id": "bagpiper",
+   "name": "Bagpiper",
+   "org": "CMU",
+   "type": "e2e"
+  },
+  {
+   "id": "opuslm",
+   "name": "OpusLM",
+   "org": "CMU",
+   "type": "speech-lm"
   }
  ]
 }

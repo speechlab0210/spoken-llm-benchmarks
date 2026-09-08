@@ -9495,6 +9495,32 @@
     "arxiv"
    ],
    "check_note": "arXiv metadata only; no acceptance or publication signal anywhere."
+  },
+  "audiocrag": {
+   "status": "preprint",
+   "venue": null,
+   "venue_name_raw": null,
+   "venue_full": null,
+   "year": "2025",
+   "kind": null,
+   "track": null,
+   "parent_venue": null,
+   "display": "arXiv preprint",
+   "evidence": "arxiv",
+   "evidence_raw": "arxiv",
+   "evidence_url": null,
+   "evidence_quote": null,
+   "doi": null,
+   "confidence": "high",
+   "verified": "confirmed",
+   "publishable": true,
+   "note": "venue_probe 2026-09-08: the arXiv record for 2510.02044 carries no comment, no journal-ref and no DOI; Semantic Scholar reports only 'arXiv.org' (a lead, not evidence), OpenAlex returned 429 and DBLP was unreachable from this host. The paper itself says the AudioCRAG-Human half will be released 'upon acceptance', i.e. it was not accepted at v1. No venue claim made.",
+   "check_url": "https://arxiv.org/abs/2510.02044",
+   "cross_checked": [
+    "arxiv",
+    "semantic-scholar"
+   ],
+   "check_note": "arXiv metadata plus the paper's own text; no acceptance or publication signal anywhere."
   }
  }
 }

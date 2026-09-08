@@ -13790,6 +13790,64 @@
      "note": "Multi-affiliation string; mapped to the first-listed institution ENS Paris; CNRS, EHESS, Inria and PSL not represented separately"
     }
    ]
+  },
+  {
+   "id": "gradium",
+   "name": "Gradium",
+   "short": "Gradium",
+   "type": "company",
+   "country": "FR",
+   "parent": null,
+   "confidence": "high",
+   "sites": [
+    {
+     "city": "Paris",
+     "lat": 48.86,
+     "lon": 2.35,
+     "country": "FR"
+    }
+   ],
+   "aliases": [
+    {
+     "raw": "Gradium",
+     "country": "FR",
+     "city": "Paris",
+     "lat": 48.86,
+     "lon": 2.35,
+     "type": "company",
+     "confidence": "high",
+     "note": "Printed as 'Gradium, Paris, France' on arXiv 2604.12928."
+    }
+   ]
+  },
+  {
+   "id": "ly-corporation",
+   "name": "LY Corporation",
+   "short": "LY Corp",
+   "type": "company",
+   "country": "JP",
+   "parent": null,
+   "confidence": "medium",
+   "sites": [
+    {
+     "city": "Tokyo",
+     "lat": 35.68,
+     "lon": 139.76,
+     "country": "JP"
+    }
+   ],
+   "aliases": [
+    {
+     "raw": "LY Corporation",
+     "country": "JP",
+     "city": "Tokyo",
+     "lat": 35.68,
+     "lon": 139.76,
+     "type": "company",
+     "confidence": "medium",
+     "note": "arXiv 2506.17611 prints 'LY Corporation / Japan' with no city; Tokyo is the normalised headquarters, hence medium confidence."
+    }
+   ]
   }
  ]
 }

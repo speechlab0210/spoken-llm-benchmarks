@@ -132943,6 +132943,375 @@
    "source": "Table 4 (Evaluation results of DIFFA on VoiceBench)",
    "source_url": "https://arxiv.org/abs/2604.08964",
    "note": "VoiceBench subset: AlpacaEval; row 'AlpacaEval | DIFFA'"
+  },
+  {
+   "benchmark": "full-duplex-bench",
+   "model": "moshirag",
+   "metric": "Pause TOR_s (synthetic)",
+   "value": 0.32,
+   "source": "Table 2 (Evaluation results on Full-Duplex-Bench)",
+   "source_url": "https://arxiv.org/abs/2604.12928"
+  },
+  {
+   "benchmark": "full-duplex-bench",
+   "model": "moshirag",
+   "metric": "Pause TOR_c (Candor)",
+   "value": 0.56,
+   "source": "Table 2 (Evaluation results on Full-Duplex-Bench)",
+   "source_url": "https://arxiv.org/abs/2604.12928"
+  },
+  {
+   "benchmark": "full-duplex-bench",
+   "model": "moshirag",
+   "metric": "Backchannel TOR",
+   "value": 0.64,
+   "source": "Table 2 (Evaluation results on Full-Duplex-Bench)",
+   "source_url": "https://arxiv.org/abs/2604.12928"
+  },
+  {
+   "benchmark": "full-duplex-bench",
+   "model": "moshirag",
+   "metric": "Backchannel Freq. (/s)",
+   "value": 0.01,
+   "source": "Table 2 (Evaluation results on Full-Duplex-Bench)",
+   "source_url": "https://arxiv.org/abs/2604.12928"
+  },
+  {
+   "benchmark": "full-duplex-bench",
+   "model": "moshirag",
+   "metric": "Backchannel JSD",
+   "value": 0.94,
+   "source": "Table 2 (Evaluation results on Full-Duplex-Bench)",
+   "source_url": "https://arxiv.org/abs/2604.12928"
+  },
+  {
+   "benchmark": "full-duplex-bench",
+   "model": "moshirag",
+   "metric": "Turn Taking TOR",
+   "value": 0.83,
+   "source": "Table 2 (Evaluation results on Full-Duplex-Bench)",
+   "source_url": "https://arxiv.org/abs/2604.12928"
+  },
+  {
+   "benchmark": "full-duplex-bench",
+   "model": "moshirag",
+   "metric": "Turn Taking Latency (s)",
+   "value": 0.18,
+   "source": "Table 2 (Evaluation results on Full-Duplex-Bench)",
+   "source_url": "https://arxiv.org/abs/2604.12928"
+  },
+  {
+   "benchmark": "full-duplex-bench",
+   "model": "moshirag",
+   "metric": "User Interruption TOR",
+   "value": 0.85,
+   "source": "Table 2 (Evaluation results on Full-Duplex-Bench)",
+   "source_url": "https://arxiv.org/abs/2604.12928"
+  },
+  {
+   "benchmark": "full-duplex-bench",
+   "model": "moshirag",
+   "metric": "User Interruption GPT Score",
+   "value": 3.75,
+   "source": "Table 2 (Evaluation results on Full-Duplex-Bench)",
+   "source_url": "https://arxiv.org/abs/2604.12928"
+  },
+  {
+   "benchmark": "full-duplex-bench",
+   "model": "moshirag",
+   "metric": "User Interruption Latency (s)",
+   "value": 1.02,
+   "source": "Table 2 (Evaluation results on Full-Duplex-Bench)",
+   "source_url": "https://arxiv.org/abs/2604.12928"
+  },
+  {
+   "benchmark": "full-duplex-bench-v1-5",
+   "model": "moshirag",
+   "metric": "User Interruption - Resp.",
+   "value": 0.51,
+   "source": "Table 11 (Evaluation results on Full-Duplex-Bench 1.5 across different types of overlapping speech)",
+   "source_url": "https://arxiv.org/abs/2604.12928"
+  },
+  {
+   "benchmark": "full-duplex-bench-v1-5",
+   "model": "moshirag",
+   "metric": "User Interruption - Resm.",
+   "value": 0.35,
+   "source": "Table 11 (Evaluation results on Full-Duplex-Bench 1.5 across different types of overlapping speech)",
+   "source_url": "https://arxiv.org/abs/2604.12928"
+  },
+  {
+   "benchmark": "full-duplex-bench-v1-5",
+   "model": "moshirag",
+   "metric": "User Interruption - Unc.",
+   "value": 0.0,
+   "source": "Table 11 (Evaluation results on Full-Duplex-Bench 1.5 across different types of overlapping speech)",
+   "source_url": "https://arxiv.org/abs/2604.12928"
+  },
+  {
+   "benchmark": "full-duplex-bench-v1-5",
+   "model": "moshirag",
+   "metric": "User Interruption - Unk.",
+   "value": 0.15,
+   "source": "Table 11 (Evaluation results on Full-Duplex-Bench 1.5 across different types of overlapping speech)",
+   "source_url": "https://arxiv.org/abs/2604.12928"
+  },
+  {
+   "benchmark": "full-duplex-bench-v1-5",
+   "model": "moshirag",
+   "metric": "User Backchannel - Resp.",
+   "value": 0.05,
+   "source": "Table 11 (Evaluation results on Full-Duplex-Bench 1.5 across different types of overlapping speech)",
+   "source_url": "https://arxiv.org/abs/2604.12928"
+  },
+  {
+   "benchmark": "full-duplex-bench-v1-5",
+   "model": "moshirag",
+   "metric": "User Backchannel - Resm.",
+   "value": 0.61,
+   "source": "Table 11 (Evaluation results on Full-Duplex-Bench 1.5 across different types of overlapping speech)",
+   "source_url": "https://arxiv.org/abs/2604.12928"
+  },
+  {
+   "benchmark": "full-duplex-bench-v1-5",
+   "model": "moshirag",
+   "metric": "User Backchannel - Unc.",
+   "value": 0.0,
+   "source": "Table 11 (Evaluation results on Full-Duplex-Bench 1.5 across different types of overlapping speech)",
+   "source_url": "https://arxiv.org/abs/2604.12928"
+  },
+  {
+   "benchmark": "full-duplex-bench-v1-5",
+   "model": "moshirag",
+   "metric": "User Backchannel - Unk.",
+   "value": 0.34,
+   "source": "Table 11 (Evaluation results on Full-Duplex-Bench 1.5 across different types of overlapping speech)",
+   "source_url": "https://arxiv.org/abs/2604.12928"
+  },
+  {
+   "benchmark": "full-duplex-bench-v1-5",
+   "model": "moshirag",
+   "metric": "Talking to Other - Resp.",
+   "value": 0.17,
+   "source": "Table 11 (Evaluation results on Full-Duplex-Bench 1.5 across different types of overlapping speech)",
+   "source_url": "https://arxiv.org/abs/2604.12928"
+  },
+  {
+   "benchmark": "full-duplex-bench-v1-5",
+   "model": "moshirag",
+   "metric": "Talking to Other - Resm.",
+   "value": 0.58,
+   "source": "Table 11 (Evaluation results on Full-Duplex-Bench 1.5 across different types of overlapping speech)",
+   "source_url": "https://arxiv.org/abs/2604.12928"
+  },
+  {
+   "benchmark": "full-duplex-bench-v1-5",
+   "model": "moshirag",
+   "metric": "Talking to Other - Unc.",
+   "value": 0.02,
+   "source": "Table 11 (Evaluation results on Full-Duplex-Bench 1.5 across different types of overlapping speech)",
+   "source_url": "https://arxiv.org/abs/2604.12928"
+  },
+  {
+   "benchmark": "full-duplex-bench-v1-5",
+   "model": "moshirag",
+   "metric": "Talking to Other - Unk.",
+   "value": 0.23,
+   "source": "Table 11 (Evaluation results on Full-Duplex-Bench 1.5 across different types of overlapping speech)",
+   "source_url": "https://arxiv.org/abs/2604.12928"
+  },
+  {
+   "benchmark": "full-duplex-bench-v1-5",
+   "model": "moshirag",
+   "metric": "Background Speech - Resp.",
+   "value": 0.29,
+   "source": "Table 11 (Evaluation results on Full-Duplex-Bench 1.5 across different types of overlapping speech)",
+   "source_url": "https://arxiv.org/abs/2604.12928"
+  },
+  {
+   "benchmark": "full-duplex-bench-v1-5",
+   "model": "moshirag",
+   "metric": "Background Speech - Resm.",
+   "value": 0.49,
+   "source": "Table 11 (Evaluation results on Full-Duplex-Bench 1.5 across different types of overlapping speech)",
+   "source_url": "https://arxiv.org/abs/2604.12928"
+  },
+  {
+   "benchmark": "full-duplex-bench-v1-5",
+   "model": "moshirag",
+   "metric": "Background Speech - Unc.",
+   "value": 0.0,
+   "source": "Table 11 (Evaluation results on Full-Duplex-Bench 1.5 across different types of overlapping speech)",
+   "source_url": "https://arxiv.org/abs/2604.12928"
+  },
+  {
+   "benchmark": "full-duplex-bench-v1-5",
+   "model": "moshirag",
+   "metric": "Background Speech - Unk.",
+   "value": 0.22,
+   "source": "Table 11 (Evaluation results on Full-Duplex-Bench 1.5 across different types of overlapping speech)",
+   "source_url": "https://arxiv.org/abs/2604.12928"
+  },
+  {
+   "benchmark": "mmau",
+   "model": "bagpiper",
+   "metric": "MMAU-Mini",
+   "value": 74.5,
+   "source": "Table 5 (Audio understanding results after fine-tuning)",
+   "source_url": "https://arxiv.org/abs/2602.05220",
+   "note": "With chain-of-thought thinking traces; the paper notes this exceeds the 69.0 upper bound seen at the pre-training stage."
+  },
+  {
+   "benchmark": "air-bench",
+   "model": "bagpiper",
+   "metric": "AIR-Bench-chat",
+   "value": 6.57,
+   "source": "Table 5 (Audio understanding results after fine-tuning)",
+   "source_url": "https://arxiv.org/abs/2602.05220",
+   "note": "chat subset of AIR-Bench, GPT-4o-based evaluation"
+  },
+  {
+   "benchmark": "audiobench",
+   "model": "bagpiper",
+   "metric": "AudioBench",
+   "value": 70.39,
+   "source": "Table 5 (Audio understanding results after fine-tuning)",
+   "source_url": "https://arxiv.org/abs/2602.05220",
+   "note": "5 open-ended QA subsets"
+  },
+  {
+   "benchmark": "audiocrag",
+   "model": "qwen2-5-omni",
+   "metric": "Accuracy (Synthetic, closed book)",
+   "value": 11.1,
+   "source": "Table 1 (Performance comparison of accuracy, first-token latency, and latency savings across Closed Book, Open Book and Streaming RAG)",
+   "source_url": "https://arxiv.org/abs/2510.02044"
+  },
+  {
+   "benchmark": "audiocrag",
+   "model": "qwen2-5-omni",
+   "metric": "Accuracy (Human, closed book)",
+   "value": 13.1,
+   "source": "Table 1 (Performance comparison of accuracy, first-token latency, and latency savings across Closed Book, Open Book and Streaming RAG)",
+   "source_url": "https://arxiv.org/abs/2510.02044"
+  },
+  {
+   "benchmark": "audiocrag",
+   "model": "opuslm",
+   "metric": "Accuracy (Synthetic, closed book)",
+   "value": 18.4,
+   "source": "Table 1 (Performance comparison of accuracy, first-token latency, and latency savings across Closed Book, Open Book and Streaming RAG)",
+   "source_url": "https://arxiv.org/abs/2510.02044"
+  },
+  {
+   "benchmark": "audiocrag",
+   "model": "opuslm",
+   "metric": "Accuracy (Human, closed book)",
+   "value": 15.5,
+   "source": "Table 1 (Performance comparison of accuracy, first-token latency, and latency savings across Closed Book, Open Book and Streaming RAG)",
+   "source_url": "https://arxiv.org/abs/2510.02044"
+  },
+  {
+   "benchmark": "audiocrag",
+   "model": "kimi-audio",
+   "metric": "Accuracy (Synthetic, closed book)",
+   "value": 16.7,
+   "source": "Table 1 (Performance comparison of accuracy, first-token latency, and latency savings across Closed Book, Open Book and Streaming RAG)",
+   "source_url": "https://arxiv.org/abs/2510.02044"
+  },
+  {
+   "benchmark": "audiocrag",
+   "model": "kimi-audio",
+   "metric": "Accuracy (Human, closed book)",
+   "value": 16.0,
+   "source": "Table 1 (Performance comparison of accuracy, first-token latency, and latency savings across Closed Book, Open Book and Streaming RAG)",
+   "source_url": "https://arxiv.org/abs/2510.02044"
+  },
+  {
+   "benchmark": "audiocrag",
+   "model": "qwen2-5-omni",
+   "metric": "Accuracy (Synthetic, open book)",
+   "value": 26.3,
+   "source": "Table 1 (Performance comparison of accuracy, first-token latency, and latency savings across Closed Book, Open Book and Streaming RAG)",
+   "source_url": "https://arxiv.org/abs/2510.02044"
+  },
+  {
+   "benchmark": "audiocrag",
+   "model": "qwen2-5-omni",
+   "metric": "Accuracy (Human, open book)",
+   "value": 26.9,
+   "source": "Table 1 (Performance comparison of accuracy, first-token latency, and latency savings across Closed Book, Open Book and Streaming RAG)",
+   "source_url": "https://arxiv.org/abs/2510.02044"
+  },
+  {
+   "benchmark": "audiocrag",
+   "model": "opuslm",
+   "metric": "Accuracy (Synthetic, open book)",
+   "value": 0.0,
+   "source": "Table 1 (Performance comparison of accuracy, first-token latency, and latency savings across Closed Book, Open Book and Streaming RAG)",
+   "source_url": "https://arxiv.org/abs/2510.02044",
+   "note": "The paper marks this row with an asterisk: OpusLM currently does not support taking tool result references in speech-out settings in zero-shot, which is why the open-book score is 0.0."
+  },
+  {
+   "benchmark": "audiocrag",
+   "model": "opuslm",
+   "metric": "Accuracy (Human, open book)",
+   "value": 0.0,
+   "source": "Table 1 (Performance comparison of accuracy, first-token latency, and latency savings across Closed Book, Open Book and Streaming RAG)",
+   "source_url": "https://arxiv.org/abs/2510.02044",
+   "note": "The paper marks this row with an asterisk: OpusLM currently does not support taking tool result references in speech-out settings in zero-shot, which is why the open-book score is 0.0."
+  },
+  {
+   "benchmark": "audiocrag",
+   "model": "kimi-audio",
+   "metric": "Accuracy (Synthetic, open book)",
+   "value": 21.8,
+   "source": "Table 1 (Performance comparison of accuracy, first-token latency, and latency savings across Closed Book, Open Book and Streaming RAG)",
+   "source_url": "https://arxiv.org/abs/2510.02044"
+  },
+  {
+   "benchmark": "audiocrag",
+   "model": "kimi-audio",
+   "metric": "Accuracy (Human, open book)",
+   "value": 19.6,
+   "source": "Table 1 (Performance comparison of accuracy, first-token latency, and latency savings across Closed Book, Open Book and Streaming RAG)",
+   "source_url": "https://arxiv.org/abs/2510.02044"
+  },
+  {
+   "benchmark": "audiocrag",
+   "model": "qwen2-5-omni",
+   "metric": "Accuracy (Synthetic, streaming RAG)",
+   "value": 34.2,
+   "source": "Table 1 (Performance comparison of accuracy, first-token latency, and latency savings across Closed Book, Open Book and Streaming RAG)",
+   "source_url": "https://arxiv.org/abs/2510.02044",
+   "note": "Model-Triggered Streaming RAG is the paper's own method applied on top of this model, not the released model as-is."
+  },
+  {
+   "benchmark": "audiocrag",
+   "model": "qwen2-5-omni",
+   "metric": "Accuracy (Human, streaming RAG)",
+   "value": 37.4,
+   "source": "Table 1 (Performance comparison of accuracy, first-token latency, and latency savings across Closed Book, Open Book and Streaming RAG)",
+   "source_url": "https://arxiv.org/abs/2510.02044",
+   "note": "Model-Triggered Streaming RAG is the paper's own method applied on top of this model, not the released model as-is."
+  },
+  {
+   "benchmark": "audiocrag",
+   "model": "opuslm",
+   "metric": "Accuracy (Synthetic, streaming RAG)",
+   "value": 23.6,
+   "source": "Table 1 (Performance comparison of accuracy, first-token latency, and latency savings across Closed Book, Open Book and Streaming RAG)",
+   "source_url": "https://arxiv.org/abs/2510.02044",
+   "note": "Model-Triggered Streaming RAG is the paper's own method applied on top of this model, not the released model as-is."
+  },
+  {
+   "benchmark": "audiocrag",
+   "model": "opuslm",
+   "metric": "Accuracy (Human, streaming RAG)",
+   "value": 22.8,
+   "source": "Table 1 (Performance comparison of accuracy, first-token latency, and latency savings across Closed Book, Open Book and Streaming RAG)",
+   "source_url": "https://arxiv.org/abs/2510.02044",
+   "note": "Model-Triggered Streaming RAG is the paper's own method applied on top of this model, not the released model as-is."
   }
  ]
 }

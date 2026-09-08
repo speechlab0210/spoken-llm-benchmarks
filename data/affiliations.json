@@ -21970,6 +21970,49 @@
    "verify_note": "HTML author block: all five authors carry the identical line 'Affiliation: Microsoft, Redmond, WA, USA'; corresponding address eugenia.kim@microsoft.com.",
    "note": "Single organisation across all five authors; city and country are printed on the paper, not defaulted.",
    "n_authors": 5
+  },
+  "audiocrag": {
+   "status": "ok",
+   "verified": "confirmed",
+   "publishable": true,
+   "institutions": [
+    {
+     "inst": "carnegie-mellon-university",
+     "unit": null,
+     "raw": "Carnegie Mellon University",
+     "country": "US",
+     "city": "Pittsburgh",
+     "lat": 40.44,
+     "lon": -79.99,
+     "placed": "default",
+     "printed_city": null,
+     "printed_country": null,
+     "lead": true,
+     "first_author": true,
+     "last": true,
+     "evidence": "printed"
+    },
+    {
+     "inst": "meta",
+     "unit": null,
+     "raw": "Meta",
+     "country": "US",
+     "city": "Menlo Park",
+     "lat": 37.45,
+     "lon": -122.18,
+     "placed": "default",
+     "printed_city": null,
+     "printed_country": null,
+     "lead": false,
+     "first_author": false,
+     "last": false,
+     "evidence": "printed"
+    }
+   ],
+   "countries_complete": true,
+   "verify_note": "arXiv 2510.02044 prints exactly two affiliations as footnotes to the title block - 'affiliation: Meta' and 'affiliation: Carnegie Mellon University' - plus 'contribution: Work done at Meta' and 'correspondence: siddhana@andrew.cmu.edu, zhaojiang@meta.com'. Cross-checked against the arXiv abstract page for the same author list.",
+   "note": "The template lists the two organisations collectively rather than mapping each of the 15 authors to one, so per-author attribution is not printed. First author Siddhant Arora and last author Shinji Watanabe correspond from Carnegie Mellon addresses, which is why CMU carries lead/first/last here; the paper's own 'Work done at Meta' marker means most of the work was carried out at Meta, and the majority of the author list corresponds from Meta. Read the two as joint rather than ranked.",
+   "n_authors": 15
   }
  },
  "models": {
@@ -28060,6 +28103,132 @@
    "evidence_url": "https://arxiv.org/pdf/2505.14142",
    "evidence_quote": "Maastricht University",
    "note": "All four authors list Maastricht University. Read from the PDF first page (the arXiv HTML omits the block for several of these)."
+  },
+  "moshirag": {
+   "status": "ok",
+   "publishable": true,
+   "builders": [
+    {
+     "inst": "toyota-technological-institute-at-chicago",
+     "unit": null,
+     "raw": "Toyota Technological Institute at Chicago",
+     "lead": true,
+     "country": "US",
+     "city": "Chicago",
+     "lat": 41.79,
+     "lon": -87.6,
+     "placed": "default"
+    },
+    {
+     "inst": "kyutai",
+     "unit": null,
+     "raw": "Kyutai",
+     "lead": false,
+     "country": "FR",
+     "city": "Paris",
+     "lat": 48.86,
+     "lon": 2.35,
+     "placed": "default"
+    },
+    {
+     "inst": "gradium",
+     "unit": null,
+     "raw": "Gradium",
+     "lead": false,
+     "country": "FR",
+     "city": "Paris",
+     "lat": 48.86,
+     "lon": 2.35,
+     "placed": "default"
+    }
+   ],
+   "evidence_url": "https://arxiv.org/abs/2604.12928",
+   "evidence_quote": "Toyota Technological Institute at Chicago, Chicago, USA",
+   "note": "MoshiRAG's own paper (arXiv 2604.12928). First author Chung-Ming Chien lists Toyota Technological Institute at Chicago first and Kyutai second, so TTIC is the lead; Manu Orsini, Eugene Kharitonov, Neil Zeghidour and Alexandre Defossez list Kyutai (several also Gradium), and Karen Livescu lists TTIC. The paper's affiliation notes mark some contributions as done while visiting or while at Kyutai."
+  },
+  "bagpiper": {
+   "status": "ok",
+   "publishable": true,
+   "builders": [
+    {
+     "inst": "carnegie-mellon-university",
+     "unit": "Language Technologies Institute",
+     "raw": "Carnegie Mellon University",
+     "lead": true,
+     "country": "US",
+     "city": "Pittsburgh",
+     "lat": 40.44,
+     "lon": -79.99,
+     "placed": "default"
+    },
+    {
+     "inst": "ly-corporation",
+     "unit": null,
+     "raw": "LY Corporation",
+     "lead": false,
+     "country": "JP",
+     "city": "Tokyo",
+     "lat": 35.68,
+     "lon": 139.76,
+     "placed": "default"
+    },
+    {
+     "inst": "nvidia",
+     "unit": null,
+     "raw": "NVIDIA Research",
+     "lead": false,
+     "country": "US",
+     "city": "Santa Clara",
+     "lat": 37.35,
+     "lon": -121.95,
+     "placed": "default"
+    }
+   ],
+   "evidence_url": "https://arxiv.org/abs/2602.05220",
+   "evidence_quote": "Affiliation: Language Technologies Institute, Carnegie Mellon University",
+   "note": "Bagpiper's own paper (arXiv 2602.05220). Most authors list the Language Technologies Institute at Carnegie Mellon University, four (Takashi Maekaku, Keita Goto, Yusuke Shinohara, Jin Sakuma) list LY Corporation and Chao-Han Huck Yang lists NVIDIA Research. First author Jinchuan Tian's correspondence address is jinchuat@andrew.cmu.edu, so CMU is the lead."
+  },
+  "opuslm": {
+   "status": "ok",
+   "publishable": true,
+   "builders": [
+    {
+     "inst": "carnegie-mellon-university",
+     "unit": "Language Technologies Institute",
+     "raw": "Carnegie Mellon University",
+     "lead": true,
+     "country": "US",
+     "city": "Pittsburgh",
+     "lat": 40.44,
+     "lon": -79.99,
+     "placed": "default"
+    },
+    {
+     "inst": "ly-corporation",
+     "unit": null,
+     "raw": "LY Corporation",
+     "lead": false,
+     "country": "JP",
+     "city": "Tokyo",
+     "lat": 35.68,
+     "lon": 139.76,
+     "placed": "default"
+    },
+    {
+     "inst": "nvidia",
+     "unit": null,
+     "raw": "NVIDIA Research",
+     "lead": false,
+     "country": "US",
+     "city": "Santa Clara",
+     "lat": 37.35,
+     "lon": -121.95,
+     "placed": "default"
+    }
+   ],
+   "evidence_url": "https://arxiv.org/abs/2506.17611",
+   "evidence_quote": "Carnegie Mellon University, USA / LY Corporation, Japan / NVIDIA Research, USA",
+   "note": "OpusLM's own paper (arXiv 2506.17611), which prints exactly three affiliations: Carnegie Mellon University (USA), LY Corporation (Japan) and NVIDIA Research (USA). First author Jinchuan Tian's email is tianjinchuan@cmu.edu, so CMU is the lead. Added because the model is evaluated in the Stream RAG paper and would otherwise be quoted without a roster entry."
   }
  }
 }
