@@ -1409,6 +1409,126 @@
    "name": "VoxtLM 1.3B (extra paired data)",
    "org": "CMU",
    "type": "speech-lm"
+  },
+  {
+   "id": "soundwave",
+   "name": "Soundwave",
+   "org": "CUHK-Shenzhen",
+   "type": "e2e"
+  },
+  {
+   "id": "uni-moe-2-omni",
+   "name": "Uni-MoE-2.0-Omni",
+   "org": "HIT Shenzhen",
+   "type": "e2e"
+  },
+  {
+   "id": "llama-mimi-8b",
+   "name": "Llama-Mimi 8B",
+   "org": "Kyoto University",
+   "type": "speech-lm"
+  },
+  {
+   "id": "llama-mimi-1-3b",
+   "name": "Llama-Mimi 1.3B",
+   "org": "Kyoto University",
+   "type": "speech-lm"
+  },
+  {
+   "id": "diffa-2",
+   "name": "DIFFA-2",
+   "org": "Nankai University",
+   "type": "e2e"
+  },
+  {
+   "id": "diffa",
+   "name": "DIFFA",
+   "org": "Nankai University",
+   "type": "e2e"
+  },
+  {
+   "id": "interactive-omni-8b",
+   "name": "InteractiveOmni 8B",
+   "org": "SenseTime",
+   "type": "e2e"
+  },
+  {
+   "id": "interactive-omni-4b",
+   "name": "InteractiveOmni 4B",
+   "org": "SenseTime",
+   "type": "e2e"
+  },
+  {
+   "id": "interactive-omni",
+   "name": "InteractiveOmni (size unstated)",
+   "org": "SenseTime",
+   "type": "e2e"
+  },
+  {
+   "id": "stream-omni",
+   "name": "Stream-Omni",
+   "org": "CAS ICT",
+   "type": "e2e"
+  },
+  {
+   "id": "mgm-omni-32b",
+   "name": "MGM-Omni 32B",
+   "org": "CUHK",
+   "type": "e2e"
+  },
+  {
+   "id": "mgm-omni-7b",
+   "name": "MGM-Omni 7B",
+   "org": "CUHK",
+   "type": "e2e"
+  },
+  {
+   "id": "audio-omni",
+   "name": "Audio-Omni",
+   "org": "HKUST",
+   "type": "e2e"
+  },
+  {
+   "id": "sagelm",
+   "name": "SageLM",
+   "org": "Northeastern University",
+   "type": "e2e"
+  },
+  {
+   "id": "falcon3-audio-7b",
+   "name": "Falcon3-Audio 7B",
+   "org": "TII",
+   "type": "e2e"
+  },
+  {
+   "id": "falcon3-audio-3b",
+   "name": "Falcon3-Audio 3B",
+   "org": "TII",
+   "type": "e2e"
+  },
+  {
+   "id": "falcon3-audio-1b",
+   "name": "Falcon3-Audio 1B",
+   "org": "TII",
+   "type": "e2e"
+  },
+  {
+   "id": "audsemthinker-qa-grpo",
+   "name": "AudSemThinker-QA GRPO",
+   "org": "Maastricht University",
+   "type": "e2e"
+  },
+  {
+   "id": "audsemthinker-qa",
+   "name": "AudSemThinker-QA",
+   "org": "Maastricht University",
+   "type": "e2e"
+  },
+  {
+   "id": "audsemthinker",
+   "name": "AudSemThinker",
+   "org": "Maastricht University",
+   "type": "e2e"
   }
  ]
 }

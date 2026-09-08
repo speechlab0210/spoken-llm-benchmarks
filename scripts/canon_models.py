@@ -227,6 +227,36 @@ REGISTRY = [
      [r"whisper.{0,6}\+.{0,6}gpt-?4o", r"asr.{0,3}\+.{0,3}gpt-?4o"]),
     ("whisper-gpt4", "Whisper + GPT-4 (cascade)", "—", "cascade", [r"whisper.{0,6}\+.{0,6}gpt-?4\b"]),
     ("whisper-llama3", "Whisper + LLaMA-3 (cascade)", "—", "cascade", [r"whisper.{0,6}\+.{0,6}llama-?3"]),
+    # --- 2026-09-08 backfill. These were sitting in the unmapped ledger: each appears in at
+    # least two independent papers on at least two benchmarks (an ablation row does not), and
+    # each was confirmed against its own paper as a general-purpose audio/speech LLM.
+    ("soundwave", "Soundwave", "CUHK-Shenzhen", "e2e", [r"^soundwave\b"]),
+    ("uni-moe-2-omni", "Uni-MoE-2.0-Omni", "HIT Shenzhen", "e2e",
+     [r"^uni-?moe[\s\-]?2(\.0)?\b"]),                 # bare "UniMoE" may be 1.x — left unmapped
+    ("llama-mimi-8b", "Llama-Mimi 8B", "Kyoto University", "speech-lm", [r"^llama-?mimi[\s\-]?8b"]),
+    ("llama-mimi-1-3b", "Llama-Mimi 1.3B", "Kyoto University", "speech-lm",
+     [r"^llama-?mimi[\s\-]?1\.3b"]),
+    ("diffa-2", "DIFFA-2", "Nankai University", "e2e", [r"^diffa-?2\b"]),   # before DIFFA
+    ("diffa", "DIFFA", "Nankai University", "e2e", [r"^diffa\b"]),
+    ("interactive-omni-8b", "InteractiveOmni 8B", "SenseTime", "e2e",
+     [r"^interactive[\s\-]?omni[\s\-]?8b"]),
+    ("interactive-omni-4b", "InteractiveOmni 4B", "SenseTime", "e2e",
+     [r"^interactive[\s\-]?omni[\s\-]?4b"]),
+    ("interactive-omni", "InteractiveOmni (size unstated)", "SenseTime", "e2e",
+     [r"^interactive[\s\-]?omni$"]),
+    ("stream-omni", "Stream-Omni", "CAS ICT", "e2e", [r"^stream-?omni(-?8b)?$"]),
+    ("mgm-omni-32b", "MGM-Omni 32B", "CUHK", "e2e", [r"^mgm-?omni[\s\-]?32b"]),
+    ("mgm-omni-7b", "MGM-Omni 7B", "CUHK", "e2e", [r"^mgm-?omni[\s\-]?7b"]),
+    ("audio-omni", "Audio-Omni", "HKUST", "e2e", [r"^audio-?omni$"]),
+    ("sagelm", "SageLM", "Northeastern University", "e2e", [r"^sagelm\b"]),
+    ("falcon3-audio-7b", "Falcon3-Audio 7B", "TII", "e2e", [r"^falcon-?3-?audio[\s\-]?7b"]),
+    ("falcon3-audio-3b", "Falcon3-Audio 3B", "TII", "e2e", [r"^falcon-?3-?audio[\s\-]?3b"]),
+    ("falcon3-audio-1b", "Falcon3-Audio 1B", "TII", "e2e", [r"^falcon-?3-?audio[\s\-]?1b"]),
+    ("audsemthinker-qa-grpo", "AudSemThinker-QA GRPO", "Maastricht University", "e2e",
+     [r"^audsemthinker-?qa[\s\-]?grpo"]),
+    ("audsemthinker-qa", "AudSemThinker-QA", "Maastricht University", "e2e",
+     [r"^audsemthinker-?qa\b"]),
+    ("audsemthinker", "AudSemThinker", "Maastricht University", "e2e", [r"^audsemthinker\b"]),
     # text-only LLM baselines: an upper bound on the text channel, useful as a reference row
     ("qwen2-7b-instruct", "Qwen2-7B-Instruct (text)", "Alibaba", "text", [r"qwen-?2-?7b-?instruct"]),
     ("qwen2-5-7b-instruct", "Qwen2.5-7B-Instruct (text)", "Alibaba", "text", [r"qwen-?2\.5-?7b-?instruct"]),

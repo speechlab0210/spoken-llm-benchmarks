@@ -130500,6 +130500,2449 @@
    "value": -5.1,
    "source": "Section 4.1 (n=500 paired prompts, McNemar p=.003)",
    "source_url": "https://arxiv.org/abs/2609.04256"
+  },
+  {
+   "benchmark": "polyspeech-100",
+   "model": "audio-omni",
+   "metric": "Overall (Acc. %)",
+   "value": 46.62,
+   "source": "Table 1 (main results: Summary of Performance on PolySpeech-100)",
+   "source_url": "https://arxiv.org/abs/2606.01016",
+   "note": "Open-Source E2E, Speech+Text -> Text group."
+  },
+  {
+   "benchmark": "polyspeech-100",
+   "model": "audio-omni",
+   "metric": "High-Res (Acc. %)",
+   "value": 77.5,
+   "source": "Table 1 (main results: Summary of Performance on PolySpeech-100)",
+   "source_url": "https://arxiv.org/abs/2606.01016"
+  },
+  {
+   "benchmark": "polyspeech-100",
+   "model": "audio-omni",
+   "metric": "CN-Dialect (Acc. %)",
+   "value": 71.95,
+   "source": "Table 1 (main results: Summary of Performance on PolySpeech-100)",
+   "source_url": "https://arxiv.org/abs/2606.01016"
+  },
+  {
+   "benchmark": "polyspeech-100",
+   "model": "audio-omni",
+   "metric": "Low-Res (Acc. %)",
+   "value": 36.86,
+   "source": "Table 1 (main results: Summary of Performance on PolySpeech-100)",
+   "source_url": "https://arxiv.org/abs/2606.01016"
+  },
+  {
+   "benchmark": "kvoicebench",
+   "model": "interactive-omni",
+   "metric": "KVoiceBench",
+   "value": 20,
+   "source": "Table 1 (benchmark-level main results)",
+   "source_url": "https://arxiv.org/abs/2605.27984",
+   "note": "Column header printed on two lines as 'Interactive' / 'Omni'"
+  },
+  {
+   "benchmark": "kvoicebench",
+   "model": "interactive-omni",
+   "metric": "KOpenAudioBench",
+   "value": 11.5,
+   "source": "Table 1 (benchmark-level main results)",
+   "source_url": "https://arxiv.org/abs/2605.27984"
+  },
+  {
+   "benchmark": "kvoicebench",
+   "model": "interactive-omni",
+   "metric": "KMMAU",
+   "value": 30.7,
+   "source": "Table 1 (benchmark-level main results)",
+   "source_url": "https://arxiv.org/abs/2605.27984",
+   "note": "Accuracy (%)"
+  },
+  {
+   "benchmark": "rail",
+   "model": "diffa-2",
+   "metric": "Auditory Processing (Judge)",
+   "value": 45.81,
+   "source": "Table 3 (main results, five CHC dimensions)",
+   "source_url": "https://arxiv.org/abs/2606.11260"
+  },
+  {
+   "benchmark": "rail",
+   "model": "diffa-2",
+   "metric": "Reasoning (Judge)",
+   "value": 36.02,
+   "source": "Table 3 (main results, five CHC dimensions)",
+   "source_url": "https://arxiv.org/abs/2606.11260"
+  },
+  {
+   "benchmark": "rail",
+   "model": "diffa-2",
+   "metric": "Overall (macro-average of five abilities, LLM-as-Judge %)",
+   "value": 56.8,
+   "source": "Table 20 (human-evaluation subset, five broad abilities + Overall)",
+   "source_url": "https://arxiv.org/abs/2606.11260",
+   "note": "640-item human-eval subset"
+  },
+  {
+   "benchmark": "omni-persona",
+   "model": "interactive-omni",
+   "metric": "Overall Ans",
+   "value": 32.7,
+   "source": "Table 2 (Systematic Omni-Persona benchmark results)",
+   "source_url": "https://arxiv.org/abs/2605.09996",
+   "note": "Open-source Models block."
+  },
+  {
+   "benchmark": "omni-persona",
+   "model": "interactive-omni",
+   "metric": "Overall Cal",
+   "value": 29.6,
+   "source": "Table 2 (Systematic Omni-Persona benchmark results)",
+   "source_url": "https://arxiv.org/abs/2605.09996"
+  },
+  {
+   "benchmark": "omni-persona",
+   "model": "interactive-omni",
+   "metric": "Avg (composite of nine higher-is-better scores)",
+   "value": 55.5,
+   "source": "Table 2 (Systematic Omni-Persona benchmark results)",
+   "source_url": "https://arxiv.org/abs/2605.09996"
+  },
+  {
+   "benchmark": "escapecraft-4d",
+   "model": "mgm-omni-32b",
+   "metric": "AVG ER (%)",
+   "value": 9.09,
+   "source": "Table 3 (results of basic game setting)",
+   "source_url": "https://arxiv.org/abs/2603.15467"
+  },
+  {
+   "benchmark": "escapecraft-4d",
+   "model": "mgm-omni-32b",
+   "metric": "Difficulty-1 ER (%)",
+   "value": 27.27,
+   "source": "Table 3 (results of basic game setting)",
+   "source_url": "https://arxiv.org/abs/2603.15467"
+  },
+  {
+   "benchmark": "escapecraft-4d",
+   "model": "mgm-omni-32b",
+   "metric": "Difficulty-2 ER (%)",
+   "value": 0,
+   "source": "Table 3 (results of basic game setting)",
+   "source_url": "https://arxiv.org/abs/2603.15467",
+   "note": "printed as 0.00"
+  },
+  {
+   "benchmark": "escapecraft-4d",
+   "model": "mgm-omni-32b",
+   "metric": "Difficulty-3 ER (%)",
+   "value": 0,
+   "source": "Table 3 (results of basic game setting)",
+   "source_url": "https://arxiv.org/abs/2603.15467",
+   "note": "printed as 0.00"
+  },
+  {
+   "benchmark": "escapecraft-4d",
+   "model": "mgm-omni-32b",
+   "metric": "TCSS (time-aware levels)",
+   "value": 0,
+   "source": "Table 4 (comprehensive results on MM-Escape4D), Time-Aware column",
+   "source_url": "https://arxiv.org/abs/2603.15467",
+   "note": "printed as 00.00%"
+  },
+  {
+   "benchmark": "hummusqa",
+   "model": "audsemthinker",
+   "metric": "Accuracy All (%)",
+   "value": 54.8,
+   "source": "Table 1 (accuracy & consistency, main results)",
+   "source_url": "https://arxiv.org/abs/2603.27877",
+   "note": "printed as 54.8 ± 2.2"
+  },
+  {
+   "benchmark": "hummusqa",
+   "model": "audsemthinker",
+   "metric": "Consistency All (%)",
+   "value": 42.5,
+   "source": "Table 1 (accuracy & consistency, main results)",
+   "source_url": "https://arxiv.org/abs/2603.27877"
+  },
+  {
+   "benchmark": "omd-bench",
+   "model": "uni-moe-2-omni",
+   "metric": "Accuracy (%), Zero-Shot Synthetic, k=0 (clean)",
+   "value": 88.6,
+   "source": "Table 1 (Accuracy (%) across corruption levels), Zero-Shot/Synthetic block",
+   "source_url": "https://arxiv.org/abs/2603.27187"
+  },
+  {
+   "benchmark": "omd-bench",
+   "model": "uni-moe-2-omni",
+   "metric": "Accuracy (%), Zero-Shot Synthetic, k̄=1",
+   "value": 78.2,
+   "source": "Table 1 (Accuracy (%) across corruption levels), Zero-Shot/Synthetic block",
+   "source_url": "https://arxiv.org/abs/2603.27187"
+  },
+  {
+   "benchmark": "omd-bench",
+   "model": "uni-moe-2-omni",
+   "metric": "Accuracy (%), Zero-Shot Synthetic, k=3 (all modalities corrupted)",
+   "value": 43.5,
+   "source": "Table 1 (Accuracy (%) across corruption levels), Zero-Shot/Synthetic block",
+   "source_url": "https://arxiv.org/abs/2603.27187"
+  },
+  {
+   "benchmark": "omniacbench",
+   "model": "interactive-omni-8b",
+   "metric": "WER (Semantic fidelity)",
+   "value": 1.23,
+   "source": "Table 2 (Main results on OmniACBench)",
+   "source_url": "https://arxiv.org/abs/2603.23938"
+  },
+  {
+   "benchmark": "omniacbench",
+   "model": "interactive-omni-8b",
+   "metric": "Emo-Acc (%) (Emotion)",
+   "value": 14.57,
+   "source": "Table 2 (Main results on OmniACBench)",
+   "source_url": "https://arxiv.org/abs/2603.23938"
+  },
+  {
+   "benchmark": "omniacbench",
+   "model": "interactive-omni-8b",
+   "metric": "GA-Acc (%) (Global Accent)",
+   "value": 33.7,
+   "source": "Table 2 (Main results on OmniACBench)",
+   "source_url": "https://arxiv.org/abs/2603.23938"
+  },
+  {
+   "benchmark": "omniacbench",
+   "model": "interactive-omni-4b",
+   "metric": "WER (Semantic fidelity)",
+   "value": 1.31,
+   "source": "Table 2 (Main results on OmniACBench)",
+   "source_url": "https://arxiv.org/abs/2603.23938"
+  },
+  {
+   "benchmark": "omniacbench",
+   "model": "interactive-omni-4b",
+   "metric": "Emo-Acc (%) (Emotion)",
+   "value": 15.81,
+   "source": "Table 2 (Main results on OmniACBench)",
+   "source_url": "https://arxiv.org/abs/2603.23938"
+  },
+  {
+   "benchmark": "omniacbench",
+   "model": "interactive-omni-4b",
+   "metric": "GA-Acc (%) (Global Accent)",
+   "value": 33.33,
+   "source": "Table 2 (Main results on OmniACBench)",
+   "source_url": "https://arxiv.org/abs/2603.23938"
+  },
+  {
+   "benchmark": "omniacbench",
+   "model": "uni-moe-2-omni",
+   "metric": "WER (Semantic fidelity)",
+   "value": 5.21,
+   "source": "Table 2 (Main results on OmniACBench)",
+   "source_url": "https://arxiv.org/abs/2603.23938"
+  },
+  {
+   "benchmark": "omniacbench",
+   "model": "uni-moe-2-omni",
+   "metric": "Emo-Acc (%) (Emotion)",
+   "value": 16.75,
+   "source": "Table 2 (Main results on OmniACBench)",
+   "source_url": "https://arxiv.org/abs/2603.23938"
+  },
+  {
+   "benchmark": "omniacbench",
+   "model": "uni-moe-2-omni",
+   "metric": "GA-Acc (%) (Global Accent)",
+   "value": 36.25,
+   "source": "Table 2 (Main results on OmniACBench)",
+   "source_url": "https://arxiv.org/abs/2603.23938"
+  },
+  {
+   "benchmark": "omniacbench",
+   "model": "mgm-omni-7b",
+   "metric": "WER (Semantic fidelity)",
+   "value": 5.96,
+   "source": "Table 2 (Main results on OmniACBench)",
+   "source_url": "https://arxiv.org/abs/2603.23938"
+  },
+  {
+   "benchmark": "omniacbench",
+   "model": "mgm-omni-7b",
+   "metric": "Emo-Acc (%) (Emotion)",
+   "value": 16.42,
+   "source": "Table 2 (Main results on OmniACBench)",
+   "source_url": "https://arxiv.org/abs/2603.23938"
+  },
+  {
+   "benchmark": "omniacbench",
+   "model": "mgm-omni-7b",
+   "metric": "GA-Acc (%) (Global Accent)",
+   "value": 36.61,
+   "source": "Table 2 (Main results on OmniACBench)",
+   "source_url": "https://arxiv.org/abs/2603.23938"
+  },
+  {
+   "benchmark": "polybench",
+   "model": "audsemthinker-qa-grpo",
+   "metric": "ACC (%) - Counting",
+   "value": 51.4,
+   "source": "Table 1 (Performance (%) of various LALMs on PolyBench compositional reasoning tasks, MCQA)",
+   "source_url": "https://arxiv.org/abs/2603.05128",
+   "note": "row label printed with citation marker: 'AUDSEMTHINKER-QA GRPO [20]'"
+  },
+  {
+   "benchmark": "polybench",
+   "model": "audsemthinker-qa-grpo",
+   "metric": "ACC (%) - Duration",
+   "value": 64.4,
+   "source": "Table 1 (Performance (%) of various LALMs on PolyBench compositional reasoning tasks, MCQA)",
+   "source_url": "https://arxiv.org/abs/2603.05128"
+  },
+  {
+   "benchmark": "polybench",
+   "model": "audsemthinker-qa-grpo",
+   "metric": "ACC (%) - Concurrency",
+   "value": 43.2,
+   "source": "Table 1 (Performance (%) of various LALMs on PolyBench compositional reasoning tasks, MCQA)",
+   "source_url": "https://arxiv.org/abs/2603.05128"
+  },
+  {
+   "benchmark": "polybench",
+   "model": "audsemthinker-qa-grpo",
+   "metric": "ACC (%) - Classification",
+   "value": 70.3,
+   "source": "Table 1 (Performance (%) of various LALMs on PolyBench compositional reasoning tasks, MCQA)",
+   "source_url": "https://arxiv.org/abs/2603.05128"
+  },
+  {
+   "benchmark": "polybench",
+   "model": "audsemthinker-qa-grpo",
+   "metric": "ACC (%) - Detection",
+   "value": 37.2,
+   "source": "Table 1 (Performance (%) of various LALMs on PolyBench compositional reasoning tasks, MCQA)",
+   "source_url": "https://arxiv.org/abs/2603.05128"
+  },
+  {
+   "benchmark": "sdiareward",
+   "model": "sagelm",
+   "metric": "Overall Micro (pairwise preference accuracy %)",
+   "value": 50.59,
+   "source": "Table 2 (main results on ESDR-Bench)",
+   "source_url": "https://arxiv.org/abs/2603.14889"
+  },
+  {
+   "benchmark": "sdiareward",
+   "model": "sagelm",
+   "metric": "Overall Macro (pairwise preference accuracy %)",
+   "value": 50.05,
+   "source": "Table 2 (main results on ESDR-Bench)",
+   "source_url": "https://arxiv.org/abs/2603.14889"
+  },
+  {
+   "benchmark": "sdiareward",
+   "model": "sagelm",
+   "metric": "Modality Micro (pairwise preference accuracy %)",
+   "value": 50.76,
+   "source": "Table 2 (main results on ESDR-Bench)",
+   "source_url": "https://arxiv.org/abs/2603.14889"
+  },
+  {
+   "benchmark": "sdiareward",
+   "model": "sagelm",
+   "metric": "Colloq. Acc (pairwise preference accuracy %)",
+   "value": 49.6,
+   "source": "Table 2 (main results on ESDR-Bench)",
+   "source_url": "https://arxiv.org/abs/2603.14889"
+  },
+  {
+   "benchmark": "unnamed-likelihood-and-generative-based-evaluation-suite-for-spoken-language-models-replacement-for-global-token-perplexity",
+   "model": "llama-mimi-1-3b",
+   "metric": "MOS (Avg, human ratings)",
+   "value": 3.29,
+   "source": "Table 1 (MOS scores evaluation), Avg column",
+   "source_url": "https://arxiv.org/abs/2601.06329",
+   "note": "printed 3.29±0.52; rank 1"
+  },
+  {
+   "benchmark": "fysicsworld",
+   "model": "stream-omni",
+   "metric": "Task1-1 Image Understanding ACC",
+   "value": 53.33,
+   "source": "Table 3 (image-centric tasks, OmniLLMs vs MLLMs)",
+   "source_url": "https://arxiv.org/abs/2512.12756"
+  },
+  {
+   "benchmark": "fysicsworld",
+   "model": "stream-omni",
+   "metric": "Task2-1 Speech-Driven Image Understanding ACC",
+   "value": 58.22,
+   "source": "Table 3 (image-centric tasks, OmniLLMs vs MLLMs)",
+   "source_url": "https://arxiv.org/abs/2512.12756"
+  },
+  {
+   "benchmark": "fysicsworld",
+   "model": "stream-omni",
+   "metric": "Task2-2 Image-Audio Contextual Reasoning ACC",
+   "value": 65.12,
+   "source": "Table 3 (image-centric tasks, OmniLLMs vs MLLMs)",
+   "source_url": "https://arxiv.org/abs/2512.12756"
+  },
+  {
+   "benchmark": "sonic-o1",
+   "model": "uni-moe-2-omni",
+   "metric": "Summarization LLM-judge Score (0-10)",
+   "value": 4.71,
+   "source": "Table 3 (main results: MLLM performance on SONIC-O1 across three tasks)",
+   "source_url": "https://arxiv.org/abs/2601.21666"
+  },
+  {
+   "benchmark": "sonic-o1",
+   "model": "uni-moe-2-omni",
+   "metric": "MCQ Accuracy (%)",
+   "value": 51.6,
+   "source": "Table 3 (main results: MLLM performance on SONIC-O1 across three tasks)",
+   "source_url": "https://arxiv.org/abs/2601.21666"
+  },
+  {
+   "benchmark": "sonic-o1",
+   "model": "uni-moe-2-omni",
+   "metric": "Temporal Localization R@0.5 (%)",
+   "value": 1,
+   "source": "Table 3 (main results: MLLM performance on SONIC-O1 across three tasks)",
+   "source_url": "https://arxiv.org/abs/2601.21666"
+  },
+  {
+   "benchmark": "hpsu",
+   "model": "soundwave",
+   "metric": "Accuracy (EN, MEmo / Main Emotion)",
+   "value": 51.9,
+   "source": "Table 4 (performance comparison of different models on HPSU)",
+   "source_url": "https://arxiv.org/abs/2511.23178"
+  },
+  {
+   "benchmark": "hpsu",
+   "model": "soundwave",
+   "metric": "Accuracy (EN, Intent)",
+   "value": 55.1,
+   "source": "Table 4 (performance comparison of different models on HPSU)",
+   "source_url": "https://arxiv.org/abs/2511.23178"
+  },
+  {
+   "benchmark": "sagelm",
+   "model": "sagelm",
+   "metric": "Agreement (%) with human annotation — AlpacaEval OOD",
+   "value": 87.97,
+   "source": "Table 3 (evaluation agreement on unseen AlpacaEval dataset)",
+   "source_url": "https://arxiv.org/abs/2508.20916",
+   "note": "Cell printed as '87.97%'"
+  },
+  {
+   "benchmark": "sagelm",
+   "model": "sagelm",
+   "metric": "Accuracy (%) — AlpacaEval OOD",
+   "value": 81.01,
+   "source": "Table 3 (evaluation agreement on unseen AlpacaEval dataset)",
+   "source_url": "https://arxiv.org/abs/2508.20916",
+   "note": "Cell printed as '81.01%'"
+  },
+  {
+   "benchmark": "daily-omni",
+   "model": "uni-moe-2-omni",
+   "metric": "Daily-Omni (accuracy %)",
+   "value": 64.33,
+   "source": "Table 4 (performance comparison on audio-visual and general video benchmarks)",
+   "source_url": "https://arxiv.org/abs/2606.14702"
+  },
+  {
+   "benchmark": "omnivideobench",
+   "model": "uni-moe-2-omni",
+   "metric": "OmniVideoBench (accuracy %)",
+   "value": 38.55,
+   "source": "Table 4 (performance comparison on audio-visual and general video benchmarks)",
+   "source_url": "https://arxiv.org/abs/2606.14702",
+   "note": "509-sample subset (<=5 min)"
+  },
+  {
+   "benchmark": "jointavbench",
+   "model": "uni-moe-2-omni",
+   "metric": "JointAVBench (accuracy %)",
+   "value": 57.55,
+   "source": "Table 4 (performance comparison on audio-visual and general video benchmarks)",
+   "source_url": "https://arxiv.org/abs/2606.14702",
+   "note": "2153-sample subset (<=5 min)"
+  },
+  {
+   "benchmark": "futureomni",
+   "model": "uni-moe-2-omni",
+   "metric": "FutureOmni (accuracy %)",
+   "value": 52.81,
+   "source": "Table 4 (performance comparison on audio-visual and general video benchmarks)",
+   "source_url": "https://arxiv.org/abs/2606.14702",
+   "note": "960-sample subset (<=5 min)"
+  },
+  {
+   "benchmark": "mmau",
+   "model": "interactive-omni-4b",
+   "metric": "Sound",
+   "value": 70.87,
+   "source": "Table 11 (results on audio understanding tasks, MMAU block)",
+   "source_url": "https://arxiv.org/abs/2510.13747"
+  },
+  {
+   "benchmark": "mmau",
+   "model": "interactive-omni-4b",
+   "metric": "Music",
+   "value": 76.05,
+   "source": "Table 11 (results on audio understanding tasks, MMAU block)",
+   "source_url": "https://arxiv.org/abs/2510.13747"
+  },
+  {
+   "benchmark": "mmau",
+   "model": "interactive-omni-4b",
+   "metric": "Speech",
+   "value": 69.07,
+   "source": "Table 11 (results on audio understanding tasks, MMAU block)",
+   "source_url": "https://arxiv.org/abs/2510.13747"
+  },
+  {
+   "benchmark": "mmau",
+   "model": "interactive-omni-4b",
+   "metric": "Avg.",
+   "value": 72,
+   "source": "Table 11 (results on audio understanding tasks, MMAU block)",
+   "source_url": "https://arxiv.org/abs/2510.13747"
+  },
+  {
+   "benchmark": "mmau",
+   "model": "interactive-omni-8b",
+   "metric": "Sound",
+   "value": 69.07,
+   "source": "Table 11 (results on audio understanding tasks, MMAU block)",
+   "source_url": "https://arxiv.org/abs/2510.13747"
+  },
+  {
+   "benchmark": "mmau",
+   "model": "interactive-omni-8b",
+   "metric": "Music",
+   "value": 73.05,
+   "source": "Table 11 (results on audio understanding tasks, MMAU block)",
+   "source_url": "https://arxiv.org/abs/2510.13747"
+  },
+  {
+   "benchmark": "mmau",
+   "model": "interactive-omni-8b",
+   "metric": "Speech",
+   "value": 60.06,
+   "source": "Table 11 (results on audio understanding tasks, MMAU block)",
+   "source_url": "https://arxiv.org/abs/2510.13747"
+  },
+  {
+   "benchmark": "mmau",
+   "model": "interactive-omni-8b",
+   "metric": "Avg.",
+   "value": 67.39,
+   "source": "Table 11 (results on audio understanding tasks, MMAU block)",
+   "source_url": "https://arxiv.org/abs/2510.13747"
+  },
+  {
+   "benchmark": "air-bench",
+   "model": "interactive-omni-4b",
+   "metric": "Speech",
+   "value": 7.82,
+   "source": "Table 11 (results on audio understanding tasks, AIR-Bench block)",
+   "source_url": "https://arxiv.org/abs/2510.13747"
+  },
+  {
+   "benchmark": "air-bench",
+   "model": "interactive-omni-4b",
+   "metric": "Sound",
+   "value": 7.13,
+   "source": "Table 11 (results on audio understanding tasks, AIR-Bench block)",
+   "source_url": "https://arxiv.org/abs/2510.13747"
+  },
+  {
+   "benchmark": "air-bench",
+   "model": "interactive-omni-4b",
+   "metric": "Music",
+   "value": 5.91,
+   "source": "Table 11 (results on audio understanding tasks, AIR-Bench block)",
+   "source_url": "https://arxiv.org/abs/2510.13747"
+  },
+  {
+   "benchmark": "air-bench",
+   "model": "interactive-omni-4b",
+   "metric": "Mixed-Audio",
+   "value": 5.55,
+   "source": "Table 11 (results on audio understanding tasks, AIR-Bench block)",
+   "source_url": "https://arxiv.org/abs/2510.13747"
+  },
+  {
+   "benchmark": "air-bench",
+   "model": "interactive-omni-4b",
+   "metric": "Avg [0-10 scale]",
+   "value": 6.6,
+   "source": "Table 11 (results on audio understanding tasks, AIR-Bench block)",
+   "source_url": "https://arxiv.org/abs/2510.13747"
+  },
+  {
+   "benchmark": "air-bench",
+   "model": "interactive-omni-8b",
+   "metric": "Speech",
+   "value": 7.54,
+   "source": "Table 11 (results on audio understanding tasks, AIR-Bench block)",
+   "source_url": "https://arxiv.org/abs/2510.13747"
+  },
+  {
+   "benchmark": "air-bench",
+   "model": "interactive-omni-8b",
+   "metric": "Sound",
+   "value": 7.07,
+   "source": "Table 11 (results on audio understanding tasks, AIR-Bench block)",
+   "source_url": "https://arxiv.org/abs/2510.13747"
+  },
+  {
+   "benchmark": "air-bench",
+   "model": "interactive-omni-8b",
+   "metric": "Music",
+   "value": 6,
+   "source": "Table 11 (results on audio understanding tasks, AIR-Bench block)",
+   "source_url": "https://arxiv.org/abs/2510.13747"
+  },
+  {
+   "benchmark": "air-bench",
+   "model": "interactive-omni-8b",
+   "metric": "Mixed-Audio",
+   "value": 5.54,
+   "source": "Table 11 (results on audio understanding tasks, AIR-Bench block)",
+   "source_url": "https://arxiv.org/abs/2510.13747"
+  },
+  {
+   "benchmark": "air-bench",
+   "model": "interactive-omni-8b",
+   "metric": "Avg [0-10 scale]",
+   "value": 6.54,
+   "source": "Table 11 (results on audio understanding tasks, AIR-Bench block)",
+   "source_url": "https://arxiv.org/abs/2510.13747"
+  },
+  {
+   "benchmark": "omnibench",
+   "model": "interactive-omni-4b",
+   "metric": "Speech",
+   "value": 60.7,
+   "source": "Table 12 (performance on OmniBench)",
+   "source_url": "https://arxiv.org/abs/2510.13747"
+  },
+  {
+   "benchmark": "omnibench",
+   "model": "interactive-omni-4b",
+   "metric": "Sound Event",
+   "value": 61.51,
+   "source": "Table 12 (performance on OmniBench)",
+   "source_url": "https://arxiv.org/abs/2510.13747"
+  },
+  {
+   "benchmark": "omnibench",
+   "model": "interactive-omni-4b",
+   "metric": "Music",
+   "value": 42.45,
+   "source": "Table 12 (performance on OmniBench)",
+   "source_url": "https://arxiv.org/abs/2510.13747"
+  },
+  {
+   "benchmark": "omnibench",
+   "model": "interactive-omni-4b",
+   "metric": "Avg",
+   "value": 59.19,
+   "source": "Table 12 (performance on OmniBench)",
+   "source_url": "https://arxiv.org/abs/2510.13747"
+  },
+  {
+   "benchmark": "omnibench",
+   "model": "interactive-omni-8b",
+   "metric": "Speech",
+   "value": 60.18,
+   "source": "Table 12 (performance on OmniBench)",
+   "source_url": "https://arxiv.org/abs/2510.13747"
+  },
+  {
+   "benchmark": "omnibench",
+   "model": "interactive-omni-8b",
+   "metric": "Sound Event",
+   "value": 62.64,
+   "source": "Table 12 (performance on OmniBench)",
+   "source_url": "https://arxiv.org/abs/2510.13747"
+  },
+  {
+   "benchmark": "omnibench",
+   "model": "interactive-omni-8b",
+   "metric": "Music",
+   "value": 55.66,
+   "source": "Table 12 (performance on OmniBench)",
+   "source_url": "https://arxiv.org/abs/2510.13747"
+  },
+  {
+   "benchmark": "omnibench",
+   "model": "interactive-omni-8b",
+   "metric": "Avg",
+   "value": 60.33,
+   "source": "Table 12 (performance on OmniBench)",
+   "source_url": "https://arxiv.org/abs/2510.13747"
+  },
+  {
+   "benchmark": "voicebench",
+   "model": "interactive-omni-4b",
+   "metric": "AlpacaEval [0-10 scale]",
+   "value": 4.27,
+   "source": "Table 13 (speech-to-text QA benchmarks, VoiceBench block)",
+   "source_url": "https://arxiv.org/abs/2510.13747"
+  },
+  {
+   "benchmark": "voicebench",
+   "model": "interactive-omni-4b",
+   "metric": "CommonEval [0-10 scale]",
+   "value": 4.2,
+   "source": "Table 13 (speech-to-text QA benchmarks, VoiceBench block)",
+   "source_url": "https://arxiv.org/abs/2510.13747"
+  },
+  {
+   "benchmark": "voicebench",
+   "model": "interactive-omni-4b",
+   "metric": "WildVoice [0-10 scale]",
+   "value": 3.94,
+   "source": "Table 13 (speech-to-text QA benchmarks, VoiceBench block)",
+   "source_url": "https://arxiv.org/abs/2510.13747"
+  },
+  {
+   "benchmark": "voicebench",
+   "model": "interactive-omni-4b",
+   "metric": "SD-QA",
+   "value": 41.41,
+   "source": "Table 13 (speech-to-text QA benchmarks, VoiceBench block)",
+   "source_url": "https://arxiv.org/abs/2510.13747"
+  },
+  {
+   "benchmark": "voicebench",
+   "model": "interactive-omni-4b",
+   "metric": "MMSU",
+   "value": 63.24,
+   "source": "Table 13 (speech-to-text QA benchmarks, VoiceBench block)",
+   "source_url": "https://arxiv.org/abs/2510.13747"
+  },
+  {
+   "benchmark": "voicebench",
+   "model": "interactive-omni-4b",
+   "metric": "OpenBookQA",
+   "value": 82.64,
+   "source": "Table 13 (speech-to-text QA benchmarks, VoiceBench block)",
+   "source_url": "https://arxiv.org/abs/2510.13747"
+  },
+  {
+   "benchmark": "voicebench",
+   "model": "interactive-omni-4b",
+   "metric": "IFEval",
+   "value": 55.9,
+   "source": "Table 13 (speech-to-text QA benchmarks, VoiceBench block)",
+   "source_url": "https://arxiv.org/abs/2510.13747"
+  },
+  {
+   "benchmark": "voicebench",
+   "model": "interactive-omni-4b",
+   "metric": "BBH",
+   "value": 60.9,
+   "source": "Table 13 (speech-to-text QA benchmarks, VoiceBench block)",
+   "source_url": "https://arxiv.org/abs/2510.13747"
+  },
+  {
+   "benchmark": "voicebench",
+   "model": "interactive-omni-4b",
+   "metric": "AdvBench",
+   "value": 99.62,
+   "source": "Table 13 (speech-to-text QA benchmarks, VoiceBench block)",
+   "source_url": "https://arxiv.org/abs/2510.13747"
+  },
+  {
+   "benchmark": "voicebench",
+   "model": "interactive-omni-4b",
+   "metric": "Avg",
+   "value": 73.1,
+   "source": "Table 13 (speech-to-text QA benchmarks, VoiceBench block)",
+   "source_url": "https://arxiv.org/abs/2510.13747"
+  },
+  {
+   "benchmark": "voicebench",
+   "model": "interactive-omni-8b",
+   "metric": "AlpacaEval [0-10 scale]",
+   "value": 4.61,
+   "source": "Table 13 (speech-to-text QA benchmarks, VoiceBench block)",
+   "source_url": "https://arxiv.org/abs/2510.13747"
+  },
+  {
+   "benchmark": "voicebench",
+   "model": "interactive-omni-8b",
+   "metric": "CommonEval [0-10 scale]",
+   "value": 4.34,
+   "source": "Table 13 (speech-to-text QA benchmarks, VoiceBench block)",
+   "source_url": "https://arxiv.org/abs/2510.13747"
+  },
+  {
+   "benchmark": "voicebench",
+   "model": "interactive-omni-8b",
+   "metric": "WildVoice [0-10 scale]",
+   "value": 4.21,
+   "source": "Table 13 (speech-to-text QA benchmarks, VoiceBench block)",
+   "source_url": "https://arxiv.org/abs/2510.13747"
+  },
+  {
+   "benchmark": "voicebench",
+   "model": "interactive-omni-8b",
+   "metric": "SD-QA",
+   "value": 44.67,
+   "source": "Table 13 (speech-to-text QA benchmarks, VoiceBench block)",
+   "source_url": "https://arxiv.org/abs/2510.13747"
+  },
+  {
+   "benchmark": "voicebench",
+   "model": "interactive-omni-8b",
+   "metric": "MMSU",
+   "value": 65.26,
+   "source": "Table 13 (speech-to-text QA benchmarks, VoiceBench block)",
+   "source_url": "https://arxiv.org/abs/2510.13747"
+  },
+  {
+   "benchmark": "voicebench",
+   "model": "interactive-omni-8b",
+   "metric": "OpenBookQA",
+   "value": 86.37,
+   "source": "Table 13 (speech-to-text QA benchmarks, VoiceBench block)",
+   "source_url": "https://arxiv.org/abs/2510.13747"
+  },
+  {
+   "benchmark": "voicebench",
+   "model": "interactive-omni-8b",
+   "metric": "IFEval",
+   "value": 73.3,
+   "source": "Table 13 (speech-to-text QA benchmarks, VoiceBench block)",
+   "source_url": "https://arxiv.org/abs/2510.13747"
+  },
+  {
+   "benchmark": "voicebench",
+   "model": "interactive-omni-8b",
+   "metric": "BBH",
+   "value": 57.99,
+   "source": "Table 13 (speech-to-text QA benchmarks, VoiceBench block)",
+   "source_url": "https://arxiv.org/abs/2510.13747"
+  },
+  {
+   "benchmark": "voicebench",
+   "model": "interactive-omni-8b",
+   "metric": "AdvBench",
+   "value": 99.42,
+   "source": "Table 13 (speech-to-text QA benchmarks, VoiceBench block)",
+   "source_url": "https://arxiv.org/abs/2510.13747"
+  },
+  {
+   "benchmark": "voicebench",
+   "model": "interactive-omni-8b",
+   "metric": "Avg",
+   "value": 76.69,
+   "source": "Table 13 (speech-to-text QA benchmarks, VoiceBench block)",
+   "source_url": "https://arxiv.org/abs/2510.13747"
+  },
+  {
+   "benchmark": "spokenwebquestions",
+   "model": "interactive-omni-4b",
+   "metric": "WebQuestion S2T",
+   "value": 64,
+   "source": "Table 16 (spoken dialogue benchmarks, WebQuestion column)",
+   "source_url": "https://arxiv.org/abs/2510.13747"
+  },
+  {
+   "benchmark": "spokenwebquestions",
+   "model": "interactive-omni-4b",
+   "metric": "WebQuestion S2S",
+   "value": 58.7,
+   "source": "Table 16 (spoken dialogue benchmarks, WebQuestion column)",
+   "source_url": "https://arxiv.org/abs/2510.13747"
+  },
+  {
+   "benchmark": "spokenwebquestions",
+   "model": "interactive-omni-8b",
+   "metric": "WebQuestion S2T",
+   "value": 71.3,
+   "source": "Table 16 (spoken dialogue benchmarks, WebQuestion column)",
+   "source_url": "https://arxiv.org/abs/2510.13747"
+  },
+  {
+   "benchmark": "spokenwebquestions",
+   "model": "interactive-omni-8b",
+   "metric": "WebQuestion S2S",
+   "value": 64.6,
+   "source": "Table 16 (spoken dialogue benchmarks, WebQuestion column)",
+   "source_url": "https://arxiv.org/abs/2510.13747"
+  },
+  {
+   "benchmark": "mmau",
+   "model": "uni-moe-2-omni",
+   "metric": "ACC (MMAU-speech)",
+   "value": 64.69,
+   "source": "Table 6 (Speech/Audio/Music Understanding benchmarks)",
+   "source_url": "https://arxiv.org/abs/2511.12609",
+   "note": "transposed table: rows=benchmarks, columns=models"
+  },
+  {
+   "benchmark": "mmau",
+   "model": "uni-moe-2-omni",
+   "metric": "ACC (MMAU-Sound)",
+   "value": 67.17,
+   "source": "Table 6 (Speech/Audio/Music Understanding benchmarks)",
+   "source_url": "https://arxiv.org/abs/2511.12609"
+  },
+  {
+   "benchmark": "mmau",
+   "model": "uni-moe-2-omni",
+   "metric": "ACC (MMAU-Music)",
+   "value": 59.3,
+   "source": "Table 6 (Speech/Audio/Music Understanding benchmarks)",
+   "source_url": "https://arxiv.org/abs/2511.12609"
+  },
+  {
+   "benchmark": "spokenwebquestions",
+   "model": "stream-omni",
+   "metric": "ACC, WebQA s→t",
+   "value": 44.2,
+   "source": "Table 9 (Speech QA benchmarks, WebQA columns)",
+   "source_url": "https://arxiv.org/abs/2511.12609"
+  },
+  {
+   "benchmark": "spokenwebquestions",
+   "model": "stream-omni",
+   "metric": "ACC, WebQA s→s",
+   "value": 27.5,
+   "source": "Table 9 (Speech QA benchmarks, WebQA columns)",
+   "source_url": "https://arxiv.org/abs/2511.12609"
+  },
+  {
+   "benchmark": "spokenwebquestions",
+   "model": "uni-moe-2-omni",
+   "metric": "ACC, WebQA s→t",
+   "value": 45.13,
+   "source": "Table 9 (Speech QA benchmarks, WebQA columns)",
+   "source_url": "https://arxiv.org/abs/2511.12609"
+  },
+  {
+   "benchmark": "spokenwebquestions",
+   "model": "uni-moe-2-omni",
+   "metric": "ACC, WebQA s→s",
+   "value": 43.95,
+   "source": "Table 9 (Speech QA benchmarks, WebQA columns)",
+   "source_url": "https://arxiv.org/abs/2511.12609"
+  },
+  {
+   "benchmark": "worldsense",
+   "model": "uni-moe-2-omni",
+   "metric": "WorldSense score",
+   "value": 42.8,
+   "source": "Table 11 (4 Omnimodal understanding benchmarks)",
+   "source_url": "https://arxiv.org/abs/2511.12609"
+  },
+  {
+   "benchmark": "omnivideobench",
+   "model": "uni-moe-2-omni",
+   "metric": "OmniVideoBench score",
+   "value": 34.3,
+   "source": "Table 11 (4 Omnimodal understanding benchmarks)",
+   "source_url": "https://arxiv.org/abs/2511.12609"
+  },
+  {
+   "benchmark": "omnibench",
+   "model": "uni-moe-2-omni",
+   "metric": "OmniBench score",
+   "value": 46.5,
+   "source": "Table 11 (4 Omnimodal understanding benchmarks)",
+   "source_url": "https://arxiv.org/abs/2511.12609"
+  },
+  {
+   "benchmark": "voicebench",
+   "model": "interactive-omni",
+   "metric": "VoiceBench (Spoken QA, aggregate)",
+   "value": 62.41,
+   "source": "Table 4 (English speech and text benchmark results)",
+   "source_url": "https://arxiv.org/abs/2605.23912"
+  },
+  {
+   "benchmark": "mmau",
+   "model": "interactive-omni",
+   "metric": "MMAU (Speech) Accuracy",
+   "value": 66.07,
+   "source": "Table 4 (English speech and text benchmark results)",
+   "source_url": "https://arxiv.org/abs/2605.23912"
+  },
+  {
+   "benchmark": "voicebench",
+   "model": "interactive-omni",
+   "metric": "VoiceBench OpenBookQA",
+   "value": 76.48,
+   "source": "Table 9 (Detailed English spoken QA, VoiceBench block)",
+   "source_url": "https://arxiv.org/abs/2605.23912"
+  },
+  {
+   "benchmark": "voicebench",
+   "model": "interactive-omni",
+   "metric": "VoiceBench MMSU",
+   "value": 58.72,
+   "source": "Table 9 (Detailed English spoken QA, VoiceBench block)",
+   "source_url": "https://arxiv.org/abs/2605.23912"
+  },
+  {
+   "benchmark": "voicebench",
+   "model": "interactive-omni",
+   "metric": "VoiceBench BBH",
+   "value": 39.7,
+   "source": "Table 9 (Detailed English spoken QA, VoiceBench block)",
+   "source_url": "https://arxiv.org/abs/2605.23912"
+  },
+  {
+   "benchmark": "voicebench",
+   "model": "interactive-omni",
+   "metric": "VoiceBench SD-QA",
+   "value": 43.58,
+   "source": "Table 9 (Detailed English spoken QA, VoiceBench block)",
+   "source_url": "https://arxiv.org/abs/2605.23912"
+  },
+  {
+   "benchmark": "voicebench",
+   "model": "interactive-omni",
+   "metric": "VoiceBench AlpacaEval [0-100 scale]",
+   "value": 77,
+   "source": "Table 9 (Detailed English spoken QA, VoiceBench block)",
+   "source_url": "https://arxiv.org/abs/2605.23912"
+  },
+  {
+   "benchmark": "voicebench",
+   "model": "interactive-omni",
+   "metric": "VoiceBench CommonEval [0-100 scale]",
+   "value": 70,
+   "source": "Table 9 (Detailed English spoken QA, VoiceBench block)",
+   "source_url": "https://arxiv.org/abs/2605.23912"
+  },
+  {
+   "benchmark": "voicebench",
+   "model": "interactive-omni",
+   "metric": "VoiceBench WildVoice",
+   "value": 63.2,
+   "source": "Table 9 (Detailed English spoken QA, VoiceBench block)",
+   "source_url": "https://arxiv.org/abs/2605.23912"
+  },
+  {
+   "benchmark": "voicebench",
+   "model": "interactive-omni",
+   "metric": "VoiceBench IFEval",
+   "value": 45.13,
+   "source": "Table 9 (Detailed English spoken QA, VoiceBench block)",
+   "source_url": "https://arxiv.org/abs/2605.23912"
+  },
+  {
+   "benchmark": "voicebench",
+   "model": "interactive-omni",
+   "metric": "VoiceBench AdvBench",
+   "value": 87.88,
+   "source": "Table 9 (Detailed English spoken QA, VoiceBench block)",
+   "source_url": "https://arxiv.org/abs/2605.23912"
+  },
+  {
+   "benchmark": "air-bench",
+   "model": "soundwave",
+   "metric": "Speech Grounding",
+   "value": 59.2,
+   "source": "Table 6 (AIR-Bench speech foundation)",
+   "source_url": "https://arxiv.org/abs/2502.12900"
+  },
+  {
+   "benchmark": "air-bench",
+   "model": "soundwave",
+   "metric": "Language Identification",
+   "value": 89.6,
+   "source": "Table 6 (AIR-Bench speech foundation)",
+   "source_url": "https://arxiv.org/abs/2502.12900"
+  },
+  {
+   "benchmark": "air-bench",
+   "model": "soundwave",
+   "metric": "Gender Recognition",
+   "value": 90.3,
+   "source": "Table 6 (AIR-Bench speech foundation)",
+   "source_url": "https://arxiv.org/abs/2502.12900"
+  },
+  {
+   "benchmark": "air-bench",
+   "model": "soundwave",
+   "metric": "Emotion Recognition",
+   "value": 60.5,
+   "source": "Table 6 (AIR-Bench speech foundation)",
+   "source_url": "https://arxiv.org/abs/2502.12900"
+  },
+  {
+   "benchmark": "air-bench",
+   "model": "soundwave",
+   "metric": "Age Prediction",
+   "value": 58.9,
+   "source": "Table 6 (AIR-Bench speech foundation)",
+   "source_url": "https://arxiv.org/abs/2502.12900"
+  },
+  {
+   "benchmark": "air-bench",
+   "model": "soundwave",
+   "metric": "Entity Recognition",
+   "value": 81.7,
+   "source": "Table 6 (AIR-Bench speech foundation)",
+   "source_url": "https://arxiv.org/abs/2502.12900"
+  },
+  {
+   "benchmark": "air-bench",
+   "model": "soundwave",
+   "metric": "Intent Classification",
+   "value": 93.2,
+   "source": "Table 6 (AIR-Bench speech foundation)",
+   "source_url": "https://arxiv.org/abs/2502.12900"
+  },
+  {
+   "benchmark": "air-bench",
+   "model": "soundwave",
+   "metric": "Speaker num. Verification",
+   "value": 73.3,
+   "source": "Table 6 (AIR-Bench speech foundation)",
+   "source_url": "https://arxiv.org/abs/2502.12900"
+  },
+  {
+   "benchmark": "air-bench",
+   "model": "soundwave",
+   "metric": "Synthesized Detection",
+   "value": 72.5,
+   "source": "Table 6 (AIR-Bench speech foundation)",
+   "source_url": "https://arxiv.org/abs/2502.12900"
+  },
+  {
+   "benchmark": "air-bench",
+   "model": "soundwave",
+   "metric": "Average [0-100 scale]",
+   "value": 75.5,
+   "source": "Table 6 (AIR-Bench speech foundation)",
+   "source_url": "https://arxiv.org/abs/2502.12900"
+  },
+  {
+   "benchmark": "air-bench",
+   "model": "soundwave",
+   "metric": "Sound avg.",
+   "value": 62.1,
+   "source": "Table 17 (AIR-Bench sound and music foundation)",
+   "source_url": "https://arxiv.org/abs/2502.12900"
+  },
+  {
+   "benchmark": "air-bench",
+   "model": "soundwave",
+   "metric": "Music avg.",
+   "value": 40.1,
+   "source": "Table 17 (AIR-Bench sound and music foundation)",
+   "source_url": "https://arxiv.org/abs/2502.12900"
+  },
+  {
+   "benchmark": "air-bench",
+   "model": "soundwave",
+   "metric": "Speech (chat)",
+   "value": 6.41,
+   "source": "Table 18 (AIR-Bench chat tasks)",
+   "source_url": "https://arxiv.org/abs/2502.12900"
+  },
+  {
+   "benchmark": "air-bench",
+   "model": "soundwave",
+   "metric": "Sound (chat)",
+   "value": 5.33,
+   "source": "Table 18 (AIR-Bench chat tasks)",
+   "source_url": "https://arxiv.org/abs/2502.12900"
+  },
+  {
+   "benchmark": "air-bench",
+   "model": "soundwave",
+   "metric": "Music (chat)",
+   "value": 5.1,
+   "source": "Table 18 (AIR-Bench chat tasks)",
+   "source_url": "https://arxiv.org/abs/2502.12900"
+  },
+  {
+   "benchmark": "air-bench",
+   "model": "soundwave",
+   "metric": "Mixed Audio (chat)",
+   "value": 4.98,
+   "source": "Table 18 (AIR-Bench chat tasks)",
+   "source_url": "https://arxiv.org/abs/2502.12900"
+  },
+  {
+   "benchmark": "air-bench",
+   "model": "soundwave",
+   "metric": "Average (chat)",
+   "value": 5.46,
+   "source": "Table 18 (AIR-Bench chat tasks)",
+   "source_url": "https://arxiv.org/abs/2502.12900"
+  },
+  {
+   "benchmark": "salmon",
+   "model": "llama-mimi-1-3b",
+   "metric": "Salmon↑",
+   "value": 73.6,
+   "source": "Table 2 (results comparing SODA against existing Speech Language Models)",
+   "source_url": "https://arxiv.org/abs/2602.16687"
+  },
+  {
+   "benchmark": "salmon",
+   "model": "llama-mimi-8b",
+   "metric": "Salmon↑",
+   "value": 73.2,
+   "source": "Table 2 (results comparing SODA against existing Speech Language Models)",
+   "source_url": "https://arxiv.org/abs/2602.16687"
+  },
+  {
+   "benchmark": "zerospeech-2021",
+   "model": "llama-mimi-1-3b",
+   "metric": "sBLIMP↑",
+   "value": 54.3,
+   "source": "Table 2 (results comparing SODA against existing Speech Language Models)",
+   "source_url": "https://arxiv.org/abs/2602.16687"
+  },
+  {
+   "benchmark": "zerospeech-2021",
+   "model": "llama-mimi-1-3b",
+   "metric": "sWUGGY↑",
+   "value": 68.7,
+   "source": "Table 2 (results comparing SODA against existing Speech Language Models)",
+   "source_url": "https://arxiv.org/abs/2602.16687"
+  },
+  {
+   "benchmark": "zerospeech-2021",
+   "model": "llama-mimi-8b",
+   "metric": "sBLIMP↑",
+   "value": 55.1,
+   "source": "Table 2 (results comparing SODA against existing Speech Language Models)",
+   "source_url": "https://arxiv.org/abs/2602.16687"
+  },
+  {
+   "benchmark": "zerospeech-2021",
+   "model": "llama-mimi-8b",
+   "metric": "sWUGGY↑",
+   "value": 68.8,
+   "source": "Table 2 (results comparing SODA against existing Speech Language Models)",
+   "source_url": "https://arxiv.org/abs/2602.16687"
+  },
+  {
+   "benchmark": "mmsu",
+   "model": "diffa-2",
+   "metric": "Overall",
+   "value": 60.45,
+   "source": "Table 1 (performance breakdown on the MMSU benchmark)",
+   "source_url": "https://arxiv.org/abs/2601.23161",
+   "note": "Size 8B; this paper's system"
+  },
+  {
+   "benchmark": "mmsu",
+   "model": "diffa",
+   "metric": "Overall",
+   "value": 56.04,
+   "source": "Table 1 (performance breakdown on the MMSU benchmark)",
+   "source_url": "https://arxiv.org/abs/2601.23161",
+   "note": "Size 8B"
+  },
+  {
+   "benchmark": "mmau",
+   "model": "diffa-2",
+   "metric": "Avg (Test-mini) [0-100 scale]",
+   "value": 69.6,
+   "source": "Table 2 (performance breakdown on the MMAU benchmark)",
+   "source_url": "https://arxiv.org/abs/2601.23161",
+   "note": "Size 8B; this paper's system"
+  },
+  {
+   "benchmark": "mmau",
+   "model": "diffa-2",
+   "metric": "Avg (Test)",
+   "value": 67,
+   "source": "Table 2 (performance breakdown on the MMAU benchmark)",
+   "source_url": "https://arxiv.org/abs/2601.23161",
+   "note": "Size 8B; this paper's system"
+  },
+  {
+   "benchmark": "mmau",
+   "model": "diffa",
+   "metric": "Avg (Test-mini) [0-100 scale]",
+   "value": 49.71,
+   "source": "Table 2 (performance breakdown on the MMAU benchmark)",
+   "source_url": "https://arxiv.org/abs/2601.23161",
+   "note": "Size 8B; Test split reported as '-'"
+  },
+  {
+   "benchmark": "mmar",
+   "model": "diffa-2",
+   "metric": "Avg (%)",
+   "value": 50.8,
+   "source": "Table 3 (performance breakdown on the MMAR benchmark)",
+   "source_url": "https://arxiv.org/abs/2601.23161",
+   "note": "Size 8B; this paper's system"
+  },
+  {
+   "benchmark": "mmar",
+   "model": "diffa",
+   "metric": "Avg (%)",
+   "value": 37.2,
+   "source": "Table 3 (performance breakdown on the MMAR benchmark)",
+   "source_url": "https://arxiv.org/abs/2601.23161",
+   "note": "Size 8B"
+  },
+  {
+   "benchmark": "voicebench",
+   "model": "diffa-2",
+   "metric": "Overall",
+   "value": 59.63,
+   "source": "Table C.1 (performance breakdown on VoiceBench)",
+   "source_url": "https://arxiv.org/abs/2601.23161",
+   "note": "this paper's system"
+  },
+  {
+   "benchmark": "voicebench",
+   "model": "diffa",
+   "metric": "Overall",
+   "value": 48.22,
+   "source": "Table C.1 (performance breakdown on VoiceBench)",
+   "source_url": "https://arxiv.org/abs/2601.23161"
+  },
+  {
+   "benchmark": "mmau",
+   "model": "audsemthinker",
+   "metric": "Accuracy % (Sound, Test-mini)",
+   "value": 63.06,
+   "source": "Table 3 (performance comparison on MMAU)",
+   "source_url": "https://arxiv.org/abs/2505.14142"
+  },
+  {
+   "benchmark": "mmau",
+   "model": "audsemthinker",
+   "metric": "Accuracy % (Sound, Test)",
+   "value": 66.1,
+   "source": "Table 3 (performance comparison on MMAU)",
+   "source_url": "https://arxiv.org/abs/2505.14142"
+  },
+  {
+   "benchmark": "mmau",
+   "model": "audsemthinker",
+   "metric": "Accuracy % (Music, Test-mini)",
+   "value": 71.56,
+   "source": "Table 3 (performance comparison on MMAU)",
+   "source_url": "https://arxiv.org/abs/2505.14142"
+  },
+  {
+   "benchmark": "mmau",
+   "model": "audsemthinker",
+   "metric": "Accuracy % (Music, Test)",
+   "value": 67.47,
+   "source": "Table 3 (performance comparison on MMAU)",
+   "source_url": "https://arxiv.org/abs/2505.14142"
+  },
+  {
+   "benchmark": "mmau",
+   "model": "audsemthinker",
+   "metric": "Accuracy % (Speech, Test-mini)",
+   "value": 54.04,
+   "source": "Table 3 (performance comparison on MMAU)",
+   "source_url": "https://arxiv.org/abs/2505.14142"
+  },
+  {
+   "benchmark": "mmau",
+   "model": "audsemthinker",
+   "metric": "Accuracy % (Speech, Test)",
+   "value": 59.67,
+   "source": "Table 3 (performance comparison on MMAU)",
+   "source_url": "https://arxiv.org/abs/2505.14142"
+  },
+  {
+   "benchmark": "mmau",
+   "model": "audsemthinker",
+   "metric": "Accuracy % (Avg, Test-mini)",
+   "value": 62.9,
+   "source": "Table 3 (performance comparison on MMAU)",
+   "source_url": "https://arxiv.org/abs/2505.14142"
+  },
+  {
+   "benchmark": "mmau",
+   "model": "audsemthinker",
+   "metric": "Accuracy % (Avg, Test)",
+   "value": 64.41,
+   "source": "Table 3 (performance comparison on MMAU)",
+   "source_url": "https://arxiv.org/abs/2505.14142"
+  },
+  {
+   "benchmark": "mmau",
+   "model": "audsemthinker-qa",
+   "metric": "Accuracy % (Sound, Test-mini)",
+   "value": 61.86,
+   "source": "Table 3 (performance comparison on MMAU)",
+   "source_url": "https://arxiv.org/abs/2505.14142"
+  },
+  {
+   "benchmark": "mmau",
+   "model": "audsemthinker-qa",
+   "metric": "Accuracy % (Sound, Test)",
+   "value": 66.6,
+   "source": "Table 3 (performance comparison on MMAU)",
+   "source_url": "https://arxiv.org/abs/2505.14142"
+  },
+  {
+   "benchmark": "mmau",
+   "model": "audsemthinker-qa",
+   "metric": "Accuracy % (Music, Test-mini)",
+   "value": 76.65,
+   "source": "Table 3 (performance comparison on MMAU)",
+   "source_url": "https://arxiv.org/abs/2505.14142"
+  },
+  {
+   "benchmark": "mmau",
+   "model": "audsemthinker-qa",
+   "metric": "Accuracy % (Music, Test)",
+   "value": 70.07,
+   "source": "Table 3 (performance comparison on MMAU)",
+   "source_url": "https://arxiv.org/abs/2505.14142"
+  },
+  {
+   "benchmark": "mmau",
+   "model": "audsemthinker-qa",
+   "metric": "Accuracy % (Speech, Test-mini)",
+   "value": 52.25,
+   "source": "Table 3 (performance comparison on MMAU)",
+   "source_url": "https://arxiv.org/abs/2505.14142"
+  },
+  {
+   "benchmark": "mmau",
+   "model": "audsemthinker-qa",
+   "metric": "Accuracy % (Speech, Test)",
+   "value": 60.43,
+   "source": "Table 3 (performance comparison on MMAU)",
+   "source_url": "https://arxiv.org/abs/2505.14142"
+  },
+  {
+   "benchmark": "mmau",
+   "model": "audsemthinker-qa",
+   "metric": "Accuracy % (Avg, Test-mini)",
+   "value": 63.6,
+   "source": "Table 3 (performance comparison on MMAU)",
+   "source_url": "https://arxiv.org/abs/2505.14142"
+  },
+  {
+   "benchmark": "mmau",
+   "model": "audsemthinker-qa",
+   "metric": "Accuracy % (Avg, Test)",
+   "value": 65.7,
+   "source": "Table 3 (performance comparison on MMAU)",
+   "source_url": "https://arxiv.org/abs/2505.14142"
+  },
+  {
+   "benchmark": "mmau",
+   "model": "audsemthinker-qa-grpo",
+   "metric": "Accuracy % (Sound, Test-mini)",
+   "value": 69.67,
+   "source": "Table 3 (performance comparison on MMAU)",
+   "source_url": "https://arxiv.org/abs/2505.14142"
+  },
+  {
+   "benchmark": "mmau",
+   "model": "audsemthinker-qa-grpo",
+   "metric": "Accuracy % (Sound, Test)",
+   "value": 69.2,
+   "source": "Table 3 (performance comparison on MMAU)",
+   "source_url": "https://arxiv.org/abs/2505.14142"
+  },
+  {
+   "benchmark": "mmau",
+   "model": "audsemthinker-qa-grpo",
+   "metric": "Accuracy % (Music, Test-mini)",
+   "value": 69.16,
+   "source": "Table 3 (performance comparison on MMAU)",
+   "source_url": "https://arxiv.org/abs/2505.14142"
+  },
+  {
+   "benchmark": "mmau",
+   "model": "audsemthinker-qa-grpo",
+   "metric": "Accuracy % (Music, Test)",
+   "value": 63.13,
+   "source": "Table 3 (performance comparison on MMAU)",
+   "source_url": "https://arxiv.org/abs/2505.14142"
+  },
+  {
+   "benchmark": "mmau",
+   "model": "audsemthinker-qa-grpo",
+   "metric": "Accuracy % (Speech, Test-mini)",
+   "value": 61.26,
+   "source": "Table 3 (performance comparison on MMAU)",
+   "source_url": "https://arxiv.org/abs/2505.14142"
+  },
+  {
+   "benchmark": "mmau",
+   "model": "audsemthinker-qa-grpo",
+   "metric": "Accuracy % (Speech, Test)",
+   "value": 65.77,
+   "source": "Table 3 (performance comparison on MMAU)",
+   "source_url": "https://arxiv.org/abs/2505.14142"
+  },
+  {
+   "benchmark": "mmau",
+   "model": "audsemthinker-qa-grpo",
+   "metric": "Accuracy % (Avg, Test-mini)",
+   "value": 66.7,
+   "source": "Table 3 (performance comparison on MMAU)",
+   "source_url": "https://arxiv.org/abs/2505.14142"
+  },
+  {
+   "benchmark": "mmau",
+   "model": "audsemthinker-qa-grpo",
+   "metric": "Accuracy % (Avg, Test)",
+   "value": 66.03,
+   "source": "Table 3 (performance comparison on MMAU)",
+   "source_url": "https://arxiv.org/abs/2505.14142"
+  },
+  {
+   "benchmark": "audiobench",
+   "model": "audsemthinker-qa-grpo",
+   "metric": "AudioCaps QA (AQA)",
+   "value": 54.19,
+   "source": "Table 4 (performance comparison on AudioBench)",
+   "source_url": "https://arxiv.org/abs/2505.14142"
+  },
+  {
+   "benchmark": "audiobench",
+   "model": "audsemthinker-qa-grpo",
+   "metric": "Clotho AQA (AQA)",
+   "value": 50.85,
+   "source": "Table 4 (performance comparison on AudioBench)",
+   "source_url": "https://arxiv.org/abs/2505.14142"
+  },
+  {
+   "benchmark": "audiobench",
+   "model": "audsemthinker-qa-grpo",
+   "metric": "WavCaps QA (AQA)",
+   "value": 47.7,
+   "source": "Table 4 (performance comparison on AudioBench)",
+   "source_url": "https://arxiv.org/abs/2505.14142"
+  },
+  {
+   "benchmark": "audiobench",
+   "model": "audsemthinker-qa-grpo",
+   "metric": "MuchoMusic (Music QA)",
+   "value": 62,
+   "source": "Table 4 (performance comparison on AudioBench)",
+   "source_url": "https://arxiv.org/abs/2505.14142"
+  },
+  {
+   "benchmark": "muchomusic",
+   "model": "audsemthinker-qa-grpo",
+   "metric": "MuchoMusic (Music QA) score",
+   "value": 62,
+   "source": "Table 4 (performance comparison on AudioBench)",
+   "source_url": "https://arxiv.org/abs/2505.14142",
+   "note": "MuchoMusic column inside AudioBench Table 4 (Llama-3 judge)"
+  },
+  {
+   "benchmark": "audiobench",
+   "model": "audsemthinker-qa-grpo",
+   "metric": "AudioCaps (AAC)",
+   "value": 44.06,
+   "source": "Table 4 (performance comparison on AudioBench)",
+   "source_url": "https://arxiv.org/abs/2505.14142"
+  },
+  {
+   "benchmark": "audiobench",
+   "model": "audsemthinker-qa-grpo",
+   "metric": "WavCaps (AAC)",
+   "value": 31.92,
+   "source": "Table 4 (performance comparison on AudioBench)",
+   "source_url": "https://arxiv.org/abs/2505.14142"
+  },
+  {
+   "benchmark": "audiobench",
+   "model": "audsemthinker-qa",
+   "metric": "AudioCaps QA (AQA)",
+   "value": 58.4,
+   "source": "Table 4 (performance comparison on AudioBench)",
+   "source_url": "https://arxiv.org/abs/2505.14142"
+  },
+  {
+   "benchmark": "audiobench",
+   "model": "audsemthinker-qa",
+   "metric": "Clotho AQA (AQA)",
+   "value": 68.74,
+   "source": "Table 4 (performance comparison on AudioBench)",
+   "source_url": "https://arxiv.org/abs/2505.14142"
+  },
+  {
+   "benchmark": "audiobench",
+   "model": "audsemthinker-qa",
+   "metric": "WavCaps QA (AQA)",
+   "value": 31.83,
+   "source": "Table 4 (performance comparison on AudioBench)",
+   "source_url": "https://arxiv.org/abs/2505.14142"
+  },
+  {
+   "benchmark": "audiobench",
+   "model": "audsemthinker-qa",
+   "metric": "MuchoMusic (Music QA)",
+   "value": 74.47,
+   "source": "Table 4 (performance comparison on AudioBench)",
+   "source_url": "https://arxiv.org/abs/2505.14142"
+  },
+  {
+   "benchmark": "muchomusic",
+   "model": "audsemthinker-qa",
+   "metric": "MuchoMusic (Music QA) score",
+   "value": 74.47,
+   "source": "Table 4 (performance comparison on AudioBench)",
+   "source_url": "https://arxiv.org/abs/2505.14142",
+   "note": "MuchoMusic column inside AudioBench Table 4 (Llama-3 judge)"
+  },
+  {
+   "benchmark": "audiobench",
+   "model": "audsemthinker-qa",
+   "metric": "AudioCaps (AAC)",
+   "value": 39.83,
+   "source": "Table 4 (performance comparison on AudioBench)",
+   "source_url": "https://arxiv.org/abs/2505.14142"
+  },
+  {
+   "benchmark": "audiobench",
+   "model": "audsemthinker-qa",
+   "metric": "WavCaps (AAC)",
+   "value": 31.83,
+   "source": "Table 4 (performance comparison on AudioBench)",
+   "source_url": "https://arxiv.org/abs/2505.14142"
+  },
+  {
+   "benchmark": "audiobench",
+   "model": "audsemthinker",
+   "metric": "AudioCaps QA (AQA)",
+   "value": 62.81,
+   "source": "Table 4 (performance comparison on AudioBench)",
+   "source_url": "https://arxiv.org/abs/2505.14142"
+  },
+  {
+   "benchmark": "audiobench",
+   "model": "audsemthinker",
+   "metric": "Clotho AQA (AQA)",
+   "value": 63.79,
+   "source": "Table 4 (performance comparison on AudioBench)",
+   "source_url": "https://arxiv.org/abs/2505.14142"
+  },
+  {
+   "benchmark": "audiobench",
+   "model": "audsemthinker",
+   "metric": "WavCaps QA (AQA)",
+   "value": 55.2,
+   "source": "Table 4 (performance comparison on AudioBench)",
+   "source_url": "https://arxiv.org/abs/2505.14142"
+  },
+  {
+   "benchmark": "audiobench",
+   "model": "audsemthinker",
+   "metric": "MuchoMusic (Music QA)",
+   "value": 76.66,
+   "source": "Table 4 (performance comparison on AudioBench)",
+   "source_url": "https://arxiv.org/abs/2505.14142"
+  },
+  {
+   "benchmark": "muchomusic",
+   "model": "audsemthinker",
+   "metric": "MuchoMusic (Music QA) score",
+   "value": 76.66,
+   "source": "Table 4 (performance comparison on AudioBench)",
+   "source_url": "https://arxiv.org/abs/2505.14142",
+   "note": "MuchoMusic column inside AudioBench Table 4 (Llama-3 judge)"
+  },
+  {
+   "benchmark": "audiobench",
+   "model": "audsemthinker",
+   "metric": "AudioCaps (AAC)",
+   "value": 44.82,
+   "source": "Table 4 (performance comparison on AudioBench)",
+   "source_url": "https://arxiv.org/abs/2505.14142"
+  },
+  {
+   "benchmark": "audiobench",
+   "model": "audsemthinker",
+   "metric": "WavCaps (AAC)",
+   "value": 35.36,
+   "source": "Table 4 (performance comparison on AudioBench)",
+   "source_url": "https://arxiv.org/abs/2505.14142"
+  },
+  {
+   "benchmark": "mmsu",
+   "model": "diffa",
+   "metric": "Overall Avg",
+   "value": 56.04,
+   "source": "Table 2 (performance breakdown on the MMSU benchmark)",
+   "source_url": "https://arxiv.org/abs/2507.18452",
+   "note": "paper's own model"
+  },
+  {
+   "benchmark": "mmau",
+   "model": "diffa",
+   "metric": "Average",
+   "value": 49.71,
+   "source": "Table 3 (evaluation results on the MMAU benchmark)",
+   "source_url": "https://arxiv.org/abs/2507.18452",
+   "note": "paper's own model; Test-mini split"
+  },
+  {
+   "benchmark": "mmsu",
+   "model": "audio-omni",
+   "metric": "MMSU↑",
+   "value": 56.83,
+   "source": "Table 2 (quantitative results on multimodal understanding benchmarks)",
+   "source_url": "https://arxiv.org/abs/2604.10708",
+   "note": "paper's own system; identical to its Qwen2.5-Omni-3B row (frozen MLLM core)"
+  },
+  {
+   "benchmark": "mmau",
+   "model": "audio-omni",
+   "metric": "MMAU↑",
+   "value": 63.3,
+   "source": "Table 2 (quantitative results on multimodal understanding benchmarks)",
+   "source_url": "https://arxiv.org/abs/2604.10708",
+   "note": "paper's own system; identical to its Qwen2.5-Omni-3B row (frozen MLLM core)"
+  },
+  {
+   "benchmark": "salmon",
+   "model": "llama-mimi-1-3b",
+   "metric": "Acoustic Consistency Sent.",
+   "value": 79,
+   "source": "Table 1 (likelihood-based evaluation)",
+   "source_url": "https://arxiv.org/abs/2603.05299"
+  },
+  {
+   "benchmark": "salmon",
+   "model": "llama-mimi-1-3b",
+   "metric": "Acoustic Consistency Spk.",
+   "value": 85,
+   "source": "Table 1 (likelihood-based evaluation)",
+   "source_url": "https://arxiv.org/abs/2603.05299"
+  },
+  {
+   "benchmark": "salmon",
+   "model": "llama-mimi-1-3b",
+   "metric": "Acoustic Consistency Gend.",
+   "value": 83.5,
+   "source": "Table 1 (likelihood-based evaluation)",
+   "source_url": "https://arxiv.org/abs/2603.05299"
+  },
+  {
+   "benchmark": "salmon",
+   "model": "llama-mimi-1-3b",
+   "metric": "Alignment Sent.",
+   "value": 48.5,
+   "source": "Table 1 (likelihood-based evaluation)",
+   "source_url": "https://arxiv.org/abs/2603.05299"
+  },
+  {
+   "benchmark": "zerospeech-2021-zero-resource-speech-challenge-2021",
+   "model": "llama-mimi-1-3b",
+   "metric": "sWUGGY",
+   "value": 68.7,
+   "source": "Table 1 (likelihood-based evaluation)",
+   "source_url": "https://arxiv.org/abs/2603.05299"
+  },
+  {
+   "benchmark": "zerospeech-2021-zero-resource-speech-challenge-2021",
+   "model": "llama-mimi-1-3b",
+   "metric": "sBLiMP",
+   "value": 54.3,
+   "source": "Table 1 (likelihood-based evaluation)",
+   "source_url": "https://arxiv.org/abs/2603.05299"
+  },
+  {
+   "benchmark": "tstorycloze",
+   "model": "llama-mimi-1-3b",
+   "metric": "tSC",
+   "value": 64,
+   "source": "Table 1 (likelihood-based evaluation)",
+   "source_url": "https://arxiv.org/abs/2603.05299"
+  },
+  {
+   "benchmark": "salmon",
+   "model": "llama-mimi-8b",
+   "metric": "Acoustic Consistency Sent.",
+   "value": 76.5,
+   "source": "Table 1 (likelihood-based evaluation)",
+   "source_url": "https://arxiv.org/abs/2603.05299"
+  },
+  {
+   "benchmark": "salmon",
+   "model": "llama-mimi-8b",
+   "metric": "Acoustic Consistency Spk.",
+   "value": 86.5,
+   "source": "Table 1 (likelihood-based evaluation)",
+   "source_url": "https://arxiv.org/abs/2603.05299"
+  },
+  {
+   "benchmark": "salmon",
+   "model": "llama-mimi-8b",
+   "metric": "Acoustic Consistency Gend.",
+   "value": 85.5,
+   "source": "Table 1 (likelihood-based evaluation)",
+   "source_url": "https://arxiv.org/abs/2603.05299"
+  },
+  {
+   "benchmark": "salmon",
+   "model": "llama-mimi-8b",
+   "metric": "Alignment Sent.",
+   "value": 46.5,
+   "source": "Table 1 (likelihood-based evaluation)",
+   "source_url": "https://arxiv.org/abs/2603.05299"
+  },
+  {
+   "benchmark": "zerospeech-2021-zero-resource-speech-challenge-2021",
+   "model": "llama-mimi-8b",
+   "metric": "sWUGGY",
+   "value": 68.8,
+   "source": "Table 1 (likelihood-based evaluation)",
+   "source_url": "https://arxiv.org/abs/2603.05299"
+  },
+  {
+   "benchmark": "zerospeech-2021-zero-resource-speech-challenge-2021",
+   "model": "llama-mimi-8b",
+   "metric": "sBLiMP",
+   "value": 55.1,
+   "source": "Table 1 (likelihood-based evaluation)",
+   "source_url": "https://arxiv.org/abs/2603.05299"
+  },
+  {
+   "benchmark": "tstorycloze",
+   "model": "llama-mimi-8b",
+   "metric": "tSC",
+   "value": 67.6,
+   "source": "Table 1 (likelihood-based evaluation)",
+   "source_url": "https://arxiv.org/abs/2603.05299"
+  },
+  {
+   "benchmark": "salmon",
+   "model": "llama-mimi-1-3b",
+   "metric": "Consistency: Sentiment",
+   "value": 79,
+   "source": "Table 1 (performance of each model across tasks)",
+   "source_url": "https://arxiv.org/abs/2509.14882",
+   "note": "paper's own model"
+  },
+  {
+   "benchmark": "salmon",
+   "model": "llama-mimi-1-3b",
+   "metric": "Consistency: Speaker",
+   "value": 85,
+   "source": "Table 1 (performance of each model across tasks)",
+   "source_url": "https://arxiv.org/abs/2509.14882",
+   "note": "paper's own model"
+  },
+  {
+   "benchmark": "salmon",
+   "model": "llama-mimi-1-3b",
+   "metric": "Consistency: Gender",
+   "value": 83.5,
+   "source": "Table 1 (performance of each model across tasks)",
+   "source_url": "https://arxiv.org/abs/2509.14882",
+   "note": "paper's own model"
+  },
+  {
+   "benchmark": "salmon",
+   "model": "llama-mimi-1-3b",
+   "metric": "Consistency: BG (all)",
+   "value": 73.5,
+   "source": "Table 1 (performance of each model across tasks)",
+   "source_url": "https://arxiv.org/abs/2509.14882",
+   "note": "paper's own model"
+  },
+  {
+   "benchmark": "salmon",
+   "model": "llama-mimi-1-3b",
+   "metric": "Consistency: Room",
+   "value": 92,
+   "source": "Table 1 (performance of each model across tasks)",
+   "source_url": "https://arxiv.org/abs/2509.14882",
+   "note": "paper's own model"
+  },
+  {
+   "benchmark": "salmon",
+   "model": "llama-mimi-1-3b",
+   "metric": "Alignment: Sentiment",
+   "value": 48.5,
+   "source": "Table 1 (performance of each model across tasks)",
+   "source_url": "https://arxiv.org/abs/2509.14882",
+   "note": "paper's own model"
+  },
+  {
+   "benchmark": "salmon",
+   "model": "llama-mimi-1-3b",
+   "metric": "Alignment: BG",
+   "value": 53.5,
+   "source": "Table 1 (performance of each model across tasks)",
+   "source_url": "https://arxiv.org/abs/2509.14882",
+   "note": "paper's own model"
+  },
+  {
+   "benchmark": "zerospeech-2021",
+   "model": "llama-mimi-1-3b",
+   "metric": "sWUGGY",
+   "value": 68.7,
+   "source": "Table 1 (performance of each model across tasks)",
+   "source_url": "https://arxiv.org/abs/2509.14882",
+   "note": "paper's own model"
+  },
+  {
+   "benchmark": "zerospeech-2021",
+   "model": "llama-mimi-1-3b",
+   "metric": "sBLIMP",
+   "value": 54.3,
+   "source": "Table 1 (performance of each model across tasks)",
+   "source_url": "https://arxiv.org/abs/2509.14882",
+   "note": "paper's own model"
+  },
+  {
+   "benchmark": "tstorycloze",
+   "model": "llama-mimi-1-3b",
+   "metric": "T-StoryCloze",
+   "value": 64,
+   "source": "Table 1 (performance of each model across tasks)",
+   "source_url": "https://arxiv.org/abs/2509.14882",
+   "note": "paper's own model"
+  },
+  {
+   "benchmark": "mmsu",
+   "model": "diffa",
+   "metric": "Accuracy% (S→T)",
+   "value": 29.6,
+   "source": "Table 15 (Speech reasoning results on MMSU)",
+   "source_url": "https://arxiv.org/abs/2601.22889"
+  },
+  {
+   "benchmark": "spokenwebquestions",
+   "model": "diffa",
+   "metric": "Accuracy% (WebQ, S→T)",
+   "value": 43.4,
+   "source": "Table 2 (Speech question-answering results), WebQ column",
+   "source_url": "https://arxiv.org/abs/2601.22889"
+  },
+  {
+   "benchmark": "spokenwoz",
+   "model": "interactive-omni-4b",
+   "metric": "Goal Cov. GA ↑",
+   "value": 0.59,
+   "source": "Table 3 (main evaluation results; 100 dialogues sampled from the SpokenWOZ test set)",
+   "source_url": "https://arxiv.org/abs/2603.16783"
+  },
+  {
+   "benchmark": "spokenwoz",
+   "model": "interactive-omni-4b",
+   "metric": "Goal Cov. SMR ↑",
+   "value": 0.89,
+   "source": "Table 3 (main evaluation results; 100 dialogues sampled from the SpokenWOZ test set)",
+   "source_url": "https://arxiv.org/abs/2603.16783"
+  },
+  {
+   "benchmark": "spokenwoz",
+   "model": "interactive-omni-4b",
+   "metric": "Human MOS Avg. ↑",
+   "value": 2.63,
+   "source": "Table 3 (main evaluation results; 100 dialogues sampled from the SpokenWOZ test set)",
+   "source_url": "https://arxiv.org/abs/2603.16783"
+  },
+  {
+   "benchmark": "spokenwoz",
+   "model": "interactive-omni-4b",
+   "metric": "Intell. WER ↓",
+   "value": 15.68,
+   "source": "Table 3 (main evaluation results; 100 dialogues sampled from the SpokenWOZ test set)",
+   "source_url": "https://arxiv.org/abs/2603.16783"
+  },
+  {
+   "benchmark": "spokenwebquestions",
+   "model": "stream-omni",
+   "metric": "Web Q. (S→T)",
+   "value": 44.2,
+   "source": "Table 3 (Results on spokenQA benchmarks)",
+   "source_url": "https://arxiv.org/abs/2506.13642"
+  },
+  {
+   "benchmark": "spokenwebquestions",
+   "model": "stream-omni",
+   "metric": "Web Q. (S→S)",
+   "value": 27.5,
+   "source": "Table 3 (Results on spokenQA benchmarks)",
+   "source_url": "https://arxiv.org/abs/2506.13642"
+  },
+  {
+   "benchmark": "mmau",
+   "model": "audsemthinker",
+   "metric": "Sound accuracy (%)",
+   "value": 77.18,
+   "source": "Table 1 (open-source AQA models on MMAU-mini and MMAR)",
+   "source_url": "https://arxiv.org/abs/2509.12275",
+   "note": "MMAU-mini (v05.15.25). Row printed as 'AudSemThinker[13]'."
+  },
+  {
+   "benchmark": "mmau",
+   "model": "audsemthinker",
+   "metric": "Music accuracy (%)",
+   "value": 64.67,
+   "source": "Table 1 (open-source AQA models on MMAU-mini and MMAR)",
+   "source_url": "https://arxiv.org/abs/2509.12275",
+   "note": "MMAU-mini (v05.15.25)"
+  },
+  {
+   "benchmark": "mmau",
+   "model": "audsemthinker",
+   "metric": "Speech accuracy (%)",
+   "value": 68.17,
+   "source": "Table 1 (open-source AQA models on MMAU-mini and MMAR)",
+   "source_url": "https://arxiv.org/abs/2509.12275",
+   "note": "MMAU-mini (v05.15.25)"
+  },
+  {
+   "benchmark": "mmau",
+   "model": "audsemthinker",
+   "metric": "Avg accuracy (%)",
+   "value": 70,
+   "source": "Table 1 (open-source AQA models on MMAU-mini and MMAR)",
+   "source_url": "https://arxiv.org/abs/2509.12275",
+   "note": "MMAU-mini (v05.15.25)"
+  },
+  {
+   "benchmark": "mmar",
+   "model": "audsemthinker",
+   "metric": "Sound accuracy (%)",
+   "value": 52.73,
+   "source": "Table 1 (open-source AQA models on MMAU-mini and MMAR)",
+   "source_url": "https://arxiv.org/abs/2509.12275"
+  },
+  {
+   "benchmark": "mmar",
+   "model": "audsemthinker",
+   "metric": "Music accuracy (%)",
+   "value": 41.26,
+   "source": "Table 1 (open-source AQA models on MMAU-mini and MMAR)",
+   "source_url": "https://arxiv.org/abs/2509.12275"
+  },
+  {
+   "benchmark": "mmar",
+   "model": "audsemthinker",
+   "metric": "Speech accuracy (%)",
+   "value": 52.72,
+   "source": "Table 1 (open-source AQA models on MMAU-mini and MMAR)",
+   "source_url": "https://arxiv.org/abs/2509.12275"
+  },
+  {
+   "benchmark": "mmar",
+   "model": "audsemthinker",
+   "metric": "Avg accuracy (%)",
+   "value": 50.8,
+   "source": "Table 1 (open-source AQA models on MMAU-mini and MMAR)",
+   "source_url": "https://arxiv.org/abs/2509.12275"
+  },
+  {
+   "benchmark": "air-bench",
+   "model": "soundwave",
+   "metric": "Accuracy(%)",
+   "value": 90.3,
+   "source": "Table 2 (Accuracy for gender classification on Air-Bench)",
+   "source_url": "https://arxiv.org/abs/2601.20573",
+   "note": "Type = LLM; paper states this result is taken from [25]"
+  },
+  {
+   "benchmark": "air-bench",
+   "model": "falcon3-audio-3b",
+   "metric": "Accuracy (%) — Total Average",
+   "value": 42,
+   "source": "Table 4 (Multiple-choice QA Accuracy (%) on the AirBench Foundational benchmark)",
+   "source_url": "https://arxiv.org/abs/2601.15118",
+   "note": "Caption states Audio Encoder-LLM Decoder numbers are taken from ref [14]"
+  },
+  {
+   "benchmark": "air-bench",
+   "model": "falcon3-audio-3b",
+   "metric": "Accuracy (%) — Sound Average",
+   "value": 53.4,
+   "source": "Table 4 (Multiple-choice QA Accuracy (%) on the AirBench Foundational benchmark)",
+   "source_url": "https://arxiv.org/abs/2601.15118",
+   "note": "Numbers taken from ref [14]"
+  },
+  {
+   "benchmark": "air-bench",
+   "model": "falcon3-audio-3b",
+   "metric": "Accuracy (%) — Music Average",
+   "value": 42.2,
+   "source": "Table 4 (Multiple-choice QA Accuracy (%) on the AirBench Foundational benchmark)",
+   "source_url": "https://arxiv.org/abs/2601.15118",
+   "note": "Numbers taken from ref [14]"
+  },
+  {
+   "benchmark": "air-bench",
+   "model": "falcon3-audio-3b",
+   "metric": "Accuracy (%) — Speech Average",
+   "value": 35.1,
+   "source": "Table 4 (Multiple-choice QA Accuracy (%) on the AirBench Foundational benchmark)",
+   "source_url": "https://arxiv.org/abs/2601.15118",
+   "note": "Numbers taken from ref [14]"
+  },
+  {
+   "benchmark": "mmau",
+   "model": "falcon3-audio-7b",
+   "metric": "Average",
+   "value": 64.14,
+   "source": "TABLE I (MMAU Benchmark (Test) results)",
+   "source_url": "https://arxiv.org/abs/2509.07526",
+   "note": "paper's own model"
+  },
+  {
+   "benchmark": "mmau",
+   "model": "falcon3-audio-7b",
+   "metric": "Sound",
+   "value": 71.27,
+   "source": "TABLE I (MMAU Benchmark (Test) results)",
+   "source_url": "https://arxiv.org/abs/2509.07526"
+  },
+  {
+   "benchmark": "mmau",
+   "model": "falcon3-audio-7b",
+   "metric": "Music",
+   "value": 58.53,
+   "source": "TABLE I (MMAU Benchmark (Test) results)",
+   "source_url": "https://arxiv.org/abs/2509.07526"
+  },
+  {
+   "benchmark": "mmau",
+   "model": "falcon3-audio-7b",
+   "metric": "Speech",
+   "value": 62.63,
+   "source": "TABLE I (MMAU Benchmark (Test) results)",
+   "source_url": "https://arxiv.org/abs/2509.07526"
+  },
+  {
+   "benchmark": "mmau",
+   "model": "falcon3-audio-3b",
+   "metric": "Average",
+   "value": 57.96,
+   "source": "TABLE I (MMAU Benchmark (Test) results)",
+   "source_url": "https://arxiv.org/abs/2509.07526",
+   "note": "paper's own model"
+  },
+  {
+   "benchmark": "mmau",
+   "model": "falcon3-audio-3b",
+   "metric": "Sound",
+   "value": 67.33,
+   "source": "TABLE I (MMAU Benchmark (Test) results)",
+   "source_url": "https://arxiv.org/abs/2509.07526"
+  },
+  {
+   "benchmark": "mmau",
+   "model": "falcon3-audio-3b",
+   "metric": "Music",
+   "value": 52.07,
+   "source": "TABLE I (MMAU Benchmark (Test) results)",
+   "source_url": "https://arxiv.org/abs/2509.07526"
+  },
+  {
+   "benchmark": "mmau",
+   "model": "falcon3-audio-3b",
+   "metric": "Speech",
+   "value": 54.47,
+   "source": "TABLE I (MMAU Benchmark (Test) results)",
+   "source_url": "https://arxiv.org/abs/2509.07526"
+  },
+  {
+   "benchmark": "mmau",
+   "model": "falcon3-audio-1b",
+   "metric": "Average",
+   "value": 50.8,
+   "source": "TABLE I (MMAU Benchmark (Test) results)",
+   "source_url": "https://arxiv.org/abs/2509.07526",
+   "note": "paper's own model"
+  },
+  {
+   "benchmark": "mmau",
+   "model": "falcon3-audio-1b",
+   "metric": "Sound",
+   "value": 59.9,
+   "source": "TABLE I (MMAU Benchmark (Test) results)",
+   "source_url": "https://arxiv.org/abs/2509.07526"
+  },
+  {
+   "benchmark": "mmau",
+   "model": "falcon3-audio-1b",
+   "metric": "Music",
+   "value": 46.3,
+   "source": "TABLE I (MMAU Benchmark (Test) results)",
+   "source_url": "https://arxiv.org/abs/2509.07526"
+  },
+  {
+   "benchmark": "mmau",
+   "model": "falcon3-audio-1b",
+   "metric": "Speech",
+   "value": 46.2,
+   "source": "TABLE I (MMAU Benchmark (Test) results)",
+   "source_url": "https://arxiv.org/abs/2509.07526"
+  },
+  {
+   "benchmark": "air-bench",
+   "model": "falcon3-audio-7b",
+   "metric": "Total Average (AIR-Bench Foundational)",
+   "value": 54,
+   "source": "TABLE II (AIR-Bench Foundational Benchmark results)",
+   "source_url": "https://arxiv.org/abs/2509.07526",
+   "note": "Authors used a corrected scoring script (invalid generations counted wrong, answer content matched), so numbers are not directly comparable to official AIR-Bench scores. Table also lists 19 task-level rows not extracted here."
+  },
+  {
+   "benchmark": "air-bench",
+   "model": "falcon3-audio-7b",
+   "metric": "Sound Average (AIR-Bench Foundational)",
+   "value": 65.2,
+   "source": "TABLE II (AIR-Bench Foundational Benchmark results)",
+   "source_url": "https://arxiv.org/abs/2509.07526"
+  },
+  {
+   "benchmark": "air-bench",
+   "model": "falcon3-audio-7b",
+   "metric": "Music Average (AIR-Bench Foundational)",
+   "value": 50.5,
+   "source": "TABLE II (AIR-Bench Foundational Benchmark results)",
+   "source_url": "https://arxiv.org/abs/2509.07526"
+  },
+  {
+   "benchmark": "air-bench",
+   "model": "falcon3-audio-7b",
+   "metric": "Speech Average (AIR-Bench Foundational)",
+   "value": 50.4,
+   "source": "TABLE II (AIR-Bench Foundational Benchmark results)",
+   "source_url": "https://arxiv.org/abs/2509.07526"
+  },
+  {
+   "benchmark": "air-bench",
+   "model": "falcon3-audio-3b",
+   "metric": "Total Average (AIR-Bench Foundational)",
+   "value": 42,
+   "source": "TABLE II (AIR-Bench Foundational Benchmark results)",
+   "source_url": "https://arxiv.org/abs/2509.07526"
+  },
+  {
+   "benchmark": "air-bench",
+   "model": "falcon3-audio-3b",
+   "metric": "Sound Average (AIR-Bench Foundational)",
+   "value": 53.4,
+   "source": "TABLE II (AIR-Bench Foundational Benchmark results)",
+   "source_url": "https://arxiv.org/abs/2509.07526"
+  },
+  {
+   "benchmark": "air-bench",
+   "model": "falcon3-audio-3b",
+   "metric": "Music Average (AIR-Bench Foundational)",
+   "value": 42.2,
+   "source": "TABLE II (AIR-Bench Foundational Benchmark results)",
+   "source_url": "https://arxiv.org/abs/2509.07526"
+  },
+  {
+   "benchmark": "air-bench",
+   "model": "falcon3-audio-3b",
+   "metric": "Speech Average (AIR-Bench Foundational)",
+   "value": 35.1,
+   "source": "TABLE II (AIR-Bench Foundational Benchmark results)",
+   "source_url": "https://arxiv.org/abs/2509.07526"
+  },
+  {
+   "benchmark": "air-bench",
+   "model": "falcon3-audio-1b",
+   "metric": "Total Average (AIR-Bench Foundational)",
+   "value": 38,
+   "source": "TABLE II (AIR-Bench Foundational Benchmark results)",
+   "source_url": "https://arxiv.org/abs/2509.07526"
+  },
+  {
+   "benchmark": "air-bench",
+   "model": "falcon3-audio-1b",
+   "metric": "Sound Average (AIR-Bench Foundational)",
+   "value": 47.7,
+   "source": "TABLE II (AIR-Bench Foundational Benchmark results)",
+   "source_url": "https://arxiv.org/abs/2509.07526"
+  },
+  {
+   "benchmark": "air-bench",
+   "model": "falcon3-audio-1b",
+   "metric": "Music Average (AIR-Bench Foundational)",
+   "value": 36.4,
+   "source": "TABLE II (AIR-Bench Foundational Benchmark results)",
+   "source_url": "https://arxiv.org/abs/2509.07526"
+  },
+  {
+   "benchmark": "air-bench",
+   "model": "falcon3-audio-1b",
+   "metric": "Speech Average (AIR-Bench Foundational)",
+   "value": 34.2,
+   "source": "TABLE II (AIR-Bench Foundational Benchmark results)",
+   "source_url": "https://arxiv.org/abs/2509.07526"
+  },
+  {
+   "benchmark": "air-bench",
+   "model": "falcon3-audio-7b",
+   "metric": "Average (AIR-Bench Chat)",
+   "value": 6.2,
+   "source": "TABLE III (AIR-Bench Chat Benchmark results)",
+   "source_url": "https://arxiv.org/abs/2509.07526",
+   "note": "paper's own model; median of three trials"
+  },
+  {
+   "benchmark": "air-bench",
+   "model": "falcon3-audio-7b",
+   "metric": "Speech (AIR-Bench Chat)",
+   "value": 6.93,
+   "source": "TABLE III (AIR-Bench Chat Benchmark results)",
+   "source_url": "https://arxiv.org/abs/2509.07526"
+  },
+  {
+   "benchmark": "air-bench",
+   "model": "falcon3-audio-7b",
+   "metric": "Sound (AIR-Bench Chat)",
+   "value": 6.74,
+   "source": "TABLE III (AIR-Bench Chat Benchmark results)",
+   "source_url": "https://arxiv.org/abs/2509.07526"
+  },
+  {
+   "benchmark": "air-bench",
+   "model": "falcon3-audio-7b",
+   "metric": "Music (AIR-Bench Chat)",
+   "value": 5.64,
+   "source": "TABLE III (AIR-Bench Chat Benchmark results)",
+   "source_url": "https://arxiv.org/abs/2509.07526"
+  },
+  {
+   "benchmark": "air-bench",
+   "model": "falcon3-audio-7b",
+   "metric": "Mixed (AIR-Bench Chat)",
+   "value": 5.48,
+   "source": "TABLE III (AIR-Bench Chat Benchmark results)",
+   "source_url": "https://arxiv.org/abs/2509.07526"
+  },
+  {
+   "benchmark": "air-bench",
+   "model": "falcon3-audio-3b",
+   "metric": "Average (AIR-Bench Chat)",
+   "value": 5.88,
+   "source": "TABLE III (AIR-Bench Chat Benchmark results)",
+   "source_url": "https://arxiv.org/abs/2509.07526"
+  },
+  {
+   "benchmark": "air-bench",
+   "model": "falcon3-audio-3b",
+   "metric": "Speech (AIR-Bench Chat)",
+   "value": 6.65,
+   "source": "TABLE III (AIR-Bench Chat Benchmark results)",
+   "source_url": "https://arxiv.org/abs/2509.07526"
+  },
+  {
+   "benchmark": "air-bench",
+   "model": "falcon3-audio-3b",
+   "metric": "Sound (AIR-Bench Chat)",
+   "value": 6.34,
+   "source": "TABLE III (AIR-Bench Chat Benchmark results)",
+   "source_url": "https://arxiv.org/abs/2509.07526"
+  },
+  {
+   "benchmark": "air-bench",
+   "model": "falcon3-audio-3b",
+   "metric": "Music (AIR-Bench Chat)",
+   "value": 5.37,
+   "source": "TABLE III (AIR-Bench Chat Benchmark results)",
+   "source_url": "https://arxiv.org/abs/2509.07526"
+  },
+  {
+   "benchmark": "air-bench",
+   "model": "falcon3-audio-3b",
+   "metric": "Mixed (AIR-Bench Chat)",
+   "value": 5.17,
+   "source": "TABLE III (AIR-Bench Chat Benchmark results)",
+   "source_url": "https://arxiv.org/abs/2509.07526"
+  },
+  {
+   "benchmark": "air-bench",
+   "model": "falcon3-audio-1b",
+   "metric": "Average (AIR-Bench Chat)",
+   "value": 5.67,
+   "source": "TABLE III (AIR-Bench Chat Benchmark results)",
+   "source_url": "https://arxiv.org/abs/2509.07526"
+  },
+  {
+   "benchmark": "air-bench",
+   "model": "falcon3-audio-1b",
+   "metric": "Speech (AIR-Bench Chat)",
+   "value": 6.33,
+   "source": "TABLE III (AIR-Bench Chat Benchmark results)",
+   "source_url": "https://arxiv.org/abs/2509.07526"
+  },
+  {
+   "benchmark": "air-bench",
+   "model": "falcon3-audio-1b",
+   "metric": "Sound (AIR-Bench Chat)",
+   "value": 6.14,
+   "source": "TABLE III (AIR-Bench Chat Benchmark results)",
+   "source_url": "https://arxiv.org/abs/2509.07526"
+  },
+  {
+   "benchmark": "air-bench",
+   "model": "falcon3-audio-1b",
+   "metric": "Music (AIR-Bench Chat)",
+   "value": 5.48,
+   "source": "TABLE III (AIR-Bench Chat Benchmark results)",
+   "source_url": "https://arxiv.org/abs/2509.07526"
+  },
+  {
+   "benchmark": "air-bench",
+   "model": "falcon3-audio-1b",
+   "metric": "Mixed (AIR-Bench Chat)",
+   "value": 4.74,
+   "source": "TABLE III (AIR-Bench Chat Benchmark results)",
+   "source_url": "https://arxiv.org/abs/2509.07526"
+  },
+  {
+   "benchmark": "air-bench",
+   "model": "mgm-omni-7b",
+   "metric": "Average ↑",
+   "value": 6.5,
+   "source": "Table 3 (Omni-comparison on Audio QA benchmarks, AIR-Bench)",
+   "source_url": "https://arxiv.org/abs/2509.25131",
+   "note": "paper's own system; per-dimension Speech/Sound/Music/Mix = 7.3/6.5/6.3/6.1 in same row"
+  },
+  {
+   "benchmark": "air-bench",
+   "model": "mgm-omni-32b",
+   "metric": "Average ↑",
+   "value": 6.5,
+   "source": "Table 3 (Omni-comparison on Audio QA benchmarks, AIR-Bench)",
+   "source_url": "https://arxiv.org/abs/2509.25131",
+   "note": "paper's own system; per-dimension Speech/Sound/Music/Mix = 7.1/6.5/6.2/6.2 in same row"
+  },
+  {
+   "benchmark": "voicebench",
+   "model": "diffa",
+   "metric": "Score ↑",
+   "value": 3.75,
+   "source": "Table 4 (Evaluation results of DIFFA on VoiceBench)",
+   "source_url": "https://arxiv.org/abs/2604.08964",
+   "note": "VoiceBench subset: AlpacaEval; row 'AlpacaEval | DIFFA'"
   }
  ]
 }

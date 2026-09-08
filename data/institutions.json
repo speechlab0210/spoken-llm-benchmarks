@@ -6018,6 +6018,35 @@
    ]
   },
   {
+   "id": "maastricht-university",
+   "name": "Maastricht University",
+   "short": "Maastricht",
+   "type": "academia",
+   "country": "NL",
+   "parent": null,
+   "confidence": "high",
+   "sites": [
+    {
+     "city": "Maastricht",
+     "lat": 50.85,
+     "lon": 5.69,
+     "country": "NL"
+    }
+   ],
+   "aliases": [
+    {
+     "raw": "Maastricht University",
+     "country": "NL",
+     "city": "Maastricht",
+     "lat": 50.85,
+     "lon": 5.69,
+     "type": "academia",
+     "confidence": "high",
+     "note": "The AudSemThinker paper prints the university with no city; placed at its own campus."
+    }
+   ]
+  },
+  {
    "id": "macquarie-university",
    "name": "Macquarie University",
    "short": "Macquarie",
@@ -10032,6 +10061,35 @@
      "type": "academia",
      "confidence": "high",
      "note": null
+    }
+   ]
+  },
+  {
+   "id": "technology-innovation-institute",
+   "name": "Technology Innovation Institute",
+   "short": "TII",
+   "type": "government",
+   "country": "AE",
+   "parent": null,
+   "confidence": "high",
+   "sites": [
+    {
+     "city": "Abu Dhabi",
+     "lat": 24.45,
+     "lon": 54.38,
+     "country": "AE"
+    }
+   ],
+   "aliases": [
+    {
+     "raw": "Technology Innovation Institute",
+     "country": "AE",
+     "city": "Abu Dhabi",
+     "lat": 24.45,
+     "lon": 54.38,
+     "type": "government",
+     "confidence": "high",
+     "note": "Printed on the Falcon3-Audio paper as 'Technology Innovation Institute, Abu Dhabi, UAE'. Public research institute of the Abu Dhabi Advanced Technology Research Council."
     }
    ]
   },

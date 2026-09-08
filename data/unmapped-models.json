@@ -2,7 +2,7 @@
  "generated": "canon_models.py --cells raw/cells_raw.json --min-cells 3",
  "note": "Rows the canonicaliser refused to place, with where each was seen. unmapped_model = no REGISTRY pattern matched (add one if it is a real spoken LLM); below_min_cells = recognised but under --min-cells; unknown_benchmark = the extracted benchmark name is not in the catalogue; not_a_model = matched a DROP rule (Human, Random, an ASR system...). Triage the first two; the last two are usually correct refusals.",
  "counts": {
-  "unmapped_model": 10375,
+  "unmapped_model": 10062,
   "below_min_cells": 23,
   "unknown_benchmark": 725,
   "not_a_model": 3157
@@ -628,31 +628,6 @@
   },
   {
    "bucket": "unmapped_model",
-   "name": "InteractiveOmni-4B",
-   "cells": 29,
-   "n_benchmarks": 6,
-   "n_papers": 2,
-   "benchmarks": [
-    "air-bench",
-    "mmau",
-    "omnibench",
-    "spokenwebquestions",
-    "spokenwoz",
-    "voicebench"
-   ],
-   "papers": [
-    "2510.13747",
-    "2603.16783"
-   ],
-   "metrics": [
-    "AdvBench",
-    "AlpacaEval",
-    "Avg",
-    "Avg."
-   ]
-  },
-  {
-   "bucket": "unmapped_model",
    "name": "Dasheng AudioGen",
    "cells": 27,
    "n_benchmarks": 1,
@@ -776,29 +751,6 @@
     "AV Cap METEOR",
     "Aud-Lang Acc",
     "Aud-Lang HR"
-   ]
-  },
-  {
-   "bucket": "unmapped_model",
-   "name": "InteractiveOmni-8B",
-   "cells": 25,
-   "n_benchmarks": 5,
-   "n_papers": 1,
-   "benchmarks": [
-    "air-bench",
-    "mmau",
-    "omnibench",
-    "spokenwebquestions",
-    "voicebench"
-   ],
-   "papers": [
-    "2510.13747"
-   ],
-   "metrics": [
-    "AdvBench",
-    "AlpacaEval",
-    "Avg",
-    "Avg."
    ]
   },
   {
@@ -1071,29 +1023,6 @@
   },
   {
    "bucket": "unmapped_model",
-   "name": "AudSemThinker",
-   "cells": 23,
-   "n_benchmarks": 4,
-   "n_papers": 2,
-   "benchmarks": [
-    "audiobench",
-    "mmar",
-    "mmau",
-    "muchomusic"
-   ],
-   "papers": [
-    "2505.14142",
-    "2509.12275"
-   ],
-   "metrics": [
-    "Accuracy % (Avg, Test)",
-    "Accuracy % (Avg, Test-mini)",
-    "Accuracy % (Music, Test)",
-    "Accuracy % (Music, Test-mini)"
-   ]
-  },
-  {
-   "bucket": "unmapped_model",
    "name": "Audio-Thinker",
    "cells": 23,
    "n_benchmarks": 3,
@@ -1349,28 +1278,6 @@
    "metrics": [
     "↑ Acc (%)",
     "↑ F1macro (%)"
-   ]
-  },
-  {
-   "bucket": "unmapped_model",
-   "name": "Soundwave",
-   "cells": 20,
-   "n_benchmarks": 2,
-   "n_papers": 3,
-   "benchmarks": [
-    "air-bench",
-    "hpsu"
-   ],
-   "papers": [
-    "2502.12900",
-    "2511.23178",
-    "2601.20573"
-   ],
-   "metrics": [
-    "Accuracy (EN, Intent)",
-    "Accuracy (EN, MEmo / Main Emotion)",
-    "Accuracy(%)",
-    "Age Prediction"
    ]
   },
   {
@@ -1716,27 +1623,6 @@
     "ABX (test set) Clean Within",
     "ABX (test set) Other Across",
     "ABX (test set) Other Within"
-   ]
-  },
-  {
-   "bucket": "unmapped_model",
-   "name": "Falcon3-Audio 3B",
-   "cells": 17,
-   "n_benchmarks": 2,
-   "n_papers": 2,
-   "benchmarks": [
-    "air-bench",
-    "mmau"
-   ],
-   "papers": [
-    "2509.07526",
-    "2601.15118"
-   ],
-   "metrics": [
-    "Accuracy (%) — Music Average",
-    "Accuracy (%) — Sound Average",
-    "Accuracy (%) — Speech Average",
-    "Accuracy (%) — Total Average"
    ]
   },
   {
@@ -2414,48 +2300,6 @@
   },
   {
    "bucket": "unmapped_model",
-   "name": "AudSemThinker-QA",
-   "cells": 15,
-   "n_benchmarks": 3,
-   "n_papers": 1,
-   "benchmarks": [
-    "audiobench",
-    "mmau",
-    "muchomusic"
-   ],
-   "papers": [
-    "2505.14142"
-   ],
-   "metrics": [
-    "Accuracy % (Avg, Test)",
-    "Accuracy % (Avg, Test-mini)",
-    "Accuracy % (Music, Test)",
-    "Accuracy % (Music, Test-mini)"
-   ]
-  },
-  {
-   "bucket": "unmapped_model",
-   "name": "AudSemThinker-QA GRPO",
-   "cells": 15,
-   "n_benchmarks": 3,
-   "n_papers": 1,
-   "benchmarks": [
-    "audiobench",
-    "mmau",
-    "muchomusic"
-   ],
-   "papers": [
-    "2505.14142"
-   ],
-   "metrics": [
-    "Accuracy % (Avg, Test)",
-    "Accuracy % (Avg, Test-mini)",
-    "Accuracy % (Music, Test)",
-    "Accuracy % (Music, Test-mini)"
-   ]
-  },
-  {
-   "bucket": "unmapped_model",
    "name": "Audio-only Low",
    "cells": 15,
    "n_benchmarks": 1,
@@ -2572,34 +2416,6 @@
   },
   {
    "bucket": "unmapped_model",
-   "name": "Uni-MoE-2.0-Omni",
-   "cells": 15,
-   "n_benchmarks": 9,
-   "n_papers": 3,
-   "benchmarks": [
-    "daily-omni",
-    "futureomni",
-    "jointavbench",
-    "mmau",
-    "omniacbench",
-    "omnibench",
-    "omnivideobench",
-    "spokenwebquestions"
-   ],
-   "papers": [
-    "2511.12609",
-    "2603.23938",
-    "2606.14702"
-   ],
-   "metrics": [
-    "ACC (MMAU-Music)",
-    "ACC (MMAU-Sound)",
-    "ACC (MMAU-speech)",
-    "ACC, WebQA s→s"
-   ]
-  },
-  {
-   "bucket": "unmapped_model",
    "name": "APC",
    "cells": 14,
    "n_benchmarks": 1,
@@ -2696,52 +2512,6 @@
     "KOpenAudioBench",
     "KVoiceBench",
     "MMAU (Speech) Accuracy"
-   ]
-  },
-  {
-   "bucket": "unmapped_model",
-   "name": "Interactive Omni",
-   "cells": 14,
-   "n_benchmarks": 3,
-   "n_papers": 2,
-   "benchmarks": [
-    "kvoicebench",
-    "mmau",
-    "voicebench"
-   ],
-   "papers": [
-    "2605.23912",
-    "2605.27984"
-   ],
-   "metrics": [
-    "KMMAU",
-    "KOpenAudioBench",
-    "KVoiceBench",
-    "MMAU (Speech) Accuracy"
-   ]
-  },
-  {
-   "bucket": "unmapped_model",
-   "name": "Llama-Mimi-1.3B",
-   "cells": 14,
-   "n_benchmarks": 4,
-   "n_papers": 3,
-   "benchmarks": [
-    "salmon",
-    "tstorycloze",
-    "unnamed-likelihood-and-generative-based-evaluation-suite-for-spoken-language-models-replacement-for-global-token-perplexity",
-    "zerospeech-2021"
-   ],
-   "papers": [
-    "2509.14882",
-    "2601.06329",
-    "2602.16687"
-   ],
-   "metrics": [
-    "Alignment: BG",
-    "Alignment: Sentiment",
-    "Consistency: BG (all)",
-    "Consistency: Gender"
    ]
   },
   {
@@ -2950,46 +2720,6 @@
     "EEA",
     "Emotion Approp.",
     "Inst. Adherence"
-   ]
-  },
-  {
-   "bucket": "unmapped_model",
-   "name": "Falcon3-Audio 1B",
-   "cells": 13,
-   "n_benchmarks": 2,
-   "n_papers": 1,
-   "benchmarks": [
-    "air-bench",
-    "mmau"
-   ],
-   "papers": [
-    "2509.07526"
-   ],
-   "metrics": [
-    "Average",
-    "Average (AIR-Bench Chat)",
-    "Mixed (AIR-Bench Chat)",
-    "Music"
-   ]
-  },
-  {
-   "bucket": "unmapped_model",
-   "name": "Falcon3-Audio 7B",
-   "cells": 13,
-   "n_benchmarks": 2,
-   "n_papers": 1,
-   "benchmarks": [
-    "air-bench",
-    "mmau"
-   ],
-   "papers": [
-    "2509.07526"
-   ],
-   "metrics": [
-    "Average",
-    "Average (AIR-Bench Chat)",
-    "Mixed (AIR-Bench Chat)",
-    "Music"
    ]
   },
   {
@@ -3304,30 +3034,6 @@
    "metrics": [
     "Accuracy (%)",
     "Zero-shot Macro-F1 (%)"
-   ]
-  },
-  {
-   "bucket": "unmapped_model",
-   "name": "DIFFA",
-   "cells": 12,
-   "n_benchmarks": 4,
-   "n_papers": 3,
-   "benchmarks": [
-    "mmar",
-    "mmau",
-    "mmsu",
-    "voicebench"
-   ],
-   "papers": [
-    "2507.18452",
-    "2601.23161",
-    "2604.08964"
-   ],
-   "metrics": [
-    "Average",
-    "Avg (%)",
-    "Avg (Test-mini)",
-    "Overall"
    ]
   },
   {
@@ -6481,30 +6187,6 @@
   },
   {
    "bucket": "unmapped_model",
-   "name": "DIFFA-2",
-   "cells": 8,
-   "n_benchmarks": 5,
-   "n_papers": 2,
-   "benchmarks": [
-    "mmar",
-    "mmau",
-    "mmsu",
-    "rail",
-    "voicebench"
-   ],
-   "papers": [
-    "2601.23161",
-    "2606.11260"
-   ],
-   "metrics": [
-    "Auditory Processing (Judge)",
-    "Avg (%)",
-    "Avg (Test)",
-    "Avg (Test-mini)"
-   ]
-  },
-  {
-   "bucket": "unmapped_model",
    "name": "DIMV",
    "cells": 8,
    "n_benchmarks": 3,
@@ -8687,48 +8369,6 @@
   },
   {
    "bucket": "unmapped_model",
-   "name": "LLaMA-Mimi 1.3B",
-   "cells": 7,
-   "n_benchmarks": 3,
-   "n_papers": 1,
-   "benchmarks": [
-    "salmon",
-    "tstorycloze",
-    "zerospeech-2021-zero-resource-speech-challenge-2021"
-   ],
-   "papers": [
-    "2603.05299"
-   ],
-   "metrics": [
-    "Acoustic Consistency Gend.",
-    "Acoustic Consistency Sent.",
-    "Acoustic Consistency Spk.",
-    "Alignment Sent."
-   ]
-  },
-  {
-   "bucket": "unmapped_model",
-   "name": "LLaMA-Mimi 8B",
-   "cells": 7,
-   "n_benchmarks": 3,
-   "n_papers": 1,
-   "benchmarks": [
-    "salmon",
-    "tstorycloze",
-    "zerospeech-2021-zero-resource-speech-challenge-2021"
-   ],
-   "papers": [
-    "2603.05299"
-   ],
-   "metrics": [
-    "Acoustic Consistency Gend.",
-    "Acoustic Consistency Sent.",
-    "Acoustic Consistency Spk.",
-    "Alignment Sent."
-   ]
-  },
-  {
-   "bucket": "unmapped_model",
    "name": "Lingcon Insight",
    "cells": 7,
    "n_benchmarks": 2,
@@ -9563,28 +9203,6 @@
   },
   {
    "bucket": "unmapped_model",
-   "name": "Audio-Omni",
-   "cells": 6,
-   "n_benchmarks": 3,
-   "n_papers": 2,
-   "benchmarks": [
-    "mmau",
-    "mmsu",
-    "polyspeech-100"
-   ],
-   "papers": [
-    "2604.10708",
-    "2606.01016"
-   ],
-   "metrics": [
-    "CN-Dialect (Acc. %)",
-    "High-Res (Acc. %)",
-    "Low-Res (Acc. %)",
-    "MMAU↑"
-   ]
-  },
-  {
-   "bucket": "unmapped_model",
    "name": "BESTOW",
    "cells": 6,
    "n_benchmarks": 1,
@@ -9976,27 +9594,6 @@
    ],
    "metrics": [
     "Acc"
-   ]
-  },
-  {
-   "bucket": "unmapped_model",
-   "name": "MGM-Omni-32B",
-   "cells": 6,
-   "n_benchmarks": 2,
-   "n_papers": 2,
-   "benchmarks": [
-    "air-bench",
-    "escapecraft-4d"
-   ],
-   "papers": [
-    "2509.25131",
-    "2603.15467"
-   ],
-   "metrics": [
-    "AVG ER (%)",
-    "Average ↑",
-    "Difficulty-1 ER (%)",
-    "Difficulty-2 ER (%)"
    ]
   },
   {
@@ -10734,27 +10331,6 @@
   },
   {
    "bucket": "unmapped_model",
-   "name": "SageLM",
-   "cells": 6,
-   "n_benchmarks": 2,
-   "n_papers": 2,
-   "benchmarks": [
-    "sagelm",
-    "sdiareward"
-   ],
-   "papers": [
-    "2508.20916",
-    "2603.14889"
-   ],
-   "metrics": [
-    "Accuracy (%) — AlpacaEval OOD",
-    "Agreement (%) with human annotation — AlpacaEval OOD",
-    "Colloq. Acc (pairwise preference accuracy %)",
-    "Modality Micro (pairwise preference accuracy %)"
-   ]
-  },
-  {
-   "bucket": "unmapped_model",
    "name": "TextPro-SLM-7B w/o KD",
    "cells": 6,
    "n_benchmarks": 2,
@@ -11059,25 +10635,6 @@
     "Avg. ↑",
     "Daily-Omni ↑ (Caption-to-QA)",
     "Det. ↑"
-   ]
-  },
-  {
-   "bucket": "unmapped_model",
-   "name": "AUDSEMTHINKER-QA GRPO",
-   "cells": 5,
-   "n_benchmarks": 1,
-   "n_papers": 1,
-   "benchmarks": [
-    "polybench"
-   ],
-   "papers": [
-    "2603.05128"
-   ],
-   "metrics": [
-    "ACC (%) - Classification",
-    "ACC (%) - Concurrency",
-    "ACC (%) - Counting",
-    "ACC (%) - Detection"
    ]
   },
   {
@@ -12639,27 +12196,6 @@
     "BLEU (response text)",
     "F1 emotion (response style)",
     "F1 speed (response style)"
-   ]
-  },
-  {
-   "bucket": "unmapped_model",
-   "name": "Stream-Omni",
-   "cells": 5,
-   "n_benchmarks": 2,
-   "n_papers": 2,
-   "benchmarks": [
-    "fysicsworld",
-    "spokenwebquestions"
-   ],
-   "papers": [
-    "2506.13642",
-    "2512.12756"
-   ],
-   "metrics": [
-    "Task1-1 Image Understanding ACC",
-    "Task2-1 Speech-Driven Image Understanding ACC",
-    "Task2-2 Image-Audio Contextual Reasoning ACC",
-    "Web Q. (S→S)"
    ]
   },
   {
@@ -14314,27 +13850,6 @@
     "AVUT",
     "DailyOmni",
     "WorldSense"
-   ]
-  },
-  {
-   "bucket": "unmapped_model",
-   "name": "DIFFA-2 (w/ FPD)",
-   "cells": 4,
-   "n_benchmarks": 3,
-   "n_papers": 1,
-   "benchmarks": [
-    "mmar",
-    "mmau",
-    "mmsu"
-   ],
-   "papers": [
-    "2601.23161"
-   ],
-   "metrics": [
-    "Avg (%)",
-    "Avg (Test)",
-    "Avg (Test-mini)",
-    "Overall"
    ]
   },
   {
@@ -20283,60 +19798,6 @@
   },
   {
    "bucket": "unmapped_model",
-   "name": "Interactive-Omni",
-   "cells": 3,
-   "n_benchmarks": 1,
-   "n_papers": 1,
-   "benchmarks": [
-    "omni-persona"
-   ],
-   "papers": [
-    "2605.09996"
-   ],
-   "metrics": [
-    "Avg (composite of nine higher-is-better scores)",
-    "Overall Ans",
-    "Overall Cal"
-   ]
-  },
-  {
-   "bucket": "unmapped_model",
-   "name": "InteractiveOmni 4B",
-   "cells": 3,
-   "n_benchmarks": 1,
-   "n_papers": 1,
-   "benchmarks": [
-    "omniacbench"
-   ],
-   "papers": [
-    "2603.23938"
-   ],
-   "metrics": [
-    "Emo-Acc (%) (Emotion)",
-    "GA-Acc (%) (Global Accent)",
-    "WER (Semantic fidelity)"
-   ]
-  },
-  {
-   "bucket": "unmapped_model",
-   "name": "InteractiveOmni 8B",
-   "cells": 3,
-   "n_benchmarks": 1,
-   "n_papers": 1,
-   "benchmarks": [
-    "omniacbench"
-   ],
-   "papers": [
-    "2603.23938"
-   ],
-   "metrics": [
-    "Emo-Acc (%) (Emotion)",
-    "GA-Acc (%) (Global Accent)",
-    "WER (Semantic fidelity)"
-   ]
-  },
-  {
-   "bucket": "unmapped_model",
    "name": "JC1",
    "cells": 3,
    "n_benchmarks": 1,
@@ -20588,25 +20049,6 @@
   },
   {
    "bucket": "unmapped_model",
-   "name": "Llama-Mimi-8B",
-   "cells": 3,
-   "n_benchmarks": 2,
-   "n_papers": 1,
-   "benchmarks": [
-    "salmon",
-    "zerospeech-2021"
-   ],
-   "papers": [
-    "2602.16687"
-   ],
-   "metrics": [
-    "Salmon↑",
-    "sBLIMP↑",
-    "sWUGGY↑"
-   ]
-  },
-  {
-   "bucket": "unmapped_model",
    "name": "Llama-mimi",
    "cells": 3,
    "n_benchmarks": 1,
@@ -20747,24 +20189,6 @@
     "Search Grounded QA",
     "Side Talk Rejection",
     "Turn-based Micro-avg"
-   ]
-  },
-  {
-   "bucket": "unmapped_model",
-   "name": "MGM-Omni 7B",
-   "cells": 3,
-   "n_benchmarks": 1,
-   "n_papers": 1,
-   "benchmarks": [
-    "omniacbench"
-   ],
-   "papers": [
-    "2603.23938"
-   ],
-   "metrics": [
-    "Emo-Acc (%) (Emotion)",
-    "GA-Acc (%) (Global Accent)",
-    "WER (Semantic fidelity)"
    ]
   },
   {
@@ -22762,80 +22186,6 @@
   },
   {
    "bucket": "unmapped_model",
-   "name": "Uni-MoE 2.0",
-   "cells": 3,
-   "n_benchmarks": 1,
-   "n_papers": 1,
-   "benchmarks": [
-    "mmau"
-   ],
-   "papers": [
-    "2511.12609"
-   ],
-   "metrics": [
-    "ACC (MMAU-Music)",
-    "ACC (MMAU-Sound)",
-    "ACC (MMAU-speech)"
-   ]
-  },
-  {
-   "bucket": "unmapped_model",
-   "name": "Uni-MoE-2",
-   "cells": 3,
-   "n_benchmarks": 1,
-   "n_papers": 1,
-   "benchmarks": [
-    "omd-bench"
-   ],
-   "papers": [
-    "2603.27187"
-   ],
-   "metrics": [
-    "Accuracy (%), Zero-Shot Synthetic, k=0 (clean)",
-    "Accuracy (%), Zero-Shot Synthetic, k=3 (all modalities corrupted)",
-    "Accuracy (%), Zero-Shot Synthetic, k̄=1"
-   ]
-  },
-  {
-   "bucket": "unmapped_model",
-   "name": "Uni-MoE-2.0",
-   "cells": 3,
-   "n_benchmarks": 3,
-   "n_papers": 1,
-   "benchmarks": [
-    "omnibench",
-    "omnivideobench",
-    "worldsense"
-   ],
-   "papers": [
-    "2511.12609"
-   ],
-   "metrics": [
-    "OmniBench score",
-    "OmniVideoBench score",
-    "WorldSense score"
-   ]
-  },
-  {
-   "bucket": "unmapped_model",
-   "name": "UniMoE-2.0 (256 FPV)",
-   "cells": 3,
-   "n_benchmarks": 1,
-   "n_papers": 1,
-   "benchmarks": [
-    "sonic-o1"
-   ],
-   "papers": [
-    "2601.21666"
-   ],
-   "metrics": [
-    "MCQ Accuracy (%)",
-    "Summarization LLM-judge Score (0-10)",
-    "Temporal Localization R@0.5 (%)"
-   ]
-  },
-  {
-   "bucket": "unmapped_model",
    "name": "VAST",
    "cells": 3,
    "n_benchmarks": 1,
@@ -24366,24 +23716,6 @@
    ],
    "metrics": [
     "Acc"
-   ]
-  },
-  {
-   "bucket": "unmapped_model",
-   "name": "DiFFA",
-   "cells": 2,
-   "n_benchmarks": 2,
-   "n_papers": 1,
-   "benchmarks": [
-    "mmsu",
-    "spokenwebquestions"
-   ],
-   "papers": [
-    "2601.22889"
-   ],
-   "metrics": [
-    "Accuracy% (S→T)",
-    "Accuracy% (WebQ, S→T)"
    ]
   },
   {
@@ -27716,23 +27048,6 @@
   },
   {
    "bucket": "unmapped_model",
-   "name": "Stream-Omni-8B",
-   "cells": 2,
-   "n_benchmarks": 1,
-   "n_papers": 1,
-   "benchmarks": [
-    "spokenwebquestions"
-   ],
-   "papers": [
-    "2511.12609"
-   ],
-   "metrics": [
-    "ACC, WebQA s→s",
-    "ACC, WebQA s→t"
-   ]
-  },
-  {
-   "bucket": "unmapped_model",
    "name": "Sylber-w/SIL-uLM",
    "cells": 2,
    "n_benchmarks": 1,
@@ -29200,23 +28515,6 @@
    "metrics": [
     "Track A (Classification) Avg.",
     "Track B (Understanding) Avg."
-   ]
-  },
-  {
-   "bucket": "unmapped_model",
-   "name": "audsemthinker 26",
-   "cells": 2,
-   "n_benchmarks": 1,
-   "n_papers": 1,
-   "benchmarks": [
-    "hummusqa"
-   ],
-   "papers": [
-    "2603.27877"
-   ],
-   "metrics": [
-    "Accuracy All (%)",
-    "Consistency All (%)"
    ]
   },
   {
@@ -31693,22 +30991,6 @@
    ],
    "metrics": [
     "WebQA"
-   ]
-  },
-  {
-   "bucket": "unmapped_model",
-   "name": "MGM-Omni-7B",
-   "cells": 1,
-   "n_benchmarks": 1,
-   "n_papers": 1,
-   "benchmarks": [
-    "air-bench"
-   ],
-   "papers": [
-    "2509.25131"
-   ],
-   "metrics": [
-    "Average ↑"
    ]
   },
   {
