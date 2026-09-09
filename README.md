@@ -32,6 +32,8 @@ before it, and applying it removed a large number of otherwise plausible candida
 | `data/benchmarks.json` | the catalogue, one entry per benchmark |
 | `data/models.json` | the spoken LLMs that appear as table rows |
 | `data/results.json` | flat model × benchmark cells; **every cell carries a source** |
+| `data/metric-aliases.json` | reviewed, source-scoped metric aliases with pinned original observations and paper-table evidence |
+| `data/metric-alias-review-2026-09-10.json` | all 2,379 candidate-pair decisions from the metric alias audit |
 | `data/latest.json` | output of the daily arXiv crawl (generated — do not hand-edit) |
 | `data/unmapped-models.json` | every table row the canonicaliser refused to place, and why (generated) — the work list for what is missing |
 | `data/institutions.json` | canonical organisations behind the benchmarks and models: type, country, sites (city, lat, lon), raw aliases |
@@ -45,6 +47,7 @@ before it, and applying it removed a large number of otherwise plausible candida
 
 ```bash
 node scripts/build.mjs                              # rebuild the site from data/
+node --test scripts/metric-aliases.test.mjs scripts/metadata-audit.test.mjs
 python scripts/daily_crawl.py --days 3 --rebuild    # daily arXiv scan (no model in the loop)
 python scripts/fetch_paper.py 2410.17196            # pull a paper's text, tables preserved
 python scripts/harvest_oai.py --from 2025-01-01 --until 2026-08-21 --sets eess
@@ -85,6 +88,17 @@ A benchmark may sit in up to three categories; most do sit in more than one, del
 `source` is a human-readable citation ("VoiceBench Table 3", "Qwen3-Omni technical report Table 7");
 `source_url` makes it clickable.
 
+**Reviewed metric alias** — a group in `data/metric-aliases.json` names one benchmark,
+quantity and evaluation condition. Each member specifies the original metric name,
+paper identity, source URLs, table locator and SHA-256 fingerprints of the reviewed
+observations. `scripts/metric-aliases.mjs` defines the fingerprint and builds a separate
+display index; it never rewrites `results.json`. New observations require review before
+joining a group, even if their metric name and source paper already occur in it.
+The build rejects stale observations, duplicate assignments, source-paper mismatches,
+contradictory values and groups without sufficient cross-paper matching evidence.
+This registry concerns reported-result aliases; the catalogue's optional `metrics[]`
+field still documents official evaluation definitions separately.
+
 > **A number without a source cannot enter the site.** This is the most important rule in the repo.
 > The tables are only worth anything if every cell is traceable.
 
@@ -115,7 +129,7 @@ Optional: `short`, `parent` (umbrella body such as the Chinese Academy of Scienc
 
 They aggregate **published** numbers; nothing was re-run. Scores for the same model on the same
 benchmark differ between sources because the prompt, decoding settings, judge model, audio rendering
-and checkpoint all vary. Two safeguards are applied mechanically:
+and checkpoint all vary. The following rules make those distinctions visible:
 
 - **One metric per column.** A column uses a single metric — the best-covered one, preferring an
   aggregate over a sub-score — so a column never blends incommensurable quantities. The `(+n)` in a
@@ -124,8 +138,24 @@ and checkpoint all vary. Two safeguards are applied mechanically:
   the same thing normalised to 100), the cells are relabelled and kept in separate columns. The
   split requires seeing one model reported at both magnitudes by two different sources; a low
   score on a single published scale is a low score, not a different unit, and is left alone.
+- **Reviewed aliases.** Different names are combined only after matching at least three
+  common models with three distinct non-boundary values and reviewing the source-table
+  quantity, subset and input condition. Matching scores are a discovery signal, not proof
+  by themselves. Values must agree across the complete group; transitive matches cannot
+  override a conflict. Separate papers may quote an earlier result rather than rerun it.
+- **All source observations remain accessible.** A combined column links to its evidence,
+  and each cell can expand to show original metric names, scores, sources and notes.
+  Where unmerged observations in the same cell disagree, all values are displayed;
+  no last-write-wins replacement, averaging or rescaling is performed.
 
 A blank cell means **not reported**, never zero.
+
+The [metric alias audit](https://speechlab0210.github.io/spoken-llm-benchmarks/metric-aliases.html)
+records the 2026-09-10 release: 82 groups across 27 benchmarks, containing 211
+source-scoped names and 1,412 observations. Across benchmarks with results, selectable
+metric options decreased from 3,161 to 3,056, while all 15,972 original observations were
+preserved. Of 248 stronger candidate pairs reviewed, 167 support approved groups and 81
+remain separate. The ledger also retains 2,131 pairs with conflicts or insufficient overlap.
 
 ## Provenance
 

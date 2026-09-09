@@ -176,6 +176,14 @@ select.metricsel{display:block;margin-top:3px;max-width:180px;background:transpa
   border:1px solid var(--line);border-radius:5px;padding:1px 3px;
   font-family:var(--mono);font-size:.68rem;color:var(--ink-3);font-weight:400;cursor:pointer}
 select.metricsel:hover{border-color:var(--accent);color:var(--accent)}
+.selected-metric{display:block;max-width:220px;margin-top:5px;font-size:.72rem;font-weight:400;white-space:normal;color:var(--ink-2)}
+.alias-link{display:block;font-size:.68rem;font-weight:400;margin-top:4px}
+.source-list{font-family:var(--sans);font-size:.72rem;font-weight:400;text-align:left;margin-top:5px;white-space:normal}
+.source-list summary{cursor:pointer;color:var(--accent);white-space:nowrap}
+.source-list[open]{width:280px;max-width:340px}
+.source-list ol{padding-left:18px;margin:8px 0;line-height:1.5}
+.source-list li{margin:9px 0;overflow-wrap:anywhere}
+.source-list .source-note{display:block;color:var(--ink-3);margin-top:3px}
 .morebtn{display:block;width:100%;margin-top:10px;background:var(--panel);
   border:1px dashed var(--line-2);color:var(--ink-2);border-radius:var(--radius);
   padding:11px;font-size:.88rem;font-family:inherit;cursor:pointer}
@@ -184,7 +192,7 @@ select.metricsel:hover{border-color:var(--accent);color:var(--accent)}
 a.cellval{color:inherit;text-decoration:none;border-bottom:1px dotted var(--line-2);cursor:pointer}
 a.cellval:hover{color:var(--accent);border-bottom:1px solid var(--accent);text-decoration:none}
 .cellval.nosrc{border-bottom:1px dotted transparent;cursor:help}
-td.num{max-width:150px;overflow:hidden}
+td.num{max-width:340px;white-space:normal;overflow-wrap:anywhere}
 
 details.acc{border:1px solid var(--line);border-radius:var(--radius);background:var(--panel);
   padding:11px 15px;margin-bottom:9px}
@@ -995,14 +1003,27 @@ renderChips(); renderBench();
 
 // ---------- model x benchmark tables ----------
 document.getElementById('tableCaveat').innerHTML =
-  '<p><strong>Read these tables carefully.</strong> '+(E.table_caveat||'')+'</p>';
+  '<p><strong>Read these tables carefully.</strong> '+(E.table_caveat||'')+'</p>'+
+  '<p>Source-checked metric aliases are now combined. Original names and every source are preserved; '+
+  'expand a cell’s sources to inspect them. <a href="metric-aliases.html">See the metric merge audit</a>.</p>';
 
 // Index by benchmark -> metric -> model. A column must use ONE metric: mixing metrics
 // (or scales) in a single column would put incommensurable numbers side by side.
-var byBenchMetric = {};
-R.forEach(function(r){
-  var ms = (byBenchMetric[r.benchmark] = byBenchMetric[r.benchmark] || {});
-  (ms[r.metric] = ms[r.metric] || {})[r.model] = r;
+var byBenchMetric = {}, metricDefs = D.metricTables.byBenchmark;
+Object.keys(metricDefs).forEach(function(bid){
+  var ms = byBenchMetric[bid] = {};
+  Object.keys(metricDefs[bid]).forEach(function(key){
+    var def = metricDefs[bid][key], models = ms[key] = {};
+    Object.keys(def.models).forEach(function(mid){
+      var observations = def.models[mid].map(function(i){ return R[i]; });
+      var values = [];
+      observations.forEach(function(r){
+        if(!values.some(function(v){return typeof v===typeof r.value && v===r.value;})) values.push(r.value);
+      });
+      models[mid] = {metric:def.label, group_id:def.group_id, observations:observations,
+        values:values, value:values.length===1 ? values[0] : null};
+    });
+  });
 });
 // The benchmark's primary metric = best model coverage, but an aggregate ("Overall",
 // "Average") beats a sub-score at similar coverage — a headline number is what a reader
@@ -1013,7 +1034,7 @@ Object.keys(byBenchMetric).forEach(function(bid){
   var ms = byBenchMetric[bid], best = null, bestScore = -1;
   Object.keys(ms).forEach(function(k){
     var c = Object.keys(ms[k]).length;
-    var s = c * (AGG.test(k) ? 1.6 : 1);
+    var s = c * (AGG.test(metricDefs[bid][k].label) ? 1.6 : 1);
     if (s > bestScore || (s === bestScore && best !== null && k.length < best.length)) {
       bestScore = s; best = k;
     }
@@ -1044,7 +1065,8 @@ function benchesFor(catId){
 function colFor(catId, bid){
   var st = tState[catId];
   var metric = (st.metric && st.metric[bid]) || primaryMetric[bid];
-  return { metric: metric, cells: (byBenchMetric[bid]||{})[metric] || {} };
+  var def = (metricDefs[bid]||{})[metric] || {};
+  return { metric: metric, label:def.label, group_id:def.group_id, cells: (byBenchMetric[bid]||{})[metric] || {} };
 }
 
 function renderTable(catId, host){
@@ -1100,9 +1122,11 @@ function renderTable(catId, host){
       // several metrics reported and no single aggregate: let the reader choose which
       // one the column shows, rather than picking for them and hiding the rest
       var sel = el('select','metricsel');
-      metrics.sort().forEach(function(mn){
-        var o = el('option', null, mn.length>34 ? mn.slice(0,32)+'…' : mn);
-        o.value = mn; o.title = mn;
+      sel.setAttribute('aria-label', b.name+' metric');
+      metrics.sort(function(a,b2){return metricDefs[b.id][a].label.localeCompare(metricDefs[b.id][b2].label);}).forEach(function(mn){
+        var label = metricDefs[b.id][mn].label;
+        var o = el('option', null, label);
+        o.value = mn; o.title = label;
         if(mn === x.c.metric) o.selected = true;
         sel.appendChild(o);
       });
@@ -1112,8 +1136,14 @@ function renderTable(catId, host){
         renderTable(catId, host);
       });
       th.appendChild(sel);
+      th.appendChild(el('span','selected-metric',x.c.label));
     } else {
-      th.appendChild(el('span','metric', x.c.metric || 'score'));
+      th.appendChild(el('span','metric', x.c.label || 'score'));
+    }
+    if(x.c.group_id){
+      var aliasLink = el('a','alias-link','Combined names · view evidence');
+      aliasLink.href='metric-aliases.html#'+x.c.group_id;
+      th.appendChild(aliasLink);
     }
     hr.appendChild(th);
   });
@@ -1146,15 +1176,28 @@ function renderTable(catId, host){
       if(!c){ tr.appendChild(el('td','na','—')); return; }
       var td = el('td','num');
       var isBest = best[x.b.id]!==undefined && typeof c.value==='number' && c.value===best[x.b.id];
-      // the number IS the citation: clicking it opens the paper the number was copied from
-      var tip = m.name+' on '+x.b.name+'\n'+c.metric+' = '+c.value+
-        '\nsource: '+c.source + (c.note? '\nnote: '+c.note : '') +
-        (c.source_url ? '\n\nClick to open the source paper.' : '');
       var cls = 'cellval'+(isBest?' best':'');
-      td.innerHTML = c.source_url
-        ? '<a class="'+cls+'" href="'+esc(c.source_url)+'" target="_blank" rel="noopener" title="'+
-            esc(tip)+'">'+esc(fmtVal(c.value))+'</a>'
-        : '<span class="'+cls+' nosrc" title="'+esc(tip)+'">'+esc(fmtVal(c.value))+'</span>';
+      td.innerHTML = c.values.map(function(value){
+        var source=c.observations.find(function(r){return typeof r.value===typeof value && r.value===value;});
+        var tip=m.name+' on '+x.b.name+'\n'+c.metric+' = '+value+
+          '\nReported as: '+source.metric+'\nSource: '+source.source+(source.note?'\nNote: '+source.note:'');
+        return source.source_url
+          ? '<a class="'+cls+'" href="'+esc(source.source_url)+'" target="_blank" rel="noopener" title="'+esc(tip)+'">'+esc(fmtVal(value))+'</a>'
+          : '<span class="'+cls+' nosrc" title="'+esc(tip)+'">'+esc(fmtVal(value))+'</span>';
+      }).join(' / ');
+      if(c.observations.length>1 || c.group_id){
+        var sourceDetails=el('details','source-list');
+        sourceDetails.appendChild(el('summary',null,c.observations.length+' report'+(c.observations.length===1?'':'s')));
+        var sourceRows=el('ol');
+        c.observations.forEach(function(r){
+          var li=el('li');
+          li.innerHTML='<strong>'+esc(fmtVal(r.value))+'</strong> · Reported as “'+esc(r.metric)+'”<br>'+
+            (r.source_url?'<a href="'+esc(r.source_url)+'" target="_blank" rel="noopener">'+esc(r.source)+'</a>':esc(r.source))+
+            (r.note?'<span class="source-note">'+esc(r.note)+'</span>':'');
+          sourceRows.appendChild(li);
+        });
+        sourceDetails.appendChild(sourceRows); td.appendChild(sourceDetails);
+      }
       tr.appendChild(td);
     });
     tb2.appendChild(tr);

@@ -11,6 +11,7 @@ import { validateGeo, computeGeo } from './geo.mjs';
 import { validateVenues, computeVenues } from './venues.mjs';
 import { validateCorrections } from './metadata-corrections.mjs';
 import { renderMetadataAudit } from './render_metadata_audit.mjs';
+import { buildMetricTables, renderMetricAliasAudit } from './metric-aliases.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const read = (p) => JSON.parse(readFileSync(join(ROOT, p), 'utf8'));
@@ -117,6 +118,13 @@ if (geo.institutions.length) {
   stats.attributed_benchmarks = geo.counted_benchmarks;
 }
 
+const metricAliases = readOpt('data/metric-aliases.json', { version: 1, groups: [] });
+const metricReview = readOpt('data/metric-alias-review-2026-09-10.json', null);
+const metricTables = buildMetricTables(results.cells, metricAliases);
+stats.metric_alias_groups = metricTables.summary.groups;
+stats.metric_alias_observations = metricTables.summary.mapped_observations;
+stats.metric_options = metricTables.summary.metric_options;
+
 const data = {
   built_at: new Date().toISOString(),
   stats,
@@ -133,6 +141,7 @@ const data = {
   geo,
   venues,
   venueStats,
+  metricTables,
 };
 
 const template = readFileSync(join(ROOT, 'site-src', 'template.html'), 'utf8');
@@ -155,6 +164,11 @@ const metadataAudit = readOpt('data/metadata-audit-2026-09-06.json', null);
 if (metadataAudit) {
   const auditHtml = renderMetadataAudit(metadataAudit, read('data/metadata-corrections.json'), institutions);
   for (const dir of [ROOT, join(ROOT, 'site')]) writeFileSync(join(dir, 'audit-2026-09-06.html'), auditHtml);
+}
+if (metricReview) {
+  const auditHtml = renderMetricAliasAudit(metricAliases, metricReview, metricTables.summary, benchmarks);
+  writeFileSync(join(ROOT, 'metric-aliases.html'), auditHtml);
+  writeFileSync(join(ROOT, 'site', 'metric-aliases.html'), auditHtml.replaceAll('href="data/', 'href="../data/'));
 }
 console.log(
   `[atlas] built site/index.html: ${stats.benchmarks} benchmarks ` +
