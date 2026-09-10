@@ -133312,6 +133312,158 @@
    "source": "Table 1 (Performance comparison of accuracy, first-token latency, and latency savings across Closed Book, Open Book and Streaming RAG)",
    "source_url": "https://arxiv.org/abs/2510.02044",
    "note": "Model-Triggered Streaming RAG is the paper's own method applied on top of this model, not the released model as-is."
+  },
+  {
+   "benchmark": "sea-speechbench",
+   "model": "phi-4-multimodal",
+   "metric": "ASR avg. WER/CER (English prompt)",
+   "value": 2.43,
+   "source": "Table 6 (English-prompt ASR results averaged by language), Avg. column",
+   "source_url": "https://arxiv.org/abs/2609.09672"
+  },
+  {
+   "benchmark": "sea-speechbench",
+   "model": "qwen2-audio",
+   "metric": "ASR avg. WER/CER (English prompt)",
+   "value": 1.0,
+   "source": "Table 6 (English-prompt ASR results averaged by language), Avg. column",
+   "source_url": "https://arxiv.org/abs/2609.09672"
+  },
+  {
+   "benchmark": "sea-speechbench",
+   "model": "kimi-audio",
+   "metric": "ASR avg. WER/CER (English prompt)",
+   "value": 4.63,
+   "source": "Table 6 (English-prompt ASR results averaged by language), Avg. column",
+   "source_url": "https://arxiv.org/abs/2609.09672"
+  },
+  {
+   "benchmark": "sea-speechbench",
+   "model": "qwen3-omni-thinking",
+   "metric": "ASR avg. WER/CER (English prompt)",
+   "value": 1.47,
+   "source": "Table 6 (English-prompt ASR results averaged by language), Avg. column",
+   "source_url": "https://arxiv.org/abs/2609.09672"
+  },
+  {
+   "benchmark": "sea-speechbench",
+   "model": "qwen3-omni",
+   "metric": "ASR avg. WER/CER (English prompt)",
+   "value": 0.56,
+   "source": "Table 6 (English-prompt ASR results averaged by language), Avg. column",
+   "source_url": "https://arxiv.org/abs/2609.09672"
+  },
+  {
+   "benchmark": "sea-speechbench",
+   "model": "gemini-2-5-flash",
+   "metric": "ASR avg. WER/CER (English prompt)",
+   "value": 0.15,
+   "source": "Table 6 (English-prompt ASR results averaged by language), Avg. column",
+   "source_url": "https://arxiv.org/abs/2609.09672"
+  },
+  {
+   "benchmark": "aria-rubrics",
+   "model": "qwen2-audio",
+   "metric": "ARIA (mean of M1-M6) on MMAR",
+   "value": 0.4443,
+   "source": "Table 1 (results on MMAR and MMAU-mini), MMAR block, ARIA column",
+   "source_url": "https://arxiv.org/abs/2609.09681"
+  },
+  {
+   "benchmark": "aria-rubrics",
+   "model": "qwen2-5-omni",
+   "metric": "ARIA (mean of M1-M6) on MMAR",
+   "value": 0.5449,
+   "source": "Table 1 (results on MMAR and MMAU-mini), MMAR block, ARIA column",
+   "source_url": "https://arxiv.org/abs/2609.09681"
+  },
+  {
+   "benchmark": "aria-rubrics",
+   "model": "gemma-3n",
+   "metric": "ARIA (mean of M1-M6) on MMAR",
+   "value": 0.5092,
+   "source": "Table 1 (results on MMAR and MMAU-mini), MMAR block, ARIA column",
+   "source_url": "https://arxiv.org/abs/2609.09681"
+  },
+  {
+   "benchmark": "aria-rubrics",
+   "model": "r1-aqa",
+   "metric": "ARIA (mean of M1-M6) on MMAR",
+   "value": 0.4351,
+   "source": "Table 1 (results on MMAR and MMAU-mini), MMAR block, ARIA column",
+   "source_url": "https://arxiv.org/abs/2609.09681"
+  },
+  {
+   "benchmark": "aria-rubrics",
+   "model": "audio-reasoner",
+   "metric": "ARIA (mean of M1-M6) on MMAR",
+   "value": 0.4776,
+   "source": "Table 1 (results on MMAR and MMAU-mini), MMAR block, ARIA column",
+   "source_url": "https://arxiv.org/abs/2609.09681"
+  },
+  {
+   "benchmark": "aria-rubrics",
+   "model": "audsemthinker",
+   "metric": "ARIA (mean of M1-M6) on MMAR",
+   "value": 0.4638,
+   "source": "Table 1 (results on MMAR and MMAU-mini), MMAR block, ARIA column",
+   "source_url": "https://arxiv.org/abs/2609.09681"
+  },
+  {
+   "benchmark": "aria-rubrics",
+   "model": "phi-4",
+   "metric": "ARIA (mean of M1-M6) on MMAR",
+   "value": 0.4895,
+   "source": "Table 1 (results on MMAR and MMAU-mini), MMAR block, ARIA column",
+   "source_url": "https://arxiv.org/abs/2609.09681"
+  },
+  {
+   "benchmark": "aria-rubrics",
+   "model": "gpt-4o-audio",
+   "metric": "ARIA (mean of M1-M6) on MMAR",
+   "value": 0.5796,
+   "source": "Table 1 (results on MMAR and MMAU-mini), MMAR block, ARIA column",
+   "source_url": "https://arxiv.org/abs/2609.09681"
+  },
+  {
+   "benchmark": "aria-rubrics",
+   "model": "gemini-2-5-flash",
+   "metric": "ARIA (mean of M1-M6) on MMAR",
+   "value": 0.5689,
+   "source": "Table 1 (results on MMAR and MMAU-mini), MMAR block, ARIA column",
+   "source_url": "https://arxiv.org/abs/2609.09681"
+  },
+  {
+   "benchmark": "sa-bench",
+   "model": "gemini-2-5-pro",
+   "metric": "tcpCER (%)",
+   "value": 69.59,
+   "source": "Table 1 (speaker-aware timeline results on SA-Bench), tcpCER column",
+   "source_url": "https://arxiv.org/abs/2609.09947"
+  },
+  {
+   "benchmark": "sa-bench",
+   "model": "gemini-3-1-pro",
+   "metric": "tcpCER (%)",
+   "value": 67.18,
+   "source": "Table 1 (speaker-aware timeline results on SA-Bench), tcpCER column",
+   "source_url": "https://arxiv.org/abs/2609.09947"
+  },
+  {
+   "benchmark": "sa-bench",
+   "model": "qwen3-5-omni-plus",
+   "metric": "tcpCER (%)",
+   "value": 56.25,
+   "source": "Table 1 (speaker-aware timeline results on SA-Bench), tcpCER column",
+   "source_url": "https://arxiv.org/abs/2609.09947"
+  },
+  {
+   "benchmark": "sa-bench",
+   "model": "doubao-seed-2-0-lite",
+   "metric": "tcpCER (%)",
+   "value": 53.61,
+   "source": "Table 1 (speaker-aware timeline results on SA-Bench), tcpCER column",
+   "source_url": "https://arxiv.org/abs/2609.09947"
   }
  ]
 }

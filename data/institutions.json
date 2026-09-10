@@ -13848,6 +13848,113 @@
      "note": "arXiv 2506.17611 prints 'LY Corporation / Japan' with no city; Tokyo is the normalised headquarters, hence medium confidence."
     }
    ]
+  },
+  {
+   "id": "imperial-college-london",
+   "name": "Imperial College London",
+   "short": "Imperial",
+   "type": "academic",
+   "country": "GB",
+   "parent": null,
+   "confidence": "high",
+   "sites": [
+    {
+     "city": "London",
+     "lat": 51.5,
+     "lon": -0.18,
+     "country": "GB"
+    }
+   ],
+   "aliases": [
+    {
+     "raw": "Imperial College London",
+     "country": "GB",
+     "city": "London",
+     "lat": 51.5,
+     "lon": -0.18,
+     "type": "academic",
+     "confidence": "high",
+     "note": null
+    },
+    {
+     "raw": "Imperial College London, UK",
+     "country": "GB",
+     "city": "London",
+     "lat": 51.5,
+     "lon": -0.18,
+     "type": "academic",
+     "confidence": "high",
+     "note": null
+    }
+   ]
+  },
+  {
+   "id": "technical-university-of-munich",
+   "name": "Technical University of Munich",
+   "short": "TUM",
+   "type": "academic",
+   "country": "DE",
+   "parent": null,
+   "confidence": "high",
+   "sites": [
+    {
+     "city": "Munich",
+     "lat": 48.14,
+     "lon": 11.58,
+     "country": "DE"
+    }
+   ],
+   "aliases": [
+    {
+     "raw": "Technische Universität München",
+     "country": "DE",
+     "city": "Munich",
+     "lat": 48.14,
+     "lon": 11.58,
+     "type": "academic",
+     "confidence": "high",
+     "note": "German name of the Technical University of Munich"
+    },
+    {
+     "raw": "Technische Universität München, München, Germnay",
+     "country": "DE",
+     "city": "Munich",
+     "lat": 48.14,
+     "lon": 11.58,
+     "type": "academic",
+     "confidence": "high",
+     "note": "typo 'Germnay' as printed in arXiv 2609.09681"
+    }
+   ]
+  },
+  {
+   "id": "center-for-ai-safety",
+   "name": "Center for AI Safety",
+   "short": "CAIS",
+   "type": "nonprofit",
+   "country": "US",
+   "parent": null,
+   "confidence": "medium",
+   "sites": [
+    {
+     "city": "San Francisco",
+     "lat": 37.77,
+     "lon": -122.42,
+     "country": "US"
+    }
+   ],
+   "aliases": [
+    {
+     "raw": "Center for AI Safety",
+     "country": "US",
+     "city": "San Francisco",
+     "lat": 37.77,
+     "lon": -122.42,
+     "type": "nonprofit",
+     "confidence": "medium",
+     "note": "paper prints the name with no city; San Francisco is the organisation's stated location, so placement is default rather than printed"
+    }
+   ]
   }
  ]
 }

@@ -9682,6 +9682,205 @@
    ],
    "code": null,
    "note": "Derived from the text CRAG dataset (Yang et al. 2024) by re-issuing its queries as speech; the tool back end reuses CRAG's own web corpus and mock knowledge-graph API. The human-recorded half is stated as to be released on acceptance, so only the synthetic half was publicly available at the time of writing."
+  },
+  {
+   "id": "sea-speechbench",
+   "name": "SEA-SpeechBench",
+   "full_title": "SEA-SpeechBench: A Large-Scale Multitask Benchmark for Speech Understanding Across Southeast Asia",
+   "arxiv_id": "2609.09672",
+   "arxiv_date": "2026-09",
+   "arxiv_date_full": "2026-09-09",
+   "url": "https://arxiv.org/abs/2609.09672",
+   "data": "https://zwenyu.github.io/SEA-SpeechBench",
+   "summary": "Speech understanding across 11 Southeast Asian languages, assembled as 99 evaluation sets totalling 97,194 samples and 597.49 hours. Nine tasks fall into three groups: speech processing (ASR, speech translation into English, spoken QA), paralinguistics (emotion, gender, age and speaker recognition), and a temporal group of timestamped content query and temporal localization over clips of up to 180 seconds. Every task is audio plus a text query in, text out, and each task is run twice - once with an English prompt and once with a prompt in the local language - so prompt-language sensitivity is measured directly through a Prompt Advantage Score. Fifteen systems are evaluated, spanning 2B-30B open-source audio LLMs, a Whisper-large-v3-turbo cascade, and the commercial Gemini 2.5 Flash and GPT-4o. Gemini 2.5 Flash has the best ASR overall (0.15 average WER/CER) and MERaLiON-2-10B leads the open-source models at 0.30, but Tamil and Burmese stay above 0.25 even at the state of the art. Prompt language is near-neutral for Chinese, English and Indonesian (PAS +0.2 to -0.3) and severely English-favouring for Burmese, Tamil and Khmer (-19.5 to -41.2). Speech translation tops out at 21 BLEU for open-source models, and temporal localization shows coverage exceeding purity across every duration bin, a recall-seeking pattern that betrays weak boundary alignment.",
+   "categories": [
+    "multilingual",
+    "holistic",
+    "paralinguistics"
+   ],
+   "tasks": [
+    "ASR in 11 SEA languages",
+    "speech translation into English",
+    "spoken question answering",
+    "emotion, gender, age and speaker recognition",
+    "timestamped content query and temporal localization over clips up to 180 s",
+    "native-language vs. English prompting"
+   ],
+   "languages": [
+    "English",
+    "Filipino",
+    "Vietnamese",
+    "Indonesian",
+    "Tamil",
+    "Thai",
+    "Chinese",
+    "Khmer",
+    "Lao",
+    "Malay",
+    "Burmese"
+   ],
+   "metrics": [
+    "WER/CER",
+    "BLEU and chrF",
+    "macro-F1 (gender/age/speaker)",
+    "LLM-judge score rescaled to 0-100 (spoken QA)",
+    "judge-canonicalised accuracy (emotion)",
+    "span-overlap F1 with coverage and purity (localization)",
+    "Prompt Advantage Score (PAS)"
+   ],
+   "io": "audio + text query in, text out",
+   "size": "97,194 samples across 99 evaluation sets, 597.49 hours, nine tasks, 11 SEA languages",
+   "note": "For GPT-4o the authors route ASR through a separate Whisper-based transcription API and all other tasks through the audio-understanding model, so the GPT-4o ASR row is not an end-to-end result and is not recorded here. Result cells hold the English-prompt ASR average (Table 6) only for models the paper reports at a single size; Gemma-3n, Qwen2.5-Omni and MERaLiON-2 each appear at two sizes and are omitted rather than collapsed. The authors also report that GPT-4o's 14.49% speaker-recognition accuracy is refusal, not error: it declines 89.5% of queries and is correct on 100% of the rest."
+  },
+  {
+   "id": "aria-rubrics",
+   "name": "ARIA-Rubrics",
+   "aka": [
+    "ARIA",
+    "Audio Reasoning Integrity Assessment"
+   ],
+   "full_title": "Beyond Accuracy: ARIA-Rubrics for Evaluating Audio Reasoning in Large Audio Language Models",
+   "arxiv_id": "2609.09681",
+   "arxiv_date": "2026-09",
+   "arxiv_date_full": "2026-09-09",
+   "url": "https://arxiv.org/abs/2609.09681",
+   "summary": "A process-level rubric for audio reasoning rather than a new audio corpus: it scores the chain of thought a model produces, not whether the final letter is right. Chain-of-thought prompting externalises the reasoning, then six annotation-free automatic metrics grade it - acoustic grounding (M1), inter-step coherence (M2), reasoning-chain coverage (M3), reasoning-step causality (M4), reasoning progress (M5) and audio lexical density (M6) - with ARIA reported as their mean. The rubric is applied to 9 LALMs on two existing benchmarks, MMAU-mini and MMAR, each 1,000 multiple-choice questions with no sample overlap. The gap between process and outcome is the point: GPT-4o-audio scores 67.6% accuracy on MMAR but only 0.5796 ARIA, and Qwen2-Audio reaches 0.4443 ARIA at 17.7% accuracy, so accuracy rank and reasoning-quality rank come apart. Validation against 45 audio and NLP annotators rating 450 instances three times each gives ARIA a Spearman rho of +0.671 (p=0.006) with human judgement, while no single metric or two-metric subset clears that - the best individual, M1, reaches +0.563 (p=0.015) and M6 is flat at +0.070. The analysis sorts current LALMs into three reasoning modes.",
+   "categories": [
+    "reasoning",
+    "audio-grounding"
+   ],
+   "tasks": [
+    "scoring model-generated audio reasoning chains",
+    "acoustic grounding of reasoning steps",
+    "reasoning coherence, coverage, causality and progress",
+    "agreement with human ratings of chain quality"
+   ],
+   "languages": [
+    "English"
+   ],
+   "metrics": [
+    "M1 Acoustic Grounding Score",
+    "M2 Inter-step Coherence Score",
+    "M3 Reasoning Chain Coverage",
+    "M4 Reasoning Step Causality",
+    "M5 Reasoning Progress Score",
+    "M6 Audio Lexical Density",
+    "ARIA (mean of M1-M6)",
+    "Spearman rho against human Likert ratings"
+   ],
+   "io": "audio + multiple-choice question in, chain of thought plus answer out; the rubric scores the chain",
+   "size": "no new audio: 9 LALMs x 2 host benchmarks (MMAU-mini and MMAR, 1,000 MCQs each); human study of 450 instances rated by 45 annotators, three ratings per instance",
+   "note": "A metric framework layered on existing benchmarks, catalogued here because the object of evaluation is the spoken LLM's reasoning process. Result cells record the ARIA composite on MMAR (Table 1). Answers are extracted by a three-stage matching procedure (exact, substring, letter-to-index)."
+  },
+  {
+   "id": "s3-bench",
+   "name": "S3-Bench",
+   "aka": [
+    "S^3-Bench",
+    "Scientific Speech Interaction Benchmark"
+   ],
+   "full_title": "S^3-Bench: Evaluating Speech Interaction Models as Scientific Voice Assistants",
+   "arxiv_id": "2609.09852",
+   "arxiv_date": "2026-09",
+   "arxiv_date_full": "2026-09-09",
+   "url": "https://arxiv.org/abs/2609.09852",
+   "summary": "Voice assistants asked to hold their own in scientific conversation, where the difficulty is concentrated in rare terminology, community-specific abbreviation pronunciations (BRCA said as a word, not spelled out) and the spoken rendering of formulas, equations and units. Two sets cover 10 disciplines: S3-Knowledge is 1,980 spoken queries drawn from 17 public text benchmarks, pruned for acoustic suitability and pronunciation-calibrated before TTS synthesis, then checked by ASR and by hand, averaging 12.74 seconds; S3-Dialogue is 213 multi-turn dialogues built from papers and driven by simulated user agents with assigned personas, each walking one topic through five progressive aspects (concept, mechanism, milestone, characteristics, application). The framing contribution is decomposing one atomic turn into recognition, perception, knowledge utilisation with reasoning, and generation with pronunciation, so a failure can be attributed to a stage. Nine systems are evaluated - six Speech LLMs, two Omni-LLMs, the Qwen3.5-Omni-flash API and a Whisper-large-v3 / Qwen3-8B / Qwen3-TTS cascade. General queries transcribe well (Qwen3.5-Omni-Flash 8.42% query-WER, Kimi-Audio 9.62%) but the best offline model still misses over 36% of scientific terminology, and about half the models more than double their abbreviation error rate under strict scoring. The authors report upstream stages coupling positively while speech generation couples negatively, a representation-pronunciation trade-off, and multi-turn dialogue exposing weak factual consistency and audience adaptation.",
+   "categories": [
+    "domain",
+    "spoken-qa",
+    "dialogue"
+   ],
+   "tasks": [
+    "spoken scientific question answering (MCQA and open-ended)",
+    "terminology and abbreviation recognition",
+    "concept perception from speech",
+    "multi-turn progressive dialogue with simulated personas",
+    "spoken response pronunciation of technical terms"
+   ],
+   "languages": [
+    "English"
+   ],
+   "metrics": [
+    "query WER",
+    "terminology entity error rate",
+    "abbreviation error rate (strict and loose)",
+    "relevant rate (perception)",
+    "accuracy (deterministic MCQA extraction with LLM adjudication)"
+   ],
+   "io": "spoken query in, spoken response out (transcribed by fine-tuned ASR for scoring)",
+   "size": "S3-Knowledge 1,980 queries from 17 public datasets, 12.74 s average; S3-Dialogue 213 multi-turn dialogues; 10 scientific domains",
+   "note": "Queries are TTS-synthesised, not human-recorded, with pronunciation calibration and ASR plus human verification before release. Scoring spoken responses needs ASR that itself handles terminology, so the authors fine-tune Qwen3-ASR-1.7B into terminology and abbreviation variants and report the standard-ASR baseline separately. No HTML full text was available at the time of cataloguing; details are taken from the PDF."
+  },
+  {
+   "id": "tri-pvp",
+   "name": "Tri-PvP",
+   "full_title": "Tri-PvP: Exposing Modality Bias in Omni-Modal Large Language Models through Perceptual-Propositional Evidence Conflicts",
+   "arxiv_id": "2609.06011",
+   "arxiv_date": "2026-09",
+   "arxiv_date_full": "2026-09-05",
+   "url": "https://arxiv.org/abs/2609.06011",
+   "code": "https://github.com/MiuLab/Tri-PvP",
+   "summary": "When an image, a recording and a sentence disagree, which one does an omni-modal model believe? Earlier conflict benchmarks confound that question with a second one, because a modality can carry evidence in two forms - perceptual (a photograph or a recording of a dog) or propositional (the claim 'this is a dog') - and mixing them means measured modality bias is inseparable from evidence-form bias. Tri-PvP separates them: 8,000 samples over four everyday domains (animal, emotion, environment, music), where the three modality labels are always mutually distinct and each label triple is instantiated as matched counterfactuals under all four evidence-type conditions (perceptual or propositional image crossed with perceptual or propositional audio, with text always propositional), so comparisons across conditions run on the same triples. Five OLLMs are evaluated - Qwen2.5-Omni-7B, MiniCPM-o 4.5, Qwen3-Omni-30B-A3B-Thinking, Gemma 4 E4B and Gemini 3 Flash - with reasoning chains stripped before judging. Vision dominates in 18 of the 20 model-by-condition cells, often above 60%, while audio is the weakest single-modality bias in 18 of 20, typically under 10%. The asymmetry is the finding: models lean toward the perceptual form in vision but the propositional form in audio. Layer-wise linear probing shows the bias is already linearly decodable from early representation layers, and contrastive decoding mitigates it only partially.",
+   "categories": [
+    "robustness",
+    "hallucination",
+    "audio-grounding"
+   ],
+   "tasks": [
+    "tri-modal evidence conflict resolution",
+    "perceptual vs. propositional evidence-form sensitivity",
+    "modality-order sensitivity",
+    "layer-wise probing of modality bias"
+   ],
+   "languages": [
+    "English"
+   ],
+   "metrics": [
+    "bias label distribution (BIAS_IMAGE / BIAS_AUDIO / BIAS_TEXT / NO_BIAS)",
+    "linear-probe accuracy by layer",
+    "post-mitigation bias share under contrastive decoding"
+   ],
+   "io": "image + audio + text + question in, text answer out",
+   "size": "8,000 samples across four domains, instantiated under four evidence-type conditions as matched counterfactuals",
+   "note": "Headline numbers are reported as bar-chart shares over 20 model-by-evidence-type cells rather than a single results table, so no result cells are recorded. The three thinking-enabled models have their reasoning chains removed before the answer is judged. Inputs are presented in image, audio, text, question order, matching most models' documentation; alternative orderings are analysed separately."
+  },
+  {
+   "id": "sa-bench",
+   "name": "SA-Bench",
+   "aka": [
+    "SpeechAnnotator-Bench"
+   ],
+   "full_title": "SpeechAnnotator: A Context-Aware Multi-Agent Framework and Benchmark for Multidimensional Speech Annotation",
+   "arxiv_id": "2609.09947",
+   "arxiv_date": "2026-09",
+   "arxiv_date_full": "2026-09-09",
+   "url": "https://arxiv.org/abs/2609.09947",
+   "summary": "Speech annotation treated as one joint task instead of three separate ones: recover a speaker-aware timeline, then fill a 15-attribute schema per segment covering speaker traits, prosody, emotion, paralinguistic cues, acoustic scene and context. SA-Bench holds 8.87 hours of Chinese-dominant reference annotation across nine production formats - live commentary, knowledge talks, cartoon, broadcast news, film and review, dialogue and sales, personal monologue, audiobook narration and political debate - chosen because format, not topic, is what varies turn patterns, speaking style and background conditions. Labelling used five independent annotators with two inspectors returning substandard records for revision. The companion SA-Eval protocol scores the three parts separately: character-level CER, cpCER and tcpCER for the timeline, closed-set metrics for finite-valued attributes, and an embedding-similarity Open-Eval for free-text attributes that uses frozen hidden states rather than a generative judge, so different surface wordings of the same content score alike. Four commercial audio-capable systems are run as black boxes on the same recordings and schema - Gemini 2.5 Pro, Gemini 3.1 Pro Preview, Qwen3.5-Omni-plus and Seed2.0 Lite - alongside the authors' own open-source pipeline, which reaches 33.69 tcpCER against 53.61 for the strongest commercial baseline.",
+   "categories": [
+    "paralinguistics",
+    "auditory-perception",
+    "long-form"
+   ],
+   "tasks": [
+    "speaker-aware timeline recovery (segmentation, diarization, transcription)",
+    "closed-set attribute annotation (speaker traits, prosody, emotion, acoustic scene)",
+    "open-ended natural-language attribute description",
+    "sound-event and background-scene annotation"
+   ],
+   "languages": [
+    "Chinese",
+    "English"
+   ],
+   "metrics": [
+    "CER",
+    "cpCER",
+    "tcpCER",
+    "closed-set attribute scores",
+    "Open-Eval embedding similarity over frozen hidden states"
+   ],
+   "io": "long-form recording in, structured JSON annotation (timeline + 15 attributes per segment) out",
+   "size": "8.87 hours of reference timeline across nine source formats, 15-attribute schema, five annotators with two inspectors",
+   "note": "The paper's primary contribution is the SpeechAnnotator pipeline; SA-Bench is catalogued here because the general audio-capable LLMs are evaluated on it under the same schema and audio. Result cells record the tcpCER column of Table 1 for the four commercial baselines only - SpeechAnnotator and its MOSS-Transcribe-Diarize component are pipelines, not models in this atlas. Audio is Chinese-dominant, so cross-language generalisation is untested."
   }
  ]
 }
