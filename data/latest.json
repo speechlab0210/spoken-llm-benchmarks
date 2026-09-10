@@ -1,6 +1,6 @@
 {
-  "fetched_at": "2026-09-10T02:08:36Z",
-  "window_days": 10,
+  "fetched_at": "2026-09-10T02:50:01Z",
+  "window_days": 20,
   "scanned": 0,
   "flagged_today": 0,
   "candidates": [
@@ -1058,9 +1058,9 @@
     }
   ],
   "warnings": [
-    "query failed: HTTP Error 429: Too Many Requests",
     "query failed: HTTP Error 429: Unknown Error",
     "query failed: HTTP Error 429: Unknown Error",
-    "query failed: HTTP Error 429: Too Many Requests"
+    "query failed: HTTP Error 429: Unknown Error",
+    "query failed: HTTP Error 429: Unknown Error"
   ]
 }
