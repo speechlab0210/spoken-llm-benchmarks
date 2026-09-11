@@ -19,7 +19,7 @@
       "primary_category": "eess.AS",
       "url": "https://arxiv.org/abs/2609.11252",
       "score": 48,
-      "status": "new — under review"
+      "status": "accepted - added to the atlas as audioicl-bench"
     },
     {
       "id": "2609.10765",
@@ -33,7 +33,7 @@
       "primary_category": "eess.AS",
       "url": "https://arxiv.org/abs/2609.10765",
       "score": 39,
-      "status": "new — under review"
+      "status": "accepted - added to the atlas as french-fdb"
     },
     {
       "id": "2609.11786",
@@ -47,7 +47,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2609.11786",
       "score": 33,
-      "status": "new — under review"
+      "status": "accepted - added to the atlas as switch-aware-en-yo"
     },
     {
       "id": "2609.11601",
@@ -64,7 +64,7 @@
       "primary_category": "cs.CV",
       "url": "https://arxiv.org/abs/2609.11601",
       "score": 30,
-      "status": "new — under review"
+      "status": "reviewed - out of scope: subjects are not spoken LLMs - a multi-sensor gait recognition benchmark (visible, infrared, depth, LiDAR, radar); no speech or audio"
     },
     {
       "id": "2609.11355",
@@ -79,7 +79,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2609.11355",
       "score": 27,
-      "status": "new — under review"
+      "status": "reviewed - out of scope: no benchmark proposed - a challenge system description (MLC-SLM Task 2) that post-trains Qwen3-Omni with a segment-evidence-aware data pipeline"
     },
     {
       "id": "2609.11545",
@@ -96,7 +96,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2609.11545",
       "score": 27,
-      "status": "new — under review"
+      "status": "reviewed - out of scope: a complex-text robustness diagnosis framework for low-resource multilingual TTS systems; the subjects are TTS systems, not general spoken LLMs"
     },
     {
       "id": "2609.11582",
@@ -113,7 +113,7 @@
       "primary_category": "cs.CV",
       "url": "https://arxiv.org/abs/2609.11582",
       "score": 24,
-      "status": "new — under review"
+      "status": "reviewed - out of scope: no benchmark proposed - a KV-cache quantization method for Omni-LLMs, evaluated on existing audio-visual benchmarks"
     },
     {
       "id": "2609.11864",
@@ -129,7 +129,7 @@
       "primary_category": "eess.AS",
       "url": "https://arxiv.org/abs/2609.11864",
       "score": 21,
-      "status": "new — under review"
+      "status": "reviewed - out of scope: no benchmark proposed - a multi-stage post-training framework that adds retrospective chain-of-thought revision to a streaming speech LLM"
     },
     {
       "id": "2609.11110",
@@ -144,7 +144,7 @@
       "primary_category": "eess.AS",
       "url": "https://arxiv.org/abs/2609.11110",
       "score": 18,
-      "status": "new — under review"
+      "status": "reviewed - out of scope: subjects are not spoken LLMs - an onset-time evaluation framework and an SSM-based VAD architecture"
     },
     {
       "id": "2609.09672",
