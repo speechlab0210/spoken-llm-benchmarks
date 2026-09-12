@@ -1,8 +1,8 @@
 {
-  "fetched_at": "2026-09-11T22:47:01Z",
+  "fetched_at": "2026-09-12T22:47:01Z",
   "window_days": 10,
-  "scanned": 124,
-  "flagged_today": 9,
+  "scanned": 0,
+  "flagged_today": 0,
   "candidates": [
     {
       "id": "2609.11252",
@@ -1035,5 +1035,10 @@
       "status": "reviewed — out of scope"
     }
   ],
-  "warnings": []
+  "warnings": [
+    "query failed: HTTP Error 429: Unknown Error",
+    "query failed: HTTP Error 429: Too Many Requests",
+    "query failed: HTTP Error 503: Service Unavailable",
+    "query failed: HTTP Error 429: Unknown Error"
+  ]
 }
