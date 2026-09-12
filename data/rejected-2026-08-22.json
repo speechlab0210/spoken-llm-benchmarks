@@ -1,0 +1,620 @@
+{
+ "date": "2026-08-22",
+ "what": "The 120 candidate names rejected on the day the catalogue was built, out of 480 read against the inclusion rule (360 admitted). 'reason' is the reader's verdict as written at the time; 'reason_class' is the part of the rule it failed, assigned afterwards by the maintaining agent from the reason text.",
+ "classes": {
+  "not-an-evaluation-resource": "Fails question 1: a method, attack, model, training-corpus, survey or report paper in which any benchmark is incidental.",
+  "component-system-under-test": "Fails question 2 (system): the subjects are encoders, embeddings, codecs, tokenisers, detectors or classifiers, or the paper is a plain corpus with task-specific baselines.",
+  "asr-or-tts-only": "Fails question 2 (task): measures transcription or synthesis only, even where speech LLMs were among the systems tested.",
+  "no-speech-or-audio": "Fails question 2 (modality): a text-only or vision-only benchmark, including ones later read aloud by TTS.",
+  "wrong-match": "Fails verification: the automatically resolved identifier pointed at an unrelated paper."
+ },
+ "counts": {
+  "not-an-evaluation-resource": 36,
+  "component-system-under-test": 32,
+  "asr-or-tts-only": 27,
+  "no-speech-or-audio": 15,
+  "wrong-match": 10
+ },
+ "entries": [
+  {
+   "name": "HalluLens",
+   "reason": "TEXT-ONLY benchmark: a hallucination benchmark for text LLMs with no speech/audio component.",
+   "reason_class": "no-speech-or-audio"
+  },
+  {
+   "name": "AudioJailbreak",
+   "reason": "METHOD paper, not an evaluation resource: its primary contribution is a novel audio jailbreak attack (asynchronous, universal, stealthy, over-the-air robust) against end-to-end LALMs, with evaluation incidental.",
+   "reason_class": "not-an-evaluation-resource"
+  },
+  {
+   "name": "SimbaBench",
+   "reason": "Component-task benchmark plus model paper: it maps African speech datasets into a suite for downstream ASR/TTS/speech tasks and introduces the Simba model family, rather than evaluating general-purpose speech or audio language models.",
+   "reason_class": "asr-or-tts-only"
+  },
+  {
+   "name": "Speech Commands",
+   "reason": "Plain component corpus: a limited-vocabulary keyword-spotting dataset with classifier baselines, not an evaluation suite for general-purpose speech/audio LLMs.",
+   "reason_class": "component-system-under-test"
+  },
+  {
+   "name": "LibriMix",
+   "reason": "Plain component corpus: a speech-separation mixture dataset (LibriSpeech + WHAM!) used to train/evaluate separation models, not an LLM benchmark.",
+   "reason_class": "component-system-under-test"
+  },
+  {
+   "name": "GSM8K",
+   "reason": "Text-only benchmark (grade-school math word problems); spoken variants only exist because later work reads it aloud with TTS.",
+   "reason_class": "no-speech-or-audio"
+  },
+  {
+   "name": "Clotho-AQA",
+   "reason": "Plain component corpus: a crowdsourced audio question-answering dataset derived from Clotho with LSTM classifier baselines, reused as eval data but not proposed as a benchmark for general-purpose audio LLMs.",
+   "reason_class": "component-system-under-test"
+  },
+  {
+   "name": "MusicCaps",
+   "reason": "Model paper (MusicLM, text-to-music generation); MusicCaps is a released music-text caption corpus, not an LLM evaluation suite.",
+   "reason_class": "not-an-evaluation-resource"
+  },
+  {
+   "name": "AdvBench",
+   "reason": "Text-only benchmark plus attack method (adversarial suffixes against aligned text LLMs); spoken versions exist only because later work renders it with TTS.",
+   "reason_class": "no-speech-or-audio"
+  },
+  {
+   "name": "IFEval",
+   "reason": "Text-only benchmark of verifiable instruction-following constraints; spoken use comes only from later TTS rendering by suites such as VoiceBench.",
+   "reason_class": "no-speech-or-audio"
+  },
+  {
+   "name": "Codec-SUPERB",
+   "reason": "System under test is neural sound codecs (a component/tokenizer), not a general-purpose speech or audio language model; it benchmarks resynthesis quality and downstream signal metrics.",
+   "reason_class": "component-system-under-test"
+  },
+  {
+   "name": "VoiceJailbreak",
+   "reason": "Method paper: its primary contribution is a new voice jailbreak attack (fictional storytelling prompts) measured on existing forbidden-question scenarios, not a released evaluation suite.",
+   "reason_class": "not-an-evaluation-resource"
+  },
+  {
+   "name": "DASB (Discrete Audio and Speech Benchmark)",
+   "reason": "System under test is discrete audio tokenizers (a component of speech LMs) evaluated on downstream discriminative/generative tasks, not a general-purpose speech or audio language model.",
+   "reason_class": "component-system-under-test"
+  },
+  {
+   "name": "advwave",
+   "reason": "a MODEL or method paper, not an evaluation — AdvWave is a gradient-based jailbreak attack framework (dual-phase optimization, adaptive target search, classifier-guided stealthy noise) against LALMs; it reports attack success rates but does not release an evaluation suite.",
+   "reason_class": "not-an-evaluation-resource"
+  },
+  {
+   "name": "asrec",
+   "reason": "a pure ASR benchmark — ASR-EC is a Chinese ASR error-correction dataset; the system under test is a text LLM (with optional audio augmentation) correcting transcripts, not a general-purpose speech/audio language model.",
+   "reason_class": "asr-or-tts-only"
+  },
+  {
+   "name": "bestofnjailbreaking",
+   "reason": "a MODEL or method paper, not an evaluation — Best-of-N is a black-box jailbreak algorithm applied across text, vision and audio; no benchmark or evaluation resource is introduced.",
+   "reason_class": "not-an-evaluation-resource"
+  },
+  {
+   "name": "codecfakeomni",
+   "reason": "a pure anti-spoofing corpus — CodecFake+ is a large-scale codec-resynthesized deepfake speech dataset plus taxonomy for training and evaluating spoofing detectors, not an evaluation of a general-purpose speech/audio language model.",
+   "reason_class": "component-system-under-test"
+  },
+  {
+   "name": "audioflan",
+   "reason": "a plain corpus used as training data but not proposed as an LLM benchmark — Audio-FLAN is a 100M-instance instruction-tuning dataset over 80 speech/music/sound tasks, framed as a foundation for training unified audio-language models rather than as an evaluation suite.",
+   "reason_class": "not-an-evaluation-resource"
+  },
+  {
+   "name": "guptaetaluniversalaudiojailbreakevaluation",
+   "reason": "a MODEL or method paper, not an evaluation — the contribution is a universal adversarial audio perturbation attack plus an interpretability analysis of how ALMs read those perturbations; no benchmark or evaluation resource is released.",
+   "reason_class": "not-an-evaluation-resource"
+  },
+  {
+   "name": "linetalgpt4ovoicemodeexploration",
+   "reason": "a report with no new benchmark — a preliminary evaluation of GPT-4o voice mode across existing audio/speech/music tasks; it contributes findings (refusal behaviour, hallucination robustness, weak duration and instrument tasks) but no new evaluation resource.",
+   "reason_class": "not-an-evaluation-resource"
+  },
+  {
+   "name": "personabench",
+   "reason": "a TEXT-ONLY benchmark, not about speech/audio — PersonaBench evaluates RAG pipelines on understanding personal information from synthetic private text documents.",
+   "reason_class": "no-speech-or-audio"
+  },
+  {
+   "name": "SpeechCaps",
+   "reason": "Model/training-data paper: the contribution is a pre-training task and a trained model, with evaluation done on an existing benchmark (Dynamic-SUPERB), not a proposed benchmark.",
+   "reason_class": "not-an-evaluation-resource"
+  },
+  {
+   "name": "Moshi (spoken TriviaQA evaluation)",
+   "reason": "Model paper, not an evaluation resource — the spoken TriviaQA set is incidental to introducing the Moshi model.",
+   "reason_class": "not-an-evaluation-resource"
+  },
+  {
+   "name": "BEANS-Zero",
+   "reason": "Model paper — the primary contribution is the NatureLM-audio model, with the BEANS-Zero benchmark introduced incidentally to evaluate it.",
+   "reason_class": "not-an-evaluation-resource"
+  },
+  {
+   "name": "DailyTalkEdit / HoliAntiSpoof",
+   "reason": "Model/method paper: the primary contribution is HoliAntiSpoof, an audio-LLM framework for spoofing analysis, with DailyTalkEdit an accompanying anti-spoofing corpus rather than a general-purpose speech-LLM evaluation suite (also close to the pure anti-spoofing corpus exclusion).",
+   "reason_class": "not-an-evaluation-resource"
+  },
+  {
+   "name": "SpokeBench / Flex-UD / DECAP",
+   "reason": "Text-only benchmark: SpokeBench evaluates dependency parsing of transcribed English-Spanish conversational speech with text LLMs (plus the DECAP parsing framework); the system under test is not a speech or audio language model.",
+   "reason_class": "no-speech-or-audio"
+  },
+  {
+   "name": "MAEB (Massive Audio Embedding Benchmark)",
+   "reason": "System under test is audio embedding models / encoders evaluated as representations in the MTEB ecosystem (classification, clustering, retrieval), not general-purpose speech or audio language models. Borderline: the paper notes MAEB scores correlate with the same encoders' performance inside audio LLMs.",
+   "reason_class": "component-system-under-test"
+  },
+  {
+   "name": "Spatial AQA movement reasoning",
+   "reason": "Model/method paper: contributions are a spatial-audio augmentation framework for generating training data, an end-to-end multimodal finetuning approach with a thinking mode, and a study of query-conditioned source separation; no evaluation resource is proposed as the primary contribution.",
+   "reason_class": "not-an-evaluation-resource"
+  },
+  {
+   "name": "Step-Audio 2",
+   "reason": "model/method paper — the arXiv entry is the Step-Audio 2 technical report for an end-to-end audio LLM; the StepEval-Audio-Paralinguistic set is an internal evaluation, not the paper's contribution, and is not mentioned in the abstract",
+   "reason_class": "not-an-evaluation-resource"
+  },
+  {
+   "name": "AudioRole",
+   "reason": "Primarily a training corpus plus trained ARP-Models (the paper's demonstration is that GLM-4-Voice trained on it improves); ARP-Eval is introduced to show the dataset's effectiveness rather than as a standalone benchmark for general spoken LLMs. Borderline — see notes.",
+   "reason_class": "not-an-evaluation-resource"
+  },
+  {
+   "name": "MLC-SLM Challenge",
+   "reason": "Shared-task corpus whose tasks are ASR and diarization — a pure ASR-style benchmark plus training corpus, not an evaluation suite for general-purpose speech LLM capabilities.",
+   "reason_class": "asr-or-tts-only"
+  },
+  {
+   "name": "audiospecialistheadsarealmslistening",
+   "reason": "Method paper, not an evaluation: uses mechanistic interpretability to locate audio-specialist attention heads and applies an inference-time activation steering intervention, measured on the existing MMAU benchmark. No new evaluation resource is proposed.",
+   "reason_class": "not-an-evaluation-resource"
+  },
+  {
+   "name": "loasrbench",
+   "reason": "Pure ASR benchmark: LoASR-Bench evaluates only low-resource automatic speech recognition (25 languages, 9 families) even though the systems under test are speech LLMs.",
+   "reason_class": "asr-or-tts-only"
+  },
+  {
+   "name": "mosbias",
+   "reason": "Not an evaluation of general-purpose speech/audio LLMs: it analyses gender bias in human MOS annotation for speech quality assessment and proposes a gender-aware MOS prediction model (pure TTS/quality-assessment territory, and primarily a model contribution).",
+   "reason_class": "asr-or-tts-only"
+  },
+  {
+   "name": "timestampgroundedspeechreasoning",
+   "reason": "Method paper, not an evaluation: proposes an RL training strategy that grounds LALM reasoning chains with explicit timestamp annotations, evaluated on four existing speech benchmarks. No new benchmark or diagnostic dataset is released.",
+   "reason_class": "not-an-evaluation-resource"
+  },
+  {
+   "name": "whospokewhatwhen",
+   "reason": "Pure ASR benchmark/metric work: a conversational multi-speaker ASR comparison of LLM-based systems against modular pipelines on three existing datasets, whose contribution is a WER-family metric (tcpSemER extending tcpWER) rather than a spoken-LLM benchmark.",
+   "reason_class": "asr-or-tts-only"
+  },
+  {
+   "name": "SpeechLLM-as-Judges / SpeechEval",
+   "reason": "Model paper plus a speech-quality-assessment resource: the system under test is synthetic/generated speech (MOS-style quality, pairwise comparison, deepfake detection), not a general-purpose speech or audio language model; the headline contribution is the SQ-LLM judge model.",
+   "reason_class": "asr-or-tts-only"
+  },
+  {
+   "name": "AfriSpeech-MultiBench",
+   "reason": "Pure ASR benchmark — a domain- and accent-stratified speech recognition evaluation suite; multimodal LLM-based systems are among the systems benchmarked but the task under test is transcription, not general audio-language understanding.",
+   "reason_class": "asr-or-tts-only"
+  },
+  {
+   "name": "SeaBench-Audio",
+   "reason": "Model paper — the primary contribution is SeaLLMs-Audio, a large audio-language model for Southeast Asian languages; the SeaBench-Audio evaluation suite is introduced secondarily to automate its evaluation.",
+   "reason_class": "not-an-evaluation-resource"
+  },
+  {
+   "name": "aqascore",
+   "reason": "Not an evaluation of general-purpose audio/speech LLMs: it proposes an automatic metric for text-to-audio generation (a CLAPScore alternative) in which the audio LLM is the judge, not the system under test.",
+   "reason_class": "asr-or-tts-only"
+  },
+  {
+   "name": "mclp",
+   "reason": "Pure TTS evaluation/method paper: proposes a log-probability metric and RL reward for expressive role-play text-to-speech (plus a training dataset and improved model), not an evaluation resource for general-purpose speech LLMs.",
+   "reason_class": "asr-or-tts-only"
+  },
+  {
+   "name": "nowyouhearme",
+   "reason": "Attack/method paper rather than a benchmark: it designs a narrative-style text-to-audio jailbreak against large audio-language models and reports its success rate, but does not introduce an evaluation suite or diagnostic dataset as its primary contribution. Borderline — the safety findings are relevant even though no benchmark is released.",
+   "reason_class": "not-an-evaluation-resource"
+  },
+  {
+   "name": "prism",
+   "reason": "Component-level phone-recognition (ASR-style transcription) benchmark: the systems under test are phone recognition models and encoders, not general-purpose speech LLMs, though LALMs are included as a comparison point. Borderline.",
+   "reason_class": "asr-or-tts-only"
+  },
+  {
+   "name": "Do LLM Decoders Listen Fairly?",
+   "reason": "Pure ASR benchmark: a fairness/robustness evaluation of speech recognition (WER, insertion rate) over existing corpora (Common Voice, Fair-Speech); the task under test is transcription, not general-purpose speech-LLM capability.",
+   "reason_class": "asr-or-tts-only"
+  },
+  {
+   "name": "NVV-SuperBench",
+   "reason": "Pure TTS / speech-generation benchmark: the 15 systems under test are prompt-based and tag-based speech generation systems evaluated for nonverbal-vocalization controllability, placement and quality, not general-purpose speech or audio language models. Borderline — could be reconsidered under generation-quality.",
+   "reason_class": "asr-or-tts-only"
+  },
+  {
+   "name": "Audio Jailbreaks in LALMs (taxonomy and cost-aware evaluation)",
+   "reason": "Survey/taxonomy paper with a comparative empirical study: it organises existing attacks (semantic, acoustic, signal, embedding) and defences and re-runs representative ones on ten open-source LALMs, but introduces no new benchmark dataset. Borderline — it does argue for a cost- and utility-aware evaluation protocol.",
+   "reason_class": "not-an-evaluation-resource"
+  },
+  {
+   "name": "CEAEval",
+   "reason": "Speech-quality/expressiveness evaluation metric paper: CEAEval-D is a Mandarin dataset of human performances with expressive annotations and CEAEval-M is a trained evaluator model; the systems under test are speech evaluation and analysis systems, not general-purpose speech LLMs. Borderline — could be reconsidered under generation-quality.",
+   "reason_class": "asr-or-tts-only"
+  },
+  {
+   "name": "AfriVox-v2",
+   "reason": "Pure ASR (and translation) benchmark: it measures recognition accuracy of speech models on in-the-wild African speech across ten sectors, including CTC systems, rather than evaluating general-purpose speech-LLM capabilities.",
+   "reason_class": "asr-or-tts-only"
+  },
+  {
+   "name": "DuplexSLA-Bench",
+   "reason": "Model paper: the primary contribution is DuplexSLA, a native full-duplex speech-language-action model; DuplexSLA-Bench is constructed afterwards to evaluate that model's two claimed capabilities. Borderline — the duplex suite (pause, interrupt, backchannel, three styles of in-conversation tool calling) is publicly released and would fit interactivity + voice-agent if the parent wants model-paper benchmarks included.",
+   "reason_class": "not-an-evaluation-resource"
+  },
+  {
+   "name": "fullduplexuserstreamroutingstudy",
+   "reason": "Model/method paper, not an evaluation: it extends a text LLM into a full-duplex spoken dialogue system and compares two architectural routing strategies (channel fusion vs cross-attention), reporting scores on existing benchmarks.",
+   "reason_class": "not-an-evaluation-resource"
+  },
+  {
+   "name": "jastin",
+   "reason": "Model/method paper, not a benchmark: it proposes a trained evaluator (frozen audio encoder + audio adapter + fine-tuned LLM) plus an instruction-data pipeline, and the systems assessed are generative audio models rather than general-purpose speech LLMs. No new evaluation dataset is introduced.",
+   "reason_class": "not-an-evaluation-resource"
+  },
+  {
+   "name": "gigaspeechbench",
+   "reason": "Pure ASR/AST benchmark: 680 hours of in-the-wild speech scored for transcription and speech translation across low-resource languages, dialects, accents, terminology and age groups; the systems under test are ASR foundation models and commercial APIs, not general-purpose speech LLMs.",
+   "reason_class": "asr-or-tts-only"
+  },
+  {
+   "name": "japanesedialectrobustnessevaluation",
+   "reason": "Analysis study with no new benchmark resource: it measures a dialect/standard performance ratio for existing speech LMs and text LLMs on Japanese dialects and then runs training and encoder fine-tuning experiments; no evaluation suite or dataset is released as the contribution.",
+   "reason_class": "not-an-evaluation-resource"
+  },
+  {
+   "name": "speechdx",
+   "reason": "The systems under test are 12 audio encoders / speech representation models, not general-purpose speech or audio language models; SpeechDx is a clinical speech representation benchmark (12 datasets, 27 tasks) in the SUPERB mould rather than a spoken-LLM evaluation. Flagging as a judgement call — see notes.",
+   "reason_class": "component-system-under-test"
+  },
+  {
+   "name": "spokenlanguageadherenceevaluation",
+   "reason": "Method paper, not an evaluation resource: it proposes soft prompting plus SFT/CoT mitigations for output-language misidentification in LLM-based ASR, and the task under test is ASR transcription rather than a general-purpose speech LM benchmark.",
+   "reason_class": "not-an-evaluation-resource"
+  },
+  {
+   "name": "textbiasconflictanalysisinaudiollms",
+   "reason": "Mechanistic-interpretability analysis plus a training-free intervention (back-patching) for text dominance in audio LLMs; it introduces no benchmark or diagnostic dataset, so it is a method/analysis paper rather than an evaluation resource.",
+   "reason_class": "not-an-evaluation-resource"
+  },
+  {
+   "name": "Switchboard",
+   "reason": "title does not match the named benchmark — likely a bad automatic match (quant-ph paper on a quantum switchboard, unrelated to the Switchboard speech corpus)",
+   "reason_class": "wrong-match"
+  },
+  {
+   "name": "MELD",
+   "reason": "title does not match the named benchmark — likely a bad automatic match (cs.DS paper about heap 'meld' operations, not the MELD multimodal emotion dialogue dataset)",
+   "reason_class": "wrong-match"
+  },
+  {
+   "name": "GTZAN",
+   "reason": "plain component corpus for music genre recognition (plus a critique of it); no benchmark for general-purpose speech/audio language models",
+   "reason_class": "component-system-under-test"
+  },
+  {
+   "name": "BRACE",
+   "reason": "title does not match the named benchmark — likely a bad automatic match (math.AT paper on brace bar-cobar duality)",
+   "reason_class": "wrong-match"
+  },
+  {
+   "name": "STSP",
+   "reason": "title does not match the named benchmark — likely a bad automatic match (cs.NE paper where STSP means Symmetric Travelling Salesman Problem)",
+   "reason_class": "wrong-match"
+  },
+  {
+   "name": "THCHS-30",
+   "reason": "plain ASR component corpus; not a benchmark for general-purpose speech/audio language models",
+   "reason_class": "asr-or-tts-only"
+  },
+  {
+   "name": "FMA (Free Music Archive)",
+   "reason": "plain component corpus for music information retrieval; system under test is not a general-purpose speech/audio language model",
+   "reason_class": "component-system-under-test"
+  },
+  {
+   "name": "NSynth",
+   "reason": "model paper plus a component corpus of musical notes; not an evaluation suite for general-purpose speech/audio language models",
+   "reason_class": "not-an-evaluation-resource"
+  },
+  {
+   "name": "AISHELL-1",
+   "reason": "plain component ASR corpus explicitly listed as out of scope",
+   "reason_class": "asr-or-tts-only"
+  },
+  {
+   "name": "Story Cloze Test",
+   "reason": "method paper on the text-only Story Cloze Test; it does not introduce a benchmark and the system under test is a text model, not a speech/audio language model (the spoken StoryCloze variant comes from a different paper)",
+   "reason_class": "no-speech-or-audio"
+  },
+  {
+   "name": "IEMOCAP",
+   "reason": "method paper that uses IEMOCAP rather than the corpus paper itself; IEMOCAP is in any case a plain component corpus explicitly listed as out of scope",
+   "reason_class": "not-an-evaluation-resource"
+  },
+  {
+   "name": "TED-LIUM 3",
+   "reason": "plain ASR component corpus; not a benchmark for general-purpose speech/audio language models",
+   "reason_class": "asr-or-tts-only"
+  },
+  {
+   "name": "VoxCeleb2",
+   "reason": "speaker-verification/recognition dataset, explicitly out of scope",
+   "reason_class": "component-system-under-test"
+  },
+  {
+   "name": "AISHELL-2",
+   "reason": "plain ASR component corpus; not a benchmark for general-purpose speech/audio language models",
+   "reason_class": "asr-or-tts-only"
+  },
+  {
+   "name": "MAESTRO",
+   "reason": "model paper plus a piano MIDI/audio component corpus; not an evaluation suite for general-purpose speech/audio language models",
+   "reason_class": "not-an-evaluation-resource"
+  },
+  {
+   "name": "LibriTTS",
+   "reason": "pure TTS component corpus, explicitly out of scope",
+   "reason_class": "asr-or-tts-only"
+  },
+  {
+   "name": "How2",
+   "reason": "method paper on multimodal summarization over the How2 corpus; does not introduce a benchmark for general-purpose speech/audio language models",
+   "reason_class": "not-an-evaluation-resource"
+  },
+  {
+   "name": "Clotho",
+   "reason": "plain component corpus (audio captioning) explicitly listed as out of scope",
+   "reason_class": "component-system-under-test"
+  },
+  {
+   "name": "CN-Celeb",
+   "reason": "speaker-verification/recognition dataset, explicitly out of scope",
+   "reason_class": "component-system-under-test"
+  },
+  {
+   "name": "Common Voice",
+   "reason": "plain multilingual ASR component corpus, explicitly listed as out of scope",
+   "reason_class": "asr-or-tts-only"
+  },
+  {
+   "name": "LRS2",
+   "reason": "Model/method paper on audio-visual overlapped-speech recognition that merely uses the LRS2 data; it is not the LRS2 corpus paper and not a benchmark for general-purpose speech/audio language models — likely a bad automatic name match (title contains 'LRS2 dataset').",
+   "reason_class": "not-an-evaluation-resource"
+  },
+  {
+   "name": "StereoSet",
+   "reason": "Text-only bias benchmark for pretrained text language models; no speech or audio component.",
+   "reason_class": "no-speech-or-audio"
+  },
+  {
+   "name": "CoVoST 2",
+   "reason": "Plain component corpus (speech translation data), explicitly listed as out of scope; not a benchmark for general-purpose speech/audio language models.",
+   "reason_class": "component-system-under-test"
+  },
+  {
+   "name": "MMLU",
+   "reason": "Text-only knowledge/reasoning benchmark; not about speech or audio (its TTS-rendered spoken variants are separate works).",
+   "reason_class": "no-speech-or-audio"
+  },
+  {
+   "name": "VoxLingua107",
+   "reason": "Plain component corpus for spoken language identification; systems under test are language-ID models, not general-purpose speech/audio language models.",
+   "reason_class": "component-system-under-test"
+  },
+  {
+   "name": "MLS (Multilingual LibriSpeech)",
+   "reason": "Plain component ASR/TTS corpus (a LibriSpeech-family dataset), explicitly out of scope.",
+   "reason_class": "asr-or-tts-only"
+  },
+  {
+   "name": "VoxPopuli",
+   "reason": "Plain component corpus for representation/semi-supervised learning and ASR; not a benchmark for general-purpose speech/audio language models.",
+   "reason_class": "component-system-under-test"
+  },
+  {
+   "name": "ESD",
+   "reason": "Voice-conversion corpus paper (emotional speech database + EVC case studies); a plain component corpus, not a benchmark for general-purpose speech/audio language models.",
+   "reason_class": "component-system-under-test"
+  },
+  {
+   "name": "SUPERB",
+   "reason": "Multi-task benchmark, but the systems under test are frozen self-supervised speech representation encoders with task-specific trained prediction heads, not general-purpose speech/audio language models (its LALM successor Dynamic-SUPERB is a separate work). Borderline — flag for reviewer.",
+   "reason_class": "component-system-under-test"
+  },
+  {
+   "name": "GigaSpeech",
+   "reason": "Plain component ASR corpus; not a benchmark for general-purpose speech/audio language models.",
+   "reason_class": "asr-or-tts-only"
+  },
+  {
+   "name": "AMI",
+   "reason": "Title does not match the named benchmark — likely a bad automatic match ('AMI' here means advanced metering infrastructure, not the AMI meeting corpus); the paper is not about speech or audio at all.",
+   "reason_class": "wrong-match"
+  },
+  {
+   "name": "SLURP",
+   "reason": "Title does not match the named benchmark — likely a bad automatic match (this SLURP is a computer-vision uncertainty-estimation method, not the SLURP spoken language understanding resource).",
+   "reason_class": "wrong-match"
+  },
+  {
+   "name": "BBQ",
+   "reason": "Text-only bias/QA benchmark; no speech or audio component.",
+   "reason_class": "no-speech-or-audio"
+  },
+  {
+   "name": "WenetSpeech",
+   "reason": "Plain component ASR corpus (Mandarin); not a benchmark for general-purpose speech/audio language models.",
+   "reason_class": "asr-or-tts-only"
+  },
+  {
+   "name": "SLUE",
+   "reason": "Spoken language understanding benchmark whose systems under test are pre-trained speech representations fine-tuned per task (plus ASR), not general-purpose speech/audio language models. Borderline — flag for reviewer.",
+   "reason_class": "component-system-under-test"
+  },
+  {
+   "name": "HEAR",
+   "reason": "Benchmark suite, but the systems under test are audio embedding/representation models evaluated via downstream shallow learners, not general-purpose audio language models. Borderline — flag for reviewer.",
+   "reason_class": "component-system-under-test"
+  },
+  {
+   "name": "MagicData",
+   "reason": "Plain component conversational speech corpus; not a benchmark for general-purpose speech/audio language models.",
+   "reason_class": "component-system-under-test"
+  },
+  {
+   "name": "UTMOS",
+   "reason": "System/method paper for automatic MOS prediction submitted to the VoiceMOS Challenge — an evaluation metric predictor rather than a benchmark, and the speech it scores comes from TTS/VC systems, not general-purpose speech/audio language models. Borderline: widely reused as a generation-quality metric.",
+   "reason_class": "asr-or-tts-only"
+  },
+  {
+   "name": "CodecFake",
+   "reason": "Deepfake/anti-spoofing training dataset; the systems under test are spoofing-detection models, not a general-purpose speech or audio language model.",
+   "reason_class": "component-system-under-test"
+  },
+  {
+   "name": "MMLU-Pro",
+   "reason": "Text-only LLM benchmark; no speech or audio component.",
+   "reason_class": "no-speech-or-audio"
+  },
+  {
+   "name": "MidiCaps",
+   "reason": "Plain captioned symbolic-music (MIDI) corpus for training/retrieval research, not an evaluation suite for general-purpose speech or audio language models.",
+   "reason_class": "not-an-evaluation-resource"
+  },
+  {
+   "name": "Emilia",
+   "reason": "Speech-generation training corpus (plus preprocessing pipeline), not a benchmark or evaluation suite for speech/audio language models.",
+   "reason_class": "not-an-evaluation-resource"
+  },
+  {
+   "name": "ESPnet-Codec",
+   "reason": "Codec training/evaluation toolkit; the systems under test are neural audio codecs, not general-purpose speech or audio language models.",
+   "reason_class": "component-system-under-test"
+  },
+  {
+   "name": "Codec-SUPERB @ SLT 2024",
+   "reason": "Benchmark for neural audio codec models (content/paralinguistic/speaker/audio preservation at low bitrate), not for general-purpose speech or audio language models.",
+   "reason_class": "component-system-under-test"
+  },
+  {
+   "name": "Towards Holistic Evaluation of Large Audio-Language Models (LALM evaluation survey)",
+   "reason": "Survey with a taxonomy of existing LALM evaluations; introduces no new benchmark or dataset.",
+   "reason_class": "not-an-evaluation-resource"
+  },
+  {
+   "name": "Video-Holmes",
+   "reason": "Visual/video reasoning benchmark for MLLMs; the abstract describes only visual perception and visual clues, with no speech or audio component.",
+   "reason_class": "no-speech-or-audio"
+  },
+  {
+   "name": "ComplexBench",
+   "reason": "title does not match the named benchmark — likely a bad automatic match (this is ComplexBench-Edit, an image-editing benchmark, with no speech or audio content).",
+   "reason_class": "wrong-match"
+  },
+  {
+   "name": "AudioSet",
+   "reason": "Plain audio-classification component corpus (AudioSet relabeled); explicitly listed as out of scope, and the models evaluated are audio classifiers, not audio language models.",
+   "reason_class": "component-system-under-test"
+  },
+  {
+   "name": "SPGISpeech",
+   "reason": "Pure ASR / speaker-tagged transcription corpus in the financial domain; a component corpus, not a benchmark for general-purpose speech or audio language models.",
+   "reason_class": "asr-or-tts-only"
+  },
+  {
+   "name": "Expresso",
+   "reason": "title does not match the named benchmark — likely a bad automatic match (this is a cryptography/single-sign-on privacy paper, nothing to do with the Expresso expressive speech dataset).",
+   "reason_class": "wrong-match"
+  },
+  {
+   "name": "FSD50K",
+   "reason": "Plain sound-event component corpus / data-curation method; no general-purpose speech or audio language model is under test.",
+   "reason_class": "component-system-under-test"
+  },
+  {
+   "name": "FLEURS",
+   "reason": "Multilingual ASR / LangID / translation / retrieval corpus evaluated with speech representation models (mSLAM); a component speech corpus, not an evaluation suite for a general-purpose speech or audio language model.",
+   "reason_class": "component-system-under-test"
+  },
+  {
+   "name": "VocalSound",
+   "reason": "A plain component corpus for audio event / vocalization classification used mainly as training material; no evaluation of a general-purpose speech or audio language model.",
+   "reason_class": "component-system-under-test"
+  },
+  {
+   "name": "CochlScene",
+   "reason": "A plain component corpus for acoustic scene classification with a conventional baseline classifier; not an evaluation of a general-purpose speech or audio language model.",
+   "reason_class": "component-system-under-test"
+  },
+  {
+   "name": "WavCaps",
+   "reason": "A large weakly-labelled audio-caption training corpus, not an evaluation benchmark for general-purpose speech or audio language models.",
+   "reason_class": "not-an-evaluation-resource"
+  },
+  {
+   "name": "OpenAQA (OpenAQA-5M, from the LTU paper)",
+   "reason": "Model paper (LTU); OpenAQA-5M is a large instruction-tuning training set rather than an evaluation benchmark or diagnostic suite.",
+   "reason_class": "not-an-evaluation-resource"
+  },
+  {
+   "name": "HaluEval",
+   "reason": "Text-only benchmark; no speech or audio component.",
+   "reason_class": "no-speech-or-audio"
+  },
+  {
+   "name": "MARBLE",
+   "reason": "Music information retrieval representation benchmark: the systems under test are pre-trained music audio representation models probed on MIR tasks, not general-purpose speech/audio language models. Borderline — flagged in notes.",
+   "reason_class": "component-system-under-test"
+  },
+  {
+   "name": "Spatial LibriSpeech (matched paper)",
+   "reason": "title does not match the named benchmark — likely a bad automatic match (the paper is Spatial LibriSpeech, a simulated spatial-audio augmentation dataset; plain LibriSpeech would itself be an excluded component ASR corpus).",
+   "reason_class": "wrong-match"
+  },
+  {
+   "name": "MUSIC-AVQA (v2.0)",
+   "reason": "Audio-visual QA corpus (a debiased rebuild of the original MUSIC-AVQA) evaluated with a purpose-built AVQA baseline model; a component dataset that later LALM benchmarks reuse, not itself an evaluation of a general-purpose speech/audio language model.",
+   "reason_class": "component-system-under-test"
+  },
+  {
+   "name": "CVSS (matched paper: Common Vulnerability Scoring System aggregation)",
+   "reason": "title does not match the named benchmark — likely a bad automatic match (this is a cybersecurity paper on Common Vulnerability Scoring System aggregation, not the CVSS speech-to-speech translation corpus); not about speech or audio at all.",
+   "reason_class": "wrong-match"
+  },
+  {
+   "name": "Song Describer Dataset (SDD)",
+   "reason": "An audio-caption evaluation corpus for music captioning / text-to-music / retrieval models; a component music-and-language corpus rather than an evaluation of a general-purpose speech or audio language model.",
+   "reason_class": "component-system-under-test"
+  },
+  {
+   "name": "DiaHalu",
+   "reason": "Text-only dialogue benchmark; no speech or audio input or output.",
+   "reason_class": "no-speech-or-audio"
+  },
+  {
+   "name": "Chatbot Arena",
+   "reason": "Text-only LLM evaluation platform; the speech/voice arena variants are separate later works.",
+   "reason_class": "no-speech-or-audio"
+  }
+ ]
+}

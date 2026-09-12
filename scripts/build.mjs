@@ -85,6 +85,53 @@ const warn = (msg) => console.warn(`[build] warning: ${msg}`);
 validateGeo({ institutions, affiliations, benchmarks, models, fail, warn });
 validateVenues({ venues, benchmarks, fail, warn });
 
+// ---------- crawl ledger ----------
+// Every paper the daily crawl has ever flagged, and what became of it. raw/seen.jsonl is the
+// crawler's local dedup file (raw/ is not in the repo); the ledger carries its content into the
+// public data set and keeps the last verdict seen in the feed after the entry scrolls off.
+// Without raw/, the committed ledger is carried forward unchanged. No timestamp, so an
+// unchanged ledger produces no diff.
+const CRAWL_SINCE = '2026-08-22';
+const ledgerPrev = readOpt('data/crawl-ledger.json', { since: CRAWL_SINCE, entries: [] });
+const ledger = new Map((ledgerPrev.entries || []).map((e) => [e.id, e]));
+const seenPath = join(ROOT, 'raw', 'seen.jsonl');
+if (existsSync(seenPath)) {
+  for (const line of readFileSync(seenPath, 'utf8').split('\n')) {
+    if (!line.trim()) continue;
+    let r;
+    try { r = JSON.parse(line); } catch { continue; }
+    if (!r.id) continue;
+    const e = ledger.get(r.id) || { id: r.id };
+    if (r.title) e.title = r.title;
+    if (r.published) e.published = r.published;
+    if (r.score !== undefined) e.score = r.score;
+    ledger.set(r.id, e);
+  }
+}
+const benchByArxiv = new Map(benchmarks.entries.filter((b) => b.arxiv_id).map((b) => [b.arxiv_id, b.id]));
+const feedStatus = new Map((latest.candidates || []).map((c) => [c.id, c.status || '']));
+for (const [id, status] of feedStatus) {
+  const e = ledger.get(id);
+  if (e && status && !/^new\b/.test(status)) e.verdict = status;
+}
+let crawlAdmitted = 0;
+for (const e of ledger.values()) {
+  const bid = benchByArxiv.get(e.id);
+  if (bid) { e.catalogue_id = bid; e.outcome = 'admitted'; crawlAdmitted += 1; continue; }
+  delete e.catalogue_id;
+  if (/^new\b/.test(feedStatus.get(e.id) || '') || (!e.verdict && feedStatus.has(e.id))) e.outcome = 'under review';
+  else if (e.verdict && /catalogu|already/i.test(e.verdict)) e.outcome = 'already catalogued';
+  else e.outcome = 'not admitted';
+}
+const ledgerOut = {
+  since: CRAWL_SINCE,
+  what: 'Every arXiv paper the daily crawl has flagged since launch (score at or above the threshold, not previously seen), with the reviewer\'s verdict as written in the feed and whether the paper entered the catalogue. "published" is the paper\'s arXiv date. See the Method section of the site.',
+  flagged: ledger.size,
+  admitted: crawlAdmitted,
+  entries: [...ledger.values()].sort((a, b) => String(b.published || '').localeCompare(String(a.published || '')) || a.id.localeCompare(b.id)),
+};
+writeFileSync(join(ROOT, 'data', 'crawl-ledger.json'), JSON.stringify(ledgerOut, null, 1) + '\n');
+
 // ---------- derived ----------
 const byCat = Object.fromEntries(taxonomy.categories.map((c) => [c.id, 0]));
 for (const b of benchmarks.entries) for (const c of b.categories) byCat[c] += 1;
@@ -102,6 +149,9 @@ const stats = {
   categories: taxonomy.categories.length,
   by_category: byCat,
 };
+stats.crawl_flagged = ledger.size;
+stats.crawl_admitted = crawlAdmitted;
+stats.crawl_since = CRAWL_SINCE;
 const venueStats = computeVenues({ venues, benchmarks });
 if (venueStats) {
   stats.venue_published = venueStats.status.published;

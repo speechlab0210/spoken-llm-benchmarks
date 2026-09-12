@@ -1,0 +1,807 @@
+{
+ "since": "2026-08-22",
+ "what": "Every arXiv paper the daily crawl has flagged since launch (score at or above the threshold, not previously seen), with the reviewer's verdict as written in the feed and whether the paper entered the catalogue. \"published\" is the paper's arXiv date. See the Method section of the site.",
+ "flagged": 101,
+ "admitted": 32,
+ "entries": [
+  {
+   "id": "2609.11864",
+   "title": "RetroThinker: Enabling Retrospective Thinking in Speech LLMs",
+   "published": "2026-09-10T17:41:53Z",
+   "score": 21,
+   "verdict": "reviewed - out of scope: no benchmark proposed - a multi-stage post-training framework that adds retrospective chain-of-thought revision to a streaming speech LLM",
+   "outcome": "not admitted"
+  },
+  {
+   "id": "2609.11786",
+   "title": "Beyond Word Error Rate: A Switch Aware Evaluation of ASR and Audio Language Models on English Yoruba Code-Switched Speech",
+   "published": "2026-09-10T16:36:19Z",
+   "score": 33,
+   "verdict": "accepted - added to the atlas as switch-aware-en-yo",
+   "catalogue_id": "switch-aware-en-yo",
+   "outcome": "admitted"
+  },
+  {
+   "id": "2609.11601",
+   "title": "MMGait: Benchmarking and Unifying Gait Recognition across Heterogeneous Modalities",
+   "published": "2026-09-10T14:23:29Z",
+   "score": 30,
+   "verdict": "reviewed - out of scope: subjects are not spoken LLMs - a multi-sensor gait recognition benchmark (visible, infrared, depth, LiDAR, radar); no speech or audio",
+   "outcome": "not admitted"
+  },
+  {
+   "id": "2609.11582",
+   "title": "OmniKVQuant: KV Cache Quantization for Omni-LLMs",
+   "published": "2026-09-10T14:14:12Z",
+   "score": 24,
+   "verdict": "reviewed - out of scope: no benchmark proposed - a KV-cache quantization method for Omni-LLMs, evaluated on existing audio-visual benchmarks",
+   "outcome": "not admitted"
+  },
+  {
+   "id": "2609.11545",
+   "title": "Complex-Text Robustness Evaluation and Failure Diagnosis for Low-Resource Multilingual Text-to-Speech",
+   "published": "2026-09-10T13:41:22Z",
+   "score": 27,
+   "verdict": "reviewed - out of scope: a complex-text robustness diagnosis framework for low-resource multilingual TTS systems; the subjects are TTS systems, not general spoken LLMs",
+   "outcome": "not admitted"
+  },
+  {
+   "id": "2609.11355",
+   "title": "SEAR: Segment-Evidence-Aware Routing for Weak-to-Strong Multilingual Speech MCQ",
+   "published": "2026-09-10T10:38:19Z",
+   "score": 27,
+   "verdict": "reviewed - out of scope: no benchmark proposed - a challenge system description (MLC-SLM Task 2) that post-trains Qwen3-Omni with a segment-evidence-aware data pipeline",
+   "outcome": "not admitted"
+  },
+  {
+   "id": "2609.11252",
+   "title": "AudioICL-Bench: A Benchmark for Large Audio Language Model In-Context Learning",
+   "published": "2026-09-10T08:46:48Z",
+   "score": 48,
+   "verdict": "accepted - added to the atlas as audioicl-bench",
+   "catalogue_id": "audioicl-bench",
+   "outcome": "admitted"
+  },
+  {
+   "id": "2609.11110",
+   "title": "Low-Latency State Space Voice Activity Detection with Robust Onset Time Evaluation",
+   "published": "2026-09-10T05:37:55Z",
+   "score": 18,
+   "verdict": "reviewed - out of scope: subjects are not spoken LLMs - an onset-time evaluation framework and an SSM-based VAD architecture",
+   "outcome": "not admitted"
+  },
+  {
+   "id": "2609.10765",
+   "title": "From Metrics to Natural Dialogue: French Full-Duplex Benchmark for Spoken Dialogue Models",
+   "published": "2026-09-09T19:10:43Z",
+   "score": 39,
+   "verdict": "accepted - added to the atlas as french-fdb",
+   "catalogue_id": "french-fdb",
+   "outcome": "admitted"
+  },
+  {
+   "id": "2609.10366",
+   "title": "AVSRBench: A Multi-Condition AVSR Benchmark",
+   "published": "2026-09-09T15:58:44Z",
+   "score": 33,
+   "verdict": "reviewed — out of scope",
+   "outcome": "not admitted"
+  },
+  {
+   "id": "2609.10351",
+   "title": "Unifying Score and Performance for Fine-Grained Music Understanding in Audio-Language Models",
+   "published": "2026-09-09T15:46:40Z",
+   "score": 30,
+   "verdict": "reviewed — out of scope",
+   "outcome": "not admitted"
+  },
+  {
+   "id": "2609.09947",
+   "title": "SpeechAnnotator: A Context-Aware Multi-Agent Framework and Benchmark for Multidimensional Speech Annotation",
+   "published": "2026-09-09T09:37:29Z",
+   "score": 21,
+   "verdict": "reviewed — accepted",
+   "catalogue_id": "sa-bench",
+   "outcome": "admitted"
+  },
+  {
+   "id": "2609.09852",
+   "title": "$S^3$-Bench: Evaluating Speech Interaction Models as Scientific Voice Assistants",
+   "published": "2026-09-09T08:06:28Z",
+   "score": 27,
+   "verdict": "reviewed — accepted",
+   "catalogue_id": "s3-bench",
+   "outcome": "admitted"
+  },
+  {
+   "id": "2609.09681",
+   "title": "Beyond Accuracy: ARIA-Rubrics for Evaluating Audio Reasoning in Large Audio Language Models",
+   "published": "2026-09-09T03:56:05Z",
+   "score": 42,
+   "verdict": "reviewed — accepted",
+   "catalogue_id": "aria-rubrics",
+   "outcome": "admitted"
+  },
+  {
+   "id": "2609.09672",
+   "title": "SEA-SpeechBench: A Large-Scale Multitask Benchmark for Speech Understanding Across Southeast Asia",
+   "published": "2026-09-09T03:39:18Z",
+   "score": 45,
+   "verdict": "reviewed — accepted",
+   "catalogue_id": "sea-speechbench",
+   "outcome": "admitted"
+  },
+  {
+   "id": "2609.09404",
+   "title": "An Experimental Evaluation of Multimodal Prompt Injection Attacks on Agentic AI Frameworks",
+   "published": "2026-09-08T20:00:03Z",
+   "score": 21,
+   "verdict": "reviewed — out of scope",
+   "outcome": "not admitted"
+  },
+  {
+   "id": "2609.08977",
+   "title": "Omni Interaction Agent Technical Report",
+   "published": "2026-09-08T16:22:23Z",
+   "score": 21,
+   "verdict": "reviewed — out of scope",
+   "outcome": "not admitted"
+  },
+  {
+   "id": "2609.08672",
+   "title": "X2Streaming-ASR: wait when uncertain, emit when ready for streaming ASR",
+   "published": "2026-09-08T12:39:06Z",
+   "score": 18,
+   "verdict": "reviewed — out of scope",
+   "outcome": "not admitted"
+  },
+  {
+   "id": "2609.08390",
+   "title": "Noise Adaptive Streaming Audio-Visual Speech Token Enhancement for Robust Full-Duplex Spoken Dialogue Models",
+   "published": "2026-09-08T07:59:13Z",
+   "score": 33,
+   "verdict": "reviewed — out of scope",
+   "outcome": "not admitted"
+  },
+  {
+   "id": "2609.08275",
+   "title": "Beyond Coherence: Benchmarking Professional Editing-Technique Execution in Multi-Shot Audio-Video Generation",
+   "published": "2026-09-08T05:35:58Z",
+   "score": 24,
+   "verdict": "reviewed — out of scope",
+   "outcome": "not admitted"
+  },
+  {
+   "id": "2609.08171",
+   "title": "EviSI: An Evaluation Agent for Simultaneous Interpreting",
+   "published": "2026-09-08T03:00:11Z",
+   "score": 24,
+   "verdict": "reviewed — out of scope",
+   "outcome": "not admitted"
+  },
+  {
+   "id": "2609.08147",
+   "title": "ConversationalVoice: Full-Duplex Speech Data from Real Conversations through Source-Faithful Reconstruction and Conversation-Grounded Expansion",
+   "published": "2026-09-08T02:28:43Z",
+   "score": 18,
+   "verdict": "reviewed — out of scope",
+   "outcome": "not admitted"
+  },
+  {
+   "id": "2609.07981",
+   "title": "Clean Accuracy Does Not Guarantee Provenance Robustness: A Prospective Codec-Stress Evaluation of Audio Attribution",
+   "published": "2026-09-07T21:01:00Z",
+   "score": 18,
+   "verdict": "reviewed — out of scope",
+   "outcome": "not admitted"
+  },
+  {
+   "id": "2609.07549",
+   "title": "Qwen-Audio-3.0-ASR Technical Report",
+   "published": "2026-09-07T14:30:56Z",
+   "score": 27,
+   "verdict": "reviewed — out of scope",
+   "outcome": "not admitted"
+  },
+  {
+   "id": "2609.07151",
+   "title": "Vishing-Tactics-Bench: Forecasting Exploitation Trajectories in Voice Phishing Calls",
+   "published": "2026-09-07T07:48:42Z",
+   "score": 33,
+   "verdict": "reviewed — out of scope",
+   "outcome": "not admitted"
+  },
+  {
+   "id": "2609.06991",
+   "title": "AV-SafetyBench: A Safety Benchmark for Text-to-Audio-Video Generation",
+   "published": "2026-09-07T03:32:30Z",
+   "score": 36,
+   "verdict": "reviewed — out of scope",
+   "outcome": "not admitted"
+  },
+  {
+   "id": "2609.06928",
+   "title": "Emo-DVS: A Multimodal Benchmark for Privacy-Aware Emotion Recognition with Event Cameras",
+   "published": "2026-09-07T01:55:44Z",
+   "score": 18,
+   "verdict": "reviewed — out of scope",
+   "outcome": "not admitted"
+  },
+  {
+   "id": "2609.06011",
+   "title": "Tri-PvP: Exposing Modality Bias in Omni-Modal Large Language Models through Perceptual-Propositional Evidence Conflicts",
+   "published": "2026-09-05T10:33:58Z",
+   "score": 18,
+   "verdict": "reviewed — accepted",
+   "catalogue_id": "tri-pvp",
+   "outcome": "admitted"
+  },
+  {
+   "id": "2609.05592",
+   "title": "What Did I Just Say? Self-Listening for Full-Duplex Speech Models",
+   "published": "2026-09-04T17:44:12Z",
+   "score": 18,
+   "verdict": "reviewed — out of scope",
+   "outcome": "not admitted"
+  },
+  {
+   "id": "2609.04867",
+   "title": "PRISM-Bench: An Audio-Centric Diagnostic Benchmark for Text-to-Audio-Video Generation",
+   "published": "2026-09-04T08:27:10Z",
+   "score": 39,
+   "verdict": "reviewed — out of scope",
+   "outcome": "not admitted"
+  },
+  {
+   "id": "2609.04850",
+   "title": "ElderBench: Benchmarking Autonomous Mobile Agents for Older Adults",
+   "published": "2026-09-04T08:09:47Z",
+   "score": 36,
+   "verdict": "reviewed — out of scope",
+   "outcome": "not admitted"
+  },
+  {
+   "id": "2609.04452",
+   "title": "TRILOGUE: A Trilingual Spoken Dialogue Fact-Checking Benchmark with Evidence and Paired Audio",
+   "published": "2026-09-03T20:14:48Z",
+   "score": 21,
+   "verdict": "reviewed — out of scope",
+   "outcome": "not admitted"
+  },
+  {
+   "id": "2609.04173",
+   "title": "Last Translation Benchmark",
+   "published": "2026-09-03T17:54:45Z",
+   "score": 21,
+   "verdict": "reviewed - out of scope: a machine-translation benchmark (3,456 inputs, 109 languages) evaluating MT systems and text LLMs; audio is an optional attachment modality with no reported audio subset or spoken-LLM-specific evaluation.",
+   "outcome": "not admitted"
+  },
+  {
+   "id": "2609.03734",
+   "title": "Beyond BLEU: A Case for Redefining Sign Language Translation Benchmarks",
+   "published": "2026-09-03T12:05:29Z",
+   "score": 18,
+   "verdict": "reviewed - out of scope: proposes a QA-based metric for sign language translation, evaluated on SLT models over Phoenix-2014T and CSL-Daily; the models take video, not speech.",
+   "outcome": "not admitted"
+  },
+  {
+   "id": "2609.03502",
+   "title": "Building and Evaluating Fixed-Voice Thai TTS from Synthetic Speech",
+   "published": "2026-09-03T08:03:58Z",
+   "score": 30,
+   "verdict": "reviewed - out of scope: builds and evaluates a fixed-voice Thai TTS system distilled from a voice-cloning teacher; a TTS system, not an evaluation of a general spoken LLM.",
+   "outcome": "not admitted"
+  },
+  {
+   "id": "2609.03423",
+   "title": "DuplexSpeechBench-IFEval: Evaluating Implicit Instruction Following in Full-Duplex Voice Agents",
+   "published": "2026-09-03T06:28:02Z",
+   "score": 54,
+   "verdict": "accepted - added to the atlas as dsb-ifeval",
+   "catalogue_id": "dsb-ifeval",
+   "outcome": "admitted"
+  },
+  {
+   "id": "2609.03203",
+   "title": "VoxReason: Listener-Free Evaluation of Source-Grounded Speech Planning Before Synthesis",
+   "published": "2026-09-02T22:35:02Z",
+   "score": 18,
+   "verdict": "reviewed — out of scope",
+   "outcome": "not admitted"
+  },
+  {
+   "id": "2609.02343",
+   "title": "SonicCaps: Large-Scale Diverse and Fine-Grained Captioning for Improved Audio-Retrieval",
+   "published": "2026-09-02T09:18:27Z",
+   "score": 42,
+   "verdict": "reviewed - out of scope: not a benchmark for spoken LLMs - a 15M-caption audio captioning training dataset; evaluation trains CLAP retrieval models",
+   "outcome": "not admitted"
+  },
+  {
+   "id": "2609.02277",
+   "title": "Auditory Illusion Benchmark for Large Audio Language Models",
+   "published": "2026-09-02T08:23:36Z",
+   "score": 45,
+   "verdict": "accepted - in catalogue as aib",
+   "catalogue_id": "aib",
+   "outcome": "admitted"
+  },
+  {
+   "id": "2609.04256",
+   "title": "Probing Warmth-Mediated Harm in Speech-Enabled LLMs for Mental-Health Conversations",
+   "published": "2026-09-01T19:39:53Z",
+   "score": 21,
+   "verdict": "accepted — added to catalogue",
+   "catalogue_id": "warmth-mediated-harm-probe",
+   "outcome": "admitted"
+  },
+  {
+   "id": "2609.01810",
+   "title": "TalkFa: A Unified Benchmark for Farsi Dialogue Generation and Understanding",
+   "published": "2026-09-01T19:35:25Z",
+   "score": 21,
+   "verdict": "reviewed - out of scope: subjects are not spoken LLMs - text Farsi dialogue benchmark evaluated with LLaMA/Mistral text models",
+   "outcome": "not admitted"
+  },
+  {
+   "id": "2609.01788",
+   "title": "VakyArth: Evaluating Pragmatic Competence in LLMs across Indic Languages",
+   "published": "2026-09-01T19:00:32Z",
+   "score": 24,
+   "verdict": "reviewed - out of scope: subjects are not spoken LLMs - text-only Indic pragmatics benchmark (MCQ/NLI/translation), no audio",
+   "outcome": "not admitted"
+  },
+  {
+   "id": "2609.01542",
+   "title": "TAG-Bench: Benchmarking Temporal Audio Grounding in Large Audio Language Models",
+   "published": "2026-09-01T17:07:52Z",
+   "score": 54,
+   "verdict": "accepted - in catalogue as tag-bench",
+   "catalogue_id": "tag-bench",
+   "outcome": "admitted"
+  },
+  {
+   "id": "2609.01315",
+   "title": "A Composable Evaluation System for Reproducible Omni-Modal Foundation Model Evaluation",
+   "published": "2026-09-01T14:37:57Z",
+   "score": 27,
+   "verdict": "accepted - added to the atlas as omnievaluator",
+   "catalogue_id": "omnievaluator",
+   "outcome": "admitted"
+  },
+  {
+   "id": "2609.01113",
+   "title": "EDRAC: Benchmarking Arabic Dialect Reading Comprehension",
+   "published": "2026-09-01T11:51:49Z",
+   "score": 21,
+   "verdict": "reviewed - out of scope: subjects are not spoken LLMs - EDRAC is a text MRC benchmark; passages derive from spoken dialect but the evaluated models are text LLMs",
+   "outcome": "not admitted"
+  },
+  {
+   "id": "2609.00727",
+   "title": "Heard but Not Heeded: Paralinguistic Information Encoding and Loss in Audio-Language Models",
+   "published": "2026-09-01T05:03:33Z",
+   "score": 39,
+   "verdict": "reviewed - out of scope: no benchmark or evaluation set proposed - mechanistic probing (CKA, linear probes) of paralinguistic encoding in four models plus a content-prosody leakage metric",
+   "outcome": "not admitted"
+  },
+  {
+   "id": "2609.00570",
+   "title": "VoiceLongMemEval: Do Assistants Remember How You Sounded?",
+   "published": "2026-09-01T02:06:10Z",
+   "score": 21,
+   "verdict": "accepted - in catalogue as voicelongmemeval",
+   "catalogue_id": "voicelongmemeval",
+   "outcome": "admitted"
+  },
+  {
+   "id": "2609.00276",
+   "title": "Cleaner Speech, Weaker Generalization: Revisiting Pitt-Derived Benchmarks for Alzheimer's Disease Detection",
+   "published": "2026-08-31T19:19:00Z",
+   "score": 25,
+   "verdict": "reviewed - out of scope: subjects are not spoken LLMs - Pitt-corpus preprocessing study for Alzheimer's-disease speech classifiers",
+   "outcome": "not admitted"
+  },
+  {
+   "id": "2608.30940",
+   "title": "MusGU+: Toward a Musician-Centered Evaluation Framework and Discovery Tool for Generative Music AI",
+   "published": "2026-08-31T15:12:51Z",
+   "score": 21,
+   "verdict": "reviewed — out of scope",
+   "outcome": "not admitted"
+  },
+  {
+   "id": "2608.30927",
+   "title": "Stride-k Subsampling: Train-Free Audio Token Reduction for Whisper",
+   "published": "2026-08-31T15:04:29Z",
+   "score": 18,
+   "verdict": "reviewed — out of scope",
+   "outcome": "not admitted"
+  },
+  {
+   "id": "2609.04253",
+   "title": "AVENUE: Audio-Video EditiNg Understanding and Evaluation",
+   "published": "2026-08-31T13:05:01Z",
+   "score": 24,
+   "verdict": "reviewed — out of scope",
+   "outcome": "not admitted"
+  },
+  {
+   "id": "2608.30475",
+   "title": "ImageEval 2026: Culturally Grounded Arabic Multimodal Evaluation",
+   "published": "2026-08-31T09:02:28Z",
+   "score": 18,
+   "verdict": "reviewed — catalogued",
+   "catalogue_id": "aynvqa-imageeval-2026",
+   "outcome": "admitted"
+  },
+  {
+   "id": "2608.30204",
+   "title": "When Models Hear What They Expect: Diagnosing Prosodic Heuristics in Multimodal Sarcasm Detection",
+   "published": "2026-08-31T03:34:35Z",
+   "score": 27,
+   "verdict": "reviewed — catalogued",
+   "catalogue_id": "prosodic-sarcasm-heuristic-diagnostic",
+   "outcome": "admitted"
+  },
+  {
+   "id": "2608.29999",
+   "title": "TEMPO: Temporally-grounded Multi-task Post-training for Large Audio-Language Models",
+   "published": "2026-08-30T19:49:21Z",
+   "score": 42,
+   "verdict": "reviewed — out of scope",
+   "outcome": "not admitted"
+  },
+  {
+   "id": "2608.29480",
+   "title": "What Are You Listening to? Temporal Music Grounding for Audio-to-Text Large Language Models",
+   "published": "2026-08-30T00:17:28Z",
+   "score": 21,
+   "verdict": "reviewed — catalogued",
+   "catalogue_id": "musicgroundingbench",
+   "outcome": "admitted"
+  },
+  {
+   "id": "2608.29120",
+   "title": "HEAR Who Said What: Unlocking Speaker-Attributed Reasoning via Counterfactual Voice Grounding",
+   "published": "2026-08-29T08:01:20Z",
+   "score": 18,
+   "verdict": "reviewed — catalogued",
+   "catalogue_id": "hear",
+   "outcome": "admitted"
+  },
+  {
+   "id": "2608.28966",
+   "title": "When Vocal Tone and Literal Meaning Diverge: An Acoustic-Semantic Incongruity Study for Large Audio-Language Models",
+   "published": "2026-08-29T00:36:12Z",
+   "score": 18,
+   "verdict": "reviewed — catalogued",
+   "catalogue_id": "crema-asis",
+   "outcome": "admitted"
+  },
+  {
+   "id": "2608.28932",
+   "title": "VocalAffectBench: Evaluating Vocal Emotion Recognition in AI Audio Models",
+   "published": "2026-08-28T23:03:43Z",
+   "score": 48,
+   "verdict": "reviewed — catalogued",
+   "catalogue_id": "vocalaffectbench",
+   "outcome": "admitted"
+  },
+  {
+   "id": "2608.28916",
+   "title": "VoiceCodeBench: Evaluating Exact Structured-Token Recovery in Automatic Speech Recognition",
+   "published": "2026-08-28T22:23:42Z",
+   "score": 36,
+   "verdict": "reviewed — out of scope",
+   "outcome": "not admitted"
+  },
+  {
+   "id": "2608.28508",
+   "title": "Phoneme- and Word-Level Metrics Using Self-Supervised Speech Representations for Forced Alignment Evaluation",
+   "published": "2026-08-28T16:39:22Z",
+   "score": 18,
+   "outcome": "not admitted"
+  },
+  {
+   "id": "2608.28212",
+   "title": "MuSP-Bench: Advanced Multimodal Benchmarking of Music Understanding across Score and Performance",
+   "published": "2026-08-28T11:31:51Z",
+   "score": 36,
+   "catalogue_id": "musp-bench",
+   "outcome": "admitted"
+  },
+  {
+   "id": "2608.28040",
+   "title": "A Shaky Voice Is Not Always a Dodge: Benchmarking Textual and Vocal Evasion Detection in Earnings Calls",
+   "published": "2026-08-28T07:58:36Z",
+   "score": 18,
+   "catalogue_id": "dualevasion",
+   "outcome": "admitted"
+  },
+  {
+   "id": "2608.27817",
+   "title": "Auditing Generative Audio Calls for Known-Task Audio-LLM Evaluation",
+   "published": "2026-08-28T01:33:47Z",
+   "score": 39,
+   "catalogue_id": "generative-call-decision-test",
+   "outcome": "admitted"
+  },
+  {
+   "id": "2608.27783",
+   "title": "SURE-Challenge: Evaluating Speech Evidence Before Speech-LLM Generation",
+   "published": "2026-08-27T23:28:42Z",
+   "score": 36,
+   "catalogue_id": "sure-challenge",
+   "outcome": "admitted"
+  },
+  {
+   "id": "2609.00330",
+   "title": "Topic Matching in the Wild: Benchmark and Lessons from Real-World ASR Transcripts",
+   "published": "2026-08-27T21:55:50Z",
+   "score": 21,
+   "verdict": "reviewed - out of scope: subjects are not spoken LLMs - text matchers over ASR transcripts of call-centre audio",
+   "outcome": "not admitted"
+  },
+  {
+   "id": "2608.27698",
+   "title": "Evaluating Loss Functions in Differentiable Out-of-Domain Sound-Matching with Partial Parameter Distance",
+   "published": "2026-08-27T20:33:40Z",
+   "score": 21,
+   "outcome": "not admitted"
+  },
+  {
+   "id": "2608.27044",
+   "title": "Omni-Interactive Universal Embedder",
+   "published": "2026-08-27T12:31:55Z",
+   "score": 18,
+   "outcome": "not admitted"
+  },
+  {
+   "id": "2608.27026",
+   "title": "Direct or Mediated? Task-Dependent Audio Information Routing in Large Audio Language Models",
+   "published": "2026-08-27T12:12:26Z",
+   "score": 21,
+   "outcome": "not admitted"
+  },
+  {
+   "id": "2608.26992",
+   "title": "Benchmarking_Fast_Domain_Adaptation_for_Unsupervised_Speech_Units",
+   "published": "2026-08-27T11:40:18Z",
+   "score": 21,
+   "outcome": "not admitted"
+  },
+  {
+   "id": "2608.26535",
+   "title": "Multi2AV-Safety: Benchmarking Safety in Multimodal-to-Audio-Video Generation",
+   "published": "2026-08-27T02:12:25Z",
+   "score": 21,
+   "outcome": "not admitted"
+  },
+  {
+   "id": "2608.26434",
+   "title": "AfriSwitch: A Benchmark for In-the-Wild African Code-Switched Speech Recognition",
+   "published": "2026-08-26T22:20:58Z",
+   "score": 21,
+   "outcome": "not admitted"
+  },
+  {
+   "id": "2608.26432",
+   "title": "SpeechGym: An Audio-Native Gym for Training Voice Agents via Reinforcement Learning",
+   "published": "2026-08-26T22:16:05Z",
+   "score": 21,
+   "outcome": "not admitted"
+  },
+  {
+   "id": "2608.26431",
+   "title": "AudioSpan: Spanning the Duration and Depth of Audio Comprehension",
+   "published": "2026-08-26T22:15:48Z",
+   "score": 27,
+   "catalogue_id": "audiospan",
+   "outcome": "admitted"
+  },
+  {
+   "id": "2608.26336",
+   "title": "StreamAV-Bench: A Comprehensive Benchmark for Streaming Audio-Video Generation",
+   "published": "2026-08-26T19:16:24Z",
+   "score": 39,
+   "outcome": "not admitted"
+  },
+  {
+   "id": "2608.26317",
+   "title": "Modality Maturity Index: A benchmark for assessing multimodal capabilities of omni models",
+   "published": "2026-08-26T18:48:52Z",
+   "score": 33,
+   "catalogue_id": "modality-maturity-index",
+   "outcome": "admitted"
+  },
+  {
+   "id": "2608.25218",
+   "title": "TurnBench: A Multi-Domain Benchmark for Turn-Taking Dynamics in Spoken Dialogue",
+   "published": "2026-08-25T23:14:36Z",
+   "score": 42,
+   "catalogue_id": "turnbench",
+   "outcome": "admitted"
+  },
+  {
+   "id": "2608.25114",
+   "title": "Flower Hub: A Reproducible Benchmarking Platform for Federated Learning in Simulation and Deployment",
+   "published": "2026-08-25T20:09:44Z",
+   "score": 21,
+   "outcome": "not admitted"
+  },
+  {
+   "id": "2608.24314",
+   "title": "Benchmarking LLM Judges for Voice-Agent Evaluation: Reliability, Calibration, and Human Oversight",
+   "published": "2026-08-25T09:44:36Z",
+   "score": 24,
+   "outcome": "not admitted"
+  },
+  {
+   "id": "2608.24168",
+   "title": "FireRedAudio: A General-Purpose Audio Language Model with Decoupled Continuous Representations for Understanding and Generation",
+   "published": "2026-08-25T07:37:15Z",
+   "score": 18,
+   "outcome": "not admitted"
+  },
+  {
+   "id": "2608.24958",
+   "title": "Can We Read the Mind of an Audio LLM? A Verbalizable, Multilingual Middle-Layer Workspace",
+   "published": "2026-08-25T06:17:28Z",
+   "score": 30,
+   "outcome": "not admitted"
+  },
+  {
+   "id": "2608.24048",
+   "title": "Don't Just Listen, Try Planning: Graph-based Retrieval-Generation Agent for Long-form Audio Meeting Understanding",
+   "published": "2026-08-25T04:16:42Z",
+   "score": 21,
+   "catalogue_id": "longaudioqa",
+   "outcome": "admitted"
+  },
+  {
+   "id": "2608.23758",
+   "title": "EXAM$^2$: $\\underline{Ex}tending$ $\\underline{A}udio$ $Understanding$ $in$ $\\underline{M}ultilingual$ $and$ $\\underline{M}ultimodal$ $Analysis$",
+   "published": "2026-08-24T18:52:22Z",
+   "score": 36,
+   "catalogue_id": "exam2",
+   "outcome": "admitted"
+  },
+  {
+   "id": "2608.23437",
+   "title": "AT-ADD: A Benchmark and Challenge for Robust and All-Type Audio Deepfake Detection",
+   "published": "2026-08-24T16:11:43Z",
+   "score": 18,
+   "outcome": "not admitted"
+  },
+  {
+   "id": "2608.23092",
+   "title": "Reasoning-Oriented Post-Training and Inference-Time LoRA Rescaling for Audio-Dependent Question Answering",
+   "published": "2026-08-24T10:57:12Z",
+   "score": 27,
+   "outcome": "not admitted"
+  },
+  {
+   "id": "2608.23065",
+   "title": "Cultural Moment Benchmark: Evaluating Video Cultural Reasoning and Grounding in Southeast Asia",
+   "published": "2026-08-24T10:11:16Z",
+   "score": 24,
+   "outcome": "not admitted"
+  },
+  {
+   "id": "2608.22872",
+   "title": "Better Retrieval, Worse Robustness:How Multi-hop RAG Amplifies Upstream ASR Errors",
+   "published": "2026-08-24T06:59:34Z",
+   "score": 21,
+   "outcome": "not admitted"
+  },
+  {
+   "id": "2608.22704",
+   "title": "WnW: Waxing-and-Waning KV Cache for Long-Form Speech LLMs",
+   "published": "2026-08-24T01:48:30Z",
+   "score": 27,
+   "outcome": "not admitted"
+  },
+  {
+   "id": "2608.22335",
+   "title": "Register Shifts Break LLM Safety: A Bengali Benchmark with Culturally Grounded Harms",
+   "published": "2026-08-23T10:09:00Z",
+   "score": 21,
+   "outcome": "not admitted"
+  },
+  {
+   "id": "2608.22236",
+   "title": "MRMAD: A Multi-Round Multi-Audio Benchmark for Evaluating Acoustic Degradation Perception in Large Audio-Language Models",
+   "published": "2026-08-23T06:23:31Z",
+   "score": 42,
+   "catalogue_id": "mrmad",
+   "outcome": "admitted"
+  },
+  {
+   "id": "2608.22108",
+   "title": "Development and Feasibility Evaluation of an Edge AI as Medical Device System for Breast Cancer Multidisciplinary Team Meetings",
+   "published": "2026-08-22T21:20:51Z",
+   "score": 18,
+   "outcome": "not admitted"
+  },
+  {
+   "id": "2608.21853",
+   "title": "PUMA: A Polish Benchmark for Culturally Grounded Multimodal Understanding",
+   "published": "2026-08-22T08:55:56Z",
+   "score": 24,
+   "catalogue_id": "puma",
+   "outcome": "admitted"
+  },
+  {
+   "id": "2608.21833",
+   "title": "GameXpert-Bench: How Far Are Coding Agents from Expert Game Development?",
+   "published": "2026-08-22T08:05:16Z",
+   "score": 36,
+   "outcome": "not admitted"
+  },
+  {
+   "id": "2608.21360",
+   "title": "OmniAssistBench: Assistant-style Interaction Benchmark for Omni-LLMs",
+   "published": "2026-08-21T17:59:52Z",
+   "score": 54,
+   "catalogue_id": "omniassistbench",
+   "outcome": "admitted"
+  },
+  {
+   "id": "2608.20326",
+   "title": "$TCP_α$: Margin-Controlled Confidence estimation for reliable Music Information Retrieval",
+   "published": "2026-08-20T17:58:50Z",
+   "score": 18,
+   "outcome": "not admitted"
+  },
+  {
+   "id": "2608.19936",
+   "title": "Towards Quantifying Benchmark Optimization in ASR Models",
+   "published": "2026-08-20T11:54:39Z",
+   "score": 18,
+   "outcome": "not admitted"
+  },
+  {
+   "id": "2608.18689",
+   "title": "Aslema at NADI 2026: Augmentation through Fewshot for SLU",
+   "published": "2026-08-19T08:41:28Z",
+   "score": 21,
+   "outcome": "not admitted"
+  },
+  {
+   "id": "2608.17605",
+   "title": "Multi-turn Conversational AI from Text to Multimodal Interaction: Data, Models, Evaluation, and Open Challenges",
+   "published": "2026-08-18T10:14:21Z",
+   "score": 30,
+   "outcome": "not admitted"
+  },
+  {
+   "id": "2608.16539",
+   "title": "Listen, Reason, and Segment: Aligning LALMs with Editorial Judgment for Media Chapterization",
+   "published": "2026-08-17T13:14:01Z",
+   "score": 27,
+   "outcome": "not admitted"
+  },
+  {
+   "id": "2608.16276",
+   "title": "PolyDebate: A Game-Orchestrated Multimodal System for Debate Skills Practice and Evaluation",
+   "published": "2026-08-17T08:49:39Z",
+   "score": 18,
+   "outcome": "not admitted"
+  },
+  {
+   "id": "2608.21430",
+   "title": "Evaluating Multimodal Narrative Understanding of Popular Hollywood Films",
+   "published": "2026-08-17T04:04:22Z",
+   "score": 18,
+   "outcome": "not admitted"
+  },
+  {
+   "id": "2608.15600",
+   "title": "VARM-Bench: Benchmarking Verifiable Structured Reasoning in Chinese Abusive Speech Moderation",
+   "published": "2026-08-16T07:52:31Z",
+   "score": 36,
+   "outcome": "not admitted"
+  }
+ ]
+}

@@ -6,6 +6,153 @@
   "That shift broke evaluation. When a model did one task, you measured that task: word error rate, or a mean opinion score. When a model claims to do everything, there is no single number, and the community has responded by building benchmarks at a rate that is now genuinely hard to follow — dozens per year, scattered across speech venues, NLP venues, and arXiv preprints that never reach a venue at all."
  ],
  "scope_note": "A benchmark is included if the system under test is a general-purpose speech or audio language model. Benchmarks that only measure transcription accuracy (ASR) or only synthesis quality (TTS) are excluded, even when spoken LLMs are used to produce the output. Audio-understanding benchmarks covering sounds, scenes and music <em>are</em> included when the model under test is a general audio-language model rather than a dedicated classifier.",
+ "method_intro": [
+  "Two questions decide what is in this catalogue: how a paper comes to be looked at at all, and what makes it count as a spoken-LLM benchmark once it is. This section answers both in the form they are actually run — the queries, the thresholds, the rule, and the number each stage produced — so the answer can be checked rather than taken on trust.",
+  "In one sentence: discovery is mechanical and wide, and inclusion is a reading step. Two independent arXiv interfaces supply the candidates; keyword scoring only orders the reading; the maintaining agent then reads each candidate against a three-part rule and writes the verdict, with its reason, next to the paper it was made on."
+ ],
+ "method_discovery": [
+  {
+   "title": "Seed: two surveys, read end to end.",
+   "count": "the pre-2025 layer",
+   "body": "Yang, Ho &amp; Lee, <em>Towards Holistic Evaluation of Large Audio-Language Models</em> (arXiv 2505.15957, EMNLP 2025) and Arora et al., <em>On The Landscape of Spoken Language Models</em> (arXiv 2504.08528, TMLR 2025). Every benchmark either survey names went in as a candidate. This is where nearly all of the pre-2025 entries come from, and the two surveys' own scope decision — traditional ASR, TTS and translation tasks excluded — is the origin of the rule in the next part."
+  },
+  {
+   "title": "A systematic sweep of the arXiv query API.",
+   "count": "7,235 + 955 records",
+   "body": "Seven query families, each crossed with monthly submission windows from January 2025 to August 2026 and paged to the API's limit: speech and audio categories with benchmark language; the NLP category with speech words; the model-class names themselves (<em>speech language model</em>, <em>audio language model</em>, <em>speech LLM</em> and cognates); conversational and duplex terms (<em>spoken dialogue</em>, <em>speech-to-speech</em>, <em>full-duplex</em>, <em>voice agent</em>, <em>omni-modal</em>); multimodal-LLM-plus-audio in the AI, ML, multimedia and HCI categories; capability probes that often skip the word benchmark (<em>paralinguistic</em>, <em>prosody</em>, <em>spoken question answering</em>, <em>audio reasoning</em>); and trustworthiness terms (<em>jailbreak</em>, <em>hallucination</em>, <em>bias</em>, <em>safety</em>, <em>deepfake</em>) on audio. Seven query-months the API had refused with rate-limit errors were re-run separately."
+  },
+  {
+   "title": "An independent second harvest through OAI-PMH.",
+   "count": "25,446 records",
+   "body": "arXiv's bulk interface — a different endpoint with a different quota — over the whole <code>cs</code> and <code>eess</code> sets for the same period. A record is kept when it touches a speech-adjacent category (eess.AS, cs.SD, cs.CL, cs.MM, cs.AI, cs.LG, cs.HC, cs.CR, cs.CV) and its title or abstract contains a modality word (speech, spoken, audio, voice, acoustic, dialogue, sound, music, speaker…); outside the four core speech categories an evaluation or language-model word is required as well. Because the two harvests share no endpoint, what one finds and the other misses is a measurement of coverage rather than an assumption about it."
+  },
+  {
+   "title": "Keyword scoring, used only to order the reading.",
+   "count": "reading order, never a verdict",
+   "body": "Every record is scored from its title and abstract: +6 for each model-class term (<em>speech language model</em>, <em>LALM</em>, <em>full-duplex</em>, and named models such as SALMONN, Qwen-Audio or Moshi), +3 for each benchmark term (<em>benchmark</em>, <em>testbed</em>, <em>evaluation suite</em>, <em>leaderboard</em>, <em>we introduce</em>…), +12 if the title contains <em>benchmark</em>, <em>eval</em> or <em>bench</em>, +15 for a CamelCase-Bench name, and −5 for each component-task term (<em>speech enhancement</em>, <em>voice conversion</em>, <em>speaker verification</em>, <em>beamforming</em>…). The score decides what is read first and, where a threshold applies, what is read at all. It never admits a paper: nothing enters the catalogue without being read."
+  },
+  {
+   "title": "A reading pass over the pool.",
+   "count": "870 mentions → 484 names",
+   "body": "Batches of title, abstract and arXiv metadata went to eleven reader agents, each holding the inclusion rule, which returned every benchmark a paper names — its own, or one it runs — with the arXiv identifier only when it appeared in the text they were given, and blank otherwise. Mentions were merged by normalised name (<em>AIR-Bench</em>, <em>AIR Bench</em> and <em>airbench</em> are one), and blank identifiers were resolved against the arXiv API by title."
+  },
+  {
+   "title": "Cross-checks that keyword search cannot make.",
+   "count": "",
+   "body": "Community index repositories of spoken-LLM benchmarks; the technical reports of the spoken LLMs themselves, read as a reverse index of which benchmarks model builders actually run; live leaderboards; and capability-specific sweeps for paralinguistics, interactivity, trustworthiness and non-English coverage. These catch benchmarks whose abstracts never use the word."
+  },
+  {
+   "title": "Every identifier verified against its paper.",
+   "count": "10 bad matches caught",
+   "body": "Automatic title matching is wrong more often than it looks: <em>Switchboard</em> matched a quantum-computing paper, <em>MELD</em> a paper on heap data structures, <em>BRACE</em> one on algebraic topology. Every resolved identifier was therefore re-read against the paper it points to before entry, and the mismatches were discarded there. No identifier or date in the catalogue was filled in from a model's memory."
+  },
+  {
+   "title": "A recall pass over everything nobody had read.",
+   "count": "837 read → 91 added",
+   "body": "Once a first catalogue existed (269 entries), the OAI-PMH pool minus everything already considered — 19,957 records — was scored again with a harder threshold of 22, and the 837 above it were read against the rule. 91 were benchmarks the keyword-driven route had missed: an 11% hit rate that took the catalogue to 360 on 22 August 2026. That figure is the honest measure of how leaky keyword discovery is, and the reason this pass is not optional."
+  },
+  {
+   "title": "Since launch: a daily crawl with no model in it.",
+   "count": "",
+   "live": "crawl",
+   "body": "Every morning a plain script runs four of the query families over a rolling window of at least ten days — arXiv makes a paper searchable several days after its submission date, and a shorter window silently returns nothing — drops anything already seen or catalogued, scores the rest, and flags those scoring 18 or more into the <a href=\"#feed\">New on arXiv</a> feed. The script cannot invent a paper. The maintaining agent then fetches each flagged paper's full text, reads it against the rule, and writes the verdict into the feed entry — <em>accepted, added as …</em> or <em>reviewed — out of scope: …</em> with the reason — so the judgement sits next to the paper it was made on. Papers below the threshold are not read; that is where the method's recall limit now lives."
+  }
+ ],
+ "method_gate_intro": [
+  "A candidate is admitted only when all three answers are yes. The reader works from the paper — its full text on the daily route; its arXiv abstract page (title, abstract, comment and journal reference) for the initial build — never from the title alone, and copies the identifier and first-posting date from arXiv rather than from memory."
+ ],
+ "method_gate": [
+  {
+   "q": "1 · Does the paper propose an evaluation resource?",
+   "body": "<p>A benchmark, test set, evaluation suite, evaluation framework or diagnostic protocol has to be a lead contribution of the paper — named, described and, in nearly every case, released. It is not enough for one to be mentioned. Out: a model paper that introduces an evaluation set in a sentence (BEANS-Zero inside the NatureLM-audio paper; the spoken TriviaQA set inside the Moshi paper), an attack or training method evaluated on existing sets (AudioJailbreak, VoiceJailbreak, AdvWave), a training corpus (Audio-FLAN, WavCaps, Emilia), a survey, or an evaluation report that runs a model on existing tasks and releases nothing new. Where the benchmark leads and a model follows (MAE with MALLM; OpenMU-Bench with OpenMU; LAT-Bench with LAT-Audio), it is in.</p>"
+  },
+  {
+   "q": "2 · Is the system under test a general-purpose spoken or audio language model?",
+   "body": "<p>It must take speech or audio in, or produce speech out, and be expected to handle instructions and tasks not fixed in advance. Out, however good the work: benchmarks that only measure transcription (LoASR-Bench, AfriSpeech-MultiBench, the MLC-SLM challenge — even when speech LLMs are among the systems tested), only synthesis quality (NVV-SuperBench, CEAEval), or whose subjects are components — audio encoders and embeddings (SUPERB, HEAR, MAEB, MARBLE), codecs and tokenisers (Codec-SUPERB, DASB), speaker-verification and anti-spoofing detectors (VoxCeleb, CodecFake). Also out: text-only benchmarks that later work reads aloud with TTS (IFEval, GSM8K, AdvBench, MMLU) — the spoken suite that renders them is the entry, not the original.</p><p>In: audio-understanding benchmarks on sounds, scenes and music when the model tested is a general audio-language model (CMI-Bench); audio-visual and omni-modal benchmarks when audio is required by construction (Daily-Omni, WorldSense, OmniBench); the intrinsic quality of a spoken LLM's own speech output; and robustness suites built from ASR data when the system tested is a general model rather than a recogniser.</p>"
+  },
+  {
+   "q": "3 · Is it new to the catalogue?",
+   "body": "<p>Checked by arXiv identifier and by every alias on file. Two papers with confusingly similar names are two entries (AJailBench and AudioJailbreak; Full-Duplex-Bench v1.5 and FDBench), and one paper known under two names is one entry listed under both. When a paper names no benchmark at all, a short descriptive name is coined and the record says so.</p>"
+  }
+ ],
+ "method_rejected": {
+  "title": "What went out on the day the catalogue was built",
+  "intro": [
+   "On 22 August 2026, 480 candidate names from the steps above were read against the rule: 360 were admitted and 120 rejected. Every rejection carries its reason in the published list. Grouped by which part of the rule failed:"
+  ],
+  "rows": [
+   [
+    "Not an evaluation resource — a method, attack, model, training-corpus, survey or report paper in which any benchmark is incidental",
+    36
+   ],
+   [
+    "System under test is a component — an encoder, embedding, codec, tokeniser, detector or classifier, or a plain corpus with task-specific baselines",
+    32
+   ],
+   [
+    "Measures transcription or synthesis only — an ASR or TTS benchmark or corpus, even where speech LLMs were among the systems tested",
+    27
+   ],
+   [
+    "No speech or audio — a text-only or vision-only benchmark, including ones later read aloud by TTS",
+    15
+   ],
+   [
+    "Wrong automatic title match — the resolved identifier pointed at an unrelated paper",
+    10
+   ]
+  ],
+  "note": [
+   "The grouping was done by the maintaining agent from the reason text; the published list keeps every original reason, so the bins can be redrawn."
+  ]
+ },
+ "method_borderline": {
+  "title": "The calls that could have gone either way",
+  "body": "<p>The rule has edges, and the reader's notes from the initial build (published, see below) record each borderline call with the case for the other side. The policies that emerged:</p><ul><li><strong>Judge models and evaluation frameworks with no fixed test items</strong> (SageLM; the cascade-equivalence testing framework; meta-evaluations of LALMs used as judges) are in as <em>evaluation framework</em>, with a note. Readers who want only test sets can skip them.</li><li><strong>Papers that share the headline between a method and a genuinely new, released evaluation resource</strong> (AudioSafe with the HIN attack; SDiaReward with ESDR-Bench; ParaIntent with the ALPO method) are in when the resource is named, described and evaluates general models — and out when the resource exists only to demonstrate the model (DuplexSLA-Bench, SeaBench-Audio).</li><li><strong>Shared tasks and challenges</strong> are in only when written up as a preprint and the systems entered are general models (DCASE 2025 Task 5 Audio QA; the Interspeech 2026 audio-encoder challenge, whose encoders are scored through an LALM harness), not when the task is recognition or diarisation (MLC-SLM).</li><li><strong>Resources whose systems under test were cascades or speech foundation models rather than end-to-end spoken LLMs</strong> (SD-QA, Vox-Profile, CompA) are in when the resource is now used as an axis of spoken-LLM evaluation; each such record carries a note.</li><li><strong>Expressive speech-generation benchmarks</strong> were the least consistent call: those scoring dedicated TTS systems went out (NVV-SuperBench, CEAEval); those scoring a spoken LLM's own output stayed in under <em>intrinsic generation quality</em>. The notes flag both as reversible.</li></ul><p>Every daily verdict since launch is printed in the feed and kept in the crawl ledger, and every reversal is in the changelog. Disagree with one? Write; the address is in the Contribute section.</p>"
+ },
+ "method_limits": "<ul><li><strong>English-language arXiv only.</strong> A benchmark released only as a dataset page, a shared-task website, a company blog or a non-English venue is invisible to every step above.</li><li><strong>A keyword ceiling.</strong> A paper that describes itself in vocabulary none of the query families contain is never fetched, and below the score threshold a fetched paper is never read. The recall pass measured that leak once, at 11%, and closed that instance; the residual is unknown.</li><li><strong>Judged by an AI reader, not a person.</strong> The rule is applied one paper at a time by the maintaining agent. The initial build's verdicts were made from arXiv abstract pages, the daily verdicts from full text; no human has reviewed either.</li><li><strong>The rule has edges.</strong> <em>General-purpose</em> and <em>lead contribution</em> are judgements, not measurements. The notes above say how they were applied; the changelog shows every reversal.</li></ul>",
+ "method_check": [
+  {
+   "title": "scripts/harvest_arxiv.py",
+   "url": "https://github.com/speechlab0210/spoken-llm-benchmarks/blob/main/scripts/harvest_arxiv.py",
+   "note": "The seven query families and the scoring formula, as run for the initial build."
+  },
+  {
+   "title": "scripts/harvest_oai.py",
+   "url": "https://github.com/speechlab0210/spoken-llm-benchmarks/blob/main/scripts/harvest_oai.py",
+   "note": "The OAI-PMH harvest and its category and modality filters."
+  },
+  {
+   "title": "scripts/triage_prep.py",
+   "url": "https://github.com/speechlab0210/spoken-llm-benchmarks/blob/main/scripts/triage_prep.py",
+   "note": "The recall pass: the pool minus everything already considered, threshold 22."
+  },
+  {
+   "title": "scripts/daily_crawl.py",
+   "url": "https://github.com/speechlab0210/spoken-llm-benchmarks/blob/main/scripts/daily_crawl.py",
+   "note": "The daily crawl: four query families, a ten-day floor, threshold 18, no model in the loop."
+  },
+  {
+   "title": "data/latest.json",
+   "url": "https://github.com/speechlab0210/spoken-llm-benchmarks/blob/main/data/latest.json",
+   "note": "The current feed, with each candidate's verdict."
+  },
+  {
+   "title": "data/crawl-ledger.json",
+   "url": "https://github.com/speechlab0210/spoken-llm-benchmarks/blob/main/data/crawl-ledger.json",
+   "note": "Every paper the daily crawl has flagged since launch, and what became of it."
+  },
+  {
+   "title": "data/rejected-2026-08-22.json",
+   "url": "https://github.com/speechlab0210/spoken-llm-benchmarks/blob/main/data/rejected-2026-08-22.json",
+   "note": "The 120 build-day rejections, each with its reason and the part of the rule it failed."
+  },
+  {
+   "title": "data/inclusion-notes-2026-08-22.md",
+   "url": "https://github.com/speechlab0210/spoken-llm-benchmarks/blob/main/data/inclusion-notes-2026-08-22.md",
+   "note": "The reader's own notes from the build day: every borderline call, with the case for the other side."
+  }
+ ],
  "overview_more": [
   "Two surveys anchor the pre-2025 picture and are cited throughout: Yang, Ho &amp; Lee, <em>Towards Holistic Evaluation of Large Audio-Language Models</em> (EMNLP 2025), and Arora et al., <em>On The Landscape of Spoken Language Models</em> (TMLR 2025). Both were read end to end to seed this catalogue. Everything dated 2025 onwards was collected independently, by a systematic arXiv API sweep rather than by recall, and then verified against each paper.",
   "The catalogue is deliberately opinionated about provenance. Every arXiv identifier here was read off the arXiv API or the paper's own abstract page. Every number in the comparison tables carries a citation back to the source it was copied from. Where a date, an identifier or a score could not be verified, the field is left empty rather than filled in — an empty cell is information, a plausible-looking wrong one is not."
@@ -29,7 +176,7 @@
   {
    "title": "How it was built",
    "url": "https://github.com/speechlab0210/spoken-llm-benchmarks#provenance",
-   "note": "The collection method, the two independent arXiv interfaces used, and an honest statement of the known limits."
+   "note": "The collection method in the repository README; the fuller account, with the count at every stage and the inclusion rule spelled out, is in the Method section of this page."
   }
  ],
  "contribute": [

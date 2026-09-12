@@ -76,6 +76,23 @@ section:last-of-type{border-bottom:0}
 .callout.warn{border-left-color:var(--warn)}
 
 .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(268px,1fr));gap:16px}
+/* method section */
+.method-h{margin:32px 0 8px;font-size:1.15rem}
+.steps{list-style:none;padding:0;margin:12px 0 0;counter-reset:step}
+.steps li{display:grid;grid-template-columns:32px minmax(0,1fr) auto;gap:4px 12px;padding:13px 0;border-top:1px solid var(--line);counter-increment:step}
+.steps li::before{content:counter(step);font-family:var(--mono);color:var(--accent);font-weight:640;font-size:.92rem;grid-row:span 2}
+.steps li .t{font-weight:640}
+.steps li .c{font-family:var(--mono);font-size:.76rem;color:var(--ink-3);white-space:nowrap;text-align:right;padding-top:3px}
+.steps li .b{grid-column:2 / span 2;color:var(--ink-2);font-size:.92rem;max-width:80ch}
+.steps li .b code{font-family:var(--mono);font-size:.84em}
+.reasons td:first-child{white-space:normal}
+.checklist{padding-left:1.2em;font-size:.9rem}
+.checklist li{margin:4px 0}
+@media (max-width:720px){
+  .steps li{grid-template-columns:26px minmax(0,1fr)}
+  .steps li .c{grid-column:2;text-align:left;white-space:normal;padding-top:0}
+  .steps li .b{grid-column:2}
+}
 .card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px}
 .card h3{margin-bottom:.3em}
 .card .meta{font-family:var(--mono);font-size:.76rem;color:var(--ink-3)}
@@ -306,6 +323,7 @@ footer a{color:var(--ink-2)}
     <a class="brand" href="#top">Spoken&nbsp;LLM <span>Benchmark&nbsp;Atlas</span></a>
     <nav class="main">
       <a href="#overview">Overview</a>
+      <a href="#method">Method</a>
       <a href="#taxonomy">Taxonomy</a>
       <a href="#timeline">Timeline</a>
       <a href="#geography">Who&nbsp;builds&nbsp;them</a>
@@ -336,6 +354,14 @@ footer a{color:var(--ink-2)}
     <div class="eyebrow">Overview</div>
     <h2>What counts, and why this exists</h2>
     <div id="overviewBody"></div>
+  </div>
+</section>
+
+<section id="method">
+  <div class="wrap">
+    <div class="eyebrow">Method</div>
+    <h2>How papers are found, and how one is judged to be a benchmark</h2>
+    <div id="methodBody"></div>
   </div>
 </section>
 
@@ -552,6 +578,47 @@ document.getElementById('overviewBody').innerHTML =
   paras(E.overview, 'lede') +
   (E.scope_note ? '<div class="callout"><p><strong>Scope rule.</strong> '+E.scope_note+'</p></div>' : '') +
   (E.overview_more ? paras(E.overview_more) : '');
+
+// ---------- method: how papers are found, how one is judged ----------
+(function(){
+  var host = document.getElementById('methodBody');
+  if(!host || !E.method_discovery) return;
+  var h = paras(E.method_intro, 'lede');
+  h += '<h3 class="method-h">Where candidates come from</h3>';
+  h += '<ol class="steps">' + E.method_discovery.map(function(s){
+    var count = s.count || '';
+    if(s.live === 'crawl' && S.crawl_flagged != null){
+      count = S.crawl_flagged + ' flagged → ' + S.crawl_admitted + ' admitted since ' + (S.crawl_since || 'launch');
+    }
+    return '<li><div class="t">' + s.title + '</div>' +
+      (count ? '<div class="c">' + esc(count) + '</div>' : '<div class="c"></div>') +
+      '<div class="b">' + s.body + '</div></li>';
+  }).join('') + '</ol>';
+  h += '<h3 class="method-h">What makes a paper count</h3>' + paras(E.method_gate_intro);
+  h += (E.method_gate || []).map(function(q){
+    return '<div class="card" style="margin-top:12px"><h3>' + q.q + '</h3>' + q.body + '</div>';
+  }).join('');
+  var R = E.method_rejected;
+  if(R){
+    h += '<div class="card" style="margin-top:12px"><h3>' + R.title + '</h3>' + paras(R.intro) +
+      '<div class="tablewrap"><table class="reasons"><thead><tr><th>Why a candidate went out</th><th style="text-align:right">n</th></tr></thead><tbody>' +
+      R.rows.map(function(r){ return '<tr><td>' + r[0] + '</td><td class="num">' + r[1] + '</td></tr>'; }).join('') +
+      '</tbody></table></div>' + paras(R.note, 'count-note') + '</div>';
+  }
+  if(E.method_borderline){
+    h += '<details class="acc" style="margin-top:18px"><summary>' + E.method_borderline.title +
+      '<span class="sub">edge policy</span></summary><div style="margin-top:10px;font-size:.9rem;color:var(--ink-2)">' +
+      E.method_borderline.body + '</div></details>';
+  }
+  if(E.method_limits) h += '<div class="callout"><p><strong>Limits.</strong></p>' + E.method_limits + '</div>';
+  if(E.method_check){
+    h += '<p class="count-note" style="margin-top:18px">Check it yourself</p><ul class="checklist">' +
+      E.method_check.map(function(l){
+        return '<li>' + link(l.url, l.title) + (l.note ? ' — <span style="color:var(--ink-2)">' + esc(l.note) + '</span>' : '') + '</li>';
+      }).join('') + '</ul>';
+  }
+  host.innerHTML = h;
+})();
 
 // ---------- taxonomy ----------
 document.getElementById('taxIntro').innerHTML = T.intro || '';
