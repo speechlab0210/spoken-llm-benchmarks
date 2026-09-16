@@ -1553,6 +1553,17 @@
       "name": "DeSTA2.5-Audio",
       "org": "—",
       "type": "e2e"
+    },
+    {
+      "id": "covo-audio",
+      "name": "Covo-Audio",
+      "type": "e2e"
+    },
+    {
+      "id": "grok-voice-think-fast",
+      "name": "Grok Voice Think Fast 1.0",
+      "org": "xAI",
+      "type": "e2e"
     }
   ]
 }

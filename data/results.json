@@ -133776,6 +133776,1410 @@
       "source": "Beyond Word Error Rate Table II (main cap2000 benchmark, 2,000 shared utterances, primary prompt)",
       "source_url": "https://arxiv.org/abs/2609.11786",
       "note": "WER above 100% reflects over-generation (translation, verbosity, prompt leakage), not ordinary substitution."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "qwen3-omni",
+      "metric": "Understanding overall accuracy (%)",
+      "value": 34.44,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "qwen3-omni",
+      "metric": "Understanding speaker-name accuracy (%)",
+      "value": 36.11,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "qwen3-omni",
+      "metric": "Discussion turn-taking accuracy (%)",
+      "value": 100.0,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "qwen3-omni",
+      "metric": "Discussion appropriateness accuracy (%)",
+      "value": 60.16,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "qwen3-omni",
+      "metric": "Turn-based turn-taking accuracy (%)",
+      "value": 52.73,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "qwen3-omni",
+      "metric": "Turn-based appropriateness accuracy (%)",
+      "value": 46.87,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "gemini-3-1-pro",
+      "metric": "Understanding overall accuracy (%)",
+      "value": 73.3,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "gemini-3-1-pro",
+      "metric": "Understanding speaker-name accuracy (%)",
+      "value": 78.28,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "gemini-3-1-pro",
+      "metric": "Discussion turn-taking accuracy (%)",
+      "value": 100.0,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "gemini-3-1-pro",
+      "metric": "Discussion appropriateness accuracy (%)",
+      "value": 90.63,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "gemini-3-1-pro",
+      "metric": "Turn-based turn-taking accuracy (%)",
+      "value": 52.73,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "gemini-3-1-pro",
+      "metric": "Turn-based appropriateness accuracy (%)",
+      "value": 51.95,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "freeze-omni",
+      "metric": "Understanding overall accuracy (%)",
+      "value": 0.18,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "freeze-omni",
+      "metric": "Understanding speaker-name accuracy (%)",
+      "value": 0.0,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "freeze-omni",
+      "metric": "Discussion turn-taking accuracy (%)",
+      "value": 17.71,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "freeze-omni",
+      "metric": "Discussion appropriateness accuracy (%)",
+      "value": 0.0,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "freeze-omni",
+      "metric": "Turn-based turn-taking accuracy (%)",
+      "value": 49.61,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "freeze-omni",
+      "metric": "Turn-based appropriateness accuracy (%)",
+      "value": 48.44,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "freeze-omni",
+      "metric": "Discussion response latency (s)",
+      "value": 1.0,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "freeze-omni",
+      "metric": "Turn-based response latency (s)",
+      "value": 0.6,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "moshi",
+      "metric": "Understanding overall accuracy (%)",
+      "value": 1.66,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "moshi",
+      "metric": "Understanding speaker-name accuracy (%)",
+      "value": 0.0,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "moshi",
+      "metric": "Discussion turn-taking accuracy (%)",
+      "value": 75.0,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "moshi",
+      "metric": "Discussion appropriateness accuracy (%)",
+      "value": 1.56,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "moshi",
+      "metric": "Turn-based turn-taking accuracy (%)",
+      "value": 52.73,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "moshi",
+      "metric": "Turn-based appropriateness accuracy (%)",
+      "value": 28.12,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "moshi",
+      "metric": "Discussion response latency (s)",
+      "value": 0.5,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "moshi",
+      "metric": "Turn-based response latency (s)",
+      "value": 1.5,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "personaplex",
+      "metric": "Understanding overall accuracy (%)",
+      "value": 3.14,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "personaplex",
+      "metric": "Understanding speaker-name accuracy (%)",
+      "value": 7.32,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "personaplex",
+      "metric": "Discussion turn-taking accuracy (%)",
+      "value": 96.09,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "personaplex",
+      "metric": "Discussion appropriateness accuracy (%)",
+      "value": 0.0,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "personaplex",
+      "metric": "Turn-based turn-taking accuracy (%)",
+      "value": 51.17,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "personaplex",
+      "metric": "Turn-based appropriateness accuracy (%)",
+      "value": 4.69,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "personaplex",
+      "metric": "Discussion response latency (s)",
+      "value": 0.5,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "personaplex",
+      "metric": "Turn-based response latency (s)",
+      "value": 0.7,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "ultravox",
+      "metric": "Understanding overall accuracy (%)",
+      "value": 21.36,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "ultravox",
+      "metric": "Understanding speaker-name accuracy (%)",
+      "value": 25.0,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "ultravox",
+      "metric": "Discussion turn-taking accuracy (%)",
+      "value": 99.22,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "ultravox",
+      "metric": "Discussion appropriateness accuracy (%)",
+      "value": 39.06,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "ultravox",
+      "metric": "Turn-based turn-taking accuracy (%)",
+      "value": 46.09,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "ultravox",
+      "metric": "Turn-based appropriateness accuracy (%)",
+      "value": 31.25,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "ultravox",
+      "metric": "Discussion response latency (s)",
+      "value": 3.6,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "ultravox",
+      "metric": "Turn-based response latency (s)",
+      "value": 4.0,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "glm-4-voice",
+      "metric": "Understanding overall accuracy (%)",
+      "value": 11.6,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "glm-4-voice",
+      "metric": "Understanding speaker-name accuracy (%)",
+      "value": 12.63,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "glm-4-voice",
+      "metric": "Discussion turn-taking accuracy (%)",
+      "value": 100.0,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "glm-4-voice",
+      "metric": "Discussion appropriateness accuracy (%)",
+      "value": 34.38,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "glm-4-voice",
+      "metric": "Turn-based turn-taking accuracy (%)",
+      "value": 49.14,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "glm-4-voice",
+      "metric": "Turn-based appropriateness accuracy (%)",
+      "value": 45.35,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "glm-4-voice",
+      "metric": "Discussion response latency (s)",
+      "value": 2.3,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "glm-4-voice",
+      "metric": "Turn-based response latency (s)",
+      "value": 2.6,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "covo-audio",
+      "metric": "Understanding overall accuracy (%)",
+      "value": 32.6,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "covo-audio",
+      "metric": "Understanding speaker-name accuracy (%)",
+      "value": 37.37,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "covo-audio",
+      "metric": "Discussion turn-taking accuracy (%)",
+      "value": 99.22,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "covo-audio",
+      "metric": "Discussion appropriateness accuracy (%)",
+      "value": 42.19,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "covo-audio",
+      "metric": "Turn-based turn-taking accuracy (%)",
+      "value": 48.83,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "covo-audio",
+      "metric": "Turn-based appropriateness accuracy (%)",
+      "value": 48.44,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "covo-audio",
+      "metric": "Discussion response latency (s)",
+      "value": 1.7,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "covo-audio",
+      "metric": "Turn-based response latency (s)",
+      "value": 1.3,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "gpt-realtime",
+      "metric": "Understanding overall accuracy (%)",
+      "value": 14.0,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "gpt-realtime",
+      "metric": "Understanding speaker-name accuracy (%)",
+      "value": 16.67,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "gpt-realtime",
+      "metric": "Discussion turn-taking accuracy (%)",
+      "value": 100.0,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "gpt-realtime",
+      "metric": "Discussion appropriateness accuracy (%)",
+      "value": 53.13,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "gpt-realtime",
+      "metric": "Turn-based turn-taking accuracy (%)",
+      "value": 48.44,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "gpt-realtime",
+      "metric": "Turn-based appropriateness accuracy (%)",
+      "value": 28.13,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "gpt-realtime",
+      "metric": "Discussion response latency (s)",
+      "value": 6.0,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "gpt-realtime",
+      "metric": "Turn-based response latency (s)",
+      "value": 6.7,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "gemini-live-2-5",
+      "metric": "Understanding overall accuracy (%)",
+      "value": 10.58,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "gemini-live-2-5",
+      "metric": "Understanding speaker-name accuracy (%)",
+      "value": 11.87,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "gemini-live-2-5",
+      "metric": "Discussion turn-taking accuracy (%)",
+      "value": 78.13,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "gemini-live-2-5",
+      "metric": "Discussion appropriateness accuracy (%)",
+      "value": 36.72,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "gemini-live-2-5",
+      "metric": "Turn-based turn-taking accuracy (%)",
+      "value": 48.0,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "gemini-live-2-5",
+      "metric": "Turn-based appropriateness accuracy (%)",
+      "value": 20.0,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "gemini-live-2-5",
+      "metric": "Discussion response latency (s)",
+      "value": 6.5,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "gemini-live-2-5",
+      "metric": "Turn-based response latency (s)",
+      "value": 8.6,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "gemini-live-3",
+      "metric": "Understanding overall accuracy (%)",
+      "value": 4.9,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses. MP-Bench names this row 'Gemini-3.1 Live' and cites a Google model page without giving an API id, so it is recorded against the unversioned Gemini Live 3.x entry."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "gemini-live-3",
+      "metric": "Understanding speaker-name accuracy (%)",
+      "value": 5.81,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses. MP-Bench names this row 'Gemini-3.1 Live' and cites a Google model page without giving an API id, so it is recorded against the unversioned Gemini Live 3.x entry."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "gemini-live-3",
+      "metric": "Discussion turn-taking accuracy (%)",
+      "value": 99.22,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses. MP-Bench names this row 'Gemini-3.1 Live' and cites a Google model page without giving an API id, so it is recorded against the unversioned Gemini Live 3.x entry."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "gemini-live-3",
+      "metric": "Discussion appropriateness accuracy (%)",
+      "value": 57.03,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses. MP-Bench names this row 'Gemini-3.1 Live' and cites a Google model page without giving an API id, so it is recorded against the unversioned Gemini Live 3.x entry."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "gemini-live-3",
+      "metric": "Turn-based turn-taking accuracy (%)",
+      "value": 52.57,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses. MP-Bench names this row 'Gemini-3.1 Live' and cites a Google model page without giving an API id, so it is recorded against the unversioned Gemini Live 3.x entry."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "gemini-live-3",
+      "metric": "Turn-based appropriateness accuracy (%)",
+      "value": 38.99,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses. MP-Bench names this row 'Gemini-3.1 Live' and cites a Google model page without giving an API id, so it is recorded against the unversioned Gemini Live 3.x entry."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "gemini-live-3",
+      "metric": "Discussion response latency (s)",
+      "value": 7.4,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses. MP-Bench names this row 'Gemini-3.1 Live' and cites a Google model page without giving an API id, so it is recorded against the unversioned Gemini Live 3.x entry."
+    },
+    {
+      "benchmark": "mp-bench",
+      "model": "gemini-live-3",
+      "metric": "Turn-based response latency (s)",
+      "value": 8.2,
+      "source": "MP-Bench Table 3 (main results)",
+      "source_url": "https://arxiv.org/abs/2609.13076",
+      "note": "Random-guessing baselines: 33.3% for speaker-name accuracy, 50% for Turn-based turn-taking. Discussion turn-taking ground truth is always 'respond', so it must be read jointly with the balanced Turn-based figures. Latency is measured only for real-time agents, averaged over non-silent responses. MP-Bench names this row 'Gemini-3.1 Live' and cites a Google model page without giving an API id, so it is recorded against the unversioned Gemini Live 3.x entry."
+    },
+    {
+      "benchmark": "tau-elicitation",
+      "model": "gpt-realtime-2",
+      "metric": "Pass@1, agent-directed, regular condition (%)",
+      "value": 44.5,
+      "source": "tau-Elicitation section 5 (Results)",
+      "source_url": "https://arxiv.org/abs/2609.13602",
+      "note": "gpt-realtime-2 at xhigh reasoning; at minimal reasoning the same model scores 15.0 agent-directed and 45.5 scaffolded on robust Pass^3."
+    },
+    {
+      "benchmark": "tau-elicitation",
+      "model": "gpt-realtime-2",
+      "metric": "Robust Pass^3, agent-directed (%)",
+      "value": 20.0,
+      "source": "tau-Elicitation section 5 (Results)",
+      "source_url": "https://arxiv.org/abs/2609.13602",
+      "note": "gpt-realtime-2 at xhigh reasoning; at minimal reasoning the same model scores 15.0 agent-directed and 45.5 scaffolded on robust Pass^3."
+    },
+    {
+      "benchmark": "tau-elicitation",
+      "model": "gpt-realtime-2",
+      "metric": "Robust Pass^3, scaffolded (%)",
+      "value": 38.5,
+      "source": "tau-Elicitation section 5 (Results)",
+      "source_url": "https://arxiv.org/abs/2609.13602",
+      "note": "gpt-realtime-2 at xhigh reasoning; at minimal reasoning the same model scores 15.0 agent-directed and 45.5 scaffolded on robust Pass^3."
+    },
+    {
+      "benchmark": "tau-elicitation",
+      "model": "gpt-realtime-2",
+      "metric": "Initially wrong field captures (%)",
+      "value": 69.0,
+      "source": "tau-Elicitation section 5 (Results)",
+      "source_url": "https://arxiv.org/abs/2609.13602",
+      "note": "gpt-realtime-2 at xhigh reasoning; at minimal reasoning the same model scores 15.0 agent-directed and 45.5 scaffolded on robust Pass^3."
+    },
+    {
+      "benchmark": "tau-elicitation",
+      "model": "gpt-realtime-2",
+      "metric": "Verified errors ending correct (%)",
+      "value": 27.0,
+      "source": "tau-Elicitation section 5 (Results)",
+      "source_url": "https://arxiv.org/abs/2609.13602",
+      "note": "gpt-realtime-2 at xhigh reasoning; at minimal reasoning the same model scores 15.0 agent-directed and 45.5 scaffolded on robust Pass^3."
+    },
+    {
+      "benchmark": "tau-elicitation",
+      "model": "gemini-live-3-1-flash",
+      "metric": "Pass@1, agent-directed, regular condition (%)",
+      "value": 51.5,
+      "source": "tau-Elicitation section 5 (Results)",
+      "source_url": "https://arxiv.org/abs/2609.13602",
+      "note": "gemini-3.1-flash-live-preview at high reasoning. Ranking reverses between the two measures: Gemini leads on regular Pass@1 but trails on robust Pass^3."
+    },
+    {
+      "benchmark": "tau-elicitation",
+      "model": "gemini-live-3-1-flash",
+      "metric": "Robust Pass^3, agent-directed (%)",
+      "value": 13.5,
+      "source": "tau-Elicitation section 5 (Results)",
+      "source_url": "https://arxiv.org/abs/2609.13602",
+      "note": "gemini-3.1-flash-live-preview at high reasoning. Ranking reverses between the two measures: Gemini leads on regular Pass@1 but trails on robust Pass^3."
+    },
+    {
+      "benchmark": "tau-elicitation",
+      "model": "gemini-live-3-1-flash",
+      "metric": "Initially wrong field captures (%)",
+      "value": 65.0,
+      "source": "tau-Elicitation section 5 (Results)",
+      "source_url": "https://arxiv.org/abs/2609.13602",
+      "note": "gemini-3.1-flash-live-preview at high reasoning. Ranking reverses between the two measures: Gemini leads on regular Pass@1 but trails on robust Pass^3."
+    },
+    {
+      "benchmark": "tau-elicitation",
+      "model": "gemini-live-3-1-flash",
+      "metric": "Verified errors ending correct (%)",
+      "value": 37.0,
+      "source": "tau-Elicitation section 5 (Results)",
+      "source_url": "https://arxiv.org/abs/2609.13602",
+      "note": "gemini-3.1-flash-live-preview at high reasoning. Ranking reverses between the two measures: Gemini leads on regular Pass@1 but trails on robust Pass^3."
+    },
+    {
+      "benchmark": "tau-elicitation",
+      "model": "grok-voice-think-fast",
+      "metric": "Initially wrong field captures (%)",
+      "value": 42.0,
+      "source": "tau-Elicitation section 5 (Results)",
+      "source_url": "https://arxiv.org/abs/2609.13602",
+      "note": "grok-voice-think-fast-1.0 at the provider default. The paper reports Grok as the best agent-directed system on both Pass measures but states its Pass figures only as part of the 14-41 percent across-system range, so no Pass cell is recorded."
+    },
+    {
+      "benchmark": "tau-elicitation",
+      "model": "grok-voice-think-fast",
+      "metric": "Verified errors ending correct (%)",
+      "value": 24.0,
+      "source": "tau-Elicitation section 5 (Results)",
+      "source_url": "https://arxiv.org/abs/2609.13602",
+      "note": "grok-voice-think-fast-1.0 at the provider default. The paper reports Grok as the best agent-directed system on both Pass measures but states its Pass figures only as part of the 14-41 percent across-system range, so no Pass cell is recorded."
+    },
+    {
+      "benchmark": "harp",
+      "model": "qwen3-omni",
+      "metric": "Answer accuracy, hybrid retrieval with multimodal evidence (%)",
+      "value": 61.6,
+      "source": "HARP Table II (answer and rationale accuracy, Gemini 3.1 Flash-Lite judge)",
+      "source_url": "https://arxiv.org/abs/2609.14116",
+      "note": "Qwen3-Omni-30B-A3B-Instruct as the agent; the averages span all ten query types across the three domains."
+    },
+    {
+      "benchmark": "harp",
+      "model": "qwen3-omni",
+      "metric": "Rationale accuracy, hybrid retrieval with multimodal evidence (%)",
+      "value": 43.7,
+      "source": "HARP Table II (answer and rationale accuracy, Gemini 3.1 Flash-Lite judge)",
+      "source_url": "https://arxiv.org/abs/2609.14116",
+      "note": "Qwen3-Omni-30B-A3B-Instruct as the agent; the averages span all ten query types across the three domains."
+    },
+    {
+      "benchmark": "harp",
+      "model": "qwen3-omni",
+      "metric": "Answer accuracy, oracle retrieval with multimodal evidence (%)",
+      "value": 73.7,
+      "source": "HARP Table II (answer and rationale accuracy, Gemini 3.1 Flash-Lite judge)",
+      "source_url": "https://arxiv.org/abs/2609.14116",
+      "note": "Qwen3-Omni-30B-A3B-Instruct as the agent; the averages span all ten query types across the three domains."
+    },
+    {
+      "benchmark": "harp",
+      "model": "qwen3-omni",
+      "metric": "Rationale accuracy, oracle retrieval with multimodal evidence (%)",
+      "value": 49.6,
+      "source": "HARP Table II (answer and rationale accuracy, Gemini 3.1 Flash-Lite judge)",
+      "source_url": "https://arxiv.org/abs/2609.14116",
+      "note": "Qwen3-Omni-30B-A3B-Instruct as the agent; the averages span all ten query types across the three domains."
+    },
+    {
+      "benchmark": "duplex-cue",
+      "model": "personaplex",
+      "metric": "Backchannel cues: continued unchanged (%)",
+      "value": 70.4,
+      "source": "Duplex Cue Table 2 (observed response distributions, 208 active scorable pairs)",
+      "source_url": "https://arxiv.org/abs/2609.13117",
+      "note": "Paired against the recorded human response at the same cutover: recorded human reference 71.6. n = 81 backchannel, 66 collaboration, 61 interruption."
+    },
+    {
+      "benchmark": "duplex-cue",
+      "model": "personaplex",
+      "metric": "Backchannel cues: adapted within the turn (%)",
+      "value": 21.0,
+      "source": "Duplex Cue Table 2 (observed response distributions, 208 active scorable pairs)",
+      "source_url": "https://arxiv.org/abs/2609.13117",
+      "note": "Paired against the recorded human response at the same cutover: recorded human reference 23.5. n = 81 backchannel, 66 collaboration, 61 interruption."
+    },
+    {
+      "benchmark": "duplex-cue",
+      "model": "personaplex",
+      "metric": "Backchannel cues: yielded the floor (%)",
+      "value": 8.6,
+      "source": "Duplex Cue Table 2 (observed response distributions, 208 active scorable pairs)",
+      "source_url": "https://arxiv.org/abs/2609.13117",
+      "note": "Paired against the recorded human response at the same cutover: recorded human reference 4.9. n = 81 backchannel, 66 collaboration, 61 interruption."
+    },
+    {
+      "benchmark": "duplex-cue",
+      "model": "personaplex",
+      "metric": "Collaboration cues: continued unchanged (%)",
+      "value": 42.4,
+      "source": "Duplex Cue Table 2 (observed response distributions, 208 active scorable pairs)",
+      "source_url": "https://arxiv.org/abs/2609.13117",
+      "note": "Paired against the recorded human response at the same cutover: recorded human reference 22.7. n = 81 backchannel, 66 collaboration, 61 interruption."
+    },
+    {
+      "benchmark": "duplex-cue",
+      "model": "personaplex",
+      "metric": "Collaboration cues: adapted within the turn (%)",
+      "value": 34.8,
+      "source": "Duplex Cue Table 2 (observed response distributions, 208 active scorable pairs)",
+      "source_url": "https://arxiv.org/abs/2609.13117",
+      "note": "Paired against the recorded human response at the same cutover: recorded human reference 68.2. n = 81 backchannel, 66 collaboration, 61 interruption."
+    },
+    {
+      "benchmark": "duplex-cue",
+      "model": "personaplex",
+      "metric": "Collaboration cues: yielded the floor (%)",
+      "value": 22.7,
+      "source": "Duplex Cue Table 2 (observed response distributions, 208 active scorable pairs)",
+      "source_url": "https://arxiv.org/abs/2609.13117",
+      "note": "Paired against the recorded human response at the same cutover: recorded human reference 9.1. n = 81 backchannel, 66 collaboration, 61 interruption."
+    },
+    {
+      "benchmark": "duplex-cue",
+      "model": "personaplex",
+      "metric": "Interruption cues: continued unchanged (%)",
+      "value": 16.4,
+      "source": "Duplex Cue Table 2 (observed response distributions, 208 active scorable pairs)",
+      "source_url": "https://arxiv.org/abs/2609.13117",
+      "note": "Paired against the recorded human response at the same cutover: recorded human reference 14.8. n = 81 backchannel, 66 collaboration, 61 interruption."
+    },
+    {
+      "benchmark": "duplex-cue",
+      "model": "personaplex",
+      "metric": "Interruption cues: adapted within the turn (%)",
+      "value": 32.8,
+      "source": "Duplex Cue Table 2 (observed response distributions, 208 active scorable pairs)",
+      "source_url": "https://arxiv.org/abs/2609.13117",
+      "note": "Paired against the recorded human response at the same cutover: recorded human reference 45.9. n = 81 backchannel, 66 collaboration, 61 interruption."
+    },
+    {
+      "benchmark": "duplex-cue",
+      "model": "personaplex",
+      "metric": "Interruption cues: yielded the floor (%)",
+      "value": 50.8,
+      "source": "Duplex Cue Table 2 (observed response distributions, 208 active scorable pairs)",
+      "source_url": "https://arxiv.org/abs/2609.13117",
+      "note": "Paired against the recorded human response at the same cutover: recorded human reference 39.3. n = 81 backchannel, 66 collaboration, 61 interruption."
+    },
+    {
+      "benchmark": "generation-modality-gap-suite",
+      "model": "llama-mimi-1-3b",
+      "metric": "genPPL (C4 prompts)",
+      "value": 106.8,
+      "source": "Quantifying the Generation Modality Gap Table I (detailed metrics, published Llama-Mimi checkpoints)",
+      "source_url": "https://arxiv.org/abs/2609.14743",
+      "note": "Published checkpoint trained on 240k hours of speech, evaluated under this suite's protocol (prompt removed by edit-distance alignment; genPPL scored by the reference text LM). Llama-Mimi produces roughly 80% non-empty continuations and the joint non-empty subset covers about 60%, so these are not computed over all 7,500 prompts."
+    },
+    {
+      "benchmark": "generation-modality-gap-suite",
+      "model": "llama-mimi-1-3b",
+      "metric": "pJSD (C4 prompts)",
+      "value": 0.52,
+      "source": "Quantifying the Generation Modality Gap Table I (detailed metrics, published Llama-Mimi checkpoints)",
+      "source_url": "https://arxiv.org/abs/2609.14743",
+      "note": "Published checkpoint trained on 240k hours of speech, evaluated under this suite's protocol (prompt removed by edit-distance alignment; genPPL scored by the reference text LM). Llama-Mimi produces roughly 80% non-empty continuations and the joint non-empty subset covers about 60%, so these are not computed over all 7,500 prompts."
+    },
+    {
+      "benchmark": "generation-modality-gap-suite",
+      "model": "llama-mimi-1-3b",
+      "metric": "Speaker similarity (C4 prompts)",
+      "value": 0.48,
+      "source": "Quantifying the Generation Modality Gap Table I (detailed metrics, published Llama-Mimi checkpoints)",
+      "source_url": "https://arxiv.org/abs/2609.14743",
+      "note": "Published checkpoint trained on 240k hours of speech, evaluated under this suite's protocol (prompt removed by edit-distance alignment; genPPL scored by the reference text LM). Llama-Mimi produces roughly 80% non-empty continuations and the joint non-empty subset covers about 60%, so these are not computed over all 7,500 prompts."
+    },
+    {
+      "benchmark": "generation-modality-gap-suite",
+      "model": "llama-mimi-1-3b",
+      "metric": "UTMOS (C4 prompts)",
+      "value": 3.07,
+      "source": "Quantifying the Generation Modality Gap Table I (detailed metrics, published Llama-Mimi checkpoints)",
+      "source_url": "https://arxiv.org/abs/2609.14743",
+      "note": "Published checkpoint trained on 240k hours of speech, evaluated under this suite's protocol (prompt removed by edit-distance alignment; genPPL scored by the reference text LM). Llama-Mimi produces roughly 80% non-empty continuations and the joint non-empty subset covers about 60%, so these are not computed over all 7,500 prompts."
+    },
+    {
+      "benchmark": "generation-modality-gap-suite",
+      "model": "llama-mimi-1-3b",
+      "metric": "genPPL (Emilia prompts)",
+      "value": 86.5,
+      "source": "Quantifying the Generation Modality Gap Table I (detailed metrics, published Llama-Mimi checkpoints)",
+      "source_url": "https://arxiv.org/abs/2609.14743",
+      "note": "Published checkpoint trained on 240k hours of speech, evaluated under this suite's protocol (prompt removed by edit-distance alignment; genPPL scored by the reference text LM). Llama-Mimi produces roughly 80% non-empty continuations and the joint non-empty subset covers about 60%, so these are not computed over all 7,500 prompts."
+    },
+    {
+      "benchmark": "generation-modality-gap-suite",
+      "model": "llama-mimi-1-3b",
+      "metric": "pJSD (Emilia prompts)",
+      "value": 0.5,
+      "source": "Quantifying the Generation Modality Gap Table I (detailed metrics, published Llama-Mimi checkpoints)",
+      "source_url": "https://arxiv.org/abs/2609.14743",
+      "note": "Published checkpoint trained on 240k hours of speech, evaluated under this suite's protocol (prompt removed by edit-distance alignment; genPPL scored by the reference text LM). Llama-Mimi produces roughly 80% non-empty continuations and the joint non-empty subset covers about 60%, so these are not computed over all 7,500 prompts."
+    },
+    {
+      "benchmark": "generation-modality-gap-suite",
+      "model": "llama-mimi-1-3b",
+      "metric": "Speaker similarity (Emilia prompts)",
+      "value": 0.46,
+      "source": "Quantifying the Generation Modality Gap Table I (detailed metrics, published Llama-Mimi checkpoints)",
+      "source_url": "https://arxiv.org/abs/2609.14743",
+      "note": "Published checkpoint trained on 240k hours of speech, evaluated under this suite's protocol (prompt removed by edit-distance alignment; genPPL scored by the reference text LM). Llama-Mimi produces roughly 80% non-empty continuations and the joint non-empty subset covers about 60%, so these are not computed over all 7,500 prompts."
+    },
+    {
+      "benchmark": "generation-modality-gap-suite",
+      "model": "llama-mimi-1-3b",
+      "metric": "UTMOS (Emilia prompts)",
+      "value": 2.93,
+      "source": "Quantifying the Generation Modality Gap Table I (detailed metrics, published Llama-Mimi checkpoints)",
+      "source_url": "https://arxiv.org/abs/2609.14743",
+      "note": "Published checkpoint trained on 240k hours of speech, evaluated under this suite's protocol (prompt removed by edit-distance alignment; genPPL scored by the reference text LM). Llama-Mimi produces roughly 80% non-empty continuations and the joint non-empty subset covers about 60%, so these are not computed over all 7,500 prompts."
+    },
+    {
+      "benchmark": "generation-modality-gap-suite",
+      "model": "llama-mimi-1-3b",
+      "metric": "genPPL (LibriSpeech prompts)",
+      "value": 80.0,
+      "source": "Quantifying the Generation Modality Gap Table I (detailed metrics, published Llama-Mimi checkpoints)",
+      "source_url": "https://arxiv.org/abs/2609.14743",
+      "note": "Published checkpoint trained on 240k hours of speech, evaluated under this suite's protocol (prompt removed by edit-distance alignment; genPPL scored by the reference text LM). Llama-Mimi produces roughly 80% non-empty continuations and the joint non-empty subset covers about 60%, so these are not computed over all 7,500 prompts."
+    },
+    {
+      "benchmark": "generation-modality-gap-suite",
+      "model": "llama-mimi-1-3b",
+      "metric": "pJSD (LibriSpeech prompts)",
+      "value": 0.47,
+      "source": "Quantifying the Generation Modality Gap Table I (detailed metrics, published Llama-Mimi checkpoints)",
+      "source_url": "https://arxiv.org/abs/2609.14743",
+      "note": "Published checkpoint trained on 240k hours of speech, evaluated under this suite's protocol (prompt removed by edit-distance alignment; genPPL scored by the reference text LM). Llama-Mimi produces roughly 80% non-empty continuations and the joint non-empty subset covers about 60%, so these are not computed over all 7,500 prompts."
+    },
+    {
+      "benchmark": "generation-modality-gap-suite",
+      "model": "llama-mimi-1-3b",
+      "metric": "Speaker similarity (LibriSpeech prompts)",
+      "value": 0.44,
+      "source": "Quantifying the Generation Modality Gap Table I (detailed metrics, published Llama-Mimi checkpoints)",
+      "source_url": "https://arxiv.org/abs/2609.14743",
+      "note": "Published checkpoint trained on 240k hours of speech, evaluated under this suite's protocol (prompt removed by edit-distance alignment; genPPL scored by the reference text LM). Llama-Mimi produces roughly 80% non-empty continuations and the joint non-empty subset covers about 60%, so these are not computed over all 7,500 prompts."
+    },
+    {
+      "benchmark": "generation-modality-gap-suite",
+      "model": "llama-mimi-1-3b",
+      "metric": "UTMOS (LibriSpeech prompts)",
+      "value": 2.92,
+      "source": "Quantifying the Generation Modality Gap Table I (detailed metrics, published Llama-Mimi checkpoints)",
+      "source_url": "https://arxiv.org/abs/2609.14743",
+      "note": "Published checkpoint trained on 240k hours of speech, evaluated under this suite's protocol (prompt removed by edit-distance alignment; genPPL scored by the reference text LM). Llama-Mimi produces roughly 80% non-empty continuations and the joint non-empty subset covers about 60%, so these are not computed over all 7,500 prompts."
+    },
+    {
+      "benchmark": "generation-modality-gap-suite",
+      "model": "llama-mimi-8b",
+      "metric": "genPPL (C4 prompts)",
+      "value": 68.3,
+      "source": "Quantifying the Generation Modality Gap Table I (detailed metrics, published Llama-Mimi checkpoints)",
+      "source_url": "https://arxiv.org/abs/2609.14743",
+      "note": "Published checkpoint trained on 240k hours of speech, evaluated under this suite's protocol (prompt removed by edit-distance alignment; genPPL scored by the reference text LM). Llama-Mimi produces roughly 80% non-empty continuations and the joint non-empty subset covers about 60%, so these are not computed over all 7,500 prompts."
+    },
+    {
+      "benchmark": "generation-modality-gap-suite",
+      "model": "llama-mimi-8b",
+      "metric": "pJSD (C4 prompts)",
+      "value": 0.51,
+      "source": "Quantifying the Generation Modality Gap Table I (detailed metrics, published Llama-Mimi checkpoints)",
+      "source_url": "https://arxiv.org/abs/2609.14743",
+      "note": "Published checkpoint trained on 240k hours of speech, evaluated under this suite's protocol (prompt removed by edit-distance alignment; genPPL scored by the reference text LM). Llama-Mimi produces roughly 80% non-empty continuations and the joint non-empty subset covers about 60%, so these are not computed over all 7,500 prompts."
+    },
+    {
+      "benchmark": "generation-modality-gap-suite",
+      "model": "llama-mimi-8b",
+      "metric": "Speaker similarity (C4 prompts)",
+      "value": 0.49,
+      "source": "Quantifying the Generation Modality Gap Table I (detailed metrics, published Llama-Mimi checkpoints)",
+      "source_url": "https://arxiv.org/abs/2609.14743",
+      "note": "Published checkpoint trained on 240k hours of speech, evaluated under this suite's protocol (prompt removed by edit-distance alignment; genPPL scored by the reference text LM). Llama-Mimi produces roughly 80% non-empty continuations and the joint non-empty subset covers about 60%, so these are not computed over all 7,500 prompts."
+    },
+    {
+      "benchmark": "generation-modality-gap-suite",
+      "model": "llama-mimi-8b",
+      "metric": "UTMOS (C4 prompts)",
+      "value": 3.03,
+      "source": "Quantifying the Generation Modality Gap Table I (detailed metrics, published Llama-Mimi checkpoints)",
+      "source_url": "https://arxiv.org/abs/2609.14743",
+      "note": "Published checkpoint trained on 240k hours of speech, evaluated under this suite's protocol (prompt removed by edit-distance alignment; genPPL scored by the reference text LM). Llama-Mimi produces roughly 80% non-empty continuations and the joint non-empty subset covers about 60%, so these are not computed over all 7,500 prompts."
+    },
+    {
+      "benchmark": "generation-modality-gap-suite",
+      "model": "llama-mimi-8b",
+      "metric": "genPPL (Emilia prompts)",
+      "value": 53.0,
+      "source": "Quantifying the Generation Modality Gap Table I (detailed metrics, published Llama-Mimi checkpoints)",
+      "source_url": "https://arxiv.org/abs/2609.14743",
+      "note": "Published checkpoint trained on 240k hours of speech, evaluated under this suite's protocol (prompt removed by edit-distance alignment; genPPL scored by the reference text LM). Llama-Mimi produces roughly 80% non-empty continuations and the joint non-empty subset covers about 60%, so these are not computed over all 7,500 prompts."
+    },
+    {
+      "benchmark": "generation-modality-gap-suite",
+      "model": "llama-mimi-8b",
+      "metric": "pJSD (Emilia prompts)",
+      "value": 0.5,
+      "source": "Quantifying the Generation Modality Gap Table I (detailed metrics, published Llama-Mimi checkpoints)",
+      "source_url": "https://arxiv.org/abs/2609.14743",
+      "note": "Published checkpoint trained on 240k hours of speech, evaluated under this suite's protocol (prompt removed by edit-distance alignment; genPPL scored by the reference text LM). Llama-Mimi produces roughly 80% non-empty continuations and the joint non-empty subset covers about 60%, so these are not computed over all 7,500 prompts."
+    },
+    {
+      "benchmark": "generation-modality-gap-suite",
+      "model": "llama-mimi-8b",
+      "metric": "Speaker similarity (Emilia prompts)",
+      "value": 0.48,
+      "source": "Quantifying the Generation Modality Gap Table I (detailed metrics, published Llama-Mimi checkpoints)",
+      "source_url": "https://arxiv.org/abs/2609.14743",
+      "note": "Published checkpoint trained on 240k hours of speech, evaluated under this suite's protocol (prompt removed by edit-distance alignment; genPPL scored by the reference text LM). Llama-Mimi produces roughly 80% non-empty continuations and the joint non-empty subset covers about 60%, so these are not computed over all 7,500 prompts."
+    },
+    {
+      "benchmark": "generation-modality-gap-suite",
+      "model": "llama-mimi-8b",
+      "metric": "UTMOS (Emilia prompts)",
+      "value": 2.9,
+      "source": "Quantifying the Generation Modality Gap Table I (detailed metrics, published Llama-Mimi checkpoints)",
+      "source_url": "https://arxiv.org/abs/2609.14743",
+      "note": "Published checkpoint trained on 240k hours of speech, evaluated under this suite's protocol (prompt removed by edit-distance alignment; genPPL scored by the reference text LM). Llama-Mimi produces roughly 80% non-empty continuations and the joint non-empty subset covers about 60%, so these are not computed over all 7,500 prompts."
+    },
+    {
+      "benchmark": "generation-modality-gap-suite",
+      "model": "llama-mimi-8b",
+      "metric": "genPPL (LibriSpeech prompts)",
+      "value": 48.7,
+      "source": "Quantifying the Generation Modality Gap Table I (detailed metrics, published Llama-Mimi checkpoints)",
+      "source_url": "https://arxiv.org/abs/2609.14743",
+      "note": "Published checkpoint trained on 240k hours of speech, evaluated under this suite's protocol (prompt removed by edit-distance alignment; genPPL scored by the reference text LM). Llama-Mimi produces roughly 80% non-empty continuations and the joint non-empty subset covers about 60%, so these are not computed over all 7,500 prompts."
+    },
+    {
+      "benchmark": "generation-modality-gap-suite",
+      "model": "llama-mimi-8b",
+      "metric": "pJSD (LibriSpeech prompts)",
+      "value": 0.47,
+      "source": "Quantifying the Generation Modality Gap Table I (detailed metrics, published Llama-Mimi checkpoints)",
+      "source_url": "https://arxiv.org/abs/2609.14743",
+      "note": "Published checkpoint trained on 240k hours of speech, evaluated under this suite's protocol (prompt removed by edit-distance alignment; genPPL scored by the reference text LM). Llama-Mimi produces roughly 80% non-empty continuations and the joint non-empty subset covers about 60%, so these are not computed over all 7,500 prompts."
+    },
+    {
+      "benchmark": "generation-modality-gap-suite",
+      "model": "llama-mimi-8b",
+      "metric": "Speaker similarity (LibriSpeech prompts)",
+      "value": 0.45,
+      "source": "Quantifying the Generation Modality Gap Table I (detailed metrics, published Llama-Mimi checkpoints)",
+      "source_url": "https://arxiv.org/abs/2609.14743",
+      "note": "Published checkpoint trained on 240k hours of speech, evaluated under this suite's protocol (prompt removed by edit-distance alignment; genPPL scored by the reference text LM). Llama-Mimi produces roughly 80% non-empty continuations and the joint non-empty subset covers about 60%, so these are not computed over all 7,500 prompts."
+    },
+    {
+      "benchmark": "generation-modality-gap-suite",
+      "model": "llama-mimi-8b",
+      "metric": "UTMOS (LibriSpeech prompts)",
+      "value": 2.92,
+      "source": "Quantifying the Generation Modality Gap Table I (detailed metrics, published Llama-Mimi checkpoints)",
+      "source_url": "https://arxiv.org/abs/2609.14743",
+      "note": "Published checkpoint trained on 240k hours of speech, evaluated under this suite's protocol (prompt removed by edit-distance alignment; genPPL scored by the reference text LM). Llama-Mimi produces roughly 80% non-empty continuations and the joint non-empty subset covers about 60%, so these are not computed over all 7,500 prompts."
+    },
+    {
+      "benchmark": "ost-diagbench",
+      "model": "qwen2-5-omni",
+      "metric": "d-prime (source presence)",
+      "value": 0.59,
+      "source": "Omni-Streaming Thinking Table 2 (OST-DiagBench, open omni-modal offline rows)",
+      "source_url": "https://arxiv.org/abs/2609.15128",
+      "note": "Offline (non-streaming) condition, 510 matched Core groups and 510 reviewed Clash examples. d-prime = z(Clean source recall) - z(Mute visual hallucination rate); a value of 0 is audio-blind behaviour. Qwen2.5-Omni-7B. The paper's 3B row scores d-prime 0.71, Clean-SR 89.41, Mute-VHR 70.59, Swap-AFR 50.98, Mix-JR 19.02, Clash-Acc 2.75."
+    },
+    {
+      "benchmark": "ost-diagbench",
+      "model": "qwen2-5-omni",
+      "metric": "Clean source recall (%)",
+      "value": 81.57,
+      "source": "Omni-Streaming Thinking Table 2 (OST-DiagBench, open omni-modal offline rows)",
+      "source_url": "https://arxiv.org/abs/2609.15128",
+      "note": "Offline (non-streaming) condition, 510 matched Core groups and 510 reviewed Clash examples. d-prime = z(Clean source recall) - z(Mute visual hallucination rate); a value of 0 is audio-blind behaviour. Qwen2.5-Omni-7B. The paper's 3B row scores d-prime 0.71, Clean-SR 89.41, Mute-VHR 70.59, Swap-AFR 50.98, Mix-JR 19.02, Clash-Acc 2.75."
+    },
+    {
+      "benchmark": "ost-diagbench",
+      "model": "qwen2-5-omni",
+      "metric": "Mute visual hallucination rate (%)",
+      "value": 61.96,
+      "source": "Omni-Streaming Thinking Table 2 (OST-DiagBench, open omni-modal offline rows)",
+      "source_url": "https://arxiv.org/abs/2609.15128",
+      "note": "Offline (non-streaming) condition, 510 matched Core groups and 510 reviewed Clash examples. d-prime = z(Clean source recall) - z(Mute visual hallucination rate); a value of 0 is audio-blind behaviour. Qwen2.5-Omni-7B. The paper's 3B row scores d-prime 0.71, Clean-SR 89.41, Mute-VHR 70.59, Swap-AFR 50.98, Mix-JR 19.02, Clash-Acc 2.75."
+    },
+    {
+      "benchmark": "ost-diagbench",
+      "model": "qwen2-5-omni",
+      "metric": "Swap faithful attribution rate (%)",
+      "value": 60.0,
+      "source": "Omni-Streaming Thinking Table 2 (OST-DiagBench, open omni-modal offline rows)",
+      "source_url": "https://arxiv.org/abs/2609.15128",
+      "note": "Offline (non-streaming) condition, 510 matched Core groups and 510 reviewed Clash examples. d-prime = z(Clean source recall) - z(Mute visual hallucination rate); a value of 0 is audio-blind behaviour. Qwen2.5-Omni-7B. The paper's 3B row scores d-prime 0.71, Clean-SR 89.41, Mute-VHR 70.59, Swap-AFR 50.98, Mix-JR 19.02, Clash-Acc 2.75."
+    },
+    {
+      "benchmark": "ost-diagbench",
+      "model": "qwen2-5-omni",
+      "metric": "Mix joint recall (%)",
+      "value": 19.41,
+      "source": "Omni-Streaming Thinking Table 2 (OST-DiagBench, open omni-modal offline rows)",
+      "source_url": "https://arxiv.org/abs/2609.15128",
+      "note": "Offline (non-streaming) condition, 510 matched Core groups and 510 reviewed Clash examples. d-prime = z(Clean source recall) - z(Mute visual hallucination rate); a value of 0 is audio-blind behaviour. Qwen2.5-Omni-7B. The paper's 3B row scores d-prime 0.71, Clean-SR 89.41, Mute-VHR 70.59, Swap-AFR 50.98, Mix-JR 19.02, Clash-Acc 2.75."
+    },
+    {
+      "benchmark": "ost-diagbench",
+      "model": "qwen2-5-omni",
+      "metric": "Clash accuracy (%)",
+      "value": 2.75,
+      "source": "Omni-Streaming Thinking Table 2 (OST-DiagBench, open omni-modal offline rows)",
+      "source_url": "https://arxiv.org/abs/2609.15128",
+      "note": "Offline (non-streaming) condition, 510 matched Core groups and 510 reviewed Clash examples. d-prime = z(Clean source recall) - z(Mute visual hallucination rate); a value of 0 is audio-blind behaviour. Qwen2.5-Omni-7B. The paper's 3B row scores d-prime 0.71, Clean-SR 89.41, Mute-VHR 70.59, Swap-AFR 50.98, Mix-JR 19.02, Clash-Acc 2.75."
+    },
+    {
+      "benchmark": "ost-diagbench",
+      "model": "minicpm-o",
+      "metric": "d-prime (source presence)",
+      "value": 0.88,
+      "source": "Omni-Streaming Thinking Table 2 (OST-DiagBench, open omni-modal offline rows)",
+      "source_url": "https://arxiv.org/abs/2609.15128",
+      "note": "Offline (non-streaming) condition, 510 matched Core groups and 510 reviewed Clash examples. d-prime = z(Clean source recall) - z(Mute visual hallucination rate); a value of 0 is audio-blind behaviour. MiniCPM-o 2.6."
+    },
+    {
+      "benchmark": "ost-diagbench",
+      "model": "minicpm-o",
+      "metric": "Clean source recall (%)",
+      "value": 68.24,
+      "source": "Omni-Streaming Thinking Table 2 (OST-DiagBench, open omni-modal offline rows)",
+      "source_url": "https://arxiv.org/abs/2609.15128",
+      "note": "Offline (non-streaming) condition, 510 matched Core groups and 510 reviewed Clash examples. d-prime = z(Clean source recall) - z(Mute visual hallucination rate); a value of 0 is audio-blind behaviour. MiniCPM-o 2.6."
+    },
+    {
+      "benchmark": "ost-diagbench",
+      "model": "minicpm-o",
+      "metric": "Mute visual hallucination rate (%)",
+      "value": 34.31,
+      "source": "Omni-Streaming Thinking Table 2 (OST-DiagBench, open omni-modal offline rows)",
+      "source_url": "https://arxiv.org/abs/2609.15128",
+      "note": "Offline (non-streaming) condition, 510 matched Core groups and 510 reviewed Clash examples. d-prime = z(Clean source recall) - z(Mute visual hallucination rate); a value of 0 is audio-blind behaviour. MiniCPM-o 2.6."
+    },
+    {
+      "benchmark": "ost-diagbench",
+      "model": "minicpm-o",
+      "metric": "Swap faithful attribution rate (%)",
+      "value": 17.25,
+      "source": "Omni-Streaming Thinking Table 2 (OST-DiagBench, open omni-modal offline rows)",
+      "source_url": "https://arxiv.org/abs/2609.15128",
+      "note": "Offline (non-streaming) condition, 510 matched Core groups and 510 reviewed Clash examples. d-prime = z(Clean source recall) - z(Mute visual hallucination rate); a value of 0 is audio-blind behaviour. MiniCPM-o 2.6."
+    },
+    {
+      "benchmark": "ost-diagbench",
+      "model": "minicpm-o",
+      "metric": "Mix joint recall (%)",
+      "value": 0.78,
+      "source": "Omni-Streaming Thinking Table 2 (OST-DiagBench, open omni-modal offline rows)",
+      "source_url": "https://arxiv.org/abs/2609.15128",
+      "note": "Offline (non-streaming) condition, 510 matched Core groups and 510 reviewed Clash examples. d-prime = z(Clean source recall) - z(Mute visual hallucination rate); a value of 0 is audio-blind behaviour. MiniCPM-o 2.6."
+    },
+    {
+      "benchmark": "ost-diagbench",
+      "model": "minicpm-o",
+      "metric": "Clash accuracy (%)",
+      "value": 2.75,
+      "source": "Omni-Streaming Thinking Table 2 (OST-DiagBench, open omni-modal offline rows)",
+      "source_url": "https://arxiv.org/abs/2609.15128",
+      "note": "Offline (non-streaming) condition, 510 matched Core groups and 510 reviewed Clash examples. d-prime = z(Clean source recall) - z(Mute visual hallucination rate); a value of 0 is audio-blind behaviour. MiniCPM-o 2.6."
+    },
+    {
+      "benchmark": "ost-diagbench",
+      "model": "baichuan-omni-1-5",
+      "metric": "d-prime (source presence)",
+      "value": 1.27,
+      "source": "Omni-Streaming Thinking Table 2 (OST-DiagBench, open omni-modal offline rows)",
+      "source_url": "https://arxiv.org/abs/2609.15128",
+      "note": "Offline (non-streaming) condition, 510 matched Core groups and 510 reviewed Clash examples. d-prime = z(Clean source recall) - z(Mute visual hallucination rate); a value of 0 is audio-blind behaviour."
+    },
+    {
+      "benchmark": "ost-diagbench",
+      "model": "baichuan-omni-1-5",
+      "metric": "Clean source recall (%)",
+      "value": 62.94,
+      "source": "Omni-Streaming Thinking Table 2 (OST-DiagBench, open omni-modal offline rows)",
+      "source_url": "https://arxiv.org/abs/2609.15128",
+      "note": "Offline (non-streaming) condition, 510 matched Core groups and 510 reviewed Clash examples. d-prime = z(Clean source recall) - z(Mute visual hallucination rate); a value of 0 is audio-blind behaviour."
+    },
+    {
+      "benchmark": "ost-diagbench",
+      "model": "baichuan-omni-1-5",
+      "metric": "Mute visual hallucination rate (%)",
+      "value": 17.25,
+      "source": "Omni-Streaming Thinking Table 2 (OST-DiagBench, open omni-modal offline rows)",
+      "source_url": "https://arxiv.org/abs/2609.15128",
+      "note": "Offline (non-streaming) condition, 510 matched Core groups and 510 reviewed Clash examples. d-prime = z(Clean source recall) - z(Mute visual hallucination rate); a value of 0 is audio-blind behaviour."
+    },
+    {
+      "benchmark": "ost-diagbench",
+      "model": "baichuan-omni-1-5",
+      "metric": "Swap faithful attribution rate (%)",
+      "value": 34.9,
+      "source": "Omni-Streaming Thinking Table 2 (OST-DiagBench, open omni-modal offline rows)",
+      "source_url": "https://arxiv.org/abs/2609.15128",
+      "note": "Offline (non-streaming) condition, 510 matched Core groups and 510 reviewed Clash examples. d-prime = z(Clean source recall) - z(Mute visual hallucination rate); a value of 0 is audio-blind behaviour."
+    },
+    {
+      "benchmark": "ost-diagbench",
+      "model": "baichuan-omni-1-5",
+      "metric": "Mix joint recall (%)",
+      "value": 2.35,
+      "source": "Omni-Streaming Thinking Table 2 (OST-DiagBench, open omni-modal offline rows)",
+      "source_url": "https://arxiv.org/abs/2609.15128",
+      "note": "Offline (non-streaming) condition, 510 matched Core groups and 510 reviewed Clash examples. d-prime = z(Clean source recall) - z(Mute visual hallucination rate); a value of 0 is audio-blind behaviour."
+    },
+    {
+      "benchmark": "ost-diagbench",
+      "model": "baichuan-omni-1-5",
+      "metric": "Clash accuracy (%)",
+      "value": 2.75,
+      "source": "Omni-Streaming Thinking Table 2 (OST-DiagBench, open omni-modal offline rows)",
+      "source_url": "https://arxiv.org/abs/2609.15128",
+      "note": "Offline (non-streaming) condition, 510 matched Core groups and 510 reviewed Clash examples. d-prime = z(Clean source recall) - z(Mute visual hallucination rate); a value of 0 is audio-blind behaviour."
+    },
+    {
+      "benchmark": "ost-diagbench",
+      "model": "qwen3-omni",
+      "metric": "d-prime (source presence)",
+      "value": 0.81,
+      "source": "Omni-Streaming Thinking Table 2 (OST-DiagBench, open omni-modal offline rows)",
+      "source_url": "https://arxiv.org/abs/2609.15128",
+      "note": "Offline (non-streaming) condition, 510 matched Core groups and 510 reviewed Clash examples. d-prime = z(Clean source recall) - z(Mute visual hallucination rate); a value of 0 is audio-blind behaviour. Qwen3-Omni-30B-A3B. Under naive streaming thinking the same model reaches d-prime 0.53, Clean-SR 92.55, Mute-VHR 81.96, Swap-AFR 18.04, Mix-JR 1.57, Clash-Acc 0.00."
+    },
+    {
+      "benchmark": "ost-diagbench",
+      "model": "qwen3-omni",
+      "metric": "Clean source recall (%)",
+      "value": 92.55,
+      "source": "Omni-Streaming Thinking Table 2 (OST-DiagBench, open omni-modal offline rows)",
+      "source_url": "https://arxiv.org/abs/2609.15128",
+      "note": "Offline (non-streaming) condition, 510 matched Core groups and 510 reviewed Clash examples. d-prime = z(Clean source recall) - z(Mute visual hallucination rate); a value of 0 is audio-blind behaviour. Qwen3-Omni-30B-A3B. Under naive streaming thinking the same model reaches d-prime 0.53, Clean-SR 92.55, Mute-VHR 81.96, Swap-AFR 18.04, Mix-JR 1.57, Clash-Acc 0.00."
+    },
+    {
+      "benchmark": "ost-diagbench",
+      "model": "qwen3-omni",
+      "metric": "Mute visual hallucination rate (%)",
+      "value": 73.73,
+      "source": "Omni-Streaming Thinking Table 2 (OST-DiagBench, open omni-modal offline rows)",
+      "source_url": "https://arxiv.org/abs/2609.15128",
+      "note": "Offline (non-streaming) condition, 510 matched Core groups and 510 reviewed Clash examples. d-prime = z(Clean source recall) - z(Mute visual hallucination rate); a value of 0 is audio-blind behaviour. Qwen3-Omni-30B-A3B. Under naive streaming thinking the same model reaches d-prime 0.53, Clean-SR 92.55, Mute-VHR 81.96, Swap-AFR 18.04, Mix-JR 1.57, Clash-Acc 0.00."
+    },
+    {
+      "benchmark": "ost-diagbench",
+      "model": "qwen3-omni",
+      "metric": "Swap faithful attribution rate (%)",
+      "value": 35.29,
+      "source": "Omni-Streaming Thinking Table 2 (OST-DiagBench, open omni-modal offline rows)",
+      "source_url": "https://arxiv.org/abs/2609.15128",
+      "note": "Offline (non-streaming) condition, 510 matched Core groups and 510 reviewed Clash examples. d-prime = z(Clean source recall) - z(Mute visual hallucination rate); a value of 0 is audio-blind behaviour. Qwen3-Omni-30B-A3B. Under naive streaming thinking the same model reaches d-prime 0.53, Clean-SR 92.55, Mute-VHR 81.96, Swap-AFR 18.04, Mix-JR 1.57, Clash-Acc 0.00."
+    },
+    {
+      "benchmark": "ost-diagbench",
+      "model": "qwen3-omni",
+      "metric": "Mix joint recall (%)",
+      "value": 4.51,
+      "source": "Omni-Streaming Thinking Table 2 (OST-DiagBench, open omni-modal offline rows)",
+      "source_url": "https://arxiv.org/abs/2609.15128",
+      "note": "Offline (non-streaming) condition, 510 matched Core groups and 510 reviewed Clash examples. d-prime = z(Clean source recall) - z(Mute visual hallucination rate); a value of 0 is audio-blind behaviour. Qwen3-Omni-30B-A3B. Under naive streaming thinking the same model reaches d-prime 0.53, Clean-SR 92.55, Mute-VHR 81.96, Swap-AFR 18.04, Mix-JR 1.57, Clash-Acc 0.00."
+    },
+    {
+      "benchmark": "ost-diagbench",
+      "model": "qwen3-omni",
+      "metric": "Clash accuracy (%)",
+      "value": 1.18,
+      "source": "Omni-Streaming Thinking Table 2 (OST-DiagBench, open omni-modal offline rows)",
+      "source_url": "https://arxiv.org/abs/2609.15128",
+      "note": "Offline (non-streaming) condition, 510 matched Core groups and 510 reviewed Clash examples. d-prime = z(Clean source recall) - z(Mute visual hallucination rate); a value of 0 is audio-blind behaviour. Qwen3-Omni-30B-A3B. Under naive streaming thinking the same model reaches d-prime 0.53, Clean-SR 92.55, Mute-VHR 81.96, Swap-AFR 18.04, Mix-JR 1.57, Clash-Acc 0.00."
     }
   ]
 }

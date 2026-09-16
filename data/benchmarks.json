@@ -9998,6 +9998,225 @@
       "io": "code-switched speech in, verbatim transcript out",
       "size": "2,000-utterance cap2000 manifest drawn from the AfriCodeSwitch validation partition (8,181 rows with audio, 9.54 hours, 100 speakers, 13 domains, mean 2.60 switches per utterance); a cap1000 manifest is used for the prompt-robustness study",
       "note": "Catalogued for the audio-LM half of the comparison: the corpus is pre-existing (AfriCodeSwitch) and six of the eleven systems are dedicated ASR models, which are out of scope here and are not recorded as model results. Granite-Speech-4.1-2B is recorded because it is a spoken LLM in this atlas, although the paper files it under ASR. Qwen3-Omni and a gated Cohere transcription model were intended but could not be run. Values above 100% indicate over-generation, not ordinary substitution, so those rows are not comparable to the faithful systems as accuracy figures."
+    },
+    {
+      "id": "mp-bench",
+      "name": "MP-Bench",
+      "aka": [
+        "Multiparty Bench"
+      ],
+      "full_title": "MP-Bench: Evaluating Voice Agents as a Multiparty Conversation Participant",
+      "arxiv_id": "2609.13076",
+      "arxiv_date": "2026-09",
+      "arxiv_date_full": "2026-09-11",
+      "url": "https://arxiv.org/abs/2609.13076",
+      "summary": "927 tasks that place a voice agent as the fourth participant in a four-way spoken conversation with three simulated humans, across two scenarios. In Discussion, three speakers argue over one question and then explicitly invite the agent to judge who is right; in Turn-based Game, role assignments (leader/follower on two teams) make the next speaker deterministic, so the agent must infer from context whether it is its turn at all. Tasks split into understanding tasks (a spoken question about the preceding conversation, scored against a reference answer, with a speaker-name subset carrying a 33.3% random baseline) and behavioral tasks (does the agent take the turn or stay silent, and is what it says appropriate - logical consistency in Discussion, game-rule compliance in the game, with a 50% random baseline for turn-taking). Audio is streamed following the Full-Duplex-Bench protocol, agent speech is transcribed with NeMo Parakeet streaming ASR, onsets are read off word-level timestamps instead of a VAD, and content is scored by GPT-5 as judge. Two text-LLM references bracket the audio task: the same LLM given a ground-truth transcript without speaker labels, and given transcript plus oracle speaker labels. The separation between them is the paper's main lever - turn-taking in the game sits at chance from transcripts alone (49.22) but near-ceiling with oracle speaker labels (98.44), which places the deficit in recovering speaker attribution from audio rather than in reasoning about turns. Behaviour and understanding come apart: models score far higher on behavioural tasks than on understanding, because strong linguistic priors let a model produce a plausible continuation without resolving who said what.",
+      "categories": [
+        "interactivity",
+        "dialogue",
+        "paralinguistics"
+      ],
+      "tasks": [
+        "multiparty conversation understanding (speaker attribution, who-said-what, cross-speaker reference)",
+        "explicit turn-taking when directly addressed (Discussion)",
+        "implicit and negative turn-taking under game roles, including staying silent (Turn-based Game)",
+        "response appropriateness (debate consistency; game-rule compliance)",
+        "response latency"
+      ],
+      "languages": [
+        "English"
+      ],
+      "metrics": [
+        "Overall accuracy",
+        "Speaker name accuracy",
+        "Turn-taking accuracy",
+        "Appropriateness accuracy",
+        "Response latency (s)"
+      ],
+      "io": "streamed four-party conversational audio in, spoken response (or silence) out",
+      "size": "927 tasks over two scenarios; 128 Discussion behavioural and 512 Turn-based behavioural trials in the reported grid",
+      "note": "Synthetic audio with simulated human participants, not recorded multiparty conversation; the paper lists this as a limitation. Results here cover the voice-agent rows only: the two Gemini-3.1-Pro text-LLM reference settings (transcript-only and oracle-speaker-label) are cascaded oracles used to bracket the task, not spoken LLMs, and the DuplexCascade row is not recorded because the paper's HTML does not define what that cascade is."
+    },
+    {
+      "id": "tau-elicitation",
+      "name": "tau-Elicitation",
+      "aka": [
+        "τ-Elicitation",
+        "tau-Elicitation voice benchmark"
+      ],
+      "full_title": "tau-Elicitation: Benchmarking multi-turn entity extraction in voice agents",
+      "arxiv_id": "2609.13602",
+      "arxiv_date": "2026-09",
+      "arxiv_date_full": "2026-09-11",
+      "url": "https://arxiv.org/abs/2609.13602",
+      "summary": "200 spoken tasks in which an agent phones a caller back to collect one exact value - a name, address, identifier, date, time, medication, e-mail, phone number, property or coined word - and must store it character-for-character. Ten value banks of 80 values each are grounded in real registries (SSA/Census names, ISO 3779 VINs and mod-97 check-digit identifiers, RxNorm medications, regulator-reserved phone ranges, DNS-nonresolving e-mail domains), split easy/hard, and spoken by five synthesised caller voices under three environments (regular, noise-heavy, speech-heavy). Two prompt arms are run: agent-directed, where the agent chooses its own strategy, and scaffolded, where the prompt prescribes spelling, read-back, correction and confirmation. Scoring is exact match, reported both as Pass@1 and as a robust Pass^3 requiring success in all three environments for the same task. A matched text agent passes every task, so the gap is attributable to the spoken channel. Three findings: robust exact success is low (14-41% agent-directed), the scaffold buys 14-31 points of Pass^3 at 21-28 seconds per call, and agents do raise verification effort for hard and unfamiliar entities but not for their own weakest caller voice - and only 24-37% of errors they did verify end up corrected, so the bottleneck sits after the risk is noticed. Environment diversity, not rerunning, is what exposes the instability: three repeats of the same condition agreed far more often than the same count across three different conditions.",
+      "categories": [
+        "voice-agent",
+        "robustness",
+        "dialogue"
+      ],
+      "tasks": [
+        "multi-turn spoken elicitation of one exact entity value",
+        "self-directed verification strategy selection (read-back, spelling, confirmation)",
+        "error recognition and conversational repair",
+        "multi-field form completion with and without per-field validation"
+      ],
+      "languages": [
+        "English"
+      ],
+      "metrics": [
+        "Pass@1 (exact match)",
+        "Pass^3 (robust exact match across three environments)",
+        "verification effort (read-backs plus spelling requests)",
+        "repair success rate",
+        "call duration (s)"
+      ],
+      "io": "synthesised caller speech in, spoken agent turns out; the stored value is scored as text",
+      "size": "200 tasks over 10 entity types (80 values per bank, 20 tasks per bank); 600 agent-directed plus 600 scaffolded calls per configuration, 4,800 calls in total",
+      "note": "The caller is itself an LLM (gpt-5.5) with ElevenLabs speech, so caller-side realism is synthetic. Per-system Pass figures are reported in a figure; the cells recorded here are the values stated numerically in the text."
+    },
+    {
+      "id": "harp",
+      "name": "HARP",
+      "aka": [
+        "Hybrid Audio Retrieval Pipeline"
+      ],
+      "full_title": "HARP: Agentic Hybrid Retrieval and Analysis for Long-Form Audio",
+      "arxiv_id": "2609.14116",
+      "arxiv_date": "2026-09",
+      "arxiv_date_full": "2026-09-12",
+      "url": "https://arxiv.org/abs/2609.14116",
+      "summary": "1,138 queries over recordings far longer than an audio LM's context - 45-minute podcast conversations, 5-10 minute doctor-patient consultations, and 75-minute medleys of 20 concatenated songs - where the answer depends on evidence that has to be located first. Three domains probe different parts of the pipeline. Emotion understanding (426 queries over MSP-Conversation) varies how much evidence must be aggregated: a single event (State), a span (Change), two speakers compared within a span (Comparison), and two retrieval settings where the target event is either well specified by a speaker cue (Locate) or has to be picked out among several similar candidates (Locate+). Clinical symptom analysis (212 queries over MedMosaic) separates symptoms the patient reports in words from symptoms audible as coughing or hoarseness. Song aesthetic evaluation (500 queries over SongEval) keeps the judgement fixed and varies only the retrieval cue - timestamp, ordinal position, or an audio snippet. Every response is scored twice, for answer correctness and for whether the stated rationale is factual against the annotations and faithful to the retrieved evidence; three LLM judges are compared and the middle one is reported. The rationale score is the point: answer accuracy alone overstates the system, and the two diverge most exactly where retrieval has to do real work. Humans find the same tasks moderately difficult and still beat the agent by a wide margin.",
+      "categories": [
+        "long-form",
+        "reasoning",
+        "paralinguistics"
+      ],
+      "tasks": [
+        "emotion state, change and cross-speaker comparison over long conversations",
+        "emotion-event retrieval by speaker and by acoustic similarity",
+        "clinical respiratory symptom detection from reported speech and from acoustic events",
+        "song aesthetic comparison under timestamp, position and audio-snippet retrieval cues",
+        "rationale grounding in retrieved evidence"
+      ],
+      "languages": [
+        "English"
+      ],
+      "metrics": [
+        "Answer accuracy (%)",
+        "Rationale accuracy (%)"
+      ],
+      "io": "long-form audio plus a textual question and optional audio cue in, answer with supporting rationale out",
+      "size": "1,138 queries (426 emotion understanding, 212 clinical, 500 song aesthetic) over recordings of roughly 5-75 minutes",
+      "note": "A single audio-LM family is evaluated (Qwen3-Omni as the agent), which the paper lists as a limitation; the comparison in the tables is between retrieval and evidence configurations rather than between models. Source corpora are pre-existing (MSP-Podcast/MSP-Conversation, MedMosaic, SongEval); MedMosaic recordings are synthetic."
+    },
+    {
+      "id": "duplex-cue",
+      "name": "Duplex Cue",
+      "aka": [
+        "Continue, Adapt, or Yield"
+      ],
+      "full_title": "Continue, Adapt, or Yield: In-Turn Adaptation to Overlapping Speech in Full-Duplex Agents",
+      "arxiv_id": "2609.13117",
+      "arxiv_date": "2026-09",
+      "arxiv_date_full": "2026-09-11",
+      "url": "https://arxiv.org/abs/2609.13117",
+      "summary": "An evaluation of what a full-duplex agent does when the listener speaks over it, built on the observation that the usual keep-speaking-or-stop binary cannot express the response humans use most: carrying on while taking up what the listener just said. Listener intent is annotated independently of speaker behaviour - backchannel, collaboration, or interruption on one side; continued unchanged, adapted within the turn, or yielded on the other - so the full 3x3 matrix is reported rather than one correct answer per cue type. An inventory of 2,591 cues was drawn from 20.32 hours of unscripted English conversation; 300 human-confirmed cues were selected, and PersonaPlex continuations were generated by replaying the listener's audio from a cutover immediately before each contribution, leaving 208 pairs where the ongoing speaker is active and both conditions are scorable. The reference distribution is the finding that matters most: on interruptions, recorded humans yielded the floor on only 39.3% of cues and adapted within the ongoing turn on 45.9% - so under the prompt-yielding criterion that overlap benchmarks score against, most real human responses here would be marked failures. Against that reference the model gap is specific: on the 66 collaborative pairs humans adapted 68.2% of the time and PersonaPlex 34.8%, splitting the remainder between continuing unchanged (42.4%) and handing over the floor (22.7%) - two opposite behaviours that an aggregate non-yield rate would merge.",
+      "categories": [
+        "interactivity",
+        "dialogue"
+      ],
+      "tasks": [
+        "classifying listener cue intent (backchannel / collaboration / interruption)",
+        "in-turn adaptation to an overlapping listener contribution",
+        "floor yielding versus unchanged continuation",
+        "paired comparison against the recorded human response at the same cutover"
+      ],
+      "languages": [
+        "English"
+      ],
+      "metrics": [
+        "Response distribution over continued / adapted / yielded, per cue type"
+      ],
+      "io": "two-channel conversation prefix plus replayed listener audio in, generated continuation of the ongoing speaker out",
+      "size": "2,591 annotated cues from 20.32 hours of unscripted conversation; 300 human-confirmed cues selected, 208 active and scorable pairs scored (81 backchannel, 66 collaboration, 61 interruption)",
+      "note": "A single-model case study (PersonaPlex) with a ten-second generation window, which may truncate handoffs that resolve later and understate yielding in both conditions. The interruption class is defined by the listener's evident attempt to take the floor whether or not it succeeded, so a class restricted to completed floor transfers would show a higher yield rate by construction."
+    },
+    {
+      "id": "generation-modality-gap-suite",
+      "name": "Generation modality-gap evaluation suite",
+      "aka": [
+        "unified generation-based evaluation suite for speech, text and speech-text LMs"
+      ],
+      "full_title": "Quantifying the Generation Modality Gap in Speech-Text Language Models",
+      "arxiv_id": "2609.14743",
+      "arxiv_date": "2026-09",
+      "arxiv_date_full": "2026-09-13",
+      "url": "https://arxiv.org/abs/2609.14743",
+      "summary": "A generation-based evaluation suite designed so that speech-only, text-only and speech-text language models can be scored on the same axis, which conventional per-modality metrics cannot do. Models generate continuations from a spoken and/or written prompt; speech output is transcribed, the prompt portion is removed by character-level edit-distance alignment rather than by trusting the ASR boundary, and only the continuation is scored. Four quantities are reported side by side: generation perplexity of the transcribed continuation under a reference text LM (semantic coherence), Jensen-Shannon divergence of phone 5-gram statistics against the reference continuations (local phonetic structure), speaker similarity between prompt and continuation plus predicted UTMOS (acoustic quality and speaker preservation), and emotion-label KL divergence plus Frechet speech distance from emotion2vec embeddings. The suite is applied to a matched family trained on identical data distributions, which is what makes the comparison interpretable, and the separation it produces is the result: an internal text stream closes most of the semantic gap while barely moving phone n-gram statistics, and moves speaker similarity and UTMOS in the opposite direction - so text conditioning buys coherence at a cost in acoustic fidelity rather than improving generation uniformly. Robustness of the semantic metric is checked across five reference LMs (Spearman rho above 0.98 for every pair).",
+      "categories": [
+        "generation-quality",
+        "paralinguistics"
+      ],
+      "tasks": [
+        "prompted spoken continuation",
+        "unprompted (context-free) generation",
+        "cross-modality comparison of text, speech and speech-text generation under matched training data"
+      ],
+      "languages": [
+        "English"
+      ],
+      "metrics": [
+        "genPPL (generation perplexity under a reference LM)",
+        "pJSD (phone 5-gram Jensen-Shannon divergence)",
+        "speaker similarity (SpkSim)",
+        "UTMOS",
+        "emotion-label KL divergence",
+        "Frechet speech distance (FSD)"
+      ],
+      "io": "spoken and/or written prompt in, generated continuation out (speech transcribed for semantic scoring)",
+      "size": "7,500 prompts per evaluation set over three prompt domains (C4, Emilia, LibriSpeech), of which roughly 4,700 yield non-empty continuations",
+      "note": "Most of the systems scored are the authors' own matched-data research LMs trained for the study and are not catalogued here as models. The recorded cells are the two publicly released Llama-Mimi checkpoints; the paper's matched reproduction of Llama-Mimi is a reimplementation and is not recorded."
+    },
+    {
+      "id": "ost-diagbench",
+      "name": "OST-DiagBench",
+      "aka": [
+        "Omni-Streaming Thinking diagnostic benchmark"
+      ],
+      "full_title": "Omni-Streaming Thinking",
+      "arxiv_id": "2609.15128",
+      "arxiv_date": "2026-09",
+      "arxiv_date_full": "2026-09-14",
+      "url": "https://arxiv.org/abs/2609.15128",
+      "summary": "A diagnostic benchmark that holds the video fixed and edits only the audio, so that any change in the answer has to come from the audio track. Clips are chosen to have an audible event with a visible source, then four conditions are derived: Clean keeps the original track, Mute replaces it with low-level background, Swap adds an interfering sound to that background, and Mix adds the same interference on top of the original. Together these separate recognition when the modalities agree from reports of a sound that the picture suggests but the waveform no longer contains, and from recall of a replacement or a coexisting sound. A fifth condition, Clash, edits one spoken fact while leaving its old value visible in the on-screen subtitle, and asks about the edited fact. Matched audio-only controls run the same waveform without video. The design turns a familiar number inside out: an omni model can reach 92.55 source recall on Clean and still report the removed sound 73.73% of the time on Mute, so agreement between modalities hides the bias instead of testing it - which is why the headline is a d-prime combining the two rather than either alone. The audio-only controls sharpen it further: baselines that identify the edited spoken fact 80-96% of the time from the waveform alone score 0-5% once the stale subtitle is on screen, so the acoustic information is present and gets overridden rather than missed.",
+      "categories": [
+        "hallucination",
+        "audio-grounding",
+        "auditory-perception"
+      ],
+      "tasks": [
+        "sound-source recognition when audio and video agree (Clean)",
+        "refusing a visually suggested but absent sound (Mute)",
+        "attributing a substituted sound (Swap)",
+        "recalling coexisting sounds (Mix)",
+        "answering an edited spoken fact against a contradicting subtitle (Clash)",
+        "matched audio-only controls"
+      ],
+      "languages": [
+        "English"
+      ],
+      "metrics": [
+        "d-prime = z(Clean source recall) - z(Mute visual hallucination rate)",
+        "Clean source recall (%)",
+        "Mute visual hallucination rate (%)",
+        "Swap faithful attribution rate (%)",
+        "Mix joint recall (%)",
+        "Clash accuracy (%)"
+      ],
+      "io": "streaming video with synchronised (edited) audio plus a question in, text answer out",
+      "size": "510 matched Core groups and 510 reviewed Clash examples; source clips and interference recordings held out from training",
+      "note": "Introduced inside a paper whose main contribution is a method (Omni-Streaming Thinking); catalogued for the benchmark. The OST row is the paper's own system built on a frozen Qwen3-Omni backbone with lightweight adaptation and is not recorded as a model result. The audio-blind Qwen2.5-VL / Qwen3-VL rows are vision-only references, not spoken LLMs, and are likewise not recorded. Qwen2.5-Omni is recorded at 7B; the paper's 3B row is given in the cell notes."
     }
   ]
 }

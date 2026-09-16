@@ -22,7 +22,7 @@
       "primary_category": "eess.AS",
       "url": "https://arxiv.org/abs/2609.13076",
       "score": 42,
-      "status": "new — under review"
+      "status": "included — MP-Bench"
     },
     {
       "id": "2609.13814",
@@ -42,7 +42,7 @@
       "primary_category": "cs.CV",
       "url": "https://arxiv.org/abs/2609.13814",
       "score": 33,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: proposes a system, not a benchmark (Realtime-Venus is a pair of 9B full-duplex interaction models; the paper reports scores on existing benchmarks rather than introducing one)"
     },
     {
       "id": "2609.12623",
@@ -62,7 +62,7 @@
       "primary_category": "cs.AI",
       "url": "https://arxiv.org/abs/2609.12623",
       "score": 27,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: proposes a model, not a benchmark (SteerDuplex is a Moshi-based full-duplex model fine-tuned for steerability; its steerability taxonomy is a framing device, not a released evaluation set)"
     },
     {
       "id": "2609.13045",
@@ -82,7 +82,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2609.13045",
       "score": 27,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: proposes a speech-to-speech translation model (Kraken), not a benchmark, and the system under test is a translation pipeline rather than a general-purpose spoken LLM"
     },
     {
       "id": "2609.13445",
@@ -95,7 +95,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2609.13445",
       "score": 24,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: no benchmark is proposed — the paper diagnoses why Moshi and PersonaPlex start speaking during user silence and adds an inference-time suppression method; the 40-continuation probe is the paper's own measurement setup, not a released evaluation set"
     },
     {
       "id": "2609.13602",
@@ -109,7 +109,7 @@
       "primary_category": "cs.AI",
       "url": "https://arxiv.org/abs/2609.13602",
       "score": 24,
-      "status": "new — under review"
+      "status": "included — tau-Elicitation"
     },
     {
       "id": "2609.13659",
@@ -125,7 +125,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2609.13659",
       "score": 21,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: the subject under test is not a spoken LLM (UniqueShip is a ship-classification dataset for underwater acoustic target recognition, evaluated with dedicated classifiers)"
     },
     {
       "id": "2609.14116",
@@ -144,7 +144,7 @@
       "primary_category": "eess.AS",
       "url": "https://arxiv.org/abs/2609.14116",
       "score": 21,
-      "status": "new — under review"
+      "status": "included — HARP"
     },
     {
       "id": "2609.12872",
@@ -164,7 +164,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2609.12872",
       "score": 18,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: DuplexDrama is a synthesised dialogue corpus built for training full-duplex models, not an evaluation set; its LLM-judge protocol validates the corpus itself rather than scoring spoken LLMs"
     },
     {
       "id": "2609.13117",
@@ -184,7 +184,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2609.13117",
       "score": 18,
-      "status": "new — under review"
+      "status": "included — Duplex Cue"
     },
     {
       "id": "2609.13869",
@@ -203,7 +203,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2609.13869",
       "score": 18,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: the subject under test is not a spoken LLM (a 10,000-sentence Bangla text corpus scored with text classifiers; no audio is fed to any model)"
     },
     {
       "id": "2609.14005",
@@ -223,7 +223,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2609.14005",
       "score": 18,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: model technical report (StepAudio 3 Realtime), not a benchmark; it reports results on existing suites such as MMSU and Full-Duplex Bench"
     },
     {
       "id": "2609.14743",
@@ -238,7 +238,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2609.14743",
       "score": 18,
-      "status": "new — under review"
+      "status": "included — generation modality-gap evaluation suite"
     },
     {
       "id": "2609.15089",
@@ -256,7 +256,7 @@
       "primary_category": "cs.AI",
       "url": "https://arxiv.org/abs/2609.15089",
       "score": 18,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: proposes a method, not a benchmark (ER-EDF is an emotion-regulation framework for empathetic response generation in audio-language models)"
     },
     {
       "id": "2609.15128",
@@ -275,7 +275,7 @@
       "primary_category": "cs.LG",
       "url": "https://arxiv.org/abs/2609.15128",
       "score": 18,
-      "status": "new — under review"
+      "status": "included — OST-DiagBench"
     },
     {
       "id": "2609.15215",
@@ -294,7 +294,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2609.15215",
       "score": 18,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: proposes a method, not a benchmark (a frame-level grounding module bolted onto a frozen audio-language model for event localisation)"
     },
     {
       "id": "2609.15313",
@@ -311,7 +311,7 @@
       "primary_category": "eess.AS",
       "url": "https://arxiv.org/abs/2609.15313",
       "score": 18,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: proposes a training method, not a benchmark (Joint-Output On-Policy Distillation, to close the accuracy gap between a speech LLM's speech-and-text and text-only output modes)"
     },
     {
       "id": "2609.15759",
@@ -331,7 +331,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2609.15759",
       "score": 18,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: proposes a method, not a benchmark (a lightweight ASR head added to an existing full-duplex speech-to-speech model so it can transcribe the user)"
     },
     {
       "id": "2609.11252",

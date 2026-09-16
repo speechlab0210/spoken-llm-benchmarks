@@ -22365,6 +22365,322 @@
       "countries_complete": true,
       "verify_note": "arXiv 2609.11786 prints a single affiliation block for both authors (Chibuzor Okocha, Christian Grant): 'Department of Computer & Information Science & Engineering, University of Florida, Gainesville, FL, USA', with e-mails {c.okocha, christan}@ufl.edu.",
       "note": null
+    },
+    "mp-bench": {
+      "status": "ok",
+      "verified": "confirmed",
+      "publishable": true,
+      "institutions": [
+        {
+          "inst": "university-of-texas-at-austin",
+          "unit": null,
+          "raw": "The University of Texas at Austin",
+          "country": "US",
+          "city": "Austin",
+          "lat": 30.29,
+          "lon": -97.74,
+          "placed": "default",
+          "printed_city": null,
+          "printed_country": null,
+          "lead": true,
+          "first_author": true,
+          "last": true,
+          "evidence": "printed"
+        },
+        {
+          "inst": "national-taiwan-university",
+          "unit": null,
+          "raw": "National Taiwan University",
+          "country": "TW",
+          "city": "Taipei",
+          "lat": 25.02,
+          "lon": 121.54,
+          "placed": "default",
+          "printed_city": null,
+          "printed_country": null,
+          "lead": false,
+          "first_author": false,
+          "last": false,
+          "evidence": "printed"
+        },
+        {
+          "inst": "massachusetts-institute-of-technology",
+          "unit": null,
+          "raw": "Massachusetts Institute of Technology",
+          "country": "US",
+          "city": "Cambridge",
+          "lat": 42.37,
+          "lon": -71.11,
+          "placed": "default",
+          "printed_city": null,
+          "printed_country": null,
+          "lead": false,
+          "first_author": false,
+          "last": false,
+          "evidence": "printed"
+        },
+        {
+          "inst": "carnegie-mellon-university",
+          "unit": null,
+          "raw": "Carnegie Mellon University",
+          "country": "US",
+          "city": "Pittsburgh",
+          "lat": 40.44,
+          "lon": -79.99,
+          "placed": "default",
+          "printed_city": null,
+          "printed_country": null,
+          "lead": false,
+          "first_author": false,
+          "last": false,
+          "evidence": "printed"
+        },
+        {
+          "inst": "meta",
+          "unit": "Meta AI",
+          "raw": "Meta AI",
+          "country": "US",
+          "city": "Menlo Park",
+          "lat": 37.45,
+          "lon": -122.18,
+          "placed": "default",
+          "printed_city": null,
+          "printed_country": null,
+          "lead": false,
+          "first_author": false,
+          "last": false,
+          "evidence": "printed"
+        }
+      ],
+      "countries_complete": true,
+      "verify_note": "arXiv 2609.13076v1 HTML author block: Yi-Jen Shih (The University of Texas at Austin, equal contribution, corresponding yjshih@utexas.edu), Shih-Yun Shan Kuan (National Taiwan University, equal contribution), Guan-Ting Lin (National Taiwan University, equal contribution), Kai-Wei Chang (Massachusetts Institute of Technology), Siddhant Arora (Carnegie Mellon University), Shu-wen Yang (National Taiwan University), Abdelrahman Mohamed (Meta AI), Shinji Watanabe (Carnegie Mellon University), Hung-yi Lee (National Taiwan University), David Harwath (The University of Texas at Austin). No city or country is printed for any affiliation. First and last author share UT Austin, so lead and last sit on the same record.",
+      "note": null
+    },
+    "tau-elicitation": {
+      "status": "ok",
+      "verified": "confirmed",
+      "publishable": true,
+      "institutions": [
+        {
+          "inst": "sierra",
+          "unit": null,
+          "raw": "Sierra",
+          "country": "US",
+          "city": "San Francisco",
+          "lat": 37.77,
+          "lon": -122.42,
+          "placed": "default",
+          "printed_city": null,
+          "printed_country": null,
+          "lead": true,
+          "first_author": true,
+          "last": false,
+          "evidence": "printed"
+        },
+        {
+          "inst": "mercor",
+          "unit": null,
+          "raw": "Mercor",
+          "country": "US",
+          "city": "San Francisco",
+          "lat": 37.77,
+          "lon": -122.42,
+          "placed": "default",
+          "printed_city": null,
+          "printed_country": null,
+          "lead": false,
+          "first_author": false,
+          "last": true,
+          "evidence": "printed"
+        }
+      ],
+      "countries_complete": true,
+      "verify_note": "arXiv 2609.13602v1 HTML author block: 'Soham Ray1  Victor Barres2' with address key '1Sierra   2Mercor' and correspondence soham@sierra.ai. No city or country is printed.",
+      "note": null
+    },
+    "harp": {
+      "status": "ok",
+      "verified": "confirmed",
+      "publishable": true,
+      "institutions": [
+        {
+          "inst": "carnegie-mellon-university",
+          "unit": null,
+          "raw": "Carnegie Mellon University",
+          "country": "US",
+          "city": "Pittsburgh",
+          "lat": 40.44,
+          "lon": -79.99,
+          "placed": "default",
+          "printed_city": null,
+          "printed_country": null,
+          "lead": true,
+          "first_author": true,
+          "last": true,
+          "evidence": "printed"
+        },
+        {
+          "inst": "hippocratic-ai",
+          "unit": null,
+          "raw": "Hippocratic AI",
+          "country": "US",
+          "city": "Palo Alto",
+          "lat": 37.44,
+          "lon": -122.14,
+          "placed": "default",
+          "printed_city": null,
+          "printed_country": null,
+          "lead": false,
+          "first_author": false,
+          "last": false,
+          "evidence": "printed"
+        }
+      ],
+      "countries_complete": true,
+      "verify_note": "arXiv 2609.14116v1 HTML author block: 'Chin-Jou Li2 Masao Someki2 Woojeong Jin4 Yashish M. Siriwardena4 Tanmay Laud4 Shanil Puri4 Shinji Watanabe2' with key '2Carnegie Mellon University   4Hippocratic AI'. No city or country is printed. First author (Chin-Jou Li) and last author (Shinji Watanabe) are both CMU.",
+      "note": null
+    },
+    "duplex-cue": {
+      "status": "ok",
+      "verified": "confirmed",
+      "publishable": true,
+      "institutions": [
+        {
+          "inst": "besimple-ai",
+          "unit": null,
+          "raw": "Besimple AI, San Mateo, CA",
+          "country": "US",
+          "city": "San Mateo",
+          "lat": 37.56,
+          "lon": -122.33,
+          "placed": "printed",
+          "printed_city": "San Mateo",
+          "printed_country": null,
+          "lead": true,
+          "first_author": true,
+          "last": true,
+          "evidence": "printed"
+        }
+      ],
+      "countries_complete": true,
+      "verify_note": "arXiv 2609.13117v1 HTML author block: Yunqi Lu, Tyler Baumgartner, Nikhil Johri, Brandon Tai, Candice Fan, Luc Debaupte, Ruben Aguilar, Bill Wang and Yi Zhong, all under the single printed affiliation 'Besimple AI, San Mateo, CA', contact yi@besimple.ai. San Mateo is printed on the paper, so the printed city is used rather than the registry default.",
+      "note": null
+    },
+    "generation-modality-gap-suite": {
+      "status": "ok",
+      "verified": "confirmed",
+      "publishable": true,
+      "institutions": [
+        {
+          "inst": "toyota-technological-institute-at-chicago",
+          "unit": null,
+          "raw": "TTI-Chicago",
+          "country": "US",
+          "city": "Chicago",
+          "lat": 41.79,
+          "lon": -87.6,
+          "placed": "default",
+          "printed_city": null,
+          "printed_country": null,
+          "lead": true,
+          "first_author": true,
+          "last": true,
+          "evidence": "printed"
+        },
+        {
+          "inst": "stony-brook-university",
+          "unit": null,
+          "raw": "Stony Brook University",
+          "country": "US",
+          "city": "Stony Brook",
+          "lat": 40.91,
+          "lon": -73.12,
+          "placed": "default",
+          "printed_city": null,
+          "printed_country": null,
+          "lead": false,
+          "first_author": false,
+          "last": false,
+          "evidence": "printed"
+        }
+      ],
+      "countries_complete": true,
+      "verify_note": "arXiv 2609.14743v1 HTML author block: '1st Ju-Chieh Chou, TTI-Chicago, jcchou@ttic.edu; 2nd Jiawei (Joe) Zhou, Stony Brook University, jiawei.zhou.1@stonybrook.edu; 3rd Karen Livescu, TTI-Chicago, klivescu@ttic.edu'. No city or country is printed. First and last author are both TTI-Chicago.",
+      "note": null
+    },
+    "ost-diagbench": {
+      "status": "ok",
+      "verified": "confirmed",
+      "publishable": true,
+      "institutions": [
+        {
+          "inst": "the-university-of-hong-kong",
+          "unit": null,
+          "raw": "The University of Hong Kong",
+          "country": "HK",
+          "city": "Hong Kong",
+          "lat": 22.28,
+          "lon": 114.14,
+          "placed": "default",
+          "printed_city": null,
+          "printed_country": null,
+          "lead": true,
+          "first_author": true,
+          "last": true,
+          "evidence": "printed"
+        },
+        {
+          "inst": "hong-kong-university-of-science-and-technology-guangzhou",
+          "unit": null,
+          "raw": "The Hong Kong University of Science and Technology (Guangzhou)",
+          "country": "CN",
+          "city": "Guangzhou",
+          "lat": 23.13,
+          "lon": 113.26,
+          "placed": "default",
+          "printed_city": null,
+          "printed_country": null,
+          "lead": false,
+          "first_author": true,
+          "last": false,
+          "evidence": "printed"
+        },
+        {
+          "inst": "university-of-sussex",
+          "unit": null,
+          "raw": "University of Sussex",
+          "country": "GB",
+          "city": "Brighton",
+          "lat": 50.87,
+          "lon": -0.09,
+          "placed": "default",
+          "printed_city": null,
+          "printed_country": null,
+          "lead": false,
+          "first_author": false,
+          "last": false,
+          "evidence": "printed"
+        },
+        {
+          "inst": "lightspeed",
+          "unit": null,
+          "raw": "LIGHTSPEED",
+          "country": null,
+          "city": null,
+          "lat": null,
+          "lon": null,
+          "placed": "none",
+          "printed_city": null,
+          "printed_country": null,
+          "lead": false,
+          "first_author": false,
+          "last": false,
+          "evidence": "printed"
+        }
+      ],
+      "countries_complete": true,
+      "verify_note": "arXiv 2609.15128v1 HTML author block: Enjun Du (The University of Hong Kong; The Hong Kong University of Science and Technology (Guangzhou)), Siyi Liu (HKUST(GZ)), Ziyu Zheng (University of Sussex), Jingyu Li (LIGHTSPEED), Yiwen Guo (Independent Researcher, corresponding), Yongqi Zhang (HKUST(GZ)), Difan Zou (The University of Hong Kong, corresponding). No city or country is printed. The first author carries both HKU and HKUST(GZ); lead is recorded on HKU, the affiliation he lists first, because only one lead is allowed, and both records are marked first_author; the last author (Difan Zou) is HKU. Yiwen Guo lists no institution ('Independent Researcher') and so has no record here.",
+      "note": null
     }
   },
   "models": {
@@ -28589,6 +28905,46 @@
       "evidence_url": "https://arxiv.org/abs/2507.02768",
       "evidence_quote": null,
       "note": "DeSTA2.5-Audio (arXiv 2507.02768v2) prints no affiliation block in either the arXiv HTML or the PDF first page, so no builder is recorded rather than one being inferred. The acknowledgment thanks 'NVIDIA Taiwan AI R&D Center' and an NVIDIA Academic Grant, which is funding, not affiliation. The author list overlaps heavily with the DeSTA2 paper (NTU + NVIDIA); resolving that needs a printed source and is left to a later pass."
+    },
+    "grok-voice-think-fast": {
+      "status": "ok",
+      "publishable": true,
+      "builders": [
+        {
+          "inst": "xai",
+          "unit": null,
+          "raw": "xAI",
+          "lead": true,
+          "country": "US",
+          "city": "Palo Alto",
+          "lat": 37.44,
+          "lon": -122.14,
+          "placed": "default"
+        }
+      ],
+      "evidence_url": "https://x.ai/news/grok-voice-think-fast-1",
+      "evidence_quote": "a step change in xAI's Voice Agent capabilities: Introducing grok-voice-think-fast-1.0",
+      "note": "Official x.ai announcement page, the same source already read for the unversioned 'grok' entry; this entry carries the exact version named by tau-Elicitation, whose own reference list cites xAI (2026), 'Grok Voice Think Fast 1.0', https://x.ai/news/grok-voice-think-fast-1."
+    },
+    "covo-audio": {
+      "status": "ok",
+      "publishable": true,
+      "builders": [
+        {
+          "inst": "tencent",
+          "unit": null,
+          "raw": "Tencent",
+          "lead": true,
+          "country": "CN",
+          "city": "Shenzhen",
+          "lat": 22.54,
+          "lon": 114.06,
+          "placed": "default"
+        }
+      ],
+      "evidence_url": "https://arxiv.org/pdf/2602.09823",
+      "evidence_quote": "Tencent",
+      "note": "Covo-Audio Technical Report (arXiv 2602.09823), PDF first page: the title block prints the single affiliation 'Tencent' for all 26 authors, with no unit, city or country. The arXiv HTML build of this paper is broken (it renders as an untitled page with raw LaTeX), so the block was read from the PDF. Introduced to the Atlas via MP-Bench, which evaluates it as a half-duplex end-to-end speech LM."
     }
   }
 }

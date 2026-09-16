@@ -4324,6 +4324,35 @@
       ]
     },
     {
+      "id": "hippocratic-ai",
+      "name": "Hippocratic AI",
+      "short": null,
+      "type": "industry",
+      "country": "US",
+      "parent": null,
+      "confidence": "medium",
+      "sites": [
+        {
+          "city": "Palo Alto",
+          "lat": 37.44,
+          "lon": -122.14,
+          "country": "US"
+        }
+      ],
+      "aliases": [
+        {
+          "raw": "Hippocratic AI",
+          "country": "US",
+          "city": "Palo Alto",
+          "lat": 37.44,
+          "lon": -122.14,
+          "type": "industry",
+          "confidence": "medium",
+          "note": "Healthcare large-language-model company (hippocraticai.com), HQ Palo Alto, CA; the paper prints the bare name with no location."
+        }
+      ]
+    },
+    {
       "id": "hitachi",
       "name": "Hitachi",
       "short": "Hitachi",
@@ -6126,6 +6155,28 @@
       ]
     },
     {
+      "id": "lightspeed",
+      "name": "LIGHTSPEED",
+      "short": null,
+      "type": "unresolved",
+      "country": null,
+      "parent": null,
+      "confidence": "low",
+      "sites": [],
+      "aliases": [
+        {
+          "raw": "LIGHTSPEED",
+          "country": null,
+          "city": null,
+          "lat": null,
+          "lon": null,
+          "type": "unresolved",
+          "confidence": "low",
+          "note": "The paper prints only the word LIGHTSPEED with no location or parent body; several unrelated organisations use the name, so kind, country and location are left unresolved."
+        }
+      ]
+    },
+    {
       "id": "linkoping-university",
       "name": "Linköping University",
       "short": "LiU",
@@ -6541,6 +6592,35 @@
           "type": "industry",
           "confidence": "medium",
           "note": "AI startup (large visual memory models); HQ believed to be San Jose, CA. City assignment not verified from the source text."
+        }
+      ]
+    },
+    {
+      "id": "mercor",
+      "name": "Mercor",
+      "short": null,
+      "type": "industry",
+      "country": "US",
+      "parent": null,
+      "confidence": "medium",
+      "sites": [
+        {
+          "city": "San Francisco",
+          "lat": 37.77,
+          "lon": -122.42,
+          "country": "US"
+        }
+      ],
+      "aliases": [
+        {
+          "raw": "Mercor",
+          "country": "US",
+          "city": "San Francisco",
+          "lat": 37.77,
+          "lon": -122.42,
+          "type": "industry",
+          "confidence": "medium",
+          "note": "AI talent-marketplace and evaluation-data company (mercor.com), HQ San Francisco; the paper prints the bare name with no location."
         }
       ]
     },
@@ -12846,6 +12926,35 @@
           "type": "academia",
           "confidence": "high",
           "note": "CVSSP is a research centre within the university."
+        }
+      ]
+    },
+    {
+      "id": "university-of-sussex",
+      "name": "University of Sussex",
+      "short": "Sussex",
+      "type": "academia",
+      "country": "GB",
+      "parent": null,
+      "confidence": "high",
+      "sites": [
+        {
+          "city": "Brighton",
+          "lat": 50.87,
+          "lon": -0.09,
+          "country": "GB"
+        }
+      ],
+      "aliases": [
+        {
+          "raw": "University of Sussex",
+          "country": "GB",
+          "city": "Brighton",
+          "lat": 50.87,
+          "lon": -0.09,
+          "type": "academia",
+          "confidence": "high",
+          "note": "Campus at Falmer, Brighton, UK; the paper prints the bare name with no location."
         }
       ]
     },

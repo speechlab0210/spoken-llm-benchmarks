@@ -2,133 +2,157 @@
  "since": "2026-08-22",
  "what": "Every arXiv paper the daily crawl has flagged since launch (score at or above the threshold, not previously seen), with the reviewer's verdict as written in the feed and whether the paper entered the catalogue. \"published\" is the paper's arXiv date. See the Method section of the site.",
  "flagged": 119,
- "admitted": 32,
+ "admitted": 38,
  "entries": [
   {
    "id": "2609.15759",
    "title": "Enabling Streaming User Transcription in Full-Duplex Speech-to-Speech Models",
    "published": "2026-09-14T15:44:18Z",
    "score": 18,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: proposes a method, not a benchmark (a lightweight ASR head added to an existing full-duplex speech-to-speech model so it can transcribe the user)"
   },
   {
    "id": "2609.15313",
    "title": "Reducing the Output-Mode Gap in Speech Language Models via Joint-Output On-Policy Distillation",
    "published": "2026-09-14T10:03:49Z",
    "score": 18,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: proposes a training method, not a benchmark (Joint-Output On-Policy Distillation, to close the accuracy gap between a speech LLM's speech-and-text and text-only output modes)"
   },
   {
    "id": "2609.15215",
    "title": "Augmenting Large Audio-Language Models with Frame-Level Grounding for Fine-Grained Temporal Perception",
    "published": "2026-09-14T08:35:35Z",
    "score": 18,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: proposes a method, not a benchmark (a frame-level grounding module bolted onto a frozen audio-language model for event localisation)"
   },
   {
    "id": "2609.15128",
    "title": "Omni-Streaming Thinking",
    "published": "2026-09-14T07:05:04Z",
    "score": 18,
-   "outcome": "under review"
+   "outcome": "admitted",
+   "verdict": "included — OST-DiagBench",
+   "catalogue_id": "ost-diagbench"
   },
   {
    "id": "2609.15089",
    "title": "ER-EDF: A Psychology-Grounded Emotion Regulation Framework for Speech Empathetic Dialogue Generation in Large Audio-Language Models",
    "published": "2026-09-14T06:07:44Z",
    "score": 18,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: proposes a method, not a benchmark (ER-EDF is an emotion-regulation framework for empathetic response generation in audio-language models)"
   },
   {
    "id": "2609.14743",
    "title": "Quantifying the Generation Modality Gap in Speech-Text Language Models",
    "published": "2026-09-13T19:09:07Z",
    "score": 18,
-   "outcome": "under review"
+   "outcome": "admitted",
+   "verdict": "included — generation modality-gap evaluation suite",
+   "catalogue_id": "generation-modality-gap-suite"
   },
   {
    "id": "2609.14116",
    "title": "HARP: Agentic Hybrid Retrieval and Analysis for Long-Form Audio",
    "published": "2026-09-12T19:35:33Z",
    "score": 21,
-   "outcome": "under review"
+   "outcome": "admitted",
+   "verdict": "included — HARP",
+   "catalogue_id": "harp"
   },
   {
    "id": "2609.14005",
    "title": "StepAudio 3 Realtime Technical Report",
    "published": "2026-09-12T15:40:02Z",
    "score": 18,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: model technical report (StepAudio 3 Realtime), not a benchmark; it reports results on existing suites such as MMSU and Full-Duplex Bench"
   },
   {
    "id": "2609.13869",
    "title": "Bangla Sentence Function Classification: Corpus Development, Model Benchmarking, and Interpretability",
    "published": "2026-09-12T10:45:24Z",
    "score": 18,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: the subject under test is not a spoken LLM (a 10,000-sentence Bangla text corpus scored with text classifiers; no audio is fed to any model)"
   },
   {
    "id": "2609.13814",
    "title": "Realtime-Venus: A full-duplex interaction system with asynchronous delegation",
    "published": "2026-09-12T08:56:50Z",
    "score": 33,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: proposes a system, not a benchmark (Realtime-Venus is a pair of 9B full-duplex interaction models; the paper reports scores on existing benchmarks rather than introducing one)"
   },
   {
    "id": "2609.13659",
    "title": "UniqueShip: Mitigating Data Leakage in Acoustic Ship Classification Benchmark Datasets",
    "published": "2026-09-12T02:31:38Z",
    "score": 21,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: the subject under test is not a spoken LLM (UniqueShip is a ship-classification dataset for underwater acoustic target recognition, evaluated with dedicated classifiers)"
   },
   {
    "id": "2609.13602",
    "title": "$τ$-Elicitation: Benchmarking multi-turn entity extraction in voice agents",
    "published": "2026-09-11T23:18:41Z",
    "score": 24,
-   "outcome": "under review"
+   "outcome": "admitted",
+   "verdict": "included — tau-Elicitation",
+   "catalogue_id": "tau-elicitation"
   },
   {
    "id": "2609.13445",
    "title": "Causal Analysis and Mitigation of Spurious Onsets in Full-Duplex Speech LLMs",
    "published": "2026-09-11T19:03:36Z",
    "score": 24,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: no benchmark is proposed — the paper diagnoses why Moshi and PersonaPlex start speaking during user silence and adds an inference-time suppression method; the 40-continuation probe is the paper's own measurement setup, not a released evaluation set"
   },
   {
    "id": "2609.13117",
    "title": "Continue, Adapt, or Yield: In-Turn Adaptation to Overlapping Speech in Full-Duplex Agents",
    "published": "2026-09-11T17:46:10Z",
    "score": 18,
-   "outcome": "under review"
+   "outcome": "admitted",
+   "verdict": "included — Duplex Cue",
+   "catalogue_id": "duplex-cue"
   },
   {
    "id": "2609.13076",
    "title": "MP-Bench: Evaluating Voice Agents as a Multiparty Conversation Participant",
    "published": "2026-09-11T17:11:55Z",
    "score": 42,
-   "outcome": "under review"
+   "outcome": "admitted",
+   "verdict": "included — MP-Bench",
+   "catalogue_id": "mp-bench"
   },
   {
    "id": "2609.13045",
    "title": "Kraken: LLM-based Speech-to-Speech Translation via Low-bitrate VQ and Dual-path Source Conditioning",
    "published": "2026-09-11T16:41:22Z",
    "score": 27,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: proposes a speech-to-speech translation model (Kraken), not a benchmark, and the system under test is a translation pipeline rather than a general-purpose spoken LLM"
   },
   {
    "id": "2609.12872",
    "title": "DuplexDrama: A Synthesized Dialogue Dataset with Scenarios, Full-Duplex Behaviors, Expressive Speech, and Sound Events",
    "published": "2026-09-11T13:56:36Z",
    "score": 18,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: DuplexDrama is a synthesised dialogue corpus built for training full-duplex models, not an evaluation set; its LLM-judge protocol validates the corpus itself rather than scoring spoken LLMs"
   },
   {
    "id": "2609.12623",
    "title": "SteerDuplex: Steerable Duplex Speech Dialogue Models",
    "published": "2026-09-11T09:22:46Z",
    "score": 27,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: proposes a model, not a benchmark (SteerDuplex is a Moshi-based full-duplex model fine-tuned for steerability; its steerability taxonomy is a framing device, not a released evaluation set)"
   },
   {
    "id": "2609.11864",
