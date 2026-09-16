@@ -1,8 +1,8 @@
 {
-  "fetched_at": "2026-09-15T22:47:23Z",
+  "fetched_at": "2026-09-16T22:47:02Z",
   "window_days": 10,
-  "scanned": 141,
-  "flagged_today": 18,
+  "scanned": 0,
+  "flagged_today": 0,
   "candidates": [
     {
       "id": "2609.13076",
@@ -1047,5 +1047,10 @@
       "status": "reviewed - out of scope: subjects are not spoken LLMs - text-only Indic pragmatics benchmark (MCQ/NLI/translation), no audio"
     }
   ],
-  "warnings": []
+  "warnings": [
+    "query failed: HTTP Error 406: Not Acceptable",
+    "query failed: HTTP Error 406: Not Acceptable",
+    "query failed: HTTP Error 406: Not Acceptable",
+    "query failed: HTTP Error 406: Not Acceptable"
+  ]
 }
