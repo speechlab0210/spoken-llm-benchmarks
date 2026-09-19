@@ -10217,6 +10217,216 @@
       "io": "streaming video with synchronised (edited) audio plus a question in, text answer out",
       "size": "510 matched Core groups and 510 reviewed Clash examples; source clips and interference recordings held out from training",
       "note": "Introduced inside a paper whose main contribution is a method (Omni-Streaming Thinking); catalogued for the benchmark. The OST row is the paper's own system built on a frozen Qwen3-Omni backbone with lightweight adaptation and is not recorded as a model result. The audio-blind Qwen2.5-VL / Qwen3-VL rows are vision-only references, not spoken LLMs, and are likewise not recorded. Qwen2.5-Omni is recorded at 7B; the paper's 3B row is given in the cell notes."
+    },
+    {
+      "id": "rolebreak",
+      "name": "RoleBreak",
+      "full_title": "RoleBreak: Benchmarking Long-Horizon Role-Playing Robustness in Spoken Dialogue",
+      "arxiv_id": "2609.16614",
+      "arxiv_date": "2026-09",
+      "arxiv_date_full": "2026-09-15",
+      "url": "https://arxiv.org/abs/2609.16614",
+      "code": "https://github.com/bugggggggg/RoleBreak",
+      "data": "https://huggingface.co/datasets/Greenbean/RoleBreak",
+      "summary": "An open benchmark for whether a speech-to-speech dialogue model can hold an assigned role over an extended conversation, rather than for a few turns of a well-known fictional character. It contains 310 roles deliberately split between character-based personas and user-centered ones (assistant-like roles defined by a task and a manner rather than by a fictional identity), 6,688 human-verified dialogue turns, and 11,743 fine-grained evaluation criteria written per turn; 1,856 of those turns additionally carry an expressive emotion target, so vocal affect is scored and not only wording. Scenarios are written to stress four things over the course of a long interaction: role consistency, interaction quality, safety, and affect. The comparison it enables is architectural - nine configurations are run across full-duplex, omni-modal, and cascaded ASR-LLM-TTS paradigms, so a cascade's text backbone and an end-to-end speech model face the same long-horizon pressure.",
+      "categories": [
+        "dialogue",
+        "robustness",
+        "long-form"
+      ],
+      "tasks": [
+        "sustaining an assigned character-based or user-centered role across a long conversation",
+        "meeting per-turn criteria for role consistency",
+        "meeting per-turn criteria for interaction quality",
+        "handling role-conflicting and unsafe requests while in persona",
+        "hitting a specified expressive emotion target in the spoken reply"
+      ],
+      "languages": [
+        "Chinese"
+      ],
+      "metrics": [
+        "per-criterion satisfaction over 11,743 fine-grained criteria",
+        "role consistency",
+        "interaction quality",
+        "safety",
+        "vocal emotion match on the 1,856 emotion-target turns"
+      ],
+      "io": "spoken dialogue history plus a role specification in, spoken reply out (cascaded configurations are scored on the same protocol)",
+      "size": "310 roles, 6,688 human-verified dialogue turns, 11,743 evaluation criteria, 1,856 turns with expressive emotion targets",
+      "note": "The paper's footnote states it has been submitted to the IEEE for possible publication; no acceptance is claimed here."
+    },
+    {
+      "id": "echo-turn-taking",
+      "name": "ECHO",
+      "aka": [
+        "ECHO matched-contrast turn-taking benchmark"
+      ],
+      "full_title": "ECHO: A Matched-Contrast Benchmark for Context-Sensitive Turn-Taking in Full-Duplex Dialogue",
+      "arxiv_id": "2609.17360",
+      "arxiv_date": "2026-09",
+      "arxiv_date_full": "2026-09-15",
+      "url": "https://arxiv.org/abs/2609.17360",
+      "summary": "A paired diagnostic benchmark for Chinese full-duplex turn-taking, built around the observation that scoring overlap events independently lets a system look competent by always doing the same thing. ECHO pairs two examples carrying the identical overlap transcript but different preceding multi-turn context, one where the correct action is Yield and one where it is Keep, so the decision cannot be read off the interrupting words alone. Off-talk examples (speech not addressed to the system) are included to expose unnecessary yielding. Its headline metric, pair accuracy, requires both members of a pair to be correct and therefore assigns zero credit to a constant-action policy, which is the point of the design. The dataset is 266 groups, 549 unique audio instances and 300 pair relations, with the three roles balanced at 183 instances each and pair relations balanced by construction at 100 pairs for each of the interruption-backchannel, interruption-off-talk and backchannel-off-talk contrasts. It is released with audio, model-observable dialogue text, original scenario labels, binary action labels, event timestamps and group/pair metadata. Across the full-duplex systems tested, most show a pronounced bias toward Yield and score substantially better on interruptions than on backchannels.",
+      "categories": [
+        "interactivity",
+        "dialogue"
+      ],
+      "tasks": [
+        "deciding Yield versus Keep on an overlap given the preceding dialogue context",
+        "recognising off-talk that should not trigger yielding",
+        "matched-pair decisions where both members share an overlap transcript"
+      ],
+      "languages": [
+        "Chinese"
+      ],
+      "metrics": [
+        "pair accuracy (both members of a matched pair correct)",
+        "per-event accuracy on interruptions",
+        "per-event accuracy on backchannels",
+        "unnecessary-yield rate on off-talk"
+      ],
+      "io": "streaming dialogue audio with an overlapping utterance in, a floor-management action (Yield / Keep) out",
+      "size": "266 groups, 549 unique audio instances, 300 pair relations (100 per contrast type); roles balanced at 183 instances each"
+    },
+    {
+      "id": "avtrace",
+      "name": "AVTrace",
+      "aka": [
+        "Audio-Visual Temporal Reasoning Assessment and Capability Evaluation"
+      ],
+      "full_title": "AVTrace: Diagnosing Audio-Visual Temporal Reasoning in Omni Models",
+      "arxiv_id": "2609.19991",
+      "arxiv_date": "2026-09",
+      "arxiv_date_full": "2026-09-17",
+      "url": "https://arxiv.org/abs/2609.19991",
+      "summary": "A silver-standard diagnostic suite that separates describing a video from locating things in it in time. It asks whether an omni model can ground event onsets and spans, preserve event order, judge whether audio and video are synchronised, predict the next step, localise across modalities, parse chains of events, and answer event-conditioned comprehension questions. It contains 34,114 training examples with category-balanced development and test splits of 3,500 and 7,000. Five open omni models are evaluated under their own input configurations, with reference-blind response normalisation followed by deterministic scoring, so the normalisation step does not see the gold answer. The finding that gives the suite its teeth is a floor result: on synchronisation verification all five off-the-shelf systems score below the test split's majority-label baseline of 0.556, and they also score low on chain parsing and on event-conditioned grounding and comprehension.",
+      "categories": [
+        "reasoning",
+        "audio-grounding"
+      ],
+      "tasks": [
+        "event onset grounding",
+        "event span grounding",
+        "audio-visual synchronisation verification",
+        "next-step prediction",
+        "cross-modal localisation",
+        "chain parsing",
+        "event-conditioned comprehension"
+      ],
+      "languages": [
+        "English"
+      ],
+      "metrics": [
+        "deterministic accuracy per task category after reference-blind response normalisation",
+        "comparison against the test split's majority-label baseline (0.556 on synchronisation verification)"
+      ],
+      "io": "video with synchronised audio plus a question in, text answer out",
+      "size": "34,114 training examples; category-balanced dev and test splits of 3,500 and 7,000",
+      "note": "Described by its authors as silver-standard: the labels are constructed rather than exhaustively human-verified."
+    },
+    {
+      "id": "musediag",
+      "name": "MuseDiag",
+      "full_title": "Music Hallucination in Audio-Language Models: A Hierarchical Formulation and Empirical Study",
+      "arxiv_id": "2609.20195",
+      "arxiv_date": "2026-07",
+      "arxiv_date_full": "2026-07-24",
+      "url": "https://arxiv.org/abs/2609.20195",
+      "summary": "A diagnostic framework for the specific failure of an audio-language model describing music confidently in ways the audio does not support. It formulates music hallucination as a hierarchical perceptual grounding failure across five layers - sound events, temporal properties, tonal attributes, style, and emotion - which lets a wrong description be attributed to a layer instead of scored as one undifferentiated error. Verification is contradiction-based and split by layer: objective verification for the hard layers, semantic verification for the soft ones, with claim routing between them and coverage-aware metrics so that a model is not rewarded for saying little. Three complementary evaluation paradigms are used: free-form description, structured querying, and contradiction probes. Nine models are evaluated, four open-source and five closed-source, on 440 MusicCaps clips retained from a 500-clip attribute-coverage sample after unavailable YouTube sources were filtered out. Two results are reported as stable across the nine: vocal misperception is a universal weakness, and tonal perception is the main axis on which architectures separate.",
+      "categories": [
+        "hallucination",
+        "auditory-perception",
+        "domain"
+      ],
+      "tasks": [
+        "free-form music description scored for unsupported claims",
+        "structured querying over sound events, temporal, tonal, style and emotion attributes",
+        "contradiction-based verification probes"
+      ],
+      "languages": [
+        "English"
+      ],
+      "metrics": [
+        "layer-wise hallucination rate across the five layers",
+        "coverage-aware metrics (scores adjusted for how much the model actually claims)",
+        "objective verification accuracy on hard layers",
+        "semantic verification on soft layers"
+      ],
+      "io": "music audio plus a text prompt or query in, text description or answer out",
+      "size": "440 MusicCaps clips with usable audio, sampled from 500 by attribute coverage",
+      "note": "Music-domain, but the systems under test are general audio-language models (Audio-Flamingo-3, Qwen2-Audio, Qwen2.5-Omni, SALMONN, GPT-4o, Gemini and others), which is why it is catalogued here. Its arXiv page prints 24 Jul 2026 as the submission date although the identifier is in the 2609 block; the arXiv API and the abs page agree on that date, so it is recorded as printed."
+    },
+    {
+      "id": "clash",
+      "name": "CLASH",
+      "aka": [
+        "Controlled Lexical-Acoustic Separation Harness"
+      ],
+      "full_title": "CLASH: Counterfactual Auditing of Lexical and Prosodic Reliance in Spoken Sarcasm Detection",
+      "arxiv_id": "2609.16582",
+      "arxiv_date": "2026-09",
+      "arxiv_date_full": "2026-09-15",
+      "url": "https://arxiv.org/abs/2609.16582",
+      "code": "https://github.com/glam-imperial/clash",
+      "summary": "A bilingual counterfactual harness that asks not whether a system detects spoken sarcasm but which cue it is actually using. Every utterance is evaluated under four matched conditions - original, lexical-preserving, prosody-preserving, and approximately neutralised - so the contribution of wording and of delivery can be read off the difference rather than inferred. It is applied across three system families on CMMA and MUStARD: handcrafted acoustic-feature systems, self-supervised-learning probes, and large audio language models. The reported result is a measured lexical lean: for target-only Qwen3-Omni, lexical-preserving speech retains a 0.135-0.148 AUROC advantage over prosody-preserving speech after duration balancing, with cluster-bootstrap intervals above zero, and an alternative lexical resynthesis preserves that advantage. Acoustic interventions move scores without consistently improving discrimination or changing the binary predictions, which is the paper's evidence that prosody is not carrying the decision.",
+      "categories": [
+        "audio-grounding",
+        "paralinguistics",
+        "robustness"
+      ],
+      "tasks": [
+        "spoken sarcasm detection on the original recording",
+        "detection under lexical-preserving resynthesis",
+        "detection under prosody-preserving resynthesis",
+        "detection under approximate neutralisation"
+      ],
+      "languages": [
+        "English",
+        "Chinese"
+      ],
+      "metrics": [
+        "AUROC per condition",
+        "AUROC gap between lexical-preserving and prosody-preserving conditions after duration balancing",
+        "cluster-bootstrap confidence intervals on that gap",
+        "binary prediction flip rate under acoustic intervention"
+      ],
+      "io": "an utterance's audio, under one of four controlled resynthesis conditions, in; a sarcasm judgement out",
+      "size": "built on the existing CMMA and MUStARD corpora, each utterance rendered under four conditions",
+      "note": "Evaluates LALMs alongside non-LLM baselines (handcrafted acoustic features and SSL probes); only the LALM rows are in scope for this catalogue."
+    },
+    {
+      "id": "vakqa",
+      "name": "VakQA",
+      "aka": [
+        "VākQA"
+      ],
+      "full_title": "VākQA: A Benchmark and Evaluation Study for Telugu Spoken Factoid Question Answering",
+      "arxiv_id": "2609.19879",
+      "arxiv_date": "2026-09",
+      "arxiv_date_full": "2026-09-17",
+      "url": "https://arxiv.org/abs/2609.19879",
+      "summary": "A Telugu spoken question answering benchmark of 2,001 factoid question-answer pairs across six domains, with 2.53 hours of question audio, bilingual transcriptions and human-verified reference answers. Its more transferable contribution is that it validates the grader before using it: automatic evaluation methods are first checked against human judgements, and the check finds that Gemini-as-a-judge best approximates human ratings but is non-uniformly strict, while open-weight judges systematically penalise correct Telugu answers whose surface form differs from the reference - a failure mode that would silently deflate scores for exactly the low-resource setting the benchmark exists to measure. Using that validated setup it then benchmarks a speech-capable proprietary model against open-weight text-only models across input modality, input language and domain, and reports that Telugu phrasing carries cultural specificity lost in translation and that speech input introduces phonetic confusions that change what the question means.",
+      "categories": [
+        "spoken-qa",
+        "multilingual"
+      ],
+      "tasks": [
+        "Telugu spoken factoid question answering from question audio",
+        "the same questions from text, as a modality control",
+        "English-translated questions, as a language control"
+      ],
+      "languages": [
+        "Telugu",
+        "English"
+      ],
+      "metrics": [
+        "judge-rated answer correctness, with the judge itself validated against human ratings",
+        "agreement between automatic judges and human judgements",
+        "accuracy broken down by input modality, input language and domain"
+      ],
+      "io": "a spoken (or, in the control conditions, written) factoid question in, a text answer out",
+      "size": "2,001 factoid question-answer pairs across six domains; 2.53 hours of speech",
+      "note": "Only Gemini-2.5-Flash accepts speech input among the systems tested; the open-weight Gemma-3 / Llama-3.1 / Hex-1 / Sarvam-m / Qwen-3 rows are text-only models run on transcripts, and the paper notes no open-weight Telugu speech LLM was available. Entry name uses the ASCII form VakQA; the paper's own spelling is recorded in aka."
     }
   ]
 }
