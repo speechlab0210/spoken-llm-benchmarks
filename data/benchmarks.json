@@ -10427,6 +10427,83 @@
       "io": "a spoken (or, in the control conditions, written) factoid question in, a text answer out",
       "size": "2,001 factoid question-answer pairs across six domains; 2.53 hours of speech",
       "note": "Only Gemini-2.5-Flash accepts speech input among the systems tested; the open-weight Gemma-3 / Llama-3.1 / Hex-1 / Sarvam-m / Qwen-3 rows are text-only models run on transcripts, and the paper notes no open-weight Telugu speech LLM was available. Entry name uses the ASCII form VakQA; the paper's own spelling is recorded in aka."
+    },
+    {
+      "id": "odu-bench",
+      "name": "ODU-Bench",
+      "aka": [
+        "Omni Demand Understanding",
+        "ODU"
+      ],
+      "full_title": "Omni Demand Understanding: A Benchmark for Contextual User-Intent Inference in Multimodal Interaction",
+      "arxiv_id": "2609.21392",
+      "arxiv_date": "2026-09",
+      "arxiv_date_full": "2026-09-18",
+      "url": "https://arxiv.org/abs/2609.21392",
+      "summary": "An audio-visual benchmark of 2,078 scenes that asks a prior question to reply quality: can an omni model work out what the user actually wants, and whether they want anything at all. Each scene is scored on five weighted dimensions - whether a demand is present (macro-F1), the structured intent and the context needed to satisfy it (key-point hit-rate, weighted 0.60), the demand's time span (temporal IoU), the transcript (adaptive CER/WER) and the user profile - so that recovering the words is scored separately from recovering the meaning. 1,631 scenes carry a real demand and 447 are no-demand negatives built from request-like speech that should not trigger the assistant, which yields a false-trigger rate alongside the accuracy scores. The headline finding is that these two abilities come apart: the strongest model reaches 81.9% on locating the demand, 91.3% on transcribing it and 95.7% on the user profile, yet only 63.4% on the semantic dimension while false-triggering on 40.6% of no-demand scenes, and one model recovers 78.0% of valid demands while triggering on 80.7% of the scenes that contain none. Strong perception and clean transcription therefore do not imply that a model has understood the request, and models tuned for efficient or real-time interaction lag furthest behind.",
+      "categories": [
+        "dialogue",
+        "voice-agent",
+        "multilingual"
+      ],
+      "tasks": [
+        "deciding whether an interaction contains a demand that warrants an assistant response",
+        "inferring the structured user intent and the context required to satisfy it",
+        "localising the demand span in time",
+        "transcribing the user's utterance",
+        "recovering user-profile fields from the interaction"
+      ],
+      "io": "audio and video of a user interaction in (no separate text question), structured demand prediction out - intent, required context, span, transcript and profile",
+      "size": "2,078 scenes (1,347 audio-visual / 731 audio-only; 1,631 demand-bearing / 447 no-demand; 1,801 generated / 277 human-recorded; 969 multi-turn)",
+      "metrics": [
+        "binary macro-F1 over demand and no-demand scenes (weight 0.15)",
+        "key-point hit-rate over intent and required context (weight 0.60)",
+        "temporal IoU of the demand span (weight 0.10)",
+        "max(0, 1 - adaptive CER/WER) on the transcript (weight 0.10)",
+        "mean per-field user-profile accuracy (weight 0.05)",
+        "false-trigger rate (FTR) on no-demand scenes"
+      ],
+      "languages": [
+        "Chinese",
+        "English"
+      ],
+      "note": "Scores the decision not to answer as explicitly as the answer itself: the no-demand negatives are drawn from request-like speech, wrong-addressee and wrong-source cases, so a model that replies to everything is penalised rather than rewarded."
+    },
+    {
+      "id": "omnivchat-bench",
+      "name": "OmniVChat-Bench",
+      "aka": [
+        "OmniVChat",
+        "OmniVChat-Bench-Human"
+      ],
+      "full_title": "OmniVChat: Synthesizing, Benchmarking, and Training for Native Audio-Visual Dialogue",
+      "arxiv_id": "2609.21465",
+      "arxiv_date": "2026-09",
+      "arxiv_date_full": "2026-09-18",
+      "url": "https://arxiv.org/abs/2609.21465",
+      "summary": "An evaluation suite for native audio-visual dialogue, where an omni model receives the user's audio and video simultaneously and answers without a separate text question, external captioning or an ASR front end. It contains 2,800 synthesized instances spanning 5 ability categories, 17 subcategories and 22 scenario domains - among them dialogue-state and link perception (connection status, turn boundaries), grounding a reply in visible objects including correcting a false premise about them, and emotion recognition from facial and vocal cues - each with reference replies and tiered rubrics rather than keyword matching, since a good reply to an embodied request can be worded many ways. The instances are produced by OmniVChat-Studio, a multi-agent data engine, and a companion split of human-recorded interactions (OmniVChat-Bench-Human) is used to check that conclusions drawn on synthesized dialogue transfer to real recordings. Models are compared natively against an ASR-cascade configuration of the same system, which isolates what is lost when speech is converted to text before the model sees it.",
+      "categories": [
+        "dialogue",
+        "paralinguistics",
+        "multilingual"
+      ],
+      "tasks": [
+        "replying to a spoken request whose content is carried jointly by audio and video",
+        "tracking dialogue state, connection status and turn boundaries",
+        "grounding replies in visible objects and correcting false premises about them",
+        "recognising emotion from combined facial and vocal cues",
+        "sustaining multi-turn audio-visual dialogue"
+      ],
+      "io": "user audio and video in (query embedded in the recording, no separate text prompt), text reply out",
+      "size": "2,800 synthesized instances (1,766 English / 1,034 Chinese; 250 multi-turn), plus a human-recorded split",
+      "metrics": [
+        "rubric-based reply scoring against reference replies with tiered rubrics"
+      ],
+      "languages": [
+        "English",
+        "Chinese"
+      ],
+      "note": "Evaluates the native audio-visual setting against an ASR-cascade version of the same model, so the benchmark measures the cost of routing speech through a transcript rather than assuming it."
     }
   ]
 }
