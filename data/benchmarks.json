@@ -10504,6 +10504,225 @@
         "Chinese"
       ],
       "note": "Evaluates the native audio-visual setting against an ASR-cascade version of the same model, so the benchmark measures the cost of routing speech through a transcript rather than assuming it."
+    },
+    {
+      "id": "mula-bench",
+      "name": "MuLA-Bench",
+      "full_title": "MuLA-Bench: A Multilingual Long-Form Audio Understanding Benchmark via Multi-Tier Auditing",
+      "arxiv_id": "2609.23416",
+      "arxiv_date": "2026-09",
+      "arxiv_date_full": "2026-09-20",
+      "url": "https://arxiv.org/abs/2609.23416",
+      "code": "https://github.com/QwenLM/Omnilingua-Bench/tree/main/MuLA-Bench",
+      "summary": "A long-form audio understanding benchmark that refuses to summarise long-context ability with a single score: 5,038 open-ended questions over 1,769 in-the-wild recordings totalling 1,377.9 hours (median source duration 36.8 minutes), arranged as 16 languages x 8 domains = 128 cells. A semantic track of 3,840 questions allocates exactly 30 questions per cell (8 factual, 7 temporal, 7 long-range, 8 reasoning), so language and domain comparisons are not confounded by task mixture, while a separate acoustic track keeps naturally occurring non-speech evidence instead of injecting sounds. Every question carries localised evidence, so an answer can be traced back to the span that supports it and failures can be separated into finding the evidence versus using it. Models receive the question in the source language together with the canonical audio - no transcript, no video, no gold crop - and local models get the longest prefix their own context window allows, so the score measures the deployed system rather than answer quality given the right three minutes. Answers are routed to one of six rubric contracts (single fact, exhaustive list, multi-slot, reasoning, time point, time order) before judging, which keeps a lenient single-fact criterion from being applied to a stricter request; time-point credit requires both the correct event and clock alignment within three seconds. Missing or non-compliant responses score zero against a fixed 5,038-item denominator.",
+      "categories": [
+        "long-form",
+        "multilingual",
+        "reasoning"
+      ],
+      "tasks": [
+        "answering explicitly recoverable factual questions, including exhaustive lists and multi-slot answers",
+        "reasoning over the recording rather than from world knowledge",
+        "temporal localisation: event ordering and physical clock-time localisation",
+        "long-range retrieval where the evidence starts at least ten minutes in, or spans at least ten minutes"
+      ],
+      "languages": [
+        "English",
+        "Chinese",
+        "Hindi",
+        "Spanish",
+        "French",
+        "Arabic",
+        "Portuguese",
+        "Russian",
+        "Indonesian",
+        "German",
+        "Japanese",
+        "Vietnamese",
+        "Turkish",
+        "Korean",
+        "Italian",
+        "Thai"
+      ],
+      "metrics": [
+        "route-specific binary rubric accuracy over a fixed 5,038-item denominator",
+        "time-point accuracy requiring the correct event and clock alignment within three seconds"
+      ],
+      "io": "full-length audio recording plus a source-language question in, open-ended text answer out",
+      "size": "5,038 questions over 1,769 recordings, 1,377.9 hours of audio (3,840 semantic-track questions plus an acoustic track)",
+      "note": "Human re-scoring agreed with the automatic evaluator on 114 of 117 sampled responses (97.4%). Ten systems are reported individually, while the pooled diagnostics keep a fixed eight-model cohort so residuals and position profiles refer to the same models."
+    },
+    {
+      "id": "msi-bench",
+      "name": "MSI-Bench",
+      "aka": [
+        "Multi-Speaker Interaction Benchmark"
+      ],
+      "full_title": "MSI-Bench: Evaluating Multi-Speaker Voice Interaction for Collaborative AI Agents",
+      "arxiv_id": "2609.24812",
+      "arxiv_date": "2026-09",
+      "arxiv_date_full": "2026-09-21",
+      "url": "https://arxiv.org/abs/2609.24812",
+      "code": "https://github.com/boson-ai/MSI-Bench",
+      "data": "https://huggingface.co/datasets/M2cha4l1124/MSI-Bench",
+      "summary": "A benchmark for the setting voice assistants are actually deployed into - several people in the room, only some of them talking to the assistant. Each of the 1,152 test cases (576 English, 576 Mandarin) is a short multi-party, multi-turn audio scene across eight everyday domains, shipped with participant context, the expected tool calls and a list of atomic rubrics, so the correct next assistant behaviour depends on who holds which role and who may authorise what, not on the wording of the final sentence. Three capability families are targeted: multi-speaker memory (decisive facts appear only in overlapping background speech and must be recovered with their speaker attached), multi-speaker instruction following (selective disclosure, authorisation, priority) and multi-speaker reasoning. Two further probes ask whether speech not addressed to the assistant derails it: an unrelated human-to-human utterance played while the assistant is answering, and a scene cut before anything is handed to the assistant, where the correct action is to stay silent. Rubrics are judged individually by an LLM from a family not under evaluation, while tool calls are scored by a deterministic validator over function names, call multiplicity, argument values, ownership bindings and the absence of extra calls.",
+      "categories": [
+        "voice-agent",
+        "instruction-following",
+        "dialogue"
+      ],
+      "tasks": [
+        "retrieving decisive facts from overlapping background speech and keeping their speaker source",
+        "following instructions whose addressee, authorisation and priority depend on the participants",
+        "speaker-scoped reasoning and decision making over a multi-party scene",
+        "emitting the expected tool calls with correct arguments and ownership bindings",
+        "holding an answer through an unrelated bystander utterance, and staying silent until addressed"
+      ],
+      "languages": [
+        "English",
+        "Chinese"
+      ],
+      "metrics": [
+        "All-Pass Rate (APR): fraction of cases whose every atomic rubric passes",
+        "Atomic Rubric Score (ARS): fraction of individual rubrics passed, pooled over cases",
+        "tool execution: strict pass rate on cases requiring at least one tool call",
+        "Bystander Interference Robustness (BIR, higher is better)",
+        "Premature Response Rate (PRR, lower is better): responding before being addressed"
+      ],
+      "io": "multi-party multi-turn audio scene plus participant context in, assistant reply and tool calls out",
+      "size": "1,152 test cases (576 English, 576 Mandarin) across eight domains",
+      "note": "Failure analysis separates perception from reasoning: open-weight systems are bottlenecked by the multi-speaker audio front end, while frontier systems still fail speaker-scoped decisions on clean transcripts. Scenes are synthesised (planned cast, TTS-rendered lines, mixed background audio), not recorded from live meetings."
+    },
+    {
+      "id": "seabed",
+      "name": "SEABED",
+      "full_title": "SEABED: SouthEast Asian Benchmark for Evaluating Audio Reasoning",
+      "arxiv_id": "2609.22586",
+      "arxiv_date": "2026-09",
+      "arxiv_date_full": "2026-09-18",
+      "url": "https://arxiv.org/abs/2609.22586",
+      "data": "https://huggingface.co/datasets/CentificAIResearch/SEABED",
+      "summary": "An audio-first question answering benchmark that asks whether a model can reason from Southeast Asian speech rather than merely hear it. Existing SEA evaluation mostly inherits an English task taxonomy of recognition, translation and paralinguistic classification; SEABED instead builds six tasks on phenomena that live in the audio: identifying which lect is speaking (four Indonesian and four Thai varieties concatenated in random order), resolving structural ambiguity that only prosody disambiguates, comprehending dialectal speech, reasoning over long spontaneous recordings, recognising emotion, and interpreting affect. It comprises 5,404 question-answer pairs drawn from ten openly licensed Indonesian, Thai and Malay corpora, split evenly between multiple-choice and open-ended within every task. Beyond answer accuracy the benchmark audits whether a model's stated reasoning is actually grounded in the audio evidence, which separates correct-for-the-right-reason from lucky guesses; all generation, judging and reasoning-audit roles are assigned to model families that are not themselves under evaluation.",
+      "categories": [
+        "multilingual",
+        "reasoning",
+        "paralinguistics"
+      ],
+      "tasks": [
+        "dialect and language identification across concatenated lects",
+        "prosodic ambiguity resolution",
+        "dialectal speech comprehension",
+        "long-form audio reasoning over spontaneous multi-party recordings",
+        "speech emotion recognition",
+        "speech-affective interpretation (valence and arousal)"
+      ],
+      "languages": [
+        "Indonesian",
+        "Thai",
+        "Malay"
+      ],
+      "metrics": [
+        "weighted average accuracy (sample-weighted mean across tasks and formats)",
+        "exact match against the shuffled gold option for multiple-choice items",
+        "LLM-judged correctness for open-ended items, graded 0-1 for long-form answers",
+        "reasoning-grounding rate: whether the stated reasoning cites the audio evidence"
+      ],
+      "io": "SEA-language speech plus a question in, multiple-choice selection or open-ended text out",
+      "size": "5,404 question-answer pairs (1,008 per task for five tasks, 364 long-form) from ten corpora",
+      "note": "Only a sample of the data is public. The audio-versus-transcript and question-language comparisons in the paper isolate how much of the score survives when the audio is replaced by a transcript."
+    },
+    {
+      "id": "vox-infinity",
+      "name": "Vox-Infinity",
+      "full_title": "Vox-Infinity: Benchmarking the Limits of Long-Context Spoken Language Models",
+      "arxiv_id": "2609.22452",
+      "arxiv_date": "2026-09",
+      "arxiv_date_full": "2026-09-18",
+      "url": "https://arxiv.org/abs/2609.22452",
+      "code": "https://vox-infinity.github.io",
+      "summary": "A long-context benchmark for spoken language models that grows the audio history along two separate axes - how many turns and how long each turn - instead of one aggregate length. It contains 1,474 sessions, 13,516 question-answer pairs and 127.96 hours of audio across three subsets: Ultra Multi-Turn (task-oriented dialogues of more than twenty turns, built from real recorded conversations, testing retrieval from dense history), Personal Monologues (single-speaker speech longer than two minutes, reassembled from segment timestamps, requiring multi-hop reasoning over scattered evidence), and Beyond-Semantic (emotion cues that must survive distant turns). The Beyond-Semantic subset guards against the usual shortcut in emotion evaluation: because natural emotional speech can often be read off the words alone, neutral turns are re-synthesised with the same text in different emotional styles and kept only when two independent models recognise the intended emotion, so credit requires listening rather than inferring from the transcript. Each question is annotated with the turns that must be referenced to answer it, which lets results be binned by required history duration; models are additionally compared with the same history supplied as text (via ASR) versus as audio.",
+      "categories": [
+        "long-form",
+        "dialogue",
+        "paralinguistics"
+      ],
+      "tasks": [
+        "retrieving information from dense multi-turn spoken dialogue history",
+        "multi-hop reasoning over evidence scattered through a long monologue",
+        "recalling and recognising paralinguistic emotion cues from distant turns"
+      ],
+      "metrics": [
+        "accuracy judged by an LLM into Correct / Incorrect / Unknown, reported per required-context-duration bin"
+      ],
+      "io": "long spoken dialogue history plus a spoken or text query in, text answer out",
+      "size": "1,474 sessions, 13,516 QA pairs, 127.96 hours (average session 312.5 s)",
+      "note": "Seven spoken language models are evaluated with a 32,768-token context cap, each under both text history (ASR transcribed) and audio history, which makes the recency effect measurable rather than assumed."
+    },
+    {
+      "id": "omniechobench",
+      "name": "OmniEchoBench",
+      "aka": [
+        "OmniEchoBench-QA",
+        "OmniEchoBench-Nav"
+      ],
+      "full_title": "OmniEcho: Spatial Audio Understanding for Embodied Agents",
+      "arxiv_id": "2609.23407",
+      "arxiv_date": "2026-09",
+      "arxiv_date_full": "2026-09-20",
+      "url": "https://arxiv.org/abs/2609.23407",
+      "summary": "A benchmark for the part of hearing that a mono waveform throws away: where a sound is. It has two halves, both captured in the real world rather than simulated. OmniEchoBench-QA holds 2,972 question-answer pairs over 197 scripted real-world scenes and 600 bird's-eye-view images, deliberately built around sound sources that sit outside the current camera view or cross its boundary over time, so the visual stream alone cannot answer; tasks cover camera rotation, source direction, three-dimensional localisation, source motion and building a cognitive map. OmniEchoBench-Nav adds 900 sound-guided navigation samples over 30 real-scanned indoor environments (single-room and two-to-four-room layouts) supplied as textured meshes, with 12,900 four-channel first-order ambisonics recordings forming a dense acoustic field, so an agent must walk toward a sound it can hear but not see. Models are compared with single-channel audio, four-channel ambisonics, and audio plus vision, which isolates how much of the failure is missing spatial information versus missing reasoning; the paper also trains its own spatially aware model on the same data.",
+      "categories": [
+        "auditory-perception",
+        "reasoning",
+        "domain"
+      ],
+      "tasks": [
+        "estimating camera rotation from the changing sound field",
+        "identifying the direction of a sound source, including off-screen sources",
+        "three-dimensional localisation and distance estimation of a sound source",
+        "tracking sound-source motion across the field of view boundary",
+        "building a cognitive map of a scene from audio and vision",
+        "sound-guided navigation to an unseen target in a real scanned environment"
+      ],
+      "metrics": [
+        "per-task and overall accuracy on the QA split",
+        "navigation success rate, success weighted by path length, trajectory length and oracle success on the Nav split"
+      ],
+      "io": "first-order ambisonics (or single-channel) audio with egocentric video and a question or instruction in, answer or navigation action out",
+      "size": "2,972 QA pairs over 197 scenes plus 900 navigation samples over 30 scenes (12,900 FOA recordings)",
+      "note": "General omni models score close to chance on several spatial tasks with single-channel input; the reported ceiling analysis shows that even ground-truth direction does not fix the harder problem of deciding when to stop after reaching the target."
+    },
+    {
+      "id": "omni2web",
+      "name": "Omni2Web",
+      "full_title": "Omni2Web: Benchmarking Audiovisual Website Development",
+      "arxiv_id": "2609.23417",
+      "arxiv_date": "2026-09",
+      "arxiv_date_full": "2026-09-20",
+      "url": "https://arxiv.org/abs/2609.23417",
+      "code": "https://omni2web-bench.github.io/",
+      "summary": "A benchmark where the request is spoken over a screen recording, so the words alone are not enough: what 'this' and 'there' refer to depends on the speech, the cursor path, the page state and the edit history. It contains 918 instances from 129 source webpages, covering 13,907 historical edit steps across twelve operation types, with spoken requests nearly balanced between Chinese (465) and English (453) and a median video length of 128 seconds. A text-only recoverability probe grades how much of each instance survives without the video: 77.45% of instances fall below a 0.5 recovery rate, which is the evidence that the audiovisual channel is load-bearing rather than decorative. Three tracks separate the failure modes - editing the page directly from the recording, recovering the explicit instruction, and feeding that recovered instruction to a fixed code executor that never sees the media - and the gap between recovered and oracle instructions quantifies how much intent was lost. Seventeen open and closed systems are compared under their native input interfaces, so omni models consume the speech while vision-language models see only the silent video.",
+      "categories": [
+        "voice-agent",
+        "instruction-following",
+        "domain"
+      ],
+      "tasks": [
+        "editing a webpage directly from a screen recording with a spoken request",
+        "recovering the explicit instruction from audiovisual evidence",
+        "driving a fixed code executor with the recovered instruction"
+      ],
+      "languages": [
+        "Chinese",
+        "English"
+      ],
+      "metrics": [
+        "Edit Fidelity Score (EFS) for direct editing and for executor-driven editing",
+        "Instruction Recovery Score (IRS) for recovered intent"
+      ],
+      "io": "screen recording with spoken request (plus page source for the editing track) in, edited page or recovered instruction out",
+      "size": "918 instances from 129 source pages, 13,907 edit steps, 12 operation types",
+      "note": "Each model is assigned one main input condition based on the media it actually supports, so the comparison is between end-to-end systems under native interfaces rather than between architectures given identical information. Speech is one of several channels here, alongside cursor trajectory and page state."
     }
   ]
 }
