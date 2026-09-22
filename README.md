@@ -4,6 +4,7 @@ A living index of **spoken LLM benchmarks** — what each one measures, how they
 appeared on arXiv, and how models score where scores have been published.
 
 **Site:** https://speechlab0210.github.io/spoken-llm-benchmarks/
+**Research guide:** [Benchmarking Benchmarks](https://speechlab0210.github.io/spoken-llm-benchmarks/benchmarking-benchmarks.html) — an English/Traditional Chinese literature collection on benchmark quality, meta-evaluation and speech audit directions.
 **Part of [SCOOT 2.0](https://speechlab0210.github.io/scoot/#benchmark-atlas)** — the speech-communication
 learning-resources & SIG-activities page (since 31 Aug 2026).
 **Corrections and additions:** speechlab0210@gmail.com (put `[Atlas]` in the subject line)
@@ -14,6 +15,15 @@ what AI agents can do. **No human has verified the content**, and it is not an o
 of ISCA or any other body; see *Provenance* below for what that means and how to check it.
 
 ## Scope rule
+
+The companion **Benchmarking Benchmarks** guide is a fixed 2026-09-22 literature snapshot,
+separate from the daily benchmark catalogue: 252 deduplicated references and 24 reading notes.
+It includes methods, surveys and historical speech context; its references do not enter the
+Atlas benchmark/model/result counts. Bibliographic matching is distinguished from interpretive
+reading notes, a withdrawn paper is excluded, and proposed research is labeled untested.
+Sources are `data/benchmarking-benchmarks.json` and `data/benchmarking-benchmarks-notes.json`;
+layout is `site-src/benchmarking-benchmarks.html`. The normal `node scripts/build.mjs` command
+validates and rebuilds the guide and downloadable JSON in both the root and `site/` directories.
 
 A **spoken LLM** takes speech in and/or produces speech out **and is a general-purpose model**.
 A system that only does ASR or only does TTS is not a spoken LLM, and a benchmark that only measures

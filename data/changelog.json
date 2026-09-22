@@ -2,6 +2,10 @@
  "entries": [
   {
    "date": "2026-09-22",
+   "change": "Added Benchmarking Benchmarks, a bilingual research guide merging two literature surveys: 252 deduplicated references, 24 focused reading notes, topic and year filters, and a proposed speech audit validation study. Excludes a withdrawn paper, separates bibliographic checks from reading notes, and preserves all existing benchmark/model/result records. The guide is a fixed September 22 snapshot rebuilt with the main site."
+  },
+  {
+   "date": "2026-09-22",
    "change": "Added two benchmarks recovered from the continuing crawler outage. The arXiv query API has now returned HTTP 406 for every daily crawl since 17 September (Taipei), so six consecutive days scanned as zero; arXiv itself is reachable - the abstract pages and the OAI-PMH interface both answer normally - and only the query endpoint is refused, so the 20-21 September window was swept through OAI-PMH and scored with the same rule and threshold the daily crawler uses. Of 84 speech-relevant records, 17 cleared the threshold, one had been judged in an earlier round and 14 were read out of scope, leaving two admitted. Added: ODU-Bench (whether an omni model can infer what a user wants from audio-visual interaction, and whether they want anything at all - it scores demand detection, structured intent, span, transcript and profile separately, and reports a false-trigger rate on 447 no-demand scenes) and OmniVChat-Bench (native audio-visual dialogue in which the query is carried by the recording itself, 2,800 rubric-scored instances over five ability categories, compared against an ASR-cascade version of the same model). No result values were entered for either paper: both were read from rendered HTML or PDF in which adjacent digits are duplicated, and the source requirement for a result cell is not met by a figure transcribed from mangled text. Venue status for both is preprint, evidenced by the absence of a Comments and a Journal-ref field on the arXiv abstract page; venue_probe.py could not be used as a cross-check because it reads the same blocked query endpoint."
   },
   {

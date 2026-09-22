@@ -12,6 +12,7 @@ import { validateVenues, computeVenues } from './venues.mjs';
 import { validateCorrections } from './metadata-corrections.mjs';
 import { renderMetadataAudit } from './render_metadata_audit.mjs';
 import { buildMetricTables, renderMetricAliasAudit } from './metric-aliases.mjs';
+import { buildBenchmarkingBenchmarks } from './benchmarking-benchmarks.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const read = (p) => JSON.parse(readFileSync(join(ROOT, p), 'utf8'));
@@ -220,6 +221,7 @@ if (metricReview) {
   writeFileSync(join(ROOT, 'metric-aliases.html'), auditHtml);
   writeFileSync(join(ROOT, 'site', 'metric-aliases.html'), auditHtml.replaceAll('href="data/', 'href="../data/'));
 }
+buildBenchmarkingBenchmarks(ROOT);
 console.log(
   `[atlas] built site/index.html: ${stats.benchmarks} benchmarks ` +
   `(${stats.since_2025} since 2025), ${stats.models} models, ${stats.result_cells} result cells, ` +

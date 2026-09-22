@@ -1,0 +1,3611 @@
+{
+  "version": 1,
+  "updated": "2026-09-22",
+  "scope": "A convenience sample merged from two AI-assisted surveys; not a systematic review or a count of the field. Broad catalogue entries are bibliographic matches, not full-text-verified conclusions.",
+  "exclusions": [
+    {
+      "id": "2604.12875",
+      "reason": "Withdrawn by the author; excluded from catalogue and counts.",
+      "url": "https://arxiv.org/abs/2604.12875"
+    }
+  ],
+  "notes": [
+    "The 241-record broad survey contains one withdrawn paper: 240 retained.",
+    "The focused survey contributes 10 additional records after deduplication; two historical speech references are added from ISCA Archive.",
+    "2607.26159 supersedes a different withdrawn paper and is retained.",
+    "2502.17521 was rejected for a title mismatch in the earlier survey; the focused survey uses the verified EMNLP proceedings record instead.",
+    "Dates are arXiv first-submission months or proceedings years, not inferred conference acceptance.",
+    "Topics in the broad catalogue are title-keyword navigation aids; featured reading notes use editorial categorization."
+  ],
+  "papers": [
+    {
+      "id": "2609.24934",
+      "title": "Whose Facts Count? A Culturally Responsive Audit of LLM Evaluation Benchmarks",
+      "date": "2026-09",
+      "url": "https://arxiv.org/abs/2609.24934",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "quality"
+      ]
+    },
+    {
+      "id": "2609.15561",
+      "title": "Can We Trust the Judges? Validation of Factuality Evaluation Methods via Answer Perturbation",
+      "date": "2026-09",
+      "url": "https://arxiv.org/abs/2609.15561",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "judges"
+      ]
+    },
+    {
+      "id": "2609.14795",
+      "title": "Mind Which Bird You Favour: Parameterizing Adequacy-Fluency Balance in Meta-Evaluation of Machine Translation",
+      "date": "2026-09",
+      "url": "https://arxiv.org/abs/2609.14795",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "judges"
+      ]
+    },
+    {
+      "id": "2609.13792",
+      "title": "The VoiceMOS Challenge 2026: Evaluating Speech Enhancement, Emotional TTS and Accented TTS Systems",
+      "date": "2026-09",
+      "url": "https://arxiv.org/abs/2609.13792",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "judges",
+        "speech"
+      ]
+    },
+    {
+      "id": "2609.11115",
+      "title": "Benchmark Radar: A Living Database and Search Engine for AI Benchmarks and Evaluation",
+      "date": "2026-09",
+      "url": "https://arxiv.org/abs/2609.11115",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2609.09372",
+      "title": "What Does MMLU Actually Measure? A Psychometric Audit of Difficulty Structure in Aggregate Benchmark Scores",
+      "date": "2026-09",
+      "url": "https://arxiv.org/abs/2609.09372",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "quality",
+        "efficiency",
+        "judges"
+      ]
+    },
+    {
+      "id": "2609.09218",
+      "title": "The Double Measurement Confound in Agent Benchmarks: De-Scaffolding, Ground-Truth Scoring, and Reliability Beyond the Mean",
+      "date": "2026-09",
+      "url": "https://arxiv.org/abs/2609.09218",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "validity",
+        "reliability"
+      ]
+    },
+    {
+      "id": "2609.08812",
+      "title": "What AI Benchmarks Actually Measure: Adapting Convergent and Discriminant Validity to Interrogate Fifty-Six AI Benchmarks",
+      "date": "2026-09",
+      "url": "https://arxiv.org/abs/2609.08812",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "validity"
+      ]
+    },
+    {
+      "id": "2609.08149",
+      "title": "SWE-Bench Pro Verified: A Reliable Benchmark for Software Engineering Agents",
+      "date": "2026-09",
+      "url": "https://arxiv.org/abs/2609.08149",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "reliability",
+        "speech"
+      ]
+    },
+    {
+      "id": "2609.05289",
+      "title": "Beyond Aggregate Scores: Behavioral Correctness Assumptions for Assessing Reference-Based Automatic Evaluation Methods",
+      "date": "2026-09",
+      "url": "https://arxiv.org/abs/2609.05289",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2609.04298",
+      "title": "Harbor Adapters and Harbor-Index: Infrastructure and a Curated Meta-Dataset for Large-Scale Agentic Evaluation",
+      "date": "2026-09",
+      "url": "https://arxiv.org/abs/2609.04298",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2609.02942",
+      "title": "Judging LLM-as-a-Judge: Concerning Rubric Artifacts in LLM-based Automated Text Generation Evaluation",
+      "date": "2026-08",
+      "url": "https://arxiv.org/abs/2609.02942",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "judges",
+        "generation"
+      ]
+    },
+    {
+      "id": "2609.00482",
+      "title": "Are Near-Tied LLM Rankings Robust to Family-DIF-Guided Benchmark Recomposition?",
+      "date": "2026-08",
+      "url": "https://arxiv.org/abs/2609.00482",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "reliability"
+      ]
+    },
+    {
+      "id": "2608.29420",
+      "title": "One Capability or Many? Testing the Economic Validity of Frontier AI Evaluation",
+      "date": "2026-08",
+      "url": "https://arxiv.org/abs/2608.29420",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "validity"
+      ]
+    },
+    {
+      "id": "2608.25940",
+      "title": "A Statistical Audit of Physical AI Benchmark Redundancy",
+      "date": "2026-08",
+      "url": "https://arxiv.org/abs/2608.25940",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "quality",
+        "reliability",
+        "efficiency"
+      ]
+    },
+    {
+      "id": "2608.24160",
+      "title": "OmniJudge or OmniBias? Diagnosing Multimodal Judges through Balanced, Decoupled Lenses",
+      "date": "2026-08",
+      "url": "https://arxiv.org/abs/2608.24160",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "judges"
+      ]
+    },
+    {
+      "id": "2608.12635",
+      "title": "GateTruth: Auditing the Rigor of RTL Design Benchmarks via Mutation Testing",
+      "date": "2026-08",
+      "url": "https://arxiv.org/abs/2608.12635",
+      "source": "arXiv",
+      "collections": [
+        "focused-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "quality"
+      ]
+    },
+    {
+      "id": "2608.09930",
+      "title": "Beyond Naturalness: Probing Automated Text-To-Speech Evaluators on Linguistically Grounded Dimensions",
+      "date": "2026-08",
+      "url": "https://arxiv.org/abs/2608.09930",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "speech"
+      ]
+    },
+    {
+      "id": "2608.07914",
+      "title": "When Is Benchmark Contamination Detectable? Information Limits and Power-Calibrated Audits",
+      "date": "2026-08",
+      "url": "https://arxiv.org/abs/2608.07914",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "quality",
+        "contamination"
+      ]
+    },
+    {
+      "id": "2608.06718",
+      "title": "Do Audio Language Models Use Paralinguistic Evidence? Counterfactual Audits for Response Evaluation",
+      "date": "2026-08",
+      "url": "https://arxiv.org/abs/2608.06718",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "quality",
+        "speech"
+      ]
+    },
+    {
+      "id": "2608.06329",
+      "title": "Benchmarking the Benchmarks: Evaluating Benchmarks for Conversational Agents",
+      "date": "2026-08",
+      "url": "https://arxiv.org/abs/2608.06329",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey",
+        "focused-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2608.05086",
+      "title": "Item Response Theory for AI Safety",
+      "date": "2026-08",
+      "url": "https://arxiv.org/abs/2608.05086",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "efficiency"
+      ]
+    },
+    {
+      "id": "2608.03340",
+      "title": "Benchmarking the Benchmarks: Testing the Predictive Validity of Commonsense Benchmarks",
+      "date": "2026-08",
+      "url": "https://arxiv.org/abs/2608.03340",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey",
+        "focused-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "validity"
+      ]
+    },
+    {
+      "id": "2608.02966",
+      "title": "Every Wrong Answer Counts: Option-Level Psychometrics for LLM Multiple-Choice Benchmarks",
+      "date": "2026-08",
+      "url": "https://arxiv.org/abs/2608.02966",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "efficiency",
+        "judges"
+      ]
+    },
+    {
+      "id": "2608.01423",
+      "title": "Scoring Rules! Statistical and Strategic Alignment for Text Evaluation Metrics",
+      "date": "2026-08",
+      "url": "https://arxiv.org/abs/2608.01423",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "reliability",
+        "judges"
+      ]
+    },
+    {
+      "id": "2608.00794",
+      "title": "Measurement Without Validity: The Compounding Reliability Problem in Agentic AI Evaluation",
+      "date": "2026-08",
+      "url": "https://arxiv.org/abs/2608.00794",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "validity",
+        "reliability"
+      ]
+    },
+    {
+      "id": "2609.02899",
+      "title": "Contamination Inflates Scores but Rarely Reorders Large Language Model Leaderboards",
+      "date": "2026-07",
+      "url": "https://arxiv.org/abs/2609.02899",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "contamination"
+      ]
+    },
+    {
+      "id": "2607.28801",
+      "title": "Benchmarks Are Not Monolithic: Sample-Level Auditing and Orchestration for LLM Evaluation",
+      "date": "2026-07",
+      "url": "https://arxiv.org/abs/2607.28801",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "quality"
+      ]
+    },
+    {
+      "id": "2607.28685",
+      "title": "Safety, or Just Capability? A Validity Audit of Agent-Safety Benchmarks",
+      "date": "2026-07",
+      "url": "https://arxiv.org/abs/2607.28685",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "validity",
+        "quality"
+      ]
+    },
+    {
+      "id": "2607.27518",
+      "title": "Automated Transcript Analysis for Detecting Flaws in Agentic Benchmarks",
+      "date": "2026-07",
+      "url": "https://arxiv.org/abs/2607.27518",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "quality"
+      ]
+    },
+    {
+      "id": "2607.26159",
+      "title": "When benchmark inferences do not compose: Projectibility in AI evaluation",
+      "date": "2026-07",
+      "url": "https://arxiv.org/abs/2607.26159",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "validity"
+      ]
+    },
+    {
+      "id": "2607.22368",
+      "title": "Do Agent Benchmarks Measure Capability? Protocol Validity in the Age of Agentic AI",
+      "date": "2026-07",
+      "url": "https://arxiv.org/abs/2607.22368",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "validity"
+      ]
+    },
+    {
+      "id": "2607.15190",
+      "title": "Can We Trust Item Response Theory for AI Evaluation?",
+      "date": "2026-07",
+      "url": "https://arxiv.org/abs/2607.15190",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "efficiency"
+      ]
+    },
+    {
+      "id": "2607.13477",
+      "title": "Auditing Protocol-Level Shortcuts in Large Audio Language Model Judges for Speech Evaluation",
+      "date": "2026-07",
+      "url": "https://arxiv.org/abs/2607.13477",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "quality",
+        "judges",
+        "contamination",
+        "speech"
+      ]
+    },
+    {
+      "id": "2607.10626",
+      "title": "Eval-Pair Matrix: Answer-Paired Meta-Evaluation of LLM Judges for Grounded RAG",
+      "date": "2026-07",
+      "url": "https://arxiv.org/abs/2607.10626",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "judges"
+      ]
+    },
+    {
+      "id": "2607.07985",
+      "title": "A Reliability Assessment of LALM Audio Judges for Full-Duplex Voice Agents",
+      "date": "2026-07",
+      "url": "https://arxiv.org/abs/2607.07985",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "reliability",
+        "judges",
+        "speech"
+      ]
+    },
+    {
+      "id": "2607.05775",
+      "title": "Beyond the Leaderboard: A Synthesis of Tool-Use, Planning, and Reasoning Failures in Large Language Model Agents",
+      "date": "2026-07",
+      "url": "https://arxiv.org/abs/2607.05775",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "generation"
+      ]
+    },
+    {
+      "id": "2607.04429",
+      "title": "evalci: A Python Library for Statistically Rigorous Comparison of Language Model Evaluations",
+      "date": "2026-07",
+      "url": "https://arxiv.org/abs/2607.04429",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "quality",
+        "reliability"
+      ]
+    },
+    {
+      "id": "2607.02586",
+      "title": "Auditing the Audit: Five Failure Modes in Benchmark-Validity Audits",
+      "date": "2026-07",
+      "url": "https://arxiv.org/abs/2607.02586",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "validity",
+        "quality"
+      ]
+    },
+    {
+      "id": "2607.01740",
+      "title": "Meta-Benchmarks for Financial-Services LLM Evaluation",
+      "date": "2026-07",
+      "url": "https://arxiv.org/abs/2607.01740",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2607.16259",
+      "title": "Quantifying Ranking Uncertainty in LLM Benchmarks",
+      "date": "2026-06",
+      "url": "https://arxiv.org/abs/2607.16259",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "reliability"
+      ]
+    },
+    {
+      "id": "2607.01254",
+      "title": "The Benchmark Ceiling: Human Judgment, Evaluation Scarcity, and the Political Economy of AI Capability Measurement",
+      "date": "2026-06",
+      "url": "https://arxiv.org/abs/2607.01254",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "validity"
+      ]
+    },
+    {
+      "id": "2606.31112",
+      "title": "What Counts as an Error? Dual-Reference Benchmarking for Atypical ASR",
+      "date": "2026-06",
+      "url": "https://arxiv.org/abs/2606.31112",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "speech"
+      ]
+    },
+    {
+      "id": "2606.28114",
+      "title": "Screening Matters: A Comparative Study of Conventional and Crowdsourced Listening Tests",
+      "date": "2026-06",
+      "url": "https://arxiv.org/abs/2606.28114",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "speech"
+      ]
+    },
+    {
+      "id": "2606.26158",
+      "title": "Life After Benchmark Saturation: A Case Study of CORE-Bench",
+      "date": "2026-06",
+      "url": "https://arxiv.org/abs/2606.26158",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2606.24648",
+      "title": "ParaPairAudioBench: Paralinguistic Pairwise Audio Benchmark for LALM-as-a-Judge",
+      "date": "2026-06",
+      "url": "https://arxiv.org/abs/2606.24648",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "judges",
+        "speech"
+      ]
+    },
+    {
+      "id": "2606.21627",
+      "title": "Counsel: A Meta-Evaluation Dataset for Agentic Tasks",
+      "date": "2026-06",
+      "url": "https://arxiv.org/abs/2606.21627",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "judges"
+      ]
+    },
+    {
+      "id": "2606.21584",
+      "title": "When EER Hides Deployment Failure: Auditing Threshold Transfer and Unlabeled Score Calibration for Speech Deepfake Detectors",
+      "date": "2026-06",
+      "url": "https://arxiv.org/abs/2606.21584",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "quality",
+        "speech"
+      ]
+    },
+    {
+      "id": "2606.19704",
+      "title": "Beyond Static Leaderboards: Predictive Validity for the Evaluation of LLM Agents",
+      "date": "2026-06",
+      "url": "https://arxiv.org/abs/2606.19704",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "validity"
+      ]
+    },
+    {
+      "id": "2606.19544",
+      "title": "Reliability without Validity: A Systematic, Large-Scale Evaluation of LLM-as-a-Judge Models Across Agreement, Consistency, and Bias",
+      "date": "2026-06",
+      "url": "https://arxiv.org/abs/2606.19544",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "validity",
+        "reliability",
+        "judges"
+      ]
+    },
+    {
+      "id": "2606.14516",
+      "title": "Every Eval Ever: A Unifying Schema and Community Repository for AI Evaluation Results",
+      "date": "2026-06",
+      "url": "https://arxiv.org/abs/2606.14516",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2606.09809",
+      "title": "Evaluation Cards: An Interpretive Layer for AI Evaluation Reporting",
+      "date": "2026-06",
+      "url": "https://arxiv.org/abs/2606.09809",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2606.08679",
+      "title": "Rank Intervals for Leaderboards: A Hierarchical Framework for Model Evaluation",
+      "date": "2026-06",
+      "url": "https://arxiv.org/abs/2606.08679",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "reliability"
+      ]
+    },
+    {
+      "id": "2606.07936",
+      "title": "Illusions of the Gold Standard: A Large-scale Analysis of Human Evaluation Protocols for Long-form Text Generation",
+      "date": "2026-06",
+      "url": "https://arxiv.org/abs/2606.07936",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "judges",
+        "generation"
+      ]
+    },
+    {
+      "id": "2606.02547",
+      "title": "Pluralistic Leaderboards",
+      "date": "2026-06",
+      "url": "https://arxiv.org/abs/2606.02547",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2606.20626",
+      "title": "Efficient Safety Benchmarking via Item Response Theory",
+      "date": "2026-05",
+      "url": "https://arxiv.org/abs/2606.20626",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "efficiency"
+      ]
+    },
+    {
+      "id": "2606.07608",
+      "title": "Subtitle-Aligned Fine-Tuning of Whisper for Swiss German ASR: Benchmark Contamination, Convention Mismatch, and an Honest Baseline at 25.6% WER (13.8% cWER)",
+      "date": "2026-05",
+      "url": "https://arxiv.org/abs/2606.07608",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "contamination",
+        "speech"
+      ]
+    },
+    {
+      "id": "2605.30504",
+      "title": "Auditing LLM Benchmarks with Item Response Theory",
+      "date": "2026-05",
+      "url": "https://arxiv.org/abs/2605.30504",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "quality",
+        "efficiency"
+      ]
+    },
+    {
+      "id": "2605.30315",
+      "title": "Resolution Diagnostics for Paired LLM Evaluation",
+      "date": "2026-05",
+      "url": "https://arxiv.org/abs/2605.30315",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2605.28966",
+      "title": "The Trust Paradox: How CS Researchers Engage LLM Leaderboards",
+      "date": "2026-05",
+      "url": "https://arxiv.org/abs/2605.28966",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2605.28591",
+      "title": "Models That Know How Evaluations Are Designed Score Safer",
+      "date": "2026-05",
+      "url": "https://arxiv.org/abs/2605.28591",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2605.28227",
+      "title": "Why We Need Speech to Evaluate Speech Translation",
+      "date": "2026-05",
+      "url": "https://arxiv.org/abs/2605.28227",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "speech"
+      ]
+    },
+    {
+      "id": "2605.26079",
+      "title": "Automated Benchmark Auditing for AI Agents and Large Language Models",
+      "date": "2026-05",
+      "url": "https://arxiv.org/abs/2605.26079",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "quality"
+      ]
+    },
+    {
+      "id": "2605.25773",
+      "title": "Efficient Benchmarking Is Just Feature Selection and Multiple Regression",
+      "date": "2026-05",
+      "url": "https://arxiv.org/abs/2605.25773",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "efficiency"
+      ]
+    },
+    {
+      "id": "2605.25492",
+      "title": "SafetyRepro: Configuration-Conditional Rank Instability on Alignment Benchmarks",
+      "date": "2026-05",
+      "url": "https://arxiv.org/abs/2605.25492",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "reliability"
+      ]
+    },
+    {
+      "id": "2605.25272",
+      "title": "AI Cartography: Mapping the Latent Landscape of AI Benchmark Ecosystems",
+      "date": "2026-05",
+      "url": "https://arxiv.org/abs/2605.25272",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2605.25052",
+      "title": "Faithfulness Metrics Don't Measure Faithfulness: A Meta-Evaluation with Ground Truth",
+      "date": "2026-05",
+      "url": "https://arxiv.org/abs/2605.25052",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "judges"
+      ]
+    },
+    {
+      "id": "2605.18824",
+      "title": "Fine-Grained Benchmark Generation for Comprehensive Evaluation of Foundation Models",
+      "date": "2026-05",
+      "url": "https://arxiv.org/abs/2605.18824",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "generation"
+      ]
+    },
+    {
+      "id": "2605.17273",
+      "title": "Position: State-of-the-Art Claims Require State-of-the-Art Evidence",
+      "date": "2026-05",
+      "url": "https://arxiv.org/abs/2605.17273",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2605.15761",
+      "title": "A Unified Perturbation Framework for Analyzing Leaderboard Stability and Manipulation",
+      "date": "2026-05",
+      "url": "https://arxiv.org/abs/2605.15761",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "reliability",
+        "contamination"
+      ]
+    },
+    {
+      "id": "2605.15164",
+      "title": "Position: Behavioural Assurance Cannot Verify the Safety Claims Governance Now Demands",
+      "date": "2026-05",
+      "url": "https://arxiv.org/abs/2605.15164",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2605.14167",
+      "title": "The Evaluation Trap: Benchmark Design as Theoretical Commitment",
+      "date": "2026-05",
+      "url": "https://arxiv.org/abs/2605.14167",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "generation"
+      ]
+    },
+    {
+      "id": "2605.14164",
+      "title": "Unsteady Metrics and Benchmarking Cultures of AI Model Builders",
+      "date": "2026-05",
+      "url": "https://arxiv.org/abs/2605.14164",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "judges"
+      ]
+    },
+    {
+      "id": "2605.12673",
+      "title": "Do Androids Dream of Breaking the Game? Systematically Auditing AI Agent Benchmarks with BenchJack",
+      "date": "2026-05",
+      "url": "https://arxiv.org/abs/2605.12673",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "quality"
+      ]
+    },
+    {
+      "id": "2605.04135",
+      "title": "Frontier Lag: A Bibliometric Audit of Capability Misrepresentation in Academic AI Evaluation",
+      "date": "2026-05",
+      "url": "https://arxiv.org/abs/2605.04135",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "quality",
+        "judges"
+      ]
+    },
+    {
+      "id": "2604.24955",
+      "title": "BenchGuard: Who Guards the Benchmarks? Automated Auditing of LLM Agent Benchmarks",
+      "date": "2026-04",
+      "url": "https://arxiv.org/abs/2604.24955",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "quality"
+      ]
+    },
+    {
+      "id": "2604.24401",
+      "title": "All That Glitters Is Not Audio: Rethinking Text Priors and Audio Reliance in Audio-Language Evaluation",
+      "date": "2026-04",
+      "url": "https://arxiv.org/abs/2604.24401",
+      "source": "arXiv",
+      "collections": [
+        "focused-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "speech"
+      ]
+    },
+    {
+      "id": "2604.21769",
+      "title": "Who Defines \"Best\"? Towards Interactive, User-Defined Evaluation of LLM Leaderboards",
+      "date": "2026-04",
+      "url": "https://arxiv.org/abs/2604.21769",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2604.12843",
+      "title": "Growing Pains: Extensible and Efficient LLM Benchmarking Via Fixed Parameter Calibration",
+      "date": "2026-04",
+      "url": "https://arxiv.org/abs/2604.12843",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "efficiency"
+      ]
+    },
+    {
+      "id": "2604.11581",
+      "title": "Hidden Measurement Error in LLM Pipelines Distorts Annotation, Evaluation, and Benchmarking",
+      "date": "2026-04",
+      "url": "https://arxiv.org/abs/2604.11581",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "validity"
+      ]
+    },
+    {
+      "id": "2604.09911",
+      "title": "The Rise and Fall of $G$ in AGI",
+      "date": "2026-04",
+      "url": "https://arxiv.org/abs/2604.09911",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2604.04847",
+      "title": "Full-Duplex-Bench-v3: Benchmarking Tool Use for Full-Duplex Voice Agents Under Real-World Disfluency",
+      "date": "2026-04",
+      "url": "https://arxiv.org/abs/2604.04847",
+      "source": "arXiv",
+      "collections": [
+        "focused-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "speech"
+      ]
+    },
+    {
+      "id": "2604.01418",
+      "title": "Cost-Efficient Estimation of General Abilities Across Benchmarks",
+      "date": "2026-04",
+      "url": "https://arxiv.org/abs/2604.01418",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "efficiency"
+      ]
+    },
+    {
+      "id": "2603.29357",
+      "title": "BenchScope: How Many Independent Signals Does Your Benchmark Provide?",
+      "date": "2026-03",
+      "url": "https://arxiv.org/abs/2603.29357",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "efficiency"
+      ]
+    },
+    {
+      "id": "2603.23749",
+      "title": "Efficient Benchmarking of AI Agents",
+      "date": "2026-03",
+      "url": "https://arxiv.org/abs/2603.23749",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "efficiency"
+      ]
+    },
+    {
+      "id": "2603.23292",
+      "title": "LLM Olympiad: Why Model Evaluation Needs a Sealed Exam",
+      "date": "2026-03",
+      "url": "https://arxiv.org/abs/2603.23292",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2603.20807",
+      "title": "BenchBench: Benchmarking Automated Benchmark Generation",
+      "date": "2026-03",
+      "url": "https://arxiv.org/abs/2603.20807",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey",
+        "focused-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "generation"
+      ]
+    },
+    {
+      "id": "2603.16406",
+      "title": "Who Benchmarks the Benchmarks? A Case Study of LLM Evaluation in Icelandic",
+      "date": "2026-03",
+      "url": "https://arxiv.org/abs/2603.16406",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2603.15121",
+      "title": "Establishing Construct Validity in LLM Capability Benchmarks Requires Nomological Networks",
+      "date": "2026-03",
+      "url": "https://arxiv.org/abs/2603.15121",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "validity"
+      ]
+    },
+    {
+      "id": "2603.06942",
+      "title": "Deep Research, Shallow Evaluation: A Case Study in Meta-Evaluation for Long-Form QA Benchmarks",
+      "date": "2026-03",
+      "url": "https://arxiv.org/abs/2603.06942",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "judges"
+      ]
+    },
+    {
+      "id": "2603.05910",
+      "title": "The World Won't Stay Still: Programmable Evolution for Agent Benchmarks",
+      "date": "2026-03",
+      "url": "https://arxiv.org/abs/2603.05910",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "generation"
+      ]
+    },
+    {
+      "id": "2604.03244",
+      "title": "AI Evaluation Should Require Standardized Item-Level Data Releases",
+      "date": "2026-02",
+      "url": "https://arxiv.org/abs/2604.03244",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2603.18019",
+      "title": "BenchBrowser: Retrieving Evidence for Evaluating Benchmark Validity",
+      "date": "2026-02",
+      "url": "https://arxiv.org/abs/2603.18019",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "validity"
+      ]
+    },
+    {
+      "id": "2602.21297",
+      "title": "Robust AI Evaluation through Maximal Lotteries",
+      "date": "2026-02",
+      "url": "https://arxiv.org/abs/2602.21297",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2602.21012",
+      "title": "International AI Safety Report 2026",
+      "date": "2026-02",
+      "url": "https://arxiv.org/abs/2602.21012",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2602.16763",
+      "title": "When AI Benchmarks Plateau: A Systematic Study of Benchmark Saturation",
+      "date": "2026-02",
+      "url": "https://arxiv.org/abs/2602.16763",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2602.15532",
+      "title": "Quantifying construct validity in large language model evaluations",
+      "date": "2026-02",
+      "url": "https://arxiv.org/abs/2602.15532",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "validity"
+      ]
+    },
+    {
+      "id": "2602.11674",
+      "title": "Benchmark Health Index: A Systematic Framework for Benchmarking the Benchmarks of LLMs",
+      "date": "2026-02",
+      "url": "https://arxiv.org/abs/2602.11674",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "quality"
+      ]
+    },
+    {
+      "id": "2602.07150",
+      "title": "On Randomness in Agentic Evals",
+      "date": "2026-02",
+      "url": "https://arxiv.org/abs/2602.07150",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "reliability"
+      ]
+    },
+    {
+      "id": "2601.23112",
+      "title": "How Should AI Safety Benchmarks Benchmark Safety?",
+      "date": "2026-01",
+      "url": "https://arxiv.org/abs/2601.23112",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2601.20617",
+      "title": "Agent Benchmarks Fail Public Sector Requirements",
+      "date": "2026-01",
+      "url": "https://arxiv.org/abs/2601.20617",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2601.20251",
+      "title": "Efficient Evaluation of LLM Performance with Statistical Guarantees",
+      "date": "2026-01",
+      "url": "https://arxiv.org/abs/2601.20251",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "reliability",
+        "efficiency"
+      ]
+    },
+    {
+      "id": "2601.17087",
+      "title": "Lost in Simulation: LLM-Simulated Users are Unreliable Proxies for Human Users in Agentic Evaluations",
+      "date": "2026-01",
+      "url": "https://arxiv.org/abs/2601.17087",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "reliability"
+      ]
+    },
+    {
+      "id": "2601.11699",
+      "title": "Frontier AI Auditing: Toward Rigorous Third-Party Assessment of Safety and Security Practices at Leading AI Companies",
+      "date": "2026-01",
+      "url": "https://arxiv.org/abs/2601.11699",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "quality"
+      ]
+    },
+    {
+      "id": "2601.07648",
+      "title": "What Are We Measuring in NLG? A Meta-Analysis of Evaluation Trends 2020-2025",
+      "date": "2026-01",
+      "url": "https://arxiv.org/abs/2601.07648",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "validity"
+      ]
+    },
+    {
+      "id": "2601.06329",
+      "title": "On the Fallacy of Global Token Perplexity in Spoken Language Model Evaluation",
+      "date": "2026-01",
+      "url": "https://arxiv.org/abs/2601.06329",
+      "source": "arXiv",
+      "collections": [
+        "focused-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2601.04301",
+      "title": "Quantifying the Effect of Test Set Contamination on Generative Evaluations",
+      "date": "2026-01",
+      "url": "https://arxiv.org/abs/2601.04301",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "contamination"
+      ]
+    },
+    {
+      "id": "2601.03986",
+      "title": "Benchmark^2: Systematic Evaluation of LLM Benchmarks",
+      "date": "2026-01",
+      "url": "https://arxiv.org/abs/2601.03986",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "quality"
+      ]
+    },
+    {
+      "id": "2601.00575",
+      "title": "InfoSynth: Information-Guided Benchmark Synthesis for LLMs",
+      "date": "2026-01",
+      "url": "https://arxiv.org/abs/2601.00575",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "generation"
+      ]
+    },
+    {
+      "id": "2512.09577",
+      "title": "Auto-BenchmarkCard: Automated Synthesis of Benchmark Documentation",
+      "date": "2025-12",
+      "url": "https://arxiv.org/abs/2512.09577",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "quality",
+        "generation"
+      ]
+    },
+    {
+      "id": "2601.14262",
+      "title": "On Meta-Evaluation",
+      "date": "2025-11",
+      "url": "https://arxiv.org/abs/2601.14262",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "judges"
+      ]
+    },
+    {
+      "id": "2512.09066",
+      "title": "ORCA: Open-ended Response Correctness Assessment for Audio Question Answering",
+      "date": "2025-11",
+      "url": "https://arxiv.org/abs/2512.09066",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "speech"
+      ]
+    },
+    {
+      "id": "2511.16842",
+      "title": "Fantastic Bugs and Where to Find Them in AI Benchmarks",
+      "date": "2025-11",
+      "url": "https://arxiv.org/abs/2511.16842",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "quality"
+      ]
+    },
+    {
+      "id": "2511.04703",
+      "title": "Measuring what Matters: Construct Validity in Large Language Model Benchmarks",
+      "date": "2025-11",
+      "url": "https://arxiv.org/abs/2511.04703",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey",
+        "focused-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "validity"
+      ]
+    },
+    {
+      "id": "2511.01261",
+      "title": "Speech-DRAME: A Framework for Human-Aligned Benchmarks in Speech Role-Play",
+      "date": "2025-11",
+      "url": "https://arxiv.org/abs/2511.01261",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "speech"
+      ]
+    },
+    {
+      "id": "2511.04689",
+      "title": "Adaptive Testing for LLM Evaluation: A Psychometric Alternative to Static Benchmarks",
+      "date": "2025-10",
+      "url": "https://arxiv.org/abs/2511.04689",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "efficiency",
+        "judges"
+      ]
+    },
+    {
+      "id": "2510.25039",
+      "title": "Automating Benchmark Design",
+      "date": "2025-10",
+      "url": "https://arxiv.org/abs/2510.25039",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "generation"
+      ]
+    },
+    {
+      "id": "2510.24317",
+      "title": "Cybersecurity AI Benchmark (CAIBench): A Meta-Benchmark for Evaluating Cybersecurity AI Agents",
+      "date": "2025-10",
+      "url": "https://arxiv.org/abs/2510.24317",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2510.23191",
+      "title": "The Benchmarking Epistemology: Construct Validity for Evaluating Machine Learning Models",
+      "date": "2025-10",
+      "url": "https://arxiv.org/abs/2510.23191",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "validity"
+      ]
+    },
+    {
+      "id": "2510.11977",
+      "title": "Holistic Agent Leaderboard: The Missing Infrastructure for AI Agent Evaluation",
+      "date": "2025-10",
+      "url": "https://arxiv.org/abs/2510.11977",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2510.10457",
+      "title": "Rethinking LLM Evaluation: Can We Evaluate LLMs with 200x Less Data?",
+      "date": "2025-10",
+      "url": "https://arxiv.org/abs/2510.10457",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2510.08730",
+      "title": "How Reliable is Language Model Micro-Benchmarking?",
+      "date": "2025-10",
+      "url": "https://arxiv.org/abs/2510.08730",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "reliability"
+      ]
+    },
+    {
+      "id": "2510.05152",
+      "title": "A Single Character can Make or Break Your LLM Evals",
+      "date": "2025-10",
+      "url": "https://arxiv.org/abs/2510.05152",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2510.00628",
+      "title": "Hearing the Order: Investigating Position Bias in Large Audio-Language Models",
+      "date": "2025-10",
+      "url": "https://arxiv.org/abs/2510.00628",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "speech"
+      ]
+    },
+    {
+      "id": "2510.00507",
+      "title": "Graph2Eval: Automatic Multimodal Task Generation for Agents via Knowledge Graphs",
+      "date": "2025-10",
+      "url": "https://arxiv.org/abs/2510.00507",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "generation"
+      ]
+    },
+    {
+      "id": "2510.02386",
+      "title": "On The Fragility of Benchmark Contamination Detection in Reasoning Models",
+      "date": "2025-09",
+      "url": "https://arxiv.org/abs/2510.02386",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "contamination"
+      ]
+    },
+    {
+      "id": "2509.25546",
+      "title": "Don't Sweat the Small Stuff: Segment-Level Meta-Evaluation Based on Pairwise Difference Correlation",
+      "date": "2025-09",
+      "url": "https://arxiv.org/abs/2509.25546",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "judges"
+      ]
+    },
+    {
+      "id": "2509.24086",
+      "title": "Do Repetitions Matter? Strengthening Reliability in LLM Evaluations",
+      "date": "2025-09",
+      "url": "https://arxiv.org/abs/2509.24086",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "reliability"
+      ]
+    },
+    {
+      "id": "2509.23488",
+      "title": "Mapping Overlaps in Benchmarks through Perplexity in the Wild",
+      "date": "2025-09",
+      "url": "https://arxiv.org/abs/2509.23488",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2509.20287",
+      "title": "Feeding Two Birds or Favoring One? Adequacy-Fluency Tradeoffs in Evaluation and Meta-Evaluation of Machine Translation",
+      "date": "2025-09",
+      "url": "https://arxiv.org/abs/2509.20287",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "judges"
+      ]
+    },
+    {
+      "id": "2509.19219",
+      "title": "MUSHRA-1S: A scalable and sensitive test approach for evaluating top-tier speech processing systems",
+      "date": "2025-09",
+      "url": "https://arxiv.org/abs/2509.19219",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "speech"
+      ]
+    },
+    {
+      "id": "2509.17349",
+      "title": "Better Late Than Never: Meta-Evaluation of Latency Metrics for Simultaneous Speech-to-Text Translation",
+      "date": "2025-09",
+      "url": "https://arxiv.org/abs/2509.17349",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "judges",
+        "speech"
+      ]
+    },
+    {
+      "id": "2509.11106",
+      "title": "Fluid Language Model Benchmarking",
+      "date": "2025-09",
+      "url": "https://arxiv.org/abs/2509.11106",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2509.00072",
+      "title": "Test of Time: Rethinking Temporal Signal of Benchmark Contamination",
+      "date": "2025-08",
+      "url": "https://arxiv.org/abs/2509.00072",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "contamination"
+      ]
+    },
+    {
+      "id": "2508.15361",
+      "title": "A Survey on Large Language Model Benchmarks",
+      "date": "2025-08",
+      "url": "https://arxiv.org/abs/2508.15361",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2508.11847",
+      "title": "Dropping Just a Handful of Preferences Can Change Top Large Language Model Rankings",
+      "date": "2025-08",
+      "url": "https://arxiv.org/abs/2508.11847",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "reliability"
+      ]
+    },
+    {
+      "id": "2508.09853",
+      "title": "STREAM (ChemBio): A Standard for Transparently Reporting Evaluations in AI Model Reports",
+      "date": "2025-08",
+      "url": "https://arxiv.org/abs/2508.09853",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2508.00317",
+      "title": "Advancing Speech Quality Assessment Through Scientific Challenges and Open-source Activities",
+      "date": "2025-08",
+      "url": "https://arxiv.org/abs/2508.00317",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "quality",
+        "speech"
+      ]
+    },
+    {
+      "id": "2507.23009",
+      "title": "Position: Stop Evaluating AI with Human Tests, Develop Principled, AI-specific Tests instead",
+      "date": "2025-07",
+      "url": "https://arxiv.org/abs/2507.23009",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2507.20208",
+      "title": "From Benchmarks to Skills: Low-Rank Factors for LLM Evaluation",
+      "date": "2025-07",
+      "url": "https://arxiv.org/abs/2507.20208",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "reliability",
+        "efficiency"
+      ]
+    },
+    {
+      "id": "2507.12705",
+      "title": "AudioJudge: Understanding What Works in Large Audio Model Based Speech Evaluation",
+      "date": "2025-07",
+      "url": "https://arxiv.org/abs/2507.12705",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "judges",
+        "speech"
+      ]
+    },
+    {
+      "id": "2507.06434",
+      "title": "Deprecating Benchmarks: Criteria and Framework",
+      "date": "2025-07",
+      "url": "https://arxiv.org/abs/2507.06434",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2507.02825",
+      "title": "Establishing Best Practices for Building Rigorous Agentic Benchmarks",
+      "date": "2025-07",
+      "url": "https://arxiv.org/abs/2507.02825",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "quality"
+      ]
+    },
+    {
+      "id": "2507.01633",
+      "title": "Confidence and Stability of Global and Pairwise Scores in NLP Evaluation",
+      "date": "2025-07",
+      "url": "https://arxiv.org/abs/2507.01633",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "reliability"
+      ]
+    },
+    {
+      "id": "2506.12286",
+      "title": "The SWE-Bench Illusion: When State-of-the-Art LLMs Remember Instead of Reason",
+      "date": "2025-06",
+      "url": "https://arxiv.org/abs/2506.12286",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2506.10055",
+      "title": "TaskCraft: Automated Generation of Agentic Tasks",
+      "date": "2025-06",
+      "url": "https://arxiv.org/abs/2506.10055",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "generation"
+      ]
+    },
+    {
+      "id": "2506.01937",
+      "title": "RewardBench 2: Advancing Reward Model Evaluation",
+      "date": "2025-06",
+      "url": "https://arxiv.org/abs/2506.01937",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "judges"
+      ]
+    },
+    {
+      "id": "2505.23445",
+      "title": "The Strong, Weak and Benign Goodhart's law. An independence-free and paradigm-agnostic formalisation",
+      "date": "2025-05",
+      "url": "https://arxiv.org/abs/2505.23445",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "contamination"
+      ]
+    },
+    {
+      "id": "2505.15055",
+      "title": "Lost in Benchmarks? Rethinking Large Language Model Benchmarking with Item Response Theory",
+      "date": "2025-05",
+      "url": "https://arxiv.org/abs/2505.15055",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "efficiency"
+      ]
+    },
+    {
+      "id": "2505.10573",
+      "title": "Measurement to Meaning: A Validity-Centered Framework for AI Evaluation",
+      "date": "2025-05",
+      "url": "https://arxiv.org/abs/2505.10573",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "validity"
+      ]
+    },
+    {
+      "id": "2505.08245",
+      "title": "Large Language Model Psychometrics: A Systematic Review of Evaluation, Validation, and Enhancement",
+      "date": "2025-05",
+      "url": "https://arxiv.org/abs/2505.08245",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "efficiency",
+        "judges"
+      ]
+    },
+    {
+      "id": "2504.20879",
+      "title": "The Leaderboard Illusion",
+      "date": "2025-04",
+      "url": "https://arxiv.org/abs/2504.20879",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2504.14039",
+      "title": "MEQA: A Meta-Evaluation Framework for Question & Answer LLM Benchmarks",
+      "date": "2025-04",
+      "url": "https://arxiv.org/abs/2504.14039",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "judges"
+      ]
+    },
+    {
+      "id": "2503.19828",
+      "title": "Contextual Metric Meta-Evaluation by Measuring Local Metric Accuracy",
+      "date": "2025-03",
+      "url": "https://arxiv.org/abs/2503.19828",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "validity",
+        "judges"
+      ]
+    },
+    {
+      "id": "2503.06378",
+      "title": "General Scales Unlock AI Evaluation with Explanatory and Predictive Power",
+      "date": "2025-03",
+      "url": "https://arxiv.org/abs/2503.06378",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "validity"
+      ]
+    },
+    {
+      "id": "2503.05965",
+      "title": "Validating LLM-as-a-Judge Systems under Rating Indeterminacy",
+      "date": "2025-03",
+      "url": "https://arxiv.org/abs/2503.05965",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "judges"
+      ]
+    },
+    {
+      "id": "2503.05336",
+      "title": "Toward an Evaluation Science for Generative AI Systems",
+      "date": "2025-03",
+      "url": "https://arxiv.org/abs/2503.05336",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2503.04474",
+      "title": "Know Thy Judge: On the Robustness Meta-Evaluation of LLM Safety Judges",
+      "date": "2025-03",
+      "url": "https://arxiv.org/abs/2503.04474",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "judges"
+      ]
+    },
+    {
+      "id": "2502.14074",
+      "title": "Investigating Non-Transitivity in LLM-as-a-Judge",
+      "date": "2025-02",
+      "url": "https://arxiv.org/abs/2502.14074",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "judges"
+      ]
+    },
+    {
+      "id": "2502.06559",
+      "title": "Can We Trust AI Benchmarks? An Interdisciplinary Review of Current Issues in AI Evaluation",
+      "date": "2025-02",
+      "url": "https://arxiv.org/abs/2502.06559",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2502.03461",
+      "title": "Do Large Language Model Benchmarks Test Reliability?",
+      "date": "2025-02",
+      "url": "https://arxiv.org/abs/2502.03461",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "reliability"
+      ]
+    },
+    {
+      "id": "2502.01683",
+      "title": "LLM-Powered Benchmark Factory: Reliable, Generic, and Efficient",
+      "date": "2025-02",
+      "url": "https://arxiv.org/abs/2502.01683",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "reliability",
+        "efficiency",
+        "generation"
+      ]
+    },
+    {
+      "id": "2502.00561",
+      "title": "Position: Evaluating Generative AI Systems Is a Social Science Measurement Challenge",
+      "date": "2025-02",
+      "url": "https://arxiv.org/abs/2502.00561",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "validity"
+      ]
+    },
+    {
+      "id": "2501.17858",
+      "title": "Improving Your Model Ranking on Chatbot Arena by Vote Rigging",
+      "date": "2025-01",
+      "url": "https://arxiv.org/abs/2501.17858",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "reliability",
+        "contamination"
+      ]
+    },
+    {
+      "id": "2501.13953",
+      "title": "Redundancy Principles for MLLMs Benchmarks",
+      "date": "2025-01",
+      "url": "https://arxiv.org/abs/2501.13953",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "efficiency"
+      ]
+    },
+    {
+      "id": "2501.10711",
+      "title": "Code Benchmarks Should Prioritize Rigor, Reliability, and Reproducibility",
+      "date": "2025-01",
+      "url": "https://arxiv.org/abs/2501.10711",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "quality",
+        "reliability"
+      ]
+    },
+    {
+      "id": "2501.07493",
+      "title": "Exploring and Mitigating Adversarial Manipulation of Voting-Based Leaderboards",
+      "date": "2025-01",
+      "url": "https://arxiv.org/abs/2501.07493",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "contamination"
+      ]
+    },
+    {
+      "id": "2025.emnlp-main.511",
+      "title": "Benchmarking Large Language Models Under Data Contamination: A Survey from Static to Dynamic Evaluation",
+      "date": "2025",
+      "url": "https://aclanthology.org/2025.emnlp-main.511/",
+      "source": "ACL Anthology",
+      "collections": [
+        "focused-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "generation",
+        "contamination"
+      ]
+    },
+    {
+      "id": "2412.04363",
+      "title": "Challenges in Trustworthy Human Evaluation of Chatbots",
+      "date": "2024-12",
+      "url": "https://arxiv.org/abs/2412.04363",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "judges"
+      ]
+    },
+    {
+      "id": "2411.14483",
+      "title": "Ranking Unraveled: Recipes for LLM Rankings in Head-to-Head AI Combat",
+      "date": "2024-11",
+      "url": "https://arxiv.org/abs/2411.14483",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "reliability"
+      ]
+    },
+    {
+      "id": "2411.12990",
+      "title": "BetterBench: Assessing AI Benchmarks, Uncovering Issues, and Establishing Best Practices",
+      "date": "2024-11",
+      "url": "https://arxiv.org/abs/2411.12990",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey",
+        "focused-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "quality"
+      ]
+    },
+    {
+      "id": "2411.05361",
+      "title": "Dynamic-SUPERB Phase-2: A Collaboratively Expanding Benchmark for Measuring the Capabilities of Spoken Language Models with 180 Tasks",
+      "date": "2024-11",
+      "url": "https://arxiv.org/abs/2411.05361",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "validity",
+        "generation",
+        "speech"
+      ]
+    },
+    {
+      "id": "2411.00640",
+      "title": "Adding Error Bars to Evals: A Statistical Approach to Language Model Evaluations",
+      "date": "2024-11",
+      "url": "https://arxiv.org/abs/2411.00640",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "reliability"
+      ]
+    },
+    {
+      "id": "2410.22584",
+      "title": "BenchAgents: Multi-Agent Systems for Structured Benchmark Creation",
+      "date": "2024-10",
+      "url": "https://arxiv.org/abs/2410.22584",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2410.22473",
+      "title": "The State of Data Curation at NeurIPS: An Assessment of Dataset Development Practices in the Datasets and Benchmarks Track",
+      "date": "2024-10",
+      "url": "https://arxiv.org/abs/2410.22473",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2410.16834",
+      "title": "Analyzing and Evaluating Correlation Measures in NLG Meta-Evaluation",
+      "date": "2024-10",
+      "url": "https://arxiv.org/abs/2410.16834",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "judges"
+      ]
+    },
+    {
+      "id": "2410.16186",
+      "title": "Contamination Report for Multilingual Benchmarks",
+      "date": "2024-10",
+      "url": "https://arxiv.org/abs/2410.16186",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "contamination"
+      ]
+    },
+    {
+      "id": "2410.13341",
+      "title": "Limits to scalable evaluation at the frontier: LLM as Judge won't beat twice the data",
+      "date": "2024-10",
+      "url": "https://arxiv.org/abs/2410.13341",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "judges"
+      ]
+    },
+    {
+      "id": "2410.12974",
+      "title": "BenchmarkCards: Standardized Documentation for Large Language Model Benchmarks",
+      "date": "2024-10",
+      "url": "https://arxiv.org/abs/2410.12974",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "quality"
+      ]
+    },
+    {
+      "id": "2410.12784",
+      "title": "JudgeBench: A Benchmark for Evaluating LLM-based Judges",
+      "date": "2024-10",
+      "url": "https://arxiv.org/abs/2410.12784",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey",
+        "focused-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "judges"
+      ]
+    },
+    {
+      "id": "2410.06992",
+      "title": "SWE-Bench+: Enhanced Coding Benchmark for LLMs",
+      "date": "2024-10",
+      "url": "https://arxiv.org/abs/2410.06992",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2410.03492",
+      "title": "Towards Reproducible LLM Evaluation: Quantifying Uncertainty in LLM Benchmark Scores",
+      "date": "2024-10",
+      "url": "https://arxiv.org/abs/2410.03492",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "reliability"
+      ]
+    },
+    {
+      "id": "2409.19507",
+      "title": "A Critical Look at Meta-evaluating Summarisation Evaluation Metrics",
+      "date": "2024-09",
+      "url": "https://arxiv.org/abs/2409.19507",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "judges"
+      ]
+    },
+    {
+      "id": "2409.09598",
+      "title": "Improving Statistical Significance in Human Evaluation of Automatic Metrics via Soft Pairwise Accuracy",
+      "date": "2024-09",
+      "url": "https://arxiv.org/abs/2409.09598",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "reliability",
+        "judges"
+      ]
+    },
+    {
+      "id": "2407.21792",
+      "title": "Safetywashing: Do AI Safety Benchmarks Actually Measure Safety Progress?",
+      "date": "2024-07",
+      "url": "https://arxiv.org/abs/2407.21792",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2407.13696",
+      "title": "Do These LLM Benchmarks Agree? Fixing Benchmark Evaluation with BenchBench",
+      "date": "2024-07",
+      "url": "https://arxiv.org/abs/2407.13696",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2407.12844",
+      "title": "metabench -- A Sparse Benchmark of Reasoning and Knowledge in Large Language Models",
+      "date": "2024-07",
+      "url": "https://arxiv.org/abs/2407.12844",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "efficiency"
+      ]
+    },
+    {
+      "id": "2407.08351",
+      "title": "AutoBencher: Towards Declarative Benchmark Construction",
+      "date": "2024-07",
+      "url": "https://arxiv.org/abs/2407.08351",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2407.08188",
+      "title": "Position: Measure Dataset Diversity, Don't Just Claim It",
+      "date": "2024-07",
+      "url": "https://arxiv.org/abs/2407.08188",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2407.07890",
+      "title": "Training on the Test Task Confounds Evaluation and Emergence",
+      "date": "2024-07",
+      "url": "https://arxiv.org/abs/2407.07890",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2407.04065",
+      "title": "On the Workflows and Smells of Leaderboard Operations (LBOps): An Exploratory Study of Foundation Model Leaderboards",
+      "date": "2024-07",
+      "url": "https://arxiv.org/abs/2407.04065",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2407.01502",
+      "title": "AI Agents That Matter",
+      "date": "2024-07",
+      "url": "https://arxiv.org/abs/2407.01502",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2407.16883",
+      "title": "A Standardized Machine-readable Dataset Documentation Format for Responsible AI",
+      "date": "2024-06",
+      "url": "https://arxiv.org/abs/2407.16883",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "quality"
+      ]
+    },
+    {
+      "id": "2406.19314",
+      "title": "LiveBench: A Challenging, Contamination-Limited LLM Benchmark",
+      "date": "2024-06",
+      "url": "https://arxiv.org/abs/2406.19314",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "contamination"
+      ]
+    },
+    {
+      "id": "2406.12624",
+      "title": "Judging the Judges: Evaluating Alignment and Vulnerabilities in LLMs-as-Judges",
+      "date": "2024-06",
+      "url": "https://arxiv.org/abs/2406.12624",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "judges"
+      ]
+    },
+    {
+      "id": "2406.11775",
+      "title": "Task Me Anything",
+      "date": "2024-06",
+      "url": "https://arxiv.org/abs/2406.11775",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2406.10229",
+      "title": "Quantifying Variance in Evaluation Benchmarks",
+      "date": "2024-06",
+      "url": "https://arxiv.org/abs/2406.10229",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2406.08723",
+      "title": "ECBD: Evidence-Centered Benchmark Design for NLP",
+      "date": "2024-06",
+      "url": "https://arxiv.org/abs/2406.08723",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "generation"
+      ]
+    },
+    {
+      "id": "2406.06565",
+      "title": "MixEval: Deriving Wisdom of the Crowd from LLM Benchmark Mixtures",
+      "date": "2024-06",
+      "url": "https://arxiv.org/abs/2406.06565",
+      "source": "arXiv",
+      "collections": [
+        "focused-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2406.04127",
+      "title": "Are We Done with MMLU?",
+      "date": "2024-06",
+      "url": "https://arxiv.org/abs/2406.04127",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2405.17202",
+      "title": "Efficient multi-prompt evaluation of LLMs",
+      "date": "2024-05",
+      "url": "https://arxiv.org/abs/2405.17202",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "efficiency"
+      ]
+    },
+    {
+      "id": "2405.14782",
+      "title": "Lessons from the Trenches on Reproducible Evaluation of Language Models",
+      "date": "2024-05",
+      "url": "https://arxiv.org/abs/2405.14782",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "reliability"
+      ]
+    },
+    {
+      "id": "2405.10938",
+      "title": "Observational Scaling Laws and the Predictability of Language Model Performance",
+      "date": "2024-05",
+      "url": "https://arxiv.org/abs/2405.10938",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2405.00332",
+      "title": "A Careful Examination of Large Language Model Performance on Grade School Arithmetic",
+      "date": "2024-05",
+      "url": "https://arxiv.org/abs/2405.00332",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2404.18824",
+      "title": "Benchmarking Benchmark Leakage in Large Language Models",
+      "date": "2024-04",
+      "url": "https://arxiv.org/abs/2404.18824",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "contamination"
+      ]
+    },
+    {
+      "id": "2404.13076",
+      "title": "LLM Evaluators Recognize and Favor Their Own Generations",
+      "date": "2024-04",
+      "url": "https://arxiv.org/abs/2404.13076",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "generation"
+      ]
+    },
+    {
+      "id": "2404.12272",
+      "title": "Who Validates the Validators? Aligning LLM-Assisted Evaluation of LLM Outputs with Human Preferences",
+      "date": "2024-04",
+      "url": "https://arxiv.org/abs/2404.12272",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2403.19546",
+      "title": "Croissant: A Metadata Format for ML-Ready Datasets",
+      "date": "2024-03",
+      "url": "https://arxiv.org/abs/2403.19546",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2403.04132",
+      "title": "Chatbot Arena: An Open Platform for Evaluating LLMs by Human Preference",
+      "date": "2024-03",
+      "url": "https://arxiv.org/abs/2403.04132",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2403.02674",
+      "title": "Revisiting Meta-evaluation for Grammatical Error Correction",
+      "date": "2024-03",
+      "url": "https://arxiv.org/abs/2403.02674",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "judges"
+      ]
+    },
+    {
+      "id": "2402.14992",
+      "title": "tinyBenchmarks: evaluating LLMs with fewer examples",
+      "date": "2024-02",
+      "url": "https://arxiv.org/abs/2402.14992",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey",
+        "focused-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "efficiency"
+      ]
+    },
+    {
+      "id": "2402.11443",
+      "title": "Benchmark Self-Evolving: A Multi-Agent Framework for Dynamic LLM Evaluation",
+      "date": "2024-02",
+      "url": "https://arxiv.org/abs/2402.11443",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "generation"
+      ]
+    },
+    {
+      "id": "2402.02823",
+      "title": "Evading Data Contamination Detection for Language Models is (too) Easy",
+      "date": "2024-02",
+      "url": "https://arxiv.org/abs/2402.02823",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "contamination"
+      ]
+    },
+    {
+      "id": "2311.17295",
+      "title": "Elo Uncovered: Robustness and Best Practices in Language Model Evaluation",
+      "date": "2023-11",
+      "url": "https://arxiv.org/abs/2311.17295",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2310.11616",
+      "title": "Evidence of interrelated cognitive-like capabilities in large language models: Indications of artificial general intelligence or achievement?",
+      "date": "2023-10",
+      "url": "https://arxiv.org/abs/2310.11616",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2310.09144",
+      "title": "Goodhart's Law in Reinforcement Learning",
+      "date": "2023-10",
+      "url": "https://arxiv.org/abs/2310.09144",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "contamination"
+      ]
+    },
+    {
+      "id": "2309.08638",
+      "title": "Anchor Points: Benchmarking Models with Much Fewer Examples",
+      "date": "2023-09",
+      "url": "https://arxiv.org/abs/2309.08638",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2309.08632",
+      "title": "Pretraining on the Test Set Is All You Need",
+      "date": "2023-09",
+      "url": "https://arxiv.org/abs/2309.08632",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2308.14456",
+      "title": "Speech Self-Supervised Representations Benchmarking: a Case for Larger Probing Heads",
+      "date": "2023-08",
+      "url": "https://arxiv.org/abs/2308.14456",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "speech"
+      ]
+    },
+    {
+      "id": "2308.11696",
+      "title": "Efficient Benchmarking of Language Models",
+      "date": "2023-08",
+      "url": "https://arxiv.org/abs/2308.11696",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "efficiency"
+      ]
+    },
+    {
+      "id": "2306.10062",
+      "title": "Revealing the structure of language model capabilities",
+      "date": "2023-06",
+      "url": "https://arxiv.org/abs/2306.10062",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2306.02044",
+      "title": "Why We Should Report the Details in Subjective Evaluation of TTS More Rigorously",
+      "date": "2023-06",
+      "url": "https://arxiv.org/abs/2306.02044",
+      "source": "arXiv",
+      "collections": [
+        "focused-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "quality",
+        "speech"
+      ]
+    },
+    {
+      "id": "2305.19011",
+      "title": "MiniSUPERB: Lightweight Benchmark for Self-supervised Speech Models",
+      "date": "2023-05",
+      "url": "https://arxiv.org/abs/2305.19011",
+      "source": "arXiv",
+      "collections": [
+        "focused-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "efficiency",
+        "speech"
+      ]
+    },
+    {
+      "id": "2305.14324",
+      "title": "Ties Matter: Meta-Evaluating Modern Metrics with Pairwise Accuracy and Tie Calibration",
+      "date": "2023-05",
+      "url": "https://arxiv.org/abs/2305.14324",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "judges"
+      ]
+    },
+    {
+      "id": "2211.09110",
+      "title": "Holistic Evaluation of Language Models",
+      "date": "2022-11",
+      "url": "https://arxiv.org/abs/2211.09110",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2210.10760",
+      "title": "Scaling Laws for Reward Model Overoptimization",
+      "date": "2022-10",
+      "url": "https://arxiv.org/abs/2210.10760",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "judges"
+      ]
+    },
+    {
+      "id": "2210.03165",
+      "title": "A Theory of Dynamic Benchmarks",
+      "date": "2022-10",
+      "url": "https://arxiv.org/abs/2210.03165",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "generation"
+      ]
+    },
+    {
+      "id": "2206.09511",
+      "title": "The Fallacy of AI Functionality",
+      "date": "2022-06",
+      "url": "https://arxiv.org/abs/2206.09511",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2204.10216",
+      "title": "Re-Examining System-Level Correlations of Automatic Summarization Evaluation Metrics",
+      "date": "2022-04",
+      "url": "https://arxiv.org/abs/2204.10216",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "efficiency",
+        "judges"
+      ]
+    },
+    {
+      "id": "voicemos-2022",
+      "title": "The VoiceMOS Challenge 2022",
+      "date": "2022",
+      "url": "https://www.isca-archive.org/interspeech_2022/huang22f_interspeech.html",
+      "source": "ISCA Archive",
+      "collections": [
+        "speech-context"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "judges",
+        "speech"
+      ]
+    },
+    {
+      "id": "2112.09514",
+      "title": "Call for establishing benchmark science and engineering",
+      "date": "2021-12",
+      "url": "https://arxiv.org/abs/2112.09514",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey",
+        "focused-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "speech"
+      ]
+    },
+    {
+      "id": "2112.01716",
+      "title": "Reduced, Reused and Recycled: The Life of a Dataset in Machine Learning Research",
+      "date": "2021-12",
+      "url": "https://arxiv.org/abs/2112.01716",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2111.15366",
+      "title": "AI and the Everything in the Whole Wide World Benchmark",
+      "date": "2021-11",
+      "url": "https://arxiv.org/abs/2111.15366",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2110.01434",
+      "title": "A curated, ontology-based, large-scale knowledge graph of artificial intelligence tasks and benchmarks",
+      "date": "2021-10",
+      "url": "https://arxiv.org/abs/2110.01434",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2107.10821",
+      "title": "To Ship or Not to Ship: An Extensive Evaluation of Automatic Metrics for Machine Translation",
+      "date": "2021-07",
+      "url": "https://arxiv.org/abs/2107.10821",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "judges"
+      ]
+    },
+    {
+      "id": "2107.07002",
+      "title": "The Benchmark Lottery",
+      "date": "2021-07",
+      "url": "https://arxiv.org/abs/2107.07002",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey",
+        "focused-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2106.15590",
+      "title": "The Values Encoded in Machine Learning Research",
+      "date": "2021-06",
+      "url": "https://arxiv.org/abs/2106.15590",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2106.15195",
+      "title": "Scientific Credibility of Machine Translation Research: A Meta-Evaluation of 769 Papers",
+      "date": "2021-06",
+      "url": "https://arxiv.org/abs/2106.15195",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "judges"
+      ]
+    },
+    {
+      "id": "2103.14749",
+      "title": "Pervasive Label Errors in Test Sets Destabilize Machine Learning Benchmarks",
+      "date": "2021-03",
+      "url": "https://arxiv.org/abs/2103.14749",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "reliability"
+      ]
+    },
+    {
+      "id": "2012.05345",
+      "title": "Data and its (dis)contents: A survey of dataset development and use in machine learning research",
+      "date": "2020-12",
+      "url": "https://arxiv.org/abs/2012.05345",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2010.07100",
+      "title": "Re-evaluating Evaluation in Text Summarization",
+      "date": "2020-10",
+      "url": "https://arxiv.org/abs/2010.07100",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2008.02577",
+      "title": "A critical analysis of metrics used for measuring progress in artificial intelligence",
+      "date": "2020-08",
+      "url": "https://arxiv.org/abs/2008.02577",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "validity",
+        "judges"
+      ]
+    },
+    {
+      "id": "2007.12626",
+      "title": "SummEval: Re-evaluating Summarization Evaluation",
+      "date": "2020-07",
+      "url": "https://arxiv.org/abs/2007.12626",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "2006.06264",
+      "title": "Tangled up in BLEU: Reevaluating the Evaluation of Automatic Machine Translation Evaluation Metrics",
+      "date": "2020-06",
+      "url": "https://arxiv.org/abs/2006.06264",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "judges"
+      ]
+    },
+    {
+      "id": "2004.13705",
+      "title": "Showing Your Work Doesn't Always Work",
+      "date": "2020-04",
+      "url": "https://arxiv.org/abs/2004.13705",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "1912.05511",
+      "title": "Measurement and Fairness",
+      "date": "2019-12",
+      "url": "https://arxiv.org/abs/1912.05511",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "validity"
+      ]
+    },
+    {
+      "id": "1909.03004",
+      "title": "Show Your Work: Improved Reporting of Experimental Results",
+      "date": "2019-09",
+      "url": "https://arxiv.org/abs/1909.03004",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "1803.04585",
+      "title": "Categorizing Variants of Goodhart's Law",
+      "date": "2018-03",
+      "url": "https://arxiv.org/abs/1803.04585",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "contamination"
+      ]
+    },
+    {
+      "id": "tdcf-2018",
+      "title": "t-DCF: a Detection Cost Function for the Tandem Assessment of Spoofing Countermeasures and Automatic Speaker Verification",
+      "date": "2018",
+      "url": "https://www.isca-archive.org/odyssey_2018/kinnunen18b_odyssey.html",
+      "source": "ISCA Archive",
+      "collections": [
+        "speech-context"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "speech"
+      ]
+    },
+    {
+      "id": "P18-1128",
+      "title": "The Hitchhiker’s Guide to Testing Statistical Significance in Natural Language Processing",
+      "date": "2018",
+      "url": "https://aclanthology.org/P18-1128/",
+      "source": "ACL Anthology",
+      "collections": [
+        "focused-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "reliability"
+      ]
+    },
+    {
+      "id": "1706.02733",
+      "title": "Climbing a shaky ladder: Better adaptive risk estimation",
+      "date": "2017-06",
+      "url": "https://arxiv.org/abs/1706.02733",
+      "source": "arXiv",
+      "collections": [
+        "broad-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "context"
+      ]
+    },
+    {
+      "id": "1506.02629",
+      "title": "Generalization in Adaptive Data Analysis and Holdout Reuse",
+      "date": "2015-06",
+      "url": "https://arxiv.org/abs/1506.02629",
+      "source": "arXiv",
+      "collections": [
+        "focused-survey"
+      ],
+      "verification": "metadata",
+      "topics": [
+        "contamination"
+      ]
+    }
+  ]
+}
