@@ -8213,6 +8213,28 @@
    ]
   },
   {
+   "id": "people-make-things",
+   "name": "People Make Things",
+   "short": "People Make Things",
+   "type": "industry",
+   "country": null,
+   "parent": null,
+   "confidence": "low",
+   "sites": [],
+   "aliases": [
+    {
+     "raw": "People Make Things",
+     "country": null,
+     "city": null,
+     "lat": null,
+     "lon": null,
+     "type": "industry",
+     "confidence": "low",
+     "note": "Author block of arXiv:2609.27372 prints the name only, with contact {k,i}@peoplemakethings.com and no city or country; not located because the paper prints no location."
+    }
+   ]
+  },
+  {
    "id": "perle",
    "name": "Perle",
    "short": "Perle",

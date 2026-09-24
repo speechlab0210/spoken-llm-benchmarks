@@ -10180,6 +10180,29 @@
    "check_url": "https://salma-workshop.github.io/salma-2026/",
    "cross_checked": null,
    "check_note": "The workshop's own site confirms SALMA 2026 ('Speech and Audio Language Models Workshop') is co-located with EMNLP 2026 in Budapest, 24-29 Oct 2026, with acceptance notifications on 9 Sep 2026 - consistent with an 18 Sep 2026 preprint claiming acceptance. The site's program page lists no accepted papers, so the only evidence naming this paper is the authors' own arXiv comment; the workshop has not taken place, so this is accepted, not published."
+  },
+  "tact": {
+   "status": "accepted",
+   "venue": "slt",
+   "venue_name_raw": "IEEE SLT",
+   "venue_full": "IEEE Spoken Language Technology Workshop 2026",
+   "year": "2026",
+   "kind": "conference",
+   "track": null,
+   "parent_venue": null,
+   "display": "SLT 2026",
+   "evidence": "arxiv_comment",
+   "evidence_raw": "arxiv_comment",
+   "evidence_url": "https://arxiv.org/abs/2609.27372",
+   "evidence_quote": "Accepted to IEEE SLT 2026",
+   "doi": null,
+   "confidence": "medium",
+   "verified": "confirmed",
+   "publishable": true,
+   "note": "The authors state acceptance in the arXiv comment; SLT 2026 has not taken place and its proceedings are not published, so this is accepted, not published. No venue-side listing exists yet.",
+   "check_url": "https://arxiv.org/abs/2609.27372",
+   "cross_checked": null,
+   "check_note": "arXiv abs page 2026-09-25: Comments field reads 'Accepted to IEEE SLT 2026'; Journal-ref is empty. No ISCA/IEEE proceedings record found, consistent with a conference that has not yet run."
   }
  }
 }

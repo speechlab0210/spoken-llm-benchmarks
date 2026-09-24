@@ -10723,6 +10723,43 @@
       "io": "screen recording with spoken request (plus page source for the editing track) in, edited page or recovered instruction out",
       "size": "918 instances from 129 source pages, 13,907 edit steps, 12 operation types",
       "note": "Each model is assigned one main input condition based on the media it actually supports, so the comparison is between end-to-end systems under native interfaces rather than between architectures given identical information. Speech is one of several channels here, alongside cursor trajectory and page state."
+    },
+    {
+      "id": "tact",
+      "name": "TACT",
+      "aka": [
+        "Theory-of-mind Aware Conversational Timing"
+      ],
+      "full_title": "Neither Silence nor Overlap Is Failure: Intent-Conditioned Evaluation of Turn-Taking in Full-Duplex Spoken Dialogue Models",
+      "arxiv_id": "2609.27372",
+      "arxiv_date": "2026-09",
+      "arxiv_date_full": "2026-09-23",
+      "url": "https://arxiv.org/abs/2609.27372",
+      "summary": "A turn-taking benchmark for full-duplex spoken dialogue models that drops the usual question \"did the model respond inside the window?\" and asks instead whether the timing it chose was appropriate given what the speaker was trying to do. Existing suites score a fixed look-ahead window as binary success, which treats every silence after a completed turn as a failure and every overlap as a violation. TACT annotates each episode with a posterior over six latent speaker intents - immediate-answer-seeking, reflective, rhetorical, floor-holding, cooperative-incoming-inviting and turn-abandonment - from at least three human raters fused with a calibrated LLM judge, then scores the model's response offset against an intent-conditioned timing kernel fitted to human floor-transfer-offset distributions, using a threshold-weighted continuous ranked probability score that the authors prove is strictly proper and reduces to the binary metric as a special case. So a long pause is rewarded after a rhetorical or floor-holding turn and penalised after a question, and an anticipatory overlap is rewarded where a human would come in early. Every episode also carries a per-speaker memory profile assembled from that speaker's other episodes, so a system can in principle adapt to an individual's pause tolerance rather than to a population average. The headline result is that intent conditioning collapses scores that look adequate under binary scoring: the best of eleven systems reaches a composite of 0.47 against a human topline of 0.86, the ranking reorders substantially against a reproduced Full-Duplex-Bench ordering (Spearman 0.55 - Moshi is second under binary scoring and tenth here, because instant takeover is exactly wrong on rhetorical and reflective turns), and every system shows the same over-eagerness pathology, doing best on answer-seeking turns and collapsing on rhetorical and reflective ones. The swap ablation finds systems nearly invariant to which speaker profile they are given, i.e. none of them is actually personalising its timing.",
+      "categories": [
+        "interactivity",
+        "dialogue"
+      ],
+      "tasks": [
+        "choosing when to take the floor, yield it, backchannel or stay silent in full-duplex dialogue",
+        "withholding the floor after rhetorical, floor-holding or abandoned turns",
+        "coming in early where a human listener would overlap cooperatively",
+        "calibrating turn length to the speaker's intent",
+        "adapting response timing to a per-speaker memory profile"
+      ],
+      "io": "streaming dyadic conversation audio with dialogue history and a per-speaker memory profile in, continuous full-duplex speech behaviour out (response offset, turn length and overlap)",
+      "size": "9,728 episodes / 73.2 hours from five public dyadic corpora plus synthetic TTS probes - CANDOR 2,560 episodes (19.8 h), SSSD 2,304 (17.1 h), otoSpeech-full-duplex 1,792 (13.9 h), Seamless Interaction 1,536 (11.5 h), AMI individual-headset 768 (5.4 h), synthetic probes 768 (5.5 h); by scenario, 2,720 pause handling, 2,432 backchanneling, 2,592 smooth turn-taking",
+      "metrics": [
+        "threshold-weighted continuous ranked probability score (twCRPS) of the response offset against an intent-conditioned human timing kernel",
+        "composite score, the mean over the four Full-Duplex-Bench scenario categories, with 95% BCa bootstrap intervals",
+        "intent-conditioned composite restricted to episodes whose posterior mode is a given intent",
+        "proper scores for turn length and prosody-weighted overlap",
+        "human topline and never-respond / VAP-gated cascade reference baselines"
+      ],
+      "languages": [
+        "English"
+      ],
+      "note": "Scores the decision to stay silent on the same scale as the decision to speak, so the degenerate policy of answering everything quickly and never coming in early - which binary window metrics reward - is penalised. Stratified by gender, age band, first-language region, SNR and articulation-rate tercile, with timing kernels fitted per slice where data permit, so the metric does not encode one population's timing norms as universal. The four scenario categories are inherited from Full-Duplex-Bench and are distinct from the six latent intents; in particular the backchanneling scenario is not the bck intent."
     }
   ]
 }

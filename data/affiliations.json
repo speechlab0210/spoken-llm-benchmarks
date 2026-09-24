@@ -23541,6 +23541,31 @@
    "countries_complete": true,
    "verify_note": "arXiv 2609.23417v1 HTML author block with numbered affiliations printed as abbreviations: 1 = FDU, 2 = Alibaba Token Hub, Alibaba Group, 3 = CUHK, 4 = THU, 5 = PolyU. First author Minghao Han lists 1,2 (equal contribution with Zhenghao Xing, 3), so the lead is Fudan University; last and corresponding author Jin Xu lists 2. FDU/THU/PolyU/CUHK were resolved to Fudan University, Tsinghua University, The Hong Kong Polytechnic University and The Chinese University of Hong Kong - the abbreviation expansion is the only inferential step, and the Alibaba Token Hub co-authors (Xize Cheng, Yunfei Chu, Qize Yang, Jin Xu) match the same group's other 2026 papers. No city or country is printed; registry defaults are used.",
    "note": null
+  },
+  "tact": {
+   "status": "ok",
+   "verified": "confirmed",
+   "publishable": true,
+   "countries_complete": false,
+   "institutions": [
+    {
+     "inst": "people-make-things",
+     "unit": null,
+     "raw": "People Make Things",
+     "country": null,
+     "city": null,
+     "lat": null,
+     "lon": null,
+     "placed": "none",
+     "printed_city": null,
+     "printed_country": null,
+     "lead": true,
+     "first_author": true,
+     "last": true,
+     "evidence": "printed"
+    }
+   ],
+   "verify_note": "arXiv HTML author block reads 'Kian Shamsaie, Iman Modarressi / Affiliation: People Make Things / {k,i}@peoplemakethings.com'. Both authors share the single affiliation, so lead and last are the same institution. No city or country is printed anywhere in the paper, so none was recorded."
   }
  },
  "models": {

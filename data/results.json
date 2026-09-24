@@ -135180,6 +135180,366 @@
       "source": "Omni-Streaming Thinking Table 2 (OST-DiagBench, open omni-modal offline rows)",
       "source_url": "https://arxiv.org/abs/2609.15128",
       "note": "Offline (non-streaming) condition, 510 matched Core groups and 510 reviewed Clash examples. d-prime = z(Clean source recall) - z(Mute visual hallucination rate); a value of 0 is audio-blind behaviour. Qwen3-Omni-30B-A3B. Under naive streaming thinking the same model reaches d-prime 0.53, Clean-SR 92.55, Mute-VHR 81.96, Swap-AFR 18.04, Mix-JR 1.57, Clash-Acc 0.00."
+    },
+    {
+      "benchmark": "tact",
+      "model": "dgslm",
+      "metric": "Pause handling (twCRPS composite)",
+      "value": 0.21,
+      "source": "Table I (main results on TACT by Full-Duplex-Bench scenario category)",
+      "source_url": "https://arxiv.org/abs/2609.27372",
+      "note": "Paper row: dGSLM. Rank 11/11 (TACT / reproduced binary v1). Prompted with priming audio."
+    },
+    {
+      "benchmark": "tact",
+      "model": "dgslm",
+      "metric": "Backchanneling (twCRPS composite)",
+      "value": 0.28,
+      "source": "Table I (main results on TACT by Full-Duplex-Bench scenario category)",
+      "source_url": "https://arxiv.org/abs/2609.27372",
+      "note": "Paper row: dGSLM. Rank 11/11 (TACT / reproduced binary v1). Prompted with priming audio."
+    },
+    {
+      "benchmark": "tact",
+      "model": "dgslm",
+      "metric": "Smooth turn-taking (twCRPS composite)",
+      "value": 0.27,
+      "source": "Table I (main results on TACT by Full-Duplex-Bench scenario category)",
+      "source_url": "https://arxiv.org/abs/2609.27372",
+      "note": "Paper row: dGSLM. Rank 11/11 (TACT / reproduced binary v1). Prompted with priming audio."
+    },
+    {
+      "benchmark": "tact",
+      "model": "dgslm",
+      "metric": "User interruption (twCRPS composite)",
+      "value": 0.2,
+      "source": "Table I (main results on TACT by Full-Duplex-Bench scenario category)",
+      "source_url": "https://arxiv.org/abs/2609.27372",
+      "note": "Paper row: dGSLM. Rank 11/11 (TACT / reproduced binary v1). Prompted with priming audio."
+    },
+    {
+      "benchmark": "tact",
+      "model": "dgslm",
+      "metric": "TACT composite",
+      "value": 0.24,
+      "source": "Table I (main results on TACT by Full-Duplex-Bench scenario category)",
+      "source_url": "https://arxiv.org/abs/2609.27372",
+      "note": "Paper row: dGSLM. Composite 95% BCa bootstrap interval [0.22, 0.26]. Rank 11/11 (TACT / reproduced binary v1). Prompted with priming audio."
+    },
+    {
+      "benchmark": "tact",
+      "model": "moshi",
+      "metric": "Pause handling (twCRPS composite)",
+      "value": 0.22,
+      "source": "Table I (main results on TACT by Full-Duplex-Bench scenario category)",
+      "source_url": "https://arxiv.org/abs/2609.27372",
+      "note": "Paper row: Moshi. Rank 10/2 (TACT / reproduced binary v1) - second under binary scoring on 0.26 s median latency, tenth here because instant takeover fails on rhetorical and reflective turns."
+    },
+    {
+      "benchmark": "tact",
+      "model": "moshi",
+      "metric": "Backchanneling (twCRPS composite)",
+      "value": 0.25,
+      "source": "Table I (main results on TACT by Full-Duplex-Bench scenario category)",
+      "source_url": "https://arxiv.org/abs/2609.27372",
+      "note": "Paper row: Moshi. Rank 10/2 (TACT / reproduced binary v1) - second under binary scoring on 0.26 s median latency, tenth here because instant takeover fails on rhetorical and reflective turns."
+    },
+    {
+      "benchmark": "tact",
+      "model": "moshi",
+      "metric": "Smooth turn-taking (twCRPS composite)",
+      "value": 0.41,
+      "source": "Table I (main results on TACT by Full-Duplex-Bench scenario category)",
+      "source_url": "https://arxiv.org/abs/2609.27372",
+      "note": "Paper row: Moshi. Rank 10/2 (TACT / reproduced binary v1) - second under binary scoring on 0.26 s median latency, tenth here because instant takeover fails on rhetorical and reflective turns."
+    },
+    {
+      "benchmark": "tact",
+      "model": "moshi",
+      "metric": "User interruption (twCRPS composite)",
+      "value": 0.31,
+      "source": "Table I (main results on TACT by Full-Duplex-Bench scenario category)",
+      "source_url": "https://arxiv.org/abs/2609.27372",
+      "note": "Paper row: Moshi. Rank 10/2 (TACT / reproduced binary v1) - second under binary scoring on 0.26 s median latency, tenth here because instant takeover fails on rhetorical and reflective turns."
+    },
+    {
+      "benchmark": "tact",
+      "model": "moshi",
+      "metric": "TACT composite",
+      "value": 0.3,
+      "source": "Table I (main results on TACT by Full-Duplex-Bench scenario category)",
+      "source_url": "https://arxiv.org/abs/2609.27372",
+      "note": "Paper row: Moshi. Composite 95% BCa bootstrap interval [0.28, 0.32]. Rank 10/2 (TACT / reproduced binary v1) - second under binary scoring on 0.26 s median latency, tenth here because instant takeover fails on rhetorical and reflective turns."
+    },
+    {
+      "benchmark": "tact",
+      "model": "freeze-omni",
+      "metric": "Pause handling (twCRPS composite)",
+      "value": 0.35,
+      "source": "Table I (main results on TACT by Full-Duplex-Bench scenario category)",
+      "source_url": "https://arxiv.org/abs/2609.27372",
+      "note": "Paper row: Freeze-Omni. Rank 8/9 (TACT / reproduced binary v1)."
+    },
+    {
+      "benchmark": "tact",
+      "model": "freeze-omni",
+      "metric": "Backchanneling (twCRPS composite)",
+      "value": 0.27,
+      "source": "Table I (main results on TACT by Full-Duplex-Bench scenario category)",
+      "source_url": "https://arxiv.org/abs/2609.27372",
+      "note": "Paper row: Freeze-Omni. Rank 8/9 (TACT / reproduced binary v1)."
+    },
+    {
+      "benchmark": "tact",
+      "model": "freeze-omni",
+      "metric": "Smooth turn-taking (twCRPS composite)",
+      "value": 0.36,
+      "source": "Table I (main results on TACT by Full-Duplex-Bench scenario category)",
+      "source_url": "https://arxiv.org/abs/2609.27372",
+      "note": "Paper row: Freeze-Omni. Rank 8/9 (TACT / reproduced binary v1)."
+    },
+    {
+      "benchmark": "tact",
+      "model": "freeze-omni",
+      "metric": "User interruption (twCRPS composite)",
+      "value": 0.34,
+      "source": "Table I (main results on TACT by Full-Duplex-Bench scenario category)",
+      "source_url": "https://arxiv.org/abs/2609.27372",
+      "note": "Paper row: Freeze-Omni. Rank 8/9 (TACT / reproduced binary v1)."
+    },
+    {
+      "benchmark": "tact",
+      "model": "freeze-omni",
+      "metric": "TACT composite",
+      "value": 0.33,
+      "source": "Table I (main results on TACT by Full-Duplex-Bench scenario category)",
+      "source_url": "https://arxiv.org/abs/2609.27372",
+      "note": "Paper row: Freeze-Omni. Composite 95% BCa bootstrap interval [0.31, 0.35]. Rank 8/9 (TACT / reproduced binary v1)."
+    },
+    {
+      "benchmark": "tact",
+      "model": "qwen2-5-omni",
+      "metric": "Pause handling (twCRPS composite)",
+      "value": 0.36,
+      "source": "Table I (main results on TACT by Full-Duplex-Bench scenario category)",
+      "source_url": "https://arxiv.org/abs/2609.27372",
+      "note": "Paper row: Qwen2.5-Omni. Rank 7/8 (TACT / reproduced binary v1)."
+    },
+    {
+      "benchmark": "tact",
+      "model": "qwen2-5-omni",
+      "metric": "Backchanneling (twCRPS composite)",
+      "value": 0.29,
+      "source": "Table I (main results on TACT by Full-Duplex-Bench scenario category)",
+      "source_url": "https://arxiv.org/abs/2609.27372",
+      "note": "Paper row: Qwen2.5-Omni. Rank 7/8 (TACT / reproduced binary v1)."
+    },
+    {
+      "benchmark": "tact",
+      "model": "qwen2-5-omni",
+      "metric": "Smooth turn-taking (twCRPS composite)",
+      "value": 0.4,
+      "source": "Table I (main results on TACT by Full-Duplex-Bench scenario category)",
+      "source_url": "https://arxiv.org/abs/2609.27372",
+      "note": "Paper row: Qwen2.5-Omni. Rank 7/8 (TACT / reproduced binary v1)."
+    },
+    {
+      "benchmark": "tact",
+      "model": "qwen2-5-omni",
+      "metric": "User interruption (twCRPS composite)",
+      "value": 0.35,
+      "source": "Table I (main results on TACT by Full-Duplex-Bench scenario category)",
+      "source_url": "https://arxiv.org/abs/2609.27372",
+      "note": "Paper row: Qwen2.5-Omni. Rank 7/8 (TACT / reproduced binary v1)."
+    },
+    {
+      "benchmark": "tact",
+      "model": "qwen2-5-omni",
+      "metric": "TACT composite",
+      "value": 0.35,
+      "source": "Table I (main results on TACT by Full-Duplex-Bench scenario category)",
+      "source_url": "https://arxiv.org/abs/2609.27372",
+      "note": "Paper row: Qwen2.5-Omni. Composite 95% BCa bootstrap interval [0.33, 0.37]. Rank 7/8 (TACT / reproduced binary v1)."
+    },
+    {
+      "benchmark": "tact",
+      "model": "minicpm-o",
+      "metric": "Pause handling (twCRPS composite)",
+      "value": 0.37,
+      "source": "Table I (main results on TACT by Full-Duplex-Bench scenario category)",
+      "source_url": "https://arxiv.org/abs/2609.27372",
+      "note": "Paper row: MiniCPM-o 2.6. Rank 6/6 (TACT / reproduced binary v1). The paper evaluates MiniCPM-o 2.6 specifically."
+    },
+    {
+      "benchmark": "tact",
+      "model": "minicpm-o",
+      "metric": "Backchanneling (twCRPS composite)",
+      "value": 0.3,
+      "source": "Table I (main results on TACT by Full-Duplex-Bench scenario category)",
+      "source_url": "https://arxiv.org/abs/2609.27372",
+      "note": "Paper row: MiniCPM-o 2.6. Rank 6/6 (TACT / reproduced binary v1). The paper evaluates MiniCPM-o 2.6 specifically."
+    },
+    {
+      "benchmark": "tact",
+      "model": "minicpm-o",
+      "metric": "Smooth turn-taking (twCRPS composite)",
+      "value": 0.42,
+      "source": "Table I (main results on TACT by Full-Duplex-Bench scenario category)",
+      "source_url": "https://arxiv.org/abs/2609.27372",
+      "note": "Paper row: MiniCPM-o 2.6. Rank 6/6 (TACT / reproduced binary v1). The paper evaluates MiniCPM-o 2.6 specifically."
+    },
+    {
+      "benchmark": "tact",
+      "model": "minicpm-o",
+      "metric": "User interruption (twCRPS composite)",
+      "value": 0.36,
+      "source": "Table I (main results on TACT by Full-Duplex-Bench scenario category)",
+      "source_url": "https://arxiv.org/abs/2609.27372",
+      "note": "Paper row: MiniCPM-o 2.6. Rank 6/6 (TACT / reproduced binary v1). The paper evaluates MiniCPM-o 2.6 specifically."
+    },
+    {
+      "benchmark": "tact",
+      "model": "minicpm-o",
+      "metric": "TACT composite",
+      "value": 0.36,
+      "source": "Table I (main results on TACT by Full-Duplex-Bench scenario category)",
+      "source_url": "https://arxiv.org/abs/2609.27372",
+      "note": "Paper row: MiniCPM-o 2.6. Composite 95% BCa bootstrap interval [0.34, 0.38]. Rank 6/6 (TACT / reproduced binary v1). The paper evaluates MiniCPM-o 2.6 specifically."
+    },
+    {
+      "benchmark": "tact",
+      "model": "personaplex",
+      "metric": "Pause handling (twCRPS composite)",
+      "value": 0.4,
+      "source": "Table I (main results on TACT by Full-Duplex-Bench scenario category)",
+      "source_url": "https://arxiv.org/abs/2609.27372",
+      "note": "Paper row: PersonaPlex. Rank 5/5 (TACT / reproduced binary v1)."
+    },
+    {
+      "benchmark": "tact",
+      "model": "personaplex",
+      "metric": "Backchanneling (twCRPS composite)",
+      "value": 0.31,
+      "source": "Table I (main results on TACT by Full-Duplex-Bench scenario category)",
+      "source_url": "https://arxiv.org/abs/2609.27372",
+      "note": "Paper row: PersonaPlex. Rank 5/5 (TACT / reproduced binary v1)."
+    },
+    {
+      "benchmark": "tact",
+      "model": "personaplex",
+      "metric": "Smooth turn-taking (twCRPS composite)",
+      "value": 0.45,
+      "source": "Table I (main results on TACT by Full-Duplex-Bench scenario category)",
+      "source_url": "https://arxiv.org/abs/2609.27372",
+      "note": "Paper row: PersonaPlex. Rank 5/5 (TACT / reproduced binary v1)."
+    },
+    {
+      "benchmark": "tact",
+      "model": "personaplex",
+      "metric": "User interruption (twCRPS composite)",
+      "value": 0.36,
+      "source": "Table I (main results on TACT by Full-Duplex-Bench scenario category)",
+      "source_url": "https://arxiv.org/abs/2609.27372",
+      "note": "Paper row: PersonaPlex. Rank 5/5 (TACT / reproduced binary v1)."
+    },
+    {
+      "benchmark": "tact",
+      "model": "personaplex",
+      "metric": "TACT composite",
+      "value": 0.38,
+      "source": "Table I (main results on TACT by Full-Duplex-Bench scenario category)",
+      "source_url": "https://arxiv.org/abs/2609.27372",
+      "note": "Paper row: PersonaPlex. Composite 95% BCa bootstrap interval [0.36, 0.40]. Rank 5/5 (TACT / reproduced binary v1)."
+    },
+    {
+      "benchmark": "tact",
+      "model": "gemini-live-3-1-flash",
+      "metric": "Pause handling (twCRPS composite)",
+      "value": 0.52,
+      "source": "Table I (main results on TACT by Full-Duplex-Bench scenario category)",
+      "source_url": "https://arxiv.org/abs/2609.27372",
+      "note": "Paper row: gemini-3.1-flash-live. High-thinking configuration, rank 2/7 (TACT / reproduced binary v1). The minimal-thinking configuration of the same model scores Pause 0.45, Backch. 0.33, Smooth 0.52, Interr. 0.45, composite 0.44 [0.42, 0.46], rank 3/1."
+    },
+    {
+      "benchmark": "tact",
+      "model": "gemini-live-3-1-flash",
+      "metric": "Backchanneling (twCRPS composite)",
+      "value": 0.36,
+      "source": "Table I (main results on TACT by Full-Duplex-Bench scenario category)",
+      "source_url": "https://arxiv.org/abs/2609.27372",
+      "note": "Paper row: gemini-3.1-flash-live. High-thinking configuration, rank 2/7 (TACT / reproduced binary v1). The minimal-thinking configuration of the same model scores Pause 0.45, Backch. 0.33, Smooth 0.52, Interr. 0.45, composite 0.44 [0.42, 0.46], rank 3/1."
+    },
+    {
+      "benchmark": "tact",
+      "model": "gemini-live-3-1-flash",
+      "metric": "Smooth turn-taking (twCRPS composite)",
+      "value": 0.48,
+      "source": "Table I (main results on TACT by Full-Duplex-Bench scenario category)",
+      "source_url": "https://arxiv.org/abs/2609.27372",
+      "note": "Paper row: gemini-3.1-flash-live. High-thinking configuration, rank 2/7 (TACT / reproduced binary v1). The minimal-thinking configuration of the same model scores Pause 0.45, Backch. 0.33, Smooth 0.52, Interr. 0.45, composite 0.44 [0.42, 0.46], rank 3/1."
+    },
+    {
+      "benchmark": "tact",
+      "model": "gemini-live-3-1-flash",
+      "metric": "User interruption (twCRPS composite)",
+      "value": 0.47,
+      "source": "Table I (main results on TACT by Full-Duplex-Bench scenario category)",
+      "source_url": "https://arxiv.org/abs/2609.27372",
+      "note": "Paper row: gemini-3.1-flash-live. High-thinking configuration, rank 2/7 (TACT / reproduced binary v1). The minimal-thinking configuration of the same model scores Pause 0.45, Backch. 0.33, Smooth 0.52, Interr. 0.45, composite 0.44 [0.42, 0.46], rank 3/1."
+    },
+    {
+      "benchmark": "tact",
+      "model": "gemini-live-3-1-flash",
+      "metric": "TACT composite",
+      "value": 0.46,
+      "source": "Table I (main results on TACT by Full-Duplex-Bench scenario category)",
+      "source_url": "https://arxiv.org/abs/2609.27372",
+      "note": "Paper row: gemini-3.1-flash-live. Composite 95% BCa bootstrap interval [0.44, 0.48]. High-thinking configuration, rank 2/7 (TACT / reproduced binary v1). The minimal-thinking configuration of the same model scores Pause 0.45, Backch. 0.33, Smooth 0.52, Interr. 0.45, composite 0.44 [0.42, 0.46], rank 3/1."
+    },
+    {
+      "benchmark": "tact",
+      "model": "gpt-realtime-2",
+      "metric": "Pause handling (twCRPS composite)",
+      "value": 0.5,
+      "source": "Table I (main results on TACT by Full-Duplex-Bench scenario category)",
+      "source_url": "https://arxiv.org/abs/2609.27372",
+      "note": "Paper row: gpt-realtime-2. Best system on TACT, rank 1/3 (TACT / reproduced binary v1), against a human topline composite of 0.86 [0.84, 0.88]."
+    },
+    {
+      "benchmark": "tact",
+      "model": "gpt-realtime-2",
+      "metric": "Backchanneling (twCRPS composite)",
+      "value": 0.38,
+      "source": "Table I (main results on TACT by Full-Duplex-Bench scenario category)",
+      "source_url": "https://arxiv.org/abs/2609.27372",
+      "note": "Paper row: gpt-realtime-2. Best system on TACT, rank 1/3 (TACT / reproduced binary v1), against a human topline composite of 0.86 [0.84, 0.88]."
+    },
+    {
+      "benchmark": "tact",
+      "model": "gpt-realtime-2",
+      "metric": "Smooth turn-taking (twCRPS composite)",
+      "value": 0.53,
+      "source": "Table I (main results on TACT by Full-Duplex-Bench scenario category)",
+      "source_url": "https://arxiv.org/abs/2609.27372",
+      "note": "Paper row: gpt-realtime-2. Best system on TACT, rank 1/3 (TACT / reproduced binary v1), against a human topline composite of 0.86 [0.84, 0.88]."
+    },
+    {
+      "benchmark": "tact",
+      "model": "gpt-realtime-2",
+      "metric": "User interruption (twCRPS composite)",
+      "value": 0.46,
+      "source": "Table I (main results on TACT by Full-Duplex-Bench scenario category)",
+      "source_url": "https://arxiv.org/abs/2609.27372",
+      "note": "Paper row: gpt-realtime-2. Best system on TACT, rank 1/3 (TACT / reproduced binary v1), against a human topline composite of 0.86 [0.84, 0.88]."
+    },
+    {
+      "benchmark": "tact",
+      "model": "gpt-realtime-2",
+      "metric": "TACT composite",
+      "value": 0.47,
+      "source": "Table I (main results on TACT by Full-Duplex-Bench scenario category)",
+      "source_url": "https://arxiv.org/abs/2609.27372",
+      "note": "Paper row: gpt-realtime-2. Composite 95% BCa bootstrap interval [0.45, 0.49]. Best system on TACT, rank 1/3 (TACT / reproduced binary v1), against a human topline composite of 0.86 [0.84, 0.88]."
     }
   ]
 }
