@@ -23566,6 +23566,106 @@
     }
    ],
    "verify_note": "arXiv HTML author block reads 'Kian Shamsaie, Iman Modarressi / Affiliation: People Make Things / {k,i}@peoplemakethings.com'. Both authors share the single affiliation, so lead and last are the same institution. No city or country is printed anywhere in the paper, so none was recorded."
+  },
+  "verispeak": {
+   "status": "ok",
+   "verified": "confirmed",
+   "publishable": true,
+   "countries_complete": true,
+   "institutions": [
+    {
+     "inst": "indian-institute-of-science-education-and-research-bhopal",
+     "unit": null,
+     "raw": "IISER Bhopal",
+     "country": "IN",
+     "city": "Bhopal",
+     "lat": 23.29,
+     "lon": 77.28,
+     "placed": "named",
+     "printed_city": "Bhopal",
+     "printed_country": null,
+     "lead": true,
+     "first_author": true,
+     "last": false,
+     "evidence": "printed"
+    },
+    {
+     "inst": "king-s-college-london",
+     "unit": null,
+     "raw": "King's College London",
+     "country": "GB",
+     "city": "London",
+     "lat": 51.51,
+     "lon": -0.13,
+     "placed": "named",
+     "printed_city": "London",
+     "printed_country": null,
+     "lead": false,
+     "first_author": false,
+     "last": false,
+     "evidence": "printed"
+    },
+    {
+     "inst": "mohamed-bin-zayed-university-of-artificial-intelligence",
+     "unit": null,
+     "raw": "MBZUAI",
+     "country": "AE",
+     "city": "Abu Dhabi",
+     "lat": 24.45,
+     "lon": 54.38,
+     "placed": "default",
+     "printed_city": null,
+     "printed_country": null,
+     "lead": false,
+     "first_author": false,
+     "last": true,
+     "evidence": "printed"
+    }
+   ],
+   "verify_note": "arXiv HTML author block: 'Debajyoti Mazumder / Affiliation: IISER Bhopal', 'Mamta / Affiliation: King's College London', 'Abhirama Subramanyam Penamakuri / Affiliation: MBZUAI'. One affiliation per author; first author IISER Bhopal (lead), last author MBZUAI. No country is printed; Bhopal and London are part of the printed institution names, MBZUAI's city is the default site.",
+   "n_authors": 3
+  },
+  "tema-bench": {
+   "status": "ok",
+   "verified": "confirmed",
+   "publishable": true,
+   "countries_complete": true,
+   "institutions": [
+    {
+     "inst": "institute-of-computing-technology-chinese-academy-of-sciences",
+     "unit": null,
+     "raw": "Institute of Computing Technology, Chinese Academy of Sciences",
+     "country": "CN",
+     "city": "Beijing",
+     "lat": 39.9,
+     "lon": 116.4,
+     "placed": "named",
+     "printed_city": "Beijing",
+     "printed_country": "China",
+     "lead": true,
+     "first_author": true,
+     "last": true,
+     "evidence": "printed"
+    },
+    {
+     "inst": "university-of-chinese-academy-of-sciences",
+     "unit": null,
+     "raw": "University of Chinese Academy of Sciences",
+     "country": "CN",
+     "city": "Beijing",
+     "lat": 39.9,
+     "lon": 116.4,
+     "placed": "named",
+     "printed_city": "Beijing",
+     "printed_country": "China",
+     "lead": false,
+     "first_author": true,
+     "last": false,
+     "evidence": "printed"
+    }
+   ],
+   "verify_note": "arXiv HTML prints names only; PDF v1 first page reads 'Kaidi Yang1,2, Hualei Wang1,2, Zhaohui Wang1,2, Chenxuan Wang1,2, Hong Liu1, Xiangdong Wang1,*' with '1 Institute of Computing Technology, Chinese Academy of Sciences, Beijing, China. 2 University of Chinese Academy of Sciences, Beijing, China.' First author holds both affiliations (index 1 listed first = lead); last author ICT only.",
+   "n_authors": 6
   }
  },
  "models": {

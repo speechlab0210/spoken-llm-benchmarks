@@ -10760,6 +10760,77 @@
         "English"
       ],
       "note": "Scores the decision to stay silent on the same scale as the decision to speak, so the degenerate policy of answering everything quickly and never coming in early - which binary window metrics reward - is penalised. Stratified by gender, age band, first-language region, SNR and articulation-rate tercile, with timing kernels fitted per slice where data permit, so the metric does not encode one population's timing norms as universal. The four scenario categories are inherited from Full-Duplex-Bench and are distinct from the six latent intents; in particular the backchanneling scenario is not the bck intent."
+    },
+    {
+      "id": "verispeak",
+      "name": "VeriSpeak",
+      "aka": [],
+      "full_title": "To Trust or Not to Trust: Retrieval-Augmented Fact Checking in Speech",
+      "arxiv_id": "2609.30227",
+      "arxiv_date": "2026-09",
+      "arxiv_date_full": "2026-09-24",
+      "url": "https://arxiv.org/abs/2609.30227",
+      "summary": "A probe benchmark for spoken fact verification: a large audio language model hears a single atomic claim about a public figure and must say whether it is true. The 3,879 claims are built from the KVQA knowledge base (Wikidata-sourced biographies of 659 people from 60 countries), split into temporal, geographical and relational facts with balanced true and false labels; false claims are made by controlled perturbation (shifting a year, swapping a place or nationality for one of the same type, swapping a relation word or entity), and every claim is spoken by one single-speaker TTS voice so that speaker identity cannot act as a cue. Each model is run in paired conditions - its text-only LLM backbone on the written claim, the audio model on the written claim, the audio model on the spoken claim, and the spoken claim with chain-of-thought, with evidence retrieved from the ASR transcript, or with both - so the loss caused by the speech input itself can be read off directly. The central finding is a consistent text-speech modality gap: Qwen-7B verifies 75.3% of the written claims, while Qwen-Audio-Chat and Qwen2-Audio-7B sit at 50.4% and 49.2% on the same claims spoken, near chance. Retrieval recovers at most 1.7 points for standard models; in a manual check of 50 Qwen2-Audio cases, 65% of the time the model treated the retrieved passage, not the spoken claim, as the thing to verify; chain-of-thought alone makes speech-only verification worse for every standard model, but chain-of-thought combined with retrieval helps, and a thinking-tuned model (Audio Flamingo Next-Think) gains at every step, from 66.4% to 86.1%.",
+      "categories": [
+        "spoken-qa",
+        "hallucination"
+      ],
+      "tasks": [
+        "judging whether a spoken factual claim about a public figure is true or false",
+        "verifying temporal, geographical and relational facts from speech input",
+        "using textual evidence retrieved from the claim's ASR transcript without mistaking it for the claim",
+        "verifying spoken claims with and without chain-of-thought prompting"
+      ],
+      "io": "a single synthesised spoken claim (optionally with retrieved textual evidence) in, a true/false verdict out",
+      "size": "3,879 spoken claims (year 1,451 / location 2,226 / relation 202), balanced true/false, about 659 public figures from 60 countries",
+      "metrics": [
+        "accuracy on the binary true/false verdict, per fact category and averaged",
+        "modality gap: drop from the text-only LLM backbone on the written claim",
+        "lift: gain of each retrieval or reasoning condition over the speech-only baseline"
+      ],
+      "languages": [
+        "English"
+      ],
+      "data": "https://huggingface.co/datasets/abhiram4572/VeriSpeak",
+      "note": "All claims use one TTS voice by design and carry the automatic wav2vec 2.0 transcript, errors included, so retrieval runs on a realistic transcript. The paper reports Phi-4-multimodal's speech-only accuracy as 53.3 in Tables 2 and 3 but 49.2 in Table 4; the catalogue records the Table 2 value."
+    },
+    {
+      "id": "tema-bench",
+      "name": "TEMA-Bench",
+      "aka": [
+        "TEMA Test253"
+      ],
+      "full_title": "TEMA: Evidence-Grounded Temporal Question Answering in Multi-Turn Multi-Audio Dialogs",
+      "arxiv_id": "2609.30029",
+      "arxiv_date": "2026-09",
+      "arxiv_date_full": "2026-09-24",
+      "url": "https://arxiv.org/abs/2609.30029",
+      "code": "https://github.com/KadeeYoung/TEMA",
+      "summary": "An evaluation set for temporal question answering over several sound recordings inside one multi-turn conversation: the user uploads recordings over the course of the dialogue, asks follow-up questions, switches between recordings and refers back to earlier turns, and the model has to find the right events, recover all of their instances and boundaries, and compute with the times. Test253 has 253 dialogs and 1,239 questions (209 dialogs span several recordings), drawn from the test splits of the source sound-event datasets and manually reviewed and corrected, and it is run with the model's own previous answers as history rather than gold history. Questions fall into five task families: temporal localisation and measurement, event identification and verification (including false premises), within-audio structure (counting and ordering), cross-audio retrieval and comparison, and historical reference. A judge model checks non-temporal correctness while deterministic rules check every stated time within 0.1 s, so QA+T also penalises wrong timestamps a model volunteers. The paper is mainly a training method (TEMA) and also releases a 40,704-dialog training set; as a benchmark, the four general models answering directly score 46.1-57.7% QA, with Qwen3.5-Omni-Plus best on event identification but weakest on historical reference, and Qwen2.5-Omni rises from 46.1% to 82.8% when the gold evidence is supplied.",
+      "categories": [
+        "long-form",
+        "auditory-perception",
+        "reasoning"
+      ],
+      "tasks": [
+        "localising sound events and measuring durations and gaps across a multi-turn dialog",
+        "verifying the presence of events and correcting false premises",
+        "counting and ordering event instances within one recording",
+        "retrieving and comparing events across several recordings",
+        "resolving references to earlier turns and earlier uploads"
+      ],
+      "io": "a multi-turn dialog with one to several environmental-sound recordings uploaded along the way in, text answers (optionally with explicit time-interval evidence) out",
+      "size": "Test253: 253 dialogs / 1,239 questions, 209 multi-audio dialogs",
+      "metrics": [
+        "QA: final answer satisfies the question, judged by an LLM for non-temporal content",
+        "QA+T: QA plus every volunteered time claim correct within 0.1 s",
+        "per-family QA over five task families",
+        "Span micro-F1@0.5 and H@0.1 for models that output explicit evidence"
+      ],
+      "languages": [
+        "English"
+      ],
+      "note": "Evaluated with model-generated dialogue history. The fine-tuned TEMA systems are the paper's own method and are not recorded as results; only general models answering directly are."
     }
   ]
 }

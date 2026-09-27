@@ -14166,6 +14166,35 @@
      "note": null
     }
    ]
+  },
+  {
+   "id": "indian-institute-of-science-education-and-research-bhopal",
+   "name": "Indian Institute of Science Education and Research Bhopal",
+   "short": "IISER Bhopal",
+   "type": "academia",
+   "country": "IN",
+   "parent": null,
+   "confidence": "medium",
+   "sites": [
+    {
+     "city": "Bhopal",
+     "lat": 23.29,
+     "lon": 77.28,
+     "country": "IN"
+    }
+   ],
+   "aliases": [
+    {
+     "raw": "IISER Bhopal",
+     "country": "IN",
+     "city": "Bhopal",
+     "lat": 23.29,
+     "lon": 77.28,
+     "type": "academia",
+     "confidence": "medium",
+     "note": "city is part of the printed name; country and coordinates are normalisation, not printed"
+    }
+   ]
   }
  ]
 }

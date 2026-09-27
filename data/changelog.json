@@ -1,6 +1,11 @@
 {
  "entries": [
   {
+   "date": "2026-09-27",
+   "change": "Added two benchmarks from the 24 September arXiv listings, recovered through OAI-PMH while the arXiv query API keeps returning HTTP 406 to the daily crawl (every day since 17 September). VeriSpeak (arXiv:2609.30227) tests spoken fact verification: 3,879 single-speaker spoken claims about public figures with balanced true/false labels, run against each model's text-only backbone so the text-speech modality gap is measured directly; 10 result cells from its Tables 2 and 5. TEMA-Bench (arXiv:2609.30029) tests temporal question answering over several sound recordings inside one multi-turn dialog (253 dialogs, 1,239 questions); 8 result cells from its Table 1 cover the four general models evaluated with their original weights, not the paper's own fine-tuned systems. Sixteen other newly flagged papers from the same window were reviewed and not admitted.",
+   "source": "daily review"
+  },
+  {
    "date": "2026-09-25",
    "change": "Added TACT (arXiv:2609.27372), an intent-conditioned turn-taking benchmark for full-duplex spoken dialogue models: 9,728 episodes and 73.2 hours from five public dyadic corpora, scored with a threshold-weighted CRPS against human timing kernels conditioned on six latent speaker intents rather than a binary response window. 40 result cells from its Table I cover eight systems already in the index; SyncLLM and GPT-4o Realtime appear in the paper but are not yet catalogued models, so their rows were left out rather than adding new model entries. The arXiv query API has now returned HTTP 406 for every daily crawl since 2026-09-17, so this round again recovered candidates through the OAI-PMH interface by hand: 101 speech-relevant records for 2026-09-24, 15 scored above threshold, 1 already catalogued, 13 rejected on the inclusion gates and 1 admitted.",
    "source": "arXiv:2609.27372 (abstract page and full text); Table I"
