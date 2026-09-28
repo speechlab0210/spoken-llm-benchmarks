@@ -1,9 +1,205 @@
 {
  "since": "2026-08-22",
  "what": "Every arXiv paper the daily crawl has flagged since launch (score at or above the threshold, not previously seen), with the reviewer's verdict as written in the feed and whether the paper entered the catalogue. \"published\" is the paper's arXiv date. See the Method section of the site.",
- "flagged": 119,
+ "flagged": 147,
  "admitted": 38,
  "entries": [
+  {
+   "id": "2609.31588",
+   "title": "RePlay: Retrieval-Based Voice Playback for Multi-Turn spoken dialogue",
+   "published": "2026-09-25T17:43:21Z",
+   "score": 27,
+   "outcome": "under review"
+  },
+  {
+   "id": "2609.31506",
+   "title": "Evaluating Cultural Awareness of LLMs for Haitian Creole",
+   "published": "2026-09-25T16:47:07Z",
+   "score": 24,
+   "outcome": "under review"
+  },
+  {
+   "id": "2609.31392",
+   "title": "PANEL: An Open-Source, Self-Hosted Web Platform for Human Evaluation of Generative Models",
+   "published": "2026-09-25T15:21:47Z",
+   "score": 18,
+   "outcome": "under review"
+  },
+  {
+   "id": "2609.31224",
+   "title": "Acoustic-to-Text KV Compression for Full-Duplex Speech Models",
+   "published": "2026-09-25T13:04:09Z",
+   "score": 24,
+   "outcome": "under review"
+  },
+  {
+   "id": "2609.30798",
+   "title": "Evaluating Real-Time Voice Agents: From Component Quality to Grounded Outcomes",
+   "published": "2026-09-25T04:22:20Z",
+   "score": 27,
+   "outcome": "under review"
+  },
+  {
+   "id": "2609.30694",
+   "title": "Training-Free Contextual ASR via SpeechLLM-Based Error-Aware Selective Retrieval",
+   "published": "2026-09-25T02:00:44Z",
+   "score": 18,
+   "outcome": "under review"
+  },
+  {
+   "id": "2609.30514",
+   "title": "Inquesto Score: A reliability Protocol For Voice Agents",
+   "published": "2026-09-24T20:07:53Z",
+   "score": 18,
+   "outcome": "under review"
+  },
+  {
+   "id": "2609.30483",
+   "title": "AcoustiClaim: A Numeric Claim Benchmark with Instrument Ground Truth",
+   "published": "2026-09-24T19:19:20Z",
+   "score": 21,
+   "outcome": "under review"
+  },
+  {
+   "id": "2609.30167",
+   "title": "Do Audio Language Models Hear and Read Distinctive Features Alike?",
+   "published": "2026-09-24T17:21:16Z",
+   "score": 18,
+   "outcome": "under review"
+  },
+  {
+   "id": "2609.29798",
+   "title": "Benchmarking and Domain Adaptation of Automatic Speech Recognition (ASR) for Adolescent Health Communication in Ghanaian Languages",
+   "published": "2026-09-24T13:36:38Z",
+   "score": 24,
+   "outcome": "under review"
+  },
+  {
+   "id": "2609.29418",
+   "title": "Controlling Backchannels in Streamable Full-duplex Models",
+   "published": "2026-09-24T11:38:40Z",
+   "score": 21,
+   "outcome": "under review"
+  },
+  {
+   "id": "2609.29287",
+   "title": "AEGIS: Audio Endogenous Guarding via Internal Signals Against Large Audio-Language Model Jailbreaks",
+   "published": "2026-09-24T09:24:13Z",
+   "score": 21,
+   "outcome": "under review"
+  },
+  {
+   "id": "2609.29217",
+   "title": "AdaptDuplex: from static to adaptive full-duplex spoken dialogue",
+   "published": "2026-09-24T08:25:16Z",
+   "score": 27,
+   "outcome": "under review"
+  },
+  {
+   "id": "2609.28577",
+   "title": "ASR ensembling for phoneme intelligibility evaluation of speech anonymizers",
+   "published": "2026-09-23T12:36:21Z",
+   "score": 18,
+   "outcome": "under review"
+  },
+  {
+   "id": "2609.27650",
+   "title": "Brain-to-Language Decoding: Tasks, Signals, Methods, Evaluation, Practical Use and Beyond",
+   "published": "2026-09-23T10:14:47Z",
+   "score": 18,
+   "outcome": "under review"
+  },
+  {
+   "id": "2609.27378",
+   "title": "Psychoacoustically Aligned Latent Smoothing for Adversarial Robustness of Full-Duplex Speech-to-Speech Dialogue Models",
+   "published": "2026-09-23T05:29:13Z",
+   "score": 24,
+   "outcome": "under review"
+  },
+  {
+   "id": "2609.27205",
+   "title": "Phonemizing User-Generated Text: A Benchmark, Taxonomy, and Compositional Approach",
+   "published": "2026-09-23T01:12:04Z",
+   "score": 21,
+   "outcome": "under review"
+  },
+  {
+   "id": "2609.26536",
+   "title": "Transcribe, Translate, and Optimize: Joint Reward Learning for Speech Translation",
+   "published": "2026-09-22T14:57:51Z",
+   "score": 18,
+   "outcome": "under review"
+  },
+  {
+   "id": "2609.26854",
+   "title": "SsgCaps: A controlled dataset for the evaluation of sound scene generation algorithms",
+   "published": "2026-09-22T14:26:14Z",
+   "score": 21,
+   "outcome": "under review"
+  },
+  {
+   "id": "2609.25195",
+   "title": "Qwen-Audio-Agent Technical Report",
+   "published": "2026-09-21T17:40:55Z",
+   "score": 21,
+   "outcome": "under review"
+  },
+  {
+   "id": "2609.25176",
+   "title": "Qwen-Audio-3.1-Realtime: Towards Reliable Agentic Voice Interaction",
+   "published": "2026-09-21T14:20:47Z",
+   "score": 27,
+   "outcome": "under review"
+  },
+  {
+   "id": "2609.24199",
+   "title": "Vimarsha: Faithful ASR Evaluation for Indian Languages with Demographic Diversity, In-the-Wild Audio and Spelling Variations",
+   "published": "2026-09-21T07:14:46Z",
+   "score": 24,
+   "outcome": "under review"
+  },
+  {
+   "id": "2609.24163",
+   "title": "Listen, Critique, and Refine: RL-Based Self-Refinement for Instruction-Following Speech Synthesis",
+   "published": "2026-09-21T06:28:17Z",
+   "score": 24,
+   "outcome": "under review"
+  },
+  {
+   "id": "2609.23825",
+   "title": "Federated Multilingual Speech-LLMs: Architecture and Aggregation Strategy Benchmarking",
+   "published": "2026-09-20T19:23:15Z",
+   "score": 21,
+   "outcome": "under review"
+  },
+  {
+   "id": "2609.26823",
+   "title": "Text Scores Can Miss Waveform Use: A Qwen2-Audio Quantization Case Study",
+   "published": "2026-09-20T14:57:27Z",
+   "score": 18,
+   "outcome": "under review"
+  },
+  {
+   "id": "2609.23589",
+   "title": "Listen Then Reason: Perception-Grounded Test-Time Reinforcement Learning for Large Audio-Language Models",
+   "published": "2026-09-20T12:12:20Z",
+   "score": 18,
+   "outcome": "under review"
+  },
+  {
+   "id": "2609.23550",
+   "title": "ArtifactBench: Lineage-Aware Evaluation of AI-Generated Music Detectors under Distribution Shift",
+   "published": "2026-09-20T11:03:39Z",
+   "score": 36,
+   "outcome": "under review"
+  },
+  {
+   "id": "2609.22851",
+   "title": "Discrete vs. Continuous: A Comprehensive Study of Unified Audio Understanding in LALMs",
+   "published": "2026-09-19T07:46:24Z",
+   "score": 24,
+   "outcome": "under review"
+  },
   {
    "id": "2609.15759",
    "title": "Enabling Streaming User Transcription in Full-Duplex Speech-to-Speech Models",
