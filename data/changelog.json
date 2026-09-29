@@ -1,6 +1,11 @@
 {
  "entries": [
   {
+   "date": "2026-09-29",
+   "change": "Added AcoustiClaim (arXiv:2609.30483), a benchmark that asks audio language models for ten acoustic quantities of a recording (SNR, SRMR, speaking rate, pauses, F0, jitter, shimmer, HNR) and scores every number they state against the instrument that defines the quantity, rather than against human opinion or a judge model. 36 result cells from its Table 2 (Libri2Mix block, largest Spearman correlation over five prompts) cover the four open-weight models already in the index; cells the paper marks as degenerate (fewer than five distinct values) are omitted, and the closed model in the panel is not a catalogued model, so its row was left out. The arXiv query API answered the daily crawl again this morning after twelve days of HTTP 406; the crawl flagged 28 candidates from 19-25 September, of which one was admitted and 27 were read out of scope (the reasons are listed in the crawl ledger).",
+   "source": "arXiv:2609.30483 (abstract page and full text); Table 2"
+  },
+  {
    "date": "2026-09-27",
    "change": "Added two benchmarks from the 24 September arXiv listings, recovered through OAI-PMH while the arXiv query API keeps returning HTTP 406 to the daily crawl (every day since 17 September). VeriSpeak (arXiv:2609.30227) tests spoken fact verification: 3,879 single-speaker spoken claims about public figures with balanced true/false labels, run against each model's text-only backbone so the text-speech modality gap is measured directly; 10 result cells from its Tables 2 and 5. TEMA-Bench (arXiv:2609.30029) tests temporal question answering over several sound recordings inside one multi-turn dialog (253 dialogs, 1,239 questions); 8 result cells from its Table 1 cover the four general models evaluated with their original weights, not the paper's own fine-tuned systems. Sixteen other newly flagged papers from the same window were reviewed and not admitted.",
    "source": "daily review"

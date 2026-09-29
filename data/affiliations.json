@@ -23666,6 +23666,33 @@
    ],
    "verify_note": "arXiv HTML prints names only; PDF v1 first page reads 'Kaidi Yang1,2, Hualei Wang1,2, Zhaohui Wang1,2, Chenxuan Wang1,2, Hong Liu1, Xiangdong Wang1,*' with '1 Institute of Computing Technology, Chinese Academy of Sciences, Beijing, China. 2 University of Chinese Academy of Sciences, Beijing, China.' First author holds both affiliations (index 1 listed first = lead); last author ICT only.",
    "n_authors": 6
+  },
+  "acousticlaim": {
+   "status": "ok",
+   "verified": "confirmed",
+   "publishable": true,
+   "institutions": [
+    {
+     "inst": "carnegie-mellon-university",
+     "unit": null,
+     "raw": "Carnegie Mellon University",
+     "country": "US",
+     "city": "Pittsburgh",
+     "lat": 40.44,
+     "lon": -79.99,
+     "placed": "default",
+     "printed_city": null,
+     "printed_country": null,
+     "lead": true,
+     "first_author": true,
+     "last": true,
+     "evidence": "printed"
+    }
+   ],
+   "countries_complete": true,
+   "verify_note": "arXiv HTML v1 lists Sheng-Tse Lin, Siyuan Zhai, Chien-Liang Kuo, Massa Baali, Bhiksha Raj with a single address line 'Carnegie Mellon University'. Single shared affiliation for all five authors.",
+   "note": "Single shared affiliation.",
+   "n_authors": 5
   }
  },
  "models": {

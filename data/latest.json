@@ -15,7 +15,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2609.23550",
       "score": 36,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: the subjects are not general spoken LLMs (it evaluates AI-generated-music detectors, not models that listen or speak)"
     },
     {
       "id": "2609.25176",
@@ -35,7 +35,7 @@
       "primary_category": "eess.AS",
       "url": "https://arxiv.org/abs/2609.25176",
       "score": 27,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: no benchmark proposed (a model technical report; its only constructed set is an internal translation of an existing benchmark, not released)"
     },
     {
       "id": "2609.29217",
@@ -55,7 +55,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2609.29217",
       "score": 27,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: no benchmark proposed (a full-duplex modelling method built on Qwen3-Omni)"
     },
     {
       "id": "2609.30798",
@@ -70,7 +70,7 @@
       "primary_category": "cs.AI",
       "url": "https://arxiv.org/abs/2609.30798",
       "score": 27,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: no benchmark proposed (a survey and position paper on how voice agents are evaluated)"
     },
     {
       "id": "2609.31588",
@@ -85,7 +85,7 @@
       "primary_category": "eess.AS",
       "url": "https://arxiv.org/abs/2609.31588",
       "score": 27,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: no benchmark proposed (a retrieval-based spoken dialogue system that plays pre-recorded lines)"
     },
     {
       "id": "2609.22851",
@@ -102,7 +102,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2609.22851",
       "score": 24,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: the subjects are not general spoken LLMs (it compares audio encoders and discrete versus continuous representations on its own small probe stacks, not existing spoken LLMs)"
     },
     {
       "id": "2609.24163",
@@ -121,7 +121,7 @@
       "primary_category": "eess.AS",
       "url": "https://arxiv.org/abs/2609.24163",
       "score": 24,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: no benchmark proposed (an RL self-refinement method for instruction-following speech synthesis)"
     },
     {
       "id": "2609.24199",
@@ -139,7 +139,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2609.24199",
       "score": 24,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: the subjects are not general spoken LLMs (an ASR benchmark for Indian languages evaluating ASR systems)"
     },
     {
       "id": "2609.27378",
@@ -153,7 +153,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2609.27378",
       "score": 24,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: no benchmark proposed (an adversarial attack and defence method for full-duplex models)"
     },
     {
       "id": "2609.29798",
@@ -171,7 +171,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2609.29798",
       "score": 24,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: the subjects are not general spoken LLMs (ASR benchmarking and domain adaptation for Ghanaian languages; the task is transcription only)"
     },
     {
       "id": "2609.31224",
@@ -187,7 +187,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2609.31224",
       "score": 24,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: no benchmark proposed (a KV-cache compression method for full-duplex models)"
     },
     {
       "id": "2609.31506",
@@ -201,7 +201,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2609.31506",
       "score": 24,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: the subjects are not general spoken LLMs (a text-only evaluation of cultural awareness of LLMs in Haitian Creole)"
     },
     {
       "id": "2609.23825",
@@ -216,7 +216,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2609.23825",
       "score": 21,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: the subjects are not general spoken LLMs (a federated-learning study of ASR architectures; the task is transcription only)"
     },
     {
       "id": "2609.25195",
@@ -236,7 +236,7 @@
       "primary_category": "eess.AS",
       "url": "https://arxiv.org/abs/2609.25195",
       "score": 21,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: no benchmark proposed (a system harness for voice agents; its 134 test cases are in-house and not released)"
     },
     {
       "id": "2609.26854",
@@ -256,7 +256,7 @@
       "primary_category": "cs.GR",
       "url": "https://arxiv.org/abs/2609.26854",
       "score": 21,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: the subjects are not general spoken LLMs (a dataset for evaluating sound-scene generation algorithms)"
     },
     {
       "id": "2609.27205",
@@ -274,7 +274,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2609.27205",
       "score": 21,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: the subjects are not general spoken LLMs (a grapheme-to-phoneme benchmark for TTS front-ends and text LLMs, with no speech input or output)"
     },
     {
       "id": "2609.29287",
@@ -291,7 +291,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2609.29287",
       "score": 21,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: no benchmark proposed (a jailbreak defence method for audio language models, tested on existing benchmarks)"
     },
     {
       "id": "2609.29418",
@@ -309,7 +309,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2609.29418",
       "score": 21,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: no benchmark proposed (a backchannel-control method for full-duplex models)"
     },
     {
       "id": "2609.30483",
@@ -326,7 +326,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2609.30483",
       "score": 21,
-      "status": "new — under review"
+      "status": "accepted — added to the atlas as AcoustiClaim (numeric acoustic claims of audio language models scored against the measuring instrument; Qwen2-Audio, Qwen2.5-Omni, Granite-Speech, Audio Flamingo 3 and one closed model)"
     },
     {
       "id": "2609.23589",
@@ -344,7 +344,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2609.23589",
       "score": 18,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: no benchmark proposed (a test-time reinforcement learning method for audio language models)"
     },
     {
       "id": "2609.26823",
@@ -359,7 +359,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2609.26823",
       "score": 18,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: no benchmark proposed (a quantization case study of one model on existing datasets; it describes a measurement protocol but releases no evaluation set)"
     },
     {
       "id": "2609.26536",
@@ -374,7 +374,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2609.26536",
       "score": 18,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: no benchmark proposed (a GRPO training method for speech translation)"
     },
     {
       "id": "2609.27650",
@@ -393,7 +393,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2609.27650",
       "score": 18,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: no benchmark proposed (a survey of brain-to-language decoding)"
     },
     {
       "id": "2609.28577",
@@ -409,7 +409,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2609.28577",
       "score": 18,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: the subjects are not general spoken LLMs (it evaluates ASR-ensemble intelligibility metrics for speech anonymizers)"
     },
     {
       "id": "2609.30167",
@@ -423,7 +423,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2609.30167",
       "score": 18,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: no benchmark proposed (an interpretability analysis of phonetic feature directions inside audio language models)"
     },
     {
       "id": "2609.30514",
@@ -437,7 +437,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2609.30514",
       "score": 18,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: the subjects are not general spoken LLMs (the evaluated voice agents are cascades of ASR, a text-only LLM and TTS; the paper tests a scoring protocol on one pipeline)"
     },
     {
       "id": "2609.30694",
@@ -453,7 +453,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2609.30694",
       "score": 18,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: no benchmark proposed (a training-free contextual ASR method)"
     },
     {
       "id": "2609.31392",
@@ -468,7 +468,7 @@
       "primary_category": "cs.HC",
       "url": "https://arxiv.org/abs/2609.31392",
       "score": 18,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: no benchmark proposed (a web platform for running human listening tests)"
     },
     {
       "id": "2609.13076",

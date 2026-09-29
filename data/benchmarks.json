@@ -10831,6 +10831,41 @@
         "English"
       ],
       "note": "Evaluated with model-generated dialogue history. The fine-tuned TEMA systems are the paper's own method and are not recorded as results; only general models answering directly are."
+    },
+    {
+      "id": "acousticlaim",
+      "name": "AcoustiClaim",
+      "aka": [],
+      "full_title": "AcoustiClaim: A Numeric Claim Benchmark with Instrument Ground Truth",
+      "arxiv_id": "2609.30483",
+      "arxiv_date": "2026-09",
+      "arxiv_date_full": "2026-09-24",
+      "url": "https://arxiv.org/abs/2609.30483",
+      "code": "https://github.com/sheng-tse/acousticlaim",
+      "summary": "A benchmark for whether the numbers an audio language model states about a recording are true of the signal. The model is asked for ten acoustic quantities (SRMR, SNR, speaking rate, pause count and rate, F0 mean and s.d., jitter, shimmer, HNR) in five ways, from a free description to a worked example; a parser pulls every numeric claim out of the free text and each claim is scored against the instrument that defines the quantity (Praat-style estimators and the like) rather than against human opinion or a judge model. Each quantity is also tiered by where its reference can be read (exact from the mixture, measurable, only on the clean stem, or only outside overlap), so the benchmark says whether an answer was even available in the input. Clips come from a Libri2Mix two-talker subset (with clean twins) and AMI meetings. Across four open-weight models and one closed model, 207 cells were filled; 49 produced fewer than five distinct values, only 8 of the 158 rankable cells exceeded the paper's own Spearman bar of 0.3 (five of them the closed model on pitch), and error sat at or above a constant-predictor floor in every ranked cell but three. The paper also trains a reference decoder that withholds quantities it cannot read.",
+      "categories": [
+        "paralinguistics",
+        "hallucination",
+        "audio-grounding"
+      ],
+      "tasks": [
+        "stating signal quantities (SNR, SRMR) of a speech recording as numbers",
+        "stating timing quantities (speaking rate, pause count and rate)",
+        "stating voice quantities (F0 mean and s.d., jitter, shimmer, HNR)",
+        "answering under five elicitation styles, from free description to a worked example"
+      ],
+      "io": "a speech recording (two-talker mixture, its clean twin, or a meeting clip) plus a prompt in, free text containing numeric claims out",
+      "size": "10 scored quantities (13 parsed); 839 Libri2Mix and 859 AMI panel clips, 4,800 generations per system and corpus",
+      "metrics": [
+        "Spearman rank correlation of the stated value against the instrument, per quantity (bar set at 0.3)",
+        "normalised MAE against a constant-predictor floor",
+        "count of cells with fewer than five distinct values (degenerate output)",
+        "share of generations that parse to a claim"
+      ],
+      "languages": [
+        "English"
+      ],
+      "note": "The model table records Table 2's Libri2Mix rows for the four open-weight models (largest Spearman over the five prompts); cells marked 'c' (fewer than five distinct values) are omitted. The closed model, reported as Gemini 3.8 Flash, is not in the model roster and is not recorded. The paper's own trained reference system is its method and is not recorded as a result. Submitted to ICASSP 2027 per the arXiv comment."
     }
   ]
 }

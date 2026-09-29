@@ -135702,6 +135702,330 @@
       "source": "Table 1 (natural multi-turn results on Test253, 'Original' rows)",
       "source_url": "https://arxiv.org/abs/2609.30029",
       "note": "Paper row: Gemini 3.5 Flash (proprietary), direct answers."
+    },
+    {
+      "benchmark": "acousticlaim",
+      "model": "qwen2-audio",
+      "metric": "Spearman rho vs instrument, SRMR, Libri2Mix (max over 5 prompts)",
+      "value": 0.191,
+      "source": "Table 2 (largest Spearman correlation over the rungs against the instrument, Libri2Mix block)",
+      "source_url": "https://arxiv.org/abs/2609.30483",
+      "note": "Paper row: Qwen2-Audio-7B (Qwen2-Audio-7B-Instruct)."
+    },
+    {
+      "benchmark": "acousticlaim",
+      "model": "qwen2-audio",
+      "metric": "Spearman rho vs instrument, SNR, Libri2Mix (max over 5 prompts)",
+      "value": 0.024,
+      "source": "Table 2 (largest Spearman correlation over the rungs against the instrument, Libri2Mix block)",
+      "source_url": "https://arxiv.org/abs/2609.30483",
+      "note": "Paper row: Qwen2-Audio-7B (Qwen2-Audio-7B-Instruct)."
+    },
+    {
+      "benchmark": "acousticlaim",
+      "model": "qwen2-audio",
+      "metric": "Spearman rho vs instrument, speaking rate, Libri2Mix (max over 5 prompts)",
+      "value": -0.035,
+      "source": "Table 2 (largest Spearman correlation over the rungs against the instrument, Libri2Mix block)",
+      "source_url": "https://arxiv.org/abs/2609.30483",
+      "note": "Paper row: Qwen2-Audio-7B (Qwen2-Audio-7B-Instruct)."
+    },
+    {
+      "benchmark": "acousticlaim",
+      "model": "qwen2-audio",
+      "metric": "Spearman rho vs instrument, pause count, Libri2Mix (max over 5 prompts)",
+      "value": -0.045,
+      "source": "Table 2 (largest Spearman correlation over the rungs against the instrument, Libri2Mix block)",
+      "source_url": "https://arxiv.org/abs/2609.30483",
+      "note": "Paper row: Qwen2-Audio-7B (Qwen2-Audio-7B-Instruct)."
+    },
+    {
+      "benchmark": "acousticlaim",
+      "model": "qwen2-audio",
+      "metric": "Spearman rho vs instrument, pause rate, Libri2Mix (max over 5 prompts)",
+      "value": 0.05,
+      "source": "Table 2 (largest Spearman correlation over the rungs against the instrument, Libri2Mix block)",
+      "source_url": "https://arxiv.org/abs/2609.30483",
+      "note": "Paper row: Qwen2-Audio-7B (Qwen2-Audio-7B-Instruct)."
+    },
+    {
+      "benchmark": "acousticlaim",
+      "model": "qwen2-audio",
+      "metric": "Spearman rho vs instrument, F0 mean, Libri2Mix (max over 5 prompts)",
+      "value": 0.094,
+      "source": "Table 2 (largest Spearman correlation over the rungs against the instrument, Libri2Mix block)",
+      "source_url": "https://arxiv.org/abs/2609.30483",
+      "note": "Paper row: Qwen2-Audio-7B (Qwen2-Audio-7B-Instruct)."
+    },
+    {
+      "benchmark": "acousticlaim",
+      "model": "qwen2-audio",
+      "metric": "Spearman rho vs instrument, F0 s.d., Libri2Mix (max over 5 prompts)",
+      "value": 0.024,
+      "source": "Table 2 (largest Spearman correlation over the rungs against the instrument, Libri2Mix block)",
+      "source_url": "https://arxiv.org/abs/2609.30483",
+      "note": "Paper row: Qwen2-Audio-7B (Qwen2-Audio-7B-Instruct)."
+    },
+    {
+      "benchmark": "acousticlaim",
+      "model": "qwen2-audio",
+      "metric": "Spearman rho vs instrument, jitter, Libri2Mix (max over 5 prompts)",
+      "value": 0.012,
+      "source": "Table 2 (largest Spearman correlation over the rungs against the instrument, Libri2Mix block)",
+      "source_url": "https://arxiv.org/abs/2609.30483",
+      "note": "Paper row: Qwen2-Audio-7B (Qwen2-Audio-7B-Instruct)."
+    },
+    {
+      "benchmark": "acousticlaim",
+      "model": "qwen2-audio",
+      "metric": "Spearman rho vs instrument, shimmer, Libri2Mix (max over 5 prompts)",
+      "value": 0.096,
+      "source": "Table 2 (largest Spearman correlation over the rungs against the instrument, Libri2Mix block)",
+      "source_url": "https://arxiv.org/abs/2609.30483",
+      "note": "Paper row: Qwen2-Audio-7B (Qwen2-Audio-7B-Instruct)."
+    },
+    {
+      "benchmark": "acousticlaim",
+      "model": "qwen2-audio",
+      "metric": "Spearman rho vs instrument, HNR, Libri2Mix (max over 5 prompts)",
+      "value": 0.052,
+      "source": "Table 2 (largest Spearman correlation over the rungs against the instrument, Libri2Mix block)",
+      "source_url": "https://arxiv.org/abs/2609.30483",
+      "note": "Paper row: Qwen2-Audio-7B (Qwen2-Audio-7B-Instruct)."
+    },
+    {
+      "benchmark": "acousticlaim",
+      "model": "qwen2-5-omni",
+      "metric": "Spearman rho vs instrument, SRMR, Libri2Mix (max over 5 prompts)",
+      "value": -0.057,
+      "source": "Table 2 (largest Spearman correlation over the rungs against the instrument, Libri2Mix block)",
+      "source_url": "https://arxiv.org/abs/2609.30483",
+      "note": "Paper row: Qwen2.5-Omni-7B."
+    },
+    {
+      "benchmark": "acousticlaim",
+      "model": "qwen2-5-omni",
+      "metric": "Spearman rho vs instrument, SNR, Libri2Mix (max over 5 prompts)",
+      "value": 0.087,
+      "source": "Table 2 (largest Spearman correlation over the rungs against the instrument, Libri2Mix block)",
+      "source_url": "https://arxiv.org/abs/2609.30483",
+      "note": "Paper row: Qwen2.5-Omni-7B."
+    },
+    {
+      "benchmark": "acousticlaim",
+      "model": "qwen2-5-omni",
+      "metric": "Spearman rho vs instrument, speaking rate, Libri2Mix (max over 5 prompts)",
+      "value": 0.021,
+      "source": "Table 2 (largest Spearman correlation over the rungs against the instrument, Libri2Mix block)",
+      "source_url": "https://arxiv.org/abs/2609.30483",
+      "note": "Paper row: Qwen2.5-Omni-7B."
+    },
+    {
+      "benchmark": "acousticlaim",
+      "model": "qwen2-5-omni",
+      "metric": "Spearman rho vs instrument, pause rate, Libri2Mix (max over 5 prompts)",
+      "value": -0.086,
+      "source": "Table 2 (largest Spearman correlation over the rungs against the instrument, Libri2Mix block)",
+      "source_url": "https://arxiv.org/abs/2609.30483",
+      "note": "Paper row: Qwen2.5-Omni-7B."
+    },
+    {
+      "benchmark": "acousticlaim",
+      "model": "qwen2-5-omni",
+      "metric": "Spearman rho vs instrument, F0 mean, Libri2Mix (max over 5 prompts)",
+      "value": 0.062,
+      "source": "Table 2 (largest Spearman correlation over the rungs against the instrument, Libri2Mix block)",
+      "source_url": "https://arxiv.org/abs/2609.30483",
+      "note": "Paper row: Qwen2.5-Omni-7B."
+    },
+    {
+      "benchmark": "acousticlaim",
+      "model": "qwen2-5-omni",
+      "metric": "Spearman rho vs instrument, F0 s.d., Libri2Mix (max over 5 prompts)",
+      "value": 0.009,
+      "source": "Table 2 (largest Spearman correlation over the rungs against the instrument, Libri2Mix block)",
+      "source_url": "https://arxiv.org/abs/2609.30483",
+      "note": "Paper row: Qwen2.5-Omni-7B."
+    },
+    {
+      "benchmark": "acousticlaim",
+      "model": "qwen2-5-omni",
+      "metric": "Spearman rho vs instrument, jitter, Libri2Mix (max over 5 prompts)",
+      "value": 0.004,
+      "source": "Table 2 (largest Spearman correlation over the rungs against the instrument, Libri2Mix block)",
+      "source_url": "https://arxiv.org/abs/2609.30483",
+      "note": "Paper row: Qwen2.5-Omni-7B."
+    },
+    {
+      "benchmark": "acousticlaim",
+      "model": "qwen2-5-omni",
+      "metric": "Spearman rho vs instrument, shimmer, Libri2Mix (max over 5 prompts)",
+      "value": 0.065,
+      "source": "Table 2 (largest Spearman correlation over the rungs against the instrument, Libri2Mix block)",
+      "source_url": "https://arxiv.org/abs/2609.30483",
+      "note": "Paper row: Qwen2.5-Omni-7B."
+    },
+    {
+      "benchmark": "acousticlaim",
+      "model": "qwen2-5-omni",
+      "metric": "Spearman rho vs instrument, HNR, Libri2Mix (max over 5 prompts)",
+      "value": 0.037,
+      "source": "Table 2 (largest Spearman correlation over the rungs against the instrument, Libri2Mix block)",
+      "source_url": "https://arxiv.org/abs/2609.30483",
+      "note": "Paper row: Qwen2.5-Omni-7B."
+    },
+    {
+      "benchmark": "acousticlaim",
+      "model": "granite-speech",
+      "metric": "Spearman rho vs instrument, SRMR, Libri2Mix (max over 5 prompts)",
+      "value": 0.047,
+      "source": "Table 2 (largest Spearman correlation over the rungs against the instrument, Libri2Mix block)",
+      "source_url": "https://arxiv.org/abs/2609.30483",
+      "note": "Paper row: Granite-Speech-8B (Granite-Speech-3.3-8B)."
+    },
+    {
+      "benchmark": "acousticlaim",
+      "model": "granite-speech",
+      "metric": "Spearman rho vs instrument, speaking rate, Libri2Mix (max over 5 prompts)",
+      "value": -0.128,
+      "source": "Table 2 (largest Spearman correlation over the rungs against the instrument, Libri2Mix block)",
+      "source_url": "https://arxiv.org/abs/2609.30483",
+      "note": "Paper row: Granite-Speech-8B (Granite-Speech-3.3-8B)."
+    },
+    {
+      "benchmark": "acousticlaim",
+      "model": "granite-speech",
+      "metric": "Spearman rho vs instrument, pause count, Libri2Mix (max over 5 prompts)",
+      "value": -0.097,
+      "source": "Table 2 (largest Spearman correlation over the rungs against the instrument, Libri2Mix block)",
+      "source_url": "https://arxiv.org/abs/2609.30483",
+      "note": "Paper row: Granite-Speech-8B (Granite-Speech-3.3-8B)."
+    },
+    {
+      "benchmark": "acousticlaim",
+      "model": "granite-speech",
+      "metric": "Spearman rho vs instrument, pause rate, Libri2Mix (max over 5 prompts)",
+      "value": -0.05,
+      "source": "Table 2 (largest Spearman correlation over the rungs against the instrument, Libri2Mix block)",
+      "source_url": "https://arxiv.org/abs/2609.30483",
+      "note": "Paper row: Granite-Speech-8B (Granite-Speech-3.3-8B)."
+    },
+    {
+      "benchmark": "acousticlaim",
+      "model": "granite-speech",
+      "metric": "Spearman rho vs instrument, jitter, Libri2Mix (max over 5 prompts)",
+      "value": -0.104,
+      "source": "Table 2 (largest Spearman correlation over the rungs against the instrument, Libri2Mix block)",
+      "source_url": "https://arxiv.org/abs/2609.30483",
+      "note": "Paper row: Granite-Speech-8B (Granite-Speech-3.3-8B)."
+    },
+    {
+      "benchmark": "acousticlaim",
+      "model": "granite-speech",
+      "metric": "Spearman rho vs instrument, shimmer, Libri2Mix (max over 5 prompts)",
+      "value": -0.063,
+      "source": "Table 2 (largest Spearman correlation over the rungs against the instrument, Libri2Mix block)",
+      "source_url": "https://arxiv.org/abs/2609.30483",
+      "note": "Paper row: Granite-Speech-8B (Granite-Speech-3.3-8B)."
+    },
+    {
+      "benchmark": "acousticlaim",
+      "model": "granite-speech",
+      "metric": "Spearman rho vs instrument, HNR, Libri2Mix (max over 5 prompts)",
+      "value": 0.031,
+      "source": "Table 2 (largest Spearman correlation over the rungs against the instrument, Libri2Mix block)",
+      "source_url": "https://arxiv.org/abs/2609.30483",
+      "note": "Paper row: Granite-Speech-8B (Granite-Speech-3.3-8B)."
+    },
+    {
+      "benchmark": "acousticlaim",
+      "model": "audio-flamingo-3",
+      "metric": "Spearman rho vs instrument, SRMR, Libri2Mix (max over 5 prompts)",
+      "value": 0.124,
+      "source": "Table 2 (largest Spearman correlation over the rungs against the instrument, Libri2Mix block)",
+      "source_url": "https://arxiv.org/abs/2609.30483",
+      "note": "Paper row: Audio-Flamingo-3."
+    },
+    {
+      "benchmark": "acousticlaim",
+      "model": "audio-flamingo-3",
+      "metric": "Spearman rho vs instrument, SNR, Libri2Mix (max over 5 prompts)",
+      "value": 0.304,
+      "source": "Table 2 (largest Spearman correlation over the rungs against the instrument, Libri2Mix block)",
+      "source_url": "https://arxiv.org/abs/2609.30483",
+      "note": "Paper row: Audio-Flamingo-3."
+    },
+    {
+      "benchmark": "acousticlaim",
+      "model": "audio-flamingo-3",
+      "metric": "Spearman rho vs instrument, speaking rate, Libri2Mix (max over 5 prompts)",
+      "value": -0.049,
+      "source": "Table 2 (largest Spearman correlation over the rungs against the instrument, Libri2Mix block)",
+      "source_url": "https://arxiv.org/abs/2609.30483",
+      "note": "Paper row: Audio-Flamingo-3."
+    },
+    {
+      "benchmark": "acousticlaim",
+      "model": "audio-flamingo-3",
+      "metric": "Spearman rho vs instrument, pause count, Libri2Mix (max over 5 prompts)",
+      "value": 0.047,
+      "source": "Table 2 (largest Spearman correlation over the rungs against the instrument, Libri2Mix block)",
+      "source_url": "https://arxiv.org/abs/2609.30483",
+      "note": "Paper row: Audio-Flamingo-3."
+    },
+    {
+      "benchmark": "acousticlaim",
+      "model": "audio-flamingo-3",
+      "metric": "Spearman rho vs instrument, pause rate, Libri2Mix (max over 5 prompts)",
+      "value": 0.005,
+      "source": "Table 2 (largest Spearman correlation over the rungs against the instrument, Libri2Mix block)",
+      "source_url": "https://arxiv.org/abs/2609.30483",
+      "note": "Paper row: Audio-Flamingo-3."
+    },
+    {
+      "benchmark": "acousticlaim",
+      "model": "audio-flamingo-3",
+      "metric": "Spearman rho vs instrument, F0 mean, Libri2Mix (max over 5 prompts)",
+      "value": 0.153,
+      "source": "Table 2 (largest Spearman correlation over the rungs against the instrument, Libri2Mix block)",
+      "source_url": "https://arxiv.org/abs/2609.30483",
+      "note": "Paper row: Audio-Flamingo-3."
+    },
+    {
+      "benchmark": "acousticlaim",
+      "model": "audio-flamingo-3",
+      "metric": "Spearman rho vs instrument, F0 s.d., Libri2Mix (max over 5 prompts)",
+      "value": -0.041,
+      "source": "Table 2 (largest Spearman correlation over the rungs against the instrument, Libri2Mix block)",
+      "source_url": "https://arxiv.org/abs/2609.30483",
+      "note": "Paper row: Audio-Flamingo-3."
+    },
+    {
+      "benchmark": "acousticlaim",
+      "model": "audio-flamingo-3",
+      "metric": "Spearman rho vs instrument, jitter, Libri2Mix (max over 5 prompts)",
+      "value": 0.115,
+      "source": "Table 2 (largest Spearman correlation over the rungs against the instrument, Libri2Mix block)",
+      "source_url": "https://arxiv.org/abs/2609.30483",
+      "note": "Paper row: Audio-Flamingo-3."
+    },
+    {
+      "benchmark": "acousticlaim",
+      "model": "audio-flamingo-3",
+      "metric": "Spearman rho vs instrument, shimmer, Libri2Mix (max over 5 prompts)",
+      "value": 0.117,
+      "source": "Table 2 (largest Spearman correlation over the rungs against the instrument, Libri2Mix block)",
+      "source_url": "https://arxiv.org/abs/2609.30483",
+      "note": "Paper row: Audio-Flamingo-3."
+    },
+    {
+      "benchmark": "acousticlaim",
+      "model": "audio-flamingo-3",
+      "metric": "Spearman rho vs instrument, HNR, Libri2Mix (max over 5 prompts)",
+      "value": 0.018,
+      "source": "Table 2 (largest Spearman correlation over the rungs against the instrument, Libri2Mix block)",
+      "source_url": "https://arxiv.org/abs/2609.30483",
+      "note": "Paper row: Audio-Flamingo-3."
     }
   ]
 }
