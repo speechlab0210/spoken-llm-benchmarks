@@ -6195,6 +6195,16 @@
      "type": "unresolved",
      "confidence": "low",
      "note": "The paper prints only the word LIGHTSPEED with no location or parent body; several unrelated organisations use the name, so kind, country and location are left unresolved."
+    },
+    {
+     "raw": "LIGHTSPEED, Shenzhen, China",
+     "country": "CN",
+     "city": "Shenzhen",
+     "lat": 22.54,
+     "lon": 114.06,
+     "type": "unresolved",
+     "confidence": "low",
+     "note": "Author block of arXiv:2609.32536 prints 'LIGHTSPEED, Shenzhen, China'. The location is recorded as printed; the parent organisation is not named in the paper and is left unresolved."
     }
    ]
   },
@@ -14193,6 +14203,173 @@
      "type": "academia",
      "confidence": "medium",
      "note": "city is part of the printed name; country and coordinates are normalisation, not printed"
+    }
+   ]
+  },
+  {
+   "id": "university-of-neuchatel",
+   "name": "University of Neuchâtel",
+   "short": "UniNE",
+   "type": "academia",
+   "country": "CH",
+   "parent": null,
+   "confidence": "high",
+   "sites": [
+    {
+     "city": "Neuchâtel",
+     "lat": 46.99,
+     "lon": 6.94,
+     "country": "CH"
+    }
+   ],
+   "aliases": [
+    {
+     "raw": "University of Neuchâtel",
+     "country": "CH",
+     "city": "Neuchâtel",
+     "lat": 46.99,
+     "lon": 6.94,
+     "type": "academia",
+     "confidence": "high",
+     "note": "Swiss public university; author block of arXiv:2609.33893 prints the name only (contact addresses @unine.ch)."
+    }
+   ]
+  },
+  {
+   "id": "tu-dortmund-university",
+   "name": "TU Dortmund University",
+   "short": "TU Dortmund",
+   "type": "academia",
+   "country": "DE",
+   "parent": null,
+   "confidence": "high",
+   "sites": [
+    {
+     "city": "Dortmund",
+     "lat": 51.49,
+     "lon": 7.41,
+     "country": "DE"
+    }
+   ],
+   "aliases": [
+    {
+     "raw": "TU Dortmund University",
+     "country": "DE",
+     "city": "Dortmund",
+     "lat": 51.49,
+     "lon": 7.41,
+     "type": "academia",
+     "confidence": "high",
+     "note": "German technical university; author block of arXiv:2609.33893 prints the name only."
+    }
+   ]
+  },
+  {
+   "id": "rwth-aachen-university",
+   "name": "RWTH Aachen University",
+   "short": "RWTH Aachen",
+   "type": "academia",
+   "country": "DE",
+   "parent": null,
+   "confidence": "high",
+   "sites": [
+    {
+     "city": "Aachen",
+     "lat": 50.78,
+     "lon": 6.07,
+     "country": "DE"
+    }
+   ],
+   "aliases": [
+    {
+     "raw": "RWTH Aachen University",
+     "country": "DE",
+     "city": "Aachen",
+     "lat": 50.78,
+     "lon": 6.07,
+     "type": "academia",
+     "confidence": "high",
+     "note": "German technical university; author block of arXiv:2609.33893 prints the name only (contact address @rwth-aachen.de)."
+    }
+   ]
+  },
+  {
+   "id": "cohere",
+   "name": "Cohere",
+   "short": "Cohere",
+   "type": "industry",
+   "country": "CA",
+   "parent": null,
+   "confidence": "high",
+   "sites": [
+    {
+     "city": "Toronto",
+     "lat": 43.65,
+     "lon": -79.38,
+     "country": "CA"
+    }
+   ],
+   "aliases": [
+    {
+     "raw": "Cohere, Canada",
+     "country": "CA",
+     "city": "Toronto",
+     "lat": 43.65,
+     "lon": -79.38,
+     "type": "industry",
+     "confidence": "high",
+     "note": "AI company headquartered in Toronto; the author block of arXiv:2609.33204 prints 'Cohere Labs, Canada' and 'Cohere, Canada' with no city, so the city is the company's headquarters."
+    }
+   ]
+  },
+  {
+   "id": "voicearena",
+   "name": "VoiceArena",
+   "short": "VoiceArena",
+   "type": "industry",
+   "country": null,
+   "parent": null,
+   "confidence": "low",
+   "sites": [],
+   "aliases": [
+    {
+     "raw": "VoiceArena",
+     "country": null,
+     "city": null,
+     "lat": null,
+     "lon": null,
+     "type": "industry",
+     "confidence": "low",
+     "note": "Author block of arXiv:2609.31967 prints the name only, with no city or country; not located because the paper prints no location."
+    }
+   ]
+  },
+  {
+   "id": "telecom-paris",
+   "name": "Télécom Paris",
+   "short": "Télécom Paris",
+   "type": "academia",
+   "country": "FR",
+   "parent": "Institut Polytechnique de Paris",
+   "confidence": "high",
+   "sites": [
+    {
+     "city": "Palaiseau",
+     "lat": 48.71,
+     "lon": 2.2,
+     "country": "FR"
+    }
+   ],
+   "aliases": [
+    {
+     "raw": "LTCI, Télécom Paris, Institut Polytechnique de Paris",
+     "country": "FR",
+     "city": "Palaiseau",
+     "lat": 48.71,
+     "lon": 2.2,
+     "type": "academia",
+     "confidence": "high",
+     "note": "Engineering school of Institut Polytechnique de Paris, campus in Palaiseau; LTCI is its research laboratory."
     }
    ]
   }

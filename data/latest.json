@@ -18,7 +18,7 @@
       "primary_category": "cs.LG",
       "url": "https://arxiv.org/abs/2609.33893",
       "score": 57,
-      "status": "new — under review"
+      "status": "accepted — added to the atlas as MISHAP-Bench (open-ended hallucination questions for audio-language models, scored for groundedness in the audio and in external facts)"
     },
     {
       "id": "2609.31948",
@@ -38,7 +38,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2609.31948",
       "score": 51,
-      "status": "new — under review"
+      "status": "accepted — added to the atlas as Duplex-MPE (selective participation of full-duplex speech models in multi-party conversation: when to answer, stay silent or stop)"
     },
     {
       "id": "2609.36903",
@@ -57,7 +57,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2609.36903",
       "score": 48,
-      "status": "new — under review"
+      "status": "accepted — added to the atlas as MultiTalkBench (the paper also trains a model; the benchmark places a full-duplex model in long real multi-party meetings in English and Mandarin)"
     },
     {
       "id": "2609.37317",
@@ -75,7 +75,7 @@
       "primary_category": "cs.CV",
       "url": "https://arxiv.org/abs/2609.37317",
       "score": 42,
-      "status": "new — under review"
+      "status": "accepted — added to the atlas as Omni-StoryBench (story continuation in image, narration and speech; admitted for the general models that generate the speech themselves, an edge-of-scope case)"
     },
     {
       "id": "2609.32607",
@@ -91,7 +91,7 @@
       "primary_category": "eess.AS",
       "url": "https://arxiv.org/abs/2609.32607",
       "score": 39,
-      "status": "new — under review"
+      "status": "accepted — added to the atlas as VoxMem (multi-session spoken memory of what was said, who said it, how, and what was audible, for audio language models)"
     },
     {
       "id": "2609.35820",
@@ -109,7 +109,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2609.35820",
       "score": 36,
-      "status": "new — under review"
+      "status": "accepted — added to the atlas as tau-Multilingual (the tau-Voice task-completion benchmark for full-duplex voice agents, localized to five more languages)"
     },
     {
       "id": "2609.35645",
@@ -126,7 +126,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2609.35645",
       "score": 36,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: the subjects are not general spoken LLMs (a code-switching benchmark that evaluates eight speech recognition systems on transcription error measures)"
     },
     {
       "id": "2609.31967",
@@ -146,7 +146,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2609.31967",
       "score": 33,
-      "status": "new — under review"
+      "status": "accepted — added to the atlas as IndicFDB (Full-Duplex-Bench extended to ten languages spoken in India)"
     },
     {
       "id": "2609.32082",
@@ -160,7 +160,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2609.32082",
       "score": 33,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: the subjects are not general spoken LLMs (a multilingual transcription benchmark and leaderboard for commercial speech recognition providers)"
     },
     {
       "id": "2609.32396",
@@ -180,7 +180,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2609.32396",
       "score": 33,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: the subjects are not general spoken LLMs (it evaluates forced aligners and the word timestamps of speech recognition systems)"
     },
     {
       "id": "2609.34973",
@@ -194,7 +194,7 @@
       "primary_category": "cs.AI",
       "url": "https://arxiv.org/abs/2609.34973",
       "score": 33,
-      "status": "new — under review"
+      "status": "accepted — added to the atlas as APEX-Voice (professional workflows completed by full-duplex voice agents inside a stateful tool environment)"
     },
     {
       "id": "2609.35564",
@@ -214,7 +214,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2609.35564",
       "score": 33,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: the subjects are not general spoken LLMs (an Arabic-dialect speech recognition benchmark scored by WER and CER)"
     },
     {
       "id": "2609.35952",
@@ -229,7 +229,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2609.35952",
       "score": 33,
-      "status": "new — under review"
+      "status": "accepted — added to the atlas as HEAR (voice bias) (voice-conditioned bias of audio language models measured on real recordings from 843 speakers)"
     },
     {
       "id": "2609.34247",
@@ -249,7 +249,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2609.34247",
       "score": 30,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: no benchmark proposed (a dual-system full-duplex voice agent, evaluated on existing QA sets and a customized version of an existing voice-agent benchmark)"
     },
     {
       "id": "2609.34461",
@@ -266,7 +266,7 @@
       "primary_category": "eess.AS",
       "url": "https://arxiv.org/abs/2609.34461",
       "score": 30,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: no benchmark proposed (a character-consistent full-duplex dialogue model and its training recipe, evaluated on existing benchmarks)"
     },
     {
       "id": "2609.32536",
@@ -281,7 +281,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2609.32536",
       "score": 27,
-      "status": "new — under review"
+      "status": "accepted — added to the atlas as VGBench (whether audio models acting as voice agents withhold action on side-talk, self-talk and bystander speech)"
     },
     {
       "id": "2609.33899",
@@ -294,7 +294,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2609.33899",
       "score": 27,
-      "status": "new — under review"
+      "status": "accepted — added to the atlas as NSV-Shift (a 22-pair pilot on non-speech vocalizations and response adaptation in speech-to-speech models)"
     },
     {
       "id": "2609.31727",
@@ -307,7 +307,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2609.31727",
       "score": 24,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: the subjects are not general spoken LLMs (a concept paper for a planned text machine-translation benchmark; no speech is involved)"
     },
     {
       "id": "2609.31759",
@@ -323,7 +323,7 @@
       "primary_category": "eess.AS",
       "url": "https://arxiv.org/abs/2609.31759",
       "score": 24,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: the subjects are not general spoken LLMs (a domain-generalization study of spoken language identification classifiers)"
     },
     {
       "id": "2609.32574",
@@ -343,7 +343,7 @@
       "primary_category": "cs.AI",
       "url": "https://arxiv.org/abs/2609.32574",
       "score": 24,
-      "status": "new — under review"
+      "status": "accepted — added to the atlas as CUE-Mem (long-term user memory from implicit image and ambient-sound cues; admitted for its arm in which omni models receive the original audio)"
     },
     {
       "id": "2609.34223",
@@ -360,7 +360,7 @@
       "primary_category": "cs.CV",
       "url": "https://arxiv.org/abs/2609.34223",
       "score": 24,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: no benchmark proposed (an analysis of a speaker-attribution bias in three audio-visual models with a fine-tuning remedy; its synthetic probe set is not released as an evaluation set)"
     },
     {
       "id": "2609.37818",
@@ -380,7 +380,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2609.37818",
       "score": 24,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: no benchmark proposed (a latent-reasoning spoken dialogue model, evaluated on existing benchmarks)"
     },
     {
       "id": "2609.31714",
@@ -400,7 +400,7 @@
       "primary_category": "cs.CV",
       "url": "https://arxiv.org/abs/2609.31714",
       "score": 21,
-      "status": "new — under review"
+      "status": "accepted — added to the atlas as OmniPhysCap (the paper is a captioning-model report; its benchmark tests what general omni models put into audio-visual captions)"
     },
     {
       "id": "2609.32224",
@@ -415,7 +415,7 @@
       "primary_category": "cs.AI",
       "url": "https://arxiv.org/abs/2609.32224",
       "score": 21,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: no benchmark proposed (a zero-shot audio-visual navigation pipeline built on omni models, evaluated on existing navigation benchmarks)"
     },
     {
       "id": "2609.33204",
@@ -432,7 +432,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2609.33204",
       "score": 21,
-      "status": "new — under review"
+      "status": "accepted — added to the atlas as MultiSpeech-Bench (spoken QA, speech translation and recognition for speech language models in 23 languages; the paper also releases a training corpus)"
     },
     {
       "id": "2609.33433",
@@ -450,7 +450,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2609.33433",
       "score": 21,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: the subjects are not general spoken LLMs (a robustness protocol for text-to-audio retrieval models)"
     },
     {
       "id": "2609.34407",
@@ -470,7 +470,7 @@
       "primary_category": "eess.AS",
       "url": "https://arxiv.org/abs/2609.34407",
       "score": 21,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: no benchmark proposed (a latent-reasoning training framework for audio language models, evaluated on existing benchmarks)"
     },
     {
       "id": "2609.35345",
@@ -486,7 +486,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2609.35345",
       "score": 21,
-      "status": "new — under review"
+      "status": "accepted — added to the atlas as Sounding Actions (inferring everyday activities from sequences of sounds, for general audio-language models)"
     },
     {
       "id": "2609.37710",
@@ -501,7 +501,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2609.37710",
       "score": 21,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: the subjects are not general spoken LLMs (it predicts human ratings of generated music from a music generator's internal signals)"
     },
     {
       "id": "2609.31719",
@@ -520,7 +520,7 @@
       "primary_category": "eess.AS",
       "url": "https://arxiv.org/abs/2609.31719",
       "score": 18,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: no benchmark proposed (a distributional metric for spoken conversational systems, validated on a third party's listener-judged conversations; it releases no evaluation set of its own)"
     },
     {
       "id": "2609.32522",
@@ -540,7 +540,7 @@
       "primary_category": "cs.AI",
       "url": "https://arxiv.org/abs/2609.32522",
       "score": 18,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: the subjects are not general spoken LLMs (its benchmark compares memory frameworks that all read speech-recognition transcripts and answer with one text model)"
     },
     {
       "id": "2609.33443",
@@ -556,7 +556,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2609.33443",
       "score": 18,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: no benchmark proposed (a method for injecting retrieved text into a full-duplex speech model, evaluated on existing benchmarks)"
     },
     {
       "id": "2609.34806",
@@ -570,7 +570,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2609.34806",
       "score": 18,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: no benchmark proposed (a mechanistic-interpretability study of how three audio language models represent event timing)"
     },
     {
       "id": "2609.36798",
@@ -584,7 +584,7 @@
       "primary_category": "cs.CV",
       "url": "https://arxiv.org/abs/2609.36798",
       "score": 18,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: no benchmark proposed (a modality-swap diagnostic and a training fix for image-over-audio shortcuts in two fine-tuned omni model families)"
     },
     {
       "id": "2609.36920",
@@ -601,7 +601,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2609.36920",
       "score": 18,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: the subjects are not general spoken LLMs (it compares eleven systems as speech recognisers on Iberian languages by WER and speed)"
     },
     {
       "id": "2609.36921",
@@ -619,7 +619,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2609.36921",
       "score": 18,
-      "status": "new — under review"
+      "status": "accepted — added to the atlas as Audio Compositionality Gap (a controlled diagnostic set on composing cue-based segment selection with ASR or QA in audio-language models)"
     },
     {
       "id": "2609.23550",

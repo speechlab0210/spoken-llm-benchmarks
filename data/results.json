@@ -136026,6 +136026,2544 @@
       "source": "Table 2 (largest Spearman correlation over the rungs against the instrument, Libri2Mix block)",
       "source_url": "https://arxiv.org/abs/2609.30483",
       "note": "Paper row: Audio-Flamingo-3."
+    },
+    {
+      "benchmark": "mishap-bench",
+      "model": "qwen2-audio",
+      "metric": "Hallucination rate (%), overall (lower is better)",
+      "value": 53.6,
+      "source": "Table 1 (hallucination rates of LALMs across audio domains and hallucination categories)",
+      "source_url": "https://arxiv.org/abs/2609.33893v1",
+      "note": "Paper row: Qwen2-Audio Instruct."
+    },
+    {
+      "benchmark": "mishap-bench",
+      "model": "qwen2-audio",
+      "metric": "Hallucination rate (%), music (lower is better)",
+      "value": 68.8,
+      "source": "Table 1 (hallucination rates of LALMs across audio domains and hallucination categories)",
+      "source_url": "https://arxiv.org/abs/2609.33893v1",
+      "note": "Paper row: Qwen2-Audio Instruct."
+    },
+    {
+      "benchmark": "mishap-bench",
+      "model": "qwen2-audio",
+      "metric": "Hallucination rate (%), sound (lower is better)",
+      "value": 61.8,
+      "source": "Table 1 (hallucination rates of LALMs across audio domains and hallucination categories)",
+      "source_url": "https://arxiv.org/abs/2609.33893v1",
+      "note": "Paper row: Qwen2-Audio Instruct."
+    },
+    {
+      "benchmark": "mishap-bench",
+      "model": "qwen2-audio",
+      "metric": "Hallucination rate (%), speech (lower is better)",
+      "value": 30.4,
+      "source": "Table 1 (hallucination rates of LALMs across audio domains and hallucination categories)",
+      "source_url": "https://arxiv.org/abs/2609.33893v1",
+      "note": "Paper row: Qwen2-Audio Instruct."
+    },
+    {
+      "benchmark": "mishap-bench",
+      "model": "qwen2-5-omni",
+      "metric": "Hallucination rate (%), overall (lower is better)",
+      "value": 36.1,
+      "source": "Table 1 (hallucination rates of LALMs across audio domains and hallucination categories)",
+      "source_url": "https://arxiv.org/abs/2609.33893v1",
+      "note": "Paper row: Qwen2.5-Omni."
+    },
+    {
+      "benchmark": "mishap-bench",
+      "model": "qwen2-5-omni",
+      "metric": "Hallucination rate (%), music (lower is better)",
+      "value": 47.6,
+      "source": "Table 1 (hallucination rates of LALMs across audio domains and hallucination categories)",
+      "source_url": "https://arxiv.org/abs/2609.33893v1",
+      "note": "Paper row: Qwen2.5-Omni."
+    },
+    {
+      "benchmark": "mishap-bench",
+      "model": "qwen2-5-omni",
+      "metric": "Hallucination rate (%), sound (lower is better)",
+      "value": 33.0,
+      "source": "Table 1 (hallucination rates of LALMs across audio domains and hallucination categories)",
+      "source_url": "https://arxiv.org/abs/2609.33893v1",
+      "note": "Paper row: Qwen2.5-Omni."
+    },
+    {
+      "benchmark": "mishap-bench",
+      "model": "qwen2-5-omni",
+      "metric": "Hallucination rate (%), speech (lower is better)",
+      "value": 27.7,
+      "source": "Table 1 (hallucination rates of LALMs across audio domains and hallucination categories)",
+      "source_url": "https://arxiv.org/abs/2609.33893v1",
+      "note": "Paper row: Qwen2.5-Omni."
+    },
+    {
+      "benchmark": "mishap-bench",
+      "model": "kimi-audio",
+      "metric": "Hallucination rate (%), overall (lower is better)",
+      "value": 50.5,
+      "source": "Table 1 (hallucination rates of LALMs across audio domains and hallucination categories)",
+      "source_url": "https://arxiv.org/abs/2609.33893v1",
+      "note": "Paper row: Kimi-Audio Instruct."
+    },
+    {
+      "benchmark": "mishap-bench",
+      "model": "kimi-audio",
+      "metric": "Hallucination rate (%), music (lower is better)",
+      "value": 66.4,
+      "source": "Table 1 (hallucination rates of LALMs across audio domains and hallucination categories)",
+      "source_url": "https://arxiv.org/abs/2609.33893v1",
+      "note": "Paper row: Kimi-Audio Instruct."
+    },
+    {
+      "benchmark": "mishap-bench",
+      "model": "kimi-audio",
+      "metric": "Hallucination rate (%), sound (lower is better)",
+      "value": 52.0,
+      "source": "Table 1 (hallucination rates of LALMs across audio domains and hallucination categories)",
+      "source_url": "https://arxiv.org/abs/2609.33893v1",
+      "note": "Paper row: Kimi-Audio Instruct."
+    },
+    {
+      "benchmark": "mishap-bench",
+      "model": "kimi-audio",
+      "metric": "Hallucination rate (%), speech (lower is better)",
+      "value": 33.1,
+      "source": "Table 1 (hallucination rates of LALMs across audio domains and hallucination categories)",
+      "source_url": "https://arxiv.org/abs/2609.33893v1",
+      "note": "Paper row: Kimi-Audio Instruct."
+    },
+    {
+      "benchmark": "mishap-bench",
+      "model": "audio-flamingo-3",
+      "metric": "Hallucination rate (%), overall (lower is better)",
+      "value": 64.2,
+      "source": "Table 1 (hallucination rates of LALMs across audio domains and hallucination categories)",
+      "source_url": "https://arxiv.org/abs/2609.33893v1",
+      "note": "Paper row: Audio Flamingo 3."
+    },
+    {
+      "benchmark": "mishap-bench",
+      "model": "audio-flamingo-3",
+      "metric": "Hallucination rate (%), music (lower is better)",
+      "value": 78.4,
+      "source": "Table 1 (hallucination rates of LALMs across audio domains and hallucination categories)",
+      "source_url": "https://arxiv.org/abs/2609.33893v1",
+      "note": "Paper row: Audio Flamingo 3."
+    },
+    {
+      "benchmark": "mishap-bench",
+      "model": "audio-flamingo-3",
+      "metric": "Hallucination rate (%), sound (lower is better)",
+      "value": 58.0,
+      "source": "Table 1 (hallucination rates of LALMs across audio domains and hallucination categories)",
+      "source_url": "https://arxiv.org/abs/2609.33893v1",
+      "note": "Paper row: Audio Flamingo 3."
+    },
+    {
+      "benchmark": "mishap-bench",
+      "model": "audio-flamingo-3",
+      "metric": "Hallucination rate (%), speech (lower is better)",
+      "value": 56.2,
+      "source": "Table 1 (hallucination rates of LALMs across audio domains and hallucination categories)",
+      "source_url": "https://arxiv.org/abs/2609.33893v1",
+      "note": "Paper row: Audio Flamingo 3."
+    },
+    {
+      "benchmark": "mishap-bench",
+      "model": "step-audio-2-mini",
+      "metric": "Hallucination rate (%), overall (lower is better)",
+      "value": 71.8,
+      "source": "Table 1 (hallucination rates of LALMs across audio domains and hallucination categories)",
+      "source_url": "https://arxiv.org/abs/2609.33893v1",
+      "note": "Paper row: Step-Audio 2 mini."
+    },
+    {
+      "benchmark": "mishap-bench",
+      "model": "step-audio-2-mini",
+      "metric": "Hallucination rate (%), music (lower is better)",
+      "value": 83.0,
+      "source": "Table 1 (hallucination rates of LALMs across audio domains and hallucination categories)",
+      "source_url": "https://arxiv.org/abs/2609.33893v1",
+      "note": "Paper row: Step-Audio 2 mini."
+    },
+    {
+      "benchmark": "mishap-bench",
+      "model": "step-audio-2-mini",
+      "metric": "Hallucination rate (%), sound (lower is better)",
+      "value": 70.0,
+      "source": "Table 1 (hallucination rates of LALMs across audio domains and hallucination categories)",
+      "source_url": "https://arxiv.org/abs/2609.33893v1",
+      "note": "Paper row: Step-Audio 2 mini."
+    },
+    {
+      "benchmark": "mishap-bench",
+      "model": "step-audio-2-mini",
+      "metric": "Hallucination rate (%), speech (lower is better)",
+      "value": 62.4,
+      "source": "Table 1 (hallucination rates of LALMs across audio domains and hallucination categories)",
+      "source_url": "https://arxiv.org/abs/2609.33893v1",
+      "note": "Paper row: Step-Audio 2 mini."
+    },
+    {
+      "benchmark": "mishap-bench",
+      "model": "mimo-audio",
+      "metric": "Hallucination rate (%), overall (lower is better)",
+      "value": 74.8,
+      "source": "Table 1 (hallucination rates of LALMs across audio domains and hallucination categories)",
+      "source_url": "https://arxiv.org/abs/2609.33893v1",
+      "note": "Paper row: MiMo-Audio Instruct."
+    },
+    {
+      "benchmark": "mishap-bench",
+      "model": "mimo-audio",
+      "metric": "Hallucination rate (%), music (lower is better)",
+      "value": 86.0,
+      "source": "Table 1 (hallucination rates of LALMs across audio domains and hallucination categories)",
+      "source_url": "https://arxiv.org/abs/2609.33893v1",
+      "note": "Paper row: MiMo-Audio Instruct."
+    },
+    {
+      "benchmark": "mishap-bench",
+      "model": "mimo-audio",
+      "metric": "Hallucination rate (%), sound (lower is better)",
+      "value": 72.4,
+      "source": "Table 1 (hallucination rates of LALMs across audio domains and hallucination categories)",
+      "source_url": "https://arxiv.org/abs/2609.33893v1",
+      "note": "Paper row: MiMo-Audio Instruct."
+    },
+    {
+      "benchmark": "mishap-bench",
+      "model": "mimo-audio",
+      "metric": "Hallucination rate (%), speech (lower is better)",
+      "value": 66.1,
+      "source": "Table 1 (hallucination rates of LALMs across audio domains and hallucination categories)",
+      "source_url": "https://arxiv.org/abs/2609.33893v1",
+      "note": "Paper row: MiMo-Audio Instruct."
+    },
+    {
+      "benchmark": "mishap-bench",
+      "model": "qwen3-omni",
+      "metric": "Hallucination rate (%), overall (lower is better)",
+      "value": 63.6,
+      "source": "Table 1 (hallucination rates of LALMs across audio domains and hallucination categories)",
+      "source_url": "https://arxiv.org/abs/2609.33893v1",
+      "note": "Paper row: Qwen3-Omni Instruct."
+    },
+    {
+      "benchmark": "mishap-bench",
+      "model": "qwen3-omni",
+      "metric": "Hallucination rate (%), music (lower is better)",
+      "value": 77.5,
+      "source": "Table 1 (hallucination rates of LALMs across audio domains and hallucination categories)",
+      "source_url": "https://arxiv.org/abs/2609.33893v1",
+      "note": "Paper row: Qwen3-Omni Instruct."
+    },
+    {
+      "benchmark": "mishap-bench",
+      "model": "qwen3-omni",
+      "metric": "Hallucination rate (%), sound (lower is better)",
+      "value": 66.0,
+      "source": "Table 1 (hallucination rates of LALMs across audio domains and hallucination categories)",
+      "source_url": "https://arxiv.org/abs/2609.33893v1",
+      "note": "Paper row: Qwen3-Omni Instruct."
+    },
+    {
+      "benchmark": "mishap-bench",
+      "model": "qwen3-omni",
+      "metric": "Hallucination rate (%), speech (lower is better)",
+      "value": 47.4,
+      "source": "Table 1 (hallucination rates of LALMs across audio domains and hallucination categories)",
+      "source_url": "https://arxiv.org/abs/2609.33893v1",
+      "note": "Paper row: Qwen3-Omni Instruct."
+    },
+    {
+      "benchmark": "mishap-bench",
+      "model": "covo-audio",
+      "metric": "Hallucination rate (%), overall (lower is better)",
+      "value": 61.3,
+      "source": "Table 1 (hallucination rates of LALMs across audio domains and hallucination categories)",
+      "source_url": "https://arxiv.org/abs/2609.33893v1",
+      "note": "Paper row: Covo-Audio."
+    },
+    {
+      "benchmark": "mishap-bench",
+      "model": "covo-audio",
+      "metric": "Hallucination rate (%), music (lower is better)",
+      "value": 80.3,
+      "source": "Table 1 (hallucination rates of LALMs across audio domains and hallucination categories)",
+      "source_url": "https://arxiv.org/abs/2609.33893v1",
+      "note": "Paper row: Covo-Audio."
+    },
+    {
+      "benchmark": "mishap-bench",
+      "model": "covo-audio",
+      "metric": "Hallucination rate (%), sound (lower is better)",
+      "value": 58.7,
+      "source": "Table 1 (hallucination rates of LALMs across audio domains and hallucination categories)",
+      "source_url": "https://arxiv.org/abs/2609.33893v1",
+      "note": "Paper row: Covo-Audio."
+    },
+    {
+      "benchmark": "mishap-bench",
+      "model": "covo-audio",
+      "metric": "Hallucination rate (%), speech (lower is better)",
+      "value": 44.8,
+      "source": "Table 1 (hallucination rates of LALMs across audio domains and hallucination categories)",
+      "source_url": "https://arxiv.org/abs/2609.33893v1",
+      "note": "Paper row: Covo-Audio."
+    },
+    {
+      "benchmark": "mishap-bench",
+      "model": "mimo-v2-5",
+      "metric": "Hallucination rate (%), overall (lower is better)",
+      "value": 47.5,
+      "source": "Table 1 (hallucination rates of LALMs across audio domains and hallucination categories)",
+      "source_url": "https://arxiv.org/abs/2609.33893v1",
+      "note": "Paper row: MiMo-V2.5."
+    },
+    {
+      "benchmark": "mishap-bench",
+      "model": "mimo-v2-5",
+      "metric": "Hallucination rate (%), music (lower is better)",
+      "value": 58.8,
+      "source": "Table 1 (hallucination rates of LALMs across audio domains and hallucination categories)",
+      "source_url": "https://arxiv.org/abs/2609.33893v1",
+      "note": "Paper row: MiMo-V2.5."
+    },
+    {
+      "benchmark": "mishap-bench",
+      "model": "mimo-v2-5",
+      "metric": "Hallucination rate (%), sound (lower is better)",
+      "value": 46.9,
+      "source": "Table 1 (hallucination rates of LALMs across audio domains and hallucination categories)",
+      "source_url": "https://arxiv.org/abs/2609.33893v1",
+      "note": "Paper row: MiMo-V2.5."
+    },
+    {
+      "benchmark": "mishap-bench",
+      "model": "mimo-v2-5",
+      "metric": "Hallucination rate (%), speech (lower is better)",
+      "value": 36.8,
+      "source": "Table 1 (hallucination rates of LALMs across audio domains and hallucination categories)",
+      "source_url": "https://arxiv.org/abs/2609.33893v1",
+      "note": "Paper row: MiMo-V2.5."
+    },
+    {
+      "benchmark": "duplex-mpe",
+      "model": "minicpm-o-4-5",
+      "metric": "Fresh-onset response rate, explicit addressing (0-1)",
+      "value": 0.95,
+      "source": "Table 3 (results by T addressing condition)",
+      "source_url": "https://arxiv.org/abs/2609.31948v1",
+      "note": "Paper row: MiniCPM-o 4.5, Explicit."
+    },
+    {
+      "benchmark": "duplex-mpe",
+      "model": "minicpm-o-4-5",
+      "metric": "Conditional answer accuracy, explicit addressing (0-1)",
+      "value": 0.473,
+      "source": "Table 3 (results by T addressing condition)",
+      "source_url": "https://arxiv.org/abs/2609.31948v1",
+      "note": "Paper row: MiniCPM-o 4.5, Explicit."
+    },
+    {
+      "benchmark": "duplex-mpe",
+      "model": "minicpm-o-4-5",
+      "metric": "Silence preservation, explicit addressing (0-1)",
+      "value": 0.9242,
+      "source": "Table 3 (results by T addressing condition)",
+      "source_url": "https://arxiv.org/abs/2609.31948v1",
+      "note": "Paper row: MiniCPM-o 4.5, Explicit."
+    },
+    {
+      "benchmark": "duplex-mpe",
+      "model": "minicpm-o-4-5",
+      "metric": "Answering-window yield, explicit addressing (0-1)",
+      "value": 0.5964,
+      "source": "Table 3 (results by T addressing condition)",
+      "source_url": "https://arxiv.org/abs/2609.31948v1",
+      "note": "Paper row: MiniCPM-o 4.5, Explicit."
+    },
+    {
+      "benchmark": "duplex-mpe",
+      "model": "minicpm-o-4-5",
+      "metric": "Response presence (coverage diagnostic), explicit addressing (0-1)",
+      "value": 0.9545,
+      "source": "Table 3 (results by T addressing condition)",
+      "source_url": "https://arxiv.org/abs/2609.31948v1",
+      "note": "Paper row: MiniCPM-o 4.5, Explicit."
+    },
+    {
+      "benchmark": "duplex-mpe",
+      "model": "minicpm-o-4-5",
+      "metric": "Window response (coverage diagnostic), explicit addressing (0-1)",
+      "value": 0.9513,
+      "source": "Table 3 (results by T addressing condition)",
+      "source_url": "https://arxiv.org/abs/2609.31948v1",
+      "note": "Paper row: MiniCPM-o 4.5, Explicit."
+    },
+    {
+      "benchmark": "duplex-mpe",
+      "model": "minicpm-o-4-5",
+      "metric": "Fresh-onset response rate, implicit addressing (0-1)",
+      "value": 0.9435,
+      "source": "Table 3 (results by T addressing condition)",
+      "source_url": "https://arxiv.org/abs/2609.31948v1",
+      "note": "Paper row: MiniCPM-o 4.5, Implicit."
+    },
+    {
+      "benchmark": "duplex-mpe",
+      "model": "minicpm-o-4-5",
+      "metric": "Conditional answer accuracy, implicit addressing (0-1)",
+      "value": 0.4665,
+      "source": "Table 3 (results by T addressing condition)",
+      "source_url": "https://arxiv.org/abs/2609.31948v1",
+      "note": "Paper row: MiniCPM-o 4.5, Implicit."
+    },
+    {
+      "benchmark": "duplex-mpe",
+      "model": "minicpm-o-4-5",
+      "metric": "Silence preservation, implicit addressing (0-1)",
+      "value": 0.9289,
+      "source": "Table 3 (results by T addressing condition)",
+      "source_url": "https://arxiv.org/abs/2609.31948v1",
+      "note": "Paper row: MiniCPM-o 4.5, Implicit."
+    },
+    {
+      "benchmark": "duplex-mpe",
+      "model": "minicpm-o-4-5",
+      "metric": "Answering-window yield, implicit addressing (0-1)",
+      "value": 0.5925,
+      "source": "Table 3 (results by T addressing condition)",
+      "source_url": "https://arxiv.org/abs/2609.31948v1",
+      "note": "Paper row: MiniCPM-o 4.5, Implicit."
+    },
+    {
+      "benchmark": "duplex-mpe",
+      "model": "minicpm-o-4-5",
+      "metric": "Response presence (coverage diagnostic), implicit addressing (0-1)",
+      "value": 0.9485,
+      "source": "Table 3 (results by T addressing condition)",
+      "source_url": "https://arxiv.org/abs/2609.31948v1",
+      "note": "Paper row: MiniCPM-o 4.5, Implicit."
+    },
+    {
+      "benchmark": "duplex-mpe",
+      "model": "minicpm-o-4-5",
+      "metric": "Window response (coverage diagnostic), implicit addressing (0-1)",
+      "value": 0.9461,
+      "source": "Table 3 (results by T addressing condition)",
+      "source_url": "https://arxiv.org/abs/2609.31948v1",
+      "note": "Paper row: MiniCPM-o 4.5, Implicit."
+    },
+    {
+      "benchmark": "duplex-mpe",
+      "model": "moshi",
+      "metric": "Fresh-onset response rate, explicit addressing (0-1)",
+      "value": 0.634,
+      "source": "Table 3 (results by T addressing condition)",
+      "source_url": "https://arxiv.org/abs/2609.31948v1",
+      "note": "Paper row: Moshi, Explicit."
+    },
+    {
+      "benchmark": "duplex-mpe",
+      "model": "moshi",
+      "metric": "Conditional answer accuracy, explicit addressing (0-1)",
+      "value": 0.0123,
+      "source": "Table 3 (results by T addressing condition)",
+      "source_url": "https://arxiv.org/abs/2609.31948v1",
+      "note": "Paper row: Moshi, Explicit."
+    },
+    {
+      "benchmark": "duplex-mpe",
+      "model": "moshi",
+      "metric": "Silence preservation, explicit addressing (0-1)",
+      "value": 0.2734,
+      "source": "Table 3 (results by T addressing condition)",
+      "source_url": "https://arxiv.org/abs/2609.31948v1",
+      "note": "Paper row: Moshi, Explicit."
+    },
+    {
+      "benchmark": "duplex-mpe",
+      "model": "moshi",
+      "metric": "Answering-window yield, explicit addressing (0-1)",
+      "value": 0.1918,
+      "source": "Table 3 (results by T addressing condition)",
+      "source_url": "https://arxiv.org/abs/2609.31948v1",
+      "note": "Paper row: Moshi, Explicit."
+    },
+    {
+      "benchmark": "duplex-mpe",
+      "model": "moshi",
+      "metric": "Response presence (coverage diagnostic), explicit addressing (0-1)",
+      "value": 0.8155,
+      "source": "Table 3 (results by T addressing condition)",
+      "source_url": "https://arxiv.org/abs/2609.31948v1",
+      "note": "Paper row: Moshi, Explicit."
+    },
+    {
+      "benchmark": "duplex-mpe",
+      "model": "moshi",
+      "metric": "Window response (coverage diagnostic), explicit addressing (0-1)",
+      "value": 0.9226,
+      "source": "Table 3 (results by T addressing condition)",
+      "source_url": "https://arxiv.org/abs/2609.31948v1",
+      "note": "Paper row: Moshi, Explicit."
+    },
+    {
+      "benchmark": "duplex-mpe",
+      "model": "moshi",
+      "metric": "Fresh-onset response rate, implicit addressing (0-1)",
+      "value": 0.67,
+      "source": "Table 3 (results by T addressing condition)",
+      "source_url": "https://arxiv.org/abs/2609.31948v1",
+      "note": "Paper row: Moshi, Implicit."
+    },
+    {
+      "benchmark": "duplex-mpe",
+      "model": "moshi",
+      "metric": "Conditional answer accuracy, implicit addressing (0-1)",
+      "value": 0.017,
+      "source": "Table 3 (results by T addressing condition)",
+      "source_url": "https://arxiv.org/abs/2609.31948v1",
+      "note": "Paper row: Moshi, Implicit."
+    },
+    {
+      "benchmark": "duplex-mpe",
+      "model": "moshi",
+      "metric": "Silence preservation, implicit addressing (0-1)",
+      "value": 0.2676,
+      "source": "Table 3 (results by T addressing condition)",
+      "source_url": "https://arxiv.org/abs/2609.31948v1",
+      "note": "Paper row: Moshi, Implicit."
+    },
+    {
+      "benchmark": "duplex-mpe",
+      "model": "moshi",
+      "metric": "Answering-window yield, implicit addressing (0-1)",
+      "value": 0.2107,
+      "source": "Table 3 (results by T addressing condition)",
+      "source_url": "https://arxiv.org/abs/2609.31948v1",
+      "note": "Paper row: Moshi, Implicit."
+    },
+    {
+      "benchmark": "duplex-mpe",
+      "model": "moshi",
+      "metric": "Response presence (coverage diagnostic), implicit addressing (0-1)",
+      "value": 0.822,
+      "source": "Table 3 (results by T addressing condition)",
+      "source_url": "https://arxiv.org/abs/2609.31948v1",
+      "note": "Paper row: Moshi, Implicit."
+    },
+    {
+      "benchmark": "duplex-mpe",
+      "model": "moshi",
+      "metric": "Window response (coverage diagnostic), implicit addressing (0-1)",
+      "value": 0.9309,
+      "source": "Table 3 (results by T addressing condition)",
+      "source_url": "https://arxiv.org/abs/2609.31948v1",
+      "note": "Paper row: Moshi, Implicit."
+    },
+    {
+      "benchmark": "duplex-mpe",
+      "model": "freeze-omni",
+      "metric": "Fresh-onset response rate, explicit addressing (0-1)",
+      "value": 0.2525,
+      "source": "Table 3 (results by T addressing condition)",
+      "source_url": "https://arxiv.org/abs/2609.31948v1",
+      "note": "Paper row: Freeze-Omni, Explicit."
+    },
+    {
+      "benchmark": "duplex-mpe",
+      "model": "freeze-omni",
+      "metric": "Conditional answer accuracy, explicit addressing (0-1)",
+      "value": 0.0035,
+      "source": "Table 3 (results by T addressing condition)",
+      "source_url": "https://arxiv.org/abs/2609.31948v1",
+      "note": "Paper row: Freeze-Omni, Explicit."
+    },
+    {
+      "benchmark": "duplex-mpe",
+      "model": "freeze-omni",
+      "metric": "Silence preservation, explicit addressing (0-1)",
+      "value": 0.0002,
+      "source": "Table 3 (results by T addressing condition)",
+      "source_url": "https://arxiv.org/abs/2609.31948v1",
+      "note": "Paper row: Freeze-Omni, Explicit."
+    },
+    {
+      "benchmark": "duplex-mpe",
+      "model": "freeze-omni",
+      "metric": "Response presence (coverage diagnostic), explicit addressing (0-1)",
+      "value": 0.9955,
+      "source": "Table 3 (results by T addressing condition)",
+      "source_url": "https://arxiv.org/abs/2609.31948v1",
+      "note": "Paper row: Freeze-Omni, Explicit."
+    },
+    {
+      "benchmark": "duplex-mpe",
+      "model": "freeze-omni",
+      "metric": "Window response (coverage diagnostic), explicit addressing (0-1)",
+      "value": 1.0,
+      "source": "Table 3 (results by T addressing condition)",
+      "source_url": "https://arxiv.org/abs/2609.31948v1",
+      "note": "Paper row: Freeze-Omni, Explicit."
+    },
+    {
+      "benchmark": "duplex-mpe",
+      "model": "freeze-omni",
+      "metric": "Fresh-onset response rate, implicit addressing (0-1)",
+      "value": 0.258,
+      "source": "Table 3 (results by T addressing condition)",
+      "source_url": "https://arxiv.org/abs/2609.31948v1",
+      "note": "Paper row: Freeze-Omni, Implicit."
+    },
+    {
+      "benchmark": "duplex-mpe",
+      "model": "freeze-omni",
+      "metric": "Conditional answer accuracy, implicit addressing (0-1)",
+      "value": 0.0015,
+      "source": "Table 3 (results by T addressing condition)",
+      "source_url": "https://arxiv.org/abs/2609.31948v1",
+      "note": "Paper row: Freeze-Omni, Implicit."
+    },
+    {
+      "benchmark": "duplex-mpe",
+      "model": "freeze-omni",
+      "metric": "Silence preservation, implicit addressing (0-1)",
+      "value": 0.0002,
+      "source": "Table 3 (results by T addressing condition)",
+      "source_url": "https://arxiv.org/abs/2609.31948v1",
+      "note": "Paper row: Freeze-Omni, Implicit."
+    },
+    {
+      "benchmark": "duplex-mpe",
+      "model": "freeze-omni",
+      "metric": "Response presence (coverage diagnostic), implicit addressing (0-1)",
+      "value": 0.9975,
+      "source": "Table 3 (results by T addressing condition)",
+      "source_url": "https://arxiv.org/abs/2609.31948v1",
+      "note": "Paper row: Freeze-Omni, Implicit."
+    },
+    {
+      "benchmark": "duplex-mpe",
+      "model": "freeze-omni",
+      "metric": "Window response (coverage diagnostic), implicit addressing (0-1)",
+      "value": 0.9995,
+      "source": "Table 3 (results by T addressing condition)",
+      "source_url": "https://arxiv.org/abs/2609.31948v1",
+      "note": "Paper row: Freeze-Omni, Implicit."
+    },
+    {
+      "benchmark": "multitalkbench",
+      "model": "qwen3-omni",
+      "metric": "General group score (0-100)",
+      "value": 6.93,
+      "source": "Table 2 (detailed results on MultiTalkBench, broken down by sub-dimension)",
+      "source_url": "https://arxiv.org/abs/2609.36903v1",
+      "note": "Paper column: Qwen3-Omni (30B)."
+    },
+    {
+      "benchmark": "multitalkbench",
+      "model": "minicpm-o-4-5",
+      "metric": "General group score (0-100)",
+      "value": 16.35,
+      "source": "Table 2 (detailed results on MultiTalkBench, broken down by sub-dimension)",
+      "source_url": "https://arxiv.org/abs/2609.36903v1",
+      "note": "Paper column: MiniCPM-o-4.5."
+    },
+    {
+      "benchmark": "multitalkbench",
+      "model": "personaplex",
+      "metric": "General group score (0-100)",
+      "value": 2.76,
+      "source": "Table 2 (detailed results on MultiTalkBench, broken down by sub-dimension)",
+      "source_url": "https://arxiv.org/abs/2609.36903v1",
+      "note": "Paper column: PersonaPlex."
+    },
+    {
+      "benchmark": "multitalkbench",
+      "model": "moshi",
+      "metric": "General group score (0-100)",
+      "value": 4.96,
+      "source": "Table 2 (detailed results on MultiTalkBench, broken down by sub-dimension)",
+      "source_url": "https://arxiv.org/abs/2609.36903v1",
+      "note": "Paper column: Moshiko-7B."
+    },
+    {
+      "benchmark": "multitalkbench",
+      "model": "qwen3-omni",
+      "metric": "Multi-Party IQ group score (0-100)",
+      "value": 2.81,
+      "source": "Table 2 (detailed results on MultiTalkBench, broken down by sub-dimension)",
+      "source_url": "https://arxiv.org/abs/2609.36903v1",
+      "note": "Paper column: Qwen3-Omni (30B)."
+    },
+    {
+      "benchmark": "multitalkbench",
+      "model": "minicpm-o-4-5",
+      "metric": "Multi-Party IQ group score (0-100)",
+      "value": 9.0,
+      "source": "Table 2 (detailed results on MultiTalkBench, broken down by sub-dimension)",
+      "source_url": "https://arxiv.org/abs/2609.36903v1",
+      "note": "Paper column: MiniCPM-o-4.5."
+    },
+    {
+      "benchmark": "multitalkbench",
+      "model": "personaplex",
+      "metric": "Multi-Party IQ group score (0-100)",
+      "value": 1.71,
+      "source": "Table 2 (detailed results on MultiTalkBench, broken down by sub-dimension)",
+      "source_url": "https://arxiv.org/abs/2609.36903v1",
+      "note": "Paper column: PersonaPlex."
+    },
+    {
+      "benchmark": "multitalkbench",
+      "model": "moshi",
+      "metric": "Multi-Party IQ group score (0-100)",
+      "value": 2.41,
+      "source": "Table 2 (detailed results on MultiTalkBench, broken down by sub-dimension)",
+      "source_url": "https://arxiv.org/abs/2609.36903v1",
+      "note": "Paper column: Moshiko-7B."
+    },
+    {
+      "benchmark": "multitalkbench",
+      "model": "qwen3-omni",
+      "metric": "Role-conditional group score (0-100)",
+      "value": 5.08,
+      "source": "Table 2 (detailed results on MultiTalkBench, broken down by sub-dimension)",
+      "source_url": "https://arxiv.org/abs/2609.36903v1",
+      "note": "Paper column: Qwen3-Omni (30B)."
+    },
+    {
+      "benchmark": "multitalkbench",
+      "model": "minicpm-o-4-5",
+      "metric": "Role-conditional group score (0-100)",
+      "value": 7.81,
+      "source": "Table 2 (detailed results on MultiTalkBench, broken down by sub-dimension)",
+      "source_url": "https://arxiv.org/abs/2609.36903v1",
+      "note": "Paper column: MiniCPM-o-4.5."
+    },
+    {
+      "benchmark": "multitalkbench",
+      "model": "personaplex",
+      "metric": "Role-conditional group score (0-100)",
+      "value": 3.1,
+      "source": "Table 2 (detailed results on MultiTalkBench, broken down by sub-dimension)",
+      "source_url": "https://arxiv.org/abs/2609.36903v1",
+      "note": "Paper column: PersonaPlex."
+    },
+    {
+      "benchmark": "multitalkbench",
+      "model": "moshi",
+      "metric": "Role-conditional group score (0-100)",
+      "value": 6.62,
+      "source": "Table 2 (detailed results on MultiTalkBench, broken down by sub-dimension)",
+      "source_url": "https://arxiv.org/abs/2609.36903v1",
+      "note": "Paper column: Moshiko-7B."
+    },
+    {
+      "benchmark": "multitalkbench",
+      "model": "qwen3-omni",
+      "metric": "Participation score (0-100)",
+      "value": 13.71,
+      "source": "Table 2 (detailed results on MultiTalkBench, broken down by sub-dimension)",
+      "source_url": "https://arxiv.org/abs/2609.36903v1",
+      "note": "Paper column: Qwen3-Omni (30B)."
+    },
+    {
+      "benchmark": "multitalkbench",
+      "model": "minicpm-o-4-5",
+      "metric": "Participation score (0-100)",
+      "value": 37.1,
+      "source": "Table 2 (detailed results on MultiTalkBench, broken down by sub-dimension)",
+      "source_url": "https://arxiv.org/abs/2609.36903v1",
+      "note": "Paper column: MiniCPM-o-4.5."
+    },
+    {
+      "benchmark": "multitalkbench",
+      "model": "personaplex",
+      "metric": "Participation score (0-100)",
+      "value": 97.87,
+      "source": "Table 2 (detailed results on MultiTalkBench, broken down by sub-dimension)",
+      "source_url": "https://arxiv.org/abs/2609.36903v1",
+      "note": "Paper column: PersonaPlex."
+    },
+    {
+      "benchmark": "multitalkbench",
+      "model": "moshi",
+      "metric": "Participation score (0-100)",
+      "value": 97.86,
+      "source": "Table 2 (detailed results on MultiTalkBench, broken down by sub-dimension)",
+      "source_url": "https://arxiv.org/abs/2609.36903v1",
+      "note": "Paper column: Moshiko-7B."
+    },
+    {
+      "benchmark": "multitalkbench",
+      "model": "qwen3-omni",
+      "metric": "Final Score (0-100)",
+      "value": 4.94,
+      "source": "Table 2 (detailed results on MultiTalkBench, broken down by sub-dimension)",
+      "source_url": "https://arxiv.org/abs/2609.36903v1",
+      "note": "Paper column: Qwen3-Omni (30B)."
+    },
+    {
+      "benchmark": "multitalkbench",
+      "model": "minicpm-o-4-5",
+      "metric": "Final Score (0-100)",
+      "value": 11.05,
+      "source": "Table 2 (detailed results on MultiTalkBench, broken down by sub-dimension)",
+      "source_url": "https://arxiv.org/abs/2609.36903v1",
+      "note": "Paper column: MiniCPM-o-4.5."
+    },
+    {
+      "benchmark": "multitalkbench",
+      "model": "personaplex",
+      "metric": "Final Score (0-100)",
+      "value": 2.52,
+      "source": "Table 2 (detailed results on MultiTalkBench, broken down by sub-dimension)",
+      "source_url": "https://arxiv.org/abs/2609.36903v1",
+      "note": "Paper column: PersonaPlex."
+    },
+    {
+      "benchmark": "multitalkbench",
+      "model": "moshi",
+      "metric": "Final Score (0-100)",
+      "value": 4.66,
+      "source": "Table 2 (detailed results on MultiTalkBench, broken down by sub-dimension)",
+      "source_url": "https://arxiv.org/abs/2609.36903v1",
+      "note": "Paper column: Moshiko-7B."
+    },
+    {
+      "benchmark": "multitalkbench",
+      "model": "qwen3-omni",
+      "metric": "Final Score, English samples (0-100)",
+      "value": 4.54,
+      "source": "Table 2 (detailed results on MultiTalkBench, broken down by sub-dimension)",
+      "source_url": "https://arxiv.org/abs/2609.36903v1",
+      "note": "Paper column: Qwen3-Omni (30B)."
+    },
+    {
+      "benchmark": "multitalkbench",
+      "model": "minicpm-o-4-5",
+      "metric": "Final Score, English samples (0-100)",
+      "value": 7.25,
+      "source": "Table 2 (detailed results on MultiTalkBench, broken down by sub-dimension)",
+      "source_url": "https://arxiv.org/abs/2609.36903v1",
+      "note": "Paper column: MiniCPM-o-4.5."
+    },
+    {
+      "benchmark": "multitalkbench",
+      "model": "personaplex",
+      "metric": "Final Score, English samples (0-100)",
+      "value": 4.27,
+      "source": "Table 2 (detailed results on MultiTalkBench, broken down by sub-dimension)",
+      "source_url": "https://arxiv.org/abs/2609.36903v1",
+      "note": "Paper column: PersonaPlex."
+    },
+    {
+      "benchmark": "multitalkbench",
+      "model": "moshi",
+      "metric": "Final Score, English samples (0-100)",
+      "value": 7.82,
+      "source": "Table 2 (detailed results on MultiTalkBench, broken down by sub-dimension)",
+      "source_url": "https://arxiv.org/abs/2609.36903v1",
+      "note": "Paper column: Moshiko-7B."
+    },
+    {
+      "benchmark": "multitalkbench",
+      "model": "qwen3-omni",
+      "metric": "Final Score, Chinese samples (0-100)",
+      "value": 5.49,
+      "source": "Table 2 (detailed results on MultiTalkBench, broken down by sub-dimension)",
+      "source_url": "https://arxiv.org/abs/2609.36903v1",
+      "note": "Paper column: Qwen3-Omni (30B)."
+    },
+    {
+      "benchmark": "multitalkbench",
+      "model": "minicpm-o-4-5",
+      "metric": "Final Score, Chinese samples (0-100)",
+      "value": 16.23,
+      "source": "Table 2 (detailed results on MultiTalkBench, broken down by sub-dimension)",
+      "source_url": "https://arxiv.org/abs/2609.36903v1",
+      "note": "Paper column: MiniCPM-o-4.5."
+    },
+    {
+      "benchmark": "multitalkbench",
+      "model": "personaplex",
+      "metric": "Final Score, Chinese samples (0-100)",
+      "value": 0.14,
+      "source": "Table 2 (detailed results on MultiTalkBench, broken down by sub-dimension)",
+      "source_url": "https://arxiv.org/abs/2609.36903v1",
+      "note": "Paper column: PersonaPlex."
+    },
+    {
+      "benchmark": "multitalkbench",
+      "model": "moshi",
+      "metric": "Final Score, Chinese samples (0-100)",
+      "value": 0.36,
+      "source": "Table 2 (detailed results on MultiTalkBench, broken down by sub-dimension)",
+      "source_url": "https://arxiv.org/abs/2609.36903v1",
+      "note": "Paper column: Moshiko-7B."
+    },
+    {
+      "benchmark": "omni-storybench",
+      "model": "anygpt",
+      "metric": "Total Average (0-10, valid-only)",
+      "value": 4.462,
+      "source": "Table 29 (valid-only results for all 32 configurations)",
+      "source_url": "https://arxiv.org/abs/2609.37317v1",
+      "note": "Paper row: AnyGPT (any-to-any; all three modalities from the one model)."
+    },
+    {
+      "benchmark": "omni-storybench",
+      "model": "anygpt",
+      "metric": "Speech LLM-judge score (1-10, valid-only)",
+      "value": 3.286,
+      "source": "Table 29 (valid-only results for all 32 configurations)",
+      "source_url": "https://arxiv.org/abs/2609.37317v1",
+      "note": "Paper row: AnyGPT, column J_S."
+    },
+    {
+      "benchmark": "omni-storybench",
+      "model": "anygpt",
+      "metric": "Speech Metadata Accuracy (0-1, valid-only)",
+      "value": 0.419,
+      "source": "Table 29 (valid-only results for all 32 configurations)",
+      "source_url": "https://arxiv.org/abs/2609.37317v1",
+      "note": "Paper row: AnyGPT, column Meta."
+    },
+    {
+      "benchmark": "omni-storybench",
+      "model": "qwen2-5-omni",
+      "metric": "Speech LLM-judge score (1-10, valid-only)",
+      "value": 6.502,
+      "source": "Table 29 (valid-only results for all 32 configurations)",
+      "source_url": "https://arxiv.org/abs/2609.37317v1",
+      "note": "Paper rows: Qwen2.5-Omni-7B (semi-orchestration; speech generated by the model itself, image by an external generator). The value is identical across its three image-generator pairings."
+    },
+    {
+      "benchmark": "omni-storybench",
+      "model": "qwen2-5-omni",
+      "metric": "Speech Metadata Accuracy (0-1, valid-only)",
+      "value": 0.539,
+      "source": "Table 29 (valid-only results for all 32 configurations)",
+      "source_url": "https://arxiv.org/abs/2609.37317v1",
+      "note": "Paper rows: Qwen2.5-Omni-7B, column Meta; identical across its three image-generator pairings."
+    },
+    {
+      "benchmark": "voxmem",
+      "model": "gemini-3-1-pro",
+      "metric": "Accuracy (%) at 64K history, overall",
+      "value": 34.3,
+      "source": "Table 15 (accuracy at 64K by answer-critical evidence type, ten-model set)",
+      "source_url": "https://arxiv.org/abs/2609.32607v1",
+      "note": "Paper row: Gemini-3.1-Pro."
+    },
+    {
+      "benchmark": "voxmem",
+      "model": "gemini-3-1-pro",
+      "metric": "Accuracy (%) at 64K history, speech semantics",
+      "value": 68.5,
+      "source": "Table 15 (accuracy at 64K by answer-critical evidence type, ten-model set)",
+      "source_url": "https://arxiv.org/abs/2609.32607v1",
+      "note": "Paper row: Gemini-3.1-Pro."
+    },
+    {
+      "benchmark": "voxmem",
+      "model": "gemini-3-1-pro",
+      "metric": "Accuracy (%) at 64K history, speaker identity",
+      "value": 26.5,
+      "source": "Table 15 (accuracy at 64K by answer-critical evidence type, ten-model set)",
+      "source_url": "https://arxiv.org/abs/2609.32607v1",
+      "note": "Paper row: Gemini-3.1-Pro."
+    },
+    {
+      "benchmark": "voxmem",
+      "model": "gemini-3-1-pro",
+      "metric": "Accuracy (%) at 64K history, paralinguistic cues",
+      "value": 19.7,
+      "source": "Table 15 (accuracy at 64K by answer-critical evidence type, ten-model set)",
+      "source_url": "https://arxiv.org/abs/2609.32607v1",
+      "note": "Paper row: Gemini-3.1-Pro."
+    },
+    {
+      "benchmark": "voxmem",
+      "model": "gemini-3-1-pro",
+      "metric": "Accuracy (%) at 64K history, environmental sound",
+      "value": 15.4,
+      "source": "Table 15 (accuracy at 64K by answer-critical evidence type, ten-model set)",
+      "source_url": "https://arxiv.org/abs/2609.32607v1",
+      "note": "Paper row: Gemini-3.1-Pro."
+    },
+    {
+      "benchmark": "voxmem",
+      "model": "ultravox",
+      "metric": "Accuracy (%) at 64K history, overall",
+      "value": 21.3,
+      "source": "Table 15 (accuracy at 64K by answer-critical evidence type, ten-model set)",
+      "source_url": "https://arxiv.org/abs/2609.32607v1",
+      "note": "Paper row: Ultravox-v0.6-Llama-3.1-8B."
+    },
+    {
+      "benchmark": "voxmem",
+      "model": "ultravox",
+      "metric": "Accuracy (%) at 64K history, speech semantics",
+      "value": 28.0,
+      "source": "Table 15 (accuracy at 64K by answer-critical evidence type, ten-model set)",
+      "source_url": "https://arxiv.org/abs/2609.32607v1",
+      "note": "Paper row: Ultravox-v0.6-Llama-3.1-8B."
+    },
+    {
+      "benchmark": "voxmem",
+      "model": "ultravox",
+      "metric": "Accuracy (%) at 64K history, speaker identity",
+      "value": 29.3,
+      "source": "Table 15 (accuracy at 64K by answer-critical evidence type, ten-model set)",
+      "source_url": "https://arxiv.org/abs/2609.32607v1",
+      "note": "Paper row: Ultravox-v0.6-Llama-3.1-8B."
+    },
+    {
+      "benchmark": "voxmem",
+      "model": "ultravox",
+      "metric": "Accuracy (%) at 64K history, paralinguistic cues",
+      "value": 12.9,
+      "source": "Table 15 (accuracy at 64K by answer-critical evidence type, ten-model set)",
+      "source_url": "https://arxiv.org/abs/2609.32607v1",
+      "note": "Paper row: Ultravox-v0.6-Llama-3.1-8B."
+    },
+    {
+      "benchmark": "voxmem",
+      "model": "ultravox",
+      "metric": "Accuracy (%) at 64K history, environmental sound",
+      "value": 17.9,
+      "source": "Table 15 (accuracy at 64K by answer-critical evidence type, ten-model set)",
+      "source_url": "https://arxiv.org/abs/2609.32607v1",
+      "note": "Paper row: Ultravox-v0.6-Llama-3.1-8B."
+    },
+    {
+      "benchmark": "voxmem",
+      "model": "gemini-2-5-pro",
+      "metric": "Accuracy (%) at 64K history, overall",
+      "value": 21.0,
+      "source": "Table 15 (accuracy at 64K by answer-critical evidence type, ten-model set)",
+      "source_url": "https://arxiv.org/abs/2609.32607v1",
+      "note": "Paper row: Gemini-2.5-Pro."
+    },
+    {
+      "benchmark": "voxmem",
+      "model": "gemini-2-5-pro",
+      "metric": "Accuracy (%) at 64K history, speech semantics",
+      "value": 35.8,
+      "source": "Table 15 (accuracy at 64K by answer-critical evidence type, ten-model set)",
+      "source_url": "https://arxiv.org/abs/2609.32607v1",
+      "note": "Paper row: Gemini-2.5-Pro."
+    },
+    {
+      "benchmark": "voxmem",
+      "model": "gemini-2-5-pro",
+      "metric": "Accuracy (%) at 64K history, speaker identity",
+      "value": 14.3,
+      "source": "Table 15 (accuracy at 64K by answer-critical evidence type, ten-model set)",
+      "source_url": "https://arxiv.org/abs/2609.32607v1",
+      "note": "Paper row: Gemini-2.5-Pro."
+    },
+    {
+      "benchmark": "voxmem",
+      "model": "gemini-2-5-pro",
+      "metric": "Accuracy (%) at 64K history, paralinguistic cues",
+      "value": 14.4,
+      "source": "Table 15 (accuracy at 64K by answer-critical evidence type, ten-model set)",
+      "source_url": "https://arxiv.org/abs/2609.32607v1",
+      "note": "Paper row: Gemini-2.5-Pro."
+    },
+    {
+      "benchmark": "voxmem",
+      "model": "gemini-2-5-pro",
+      "metric": "Accuracy (%) at 64K history, environmental sound",
+      "value": 16.7,
+      "source": "Table 15 (accuracy at 64K by answer-critical evidence type, ten-model set)",
+      "source_url": "https://arxiv.org/abs/2609.32607v1",
+      "note": "Paper row: Gemini-2.5-Pro."
+    },
+    {
+      "benchmark": "voxmem",
+      "model": "qwen3-omni",
+      "metric": "Accuracy (%) at 64K history, overall",
+      "value": 20.7,
+      "source": "Table 15 (accuracy at 64K by answer-critical evidence type, ten-model set)",
+      "source_url": "https://arxiv.org/abs/2609.32607v1",
+      "note": "Paper row: Qwen3-Omni-30B-A3B."
+    },
+    {
+      "benchmark": "voxmem",
+      "model": "qwen3-omni",
+      "metric": "Accuracy (%) at 64K history, speech semantics",
+      "value": 31.5,
+      "source": "Table 15 (accuracy at 64K by answer-critical evidence type, ten-model set)",
+      "source_url": "https://arxiv.org/abs/2609.32607v1",
+      "note": "Paper row: Qwen3-Omni-30B-A3B."
+    },
+    {
+      "benchmark": "voxmem",
+      "model": "qwen3-omni",
+      "metric": "Accuracy (%) at 64K history, speaker identity",
+      "value": 21.8,
+      "source": "Table 15 (accuracy at 64K by answer-critical evidence type, ten-model set)",
+      "source_url": "https://arxiv.org/abs/2609.32607v1",
+      "note": "Paper row: Qwen3-Omni-30B-A3B."
+    },
+    {
+      "benchmark": "voxmem",
+      "model": "qwen3-omni",
+      "metric": "Accuracy (%) at 64K history, paralinguistic cues",
+      "value": 15.9,
+      "source": "Table 15 (accuracy at 64K by answer-critical evidence type, ten-model set)",
+      "source_url": "https://arxiv.org/abs/2609.32607v1",
+      "note": "Paper row: Qwen3-Omni-30B-A3B."
+    },
+    {
+      "benchmark": "voxmem",
+      "model": "qwen3-omni",
+      "metric": "Accuracy (%) at 64K history, environmental sound",
+      "value": 11.5,
+      "source": "Table 15 (accuracy at 64K by answer-critical evidence type, ten-model set)",
+      "source_url": "https://arxiv.org/abs/2609.32607v1",
+      "note": "Paper row: Qwen3-Omni-30B-A3B."
+    },
+    {
+      "benchmark": "voxmem",
+      "model": "gemma-4-e4b",
+      "metric": "Accuracy (%) at 64K history, overall",
+      "value": 18.9,
+      "source": "Table 15 (accuracy at 64K by answer-critical evidence type, ten-model set)",
+      "source_url": "https://arxiv.org/abs/2609.32607v1",
+      "note": "Paper row: Gemma-4-E4B-it."
+    },
+    {
+      "benchmark": "voxmem",
+      "model": "gemma-4-e4b",
+      "metric": "Accuracy (%) at 64K history, speech semantics",
+      "value": 27.2,
+      "source": "Table 15 (accuracy at 64K by answer-critical evidence type, ten-model set)",
+      "source_url": "https://arxiv.org/abs/2609.32607v1",
+      "note": "Paper row: Gemma-4-E4B-it."
+    },
+    {
+      "benchmark": "voxmem",
+      "model": "gemma-4-e4b",
+      "metric": "Accuracy (%) at 64K history, speaker identity",
+      "value": 24.5,
+      "source": "Table 15 (accuracy at 64K by answer-critical evidence type, ten-model set)",
+      "source_url": "https://arxiv.org/abs/2609.32607v1",
+      "note": "Paper row: Gemma-4-E4B-it."
+    },
+    {
+      "benchmark": "voxmem",
+      "model": "gemma-4-e4b",
+      "metric": "Accuracy (%) at 64K history, paralinguistic cues",
+      "value": 12.9,
+      "source": "Table 15 (accuracy at 64K by answer-critical evidence type, ten-model set)",
+      "source_url": "https://arxiv.org/abs/2609.32607v1",
+      "note": "Paper row: Gemma-4-E4B-it."
+    },
+    {
+      "benchmark": "voxmem",
+      "model": "gemma-4-e4b",
+      "metric": "Accuracy (%) at 64K history, environmental sound",
+      "value": 11.5,
+      "source": "Table 15 (accuracy at 64K by answer-critical evidence type, ten-model set)",
+      "source_url": "https://arxiv.org/abs/2609.32607v1",
+      "note": "Paper row: Gemma-4-E4B-it."
+    },
+    {
+      "benchmark": "voxmem",
+      "model": "audio-flamingo-next",
+      "metric": "Accuracy (%) at 64K history, overall",
+      "value": 17.8,
+      "source": "Table 15 (accuracy at 64K by answer-critical evidence type, ten-model set)",
+      "source_url": "https://arxiv.org/abs/2609.32607v1",
+      "note": "Paper row: Audio-Flamingo-Next."
+    },
+    {
+      "benchmark": "voxmem",
+      "model": "audio-flamingo-next",
+      "metric": "Accuracy (%) at 64K history, speech semantics",
+      "value": 26.3,
+      "source": "Table 15 (accuracy at 64K by answer-critical evidence type, ten-model set)",
+      "source_url": "https://arxiv.org/abs/2609.32607v1",
+      "note": "Paper row: Audio-Flamingo-Next."
+    },
+    {
+      "benchmark": "voxmem",
+      "model": "audio-flamingo-next",
+      "metric": "Accuracy (%) at 64K history, speaker identity",
+      "value": 22.4,
+      "source": "Table 15 (accuracy at 64K by answer-critical evidence type, ten-model set)",
+      "source_url": "https://arxiv.org/abs/2609.32607v1",
+      "note": "Paper row: Audio-Flamingo-Next."
+    },
+    {
+      "benchmark": "voxmem",
+      "model": "audio-flamingo-next",
+      "metric": "Accuracy (%) at 64K history, paralinguistic cues",
+      "value": 12.9,
+      "source": "Table 15 (accuracy at 64K by answer-critical evidence type, ten-model set)",
+      "source_url": "https://arxiv.org/abs/2609.32607v1",
+      "note": "Paper row: Audio-Flamingo-Next."
+    },
+    {
+      "benchmark": "voxmem",
+      "model": "audio-flamingo-next",
+      "metric": "Accuracy (%) at 64K history, environmental sound",
+      "value": 9.0,
+      "source": "Table 15 (accuracy at 64K by answer-critical evidence type, ten-model set)",
+      "source_url": "https://arxiv.org/abs/2609.32607v1",
+      "note": "Paper row: Audio-Flamingo-Next."
+    },
+    {
+      "benchmark": "voxmem",
+      "model": "baichuan-audio",
+      "metric": "Accuracy (%) at 64K history, overall",
+      "value": 17.8,
+      "source": "Table 15 (accuracy at 64K by answer-critical evidence type, ten-model set)",
+      "source_url": "https://arxiv.org/abs/2609.32607v1",
+      "note": "Paper row: Baichuan-Audio-7B."
+    },
+    {
+      "benchmark": "voxmem",
+      "model": "baichuan-audio",
+      "metric": "Accuracy (%) at 64K history, speech semantics",
+      "value": 26.7,
+      "source": "Table 15 (accuracy at 64K by answer-critical evidence type, ten-model set)",
+      "source_url": "https://arxiv.org/abs/2609.32607v1",
+      "note": "Paper row: Baichuan-Audio-7B."
+    },
+    {
+      "benchmark": "voxmem",
+      "model": "baichuan-audio",
+      "metric": "Accuracy (%) at 64K history, speaker identity",
+      "value": 29.3,
+      "source": "Table 15 (accuracy at 64K by answer-critical evidence type, ten-model set)",
+      "source_url": "https://arxiv.org/abs/2609.32607v1",
+      "note": "Paper row: Baichuan-Audio-7B."
+    },
+    {
+      "benchmark": "voxmem",
+      "model": "baichuan-audio",
+      "metric": "Accuracy (%) at 64K history, paralinguistic cues",
+      "value": 9.8,
+      "source": "Table 15 (accuracy at 64K by answer-critical evidence type, ten-model set)",
+      "source_url": "https://arxiv.org/abs/2609.32607v1",
+      "note": "Paper row: Baichuan-Audio-7B."
+    },
+    {
+      "benchmark": "voxmem",
+      "model": "baichuan-audio",
+      "metric": "Accuracy (%) at 64K history, environmental sound",
+      "value": 7.1,
+      "source": "Table 15 (accuracy at 64K by answer-critical evidence type, ten-model set)",
+      "source_url": "https://arxiv.org/abs/2609.32607v1",
+      "note": "Paper row: Baichuan-Audio-7B."
+    },
+    {
+      "benchmark": "voxmem",
+      "model": "baichuan-omni-1-5",
+      "metric": "Accuracy (%) at 64K history, overall",
+      "value": 14.4,
+      "source": "Table 15 (accuracy at 64K by answer-critical evidence type, ten-model set)",
+      "source_url": "https://arxiv.org/abs/2609.32607v1",
+      "note": "Paper row: Baichuan-Omni-1.5-7B."
+    },
+    {
+      "benchmark": "voxmem",
+      "model": "baichuan-omni-1-5",
+      "metric": "Accuracy (%) at 64K history, speech semantics",
+      "value": 20.3,
+      "source": "Table 15 (accuracy at 64K by answer-critical evidence type, ten-model set)",
+      "source_url": "https://arxiv.org/abs/2609.32607v1",
+      "note": "Paper row: Baichuan-Omni-1.5-7B."
+    },
+    {
+      "benchmark": "voxmem",
+      "model": "baichuan-omni-1-5",
+      "metric": "Accuracy (%) at 64K history, speaker identity",
+      "value": 13.6,
+      "source": "Table 15 (accuracy at 64K by answer-critical evidence type, ten-model set)",
+      "source_url": "https://arxiv.org/abs/2609.32607v1",
+      "note": "Paper row: Baichuan-Omni-1.5-7B."
+    },
+    {
+      "benchmark": "voxmem",
+      "model": "baichuan-omni-1-5",
+      "metric": "Accuracy (%) at 64K history, paralinguistic cues",
+      "value": 11.4,
+      "source": "Table 15 (accuracy at 64K by answer-critical evidence type, ten-model set)",
+      "source_url": "https://arxiv.org/abs/2609.32607v1",
+      "note": "Paper row: Baichuan-Omni-1.5-7B."
+    },
+    {
+      "benchmark": "voxmem",
+      "model": "baichuan-omni-1-5",
+      "metric": "Accuracy (%) at 64K history, environmental sound",
+      "value": 11.5,
+      "source": "Table 15 (accuracy at 64K by answer-critical evidence type, ten-model set)",
+      "source_url": "https://arxiv.org/abs/2609.32607v1",
+      "note": "Paper row: Baichuan-Omni-1.5-7B."
+    },
+    {
+      "benchmark": "voxmem",
+      "model": "firered-audio",
+      "metric": "Accuracy (%) at 64K history, overall",
+      "value": 13.5,
+      "source": "Table 15 (accuracy at 64K by answer-critical evidence type, ten-model set)",
+      "source_url": "https://arxiv.org/abs/2609.32607v1",
+      "note": "Paper row: FireRedAudio-9B."
+    },
+    {
+      "benchmark": "voxmem",
+      "model": "firered-audio",
+      "metric": "Accuracy (%) at 64K history, speech semantics",
+      "value": 22.0,
+      "source": "Table 15 (accuracy at 64K by answer-critical evidence type, ten-model set)",
+      "source_url": "https://arxiv.org/abs/2609.32607v1",
+      "note": "Paper row: FireRedAudio-9B."
+    },
+    {
+      "benchmark": "voxmem",
+      "model": "firered-audio",
+      "metric": "Accuracy (%) at 64K history, speaker identity",
+      "value": 11.6,
+      "source": "Table 15 (accuracy at 64K by answer-critical evidence type, ten-model set)",
+      "source_url": "https://arxiv.org/abs/2609.32607v1",
+      "note": "Paper row: FireRedAudio-9B."
+    },
+    {
+      "benchmark": "voxmem",
+      "model": "firered-audio",
+      "metric": "Accuracy (%) at 64K history, paralinguistic cues",
+      "value": 10.2,
+      "source": "Table 15 (accuracy at 64K by answer-critical evidence type, ten-model set)",
+      "source_url": "https://arxiv.org/abs/2609.32607v1",
+      "note": "Paper row: FireRedAudio-9B."
+    },
+    {
+      "benchmark": "voxmem",
+      "model": "firered-audio",
+      "metric": "Accuracy (%) at 64K history, environmental sound",
+      "value": 8.3,
+      "source": "Table 15 (accuracy at 64K by answer-critical evidence type, ten-model set)",
+      "source_url": "https://arxiv.org/abs/2609.32607v1",
+      "note": "Paper row: FireRedAudio-9B."
+    },
+    {
+      "benchmark": "indicfdb",
+      "model": "gemini-live-3-1-flash",
+      "metric": "Pause handling success rate (%), Indian English",
+      "value": 100.0,
+      "source": "Table 2 (per-language evaluation), English (Indian) block",
+      "source_url": "https://arxiv.org/abs/2609.31967v1",
+      "note": "Paper row: Gemini 3.1 (Gemini 3.1 Flash Live Preview)."
+    },
+    {
+      "benchmark": "indicfdb",
+      "model": "gemini-live-3-1-flash",
+      "metric": "Turn taking success rate (%), Indian English",
+      "value": 99.15,
+      "source": "Table 2 (per-language evaluation), English (Indian) block",
+      "source_url": "https://arxiv.org/abs/2609.31967v1",
+      "note": "Paper row: Gemini 3.1 (Gemini 3.1 Flash Live Preview)."
+    },
+    {
+      "benchmark": "indicfdb",
+      "model": "gemini-live-3-1-flash",
+      "metric": "Turn taking latency (s, lower is better), Indian English",
+      "value": 1.747,
+      "source": "Table 2 (per-language evaluation), English (Indian) block",
+      "source_url": "https://arxiv.org/abs/2609.31967v1",
+      "note": "Paper row: Gemini 3.1 (Gemini 3.1 Flash Live Preview)."
+    },
+    {
+      "benchmark": "indicfdb",
+      "model": "gemini-live-3-1-flash",
+      "metric": "Backchanneling success rate (%), Indian English",
+      "value": 98.96,
+      "source": "Table 2 (per-language evaluation), English (Indian) block",
+      "source_url": "https://arxiv.org/abs/2609.31967v1",
+      "note": "Paper row: Gemini 3.1 (Gemini 3.1 Flash Live Preview)."
+    },
+    {
+      "benchmark": "indicfdb",
+      "model": "gemini-live-3-1-flash",
+      "metric": "Backchanneling JSD vs human (lower is better), Indian English",
+      "value": 0.981,
+      "source": "Table 2 (per-language evaluation), English (Indian) block",
+      "source_url": "https://arxiv.org/abs/2609.31967v1",
+      "note": "Paper row: Gemini 3.1 (Gemini 3.1 Flash Live Preview)."
+    },
+    {
+      "benchmark": "indicfdb",
+      "model": "gemini-live-3-1-flash",
+      "metric": "Backchannel frequency (per s), Indian English",
+      "value": 0.003,
+      "source": "Table 2 (per-language evaluation), English (Indian) block",
+      "source_url": "https://arxiv.org/abs/2609.31967v1",
+      "note": "Paper row: Gemini 3.1 (Gemini 3.1 Flash Live Preview)."
+    },
+    {
+      "benchmark": "indicfdb",
+      "model": "gemini-live-3-1-flash",
+      "metric": "User interruption success rate (%), Indian English",
+      "value": 100.0,
+      "source": "Table 2 (per-language evaluation), English (Indian) block",
+      "source_url": "https://arxiv.org/abs/2609.31967v1",
+      "note": "Paper row: Gemini 3.1 (Gemini 3.1 Flash Live Preview)."
+    },
+    {
+      "benchmark": "indicfdb",
+      "model": "gemini-live-3-1-flash",
+      "metric": "User interruption latency (s, lower is better), Indian English",
+      "value": 1.485,
+      "source": "Table 2 (per-language evaluation), English (Indian) block",
+      "source_url": "https://arxiv.org/abs/2609.31967v1",
+      "note": "Paper row: Gemini 3.1 (Gemini 3.1 Flash Live Preview)."
+    },
+    {
+      "benchmark": "indicfdb",
+      "model": "gemini-live-3-1-flash",
+      "metric": "User interruption response rating (0-5), Indian English",
+      "value": 4.997,
+      "source": "Table 2 (per-language evaluation), English (Indian) block",
+      "source_url": "https://arxiv.org/abs/2609.31967v1",
+      "note": "Paper row: Gemini 3.1 (Gemini 3.1 Flash Live Preview)."
+    },
+    {
+      "benchmark": "indicfdb",
+      "model": "personaplex",
+      "metric": "Pause handling success rate (%), Indian English",
+      "value": 90.16,
+      "source": "Table 2 (per-language evaluation), English (Indian) block",
+      "source_url": "https://arxiv.org/abs/2609.31967v1",
+      "note": "Paper row: PersonaPlex."
+    },
+    {
+      "benchmark": "indicfdb",
+      "model": "personaplex",
+      "metric": "Turn taking success rate (%), Indian English",
+      "value": 100.0,
+      "source": "Table 2 (per-language evaluation), English (Indian) block",
+      "source_url": "https://arxiv.org/abs/2609.31967v1",
+      "note": "Paper row: PersonaPlex."
+    },
+    {
+      "benchmark": "indicfdb",
+      "model": "personaplex",
+      "metric": "Turn taking latency (s, lower is better), Indian English",
+      "value": 0.36,
+      "source": "Table 2 (per-language evaluation), English (Indian) block",
+      "source_url": "https://arxiv.org/abs/2609.31967v1",
+      "note": "Paper row: PersonaPlex."
+    },
+    {
+      "benchmark": "indicfdb",
+      "model": "personaplex",
+      "metric": "Backchanneling success rate (%), Indian English",
+      "value": 63.12,
+      "source": "Table 2 (per-language evaluation), English (Indian) block",
+      "source_url": "https://arxiv.org/abs/2609.31967v1",
+      "note": "Paper row: PersonaPlex."
+    },
+    {
+      "benchmark": "indicfdb",
+      "model": "personaplex",
+      "metric": "Backchanneling JSD vs human (lower is better), Indian English",
+      "value": 0.799,
+      "source": "Table 2 (per-language evaluation), English (Indian) block",
+      "source_url": "https://arxiv.org/abs/2609.31967v1",
+      "note": "Paper row: PersonaPlex."
+    },
+    {
+      "benchmark": "indicfdb",
+      "model": "personaplex",
+      "metric": "Backchannel frequency (per s), Indian English",
+      "value": 0.091,
+      "source": "Table 2 (per-language evaluation), English (Indian) block",
+      "source_url": "https://arxiv.org/abs/2609.31967v1",
+      "note": "Paper row: PersonaPlex."
+    },
+    {
+      "benchmark": "indicfdb",
+      "model": "personaplex",
+      "metric": "User interruption success rate (%), Indian English",
+      "value": 100.0,
+      "source": "Table 2 (per-language evaluation), English (Indian) block",
+      "source_url": "https://arxiv.org/abs/2609.31967v1",
+      "note": "Paper row: PersonaPlex."
+    },
+    {
+      "benchmark": "indicfdb",
+      "model": "personaplex",
+      "metric": "User interruption latency (s, lower is better), Indian English",
+      "value": 0.307,
+      "source": "Table 2 (per-language evaluation), English (Indian) block",
+      "source_url": "https://arxiv.org/abs/2609.31967v1",
+      "note": "Paper row: PersonaPlex."
+    },
+    {
+      "benchmark": "indicfdb",
+      "model": "personaplex",
+      "metric": "User interruption response rating (0-5), Indian English",
+      "value": 4.843,
+      "source": "Table 2 (per-language evaluation), English (Indian) block",
+      "source_url": "https://arxiv.org/abs/2609.31967v1",
+      "note": "Paper row: PersonaPlex."
+    },
+    {
+      "benchmark": "indicfdb",
+      "model": "moshi",
+      "metric": "Pause handling success rate (%), Indian English",
+      "value": 57.46,
+      "source": "Table 2 (per-language evaluation), English (Indian) block",
+      "source_url": "https://arxiv.org/abs/2609.31967v1",
+      "note": "Paper row: Moshi."
+    },
+    {
+      "benchmark": "indicfdb",
+      "model": "moshi",
+      "metric": "Turn taking success rate (%), Indian English",
+      "value": 71.06,
+      "source": "Table 2 (per-language evaluation), English (Indian) block",
+      "source_url": "https://arxiv.org/abs/2609.31967v1",
+      "note": "Paper row: Moshi."
+    },
+    {
+      "benchmark": "indicfdb",
+      "model": "moshi",
+      "metric": "Turn taking latency (s, lower is better), Indian English",
+      "value": 1.475,
+      "source": "Table 2 (per-language evaluation), English (Indian) block",
+      "source_url": "https://arxiv.org/abs/2609.31967v1",
+      "note": "Paper row: Moshi."
+    },
+    {
+      "benchmark": "indicfdb",
+      "model": "moshi",
+      "metric": "Backchanneling success rate (%), Indian English",
+      "value": 3.12,
+      "source": "Table 2 (per-language evaluation), English (Indian) block",
+      "source_url": "https://arxiv.org/abs/2609.31967v1",
+      "note": "Paper row: Moshi."
+    },
+    {
+      "benchmark": "indicfdb",
+      "model": "moshi",
+      "metric": "Backchanneling JSD vs human (lower is better), Indian English",
+      "value": 0.87,
+      "source": "Table 2 (per-language evaluation), English (Indian) block",
+      "source_url": "https://arxiv.org/abs/2609.31967v1",
+      "note": "Paper row: Moshi."
+    },
+    {
+      "benchmark": "indicfdb",
+      "model": "moshi",
+      "metric": "Backchannel frequency (per s), Indian English",
+      "value": 0.056,
+      "source": "Table 2 (per-language evaluation), English (Indian) block",
+      "source_url": "https://arxiv.org/abs/2609.31967v1",
+      "note": "Paper row: Moshi."
+    },
+    {
+      "benchmark": "indicfdb",
+      "model": "moshi",
+      "metric": "User interruption success rate (%), Indian English",
+      "value": 99.0,
+      "source": "Table 2 (per-language evaluation), English (Indian) block",
+      "source_url": "https://arxiv.org/abs/2609.31967v1",
+      "note": "Paper row: Moshi."
+    },
+    {
+      "benchmark": "indicfdb",
+      "model": "moshi",
+      "metric": "User interruption latency (s, lower is better), Indian English",
+      "value": 0.449,
+      "source": "Table 2 (per-language evaluation), English (Indian) block",
+      "source_url": "https://arxiv.org/abs/2609.31967v1",
+      "note": "Paper row: Moshi."
+    },
+    {
+      "benchmark": "indicfdb",
+      "model": "moshi",
+      "metric": "User interruption response rating (0-5), Indian English",
+      "value": 3.791,
+      "source": "Table 2 (per-language evaluation), English (Indian) block",
+      "source_url": "https://arxiv.org/abs/2609.31967v1",
+      "note": "Paper row: Moshi."
+    },
+    {
+      "benchmark": "hear-voice-bias",
+      "model": "gpt-realtime",
+      "metric": "Speaker-Incline Rate (%), negative questions (Spoken BBQ)",
+      "value": 12.62,
+      "source": "Table 2 (Spoken BBQ, content-based bias metrics)",
+      "source_url": "https://arxiv.org/abs/2609.35952v1",
+      "note": "Paper row: GPT Realtime."
+    },
+    {
+      "benchmark": "hear-voice-bias",
+      "model": "gpt-realtime",
+      "metric": "Average Flip Rate (%), negative questions (Spoken BBQ)",
+      "value": 10.7,
+      "source": "Table 2 (Spoken BBQ, content-based bias metrics)",
+      "source_url": "https://arxiv.org/abs/2609.35952v1",
+      "note": "Paper row: GPT Realtime."
+    },
+    {
+      "benchmark": "hear-voice-bias",
+      "model": "gpt-realtime",
+      "metric": "Speaker-Incline Rate (%), non-negative questions (Spoken BBQ)",
+      "value": 17.31,
+      "source": "Table 2 (Spoken BBQ, content-based bias metrics)",
+      "source_url": "https://arxiv.org/abs/2609.35952v1",
+      "note": "Paper row: GPT Realtime."
+    },
+    {
+      "benchmark": "hear-voice-bias",
+      "model": "gpt-realtime",
+      "metric": "Average Flip Rate (%), non-negative questions (Spoken BBQ)",
+      "value": 11.24,
+      "source": "Table 2 (Spoken BBQ, content-based bias metrics)",
+      "source_url": "https://arxiv.org/abs/2609.35952v1",
+      "note": "Paper row: GPT Realtime."
+    },
+    {
+      "benchmark": "hear-voice-bias",
+      "model": "qwen3-omni",
+      "metric": "Speaker-Incline Rate (%), negative questions (Spoken BBQ)",
+      "value": 12.58,
+      "source": "Table 2 (Spoken BBQ, content-based bias metrics)",
+      "source_url": "https://arxiv.org/abs/2609.35952v1",
+      "note": "Paper row: Qwen-Omni (Qwen3-Omni-30B-A3B-Instruct)."
+    },
+    {
+      "benchmark": "hear-voice-bias",
+      "model": "qwen3-omni",
+      "metric": "Average Flip Rate (%), negative questions (Spoken BBQ)",
+      "value": 17.19,
+      "source": "Table 2 (Spoken BBQ, content-based bias metrics)",
+      "source_url": "https://arxiv.org/abs/2609.35952v1",
+      "note": "Paper row: Qwen-Omni (Qwen3-Omni-30B-A3B-Instruct)."
+    },
+    {
+      "benchmark": "hear-voice-bias",
+      "model": "qwen3-omni",
+      "metric": "Speaker-Incline Rate (%), non-negative questions (Spoken BBQ)",
+      "value": 27.01,
+      "source": "Table 2 (Spoken BBQ, content-based bias metrics)",
+      "source_url": "https://arxiv.org/abs/2609.35952v1",
+      "note": "Paper row: Qwen-Omni (Qwen3-Omni-30B-A3B-Instruct)."
+    },
+    {
+      "benchmark": "hear-voice-bias",
+      "model": "qwen3-omni",
+      "metric": "Average Flip Rate (%), non-negative questions (Spoken BBQ)",
+      "value": 16.11,
+      "source": "Table 2 (Spoken BBQ, content-based bias metrics)",
+      "source_url": "https://arxiv.org/abs/2609.35952v1",
+      "note": "Paper row: Qwen-Omni (Qwen3-Omni-30B-A3B-Instruct)."
+    },
+    {
+      "benchmark": "hear-voice-bias",
+      "model": "gemma-4-e4b",
+      "metric": "Speaker-Incline Rate (%), negative questions (Spoken BBQ)",
+      "value": 8.68,
+      "source": "Table 2 (Spoken BBQ, content-based bias metrics)",
+      "source_url": "https://arxiv.org/abs/2609.35952v1",
+      "note": "Paper row: Gemma 4 (Gemma4-E4B)."
+    },
+    {
+      "benchmark": "hear-voice-bias",
+      "model": "gemma-4-e4b",
+      "metric": "Average Flip Rate (%), negative questions (Spoken BBQ)",
+      "value": 19.02,
+      "source": "Table 2 (Spoken BBQ, content-based bias metrics)",
+      "source_url": "https://arxiv.org/abs/2609.35952v1",
+      "note": "Paper row: Gemma 4 (Gemma4-E4B)."
+    },
+    {
+      "benchmark": "hear-voice-bias",
+      "model": "gemma-4-e4b",
+      "metric": "Speaker-Incline Rate (%), non-negative questions (Spoken BBQ)",
+      "value": 16.69,
+      "source": "Table 2 (Spoken BBQ, content-based bias metrics)",
+      "source_url": "https://arxiv.org/abs/2609.35952v1",
+      "note": "Paper row: Gemma 4 (Gemma4-E4B)."
+    },
+    {
+      "benchmark": "hear-voice-bias",
+      "model": "gemma-4-e4b",
+      "metric": "Average Flip Rate (%), non-negative questions (Spoken BBQ)",
+      "value": 14.19,
+      "source": "Table 2 (Spoken BBQ, content-based bias metrics)",
+      "source_url": "https://arxiv.org/abs/2609.35952v1",
+      "note": "Paper row: Gemma 4 (Gemma4-E4B)."
+    },
+    {
+      "benchmark": "hear-voice-bias",
+      "model": "gpt-realtime",
+      "metric": "Distribution Disparity Rate (%), Open QA, default system prompt",
+      "value": 8.0,
+      "source": "Table 3 (Open QA, voice bias metrics under different system prompts)",
+      "source_url": "https://arxiv.org/abs/2609.35952v1",
+      "note": "Paper row: GPT Realtime."
+    },
+    {
+      "benchmark": "hear-voice-bias",
+      "model": "gpt-realtime",
+      "metric": "Response Helpfulness Rate (%), Open QA, default system prompt",
+      "value": 86.15,
+      "source": "Table 3 (Open QA, voice bias metrics under different system prompts)",
+      "source_url": "https://arxiv.org/abs/2609.35952v1",
+      "note": "Paper row: GPT Realtime."
+    },
+    {
+      "benchmark": "hear-voice-bias",
+      "model": "qwen3-omni",
+      "metric": "Distribution Disparity Rate (%), Open QA, default system prompt",
+      "value": 22.0,
+      "source": "Table 3 (Open QA, voice bias metrics under different system prompts)",
+      "source_url": "https://arxiv.org/abs/2609.35952v1",
+      "note": "Paper row: Qwen-Omni (Qwen3-Omni-30B-A3B-Instruct)."
+    },
+    {
+      "benchmark": "hear-voice-bias",
+      "model": "qwen3-omni",
+      "metric": "Response Helpfulness Rate (%), Open QA, default system prompt",
+      "value": 76.85,
+      "source": "Table 3 (Open QA, voice bias metrics under different system prompts)",
+      "source_url": "https://arxiv.org/abs/2609.35952v1",
+      "note": "Paper row: Qwen-Omni (Qwen3-Omni-30B-A3B-Instruct)."
+    },
+    {
+      "benchmark": "hear-voice-bias",
+      "model": "gemma-4-e4b",
+      "metric": "Distribution Disparity Rate (%), Open QA, default system prompt",
+      "value": 10.0,
+      "source": "Table 3 (Open QA, voice bias metrics under different system prompts)",
+      "source_url": "https://arxiv.org/abs/2609.35952v1",
+      "note": "Paper row: Gemma 4 (Gemma4-E4B)."
+    },
+    {
+      "benchmark": "hear-voice-bias",
+      "model": "gemma-4-e4b",
+      "metric": "Response Helpfulness Rate (%), Open QA, default system prompt",
+      "value": 50.1,
+      "source": "Table 3 (Open QA, voice bias metrics under different system prompts)",
+      "source_url": "https://arxiv.org/abs/2609.35952v1",
+      "note": "Paper row: Gemma 4 (Gemma4-E4B)."
+    },
+    {
+      "benchmark": "vgbench",
+      "model": "qwen3-omni",
+      "metric": "Side-talk correct (%)",
+      "value": 39.0,
+      "source": "Table 1 (action-selection results on the complete VGBench corpus, raw Audio LLMs)",
+      "source_url": "https://arxiv.org/abs/2609.32536v1",
+      "note": "Paper row: Qwen3-Omni (Qwen3-Omni-30B)."
+    },
+    {
+      "benchmark": "vgbench",
+      "model": "qwen3-omni",
+      "metric": "Self-talk mute rate (%)",
+      "value": 57.0,
+      "source": "Table 1 (action-selection results on the complete VGBench corpus, raw Audio LLMs)",
+      "source_url": "https://arxiv.org/abs/2609.32536v1",
+      "note": "Paper row: Qwen3-Omni (Qwen3-Omni-30B)."
+    },
+    {
+      "benchmark": "vgbench",
+      "model": "qwen3-omni",
+      "metric": "Speaker-switch mute rate (%)",
+      "value": 1,
+      "source": "Table 1 (action-selection results on the complete VGBench corpus, raw Audio LLMs)",
+      "source_url": "https://arxiv.org/abs/2609.32536v1",
+      "note": "Paper row: Qwen3-Omni (Qwen3-Omni-30B)."
+    },
+    {
+      "benchmark": "vgbench",
+      "model": "qwen3-omni",
+      "metric": "Same-speaker target-tool selection (%)",
+      "value": 77,
+      "source": "Table 1 (action-selection results on the complete VGBench corpus, raw Audio LLMs)",
+      "source_url": "https://arxiv.org/abs/2609.32536v1",
+      "note": "Paper row: Qwen3-Omni (Qwen3-Omni-30B)."
+    },
+    {
+      "benchmark": "vgbench",
+      "model": "qwen3-omni",
+      "metric": "Text-only target-tool selection (%)",
+      "value": 81,
+      "source": "Table 1 (action-selection results on the complete VGBench corpus, raw Audio LLMs)",
+      "source_url": "https://arxiv.org/abs/2609.32536v1",
+      "note": "Paper row: Qwen3-Omni (Qwen3-Omni-30B)."
+    },
+    {
+      "benchmark": "vgbench",
+      "model": "kimi-audio",
+      "metric": "Side-talk correct (%)",
+      "value": 38.2,
+      "source": "Table 1 (action-selection results on the complete VGBench corpus, raw Audio LLMs)",
+      "source_url": "https://arxiv.org/abs/2609.32536v1",
+      "note": "Paper row: Kimi-Audio-7B."
+    },
+    {
+      "benchmark": "vgbench",
+      "model": "kimi-audio",
+      "metric": "Self-talk mute rate (%)",
+      "value": 30.5,
+      "source": "Table 1 (action-selection results on the complete VGBench corpus, raw Audio LLMs)",
+      "source_url": "https://arxiv.org/abs/2609.32536v1",
+      "note": "Paper row: Kimi-Audio-7B."
+    },
+    {
+      "benchmark": "vgbench",
+      "model": "kimi-audio",
+      "metric": "Speaker-switch mute rate (%)",
+      "value": 14,
+      "source": "Table 1 (action-selection results on the complete VGBench corpus, raw Audio LLMs)",
+      "source_url": "https://arxiv.org/abs/2609.32536v1",
+      "note": "Paper row: Kimi-Audio-7B."
+    },
+    {
+      "benchmark": "vgbench",
+      "model": "kimi-audio",
+      "metric": "Same-speaker target-tool selection (%)",
+      "value": 53,
+      "source": "Table 1 (action-selection results on the complete VGBench corpus, raw Audio LLMs)",
+      "source_url": "https://arxiv.org/abs/2609.32536v1",
+      "note": "Paper row: Kimi-Audio-7B."
+    },
+    {
+      "benchmark": "vgbench",
+      "model": "kimi-audio",
+      "metric": "Text-only target-tool selection (%)",
+      "value": 44,
+      "source": "Table 1 (action-selection results on the complete VGBench corpus, raw Audio LLMs)",
+      "source_url": "https://arxiv.org/abs/2609.32536v1",
+      "note": "Paper row: Kimi-Audio-7B."
+    },
+    {
+      "benchmark": "vgbench",
+      "model": "audio-flamingo-3",
+      "metric": "Side-talk correct (%)",
+      "value": 36.0,
+      "source": "Table 1 (action-selection results on the complete VGBench corpus, raw Audio LLMs)",
+      "source_url": "https://arxiv.org/abs/2609.32536v1",
+      "note": "Paper row: Audio Flamingo 3."
+    },
+    {
+      "benchmark": "vgbench",
+      "model": "audio-flamingo-3",
+      "metric": "Self-talk mute rate (%)",
+      "value": 1.0,
+      "source": "Table 1 (action-selection results on the complete VGBench corpus, raw Audio LLMs)",
+      "source_url": "https://arxiv.org/abs/2609.32536v1",
+      "note": "Paper row: Audio Flamingo 3."
+    },
+    {
+      "benchmark": "vgbench",
+      "model": "audio-flamingo-3",
+      "metric": "Speaker-switch mute rate (%)",
+      "value": 0,
+      "source": "Table 1 (action-selection results on the complete VGBench corpus, raw Audio LLMs)",
+      "source_url": "https://arxiv.org/abs/2609.32536v1",
+      "note": "Paper row: Audio Flamingo 3."
+    },
+    {
+      "benchmark": "vgbench",
+      "model": "audio-flamingo-3",
+      "metric": "Same-speaker target-tool selection (%)",
+      "value": 0,
+      "source": "Table 1 (action-selection results on the complete VGBench corpus, raw Audio LLMs)",
+      "source_url": "https://arxiv.org/abs/2609.32536v1",
+      "note": "Paper row: Audio Flamingo 3."
+    },
+    {
+      "benchmark": "vgbench",
+      "model": "audio-flamingo-3",
+      "metric": "Text-only target-tool selection (%)",
+      "value": 0,
+      "source": "Table 1 (action-selection results on the complete VGBench corpus, raw Audio LLMs)",
+      "source_url": "https://arxiv.org/abs/2609.32536v1",
+      "note": "Paper row: Audio Flamingo 3."
+    },
+    {
+      "benchmark": "multispeech-bench",
+      "model": "qwen2-audio",
+      "metric": "ASR error rate (%), average over languages (WER; CER for zh and ja; lower is better)",
+      "value": 82.8,
+      "source": "Table 3 (ASR and AST performance across models and languages), 'Ave.' row",
+      "source_url": "https://arxiv.org/abs/2609.33204v1",
+      "note": "Paper column: Q2-A (Qwen2-Audio)."
+    },
+    {
+      "benchmark": "multispeech-bench",
+      "model": "qwen2-audio",
+      "metric": "Speech translation BLEU, average over the five CoVoST-2 languages",
+      "value": 8.3,
+      "source": "Table 3 (ASR and AST performance across models and languages), 'Ave.' row",
+      "source_url": "https://arxiv.org/abs/2609.33204v1",
+      "note": "Paper column: Q2-A (Qwen2-Audio)."
+    },
+    {
+      "benchmark": "multispeech-bench",
+      "model": "qwen2-audio",
+      "metric": "Speech translation chrF, average over the five CoVoST-2 languages",
+      "value": 32.9,
+      "source": "Table 3 (ASR and AST performance across models and languages), 'Ave.' row",
+      "source_url": "https://arxiv.org/abs/2609.33204v1",
+      "note": "Paper column: Q2-A (Qwen2-Audio)."
+    },
+    {
+      "benchmark": "multispeech-bench",
+      "model": "phi-4-multimodal",
+      "metric": "ASR error rate (%), average over languages (WER; CER for zh and ja; lower is better)",
+      "value": 98.7,
+      "source": "Table 3 (ASR and AST performance across models and languages), 'Ave.' row",
+      "source_url": "https://arxiv.org/abs/2609.33204v1",
+      "note": "Paper column: Phi4 (Phi-4-Multimodal)."
+    },
+    {
+      "benchmark": "multispeech-bench",
+      "model": "phi-4-multimodal",
+      "metric": "Speech translation BLEU, average over the five CoVoST-2 languages",
+      "value": 5.8,
+      "source": "Table 3 (ASR and AST performance across models and languages), 'Ave.' row",
+      "source_url": "https://arxiv.org/abs/2609.33204v1",
+      "note": "Paper column: Phi4 (Phi-4-Multimodal)."
+    },
+    {
+      "benchmark": "multispeech-bench",
+      "model": "phi-4-multimodal",
+      "metric": "Speech translation chrF, average over the five CoVoST-2 languages",
+      "value": 25.7,
+      "source": "Table 3 (ASR and AST performance across models and languages), 'Ave.' row",
+      "source_url": "https://arxiv.org/abs/2609.33204v1",
+      "note": "Paper column: Phi4 (Phi-4-Multimodal)."
+    },
+    {
+      "benchmark": "multispeech-bench",
+      "model": "qwen2-5-omni",
+      "metric": "ASR error rate (%), average over languages (WER; CER for zh and ja; lower is better)",
+      "value": 49.7,
+      "source": "Table 3 (ASR and AST performance across models and languages), 'Ave.' row",
+      "source_url": "https://arxiv.org/abs/2609.33204v1",
+      "note": "Paper column: Q2.5O (Qwen2.5-Omni, original weights)."
+    },
+    {
+      "benchmark": "multispeech-bench",
+      "model": "qwen2-5-omni",
+      "metric": "Speech translation BLEU, average over the five CoVoST-2 languages",
+      "value": 22.7,
+      "source": "Table 3 (ASR and AST performance across models and languages), 'Ave.' row",
+      "source_url": "https://arxiv.org/abs/2609.33204v1",
+      "note": "Paper column: Q2.5O (Qwen2.5-Omni, original weights)."
+    },
+    {
+      "benchmark": "multispeech-bench",
+      "model": "qwen2-5-omni",
+      "metric": "Speech translation chrF, average over the five CoVoST-2 languages",
+      "value": 46.6,
+      "source": "Table 3 (ASR and AST performance across models and languages), 'Ave.' row",
+      "source_url": "https://arxiv.org/abs/2609.33204v1",
+      "note": "Paper column: Q2.5O (Qwen2.5-Omni, original weights)."
+    },
+    {
+      "benchmark": "audio-compositionality-gap",
+      "model": "qwen2-5-omni",
+      "metric": "Compositional math QA accuracy (%), environmental sound at 0 dB SNR cue, LLM-based parsing",
+      "value": 42.83,
+      "source": "Table 3 (atomic and compositional performance), Math QA block, 'Comp.' rows, value after the slash",
+      "source_url": "https://arxiv.org/abs/2609.36921v1",
+      "note": "Paper row: Qwen2.5-Omni (Qwen2.5-Omni-7B)."
+    },
+    {
+      "benchmark": "audio-compositionality-gap",
+      "model": "qwen2-5-omni",
+      "metric": "Compositional math QA accuracy (%), environmental sound at 10 dB SNR cue, LLM-based parsing",
+      "value": 47.33,
+      "source": "Table 3 (atomic and compositional performance), Math QA block, 'Comp.' rows, value after the slash",
+      "source_url": "https://arxiv.org/abs/2609.36921v1",
+      "note": "Paper row: Qwen2.5-Omni (Qwen2.5-Omni-7B)."
+    },
+    {
+      "benchmark": "audio-compositionality-gap",
+      "model": "qwen2-5-omni",
+      "metric": "Compositional math QA accuracy (%), environmental sound at 20 dB SNR cue, LLM-based parsing",
+      "value": 40.5,
+      "source": "Table 3 (atomic and compositional performance), Math QA block, 'Comp.' rows, value after the slash",
+      "source_url": "https://arxiv.org/abs/2609.36921v1",
+      "note": "Paper row: Qwen2.5-Omni (Qwen2.5-Omni-7B)."
+    },
+    {
+      "benchmark": "audio-compositionality-gap",
+      "model": "qwen2-5-omni",
+      "metric": "Compositional math QA accuracy (%), gender cue, LLM-based parsing",
+      "value": 47.67,
+      "source": "Table 3 (atomic and compositional performance), Math QA block, 'Comp.' rows, value after the slash",
+      "source_url": "https://arxiv.org/abs/2609.36921v1",
+      "note": "Paper row: Qwen2.5-Omni (Qwen2.5-Omni-7B)."
+    },
+    {
+      "benchmark": "audio-compositionality-gap",
+      "model": "qwen2-5-omni",
+      "metric": "Compositional math QA accuracy (%), emotion cue, LLM-based parsing",
+      "value": 40.17,
+      "source": "Table 3 (atomic and compositional performance), Math QA block, 'Comp.' rows, value after the slash",
+      "source_url": "https://arxiv.org/abs/2609.36921v1",
+      "note": "Paper row: Qwen2.5-Omni (Qwen2.5-Omni-7B)."
+    },
+    {
+      "benchmark": "audio-compositionality-gap",
+      "model": "minicpm-o-4-5",
+      "metric": "Compositional math QA accuracy (%), environmental sound at 0 dB SNR cue, LLM-based parsing",
+      "value": 58.17,
+      "source": "Table 3 (atomic and compositional performance), Math QA block, 'Comp.' rows, value after the slash",
+      "source_url": "https://arxiv.org/abs/2609.36921v1",
+      "note": "Paper row: MiniCPM-o (MiniCPM-o 4.5)."
+    },
+    {
+      "benchmark": "audio-compositionality-gap",
+      "model": "minicpm-o-4-5",
+      "metric": "Compositional math QA accuracy (%), environmental sound at 10 dB SNR cue, LLM-based parsing",
+      "value": 60.17,
+      "source": "Table 3 (atomic and compositional performance), Math QA block, 'Comp.' rows, value after the slash",
+      "source_url": "https://arxiv.org/abs/2609.36921v1",
+      "note": "Paper row: MiniCPM-o (MiniCPM-o 4.5)."
+    },
+    {
+      "benchmark": "audio-compositionality-gap",
+      "model": "minicpm-o-4-5",
+      "metric": "Compositional math QA accuracy (%), environmental sound at 20 dB SNR cue, LLM-based parsing",
+      "value": 58.5,
+      "source": "Table 3 (atomic and compositional performance), Math QA block, 'Comp.' rows, value after the slash",
+      "source_url": "https://arxiv.org/abs/2609.36921v1",
+      "note": "Paper row: MiniCPM-o (MiniCPM-o 4.5)."
+    },
+    {
+      "benchmark": "audio-compositionality-gap",
+      "model": "minicpm-o-4-5",
+      "metric": "Compositional math QA accuracy (%), gender cue, LLM-based parsing",
+      "value": 93.33,
+      "source": "Table 3 (atomic and compositional performance), Math QA block, 'Comp.' rows, value after the slash",
+      "source_url": "https://arxiv.org/abs/2609.36921v1",
+      "note": "Paper row: MiniCPM-o (MiniCPM-o 4.5)."
+    },
+    {
+      "benchmark": "audio-compositionality-gap",
+      "model": "minicpm-o-4-5",
+      "metric": "Compositional math QA accuracy (%), emotion cue, LLM-based parsing",
+      "value": 55.33,
+      "source": "Table 3 (atomic and compositional performance), Math QA block, 'Comp.' rows, value after the slash",
+      "source_url": "https://arxiv.org/abs/2609.36921v1",
+      "note": "Paper row: MiniCPM-o (MiniCPM-o 4.5)."
+    },
+    {
+      "benchmark": "audio-compositionality-gap",
+      "model": "mimo-audio",
+      "metric": "Compositional math QA accuracy (%), environmental sound at 0 dB SNR cue, LLM-based parsing",
+      "value": 30.17,
+      "source": "Table 3 (atomic and compositional performance), Math QA block, 'Comp.' rows, value after the slash",
+      "source_url": "https://arxiv.org/abs/2609.36921v1",
+      "note": "Paper row: MiMo-Audio (MiMo-Audio-7B)."
+    },
+    {
+      "benchmark": "audio-compositionality-gap",
+      "model": "mimo-audio",
+      "metric": "Compositional math QA accuracy (%), environmental sound at 10 dB SNR cue, LLM-based parsing",
+      "value": 35.17,
+      "source": "Table 3 (atomic and compositional performance), Math QA block, 'Comp.' rows, value after the slash",
+      "source_url": "https://arxiv.org/abs/2609.36921v1",
+      "note": "Paper row: MiMo-Audio (MiMo-Audio-7B)."
+    },
+    {
+      "benchmark": "audio-compositionality-gap",
+      "model": "mimo-audio",
+      "metric": "Compositional math QA accuracy (%), environmental sound at 20 dB SNR cue, LLM-based parsing",
+      "value": 30.5,
+      "source": "Table 3 (atomic and compositional performance), Math QA block, 'Comp.' rows, value after the slash",
+      "source_url": "https://arxiv.org/abs/2609.36921v1",
+      "note": "Paper row: MiMo-Audio (MiMo-Audio-7B)."
+    },
+    {
+      "benchmark": "audio-compositionality-gap",
+      "model": "mimo-audio",
+      "metric": "Compositional math QA accuracy (%), gender cue, LLM-based parsing",
+      "value": 46.0,
+      "source": "Table 3 (atomic and compositional performance), Math QA block, 'Comp.' rows, value after the slash",
+      "source_url": "https://arxiv.org/abs/2609.36921v1",
+      "note": "Paper row: MiMo-Audio (MiMo-Audio-7B)."
+    },
+    {
+      "benchmark": "audio-compositionality-gap",
+      "model": "mimo-audio",
+      "metric": "Compositional math QA accuracy (%), emotion cue, LLM-based parsing",
+      "value": 27.17,
+      "source": "Table 3 (atomic and compositional performance), Math QA block, 'Comp.' rows, value after the slash",
+      "source_url": "https://arxiv.org/abs/2609.36921v1",
+      "note": "Paper row: MiMo-Audio (MiMo-Audio-7B)."
+    },
+    {
+      "benchmark": "audio-compositionality-gap",
+      "model": "kimi-audio",
+      "metric": "Compositional math QA accuracy (%), environmental sound at 0 dB SNR cue, LLM-based parsing",
+      "value": 30.5,
+      "source": "Table 3 (atomic and compositional performance), Math QA block, 'Comp.' rows, value after the slash",
+      "source_url": "https://arxiv.org/abs/2609.36921v1",
+      "note": "Paper row: Kimi-Audio (Kimi-Audio-7B)."
+    },
+    {
+      "benchmark": "audio-compositionality-gap",
+      "model": "kimi-audio",
+      "metric": "Compositional math QA accuracy (%), environmental sound at 10 dB SNR cue, LLM-based parsing",
+      "value": 30.83,
+      "source": "Table 3 (atomic and compositional performance), Math QA block, 'Comp.' rows, value after the slash",
+      "source_url": "https://arxiv.org/abs/2609.36921v1",
+      "note": "Paper row: Kimi-Audio (Kimi-Audio-7B)."
+    },
+    {
+      "benchmark": "audio-compositionality-gap",
+      "model": "kimi-audio",
+      "metric": "Compositional math QA accuracy (%), environmental sound at 20 dB SNR cue, LLM-based parsing",
+      "value": 30.0,
+      "source": "Table 3 (atomic and compositional performance), Math QA block, 'Comp.' rows, value after the slash",
+      "source_url": "https://arxiv.org/abs/2609.36921v1",
+      "note": "Paper row: Kimi-Audio (Kimi-Audio-7B)."
+    },
+    {
+      "benchmark": "audio-compositionality-gap",
+      "model": "kimi-audio",
+      "metric": "Compositional math QA accuracy (%), gender cue, LLM-based parsing",
+      "value": 38.33,
+      "source": "Table 3 (atomic and compositional performance), Math QA block, 'Comp.' rows, value after the slash",
+      "source_url": "https://arxiv.org/abs/2609.36921v1",
+      "note": "Paper row: Kimi-Audio (Kimi-Audio-7B)."
+    },
+    {
+      "benchmark": "audio-compositionality-gap",
+      "model": "kimi-audio",
+      "metric": "Compositional math QA accuracy (%), emotion cue, LLM-based parsing",
+      "value": 35.17,
+      "source": "Table 3 (atomic and compositional performance), Math QA block, 'Comp.' rows, value after the slash",
+      "source_url": "https://arxiv.org/abs/2609.36921v1",
+      "note": "Paper row: Kimi-Audio (Kimi-Audio-7B)."
+    },
+    {
+      "benchmark": "audio-compositionality-gap",
+      "model": "qwen2-5-omni",
+      "metric": "Compositional factual QA accuracy (%), environmental sound at 0 dB SNR cue, LLM-based parsing",
+      "value": 10.5,
+      "source": "Table 3 (atomic and compositional performance), Factual QA block, 'Comp.' rows, value after the slash",
+      "source_url": "https://arxiv.org/abs/2609.36921v1",
+      "note": "Paper row: Qwen2.5-Omni (Qwen2.5-Omni-7B)."
+    },
+    {
+      "benchmark": "audio-compositionality-gap",
+      "model": "qwen2-5-omni",
+      "metric": "Compositional factual QA accuracy (%), environmental sound at 10 dB SNR cue, LLM-based parsing",
+      "value": 13.17,
+      "source": "Table 3 (atomic and compositional performance), Factual QA block, 'Comp.' rows, value after the slash",
+      "source_url": "https://arxiv.org/abs/2609.36921v1",
+      "note": "Paper row: Qwen2.5-Omni (Qwen2.5-Omni-7B)."
+    },
+    {
+      "benchmark": "audio-compositionality-gap",
+      "model": "qwen2-5-omni",
+      "metric": "Compositional factual QA accuracy (%), environmental sound at 20 dB SNR cue, LLM-based parsing",
+      "value": 10.83,
+      "source": "Table 3 (atomic and compositional performance), Factual QA block, 'Comp.' rows, value after the slash",
+      "source_url": "https://arxiv.org/abs/2609.36921v1",
+      "note": "Paper row: Qwen2.5-Omni (Qwen2.5-Omni-7B)."
+    },
+    {
+      "benchmark": "audio-compositionality-gap",
+      "model": "qwen2-5-omni",
+      "metric": "Compositional factual QA accuracy (%), gender cue, LLM-based parsing",
+      "value": 20.67,
+      "source": "Table 3 (atomic and compositional performance), Factual QA block, 'Comp.' rows, value after the slash",
+      "source_url": "https://arxiv.org/abs/2609.36921v1",
+      "note": "Paper row: Qwen2.5-Omni (Qwen2.5-Omni-7B)."
+    },
+    {
+      "benchmark": "audio-compositionality-gap",
+      "model": "qwen2-5-omni",
+      "metric": "Compositional factual QA accuracy (%), emotion cue, LLM-based parsing",
+      "value": 12.0,
+      "source": "Table 3 (atomic and compositional performance), Factual QA block, 'Comp.' rows, value after the slash",
+      "source_url": "https://arxiv.org/abs/2609.36921v1",
+      "note": "Paper row: Qwen2.5-Omni (Qwen2.5-Omni-7B)."
+    },
+    {
+      "benchmark": "audio-compositionality-gap",
+      "model": "minicpm-o-4-5",
+      "metric": "Compositional factual QA accuracy (%), environmental sound at 0 dB SNR cue, LLM-based parsing",
+      "value": 18.17,
+      "source": "Table 3 (atomic and compositional performance), Factual QA block, 'Comp.' rows, value after the slash",
+      "source_url": "https://arxiv.org/abs/2609.36921v1",
+      "note": "Paper row: MiniCPM-o (MiniCPM-o 4.5)."
+    },
+    {
+      "benchmark": "audio-compositionality-gap",
+      "model": "minicpm-o-4-5",
+      "metric": "Compositional factual QA accuracy (%), environmental sound at 10 dB SNR cue, LLM-based parsing",
+      "value": 19.67,
+      "source": "Table 3 (atomic and compositional performance), Factual QA block, 'Comp.' rows, value after the slash",
+      "source_url": "https://arxiv.org/abs/2609.36921v1",
+      "note": "Paper row: MiniCPM-o (MiniCPM-o 4.5)."
+    },
+    {
+      "benchmark": "audio-compositionality-gap",
+      "model": "minicpm-o-4-5",
+      "metric": "Compositional factual QA accuracy (%), environmental sound at 20 dB SNR cue, LLM-based parsing",
+      "value": 23.17,
+      "source": "Table 3 (atomic and compositional performance), Factual QA block, 'Comp.' rows, value after the slash",
+      "source_url": "https://arxiv.org/abs/2609.36921v1",
+      "note": "Paper row: MiniCPM-o (MiniCPM-o 4.5)."
+    },
+    {
+      "benchmark": "audio-compositionality-gap",
+      "model": "minicpm-o-4-5",
+      "metric": "Compositional factual QA accuracy (%), gender cue, LLM-based parsing",
+      "value": 35.33,
+      "source": "Table 3 (atomic and compositional performance), Factual QA block, 'Comp.' rows, value after the slash",
+      "source_url": "https://arxiv.org/abs/2609.36921v1",
+      "note": "Paper row: MiniCPM-o (MiniCPM-o 4.5)."
+    },
+    {
+      "benchmark": "audio-compositionality-gap",
+      "model": "minicpm-o-4-5",
+      "metric": "Compositional factual QA accuracy (%), emotion cue, LLM-based parsing",
+      "value": 22.67,
+      "source": "Table 3 (atomic and compositional performance), Factual QA block, 'Comp.' rows, value after the slash",
+      "source_url": "https://arxiv.org/abs/2609.36921v1",
+      "note": "Paper row: MiniCPM-o (MiniCPM-o 4.5)."
+    },
+    {
+      "benchmark": "audio-compositionality-gap",
+      "model": "mimo-audio",
+      "metric": "Compositional factual QA accuracy (%), environmental sound at 0 dB SNR cue, LLM-based parsing",
+      "value": 5.83,
+      "source": "Table 3 (atomic and compositional performance), Factual QA block, 'Comp.' rows, value after the slash",
+      "source_url": "https://arxiv.org/abs/2609.36921v1",
+      "note": "Paper row: MiMo-Audio (MiMo-Audio-7B)."
+    },
+    {
+      "benchmark": "audio-compositionality-gap",
+      "model": "mimo-audio",
+      "metric": "Compositional factual QA accuracy (%), environmental sound at 10 dB SNR cue, LLM-based parsing",
+      "value": 6.17,
+      "source": "Table 3 (atomic and compositional performance), Factual QA block, 'Comp.' rows, value after the slash",
+      "source_url": "https://arxiv.org/abs/2609.36921v1",
+      "note": "Paper row: MiMo-Audio (MiMo-Audio-7B)."
+    },
+    {
+      "benchmark": "audio-compositionality-gap",
+      "model": "mimo-audio",
+      "metric": "Compositional factual QA accuracy (%), environmental sound at 20 dB SNR cue, LLM-based parsing",
+      "value": 5.83,
+      "source": "Table 3 (atomic and compositional performance), Factual QA block, 'Comp.' rows, value after the slash",
+      "source_url": "https://arxiv.org/abs/2609.36921v1",
+      "note": "Paper row: MiMo-Audio (MiMo-Audio-7B)."
+    },
+    {
+      "benchmark": "audio-compositionality-gap",
+      "model": "mimo-audio",
+      "metric": "Compositional factual QA accuracy (%), gender cue, LLM-based parsing",
+      "value": 7.83,
+      "source": "Table 3 (atomic and compositional performance), Factual QA block, 'Comp.' rows, value after the slash",
+      "source_url": "https://arxiv.org/abs/2609.36921v1",
+      "note": "Paper row: MiMo-Audio (MiMo-Audio-7B)."
+    },
+    {
+      "benchmark": "audio-compositionality-gap",
+      "model": "mimo-audio",
+      "metric": "Compositional factual QA accuracy (%), emotion cue, LLM-based parsing",
+      "value": 5.5,
+      "source": "Table 3 (atomic and compositional performance), Factual QA block, 'Comp.' rows, value after the slash",
+      "source_url": "https://arxiv.org/abs/2609.36921v1",
+      "note": "Paper row: MiMo-Audio (MiMo-Audio-7B)."
+    },
+    {
+      "benchmark": "audio-compositionality-gap",
+      "model": "kimi-audio",
+      "metric": "Compositional factual QA accuracy (%), environmental sound at 0 dB SNR cue, LLM-based parsing",
+      "value": 17.0,
+      "source": "Table 3 (atomic and compositional performance), Factual QA block, 'Comp.' rows, value after the slash",
+      "source_url": "https://arxiv.org/abs/2609.36921v1",
+      "note": "Paper row: Kimi-Audio (Kimi-Audio-7B)."
+    },
+    {
+      "benchmark": "audio-compositionality-gap",
+      "model": "kimi-audio",
+      "metric": "Compositional factual QA accuracy (%), environmental sound at 10 dB SNR cue, LLM-based parsing",
+      "value": 20.67,
+      "source": "Table 3 (atomic and compositional performance), Factual QA block, 'Comp.' rows, value after the slash",
+      "source_url": "https://arxiv.org/abs/2609.36921v1",
+      "note": "Paper row: Kimi-Audio (Kimi-Audio-7B)."
+    },
+    {
+      "benchmark": "audio-compositionality-gap",
+      "model": "kimi-audio",
+      "metric": "Compositional factual QA accuracy (%), environmental sound at 20 dB SNR cue, LLM-based parsing",
+      "value": 21.67,
+      "source": "Table 3 (atomic and compositional performance), Factual QA block, 'Comp.' rows, value after the slash",
+      "source_url": "https://arxiv.org/abs/2609.36921v1",
+      "note": "Paper row: Kimi-Audio (Kimi-Audio-7B)."
+    },
+    {
+      "benchmark": "audio-compositionality-gap",
+      "model": "kimi-audio",
+      "metric": "Compositional factual QA accuracy (%), gender cue, LLM-based parsing",
+      "value": 22.67,
+      "source": "Table 3 (atomic and compositional performance), Factual QA block, 'Comp.' rows, value after the slash",
+      "source_url": "https://arxiv.org/abs/2609.36921v1",
+      "note": "Paper row: Kimi-Audio (Kimi-Audio-7B)."
+    },
+    {
+      "benchmark": "audio-compositionality-gap",
+      "model": "kimi-audio",
+      "metric": "Compositional factual QA accuracy (%), emotion cue, LLM-based parsing",
+      "value": 19.67,
+      "source": "Table 3 (atomic and compositional performance), Factual QA block, 'Comp.' rows, value after the slash",
+      "source_url": "https://arxiv.org/abs/2609.36921v1",
+      "note": "Paper row: Kimi-Audio (Kimi-Audio-7B)."
+    },
+    {
+      "benchmark": "omniphyscap",
+      "model": "gpt-4o",
+      "metric": "Caption-QA coverage (%), all questions (Total)",
+      "value": 26.1,
+      "source": "Table 4 (results on OPC benchmark)",
+      "source_url": "https://arxiv.org/abs/2609.31714v1",
+      "note": "Paper row: GPT-4o."
+    },
+    {
+      "benchmark": "omniphyscap",
+      "model": "gpt-4o",
+      "metric": "Caption-QA coverage (%), physics questions",
+      "value": 36.3,
+      "source": "Table 4 (results on OPC benchmark)",
+      "source_url": "https://arxiv.org/abs/2609.31714v1",
+      "note": "Paper row: GPT-4o."
+    },
+    {
+      "benchmark": "omniphyscap",
+      "model": "gpt-4o",
+      "metric": "Caption-QA coverage (%), non-physics questions",
+      "value": 20.4,
+      "source": "Table 4 (results on OPC benchmark)",
+      "source_url": "https://arxiv.org/abs/2609.31714v1",
+      "note": "Paper row: GPT-4o."
+    },
+    {
+      "benchmark": "omniphyscap",
+      "model": "gemini-3-5-flash",
+      "metric": "Caption-QA coverage (%), all questions (Total)",
+      "value": 27.0,
+      "source": "Table 4 (results on OPC benchmark)",
+      "source_url": "https://arxiv.org/abs/2609.31714v1",
+      "note": "Paper row: Gemini 3.5 Flash."
+    },
+    {
+      "benchmark": "omniphyscap",
+      "model": "gemini-3-5-flash",
+      "metric": "Caption-QA coverage (%), physics questions",
+      "value": 37.3,
+      "source": "Table 4 (results on OPC benchmark)",
+      "source_url": "https://arxiv.org/abs/2609.31714v1",
+      "note": "Paper row: Gemini 3.5 Flash."
+    },
+    {
+      "benchmark": "omniphyscap",
+      "model": "gemini-3-5-flash",
+      "metric": "Caption-QA coverage (%), non-physics questions",
+      "value": 21.3,
+      "source": "Table 4 (results on OPC benchmark)",
+      "source_url": "https://arxiv.org/abs/2609.31714v1",
+      "note": "Paper row: Gemini 3.5 Flash."
+    },
+    {
+      "benchmark": "omniphyscap",
+      "model": "gemini-3-1-pro",
+      "metric": "Caption-QA coverage (%), all questions (Total)",
+      "value": 42.3,
+      "source": "Table 4 (results on OPC benchmark)",
+      "source_url": "https://arxiv.org/abs/2609.31714v1",
+      "note": "Paper row: Gemini 3.1 Pro."
+    },
+    {
+      "benchmark": "omniphyscap",
+      "model": "gemini-3-1-pro",
+      "metric": "Caption-QA coverage (%), physics questions",
+      "value": 47.8,
+      "source": "Table 4 (results on OPC benchmark)",
+      "source_url": "https://arxiv.org/abs/2609.31714v1",
+      "note": "Paper row: Gemini 3.1 Pro."
+    },
+    {
+      "benchmark": "omniphyscap",
+      "model": "gemini-3-1-pro",
+      "metric": "Caption-QA coverage (%), non-physics questions",
+      "value": 39.1,
+      "source": "Table 4 (results on OPC benchmark)",
+      "source_url": "https://arxiv.org/abs/2609.31714v1",
+      "note": "Paper row: Gemini 3.1 Pro."
+    },
+    {
+      "benchmark": "omniphyscap",
+      "model": "video-llama2",
+      "metric": "Caption-QA coverage (%), all questions (Total)",
+      "value": 5.2,
+      "source": "Table 4 (results on OPC benchmark)",
+      "source_url": "https://arxiv.org/abs/2609.31714v1",
+      "note": "Paper row: VideoLLaMA 2."
+    },
+    {
+      "benchmark": "omniphyscap",
+      "model": "video-llama2",
+      "metric": "Caption-QA coverage (%), physics questions",
+      "value": 7.4,
+      "source": "Table 4 (results on OPC benchmark)",
+      "source_url": "https://arxiv.org/abs/2609.31714v1",
+      "note": "Paper row: VideoLLaMA 2."
+    },
+    {
+      "benchmark": "omniphyscap",
+      "model": "video-llama2",
+      "metric": "Caption-QA coverage (%), non-physics questions",
+      "value": 3.9,
+      "source": "Table 4 (results on OPC benchmark)",
+      "source_url": "https://arxiv.org/abs/2609.31714v1",
+      "note": "Paper row: VideoLLaMA 2."
+    },
+    {
+      "benchmark": "omniphyscap",
+      "model": "qwen2-5-omni",
+      "metric": "Caption-QA coverage (%), all questions (Total)",
+      "value": 13.2,
+      "source": "Table 4 (results on OPC benchmark)",
+      "source_url": "https://arxiv.org/abs/2609.31714v1",
+      "note": "Paper row: Qwen2.5-Omni."
+    },
+    {
+      "benchmark": "omniphyscap",
+      "model": "qwen2-5-omni",
+      "metric": "Caption-QA coverage (%), physics questions",
+      "value": 17.3,
+      "source": "Table 4 (results on OPC benchmark)",
+      "source_url": "https://arxiv.org/abs/2609.31714v1",
+      "note": "Paper row: Qwen2.5-Omni."
+    },
+    {
+      "benchmark": "omniphyscap",
+      "model": "qwen2-5-omni",
+      "metric": "Caption-QA coverage (%), non-physics questions",
+      "value": 10.9,
+      "source": "Table 4 (results on OPC benchmark)",
+      "source_url": "https://arxiv.org/abs/2609.31714v1",
+      "note": "Paper row: Qwen2.5-Omni."
+    },
+    {
+      "benchmark": "omniphyscap",
+      "model": "qwen3-omni",
+      "metric": "Caption-QA coverage (%), all questions (Total)",
+      "value": 28.9,
+      "source": "Table 4 (results on OPC benchmark)",
+      "source_url": "https://arxiv.org/abs/2609.31714v1",
+      "note": "Paper row: Qwen3-Omni."
+    },
+    {
+      "benchmark": "omniphyscap",
+      "model": "qwen3-omni",
+      "metric": "Caption-QA coverage (%), physics questions",
+      "value": 35.3,
+      "source": "Table 4 (results on OPC benchmark)",
+      "source_url": "https://arxiv.org/abs/2609.31714v1",
+      "note": "Paper row: Qwen3-Omni."
+    },
+    {
+      "benchmark": "omniphyscap",
+      "model": "qwen3-omni",
+      "metric": "Caption-QA coverage (%), non-physics questions",
+      "value": 25.3,
+      "source": "Table 4 (results on OPC benchmark)",
+      "source_url": "https://arxiv.org/abs/2609.31714v1",
+      "note": "Paper row: Qwen3-Omni."
+    },
+    {
+      "benchmark": "omniphyscap",
+      "model": "minicpm-o-4-5",
+      "metric": "Caption-QA coverage (%), all questions (Total)",
+      "value": 29.5,
+      "source": "Table 4 (results on OPC benchmark)",
+      "source_url": "https://arxiv.org/abs/2609.31714v1",
+      "note": "Paper row: MiniCPM-o-4.5."
+    },
+    {
+      "benchmark": "omniphyscap",
+      "model": "minicpm-o-4-5",
+      "metric": "Caption-QA coverage (%), physics questions",
+      "value": 34.7,
+      "source": "Table 4 (results on OPC benchmark)",
+      "source_url": "https://arxiv.org/abs/2609.31714v1",
+      "note": "Paper row: MiniCPM-o-4.5."
+    },
+    {
+      "benchmark": "omniphyscap",
+      "model": "minicpm-o-4-5",
+      "metric": "Caption-QA coverage (%), non-physics questions",
+      "value": 26.7,
+      "source": "Table 4 (results on OPC benchmark)",
+      "source_url": "https://arxiv.org/abs/2609.31714v1",
+      "note": "Paper row: MiniCPM-o-4.5."
+    },
+    {
+      "benchmark": "cue-mem",
+      "model": "qwen3-omni",
+      "metric": "Memory Avg. accuracy (%), explicit evidence, native multimodal RAG (MM index, MM use)",
+      "value": 77.8,
+      "source": "Table 3 (results of the RAG-based multimodal memory variant), row Index=Multimodal, Use=Multimodal",
+      "source_url": "https://arxiv.org/abs/2609.32574v1",
+      "note": "Paper block: Qwen3-Omni-30B-A3B-Instruct."
+    },
+    {
+      "benchmark": "cue-mem",
+      "model": "qwen3-omni",
+      "metric": "Memory Avg. accuracy (%), implicit evidence, native multimodal RAG (MM index, MM use)",
+      "value": 51.1,
+      "source": "Table 3 (results of the RAG-based multimodal memory variant), row Index=Multimodal, Use=Multimodal",
+      "source_url": "https://arxiv.org/abs/2609.32574v1",
+      "note": "Paper block: Qwen3-Omni-30B-A3B-Instruct."
+    },
+    {
+      "benchmark": "cue-mem",
+      "model": "minicpm-o-4-5",
+      "metric": "Memory Avg. accuracy (%), explicit evidence, native multimodal RAG (MM index, MM use)",
+      "value": 53.4,
+      "source": "Table 3 (results of the RAG-based multimodal memory variant), row Index=Multimodal, Use=Multimodal",
+      "source_url": "https://arxiv.org/abs/2609.32574v1",
+      "note": "Paper block: MiniCPM-o-4.5."
+    },
+    {
+      "benchmark": "cue-mem",
+      "model": "minicpm-o-4-5",
+      "metric": "Memory Avg. accuracy (%), implicit evidence, native multimodal RAG (MM index, MM use)",
+      "value": 37.7,
+      "source": "Table 3 (results of the RAG-based multimodal memory variant), row Index=Multimodal, Use=Multimodal",
+      "source_url": "https://arxiv.org/abs/2609.32574v1",
+      "note": "Paper block: MiniCPM-o-4.5."
     }
   ]
 }
