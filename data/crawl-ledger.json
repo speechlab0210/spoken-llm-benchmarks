@@ -1,9 +1,226 @@
 {
  "since": "2026-08-22",
  "what": "Every arXiv paper the daily crawl has flagged since launch (score at or above the threshold, not previously seen), with the reviewer's verdict as written in the feed and whether the paper entered the catalogue. \"published\" is the paper's arXiv date. See the Method section of the site.",
- "flagged": 147,
+ "flagged": 183,
  "admitted": 39,
  "entries": [
+  {
+   "id": "2609.37818",
+   "title": "Thinking in Depth, Speaking Directly: Recurrent Latent Reasoning for Paralinguistically Grounded Spoken Dialogue",
+   "published": "2026-09-29T15:28:13Z",
+   "score": 24,
+   "outcome": "under review"
+  },
+  {
+   "id": "2609.37710",
+   "title": "Do Music Generative Models Understand Musical Qualities? Automatic Music Evaluation with Model-Intrinsic Signals",
+   "published": "2026-09-29T14:41:32Z",
+   "score": 21,
+   "outcome": "under review"
+  },
+  {
+   "id": "2609.37317",
+   "title": "What Comes Next? Omni-StoryBench for Evaluating Story-Grounded Omnimodal Generation",
+   "published": "2026-09-29T11:53:15Z",
+   "score": 42,
+   "outcome": "under review"
+  },
+  {
+   "id": "2609.36921",
+   "title": "When Capabilities Fail to Compose: Diagnosing the Compositionality Gap in Large Audio-Language Models",
+   "published": "2026-09-29T07:40:51Z",
+   "score": 18,
+   "outcome": "under review"
+  },
+  {
+   "id": "2609.36920",
+   "title": "Benchmarking Automatic Speech Recognition Tools for Iberian Languages",
+   "published": "2026-09-29T07:39:56Z",
+   "score": 18,
+   "outcome": "under review"
+  },
+  {
+   "id": "2609.36903",
+   "title": "MultiTalk: Scaling Full-Duplex Speech Models to Long, Multi-Party, Bilingual Conversation",
+   "published": "2026-09-29T07:25:29Z",
+   "score": 48,
+   "outcome": "under review"
+  },
+  {
+   "id": "2609.36798",
+   "title": "Seeing What Should Be Heard: Diagnosing and Repairing Cross-Modal Shortcuts in Omni-Modal LLMs",
+   "published": "2026-09-29T06:12:42Z",
+   "score": 18,
+   "outcome": "under review"
+  },
+  {
+   "id": "2609.35952",
+   "title": "HEAR: Real Voices, Real Bias: A Large-Scale Human-Recorded, Demographically Diverse Benchmark for Audio Language Models",
+   "published": "2026-09-28T17:30:33Z",
+   "score": 33,
+   "outcome": "under review"
+  },
+  {
+   "id": "2609.35645",
+   "title": "CoSE-E: A Benchmark for Code-switched Speech Evaluation in Enterprise Settings",
+   "published": "2026-09-28T17:14:11Z",
+   "score": 36,
+   "outcome": "under review"
+  },
+  {
+   "id": "2609.35564",
+   "title": "Almieyar: A Culturally Grounded Benchmark for Multi-Dialect Arabic Speech Recognition",
+   "published": "2026-09-28T16:29:11Z",
+   "score": 33,
+   "outcome": "under review"
+  },
+  {
+   "id": "2609.35345",
+   "title": "Probing Large Audio-Language Models for Compositional Understanding of Sounding Actions",
+   "published": "2026-09-28T15:00:56Z",
+   "score": 21,
+   "outcome": "under review"
+  },
+  {
+   "id": "2609.34973",
+   "title": "APEX-Voice: Can Voice Agents Complete Professional Workflows Through Full-Duplex Interaction",
+   "published": "2026-09-28T11:53:07Z",
+   "score": 33,
+   "outcome": "under review"
+  },
+  {
+   "id": "2609.34806",
+   "title": "On Temporal Binding in Large Audio Language Models",
+   "published": "2026-09-28T10:10:19Z",
+   "score": 18,
+   "outcome": "under review"
+  },
+  {
+   "id": "2609.34461",
+   "title": "CharDuplex: Building Character-Consistent Full-Duplex Spoken Dialogue Models",
+   "published": "2026-09-28T07:18:57Z",
+   "score": 30,
+   "outcome": "under review"
+  },
+  {
+   "id": "2609.34407",
+   "title": "Beyond Textual Chain-of-Thought: JEPA-Conditioned Latent Reasoning for Large Audio Language Models",
+   "published": "2026-09-28T06:19:44Z",
+   "score": 21,
+   "outcome": "under review"
+  },
+  {
+   "id": "2609.34247",
+   "title": "SALMONN-duo: Adaptive Dual-System Coordination for Full-Duplex Voice Agents",
+   "published": "2026-09-28T03:53:05Z",
+   "score": 30,
+   "outcome": "under review"
+  },
+  {
+   "id": "2609.34223",
+   "title": "Uncovering Ordinal-Matching Bias in Audio-Visual LLMs",
+   "published": "2026-09-28T03:28:48Z",
+   "score": 24,
+   "outcome": "under review"
+  },
+  {
+   "id": "2609.33899",
+   "title": "NSV-Shift: A Contrastive Benchmark for Non-Speech Vocalization Understanding and Response Adaptation in Speech-to-Speech Models",
+   "published": "2026-09-27T20:28:06Z",
+   "score": 27,
+   "outcome": "under review"
+  },
+  {
+   "id": "2609.33893",
+   "title": "MISHAP-Bench: A Hallucination Benchmark for Large Audio-Language Models",
+   "published": "2026-09-27T20:17:28Z",
+   "score": 57,
+   "outcome": "under review"
+  },
+  {
+   "id": "2609.33443",
+   "title": "Context Spanning: A Communication Framework for Full-Duplex Speech Models and External LLM Backends",
+   "published": "2026-09-27T10:48:21Z",
+   "score": 18,
+   "outcome": "under review"
+  },
+  {
+   "id": "2609.33433",
+   "title": "CORA: A Protocol for Diagnosing Boundary Robustness in Text-to-Audio Retrieval under Query Reformulations",
+   "published": "2026-09-27T10:37:39Z",
+   "score": 21,
+   "outcome": "under review"
+  },
+  {
+   "id": "2609.33204",
+   "title": "Turning Speech Language Models into Multilingual Listeners",
+   "published": "2026-09-27T04:43:24Z",
+   "score": 21,
+   "outcome": "under review"
+  },
+  {
+   "id": "2609.32607",
+   "title": "VoxMem: Benchmarking Multimodal Memory in Large Audio Language Models",
+   "published": "2026-09-26T13:27:12Z",
+   "score": 39,
+   "outcome": "under review"
+  },
+  {
+   "id": "2609.32574",
+   "title": "CUE-Mem: Benchmarking Long-Term User Memory via Implicit Cues in Multimodal Conversations",
+   "published": "2026-09-26T12:49:02Z",
+   "score": 24,
+   "outcome": "under review"
+  },
+  {
+   "id": "2609.32536",
+   "title": "Do Audio LLMs Listen Before They Act? Diagnosing Acoustic-Context Gating in Voice Agents",
+   "published": "2026-09-26T12:16:00Z",
+   "score": 27,
+   "outcome": "under review"
+  },
+  {
+   "id": "2609.32522",
+   "title": "Beyond Dyadic Memory: Interaction-Aware Multimodal Memory with Adaptive Agentic Retrieval for Multi-Party Spoken Conversations",
+   "published": "2026-09-26T12:04:49Z",
+   "score": 18,
+   "outcome": "under review"
+  },
+  {
+   "id": "2609.32396",
+   "title": "FA-Bench: A Benchmark for Word-Level and Phone-Level Forced-Alignment and ASR Timestamps Under Clean and Noisy Conditions",
+   "published": "2026-09-26T09:16:06Z",
+   "score": 33,
+   "outcome": "under review"
+  },
+  {
+   "id": "2609.32224",
+   "title": "RAO-Nav: Probing Omni-Language Models for Zero-shot Semantic Audio-Visual Navigation",
+   "published": "2026-09-26T04:33:00Z",
+   "score": 21,
+   "outcome": "under review"
+  },
+  {
+   "id": "2609.32082",
+   "title": "mu-bench: A Multilingual Utterance Transcription Benchmark",
+   "published": "2026-09-25T23:39:57Z",
+   "score": 33,
+   "outcome": "under review"
+  },
+  {
+   "id": "2609.31967",
+   "title": "IndicFDB: Benchmarking Full-Duplex Voice Agents across Indian Languages",
+   "published": "2026-09-25T20:11:18Z",
+   "score": 33,
+   "outcome": "under review"
+  },
+  {
+   "id": "2609.31948",
+   "title": "Duplex-MPE: Benchmarking Multi-Party Interaction in Full-Duplex Dialogue",
+   "published": "2026-09-25T19:53:52Z",
+   "score": 51,
+   "outcome": "under review"
+  },
   {
    "id": "2609.31588",
    "title": "RePlay: Retrieval-Based Voice Playback for Multi-Turn spoken dialogue",
@@ -110,6 +327,13 @@
    "verdict": "reviewed — out of scope: no benchmark proposed (a full-duplex modelling method built on Qwen3-Omni)"
   },
   {
+   "id": "2609.31759",
+   "title": "Acoustic domain shift in spoken language identification from systematic domain generalization evaluation to real-world application",
+   "published": "2026-09-23T13:21:27Z",
+   "score": 24,
+   "outcome": "under review"
+  },
+  {
    "id": "2609.28577",
    "title": "ASR ensembling for phoneme intelligibility evaluation of speech anonymizers",
    "published": "2026-09-23T12:36:21Z",
@@ -158,6 +382,20 @@
    "verdict": "reviewed — out of scope: the subjects are not general spoken LLMs (a dataset for evaluating sound-scene generation algorithms)"
   },
   {
+   "id": "2609.31727",
+   "title": "The Ongiini-Eval-OW Benchmark: A Concept Paper for the Planned Benchmarking of Machine Translation and Large Language Models on Oshindonga and Oshikwanyama",
+   "published": "2026-09-22T09:08:27Z",
+   "score": 24,
+   "outcome": "under review"
+  },
+  {
+   "id": "2609.35820",
+   "title": "$τ$-Multilingual: Benchmarking Voice Agents Across Languages",
+   "published": "2026-09-21T18:32:01Z",
+   "score": 36,
+   "outcome": "under review"
+  },
+  {
    "id": "2609.25195",
    "title": "Qwen-Audio-Agent Technical Report",
    "published": "2026-09-21T17:40:55Z",
@@ -166,12 +404,26 @@
    "verdict": "reviewed — out of scope: no benchmark proposed (a system harness for voice agents; its 134 test cases are in-house and not released)"
   },
   {
+   "id": "2609.31719",
+   "title": "Distributional Metrics for Evaluating Spoken Conversational Systems",
+   "published": "2026-09-21T16:45:35Z",
+   "score": 18,
+   "outcome": "under review"
+  },
+  {
    "id": "2609.25176",
    "title": "Qwen-Audio-3.1-Realtime: Towards Reliable Agentic Voice Interaction",
    "published": "2026-09-21T14:20:47Z",
    "score": 27,
    "outcome": "not admitted",
    "verdict": "reviewed — out of scope: no benchmark proposed (a model technical report; its only constructed set is an internal translation of an existing benchmark, not released)"
+  },
+  {
+   "id": "2609.31714",
+   "title": "OmniFysics-Captioner Technical Report: Grounding Omni-Modal Understanding in the Physical World for Better Captioning",
+   "published": "2026-09-21T09:41:06Z",
+   "score": 21,
+   "outcome": "under review"
   },
   {
    "id": "2609.24199",
