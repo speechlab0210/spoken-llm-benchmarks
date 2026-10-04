@@ -3243,6 +3243,12 @@
      "lat": 47.66,
      "lon": -117.43,
      "country": "US"
+    },
+    {
+     "city": "Beijing",
+     "lat": 39.9,
+     "lon": 116.4,
+     "country": "CN"
     }
    ],
    "aliases": [
@@ -3255,6 +3261,16 @@
      "type": "industry",
      "confidence": "medium",
      "note": "Formerly Speechocean; parent company (Beijing Haitian Ruisheng) is headquartered in Beijing, but the paper context says USA and the US entity is registered in Spokane, WA"
+    },
+    {
+     "raw": "DataoceanAI, China",
+     "country": "CN",
+     "city": "Beijing",
+     "lat": 39.9,
+     "lon": 116.4,
+     "type": "industry",
+     "confidence": "medium",
+     "note": "Author block of arXiv:2610.00935 prints 'DataoceanAI, China' with no city; placed at the Beijing headquarters of the parent company named in this institution's existing alias note."
     }
    ]
   },
@@ -14370,6 +14386,180 @@
      "type": "academia",
      "confidence": "high",
      "note": "Engineering school of Institut Polytechnique de Paris, campus in Palaiseau; LTCI is its research laboratory."
+    }
+   ]
+  },
+  {
+   "id": "duke-kunshan-university",
+   "name": "Duke Kunshan University",
+   "short": "DKU",
+   "type": "academia",
+   "country": "CN",
+   "parent": null,
+   "confidence": "high",
+   "sites": [
+    {
+     "city": "Kunshan",
+     "lat": 31.42,
+     "lon": 120.89,
+     "country": "CN"
+    }
+   ],
+   "aliases": [
+    {
+     "raw": "Duke Kunshan University, China",
+     "country": "CN",
+     "city": "Kunshan",
+     "lat": 31.42,
+     "lon": 120.89,
+     "type": "academia",
+     "confidence": "high",
+     "note": "Sino-American university in Kunshan, Jiangsu; author block of arXiv:2610.00272 prints 'Duke Kunshan University, China'."
+    }
+   ]
+  },
+  {
+   "id": "scbx",
+   "name": "SCBX Group",
+   "short": "SCBX",
+   "type": "industry",
+   "country": "TH",
+   "parent": null,
+   "confidence": "medium",
+   "sites": [
+    {
+     "city": "Bangkok",
+     "lat": 13.76,
+     "lon": 100.5,
+     "country": "TH"
+    }
+   ],
+   "aliases": [
+    {
+     "raw": "SCBX R&D",
+     "country": "TH",
+     "city": "Bangkok",
+     "lat": 13.76,
+     "lon": 100.5,
+     "type": "industry",
+     "confidence": "medium",
+     "note": "Thai financial technology holding group (parent of Siam Commercial Bank and of SCB 10X, which has its own registry entry); author block of arXiv:2609.40198 prints 'SCBX R&D' and 'SCB DataX, SCBX Group' with no city or country, so the group's Bangkok headquarters is used."
+    }
+   ]
+  },
+  {
+   "id": "guangxi-university",
+   "name": "Guangxi University",
+   "short": "GXU",
+   "type": "academia",
+   "country": "CN",
+   "parent": null,
+   "confidence": "high",
+   "sites": [
+    {
+     "city": "Nanning",
+     "lat": 22.84,
+     "lon": 108.29,
+     "country": "CN"
+    }
+   ],
+   "aliases": [
+    {
+     "raw": "Guangxi University",
+     "country": "CN",
+     "city": "Nanning",
+     "lat": 22.84,
+     "lon": 108.29,
+     "type": "academia",
+     "confidence": "high",
+     "note": "Public university in Nanning, Guangxi; author block of arXiv:2609.39847 prints the name only."
+    }
+   ]
+  },
+  {
+   "id": "northwestern-university",
+   "name": "Northwestern University",
+   "short": "Northwestern",
+   "type": "academia",
+   "country": "US",
+   "parent": null,
+   "confidence": "high",
+   "sites": [
+    {
+     "city": "Evanston",
+     "lat": 42.06,
+     "lon": -87.68,
+     "country": "US"
+    }
+   ],
+   "aliases": [
+    {
+     "raw": "Northwestern University",
+     "country": "US",
+     "city": "Evanston",
+     "lat": 42.06,
+     "lon": -87.68,
+     "type": "academia",
+     "confidence": "high",
+     "note": "Private research university, main campus in Evanston, Illinois; the author block of arXiv:2609.38523 prints the name only."
+    }
+   ]
+  },
+  {
+   "id": "new-jersey-institute-of-technology",
+   "name": "New Jersey Institute of Technology",
+   "short": "NJIT",
+   "type": "academia",
+   "country": "US",
+   "parent": null,
+   "confidence": "high",
+   "sites": [
+    {
+     "city": "Newark",
+     "lat": 40.74,
+     "lon": -74.18,
+     "country": "US"
+    }
+   ],
+   "aliases": [
+    {
+     "raw": "New Jersey Institute of Technology",
+     "country": "US",
+     "city": "Newark",
+     "lat": 40.74,
+     "lon": -74.18,
+     "type": "academia",
+     "confidence": "high",
+     "note": "Public research university in Newark, New Jersey; the author block of arXiv:2609.38523 prints the name only."
+    }
+   ]
+  },
+  {
+   "id": "pace-university",
+   "name": "Pace University",
+   "short": "Pace",
+   "type": "academia",
+   "country": "US",
+   "parent": null,
+   "confidence": "high",
+   "sites": [
+    {
+     "city": "New York",
+     "lat": 40.71,
+     "lon": -74.0,
+     "country": "US"
+    }
+   ],
+   "aliases": [
+    {
+     "raw": "Pace University",
+     "country": "US",
+     "city": "New York",
+     "lat": 40.71,
+     "lon": -74.0,
+     "type": "academia",
+     "confidence": "high",
+     "note": "Private university whose main campus is in lower Manhattan, New York City; the author block of arXiv:2609.38523 prints the name only."
     }
    ]
   }

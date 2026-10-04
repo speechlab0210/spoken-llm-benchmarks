@@ -1,9 +1,200 @@
 {
  "since": "2026-08-22",
  "what": "Every arXiv paper the daily crawl has flagged since launch (score at or above the threshold, not previously seen), with the reviewer's verdict as written in the feed and whether the paper entered the catalogue. \"published\" is the paper's arXiv date. See the Method section of the site.",
- "flagged": 183,
- "admitted": 55,
+ "flagged": 208,
+ "admitted": 64,
  "entries": [
+  {
+   "id": "2610.02148",
+   "title": "Omni-Embed-Mini: Binding Modalities Without Forgetting via Dense Distillation",
+   "published": "2026-10-01T17:49:40Z",
+   "score": 18,
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: no benchmark proposed (a small embedding model that maps text, speech, audio, images and video into one retrieval space, evaluated on existing embedding and retrieval benchmarks)"
+  },
+  {
+   "id": "2610.01560",
+   "title": "AURAL: Adaptive Latent Reasoning with Joint Chunk for Speech Language Models",
+   "published": "2026-10-01T12:28:03Z",
+   "score": 21,
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: no benchmark proposed (a latent-reasoning method for speech language models with a 683K-utterance training corpus, evaluated on existing benchmarks)"
+  },
+  {
+   "id": "2610.01488",
+   "title": "Multi-Party Backchannel Prediction: a Diagnosis, a Benchmark, and a Ceiling",
+   "published": "2026-10-01T11:30:28Z",
+   "score": 24,
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: the subjects are not general spoken LLMs (a multi-party backchannel-timing benchmark built from meeting recordings that evaluates a dedicated voice-activity-projection predictor and retrained variants of it)"
+  },
+  {
+   "id": "2610.01427",
+   "title": "SHAMS: An Audio-Grounded Pronunciation Benchmark for Levantine Arabic",
+   "published": "2026-10-01T10:26:46Z",
+   "score": 24,
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: the subjects are not general spoken LLMs (a Levantine Arabic pronunciation resource whose audio tasks are speech recognition and phonetic transcription scored by error rate, run mostly on dedicated speech recognisers, with two audio LLMs used only as prompted transcribers; its text tasks test text models)"
+  },
+  {
+   "id": "2610.00935",
+   "title": "RMS-AQA: A Two-Stage Spatial Audio Question Answering Benchmark for Real-World Domestic Environments",
+   "published": "2026-10-01T02:07:12Z",
+   "score": 24,
+   "outcome": "admitted",
+   "verdict": "accepted — added to the atlas as RMS-AQA (two-stage spatial audio question answering on domestic first-order Ambisonics recordings; the paper also contributes a spatial plug-in)",
+   "catalogue_id": "rms-aqa"
+  },
+  {
+   "id": "2610.00706",
+   "title": "AnchorPrompt: Self-Distilled Soft Prompts for Robust Audio-Language Models",
+   "published": "2026-09-30T20:53:46Z",
+   "score": 21,
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: no benchmark proposed (a learned soft-prompt method that makes audio language models more robust to noise, corruption and injected text, evaluated on perturbed versions of existing benchmarks: SAKURA, MMAU and MMAR)"
+  },
+  {
+   "id": "2609.40198",
+   "title": "SCB: SpeechConversationBench for Evaluating Multi-Turn Reasoning in Speech-to-Speech Models",
+   "published": "2026-09-30T17:13:30Z",
+   "score": 45,
+   "outcome": "admitted",
+   "verdict": "accepted — added to the atlas as SpeechConversationBench (spoken math problems disclosed in one turn or across turns; a small edge-of-scope report adapting a text protocol to speech-to-speech systems)",
+   "catalogue_id": "speechconversationbench"
+  },
+  {
+   "id": "2609.40181",
+   "title": "Index-Translate: A Multilingual Translation Model Family -- Text, Speech, Controlled Dubbing, and Long-Document Translation",
+   "published": "2026-09-30T17:05:58Z",
+   "score": 27,
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: the subjects are not general spoken LLMs (a translation model family; the benchmarks it introduces for instruction-constrained, meme and long-document translation are text-only, and its speech translation tests use unreleased in-house video sets)"
+  },
+  {
+   "id": "2609.39953",
+   "title": "Learning to Reason with Compressed Context: Ground-Truth-Free Adaptation of OmniLLMs via Self-Distillation",
+   "published": "2026-09-30T15:24:57Z",
+   "score": 21,
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: no benchmark proposed (a self-distillation method that adapts an omni model to compressed audio-video input, evaluated on five existing audio-video benchmarks)"
+  },
+  {
+   "id": "2609.39938",
+   "title": "LEAP: Learned Block-wise Evidence Retrieval for Long Audio-Video Perception",
+   "published": "2026-09-30T15:19:12Z",
+   "score": 39,
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: no benchmark proposed (LEAP, a block-wise evidence-retrieval method for long audio-video question answering built on an omni model, evaluated on existing benchmarks such as CG-Bench, TraceAV, MMOU and StreamArena)"
+  },
+  {
+   "id": "2609.39847",
+   "title": "SEAR: Spoofing Evidence-Grounded Audio Reasoning Benchmark for Audio Language Models",
+   "published": "2026-09-30T14:39:47Z",
+   "score": 24,
+   "outcome": "admitted",
+   "verdict": "accepted — added to the atlas as SEAR (whether audio language models acting as deepfake detectors can identify and measure the acoustic evidence behind their verdicts and rationales)",
+   "catalogue_id": "sear"
+  },
+  {
+   "id": "2609.39490",
+   "title": "OmniReasoning: Pushing the Limits of Audio-Visual Joint Reasoning",
+   "published": "2026-09-30T10:51:24Z",
+   "score": 24,
+   "outcome": "admitted",
+   "verdict": "accepted — added to the atlas as OmniReasoningBench (the paper also trains a model; the benchmark asks omni models questions that need both the audio, including speech, and the picture of a video)",
+   "catalogue_id": "omnireasoningbench"
+  },
+  {
+   "id": "2609.39446",
+   "title": "DuplexAct-Bench: Broadening Full-Duplex Speech Evaluation toward Proactive Interaction across Diverse Behavioral Requirements",
+   "published": "2026-09-30T10:19:19Z",
+   "score": 42,
+   "outcome": "admitted",
+   "verdict": "accepted — added to the atlas as DuplexAct-Bench (six full-duplex behaviours, from interrupting and yielding to proactive speech, silence and backchannels, under stated and unstated requirements, in English and Chinese)",
+   "catalogue_id": "duplexact-bench"
+  },
+  {
+   "id": "2609.39344",
+   "title": "Who Said What, and Will It Be Remembered? Evaluating Persistent Speaker Attribution Across Meetings",
+   "published": "2026-09-30T09:09:17Z",
+   "score": 21,
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: the subjects are not general spoken LLMs (it scores meeting-transcription and speaker-identification pipelines on whether each speaker keeps one identity across meetings, using existing CHiME meeting sets)"
+  },
+  {
+   "id": "2609.39199",
+   "title": "UniAE-MoE: A Unified Audio Encoder via Mixture of Experts",
+   "published": "2026-09-30T07:49:18Z",
+   "score": 33,
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: no benchmark proposed (a mixture-of-experts audio encoder for audio language models, evaluated on the existing XARES-LLM benchmark and the Interspeech 2026 Audio Encoder Capability Challenge)"
+  },
+  {
+   "id": "2609.39072",
+   "title": "Beyond Text: LLM-Based Dimensional Emotion Evaluation in Multimodal Dialogue",
+   "published": "2026-09-30T06:09:48Z",
+   "score": 18,
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: the subjects are not general spoken LLMs (text language models predict emotion labels and valence-arousal-dominance scores on the existing IEMOCAP corpus from transcripts plus written descriptions of acoustic cues; no audio is given to the models)"
+  },
+  {
+   "id": "2609.38897",
+   "title": "FFASR: Benchmarking Far-Field Automatic Speech Recognition using High-Fidelity Simulated RIRs",
+   "published": "2026-09-30T03:44:22Z",
+   "score": 24,
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: the subjects are not general spoken LLMs (a far-field speech recognition corpus and leaderboard that ranks transcription systems by word error rate)"
+  },
+  {
+   "id": "2609.38878",
+   "title": "Audio Token Attention Is Predictable Before the Language Model Runs",
+   "published": "2026-09-30T03:28:23Z",
+   "score": 30,
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: no benchmark proposed (an analysis of which audio tokens audio language models attend to, plus a token-pruning method, evaluated on existing transcription and multiple-choice sets; its long-recording test is an internal diagnostic, not a released evaluation set)"
+  },
+  {
+   "id": "2609.38867",
+   "title": "Talk2Agent: Benchmarking Voice Interfaces for Text Agents",
+   "published": "2026-09-30T03:19:25Z",
+   "score": 24,
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: the subjects are not general spoken LLMs (it compares speech-to-text front-ends, including audio LLMs used as transcribers, by how much of a spoken instruction survives into the text handed to a fixed text agent)"
+  },
+  {
+   "id": "2610.00353",
+   "title": "JusticeAxis: Benchmarking Legal Judgment between Rigid Rule Application and Ungrounded Discretion",
+   "published": "2026-09-30T00:17:18Z",
+   "score": 18,
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: the subjects are not general spoken LLMs (a multimodal legal-judgment benchmark and agent harness evaluated on general text and vision-language models; the paper names no model that hears the case recordings itself, and models without audio input receive a written description of them)"
+  },
+  {
+   "id": "2609.38523",
+   "title": "MM-FinEval: A Multi-Task Multimodal Benchmark for Real-World Financial Forecasting",
+   "published": "2026-09-29T20:40:42Z",
+   "score": 30,
+   "outcome": "admitted",
+   "verdict": "accepted — added to the atlas as MM-FinEval (market forecasting from earnings calls; admitted for its audio-text and any-to-any models that hear the call recording, an edge-of-scope case)",
+   "catalogue_id": "mm-fineval"
+  },
+  {
+   "id": "2609.38512",
+   "title": "VAmoS Part Deux: Harder, More Realistic Voice-Agent Simulation",
+   "published": "2026-09-29T20:33:57Z",
+   "score": 21,
+   "outcome": "admitted",
+   "verdict": "accepted — added to the atlas as VAmoS Energy (the sequel to VAmoS Bench: multi-request utility-billing calls with angry callers and background speech, graded on what voice agents say and what they change)",
+   "catalogue_id": "vamos-energy"
+  },
+  {
+   "id": "2609.38371",
+   "title": "TALK-Dem: Benchmarking Embodied Task Planning under Dementia-Associated Communication Patterns",
+   "published": "2026-09-29T18:33:21Z",
+   "score": 21,
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: the subjects are not general spoken LLMs (robot task instructions rewritten to show dementia-associated communication patterns are given as text to text-LLM planners; no audio is involved)"
+  },
   {
    "id": "2609.37818",
    "title": "Thinking in Depth, Speaking Directly: Recurrent Latent Reasoning for Paralinguistically Grounded Spoken Dialogue",
@@ -62,6 +253,15 @@
    "score": 18,
    "outcome": "not admitted",
    "verdict": "reviewed — out of scope: no benchmark proposed (a modality-swap diagnostic and a training fix for image-over-audio shortcuts in two fine-tuned omni model families)"
+  },
+  {
+   "id": "2610.00316",
+   "title": "DuplexSpeechBench-Document Grounding: Benchmarking Document Grounding and Hallucinations in Voice Agents",
+   "published": "2026-09-29T01:43:55Z",
+   "score": 54,
+   "outcome": "admitted",
+   "verdict": "accepted — added to the atlas as DSB-DG (whether voice agents answer spoken questions faithfully from supplied professional documents as context length and conversation length grow)",
+   "catalogue_id": "dsb-dg"
   },
   {
    "id": "2609.35952",
@@ -338,6 +538,15 @@
    "score": 18,
    "outcome": "not admitted",
    "verdict": "reviewed — out of scope: no benchmark proposed (an interpretability analysis of phonetic feature directions inside audio language models)"
+  },
+  {
+   "id": "2610.00272",
+   "title": "When Intent Arrives Late: A Benchmark for Full-Duplex Speech Models under Delayed Intent Revelation",
+   "published": "2026-09-24T14:05:04Z",
+   "score": 27,
+   "outcome": "admitted",
+   "verdict": "accepted — added to the atlas as LateIntent-Bench (whether full-duplex speech models start answering, and help with harmful requests, when the intent-revealing words arrive late)",
+   "catalogue_id": "lateintent-bench"
   },
   {
    "id": "2609.29798",
