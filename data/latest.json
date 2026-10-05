@@ -18,7 +18,7 @@
       "primary_category": "eess.AS",
       "url": "https://arxiv.org/abs/2610.03352",
       "score": 30,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: no benchmark proposed (method paper: fine-tunes audio LLMs with acoustic features for dysarthric speech detection)"
     },
     {
       "id": "2610.02775",
@@ -37,7 +37,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2610.02775",
       "score": 24,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: subjects are not spoken LLMs (text-only benchmark of mental-health stigma in news/social media text)"
     },
     {
       "id": "2610.03099",
@@ -54,7 +54,7 @@
       "primary_category": "cs.CV",
       "url": "https://arxiv.org/abs/2610.03099",
       "score": 21,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: subjects are not spoken LLMs (cross-video reasoning benchmark for vision-language models; speech enters only as Whisper transcripts / audio tools)"
     },
     {
       "id": "2610.03105",
@@ -71,7 +71,7 @@
       "primary_category": "cs.CV",
       "url": "https://arxiv.org/abs/2610.03105",
       "score": 21,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: subjects are not spoken LLMs (benchmark for pointing-gesture generation models)"
     },
     {
       "id": "2610.03324",
@@ -86,7 +86,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2610.03324",
       "score": 21,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: subjects are not spoken LLMs (text hate-speech moderation evaluation of decision models)"
     },
     {
       "id": "2610.02638",
@@ -105,7 +105,7 @@
       "primary_category": "cs.AI",
       "url": "https://arxiv.org/abs/2610.02638",
       "score": 18,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: no benchmark proposed (method paper: DuplexJev connector for single-token speech decisions in a frozen LLM)"
     },
     {
       "id": "2610.03125",
@@ -122,7 +122,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2610.03125",
       "score": 18,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: no benchmark proposed (representation-analysis probe of one speech LM; authors state it is not a recognition benchmark)"
     },
     {
       "id": "2610.00316",
