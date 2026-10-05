@@ -1,9 +1,129 @@
 {
-  "fetched_at": "2026-10-04T22:47:01Z",
+  "fetched_at": "2026-10-05T22:47:02Z",
   "window_days": 10,
-  "scanned": 210,
-  "flagged_today": 0,
+  "scanned": 197,
+  "flagged_today": 7,
   "candidates": [
+    {
+      "id": "2610.03352",
+      "title": "Augmenting Large Audio Language Models with Low-Level Acoustic Features for Dysarthric Speech Detection",
+      "abstract": "Automatic dysarthric speech detection approaches can support traditional clinical diagnosis, which relies on costly and time-consuming evaluation by a speech and language pathologist. Existing automatic approaches predominantly rely on deep learning (DL). More recently, Large Audio Language Models (LALMs) have emerged as a promising alternative given their strong performance across various tasks, but their application to dysarthric speech detection has not yet been established. We propose a framework that fine-tunes LALMs for dysarthric speech detection on speech recordings combined with textual information comprising low-level acoustic features and speaker demographics. Across two LALMs, our framework outperforms DL-based baselines, with Qwen2-Audio-Instruct achieving state-of-the-art performance. An ablation study shows that incorporating acoustic features and speaker demographics during fine-tuning improves LALM performance, while LALMs alone exhibit only chance-level zero-shot performance. These findings establish an effective approach for adapting LALMs to dysarthric speech detection.",
+      "published": "2026-10-02T14:18:39Z",
+      "authors": [
+        "Mahdi Amiri",
+        "Hatef Otroshi Shahreza",
+        "Pascal Frossard",
+        "Ina Kodrasi"
+      ],
+      "primary_category": "eess.AS",
+      "url": "https://arxiv.org/abs/2610.03352",
+      "score": 30,
+      "status": "new — under review"
+    },
+    {
+      "id": "2610.02775",
+      "title": "Automatic Evaluation of Mental Health Stigma in Online Communication",
+      "abstract": "Mental health stigma has profoundly harmful impacts but its complexity makes it difficult to evaluate. Stigma may involve explicit derogation, but also subtler forms of blame, fear, paternalistic pity, social distancing, structural exclusion, and discrimination. We introduce a theory-grounded benchmark for automatic evaluation of mental health stigma in online communication, consisting of naturally occurring online news and social media text annotated with a fine-grained taxonomy of stigma across multiple mental health conditions. Our annotation framework comprises a binary stigma-detection task and a multi-level taxonomy covering (i) stigma mode, (ii) domain, and (iii) specific components of certain forms of stigma. We apply this framework to texts mentioning six mental health conditions and evaluate large language models alongside stigma-related classifiers for detecting sentiment, toxicity, and hate speech. Results show that mental health stigma is not well captured by models trained to detect these neighboring constructs, and that LLMs often overpredict stigma unless given explicit operational rules - mirroring the importance of decision rules in human annotation. We release the publicly available part of benchmark, annotations, prototypical exemplars of stigma and code at: https://github.com/jemimakang/mh_stigma.",
+      "published": "2026-10-02T04:02:56Z",
+      "authors": [
+        "Naomi Baes",
+        "Jemima Kang",
+        "Nick Haslam",
+        "Chris Groot",
+        "Alsa Wu",
+        "Luc Raszewski",
+        "Yulia Otmakhova"
+      ],
+      "primary_category": "cs.CL",
+      "url": "https://arxiv.org/abs/2610.02775",
+      "score": 24,
+      "status": "new — under review"
+    },
+    {
+      "id": "2610.03099",
+      "title": "Beyond Single Videos: Benchmarking and Active Evidence Seeking for E-Commerce Cross-Video Reasoning",
+      "abstract": "E-commerce videos are information-dense and frequently compared by consumers evaluating products and merchants assessing marketing strategies. However, existing multimodal models mainly focus on single-video understanding and have limited ability to compare information across videos. We introduce AdsCVR, the first e-commerce cross-video reasoning benchmark, containing 2,483 videos and 6,110 question-answer pairs across six reasoning dimensions. Cross- video reasoning requires models to locate fine-grained evidence among many redundant frames and integrate visual details, speech, and on-screen text. We therefore propose AdSeek, an agentic framework that dynamically selects visual and audio tools during multi-turn exploration, replacing static uniform sampling with active evidence acquisition. To address the sparse credit assignment of reinforcement learning, we develop an offline trajectory rectification mechanism that identifies reasoning errors and missing multimodal evidence in RL-generated trajectories. The corrected trajectories provide supervised fine-tuning signals that reduce biases learned during RL. This mechanism supports a rectified bootstrapping pipeline in which initial RL exposes reasoning bottlenecks, supervised fine-tuning corrects them, and a final RL stage further improves the policy. AdSeek achieves 74.30 percent accuracy on the AdsCVR test split, outperforming its Qwen3-VL-8B-Instruct backbone by 27.90 percentage points. It also generalizes to the open- domain CrossVid benchmark, demonstrating effective active evidence gathering.",
+      "published": "2026-10-02T10:19:49Z",
+      "authors": [
+        "Jinghan Zhao",
+        "Yiman Hu",
+        "Liang Wu",
+        "Jian Xu",
+        "Bo Zheng"
+      ],
+      "primary_category": "cs.CV",
+      "url": "https://arxiv.org/abs/2610.03099",
+      "score": 21,
+      "status": "new — under review"
+    },
+    {
+      "id": "2610.03105",
+      "title": "A Benchmark for Spatially Grounded Gesture Generation",
+      "abstract": "Communication in shared space interweaves verbal and non-verbal signals, and pointing gestures anchor language to the environment: \"put the cup on that one\" is uninterpretable without the gesture that fixes the referent. Yet no common framework exists for evaluating whether generated gestures indicate their intended referent; distributional metrics reward a gesture aimed at the wrong object as long as it looks natural. We introduce a benchmark for spatially grounded gesture generation, comprising ~2K pointing-annotated clips from naturalistic VR dialogue with ground-truth 3D referents, a task in which systems must decide when, how and where to point within conversational speech, and a protocol that separates temporal alignment, spatial grounding and perceived naturalness. We also provide a flow-matching baseline, MM-Conv-Flow. Evaluating it alongside an independent retrieval-based system and captured human motion, we find that geometric grounding can exceed that of human pointing without any gain in perceived naturalness, showing that referential gesture quality must be measured along separate dimensions.",
+      "published": "2026-10-02T10:26:05Z",
+      "authors": [
+        "Anna Deichler",
+        "Rishabh Dabral",
+        "Fethiye Irmak Dogan",
+        "Anindita Ghosh",
+        "Jonas Beskow"
+      ],
+      "primary_category": "cs.CV",
+      "url": "https://arxiv.org/abs/2610.03105",
+      "score": 21,
+      "status": "new — under review"
+    },
+    {
+      "id": "2610.03324",
+      "title": "To Jev or Not? Evaluating the Accuracy and Efficiency of Structured Decision Models for Hate-Speech Moderation",
+      "abstract": "The scale of online content makes hate-speech moderation challenging, while Large Language Models (LLMs) enable harmful material to be produced and adapted more easily. Moderation therefore requires efficient classifiers that can accommodate different definitions of hate speech. Recent structured decision models accept natural-language criteria and select among specified answers, raising the question of whether they can meet these requirements without task-specific training. We present HATEDECIDE, an evaluation of six decision-model configurations on four hate-speech datasets against specialized moderation, zero-shot, commercial, and supervised baselines. We examine whether supplying a dataset's definition, or decomposing it into multiple questions, improves classification, and we measure their latency and cost. We find that commercial LLMs significantly outperform all decision models on only one dataset. Supplying definitions changes up to 28\\% of predictions without consistently improving classification, and decomposition significantly improves performance in only 20\\% of the comparisons. On a diagnostic set of test cases, the best hosted decision model comes within 1.6 macro-F1 points of the best commercial LLM at approximately 97\\% lower inference cost. These results identify opportunities for inexpensive moderation, while showing that explicit criteria and additional questions do not reliably improve classification.",
+      "published": "2026-10-02T13:59:21Z",
+      "authors": [
+        "Demetris Paschalides",
+        "George Pallis",
+        "Marios D. Dikaiakos"
+      ],
+      "primary_category": "cs.CL",
+      "url": "https://arxiv.org/abs/2610.03324",
+      "score": 21,
+      "status": "new — under review"
+    },
+    {
+      "id": "2610.02638",
+      "title": "Batched Speech Decisions Without Decoding: Single-Token Supervision Lets a Frozen LLM Hear Beyond the Transcript",
+      "abstract": "Full-duplex voice agents make many small, closed decisions, which current systems answer by slow autoregressive decoding. We propose DuplexJev, which feeds ASR-encoder hidden states through a small connector into a frozen LLM and reads each question as a single-token distribution over its options. Nothing is decoded, and an 8-GPU node answers 80 decisions about eight utterances in about 0.1 s. With a last-layer connector, spoken QA stays close to reading the transcript (90% vs. 91%). DuplexJev also hears the speaker: gender and emotion accuracy both reach 90% (from 55% and 28%) with a cross-attention connector, whose spoken QA drops by only 1 point (83% to 82%). We train decisions with cross-entropy on the read-out answer token, instead of the usual transcript distillation, whose teacher never hears the voice, and keep distillation for content. Encoders and LLMs are interchangeable; we release weights, training recipe, a batched-inference pipeline for full-duplex serving and a bilingual spoken-QA set.",
+      "published": "2026-10-02T00:54:52Z",
+      "authors": [
+        "Jie Jin",
+        "Ziyin Ma",
+        "Min Yin",
+        "Jinyu Chen",
+        "Haigang Song",
+        "Zhikun Pang",
+        "Xiaowen Zhang"
+      ],
+      "primary_category": "cs.AI",
+      "url": "https://arxiv.org/abs/2610.02638",
+      "score": 18,
+      "status": "new — under review"
+    },
+    {
+      "id": "2610.03125",
+      "title": "ParaGeo: Decomposing Paralinguistic Variation into a Shared Latent Geometry",
+      "abstract": "Speech delivery varies with both the requested paralinguistic attribute and the linguistic content. We introduce ParaGeo, a matched-content decomposition of paralinguistic variation in a frozen speech language model. Synthesized audio tokens are replayed with a fixed listening prompt; pooled key/value (K/V) representations are centered and projected into a shared low-dimensional space. Our GLM-4-Voice probe spans 80 requested controls from 12 benchmark families across eight sentences. With a globally fitted calibration basis, content-held-out centroid accuracy using this basis is 9.49% versus a 1.25% permutation baseline; same-label cross-content cosine similarity is 0.285 versus 0.017, and both conditional permutation tests yield p = 0.001. A separate ten-scenario, six-style probe reveals reproducible contrast directions across scenarios. Static, additive, and temporal interventions produce attribute-, layer-, and schedule-dependent response profiles. These results provide a shared coordinate representation for measuring paralinguistic structure and an empirical starting point for latent speech control. Code is available at https://github.com/yuhanlydia/ParaGeo.",
+      "published": "2026-10-02T10:46:16Z",
+      "authors": [
+        "Yuhan Liu",
+        "Yuxuan Ou",
+        "Ruoxi Su",
+        "Mohamed Ahmed Zaki",
+        "Yunbo Long"
+      ],
+      "primary_category": "cs.SD",
+      "url": "https://arxiv.org/abs/2610.03125",
+      "score": 18,
+      "status": "new — under review"
+    },
     {
       "id": "2610.00316",
       "title": "DuplexSpeechBench-Document Grounding: Benchmarking Document Grounding and Hallucinations in Voice Agents",
@@ -930,121 +1050,6 @@
       "url": "https://arxiv.org/abs/2609.35345",
       "score": 21,
       "status": "accepted — added to the atlas as Sounding Actions (inferring everyday activities from sequences of sounds, for general audio-language models)"
-    },
-    {
-      "id": "2609.37710",
-      "title": "Do Music Generative Models Understand Musical Qualities? Automatic Music Evaluation with Model-Intrinsic Signals",
-      "abstract": "Current music generative models can produce high-quality music, but does this ability imply that they ``understand'' the musical qualities of their outputs, and is that understanding aligned with human evaluation? Previous attempts to use the likelihood of a generative model to evaluate music, an approach commonly used in text, have proven unsuccessful, leading researchers to rely on standalone supervised music evaluation models. In this paper, we answer this question affirmatively: we show that a model's intrinsic signals---derived from its hidden representations and predictions---are strongly correlated with human ratings. In particular, we study MusicGen and consider three types of features: (1) prediction loss, (2) prediction entropy, and (3) concepts extracted from the model using a sparse autoencoder (SAE). Using these features, we train a lightweight prediction model to estimate subjective ratings. We evaluate these features both individually and in combination. We hypothesize that these signals parallel the listening process: the temporal and frequency-domain structure of loss and entropy reflects listeners' expectation and surprise, while gradient directions in SAE latent space predict perceived quality. Experiments on five human-evaluation benchmarks spanning continuous ratings and pairwise preferences confirm this hypothesis, with SAE latents carrying most of the predictive signal.",
-      "published": "2026-09-29T14:41:32Z",
-      "authors": [
-        "Xiaosha Li",
-        "Chun Liu",
-        "Ziyu Wang"
-      ],
-      "primary_category": "cs.SD",
-      "url": "https://arxiv.org/abs/2609.37710",
-      "score": 21,
-      "status": "reviewed — out of scope: the subjects are not general spoken LLMs (it predicts human ratings of generated music from a music generator's internal signals)"
-    },
-    {
-      "id": "2609.31719",
-      "title": "Distributional Metrics for Evaluating Spoken Conversational Systems",
-      "abstract": "Evaluating conversational systems is a difficult and unresolved problem. We introduce the Conversational Distribution Score (CDS), which compares distributions of conversational behaviour using human conversations as a reference. CDS describes speech rate, syllabic rhythm, and turn interaction through eight interpretable features plus a separate two-feature semantic baseline. We compare conversations with two reference scales: one based on conversational success within human dialogue and another contrasting human and synthetic dialogue. Using listener judgments from out-of-domain goal--oriented dialogues, we examine system ranking, preferences between conversations, and ranking stability. Composite CDS recovers five of six listener system comparisons while individual features show strong correlation with listener preferences between conversations. We examine how many minutes and conversations are required before rankings stabilize. These findings support distributional comparisons as a complement to specific interactional metrics to evaluate conversations and conversational models while showing their interpretable value.",
-      "published": "2026-09-21T16:45:35Z",
-      "authors": [
-        "Shree Harsha Bokkahalli Satish",
-        "Erica Cooper",
-        "Patrícia Schmidtová",
-        "Maike Züfle",
-        "Éva Székely",
-        "Nicholas Sanders",
-        "Ondřej Klejch"
-      ],
-      "primary_category": "eess.AS",
-      "url": "https://arxiv.org/abs/2609.31719",
-      "score": 18,
-      "status": "reviewed — out of scope: no benchmark proposed (a distributional metric for spoken conversational systems, validated on a third party's listener-judged conversations; it releases no evaluation set of its own)"
-    },
-    {
-      "id": "2609.32522",
-      "title": "Beyond Dyadic Memory: Interaction-Aware Multimodal Memory with Adaptive Agentic Retrieval for Multi-Party Spoken Conversations",
-      "abstract": "Long-term memory enables agents to accumulate information and reason across sessions, yet existing research primarily focuses on dyadic text or image-text conversations, leaving long-term memory for multi-party spoken conversations underexplored. This setting requires preserving conversational content, identifying participants across sessions, and retaining who speaks to whom. To this end, we propose VoxPolyMem, an interaction-aware multimodal memory framework combining incremental speaker identification with a memory hierarchy comprising interaction memory, fact memory, and participant profiles. We formulate retrieval as sequential decision-making, where an agent rewrites queries and selects retrieval tools and memory layers based on accumulated evidence to address information gaps. We further introduce Evidence-Gain GRPO (EG-GRPO), which uses round-wise credit assignment to encourage complementary evidence acquisition. We also construct VoxPolyBench to evaluate memory evolution, personalized answering, memory retrieval and reasoning, and interaction reasoning and attribution in multi-party spoken conversations. VoxPolyMem achieves an overall score of 85.0 on VoxPolyBench, surpassing the strongest evaluated baseline by 23.6 points. On Mem-Gallery and H2HMem-Multi, it scores 89.6 and 74.4, respectively, exceeding the strongest evaluated public memory baselines by over 8 points each. These results highlight its potential for persistent, personalized assistance in multi-party multimodal interactions. Code and datasets are available at https://voxpolymem.github.io/VoxPolyBench/demo/",
-      "published": "2026-09-26T12:04:49Z",
-      "authors": [
-        "Wenxu Jia",
-        "Xize Cheng",
-        "Zihan Zhang",
-        "Dongjie Fu",
-        "Linjun Li",
-        "Wenshi Chen",
-        "Yangyang Wu",
-        "Tao Jin"
-      ],
-      "primary_category": "cs.AI",
-      "url": "https://arxiv.org/abs/2609.32522",
-      "score": 18,
-      "status": "reviewed — out of scope: the subjects are not general spoken LLMs (its benchmark compares memory frameworks that all read speech-recognition transcripts and answer with one text model)"
-    },
-    {
-      "id": "2609.33443",
-      "title": "Context Spanning: A Communication Framework for Full-Duplex Speech Models and External LLM Backends",
-      "abstract": "Full-duplex spoken dialogue models can listen and speak simultaneously like the real-time dynamics of human conversation. For natural dialogue, the ability to search for external information in real-time is also an important capability. Many models remain trapped in parametric knowledge, leaving them unable to access real-time information and tool execution. Furthermore, even when Large Language Models (LLM) retrieve information, many duplex speech models process it within a compressed latent space rather than in its raw text form, which can lead to information loss from compression. To address this issue, we propose Context Spanning, a framework for information injection between a full-duplex speech model and an external LLM backend via real-time chunked prefill. The injected frame is encoded in a single forward pass inside the real-time frame budget. It feeds the retrieved information to the speech model as-is, enabling it to reason over the information independently and generate responses. With this approach, our model achieves high performance on Full-Duplex benchmarks and strong results on Question Answering tasks, demonstrating its conversation potential. Context Spanning shows that external information can be injected directly into a duplex speech model, introducing a new simple and powerful mechanism for duplex systems.",
-      "published": "2026-09-27T10:48:21Z",
-      "authors": [
-        "Seonghyeon Go",
-        "Yongwoo Kim",
-        "Hyeonjin Cha",
-        "Jaeho Shin"
-      ],
-      "primary_category": "cs.CL",
-      "url": "https://arxiv.org/abs/2609.33443",
-      "score": 18,
-      "status": "reviewed — out of scope: no benchmark proposed (a method for injecting retrieved text into a full-duplex speech model, evaluated on existing benchmarks)"
-    },
-    {
-      "id": "2609.34806",
-      "title": "On Temporal Binding in Large Audio Language Models",
-      "abstract": "Reasoning about temporal structure of audio recordings requires Large Audio Language Models (LALMs) to associate sound events with their temporal position. Understanding the underlying mechanisms is a first step toward diagnosing failures and identifying model components that may need improvement. Using mechanistic interpretability, we investigate how temporal information is represented and bound to sound events in three open-source LALMs. We find that across all three, event-specific location becomes concentrated in event name representations at intermediate modality integration layers. These representations encode coarse event position along a low-dimensional, curved relative time trajectory. Steering event name representations along this trajectory systematically shifts before/after beliefs, providing evidence that these representations contribute to coarse temporal reasoning. In contrast, the same interventions do not reliably shift predicted onset timestamps, suggesting that coarse temporal reasoning and precise metric event localization rely on distinct mechanisms.",
-      "published": "2026-09-28T10:10:19Z",
-      "authors": [
-        "Paul Primus",
-        "Gerhard Widmer"
-      ],
-      "primary_category": "cs.SD",
-      "url": "https://arxiv.org/abs/2609.34806",
-      "score": 18,
-      "status": "reviewed — out of scope: no benchmark proposed (a mechanistic-interpretability study of how three audio language models represent event timing)"
-    },
-    {
-      "id": "2609.36798",
-      "title": "Seeing What Should Be Heard: Diagnosing and Repairing Cross-Modal Shortcuts in Omni-Modal LLMs",
-      "abstract": "Omni-modal large language models (LLMs) are expected to answer a question using the modality it explicitly refers to. However, existing training paradigms rarely verify whether models actually follow this modality, because multimodal inputs from the same sample often provide redundant evidence for the same answer. In this work, we uncover a pervasive cross-modal shortcut in omni-modal LLMs: when asked an audio-related question, models rely on the image as much as on the audio, and sometimes even more. To systematically diagnose this behavior, we introduce the Factorized Modality Diagnostic, which independently swaps audio and images between samples to isolate each modality's causal contribution. Across two model families in different settings, we find that this shortcut persists throughout supervised fine-tuning and reinforcement learning post-training, while judge-based RL may further amplify such reliance on irrelevant visual information. Based on this finding, we propose DMC-Repair, which trains models on the same kind of cross-modal swapped samples while assigning supervision according to the modality specified by the question. This prevents models from exploiting the spurious correspondence between modalities within the same clip. Experiments demonstrate that DMC-Repair reduces the image-induced share of the answer effect by 59.9%, effectively suppressing the cross-modal shortcut without compromising audio-question answering performance. The reduction in shortcut reliance generalizes across two model families and zero-shot to an unseen dataset and an unseen benchmark, and persists through subsequent post-training. Code is available at https://anonymous.4open.science/r/DMC-Repair.",
-      "published": "2026-09-29T06:12:42Z",
-      "authors": [
-        "Yueran Ma",
-        "Ronghao Lin"
-      ],
-      "primary_category": "cs.CV",
-      "url": "https://arxiv.org/abs/2609.36798",
-      "score": 18,
-      "status": "reviewed — out of scope: no benchmark proposed (a modality-swap diagnostic and a training fix for image-over-audio shortcuts in two fine-tuned omni model families)"
-    },
-    {
-      "id": "2609.36920",
-      "title": "Benchmarking Automatic Speech Recognition Tools for Iberian Languages",
-      "abstract": "Comprehensive evaluations of automatic speech recognition (ASR) for Iberian languages remain limited, and low-resource languages, biases, and efficiency trade-offs are underexplored. We benchmark eleven systems, ten open-weight models and one commercial API, across five Iberian languages (Basque, Catalan, Galician, Portuguese, Spanish), with German and Turkish as controls. Evaluation uses an 85-hour dataset covering read speech, broadcast media, and audiobooks, assessing accuracy and efficiency via word error rate (WER) and real-time factors (RTF/RTFx). Results show no single model dominates: accuracy, efficiency, and language coverage present clear trade-offs. Low-resource languages, especially Basque, degrade significantly, highlighting the role of training coverage. We observe consistent sex disparities across most systems, highlighting fairness challenges in multilingual ASR. Overall, the benchmark provides practical guidance for real-world model selection.",
-      "published": "2026-09-29T07:39:56Z",
-      "authors": [
-        "Fernando López",
-        "Pablo Gómez",
-        "David Solans",
-        "Paulo Villegas",
-        "Jordi Luque"
-      ],
-      "primary_category": "cs.CL",
-      "url": "https://arxiv.org/abs/2609.36920",
-      "score": 18,
-      "status": "reviewed — out of scope: the subjects are not general spoken LLMs (it compares eleven systems as speech recognisers on Iberian languages by WER and speed)"
     }
   ],
   "warnings": []

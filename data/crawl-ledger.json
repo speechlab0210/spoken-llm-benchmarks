@@ -1,9 +1,58 @@
 {
  "since": "2026-08-22",
  "what": "Every arXiv paper the daily crawl has flagged since launch (score at or above the threshold, not previously seen), with the reviewer's verdict as written in the feed and whether the paper entered the catalogue. \"published\" is the paper's arXiv date. See the Method section of the site.",
- "flagged": 208,
+ "flagged": 215,
  "admitted": 64,
  "entries": [
+  {
+   "id": "2610.03352",
+   "title": "Augmenting Large Audio Language Models with Low-Level Acoustic Features for Dysarthric Speech Detection",
+   "published": "2026-10-02T14:18:39Z",
+   "score": 30,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.03324",
+   "title": "To Jev or Not? Evaluating the Accuracy and Efficiency of Structured Decision Models for Hate-Speech Moderation",
+   "published": "2026-10-02T13:59:21Z",
+   "score": 21,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.03125",
+   "title": "ParaGeo: Decomposing Paralinguistic Variation into a Shared Latent Geometry",
+   "published": "2026-10-02T10:46:16Z",
+   "score": 18,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.03105",
+   "title": "A Benchmark for Spatially Grounded Gesture Generation",
+   "published": "2026-10-02T10:26:05Z",
+   "score": 21,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.03099",
+   "title": "Beyond Single Videos: Benchmarking and Active Evidence Seeking for E-Commerce Cross-Video Reasoning",
+   "published": "2026-10-02T10:19:49Z",
+   "score": 21,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.02775",
+   "title": "Automatic Evaluation of Mental Health Stigma in Online Communication",
+   "published": "2026-10-02T04:02:56Z",
+   "score": 24,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.02638",
+   "title": "Batched Speech Decisions Without Decoding: Single-Token Supervision Lets a Frozen LLM Hear Beyond the Transcript",
+   "published": "2026-10-02T00:54:52Z",
+   "score": 18,
+   "outcome": "under review"
+  },
   {
    "id": "2610.02148",
    "title": "Omni-Embed-Mini: Binding Modalities Without Forgetting via Dense Distillation",
