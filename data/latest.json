@@ -22,7 +22,7 @@
       "primary_category": "cs.AI",
       "url": "https://arxiv.org/abs/2610.05398",
       "score": 36,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: the evaluation target is autonomous post-training research agents, not spoken-language behavior (audio outcomes reuse existing MMAU and MMAR benchmarks)"
     },
     {
       "id": "2610.06057",
@@ -37,7 +37,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2610.06057",
       "score": 36,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: subjects are not general spoken LLMs (a Turkish speech-synthesis benchmark of dedicated TTS and voice-cloning systems)"
     },
     {
       "id": "2610.04004",
@@ -52,7 +52,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2610.04004",
       "score": 33,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: no benchmark proposed (an audio-grounded preference-training method evaluated on the existing DCASE 2025 and AH Existence datasets)"
     },
     {
       "id": "2610.06013",
@@ -66,7 +66,7 @@
       "primary_category": "eess.AS",
       "url": "https://arxiv.org/abs/2610.06013",
       "score": 31,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: subjects are not full general spoken LLMs (character-verification encoders; the omni-model baseline uses only its mean-pooled audio tower as embeddings)"
     },
     {
       "id": "2610.03352",

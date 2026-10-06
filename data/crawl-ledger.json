@@ -9,28 +9,32 @@
    "title": "A Comprehensive Objective Evaluation of Modern Text-to-Speech for Turkish Using Speech Quality Assessment Models",
    "published": "2026-10-05T09:50:23Z",
    "score": 36,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: subjects are not general spoken LLMs (a Turkish speech-synthesis benchmark of dedicated TTS and voice-cloning systems)"
   },
   {
    "id": "2610.06013",
    "title": "Character Identity is not Speaker Identity: KyaraBench and KyaraEmbed for Character Verification",
    "published": "2026-10-05T09:12:20Z",
    "score": 31,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: subjects are not full general spoken LLMs (character-verification encoders; the omni-model baseline uses only its mean-pooled audio tower as embeddings)"
   },
   {
    "id": "2610.05398",
    "title": "MMPostTrainBench: Benchmarking Autonomous Research for Multimodal Post-Training",
    "published": "2026-10-04T17:32:58Z",
    "score": 36,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: the evaluation target is autonomous post-training research agents, not spoken-language behavior (audio outcomes reuse existing MMAU and MMAR benchmarks)"
   },
   {
    "id": "2610.04004",
    "title": "Hallucination Reduction for LLM-Based Audio Understanding via Multimodal Direct Preference Optimization",
    "published": "2026-10-02T20:08:25Z",
    "score": 33,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: no benchmark proposed (an audio-grounded preference-training method evaluated on the existing DCASE 2025 and AH Existence datasets)"
   },
   {
    "id": "2610.03352",
