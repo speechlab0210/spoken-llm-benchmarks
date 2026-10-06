@@ -1,9 +1,73 @@
 {
-  "fetched_at": "2026-10-05T22:47:02Z",
+  "fetched_at": "2026-10-06T22:34:09Z",
   "window_days": 10,
-  "scanned": 197,
-  "flagged_today": 7,
+  "scanned": 223,
+  "flagged_today": 4,
   "candidates": [
+    {
+      "id": "2610.05398",
+      "title": "MMPostTrainBench: Benchmarking Autonomous Research for Multimodal Post-Training",
+      "abstract": "Autonomous research seeks sustained model improvements through iterative experimentation and feedback. LLM agents show promise in automating machine learning and language-model post-training, but their ability to sustain multimodal improvement remains unclear. We introduce MMPostTrainBench, a benchmark spanning eight tasks in image, audio, video, and joint audio-video understanding and image-grounded software repair. Agents operate from a common base model within fixed budgets, using development feedback before independent evaluation of their submitted models. Evaluation covers target and non-target model outcomes, iterative model improvement and selection, and research integrity. Across all eight tasks, 52.1% of model--task means fall below the base, and evaluated submissions also exhibit non-target regressions. Model performance does not consistently improve across research iterations, and agents do not reliably select the best evaluated candidate for submission; final submissions trail that candidate by up to 5.38 percentage points. Extending autonomous research from text-only to multimodal tasks introduces additional sources of error in perception, cross-modal alignment, and temporal grounding. The observed regressions and selection gaps highlight the need to balance targeted improvements with non-target capability preservation and to retain gains across research iterations. These requirements motivate MMResearch, a multimodal research framework that connects media-grounded evidence to hypotheses and interventions, carries findings across rounds through hierarchical memory, and retains candidates using development evaluation. Added to existing code-agent runtimes, it improves submitted-model accuracy by up to 7.75 percentage points for Claude Opus 4.8 with Claude Code and 2.33 points for GPT-5.6-sol with Codex.",
+      "published": "2026-10-04T17:32:58Z",
+      "authors": [
+        "Yuxin Liu",
+        "Yuxuan Wang",
+        "Zhenxin Lei",
+        "Lingchen Meng",
+        "Yuchong Sun",
+        "Junming Lin",
+        "Hongcheng Liu",
+        "Yunfei Chu"
+      ],
+      "primary_category": "cs.AI",
+      "url": "https://arxiv.org/abs/2610.05398",
+      "score": 36,
+      "status": "new — under review"
+    },
+    {
+      "id": "2610.06057",
+      "title": "A Comprehensive Objective Evaluation of Modern Text-to-Speech for Turkish Using Speech Quality Assessment Models",
+      "abstract": "Modern text-to-speech (TTS) systems can clone a target speaker from a short reference clip or be fine-tuned on a target voice, yet their behaviour on morphologically rich, lower-resource languages such as Turkish remain under-characterised. We present a systematic benchmark of four contemporary systems (Chatterbox, CosyVoice, OmniVoice, and VoxCPM2) evaluated across fine-tuned and zero-shot configurations, contrasted with a conventional VITS baseline and anchored to natural gold speech. Each configuration is scored with eighteen complementary objective metrics spanning learned naturalness predictors (UTMOS v2, DNSMOS-Pro, SCOREQ, WhisQA, AudioBox-PQ, NatScore, SpeechLMScore), intelligibility and signal-quality estimators (SQUIM PESQ/SI-SDR/STOI, Brouhaha), speaker similarity, distributional fidelity (TTSDS) and low-level acoustic descriptors. We further analyse how quality varies with utterance length and quantify long-form temporal consistency through speaker-identity and naturalness drift over chunked utterances. We release our evaluation code to support reproducible TTS evaluation.",
+      "published": "2026-10-05T09:50:23Z",
+      "authors": [
+        "Yunus Emre Ozkose",
+        "Alperen Kahraman",
+        "Ali Haznedaroglu"
+      ],
+      "primary_category": "cs.SD",
+      "url": "https://arxiv.org/abs/2610.06057",
+      "score": 36,
+      "status": "new — under review"
+    },
+    {
+      "id": "2610.04004",
+      "title": "Hallucination Reduction for LLM-Based Audio Understanding via Multimodal Direct Preference Optimization",
+      "abstract": "Large Audio Language Models (LALMs) are prone to hallucinating and over-relying on text priors when simultaneously presented with audio and text inputs. To mitigate these hallucinations, we propose utilizing the multimodal Direct Preference Optimization (mDPO) objective, which forces the model to ground its generation in the acoustic input by contrasting intact and distorted audio counterparts. We extend this preference learning framework to the audio domain by applying a variety of acoustic perturbations. Evaluating the Qwen2-Audio backbone across the DCASE 2025 Challenge and AH Existence datasets, we demonstrate that extending mDPO to LALMs significantly enhances temporal reasoning in the complex DCASE dataset, and improves performance on basic existence verification in the AH benchmark. We identify temporal reversal, frequency masking, and random noise as the most effective perturbations. Ultimately, our approach achieves an absolute accuracy improvement of 14.0% on the DCASE 2025 dataset and 27.4% on AH Existence.",
+      "published": "2026-10-02T20:08:25Z",
+      "authors": [
+        "Bebe Cosgrove",
+        "Aaron Isidore Grace",
+        "Weiran Wang"
+      ],
+      "primary_category": "cs.SD",
+      "url": "https://arxiv.org/abs/2610.04004",
+      "score": 33,
+      "status": "new — under review"
+    },
+    {
+      "id": "2610.06013",
+      "title": "Character Identity is not Speaker Identity: KyaraBench and KyaraEmbed for Character Verification",
+      "abstract": "A dubbed character keeps its identity while the voice actor changes, so character identity and speaker identity are distinct properties of one recording, yet speaker verification measures only the latter. To address this gap, we propose KyaraBench, a benchmark that scores character voice directly instead of speaker voice, built from 85 human-audited identities in a dubbed anime corpus. It poses two challenging conditions: one that swaps the performer under a fixed character, and one that fixes the performer under changing characters. Listening studies with 78 participants provide human reference scores for cross-performer verification and same-actor discrimination. Speaker-verification baselines show increased errors under these character-specific conditions. We then train KyaraEmbed, a compact encoder using multilingual character supervision, same-actor negatives, and a language-alignment term. The model achieves the best performance on all character-specific conditions in the main comparison. We release the benchmark, protocol, and encoder publicly.",
+      "published": "2026-10-05T09:12:20Z",
+      "authors": [
+        "Joonyong Park",
+        "Jerry Li"
+      ],
+      "primary_category": "eess.AS",
+      "url": "https://arxiv.org/abs/2610.06013",
+      "score": 31,
+      "status": "new — under review"
+    },
     {
       "id": "2610.03352",
       "title": "Augmenting Large Audio Language Models with Low-Level Acoustic Features for Dysarthric Speech Detection",
@@ -979,77 +1043,6 @@
       "url": "https://arxiv.org/abs/2609.32224",
       "score": 21,
       "status": "reviewed — out of scope: no benchmark proposed (a zero-shot audio-visual navigation pipeline built on omni models, evaluated on existing navigation benchmarks)"
-    },
-    {
-      "id": "2609.33204",
-      "title": "Turning Speech Language Models into Multilingual Listeners",
-      "abstract": "Speech Language Models (SLMs) that understand spoken language questions support only a few high-resource languages, limiting access to millions of people worldwide. This gap stems from the scarcity of multilingual speech instruction-tuning datasets. We present MULTISPEECHQA, a large-scale, synthetically generated and human-verified dataset comprising 9200 hours of 10.8 million spoken question-answer pairs in 23 typologically diverse languages. Using MULTISPEECHQA, we also introduce MULTISPEECH-BENCH, a multi-task benchmark for evaluating SLM performance on 23 languages. We compare the performance of a cascading system to open-weight and closed SLMs on MULTISPEECH-BENCH and find that the cascading system outperforms open-weight SLMs but not all closed SLMs. We use MULTISPEECHQA to finetune Qwen 2.5-Omni, which improves its performance on our benchmark. Our findings show that high-quality synthetic datasets offer a cheap solution to improving the multilingual capabilities of SLMs.",
-      "published": "2026-09-27T04:43:24Z",
-      "authors": [
-        "Tolúlopé Ògúnrèmí",
-        "Dan Jurafsky",
-        "Chris Manning",
-        "Ahmet Üstün",
-        "Martijn Bartelds"
-      ],
-      "primary_category": "cs.CL",
-      "url": "https://arxiv.org/abs/2609.33204",
-      "score": 21,
-      "status": "accepted — added to the atlas as MultiSpeech-Bench (spoken QA, speech translation and recognition for speech language models in 23 languages; the paper also releases a training corpus)"
-    },
-    {
-      "id": "2609.33433",
-      "title": "CORA: A Protocol for Diagnosing Boundary Robustness in Text-to-Audio Retrieval under Query Reformulations",
-      "abstract": "Text-to-Audio (T2A) retrievers are typically evaluated with caption style queries, but the same user intent can be expressed in many forms. We introduce CORA (Caption-Offset Retrieval for Audio), a caption anchored diagnostic protocol that rewrites each source caption into five intent preserving forms (Command, Question, Indirect, Key phrase, and Statement) while fixing the target audio. By tracking the same target across query forms, CORA defines RankDrop, a metric revealing failures hidden by Recall@k. Using Pearson's correlation coefficient r, we find that RankDrop is weakly associated with raw text space movement (r=0.084), but strongly associated with Target Alignment Loss and Target Boundary Margin Degradation (r=0.508 and r=0.615). The same pattern appears in OEA retrievers, where RankDrop is better explained by boundary degradation (r=0.472/0.478) than by query movement (r=0.084/0.046). Overall, these results suggest that robust T2A retrieval requires preserving the target's boundary advantage over competing audio under reformulation.",
-      "published": "2026-09-27T10:37:39Z",
-      "authors": [
-        "Jae Min Woo",
-        "Kyongmin Kong",
-        "Bogyung Jeong",
-        "Minjeong Kim",
-        "HaeJun Yoo",
-        "Du-Seong Chang"
-      ],
-      "primary_category": "cs.SD",
-      "url": "https://arxiv.org/abs/2609.33433",
-      "score": 21,
-      "status": "reviewed — out of scope: the subjects are not general spoken LLMs (a robustness protocol for text-to-audio retrieval models)"
-    },
-    {
-      "id": "2609.34407",
-      "title": "Beyond Textual Chain-of-Thought: JEPA-Conditioned Latent Reasoning for Large Audio Language Models",
-      "abstract": "Explicit textual Chain-of-Thought (CoT) has improved the reasoning ability of large audio language models (LALMs). However, textual CoTs are often constructed from text captions of audio and provide limited access to the acoustic evidence, which can introduce problems like hallucination. To address this modality-gap issue, we introduce JELAR, a Joint-Embedding Predictive Architecture (JEPA)-based latent reasoning framework that conditions latent reasoning supervision on acoustic representations learned from raw waveforms. During training, a frozen WavJEPA model provides representations learned directly from raw waveforms. A non-causal expert first constructs answer-aware queries, which cross-attend to WavJEPA embeddings to produce latent reasoning targets. The LALM is trained to predict these targets before generating its response. Experimental results show that JELAR improves the Audio-Reasoner baseline by 2.70 and 9.10 absolute percentage points on MMAU-mini and MMAR, respectively, demonstrating the effectiveness of JEPA-conditioned latent reasoning as an alternative to explicit textual CoT supervision.",
-      "published": "2026-09-28T06:19:44Z",
-      "authors": [
-        "Donghang Wu",
-        "Haoyang Zhang",
-        "Yizhou Peng",
-        "Shreyas Gopal",
-        "Yi-Wen Chao",
-        "Chen Chen",
-        "Hexin Liu",
-        "William Tjhi"
-      ],
-      "primary_category": "eess.AS",
-      "url": "https://arxiv.org/abs/2609.34407",
-      "score": 21,
-      "status": "reviewed — out of scope: no benchmark proposed (a latent-reasoning training framework for audio language models, evaluated on existing benchmarks)"
-    },
-    {
-      "id": "2609.35345",
-      "title": "Probing Large Audio-Language Models for Compositional Understanding of Sounding Actions",
-      "abstract": "Large audio-language models (LALMs) excel at understanding and reasoning tasks over atomic sound events, yet their ability to infer higher-level human activities from such fine-grained events remains largely unexamined. Everyday human actions and activities, such as setting a table, cleaning the house, or preparing a breakfast emerge compositionally from temporally distributed sound events, requiring abstraction beyond the event-centric granularity that dominates current training and evaluation paradigms. Our benchmark evaluates a wide set of LALMs under a principled framework that tests how language-based reasoning, grounded in acoustic perception, structures sound abstractions into higher-level understanding. By systematically varying exemplar typicality and distractor similarity, our evaluation exposes \\added{that current models do not reliably perform compositional inference from atomic acoustic events to higher-level human activities solely from audio.} All data, taxonomies, and evaluation scripts are publicly available on our companion website: https://alm-sounding-actions.onrender.com/",
-      "published": "2026-09-28T15:00:56Z",
-      "authors": [
-        "Michel Olvera",
-        "Paraskevas Stamatiadis",
-        "Changhong Wang",
-        "Ga{ë}l Richard"
-      ],
-      "primary_category": "cs.SD",
-      "url": "https://arxiv.org/abs/2609.35345",
-      "score": 21,
-      "status": "accepted — added to the atlas as Sounding Actions (inferring everyday activities from sequences of sounds, for general audio-language models)"
     }
   ],
   "warnings": []
