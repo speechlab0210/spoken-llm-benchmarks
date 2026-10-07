@@ -11694,6 +11694,72 @@
         "English"
       ],
       "note": "Admitted as an edge-of-scope case: audio is one of three modalities, it always arrives together with the full transcript, and only four of the nineteen models hear it. The paper's conclusion that audio adds signal compares different model families and includes no same-model run with and without audio, and it does not say how hour-long recordings are fitted into the models' input. The model table records Table 2 (MAE and DA averaged over 2019-2022, all twelve labels) for the three audio-receiving models in the index: Voxtral 24B (Voxtral-Small), MOSS-Audio 8B and Gemma 4 E4B; Gemma 4 E2B is not in the index, and Gemma 3n is run in the vision-language group without audio, so it is not recorded. Pearson correlations are printed as figures only."
+    },
+    {
+      "id": "dyafdb",
+      "name": "DyaFDB",
+      "aka": [],
+      "full_title": "Conversation Is a Two-Body Problem: Dyadic Evaluation of Full-Duplex Dialogue Models",
+      "arxiv_id": "2610.08125",
+      "arxiv_date": "2026-10",
+      "arxiv_date_full": "2026-10-06",
+      "url": "https://dyafdb.github.io/",
+      "code": "https://github.com/sungnyun/dyafdb",
+      "data": "https://dyafdb.github.io/scenarios/",
+      "summary": "A dyadic evaluation framework in which two full-duplex spoken dialogue models converse directly, and both participants are scored. Unlike a fixed recording or a scripted examiner, each partner can react and pursue its own cooperative or conflicting goal. Four tasks cover role adherence, pooling separately held information, competition for the speaking channel, and conflicting preferences or secret extraction. Seven task archetypes contain 20 scenarios each. PersonaPlex, MiniCPM-o 4.5 and Raon-SpeechChat are evaluated in six self-play and cross-play pairings, with roles and speaking order counterbalanced. A bridge exchanges audio on a shared 80 ms clock; MiniCPM-o retains its coarser native chunking through a buffer. Mechanical audio measurements and an external transcript judge score the resulting conversations. Scores depend on the partner and assigned role, so the framework reports pairwise outcomes rather than a single partner-independent ranking.",
+      "categories": [
+        "interactivity",
+        "dialogue",
+        "voice-agent"
+      ],
+      "tasks": [
+        "maintaining an assigned role with an engaging or digressing partner",
+        "combining information held by two participants to make a joint choice",
+        "controlling or yielding the speaking channel",
+        "negotiating conflicting preferences and extracting or defending a secret"
+      ],
+      "io": "two concurrently listening and speaking models exchange live audio under separate role prompts; both sides are scored after the conversation",
+      "size": "140 scenarios across 7 archetypes and 4 tasks; 7,560 conversations of 60 seconds (126 hours), with 3 repetitions and counterbalanced roles and speaking order",
+      "metrics": [
+        "role-adherence score (0-1)",
+        "team solved rate (0-1)",
+        "presser channel occupancy (0-1)",
+        "preference success rate (0-1)",
+        "attacker secret-extraction success rate (0-1)",
+        "turn-taking, overlap and timing measures"
+      ],
+      "note": "The model table records 54 cells from Tables 3-5 of arXiv v1 for PersonaPlex and MiniCPM-o 4.5. Every metric retains the partner model or the paper-reported average; information-pooling scores belong to the pair. The two competing self-play occupancies pinned to 0.50 by construction are omitted, as are the bottom-row avoider/defender aggregates and the appendix comparisons. Raon-SpeechChat is not in the model index. Higher attacker success means more secret extraction, not better defense. On 2026-10-08 the project scenario browser is available, while the linked repository contains a README and says code will be released; it is not a released implementation."
+    },
+    {
+      "id": "spokentrace",
+      "name": "SpokenTrace",
+      "aka": [],
+      "full_title": "PERSIST: Who-What-When Memory Across Sessions for Full-Duplex Spoken Dialogue",
+      "arxiv_id": "2610.07725",
+      "arxiv_date": "2026-10",
+      "arxiv_date_full": "2026-10-06",
+      "url": "https://arxiv.org/abs/2610.07725",
+      "summary": "A diagnostic benchmark for remembering who said what and when across spoken conversations. Each episode supplies two historical sessions and a short spoken query in the current session. Six memory tasks test direct recall, earlier and latest states, changes, multi-hop composition and temporal localization; current-only and missing-evidence controls check whether history is needed and whether the assistant can abstain. Four balanced query types distinguish speaker-independent questions, current-speaker self-reference, a named participant and identifying a person from a fact. Speech is synthesized with consistent speaker identities across sessions. The PERSIST paper evaluates answer accuracy and retrieval quality using the SALMONN-omni full-duplex dialogue backbone with alternative memory configurations. This tests cross-session memory and speaker attribution, rather than a broad comparison of different dialogue-model families.",
+      "categories": [
+        "dialogue",
+        "long-form",
+        "paralinguistics"
+      ],
+      "tasks": [
+        "recalling facts and tracking earlier versus latest states across sessions",
+        "comparing changes, composing evidence and locating events in time",
+        "attributing remembered facts to speakers and resolving self-reference",
+        "answering current-only controls and abstaining when evidence is missing"
+      ],
+      "io": "two past spoken sessions plus a current spoken query; a spoken response grounded in the appropriate speaker and temporal state",
+      "size": "train: 9,119 episodes / 27,985 queries; validation: 1,013 episodes / 3,185 queries; evaluation: 1,200 episodes / 1,200 queries, including 1,106 history-dependent queries and 94 controls",
+      "metrics": [
+        "strict answer accuracy (only fully correct answers receive credit)",
+        "support recall@1, @3 and @5",
+        "all-support exact match@3 and @5",
+        "memory retrieval latency"
+      ],
+      "note": "SpokenTrace is the new benchmark introduced alongside the PERSIST memory method. Audio uses CosyVoice2 synthesis with LibriSpeech speaker references. The 1,200 evaluation queries are balanced across four speaker-query types (300 each). The main comparisons change the memory configuration of SALMONN-omni; they are not scores for the original SALMONN. No result cells are entered because SALMONN-omni and these configurations are not in the model index. No project, code or dataset release URL was linked in the checked arXiv record on 2026-10-08."
     }
   ]
 }

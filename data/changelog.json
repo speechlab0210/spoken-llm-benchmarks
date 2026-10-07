@@ -1,6 +1,11 @@
 {
  "entries": [
   {
+   "date": "2026-10-08",
+   "change": "Reviewed seven crawler candidates and added two benchmarks: DyaFDB (2610.08125), which scores both participants in live full-duplex model pairings, and SpokenTrace (2610.07725), which tests speaker-aware memory across spoken sessions. Added 54 DyaFDB result cells from Tables 3-5 of arXiv v1, extracted by row and column for the two indexed models; partner conditions and original 0-1 units are retained. SpokenTrace results are not mapped to the original SALMONN because its SALMONN-omni backbone is a different model absent from the index. Author affiliations were checked against the papers; both venue records remain preprints. The other five candidates failed the benchmark or general-spoken-LLM evaluation gate, with concrete reasons preserved in the crawl ledger. No models were added.",
+   "source": "arXiv v1 full texts and current abstract metadata for 2610.08125, 2610.07725, 2610.07727, 2610.06949, 2610.07026, 2610.07641 and 2610.08733; DyaFDB project and scenario pages; SpokenTrace PDF title page"
+  },
+  {
    "date": "2026-10-07",
    "change": "Reviewed all four candidates flagged by the daily crawl; none met the inclusion gates. MMPostTrainBench (2610.05398) evaluates autonomous post-training research agents, with audio outcomes measured on existing benchmarks. The Turkish TTS evaluation (2610.06057) tests dedicated speech-synthesis systems. The audio mDPO paper (2610.04004) proposes a training method evaluated on existing datasets. KyaraBench (2610.06013) tests character-verification encoders; its omni-model baseline uses only the audio tower as pooled embeddings, not the full spoken LLM. Per-paper reasons are preserved in the crawl ledger. No benchmark, model or result records were added or changed.",
    "source": "arXiv full text (HTML v1) and abstract pages: 2610.05398, 2610.06057, 2610.04004, 2610.06013"

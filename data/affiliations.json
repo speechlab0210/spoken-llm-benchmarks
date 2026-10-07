@@ -24921,6 +24921,74 @@
    "countries_complete": true,
    "verify_note": "arXiv 2609.38523v1 HTML author block: Dong Shu (Northwestern University), Yanguang Liu (New Jersey Institute of Technology), Huopu Zhang (Georgia Institute of Technology), Saisai Hu (Pace University), Haiyan Zhao (New Jersey Institute of Technology), Hekun Huang (New Jersey Institute of Technology), Mengnan Du (The Chinese University of Hong Kong, Shenzhen) - one 'Affiliation:' line per author. First author Northwestern (lead); last author CUHK-Shenzhen. No city or country is printed; Shenzhen is part of the institution's name.",
    "n_authors": 7
+  },
+  "dyafdb": {
+   "status": "ok",
+   "verified": "confirmed",
+   "publishable": true,
+   "institutions": [
+    {
+     "inst": "kaist",
+     "unit": null,
+     "raw": "Korea Advanced Institute of Science and Technology",
+     "country": "KR",
+     "city": "Daejeon",
+     "lat": 36.35,
+     "lon": 127.38,
+     "placed": "default",
+     "printed_city": null,
+     "printed_country": null,
+     "lead": true,
+     "first_author": true,
+     "last": true,
+     "evidence": "printed"
+    }
+   ],
+   "countries_complete": true,
+   "verify_note": "arXiv 2610.08125v1 HTML author block prints Korea Advanced Institute of Science and Technology for all four authors: Sungnyun Kim, Sungwoo Cho, Jihwan Oh and Se-Young Yun. First and last authors are both at KAIST; the project page also identifies KAIST AI. No city or country is printed; map coordinates use the existing institution default and printed-location fields remain null.",
+   "n_authors": 4
+  },
+  "spokentrace": {
+   "status": "ok",
+   "verified": "confirmed",
+   "publishable": true,
+   "institutions": [
+    {
+     "inst": "tsinghua-university",
+     "unit": null,
+     "raw": "Tsinghua University",
+     "country": "CN",
+     "city": "Beijing",
+     "lat": 39.9,
+     "lon": 116.4,
+     "placed": "default",
+     "printed_city": null,
+     "printed_country": null,
+     "lead": true,
+     "first_author": true,
+     "last": true,
+     "evidence": "printed"
+    },
+    {
+     "inst": "huawei",
+     "unit": null,
+     "raw": "Huawei Technologies Ltd.",
+     "country": "CN",
+     "city": "Shenzhen",
+     "lat": 22.54,
+     "lon": 114.06,
+     "placed": "default",
+     "printed_city": null,
+     "printed_country": null,
+     "lead": false,
+     "first_author": false,
+     "last": false,
+     "evidence": "printed"
+    }
+   ],
+   "countries_complete": true,
+   "verify_note": "Visually checked the title page of arXiv 2610.07725v1 PDF. Affiliation 1 is Tsinghua University and affiliation 2 is Huawei Technologies Ltd. First author Achira Lin and last author Chao Zhang carry 1; the three Huawei authors carry 2. Ten authors in total. No city or country is printed; map coordinates use existing institution defaults and printed-location fields remain null.",
+   "n_authors": 10
   }
  },
  "models": {
