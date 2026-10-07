@@ -1,9 +1,44 @@
 {
  "since": "2026-08-22",
  "what": "Every arXiv paper the daily crawl has flagged since launch (score at or above the threshold, not previously seen), with the reviewer's verdict as written in the feed and whether the paper entered the catalogue. \"published\" is the paper's arXiv date. See the Method section of the site.",
- "flagged": 219,
+ "flagged": 226,
  "admitted": 64,
  "entries": [
+  {
+   "id": "2610.08733",
+   "title": "Towards an Extensible Benchmark for Spoken Dialogue with Social Robots",
+   "published": "2026-10-06T17:36:01Z",
+   "score": 18,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.08125",
+   "title": "Conversation Is a Two-Body Problem: Dyadic Evaluation of Full-Duplex Dialogue Models",
+   "published": "2026-10-06T10:44:15Z",
+   "score": 36,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.07727",
+   "title": "HiPLEX: Hierarchical Policy Factorization for Full Duplex Speech Language Models",
+   "published": "2026-10-06T04:23:23Z",
+   "score": 21,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.07725",
+   "title": "PERSIST: Who-What-When Memory Across Sessions for Full-Duplex Spoken Dialogue",
+   "published": "2026-10-06T04:21:11Z",
+   "score": 24,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.07641",
+   "title": "Hiding Tool Latency in On-Device Cascaded Voice Agent through Speculative Execution",
+   "published": "2026-10-06T02:36:18Z",
+   "score": 18,
+   "outcome": "under review"
+  },
   {
    "id": "2610.06057",
    "title": "A Comprehensive Objective Evaluation of Modern Text-to-Speech for Turkish Using Speech Quality Assessment Models",
@@ -27,6 +62,20 @@
    "score": 36,
    "outcome": "not admitted",
    "verdict": "reviewed — out of scope: the evaluation target is autonomous post-training research agents, not spoken-language behavior (audio outcomes reuse existing MMAU and MMAR benchmarks)"
+  },
+  {
+   "id": "2610.07026",
+   "title": "Offline AI Modules: Voice-First Offline Architecture, Hardware Reference Stack, Quantization and Benchmarking",
+   "published": "2026-10-04T17:16:45Z",
+   "score": 18,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.06949",
+   "title": "AdaLoop: Adaptive-Depth Latent Reasoning for Audio Language Models",
+   "published": "2026-10-03T11:27:41Z",
+   "score": 18,
+   "outcome": "under review"
   },
   {
    "id": "2610.04004",
