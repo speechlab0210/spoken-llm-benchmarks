@@ -15,7 +15,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2610.08887",
       "score": 24,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: no new benchmark proposed (an activation-steering and representation analysis of Moshi using existing emotional speech and Harvard sentence material)"
     },
     {
       "id": "2610.09307",
@@ -28,7 +28,7 @@
       "primary_category": "cs.DC",
       "url": "https://arxiv.org/abs/2610.09307",
       "score": 24,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: no new spoken-LLM benchmark proposed (a serving-runtime technical report measuring throughput, latency and streaming health on nightly CI workloads)"
     },
     {
       "id": "2610.10208",
@@ -44,7 +44,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2610.10208",
       "score": 21,
-      "status": "new — under review"
+      "status": "reviewed — included: CARES proposes controlled sound-reaction and scene-understanding tasks evaluated with six general audio-language models"
     },
     {
       "id": "2610.09464",
@@ -58,7 +58,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2610.09464",
       "score": 18,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: subjects are not spoken LLMs (text-only rhetoric and persuasion classifiers, using Bangla transformer encoders and TF-IDF baselines)"
     },
     {
       "id": "2610.10240",
@@ -73,7 +73,7 @@
       "primary_category": "eess.AS",
       "url": "https://arxiv.org/abs/2610.10240",
       "score": 18,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: subjects are not general spoken LLMs (addressee classifiers built from openSMILE features and HuBERT/WavLM speech-encoder representations)"
     },
     {
       "id": "2610.10264",
@@ -93,7 +93,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2610.10264",
       "score": 18,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: CrossEditBench evaluates audiovisual media-editing systems, not general spoken LLM behavior (audio-language models are used as judges of the edited outputs)"
     },
     {
       "id": "2610.08125",

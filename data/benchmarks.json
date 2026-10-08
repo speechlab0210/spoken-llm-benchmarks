@@ -11760,6 +11760,41 @@
         "memory retrieval latency"
       ],
       "note": "SpokenTrace is the new benchmark introduced alongside the PERSIST memory method. Audio uses CosyVoice2 synthesis with LibriSpeech speaker references. The 1,200 evaluation queries are balanced across four speaker-query types (300 each). The main comparisons change the memory configuration of SALMONN-omni; they are not scores for the original SALMONN. No result cells are entered because SALMONN-omni and these configurations are not in the model index. No project, code or dataset release URL was linked in the checked arXiv record on 2026-10-08."
+    },
+    {
+      "id": "cares",
+      "name": "CARES",
+      "aka": [
+        "Controlled Audio Reactions in Environmental Scenes"
+      ],
+      "full_title": "CARES: A Controlled Synthetic Benchmark of Speaker Reactions to Sound",
+      "arxiv_id": "2610.10208",
+      "arxiv_date": "2026-10",
+      "arxiv_date_full": "2026-10-07",
+      "url": "https://marcelgibier.github.io/cares/",
+      "code": "https://github.com/marcelgibier/CARES",
+      "summary": "A controlled synthetic benchmark of whether audio-language models relate environmental sounds to the reactions they cause in a conversation. Each English scene has two adult speakers and up to three sound events. Reactions are assigned before generation: a pivot changes the conversation topic, a verbal reaction briefly mentions the sound, a behavioral reaction disrupts speech without naming it, and an ambient event prompts no reaction. Dialogue generation, expressive speech synthesis, isolated sound recordings and room acoustics turn these plans into mixed audio. Evaluation covers reaction classification, four-choice scene classification and sound tagging, plus recall of sound events in generated summaries. Six open audio-language models are compared with an ASR-transcript-only control. The paper finds that identifying a sound does not guarantee recognizing its effect on the speakers: reaction classification remains close to the text control, and muting the target sound does not significantly change the reported balanced accuracies.",
+      "categories": [
+        "auditory-perception",
+        "dialogue",
+        "audio-grounding"
+      ],
+      "tasks": [
+        "classifying the speakers' reaction to a timestamped sound as pivot, verbal, behavioral or ambient",
+        "identifying the acoustic scene and sound events through four-choice questions",
+        "retaining relevant sound events in a 200-word conversation summary"
+      ],
+      "io": "a mixed two-speaker audio scene plus a text question; reaction labels, multiple-choice answers or a generated summary",
+      "size": "10,000 scenes from 1,000 situation templates, 13 locations, 24 adult-role pairs and 219 sound types; mean duration 120.4 +/- 18.8 seconds. Templates split 80/10/10; zero-shot evaluation on 1,000 test scenes, with audio assets separated across splits.",
+      "metrics": [
+        "reaction classification balanced accuracy (%) and precision/recall per reaction type (%)",
+        "four-choice acoustic scene classification and audio tagging accuracy (%)",
+        "summary recall of annotated sound events by reaction type (%)"
+      ],
+      "languages": [
+        "English"
+      ],
+      "note": "Table 1 contributes 86 point estimates for Audio Flamingo Next, Qwen3-Omni, Kimi-Audio, MiMo-Audio, MOSS-Audio and MiDashengLM, extracted by row and column from arXiv v1 and visually checked against PDF page 4. The 42 reported 95% confidence intervals are retained in cell notes. Four missing precision values are omitted rather than replaced by zero; the reported zero recalls remain. The Whisper + Qwen3.6-35B-A3B transcript-only control is not mapped to a different indexed cascade. The benchmark uses synthetic English dialogues; human reaction-label validation used transcripts of 200 scenes, not listening tests. The code and example-audio page were accessible on 2026-10-09; no separate full-corpus download was linked there. The arXiv comment says Submitted to ICASSP 2027, which is not evidence of acceptance."
     }
   ]
 }

@@ -1,6 +1,11 @@
 {
  "entries": [
   {
+   "date": "2026-10-09",
+   "change": "Reviewed six crawler candidates and added CARES (2610.10208), a controlled synthetic benchmark of how speakers react to environmental sounds. Added 86 Table 1 result cells for six indexed audio-language models, retaining percent units and 42 reported 95% confidence intervals in notes; four unreported precision values remain missing. Verified the author affiliations against the PDF title page and added AMIAD as a French government institution without inventing a city. The paper remains a preprint: Submitted to ICASSP 2027 is not acceptance. The other five papers evaluate an emotion-steering method, a serving runtime, text classifiers, speech encoders or audiovisual editing systems; individual exclusion reasons are preserved in the crawl ledger. No models were added.",
+   "source": "arXiv v1 full texts: 2610.10208, 2610.08887, 2610.09307, 2610.09464, 2610.10240, 2610.10264; CARES PDF pages 1 and 4, arXiv metadata, and author project/code pages"
+  },
+  {
    "date": "2026-10-08",
    "change": "Reviewed seven crawler candidates and added two benchmarks: DyaFDB (2610.08125), which scores both participants in live full-duplex model pairings, and SpokenTrace (2610.07725), which tests speaker-aware memory across spoken sessions. Added 54 DyaFDB result cells from Tables 3-5 of arXiv v1, extracted by row and column for the two indexed models; partner conditions and original 0-1 units are retained. SpokenTrace results are not mapped to the original SALMONN because its SALMONN-omni backbone is a different model absent from the index. Author affiliations were checked against the papers; both venue records remain preprints. The other five candidates failed the benchmark or general-spoken-LLM evaluation gate, with concrete reasons preserved in the crawl ledger. No models were added.",
    "source": "arXiv v1 full texts and current abstract metadata for 2610.08125, 2610.07725, 2610.07727, 2610.06949, 2610.07026, 2610.07641 and 2610.08733; DyaFDB project and scenario pages; SpokenTrace PDF title page"

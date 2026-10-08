@@ -10895,6 +10895,29 @@
    "check_url": null,
    "cross_checked": null,
    "check_note": "Checked 2026-10-08 with venue_probe.py: arXiv and Semantic Scholar supplied no publication venue; OpenAlex returned no match and DBLP could not be read. No independent official publication record was established, so verification remains cannot_verify."
+  },
+  "cares": {
+   "status": "preprint",
+   "venue": null,
+   "venue_name_raw": null,
+   "venue_full": null,
+   "year": null,
+   "kind": null,
+   "track": null,
+   "parent_venue": null,
+   "display": null,
+   "evidence": "arxiv",
+   "evidence_raw": "arxiv",
+   "evidence_url": "https://arxiv.org/abs/2610.10208",
+   "evidence_quote": "Submitted to ICASSP 2027",
+   "doi": null,
+   "confidence": "high",
+   "verified": "cannot_verify",
+   "publishable": true,
+   "note": "Submission is not acceptance. No official acceptance or proceedings record was established.",
+   "check_url": null,
+   "cross_checked": null,
+   "check_note": "Checked 2026-10-09: venue_probe.py and the arXiv abstract page both report submission to ICASSP 2027, with no journal reference or publication DOI. Semantic Scholar supplied no venue and OpenAlex no match; DBLP could not be read. The author project and code pages establish the resource identity, not acceptance, so venue verification remains cannot_verify."
   }
  }
 }

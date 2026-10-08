@@ -143739,6 +143739,780 @@
       "source": "Table 5 (main three-model evaluation), arXiv:2610.08125v1",
       "source_url": "https://arxiv.org/abs/2610.08125v1",
       "note": "Original 0-1 units. Paper row: MiniCPM-o; column group: T4-2 attacker secret-extraction success rate; column: Avg. The paper shortens MiniCPM-o 4.5 to MiniCPM-o in its tables. Row model is the attacker; higher means more successful secret extraction."
+    },
+    {
+      "benchmark": "cares",
+      "model": "audio-flamingo-next",
+      "metric": "Reaction classification balanced accuracy (%)",
+      "value": 29.7,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: Audio Flamingo Next; column: Reaction classification balanced accuracy. Original percent units. Paper reports a 95% confidence interval of +/- 2.0 percentage points."
+    },
+    {
+      "benchmark": "cares",
+      "model": "audio-flamingo-next",
+      "metric": "Reaction classification pivot precision (%)",
+      "value": 50.0,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: Audio Flamingo Next; column: Reaction classification pivot precision. Original percent units."
+    },
+    {
+      "benchmark": "cares",
+      "model": "audio-flamingo-next",
+      "metric": "Reaction classification pivot recall (%)",
+      "value": 0.3,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: Audio Flamingo Next; column: Reaction classification pivot recall. Original percent units."
+    },
+    {
+      "benchmark": "cares",
+      "model": "audio-flamingo-next",
+      "metric": "Reaction classification verbal precision (%)",
+      "value": 30.6,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: Audio Flamingo Next; column: Reaction classification verbal precision. Original percent units."
+    },
+    {
+      "benchmark": "cares",
+      "model": "audio-flamingo-next",
+      "metric": "Reaction classification verbal recall (%)",
+      "value": 65.0,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: Audio Flamingo Next; column: Reaction classification verbal recall. Original percent units."
+    },
+    {
+      "benchmark": "cares",
+      "model": "audio-flamingo-next",
+      "metric": "Reaction classification behavioral precision (%)",
+      "value": 50.0,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: Audio Flamingo Next; column: Reaction classification behavioral precision. Original percent units."
+    },
+    {
+      "benchmark": "cares",
+      "model": "audio-flamingo-next",
+      "metric": "Reaction classification behavioral recall (%)",
+      "value": 0.7,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: Audio Flamingo Next; column: Reaction classification behavioral recall. Original percent units."
+    },
+    {
+      "benchmark": "cares",
+      "model": "audio-flamingo-next",
+      "metric": "Reaction classification ambient precision (%)",
+      "value": 41.1,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: Audio Flamingo Next; column: Reaction classification ambient precision. Original percent units."
+    },
+    {
+      "benchmark": "cares",
+      "model": "audio-flamingo-next",
+      "metric": "Reaction classification ambient recall (%)",
+      "value": 52.7,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: Audio Flamingo Next; column: Reaction classification ambient recall. Original percent units."
+    },
+    {
+      "benchmark": "cares",
+      "model": "audio-flamingo-next",
+      "metric": "Acoustic scene classification accuracy (%)",
+      "value": 62.5,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: Audio Flamingo Next; column: Acoustic scene classification accuracy. Original percent units. Paper reports a 95% confidence interval of +/- 3 percentage points."
+    },
+    {
+      "benchmark": "cares",
+      "model": "audio-flamingo-next",
+      "metric": "Audio tagging accuracy (%)",
+      "value": 34.8,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: Audio Flamingo Next; column: Audio tagging accuracy. Original percent units. Paper reports a 95% confidence interval of +/- 2 percentage points."
+    },
+    {
+      "benchmark": "cares",
+      "model": "audio-flamingo-next",
+      "metric": "Summary sound recall: pivot (%)",
+      "value": 9.5,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: Audio Flamingo Next; column: Summary sound recall: pivot. Original percent units. Paper reports a 95% confidence interval of +/- 3.7 percentage points."
+    },
+    {
+      "benchmark": "cares",
+      "model": "audio-flamingo-next",
+      "metric": "Summary sound recall: verbal (%)",
+      "value": 3.3,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: Audio Flamingo Next; column: Summary sound recall: verbal. Original percent units. Paper reports a 95% confidence interval of +/- 1.7 percentage points."
+    },
+    {
+      "benchmark": "cares",
+      "model": "audio-flamingo-next",
+      "metric": "Summary sound recall: behavioral (%)",
+      "value": 0.5,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: Audio Flamingo Next; column: Summary sound recall: behavioral. Original percent units. Paper reports a 95% confidence interval of +/- 1.0 percentage points."
+    },
+    {
+      "benchmark": "cares",
+      "model": "audio-flamingo-next",
+      "metric": "Summary sound recall: ambient (%)",
+      "value": 2.5,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: Audio Flamingo Next; column: Summary sound recall: ambient. Original percent units. Paper reports a 95% confidence interval of +/- 1.5 percentage points."
+    },
+    {
+      "benchmark": "cares",
+      "model": "qwen3-omni",
+      "metric": "Reaction classification balanced accuracy (%)",
+      "value": 39.0,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: Qwen3-Omni; column: Reaction classification balanced accuracy. Original percent units. Paper reports a 95% confidence interval of +/- 2.0 percentage points."
+    },
+    {
+      "benchmark": "cares",
+      "model": "qwen3-omni",
+      "metric": "Reaction classification pivot precision (%)",
+      "value": 27.0,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: Qwen3-Omni; column: Reaction classification pivot precision. Original percent units."
+    },
+    {
+      "benchmark": "cares",
+      "model": "qwen3-omni",
+      "metric": "Reaction classification pivot recall (%)",
+      "value": 89.5,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: Qwen3-Omni; column: Reaction classification pivot recall. Original percent units."
+    },
+    {
+      "benchmark": "cares",
+      "model": "qwen3-omni",
+      "metric": "Reaction classification verbal precision (%)",
+      "value": 33.6,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: Qwen3-Omni; column: Reaction classification verbal precision. Original percent units."
+    },
+    {
+      "benchmark": "cares",
+      "model": "qwen3-omni",
+      "metric": "Reaction classification verbal recall (%)",
+      "value": 41.7,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: Qwen3-Omni; column: Reaction classification verbal recall. Original percent units."
+    },
+    {
+      "benchmark": "cares",
+      "model": "qwen3-omni",
+      "metric": "Reaction classification behavioral precision (%)",
+      "value": 41.5,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: Qwen3-Omni; column: Reaction classification behavioral precision. Original percent units."
+    },
+    {
+      "benchmark": "cares",
+      "model": "qwen3-omni",
+      "metric": "Reaction classification behavioral recall (%)",
+      "value": 24.2,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: Qwen3-Omni; column: Reaction classification behavioral recall. Original percent units."
+    },
+    {
+      "benchmark": "cares",
+      "model": "qwen3-omni",
+      "metric": "Reaction classification ambient precision (%)",
+      "value": 75.0,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: Qwen3-Omni; column: Reaction classification ambient precision. Original percent units."
+    },
+    {
+      "benchmark": "cares",
+      "model": "qwen3-omni",
+      "metric": "Reaction classification ambient recall (%)",
+      "value": 0.5,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: Qwen3-Omni; column: Reaction classification ambient recall. Original percent units."
+    },
+    {
+      "benchmark": "cares",
+      "model": "qwen3-omni",
+      "metric": "Acoustic scene classification accuracy (%)",
+      "value": 89.6,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: Qwen3-Omni; column: Acoustic scene classification accuracy. Original percent units. Paper reports a 95% confidence interval of +/- 2 percentage points. The printed decimal comma is normalized to a decimal point (89,6 means 89.6)."
+    },
+    {
+      "benchmark": "cares",
+      "model": "qwen3-omni",
+      "metric": "Audio tagging accuracy (%)",
+      "value": 57.7,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: Qwen3-Omni; column: Audio tagging accuracy. Original percent units. Paper reports a 95% confidence interval of +/- 2 percentage points."
+    },
+    {
+      "benchmark": "cares",
+      "model": "qwen3-omni",
+      "metric": "Summary sound recall: pivot (%)",
+      "value": 22.2,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: Qwen3-Omni; column: Summary sound recall: pivot. Original percent units. Paper reports a 95% confidence interval of +/- 4.9 percentage points."
+    },
+    {
+      "benchmark": "cares",
+      "model": "qwen3-omni",
+      "metric": "Summary sound recall: verbal (%)",
+      "value": 6.0,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: Qwen3-Omni; column: Summary sound recall: verbal. Original percent units. Paper reports a 95% confidence interval of +/- 2.2 percentage points."
+    },
+    {
+      "benchmark": "cares",
+      "model": "qwen3-omni",
+      "metric": "Summary sound recall: behavioral (%)",
+      "value": 1.6,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: Qwen3-Omni; column: Summary sound recall: behavioral. Original percent units. Paper reports a 95% confidence interval of +/- 1.4 percentage points."
+    },
+    {
+      "benchmark": "cares",
+      "model": "qwen3-omni",
+      "metric": "Summary sound recall: ambient (%)",
+      "value": 3.3,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: Qwen3-Omni; column: Summary sound recall: ambient. Original percent units. Paper reports a 95% confidence interval of +/- 1.7 percentage points."
+    },
+    {
+      "benchmark": "cares",
+      "model": "kimi-audio",
+      "metric": "Reaction classification balanced accuracy (%)",
+      "value": 25.6,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: Kimi-Audio; column: Reaction classification balanced accuracy. Original percent units. Paper reports a 95% confidence interval of +/- 2.0 percentage points."
+    },
+    {
+      "benchmark": "cares",
+      "model": "kimi-audio",
+      "metric": "Reaction classification pivot precision (%)",
+      "value": 27.8,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: Kimi-Audio; column: Reaction classification pivot precision. Original percent units."
+    },
+    {
+      "benchmark": "cares",
+      "model": "kimi-audio",
+      "metric": "Reaction classification pivot recall (%)",
+      "value": 1.6,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: Kimi-Audio; column: Reaction classification pivot recall. Original percent units."
+    },
+    {
+      "benchmark": "cares",
+      "model": "kimi-audio",
+      "metric": "Reaction classification verbal precision (%)",
+      "value": 29.6,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: Kimi-Audio; column: Reaction classification verbal precision. Original percent units."
+    },
+    {
+      "benchmark": "cares",
+      "model": "kimi-audio",
+      "metric": "Reaction classification verbal recall (%)",
+      "value": 1.3,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: Kimi-Audio; column: Reaction classification verbal recall. Original percent units."
+    },
+    {
+      "benchmark": "cares",
+      "model": "kimi-audio",
+      "metric": "Reaction classification behavioral precision (%)",
+      "value": 22.2,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: Kimi-Audio; column: Reaction classification behavioral precision. Original percent units."
+    },
+    {
+      "benchmark": "cares",
+      "model": "kimi-audio",
+      "metric": "Reaction classification behavioral recall (%)",
+      "value": 5.4,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: Kimi-Audio; column: Reaction classification behavioral recall. Original percent units."
+    },
+    {
+      "benchmark": "cares",
+      "model": "kimi-audio",
+      "metric": "Reaction classification ambient precision (%)",
+      "value": 31.2,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: Kimi-Audio; column: Reaction classification ambient precision. Original percent units."
+    },
+    {
+      "benchmark": "cares",
+      "model": "kimi-audio",
+      "metric": "Reaction classification ambient recall (%)",
+      "value": 94.1,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: Kimi-Audio; column: Reaction classification ambient recall. Original percent units."
+    },
+    {
+      "benchmark": "cares",
+      "model": "kimi-audio",
+      "metric": "Acoustic scene classification accuracy (%)",
+      "value": 78.1,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: Kimi-Audio; column: Acoustic scene classification accuracy. Original percent units. Paper reports a 95% confidence interval of +/- 2 percentage points."
+    },
+    {
+      "benchmark": "cares",
+      "model": "kimi-audio",
+      "metric": "Audio tagging accuracy (%)",
+      "value": 48.6,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: Kimi-Audio; column: Audio tagging accuracy. Original percent units. Paper reports a 95% confidence interval of +/- 2 percentage points."
+    },
+    {
+      "benchmark": "cares",
+      "model": "kimi-audio",
+      "metric": "Summary sound recall: pivot (%)",
+      "value": 6.7,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: Kimi-Audio; column: Summary sound recall: pivot. Original percent units. Paper reports a 95% confidence interval of +/- 3.3 percentage points."
+    },
+    {
+      "benchmark": "cares",
+      "model": "kimi-audio",
+      "metric": "Summary sound recall: verbal (%)",
+      "value": 1.7,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: Kimi-Audio; column: Summary sound recall: verbal. Original percent units. Paper reports a 95% confidence interval of +/- 1.4 percentage points."
+    },
+    {
+      "benchmark": "cares",
+      "model": "kimi-audio",
+      "metric": "Summary sound recall: behavioral (%)",
+      "value": 0.5,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: Kimi-Audio; column: Summary sound recall: behavioral. Original percent units. Paper reports a 95% confidence interval of +/- 1.0 percentage points."
+    },
+    {
+      "benchmark": "cares",
+      "model": "kimi-audio",
+      "metric": "Summary sound recall: ambient (%)",
+      "value": 0.8,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: Kimi-Audio; column: Summary sound recall: ambient. Original percent units. Paper reports a 95% confidence interval of +/- 1.0 percentage points."
+    },
+    {
+      "benchmark": "cares",
+      "model": "mimo-audio",
+      "metric": "Reaction classification balanced accuracy (%)",
+      "value": 32.8,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: MiMo-Audio; column: Reaction classification balanced accuracy. Original percent units. Paper reports a 95% confidence interval of +/- 2.0 percentage points."
+    },
+    {
+      "benchmark": "cares",
+      "model": "mimo-audio",
+      "metric": "Reaction classification pivot precision (%)",
+      "value": 40.6,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: MiMo-Audio; column: Reaction classification pivot precision. Original percent units."
+    },
+    {
+      "benchmark": "cares",
+      "model": "mimo-audio",
+      "metric": "Reaction classification pivot recall (%)",
+      "value": 40.0,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: MiMo-Audio; column: Reaction classification pivot recall. Original percent units."
+    },
+    {
+      "benchmark": "cares",
+      "model": "mimo-audio",
+      "metric": "Reaction classification verbal precision (%)",
+      "value": 30.4,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: MiMo-Audio; column: Reaction classification verbal precision. Original percent units."
+    },
+    {
+      "benchmark": "cares",
+      "model": "mimo-audio",
+      "metric": "Reaction classification verbal recall (%)",
+      "value": 91.2,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: MiMo-Audio; column: Reaction classification verbal recall. Original percent units."
+    },
+    {
+      "benchmark": "cares",
+      "model": "mimo-audio",
+      "metric": "Reaction classification behavioral recall (%)",
+      "value": 0.0,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: MiMo-Audio; column: Reaction classification behavioral recall. Original percent units."
+    },
+    {
+      "benchmark": "cares",
+      "model": "mimo-audio",
+      "metric": "Reaction classification ambient recall (%)",
+      "value": 0.0,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: MiMo-Audio; column: Reaction classification ambient recall. Original percent units."
+    },
+    {
+      "benchmark": "cares",
+      "model": "mimo-audio",
+      "metric": "Acoustic scene classification accuracy (%)",
+      "value": 81.7,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: MiMo-Audio; column: Acoustic scene classification accuracy. Original percent units. Paper reports a 95% confidence interval of +/- 2 percentage points."
+    },
+    {
+      "benchmark": "cares",
+      "model": "mimo-audio",
+      "metric": "Audio tagging accuracy (%)",
+      "value": 46.5,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: MiMo-Audio; column: Audio tagging accuracy. Original percent units. Paper reports a 95% confidence interval of +/- 2 percentage points."
+    },
+    {
+      "benchmark": "cares",
+      "model": "mimo-audio",
+      "metric": "Summary sound recall: pivot (%)",
+      "value": 12.0,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: MiMo-Audio; column: Summary sound recall: pivot. Original percent units. Paper reports a 95% confidence interval of +/- 4.0 percentage points."
+    },
+    {
+      "benchmark": "cares",
+      "model": "mimo-audio",
+      "metric": "Summary sound recall: verbal (%)",
+      "value": 4.0,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: MiMo-Audio; column: Summary sound recall: verbal. Original percent units. Paper reports a 95% confidence interval of +/- 2.0 percentage points."
+    },
+    {
+      "benchmark": "cares",
+      "model": "mimo-audio",
+      "metric": "Summary sound recall: behavioral (%)",
+      "value": 1.0,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: MiMo-Audio; column: Summary sound recall: behavioral. Original percent units. Paper reports a 95% confidence interval of +/- 1.0 percentage points."
+    },
+    {
+      "benchmark": "cares",
+      "model": "mimo-audio",
+      "metric": "Summary sound recall: ambient (%)",
+      "value": 2.0,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: MiMo-Audio; column: Summary sound recall: ambient. Original percent units. Paper reports a 95% confidence interval of +/- 1.2 percentage points."
+    },
+    {
+      "benchmark": "cares",
+      "model": "moss-audio",
+      "metric": "Reaction classification balanced accuracy (%)",
+      "value": 31.4,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: MOSS-Audio; column: Reaction classification balanced accuracy. Original percent units. Paper reports a 95% confidence interval of +/- 2.0 percentage points."
+    },
+    {
+      "benchmark": "cares",
+      "model": "moss-audio",
+      "metric": "Reaction classification pivot precision (%)",
+      "value": 17.4,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: MOSS-Audio; column: Reaction classification pivot precision. Original percent units."
+    },
+    {
+      "benchmark": "cares",
+      "model": "moss-audio",
+      "metric": "Reaction classification pivot recall (%)",
+      "value": 99.4,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: MOSS-Audio; column: Reaction classification pivot recall. Original percent units."
+    },
+    {
+      "benchmark": "cares",
+      "model": "moss-audio",
+      "metric": "Reaction classification verbal precision (%)",
+      "value": 43.7,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: MOSS-Audio; column: Reaction classification verbal precision. Original percent units."
+    },
+    {
+      "benchmark": "cares",
+      "model": "moss-audio",
+      "metric": "Reaction classification verbal recall (%)",
+      "value": 17.9,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: MOSS-Audio; column: Reaction classification verbal recall. Original percent units."
+    },
+    {
+      "benchmark": "cares",
+      "model": "moss-audio",
+      "metric": "Reaction classification behavioral precision (%)",
+      "value": 76.5,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: MOSS-Audio; column: Reaction classification behavioral precision. Original percent units."
+    },
+    {
+      "benchmark": "cares",
+      "model": "moss-audio",
+      "metric": "Reaction classification behavioral recall (%)",
+      "value": 7.0,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: MOSS-Audio; column: Reaction classification behavioral recall. Original percent units."
+    },
+    {
+      "benchmark": "cares",
+      "model": "moss-audio",
+      "metric": "Reaction classification ambient precision (%)",
+      "value": 50.0,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: MOSS-Audio; column: Reaction classification ambient precision. Original percent units."
+    },
+    {
+      "benchmark": "cares",
+      "model": "moss-audio",
+      "metric": "Reaction classification ambient recall (%)",
+      "value": 1.4,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: MOSS-Audio; column: Reaction classification ambient recall. Original percent units."
+    },
+    {
+      "benchmark": "cares",
+      "model": "moss-audio",
+      "metric": "Acoustic scene classification accuracy (%)",
+      "value": 71.1,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: MOSS-Audio; column: Acoustic scene classification accuracy. Original percent units. Paper reports a 95% confidence interval of +/- 3 percentage points."
+    },
+    {
+      "benchmark": "cares",
+      "model": "moss-audio",
+      "metric": "Audio tagging accuracy (%)",
+      "value": 48.5,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: MOSS-Audio; column: Audio tagging accuracy. Original percent units. Paper reports a 95% confidence interval of +/- 2 percentage points."
+    },
+    {
+      "benchmark": "cares",
+      "model": "moss-audio",
+      "metric": "Summary sound recall: pivot (%)",
+      "value": 5.5,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: MOSS-Audio; column: Summary sound recall: pivot. Original percent units. Paper reports a 95% confidence interval of +/- 3.0 percentage points."
+    },
+    {
+      "benchmark": "cares",
+      "model": "moss-audio",
+      "metric": "Summary sound recall: verbal (%)",
+      "value": 1.5,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: MOSS-Audio; column: Summary sound recall: verbal. Original percent units. Paper reports a 95% confidence interval of +/- 1.2 percentage points."
+    },
+    {
+      "benchmark": "cares",
+      "model": "moss-audio",
+      "metric": "Summary sound recall: behavioral (%)",
+      "value": 0.2,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: MOSS-Audio; column: Summary sound recall: behavioral. Original percent units. Paper reports a 95% confidence interval of +/- 0.5 percentage points."
+    },
+    {
+      "benchmark": "cares",
+      "model": "moss-audio",
+      "metric": "Summary sound recall: ambient (%)",
+      "value": 0.5,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: MOSS-Audio; column: Summary sound recall: ambient. Original percent units. Paper reports a 95% confidence interval of +/- 0.8 percentage points."
+    },
+    {
+      "benchmark": "cares",
+      "model": "midashenglm",
+      "metric": "Reaction classification balanced accuracy (%)",
+      "value": 24.1,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: MiDashengLM; column: Reaction classification balanced accuracy. Original percent units. Paper reports a 95% confidence interval of +/- 2.0 percentage points."
+    },
+    {
+      "benchmark": "cares",
+      "model": "midashenglm",
+      "metric": "Reaction classification pivot precision (%)",
+      "value": 14.6,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: MiDashengLM; column: Reaction classification pivot precision. Original percent units."
+    },
+    {
+      "benchmark": "cares",
+      "model": "midashenglm",
+      "metric": "Reaction classification pivot recall (%)",
+      "value": 77.1,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: MiDashengLM; column: Reaction classification pivot recall. Original percent units."
+    },
+    {
+      "benchmark": "cares",
+      "model": "midashenglm",
+      "metric": "Reaction classification verbal precision (%)",
+      "value": 25.6,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: MiDashengLM; column: Reaction classification verbal precision. Original percent units."
+    },
+    {
+      "benchmark": "cares",
+      "model": "midashenglm",
+      "metric": "Reaction classification verbal recall (%)",
+      "value": 19.2,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: MiDashengLM; column: Reaction classification verbal recall. Original percent units."
+    },
+    {
+      "benchmark": "cares",
+      "model": "midashenglm",
+      "metric": "Reaction classification behavioral recall (%)",
+      "value": 0.0,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: MiDashengLM; column: Reaction classification behavioral recall. Original percent units."
+    },
+    {
+      "benchmark": "cares",
+      "model": "midashenglm",
+      "metric": "Reaction classification ambient recall (%)",
+      "value": 0.0,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: MiDashengLM; column: Reaction classification ambient recall. Original percent units."
+    },
+    {
+      "benchmark": "cares",
+      "model": "midashenglm",
+      "metric": "Acoustic scene classification accuracy (%)",
+      "value": 48.1,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: MiDashengLM; column: Acoustic scene classification accuracy. Original percent units. Paper reports a 95% confidence interval of +/- 3 percentage points."
+    },
+    {
+      "benchmark": "cares",
+      "model": "midashenglm",
+      "metric": "Audio tagging accuracy (%)",
+      "value": 33.3,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: MiDashengLM; column: Audio tagging accuracy. Original percent units. Paper reports a 95% confidence interval of +/- 2 percentage points."
+    },
+    {
+      "benchmark": "cares",
+      "model": "midashenglm",
+      "metric": "Summary sound recall: pivot (%)",
+      "value": 3.0,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: MiDashengLM; column: Summary sound recall: pivot. Original percent units. Paper reports a 95% confidence interval of +/- 2.0 percentage points."
+    },
+    {
+      "benchmark": "cares",
+      "model": "midashenglm",
+      "metric": "Summary sound recall: verbal (%)",
+      "value": 1.0,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: MiDashengLM; column: Summary sound recall: verbal. Original percent units. Paper reports a 95% confidence interval of +/- 1.0 percentage points."
+    },
+    {
+      "benchmark": "cares",
+      "model": "midashenglm",
+      "metric": "Summary sound recall: behavioral (%)",
+      "value": 0.0,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: MiDashengLM; column: Summary sound recall: behavioral. Original percent units. Paper reports a 95% confidence interval of +/- 0.0 percentage points."
+    },
+    {
+      "benchmark": "cares",
+      "model": "midashenglm",
+      "metric": "Summary sound recall: ambient (%)",
+      "value": 0.2,
+      "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
+      "source_url": "https://arxiv.org/abs/2610.10208v1",
+      "note": "Zero-shot, 1,000 test scenes. Paper row: MiDashengLM; column: Summary sound recall: ambient. Original percent units. Paper reports a 95% confidence interval of +/- 0.5 percentage points."
     }
   ]
 }

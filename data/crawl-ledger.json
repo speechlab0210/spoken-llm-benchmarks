@@ -2,42 +2,48 @@
  "since": "2026-08-22",
  "what": "Every arXiv paper the daily crawl has flagged since launch (score at or above the threshold, not previously seen), with the reviewer's verdict as written in the feed and whether the paper entered the catalogue. \"published\" is the paper's arXiv date. See the Method section of the site.",
  "flagged": 232,
- "admitted": 66,
+ "admitted": 67,
  "entries": [
   {
    "id": "2610.10264",
    "title": "CrossEdit: Cross-Modal Training Enables Rich Audio-Visual Editing",
    "published": "2026-10-07T15:36:56Z",
    "score": 18,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: CrossEditBench evaluates audiovisual media-editing systems, not general spoken LLM behavior (audio-language models are used as judges of the edited outputs)"
   },
   {
    "id": "2610.10240",
    "title": "Benchmarking Adult Addressee Classification Across Child- and Adult-Directed Speech Datasets",
    "published": "2026-10-07T15:23:36Z",
    "score": 18,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: subjects are not general spoken LLMs (addressee classifiers built from openSMILE features and HuBERT/WavLM speech-encoder representations)"
   },
   {
    "id": "2610.10208",
    "title": "CARES: A Controlled Synthetic Benchmark of Speaker Reactions to Sound",
    "published": "2026-10-07T15:05:59Z",
    "score": 21,
-   "outcome": "under review"
+   "outcome": "admitted",
+   "verdict": "reviewed — included: CARES proposes controlled sound-reaction and scene-understanding tasks evaluated with six general audio-language models",
+   "catalogue_id": "cares"
   },
   {
    "id": "2610.09464",
    "title": "BanglaRhet: Benchmarking Classical and Transformer Models for Rhetorical and Persuasion Detection in Bangla Political Speech",
    "published": "2026-10-07T05:22:19Z",
    "score": 18,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: subjects are not spoken LLMs (text-only rhetoric and persuasion classifiers, using Bangla transformer encoders and TF-IDF baselines)"
   },
   {
    "id": "2610.09307",
    "title": "vLLM-Omni Technical Report: A Unified Serving Runtime for Omni-Modality Generation",
    "published": "2026-10-07T02:04:28Z",
    "score": 24,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: no new spoken-LLM benchmark proposed (a serving-runtime technical report measuring throughput, latency and streaming health on nightly CI workloads)"
   },
   {
    "id": "2610.08733",
@@ -52,7 +58,8 @@
    "title": "Steering Follows Geometry, Not Labels: Emotion Directions in a Full-Duplex Speech Model",
    "published": "2026-10-06T15:29:37Z",
    "score": 24,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: no new benchmark proposed (an activation-steering and representation analysis of Moshi using existing emotional speech and Harvard sentence material)"
   },
   {
    "id": "2610.08125",

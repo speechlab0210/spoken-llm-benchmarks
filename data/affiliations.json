@@ -24989,6 +24989,48 @@
    "countries_complete": true,
    "verify_note": "Visually checked the title page of arXiv 2610.07725v1 PDF. Affiliation 1 is Tsinghua University and affiliation 2 is Huawei Technologies Ltd. First author Achira Lin and last author Chao Zhang carry 1; the three Huawei authors carry 2. Ten authors in total. No city or country is printed; map coordinates use existing institution defaults and printed-location fields remain null.",
    "n_authors": 10
+  },
+  "cares": {
+   "status": "ok",
+   "verified": "confirmed",
+   "publishable": true,
+   "countries_complete": true,
+   "n_authors": 4,
+   "institutions": [
+    {
+     "inst": "inria",
+     "unit": null,
+     "raw": "Inria, Paris, France",
+     "country": "FR",
+     "city": "Paris",
+     "lat": 48.86,
+     "lon": 2.35,
+     "placed": "named",
+     "printed_city": "Paris",
+     "printed_country": "France",
+     "lead": true,
+     "first_author": true,
+     "last": false,
+     "evidence": "printed"
+    },
+    {
+     "inst": "amiad",
+     "unit": null,
+     "raw": "AMIAD, France",
+     "country": "FR",
+     "city": null,
+     "lat": null,
+     "lon": null,
+     "placed": "unplaced",
+     "printed_city": null,
+     "printed_country": "France",
+     "lead": false,
+     "first_author": true,
+     "last": true,
+     "evidence": "printed"
+    }
+   ],
+   "verify_note": "Visually checked arXiv 2610.10208v1 PDF page 1: Marcel Gibier carries affiliations 1,2; Thomas Thebaud, Olivier Boeffard and Jean-Francois Bonastre carry 2. Affiliation 1 prints Inria, Paris, France; affiliation 2 prints AMIAD, France. Inria is the first-listed affiliation of the first author. AMIAD also belongs to the first author and to the last author, but its city is not printed and remains unplaced."
   }
  },
  "models": {

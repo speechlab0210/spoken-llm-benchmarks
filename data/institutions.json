@@ -14562,6 +14562,29 @@
      "note": "Private university whose main campus is in lower Manhattan, New York City; the author block of arXiv:2609.38523 prints the name only."
     }
    ]
+  },
+  {
+   "id": "amiad",
+   "name": "Agence ministérielle pour l'intelligence artificielle de défense",
+   "short": "AMIAD",
+   "type": "government",
+   "country": "FR",
+   "parent": null,
+   "confidence": "high",
+   "sites": [],
+   "aliases": [
+    {
+     "raw": "AMIAD",
+     "country": "FR",
+     "city": null,
+     "lat": null,
+     "lon": null,
+     "type": "government",
+     "confidence": "high",
+     "note": "arXiv 2610.10208v1 prints AMIAD, France. The French Ministry of the Armed Forces identifies the agency by this expanded name. The paper does not identify a city or campus; no site is assigned."
+    }
+   ],
+   "evidence_url": "https://www.defense.gouv.fr/actualites/ia-defense-sebastien-lecornu-inaugure-pole-recherche-lamiad"
   }
  ]
 }
