@@ -1,9 +1,44 @@
 {
  "since": "2026-08-22",
  "what": "Every arXiv paper the daily crawl has flagged since launch (score at or above the threshold, not previously seen), with the reviewer's verdict as written in the feed and whether the paper entered the catalogue. \"published\" is the paper's arXiv date. See the Method section of the site.",
- "flagged": 226,
+ "flagged": 232,
  "admitted": 66,
  "entries": [
+  {
+   "id": "2610.10264",
+   "title": "CrossEdit: Cross-Modal Training Enables Rich Audio-Visual Editing",
+   "published": "2026-10-07T15:36:56Z",
+   "score": 18,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.10240",
+   "title": "Benchmarking Adult Addressee Classification Across Child- and Adult-Directed Speech Datasets",
+   "published": "2026-10-07T15:23:36Z",
+   "score": 18,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.10208",
+   "title": "CARES: A Controlled Synthetic Benchmark of Speaker Reactions to Sound",
+   "published": "2026-10-07T15:05:59Z",
+   "score": 21,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.09464",
+   "title": "BanglaRhet: Benchmarking Classical and Transformer Models for Rhetorical and Persuasion Detection in Bangla Political Speech",
+   "published": "2026-10-07T05:22:19Z",
+   "score": 18,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.09307",
+   "title": "vLLM-Omni Technical Report: A Unified Serving Runtime for Omni-Modality Generation",
+   "published": "2026-10-07T02:04:28Z",
+   "score": 24,
+   "outcome": "under review"
+  },
   {
    "id": "2610.08733",
    "title": "Towards an Extensible Benchmark for Spoken Dialogue with Social Robots",
@@ -11,6 +46,13 @@
    "score": 18,
    "outcome": "not admitted",
    "verdict": "reviewed — out of scope: no general spoken LLM is evaluated (a proposed collaborative robot-dialogue protocol whose implementation and model evaluations are future work)"
+  },
+  {
+   "id": "2610.08887",
+   "title": "Steering Follows Geometry, Not Labels: Emotion Directions in a Full-Duplex Speech Model",
+   "published": "2026-10-06T15:29:37Z",
+   "score": 24,
+   "outcome": "under review"
   },
   {
    "id": "2610.08125",

@@ -1,9 +1,100 @@
 {
-  "fetched_at": "2026-10-07T22:32:32Z",
+  "fetched_at": "2026-10-08T22:33:28Z",
   "window_days": 10,
-  "scanned": 232,
-  "flagged_today": 7,
+  "scanned": 219,
+  "flagged_today": 6,
   "candidates": [
+    {
+      "id": "2610.08887",
+      "title": "Steering Follows Geometry, Not Labels: Emotion Directions in a Full-Duplex Speech Model",
+      "abstract": "Full-duplex voice agents need to modulate emotion and delivery during real-time conversations, when de-escalating a complaint, carrying urgency in dispatch, softening a clinical result. Emotion and delivery control is well studied for TTS and turn based models through prompt-conditioned synthesis, reference-conditioned synthesis and activation steering; PersonaPlex controls identity in a duplex model but not affect. We study emotion steering in Moshi, a fully open sourced full-duplex speech language model, across four emotions, using mean-difference activation steering, which costs only a few vector additions per frame and no retraining. We show that emotion is linearly decodable from Moshi's residual stream, but activation steering is only partially achievable, and unevenly so; as happy, angry and surprise steer towards a shared direction while sad is distinctly steerable. We also show that the shared component across the three emotions cannot simply be projected away from all the emotions equally.",
+      "published": "2026-10-06T15:29:37Z",
+      "authors": [
+        "Pulak Kuli"
+      ],
+      "primary_category": "cs.CL",
+      "url": "https://arxiv.org/abs/2610.08887",
+      "score": 24,
+      "status": "new — under review"
+    },
+    {
+      "id": "2610.09307",
+      "title": "vLLM-Omni Technical Report: A Unified Serving Runtime for Omni-Modality Generation",
+      "abstract": "Interaction with intelligent systems is expanding beyond text-centric chatbots and coding agents. Speech-native assistants, visual generation and editing, world-model environments, and robot action loops require models that emit text, audio, images, video, and actions. These models differ in execution pattern: multi-stage autoregressive omni and TTS pipelines, iterative diffusion or flow-matching generators, and longer-lived world-model or robot loops that carry state across steps. As a result, serving is no longer a single text decode loop, but a heterogeneous multi-stage workflow with cross-stage transfer, streaming, and session-shaped interaction. Existing inference stacks are typically optimized for one architecture family. LLM servers deepen autoregressive scheduling and KV management, while diffusion stacks deepen denoising and parallel generation. Neither provides a shared control plane for pipelines that emit speech, pixels, or actions through separate generators, so production deployments often fall back to ad-hoc composition across disjoint runtimes. We present vLLM-Omni, a unified serving runtime for omni-modality generation. vLLM-Omni organizes each workload as a multi-stage pipeline under a single orchestrator that admits requests, advances them across stages, and demultiplexes streaming outputs. Specialized engines and stage replicas provide compute; a connector carries heavy payloads on the data plane; and session-oriented control supports long-lived duplex, world-model, and robot workloads. This report covers the architecture (stage-level KV paths, replica pools, multi-hardware platforms, and efficiency stack) and OpenAI-compatible and OpenPI APIs for omni, TTS, image/video, world-model, robot, and duplex workloads. We evaluate on the multimodal nightly CI on H100 (TTS and MiniCPM-o on H200), focused on Qwen3-Omni.",
+      "published": "2026-10-07T02:04:28Z",
+      "authors": [
+        "vLLM-Omni Team"
+      ],
+      "primary_category": "cs.DC",
+      "url": "https://arxiv.org/abs/2610.09307",
+      "score": 24,
+      "status": "new — under review"
+    },
+    {
+      "id": "2610.10208",
+      "title": "CARES: A Controlled Synthetic Benchmark of Speaker Reactions to Sound",
+      "abstract": "Automatic audio scene description turns a recording into a text account of a situation. One difficulty is deciding which elements of the audio should be kept, since a description cannot include them all. Annotators disagree about this, making a ground truth hard to obtain. In this work, we first define the ground truth, then generate the data. We focus on audio events and define sound salience with a simple rule: a sound is salient when a speaker audibly reacts to it. For scale and variety, a controlled set of scenarios fixes the ground truth, and a language model writes the dialogues. The resulting corpus, CARES, contains 10,000 two-speaker scenes. We then benchmark six audio-language models on three tasks: identifying the scene, tagging the sounds present, and classifying reactions. We show that these models hear the sounds but miss how the speakers react to them.",
+      "published": "2026-10-07T15:05:59Z",
+      "authors": [
+        "Marcel Gibier",
+        "Thomas Thebaud",
+        "Olivier Boëffard",
+        "Jean-François Bonastre"
+      ],
+      "primary_category": "cs.SD",
+      "url": "https://arxiv.org/abs/2610.10208",
+      "score": 21,
+      "status": "new — under review"
+    },
+    {
+      "id": "2610.09464",
+      "title": "BanglaRhet: Benchmarking Classical and Transformer Models for Rhetorical and Persuasion Detection in Bangla Political Speech",
+      "abstract": "Political discourse often uses rhetorical and persuasive language to frame narratives, influence public opinion, and mobilize audiences. While Bangla natural language processing has made progress in sentiment analysis and opinion mining, systematic benchmarking of transformer models for fine-grained rhetorical and persuasion technique detection in Bangla political speech remains largely underexplored. This paper presents a benchmark study of transformer-based models for detecting rhetorical form and persuasive intent in Bangla political discourse. Using BanglaRhet, a manually annotated corpus of 30,289 Bangla political speech segments collected from publicly available political news sources, we formulate two supervised single-label classification tasks: rhetorical technique detection (contrast, repetition, exaggeration, metaphor, rhetorical questions) and persuasion technique detection (blame assignment, call to action, unity call, moral, emotional, and logical appeals). We evaluate four transformer-based models, BanglaBERT, BanglaBERT-Base, SahajBERT, and XLM-RoBERTa-Base, against classical TF-IDF baselines. BanglaBERT achieves the highest performance, with 65.40% macro-F1 for rhetorical technique detection and 66.46% for persuasion technique detection, outperforming the best tuned classical baseline by 19.2 and 13.8 macro-F1 points, respectively. Class-level analysis indicates that errors are mainly associated with semantic overlap among labels, figurative language, and class imbalance. The results provide initial benchmark baselines for Bangla rhetorical and persuasion-aware political discourse analysis and highlight the need for context-aware and multi-label modeling.",
+      "published": "2026-10-07T05:22:19Z",
+      "authors": [
+        "Rohit Kumar Sen",
+        "Anik Chowdhury"
+      ],
+      "primary_category": "cs.CL",
+      "url": "https://arxiv.org/abs/2610.09464",
+      "score": 18,
+      "status": "new — under review"
+    },
+    {
+      "id": "2610.10240",
+      "title": "Benchmarking Adult Addressee Classification Across Child- and Adult-Directed Speech Datasets",
+      "abstract": "In this work, we present a comprehensive analysis of classification performance for distinguishing child-directed speech (CDS) from adult-directed speech (ADS) using speech data from corpora containing natural in-lab and in-the-wild CDS and ADS. We establish classification benchmarks for these datasets using self-supervised learning (SSL) representations, along with a range of time-pooled representations that go beyond first- and second-order statistics by incorporating cross-channel covariances in high-dimensional embeddings. In addition, we probe these representations to examine how different pooling methods capture prosodic information using linear probes. Overall, SSL-based representations prove particularly effective, achieving the best performance, while different pooling methods offer complementary advantages for the task.",
+      "published": "2026-10-07T15:23:36Z",
+      "authors": [
+        "Sofoklis Kakouros",
+        "Daniil Kocharov",
+        "Okko Räsänen"
+      ],
+      "primary_category": "eess.AS",
+      "url": "https://arxiv.org/abs/2610.10240",
+      "score": 18,
+      "status": "new — under review"
+    },
+    {
+      "id": "2610.10264",
+      "title": "CrossEdit: Cross-Modal Training Enables Rich Audio-Visual Editing",
+      "abstract": "Multimedia editing requires generative models to interpret complex, compositional instructions and modify only the desired elements across modalities, a capability largely beyond existing systems. Current approaches are typically limited to simple, single-attribute edits within one modality, since diverse, high-quality editing pairs are hard to obtain, especially for cross-modal tasks where aligned audiovisual (AV) data is scarce. We present CrossEdit, a unified omni-modal editing model for images, audio, and video that performs AV movie scene edits zero-shot through cross-modal transfer. Our key observation is that complex instruction-following, once learned in any modality, generalizes to others. We exploit the additive nature of acoustic signals to procedurally generate large-scale audio editing pairs with compositional instructions, and show that fine-tuning on this synthetic data and self-supervised AV masked reconstruction, alongside a targeted set of curated cross-modal tasks, induces instruction-following that transfers zero-shot to unseen modality and instruction combinations. To evaluate this capability, we release CrossEditBench, a human-annotated benchmark of AV edits on movie scenes, and propose AV-FES, a metric that jointly scores instruction following and consistency. We show that our proposed techniques improve performance on zero-shot AV movie scene editing, while maintaining or improving performance on lip-synced speech editing and standard image, video, and audio editing benchmarks. Demos are available at https://wanchichen.github.io/crossedit/.",
+      "published": "2026-10-07T15:36:56Z",
+      "authors": [
+        "William Chen",
+        "Prem Seetharaman",
+        "Ke Chen",
+        "Oriol Nieto",
+        "Kevin Duarte",
+        "Siddharth Srinivasan Iyer",
+        "Mamshad Nayeem Rizve",
+        "Zhiwen Cao"
+      ],
+      "primary_category": "cs.SD",
+      "url": "https://arxiv.org/abs/2610.10264",
+      "score": 18,
+      "status": "new — under review"
+    },
     {
       "id": "2610.08125",
       "title": "Conversation Is a Two-Body Problem: Dyadic Evaluation of Full-Duplex Dialogue Models",
@@ -943,106 +1034,6 @@
       "url": "https://arxiv.org/abs/2609.34973",
       "score": 33,
       "status": "accepted — added to the atlas as APEX-Voice (professional workflows completed by full-duplex voice agents inside a stateful tool environment)"
-    },
-    {
-      "id": "2609.35564",
-      "title": "Almieyar: A Culturally Grounded Benchmark for Multi-Dialect Arabic Speech Recognition",
-      "abstract": "Arabic speech technology has largely focused on Modern Standard Arabic, leaving the living dialects spoken by hundreds of millions under-served. We introduce ALMIEYAR, a culturally grounded ASR benchmark covering 17 Arabic dialects across six families, built entirely from newly recorded speech unseen by existing models. Dialect-community coordinators selected culturally relevant images across 10 topics, and native speakers described them through five structured scenarios, yielding approximately 50 minutes per dialect (13.7 hours total). We benchmark 12 state-of-the-art ASR systems zero-shot, including GPT-4o-transcribe, Voxtral-Mini-4B, Fanar-STT-LF, Whisper, SeamlessM4T-v2, and wav2vec2-based models. GPT-4o-transcribe achieves the lowest overall WER at 35.0%, followed by Voxtral-Mini-4B, Fanar-STT-LF, and Whisper-Large-v3 at 41.1%, 45.9%, and 49.5%, respectively, indicating substantial remaining errors across Arabic dialect communities. Performance varies considerably across dialect groups, with no model performing uniformly best across all groups. WER alone also obscures dialectal ASR behaviour: wav2vec2-based models show large WER/CER gaps, where character-level agreement remains much higher than word-level accuracy, motivating joint WER/CER reporting. ALMIEYAR provides a unified benchmark for culturally grounded Arabic ASR evaluation, including the first published benchmark for Ahwazi Arabic.",
-      "published": "2026-09-28T16:29:11Z",
-      "authors": [
-        "Omid Ghahroodi",
-        "Anas Madkoor",
-        "Dima Faris Al Saudi",
-        "Fagr Tahir",
-        "Malak Annan",
-        "Talha shahid javad allah rakha",
-        "Omar Al-Busaidi",
-        "Zineb El Kahla"
-      ],
-      "primary_category": "cs.CL",
-      "url": "https://arxiv.org/abs/2609.35564",
-      "score": 33,
-      "status": "reviewed — out of scope: the subjects are not general spoken LLMs (an Arabic-dialect speech recognition benchmark scored by WER and CER)"
-    },
-    {
-      "id": "2609.35952",
-      "title": "HEAR: Real Voices, Real Bias: A Large-Scale Human-Recorded, Demographically Diverse Benchmark for Audio Language Models",
-      "abstract": "We introduce HEAR (Human-recorded Evaluation of Audio-LLM bias by Real speakers), a large-scale, ecologically valid benchmark comprising 87k real human audio samples from 843 demographically diverse participants. HEAR enables comprehensive evaluation through Multiple Choice Question Answering (MCQA) and open-ended long-form tasks. To our knowledge, this is the first large-scale voice benchmark grounded entirely in authentic human speech. We evaluate model behavior across both real-time speech-to-speech and speech-to-text architectures. Our results reveal that voice-conditioned bias is a model-specific property. Furthermore, we demonstrate that personalization instructions consistently exacerbate demographic disparities. Our findings establish that voice bias is a controllable model characteristic, providing a foundational framework for future bias mitigation and evaluation in Audio-LLM development.",
-      "published": "2026-09-28T17:30:33Z",
-      "authors": [
-        "Shen Yan",
-        "Duc Le",
-        "Irina-Elena Veliche"
-      ],
-      "primary_category": "cs.SD",
-      "url": "https://arxiv.org/abs/2609.35952",
-      "score": 33,
-      "status": "accepted — added to the atlas as HEAR (voice bias) (voice-conditioned bias of audio language models measured on real recordings from 843 speakers)"
-    },
-    {
-      "id": "2609.34247",
-      "title": "SALMONN-duo: Adaptive Dual-System Coordination for Full-Duplex Voice Agents",
-      "abstract": "Full-duplex speech large language models (LLMs) enable low-latency, natural voice interaction. However, real-world agents must also use tools and perform deliberative reasoning-operations whose variable latency and computational cost conflict with the stringent timing requirements of real-time conversation. To reconcile these demands, we propose SALMONN-duo, an adaptive dual-system voice agent inspired by dual-process theories of cognition. SALMONN-duo separates real-time interaction from deliberative computation by pairing an always-on, fast-thinking full-duplex speech LLM (system 1) with a powerful asynchronous slow-thinking LLM agent (system 2). Beyond handling real-time interaction, system 1 learns when to answer directly and when to delegate, remaining responsive during backend execution and seamlessly integrating returned information into the ongoing dialogue without exposing tool traces or losing conversational context. Evaluations on single-turn spoken question answering (QA) and multi-turn conversations demonstrate that adaptive delegation substantially improves accuracy on knowledge-intensive and multi-hop reasoning questions, while knowledge-boundary-aware training avoids unnecessary system 2 invocations. On a customized version of $τ$-Voice, SALMONN-duo further demonstrates its ability to complete environment-grounded, policy-constrained tasks through multi-turn interactions in realistic business scenarios. Finally, cost-aware reinforcement learning further enhances the trade-off between task performance and backend usage across the QA and conversation tasks, while improving task success and response safety on $τ$-Voice with an acceptable increase in the delegation rate.",
-      "published": "2026-09-28T03:53:05Z",
-      "authors": [
-        "Wenyi Yu",
-        "Siyin Wang",
-        "Terumi Chiba",
-        "Xianzhao Chen",
-        "Xiaohai Tian",
-        "Jun Zhang",
-        "Lu Lu",
-        "Chao Zhang"
-      ],
-      "primary_category": "cs.CL",
-      "url": "https://arxiv.org/abs/2609.34247",
-      "score": 30,
-      "status": "reviewed — out of scope: no benchmark proposed (a dual-system full-duplex voice agent, evaluated on existing QA sets and a customized version of an existing voice-agent benchmark)"
-    },
-    {
-      "id": "2609.34461",
-      "title": "CharDuplex: Building Character-Consistent Full-Duplex Spoken Dialogue Models",
-      "abstract": "Full-duplex speech models are moving voice interaction beyond conventional turn-taking, yet natural conversation is shaped not only by when an agent speaks, but also by how it behaves as a conversational character. We present CharDuplex, a character-driven full-duplex speech model that combines real-time spoken interaction with persona-conditioned behavior. We first adapt GLM-4-Voice to an always-on dual-stream architecture and train the model for full-duplex conversation. Then a fully automated pipeline constructs character-conditioned dialogue data from open-source character descriptions for character-conditioned supervised fine-tuning. The model is further refined with the proposed FDGym, where an LLM-simulated user dynamically interacts with the model, enabling reinforcement learning over evolving multi-turn interactions. On SpeechRole-Eval, CharDuplex achieves the highest average score among the evaluated open-source models, while remaining competitive with closed-source systems. It also demonstrates competitive general speech intelligence and strong full-duplex interaction capabilities. CharDuplex demonstrates a practical training recipe for building full-duplex voice assistants that are not only interactive, but also character-consistent.",
-      "published": "2026-09-28T07:18:57Z",
-      "authors": [
-        "Donghang Wu",
-        "Yisi Liu",
-        "Chen Chen",
-        "Hexin Liu",
-        "Eng Siong Chng"
-      ],
-      "primary_category": "eess.AS",
-      "url": "https://arxiv.org/abs/2609.34461",
-      "score": 30,
-      "status": "reviewed — out of scope: no benchmark proposed (a character-consistent full-duplex dialogue model and its training recipe, evaluated on existing benchmarks)"
-    },
-    {
-      "id": "2609.32536",
-      "title": "Do Audio LLMs Listen Before They Act? Diagnosing Acoustic-Context Gating in Voice Agents",
-      "abstract": "Audio language models can recognize spoken commands and invoke tools, but an agent must first decide whether the acoustic and conversational context warrants action. We introduce VGBench, a 1,018-item diagnostic benchmark for action-level addressedness across side-talk, self-talk, and speaker-switch scenarios. Each item uses a shared action space comprising silence, a tool call, and a natural-language answer. Speaker-switch pairs hold the specified words fixed while source, distance rendering, and a temporal boundary define a controlled wearer-to-bystander shift. Six raw Audio LLMs and three training-free adaptations often identify the target tool yet rarely withhold action under this shift; the highest raw switch mute rate is 14%. We then use VoxGate as a post-training case study. Supervised training mutes 91.3% of switched commands while choosing the correct tool for all nearby wearer commands and text-only controls. An exploratory GRPO stage has similar switch performance; side-talk accuracy rises from 68.4% to 70.9%, and self-talk muting from 52.0% to 60.0%. Factorized controls identify an independent source-change effect, while sensitivity to the far-field manipulation varies across acoustic renderings. The benchmark therefore measures multi-cue acoustic-context gating rather than isolated speaker identity.",
-      "published": "2026-09-26T12:16:00Z",
-      "authors": [
-        "Yanjie Zhang",
-        "Nanchen Hu",
-        "Yushi Sun"
-      ],
-      "primary_category": "cs.SD",
-      "url": "https://arxiv.org/abs/2609.32536",
-      "score": 27,
-      "status": "accepted — added to the atlas as VGBench (whether audio models acting as voice agents withhold action on side-talk, self-talk and bystander speech)"
-    },
-    {
-      "id": "2609.33899",
-      "title": "NSV-Shift: A Contrastive Benchmark for Non-Speech Vocalization Understanding and Response Adaptation in Speech-to-Speech Models",
-      "abstract": "We introduce NSV-Shift, a contrastive benchmark for evaluating whether speech-to-speech models can understand non-speech vocalizations (NSVs) and adapt their responses accordingly. Each pair contains two conversations with identical lexical content that differ only in the NSV embedded in the final turn. Our pilot contains 22 human-verified pairs (44 audio conditions) and evaluates five models on NSV perception, emotion understanding, and response adaptation. Results show that models generally perform better at detecting NSVs than at interpreting their fine-grained emotional meaning or producing appropriately differentiated responses. The data construction pipeline, dataset, and evaluation pipeline are publicly available at https://github.com/ChenzwNina/nsv-construction.",
-      "published": "2026-09-27T20:28:06Z",
-      "authors": [
-        "Ziwei Chen"
-      ],
-      "primary_category": "cs.CL",
-      "url": "https://arxiv.org/abs/2609.33899",
-      "score": 27,
-      "status": "accepted — added to the atlas as NSV-Shift (a 22-pair pilot on non-speech vocalizations and response adaptation in speech-to-speech models)"
     }
   ],
   "warnings": []
