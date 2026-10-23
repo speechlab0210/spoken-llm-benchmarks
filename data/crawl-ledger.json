@@ -1,9 +1,310 @@
 {
  "since": "2026-08-22",
  "what": "Every arXiv paper the daily crawl has flagged since launch (score at or above the threshold, not previously seen), with the reviewer's verdict as written in the feed and whether the paper entered the catalogue. \"published\" is the paper's arXiv date. See the Method section of the site.",
- "flagged": 232,
+ "flagged": 275,
  "admitted": 67,
  "entries": [
+  {
+   "id": "2610.31252",
+   "title": "Query-Conditioned Liquid Temporal Grounding for Long-Form Audio",
+   "published": "2026-10-22T13:32:12Z",
+   "score": 21,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.31083",
+   "title": "MQAScore: Fine-Grained Text-Music Alignment Evaluation via Large Audio Language Model",
+   "published": "2026-10-22T10:56:25Z",
+   "score": 33,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.30841",
+   "title": "TRIAD: Benchmarking Omni-Modal Ambiguity in Multimodal Large Language Models",
+   "published": "2026-10-22T07:15:40Z",
+   "score": 30,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.29455",
+   "title": "Omnilingual-MsASR: Benchmarking Multimodal, Multilingual, Long-Form Multi-Speaker ASR of Omni Large Language Models",
+   "published": "2026-10-21T09:11:30Z",
+   "score": 27,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.29249",
+   "title": "MOSAIC: An Omni-Modal Benchmark for Long-Term Memory and Cross-Modal Reasoning in Conversational Agents",
+   "published": "2026-10-21T05:55:20Z",
+   "score": 33,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.29164",
+   "title": "XingChen-UniFE: A Unified Generative Speech Front-End via Complementary Acoustic-Semantic Modeling",
+   "published": "2026-10-21T03:55:18Z",
+   "score": 18,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.29031",
+   "title": "KunSet: A Corpus and Benchmark for Lyrics Alignment and Rhyme Retrieval in Kunqu Opera",
+   "published": "2026-10-21T01:05:22Z",
+   "score": 24,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.28711",
+   "title": "Qwen-Audio-3.1-ASR Technical Report",
+   "published": "2026-10-20T17:08:12Z",
+   "score": 18,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.28405",
+   "title": "DIVE: Benchmarking Full-Duplex Interaction with Visual Engagement in Continuous Streams",
+   "published": "2026-10-20T15:48:29Z",
+   "score": 27,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.28402",
+   "title": "StreamEval: Evaluating Interactive Streaming Video Generation Models",
+   "published": "2026-10-20T15:47:43Z",
+   "score": 30,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.28146",
+   "title": "SKAD: Sketch-Guided Audio-Contrastive Decoding for Reasoning in Large Audio-Language Models",
+   "published": "2026-10-20T12:51:48Z",
+   "score": 39,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.27581",
+   "title": "DuplexLedger: Benchmarking Transactional Memory in Full-Duplex Speech Agents",
+   "published": "2026-10-20T03:47:06Z",
+   "score": 36,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.27459",
+   "title": "RealComm: Benchmarking and Adapting Audio Deepfake Detection over Real Communication Channels",
+   "published": "2026-10-20T01:19:17Z",
+   "score": 21,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.27103",
+   "title": "Omni-Woodpecker: Hallucination Correction via Evidence-Prior Rebalancing for Omni LLMs",
+   "published": "2026-10-19T18:01:40Z",
+   "score": 18,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.26821",
+   "title": "AfriBED: a Speech Recognition Bias Evaluation Dataset for Low Resource African Languages",
+   "published": "2026-10-19T17:53:32Z",
+   "score": 18,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.26448",
+   "title": "TeleASR-Amharic: A Benchmark for Robust Amharic ASR in Realistic Telecommunication Conditions",
+   "published": "2026-10-19T14:06:28Z",
+   "score": 21,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.26258",
+   "title": "AudioScorer: Learning Question-Aware Token Relevance for Large Audio Language Models",
+   "published": "2026-10-19T12:14:12Z",
+   "score": 21,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.26168",
+   "title": "VISAGENT: An Agent-Based End-to-End Voice Interaction System",
+   "published": "2026-10-19T10:59:45Z",
+   "score": 21,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.27002",
+   "title": "Evaluating Tibetan Speech Recognition Across Dialects and Adaptation Regimes: A Multi-Granularity Analysis",
+   "published": "2026-10-19T09:44:36Z",
+   "score": 18,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.26059",
+   "title": "Honeyed Words, Hidden Daggers: Benchmarking and Training LLMs to See Through Mock Politeness",
+   "published": "2026-10-19T09:19:38Z",
+   "score": 24,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.25824",
+   "title": "MS-Bench: A Condition-Stratified Multi-Speaker ASR Benchmark",
+   "published": "2026-10-19T05:37:31Z",
+   "score": 42,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.25767",
+   "title": "EvalRx: Agentic Diagnosis and Verified Repair of Foundation Models",
+   "published": "2026-10-19T04:28:22Z",
+   "score": 24,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.26943",
+   "title": "MAMath-Bench: Process-Aware and Robust Evaluation of Multimodal Multi-Agent Mathematical Reasoning",
+   "published": "2026-10-18T04:32:06Z",
+   "score": 36,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.24409",
+   "title": "Long Listening Thoughts: Eliciting Open Auditory Reasoning with Deliberative Perception and Cognitive Refinement",
+   "published": "2026-10-17T03:20:36Z",
+   "score": 30,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.23804",
+   "title": "Jarvis: Coordination Deserves a Brain of Its Own in Agentic Interactive Models",
+   "published": "2026-10-16T17:29:10Z",
+   "score": 18,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.23745",
+   "title": "VocalGrad: Evaluating Acoustic Perception in Audio Language Models",
+   "published": "2026-10-16T16:54:35Z",
+   "score": 42,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.22989",
+   "title": "MUB: An Identity-Masked Benchmark for Music Understanding in Multimodal Language Models",
+   "published": "2026-10-16T06:14:31Z",
+   "score": 21,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.26894",
+   "title": "TRACE: Trustworthy Reasoning from Acoustic Cues and Evidence",
+   "published": "2026-10-15T19:59:23Z",
+   "score": 21,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.22333",
+   "title": "Evaluation Awareness Beyond English: Do LLMs Act Differently When Tested in Indic Languages?",
+   "published": "2026-10-15T17:53:33Z",
+   "score": 18,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.22321",
+   "title": "AVC-Reward: Event-Centric Audio-Video Consistency Evaluation",
+   "published": "2026-10-15T17:51:56Z",
+   "score": 24,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.26891",
+   "title": "PW-Pruning: Phase-Aware Expert Selection for Speech-Centric Omni-Modal Models",
+   "published": "2026-10-15T12:36:40Z",
+   "score": 18,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.21659",
+   "title": "When Does \"Post-Call\" Begin? An Availability Contract for Earnings-Call NLP Benchmarks",
+   "published": "2026-10-15T10:40:06Z",
+   "score": 18,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.21614",
+   "title": "Qwen-Audio-Jev: A Unified Interface for Audio Decisions",
+   "published": "2026-10-15T09:59:07Z",
+   "score": 28,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.21440",
+   "title": "SITAR: A Situational Distortion Metric for Automatic Speech Recognition Evaluation",
+   "published": "2026-10-15T07:48:03Z",
+   "score": 24,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.20830",
+   "title": "PEDBench: Can Speech Models Detect Phonetic Errors?",
+   "published": "2026-10-14T19:15:48Z",
+   "score": 42,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.20370",
+   "title": "From Triage to Impact: A Multi-Hop Reasoning Benchmark for Explainable Persian Hate Speech",
+   "published": "2026-10-14T15:42:15Z",
+   "score": 21,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.20310",
+   "title": "MUSEBENCH: A Benchmark for AI-Generated Music Detection and Artifact Analysis",
+   "published": "2026-10-14T14:57:38Z",
+   "score": 21,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.22405",
+   "title": "MedSonor: Learning to Use Clinical Audio in Medical LLMs",
+   "published": "2026-10-14T14:04:43Z",
+   "score": 18,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.20172",
+   "title": "MultiPartyTurnBench: Benchmarking Floor Control in Multi-Party Spoken Dialogue",
+   "published": "2026-10-14T13:20:14Z",
+   "score": 54,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.20085",
+   "title": "Designing Textual Interfaces To Enhance Llm Reasoning On Audio-Visual Question Answering",
+   "published": "2026-10-14T12:23:59Z",
+   "score": 18,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.19869",
+   "title": "SEA-HELM Audio: Evaluating Multilingual ASR-LLM Pipeline Performance Across SEA-HELM Subsets",
+   "published": "2026-10-14T09:29:36Z",
+   "score": 24,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.19774",
+   "title": "Long-Prompt Zero-Shot TTS: Benchmarking Prosody Reproduction Beyond Voice Cloning",
+   "published": "2026-10-14T08:23:44Z",
+   "score": 21,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.19704",
+   "title": "BANGLAPLAN: A Benchmark for Constraint-Based Planning and Decision-Making in Bangla",
+   "published": "2026-10-14T07:32:32Z",
+   "score": 21,
+   "outcome": "under review"
+  },
   {
    "id": "2610.10264",
    "title": "CrossEdit: Cross-Modal Training Enables Rich Audio-Visual Editing",
