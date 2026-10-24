@@ -14585,6 +14585,136 @@
     }
    ],
    "evidence_url": "https://www.defense.gouv.fr/actualites/ia-defense-sebastien-lecornu-inaugure-pole-recherche-lamiad"
+  },
+  {
+   "id": "riken",
+   "name": "RIKEN",
+   "short": "RIKEN",
+   "type": "government",
+   "country": "JP",
+   "parent": null,
+   "confidence": "high",
+   "sites": [
+    {
+     "city": "Wako",
+     "lat": 35.78,
+     "lon": 139.61,
+     "country": "JP"
+    }
+   ],
+   "aliases": [
+    {
+     "raw": "Riken",
+     "confidence": "high",
+     "note": "Canonical name. Headquarters location from https://www.riken.jp/en/access/wako-map/; the paper does not identify an author campus."
+    }
+   ]
+  },
+  {
+   "id": "tohoku-university",
+   "name": "Tohoku University",
+   "short": "Tohoku",
+   "type": "academia",
+   "country": "JP",
+   "parent": null,
+   "confidence": "high",
+   "sites": [
+    {
+     "city": "Sendai",
+     "lat": 38.27,
+     "lon": 140.87,
+     "country": "JP"
+    }
+   ],
+   "aliases": [
+    {
+     "raw": "Tohoku University",
+     "confidence": "high",
+     "note": "Institution location: https://www.tohoku.ac.jp/en/about/map_directions.html; no author campus inferred."
+    }
+   ]
+  },
+  {
+   "id": "xi-an-jiaotong-university-city-college",
+   "name": "Xi'an Jiaotong University City College",
+   "short": "XJTUCC",
+   "type": "academia",
+   "country": "CN",
+   "parent": null,
+   "confidence": "high",
+   "sites": [
+    {
+     "city": "Xi'an",
+     "lat": 34.26,
+     "lon": 108.94,
+     "country": "CN"
+    }
+   ],
+   "aliases": [
+    {
+     "raw": "Xi’an Jiaotong University City College",
+     "confidence": "high",
+     "note": "Kept distinct from XJTU; independent college identity and city confirmed at https://www.xjtucc.cn/hzjl/wjzj.htm."
+    }
+   ]
+  },
+  {
+   "id": "shaanxi-iot-intelligent-sensing-center",
+   "name": "Engineering Research Center of IoT Intelligent Sensing Interactive Platform, Universities of Shaanxi Province",
+   "short": "Shaanxi IoT sensing center",
+   "type": "unresolved",
+   "country": "CN",
+   "parent": null,
+   "confidence": "low",
+   "sites": [],
+   "aliases": [
+    {
+     "raw": "Engineering Research Center of IoT Intelligent Sensing Interactive Platform, Universities of Shaanxi Province",
+     "confidence": "low",
+     "note": "Literal separate affiliation 6 in arXiv:2610.26943v1, p.1. Parent institution and city unresolved; not merged into affiliation 5 or geolocated."
+    }
+   ]
+  },
+  {
+   "id": "casic",
+   "name": "China Aerospace Science and Industry Corporation",
+   "short": "CASIC",
+   "type": "industry",
+   "country": "CN",
+   "parent": null,
+   "confidence": "high",
+   "sites": [],
+   "aliases": [
+    {
+     "raw": "China Aerospace Science and Industry Corporation",
+     "confidence": "high",
+     "note": "Printed institution in arXiv:2610.27581v1, p.1; no author city or subsidiary specified."
+    }
+   ]
+  },
+  {
+   "id": "ai-singapore",
+   "name": "AI Singapore",
+   "short": "AISG",
+   "type": "government",
+   "country": "SG",
+   "parent": null,
+   "confidence": "high",
+   "sites": [
+    {
+     "city": "Singapore",
+     "lat": 1.35,
+     "lon": 103.82,
+     "country": "SG"
+    }
+   ],
+   "aliases": [
+    {
+     "raw": "AI Singapore, Singapore",
+     "confidence": "high",
+     "note": "Institution and country printed in arXiv:2610.19869v2, p.1; not merged into a host university."
+    }
+   ]
   }
  ]
 }

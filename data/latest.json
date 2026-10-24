@@ -16,7 +16,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2610.20172",
       "score": 54,
-      "status": "new — under review"
+      "status": "reviewed — included: MultiPartyTurnBench introduce evaluation tasks for general speech/audio-language models; modality and protocol limitations are documented in the catalogue"
     },
     {
       "id": "2610.20830",
@@ -36,7 +36,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2610.20830",
       "score": 42,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: phonetic-error detection is scored through phoneme recognition/edit operations; this is a specialized speech-recognition evaluation, including task-adapted SLMs"
     },
     {
       "id": "2610.23745",
@@ -50,7 +50,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2610.23745",
       "score": 42,
-      "status": "new — under review"
+      "status": "reviewed — included: VocalGrad introduce evaluation tasks for general speech/audio-language models; modality and protocol limitations are documented in the catalogue"
     },
     {
       "id": "2610.25824",
@@ -70,7 +70,7 @@
       "primary_category": "eess.AS",
       "url": "https://arxiv.org/abs/2610.25824",
       "score": 42,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: MS-Bench evaluates speaker-attributed transcription with ASR/diarization error rates rather than general spoken interaction"
     },
     {
       "id": "2610.28146",
@@ -90,7 +90,7 @@
       "primary_category": "eess.AS",
       "url": "https://arxiv.org/abs/2610.28146",
       "score": 39,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: SKAD is a training method evaluated on existing audio reasoning benchmarks, not a new benchmark"
     },
     {
       "id": "2610.26943",
@@ -110,7 +110,7 @@
       "primary_category": "cs.AI",
       "url": "https://arxiv.org/abs/2610.26943",
       "score": 36,
-      "status": "new — under review"
+      "status": "reviewed — included: MAMath-Bench introduce evaluation tasks for general speech/audio-language models; modality and protocol limitations are documented in the catalogue"
     },
     {
       "id": "2610.27581",
@@ -130,7 +130,7 @@
       "primary_category": "cs.AI",
       "url": "https://arxiv.org/abs/2610.27581",
       "score": 36,
-      "status": "new — under review"
+      "status": "reviewed — included: DuplexLedger introduce evaluation tasks for general speech/audio-language models; modality and protocol limitations are documented in the catalogue"
     },
     {
       "id": "2610.29249",
@@ -150,7 +150,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2610.29249",
       "score": 33,
-      "status": "new — under review"
+      "status": "reviewed — included: MOSAIC introduce evaluation tasks for general speech/audio-language models; modality and protocol limitations are documented in the catalogue"
     },
     {
       "id": "2610.31083",
@@ -166,7 +166,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2610.31083",
       "score": 33,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: MQAScore evaluates text-to-music generation alignment and metric agreement, not a general spoken LLM task"
     },
     {
       "id": "2610.24409",
@@ -186,7 +186,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2610.24409",
       "score": 30,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: introduces long listening-thought training and data for a model, with evaluation on existing benchmarks"
     },
     {
       "id": "2610.28402",
@@ -199,7 +199,7 @@
       "primary_category": "cs.CV",
       "url": "https://arxiv.org/abs/2610.28402",
       "score": 30,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: StreamEval targets interactive video/avatar generation systems rather than general spoken LLMs"
     },
     {
       "id": "2610.30841",
@@ -218,7 +218,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2610.30841",
       "score": 30,
-      "status": "new — under review"
+      "status": "reviewed — included: TRIAD introduce evaluation tasks for general speech/audio-language models; modality and protocol limitations are documented in the catalogue"
     },
     {
       "id": "2610.21614",
@@ -238,7 +238,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2610.21614",
       "score": 28,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: Qwen-Audio-Jev is a model report evaluated on existing test sets"
     },
     {
       "id": "2610.28405",
@@ -253,7 +253,7 @@
       "primary_category": "cs.AI",
       "url": "https://arxiv.org/abs/2610.28405",
       "score": 27,
-      "status": "new — under review"
+      "status": "reviewed — included: DIVE introduce evaluation tasks for general speech/audio-language models; modality and protocol limitations are documented in the catalogue"
     },
     {
       "id": "2610.29455",
@@ -273,7 +273,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2610.29455",
       "score": 27,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: Omnilingual-MsASR measures multi-speaker transcription, speaker attribution and timestamps rather than general spoken reasoning"
     },
     {
       "id": "2610.19869",
@@ -291,7 +291,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2610.19869",
       "score": 24,
-      "status": "new — under review"
+      "status": "reviewed — included: SEA-HELM Audio introduce evaluation tasks for general speech/audio-language models; modality and protocol limitations are documented in the catalogue"
     },
     {
       "id": "2610.21440",
@@ -309,7 +309,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2610.21440",
       "score": 24,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: SITAR is an ASR evaluation metric for transcription errors rather than a general spoken LLM benchmark"
     },
     {
       "id": "2610.22321",
@@ -329,7 +329,7 @@
       "primary_category": "cs.CV",
       "url": "https://arxiv.org/abs/2610.22321",
       "score": 24,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: AVC-Benchmark targets consistency of generated audio-video clips and reward models, not general spoken LLM behavior"
     },
     {
       "id": "2610.25767",
@@ -348,7 +348,7 @@
       "primary_category": "cs.AI",
       "url": "https://arxiv.org/abs/2610.25767",
       "score": 24,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: EvalRx is an agentic diagnosis and repair method evaluated across existing tasks, not a new spoken LLM evaluation set"
     },
     {
       "id": "2610.26059",
@@ -366,7 +366,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2610.26059",
       "score": 24,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: ZhenhuanBench evaluates text-only pragmatic reasoning; the tested LLMs do not receive speech"
     },
     {
       "id": "2610.29031",
@@ -386,7 +386,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2610.29031",
       "score": 24,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: KunSet targets forced alignment and rhyme retrieval in music, not general audio-language models"
     },
     {
       "id": "2610.19704",
@@ -401,7 +401,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2610.19704",
       "score": 21,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: BANGLAPLAN evaluates constraint-based planning in Bangla text, not speech input or output"
     },
     {
       "id": "2610.19774",
@@ -418,7 +418,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2610.19774",
       "score": 21,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: LP-TTS-Bench evaluates dedicated text-to-speech generation systems"
     },
     {
       "id": "2610.20310",
@@ -436,7 +436,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2610.20310",
       "score": 21,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: MUSEBENCH evaluates specialized AI-generated-music detectors, not general spoken LLMs"
     },
     {
       "id": "2610.20370",
@@ -452,7 +452,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2610.20370",
       "score": 21,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: evaluates Persian hate-speech detection in social-media text rather than speech"
     },
     {
       "id": "2610.26894",
@@ -468,7 +468,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2610.26894",
       "score": 21,
-      "status": "new — under review"
+      "status": "reviewed — included: TRACE introduce evaluation tasks for general speech/audio-language models; modality and protocol limitations are documented in the catalogue"
     },
     {
       "id": "2610.22989",
@@ -482,7 +482,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2610.22989",
       "score": 21,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: MUB is a proposed music-understanding protocol validated with DSP/constant baselines; evaluation of contemporary general audio-language models is not established"
     },
     {
       "id": "2610.26168",
@@ -500,7 +500,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2610.26168",
       "score": 21,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: VISAGENT is a deployed assistance system, not a new reusable spoken LLM benchmark"
     },
     {
       "id": "2610.26258",
@@ -514,7 +514,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2610.26258",
       "score": 21,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: AudioScorer is an audio-token pruning method tested on existing tasks"
     },
     {
       "id": "2610.26448",
@@ -531,7 +531,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2610.26448",
       "score": 21,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: TeleASR-Amharic evaluates dedicated automatic speech recognition under telecom distortions"
     },
     {
       "id": "2610.27459",
@@ -551,7 +551,7 @@
       "primary_category": "eess.AS",
       "url": "https://arxiv.org/abs/2610.27459",
       "score": 21,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: RealComm targets specialized audio-deepfake detection rather than general spoken LLMs"
     },
     {
       "id": "2610.31252",
@@ -569,7 +569,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2610.31252",
       "score": 21,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: proposes a temporal-grounding model and evaluates it on LAT-Bench rather than introducing a new benchmark"
     },
     {
       "id": "2610.20085",
@@ -586,7 +586,7 @@
       "primary_category": "cs.AI",
       "url": "https://arxiv.org/abs/2610.20085",
       "score": 18,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: studies textual interfaces for reasoning on existing audio-visual question-answering tasks, not a new benchmark"
     },
     {
       "id": "2610.22405",
@@ -601,7 +601,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2610.22405",
       "score": 18,
-      "status": "new — under review"
+      "status": "reviewed — included: MedVoice-Dial, MedVoice-AID introduce evaluation tasks for general speech/audio-language models; modality and protocol limitations are documented in the catalogue"
     },
     {
       "id": "2610.21659",
@@ -617,7 +617,7 @@
       "primary_category": "q-fin.CP",
       "url": "https://arxiv.org/abs/2610.21659",
       "score": 18,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: studies post-call timing and information leakage in financial NLP rather than evaluating general spoken LLMs"
     },
     {
       "id": "2610.26891",
@@ -637,7 +637,7 @@
       "primary_category": "eess.AS",
       "url": "https://arxiv.org/abs/2610.26891",
       "score": 18,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: PW-Pruning is an expert-pruning method evaluated on existing audio benchmarks"
     },
     {
       "id": "2610.22333",
@@ -657,7 +657,7 @@
       "primary_category": "cs.AI",
       "url": "https://arxiv.org/abs/2610.22333",
       "score": 18,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: evaluates awareness of testing in text-only Indic-language prompts"
     },
     {
       "id": "2610.23804",
@@ -677,7 +677,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2610.23804",
       "score": 18,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: Jarvis is a coordination harness compared on existing full-duplex and voice-agent benchmarks"
     },
     {
       "id": "2610.27002",
@@ -691,7 +691,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2610.27002",
       "score": 18,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: evaluates specialized Tibetan speech recognition and segmentation metrics"
     },
     {
       "id": "2610.26821",
@@ -706,7 +706,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2610.26821",
       "score": 18,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: AfriBED evaluates demographic bias in dedicated speech recognition systems"
     },
     {
       "id": "2610.27103",
@@ -723,7 +723,7 @@
       "primary_category": "cs.AI",
       "url": "https://arxiv.org/abs/2610.27103",
       "score": 18,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: Omni-Woodpecker is a hallucination-correction method evaluated on existing benchmarks"
     },
     {
       "id": "2610.28711",
@@ -743,7 +743,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2610.28711",
       "score": 18,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: Qwen-Audio-3.1-ASR is a model report evaluated on existing recognition and audio-understanding benchmarks"
     },
     {
       "id": "2610.29164",
@@ -761,7 +761,7 @@
       "primary_category": "eess.AS",
       "url": "https://arxiv.org/abs/2610.29164",
       "score": 18,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: XingChen-UniFE is a speech-restoration and target-speaker-extraction model, not a new general spoken LLM benchmark"
     },
     {
       "id": "2610.08887",

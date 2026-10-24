@@ -11795,6 +11795,341 @@
         "English"
       ],
       "note": "Table 1 contributes 86 point estimates for Audio Flamingo Next, Qwen3-Omni, Kimi-Audio, MiMo-Audio, MOSS-Audio and MiDashengLM, extracted by row and column from arXiv v1 and visually checked against PDF page 4. The 42 reported 95% confidence intervals are retained in cell notes. Four missing precision values are omitted rather than replaced by zero; the reported zero recalls remain. The Whisper + Qwen3.6-35B-A3B transcript-only control is not mapped to a different indexed cascade. The benchmark uses synthetic English dialogues; human reaction-label validation used transcripts of 200 scenes, not listening tests. The code and example-audio page were accessible on 2026-10-09; no separate full-corpus download was linked there. The arXiv comment says Submitted to ICASSP 2027, which is not evidence of acceptance."
+    },
+    {
+      "id": "multipartyturnbench",
+      "name": "MultiPartyTurnBench",
+      "aka": [
+        "MPTB"
+      ],
+      "full_title": "MultiPartyTurnBench: Benchmarking Floor Control in Multi-Party Spoken Dialogue",
+      "arxiv_id": "2610.20172",
+      "arxiv_date": "2026-10",
+      "arxiv_date_full": "2026-10-14",
+      "url": "https://arxiv.org/abs/2610.20172",
+      "summary": "Tests when a full-duplex assistant should enter or relinquish the floor in conversations with multiple speakers. Controlled synthetic conversations distinguish genuine turn endings from temporary holds and successful interruptions from backchannels. Offline event detection and interactive voice-agent behavior are evaluated separately.",
+      "categories": [
+        "dialogue",
+        "interactivity",
+        "voice-agent"
+      ],
+      "tasks": [
+        "end-of-turn detection",
+        "interruption detection",
+        "selective floor entry and yielding"
+      ],
+      "io": "multi-party speech streams → event predictions or an interacting spoken response",
+      "metrics": [
+        "false-positive-constrained recall",
+        "signed event latency",
+        "START and STOP balanced accuracy (%)"
+      ],
+      "languages": [
+        "English"
+      ],
+      "note": "Six MiniCPM-o-4.5 estimates from Table 4 retain reported confidence intervals in their notes. Other agent versions are not mapped to older or generic model entries. The stimuli are synthetic.",
+      "size": "240 channel-separated conversations with 2–5 speakers and six interaction types; 120 interactive scenarios."
+    },
+    {
+      "id": "vocalgrad",
+      "name": "VocalGrad",
+      "aka": [],
+      "full_title": "VocalGrad: Evaluating Acoustic Perception in Audio Language Models",
+      "arxiv_id": "2610.23745",
+      "arxiv_date": "2026-10",
+      "arxiv_date_full": "2026-10-16",
+      "url": "https://arxiv.org/abs/2610.23745",
+      "summary": "Isolates low-level acoustic perception by asking whether a feature increases or decreases over a speech clip. Nine controlled transformations cover speaker properties and environmental effects. The binary response task separates perception of change from complex semantic reasoning; probing experiments investigate where information is preserved inside the tested models.",
+      "categories": [
+        "auditory-perception",
+        "paralinguistics"
+      ],
+      "tasks": [
+        "classifying the direction of acoustic change"
+      ],
+      "io": "transformed English speech plus a question → increase/decrease label",
+      "metrics": [
+        "binary classification accuracy (%)"
+      ],
+      "languages": [
+        "English"
+      ],
+      "note": "50 model estimates from Table 2 preserve the original percent scale. Human evaluation uses a sampled subset; its sampling limitations in Appendix B.4 prevent treating it as a census of the full benchmark. The NeurIPS track label alone is not verified acceptance.",
+      "size": "21,600 clips; nine categories, three intensity tiers and four temporal trajectories."
+    },
+    {
+      "id": "mamath-bench",
+      "name": "MAMath-Bench",
+      "aka": [],
+      "full_title": "MAMath-Bench: Process-Aware and Robust Evaluation of Multimodal Multi-Agent Mathematical Reasoning",
+      "arxiv_id": "2610.26943",
+      "arxiv_date": "2026-10",
+      "arxiv_date_full": "2026-10-18",
+      "url": "https://arxiv.org/abs/2610.26943",
+      "summary": "Evaluates mathematical answers, reasoning milestones and resilience to corrupted reasoning chains across text, image and audio inputs. The speech-relevant arm pairs spoken mathematical instructions with images. Only models supporting native audio can access this arm; unsupported modalities are explicitly distinguished from wrong answers.",
+      "categories": [
+        "reasoning",
+        "robustness",
+        "audio-grounding"
+      ],
+      "tasks": [
+        "audio-image mathematical reasoning",
+        "milestone coverage",
+        "detecting reasoning-chain errors"
+      ],
+      "io": "text, image or audio-image problem → answer and reasoning trace",
+      "metrics": [
+        "final-answer accuracy",
+        "milestone accuracy",
+        "step redundancy and missing rates",
+        "perturbation detection accuracy"
+      ],
+      "languages": [],
+      "note": "Included for its native audio-image evaluation. Table 3 is explicitly described as text-based, so its values are not imported as spoken-input results. Native-audio availability is recorded in Table 2 for Qwen3-Omni-Thinking and Gemma-4-E4B. The paper does not establish uniform modality access across all systems.",
+      "size": "1,003 problems: 800 positive examples, including 100 audio-image examples, and 203 reasoning-chain perturbations; 11 mathematical categories."
+    },
+    {
+      "id": "duplexledger",
+      "name": "DuplexLedger",
+      "aka": [],
+      "full_title": "DuplexLedger: Benchmarking Transactional Memory in Full-Duplex Speech Agents",
+      "arxiv_id": "2610.27581",
+      "arxiv_date": "2026-10",
+      "arxiv_date_full": "2026-10-20",
+      "url": "https://arxiv.org/abs/2610.27581",
+      "summary": "Tests persistent memory while a full-duplex speech agent listens and speaks. Sessions align pause handling, interruptions, backchannels and speech addressed to others with explicit Write, Update, Ignore and Retain events. Same-session questions and final summaries reveal whether the agent preserves current facts while rejecting stale or irrelevant evidence.",
+      "categories": [
+        "dialogue",
+        "interactivity",
+        "long-form"
+      ],
+      "tasks": [
+        "transactional memory updates",
+        "full-duplex boundary control",
+        "latest-value retrieval",
+        "distractor rejection"
+      ],
+      "io": "ongoing speech interaction → spoken replies and memory-grounded answers",
+      "metrics": [
+        "challenge realization and conditional full-duplex score",
+        "latest-value accuracy",
+        "stale/distractor rates",
+        "final-state fact coverage",
+        "stopping latency"
+      ],
+      "languages": [
+        "Chinese",
+        "English"
+      ],
+      "note": "52 baseline estimates from Table 3 cover four indexed models. ACT-Mem results on 219 held-out sessions are not mixed with the original baseline protocol. Conditional interaction scores require exposure and response-rate context; silence is not evidence of successful memory.",
+      "size": "1,094 bilingual sessions and 6,564 same-session questions/checks."
+    },
+    {
+      "id": "mosaic",
+      "name": "MOSAIC",
+      "aka": [],
+      "full_title": "MOSAIC: An Omni-Modal Benchmark for Long-Term Memory and Cross-Modal Reasoning in Conversational Agents",
+      "arxiv_id": "2610.29249",
+      "arxiv_date": "2026-10",
+      "arxiv_date_full": "2026-10-21",
+      "url": "https://arxiv.org/abs/2610.29249",
+      "summary": "Diagnoses long-term memory over conversations containing text, images, video and audio. Matched interventions separate evidence lost during representation, retrieval, delivery and reading. A fixed-reader track controls the answering model, while a separate end-to-end track evaluates complete memory systems. Audio includes prosodic cues that transcripts can discard.",
+      "categories": [
+        "long-form",
+        "reasoning",
+        "audio-grounding"
+      ],
+      "tasks": [
+        "cross-modal conversational memory",
+        "multi-hop evidence retrieval",
+        "abstention"
+      ],
+      "io": "multisession multimodal history plus question → answer or refusal",
+      "metrics": [
+        "answerable judge score",
+        "correct/false-refusal rates",
+        "latency"
+      ],
+      "languages": [],
+      "note": "Eight Table 28 cells retain the Naive RAG or ReAct Native-MM configuration with a MiMo-V2.5 reader in the metric name. These are system-conditioned results, not standalone model scores. Text-memory systems and the differently named Gemini 3.5 reader are not remapped. Prosody evidence has selector-level validation and disclosed lexical confounds.",
+      "size": "923 questions over 70 personas and histories of 11–24 sessions; 784 answerable and 139 refusal items."
+    },
+    {
+      "id": "triad",
+      "name": "TRIAD",
+      "aka": [],
+      "full_title": "TRIAD: Benchmarking Omni-Modal Ambiguity in Multimodal Large Language Models",
+      "arxiv_id": "2610.30841",
+      "arxiv_date": "2026-10",
+      "arxiv_date_full": "2026-10-22",
+      "url": "https://arxiv.org/abs/2610.30841",
+      "summary": "Measures ambiguity that requires text, an image and audio together to resolve. Each full triplet specifies one answer, while removing a modality leaves multiple consistent possibilities. Related queries are grouped by scene, so a model must answer consistently across a group rather than succeed on isolated questions.",
+      "categories": [
+        "reasoning",
+        "audio-grounding",
+        "auditory-perception"
+      ],
+      "tasks": [
+        "joint text-image-audio disambiguation",
+        "scene-consistent question answering",
+        "modality ablations"
+      ],
+      "io": "text-image-audio triplet plus question → multiple-choice or open-ended answer",
+      "metrics": [
+        "query accuracy (%)",
+        "scene-group accuracy (%)"
+      ],
+      "languages": [],
+      "note": "78 Table 1 cells retain Standard, CoT and Open-ended conditions separately. The 7B Qwen2.5-Omni row is used; its 3B row is omitted to avoid merging sizes. The NeurIPS track label is retained only as an unverified venue lead.",
+      "size": "327 hand-written queries in 86 scene groups, spanning 18 ambiguity categories."
+    },
+    {
+      "id": "dive",
+      "name": "DIVE",
+      "aka": [],
+      "full_title": "DIVE: Benchmarking Full-Duplex Interaction with Visual Engagement in Continuous Streams",
+      "arxiv_id": "2610.28405",
+      "arxiv_date": "2026-10",
+      "arxiv_date_full": "2026-10-20",
+      "url": "https://arxiv.org/abs/2610.28405",
+      "summary": "Evaluates when and how an assistant responds to continuously changing audio and video. Six tasks cover proactive intervention, sustained engagement and coordination during overlap or multi-party interaction. Response content, participation within a valid window and reaction time are scored separately.",
+      "categories": [
+        "interactivity",
+        "dialogue",
+        "audio-grounding"
+      ],
+      "tasks": [
+        "proactive intervention",
+        "continuous visual engagement",
+        "overlap and multi-party coordination"
+      ],
+      "io": "continuous audio-video stream → timely spoken response",
+      "metrics": [
+        "window response rate (%)",
+        "response quality (paper score ×100)",
+        "response latency (seconds)"
+      ],
+      "languages": [],
+      "note": "63 cells from Tables 3–5 cover three indexed native audio-visual models. Transcript-fed visual systems and unindexed newer versions are omitted. Reported averages are unweighted across tasks; response quality keeps the paper scale and is not relabeled as accuracy.",
+      "size": "525 evaluation instances: VTI 164, SPI 50, CQI 50, ORA 112, AVAT 112 and CAT 37. ORA and AVAT each use 56 base scenarios in two conditions."
+    },
+    {
+      "id": "sea-helm-audio",
+      "name": "SEA-HELM Audio",
+      "aka": [],
+      "full_title": "SEA-HELM Audio: Evaluating Multilingual ASR-LLM Pipeline Performance Across SEA-HELM Subsets",
+      "arxiv_id": "2610.19869",
+      "arxiv_date": "2026-10",
+      "arxiv_date_full": "2026-10-14",
+      "url": "https://arxiv.org/abs/2610.19869",
+      "summary": "Extends SEA-HELM reasoning and instruction-following tests to cascaded speech-input assistants. Synthesized speech is transcribed before an LLM answers; matched original text prompts use the same task verifiers. The difference measures how speech recognition affects downstream task success rather than transcription accuracy alone.",
+      "categories": [
+        "multilingual",
+        "reasoning",
+        "instruction-following"
+      ],
+      "tasks": [
+        "spoken multiple-choice reasoning",
+        "spoken instruction following",
+        "matched text/speech comparison"
+      ],
+      "io": "synthesized spoken or matched text prompt → task answer",
+      "metrics": [
+        "task accuracy",
+        "text-minus-speech accuracy gap (percentage points)"
+      ],
+      "languages": [
+        "Chinese",
+        "English",
+        "Malay",
+        "Indonesian",
+        "Tamil"
+      ],
+      "note": "Reviewed arXiv v2; the catalogue date is the initial 14 October submission. Results describe exact ASR-plus-LLM combinations not currently indexed as those cascades, so no values are assigned to standalone language models. Synthetic speech and unequal task-language coverage limit comparisons.",
+      "size": "Five language settings across multiple-choice reasoning and instruction-following subsets; task coverage differs by language."
+    },
+    {
+      "id": "trace",
+      "name": "TRACE",
+      "aka": [
+        "Trustworthy Reasoning from Acoustic Cues and Evidence"
+      ],
+      "full_title": "TRACE: Trustworthy Reasoning from Acoustic Cues and Evidence",
+      "arxiv_id": "2610.26894",
+      "arxiv_date": "2026-10",
+      "arxiv_date_full": "2026-10-15",
+      "url": "https://arxiv.org/abs/2610.26894",
+      "summary": "Uses controlled acoustic scenes to separate correct answers from reliance on the right evidence. Binary ordering, counting and existence questions are paired with temporal attribution analysis and transformations of event order, overlap, signal-to-noise ratio and background. Contextually plausible but absent events test whether models answer from expectations instead of sound.",
+      "categories": [
+        "auditory-perception",
+        "audio-grounding",
+        "robustness"
+      ],
+      "tasks": [
+        "temporal ordering",
+        "event counting",
+        "event existence",
+        "acoustic evidence attribution"
+      ],
+      "io": "sound scene plus yes/no question → answer and analyzed temporal attribution",
+      "metrics": [
+        "task accuracy (%)",
+        "target/distractor attribution mass and density",
+        "response consistency under transformations"
+      ],
+      "languages": [],
+      "note": "20 Table 2 estimates cover reference-condition accuracy for five indexed models. Nearby prose contains inconsistent counts and percentages: item counts follow the explicit scene/item construction, and result cells follow Table 2. Accuracy alone does not establish evidence grounding.",
+      "size": "7,000 audio-question items: 1,000 reference scenes with four questions each, plus 3,000 transformed scene-question pairs; 10-second audio."
+    },
+    {
+      "id": "medvoice-dial",
+      "name": "MedVoice-Dial",
+      "aka": [],
+      "full_title": "MedSonor: Learning to Use Clinical Audio in Medical LLMs",
+      "arxiv_id": "2610.22405",
+      "arxiv_date": "2026-10",
+      "arxiv_date_full": "2026-10-14",
+      "url": "https://arxiv.org/abs/2610.22405",
+      "summary": "Introduced with MedSonor to evaluate medical responses within supplied consultation histories. Current and preceding user speech are accompanied by their original TTS source text, and reference assistant turns are supplied as history. General-purpose audio-language baselines are scored with instance-specific signed rubrics rather than transcription quality.",
+      "categories": [
+        "domain",
+        "dialogue",
+        "spoken-qa"
+      ],
+      "tasks": [
+        "medical dialogue response generation with supplied history"
+      ],
+      "io": "current and preceding user audio with source text and reference-assistant history → medical response",
+      "metrics": [
+        "GPT-5.4 signed instance-rubric score"
+      ],
+      "languages": [],
+      "note": "Eight original baseline scores are extracted by PDF row and numeric column from Table 3, page 6. Signed values are preserved, including negatives. Table 14 discloses current-turn transcripts, so scores do not isolate speech-only understanding. This evaluates supplied contexts, not autonomous consultations or clinical effectiveness."
+    },
+    {
+      "id": "medvoice-aid",
+      "name": "MedVoice-AID",
+      "aka": [],
+      "full_title": "MedSonor: Learning to Use Clinical Audio in Medical LLMs",
+      "arxiv_id": "2610.22405",
+      "arxiv_date": "2026-10",
+      "arxiv_date_full": "2026-10-14",
+      "url": "https://arxiv.org/abs/2610.22405",
+      "summary": "Introduced with MedSonor to test responses to clinical requests that include medical audio recordings. The task requires connecting acoustic evidence with the request and available context, beyond identifying a sound class. General-purpose audio-language baselines are compared using instance-specific response rubrics.",
+      "categories": [
+        "domain",
+        "audio-grounding",
+        "spoken-qa"
+      ],
+      "tasks": [
+        "clinical-audio-grounded medical response generation"
+      ],
+      "io": "composed clinical-audio request without a supplied transcript or dialogue history → medical response",
+      "metrics": [
+        "GPT-5.4 signed instance-rubric score"
+      ],
+      "languages": [],
+      "note": "Eight original baseline scores are extracted by PDF row and numeric column from Table 3, page 6. Signed values are preserved, including negatives. The paper also reports a separate physician preference study on 30 cases; that sample is not the size of this benchmark or evidence of clinical effectiveness."
     }
   ]
 }

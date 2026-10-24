@@ -1,6 +1,11 @@
 {
  "entries": [
   {
+   "date": "2026-10-24",
+   "change": "Reviewed all 43 new candidates from the successful 24 October crawl: admitted 10 papers introducing 11 benchmarks (MultiPartyTurnBench, VocalGrad, MAMath-Bench, DuplexLedger, MOSAIC, TRIAD, DIVE, SEA-HELM Audio, TRACE, MedVoice-Dial, MedVoice-AID) and recorded specific exclusion reasons for 33 papers. Added 293 source-located result cells from nine benchmarks by programmatic table row/column extraction, preserving native scales, confidence intervals and model/configuration boundaries. MAMath-Bench text-only table results and unindexed SEA-HELM Audio cascades are not entered as spoken-model scores. New author affiliations were checked against first-page PDFs; unprinted author locations remain unplaced, and one research-center identity remains explicitly unresolved. Venue records remain preprints where acceptance was not established.",
+   "source": "arXiv abstract records and versioned full texts; per-cell table locators in results; daily candidate-review ledger"
+  },
+  {
    "date": "2026-10-09",
    "change": "Reviewed six crawler candidates and added CARES (2610.10208), a controlled synthetic benchmark of how speakers react to environmental sounds. Added 86 Table 1 result cells for six indexed audio-language models, retaining percent units and 42 reported 95% confidence intervals in notes; four unreported precision values remain missing. Verified the author affiliations against the PDF title page and added AMIAD as a French government institution without inventing a city. The paper remains a preprint: Submitted to ICASSP 2027 is not acceptance. The other five papers evaluate an emotion-steering method, a serving runtime, text classifiers, speech encoders or audiovisual editing systems; individual exclusion reasons are preserved in the crawl ledger. No models were added.",
    "source": "arXiv v1 full texts: 2610.10208, 2610.08887, 2610.09307, 2610.09464, 2610.10240, 2610.10264; CARES PDF pages 1 and 4, arXiv metadata, and author project/code pages"

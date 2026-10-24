@@ -2,308 +2,361 @@
  "since": "2026-08-22",
  "what": "Every arXiv paper the daily crawl has flagged since launch (score at or above the threshold, not previously seen), with the reviewer's verdict as written in the feed and whether the paper entered the catalogue. \"published\" is the paper's arXiv date. See the Method section of the site.",
  "flagged": 275,
- "admitted": 67,
+ "admitted": 77,
  "entries": [
   {
    "id": "2610.31252",
    "title": "Query-Conditioned Liquid Temporal Grounding for Long-Form Audio",
    "published": "2026-10-22T13:32:12Z",
    "score": 21,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: proposes a temporal-grounding model and evaluates it on LAT-Bench rather than introducing a new benchmark"
   },
   {
    "id": "2610.31083",
    "title": "MQAScore: Fine-Grained Text-Music Alignment Evaluation via Large Audio Language Model",
    "published": "2026-10-22T10:56:25Z",
    "score": 33,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: MQAScore evaluates text-to-music generation alignment and metric agreement, not a general spoken LLM task"
   },
   {
    "id": "2610.30841",
    "title": "TRIAD: Benchmarking Omni-Modal Ambiguity in Multimodal Large Language Models",
    "published": "2026-10-22T07:15:40Z",
    "score": 30,
-   "outcome": "under review"
+   "outcome": "admitted",
+   "verdict": "reviewed — included: TRIAD introduce evaluation tasks for general speech/audio-language models; modality and protocol limitations are documented in the catalogue",
+   "catalogue_id": "triad"
   },
   {
    "id": "2610.29455",
    "title": "Omnilingual-MsASR: Benchmarking Multimodal, Multilingual, Long-Form Multi-Speaker ASR of Omni Large Language Models",
    "published": "2026-10-21T09:11:30Z",
    "score": 27,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: Omnilingual-MsASR measures multi-speaker transcription, speaker attribution and timestamps rather than general spoken reasoning"
   },
   {
    "id": "2610.29249",
    "title": "MOSAIC: An Omni-Modal Benchmark for Long-Term Memory and Cross-Modal Reasoning in Conversational Agents",
    "published": "2026-10-21T05:55:20Z",
    "score": 33,
-   "outcome": "under review"
+   "outcome": "admitted",
+   "verdict": "reviewed — included: MOSAIC introduce evaluation tasks for general speech/audio-language models; modality and protocol limitations are documented in the catalogue",
+   "catalogue_id": "mosaic"
   },
   {
    "id": "2610.29164",
    "title": "XingChen-UniFE: A Unified Generative Speech Front-End via Complementary Acoustic-Semantic Modeling",
    "published": "2026-10-21T03:55:18Z",
    "score": 18,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: XingChen-UniFE is a speech-restoration and target-speaker-extraction model, not a new general spoken LLM benchmark"
   },
   {
    "id": "2610.29031",
    "title": "KunSet: A Corpus and Benchmark for Lyrics Alignment and Rhyme Retrieval in Kunqu Opera",
    "published": "2026-10-21T01:05:22Z",
    "score": 24,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: KunSet targets forced alignment and rhyme retrieval in music, not general audio-language models"
   },
   {
    "id": "2610.28711",
    "title": "Qwen-Audio-3.1-ASR Technical Report",
    "published": "2026-10-20T17:08:12Z",
    "score": 18,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: Qwen-Audio-3.1-ASR is a model report evaluated on existing recognition and audio-understanding benchmarks"
   },
   {
    "id": "2610.28405",
    "title": "DIVE: Benchmarking Full-Duplex Interaction with Visual Engagement in Continuous Streams",
    "published": "2026-10-20T15:48:29Z",
    "score": 27,
-   "outcome": "under review"
+   "outcome": "admitted",
+   "verdict": "reviewed — included: DIVE introduce evaluation tasks for general speech/audio-language models; modality and protocol limitations are documented in the catalogue",
+   "catalogue_id": "dive"
   },
   {
    "id": "2610.28402",
    "title": "StreamEval: Evaluating Interactive Streaming Video Generation Models",
    "published": "2026-10-20T15:47:43Z",
    "score": 30,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: StreamEval targets interactive video/avatar generation systems rather than general spoken LLMs"
   },
   {
    "id": "2610.28146",
    "title": "SKAD: Sketch-Guided Audio-Contrastive Decoding for Reasoning in Large Audio-Language Models",
    "published": "2026-10-20T12:51:48Z",
    "score": 39,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: SKAD is a training method evaluated on existing audio reasoning benchmarks, not a new benchmark"
   },
   {
    "id": "2610.27581",
    "title": "DuplexLedger: Benchmarking Transactional Memory in Full-Duplex Speech Agents",
    "published": "2026-10-20T03:47:06Z",
    "score": 36,
-   "outcome": "under review"
+   "outcome": "admitted",
+   "verdict": "reviewed — included: DuplexLedger introduce evaluation tasks for general speech/audio-language models; modality and protocol limitations are documented in the catalogue",
+   "catalogue_id": "duplexledger"
   },
   {
    "id": "2610.27459",
    "title": "RealComm: Benchmarking and Adapting Audio Deepfake Detection over Real Communication Channels",
    "published": "2026-10-20T01:19:17Z",
    "score": 21,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: RealComm targets specialized audio-deepfake detection rather than general spoken LLMs"
   },
   {
    "id": "2610.27103",
    "title": "Omni-Woodpecker: Hallucination Correction via Evidence-Prior Rebalancing for Omni LLMs",
    "published": "2026-10-19T18:01:40Z",
    "score": 18,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: Omni-Woodpecker is a hallucination-correction method evaluated on existing benchmarks"
   },
   {
    "id": "2610.26821",
    "title": "AfriBED: a Speech Recognition Bias Evaluation Dataset for Low Resource African Languages",
    "published": "2026-10-19T17:53:32Z",
    "score": 18,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: AfriBED evaluates demographic bias in dedicated speech recognition systems"
   },
   {
    "id": "2610.26448",
    "title": "TeleASR-Amharic: A Benchmark for Robust Amharic ASR in Realistic Telecommunication Conditions",
    "published": "2026-10-19T14:06:28Z",
    "score": 21,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: TeleASR-Amharic evaluates dedicated automatic speech recognition under telecom distortions"
   },
   {
    "id": "2610.26258",
    "title": "AudioScorer: Learning Question-Aware Token Relevance for Large Audio Language Models",
    "published": "2026-10-19T12:14:12Z",
    "score": 21,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: AudioScorer is an audio-token pruning method tested on existing tasks"
   },
   {
    "id": "2610.26168",
    "title": "VISAGENT: An Agent-Based End-to-End Voice Interaction System",
    "published": "2026-10-19T10:59:45Z",
    "score": 21,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: VISAGENT is a deployed assistance system, not a new reusable spoken LLM benchmark"
   },
   {
    "id": "2610.27002",
    "title": "Evaluating Tibetan Speech Recognition Across Dialects and Adaptation Regimes: A Multi-Granularity Analysis",
    "published": "2026-10-19T09:44:36Z",
    "score": 18,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: evaluates specialized Tibetan speech recognition and segmentation metrics"
   },
   {
    "id": "2610.26059",
    "title": "Honeyed Words, Hidden Daggers: Benchmarking and Training LLMs to See Through Mock Politeness",
    "published": "2026-10-19T09:19:38Z",
    "score": 24,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: ZhenhuanBench evaluates text-only pragmatic reasoning; the tested LLMs do not receive speech"
   },
   {
    "id": "2610.25824",
    "title": "MS-Bench: A Condition-Stratified Multi-Speaker ASR Benchmark",
    "published": "2026-10-19T05:37:31Z",
    "score": 42,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: MS-Bench evaluates speaker-attributed transcription with ASR/diarization error rates rather than general spoken interaction"
   },
   {
    "id": "2610.25767",
    "title": "EvalRx: Agentic Diagnosis and Verified Repair of Foundation Models",
    "published": "2026-10-19T04:28:22Z",
    "score": 24,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: EvalRx is an agentic diagnosis and repair method evaluated across existing tasks, not a new spoken LLM evaluation set"
   },
   {
    "id": "2610.26943",
    "title": "MAMath-Bench: Process-Aware and Robust Evaluation of Multimodal Multi-Agent Mathematical Reasoning",
    "published": "2026-10-18T04:32:06Z",
    "score": 36,
-   "outcome": "under review"
+   "outcome": "admitted",
+   "verdict": "reviewed — included: MAMath-Bench introduce evaluation tasks for general speech/audio-language models; modality and protocol limitations are documented in the catalogue",
+   "catalogue_id": "mamath-bench"
   },
   {
    "id": "2610.24409",
    "title": "Long Listening Thoughts: Eliciting Open Auditory Reasoning with Deliberative Perception and Cognitive Refinement",
    "published": "2026-10-17T03:20:36Z",
    "score": 30,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: introduces long listening-thought training and data for a model, with evaluation on existing benchmarks"
   },
   {
    "id": "2610.23804",
    "title": "Jarvis: Coordination Deserves a Brain of Its Own in Agentic Interactive Models",
    "published": "2026-10-16T17:29:10Z",
    "score": 18,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: Jarvis is a coordination harness compared on existing full-duplex and voice-agent benchmarks"
   },
   {
    "id": "2610.23745",
    "title": "VocalGrad: Evaluating Acoustic Perception in Audio Language Models",
    "published": "2026-10-16T16:54:35Z",
    "score": 42,
-   "outcome": "under review"
+   "outcome": "admitted",
+   "verdict": "reviewed — included: VocalGrad introduce evaluation tasks for general speech/audio-language models; modality and protocol limitations are documented in the catalogue",
+   "catalogue_id": "vocalgrad"
   },
   {
    "id": "2610.22989",
    "title": "MUB: An Identity-Masked Benchmark for Music Understanding in Multimodal Language Models",
    "published": "2026-10-16T06:14:31Z",
    "score": 21,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: MUB is a proposed music-understanding protocol validated with DSP/constant baselines; evaluation of contemporary general audio-language models is not established"
   },
   {
    "id": "2610.26894",
    "title": "TRACE: Trustworthy Reasoning from Acoustic Cues and Evidence",
    "published": "2026-10-15T19:59:23Z",
    "score": 21,
-   "outcome": "under review"
+   "outcome": "admitted",
+   "verdict": "reviewed — included: TRACE introduce evaluation tasks for general speech/audio-language models; modality and protocol limitations are documented in the catalogue",
+   "catalogue_id": "trace"
   },
   {
    "id": "2610.22333",
    "title": "Evaluation Awareness Beyond English: Do LLMs Act Differently When Tested in Indic Languages?",
    "published": "2026-10-15T17:53:33Z",
    "score": 18,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: evaluates awareness of testing in text-only Indic-language prompts"
   },
   {
    "id": "2610.22321",
    "title": "AVC-Reward: Event-Centric Audio-Video Consistency Evaluation",
    "published": "2026-10-15T17:51:56Z",
    "score": 24,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: AVC-Benchmark targets consistency of generated audio-video clips and reward models, not general spoken LLM behavior"
   },
   {
    "id": "2610.26891",
    "title": "PW-Pruning: Phase-Aware Expert Selection for Speech-Centric Omni-Modal Models",
    "published": "2026-10-15T12:36:40Z",
    "score": 18,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: PW-Pruning is an expert-pruning method evaluated on existing audio benchmarks"
   },
   {
    "id": "2610.21659",
    "title": "When Does \"Post-Call\" Begin? An Availability Contract for Earnings-Call NLP Benchmarks",
    "published": "2026-10-15T10:40:06Z",
    "score": 18,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: studies post-call timing and information leakage in financial NLP rather than evaluating general spoken LLMs"
   },
   {
    "id": "2610.21614",
    "title": "Qwen-Audio-Jev: A Unified Interface for Audio Decisions",
    "published": "2026-10-15T09:59:07Z",
    "score": 28,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: Qwen-Audio-Jev is a model report evaluated on existing test sets"
   },
   {
    "id": "2610.21440",
    "title": "SITAR: A Situational Distortion Metric for Automatic Speech Recognition Evaluation",
    "published": "2026-10-15T07:48:03Z",
    "score": 24,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: SITAR is an ASR evaluation metric for transcription errors rather than a general spoken LLM benchmark"
   },
   {
    "id": "2610.20830",
    "title": "PEDBench: Can Speech Models Detect Phonetic Errors?",
    "published": "2026-10-14T19:15:48Z",
    "score": 42,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: phonetic-error detection is scored through phoneme recognition/edit operations; this is a specialized speech-recognition evaluation, including task-adapted SLMs"
   },
   {
    "id": "2610.20370",
    "title": "From Triage to Impact: A Multi-Hop Reasoning Benchmark for Explainable Persian Hate Speech",
    "published": "2026-10-14T15:42:15Z",
    "score": 21,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: evaluates Persian hate-speech detection in social-media text rather than speech"
   },
   {
    "id": "2610.20310",
    "title": "MUSEBENCH: A Benchmark for AI-Generated Music Detection and Artifact Analysis",
    "published": "2026-10-14T14:57:38Z",
    "score": 21,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: MUSEBENCH evaluates specialized AI-generated-music detectors, not general spoken LLMs"
   },
   {
    "id": "2610.22405",
    "title": "MedSonor: Learning to Use Clinical Audio in Medical LLMs",
    "published": "2026-10-14T14:04:43Z",
    "score": 18,
-   "outcome": "under review"
+   "outcome": "admitted",
+   "verdict": "reviewed — included: MedVoice-Dial, MedVoice-AID introduce evaluation tasks for general speech/audio-language models; modality and protocol limitations are documented in the catalogue",
+   "catalogue_id": "medvoice-aid"
   },
   {
    "id": "2610.20172",
    "title": "MultiPartyTurnBench: Benchmarking Floor Control in Multi-Party Spoken Dialogue",
    "published": "2026-10-14T13:20:14Z",
    "score": 54,
-   "outcome": "under review"
+   "outcome": "admitted",
+   "verdict": "reviewed — included: MultiPartyTurnBench introduce evaluation tasks for general speech/audio-language models; modality and protocol limitations are documented in the catalogue",
+   "catalogue_id": "multipartyturnbench"
   },
   {
    "id": "2610.20085",
    "title": "Designing Textual Interfaces To Enhance Llm Reasoning On Audio-Visual Question Answering",
    "published": "2026-10-14T12:23:59Z",
    "score": 18,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: studies textual interfaces for reasoning on existing audio-visual question-answering tasks, not a new benchmark"
   },
   {
    "id": "2610.19869",
    "title": "SEA-HELM Audio: Evaluating Multilingual ASR-LLM Pipeline Performance Across SEA-HELM Subsets",
    "published": "2026-10-14T09:29:36Z",
    "score": 24,
-   "outcome": "under review"
+   "outcome": "admitted",
+   "verdict": "reviewed — included: SEA-HELM Audio introduce evaluation tasks for general speech/audio-language models; modality and protocol limitations are documented in the catalogue",
+   "catalogue_id": "sea-helm-audio"
   },
   {
    "id": "2610.19774",
    "title": "Long-Prompt Zero-Shot TTS: Benchmarking Prosody Reproduction Beyond Voice Cloning",
    "published": "2026-10-14T08:23:44Z",
    "score": 21,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: LP-TTS-Bench evaluates dedicated text-to-speech generation systems"
   },
   {
    "id": "2610.19704",
    "title": "BANGLAPLAN: A Benchmark for Constraint-Based Planning and Decision-Making in Bangla",
    "published": "2026-10-14T07:32:32Z",
    "score": 21,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: BANGLAPLAN evaluates constraint-based planning in Bangla text, not speech input or output"
   },
   {
    "id": "2610.10264",

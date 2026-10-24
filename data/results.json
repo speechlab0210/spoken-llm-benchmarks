@@ -144513,6 +144513,2643 @@
       "source": "Table 1 (1,000 test scenes), arXiv:2610.10208v1",
       "source_url": "https://arxiv.org/abs/2610.10208v1",
       "note": "Zero-shot, 1,000 test scenes. Paper row: MiDashengLM; column: Summary sound recall: ambient. Original percent units. Paper reports a 95% confidence interval of +/- 0.5 percentage points."
+    },
+    {
+      "benchmark": "multipartyturnbench",
+      "model": "minicpm-o-4-5",
+      "metric": "START rate (%)",
+      "value": 86.7,
+      "source": "Table 4, arXiv:2610.20172v1",
+      "source_url": "https://arxiv.org/abs/2610.20172v1",
+      "note": "Interactive agent evaluation over 120 scenarios. Percent units; higher false-event rates are worse. Balanced-accuracy brackets are 95% scenario-clustered bootstrap intervals, retained in source cell. Newer or unindexed agent versions are omitted. Paper row: MiniCPM-o-4.5 (Cui et al., 2026); source cell: 86.7."
+    },
+    {
+      "benchmark": "multipartyturnbench",
+      "model": "minicpm-o-4-5",
+      "metric": "False START rate (%)",
+      "value": 5.6,
+      "source": "Table 4, arXiv:2610.20172v1",
+      "source_url": "https://arxiv.org/abs/2610.20172v1",
+      "note": "Interactive agent evaluation over 120 scenarios. Percent units; higher false-event rates are worse. Balanced-accuracy brackets are 95% scenario-clustered bootstrap intervals, retained in source cell. Newer or unindexed agent versions are omitted. Paper row: MiniCPM-o-4.5 (Cui et al., 2026); source cell: 5.6."
+    },
+    {
+      "benchmark": "multipartyturnbench",
+      "model": "minicpm-o-4-5",
+      "metric": "START balanced accuracy (%)",
+      "value": 90.6,
+      "source": "Table 4, arXiv:2610.20172v1",
+      "source_url": "https://arxiv.org/abs/2610.20172v1",
+      "note": "Interactive agent evaluation over 120 scenarios. Percent units; higher false-event rates are worse. Balanced-accuracy brackets are 95% scenario-clustered bootstrap intervals, retained in source cell. Newer or unindexed agent versions are omitted. Paper row: MiniCPM-o-4.5 (Cui et al., 2026); source cell: 90.6 [85.0, 95.6]."
+    },
+    {
+      "benchmark": "multipartyturnbench",
+      "model": "minicpm-o-4-5",
+      "metric": "Yield rate (%)",
+      "value": 1.4,
+      "source": "Table 4, arXiv:2610.20172v1",
+      "source_url": "https://arxiv.org/abs/2610.20172v1",
+      "note": "Interactive agent evaluation over 120 scenarios. Percent units; higher false-event rates are worse. Balanced-accuracy brackets are 95% scenario-clustered bootstrap intervals, retained in source cell. Newer or unindexed agent versions are omitted. Paper row: MiniCPM-o-4.5 (Cui et al., 2026); source cell: 1.4."
+    },
+    {
+      "benchmark": "multipartyturnbench",
+      "model": "minicpm-o-4-5",
+      "metric": "False yield rate (%)",
+      "value": 0.0,
+      "source": "Table 4, arXiv:2610.20172v1",
+      "source_url": "https://arxiv.org/abs/2610.20172v1",
+      "note": "Interactive agent evaluation over 120 scenarios. Percent units; higher false-event rates are worse. Balanced-accuracy brackets are 95% scenario-clustered bootstrap intervals, retained in source cell. Newer or unindexed agent versions are omitted. Paper row: MiniCPM-o-4.5 (Cui et al., 2026); source cell: 0.0."
+    },
+    {
+      "benchmark": "multipartyturnbench",
+      "model": "minicpm-o-4-5",
+      "metric": "STOP balanced accuracy (%)",
+      "value": 50.7,
+      "source": "Table 4, arXiv:2610.20172v1",
+      "source_url": "https://arxiv.org/abs/2610.20172v1",
+      "note": "Interactive agent evaluation over 120 scenarios. Percent units; higher false-event rates are worse. Balanced-accuracy brackets are 95% scenario-clustered bootstrap intervals, retained in source cell. Newer or unindexed agent versions are omitted. Paper row: MiniCPM-o-4.5 (Cui et al., 2026); source cell: 50.7 [50.0, 52.2]."
+    },
+    {
+      "benchmark": "vocalgrad",
+      "model": "gemini-3-flash",
+      "metric": "Accuracy: average (%)",
+      "value": 50.2,
+      "source": "Table 2, arXiv:2610.23745v1",
+      "source_url": "https://arxiv.org/abs/2610.23745v1",
+      "note": "Original speech-containing benchmark; binary increase/decrease accuracy, higher is better. No rescaling or beep ablation. Human subset is not entered as a model. Paper row: Gemini 3 Flash; source cell: 50.2."
+    },
+    {
+      "benchmark": "vocalgrad",
+      "model": "gemini-3-flash",
+      "metric": "Accuracy: speed (%)",
+      "value": 50.0,
+      "source": "Table 2, arXiv:2610.23745v1",
+      "source_url": "https://arxiv.org/abs/2610.23745v1",
+      "note": "Original speech-containing benchmark; binary increase/decrease accuracy, higher is better. No rescaling or beep ablation. Human subset is not entered as a model. Paper row: Gemini 3 Flash; source cell: 50.0."
+    },
+    {
+      "benchmark": "vocalgrad",
+      "model": "gemini-3-flash",
+      "metric": "Accuracy: pitch (%)",
+      "value": 51.5,
+      "source": "Table 2, arXiv:2610.23745v1",
+      "source_url": "https://arxiv.org/abs/2610.23745v1",
+      "note": "Original speech-containing benchmark; binary increase/decrease accuracy, higher is better. No rescaling or beep ablation. Human subset is not entered as a model. Paper row: Gemini 3 Flash; source cell: 51.5."
+    },
+    {
+      "benchmark": "vocalgrad",
+      "model": "gemini-3-flash",
+      "metric": "Accuracy: volume (%)",
+      "value": 49.9,
+      "source": "Table 2, arXiv:2610.23745v1",
+      "source_url": "https://arxiv.org/abs/2610.23745v1",
+      "note": "Original speech-containing benchmark; binary increase/decrease accuracy, higher is better. No rescaling or beep ablation. Human subset is not entered as a model. Paper row: Gemini 3 Flash; source cell: 49.9."
+    },
+    {
+      "benchmark": "vocalgrad",
+      "model": "gemini-3-flash",
+      "metric": "Accuracy: distortion (%)",
+      "value": 48.1,
+      "source": "Table 2, arXiv:2610.23745v1",
+      "source_url": "https://arxiv.org/abs/2610.23745v1",
+      "note": "Original speech-containing benchmark; binary increase/decrease accuracy, higher is better. No rescaling or beep ablation. Human subset is not entered as a model. Paper row: Gemini 3 Flash; source cell: 48.1."
+    },
+    {
+      "benchmark": "vocalgrad",
+      "model": "gemini-3-flash",
+      "metric": "Accuracy: roughness (%)",
+      "value": 44.8,
+      "source": "Table 2, arXiv:2610.23745v1",
+      "source_url": "https://arxiv.org/abs/2610.23745v1",
+      "note": "Original speech-containing benchmark; binary increase/decrease accuracy, higher is better. No rescaling or beep ablation. Human subset is not entered as a model. Paper row: Gemini 3 Flash; source cell: 44.8."
+    },
+    {
+      "benchmark": "vocalgrad",
+      "model": "gemini-3-flash",
+      "metric": "Accuracy: noise (%)",
+      "value": 55.5,
+      "source": "Table 2, arXiv:2610.23745v1",
+      "source_url": "https://arxiv.org/abs/2610.23745v1",
+      "note": "Original speech-containing benchmark; binary increase/decrease accuracy, higher is better. No rescaling or beep ablation. Human subset is not entered as a model. Paper row: Gemini 3 Flash; source cell: 55.5."
+    },
+    {
+      "benchmark": "vocalgrad",
+      "model": "gemini-3-flash",
+      "metric": "Accuracy: echo (%)",
+      "value": 50.3,
+      "source": "Table 2, arXiv:2610.23745v1",
+      "source_url": "https://arxiv.org/abs/2610.23745v1",
+      "note": "Original speech-containing benchmark; binary increase/decrease accuracy, higher is better. No rescaling or beep ablation. Human subset is not entered as a model. Paper row: Gemini 3 Flash; source cell: 50.3."
+    },
+    {
+      "benchmark": "vocalgrad",
+      "model": "gemini-3-flash",
+      "metric": "Accuracy: clarity (%)",
+      "value": 54.0,
+      "source": "Table 2, arXiv:2610.23745v1",
+      "source_url": "https://arxiv.org/abs/2610.23745v1",
+      "note": "Original speech-containing benchmark; binary increase/decrease accuracy, higher is better. No rescaling or beep ablation. Human subset is not entered as a model. Paper row: Gemini 3 Flash; source cell: 54.0."
+    },
+    {
+      "benchmark": "vocalgrad",
+      "model": "gemini-3-flash",
+      "metric": "Accuracy: vibration (%)",
+      "value": 47.6,
+      "source": "Table 2, arXiv:2610.23745v1",
+      "source_url": "https://arxiv.org/abs/2610.23745v1",
+      "note": "Original speech-containing benchmark; binary increase/decrease accuracy, higher is better. No rescaling or beep ablation. Human subset is not entered as a model. Paper row: Gemini 3 Flash; source cell: 47.6."
+    },
+    {
+      "benchmark": "vocalgrad",
+      "model": "kimi-audio",
+      "metric": "Accuracy: average (%)",
+      "value": 51.8,
+      "source": "Table 2, arXiv:2610.23745v1",
+      "source_url": "https://arxiv.org/abs/2610.23745v1",
+      "note": "Original speech-containing benchmark; binary increase/decrease accuracy, higher is better. No rescaling or beep ablation. Human subset is not entered as a model. Paper row: Kimi-Audio; source cell: 51.8."
+    },
+    {
+      "benchmark": "vocalgrad",
+      "model": "kimi-audio",
+      "metric": "Accuracy: speed (%)",
+      "value": 53.1,
+      "source": "Table 2, arXiv:2610.23745v1",
+      "source_url": "https://arxiv.org/abs/2610.23745v1",
+      "note": "Original speech-containing benchmark; binary increase/decrease accuracy, higher is better. No rescaling or beep ablation. Human subset is not entered as a model. Paper row: Kimi-Audio; source cell: 53.1."
+    },
+    {
+      "benchmark": "vocalgrad",
+      "model": "kimi-audio",
+      "metric": "Accuracy: pitch (%)",
+      "value": 50.5,
+      "source": "Table 2, arXiv:2610.23745v1",
+      "source_url": "https://arxiv.org/abs/2610.23745v1",
+      "note": "Original speech-containing benchmark; binary increase/decrease accuracy, higher is better. No rescaling or beep ablation. Human subset is not entered as a model. Paper row: Kimi-Audio; source cell: 50.5."
+    },
+    {
+      "benchmark": "vocalgrad",
+      "model": "kimi-audio",
+      "metric": "Accuracy: volume (%)",
+      "value": 50.5,
+      "source": "Table 2, arXiv:2610.23745v1",
+      "source_url": "https://arxiv.org/abs/2610.23745v1",
+      "note": "Original speech-containing benchmark; binary increase/decrease accuracy, higher is better. No rescaling or beep ablation. Human subset is not entered as a model. Paper row: Kimi-Audio; source cell: 50.5."
+    },
+    {
+      "benchmark": "vocalgrad",
+      "model": "kimi-audio",
+      "metric": "Accuracy: distortion (%)",
+      "value": 51.6,
+      "source": "Table 2, arXiv:2610.23745v1",
+      "source_url": "https://arxiv.org/abs/2610.23745v1",
+      "note": "Original speech-containing benchmark; binary increase/decrease accuracy, higher is better. No rescaling or beep ablation. Human subset is not entered as a model. Paper row: Kimi-Audio; source cell: 51.6."
+    },
+    {
+      "benchmark": "vocalgrad",
+      "model": "kimi-audio",
+      "metric": "Accuracy: roughness (%)",
+      "value": 48.0,
+      "source": "Table 2, arXiv:2610.23745v1",
+      "source_url": "https://arxiv.org/abs/2610.23745v1",
+      "note": "Original speech-containing benchmark; binary increase/decrease accuracy, higher is better. No rescaling or beep ablation. Human subset is not entered as a model. Paper row: Kimi-Audio; source cell: 48.0."
+    },
+    {
+      "benchmark": "vocalgrad",
+      "model": "kimi-audio",
+      "metric": "Accuracy: noise (%)",
+      "value": 56.5,
+      "source": "Table 2, arXiv:2610.23745v1",
+      "source_url": "https://arxiv.org/abs/2610.23745v1",
+      "note": "Original speech-containing benchmark; binary increase/decrease accuracy, higher is better. No rescaling or beep ablation. Human subset is not entered as a model. Paper row: Kimi-Audio; source cell: 56.5."
+    },
+    {
+      "benchmark": "vocalgrad",
+      "model": "kimi-audio",
+      "metric": "Accuracy: echo (%)",
+      "value": 54.5,
+      "source": "Table 2, arXiv:2610.23745v1",
+      "source_url": "https://arxiv.org/abs/2610.23745v1",
+      "note": "Original speech-containing benchmark; binary increase/decrease accuracy, higher is better. No rescaling or beep ablation. Human subset is not entered as a model. Paper row: Kimi-Audio; source cell: 54.5."
+    },
+    {
+      "benchmark": "vocalgrad",
+      "model": "kimi-audio",
+      "metric": "Accuracy: clarity (%)",
+      "value": 53.6,
+      "source": "Table 2, arXiv:2610.23745v1",
+      "source_url": "https://arxiv.org/abs/2610.23745v1",
+      "note": "Original speech-containing benchmark; binary increase/decrease accuracy, higher is better. No rescaling or beep ablation. Human subset is not entered as a model. Paper row: Kimi-Audio; source cell: 53.6."
+    },
+    {
+      "benchmark": "vocalgrad",
+      "model": "kimi-audio",
+      "metric": "Accuracy: vibration (%)",
+      "value": 47.6,
+      "source": "Table 2, arXiv:2610.23745v1",
+      "source_url": "https://arxiv.org/abs/2610.23745v1",
+      "note": "Original speech-containing benchmark; binary increase/decrease accuracy, higher is better. No rescaling or beep ablation. Human subset is not entered as a model. Paper row: Kimi-Audio; source cell: 47.6."
+    },
+    {
+      "benchmark": "vocalgrad",
+      "model": "mimo-audio",
+      "metric": "Accuracy: average (%)",
+      "value": 50.3,
+      "source": "Table 2, arXiv:2610.23745v1",
+      "source_url": "https://arxiv.org/abs/2610.23745v1",
+      "note": "Original speech-containing benchmark; binary increase/decrease accuracy, higher is better. No rescaling or beep ablation. Human subset is not entered as a model. Paper row: MiMo-Audio; source cell: 50.3."
+    },
+    {
+      "benchmark": "vocalgrad",
+      "model": "mimo-audio",
+      "metric": "Accuracy: speed (%)",
+      "value": 50.7,
+      "source": "Table 2, arXiv:2610.23745v1",
+      "source_url": "https://arxiv.org/abs/2610.23745v1",
+      "note": "Original speech-containing benchmark; binary increase/decrease accuracy, higher is better. No rescaling or beep ablation. Human subset is not entered as a model. Paper row: MiMo-Audio; source cell: 50.7."
+    },
+    {
+      "benchmark": "vocalgrad",
+      "model": "mimo-audio",
+      "metric": "Accuracy: pitch (%)",
+      "value": 50.5,
+      "source": "Table 2, arXiv:2610.23745v1",
+      "source_url": "https://arxiv.org/abs/2610.23745v1",
+      "note": "Original speech-containing benchmark; binary increase/decrease accuracy, higher is better. No rescaling or beep ablation. Human subset is not entered as a model. Paper row: MiMo-Audio; source cell: 50.5."
+    },
+    {
+      "benchmark": "vocalgrad",
+      "model": "mimo-audio",
+      "metric": "Accuracy: volume (%)",
+      "value": 52.9,
+      "source": "Table 2, arXiv:2610.23745v1",
+      "source_url": "https://arxiv.org/abs/2610.23745v1",
+      "note": "Original speech-containing benchmark; binary increase/decrease accuracy, higher is better. No rescaling or beep ablation. Human subset is not entered as a model. Paper row: MiMo-Audio; source cell: 52.9."
+    },
+    {
+      "benchmark": "vocalgrad",
+      "model": "mimo-audio",
+      "metric": "Accuracy: distortion (%)",
+      "value": 49.8,
+      "source": "Table 2, arXiv:2610.23745v1",
+      "source_url": "https://arxiv.org/abs/2610.23745v1",
+      "note": "Original speech-containing benchmark; binary increase/decrease accuracy, higher is better. No rescaling or beep ablation. Human subset is not entered as a model. Paper row: MiMo-Audio; source cell: 49.8."
+    },
+    {
+      "benchmark": "vocalgrad",
+      "model": "mimo-audio",
+      "metric": "Accuracy: roughness (%)",
+      "value": 43.2,
+      "source": "Table 2, arXiv:2610.23745v1",
+      "source_url": "https://arxiv.org/abs/2610.23745v1",
+      "note": "Original speech-containing benchmark; binary increase/decrease accuracy, higher is better. No rescaling or beep ablation. Human subset is not entered as a model. Paper row: MiMo-Audio; source cell: 43.2."
+    },
+    {
+      "benchmark": "vocalgrad",
+      "model": "mimo-audio",
+      "metric": "Accuracy: noise (%)",
+      "value": 53.2,
+      "source": "Table 2, arXiv:2610.23745v1",
+      "source_url": "https://arxiv.org/abs/2610.23745v1",
+      "note": "Original speech-containing benchmark; binary increase/decrease accuracy, higher is better. No rescaling or beep ablation. Human subset is not entered as a model. Paper row: MiMo-Audio; source cell: 53.2."
+    },
+    {
+      "benchmark": "vocalgrad",
+      "model": "mimo-audio",
+      "metric": "Accuracy: echo (%)",
+      "value": 50.0,
+      "source": "Table 2, arXiv:2610.23745v1",
+      "source_url": "https://arxiv.org/abs/2610.23745v1",
+      "note": "Original speech-containing benchmark; binary increase/decrease accuracy, higher is better. No rescaling or beep ablation. Human subset is not entered as a model. Paper row: MiMo-Audio; source cell: 50.0."
+    },
+    {
+      "benchmark": "vocalgrad",
+      "model": "mimo-audio",
+      "metric": "Accuracy: clarity (%)",
+      "value": 52.2,
+      "source": "Table 2, arXiv:2610.23745v1",
+      "source_url": "https://arxiv.org/abs/2610.23745v1",
+      "note": "Original speech-containing benchmark; binary increase/decrease accuracy, higher is better. No rescaling or beep ablation. Human subset is not entered as a model. Paper row: MiMo-Audio; source cell: 52.2."
+    },
+    {
+      "benchmark": "vocalgrad",
+      "model": "mimo-audio",
+      "metric": "Accuracy: vibration (%)",
+      "value": 50.3,
+      "source": "Table 2, arXiv:2610.23745v1",
+      "source_url": "https://arxiv.org/abs/2610.23745v1",
+      "note": "Original speech-containing benchmark; binary increase/decrease accuracy, higher is better. No rescaling or beep ablation. Human subset is not entered as a model. Paper row: MiMo-Audio; source cell: 50.3."
+    },
+    {
+      "benchmark": "vocalgrad",
+      "model": "step-audio-2-mini",
+      "metric": "Accuracy: average (%)",
+      "value": 50.0,
+      "source": "Table 2, arXiv:2610.23745v1",
+      "source_url": "https://arxiv.org/abs/2610.23745v1",
+      "note": "Original speech-containing benchmark; binary increase/decrease accuracy, higher is better. No rescaling or beep ablation. Human subset is not entered as a model. Paper row: Step-Audio 2 mini; source cell: 50.0."
+    },
+    {
+      "benchmark": "vocalgrad",
+      "model": "step-audio-2-mini",
+      "metric": "Accuracy: speed (%)",
+      "value": 49.9,
+      "source": "Table 2, arXiv:2610.23745v1",
+      "source_url": "https://arxiv.org/abs/2610.23745v1",
+      "note": "Original speech-containing benchmark; binary increase/decrease accuracy, higher is better. No rescaling or beep ablation. Human subset is not entered as a model. Paper row: Step-Audio 2 mini; source cell: 49.9."
+    },
+    {
+      "benchmark": "vocalgrad",
+      "model": "step-audio-2-mini",
+      "metric": "Accuracy: pitch (%)",
+      "value": 50.2,
+      "source": "Table 2, arXiv:2610.23745v1",
+      "source_url": "https://arxiv.org/abs/2610.23745v1",
+      "note": "Original speech-containing benchmark; binary increase/decrease accuracy, higher is better. No rescaling or beep ablation. Human subset is not entered as a model. Paper row: Step-Audio 2 mini; source cell: 50.2."
+    },
+    {
+      "benchmark": "vocalgrad",
+      "model": "step-audio-2-mini",
+      "metric": "Accuracy: volume (%)",
+      "value": 49.9,
+      "source": "Table 2, arXiv:2610.23745v1",
+      "source_url": "https://arxiv.org/abs/2610.23745v1",
+      "note": "Original speech-containing benchmark; binary increase/decrease accuracy, higher is better. No rescaling or beep ablation. Human subset is not entered as a model. Paper row: Step-Audio 2 mini; source cell: 49.9."
+    },
+    {
+      "benchmark": "vocalgrad",
+      "model": "step-audio-2-mini",
+      "metric": "Accuracy: distortion (%)",
+      "value": 50.2,
+      "source": "Table 2, arXiv:2610.23745v1",
+      "source_url": "https://arxiv.org/abs/2610.23745v1",
+      "note": "Original speech-containing benchmark; binary increase/decrease accuracy, higher is better. No rescaling or beep ablation. Human subset is not entered as a model. Paper row: Step-Audio 2 mini; source cell: 50.2."
+    },
+    {
+      "benchmark": "vocalgrad",
+      "model": "step-audio-2-mini",
+      "metric": "Accuracy: roughness (%)",
+      "value": 49.9,
+      "source": "Table 2, arXiv:2610.23745v1",
+      "source_url": "https://arxiv.org/abs/2610.23745v1",
+      "note": "Original speech-containing benchmark; binary increase/decrease accuracy, higher is better. No rescaling or beep ablation. Human subset is not entered as a model. Paper row: Step-Audio 2 mini; source cell: 49.9."
+    },
+    {
+      "benchmark": "vocalgrad",
+      "model": "step-audio-2-mini",
+      "metric": "Accuracy: noise (%)",
+      "value": 49.9,
+      "source": "Table 2, arXiv:2610.23745v1",
+      "source_url": "https://arxiv.org/abs/2610.23745v1",
+      "note": "Original speech-containing benchmark; binary increase/decrease accuracy, higher is better. No rescaling or beep ablation. Human subset is not entered as a model. Paper row: Step-Audio 2 mini; source cell: 49.9."
+    },
+    {
+      "benchmark": "vocalgrad",
+      "model": "step-audio-2-mini",
+      "metric": "Accuracy: echo (%)",
+      "value": 50.0,
+      "source": "Table 2, arXiv:2610.23745v1",
+      "source_url": "https://arxiv.org/abs/2610.23745v1",
+      "note": "Original speech-containing benchmark; binary increase/decrease accuracy, higher is better. No rescaling or beep ablation. Human subset is not entered as a model. Paper row: Step-Audio 2 mini; source cell: 50.0."
+    },
+    {
+      "benchmark": "vocalgrad",
+      "model": "step-audio-2-mini",
+      "metric": "Accuracy: clarity (%)",
+      "value": 49.8,
+      "source": "Table 2, arXiv:2610.23745v1",
+      "source_url": "https://arxiv.org/abs/2610.23745v1",
+      "note": "Original speech-containing benchmark; binary increase/decrease accuracy, higher is better. No rescaling or beep ablation. Human subset is not entered as a model. Paper row: Step-Audio 2 mini; source cell: 49.8."
+    },
+    {
+      "benchmark": "vocalgrad",
+      "model": "step-audio-2-mini",
+      "metric": "Accuracy: vibration (%)",
+      "value": 49.8,
+      "source": "Table 2, arXiv:2610.23745v1",
+      "source_url": "https://arxiv.org/abs/2610.23745v1",
+      "note": "Original speech-containing benchmark; binary increase/decrease accuracy, higher is better. No rescaling or beep ablation. Human subset is not entered as a model. Paper row: Step-Audio 2 mini; source cell: 49.8."
+    },
+    {
+      "benchmark": "vocalgrad",
+      "model": "audio-flamingo-3",
+      "metric": "Accuracy: average (%)",
+      "value": 49.6,
+      "source": "Table 2, arXiv:2610.23745v1",
+      "source_url": "https://arxiv.org/abs/2610.23745v1",
+      "note": "Original speech-containing benchmark; binary increase/decrease accuracy, higher is better. No rescaling or beep ablation. Human subset is not entered as a model. Paper row: Audio Flamingo 3; source cell: 49.6."
+    },
+    {
+      "benchmark": "vocalgrad",
+      "model": "audio-flamingo-3",
+      "metric": "Accuracy: speed (%)",
+      "value": 50.0,
+      "source": "Table 2, arXiv:2610.23745v1",
+      "source_url": "https://arxiv.org/abs/2610.23745v1",
+      "note": "Original speech-containing benchmark; binary increase/decrease accuracy, higher is better. No rescaling or beep ablation. Human subset is not entered as a model. Paper row: Audio Flamingo 3; source cell: 50.0."
+    },
+    {
+      "benchmark": "vocalgrad",
+      "model": "audio-flamingo-3",
+      "metric": "Accuracy: pitch (%)",
+      "value": 50.0,
+      "source": "Table 2, arXiv:2610.23745v1",
+      "source_url": "https://arxiv.org/abs/2610.23745v1",
+      "note": "Original speech-containing benchmark; binary increase/decrease accuracy, higher is better. No rescaling or beep ablation. Human subset is not entered as a model. Paper row: Audio Flamingo 3; source cell: 50.0."
+    },
+    {
+      "benchmark": "vocalgrad",
+      "model": "audio-flamingo-3",
+      "metric": "Accuracy: volume (%)",
+      "value": 50.0,
+      "source": "Table 2, arXiv:2610.23745v1",
+      "source_url": "https://arxiv.org/abs/2610.23745v1",
+      "note": "Original speech-containing benchmark; binary increase/decrease accuracy, higher is better. No rescaling or beep ablation. Human subset is not entered as a model. Paper row: Audio Flamingo 3; source cell: 50.0."
+    },
+    {
+      "benchmark": "vocalgrad",
+      "model": "audio-flamingo-3",
+      "metric": "Accuracy: distortion (%)",
+      "value": 50.0,
+      "source": "Table 2, arXiv:2610.23745v1",
+      "source_url": "https://arxiv.org/abs/2610.23745v1",
+      "note": "Original speech-containing benchmark; binary increase/decrease accuracy, higher is better. No rescaling or beep ablation. Human subset is not entered as a model. Paper row: Audio Flamingo 3; source cell: 50.0."
+    },
+    {
+      "benchmark": "vocalgrad",
+      "model": "audio-flamingo-3",
+      "metric": "Accuracy: roughness (%)",
+      "value": 46.7,
+      "source": "Table 2, arXiv:2610.23745v1",
+      "source_url": "https://arxiv.org/abs/2610.23745v1",
+      "note": "Original speech-containing benchmark; binary increase/decrease accuracy, higher is better. No rescaling or beep ablation. Human subset is not entered as a model. Paper row: Audio Flamingo 3; source cell: 46.7."
+    },
+    {
+      "benchmark": "vocalgrad",
+      "model": "audio-flamingo-3",
+      "metric": "Accuracy: noise (%)",
+      "value": 50.0,
+      "source": "Table 2, arXiv:2610.23745v1",
+      "source_url": "https://arxiv.org/abs/2610.23745v1",
+      "note": "Original speech-containing benchmark; binary increase/decrease accuracy, higher is better. No rescaling or beep ablation. Human subset is not entered as a model. Paper row: Audio Flamingo 3; source cell: 50.0."
+    },
+    {
+      "benchmark": "vocalgrad",
+      "model": "audio-flamingo-3",
+      "metric": "Accuracy: echo (%)",
+      "value": 50.0,
+      "source": "Table 2, arXiv:2610.23745v1",
+      "source_url": "https://arxiv.org/abs/2610.23745v1",
+      "note": "Original speech-containing benchmark; binary increase/decrease accuracy, higher is better. No rescaling or beep ablation. Human subset is not entered as a model. Paper row: Audio Flamingo 3; source cell: 50.0."
+    },
+    {
+      "benchmark": "vocalgrad",
+      "model": "audio-flamingo-3",
+      "metric": "Accuracy: clarity (%)",
+      "value": 49.9,
+      "source": "Table 2, arXiv:2610.23745v1",
+      "source_url": "https://arxiv.org/abs/2610.23745v1",
+      "note": "Original speech-containing benchmark; binary increase/decrease accuracy, higher is better. No rescaling or beep ablation. Human subset is not entered as a model. Paper row: Audio Flamingo 3; source cell: 49.9."
+    },
+    {
+      "benchmark": "vocalgrad",
+      "model": "audio-flamingo-3",
+      "metric": "Accuracy: vibration (%)",
+      "value": 50.0,
+      "source": "Table 2, arXiv:2610.23745v1",
+      "source_url": "https://arxiv.org/abs/2610.23745v1",
+      "note": "Original speech-containing benchmark; binary increase/decrease accuracy, higher is better. No rescaling or beep ablation. Human subset is not entered as a model. Paper row: Audio Flamingo 3; source cell: 50.0."
+    },
+    {
+      "benchmark": "duplexledger",
+      "model": "minicpm-o-4-5",
+      "metric": "Challenge realization rate (%)",
+      "value": 73.51,
+      "source": "Table 3(a), arXiv:2610.27581v1",
+      "source_url": "https://arxiv.org/abs/2610.27581v1",
+      "note": "Original five-model baseline protocol, before ACT-Mem. RCR is diagnostic and cFD conditional on realized challenges; lower early onset, overlap, intrusion and latency are better. Do not collapse into a single rank. Lychee-FD is not indexed. Paper row: MiniCPM-o 4.5; source cell: 73.51."
+    },
+    {
+      "benchmark": "duplexledger",
+      "model": "minicpm-o-4-5",
+      "metric": "Conditional full-duplex score (%)",
+      "value": 40.23,
+      "source": "Table 3(a), arXiv:2610.27581v1",
+      "source_url": "https://arxiv.org/abs/2610.27581v1",
+      "note": "Original five-model baseline protocol, before ACT-Mem. RCR is diagnostic and cFD conditional on realized challenges; lower early onset, overlap, intrusion and latency are better. Do not collapse into a single rank. Lychee-FD is not indexed. Paper row: MiniCPM-o 4.5; source cell: 40.23."
+    },
+    {
+      "benchmark": "duplexledger",
+      "model": "minicpm-o-4-5",
+      "metric": "Early onset rate (%)",
+      "value": 18.7,
+      "source": "Table 3(a), arXiv:2610.27581v1",
+      "source_url": "https://arxiv.org/abs/2610.27581v1",
+      "note": "Original five-model baseline protocol, before ACT-Mem. RCR is diagnostic and cFD conditional on realized challenges; lower early onset, overlap, intrusion and latency are better. Do not collapse into a single rank. Lychee-FD is not indexed. Paper row: MiniCPM-o 4.5; source cell: 18.70."
+    },
+    {
+      "benchmark": "duplexledger",
+      "model": "minicpm-o-4-5",
+      "metric": "Pre-end overlap rate (%)",
+      "value": 44.38,
+      "source": "Table 3(a), arXiv:2610.27581v1",
+      "source_url": "https://arxiv.org/abs/2610.27581v1",
+      "note": "Original five-model baseline protocol, before ACT-Mem. RCR is diagnostic and cFD conditional on realized challenges; lower early onset, overlap, intrusion and latency are better. Do not collapse into a single rank. Lychee-FD is not indexed. Paper row: MiniCPM-o 4.5; source cell: 44.38."
+    },
+    {
+      "benchmark": "duplexledger",
+      "model": "minicpm-o-4-5",
+      "metric": "Window intrusion rate (%)",
+      "value": 59.47,
+      "source": "Table 3(a), arXiv:2610.27581v1",
+      "source_url": "https://arxiv.org/abs/2610.27581v1",
+      "note": "Original five-model baseline protocol, before ACT-Mem. RCR is diagnostic and cFD conditional on realized challenges; lower early onset, overlap, intrusion and latency are better. Do not collapse into a single rank. Lychee-FD is not indexed. Paper row: MiniCPM-o 4.5; source cell: 59.47."
+    },
+    {
+      "benchmark": "duplexledger",
+      "model": "minicpm-o-4-5",
+      "metric": "Stopping success at 0.8 seconds (%)",
+      "value": 55.69,
+      "source": "Table 3(a), arXiv:2610.27581v1",
+      "source_url": "https://arxiv.org/abs/2610.27581v1",
+      "note": "Original five-model baseline protocol, before ACT-Mem. RCR is diagnostic and cFD conditional on realized challenges; lower early onset, overlap, intrusion and latency are better. Do not collapse into a single rank. Lychee-FD is not indexed. Paper row: MiniCPM-o 4.5; source cell: 55.69."
+    },
+    {
+      "benchmark": "duplexledger",
+      "model": "minicpm-o-4-5",
+      "metric": "Stopping latency (seconds)",
+      "value": 1.032,
+      "source": "Table 3(a), arXiv:2610.27581v1",
+      "source_url": "https://arxiv.org/abs/2610.27581v1",
+      "note": "Original five-model baseline protocol, before ACT-Mem. RCR is diagnostic and cFD conditional on realized challenges; lower early onset, overlap, intrusion and latency are better. Do not collapse into a single rank. Lychee-FD is not indexed. Paper row: MiniCPM-o 4.5; source cell: 1.032."
+    },
+    {
+      "benchmark": "duplexledger",
+      "model": "freeze-omni",
+      "metric": "Challenge realization rate (%)",
+      "value": 86.17,
+      "source": "Table 3(a), arXiv:2610.27581v1",
+      "source_url": "https://arxiv.org/abs/2610.27581v1",
+      "note": "Original five-model baseline protocol, before ACT-Mem. RCR is diagnostic and cFD conditional on realized challenges; lower early onset, overlap, intrusion and latency are better. Do not collapse into a single rank. Lychee-FD is not indexed. Paper row: Freeze-Omni; source cell: 86.17."
+    },
+    {
+      "benchmark": "duplexledger",
+      "model": "freeze-omni",
+      "metric": "Conditional full-duplex score (%)",
+      "value": 28.4,
+      "source": "Table 3(a), arXiv:2610.27581v1",
+      "source_url": "https://arxiv.org/abs/2610.27581v1",
+      "note": "Original five-model baseline protocol, before ACT-Mem. RCR is diagnostic and cFD conditional on realized challenges; lower early onset, overlap, intrusion and latency are better. Do not collapse into a single rank. Lychee-FD is not indexed. Paper row: Freeze-Omni; source cell: 28.40."
+    },
+    {
+      "benchmark": "duplexledger",
+      "model": "freeze-omni",
+      "metric": "Early onset rate (%)",
+      "value": 49.76,
+      "source": "Table 3(a), arXiv:2610.27581v1",
+      "source_url": "https://arxiv.org/abs/2610.27581v1",
+      "note": "Original five-model baseline protocol, before ACT-Mem. RCR is diagnostic and cFD conditional on realized challenges; lower early onset, overlap, intrusion and latency are better. Do not collapse into a single rank. Lychee-FD is not indexed. Paper row: Freeze-Omni; source cell: 49.76."
+    },
+    {
+      "benchmark": "duplexledger",
+      "model": "freeze-omni",
+      "metric": "Pre-end overlap rate (%)",
+      "value": 91.82,
+      "source": "Table 3(a), arXiv:2610.27581v1",
+      "source_url": "https://arxiv.org/abs/2610.27581v1",
+      "note": "Original five-model baseline protocol, before ACT-Mem. RCR is diagnostic and cFD conditional on realized challenges; lower early onset, overlap, intrusion and latency are better. Do not collapse into a single rank. Lychee-FD is not indexed. Paper row: Freeze-Omni; source cell: 91.82."
+    },
+    {
+      "benchmark": "duplexledger",
+      "model": "freeze-omni",
+      "metric": "Window intrusion rate (%)",
+      "value": 73.64,
+      "source": "Table 3(a), arXiv:2610.27581v1",
+      "source_url": "https://arxiv.org/abs/2610.27581v1",
+      "note": "Original five-model baseline protocol, before ACT-Mem. RCR is diagnostic and cFD conditional on realized challenges; lower early onset, overlap, intrusion and latency are better. Do not collapse into a single rank. Lychee-FD is not indexed. Paper row: Freeze-Omni; source cell: 73.64."
+    },
+    {
+      "benchmark": "duplexledger",
+      "model": "freeze-omni",
+      "metric": "Stopping success at 0.8 seconds (%)",
+      "value": 45.75,
+      "source": "Table 3(a), arXiv:2610.27581v1",
+      "source_url": "https://arxiv.org/abs/2610.27581v1",
+      "note": "Original five-model baseline protocol, before ACT-Mem. RCR is diagnostic and cFD conditional on realized challenges; lower early onset, overlap, intrusion and latency are better. Do not collapse into a single rank. Lychee-FD is not indexed. Paper row: Freeze-Omni; source cell: 45.75."
+    },
+    {
+      "benchmark": "duplexledger",
+      "model": "freeze-omni",
+      "metric": "Stopping latency (seconds)",
+      "value": 1.239,
+      "source": "Table 3(a), arXiv:2610.27581v1",
+      "source_url": "https://arxiv.org/abs/2610.27581v1",
+      "note": "Original five-model baseline protocol, before ACT-Mem. RCR is diagnostic and cFD conditional on realized challenges; lower early onset, overlap, intrusion and latency are better. Do not collapse into a single rank. Lychee-FD is not indexed. Paper row: Freeze-Omni; source cell: 1.239."
+    },
+    {
+      "benchmark": "duplexledger",
+      "model": "moshi",
+      "metric": "Challenge realization rate (%)",
+      "value": 44.63,
+      "source": "Table 3(a), arXiv:2610.27581v1",
+      "source_url": "https://arxiv.org/abs/2610.27581v1",
+      "note": "Original five-model baseline protocol, before ACT-Mem. RCR is diagnostic and cFD conditional on realized challenges; lower early onset, overlap, intrusion and latency are better. Do not collapse into a single rank. Lychee-FD is not indexed. Paper row: Moshi; source cell: 44.63."
+    },
+    {
+      "benchmark": "duplexledger",
+      "model": "moshi",
+      "metric": "Conditional full-duplex score (%)",
+      "value": 37.36,
+      "source": "Table 3(a), arXiv:2610.27581v1",
+      "source_url": "https://arxiv.org/abs/2610.27581v1",
+      "note": "Original five-model baseline protocol, before ACT-Mem. RCR is diagnostic and cFD conditional on realized challenges; lower early onset, overlap, intrusion and latency are better. Do not collapse into a single rank. Lychee-FD is not indexed. Paper row: Moshi; source cell: 37.36."
+    },
+    {
+      "benchmark": "duplexledger",
+      "model": "moshi",
+      "metric": "Early onset rate (%)",
+      "value": 66.59,
+      "source": "Table 3(a), arXiv:2610.27581v1",
+      "source_url": "https://arxiv.org/abs/2610.27581v1",
+      "note": "Original five-model baseline protocol, before ACT-Mem. RCR is diagnostic and cFD conditional on realized challenges; lower early onset, overlap, intrusion and latency are better. Do not collapse into a single rank. Lychee-FD is not indexed. Paper row: Moshi; source cell: 66.59."
+    },
+    {
+      "benchmark": "duplexledger",
+      "model": "moshi",
+      "metric": "Pre-end overlap rate (%)",
+      "value": 72.25,
+      "source": "Table 3(a), arXiv:2610.27581v1",
+      "source_url": "https://arxiv.org/abs/2610.27581v1",
+      "note": "Original five-model baseline protocol, before ACT-Mem. RCR is diagnostic and cFD conditional on realized challenges; lower early onset, overlap, intrusion and latency are better. Do not collapse into a single rank. Lychee-FD is not indexed. Paper row: Moshi; source cell: 72.25."
+    },
+    {
+      "benchmark": "duplexledger",
+      "model": "moshi",
+      "metric": "Window intrusion rate (%)",
+      "value": 45.11,
+      "source": "Table 3(a), arXiv:2610.27581v1",
+      "source_url": "https://arxiv.org/abs/2610.27581v1",
+      "note": "Original five-model baseline protocol, before ACT-Mem. RCR is diagnostic and cFD conditional on realized challenges; lower early onset, overlap, intrusion and latency are better. Do not collapse into a single rank. Lychee-FD is not indexed. Paper row: Moshi; source cell: 45.11."
+    },
+    {
+      "benchmark": "duplexledger",
+      "model": "moshi",
+      "metric": "Stopping success at 0.8 seconds (%)",
+      "value": 60.79,
+      "source": "Table 3(a), arXiv:2610.27581v1",
+      "source_url": "https://arxiv.org/abs/2610.27581v1",
+      "note": "Original five-model baseline protocol, before ACT-Mem. RCR is diagnostic and cFD conditional on realized challenges; lower early onset, overlap, intrusion and latency are better. Do not collapse into a single rank. Lychee-FD is not indexed. Paper row: Moshi; source cell: 60.79."
+    },
+    {
+      "benchmark": "duplexledger",
+      "model": "moshi",
+      "metric": "Stopping latency (seconds)",
+      "value": 0.777,
+      "source": "Table 3(a), arXiv:2610.27581v1",
+      "source_url": "https://arxiv.org/abs/2610.27581v1",
+      "note": "Original five-model baseline protocol, before ACT-Mem. RCR is diagnostic and cFD conditional on realized challenges; lower early onset, overlap, intrusion and latency are better. Do not collapse into a single rank. Lychee-FD is not indexed. Paper row: Moshi; source cell: 0.777."
+    },
+    {
+      "benchmark": "duplexledger",
+      "model": "personaplex",
+      "metric": "Challenge realization rate (%)",
+      "value": 93.54,
+      "source": "Table 3(a), arXiv:2610.27581v1",
+      "source_url": "https://arxiv.org/abs/2610.27581v1",
+      "note": "Original five-model baseline protocol, before ACT-Mem. RCR is diagnostic and cFD conditional on realized challenges; lower early onset, overlap, intrusion and latency are better. Do not collapse into a single rank. Lychee-FD is not indexed. Paper row: PersonaPlex; source cell: 93.54."
+    },
+    {
+      "benchmark": "duplexledger",
+      "model": "personaplex",
+      "metric": "Conditional full-duplex score (%)",
+      "value": 22.74,
+      "source": "Table 3(a), arXiv:2610.27581v1",
+      "source_url": "https://arxiv.org/abs/2610.27581v1",
+      "note": "Original five-model baseline protocol, before ACT-Mem. RCR is diagnostic and cFD conditional on realized challenges; lower early onset, overlap, intrusion and latency are better. Do not collapse into a single rank. Lychee-FD is not indexed. Paper row: PersonaPlex; source cell: 22.74."
+    },
+    {
+      "benchmark": "duplexledger",
+      "model": "personaplex",
+      "metric": "Early onset rate (%)",
+      "value": 46.64,
+      "source": "Table 3(a), arXiv:2610.27581v1",
+      "source_url": "https://arxiv.org/abs/2610.27581v1",
+      "note": "Original five-model baseline protocol, before ACT-Mem. RCR is diagnostic and cFD conditional on realized challenges; lower early onset, overlap, intrusion and latency are better. Do not collapse into a single rank. Lychee-FD is not indexed. Paper row: PersonaPlex; source cell: 46.64."
+    },
+    {
+      "benchmark": "duplexledger",
+      "model": "personaplex",
+      "metric": "Pre-end overlap rate (%)",
+      "value": 72.73,
+      "source": "Table 3(a), arXiv:2610.27581v1",
+      "source_url": "https://arxiv.org/abs/2610.27581v1",
+      "note": "Original five-model baseline protocol, before ACT-Mem. RCR is diagnostic and cFD conditional on realized challenges; lower early onset, overlap, intrusion and latency are better. Do not collapse into a single rank. Lychee-FD is not indexed. Paper row: PersonaPlex; source cell: 72.73."
+    },
+    {
+      "benchmark": "duplexledger",
+      "model": "personaplex",
+      "metric": "Window intrusion rate (%)",
+      "value": 90.62,
+      "source": "Table 3(a), arXiv:2610.27581v1",
+      "source_url": "https://arxiv.org/abs/2610.27581v1",
+      "note": "Original five-model baseline protocol, before ACT-Mem. RCR is diagnostic and cFD conditional on realized challenges; lower early onset, overlap, intrusion and latency are better. Do not collapse into a single rank. Lychee-FD is not indexed. Paper row: PersonaPlex; source cell: 90.62."
+    },
+    {
+      "benchmark": "duplexledger",
+      "model": "personaplex",
+      "metric": "Stopping success at 0.8 seconds (%)",
+      "value": 16.4,
+      "source": "Table 3(a), arXiv:2610.27581v1",
+      "source_url": "https://arxiv.org/abs/2610.27581v1",
+      "note": "Original five-model baseline protocol, before ACT-Mem. RCR is diagnostic and cFD conditional on realized challenges; lower early onset, overlap, intrusion and latency are better. Do not collapse into a single rank. Lychee-FD is not indexed. Paper row: PersonaPlex; source cell: 16.40."
+    },
+    {
+      "benchmark": "duplexledger",
+      "model": "personaplex",
+      "metric": "Stopping latency (seconds)",
+      "value": 1.689,
+      "source": "Table 3(a), arXiv:2610.27581v1",
+      "source_url": "https://arxiv.org/abs/2610.27581v1",
+      "note": "Original five-model baseline protocol, before ACT-Mem. RCR is diagnostic and cFD conditional on realized challenges; lower early onset, overlap, intrusion and latency are better. Do not collapse into a single rank. Lychee-FD is not indexed. Paper row: PersonaPlex; source cell: 1.689."
+    },
+    {
+      "benchmark": "duplexledger",
+      "model": "minicpm-o-4-5",
+      "metric": "Memory response rate (%)",
+      "value": 98.9,
+      "source": "Table 3(b), arXiv:2610.27581v1",
+      "source_url": "https://arxiv.org/abs/2610.27581v1",
+      "note": "Original baseline protocol, before ACT-Mem; percentages. Lower stale-assertion and distractor-adoption rates are better; interpret together with response rate because silence can suppress errors. Paper row: MiniCPM-o 4.5; source cell: 98.90."
+    },
+    {
+      "benchmark": "duplexledger",
+      "model": "minicpm-o-4-5",
+      "metric": "Latest-value accuracy (%)",
+      "value": 4.3,
+      "source": "Table 3(b), arXiv:2610.27581v1",
+      "source_url": "https://arxiv.org/abs/2610.27581v1",
+      "note": "Original baseline protocol, before ACT-Mem; percentages. Lower stale-assertion and distractor-adoption rates are better; interpret together with response rate because silence can suppress errors. Paper row: MiniCPM-o 4.5; source cell: 4.30."
+    },
+    {
+      "benchmark": "duplexledger",
+      "model": "minicpm-o-4-5",
+      "metric": "Stale assertion rate (%)",
+      "value": 0.59,
+      "source": "Table 3(b), arXiv:2610.27581v1",
+      "source_url": "https://arxiv.org/abs/2610.27581v1",
+      "note": "Original baseline protocol, before ACT-Mem; percentages. Lower stale-assertion and distractor-adoption rates are better; interpret together with response rate because silence can suppress errors. Paper row: MiniCPM-o 4.5; source cell: 0.59."
+    },
+    {
+      "benchmark": "duplexledger",
+      "model": "minicpm-o-4-5",
+      "metric": "Distractor adoption rate (%)",
+      "value": 14.17,
+      "source": "Table 3(b), arXiv:2610.27581v1",
+      "source_url": "https://arxiv.org/abs/2610.27581v1",
+      "note": "Original baseline protocol, before ACT-Mem; percentages. Lower stale-assertion and distractor-adoption rates are better; interpret together with response rate because silence can suppress errors. Paper row: MiniCPM-o 4.5; source cell: 14.17."
+    },
+    {
+      "benchmark": "duplexledger",
+      "model": "minicpm-o-4-5",
+      "metric": "Distractor rejection rate (%)",
+      "value": 85.19,
+      "source": "Table 3(b), arXiv:2610.27581v1",
+      "source_url": "https://arxiv.org/abs/2610.27581v1",
+      "note": "Original baseline protocol, before ACT-Mem; percentages. Lower stale-assertion and distractor-adoption rates are better; interpret together with response rate because silence can suppress errors. Paper row: MiniCPM-o 4.5; source cell: 85.19."
+    },
+    {
+      "benchmark": "duplexledger",
+      "model": "minicpm-o-4-5",
+      "metric": "Final-state fact coverage (%)",
+      "value": 2.01,
+      "source": "Table 3(b), arXiv:2610.27581v1",
+      "source_url": "https://arxiv.org/abs/2610.27581v1",
+      "note": "Original baseline protocol, before ACT-Mem; percentages. Lower stale-assertion and distractor-adoption rates are better; interpret together with response rate because silence can suppress errors. Paper row: MiniCPM-o 4.5; source cell: 2.01."
+    },
+    {
+      "benchmark": "duplexledger",
+      "model": "freeze-omni",
+      "metric": "Memory response rate (%)",
+      "value": 99.94,
+      "source": "Table 3(b), arXiv:2610.27581v1",
+      "source_url": "https://arxiv.org/abs/2610.27581v1",
+      "note": "Original baseline protocol, before ACT-Mem; percentages. Lower stale-assertion and distractor-adoption rates are better; interpret together with response rate because silence can suppress errors. Paper row: Freeze-Omni; source cell: 99.94."
+    },
+    {
+      "benchmark": "duplexledger",
+      "model": "freeze-omni",
+      "metric": "Latest-value accuracy (%)",
+      "value": 11.61,
+      "source": "Table 3(b), arXiv:2610.27581v1",
+      "source_url": "https://arxiv.org/abs/2610.27581v1",
+      "note": "Original baseline protocol, before ACT-Mem; percentages. Lower stale-assertion and distractor-adoption rates are better; interpret together with response rate because silence can suppress errors. Paper row: Freeze-Omni; source cell: 11.61."
+    },
+    {
+      "benchmark": "duplexledger",
+      "model": "freeze-omni",
+      "metric": "Stale assertion rate (%)",
+      "value": 3.38,
+      "source": "Table 3(b), arXiv:2610.27581v1",
+      "source_url": "https://arxiv.org/abs/2610.27581v1",
+      "note": "Original baseline protocol, before ACT-Mem; percentages. Lower stale-assertion and distractor-adoption rates are better; interpret together with response rate because silence can suppress errors. Paper row: Freeze-Omni; source cell: 3.38."
+    },
+    {
+      "benchmark": "duplexledger",
+      "model": "freeze-omni",
+      "metric": "Distractor adoption rate (%)",
+      "value": 65.9,
+      "source": "Table 3(b), arXiv:2610.27581v1",
+      "source_url": "https://arxiv.org/abs/2610.27581v1",
+      "note": "Original baseline protocol, before ACT-Mem; percentages. Lower stale-assertion and distractor-adoption rates are better; interpret together with response rate because silence can suppress errors. Paper row: Freeze-Omni; source cell: 65.90."
+    },
+    {
+      "benchmark": "duplexledger",
+      "model": "freeze-omni",
+      "metric": "Distractor rejection rate (%)",
+      "value": 34.1,
+      "source": "Table 3(b), arXiv:2610.27581v1",
+      "source_url": "https://arxiv.org/abs/2610.27581v1",
+      "note": "Original baseline protocol, before ACT-Mem; percentages. Lower stale-assertion and distractor-adoption rates are better; interpret together with response rate because silence can suppress errors. Paper row: Freeze-Omni; source cell: 34.10."
+    },
+    {
+      "benchmark": "duplexledger",
+      "model": "freeze-omni",
+      "metric": "Final-state fact coverage (%)",
+      "value": 0.0,
+      "source": "Table 3(b), arXiv:2610.27581v1",
+      "source_url": "https://arxiv.org/abs/2610.27581v1",
+      "note": "Original baseline protocol, before ACT-Mem; percentages. Lower stale-assertion and distractor-adoption rates are better; interpret together with response rate because silence can suppress errors. Paper row: Freeze-Omni; source cell: 0.00."
+    },
+    {
+      "benchmark": "duplexledger",
+      "model": "moshi",
+      "metric": "Memory response rate (%)",
+      "value": 54.31,
+      "source": "Table 3(b), arXiv:2610.27581v1",
+      "source_url": "https://arxiv.org/abs/2610.27581v1",
+      "note": "Original baseline protocol, before ACT-Mem; percentages. Lower stale-assertion and distractor-adoption rates are better; interpret together with response rate because silence can suppress errors. Paper row: Moshi; source cell: 54.31."
+    },
+    {
+      "benchmark": "duplexledger",
+      "model": "moshi",
+      "metric": "Latest-value accuracy (%)",
+      "value": 2.19,
+      "source": "Table 3(b), arXiv:2610.27581v1",
+      "source_url": "https://arxiv.org/abs/2610.27581v1",
+      "note": "Original baseline protocol, before ACT-Mem; percentages. Lower stale-assertion and distractor-adoption rates are better; interpret together with response rate because silence can suppress errors. Paper row: Moshi; source cell: 2.19."
+    },
+    {
+      "benchmark": "duplexledger",
+      "model": "moshi",
+      "metric": "Stale assertion rate (%)",
+      "value": 0.32,
+      "source": "Table 3(b), arXiv:2610.27581v1",
+      "source_url": "https://arxiv.org/abs/2610.27581v1",
+      "note": "Original baseline protocol, before ACT-Mem; percentages. Lower stale-assertion and distractor-adoption rates are better; interpret together with response rate because silence can suppress errors. Paper row: Moshi; source cell: 0.32."
+    },
+    {
+      "benchmark": "duplexledger",
+      "model": "moshi",
+      "metric": "Distractor adoption rate (%)",
+      "value": 44.15,
+      "source": "Table 3(b), arXiv:2610.27581v1",
+      "source_url": "https://arxiv.org/abs/2610.27581v1",
+      "note": "Original baseline protocol, before ACT-Mem; percentages. Lower stale-assertion and distractor-adoption rates are better; interpret together with response rate because silence can suppress errors. Paper row: Moshi; source cell: 44.15."
+    },
+    {
+      "benchmark": "duplexledger",
+      "model": "moshi",
+      "metric": "Distractor rejection rate (%)",
+      "value": 8.32,
+      "source": "Table 3(b), arXiv:2610.27581v1",
+      "source_url": "https://arxiv.org/abs/2610.27581v1",
+      "note": "Original baseline protocol, before ACT-Mem; percentages. Lower stale-assertion and distractor-adoption rates are better; interpret together with response rate because silence can suppress errors. Paper row: Moshi; source cell: 8.32."
+    },
+    {
+      "benchmark": "duplexledger",
+      "model": "moshi",
+      "metric": "Final-state fact coverage (%)",
+      "value": 0.04,
+      "source": "Table 3(b), arXiv:2610.27581v1",
+      "source_url": "https://arxiv.org/abs/2610.27581v1",
+      "note": "Original baseline protocol, before ACT-Mem; percentages. Lower stale-assertion and distractor-adoption rates are better; interpret together with response rate because silence can suppress errors. Paper row: Moshi; source cell: 0.04."
+    },
+    {
+      "benchmark": "duplexledger",
+      "model": "personaplex",
+      "metric": "Memory response rate (%)",
+      "value": 96.4,
+      "source": "Table 3(b), arXiv:2610.27581v1",
+      "source_url": "https://arxiv.org/abs/2610.27581v1",
+      "note": "Original baseline protocol, before ACT-Mem; percentages. Lower stale-assertion and distractor-adoption rates are better; interpret together with response rate because silence can suppress errors. Paper row: PersonaPlex; source cell: 96.40."
+    },
+    {
+      "benchmark": "duplexledger",
+      "model": "personaplex",
+      "metric": "Latest-value accuracy (%)",
+      "value": 5.85,
+      "source": "Table 3(b), arXiv:2610.27581v1",
+      "source_url": "https://arxiv.org/abs/2610.27581v1",
+      "note": "Original baseline protocol, before ACT-Mem; percentages. Lower stale-assertion and distractor-adoption rates are better; interpret together with response rate because silence can suppress errors. Paper row: PersonaPlex; source cell: 5.85."
+    },
+    {
+      "benchmark": "duplexledger",
+      "model": "personaplex",
+      "metric": "Stale assertion rate (%)",
+      "value": 2.29,
+      "source": "Table 3(b), arXiv:2610.27581v1",
+      "source_url": "https://arxiv.org/abs/2610.27581v1",
+      "note": "Original baseline protocol, before ACT-Mem; percentages. Lower stale-assertion and distractor-adoption rates are better; interpret together with response rate because silence can suppress errors. Paper row: PersonaPlex; source cell: 2.29."
+    },
+    {
+      "benchmark": "duplexledger",
+      "model": "personaplex",
+      "metric": "Distractor adoption rate (%)",
+      "value": 79.71,
+      "source": "Table 3(b), arXiv:2610.27581v1",
+      "source_url": "https://arxiv.org/abs/2610.27581v1",
+      "note": "Original baseline protocol, before ACT-Mem; percentages. Lower stale-assertion and distractor-adoption rates are better; interpret together with response rate because silence can suppress errors. Paper row: PersonaPlex; source cell: 79.71."
+    },
+    {
+      "benchmark": "duplexledger",
+      "model": "personaplex",
+      "metric": "Distractor rejection rate (%)",
+      "value": 17.46,
+      "source": "Table 3(b), arXiv:2610.27581v1",
+      "source_url": "https://arxiv.org/abs/2610.27581v1",
+      "note": "Original baseline protocol, before ACT-Mem; percentages. Lower stale-assertion and distractor-adoption rates are better; interpret together with response rate because silence can suppress errors. Paper row: PersonaPlex; source cell: 17.46."
+    },
+    {
+      "benchmark": "duplexledger",
+      "model": "personaplex",
+      "metric": "Final-state fact coverage (%)",
+      "value": 0.24,
+      "source": "Table 3(b), arXiv:2610.27581v1",
+      "source_url": "https://arxiv.org/abs/2610.27581v1",
+      "note": "Original baseline protocol, before ACT-Mem; percentages. Lower stale-assertion and distractor-adoption rates are better; interpret together with response rate because silence can suppress errors. Paper row: PersonaPlex; source cell: 0.24."
+    },
+    {
+      "benchmark": "triad",
+      "model": "gemini-3-1-pro",
+      "metric": "Standard full input: query accuracy (%)",
+      "value": 90.4,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: Gemini 3.1 Pro; source cell: 90.4."
+    },
+    {
+      "benchmark": "triad",
+      "model": "gemini-3-1-pro",
+      "metric": "Standard full input: group accuracy (%)",
+      "value": 71.2,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: Gemini 3.1 Pro; source cell: 71.2."
+    },
+    {
+      "benchmark": "triad",
+      "model": "gemini-3-1-pro",
+      "metric": "CoT full input: query accuracy (%)",
+      "value": 91.1,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: Gemini 3.1 Pro; source cell: 91.1."
+    },
+    {
+      "benchmark": "triad",
+      "model": "gemini-3-1-pro",
+      "metric": "CoT full input: group accuracy (%)",
+      "value": 72.5,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: Gemini 3.1 Pro; source cell: 72.5."
+    },
+    {
+      "benchmark": "triad",
+      "model": "gemini-3-1-pro",
+      "metric": "Open-ended full input: query accuracy (%)",
+      "value": 18.4,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: Gemini 3.1 Pro; source cell: 18.4."
+    },
+    {
+      "benchmark": "triad",
+      "model": "gemini-3-1-pro",
+      "metric": "Open-ended full input: group accuracy (%)",
+      "value": 4.6,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: Gemini 3.1 Pro; source cell: 4.6."
+    },
+    {
+      "benchmark": "triad",
+      "model": "gemini-3-pro",
+      "metric": "Standard full input: query accuracy (%)",
+      "value": 89.2,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: Gemini 3 Pro; source cell: 89.2."
+    },
+    {
+      "benchmark": "triad",
+      "model": "gemini-3-pro",
+      "metric": "Standard full input: group accuracy (%)",
+      "value": 68.9,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: Gemini 3 Pro; source cell: 68.9."
+    },
+    {
+      "benchmark": "triad",
+      "model": "gemini-3-pro",
+      "metric": "CoT full input: query accuracy (%)",
+      "value": 90.0,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: Gemini 3 Pro; source cell: 90.0."
+    },
+    {
+      "benchmark": "triad",
+      "model": "gemini-3-pro",
+      "metric": "CoT full input: group accuracy (%)",
+      "value": 70.4,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: Gemini 3 Pro; source cell: 70.4."
+    },
+    {
+      "benchmark": "triad",
+      "model": "gemini-3-pro",
+      "metric": "Open-ended full input: query accuracy (%)",
+      "value": 16.1,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: Gemini 3 Pro; source cell: 16.1."
+    },
+    {
+      "benchmark": "triad",
+      "model": "gemini-3-pro",
+      "metric": "Open-ended full input: group accuracy (%)",
+      "value": 3.1,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: Gemini 3 Pro; source cell: 3.1."
+    },
+    {
+      "benchmark": "triad",
+      "model": "gemini-3-flash",
+      "metric": "Standard full input: query accuracy (%)",
+      "value": 82.5,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: Gemini 3 Flash; source cell: 82.5."
+    },
+    {
+      "benchmark": "triad",
+      "model": "gemini-3-flash",
+      "metric": "Standard full input: group accuracy (%)",
+      "value": 59.4,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: Gemini 3 Flash; source cell: 59.4."
+    },
+    {
+      "benchmark": "triad",
+      "model": "gemini-3-flash",
+      "metric": "CoT full input: query accuracy (%)",
+      "value": 82.0,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: Gemini 3 Flash; source cell: 82.0."
+    },
+    {
+      "benchmark": "triad",
+      "model": "gemini-3-flash",
+      "metric": "CoT full input: group accuracy (%)",
+      "value": 58.1,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: Gemini 3 Flash; source cell: 58.1."
+    },
+    {
+      "benchmark": "triad",
+      "model": "gemini-3-flash",
+      "metric": "Open-ended full input: query accuracy (%)",
+      "value": 17.6,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: Gemini 3 Flash; source cell: 17.6."
+    },
+    {
+      "benchmark": "triad",
+      "model": "gemini-3-flash",
+      "metric": "Open-ended full input: group accuracy (%)",
+      "value": 3.5,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: Gemini 3 Flash; source cell: 3.5."
+    },
+    {
+      "benchmark": "triad",
+      "model": "gemini-2-5-pro",
+      "metric": "Standard full input: query accuracy (%)",
+      "value": 80.7,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: Gemini 2.5 Pro; source cell: 80.7."
+    },
+    {
+      "benchmark": "triad",
+      "model": "gemini-2-5-pro",
+      "metric": "Standard full input: group accuracy (%)",
+      "value": 55.3,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: Gemini 2.5 Pro; source cell: 55.3."
+    },
+    {
+      "benchmark": "triad",
+      "model": "gemini-2-5-pro",
+      "metric": "CoT full input: query accuracy (%)",
+      "value": 82.4,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: Gemini 2.5 Pro; source cell: 82.4."
+    },
+    {
+      "benchmark": "triad",
+      "model": "gemini-2-5-pro",
+      "metric": "CoT full input: group accuracy (%)",
+      "value": 58.0,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: Gemini 2.5 Pro; source cell: 58.0."
+    },
+    {
+      "benchmark": "triad",
+      "model": "gemini-2-5-pro",
+      "metric": "Open-ended full input: query accuracy (%)",
+      "value": 16.9,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: Gemini 2.5 Pro; source cell: 16.9."
+    },
+    {
+      "benchmark": "triad",
+      "model": "gemini-2-5-pro",
+      "metric": "Open-ended full input: group accuracy (%)",
+      "value": 3.3,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: Gemini 2.5 Pro; source cell: 3.3."
+    },
+    {
+      "benchmark": "triad",
+      "model": "gpt-4o",
+      "metric": "Standard full input: query accuracy (%)",
+      "value": 76.3,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: GPT-4o; source cell: 76.3."
+    },
+    {
+      "benchmark": "triad",
+      "model": "gpt-4o",
+      "metric": "Standard full input: group accuracy (%)",
+      "value": 49.8,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: GPT-4o; source cell: 49.8."
+    },
+    {
+      "benchmark": "triad",
+      "model": "gpt-4o",
+      "metric": "CoT full input: query accuracy (%)",
+      "value": 78.1,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: GPT-4o; source cell: 78.1."
+    },
+    {
+      "benchmark": "triad",
+      "model": "gpt-4o",
+      "metric": "CoT full input: group accuracy (%)",
+      "value": 52.9,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: GPT-4o; source cell: 52.9."
+    },
+    {
+      "benchmark": "triad",
+      "model": "gpt-4o",
+      "metric": "Open-ended full input: query accuracy (%)",
+      "value": 15.4,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: GPT-4o; source cell: 15.4."
+    },
+    {
+      "benchmark": "triad",
+      "model": "gpt-4o",
+      "metric": "Open-ended full input: group accuracy (%)",
+      "value": 2.8,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: GPT-4o; source cell: 2.8."
+    },
+    {
+      "benchmark": "triad",
+      "model": "gemini-2-5-flash",
+      "metric": "Standard full input: query accuracy (%)",
+      "value": 73.2,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: Gemini 2.5 Flash; source cell: 73.2."
+    },
+    {
+      "benchmark": "triad",
+      "model": "gemini-2-5-flash",
+      "metric": "Standard full input: group accuracy (%)",
+      "value": 45.6,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: Gemini 2.5 Flash; source cell: 45.6."
+    },
+    {
+      "benchmark": "triad",
+      "model": "gemini-2-5-flash",
+      "metric": "CoT full input: query accuracy (%)",
+      "value": 74.1,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: Gemini 2.5 Flash; source cell: 74.1."
+    },
+    {
+      "benchmark": "triad",
+      "model": "gemini-2-5-flash",
+      "metric": "CoT full input: group accuracy (%)",
+      "value": 46.8,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: Gemini 2.5 Flash; source cell: 46.8."
+    },
+    {
+      "benchmark": "triad",
+      "model": "gemini-2-5-flash",
+      "metric": "Open-ended full input: query accuracy (%)",
+      "value": 15.8,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: Gemini 2.5 Flash; source cell: 15.8."
+    },
+    {
+      "benchmark": "triad",
+      "model": "gemini-2-5-flash",
+      "metric": "Open-ended full input: group accuracy (%)",
+      "value": 2.9,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: Gemini 2.5 Flash; source cell: 2.9."
+    },
+    {
+      "benchmark": "triad",
+      "model": "qwen3-5-omni-plus",
+      "metric": "Standard full input: query accuracy (%)",
+      "value": 78.0,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: Qwen3.5-Omni-Plus; source cell: 78.0."
+    },
+    {
+      "benchmark": "triad",
+      "model": "qwen3-5-omni-plus",
+      "metric": "Standard full input: group accuracy (%)",
+      "value": 52.8,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: Qwen3.5-Omni-Plus; source cell: 52.8."
+    },
+    {
+      "benchmark": "triad",
+      "model": "qwen3-5-omni-plus",
+      "metric": "CoT full input: query accuracy (%)",
+      "value": 78.2,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: Qwen3.5-Omni-Plus; source cell: 78.2."
+    },
+    {
+      "benchmark": "triad",
+      "model": "qwen3-5-omni-plus",
+      "metric": "CoT full input: group accuracy (%)",
+      "value": 51.4,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: Qwen3.5-Omni-Plus; source cell: 51.4."
+    },
+    {
+      "benchmark": "triad",
+      "model": "qwen3-5-omni-plus",
+      "metric": "Open-ended full input: query accuracy (%)",
+      "value": 17.9,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: Qwen3.5-Omni-Plus; source cell: 17.9."
+    },
+    {
+      "benchmark": "triad",
+      "model": "qwen3-5-omni-plus",
+      "metric": "Open-ended full input: group accuracy (%)",
+      "value": 3.1,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: Qwen3.5-Omni-Plus; source cell: 3.1."
+    },
+    {
+      "benchmark": "triad",
+      "model": "qwen3-omni",
+      "metric": "Standard full input: query accuracy (%)",
+      "value": 72.5,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: Qwen3-Omni-30B; source cell: 72.5."
+    },
+    {
+      "benchmark": "triad",
+      "model": "qwen3-omni",
+      "metric": "Standard full input: group accuracy (%)",
+      "value": 41.7,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: Qwen3-Omni-30B; source cell: 41.7."
+    },
+    {
+      "benchmark": "triad",
+      "model": "qwen3-omni",
+      "metric": "CoT full input: query accuracy (%)",
+      "value": 72.8,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: Qwen3-Omni-30B; source cell: 72.8."
+    },
+    {
+      "benchmark": "triad",
+      "model": "qwen3-omni",
+      "metric": "CoT full input: group accuracy (%)",
+      "value": 40.9,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: Qwen3-Omni-30B; source cell: 40.9."
+    },
+    {
+      "benchmark": "triad",
+      "model": "qwen3-omni",
+      "metric": "Open-ended full input: query accuracy (%)",
+      "value": 14.7,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: Qwen3-Omni-30B; source cell: 14.7."
+    },
+    {
+      "benchmark": "triad",
+      "model": "qwen3-omni",
+      "metric": "Open-ended full input: group accuracy (%)",
+      "value": 2.3,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: Qwen3-Omni-30B; source cell: 2.3."
+    },
+    {
+      "benchmark": "triad",
+      "model": "minicpm-o-4-5",
+      "metric": "Standard full input: query accuracy (%)",
+      "value": 66.2,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: MiniCPM-o-4.5; source cell: 66.2."
+    },
+    {
+      "benchmark": "triad",
+      "model": "minicpm-o-4-5",
+      "metric": "Standard full input: group accuracy (%)",
+      "value": 36.4,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: MiniCPM-o-4.5; source cell: 36.4."
+    },
+    {
+      "benchmark": "triad",
+      "model": "minicpm-o-4-5",
+      "metric": "CoT full input: query accuracy (%)",
+      "value": 68.0,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: MiniCPM-o-4.5; source cell: 68.0."
+    },
+    {
+      "benchmark": "triad",
+      "model": "minicpm-o-4-5",
+      "metric": "CoT full input: group accuracy (%)",
+      "value": 38.2,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: MiniCPM-o-4.5; source cell: 38.2."
+    },
+    {
+      "benchmark": "triad",
+      "model": "minicpm-o-4-5",
+      "metric": "Open-ended full input: query accuracy (%)",
+      "value": 12.3,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: MiniCPM-o-4.5; source cell: 12.3."
+    },
+    {
+      "benchmark": "triad",
+      "model": "minicpm-o-4-5",
+      "metric": "Open-ended full input: group accuracy (%)",
+      "value": 1.6,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: MiniCPM-o-4.5; source cell: 1.6."
+    },
+    {
+      "benchmark": "triad",
+      "model": "qwen2-5-omni",
+      "metric": "Standard full input: query accuracy (%)",
+      "value": 61.8,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: Qwen2.5-Omni-7B; source cell: 61.8."
+    },
+    {
+      "benchmark": "triad",
+      "model": "qwen2-5-omni",
+      "metric": "Standard full input: group accuracy (%)",
+      "value": 30.2,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: Qwen2.5-Omni-7B; source cell: 30.2."
+    },
+    {
+      "benchmark": "triad",
+      "model": "qwen2-5-omni",
+      "metric": "CoT full input: query accuracy (%)",
+      "value": 63.9,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: Qwen2.5-Omni-7B; source cell: 63.9."
+    },
+    {
+      "benchmark": "triad",
+      "model": "qwen2-5-omni",
+      "metric": "CoT full input: group accuracy (%)",
+      "value": 32.5,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: Qwen2.5-Omni-7B; source cell: 32.5."
+    },
+    {
+      "benchmark": "triad",
+      "model": "qwen2-5-omni",
+      "metric": "Open-ended full input: query accuracy (%)",
+      "value": 11.0,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: Qwen2.5-Omni-7B; source cell: 11.0."
+    },
+    {
+      "benchmark": "triad",
+      "model": "qwen2-5-omni",
+      "metric": "Open-ended full input: group accuracy (%)",
+      "value": 1.2,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: Qwen2.5-Omni-7B; source cell: 1.2."
+    },
+    {
+      "benchmark": "triad",
+      "model": "omnivinci",
+      "metric": "Standard full input: query accuracy (%)",
+      "value": 58.7,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: OmniVinci-9B; source cell: 58.7."
+    },
+    {
+      "benchmark": "triad",
+      "model": "omnivinci",
+      "metric": "Standard full input: group accuracy (%)",
+      "value": 26.9,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: OmniVinci-9B; source cell: 26.9."
+    },
+    {
+      "benchmark": "triad",
+      "model": "omnivinci",
+      "metric": "CoT full input: query accuracy (%)",
+      "value": 58.2,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: OmniVinci-9B; source cell: 58.2."
+    },
+    {
+      "benchmark": "triad",
+      "model": "omnivinci",
+      "metric": "CoT full input: group accuracy (%)",
+      "value": 25.4,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: OmniVinci-9B; source cell: 25.4."
+    },
+    {
+      "benchmark": "triad",
+      "model": "omnivinci",
+      "metric": "Open-ended full input: query accuracy (%)",
+      "value": 9.8,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: OmniVinci-9B; source cell: 9.8."
+    },
+    {
+      "benchmark": "triad",
+      "model": "omnivinci",
+      "metric": "Open-ended full input: group accuracy (%)",
+      "value": 1.0,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: OmniVinci-9B; source cell: 1.0."
+    },
+    {
+      "benchmark": "triad",
+      "model": "ola",
+      "metric": "Standard full input: query accuracy (%)",
+      "value": 55.4,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: Ola-7B; source cell: 55.4."
+    },
+    {
+      "benchmark": "triad",
+      "model": "ola",
+      "metric": "Standard full input: group accuracy (%)",
+      "value": 23.8,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: Ola-7B; source cell: 23.8."
+    },
+    {
+      "benchmark": "triad",
+      "model": "ola",
+      "metric": "CoT full input: query accuracy (%)",
+      "value": 56.8,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: Ola-7B; source cell: 56.8."
+    },
+    {
+      "benchmark": "triad",
+      "model": "ola",
+      "metric": "CoT full input: group accuracy (%)",
+      "value": 24.7,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: Ola-7B; source cell: 24.7."
+    },
+    {
+      "benchmark": "triad",
+      "model": "ola",
+      "metric": "Open-ended full input: query accuracy (%)",
+      "value": 9.1,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: Ola-7B; source cell: 9.1."
+    },
+    {
+      "benchmark": "triad",
+      "model": "ola",
+      "metric": "Open-ended full input: group accuracy (%)",
+      "value": 0.9,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: Ola-7B; source cell: 0.9."
+    },
+    {
+      "benchmark": "triad",
+      "model": "baichuan-omni-1-5",
+      "metric": "Standard full input: query accuracy (%)",
+      "value": 52.9,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: Baichuan-Omni-1.5; source cell: 52.9."
+    },
+    {
+      "benchmark": "triad",
+      "model": "baichuan-omni-1-5",
+      "metric": "Standard full input: group accuracy (%)",
+      "value": 20.4,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: Baichuan-Omni-1.5; source cell: 20.4."
+    },
+    {
+      "benchmark": "triad",
+      "model": "baichuan-omni-1-5",
+      "metric": "CoT full input: query accuracy (%)",
+      "value": 52.4,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: Baichuan-Omni-1.5; source cell: 52.4."
+    },
+    {
+      "benchmark": "triad",
+      "model": "baichuan-omni-1-5",
+      "metric": "CoT full input: group accuracy (%)",
+      "value": 19.2,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: Baichuan-Omni-1.5; source cell: 19.2."
+    },
+    {
+      "benchmark": "triad",
+      "model": "baichuan-omni-1-5",
+      "metric": "Open-ended full input: query accuracy (%)",
+      "value": 7.6,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: Baichuan-Omni-1.5; source cell: 7.6."
+    },
+    {
+      "benchmark": "triad",
+      "model": "baichuan-omni-1-5",
+      "metric": "Open-ended full input: group accuracy (%)",
+      "value": 0.6,
+      "source": "Table 1, arXiv:2610.30841v1",
+      "source_url": "https://arxiv.org/abs/2610.30841v1",
+      "note": "All text, image and audio supplied. Query and scene-group accuracy are separate metrics; Standard/CoT use options, Open-ended removes them. Qwen2.5-Omni-3B is omitted to avoid merging different sizes under one model ID. Paper row: Baichuan-Omni-1.5; source cell: 0.6."
+    },
+    {
+      "benchmark": "dive",
+      "model": "minicpm-o-4-5",
+      "metric": "Window response rate: VTI (%)",
+      "value": 14.6,
+      "source": "Table 3, arXiv:2610.28405v1",
+      "source_url": "https://arxiv.org/abs/2610.28405v1",
+      "note": "Native audio-visual input only; transcript-based visual models omitted. Average is unweighted over six tasks. Quality preserves the paper scale multiplied by 100; latency is relative to earliest valid response time and lower is better. Missing/newer model versions are not approximated. Paper row: MiniCPM-o 4.5; source cell: 14.6."
+    },
+    {
+      "benchmark": "dive",
+      "model": "minicpm-o-4-5",
+      "metric": "Window response rate: SPI (%)",
+      "value": 24.8,
+      "source": "Table 3, arXiv:2610.28405v1",
+      "source_url": "https://arxiv.org/abs/2610.28405v1",
+      "note": "Native audio-visual input only; transcript-based visual models omitted. Average is unweighted over six tasks. Quality preserves the paper scale multiplied by 100; latency is relative to earliest valid response time and lower is better. Missing/newer model versions are not approximated. Paper row: MiniCPM-o 4.5; source cell: 24.8."
+    },
+    {
+      "benchmark": "dive",
+      "model": "minicpm-o-4-5",
+      "metric": "Window response rate: CQI (%)",
+      "value": 13.1,
+      "source": "Table 3, arXiv:2610.28405v1",
+      "source_url": "https://arxiv.org/abs/2610.28405v1",
+      "note": "Native audio-visual input only; transcript-based visual models omitted. Average is unweighted over six tasks. Quality preserves the paper scale multiplied by 100; latency is relative to earliest valid response time and lower is better. Missing/newer model versions are not approximated. Paper row: MiniCPM-o 4.5; source cell: 13.1."
+    },
+    {
+      "benchmark": "dive",
+      "model": "minicpm-o-4-5",
+      "metric": "Window response rate: ORA (%)",
+      "value": 7.6,
+      "source": "Table 3, arXiv:2610.28405v1",
+      "source_url": "https://arxiv.org/abs/2610.28405v1",
+      "note": "Native audio-visual input only; transcript-based visual models omitted. Average is unweighted over six tasks. Quality preserves the paper scale multiplied by 100; latency is relative to earliest valid response time and lower is better. Missing/newer model versions are not approximated. Paper row: MiniCPM-o 4.5; source cell: 7.6."
+    },
+    {
+      "benchmark": "dive",
+      "model": "minicpm-o-4-5",
+      "metric": "Window response rate: AVAT (%)",
+      "value": 9.9,
+      "source": "Table 3, arXiv:2610.28405v1",
+      "source_url": "https://arxiv.org/abs/2610.28405v1",
+      "note": "Native audio-visual input only; transcript-based visual models omitted. Average is unweighted over six tasks. Quality preserves the paper scale multiplied by 100; latency is relative to earliest valid response time and lower is better. Missing/newer model versions are not approximated. Paper row: MiniCPM-o 4.5; source cell: 9.9."
+    },
+    {
+      "benchmark": "dive",
+      "model": "minicpm-o-4-5",
+      "metric": "Window response rate: CAT (%)",
+      "value": 19.7,
+      "source": "Table 3, arXiv:2610.28405v1",
+      "source_url": "https://arxiv.org/abs/2610.28405v1",
+      "note": "Native audio-visual input only; transcript-based visual models omitted. Average is unweighted over six tasks. Quality preserves the paper scale multiplied by 100; latency is relative to earliest valid response time and lower is better. Missing/newer model versions are not approximated. Paper row: MiniCPM-o 4.5; source cell: 19.7."
+    },
+    {
+      "benchmark": "dive",
+      "model": "minicpm-o-4-5",
+      "metric": "Window response rate: average (%)",
+      "value": 14.95,
+      "source": "Table 3, arXiv:2610.28405v1",
+      "source_url": "https://arxiv.org/abs/2610.28405v1",
+      "note": "Native audio-visual input only; transcript-based visual models omitted. Average is unweighted over six tasks. Quality preserves the paper scale multiplied by 100; latency is relative to earliest valid response time and lower is better. Missing/newer model versions are not approximated. Paper row: MiniCPM-o 4.5; source cell: 14.95."
+    },
+    {
+      "benchmark": "dive",
+      "model": "qwen3-omni",
+      "metric": "Window response rate: VTI (%)",
+      "value": 19.8,
+      "source": "Table 3, arXiv:2610.28405v1",
+      "source_url": "https://arxiv.org/abs/2610.28405v1",
+      "note": "Native audio-visual input only; transcript-based visual models omitted. Average is unweighted over six tasks. Quality preserves the paper scale multiplied by 100; latency is relative to earliest valid response time and lower is better. Missing/newer model versions are not approximated. Paper row: Qwen3-Omni-30B-A3B-Instruct; source cell: 19.8."
+    },
+    {
+      "benchmark": "dive",
+      "model": "qwen3-omni",
+      "metric": "Window response rate: SPI (%)",
+      "value": 20.3,
+      "source": "Table 3, arXiv:2610.28405v1",
+      "source_url": "https://arxiv.org/abs/2610.28405v1",
+      "note": "Native audio-visual input only; transcript-based visual models omitted. Average is unweighted over six tasks. Quality preserves the paper scale multiplied by 100; latency is relative to earliest valid response time and lower is better. Missing/newer model versions are not approximated. Paper row: Qwen3-Omni-30B-A3B-Instruct; source cell: 20.3."
+    },
+    {
+      "benchmark": "dive",
+      "model": "qwen3-omni",
+      "metric": "Window response rate: CQI (%)",
+      "value": 21.2,
+      "source": "Table 3, arXiv:2610.28405v1",
+      "source_url": "https://arxiv.org/abs/2610.28405v1",
+      "note": "Native audio-visual input only; transcript-based visual models omitted. Average is unweighted over six tasks. Quality preserves the paper scale multiplied by 100; latency is relative to earliest valid response time and lower is better. Missing/newer model versions are not approximated. Paper row: Qwen3-Omni-30B-A3B-Instruct; source cell: 21.2."
+    },
+    {
+      "benchmark": "dive",
+      "model": "qwen3-omni",
+      "metric": "Window response rate: ORA (%)",
+      "value": 10.1,
+      "source": "Table 3, arXiv:2610.28405v1",
+      "source_url": "https://arxiv.org/abs/2610.28405v1",
+      "note": "Native audio-visual input only; transcript-based visual models omitted. Average is unweighted over six tasks. Quality preserves the paper scale multiplied by 100; latency is relative to earliest valid response time and lower is better. Missing/newer model versions are not approximated. Paper row: Qwen3-Omni-30B-A3B-Instruct; source cell: 10.1."
+    },
+    {
+      "benchmark": "dive",
+      "model": "qwen3-omni",
+      "metric": "Window response rate: AVAT (%)",
+      "value": 18.5,
+      "source": "Table 3, arXiv:2610.28405v1",
+      "source_url": "https://arxiv.org/abs/2610.28405v1",
+      "note": "Native audio-visual input only; transcript-based visual models omitted. Average is unweighted over six tasks. Quality preserves the paper scale multiplied by 100; latency is relative to earliest valid response time and lower is better. Missing/newer model versions are not approximated. Paper row: Qwen3-Omni-30B-A3B-Instruct; source cell: 18.5."
+    },
+    {
+      "benchmark": "dive",
+      "model": "qwen3-omni",
+      "metric": "Window response rate: CAT (%)",
+      "value": 10.0,
+      "source": "Table 3, arXiv:2610.28405v1",
+      "source_url": "https://arxiv.org/abs/2610.28405v1",
+      "note": "Native audio-visual input only; transcript-based visual models omitted. Average is unweighted over six tasks. Quality preserves the paper scale multiplied by 100; latency is relative to earliest valid response time and lower is better. Missing/newer model versions are not approximated. Paper row: Qwen3-Omni-30B-A3B-Instruct; source cell: 10.0."
+    },
+    {
+      "benchmark": "dive",
+      "model": "qwen3-omni",
+      "metric": "Window response rate: average (%)",
+      "value": 16.65,
+      "source": "Table 3, arXiv:2610.28405v1",
+      "source_url": "https://arxiv.org/abs/2610.28405v1",
+      "note": "Native audio-visual input only; transcript-based visual models omitted. Average is unweighted over six tasks. Quality preserves the paper scale multiplied by 100; latency is relative to earliest valid response time and lower is better. Missing/newer model versions are not approximated. Paper row: Qwen3-Omni-30B-A3B-Instruct; source cell: 16.65."
+    },
+    {
+      "benchmark": "dive",
+      "model": "gemini-live-3-1-flash",
+      "metric": "Window response rate: VTI (%)",
+      "value": 89.6,
+      "source": "Table 3, arXiv:2610.28405v1",
+      "source_url": "https://arxiv.org/abs/2610.28405v1",
+      "note": "Native audio-visual input only; transcript-based visual models omitted. Average is unweighted over six tasks. Quality preserves the paper scale multiplied by 100; latency is relative to earliest valid response time and lower is better. Missing/newer model versions are not approximated. Paper row: Gemini-3.1-Flash-Live; source cell: 89.6."
+    },
+    {
+      "benchmark": "dive",
+      "model": "gemini-live-3-1-flash",
+      "metric": "Window response rate: SPI (%)",
+      "value": 20.9,
+      "source": "Table 3, arXiv:2610.28405v1",
+      "source_url": "https://arxiv.org/abs/2610.28405v1",
+      "note": "Native audio-visual input only; transcript-based visual models omitted. Average is unweighted over six tasks. Quality preserves the paper scale multiplied by 100; latency is relative to earliest valid response time and lower is better. Missing/newer model versions are not approximated. Paper row: Gemini-3.1-Flash-Live; source cell: 20.9."
+    },
+    {
+      "benchmark": "dive",
+      "model": "gemini-live-3-1-flash",
+      "metric": "Window response rate: CQI (%)",
+      "value": 34.2,
+      "source": "Table 3, arXiv:2610.28405v1",
+      "source_url": "https://arxiv.org/abs/2610.28405v1",
+      "note": "Native audio-visual input only; transcript-based visual models omitted. Average is unweighted over six tasks. Quality preserves the paper scale multiplied by 100; latency is relative to earliest valid response time and lower is better. Missing/newer model versions are not approximated. Paper row: Gemini-3.1-Flash-Live; source cell: 34.2."
+    },
+    {
+      "benchmark": "dive",
+      "model": "gemini-live-3-1-flash",
+      "metric": "Window response rate: ORA (%)",
+      "value": 39.7,
+      "source": "Table 3, arXiv:2610.28405v1",
+      "source_url": "https://arxiv.org/abs/2610.28405v1",
+      "note": "Native audio-visual input only; transcript-based visual models omitted. Average is unweighted over six tasks. Quality preserves the paper scale multiplied by 100; latency is relative to earliest valid response time and lower is better. Missing/newer model versions are not approximated. Paper row: Gemini-3.1-Flash-Live; source cell: 39.7."
+    },
+    {
+      "benchmark": "dive",
+      "model": "gemini-live-3-1-flash",
+      "metric": "Window response rate: AVAT (%)",
+      "value": 25.7,
+      "source": "Table 3, arXiv:2610.28405v1",
+      "source_url": "https://arxiv.org/abs/2610.28405v1",
+      "note": "Native audio-visual input only; transcript-based visual models omitted. Average is unweighted over six tasks. Quality preserves the paper scale multiplied by 100; latency is relative to earliest valid response time and lower is better. Missing/newer model versions are not approximated. Paper row: Gemini-3.1-Flash-Live; source cell: 25.7."
+    },
+    {
+      "benchmark": "dive",
+      "model": "gemini-live-3-1-flash",
+      "metric": "Window response rate: CAT (%)",
+      "value": 33.4,
+      "source": "Table 3, arXiv:2610.28405v1",
+      "source_url": "https://arxiv.org/abs/2610.28405v1",
+      "note": "Native audio-visual input only; transcript-based visual models omitted. Average is unweighted over six tasks. Quality preserves the paper scale multiplied by 100; latency is relative to earliest valid response time and lower is better. Missing/newer model versions are not approximated. Paper row: Gemini-3.1-Flash-Live; source cell: 33.4."
+    },
+    {
+      "benchmark": "dive",
+      "model": "gemini-live-3-1-flash",
+      "metric": "Window response rate: average (%)",
+      "value": 40.58,
+      "source": "Table 3, arXiv:2610.28405v1",
+      "source_url": "https://arxiv.org/abs/2610.28405v1",
+      "note": "Native audio-visual input only; transcript-based visual models omitted. Average is unweighted over six tasks. Quality preserves the paper scale multiplied by 100; latency is relative to earliest valid response time and lower is better. Missing/newer model versions are not approximated. Paper row: Gemini-3.1-Flash-Live; source cell: 40.58."
+    },
+    {
+      "benchmark": "dive",
+      "model": "minicpm-o-4-5",
+      "metric": "Response quality: VTI (score x100)",
+      "value": 13.2,
+      "source": "Table 4, arXiv:2610.28405v1",
+      "source_url": "https://arxiv.org/abs/2610.28405v1",
+      "note": "Native audio-visual input only; transcript-based visual models omitted. Average is unweighted over six tasks. Quality preserves the paper scale multiplied by 100; latency is relative to earliest valid response time and lower is better. Missing/newer model versions are not approximated. Paper row: MiniCPM-o 4.5; source cell: 13.2."
+    },
+    {
+      "benchmark": "dive",
+      "model": "minicpm-o-4-5",
+      "metric": "Response quality: SPI (score x100)",
+      "value": 18.7,
+      "source": "Table 4, arXiv:2610.28405v1",
+      "source_url": "https://arxiv.org/abs/2610.28405v1",
+      "note": "Native audio-visual input only; transcript-based visual models omitted. Average is unweighted over six tasks. Quality preserves the paper scale multiplied by 100; latency is relative to earliest valid response time and lower is better. Missing/newer model versions are not approximated. Paper row: MiniCPM-o 4.5; source cell: 18.7."
+    },
+    {
+      "benchmark": "dive",
+      "model": "minicpm-o-4-5",
+      "metric": "Response quality: CQI (score x100)",
+      "value": 11.6,
+      "source": "Table 4, arXiv:2610.28405v1",
+      "source_url": "https://arxiv.org/abs/2610.28405v1",
+      "note": "Native audio-visual input only; transcript-based visual models omitted. Average is unweighted over six tasks. Quality preserves the paper scale multiplied by 100; latency is relative to earliest valid response time and lower is better. Missing/newer model versions are not approximated. Paper row: MiniCPM-o 4.5; source cell: 11.6."
+    },
+    {
+      "benchmark": "dive",
+      "model": "minicpm-o-4-5",
+      "metric": "Response quality: ORA (score x100)",
+      "value": 8.8,
+      "source": "Table 4, arXiv:2610.28405v1",
+      "source_url": "https://arxiv.org/abs/2610.28405v1",
+      "note": "Native audio-visual input only; transcript-based visual models omitted. Average is unweighted over six tasks. Quality preserves the paper scale multiplied by 100; latency is relative to earliest valid response time and lower is better. Missing/newer model versions are not approximated. Paper row: MiniCPM-o 4.5; source cell: 8.8."
+    },
+    {
+      "benchmark": "dive",
+      "model": "minicpm-o-4-5",
+      "metric": "Response quality: AVAT (score x100)",
+      "value": 2.3,
+      "source": "Table 4, arXiv:2610.28405v1",
+      "source_url": "https://arxiv.org/abs/2610.28405v1",
+      "note": "Native audio-visual input only; transcript-based visual models omitted. Average is unweighted over six tasks. Quality preserves the paper scale multiplied by 100; latency is relative to earliest valid response time and lower is better. Missing/newer model versions are not approximated. Paper row: MiniCPM-o 4.5; source cell: 2.3."
+    },
+    {
+      "benchmark": "dive",
+      "model": "minicpm-o-4-5",
+      "metric": "Response quality: CAT (score x100)",
+      "value": 10.3,
+      "source": "Table 4, arXiv:2610.28405v1",
+      "source_url": "https://arxiv.org/abs/2610.28405v1",
+      "note": "Native audio-visual input only; transcript-based visual models omitted. Average is unweighted over six tasks. Quality preserves the paper scale multiplied by 100; latency is relative to earliest valid response time and lower is better. Missing/newer model versions are not approximated. Paper row: MiniCPM-o 4.5; source cell: 10.3."
+    },
+    {
+      "benchmark": "dive",
+      "model": "minicpm-o-4-5",
+      "metric": "Response quality: average (score x100)",
+      "value": 10.82,
+      "source": "Table 4, arXiv:2610.28405v1",
+      "source_url": "https://arxiv.org/abs/2610.28405v1",
+      "note": "Native audio-visual input only; transcript-based visual models omitted. Average is unweighted over six tasks. Quality preserves the paper scale multiplied by 100; latency is relative to earliest valid response time and lower is better. Missing/newer model versions are not approximated. Paper row: MiniCPM-o 4.5; source cell: 10.82."
+    },
+    {
+      "benchmark": "dive",
+      "model": "qwen3-omni",
+      "metric": "Response quality: VTI (score x100)",
+      "value": 16.6,
+      "source": "Table 4, arXiv:2610.28405v1",
+      "source_url": "https://arxiv.org/abs/2610.28405v1",
+      "note": "Native audio-visual input only; transcript-based visual models omitted. Average is unweighted over six tasks. Quality preserves the paper scale multiplied by 100; latency is relative to earliest valid response time and lower is better. Missing/newer model versions are not approximated. Paper row: Qwen3-Omni-30B-A3B-Instruct; source cell: 16.6."
+    },
+    {
+      "benchmark": "dive",
+      "model": "qwen3-omni",
+      "metric": "Response quality: SPI (score x100)",
+      "value": 21.5,
+      "source": "Table 4, arXiv:2610.28405v1",
+      "source_url": "https://arxiv.org/abs/2610.28405v1",
+      "note": "Native audio-visual input only; transcript-based visual models omitted. Average is unweighted over six tasks. Quality preserves the paper scale multiplied by 100; latency is relative to earliest valid response time and lower is better. Missing/newer model versions are not approximated. Paper row: Qwen3-Omni-30B-A3B-Instruct; source cell: 21.5."
+    },
+    {
+      "benchmark": "dive",
+      "model": "qwen3-omni",
+      "metric": "Response quality: CQI (score x100)",
+      "value": 17.2,
+      "source": "Table 4, arXiv:2610.28405v1",
+      "source_url": "https://arxiv.org/abs/2610.28405v1",
+      "note": "Native audio-visual input only; transcript-based visual models omitted. Average is unweighted over six tasks. Quality preserves the paper scale multiplied by 100; latency is relative to earliest valid response time and lower is better. Missing/newer model versions are not approximated. Paper row: Qwen3-Omni-30B-A3B-Instruct; source cell: 17.2."
+    },
+    {
+      "benchmark": "dive",
+      "model": "qwen3-omni",
+      "metric": "Response quality: ORA (score x100)",
+      "value": 12.3,
+      "source": "Table 4, arXiv:2610.28405v1",
+      "source_url": "https://arxiv.org/abs/2610.28405v1",
+      "note": "Native audio-visual input only; transcript-based visual models omitted. Average is unweighted over six tasks. Quality preserves the paper scale multiplied by 100; latency is relative to earliest valid response time and lower is better. Missing/newer model versions are not approximated. Paper row: Qwen3-Omni-30B-A3B-Instruct; source cell: 12.3."
+    },
+    {
+      "benchmark": "dive",
+      "model": "qwen3-omni",
+      "metric": "Response quality: AVAT (score x100)",
+      "value": 21.2,
+      "source": "Table 4, arXiv:2610.28405v1",
+      "source_url": "https://arxiv.org/abs/2610.28405v1",
+      "note": "Native audio-visual input only; transcript-based visual models omitted. Average is unweighted over six tasks. Quality preserves the paper scale multiplied by 100; latency is relative to earliest valid response time and lower is better. Missing/newer model versions are not approximated. Paper row: Qwen3-Omni-30B-A3B-Instruct; source cell: 21.2."
+    },
+    {
+      "benchmark": "dive",
+      "model": "qwen3-omni",
+      "metric": "Response quality: CAT (score x100)",
+      "value": 14.1,
+      "source": "Table 4, arXiv:2610.28405v1",
+      "source_url": "https://arxiv.org/abs/2610.28405v1",
+      "note": "Native audio-visual input only; transcript-based visual models omitted. Average is unweighted over six tasks. Quality preserves the paper scale multiplied by 100; latency is relative to earliest valid response time and lower is better. Missing/newer model versions are not approximated. Paper row: Qwen3-Omni-30B-A3B-Instruct; source cell: 14.1."
+    },
+    {
+      "benchmark": "dive",
+      "model": "qwen3-omni",
+      "metric": "Response quality: average (score x100)",
+      "value": 17.15,
+      "source": "Table 4, arXiv:2610.28405v1",
+      "source_url": "https://arxiv.org/abs/2610.28405v1",
+      "note": "Native audio-visual input only; transcript-based visual models omitted. Average is unweighted over six tasks. Quality preserves the paper scale multiplied by 100; latency is relative to earliest valid response time and lower is better. Missing/newer model versions are not approximated. Paper row: Qwen3-Omni-30B-A3B-Instruct; source cell: 17.15."
+    },
+    {
+      "benchmark": "dive",
+      "model": "gemini-live-3-1-flash",
+      "metric": "Response quality: VTI (score x100)",
+      "value": 59.6,
+      "source": "Table 4, arXiv:2610.28405v1",
+      "source_url": "https://arxiv.org/abs/2610.28405v1",
+      "note": "Native audio-visual input only; transcript-based visual models omitted. Average is unweighted over six tasks. Quality preserves the paper scale multiplied by 100; latency is relative to earliest valid response time and lower is better. Missing/newer model versions are not approximated. Paper row: Gemini-3.1-Flash-Live; source cell: 59.6."
+    },
+    {
+      "benchmark": "dive",
+      "model": "gemini-live-3-1-flash",
+      "metric": "Response quality: SPI (score x100)",
+      "value": 61.3,
+      "source": "Table 4, arXiv:2610.28405v1",
+      "source_url": "https://arxiv.org/abs/2610.28405v1",
+      "note": "Native audio-visual input only; transcript-based visual models omitted. Average is unweighted over six tasks. Quality preserves the paper scale multiplied by 100; latency is relative to earliest valid response time and lower is better. Missing/newer model versions are not approximated. Paper row: Gemini-3.1-Flash-Live; source cell: 61.3."
+    },
+    {
+      "benchmark": "dive",
+      "model": "gemini-live-3-1-flash",
+      "metric": "Response quality: CQI (score x100)",
+      "value": 42.1,
+      "source": "Table 4, arXiv:2610.28405v1",
+      "source_url": "https://arxiv.org/abs/2610.28405v1",
+      "note": "Native audio-visual input only; transcript-based visual models omitted. Average is unweighted over six tasks. Quality preserves the paper scale multiplied by 100; latency is relative to earliest valid response time and lower is better. Missing/newer model versions are not approximated. Paper row: Gemini-3.1-Flash-Live; source cell: 42.1."
+    },
+    {
+      "benchmark": "dive",
+      "model": "gemini-live-3-1-flash",
+      "metric": "Response quality: ORA (score x100)",
+      "value": 33.2,
+      "source": "Table 4, arXiv:2610.28405v1",
+      "source_url": "https://arxiv.org/abs/2610.28405v1",
+      "note": "Native audio-visual input only; transcript-based visual models omitted. Average is unweighted over six tasks. Quality preserves the paper scale multiplied by 100; latency is relative to earliest valid response time and lower is better. Missing/newer model versions are not approximated. Paper row: Gemini-3.1-Flash-Live; source cell: 33.2."
+    },
+    {
+      "benchmark": "dive",
+      "model": "gemini-live-3-1-flash",
+      "metric": "Response quality: AVAT (score x100)",
+      "value": 88.4,
+      "source": "Table 4, arXiv:2610.28405v1",
+      "source_url": "https://arxiv.org/abs/2610.28405v1",
+      "note": "Native audio-visual input only; transcript-based visual models omitted. Average is unweighted over six tasks. Quality preserves the paper scale multiplied by 100; latency is relative to earliest valid response time and lower is better. Missing/newer model versions are not approximated. Paper row: Gemini-3.1-Flash-Live; source cell: 88.4."
+    },
+    {
+      "benchmark": "dive",
+      "model": "gemini-live-3-1-flash",
+      "metric": "Response quality: CAT (score x100)",
+      "value": 53.7,
+      "source": "Table 4, arXiv:2610.28405v1",
+      "source_url": "https://arxiv.org/abs/2610.28405v1",
+      "note": "Native audio-visual input only; transcript-based visual models omitted. Average is unweighted over six tasks. Quality preserves the paper scale multiplied by 100; latency is relative to earliest valid response time and lower is better. Missing/newer model versions are not approximated. Paper row: Gemini-3.1-Flash-Live; source cell: 53.7."
+    },
+    {
+      "benchmark": "dive",
+      "model": "gemini-live-3-1-flash",
+      "metric": "Response quality: average (score x100)",
+      "value": 56.38,
+      "source": "Table 4, arXiv:2610.28405v1",
+      "source_url": "https://arxiv.org/abs/2610.28405v1",
+      "note": "Native audio-visual input only; transcript-based visual models omitted. Average is unweighted over six tasks. Quality preserves the paper scale multiplied by 100; latency is relative to earliest valid response time and lower is better. Missing/newer model versions are not approximated. Paper row: Gemini-3.1-Flash-Live; source cell: 56.38."
+    },
+    {
+      "benchmark": "dive",
+      "model": "minicpm-o-4-5",
+      "metric": "Response latency: VTI (seconds)",
+      "value": 1.811,
+      "source": "Table 5, arXiv:2610.28405v1",
+      "source_url": "https://arxiv.org/abs/2610.28405v1",
+      "note": "Native audio-visual input only; transcript-based visual models omitted. Average is unweighted over six tasks. Quality preserves the paper scale multiplied by 100; latency is relative to earliest valid response time and lower is better. Missing/newer model versions are not approximated. Paper row: MiniCPM-o 4.5; source cell: 1.811."
+    },
+    {
+      "benchmark": "dive",
+      "model": "minicpm-o-4-5",
+      "metric": "Response latency: SPI (seconds)",
+      "value": 0.692,
+      "source": "Table 5, arXiv:2610.28405v1",
+      "source_url": "https://arxiv.org/abs/2610.28405v1",
+      "note": "Native audio-visual input only; transcript-based visual models omitted. Average is unweighted over six tasks. Quality preserves the paper scale multiplied by 100; latency is relative to earliest valid response time and lower is better. Missing/newer model versions are not approximated. Paper row: MiniCPM-o 4.5; source cell: 0.692."
+    },
+    {
+      "benchmark": "dive",
+      "model": "minicpm-o-4-5",
+      "metric": "Response latency: CQI (seconds)",
+      "value": 7.798,
+      "source": "Table 5, arXiv:2610.28405v1",
+      "source_url": "https://arxiv.org/abs/2610.28405v1",
+      "note": "Native audio-visual input only; transcript-based visual models omitted. Average is unweighted over six tasks. Quality preserves the paper scale multiplied by 100; latency is relative to earliest valid response time and lower is better. Missing/newer model versions are not approximated. Paper row: MiniCPM-o 4.5; source cell: 7.798."
+    },
+    {
+      "benchmark": "dive",
+      "model": "minicpm-o-4-5",
+      "metric": "Response latency: ORA (seconds)",
+      "value": 2.784,
+      "source": "Table 5, arXiv:2610.28405v1",
+      "source_url": "https://arxiv.org/abs/2610.28405v1",
+      "note": "Native audio-visual input only; transcript-based visual models omitted. Average is unweighted over six tasks. Quality preserves the paper scale multiplied by 100; latency is relative to earliest valid response time and lower is better. Missing/newer model versions are not approximated. Paper row: MiniCPM-o 4.5; source cell: 2.784."
+    },
+    {
+      "benchmark": "dive",
+      "model": "minicpm-o-4-5",
+      "metric": "Response latency: AVAT (seconds)",
+      "value": 4.297,
+      "source": "Table 5, arXiv:2610.28405v1",
+      "source_url": "https://arxiv.org/abs/2610.28405v1",
+      "note": "Native audio-visual input only; transcript-based visual models omitted. Average is unweighted over six tasks. Quality preserves the paper scale multiplied by 100; latency is relative to earliest valid response time and lower is better. Missing/newer model versions are not approximated. Paper row: MiniCPM-o 4.5; source cell: 4.297."
+    },
+    {
+      "benchmark": "dive",
+      "model": "minicpm-o-4-5",
+      "metric": "Response latency: CAT (seconds)",
+      "value": 1.453,
+      "source": "Table 5, arXiv:2610.28405v1",
+      "source_url": "https://arxiv.org/abs/2610.28405v1",
+      "note": "Native audio-visual input only; transcript-based visual models omitted. Average is unweighted over six tasks. Quality preserves the paper scale multiplied by 100; latency is relative to earliest valid response time and lower is better. Missing/newer model versions are not approximated. Paper row: MiniCPM-o 4.5; source cell: 1.453."
+    },
+    {
+      "benchmark": "dive",
+      "model": "minicpm-o-4-5",
+      "metric": "Response latency: average (seconds)",
+      "value": 3.139,
+      "source": "Table 5, arXiv:2610.28405v1",
+      "source_url": "https://arxiv.org/abs/2610.28405v1",
+      "note": "Native audio-visual input only; transcript-based visual models omitted. Average is unweighted over six tasks. Quality preserves the paper scale multiplied by 100; latency is relative to earliest valid response time and lower is better. Missing/newer model versions are not approximated. Paper row: MiniCPM-o 4.5; source cell: 3.139."
+    },
+    {
+      "benchmark": "dive",
+      "model": "qwen3-omni",
+      "metric": "Response latency: VTI (seconds)",
+      "value": 1.155,
+      "source": "Table 5, arXiv:2610.28405v1",
+      "source_url": "https://arxiv.org/abs/2610.28405v1",
+      "note": "Native audio-visual input only; transcript-based visual models omitted. Average is unweighted over six tasks. Quality preserves the paper scale multiplied by 100; latency is relative to earliest valid response time and lower is better. Missing/newer model versions are not approximated. Paper row: Qwen3-Omni-30B-A3B-Instruct; source cell: 1.155."
+    },
+    {
+      "benchmark": "dive",
+      "model": "qwen3-omni",
+      "metric": "Response latency: SPI (seconds)",
+      "value": 0.701,
+      "source": "Table 5, arXiv:2610.28405v1",
+      "source_url": "https://arxiv.org/abs/2610.28405v1",
+      "note": "Native audio-visual input only; transcript-based visual models omitted. Average is unweighted over six tasks. Quality preserves the paper scale multiplied by 100; latency is relative to earliest valid response time and lower is better. Missing/newer model versions are not approximated. Paper row: Qwen3-Omni-30B-A3B-Instruct; source cell: 0.701."
+    },
+    {
+      "benchmark": "dive",
+      "model": "qwen3-omni",
+      "metric": "Response latency: CQI (seconds)",
+      "value": 2.301,
+      "source": "Table 5, arXiv:2610.28405v1",
+      "source_url": "https://arxiv.org/abs/2610.28405v1",
+      "note": "Native audio-visual input only; transcript-based visual models omitted. Average is unweighted over six tasks. Quality preserves the paper scale multiplied by 100; latency is relative to earliest valid response time and lower is better. Missing/newer model versions are not approximated. Paper row: Qwen3-Omni-30B-A3B-Instruct; source cell: 2.301."
+    },
+    {
+      "benchmark": "dive",
+      "model": "qwen3-omni",
+      "metric": "Response latency: ORA (seconds)",
+      "value": 2.566,
+      "source": "Table 5, arXiv:2610.28405v1",
+      "source_url": "https://arxiv.org/abs/2610.28405v1",
+      "note": "Native audio-visual input only; transcript-based visual models omitted. Average is unweighted over six tasks. Quality preserves the paper scale multiplied by 100; latency is relative to earliest valid response time and lower is better. Missing/newer model versions are not approximated. Paper row: Qwen3-Omni-30B-A3B-Instruct; source cell: 2.566."
+    },
+    {
+      "benchmark": "dive",
+      "model": "qwen3-omni",
+      "metric": "Response latency: AVAT (seconds)",
+      "value": 6.137,
+      "source": "Table 5, arXiv:2610.28405v1",
+      "source_url": "https://arxiv.org/abs/2610.28405v1",
+      "note": "Native audio-visual input only; transcript-based visual models omitted. Average is unweighted over six tasks. Quality preserves the paper scale multiplied by 100; latency is relative to earliest valid response time and lower is better. Missing/newer model versions are not approximated. Paper row: Qwen3-Omni-30B-A3B-Instruct; source cell: 6.137."
+    },
+    {
+      "benchmark": "dive",
+      "model": "qwen3-omni",
+      "metric": "Response latency: CAT (seconds)",
+      "value": 8.466,
+      "source": "Table 5, arXiv:2610.28405v1",
+      "source_url": "https://arxiv.org/abs/2610.28405v1",
+      "note": "Native audio-visual input only; transcript-based visual models omitted. Average is unweighted over six tasks. Quality preserves the paper scale multiplied by 100; latency is relative to earliest valid response time and lower is better. Missing/newer model versions are not approximated. Paper row: Qwen3-Omni-30B-A3B-Instruct; source cell: 8.466."
+    },
+    {
+      "benchmark": "dive",
+      "model": "qwen3-omni",
+      "metric": "Response latency: average (seconds)",
+      "value": 3.554,
+      "source": "Table 5, arXiv:2610.28405v1",
+      "source_url": "https://arxiv.org/abs/2610.28405v1",
+      "note": "Native audio-visual input only; transcript-based visual models omitted. Average is unweighted over six tasks. Quality preserves the paper scale multiplied by 100; latency is relative to earliest valid response time and lower is better. Missing/newer model versions are not approximated. Paper row: Qwen3-Omni-30B-A3B-Instruct; source cell: 3.554."
+    },
+    {
+      "benchmark": "dive",
+      "model": "gemini-live-3-1-flash",
+      "metric": "Response latency: VTI (seconds)",
+      "value": 0.628,
+      "source": "Table 5, arXiv:2610.28405v1",
+      "source_url": "https://arxiv.org/abs/2610.28405v1",
+      "note": "Native audio-visual input only; transcript-based visual models omitted. Average is unweighted over six tasks. Quality preserves the paper scale multiplied by 100; latency is relative to earliest valid response time and lower is better. Missing/newer model versions are not approximated. Paper row: Gemini-3.1-Flash-Live; source cell: 0.628."
+    },
+    {
+      "benchmark": "dive",
+      "model": "gemini-live-3-1-flash",
+      "metric": "Response latency: SPI (seconds)",
+      "value": 0.799,
+      "source": "Table 5, arXiv:2610.28405v1",
+      "source_url": "https://arxiv.org/abs/2610.28405v1",
+      "note": "Native audio-visual input only; transcript-based visual models omitted. Average is unweighted over six tasks. Quality preserves the paper scale multiplied by 100; latency is relative to earliest valid response time and lower is better. Missing/newer model versions are not approximated. Paper row: Gemini-3.1-Flash-Live; source cell: 0.799."
+    },
+    {
+      "benchmark": "dive",
+      "model": "gemini-live-3-1-flash",
+      "metric": "Response latency: CQI (seconds)",
+      "value": 0.803,
+      "source": "Table 5, arXiv:2610.28405v1",
+      "source_url": "https://arxiv.org/abs/2610.28405v1",
+      "note": "Native audio-visual input only; transcript-based visual models omitted. Average is unweighted over six tasks. Quality preserves the paper scale multiplied by 100; latency is relative to earliest valid response time and lower is better. Missing/newer model versions are not approximated. Paper row: Gemini-3.1-Flash-Live; source cell: 0.803."
+    },
+    {
+      "benchmark": "dive",
+      "model": "gemini-live-3-1-flash",
+      "metric": "Response latency: ORA (seconds)",
+      "value": 1.858,
+      "source": "Table 5, arXiv:2610.28405v1",
+      "source_url": "https://arxiv.org/abs/2610.28405v1",
+      "note": "Native audio-visual input only; transcript-based visual models omitted. Average is unweighted over six tasks. Quality preserves the paper scale multiplied by 100; latency is relative to earliest valid response time and lower is better. Missing/newer model versions are not approximated. Paper row: Gemini-3.1-Flash-Live; source cell: 1.858."
+    },
+    {
+      "benchmark": "dive",
+      "model": "gemini-live-3-1-flash",
+      "metric": "Response latency: AVAT (seconds)",
+      "value": 0.595,
+      "source": "Table 5, arXiv:2610.28405v1",
+      "source_url": "https://arxiv.org/abs/2610.28405v1",
+      "note": "Native audio-visual input only; transcript-based visual models omitted. Average is unweighted over six tasks. Quality preserves the paper scale multiplied by 100; latency is relative to earliest valid response time and lower is better. Missing/newer model versions are not approximated. Paper row: Gemini-3.1-Flash-Live; source cell: 0.595."
+    },
+    {
+      "benchmark": "dive",
+      "model": "gemini-live-3-1-flash",
+      "metric": "Response latency: CAT (seconds)",
+      "value": 0.591,
+      "source": "Table 5, arXiv:2610.28405v1",
+      "source_url": "https://arxiv.org/abs/2610.28405v1",
+      "note": "Native audio-visual input only; transcript-based visual models omitted. Average is unweighted over six tasks. Quality preserves the paper scale multiplied by 100; latency is relative to earliest valid response time and lower is better. Missing/newer model versions are not approximated. Paper row: Gemini-3.1-Flash-Live; source cell: 0.591."
+    },
+    {
+      "benchmark": "dive",
+      "model": "gemini-live-3-1-flash",
+      "metric": "Response latency: average (seconds)",
+      "value": 0.879,
+      "source": "Table 5, arXiv:2610.28405v1",
+      "source_url": "https://arxiv.org/abs/2610.28405v1",
+      "note": "Native audio-visual input only; transcript-based visual models omitted. Average is unweighted over six tasks. Quality preserves the paper scale multiplied by 100; latency is relative to earliest valid response time and lower is better. Missing/newer model versions are not approximated. Paper row: Gemini-3.1-Flash-Live; source cell: 0.879."
+    },
+    {
+      "benchmark": "trace",
+      "model": "audio-flamingo-next",
+      "metric": "Reference accuracy: overall (%)",
+      "value": 55.0,
+      "source": "Table 2, arXiv:2610.26894v1",
+      "source_url": "https://arxiv.org/abs/2610.26894v1",
+      "note": "Reference scenes without transformations; deterministic binary yes/no answers. Table 2 values are used where nearby prose disagrees. These accuracy scores do not measure attribution or robustness. Paper row: AF-Next; source cell: 55.0."
+    },
+    {
+      "benchmark": "trace",
+      "model": "audio-flamingo-next",
+      "metric": "Reference accuracy: ordering (%)",
+      "value": 31.2,
+      "source": "Table 2, arXiv:2610.26894v1",
+      "source_url": "https://arxiv.org/abs/2610.26894v1",
+      "note": "Reference scenes without transformations; deterministic binary yes/no answers. Table 2 values are used where nearby prose disagrees. These accuracy scores do not measure attribution or robustness. Paper row: AF-Next; source cell: 31.2."
+    },
+    {
+      "benchmark": "trace",
+      "model": "audio-flamingo-next",
+      "metric": "Reference accuracy: existence (%)",
+      "value": 73.5,
+      "source": "Table 2, arXiv:2610.26894v1",
+      "source_url": "https://arxiv.org/abs/2610.26894v1",
+      "note": "Reference scenes without transformations; deterministic binary yes/no answers. Table 2 values are used where nearby prose disagrees. These accuracy scores do not measure attribution or robustness. Paper row: AF-Next; source cell: 73.5."
+    },
+    {
+      "benchmark": "trace",
+      "model": "audio-flamingo-next",
+      "metric": "Reference accuracy: counting (%)",
+      "value": 42.0,
+      "source": "Table 2, arXiv:2610.26894v1",
+      "source_url": "https://arxiv.org/abs/2610.26894v1",
+      "note": "Reference scenes without transformations; deterministic binary yes/no answers. Table 2 values are used where nearby prose disagrees. These accuracy scores do not measure attribution or robustness. Paper row: AF-Next; source cell: 42.0."
+    },
+    {
+      "benchmark": "trace",
+      "model": "audio-flamingo-3",
+      "metric": "Reference accuracy: overall (%)",
+      "value": 63.0,
+      "source": "Table 2, arXiv:2610.26894v1",
+      "source_url": "https://arxiv.org/abs/2610.26894v1",
+      "note": "Reference scenes without transformations; deterministic binary yes/no answers. Table 2 values are used where nearby prose disagrees. These accuracy scores do not measure attribution or robustness. Paper row: AF3; source cell: 63.0."
+    },
+    {
+      "benchmark": "trace",
+      "model": "audio-flamingo-3",
+      "metric": "Reference accuracy: ordering (%)",
+      "value": 52.1,
+      "source": "Table 2, arXiv:2610.26894v1",
+      "source_url": "https://arxiv.org/abs/2610.26894v1",
+      "note": "Reference scenes without transformations; deterministic binary yes/no answers. Table 2 values are used where nearby prose disagrees. These accuracy scores do not measure attribution or robustness. Paper row: AF3; source cell: 52.1."
+    },
+    {
+      "benchmark": "trace",
+      "model": "audio-flamingo-3",
+      "metric": "Reference accuracy: existence (%)",
+      "value": 69.8,
+      "source": "Table 2, arXiv:2610.26894v1",
+      "source_url": "https://arxiv.org/abs/2610.26894v1",
+      "note": "Reference scenes without transformations; deterministic binary yes/no answers. Table 2 values are used where nearby prose disagrees. These accuracy scores do not measure attribution or robustness. Paper row: AF3; source cell: 69.8."
+    },
+    {
+      "benchmark": "trace",
+      "model": "audio-flamingo-3",
+      "metric": "Reference accuracy: counting (%)",
+      "value": 60.3,
+      "source": "Table 2, arXiv:2610.26894v1",
+      "source_url": "https://arxiv.org/abs/2610.26894v1",
+      "note": "Reference scenes without transformations; deterministic binary yes/no answers. Table 2 values are used where nearby prose disagrees. These accuracy scores do not measure attribution or robustness. Paper row: AF3; source cell: 60.3."
+    },
+    {
+      "benchmark": "trace",
+      "model": "qwen2-5-omni",
+      "metric": "Reference accuracy: overall (%)",
+      "value": 67.8,
+      "source": "Table 2, arXiv:2610.26894v1",
+      "source_url": "https://arxiv.org/abs/2610.26894v1",
+      "note": "Reference scenes without transformations; deterministic binary yes/no answers. Table 2 values are used where nearby prose disagrees. These accuracy scores do not measure attribution or robustness. Paper row: Qwen2.5; source cell: 67.8."
+    },
+    {
+      "benchmark": "trace",
+      "model": "qwen2-5-omni",
+      "metric": "Reference accuracy: ordering (%)",
+      "value": 63.5,
+      "source": "Table 2, arXiv:2610.26894v1",
+      "source_url": "https://arxiv.org/abs/2610.26894v1",
+      "note": "Reference scenes without transformations; deterministic binary yes/no answers. Table 2 values are used where nearby prose disagrees. These accuracy scores do not measure attribution or robustness. Paper row: Qwen2.5; source cell: 63.5."
+    },
+    {
+      "benchmark": "trace",
+      "model": "qwen2-5-omni",
+      "metric": "Reference accuracy: existence (%)",
+      "value": 74.5,
+      "source": "Table 2, arXiv:2610.26894v1",
+      "source_url": "https://arxiv.org/abs/2610.26894v1",
+      "note": "Reference scenes without transformations; deterministic binary yes/no answers. Table 2 values are used where nearby prose disagrees. These accuracy scores do not measure attribution or robustness. Paper row: Qwen2.5; source cell: 74.5."
+    },
+    {
+      "benchmark": "trace",
+      "model": "qwen2-5-omni",
+      "metric": "Reference accuracy: counting (%)",
+      "value": 58.5,
+      "source": "Table 2, arXiv:2610.26894v1",
+      "source_url": "https://arxiv.org/abs/2610.26894v1",
+      "note": "Reference scenes without transformations; deterministic binary yes/no answers. Table 2 values are used where nearby prose disagrees. These accuracy scores do not measure attribution or robustness. Paper row: Qwen2.5; source cell: 58.5."
+    },
+    {
+      "benchmark": "trace",
+      "model": "kimi-audio",
+      "metric": "Reference accuracy: overall (%)",
+      "value": 69.3,
+      "source": "Table 2, arXiv:2610.26894v1",
+      "source_url": "https://arxiv.org/abs/2610.26894v1",
+      "note": "Reference scenes without transformations; deterministic binary yes/no answers. Table 2 values are used where nearby prose disagrees. These accuracy scores do not measure attribution or robustness. Paper row: Kimi; source cell: 69.3."
+    },
+    {
+      "benchmark": "trace",
+      "model": "kimi-audio",
+      "metric": "Reference accuracy: ordering (%)",
+      "value": 70.9,
+      "source": "Table 2, arXiv:2610.26894v1",
+      "source_url": "https://arxiv.org/abs/2610.26894v1",
+      "note": "Reference scenes without transformations; deterministic binary yes/no answers. Table 2 values are used where nearby prose disagrees. These accuracy scores do not measure attribution or robustness. Paper row: Kimi; source cell: 70.9."
+    },
+    {
+      "benchmark": "trace",
+      "model": "kimi-audio",
+      "metric": "Reference accuracy: existence (%)",
+      "value": 69.3,
+      "source": "Table 2, arXiv:2610.26894v1",
+      "source_url": "https://arxiv.org/abs/2610.26894v1",
+      "note": "Reference scenes without transformations; deterministic binary yes/no answers. Table 2 values are used where nearby prose disagrees. These accuracy scores do not measure attribution or robustness. Paper row: Kimi; source cell: 69.3."
+    },
+    {
+      "benchmark": "trace",
+      "model": "kimi-audio",
+      "metric": "Reference accuracy: counting (%)",
+      "value": 67.9,
+      "source": "Table 2, arXiv:2610.26894v1",
+      "source_url": "https://arxiv.org/abs/2610.26894v1",
+      "note": "Reference scenes without transformations; deterministic binary yes/no answers. Table 2 values are used where nearby prose disagrees. These accuracy scores do not measure attribution or robustness. Paper row: Kimi; source cell: 67.9."
+    },
+    {
+      "benchmark": "trace",
+      "model": "qwen3-omni",
+      "metric": "Reference accuracy: overall (%)",
+      "value": 78.4,
+      "source": "Table 2, arXiv:2610.26894v1",
+      "source_url": "https://arxiv.org/abs/2610.26894v1",
+      "note": "Reference scenes without transformations; deterministic binary yes/no answers. Table 2 values are used where nearby prose disagrees. These accuracy scores do not measure attribution or robustness. Paper row: Qwen3; source cell: 78.4."
+    },
+    {
+      "benchmark": "trace",
+      "model": "qwen3-omni",
+      "metric": "Reference accuracy: ordering (%)",
+      "value": 73.3,
+      "source": "Table 2, arXiv:2610.26894v1",
+      "source_url": "https://arxiv.org/abs/2610.26894v1",
+      "note": "Reference scenes without transformations; deterministic binary yes/no answers. Table 2 values are used where nearby prose disagrees. These accuracy scores do not measure attribution or robustness. Paper row: Qwen3; source cell: 73.3."
+    },
+    {
+      "benchmark": "trace",
+      "model": "qwen3-omni",
+      "metric": "Reference accuracy: existence (%)",
+      "value": 73.6,
+      "source": "Table 2, arXiv:2610.26894v1",
+      "source_url": "https://arxiv.org/abs/2610.26894v1",
+      "note": "Reference scenes without transformations; deterministic binary yes/no answers. Table 2 values are used where nearby prose disagrees. These accuracy scores do not measure attribution or robustness. Paper row: Qwen3; source cell: 73.6."
+    },
+    {
+      "benchmark": "trace",
+      "model": "qwen3-omni",
+      "metric": "Reference accuracy: counting (%)",
+      "value": 92.9,
+      "source": "Table 2, arXiv:2610.26894v1",
+      "source_url": "https://arxiv.org/abs/2610.26894v1",
+      "note": "Reference scenes without transformations; deterministic binary yes/no answers. Table 2 values are used where nearby prose disagrees. These accuracy scores do not measure attribution or robustness. Paper row: Qwen3; source cell: 92.9."
+    },
+    {
+      "benchmark": "mosaic",
+      "model": "mimo-v2-5",
+      "metric": "Track B / Naive RAG Native-MM: Answerable judge score (0-1)",
+      "value": 0.614,
+      "source": "Table 28, arXiv:2610.29249v1",
+      "source_url": "https://arxiv.org/abs/2610.29249v1",
+      "note": "End-to-end configured system with MiMo-V2.5 reader, not a standalone base-model score. 784 answerable and 139 refusal items; primary judge Qwen3.7-Plus. Different readers and memory backends must not be conflated. Paper row: Naive RAG; source cell: 0.614."
+    },
+    {
+      "benchmark": "mosaic",
+      "model": "mimo-v2-5",
+      "metric": "Track B / Naive RAG Native-MM: Correct-refusal rate (0-1)",
+      "value": 0.734,
+      "source": "Table 28, arXiv:2610.29249v1",
+      "source_url": "https://arxiv.org/abs/2610.29249v1",
+      "note": "End-to-end configured system with MiMo-V2.5 reader, not a standalone base-model score. 784 answerable and 139 refusal items; primary judge Qwen3.7-Plus. Different readers and memory backends must not be conflated. Paper row: Naive RAG; source cell: 0.734."
+    },
+    {
+      "benchmark": "mosaic",
+      "model": "mimo-v2-5",
+      "metric": "Track B / Naive RAG Native-MM: False-refusal rate (0-1)",
+      "value": 0.143,
+      "source": "Table 28, arXiv:2610.29249v1",
+      "source_url": "https://arxiv.org/abs/2610.29249v1",
+      "note": "End-to-end configured system with MiMo-V2.5 reader, not a standalone base-model score. 784 answerable and 139 refusal items; primary judge Qwen3.7-Plus. Different readers and memory backends must not be conflated. Paper row: Naive RAG; source cell: 0.143."
+    },
+    {
+      "benchmark": "mosaic",
+      "model": "mimo-v2-5",
+      "metric": "Track B / Naive RAG Native-MM: Latency (seconds)",
+      "value": 29.6,
+      "source": "Table 28, arXiv:2610.29249v1",
+      "source_url": "https://arxiv.org/abs/2610.29249v1",
+      "note": "End-to-end configured system with MiMo-V2.5 reader, not a standalone base-model score. 784 answerable and 139 refusal items; primary judge Qwen3.7-Plus. Different readers and memory backends must not be conflated. Paper row: Naive RAG; source cell: 29.6."
+    },
+    {
+      "benchmark": "mosaic",
+      "model": "mimo-v2-5",
+      "metric": "Track B / ReAct Native-MM: Answerable judge score (0-1)",
+      "value": 0.732,
+      "source": "Table 28, arXiv:2610.29249v1",
+      "source_url": "https://arxiv.org/abs/2610.29249v1",
+      "note": "End-to-end configured system with MiMo-V2.5 reader, not a standalone base-model score. 784 answerable and 139 refusal items; primary judge Qwen3.7-Plus. Different readers and memory backends must not be conflated. Paper row: ReAct; source cell: 0.732."
+    },
+    {
+      "benchmark": "mosaic",
+      "model": "mimo-v2-5",
+      "metric": "Track B / ReAct Native-MM: Correct-refusal rate (0-1)",
+      "value": 0.41,
+      "source": "Table 28, arXiv:2610.29249v1",
+      "source_url": "https://arxiv.org/abs/2610.29249v1",
+      "note": "End-to-end configured system with MiMo-V2.5 reader, not a standalone base-model score. 784 answerable and 139 refusal items; primary judge Qwen3.7-Plus. Different readers and memory backends must not be conflated. Paper row: ReAct; source cell: 0.410."
+    },
+    {
+      "benchmark": "mosaic",
+      "model": "mimo-v2-5",
+      "metric": "Track B / ReAct Native-MM: False-refusal rate (0-1)",
+      "value": 0.018,
+      "source": "Table 28, arXiv:2610.29249v1",
+      "source_url": "https://arxiv.org/abs/2610.29249v1",
+      "note": "End-to-end configured system with MiMo-V2.5 reader, not a standalone base-model score. 784 answerable and 139 refusal items; primary judge Qwen3.7-Plus. Different readers and memory backends must not be conflated. Paper row: ReAct; source cell: 0.018."
+    },
+    {
+      "benchmark": "mosaic",
+      "model": "mimo-v2-5",
+      "metric": "Track B / ReAct Native-MM: Latency (seconds)",
+      "value": 73.6,
+      "source": "Table 28, arXiv:2610.29249v1",
+      "source_url": "https://arxiv.org/abs/2610.29249v1",
+      "note": "End-to-end configured system with MiMo-V2.5 reader, not a standalone base-model score. 784 answerable and 139 refusal items; primary judge Qwen3.7-Plus. Different readers and memory backends must not be conflated. Paper row: ReAct; source cell: 73.6."
+    },
+    {
+      "benchmark": "medvoice-aid",
+      "model": "gemini-2-5-flash",
+      "metric": "GPT-5.4 signed rubric score",
+      "value": 0.1676,
+      "source": "Table 3 (PDF p. 6), arXiv:2610.22405v1",
+      "source_url": "https://arxiv.org/abs/2610.22405v1",
+      "note": "Original signed rubric score, not percent or clinical success probability. Negative values are retained. Original general-purpose baseline; the fine-tuned MedSonor system and unindexed proprietary versions are omitted. Paper row: Gemini-2.5-Flash; source cell: 0.1676."
+    },
+    {
+      "benchmark": "medvoice-dial",
+      "model": "gemini-2-5-flash",
+      "metric": "GPT-5.4 signed rubric score",
+      "value": 0.1585,
+      "source": "Table 3 (PDF p. 6), arXiv:2610.22405v1",
+      "source_url": "https://arxiv.org/abs/2610.22405v1",
+      "note": "Original signed rubric score, not percent or clinical success probability. Negative values are retained. Original general-purpose baseline; the fine-tuned MedSonor system and unindexed proprietary versions are omitted. Paper row: Gemini-2.5-Flash; source cell: 0.1585."
+    },
+    {
+      "benchmark": "medvoice-aid",
+      "model": "qwen2-5-omni",
+      "metric": "GPT-5.4 signed rubric score",
+      "value": 0.3341,
+      "source": "Table 3 (PDF p. 6), arXiv:2610.22405v1",
+      "source_url": "https://arxiv.org/abs/2610.22405v1",
+      "note": "Original signed rubric score, not percent or clinical success probability. Negative values are retained. Original general-purpose baseline; the fine-tuned MedSonor system and unindexed proprietary versions are omitted. Paper row: Qwen2.5-Omni-7B; source cell: 0.3341."
+    },
+    {
+      "benchmark": "medvoice-dial",
+      "model": "qwen2-5-omni",
+      "metric": "GPT-5.4 signed rubric score",
+      "value": 0.3237,
+      "source": "Table 3 (PDF p. 6), arXiv:2610.22405v1",
+      "source_url": "https://arxiv.org/abs/2610.22405v1",
+      "note": "Original signed rubric score, not percent or clinical success probability. Negative values are retained. Original general-purpose baseline; the fine-tuned MedSonor system and unindexed proprietary versions are omitted. Paper row: Qwen2.5-Omni-7B; source cell: 0.3237."
+    },
+    {
+      "benchmark": "medvoice-aid",
+      "model": "minicpm-o",
+      "metric": "GPT-5.4 signed rubric score",
+      "value": 0.3903,
+      "source": "Table 3 (PDF p. 6), arXiv:2610.22405v1",
+      "source_url": "https://arxiv.org/abs/2610.22405v1",
+      "note": "Original signed rubric score, not percent or clinical success probability. Negative values are retained. Original general-purpose baseline; the fine-tuned MedSonor system and unindexed proprietary versions are omitted. Paper row: MiniCPM-o-2.6; source cell: 0.3903."
+    },
+    {
+      "benchmark": "medvoice-dial",
+      "model": "minicpm-o",
+      "metric": "GPT-5.4 signed rubric score",
+      "value": 0.3307,
+      "source": "Table 3 (PDF p. 6), arXiv:2610.22405v1",
+      "source_url": "https://arxiv.org/abs/2610.22405v1",
+      "note": "Original signed rubric score, not percent or clinical success probability. Negative values are retained. Original general-purpose baseline; the fine-tuned MedSonor system and unindexed proprietary versions are omitted. Paper row: MiniCPM-o-2.6; source cell: 0.3307."
+    },
+    {
+      "benchmark": "medvoice-aid",
+      "model": "baichuan-omni-1-5",
+      "metric": "GPT-5.4 signed rubric score",
+      "value": 0.349,
+      "source": "Table 3 (PDF p. 6), arXiv:2610.22405v1",
+      "source_url": "https://arxiv.org/abs/2610.22405v1",
+      "note": "Original signed rubric score, not percent or clinical success probability. Negative values are retained. Original general-purpose baseline; the fine-tuned MedSonor system and unindexed proprietary versions are omitted. Paper row: Baichuan-Omni-1.5; source cell: 0.3490."
+    },
+    {
+      "benchmark": "medvoice-dial",
+      "model": "baichuan-omni-1-5",
+      "metric": "GPT-5.4 signed rubric score",
+      "value": 0.3558,
+      "source": "Table 3 (PDF p. 6), arXiv:2610.22405v1",
+      "source_url": "https://arxiv.org/abs/2610.22405v1",
+      "note": "Original signed rubric score, not percent or clinical success probability. Negative values are retained. Original general-purpose baseline; the fine-tuned MedSonor system and unindexed proprietary versions are omitted. Paper row: Baichuan-Omni-1.5; source cell: 0.3558."
+    },
+    {
+      "benchmark": "medvoice-aid",
+      "model": "glm-4-voice",
+      "metric": "GPT-5.4 signed rubric score",
+      "value": 0.2839,
+      "source": "Table 3 (PDF p. 6), arXiv:2610.22405v1",
+      "source_url": "https://arxiv.org/abs/2610.22405v1",
+      "note": "Original signed rubric score, not percent or clinical success probability. Negative values are retained. Original general-purpose baseline; the fine-tuned MedSonor system and unindexed proprietary versions are omitted. Paper row: GLM-4-Voice-9B; source cell: 0.2839."
+    },
+    {
+      "benchmark": "medvoice-dial",
+      "model": "glm-4-voice",
+      "metric": "GPT-5.4 signed rubric score",
+      "value": 0.2902,
+      "source": "Table 3 (PDF p. 6), arXiv:2610.22405v1",
+      "source_url": "https://arxiv.org/abs/2610.22405v1",
+      "note": "Original signed rubric score, not percent or clinical success probability. Negative values are retained. Original general-purpose baseline; the fine-tuned MedSonor system and unindexed proprietary versions are omitted. Paper row: GLM-4-Voice-9B; source cell: 0.2902."
+    },
+    {
+      "benchmark": "medvoice-aid",
+      "model": "step-audio-2-mini",
+      "metric": "GPT-5.4 signed rubric score",
+      "value": 0.3442,
+      "source": "Table 3 (PDF p. 6), arXiv:2610.22405v1",
+      "source_url": "https://arxiv.org/abs/2610.22405v1",
+      "note": "Original signed rubric score, not percent or clinical success probability. Negative values are retained. Original general-purpose baseline; the fine-tuned MedSonor system and unindexed proprietary versions are omitted. Paper row: Step-Audio-2-mini; source cell: 0.3442."
+    },
+    {
+      "benchmark": "medvoice-dial",
+      "model": "step-audio-2-mini",
+      "metric": "GPT-5.4 signed rubric score",
+      "value": 0.3367,
+      "source": "Table 3 (PDF p. 6), arXiv:2610.22405v1",
+      "source_url": "https://arxiv.org/abs/2610.22405v1",
+      "note": "Original signed rubric score, not percent or clinical success probability. Negative values are retained. Original general-purpose baseline; the fine-tuned MedSonor system and unindexed proprietary versions are omitted. Paper row: Step-Audio-2-mini; source cell: 0.3367."
+    },
+    {
+      "benchmark": "medvoice-aid",
+      "model": "llama-omni",
+      "metric": "GPT-5.4 signed rubric score",
+      "value": 0.1411,
+      "source": "Table 3 (PDF p. 6), arXiv:2610.22405v1",
+      "source_url": "https://arxiv.org/abs/2610.22405v1",
+      "note": "Original signed rubric score, not percent or clinical success probability. Negative values are retained. Original general-purpose baseline; the fine-tuned MedSonor system and unindexed proprietary versions are omitted. Paper row: LLaMA-3.1-8B-Omni; source cell: 0.1411."
+    },
+    {
+      "benchmark": "medvoice-dial",
+      "model": "llama-omni",
+      "metric": "GPT-5.4 signed rubric score",
+      "value": 0.1772,
+      "source": "Table 3 (PDF p. 6), arXiv:2610.22405v1",
+      "source_url": "https://arxiv.org/abs/2610.22405v1",
+      "note": "Original signed rubric score, not percent or clinical success probability. Negative values are retained. Original general-purpose baseline; the fine-tuned MedSonor system and unindexed proprietary versions are omitted. Paper row: LLaMA-3.1-8B-Omni; source cell: 0.1772."
+    },
+    {
+      "benchmark": "medvoice-aid",
+      "model": "speechgpt2",
+      "metric": "GPT-5.4 signed rubric score",
+      "value": -0.1349,
+      "source": "Table 3 (PDF p. 6), arXiv:2610.22405v1",
+      "source_url": "https://arxiv.org/abs/2610.22405v1",
+      "note": "Original signed rubric score, not percent or clinical success probability. Negative values are retained. Original general-purpose baseline; the fine-tuned MedSonor system and unindexed proprietary versions are omitted. Paper row: SpeechGPT-2.0-preview; source cell: -0.1349."
+    },
+    {
+      "benchmark": "medvoice-dial",
+      "model": "speechgpt2",
+      "metric": "GPT-5.4 signed rubric score",
+      "value": -0.0106,
+      "source": "Table 3 (PDF p. 6), arXiv:2610.22405v1",
+      "source_url": "https://arxiv.org/abs/2610.22405v1",
+      "note": "Original signed rubric score, not percent or clinical success probability. Negative values are retained. Original general-purpose baseline; the fine-tuned MedSonor system and unindexed proprietary versions are omitted. Paper row: SpeechGPT-2.0-preview; source cell: -0.0106."
     }
   ]
 }
