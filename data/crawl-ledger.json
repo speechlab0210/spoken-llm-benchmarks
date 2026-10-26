@@ -1,9 +1,51 @@
 {
  "since": "2026-08-22",
  "what": "Every arXiv paper the daily crawl has flagged since launch (score at or above the threshold, not previously seen), with the reviewer's verdict as written in the feed and whether the paper entered the catalogue. \"published\" is the paper's arXiv date. See the Method section of the site.",
- "flagged": 275,
+ "flagged": 282,
  "admitted": 77,
  "entries": [
+  {
+   "id": "2610.32495",
+   "title": "MusicTwins: Training Audio-Language Models to Listen like Their Persona",
+   "published": "2026-10-23T11:11:45Z",
+   "score": 18,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.32411",
+   "title": "A Broader Look into MLLM's Retrieval Heads",
+   "published": "2026-10-23T09:37:28Z",
+   "score": 21,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.32198",
+   "title": "SURE-Tagger: Structured Speech Representations for Compositional Evaluation and Targeted Data Selection",
+   "published": "2026-10-23T05:50:42Z",
+   "score": 18,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.31966",
+   "title": "POS-Signature Demonstration Retrieval for In-Context Dependency Parsing",
+   "published": "2026-10-22T22:15:48Z",
+   "score": 18,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.31796",
+   "title": "DRAMA-Eval: A Benchmark for Context-Aware, Multi-Turn, Multi-Speaker Speech Generation",
+   "published": "2026-10-22T18:38:39Z",
+   "score": 27,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.31768",
+   "title": "Efficient Omni-modal Large Language Model Inference via Per-Query Modality Selection",
+   "published": "2026-10-22T18:06:37Z",
+   "score": 21,
+   "outcome": "under review"
+  },
   {
    "id": "2610.31252",
    "title": "Query-Conditioned Liquid Temporal Grounding for Long-Form Audio",
@@ -28,6 +70,13 @@
    "outcome": "admitted",
    "verdict": "reviewed — included: TRIAD introduce evaluation tasks for general speech/audio-language models; modality and protocol limitations are documented in the catalogue",
    "catalogue_id": "triad"
+  },
+  {
+   "id": "2610.31713",
+   "title": "Omni-UBench: Benchmarking Omni-Modal LLM-based Guardrails Across Safety, Utility, and Reliability",
+   "published": "2026-10-22T04:20:51Z",
+   "score": 45,
+   "outcome": "under review"
   },
   {
    "id": "2610.29455",

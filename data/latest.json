@@ -1,9 +1,130 @@
 {
-  "fetched_at": "2026-10-25T22:36:37Z",
+  "fetched_at": "2026-10-26T22:30:22Z",
   "window_days": 10,
-  "scanned": 128,
-  "flagged_today": 0,
+  "scanned": 130,
+  "flagged_today": 7,
   "candidates": [
+    {
+      "id": "2610.31713",
+      "title": "Omni-UBench: Benchmarking Omni-Modal LLM-based Guardrails Across Safety, Utility, and Reliability",
+      "abstract": "Advances in Omni-modal Large Language Models (OLLMs) have enabled increasingly seamless human-AI interaction, but their unified processing of heterogeneous modalities also expands the attack surface, allowing adversaries to exploit richer input compositions to circumvent safety alignment. To counter such risks, omni-modal guardrails have been proposed to detect and filter unsafe queries across arbitrary modalities. However, their capabilities and limitations remain insufficiently understood due to the absence of a comprehensive evaluation benchmark. In this paper, we present Omni-UBench, the first comprehensive framework for omni-modal safety assessment, evaluating guardrail models along three critical dimensions, i.e., safety, utility, and reliability. Omni-UBench curates over 183k samples drawn from 35+ heterogeneous sources spanning text, image, audio, video, and their cross-modal combinations, annotated with safety labels under a unified risk taxonomy. Benchmarking under Omni-UBench on 15 representative OLLMs and omni-modal guardrails yields several key findings, including: (1) modern OLLMs exhibit strong content moderation potential even without guardrail-specific tuning; (2) existing guardrails still struggle to identify cross-modal queries that conceal harmful intent or involve sophisticated jailbreaks; (3) they further exhibit substantial safety hallucination and over-sensitivity to textual patterns, revealing a deficient understanding of cross-modal safety semantics. Our findings provide valuable insights for developing more trustworthy omni-modal guardrails in future research.",
+      "published": "2026-10-22T04:20:51Z",
+      "authors": [
+        "Junhao Wang",
+        "Yidou Chen",
+        "Li Lu",
+        "Hongwei Yao",
+        "Xiaodan Li",
+        "Mengjie Wu",
+        "Yuefeng Chen",
+        "Zhan Qin"
+      ],
+      "primary_category": "cs.CR",
+      "url": "https://arxiv.org/abs/2610.31713",
+      "score": 45,
+      "status": "new — under review"
+    },
+    {
+      "id": "2610.31796",
+      "title": "DRAMA-Eval: A Benchmark for Context-Aware, Multi-Turn, Multi-Speaker Speech Generation",
+      "abstract": "Recent advances in speech generation are shifting toward context-aware, multi-turn, and multi-speaker synthesis. While these capabilities are in high demand for applications such as audiobook and audio drama production, evaluation has not kept pace with these advances. Beyond traditional zero-shot Text-to-Speech (TTS), modern systems in this domain primarily fall into three categories: instruction-controllable generation models, multi-turn dialogue models, and the audio branches of audio-visual generation models. However, existing benchmarks evaluate these paradigms in isolation, failing to provide a unified assessment of context modeling, instruction following, and multi-speaker generation. Meanwhile, recent progress in audio understanding models has made it feasible to evaluate such complex scenarios using LLM-as-a-Judge approaches. To bridge this gap, we introduce DRAMA-Eval, a comprehensive benchmark for evaluating such systems. DRAMA-Eval utilizes structured script contexts and offers a holistic evaluation framework covering objective, local, and global aspects of generation quality, enabling the assessment of acoustic fidelity, sentence-level execution, and long-range coherence. We benchmark leading open-source and commercial models on a human?verified dataset. The results reveal critical weaknesses in long-range speaker consistency and implicit instruction following that require deep contextual understanding. To facilitate reproducible research, we release a 12-hour bilingual (Chinese-English) test set of manually corrected real-world scripts, accompanied by ground-truth audio, evaluation code, and benchmark results.",
+      "published": "2026-10-22T18:38:39Z",
+      "authors": [
+        "Jingbin Hu",
+        "Zihang Yang",
+        "Xiaoge Peng",
+        "Haoyu Zhang",
+        "Ziyu Zhang",
+        "Qirui Zhan",
+        "Huakang Chen",
+        "Zhao Guo"
+      ],
+      "primary_category": "eess.AS",
+      "url": "https://arxiv.org/abs/2610.31796",
+      "score": 27,
+      "status": "new — under review"
+    },
+    {
+      "id": "2610.31768",
+      "title": "Efficient Omni-modal Large Language Model Inference via Per-Query Modality Selection",
+      "abstract": "Omni-modal large language models (Omni-LLMs) can jointly process a broad range of modalities, such as text, audio, and video, enabling stronger multimodal understanding and reasoning capabilities, but often at substantial inference cost. We observe that the benefit of additional modalities varies across queries, indicating that a fixed modality configuration can be inefficient. Motivated by this, we study query-wise modality selection, which keeps the underlying Omni-LLM fixed while adaptively selecting which modalities to provide for each query. We formulate the problem as an accuracy-cost optimization problem and develop a cost-sensitive learning approach for modality selection. We evaluate our approach on WorldSense using Qwen2.5-Omni and Qwen3-Omni under three inference-cost measures: input tokens, latency, and monetary cost. Across both models, query-wise modality selection consistently improves the accuracy-cost trade-off and can even outperform the standard setting in which all available modalities are provided to the Omni-LLM. For Qwen2.5-Omni, our cost-sensitive approach matches or exceeds this full-modality accuracy while requiring only approximately 41% of the input tokens, 39% of the latency, and 61% of the monetary cost.",
+      "published": "2026-10-22T18:06:37Z",
+      "authors": [
+        "Shuqi Liu",
+        "Yuzhou Cao",
+        "Luke Ong"
+      ],
+      "primary_category": "cs.LG",
+      "url": "https://arxiv.org/abs/2610.31768",
+      "score": 21,
+      "status": "new — under review"
+    },
+    {
+      "id": "2610.32411",
+      "title": "A Broader Look into MLLM's Retrieval Heads",
+      "abstract": "Locating relevant evidence in long inputs is a core capability of Multimodal Large Language Models. Prior studies attribute this capability to retrieval heads, a sparse set of attention heads that transfer information from the context to the output. However, these analyses are confined to a limited set of modalities and the corresponding models. Moreover, how retrieval heads can be leveraged to enhance the model calls for further exploration. In this paper, we ask whether this mechanism expands together with the input modalities of the model. Taking audio-visual input as a newly added modality, we construct paired inputs in which the same answer is either spoken or shown on screen. With the evidence content fixed, retrieval heads remain sparse in the new modality and are shared to a large extent across modalities. Across 18 language, vision-language, and omni-modal checkpoints, omni-modal models largely preserve the retrieval heads of their backbones. Ablating these heads eliminates nearly all audio-visual retrieval. The heads shared across modalities make up fewer than 2\\% of all heads, yet ablating them also degrades document understanding, spatial perception, and visual mathematics. Building on these findings, we turn retrieval heads into a target of optimization by training their attention with a ranking objective. This raises the page Recall@1 of Qwen3-VL-8B on MMDocIR by 6.03 points and improves document retrieval across three model families. Functional attention heads can thus serve both as a lens on multimodal models and as a target for improving them.",
+      "published": "2026-10-23T09:37:28Z",
+      "authors": [
+        "Jia Wang",
+        "Yuqing Li",
+        "Jiangnan Li",
+        "Zheng Lin",
+        "Mo Yu"
+      ],
+      "primary_category": "cs.CL",
+      "url": "https://arxiv.org/abs/2610.32411",
+      "score": 21,
+      "status": "new — under review"
+    },
+    {
+      "id": "2610.31966",
+      "title": "POS-Signature Demonstration Retrieval for In-Context Dependency Parsing",
+      "abstract": "Demonstrations for in-context learning are often retrieved by semantic similarity, which may be a poor proxy for relevance in structured prediction. We study demonstration selection for Universal Dependencies parsing with a POS-signature policy that represents sentences with weighted part-of-speech statistics and retrieves three length-compatible, gold-parsed examples from the labeled training split. We evaluate two open-weight language models without fine-tuning on all 2,077 sentences of the UD English Web Treebank test set, comparing the policy with shot- and format-matched fixed and semantic three-shot baselines, as well as zero-shot, chain-of-thought, and critique-refinement systems. POS-signature retrieval yields the highest labeled attachment score among the tested prompting systems for both models (72.4 and 73.2), outperforming semantic retrieval by 1.9 and 2.7 points; paired-bootstrap 95% confidence intervals exclude zero for both contrasts. Chain-of-thought and refinement comparisons vary across models. These exploratory results favor the tested POS-signature retrieval approach on English-EWT. We release the prompts, archived outputs, and evaluation code.",
+      "published": "2026-10-22T22:15:48Z",
+      "authors": [
+        "Muhammad Azam Afridi",
+        "Rajab Ali",
+        "Marco Passarotti"
+      ],
+      "primary_category": "cs.CL",
+      "url": "https://arxiv.org/abs/2610.31966",
+      "score": 18,
+      "status": "new — under review"
+    },
+    {
+      "id": "2610.32198",
+      "title": "SURE-Tagger: Structured Speech Representations for Compositional Evaluation and Targeted Data Selection",
+      "abstract": "Speech conveys linguistic content, speaker characteristics, temporal interactions, paralinguistic cues, and acoustic environments. While recent speech captioning models describe these dimensions in natural language, inconsistent attribute coverage and ambiguous omissions hinder systematic analysis across recordings. We introduce SURE-Tagger, a framework that constructs semi-structured speech representations with explicit attribute values, supplementary descriptions, and abstention under insufficient evidence. By integrating specialist observations through language-model reasoning, SURE-Tagger enables speech conditions to be consistently identified and jointly queried across datasets. We further introduce Tag-Bench, combining real recordings with controlled, agentically synthesized speech scenes and verified attribute annotations. On Tag-Bench, SURE-Tagger achieves the highest scores on 25 of 29 evaluated dimensions for real speech and 24 of 29 for synthetic speech, outperforming caption-based baselines across structural and descriptive attributes. Beyond annotation, we use these representations to construct cross-dataset evaluation subsets and reveal condition-specific ASR errors. Using a separate candidate pool, SURE-Tagger-guided selection reduces the overall ASR error rate of Qwen3-ASR-1.7B by 14.3% relative to the unadapted model under a one-hour fine-tuning budget, while caption-guided and random selection increase error in the same setting. These results demonstrate how structured speech representations can connect rich annotation, compositional evaluation, and targeted model improvement.",
+      "published": "2026-10-23T05:50:42Z",
+      "authors": [
+        "Jing Peng",
+        "Huifei Wang",
+        "Weihan Chen",
+        "Shuo Gao",
+        "Bicheng Zhang",
+        "Junhao Du",
+        "Hanqi Li",
+        "Chaolei Liu"
+      ],
+      "primary_category": "eess.AS",
+      "url": "https://arxiv.org/abs/2610.32198",
+      "score": 18,
+      "status": "new — under review"
+    },
+    {
+      "id": "2610.32495",
+      "title": "MusicTwins: Training Audio-Language Models to Listen like Their Persona",
+      "abstract": "People differ in how they perceive music, what associations they make with it, what they like about it, and how they respond to it. Computational models intended to simulate people in environments that include music should account for these differences. Although LLMs have been shown to reproduce aspects of human behavior, whether audio-language models (ALMs) can reproduce a specific person's responses to textual and musical stimuli remains underexplored. We introduce MusicTwins, a framework that combines persona summaries, personal memory, and post-training to generate person-specific responses. We construct persona representations from human writings, capturing background, views, personality, writing style, and a musical profile, and post-train Audio Flamingo Next through supervised fine-tuning and reinforcement learning. Evaluation on ten held-out personas shows notable improvements for Audio Flamingo Next in persona fidelity, including personality, writing style, and responses to music, supporting MusicTwins as a foundation for training audio-language models to listen like their persona.",
+      "published": "2026-10-23T11:11:45Z",
+      "authors": [
+        "Milan Liessens Dujardin",
+        "Kevin Miao"
+      ],
+      "primary_category": "cs.SD",
+      "url": "https://arxiv.org/abs/2610.32495",
+      "score": 18,
+      "status": "new — under review"
+    },
     {
       "id": "2610.20172",
       "title": "MultiPartyTurnBench: Benchmarking Floor Control in Multi-Party Spoken Dialogue",
@@ -923,121 +1044,6 @@
       "url": "https://arxiv.org/abs/2610.06949",
       "score": 18,
       "status": "reviewed — out of scope: no new benchmark proposed (AdaLoop is an adaptive latent-reasoning method evaluated on existing MMSU, MMAU-Pro and MMAR benchmarks)"
-    },
-    {
-      "id": "2610.07026",
-      "title": "Offline AI Modules: Voice-First Offline Architecture, Hardware Reference Stack, Quantization and Benchmarking",
-      "abstract": "The Offline AI Modules workstream enables practical, low-power, and community-accessible deployment of voice-first AI systems that operate fully offline. Designed for African language communities where speech is the dominant mode of interaction and internet connectivity is unreliable or absent, the workstream delivers three reinforcing components: a modular voice-first offline architecture, a low-cost hardware reference bill of materials, and a reproducible quantization and a reproducible quantization and benchmarking pipeline for instruction-tuned language models in the 2-5B parameter class. This paper presents the first end-to-end benchmark evaluation of the stack across two hardware tiers: an NVIDIA Jetson Orin NX (TierB) and a Raspberry Pi5 (TierA). Three instruction-tuned models are evaluated across four quantization formats, assessed for deployment metrics (decode throughput, chat latency, memory, power) and multilingual quality (topic classification accuracy on MasakhaNEWS across English, Hausa, Igbo, Nigerian Pidgin, and Yoruba; per-language perplexity drift). Speech recognition is evaluated using Ethio-ASR on Amharic and Oromo across both tiers. The principal finding is that Q4_K_M quantization represents the best size-to-quality trade-off for deployment on both tiers: gemma-4-E2B-it achieves 28.8t/s decode throughput and 89.2% topic classification accuracy at Q4_K_M on TierB, while all three models run within the 16GB memory budget on TierA.",
-      "published": "2026-10-04T17:16:45Z",
-      "authors": [
-        "Sunday Afariogun",
-        "Odunolaoluwa Jenrola",
-        "Zeinab Nezami"
-      ],
-      "primary_category": "cs.AI",
-      "url": "https://arxiv.org/abs/2610.07026",
-      "score": 18,
-      "status": "reviewed — out of scope: the evaluation does not test general spoken LLM behavior (offline hardware and quantization experiments combine text-model classification/perplexity with separate ASR component tests)"
-    },
-    {
-      "id": "2610.07641",
-      "title": "Hiding Tool Latency in On-Device Cascaded Voice Agent through Speculative Execution",
-      "abstract": "Tool-augmented speech assistants typically serialize automatic speech recognition, large language model inference, and external tool execution. As a result, tool latency is incurred only after the user has finished speaking and the LLM has identified the required tool calls. We present speculative tool execution for on-device cascaded voice agents, which predicts tool requests from partial ASR hypotheses and initiates tool execution while speech is still being received, thereby reducing end-to-end response latency. Our approach introduces a Predictor module that anticipates tool calls during speech recognition, executes them speculatively, and caches the results. The cached outputs are then injected into the LLM prompt, enabling faster responses. Additionally, to mitigate errors caused by user self-corrections during speech, we employ a rule-based validation mechanism that selectively injects only valid cached results. As a final safeguard, the LLM retains the ability to issue tool calls directly, ensuring that the latency of our framework is upper-bounded by the baseline serial execution pipeline in the worst case. We evaluate our method using live measurements from a fully implemented Android voice assistant. Our approach reduces the median time-to-first-audio from 5.79,s to 4.60,s and decreases the standard deviation from 3.49,s to 2.81,s, resulting in more predictable response latency.",
-      "published": "2026-10-06T02:36:18Z",
-      "authors": [
-        "Kyudan Jung",
-        "Hyunsin Park",
-        "Yoonhyung Lee",
-        "Jinhwan Park",
-        "Jinhyeok Yang",
-        "KiHyun Nam",
-        "Jaegul Choo",
-        "Jinkyu Lee"
-      ],
-      "primary_category": "cs.SD",
-      "url": "https://arxiv.org/abs/2610.07641",
-      "score": 18,
-      "status": "reviewed — out of scope: no new benchmark proposed (a speculative tool-execution method for hiding latency during streaming ASR in a cascaded voice assistant)"
-    },
-    {
-      "id": "2610.08733",
-      "title": "Towards an Extensible Benchmark for Spoken Dialogue with Social Robots",
-      "abstract": "Language models provide a plug-and-play interface between humans and robots, but important challenges remain when speech, dialogue, fast interaction, and collaboration are required. We propose a benchmark for the community to use as a way to explore common spoken dialogue artifacts between robots and humans, including requests for clarification, interruptions, embodied signals (e.g., head nods or facial cues), and time constraints. We also explain our vision to extend the benchmark for other aspects of human-robot interaction that are important to the larger research community. To facilitate the benchmark, we further propose using \\textit{Retico}, a real-time communication framework that fulfills important technical requirements to enable robots to have spoken dialogue capabilities.",
-      "published": "2026-10-06T17:36:01Z",
-      "authors": [
-        "Casey Kennington",
-        "Ross Mead",
-        "Saad Elbeleidy",
-        "Jesse Thomason"
-      ],
-      "primary_category": "cs.RO",
-      "url": "https://arxiv.org/abs/2610.08733",
-      "score": 18,
-      "status": "reviewed — out of scope: no general spoken LLM is evaluated (a proposed collaborative robot-dialogue protocol whose implementation and model evaluations are future work)"
-    },
-    {
-      "id": "2610.05398",
-      "title": "MMPostTrainBench: Benchmarking Autonomous Research for Multimodal Post-Training",
-      "abstract": "Autonomous research seeks sustained model improvements through iterative experimentation and feedback. LLM agents show promise in automating machine learning and language-model post-training, but their ability to sustain multimodal improvement remains unclear. We introduce MMPostTrainBench, a benchmark spanning eight tasks in image, audio, video, and joint audio-video understanding and image-grounded software repair. Agents operate from a common base model within fixed budgets, using development feedback before independent evaluation of their submitted models. Evaluation covers target and non-target model outcomes, iterative model improvement and selection, and research integrity. Across all eight tasks, 52.1% of model--task means fall below the base, and evaluated submissions also exhibit non-target regressions. Model performance does not consistently improve across research iterations, and agents do not reliably select the best evaluated candidate for submission; final submissions trail that candidate by up to 5.38 percentage points. Extending autonomous research from text-only to multimodal tasks introduces additional sources of error in perception, cross-modal alignment, and temporal grounding. The observed regressions and selection gaps highlight the need to balance targeted improvements with non-target capability preservation and to retain gains across research iterations. These requirements motivate MMResearch, a multimodal research framework that connects media-grounded evidence to hypotheses and interventions, carries findings across rounds through hierarchical memory, and retains candidates using development evaluation. Added to existing code-agent runtimes, it improves submitted-model accuracy by up to 7.75 percentage points for Claude Opus 4.8 with Claude Code and 2.33 points for GPT-5.6-sol with Codex.",
-      "published": "2026-10-04T17:32:58Z",
-      "authors": [
-        "Yuxin Liu",
-        "Yuxuan Wang",
-        "Zhenxin Lei",
-        "Lingchen Meng",
-        "Yuchong Sun",
-        "Junming Lin",
-        "Hongcheng Liu",
-        "Yunfei Chu"
-      ],
-      "primary_category": "cs.AI",
-      "url": "https://arxiv.org/abs/2610.05398",
-      "score": 36,
-      "status": "reviewed — out of scope: the evaluation target is autonomous post-training research agents, not spoken-language behavior (audio outcomes reuse existing MMAU and MMAR benchmarks)"
-    },
-    {
-      "id": "2610.06057",
-      "title": "A Comprehensive Objective Evaluation of Modern Text-to-Speech for Turkish Using Speech Quality Assessment Models",
-      "abstract": "Modern text-to-speech (TTS) systems can clone a target speaker from a short reference clip or be fine-tuned on a target voice, yet their behaviour on morphologically rich, lower-resource languages such as Turkish remain under-characterised. We present a systematic benchmark of four contemporary systems (Chatterbox, CosyVoice, OmniVoice, and VoxCPM2) evaluated across fine-tuned and zero-shot configurations, contrasted with a conventional VITS baseline and anchored to natural gold speech. Each configuration is scored with eighteen complementary objective metrics spanning learned naturalness predictors (UTMOS v2, DNSMOS-Pro, SCOREQ, WhisQA, AudioBox-PQ, NatScore, SpeechLMScore), intelligibility and signal-quality estimators (SQUIM PESQ/SI-SDR/STOI, Brouhaha), speaker similarity, distributional fidelity (TTSDS) and low-level acoustic descriptors. We further analyse how quality varies with utterance length and quantify long-form temporal consistency through speaker-identity and naturalness drift over chunked utterances. We release our evaluation code to support reproducible TTS evaluation.",
-      "published": "2026-10-05T09:50:23Z",
-      "authors": [
-        "Yunus Emre Ozkose",
-        "Alperen Kahraman",
-        "Ali Haznedaroglu"
-      ],
-      "primary_category": "cs.SD",
-      "url": "https://arxiv.org/abs/2610.06057",
-      "score": 36,
-      "status": "reviewed — out of scope: subjects are not general spoken LLMs (a Turkish speech-synthesis benchmark of dedicated TTS and voice-cloning systems)"
-    },
-    {
-      "id": "2610.04004",
-      "title": "Hallucination Reduction for LLM-Based Audio Understanding via Multimodal Direct Preference Optimization",
-      "abstract": "Large Audio Language Models (LALMs) are prone to hallucinating and over-relying on text priors when simultaneously presented with audio and text inputs. To mitigate these hallucinations, we propose utilizing the multimodal Direct Preference Optimization (mDPO) objective, which forces the model to ground its generation in the acoustic input by contrasting intact and distorted audio counterparts. We extend this preference learning framework to the audio domain by applying a variety of acoustic perturbations. Evaluating the Qwen2-Audio backbone across the DCASE 2025 Challenge and AH Existence datasets, we demonstrate that extending mDPO to LALMs significantly enhances temporal reasoning in the complex DCASE dataset, and improves performance on basic existence verification in the AH benchmark. We identify temporal reversal, frequency masking, and random noise as the most effective perturbations. Ultimately, our approach achieves an absolute accuracy improvement of 14.0% on the DCASE 2025 dataset and 27.4% on AH Existence.",
-      "published": "2026-10-02T20:08:25Z",
-      "authors": [
-        "Bebe Cosgrove",
-        "Aaron Isidore Grace",
-        "Weiran Wang"
-      ],
-      "primary_category": "cs.SD",
-      "url": "https://arxiv.org/abs/2610.04004",
-      "score": 33,
-      "status": "reviewed — out of scope: no benchmark proposed (an audio-grounded preference-training method evaluated on the existing DCASE 2025 and AH Existence datasets)"
-    },
-    {
-      "id": "2610.06013",
-      "title": "Character Identity is not Speaker Identity: KyaraBench and KyaraEmbed for Character Verification",
-      "abstract": "A dubbed character keeps its identity while the voice actor changes, so character identity and speaker identity are distinct properties of one recording, yet speaker verification measures only the latter. To address this gap, we propose KyaraBench, a benchmark that scores character voice directly instead of speaker voice, built from 85 human-audited identities in a dubbed anime corpus. It poses two challenging conditions: one that swaps the performer under a fixed character, and one that fixes the performer under changing characters. Listening studies with 78 participants provide human reference scores for cross-performer verification and same-actor discrimination. Speaker-verification baselines show increased errors under these character-specific conditions. We then train KyaraEmbed, a compact encoder using multilingual character supervision, same-actor negatives, and a language-alignment term. The model achieves the best performance on all character-specific conditions in the main comparison. We release the benchmark, protocol, and encoder publicly.",
-      "published": "2026-10-05T09:12:20Z",
-      "authors": [
-        "Joonyong Park",
-        "Jerry Li"
-      ],
-      "primary_category": "eess.AS",
-      "url": "https://arxiv.org/abs/2610.06013",
-      "score": 31,
-      "status": "reviewed — out of scope: subjects are not full general spoken LLMs (character-verification encoders; the omni-model baseline uses only its mean-pooled audio tower as embeddings)"
     }
   ],
   "warnings": []
