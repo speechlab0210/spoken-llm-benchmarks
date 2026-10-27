@@ -1,9 +1,86 @@
 {
  "since": "2026-08-22",
  "what": "Every arXiv paper the daily crawl has flagged since launch (score at or above the threshold, not previously seen), with the reviewer's verdict as written in the feed and whether the paper entered the catalogue. \"published\" is the paper's arXiv date. See the Method section of the site.",
- "flagged": 282,
+ "flagged": 293,
  "admitted": 77,
  "entries": [
+  {
+   "id": "2610.35816",
+   "title": "Multimodal Concert Video Editing: System Design and Exploratory Evaluation",
+   "published": "2026-10-26T17:43:58Z",
+   "score": 18,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.35725",
+   "title": "The Watchtower Imperative: Lifespan-Calibrated Evaluation for Frontier AI",
+   "published": "2026-10-26T16:44:50Z",
+   "score": 27,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.35138",
+   "title": "Co-Design Bench: Multimodal Collaborative Coding Evaluation for Agentic Models",
+   "published": "2026-10-26T10:10:21Z",
+   "score": 24,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.35125",
+   "title": "When Fusion Order Matters: Insights on Progressive Multimodal Representation Learning for Cross-modal Retrieval",
+   "published": "2026-10-26T10:00:45Z",
+   "score": 21,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.34991",
+   "title": "Diagnosing and Mitigating Long-Session Degradation in Full-Duplex Speech Models",
+   "published": "2026-10-26T08:03:01Z",
+   "score": 24,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.34746",
+   "title": "DecisionTraceBench: Tracking Decision-Critical Information in Multi-Party Spoken Conversations",
+   "published": "2026-10-26T02:46:07Z",
+   "score": 36,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.34688",
+   "title": "From Speech Tokens to Stolen Voices: Attacker-Chosen-Text Speaker Impersonation via Representation Inversion",
+   "published": "2026-10-26T01:24:54Z",
+   "score": 21,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.34616",
+   "title": "CSI-TextBench: A Dataset and Benchmark for Language-Grounded Ambient Sensing Perception",
+   "published": "2026-10-25T22:27:32Z",
+   "score": 33,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.34609",
+   "title": "Audio-R1: Audio Reasoning through Reinforcement Learning on Self-Supervised Tasks",
+   "published": "2026-10-25T22:17:04Z",
+   "score": 18,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.34413",
+   "title": "In-Context Adapter Generation for Compositional Generalization in Large Audio Language Models",
+   "published": "2026-10-25T16:10:49Z",
+   "score": 27,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.33377",
+   "title": "AdShot: Benchmarking Multimodal Large Language Models for Video Advertisement Clipping",
+   "published": "2026-10-24T00:14:26Z",
+   "score": 21,
+   "outcome": "under review"
+  },
   {
    "id": "2610.32495",
    "title": "MusicTwins: Training Audio-Language Models to Listen like Their Persona",
