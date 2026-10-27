@@ -20,7 +20,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2610.34746",
       "score": 36,
-      "status": "new — under review"
+      "status": "reviewed — included: DecisionTraceBench introduces an evaluation set or protocol for general speech/audio-language models; modality, score and configuration limits are documented in the catalogue"
     },
     {
       "id": "2610.34616",
@@ -38,7 +38,7 @@
       "primary_category": "cs.AI",
       "url": "https://arxiv.org/abs/2610.34616",
       "score": 33,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: The proposed benchmark evaluates WiFi CSI-to-text sensing alignment, not general speech/audio-language models."
     },
     {
       "id": "2610.34413",
@@ -57,7 +57,7 @@
       "primary_category": "eess.AS",
       "url": "https://arxiv.org/abs/2610.34413",
       "score": 27,
-      "status": "new — under review"
+      "status": "reviewed — included: Compositional audio evaluation (T2L-ICAG paper) introduces an evaluation set or protocol for general speech/audio-language models; modality, score and configuration limits are documented in the catalogue"
     },
     {
       "id": "2610.35725",
@@ -71,7 +71,7 @@
       "primary_category": "cs.CY",
       "url": "https://arxiv.org/abs/2610.35725",
       "score": 27,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: Presents a conceptual governance and safety framework, without an operational benchmark or evaluation set for general speech/audio-language models."
     },
     {
       "id": "2610.34991",
@@ -90,7 +90,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2610.34991",
       "score": 24,
-      "status": "new — under review"
+      "status": "reviewed — included: Long-session full-duplex stability evaluation introduces an evaluation set or protocol for general speech/audio-language models; modality, score and configuration limits are documented in the catalogue"
     },
     {
       "id": "2610.35138",
@@ -110,7 +110,7 @@
       "primary_category": "cs.AI",
       "url": "https://arxiv.org/abs/2610.35138",
       "score": 24,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: Co-DesignBench evaluates coding agents making application revisions; optional audio handled through tools is not a standardized evaluation of a general spoken LLM."
     },
     {
       "id": "2610.33377",
@@ -128,7 +128,7 @@
       "primary_category": "cs.MM",
       "url": "https://arxiv.org/abs/2610.33377",
       "score": 21,
-      "status": "new — under review"
+      "status": "reviewed — included: AdShot introduces an evaluation set or protocol for general speech/audio-language models; modality, score and configuration limits are documented in the catalogue"
     },
     {
       "id": "2610.34688",
@@ -148,7 +148,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2610.34688",
       "score": 21,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: Introduces a representation-inversion and voice-impersonation attack method, not a new benchmark for general speech/audio-language models."
     },
     {
       "id": "2610.35125",
@@ -166,7 +166,7 @@
       "primary_category": "cs.AI",
       "url": "https://arxiv.org/abs/2610.35125",
       "score": 21,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: Introduces a multimodal retrieval method and fusion-order analysis evaluated on existing retrieval datasets, not a new spoken-LLM benchmark."
     },
     {
       "id": "2610.34609",
@@ -182,7 +182,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2610.34609",
       "score": 18,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: Audio-R1 is a reinforcement-learning post-training method evaluated on existing audio benchmarks; its training reward tasks are not a new evaluation benchmark."
     },
     {
       "id": "2610.35816",
@@ -200,7 +200,7 @@
       "primary_category": "cs.MM",
       "url": "https://arxiv.org/abs/2610.35816",
       "score": 18,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: Presents a concert-editing system and an exploratory expert study, not a benchmark of general speech/audio-language models."
     },
     {
       "id": "2610.31713",
@@ -220,7 +220,7 @@
       "primary_category": "cs.CR",
       "url": "https://arxiv.org/abs/2610.31713",
       "score": 45,
-      "status": "new — under review"
+      "status": "reviewed — included: Omni-UBench introduces an evaluation set or protocol for general speech/audio-language models; modality, score and configuration limits are documented in the catalogue"
     },
     {
       "id": "2610.31796",
@@ -240,7 +240,7 @@
       "primary_category": "eess.AS",
       "url": "https://arxiv.org/abs/2610.31796",
       "score": 27,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: DRAMA-Eval evaluates scripted speech synthesis from supplied target utterances; the evaluated task is TTS/audio-drama generation, outside the general spoken-LLM scope."
     },
     {
       "id": "2610.31768",
@@ -255,7 +255,7 @@
       "primary_category": "cs.LG",
       "url": "https://arxiv.org/abs/2610.31768",
       "score": 21,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: Proposes per-query modality selection using an existing benchmark, rather than introducing a new speech/audio-language evaluation set."
     },
     {
       "id": "2610.32411",
@@ -272,7 +272,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2610.32411",
       "score": 21,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: Analyzes retrieval heads with an adapted AV-NIAH probe from prior work; the contribution is mechanistic analysis and head selection, not a new standalone spoken-LLM benchmark."
     },
     {
       "id": "2610.31966",
@@ -287,7 +287,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2610.31966",
       "score": 18,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: Studies text dependency parsing on Universal Dependencies English data; the evaluated systems and task are not speech/audio-language models."
     },
     {
       "id": "2610.32198",
@@ -307,7 +307,7 @@
       "primary_category": "eess.AS",
       "url": "https://arxiv.org/abs/2610.32198",
       "score": 18,
-      "status": "new — under review"
+      "status": "reviewed — included: Tag-Bench (SURE-Tagger) introduces an evaluation set or protocol for general speech/audio-language models; modality, score and configuration limits are documented in the catalogue"
     },
     {
       "id": "2610.32495",
@@ -321,7 +321,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2610.32495",
       "score": 18,
-      "status": "new — under review"
+      "status": "reviewed — included: MusicTwins persona-fidelity evaluation introduces an evaluation set or protocol for general speech/audio-language models; modality, score and configuration limits are documented in the catalogue"
     },
     {
       "id": "2610.20172",

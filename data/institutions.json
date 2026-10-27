@@ -14715,6 +14715,115 @@
      "note": "Institution and country printed in arXiv:2610.19869v2, p.1; not merged into a host university."
     }
    ]
+  },
+  {
+   "id": "qifu-technology",
+   "name": "Qifu Technology",
+   "short": "Qifu",
+   "type": "industry",
+   "country": "CN",
+   "parent": null,
+   "confidence": "high",
+   "sites": [
+    {
+     "city": "Beijing",
+     "lat": 39.9,
+     "lon": 116.4,
+     "country": "CN"
+    }
+   ],
+   "aliases": [
+    {
+     "raw": "Qifu Technology",
+     "country": "CN",
+     "city": "Beijing",
+     "lat": 39.9,
+     "lon": 116.4,
+     "type": "industry",
+     "confidence": "high",
+     "note": "Printed as AI Lab, Qifu Technology, Beijing, China in arXiv:2610.34746v1. Coordinates normalize that named city, not a street address."
+    }
+   ]
+  },
+  {
+   "id": "southern-methodist-university",
+   "name": "Southern Methodist University",
+   "short": "SMU",
+   "type": "academia",
+   "country": "US",
+   "parent": null,
+   "confidence": "high",
+   "sites": [
+    {
+     "city": "Dallas",
+     "lat": 32.78,
+     "lon": -96.8,
+     "country": "US"
+    }
+   ],
+   "aliases": [
+    {
+     "raw": "Southern Methodist University",
+     "country": "US",
+     "city": "Dallas",
+     "lat": 32.78,
+     "lon": -96.8,
+     "type": "academia",
+     "confidence": "high",
+     "note": "Printed as Southern Methodist University, Dallas, TX 75205, USA in arXiv:2610.33377v1. Coordinates normalize the city."
+    }
+   ]
+  },
+  {
+   "id": "shenzhen-university",
+   "name": "Shenzhen University",
+   "short": "SZU",
+   "type": "academia",
+   "country": "CN",
+   "parent": null,
+   "confidence": "high",
+   "sites": [
+    {
+     "city": "Shenzhen",
+     "lat": 22.54,
+     "lon": 114.06,
+     "country": "CN"
+    }
+   ],
+   "aliases": [
+    {
+     "raw": "Shenzhen University",
+     "country": "CN",
+     "city": "Shenzhen",
+     "lat": 22.54,
+     "lon": 114.06,
+     "type": "academia",
+     "confidence": "high",
+     "note": "Institution identity is printed in arXiv:2610.32198v2; registry geography is normalization and is not attributed as a printed author address."
+    }
+   ]
+  },
+  {
+   "id": "jiangsu-key-lab-language-computing-unresolved",
+   "name": "Jiangsu Key Lab of Language Computing",
+   "short": "Jiangsu Language Computing Lab",
+   "type": "academia",
+   "country": null,
+   "parent": null,
+   "confidence": "low",
+   "sites": [],
+   "aliases": [
+    {
+     "raw": "Jiangsu Key Lab of Language Computing",
+     "country": null,
+     "city": null,
+     "lat": null,
+     "lon": null,
+     "type": "academia",
+     "confidence": "low",
+     "note": "Affiliation 2 in arXiv:2610.34413v1 is retained literally; no parent or author location is printed. The existing Soochow University alias is itself explicitly uncertain and is not evidence for assigning this author group to that university. Canonical host remains unresolved."
+    }
+   ]
   }
  ]
 }

@@ -147150,6 +147150,2364 @@
       "source": "Table 3 (PDF p. 6), arXiv:2610.22405v1",
       "source_url": "https://arxiv.org/abs/2610.22405v1",
       "note": "Original signed rubric score, not percent or clinical success probability. Negative values are retained. Original general-purpose baseline; the fine-tuned MedSonor system and unindexed proprietary versions are omitted. Paper row: SpeechGPT-2.0-preview; source cell: -0.0106."
+    },
+    {
+      "benchmark": "compositional-audio-eval-icag",
+      "model": "kimi-audio",
+      "metric": "Atomic RPS (%, Table 2 reference pool)",
+      "value": 85.57,
+      "source": "Table 2, arXiv:2610.34413v1",
+      "source_url": "https://arxiv.org/abs/2610.34413v1",
+      "note": "Unadapted Kimi-Audio 7B baseline. Relative performance score, not accuracy: each task is normalized to the best of the five systems in Table 2, then averaged by task class. Higher is better; scores depend on that reference pool. EvalSIFT accuracy columns are excluded. Source row: Kimi-Audio 7B; column: Atomic."
+    },
+    {
+      "benchmark": "compositional-audio-eval-icag",
+      "model": "kimi-audio",
+      "metric": "Comparative RPS (%, Table 2 reference pool)",
+      "value": 44.45,
+      "source": "Table 2, arXiv:2610.34413v1",
+      "source_url": "https://arxiv.org/abs/2610.34413v1",
+      "note": "Unadapted Kimi-Audio 7B baseline. Relative performance score, not accuracy: each task is normalized to the best of the five systems in Table 2, then averaged by task class. Higher is better; scores depend on that reference pool. EvalSIFT accuracy columns are excluded. Source row: Kimi-Audio 7B; column: Comparative."
+    },
+    {
+      "benchmark": "compositional-audio-eval-icag",
+      "model": "kimi-audio",
+      "metric": "Selective RPS (%, Table 2 reference pool)",
+      "value": 79.22,
+      "source": "Table 2, arXiv:2610.34413v1",
+      "source_url": "https://arxiv.org/abs/2610.34413v1",
+      "note": "Unadapted Kimi-Audio 7B baseline. Relative performance score, not accuracy: each task is normalized to the best of the five systems in Table 2, then averaged by task class. Higher is better; scores depend on that reference pool. EvalSIFT accuracy columns are excluded. Source row: Kimi-Audio 7B; column: Selective."
+    },
+    {
+      "benchmark": "compositional-audio-eval-icag",
+      "model": "kimi-audio",
+      "metric": "Sequential RPS (%, Table 2 reference pool)",
+      "value": 2.0,
+      "source": "Table 2, arXiv:2610.34413v1",
+      "source_url": "https://arxiv.org/abs/2610.34413v1",
+      "note": "Unadapted Kimi-Audio 7B baseline. Relative performance score, not accuracy: each task is normalized to the best of the five systems in Table 2, then averaged by task class. Higher is better; scores depend on that reference pool. EvalSIFT accuracy columns are excluded. Source row: Kimi-Audio 7B; column: Sequential."
+    },
+    {
+      "benchmark": "compositional-audio-eval-icag",
+      "model": "kimi-audio",
+      "metric": "Multi-function RPS (%, Table 2 reference pool)",
+      "value": 76.9,
+      "source": "Table 2, arXiv:2610.34413v1",
+      "source_url": "https://arxiv.org/abs/2610.34413v1",
+      "note": "Unadapted Kimi-Audio 7B baseline. Relative performance score, not accuracy: each task is normalized to the best of the five systems in Table 2, then averaged by task class. Higher is better; scores depend on that reference pool. EvalSIFT accuracy columns are excluded. Source row: Kimi-Audio 7B; column: Multi-function."
+    },
+    {
+      "benchmark": "compositional-audio-eval-icag",
+      "model": "kimi-audio",
+      "metric": "Average RPS (%, Table 2 reference pool)",
+      "value": 57.63,
+      "source": "Table 2, arXiv:2610.34413v1",
+      "source_url": "https://arxiv.org/abs/2610.34413v1",
+      "note": "Unadapted Kimi-Audio 7B baseline. Relative performance score, not accuracy: each task is normalized to the best of the five systems in Table 2, then averaged by task class. Higher is better; scores depend on that reference pool. EvalSIFT accuracy columns are excluded. Source row: Kimi-Audio 7B; column: Average."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "minicpm-o-4-5",
+      "metric": "0–1 min / FTO (ms)",
+      "value": 393.0,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=101 is the table count, not a confidence interval. Signed median floor-transfer offset in milliseconds of logical audio time, not wall-clock inference latency. Negative means overlap and is not automatically better. N counts normal turn-taking responses. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: MiniCPM-o 4.5, 0–1 min; column: FTO (ms)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "minicpm-o-4-5",
+      "metric": "0–1 min / RT (%)",
+      "value": 7.8,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=115 is the table count, not a confidence interval. Response-timeout rate in percent; lower is better. N counts resolved response opportunities. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: MiniCPM-o 4.5, 0–1 min; column: RT (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "minicpm-o-4-5",
+      "metric": "0–1 min / TS (%)",
+      "value": 2.2,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=90 is the table count, not a confidence interval. Cumulative terminated-session percentage after three consecutive response timeouts; lower is better. N counts all evaluated episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: MiniCPM-o 4.5, 0–1 min; column: TS (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "minicpm-o-4-5",
+      "metric": "0–1 min / CQ (1–5)",
+      "value": 4.83,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=90 is the table count, not a confidence interval. Transcript-judged content quality on the native 1–5 scale; higher is better. N counts included episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: MiniCPM-o 4.5, 0–1 min; column: CQ (1–5)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "minicpm-o-4-5",
+      "metric": "0–1 min / WER (%)",
+      "value": 2.4,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=88 is the table count, not a confidence interval. WER in percent comparing generated speech ASR with the model native generated text; lower is better. N counts included episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: MiniCPM-o 4.5, 0–1 min; column: WER (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "minicpm-o-4-5",
+      "metric": "1–2 min / FTO (ms)",
+      "value": 407.0,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=106 is the table count, not a confidence interval. Signed median floor-transfer offset in milliseconds of logical audio time, not wall-clock inference latency. Negative means overlap and is not automatically better. N counts normal turn-taking responses. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: MiniCPM-o 4.5, 1–2 min; column: FTO (ms)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "minicpm-o-4-5",
+      "metric": "1–2 min / RT (%)",
+      "value": 10.8,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=120 is the table count, not a confidence interval. Response-timeout rate in percent; lower is better. N counts resolved response opportunities. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: MiniCPM-o 4.5, 1–2 min; column: RT (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "minicpm-o-4-5",
+      "metric": "1–2 min / TS (%)",
+      "value": 6.7,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=90 is the table count, not a confidence interval. Cumulative terminated-session percentage after three consecutive response timeouts; lower is better. N counts all evaluated episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: MiniCPM-o 4.5, 1–2 min; column: TS (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "minicpm-o-4-5",
+      "metric": "1–2 min / CQ (1–5)",
+      "value": 4.84,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=87 is the table count, not a confidence interval. Transcript-judged content quality on the native 1–5 scale; higher is better. N counts included episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: MiniCPM-o 4.5, 1–2 min; column: CQ (1–5)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "minicpm-o-4-5",
+      "metric": "1–2 min / WER (%)",
+      "value": 2.8,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=87 is the table count, not a confidence interval. WER in percent comparing generated speech ASR with the model native generated text; lower is better. N counts included episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: MiniCPM-o 4.5, 1–2 min; column: WER (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "minicpm-o-4-5",
+      "metric": "1–2 min / Speaker cosine similarity",
+      "value": 0.775,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=87 is the table count, not a confidence interval. Speaker-embedding cosine similarity to the first-minute reference; higher is better. N counts included episodes. The reference minute itself is not a numeric score. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: MiniCPM-o 4.5, 1–2 min; column: Speaker cosine similarity."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "minicpm-o-4-5",
+      "metric": "2–3 min / FTO (ms)",
+      "value": 589.0,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=93 is the table count, not a confidence interval. Signed median floor-transfer offset in milliseconds of logical audio time, not wall-clock inference latency. Negative means overlap and is not automatically better. N counts normal turn-taking responses. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: MiniCPM-o 4.5, 2–3 min; column: FTO (ms)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "minicpm-o-4-5",
+      "metric": "2–3 min / RT (%)",
+      "value": 14.7,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=109 is the table count, not a confidence interval. Response-timeout rate in percent; lower is better. N counts resolved response opportunities. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: MiniCPM-o 4.5, 2–3 min; column: RT (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "minicpm-o-4-5",
+      "metric": "2–3 min / TS (%)",
+      "value": 7.8,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=90 is the table count, not a confidence interval. Cumulative terminated-session percentage after three consecutive response timeouts; lower is better. N counts all evaluated episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: MiniCPM-o 4.5, 2–3 min; column: TS (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "minicpm-o-4-5",
+      "metric": "2–3 min / CQ (1–5)",
+      "value": 4.56,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=84 is the table count, not a confidence interval. Transcript-judged content quality on the native 1–5 scale; higher is better. N counts included episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: MiniCPM-o 4.5, 2–3 min; column: CQ (1–5)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "minicpm-o-4-5",
+      "metric": "2–3 min / WER (%)",
+      "value": 8.7,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=84 is the table count, not a confidence interval. WER in percent comparing generated speech ASR with the model native generated text; lower is better. N counts included episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: MiniCPM-o 4.5, 2–3 min; column: WER (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "minicpm-o-4-5",
+      "metric": "2–3 min / Speaker cosine similarity",
+      "value": 0.77,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=84 is the table count, not a confidence interval. Speaker-embedding cosine similarity to the first-minute reference; higher is better. N counts included episodes. The reference minute itself is not a numeric score. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: MiniCPM-o 4.5, 2–3 min; column: Speaker cosine similarity."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "minicpm-o-4-5",
+      "metric": "3–4 min / FTO (ms)",
+      "value": 748.0,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=97 is the table count, not a confidence interval. Signed median floor-transfer offset in milliseconds of logical audio time, not wall-clock inference latency. Negative means overlap and is not automatically better. N counts normal turn-taking responses. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: MiniCPM-o 4.5, 3–4 min; column: FTO (ms)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "minicpm-o-4-5",
+      "metric": "3–4 min / RT (%)",
+      "value": 6.5,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=108 is the table count, not a confidence interval. Response-timeout rate in percent; lower is better. N counts resolved response opportunities. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: MiniCPM-o 4.5, 3–4 min; column: RT (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "minicpm-o-4-5",
+      "metric": "3–4 min / TS (%)",
+      "value": 7.8,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=90 is the table count, not a confidence interval. Cumulative terminated-session percentage after three consecutive response timeouts; lower is better. N counts all evaluated episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: MiniCPM-o 4.5, 3–4 min; column: TS (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "minicpm-o-4-5",
+      "metric": "3–4 min / CQ (1–5)",
+      "value": 4.67,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=83 is the table count, not a confidence interval. Transcript-judged content quality on the native 1–5 scale; higher is better. N counts included episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: MiniCPM-o 4.5, 3–4 min; column: CQ (1–5)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "minicpm-o-4-5",
+      "metric": "3–4 min / WER (%)",
+      "value": 6.5,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=83 is the table count, not a confidence interval. WER in percent comparing generated speech ASR with the model native generated text; lower is better. N counts included episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: MiniCPM-o 4.5, 3–4 min; column: WER (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "minicpm-o-4-5",
+      "metric": "3–4 min / Speaker cosine similarity",
+      "value": 0.771,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=83 is the table count, not a confidence interval. Speaker-embedding cosine similarity to the first-minute reference; higher is better. N counts included episodes. The reference minute itself is not a numeric score. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: MiniCPM-o 4.5, 3–4 min; column: Speaker cosine similarity."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "minicpm-o-4-5",
+      "metric": "4–5 min / FTO (ms)",
+      "value": 908.0,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=92 is the table count, not a confidence interval. Signed median floor-transfer offset in milliseconds of logical audio time, not wall-clock inference latency. Negative means overlap and is not automatically better. N counts normal turn-taking responses. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: MiniCPM-o 4.5, 4–5 min; column: FTO (ms)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "minicpm-o-4-5",
+      "metric": "4–5 min / RT (%)",
+      "value": 5.1,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=99 is the table count, not a confidence interval. Response-timeout rate in percent; lower is better. N counts resolved response opportunities. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: MiniCPM-o 4.5, 4–5 min; column: RT (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "minicpm-o-4-5",
+      "metric": "4–5 min / TS (%)",
+      "value": 7.8,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=90 is the table count, not a confidence interval. Cumulative terminated-session percentage after three consecutive response timeouts; lower is better. N counts all evaluated episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: MiniCPM-o 4.5, 4–5 min; column: TS (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "minicpm-o-4-5",
+      "metric": "4–5 min / CQ (1–5)",
+      "value": 4.45,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=82 is the table count, not a confidence interval. Transcript-judged content quality on the native 1–5 scale; higher is better. N counts included episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: MiniCPM-o 4.5, 4–5 min; column: CQ (1–5)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "minicpm-o-4-5",
+      "metric": "4–5 min / WER (%)",
+      "value": 10.1,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=82 is the table count, not a confidence interval. WER in percent comparing generated speech ASR with the model native generated text; lower is better. N counts included episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: MiniCPM-o 4.5, 4–5 min; column: WER (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "minicpm-o-4-5",
+      "metric": "4–5 min / Speaker cosine similarity",
+      "value": 0.762,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=82 is the table count, not a confidence interval. Speaker-embedding cosine similarity to the first-minute reference; higher is better. N counts included episodes. The reference minute itself is not a numeric score. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: MiniCPM-o 4.5, 4–5 min; column: Speaker cosine similarity."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "minicpm-o-4-5",
+      "metric": "5–6 min / FTO (ms)",
+      "value": 1035.0,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=90 is the table count, not a confidence interval. Signed median floor-transfer offset in milliseconds of logical audio time, not wall-clock inference latency. Negative means overlap and is not automatically better. N counts normal turn-taking responses. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: MiniCPM-o 4.5, 5–6 min; column: FTO (ms)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "minicpm-o-4-5",
+      "metric": "5–6 min / RT (%)",
+      "value": 14.8,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=108 is the table count, not a confidence interval. Response-timeout rate in percent; lower is better. N counts resolved response opportunities. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: MiniCPM-o 4.5, 5–6 min; column: RT (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "minicpm-o-4-5",
+      "metric": "5–6 min / TS (%)",
+      "value": 12.2,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=90 is the table count, not a confidence interval. Cumulative terminated-session percentage after three consecutive response timeouts; lower is better. N counts all evaluated episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: MiniCPM-o 4.5, 5–6 min; column: TS (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "minicpm-o-4-5",
+      "metric": "5–6 min / CQ (1–5)",
+      "value": 4.45,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=78 is the table count, not a confidence interval. Transcript-judged content quality on the native 1–5 scale; higher is better. N counts included episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: MiniCPM-o 4.5, 5–6 min; column: CQ (1–5)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "minicpm-o-4-5",
+      "metric": "5–6 min / WER (%)",
+      "value": 10.5,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=78 is the table count, not a confidence interval. WER in percent comparing generated speech ASR with the model native generated text; lower is better. N counts included episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: MiniCPM-o 4.5, 5–6 min; column: WER (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "minicpm-o-4-5",
+      "metric": "5–6 min / Speaker cosine similarity",
+      "value": 0.762,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=78 is the table count, not a confidence interval. Speaker-embedding cosine similarity to the first-minute reference; higher is better. N counts included episodes. The reference minute itself is not a numeric score. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: MiniCPM-o 4.5, 5–6 min; column: Speaker cosine similarity."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "minicpm-o-4-5",
+      "metric": "6–7 min / FTO (ms)",
+      "value": 1338.5,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=88 is the table count, not a confidence interval. Signed median floor-transfer offset in milliseconds of logical audio time, not wall-clock inference latency. Negative means overlap and is not automatically better. N counts normal turn-taking responses. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: MiniCPM-o 4.5, 6–7 min; column: FTO (ms)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "minicpm-o-4-5",
+      "metric": "6–7 min / RT (%)",
+      "value": 25.6,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=121 is the table count, not a confidence interval. Response-timeout rate in percent; lower is better. N counts resolved response opportunities. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: MiniCPM-o 4.5, 6–7 min; column: RT (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "minicpm-o-4-5",
+      "metric": "6–7 min / TS (%)",
+      "value": 21.1,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=90 is the table count, not a confidence interval. Cumulative terminated-session percentage after three consecutive response timeouts; lower is better. N counts all evaluated episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: MiniCPM-o 4.5, 6–7 min; column: TS (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "minicpm-o-4-5",
+      "metric": "6–7 min / CQ (1–5)",
+      "value": 4.28,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=76 is the table count, not a confidence interval. Transcript-judged content quality on the native 1–5 scale; higher is better. N counts included episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: MiniCPM-o 4.5, 6–7 min; column: CQ (1–5)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "minicpm-o-4-5",
+      "metric": "6–7 min / WER (%)",
+      "value": 11.3,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=74 is the table count, not a confidence interval. WER in percent comparing generated speech ASR with the model native generated text; lower is better. N counts included episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: MiniCPM-o 4.5, 6–7 min; column: WER (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "minicpm-o-4-5",
+      "metric": "6–7 min / Speaker cosine similarity",
+      "value": 0.757,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=75 is the table count, not a confidence interval. Speaker-embedding cosine similarity to the first-minute reference; higher is better. N counts included episodes. The reference minute itself is not a numeric score. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: MiniCPM-o 4.5, 6–7 min; column: Speaker cosine similarity."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "minicpm-o-4-5",
+      "metric": "7–8 min / FTO (ms)",
+      "value": 1778.0,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=78 is the table count, not a confidence interval. Signed median floor-transfer offset in milliseconds of logical audio time, not wall-clock inference latency. Negative means overlap and is not automatically better. N counts normal turn-taking responses. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: MiniCPM-o 4.5, 7–8 min; column: FTO (ms)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "minicpm-o-4-5",
+      "metric": "7–8 min / RT (%)",
+      "value": 38.3,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=128 is the table count, not a confidence interval. Response-timeout rate in percent; lower is better. N counts resolved response opportunities. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: MiniCPM-o 4.5, 7–8 min; column: RT (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "minicpm-o-4-5",
+      "metric": "7–8 min / TS (%)",
+      "value": 35.6,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=90 is the table count, not a confidence interval. Cumulative terminated-session percentage after three consecutive response timeouts; lower is better. N counts all evaluated episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: MiniCPM-o 4.5, 7–8 min; column: TS (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "minicpm-o-4-5",
+      "metric": "7–8 min / CQ (1–5)",
+      "value": 4.13,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=68 is the table count, not a confidence interval. Transcript-judged content quality on the native 1–5 scale; higher is better. N counts included episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: MiniCPM-o 4.5, 7–8 min; column: CQ (1–5)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "minicpm-o-4-5",
+      "metric": "7–8 min / WER (%)",
+      "value": 11.0,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=63 is the table count, not a confidence interval. WER in percent comparing generated speech ASR with the model native generated text; lower is better. N counts included episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: MiniCPM-o 4.5, 7–8 min; column: WER (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "minicpm-o-4-5",
+      "metric": "7–8 min / Speaker cosine similarity",
+      "value": 0.764,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=65 is the table count, not a confidence interval. Speaker-embedding cosine similarity to the first-minute reference; higher is better. N counts included episodes. The reference minute itself is not a numeric score. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: MiniCPM-o 4.5, 7–8 min; column: Speaker cosine similarity."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "minicpm-o-4-5",
+      "metric": "8–9 min / FTO (ms)",
+      "value": 1889.0,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=43 is the table count, not a confidence interval. Signed median floor-transfer offset in milliseconds of logical audio time, not wall-clock inference latency. Negative means overlap and is not automatically better. N counts normal turn-taking responses. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: MiniCPM-o 4.5, 8–9 min; column: FTO (ms)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "minicpm-o-4-5",
+      "metric": "8–9 min / RT (%)",
+      "value": 59.0,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=117 is the table count, not a confidence interval. Response-timeout rate in percent; lower is better. N counts resolved response opportunities. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: MiniCPM-o 4.5, 8–9 min; column: RT (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "minicpm-o-4-5",
+      "metric": "8–9 min / TS (%)",
+      "value": 55.6,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=90 is the table count, not a confidence interval. Cumulative terminated-session percentage after three consecutive response timeouts; lower is better. N counts all evaluated episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: MiniCPM-o 4.5, 8–9 min; column: TS (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "minicpm-o-4-5",
+      "metric": "8–9 min / CQ (1–5)",
+      "value": 4.18,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=51 is the table count, not a confidence interval. Transcript-judged content quality on the native 1–5 scale; higher is better. N counts included episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: MiniCPM-o 4.5, 8–9 min; column: CQ (1–5)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "minicpm-o-4-5",
+      "metric": "8–9 min / WER (%)",
+      "value": 12.3,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=46 is the table count, not a confidence interval. WER in percent comparing generated speech ASR with the model native generated text; lower is better. N counts included episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: MiniCPM-o 4.5, 8–9 min; column: WER (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "minicpm-o-4-5",
+      "metric": "8–9 min / Speaker cosine similarity",
+      "value": 0.757,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=48 is the table count, not a confidence interval. Speaker-embedding cosine similarity to the first-minute reference; higher is better. N counts included episodes. The reference minute itself is not a numeric score. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: MiniCPM-o 4.5, 8–9 min; column: Speaker cosine similarity."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "minicpm-o-4-5",
+      "metric": "9–10 min / RT (%)",
+      "value": 75.8,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=99 is the table count, not a confidence interval. Response-timeout rate in percent; lower is better. N counts resolved response opportunities. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: MiniCPM-o 4.5, 9–10 min; column: RT (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "minicpm-o-4-5",
+      "metric": "9–10 min / TS (%)",
+      "value": 66.7,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=90 is the table count, not a confidence interval. Cumulative terminated-session percentage after three consecutive response timeouts; lower is better. N counts all evaluated episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: MiniCPM-o 4.5, 9–10 min; column: TS (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "minicpm-o-4-5",
+      "metric": "9–10 min / CQ (1–5)",
+      "value": 4.3,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=30 is the table count, not a confidence interval. Transcript-judged content quality on the native 1–5 scale; higher is better. N counts included episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: MiniCPM-o 4.5, 9–10 min; column: CQ (1–5)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "minicpm-o-4-5",
+      "metric": "9–10 min / WER (%)",
+      "value": 15.5,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=23 is the table count, not a confidence interval. WER in percent comparing generated speech ASR with the model native generated text; lower is better. N counts included episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: MiniCPM-o 4.5, 9–10 min; column: WER (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "minicpm-o-4-5",
+      "metric": "9–10 min / Speaker cosine similarity",
+      "value": 0.734,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=27 is the table count, not a confidence interval. Speaker-embedding cosine similarity to the first-minute reference; higher is better. N counts included episodes. The reference minute itself is not a numeric score. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: MiniCPM-o 4.5, 9–10 min; column: Speaker cosine similarity."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "moshi",
+      "metric": "0–1 min / FTO (ms)",
+      "value": -604.0,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=177 is the table count, not a confidence interval. Signed median floor-transfer offset in milliseconds of logical audio time, not wall-clock inference latency. Negative means overlap and is not automatically better. N counts normal turn-taking responses. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: Moshi, 0–1 min; column: FTO (ms)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "moshi",
+      "metric": "0–1 min / RT (%)",
+      "value": 2.7,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=264 is the table count, not a confidence interval. Response-timeout rate in percent; lower is better. N counts resolved response opportunities. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: Moshi, 0–1 min; column: RT (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "moshi",
+      "metric": "0–1 min / TS (%)",
+      "value": 1.1,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=90 is the table count, not a confidence interval. Cumulative terminated-session percentage after three consecutive response timeouts; lower is better. N counts all evaluated episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: Moshi, 0–1 min; column: TS (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "moshi",
+      "metric": "0–1 min / CQ (1–5)",
+      "value": 4.77,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=90 is the table count, not a confidence interval. Transcript-judged content quality on the native 1–5 scale; higher is better. N counts included episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: Moshi, 0–1 min; column: CQ (1–5)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "moshi",
+      "metric": "0–1 min / WER (%)",
+      "value": 2.5,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=89 is the table count, not a confidence interval. WER in percent comparing generated speech ASR with the model native generated text; lower is better. N counts included episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: Moshi, 0–1 min; column: WER (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "moshi",
+      "metric": "1–2 min / FTO (ms)",
+      "value": -615.0,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=220 is the table count, not a confidence interval. Signed median floor-transfer offset in milliseconds of logical audio time, not wall-clock inference latency. Negative means overlap and is not automatically better. N counts normal turn-taking responses. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: Moshi, 1–2 min; column: FTO (ms)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "moshi",
+      "metric": "1–2 min / RT (%)",
+      "value": 2.7,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=293 is the table count, not a confidence interval. Response-timeout rate in percent; lower is better. N counts resolved response opportunities. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: Moshi, 1–2 min; column: RT (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "moshi",
+      "metric": "1–2 min / TS (%)",
+      "value": 1.1,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=90 is the table count, not a confidence interval. Cumulative terminated-session percentage after three consecutive response timeouts; lower is better. N counts all evaluated episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: Moshi, 1–2 min; column: TS (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "moshi",
+      "metric": "1–2 min / CQ (1–5)",
+      "value": 4.53,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=89 is the table count, not a confidence interval. Transcript-judged content quality on the native 1–5 scale; higher is better. N counts included episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: Moshi, 1–2 min; column: CQ (1–5)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "moshi",
+      "metric": "1–2 min / WER (%)",
+      "value": 1.9,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=89 is the table count, not a confidence interval. WER in percent comparing generated speech ASR with the model native generated text; lower is better. N counts included episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: Moshi, 1–2 min; column: WER (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "moshi",
+      "metric": "1–2 min / Speaker cosine similarity",
+      "value": 0.682,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=67 is the table count, not a confidence interval. Speaker-embedding cosine similarity to the first-minute reference; higher is better. N counts included episodes. The reference minute itself is not a numeric score. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: Moshi, 1–2 min; column: Speaker cosine similarity."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "moshi",
+      "metric": "2–3 min / FTO (ms)",
+      "value": -606.0,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=206 is the table count, not a confidence interval. Signed median floor-transfer offset in milliseconds of logical audio time, not wall-clock inference latency. Negative means overlap and is not automatically better. N counts normal turn-taking responses. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: Moshi, 2–3 min; column: FTO (ms)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "moshi",
+      "metric": "2–3 min / RT (%)",
+      "value": 4.0,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=298 is the table count, not a confidence interval. Response-timeout rate in percent; lower is better. N counts resolved response opportunities. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: Moshi, 2–3 min; column: RT (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "moshi",
+      "metric": "2–3 min / TS (%)",
+      "value": 1.1,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=90 is the table count, not a confidence interval. Cumulative terminated-session percentage after three consecutive response timeouts; lower is better. N counts all evaluated episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: Moshi, 2–3 min; column: TS (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "moshi",
+      "metric": "2–3 min / CQ (1–5)",
+      "value": 4.39,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=89 is the table count, not a confidence interval. Transcript-judged content quality on the native 1–5 scale; higher is better. N counts included episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: Moshi, 2–3 min; column: CQ (1–5)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "moshi",
+      "metric": "2–3 min / WER (%)",
+      "value": 1.7,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=89 is the table count, not a confidence interval. WER in percent comparing generated speech ASR with the model native generated text; lower is better. N counts included episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: Moshi, 2–3 min; column: WER (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "moshi",
+      "metric": "2–3 min / Speaker cosine similarity",
+      "value": 0.673,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=65 is the table count, not a confidence interval. Speaker-embedding cosine similarity to the first-minute reference; higher is better. N counts included episodes. The reference minute itself is not a numeric score. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: Moshi, 2–3 min; column: Speaker cosine similarity."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "moshi",
+      "metric": "3–4 min / FTO (ms)",
+      "value": -607.0,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=224 is the table count, not a confidence interval. Signed median floor-transfer offset in milliseconds of logical audio time, not wall-clock inference latency. Negative means overlap and is not automatically better. N counts normal turn-taking responses. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: Moshi, 3–4 min; column: FTO (ms)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "moshi",
+      "metric": "3–4 min / RT (%)",
+      "value": 6.1,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=293 is the table count, not a confidence interval. Response-timeout rate in percent; lower is better. N counts resolved response opportunities. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: Moshi, 3–4 min; column: RT (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "moshi",
+      "metric": "3–4 min / TS (%)",
+      "value": 2.2,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=90 is the table count, not a confidence interval. Cumulative terminated-session percentage after three consecutive response timeouts; lower is better. N counts all evaluated episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: Moshi, 3–4 min; column: TS (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "moshi",
+      "metric": "3–4 min / CQ (1–5)",
+      "value": 4.25,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=89 is the table count, not a confidence interval. Transcript-judged content quality on the native 1–5 scale; higher is better. N counts included episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: Moshi, 3–4 min; column: CQ (1–5)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "moshi",
+      "metric": "3–4 min / WER (%)",
+      "value": 2.3,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=89 is the table count, not a confidence interval. WER in percent comparing generated speech ASR with the model native generated text; lower is better. N counts included episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: Moshi, 3–4 min; column: WER (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "moshi",
+      "metric": "3–4 min / Speaker cosine similarity",
+      "value": 0.654,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=61 is the table count, not a confidence interval. Speaker-embedding cosine similarity to the first-minute reference; higher is better. N counts included episodes. The reference minute itself is not a numeric score. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: Moshi, 3–4 min; column: Speaker cosine similarity."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "moshi",
+      "metric": "4–5 min / FTO (ms)",
+      "value": -612.0,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=208 is the table count, not a confidence interval. Signed median floor-transfer offset in milliseconds of logical audio time, not wall-clock inference latency. Negative means overlap and is not automatically better. N counts normal turn-taking responses. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: Moshi, 4–5 min; column: FTO (ms)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "moshi",
+      "metric": "4–5 min / RT (%)",
+      "value": 10.2,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=295 is the table count, not a confidence interval. Response-timeout rate in percent; lower is better. N counts resolved response opportunities. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: Moshi, 4–5 min; column: RT (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "moshi",
+      "metric": "4–5 min / TS (%)",
+      "value": 7.8,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=90 is the table count, not a confidence interval. Cumulative terminated-session percentage after three consecutive response timeouts; lower is better. N counts all evaluated episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: Moshi, 4–5 min; column: TS (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "moshi",
+      "metric": "4–5 min / CQ (1–5)",
+      "value": 4.3,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=89 is the table count, not a confidence interval. Transcript-judged content quality on the native 1–5 scale; higher is better. N counts included episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: Moshi, 4–5 min; column: CQ (1–5)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "moshi",
+      "metric": "4–5 min / WER (%)",
+      "value": 1.8,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=86 is the table count, not a confidence interval. WER in percent comparing generated speech ASR with the model native generated text; lower is better. N counts included episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: Moshi, 4–5 min; column: WER (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "moshi",
+      "metric": "4–5 min / Speaker cosine similarity",
+      "value": 0.643,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=58 is the table count, not a confidence interval. Speaker-embedding cosine similarity to the first-minute reference; higher is better. N counts included episodes. The reference minute itself is not a numeric score. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: Moshi, 4–5 min; column: Speaker cosine similarity."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "moshi",
+      "metric": "5–6 min / FTO (ms)",
+      "value": -602.0,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=191 is the table count, not a confidence interval. Signed median floor-transfer offset in milliseconds of logical audio time, not wall-clock inference latency. Negative means overlap and is not automatically better. N counts normal turn-taking responses. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: Moshi, 5–6 min; column: FTO (ms)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "moshi",
+      "metric": "5–6 min / RT (%)",
+      "value": 14.5,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=282 is the table count, not a confidence interval. Response-timeout rate in percent; lower is better. N counts resolved response opportunities. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: Moshi, 5–6 min; column: RT (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "moshi",
+      "metric": "5–6 min / TS (%)",
+      "value": 11.1,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=90 is the table count, not a confidence interval. Cumulative terminated-session percentage after three consecutive response timeouts; lower is better. N counts all evaluated episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: Moshi, 5–6 min; column: TS (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "moshi",
+      "metric": "5–6 min / CQ (1–5)",
+      "value": 4.17,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=84 is the table count, not a confidence interval. Transcript-judged content quality on the native 1–5 scale; higher is better. N counts included episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: Moshi, 5–6 min; column: CQ (1–5)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "moshi",
+      "metric": "5–6 min / WER (%)",
+      "value": 2.3,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=78 is the table count, not a confidence interval. WER in percent comparing generated speech ASR with the model native generated text; lower is better. N counts included episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: Moshi, 5–6 min; column: WER (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "moshi",
+      "metric": "5–6 min / Speaker cosine similarity",
+      "value": 0.63,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=48 is the table count, not a confidence interval. Speaker-embedding cosine similarity to the first-minute reference; higher is better. N counts included episodes. The reference minute itself is not a numeric score. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: Moshi, 5–6 min; column: Speaker cosine similarity."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "moshi",
+      "metric": "6–7 min / FTO (ms)",
+      "value": -616.0,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=191 is the table count, not a confidence interval. Signed median floor-transfer offset in milliseconds of logical audio time, not wall-clock inference latency. Negative means overlap and is not automatically better. N counts normal turn-taking responses. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: Moshi, 6–7 min; column: FTO (ms)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "moshi",
+      "metric": "6–7 min / RT (%)",
+      "value": 12.4,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=266 is the table count, not a confidence interval. Response-timeout rate in percent; lower is better. N counts resolved response opportunities. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: Moshi, 6–7 min; column: RT (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "moshi",
+      "metric": "6–7 min / TS (%)",
+      "value": 16.7,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=90 is the table count, not a confidence interval. Cumulative terminated-session percentage after three consecutive response timeouts; lower is better. N counts all evaluated episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: Moshi, 6–7 min; column: TS (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "moshi",
+      "metric": "6–7 min / CQ (1–5)",
+      "value": 4.0,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=80 is the table count, not a confidence interval. Transcript-judged content quality on the native 1–5 scale; higher is better. N counts included episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: Moshi, 6–7 min; column: CQ (1–5)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "moshi",
+      "metric": "6–7 min / WER (%)",
+      "value": 1.7,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=75 is the table count, not a confidence interval. WER in percent comparing generated speech ASR with the model native generated text; lower is better. N counts included episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: Moshi, 6–7 min; column: WER (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "moshi",
+      "metric": "6–7 min / Speaker cosine similarity",
+      "value": 0.6,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=49 is the table count, not a confidence interval. Speaker-embedding cosine similarity to the first-minute reference; higher is better. N counts included episodes. The reference minute itself is not a numeric score. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: Moshi, 6–7 min; column: Speaker cosine similarity."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "moshi",
+      "metric": "7–8 min / FTO (ms)",
+      "value": -603.0,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=159 is the table count, not a confidence interval. Signed median floor-transfer offset in milliseconds of logical audio time, not wall-clock inference latency. Negative means overlap and is not automatically better. N counts normal turn-taking responses. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: Moshi, 7–8 min; column: FTO (ms)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "moshi",
+      "metric": "7–8 min / RT (%)",
+      "value": 12.7,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=237 is the table count, not a confidence interval. Response-timeout rate in percent; lower is better. N counts resolved response opportunities. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: Moshi, 7–8 min; column: RT (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "moshi",
+      "metric": "7–8 min / TS (%)",
+      "value": 21.1,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=90 is the table count, not a confidence interval. Cumulative terminated-session percentage after three consecutive response timeouts; lower is better. N counts all evaluated episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: Moshi, 7–8 min; column: TS (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "moshi",
+      "metric": "7–8 min / CQ (1–5)",
+      "value": 3.74,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=76 is the table count, not a confidence interval. Transcript-judged content quality on the native 1–5 scale; higher is better. N counts included episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: Moshi, 7–8 min; column: CQ (1–5)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "moshi",
+      "metric": "7–8 min / WER (%)",
+      "value": 1.8,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=70 is the table count, not a confidence interval. WER in percent comparing generated speech ASR with the model native generated text; lower is better. N counts included episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: Moshi, 7–8 min; column: WER (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "moshi",
+      "metric": "7–8 min / Speaker cosine similarity",
+      "value": 0.59,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=43 is the table count, not a confidence interval. Speaker-embedding cosine similarity to the first-minute reference; higher is better. N counts included episodes. The reference minute itself is not a numeric score. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: Moshi, 7–8 min; column: Speaker cosine similarity."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "moshi",
+      "metric": "8–9 min / FTO (ms)",
+      "value": 934.0,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=55 is the table count, not a confidence interval. Signed median floor-transfer offset in milliseconds of logical audio time, not wall-clock inference latency. Negative means overlap and is not automatically better. N counts normal turn-taking responses. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: Moshi, 8–9 min; column: FTO (ms)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "moshi",
+      "metric": "8–9 min / RT (%)",
+      "value": 70.2,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=235 is the table count, not a confidence interval. Response-timeout rate in percent; lower is better. N counts resolved response opportunities. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: Moshi, 8–9 min; column: RT (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "moshi",
+      "metric": "8–9 min / TS (%)",
+      "value": 84.4,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=90 is the table count, not a confidence interval. Cumulative terminated-session percentage after three consecutive response timeouts; lower is better. N counts all evaluated episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: Moshi, 8–9 min; column: TS (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "moshi",
+      "metric": "8–9 min / CQ (1–5)",
+      "value": 2.49,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=63 is the table count, not a confidence interval. Transcript-judged content quality on the native 1–5 scale; higher is better. N counts included episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: Moshi, 8–9 min; column: CQ (1–5)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "moshi",
+      "metric": "8–9 min / WER (%)",
+      "value": 6.4,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=17 is the table count, not a confidence interval. WER in percent comparing generated speech ASR with the model native generated text; lower is better. N counts included episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: Moshi, 8–9 min; column: WER (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "moshi",
+      "metric": "8–9 min / Speaker cosine similarity",
+      "value": 0.56,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=11 is the table count, not a confidence interval. Speaker-embedding cosine similarity to the first-minute reference; higher is better. N counts included episodes. The reference minute itself is not a numeric score. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: Moshi, 8–9 min; column: Speaker cosine similarity."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "moshi",
+      "metric": "9–10 min / RT (%)",
+      "value": 92.6,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=81 is the table count, not a confidence interval. Response-timeout rate in percent; lower is better. N counts resolved response opportunities. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: Moshi, 9–10 min; column: RT (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "moshi",
+      "metric": "9–10 min / TS (%)",
+      "value": 96.7,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=90 is the table count, not a confidence interval. Cumulative terminated-session percentage after three consecutive response timeouts; lower is better. N counts all evaluated episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: Moshi, 9–10 min; column: TS (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "moshi",
+      "metric": "9–10 min / CQ (1–5)",
+      "value": 2.0,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=10 is the table count, not a confidence interval. Transcript-judged content quality on the native 1–5 scale; higher is better. N counts included episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: Moshi, 9–10 min; column: CQ (1–5)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "personaplex",
+      "metric": "0–1 min / FTO (ms)",
+      "value": -265.0,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=169 is the table count, not a confidence interval. Signed median floor-transfer offset in milliseconds of logical audio time, not wall-clock inference latency. Negative means overlap and is not automatically better. N counts normal turn-taking responses. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: PersonaPlex, 0–1 min; column: FTO (ms)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "personaplex",
+      "metric": "0–1 min / RT (%)",
+      "value": 0.0,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=179 is the table count, not a confidence interval. Response-timeout rate in percent; lower is better. N counts resolved response opportunities. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: PersonaPlex, 0–1 min; column: RT (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "personaplex",
+      "metric": "0–1 min / TS (%)",
+      "value": 0.0,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=90 is the table count, not a confidence interval. Cumulative terminated-session percentage after three consecutive response timeouts; lower is better. N counts all evaluated episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: PersonaPlex, 0–1 min; column: TS (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "personaplex",
+      "metric": "0–1 min / CQ (1–5)",
+      "value": 4.9,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=90 is the table count, not a confidence interval. Transcript-judged content quality on the native 1–5 scale; higher is better. N counts included episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: PersonaPlex, 0–1 min; column: CQ (1–5)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "personaplex",
+      "metric": "0–1 min / WER (%)",
+      "value": 5.8,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=90 is the table count, not a confidence interval. WER in percent comparing generated speech ASR with the model native generated text; lower is better. N counts included episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: PersonaPlex, 0–1 min; column: WER (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "personaplex",
+      "metric": "1–2 min / FTO (ms)",
+      "value": -265.0,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=125 is the table count, not a confidence interval. Signed median floor-transfer offset in milliseconds of logical audio time, not wall-clock inference latency. Negative means overlap and is not automatically better. N counts normal turn-taking responses. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: PersonaPlex, 1–2 min; column: FTO (ms)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "personaplex",
+      "metric": "1–2 min / RT (%)",
+      "value": 0.0,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=137 is the table count, not a confidence interval. Response-timeout rate in percent; lower is better. N counts resolved response opportunities. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: PersonaPlex, 1–2 min; column: RT (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "personaplex",
+      "metric": "1–2 min / TS (%)",
+      "value": 0.0,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=90 is the table count, not a confidence interval. Cumulative terminated-session percentage after three consecutive response timeouts; lower is better. N counts all evaluated episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: PersonaPlex, 1–2 min; column: TS (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "personaplex",
+      "metric": "1–2 min / CQ (1–5)",
+      "value": 4.67,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=90 is the table count, not a confidence interval. Transcript-judged content quality on the native 1–5 scale; higher is better. N counts included episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: PersonaPlex, 1–2 min; column: CQ (1–5)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "personaplex",
+      "metric": "1–2 min / WER (%)",
+      "value": 5.2,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=90 is the table count, not a confidence interval. WER in percent comparing generated speech ASR with the model native generated text; lower is better. N counts included episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: PersonaPlex, 1–2 min; column: WER (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "personaplex",
+      "metric": "1–2 min / Speaker cosine similarity",
+      "value": 0.733,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=84 is the table count, not a confidence interval. Speaker-embedding cosine similarity to the first-minute reference; higher is better. N counts included episodes. The reference minute itself is not a numeric score. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: PersonaPlex, 1–2 min; column: Speaker cosine similarity."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "personaplex",
+      "metric": "2–3 min / FTO (ms)",
+      "value": -297.0,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=111 is the table count, not a confidence interval. Signed median floor-transfer offset in milliseconds of logical audio time, not wall-clock inference latency. Negative means overlap and is not automatically better. N counts normal turn-taking responses. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: PersonaPlex, 2–3 min; column: FTO (ms)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "personaplex",
+      "metric": "2–3 min / RT (%)",
+      "value": 0.8,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=127 is the table count, not a confidence interval. Response-timeout rate in percent; lower is better. N counts resolved response opportunities. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: PersonaPlex, 2–3 min; column: RT (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "personaplex",
+      "metric": "2–3 min / TS (%)",
+      "value": 0.0,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=90 is the table count, not a confidence interval. Cumulative terminated-session percentage after three consecutive response timeouts; lower is better. N counts all evaluated episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: PersonaPlex, 2–3 min; column: TS (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "personaplex",
+      "metric": "2–3 min / CQ (1–5)",
+      "value": 4.41,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=90 is the table count, not a confidence interval. Transcript-judged content quality on the native 1–5 scale; higher is better. N counts included episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: PersonaPlex, 2–3 min; column: CQ (1–5)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "personaplex",
+      "metric": "2–3 min / WER (%)",
+      "value": 4.8,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=90 is the table count, not a confidence interval. WER in percent comparing generated speech ASR with the model native generated text; lower is better. N counts included episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: PersonaPlex, 2–3 min; column: WER (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "personaplex",
+      "metric": "2–3 min / Speaker cosine similarity",
+      "value": 0.72,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=84 is the table count, not a confidence interval. Speaker-embedding cosine similarity to the first-minute reference; higher is better. N counts included episodes. The reference minute itself is not a numeric score. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: PersonaPlex, 2–3 min; column: Speaker cosine similarity."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "personaplex",
+      "metric": "3–4 min / FTO (ms)",
+      "value": -281.0,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=101 is the table count, not a confidence interval. Signed median floor-transfer offset in milliseconds of logical audio time, not wall-clock inference latency. Negative means overlap and is not automatically better. N counts normal turn-taking responses. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: PersonaPlex, 3–4 min; column: FTO (ms)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "personaplex",
+      "metric": "3–4 min / RT (%)",
+      "value": 0.0,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=113 is the table count, not a confidence interval. Response-timeout rate in percent; lower is better. N counts resolved response opportunities. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: PersonaPlex, 3–4 min; column: RT (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "personaplex",
+      "metric": "3–4 min / TS (%)",
+      "value": 0.0,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=90 is the table count, not a confidence interval. Cumulative terminated-session percentage after three consecutive response timeouts; lower is better. N counts all evaluated episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: PersonaPlex, 3–4 min; column: TS (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "personaplex",
+      "metric": "3–4 min / CQ (1–5)",
+      "value": 4.22,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=90 is the table count, not a confidence interval. Transcript-judged content quality on the native 1–5 scale; higher is better. N counts included episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: PersonaPlex, 3–4 min; column: CQ (1–5)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "personaplex",
+      "metric": "3–4 min / WER (%)",
+      "value": 6.9,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=90 is the table count, not a confidence interval. WER in percent comparing generated speech ASR with the model native generated text; lower is better. N counts included episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: PersonaPlex, 3–4 min; column: WER (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "personaplex",
+      "metric": "3–4 min / Speaker cosine similarity",
+      "value": 0.698,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=84 is the table count, not a confidence interval. Speaker-embedding cosine similarity to the first-minute reference; higher is better. N counts included episodes. The reference minute itself is not a numeric score. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: PersonaPlex, 3–4 min; column: Speaker cosine similarity."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "personaplex",
+      "metric": "4–5 min / FTO (ms)",
+      "value": -298.0,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=96 is the table count, not a confidence interval. Signed median floor-transfer offset in milliseconds of logical audio time, not wall-clock inference latency. Negative means overlap and is not automatically better. N counts normal turn-taking responses. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: PersonaPlex, 4–5 min; column: FTO (ms)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "personaplex",
+      "metric": "4–5 min / RT (%)",
+      "value": 0.0,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=128 is the table count, not a confidence interval. Response-timeout rate in percent; lower is better. N counts resolved response opportunities. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: PersonaPlex, 4–5 min; column: RT (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "personaplex",
+      "metric": "4–5 min / TS (%)",
+      "value": 0.0,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=90 is the table count, not a confidence interval. Cumulative terminated-session percentage after three consecutive response timeouts; lower is better. N counts all evaluated episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: PersonaPlex, 4–5 min; column: TS (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "personaplex",
+      "metric": "4–5 min / CQ (1–5)",
+      "value": 3.64,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=90 is the table count, not a confidence interval. Transcript-judged content quality on the native 1–5 scale; higher is better. N counts included episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: PersonaPlex, 4–5 min; column: CQ (1–5)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "personaplex",
+      "metric": "4–5 min / WER (%)",
+      "value": 9.4,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=90 is the table count, not a confidence interval. WER in percent comparing generated speech ASR with the model native generated text; lower is better. N counts included episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: PersonaPlex, 4–5 min; column: WER (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "personaplex",
+      "metric": "4–5 min / Speaker cosine similarity",
+      "value": 0.636,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=84 is the table count, not a confidence interval. Speaker-embedding cosine similarity to the first-minute reference; higher is better. N counts included episodes. The reference minute itself is not a numeric score. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: PersonaPlex, 4–5 min; column: Speaker cosine similarity."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "personaplex",
+      "metric": "5–6 min / FTO (ms)",
+      "value": -276.0,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=101 is the table count, not a confidence interval. Signed median floor-transfer offset in milliseconds of logical audio time, not wall-clock inference latency. Negative means overlap and is not automatically better. N counts normal turn-taking responses. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: PersonaPlex, 5–6 min; column: FTO (ms)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "personaplex",
+      "metric": "5–6 min / RT (%)",
+      "value": 2.9,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=139 is the table count, not a confidence interval. Response-timeout rate in percent; lower is better. N counts resolved response opportunities. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: PersonaPlex, 5–6 min; column: RT (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "personaplex",
+      "metric": "5–6 min / TS (%)",
+      "value": 1.1,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=90 is the table count, not a confidence interval. Cumulative terminated-session percentage after three consecutive response timeouts; lower is better. N counts all evaluated episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: PersonaPlex, 5–6 min; column: TS (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "personaplex",
+      "metric": "5–6 min / CQ (1–5)",
+      "value": 3.16,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=90 is the table count, not a confidence interval. Transcript-judged content quality on the native 1–5 scale; higher is better. N counts included episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: PersonaPlex, 5–6 min; column: CQ (1–5)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "personaplex",
+      "metric": "5–6 min / WER (%)",
+      "value": 12.0,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=84 is the table count, not a confidence interval. WER in percent comparing generated speech ASR with the model native generated text; lower is better. N counts included episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: PersonaPlex, 5–6 min; column: WER (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "personaplex",
+      "metric": "5–6 min / Speaker cosine similarity",
+      "value": 0.556,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=82 is the table count, not a confidence interval. Speaker-embedding cosine similarity to the first-minute reference; higher is better. N counts included episodes. The reference minute itself is not a numeric score. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: PersonaPlex, 5–6 min; column: Speaker cosine similarity."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "personaplex",
+      "metric": "6–7 min / FTO (ms)",
+      "value": -287.5,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=86 is the table count, not a confidence interval. Signed median floor-transfer offset in milliseconds of logical audio time, not wall-clock inference latency. Negative means overlap and is not automatically better. N counts normal turn-taking responses. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: PersonaPlex, 6–7 min; column: FTO (ms)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "personaplex",
+      "metric": "6–7 min / RT (%)",
+      "value": 4.7,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=127 is the table count, not a confidence interval. Response-timeout rate in percent; lower is better. N counts resolved response opportunities. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: PersonaPlex, 6–7 min; column: RT (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "personaplex",
+      "metric": "6–7 min / TS (%)",
+      "value": 2.2,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=90 is the table count, not a confidence interval. Cumulative terminated-session percentage after three consecutive response timeouts; lower is better. N counts all evaluated episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: PersonaPlex, 6–7 min; column: TS (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "personaplex",
+      "metric": "6–7 min / CQ (1–5)",
+      "value": 2.66,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=88 is the table count, not a confidence interval. Transcript-judged content quality on the native 1–5 scale; higher is better. N counts included episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: PersonaPlex, 6–7 min; column: CQ (1–5)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "personaplex",
+      "metric": "6–7 min / WER (%)",
+      "value": 17.6,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=81 is the table count, not a confidence interval. WER in percent comparing generated speech ASR with the model native generated text; lower is better. N counts included episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: PersonaPlex, 6–7 min; column: WER (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "personaplex",
+      "metric": "6–7 min / Speaker cosine similarity",
+      "value": 0.437,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=80 is the table count, not a confidence interval. Speaker-embedding cosine similarity to the first-minute reference; higher is better. N counts included episodes. The reference minute itself is not a numeric score. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: PersonaPlex, 6–7 min; column: Speaker cosine similarity."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "personaplex",
+      "metric": "7–8 min / FTO (ms)",
+      "value": -304.0,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=67 is the table count, not a confidence interval. Signed median floor-transfer offset in milliseconds of logical audio time, not wall-clock inference latency. Negative means overlap and is not automatically better. N counts normal turn-taking responses. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: PersonaPlex, 7–8 min; column: FTO (ms)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "personaplex",
+      "metric": "7–8 min / RT (%)",
+      "value": 7.1,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=140 is the table count, not a confidence interval. Response-timeout rate in percent; lower is better. N counts resolved response opportunities. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: PersonaPlex, 7–8 min; column: RT (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "personaplex",
+      "metric": "7–8 min / TS (%)",
+      "value": 5.6,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=90 is the table count, not a confidence interval. Cumulative terminated-session percentage after three consecutive response timeouts; lower is better. N counts all evaluated episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: PersonaPlex, 7–8 min; column: TS (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "personaplex",
+      "metric": "7–8 min / CQ (1–5)",
+      "value": 2.05,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=86 is the table count, not a confidence interval. Transcript-judged content quality on the native 1–5 scale; higher is better. N counts included episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: PersonaPlex, 7–8 min; column: CQ (1–5)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "personaplex",
+      "metric": "7–8 min / WER (%)",
+      "value": 24.3,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=78 is the table count, not a confidence interval. WER in percent comparing generated speech ASR with the model native generated text; lower is better. N counts included episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: PersonaPlex, 7–8 min; column: WER (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "personaplex",
+      "metric": "7–8 min / Speaker cosine similarity",
+      "value": 0.327,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=78 is the table count, not a confidence interval. Speaker-embedding cosine similarity to the first-minute reference; higher is better. N counts included episodes. The reference minute itself is not a numeric score. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: PersonaPlex, 7–8 min; column: Speaker cosine similarity."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "personaplex",
+      "metric": "8–9 min / FTO (ms)",
+      "value": 201.0,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=75 is the table count, not a confidence interval. Signed median floor-transfer offset in milliseconds of logical audio time, not wall-clock inference latency. Negative means overlap and is not automatically better. N counts normal turn-taking responses. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: PersonaPlex, 8–9 min; column: FTO (ms)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "personaplex",
+      "metric": "8–9 min / RT (%)",
+      "value": 7.1,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=184 is the table count, not a confidence interval. Response-timeout rate in percent; lower is better. N counts resolved response opportunities. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: PersonaPlex, 8–9 min; column: RT (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "personaplex",
+      "metric": "8–9 min / TS (%)",
+      "value": 10.0,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=90 is the table count, not a confidence interval. Cumulative terminated-session percentage after three consecutive response timeouts; lower is better. N counts all evaluated episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: PersonaPlex, 8–9 min; column: TS (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "personaplex",
+      "metric": "8–9 min / CQ (1–5)",
+      "value": 1.45,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=82 is the table count, not a confidence interval. Transcript-judged content quality on the native 1–5 scale; higher is better. N counts included episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: PersonaPlex, 8–9 min; column: CQ (1–5)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "personaplex",
+      "metric": "8–9 min / WER (%)",
+      "value": 32.8,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=66 is the table count, not a confidence interval. WER in percent comparing generated speech ASR with the model native generated text; lower is better. N counts included episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: PersonaPlex, 8–9 min; column: WER (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "personaplex",
+      "metric": "8–9 min / Speaker cosine similarity",
+      "value": 0.37,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=67 is the table count, not a confidence interval. Speaker-embedding cosine similarity to the first-minute reference; higher is better. N counts included episodes. The reference minute itself is not a numeric score. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: PersonaPlex, 8–9 min; column: Speaker cosine similarity."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "personaplex",
+      "metric": "9–10 min / FTO (ms)",
+      "value": 604.5,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=60 is the table count, not a confidence interval. Signed median floor-transfer offset in milliseconds of logical audio time, not wall-clock inference latency. Negative means overlap and is not automatically better. N counts normal turn-taking responses. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: PersonaPlex, 9–10 min; column: FTO (ms)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "personaplex",
+      "metric": "9–10 min / RT (%)",
+      "value": 29.9,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=157 is the table count, not a confidence interval. Response-timeout rate in percent; lower is better. N counts resolved response opportunities. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: PersonaPlex, 9–10 min; column: RT (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "personaplex",
+      "metric": "9–10 min / TS (%)",
+      "value": 18.9,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=90 is the table count, not a confidence interval. Cumulative terminated-session percentage after three consecutive response timeouts; lower is better. N counts all evaluated episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: PersonaPlex, 9–10 min; column: TS (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "personaplex",
+      "metric": "9–10 min / CQ (1–5)",
+      "value": 1.08,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=73 is the table count, not a confidence interval. Transcript-judged content quality on the native 1–5 scale; higher is better. N counts included episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: PersonaPlex, 9–10 min; column: CQ (1–5)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "personaplex",
+      "metric": "9–10 min / WER (%)",
+      "value": 97.9,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=37 is the table count, not a confidence interval. WER in percent comparing generated speech ASR with the model native generated text; lower is better. N counts included episodes. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: PersonaPlex, 9–10 min; column: WER (%)."
+    },
+    {
+      "benchmark": "long-session-full-duplex-eval",
+      "model": "personaplex",
+      "metric": "9–10 min / Speaker cosine similarity",
+      "value": 0.284,
+      "source": "Table 15, arXiv:2610.34991v1",
+      "source_url": "https://arxiv.org/abs/2610.34991v1",
+      "note": "Ten-minute baseline; 90 English conversations per model (3 personas × 10 topics × 3 episodes). N=49 is the table count, not a confidence interval. Speaker-embedding cosine similarity to the first-minute reference; higher is better. N counts included episodes. The reference minute itself is not a numeric score. Post-termination observations are excluded except cumulative TS; late-minute comparisons are conditional on surviving/valid observations. Missing-threshold cells remain absent. Source row: PersonaPlex, 9–10 min; column: Speaker cosine similarity."
+    },
+    {
+      "benchmark": "adshot",
+      "model": "qwen2-5-omni",
+      "metric": "Audio-visual / Precision (0–1)",
+      "value": 0.615,
+      "source": "Table 4, arXiv:2610.33377v1",
+      "source_url": "https://arxiv.org/abs/2610.33377v1",
+      "note": "Qwen2.5-Omni 7B; audio-visual input arm, default 1-FPS setting, greedy decoding. Per-shot audio is supplied with the corresponding center frame and shot metadata; evaluation selects whole shots from 823 advertisement pairs. Shot-set precision. Duration metrics use seconds and lower is better; precision/recall/F1 retain the native 0–1 scale and higher is better. F1 is independent of the 14–16-second tolerance. Source row: Qwen2.5-Omni 7B; column: Precision (0–1)."
+    },
+    {
+      "benchmark": "adshot",
+      "model": "qwen2-5-omni",
+      "metric": "Audio-visual / Recall (0–1)",
+      "value": 0.838,
+      "source": "Table 4, arXiv:2610.33377v1",
+      "source_url": "https://arxiv.org/abs/2610.33377v1",
+      "note": "Qwen2.5-Omni 7B; audio-visual input arm, default 1-FPS setting, greedy decoding. Per-shot audio is supplied with the corresponding center frame and shot metadata; evaluation selects whole shots from 823 advertisement pairs. Shot-set recall. Duration metrics use seconds and lower is better; precision/recall/F1 retain the native 0–1 scale and higher is better. F1 is independent of the 14–16-second tolerance. Source row: Qwen2.5-Omni 7B; column: Recall (0–1)."
+    },
+    {
+      "benchmark": "adshot",
+      "model": "qwen2-5-omni",
+      "metric": "Audio-visual / F1 (0–1)",
+      "value": 0.668,
+      "source": "Table 4, arXiv:2610.33377v1",
+      "source_url": "https://arxiv.org/abs/2610.33377v1",
+      "note": "Qwen2.5-Omni 7B; audio-visual input arm, default 1-FPS setting, greedy decoding. Per-shot audio is supplied with the corresponding center frame and shot metadata; evaluation selects whole shots from 823 advertisement pairs. Shot-set F1. Duration metrics use seconds and lower is better; precision/recall/F1 retain the native 0–1 scale and higher is better. F1 is independent of the 14–16-second tolerance. Source row: Qwen2.5-Omni 7B; column: F1 (0–1)."
+    },
+    {
+      "benchmark": "adshot",
+      "model": "qwen2-5-omni",
+      "metric": "Audio-visual / MDE (seconds)",
+      "value": 11.18,
+      "source": "Table 4, arXiv:2610.33377v1",
+      "source_url": "https://arxiv.org/abs/2610.33377v1",
+      "note": "Qwen2.5-Omni 7B; audio-visual input arm, default 1-FPS setting, greedy decoding. Per-shot audio is supplied with the corresponding center frame and shot metadata; evaluation selects whole shots from 823 advertisement pairs. Mean absolute error from the 15-second target. Duration metrics use seconds and lower is better; precision/recall/F1 retain the native 0–1 scale and higher is better. F1 is independent of the 14–16-second tolerance. Source row: Qwen2.5-Omni 7B; column: MDE (seconds)."
+    },
+    {
+      "benchmark": "adshot",
+      "model": "qwen2-5-omni",
+      "metric": "Audio-visual / MDEpos (seconds)",
+      "value": 12.68,
+      "source": "Table 4, arXiv:2610.33377v1",
+      "source_url": "https://arxiv.org/abs/2610.33377v1",
+      "note": "Qwen2.5-Omni 7B; audio-visual input arm, default 1-FPS setting, greedy decoding. Per-shot audio is supplied with the corresponding center frame and shot metadata; evaluation selects whole shots from 823 advertisement pairs. Conditional mean overshoot magnitude over examples with total duration above 15 seconds. Duration metrics use seconds and lower is better; precision/recall/F1 retain the native 0–1 scale and higher is better. F1 is independent of the 14–16-second tolerance. Source row: Qwen2.5-Omni 7B; column: MDEpos (seconds)."
+    },
+    {
+      "benchmark": "adshot",
+      "model": "qwen2-5-omni",
+      "metric": "Audio-visual / MDEneg (seconds)",
+      "value": 3.16,
+      "source": "Table 4, arXiv:2610.33377v1",
+      "source_url": "https://arxiv.org/abs/2610.33377v1",
+      "note": "Qwen2.5-Omni 7B; audio-visual input arm, default 1-FPS setting, greedy decoding. Per-shot audio is supplied with the corresponding center frame and shot metadata; evaluation selects whole shots from 823 advertisement pairs. Conditional mean undershoot magnitude over examples with total duration below 15 seconds. Duration metrics use seconds and lower is better; precision/recall/F1 retain the native 0–1 scale and higher is better. F1 is independent of the 14–16-second tolerance. Source row: Qwen2.5-Omni 7B; column: MDEneg (seconds)."
+    },
+    {
+      "benchmark": "adshot",
+      "model": "minicpm-o",
+      "metric": "Audio-visual / Precision (0–1)",
+      "value": 0.581,
+      "source": "Table 4, arXiv:2610.33377v1",
+      "source_url": "https://arxiv.org/abs/2610.33377v1",
+      "note": "MiniCPM-o 2.6 8B; audio-visual input arm, default 1-FPS setting, greedy decoding. Per-shot audio is supplied with the corresponding center frame and shot metadata; evaluation selects whole shots from 823 advertisement pairs. Shot-set precision. Duration metrics use seconds and lower is better; precision/recall/F1 retain the native 0–1 scale and higher is better. F1 is independent of the 14–16-second tolerance. Source row: MiniCPM-o 2.6 8B; column: Precision (0–1)."
+    },
+    {
+      "benchmark": "adshot",
+      "model": "minicpm-o",
+      "metric": "Audio-visual / Recall (0–1)",
+      "value": 0.841,
+      "source": "Table 4, arXiv:2610.33377v1",
+      "source_url": "https://arxiv.org/abs/2610.33377v1",
+      "note": "MiniCPM-o 2.6 8B; audio-visual input arm, default 1-FPS setting, greedy decoding. Per-shot audio is supplied with the corresponding center frame and shot metadata; evaluation selects whole shots from 823 advertisement pairs. Shot-set recall. Duration metrics use seconds and lower is better; precision/recall/F1 retain the native 0–1 scale and higher is better. F1 is independent of the 14–16-second tolerance. Source row: MiniCPM-o 2.6 8B; column: Recall (0–1)."
+    },
+    {
+      "benchmark": "adshot",
+      "model": "minicpm-o",
+      "metric": "Audio-visual / F1 (0–1)",
+      "value": 0.669,
+      "source": "Table 4, arXiv:2610.33377v1",
+      "source_url": "https://arxiv.org/abs/2610.33377v1",
+      "note": "MiniCPM-o 2.6 8B; audio-visual input arm, default 1-FPS setting, greedy decoding. Per-shot audio is supplied with the corresponding center frame and shot metadata; evaluation selects whole shots from 823 advertisement pairs. Shot-set F1. Duration metrics use seconds and lower is better; precision/recall/F1 retain the native 0–1 scale and higher is better. F1 is independent of the 14–16-second tolerance. Source row: MiniCPM-o 2.6 8B; column: F1 (0–1)."
+    },
+    {
+      "benchmark": "adshot",
+      "model": "minicpm-o",
+      "metric": "Audio-visual / MDE (seconds)",
+      "value": 10.06,
+      "source": "Table 4, arXiv:2610.33377v1",
+      "source_url": "https://arxiv.org/abs/2610.33377v1",
+      "note": "MiniCPM-o 2.6 8B; audio-visual input arm, default 1-FPS setting, greedy decoding. Per-shot audio is supplied with the corresponding center frame and shot metadata; evaluation selects whole shots from 823 advertisement pairs. Mean absolute error from the 15-second target. Duration metrics use seconds and lower is better; precision/recall/F1 retain the native 0–1 scale and higher is better. F1 is independent of the 14–16-second tolerance. Source row: MiniCPM-o 2.6 8B; column: MDE (seconds)."
+    },
+    {
+      "benchmark": "adshot",
+      "model": "minicpm-o",
+      "metric": "Audio-visual / MDEpos (seconds)",
+      "value": 10.5,
+      "source": "Table 4, arXiv:2610.33377v1",
+      "source_url": "https://arxiv.org/abs/2610.33377v1",
+      "note": "MiniCPM-o 2.6 8B; audio-visual input arm, default 1-FPS setting, greedy decoding. Per-shot audio is supplied with the corresponding center frame and shot metadata; evaluation selects whole shots from 823 advertisement pairs. Conditional mean overshoot magnitude over examples with total duration above 15 seconds. Duration metrics use seconds and lower is better; precision/recall/F1 retain the native 0–1 scale and higher is better. F1 is independent of the 14–16-second tolerance. Source row: MiniCPM-o 2.6 8B; column: MDEpos (seconds)."
+    },
+    {
+      "benchmark": "adshot",
+      "model": "minicpm-o",
+      "metric": "Audio-visual / MDEneg (seconds)",
+      "value": 1.72,
+      "source": "Table 4, arXiv:2610.33377v1",
+      "source_url": "https://arxiv.org/abs/2610.33377v1",
+      "note": "MiniCPM-o 2.6 8B; audio-visual input arm, default 1-FPS setting, greedy decoding. Per-shot audio is supplied with the corresponding center frame and shot metadata; evaluation selects whole shots from 823 advertisement pairs. Conditional mean undershoot magnitude over examples with total duration below 15 seconds. Duration metrics use seconds and lower is better; precision/recall/F1 retain the native 0–1 scale and higher is better. F1 is independent of the 14–16-second tolerance. Source row: MiniCPM-o 2.6 8B; column: MDEneg (seconds)."
+    },
+    {
+      "benchmark": "omni-ubench",
+      "model": "qwen2-5-omni",
+      "metric": "VoiceBench / Acc (0–1)",
+      "value": 0.95,
+      "source": "Table 2, arXiv:2610.31713v1",
+      "source_url": "https://arxiv.org/abs/2610.31713v1",
+      "note": "Qwen2.5-Omni 7B, unstarred zero-shot omni-LLM moderator. Native 0–1 rate; no rescaling. Benign-content classification accuracy, not the original VoiceBench response-quality score. The audio input is accompanied by the moderation instruction; starred fine-tuned variants and specialist guardrails are separate configurations. Source row: VoiceBench; column: Q7."
+    },
+    {
+      "benchmark": "omni-ubench",
+      "model": "qwen3-omni",
+      "metric": "VoiceBench / Acc (0–1)",
+      "value": 0.96,
+      "source": "Table 2, arXiv:2610.31713v1",
+      "source_url": "https://arxiv.org/abs/2610.31713v1",
+      "note": "Qwen3-Omni 30B, unstarred zero-shot omni-LLM moderator. Native 0–1 rate; no rescaling. Benign-content classification accuracy, not the original VoiceBench response-quality score. The audio input is accompanied by the moderation instruction; starred fine-tuned variants and specialist guardrails are separate configurations. Source row: VoiceBench; column: Q30."
+    },
+    {
+      "benchmark": "omni-ubench",
+      "model": "minicpm-o-4-5",
+      "metric": "VoiceBench / Acc (0–1)",
+      "value": 0.99,
+      "source": "Table 2, arXiv:2610.31713v1",
+      "source_url": "https://arxiv.org/abs/2610.31713v1",
+      "note": "MiniCPM-o 4.5, unstarred zero-shot omni-LLM moderator. Native 0–1 rate; no rescaling. Benign-content classification accuracy, not the original VoiceBench response-quality score. The audio input is accompanied by the moderation instruction; starred fine-tuned variants and specialist guardrails are separate configurations. Source row: VoiceBench; column: CPM."
+    },
+    {
+      "benchmark": "omni-ubench",
+      "model": "phi-4-multimodal",
+      "metric": "VoiceBench / Acc (0–1)",
+      "value": 0.69,
+      "source": "Table 2, arXiv:2610.31713v1",
+      "source_url": "https://arxiv.org/abs/2610.31713v1",
+      "note": "Phi-4-multimodal, unstarred zero-shot omni-LLM moderator. Native 0–1 rate; no rescaling. Benign-content classification accuracy, not the original VoiceBench response-quality score. The audio input is accompanied by the moderation instruction; starred fine-tuned variants and specialist guardrails are separate configurations. Source row: VoiceBench; column: PHI."
+    },
+    {
+      "benchmark": "omni-ubench",
+      "model": "gemini-2-5-flash",
+      "metric": "VoiceBench / Acc (0–1)",
+      "value": 0.97,
+      "source": "Table 2, arXiv:2610.31713v1",
+      "source_url": "https://arxiv.org/abs/2610.31713v1",
+      "note": "Gemini 2.5 Flash, unstarred zero-shot omni-LLM moderator. Native 0–1 rate; no rescaling. Benign-content classification accuracy, not the original VoiceBench response-quality score. The audio input is accompanied by the moderation instruction; starred fine-tuned variants and specialist guardrails are separate configurations. Source row: VoiceBench; column: GEM."
+    },
+    {
+      "benchmark": "omni-ubench",
+      "model": "mimo-v2-5",
+      "metric": "VoiceBench / Acc (0–1)",
+      "value": 0.98,
+      "source": "Table 2, arXiv:2610.31713v1",
+      "source_url": "https://arxiv.org/abs/2610.31713v1",
+      "note": "MiMo-V2.5, unstarred zero-shot omni-LLM moderator. Native 0–1 rate; no rescaling. Benign-content classification accuracy, not the original VoiceBench response-quality score. The audio input is accompanied by the moderation instruction; starred fine-tuned variants and specialist guardrails are separate configurations. Source row: VoiceBench; column: MIM."
+    },
+    {
+      "benchmark": "omni-ubench",
+      "model": "qwen2-5-omni",
+      "metric": "AIAH / Recall (0–1)",
+      "value": 0.88,
+      "source": "Table 2, arXiv:2610.31713v1",
+      "source_url": "https://arxiv.org/abs/2610.31713v1",
+      "note": "Qwen2.5-Omni 7B, unstarred zero-shot omni-LLM moderator. Native 0–1 rate; no rescaling. Recall of unsafe inputs; higher is better. This is moderator detection, not a harmful-response generation rate. The audio input is accompanied by the moderation instruction; starred fine-tuned variants and specialist guardrails are separate configurations. Source row: AIAH; column: Q7."
+    },
+    {
+      "benchmark": "omni-ubench",
+      "model": "qwen3-omni",
+      "metric": "AIAH / Recall (0–1)",
+      "value": 0.97,
+      "source": "Table 2, arXiv:2610.31713v1",
+      "source_url": "https://arxiv.org/abs/2610.31713v1",
+      "note": "Qwen3-Omni 30B, unstarred zero-shot omni-LLM moderator. Native 0–1 rate; no rescaling. Recall of unsafe inputs; higher is better. This is moderator detection, not a harmful-response generation rate. The audio input is accompanied by the moderation instruction; starred fine-tuned variants and specialist guardrails are separate configurations. Source row: AIAH; column: Q30."
+    },
+    {
+      "benchmark": "omni-ubench",
+      "model": "minicpm-o-4-5",
+      "metric": "AIAH / Recall (0–1)",
+      "value": 0.76,
+      "source": "Table 2, arXiv:2610.31713v1",
+      "source_url": "https://arxiv.org/abs/2610.31713v1",
+      "note": "MiniCPM-o 4.5, unstarred zero-shot omni-LLM moderator. Native 0–1 rate; no rescaling. Recall of unsafe inputs; higher is better. This is moderator detection, not a harmful-response generation rate. The audio input is accompanied by the moderation instruction; starred fine-tuned variants and specialist guardrails are separate configurations. Source row: AIAH; column: CPM."
+    },
+    {
+      "benchmark": "omni-ubench",
+      "model": "phi-4-multimodal",
+      "metric": "AIAH / Recall (0–1)",
+      "value": 0.57,
+      "source": "Table 2, arXiv:2610.31713v1",
+      "source_url": "https://arxiv.org/abs/2610.31713v1",
+      "note": "Phi-4-multimodal, unstarred zero-shot omni-LLM moderator. Native 0–1 rate; no rescaling. Recall of unsafe inputs; higher is better. This is moderator detection, not a harmful-response generation rate. The audio input is accompanied by the moderation instruction; starred fine-tuned variants and specialist guardrails are separate configurations. Source row: AIAH; column: PHI."
+    },
+    {
+      "benchmark": "omni-ubench",
+      "model": "gemini-2-5-flash",
+      "metric": "AIAH / Recall (0–1)",
+      "value": 1.0,
+      "source": "Table 2, arXiv:2610.31713v1",
+      "source_url": "https://arxiv.org/abs/2610.31713v1",
+      "note": "Gemini 2.5 Flash, unstarred zero-shot omni-LLM moderator. Native 0–1 rate; no rescaling. Recall of unsafe inputs; higher is better. This is moderator detection, not a harmful-response generation rate. The audio input is accompanied by the moderation instruction; starred fine-tuned variants and specialist guardrails are separate configurations. Source row: AIAH; column: GEM."
+    },
+    {
+      "benchmark": "omni-ubench",
+      "model": "mimo-v2-5",
+      "metric": "AIAH / Recall (0–1)",
+      "value": 0.99,
+      "source": "Table 2, arXiv:2610.31713v1",
+      "source_url": "https://arxiv.org/abs/2610.31713v1",
+      "note": "MiMo-V2.5, unstarred zero-shot omni-LLM moderator. Native 0–1 rate; no rescaling. Recall of unsafe inputs; higher is better. This is moderator detection, not a harmful-response generation rate. The audio input is accompanied by the moderation instruction; starred fine-tuned variants and specialist guardrails are separate configurations. Source row: AIAH; column: MIM."
+    },
+    {
+      "benchmark": "omni-ubench",
+      "model": "qwen2-5-omni",
+      "metric": "SafeBench (A) / Recall (0–1)",
+      "value": 0.88,
+      "source": "Table 2, arXiv:2610.31713v1",
+      "source_url": "https://arxiv.org/abs/2610.31713v1",
+      "note": "Qwen2.5-Omni 7B, unstarred zero-shot omni-LLM moderator. Native 0–1 rate; no rescaling. Recall of unsafe inputs; higher is better. This is moderator detection, not a harmful-response generation rate. The audio input is accompanied by the moderation instruction; starred fine-tuned variants and specialist guardrails are separate configurations. Source row: SafeBench (A); column: Q7."
+    },
+    {
+      "benchmark": "omni-ubench",
+      "model": "qwen3-omni",
+      "metric": "SafeBench (A) / Recall (0–1)",
+      "value": 0.82,
+      "source": "Table 2, arXiv:2610.31713v1",
+      "source_url": "https://arxiv.org/abs/2610.31713v1",
+      "note": "Qwen3-Omni 30B, unstarred zero-shot omni-LLM moderator. Native 0–1 rate; no rescaling. Recall of unsafe inputs; higher is better. This is moderator detection, not a harmful-response generation rate. The audio input is accompanied by the moderation instruction; starred fine-tuned variants and specialist guardrails are separate configurations. Source row: SafeBench (A); column: Q30."
+    },
+    {
+      "benchmark": "omni-ubench",
+      "model": "minicpm-o-4-5",
+      "metric": "SafeBench (A) / Recall (0–1)",
+      "value": 0.61,
+      "source": "Table 2, arXiv:2610.31713v1",
+      "source_url": "https://arxiv.org/abs/2610.31713v1",
+      "note": "MiniCPM-o 4.5, unstarred zero-shot omni-LLM moderator. Native 0–1 rate; no rescaling. Recall of unsafe inputs; higher is better. This is moderator detection, not a harmful-response generation rate. The audio input is accompanied by the moderation instruction; starred fine-tuned variants and specialist guardrails are separate configurations. Source row: SafeBench (A); column: CPM."
+    },
+    {
+      "benchmark": "omni-ubench",
+      "model": "phi-4-multimodal",
+      "metric": "SafeBench (A) / Recall (0–1)",
+      "value": 0.0,
+      "source": "Table 2, arXiv:2610.31713v1",
+      "source_url": "https://arxiv.org/abs/2610.31713v1",
+      "note": "Phi-4-multimodal, unstarred zero-shot omni-LLM moderator. Native 0–1 rate; no rescaling. Recall of unsafe inputs; higher is better. This is moderator detection, not a harmful-response generation rate. The audio input is accompanied by the moderation instruction; starred fine-tuned variants and specialist guardrails are separate configurations. Source row: SafeBench (A); column: PHI."
+    },
+    {
+      "benchmark": "omni-ubench",
+      "model": "gemini-2-5-flash",
+      "metric": "SafeBench (A) / Recall (0–1)",
+      "value": 0.93,
+      "source": "Table 2, arXiv:2610.31713v1",
+      "source_url": "https://arxiv.org/abs/2610.31713v1",
+      "note": "Gemini 2.5 Flash, unstarred zero-shot omni-LLM moderator. Native 0–1 rate; no rescaling. Recall of unsafe inputs; higher is better. This is moderator detection, not a harmful-response generation rate. The audio input is accompanied by the moderation instruction; starred fine-tuned variants and specialist guardrails are separate configurations. Source row: SafeBench (A); column: GEM."
+    },
+    {
+      "benchmark": "omni-ubench",
+      "model": "mimo-v2-5",
+      "metric": "SafeBench (A) / Recall (0–1)",
+      "value": 0.91,
+      "source": "Table 2, arXiv:2610.31713v1",
+      "source_url": "https://arxiv.org/abs/2610.31713v1",
+      "note": "MiMo-V2.5, unstarred zero-shot omni-LLM moderator. Native 0–1 rate; no rescaling. Recall of unsafe inputs; higher is better. This is moderator detection, not a harmful-response generation rate. The audio input is accompanied by the moderation instruction; starred fine-tuned variants and specialist guardrails are separate configurations. Source row: SafeBench (A); column: MIM."
+    },
+    {
+      "benchmark": "omni-ubench",
+      "model": "qwen2-5-omni",
+      "metric": "AJailBench / Recall (0–1)",
+      "value": 0.55,
+      "source": "Table 2, arXiv:2610.31713v1",
+      "source_url": "https://arxiv.org/abs/2610.31713v1",
+      "note": "Qwen2.5-Omni 7B, unstarred zero-shot omni-LLM moderator. Native 0–1 rate; no rescaling. Recall of unsafe inputs; higher is better. This is moderator detection, not a harmful-response generation rate. The audio input is accompanied by the moderation instruction; starred fine-tuned variants and specialist guardrails are separate configurations. Source row: AJailBench; column: Q7."
+    },
+    {
+      "benchmark": "omni-ubench",
+      "model": "qwen3-omni",
+      "metric": "AJailBench / Recall (0–1)",
+      "value": 0.42,
+      "source": "Table 2, arXiv:2610.31713v1",
+      "source_url": "https://arxiv.org/abs/2610.31713v1",
+      "note": "Qwen3-Omni 30B, unstarred zero-shot omni-LLM moderator. Native 0–1 rate; no rescaling. Recall of unsafe inputs; higher is better. This is moderator detection, not a harmful-response generation rate. The audio input is accompanied by the moderation instruction; starred fine-tuned variants and specialist guardrails are separate configurations. Source row: AJailBench; column: Q30."
+    },
+    {
+      "benchmark": "omni-ubench",
+      "model": "minicpm-o-4-5",
+      "metric": "AJailBench / Recall (0–1)",
+      "value": 0.26,
+      "source": "Table 2, arXiv:2610.31713v1",
+      "source_url": "https://arxiv.org/abs/2610.31713v1",
+      "note": "MiniCPM-o 4.5, unstarred zero-shot omni-LLM moderator. Native 0–1 rate; no rescaling. Recall of unsafe inputs; higher is better. This is moderator detection, not a harmful-response generation rate. The audio input is accompanied by the moderation instruction; starred fine-tuned variants and specialist guardrails are separate configurations. Source row: AJailBench; column: CPM."
+    },
+    {
+      "benchmark": "omni-ubench",
+      "model": "phi-4-multimodal",
+      "metric": "AJailBench / Recall (0–1)",
+      "value": 0.02,
+      "source": "Table 2, arXiv:2610.31713v1",
+      "source_url": "https://arxiv.org/abs/2610.31713v1",
+      "note": "Phi-4-multimodal, unstarred zero-shot omni-LLM moderator. Native 0–1 rate; no rescaling. Recall of unsafe inputs; higher is better. This is moderator detection, not a harmful-response generation rate. The audio input is accompanied by the moderation instruction; starred fine-tuned variants and specialist guardrails are separate configurations. Source row: AJailBench; column: PHI."
+    },
+    {
+      "benchmark": "omni-ubench",
+      "model": "gemini-2-5-flash",
+      "metric": "AJailBench / Recall (0–1)",
+      "value": 0.65,
+      "source": "Table 2, arXiv:2610.31713v1",
+      "source_url": "https://arxiv.org/abs/2610.31713v1",
+      "note": "Gemini 2.5 Flash, unstarred zero-shot omni-LLM moderator. Native 0–1 rate; no rescaling. Recall of unsafe inputs; higher is better. This is moderator detection, not a harmful-response generation rate. The audio input is accompanied by the moderation instruction; starred fine-tuned variants and specialist guardrails are separate configurations. Source row: AJailBench; column: GEM."
+    },
+    {
+      "benchmark": "omni-ubench",
+      "model": "mimo-v2-5",
+      "metric": "AJailBench / Recall (0–1)",
+      "value": 0.7,
+      "source": "Table 2, arXiv:2610.31713v1",
+      "source_url": "https://arxiv.org/abs/2610.31713v1",
+      "note": "MiMo-V2.5, unstarred zero-shot omni-LLM moderator. Native 0–1 rate; no rescaling. Recall of unsafe inputs; higher is better. This is moderator detection, not a harmful-response generation rate. The audio input is accompanied by the moderation instruction; starred fine-tuned variants and specialist guardrails are separate configurations. Source row: AJailBench; column: MIM."
+    },
+    {
+      "benchmark": "omni-ubench",
+      "model": "qwen2-5-omni",
+      "metric": "Omni-SafetyBench (A) / Recall (0–1)",
+      "value": 0.96,
+      "source": "Table 2, arXiv:2610.31713v1",
+      "source_url": "https://arxiv.org/abs/2610.31713v1",
+      "note": "Qwen2.5-Omni 7B, unstarred zero-shot omni-LLM moderator. Native 0–1 rate; no rescaling. Recall of unsafe inputs; higher is better. This is moderator detection, not a harmful-response generation rate. The audio input is accompanied by the moderation instruction; starred fine-tuned variants and specialist guardrails are separate configurations. Source row: Omni-SafetyBench (A); column: Q7."
+    },
+    {
+      "benchmark": "omni-ubench",
+      "model": "qwen3-omni",
+      "metric": "Omni-SafetyBench (A) / Recall (0–1)",
+      "value": 0.95,
+      "source": "Table 2, arXiv:2610.31713v1",
+      "source_url": "https://arxiv.org/abs/2610.31713v1",
+      "note": "Qwen3-Omni 30B, unstarred zero-shot omni-LLM moderator. Native 0–1 rate; no rescaling. Recall of unsafe inputs; higher is better. This is moderator detection, not a harmful-response generation rate. The audio input is accompanied by the moderation instruction; starred fine-tuned variants and specialist guardrails are separate configurations. Source row: Omni-SafetyBench (A); column: Q30."
+    },
+    {
+      "benchmark": "omni-ubench",
+      "model": "minicpm-o-4-5",
+      "metric": "Omni-SafetyBench (A) / Recall (0–1)",
+      "value": 0.63,
+      "source": "Table 2, arXiv:2610.31713v1",
+      "source_url": "https://arxiv.org/abs/2610.31713v1",
+      "note": "MiniCPM-o 4.5, unstarred zero-shot omni-LLM moderator. Native 0–1 rate; no rescaling. Recall of unsafe inputs; higher is better. This is moderator detection, not a harmful-response generation rate. The audio input is accompanied by the moderation instruction; starred fine-tuned variants and specialist guardrails are separate configurations. Source row: Omni-SafetyBench (A); column: CPM."
+    },
+    {
+      "benchmark": "omni-ubench",
+      "model": "phi-4-multimodal",
+      "metric": "Omni-SafetyBench (A) / Recall (0–1)",
+      "value": 0.88,
+      "source": "Table 2, arXiv:2610.31713v1",
+      "source_url": "https://arxiv.org/abs/2610.31713v1",
+      "note": "Phi-4-multimodal, unstarred zero-shot omni-LLM moderator. Native 0–1 rate; no rescaling. Recall of unsafe inputs; higher is better. This is moderator detection, not a harmful-response generation rate. The audio input is accompanied by the moderation instruction; starred fine-tuned variants and specialist guardrails are separate configurations. Source row: Omni-SafetyBench (A); column: PHI."
+    },
+    {
+      "benchmark": "omni-ubench",
+      "model": "gemini-2-5-flash",
+      "metric": "Omni-SafetyBench (A) / Recall (0–1)",
+      "value": 0.98,
+      "source": "Table 2, arXiv:2610.31713v1",
+      "source_url": "https://arxiv.org/abs/2610.31713v1",
+      "note": "Gemini 2.5 Flash, unstarred zero-shot omni-LLM moderator. Native 0–1 rate; no rescaling. Recall of unsafe inputs; higher is better. This is moderator detection, not a harmful-response generation rate. The audio input is accompanied by the moderation instruction; starred fine-tuned variants and specialist guardrails are separate configurations. Source row: Omni-SafetyBench (A); column: GEM."
+    },
+    {
+      "benchmark": "omni-ubench",
+      "model": "mimo-v2-5",
+      "metric": "Omni-SafetyBench (A) / Recall (0–1)",
+      "value": 0.95,
+      "source": "Table 2, arXiv:2610.31713v1",
+      "source_url": "https://arxiv.org/abs/2610.31713v1",
+      "note": "MiMo-V2.5, unstarred zero-shot omni-LLM moderator. Native 0–1 rate; no rescaling. Recall of unsafe inputs; higher is better. This is moderator detection, not a harmful-response generation rate. The audio input is accompanied by the moderation instruction; starred fine-tuned variants and specialist guardrails are separate configurations. Source row: Omni-SafetyBench (A); column: MIM."
+    },
+    {
+      "benchmark": "omni-ubench",
+      "model": "qwen2-5-omni",
+      "metric": "FR-Audio / FPR (0–1)",
+      "value": 0.16,
+      "source": "Table 2, arXiv:2610.31713v1",
+      "source_url": "https://arxiv.org/abs/2610.31713v1",
+      "note": "Qwen2.5-Omni 7B, unstarred zero-shot omni-LLM moderator. Native 0–1 rate; no rescaling. False-positive rate on benign/masked inputs; lower is better. This is the raw rate, not 1−FPR. The audio input is accompanied by the moderation instruction; starred fine-tuned variants and specialist guardrails are separate configurations. Source row: FR-Audio; column: Q7."
+    },
+    {
+      "benchmark": "omni-ubench",
+      "model": "qwen3-omni",
+      "metric": "FR-Audio / FPR (0–1)",
+      "value": 0.14,
+      "source": "Table 2, arXiv:2610.31713v1",
+      "source_url": "https://arxiv.org/abs/2610.31713v1",
+      "note": "Qwen3-Omni 30B, unstarred zero-shot omni-LLM moderator. Native 0–1 rate; no rescaling. False-positive rate on benign/masked inputs; lower is better. This is the raw rate, not 1−FPR. The audio input is accompanied by the moderation instruction; starred fine-tuned variants and specialist guardrails are separate configurations. Source row: FR-Audio; column: Q30."
+    },
+    {
+      "benchmark": "omni-ubench",
+      "model": "minicpm-o-4-5",
+      "metric": "FR-Audio / FPR (0–1)",
+      "value": 0.06,
+      "source": "Table 2, arXiv:2610.31713v1",
+      "source_url": "https://arxiv.org/abs/2610.31713v1",
+      "note": "MiniCPM-o 4.5, unstarred zero-shot omni-LLM moderator. Native 0–1 rate; no rescaling. False-positive rate on benign/masked inputs; lower is better. This is the raw rate, not 1−FPR. The audio input is accompanied by the moderation instruction; starred fine-tuned variants and specialist guardrails are separate configurations. Source row: FR-Audio; column: CPM."
+    },
+    {
+      "benchmark": "omni-ubench",
+      "model": "phi-4-multimodal",
+      "metric": "FR-Audio / FPR (0–1)",
+      "value": 0.58,
+      "source": "Table 2, arXiv:2610.31713v1",
+      "source_url": "https://arxiv.org/abs/2610.31713v1",
+      "note": "Phi-4-multimodal, unstarred zero-shot omni-LLM moderator. Native 0–1 rate; no rescaling. False-positive rate on benign/masked inputs; lower is better. This is the raw rate, not 1−FPR. The audio input is accompanied by the moderation instruction; starred fine-tuned variants and specialist guardrails are separate configurations. Source row: FR-Audio; column: PHI."
+    },
+    {
+      "benchmark": "omni-ubench",
+      "model": "gemini-2-5-flash",
+      "metric": "FR-Audio / FPR (0–1)",
+      "value": 0.15,
+      "source": "Table 2, arXiv:2610.31713v1",
+      "source_url": "https://arxiv.org/abs/2610.31713v1",
+      "note": "Gemini 2.5 Flash, unstarred zero-shot omni-LLM moderator. Native 0–1 rate; no rescaling. False-positive rate on benign/masked inputs; lower is better. This is the raw rate, not 1−FPR. The audio input is accompanied by the moderation instruction; starred fine-tuned variants and specialist guardrails are separate configurations. Source row: FR-Audio; column: GEM."
+    },
+    {
+      "benchmark": "omni-ubench",
+      "model": "mimo-v2-5",
+      "metric": "FR-Audio / FPR (0–1)",
+      "value": 0.07,
+      "source": "Table 2, arXiv:2610.31713v1",
+      "source_url": "https://arxiv.org/abs/2610.31713v1",
+      "note": "MiMo-V2.5, unstarred zero-shot omni-LLM moderator. Native 0–1 rate; no rescaling. False-positive rate on benign/masked inputs; lower is better. This is the raw rate, not 1−FPR. The audio input is accompanied by the moderation instruction; starred fine-tuned variants and specialist guardrails are separate configurations. Source row: FR-Audio; column: MIM."
+    },
+    {
+      "benchmark": "omni-ubench",
+      "model": "qwen2-5-omni",
+      "metric": "GH-Audio / FPR (0–1)",
+      "value": 0.01,
+      "source": "Table 2, arXiv:2610.31713v1",
+      "source_url": "https://arxiv.org/abs/2610.31713v1",
+      "note": "Qwen2.5-Omni 7B, unstarred zero-shot omni-LLM moderator. Native 0–1 rate; no rescaling. False-positive rate on benign/masked inputs; lower is better. This is the raw rate, not 1−FPR. The audio input is accompanied by the moderation instruction; starred fine-tuned variants and specialist guardrails are separate configurations. Source row: GH-Audio; column: Q7."
+    },
+    {
+      "benchmark": "omni-ubench",
+      "model": "qwen3-omni",
+      "metric": "GH-Audio / FPR (0–1)",
+      "value": 0.0,
+      "source": "Table 2, arXiv:2610.31713v1",
+      "source_url": "https://arxiv.org/abs/2610.31713v1",
+      "note": "Qwen3-Omni 30B, unstarred zero-shot omni-LLM moderator. Native 0–1 rate; no rescaling. False-positive rate on benign/masked inputs; lower is better. This is the raw rate, not 1−FPR. The audio input is accompanied by the moderation instruction; starred fine-tuned variants and specialist guardrails are separate configurations. Source row: GH-Audio; column: Q30."
+    },
+    {
+      "benchmark": "omni-ubench",
+      "model": "minicpm-o-4-5",
+      "metric": "GH-Audio / FPR (0–1)",
+      "value": 0.0,
+      "source": "Table 2, arXiv:2610.31713v1",
+      "source_url": "https://arxiv.org/abs/2610.31713v1",
+      "note": "MiniCPM-o 4.5, unstarred zero-shot omni-LLM moderator. Native 0–1 rate; no rescaling. False-positive rate on benign/masked inputs; lower is better. This is the raw rate, not 1−FPR. The audio input is accompanied by the moderation instruction; starred fine-tuned variants and specialist guardrails are separate configurations. Source row: GH-Audio; column: CPM."
+    },
+    {
+      "benchmark": "omni-ubench",
+      "model": "phi-4-multimodal",
+      "metric": "GH-Audio / FPR (0–1)",
+      "value": 0.41,
+      "source": "Table 2, arXiv:2610.31713v1",
+      "source_url": "https://arxiv.org/abs/2610.31713v1",
+      "note": "Phi-4-multimodal, unstarred zero-shot omni-LLM moderator. Native 0–1 rate; no rescaling. False-positive rate on benign/masked inputs; lower is better. This is the raw rate, not 1−FPR. The audio input is accompanied by the moderation instruction; starred fine-tuned variants and specialist guardrails are separate configurations. Source row: GH-Audio; column: PHI."
+    },
+    {
+      "benchmark": "omni-ubench",
+      "model": "gemini-2-5-flash",
+      "metric": "GH-Audio / FPR (0–1)",
+      "value": 0.0,
+      "source": "Table 2, arXiv:2610.31713v1",
+      "source_url": "https://arxiv.org/abs/2610.31713v1",
+      "note": "Gemini 2.5 Flash, unstarred zero-shot omni-LLM moderator. Native 0–1 rate; no rescaling. False-positive rate on benign/masked inputs; lower is better. This is the raw rate, not 1−FPR. The audio input is accompanied by the moderation instruction; starred fine-tuned variants and specialist guardrails are separate configurations. Source row: GH-Audio; column: GEM."
+    },
+    {
+      "benchmark": "omni-ubench",
+      "model": "mimo-v2-5",
+      "metric": "GH-Audio / FPR (0–1)",
+      "value": 0.0,
+      "source": "Table 2, arXiv:2610.31713v1",
+      "source_url": "https://arxiv.org/abs/2610.31713v1",
+      "note": "MiMo-V2.5, unstarred zero-shot omni-LLM moderator. Native 0–1 rate; no rescaling. False-positive rate on benign/masked inputs; lower is better. This is the raw rate, not 1−FPR. The audio input is accompanied by the moderation instruction; starred fine-tuned variants and specialist guardrails are separate configurations. Source row: GH-Audio; column: MIM."
+    },
+    {
+      "benchmark": "omni-ubench",
+      "model": "qwen2-5-omni",
+      "metric": "Omni-SafetyBench A / Recall (0–1)",
+      "value": 0.88,
+      "source": "Table 3, arXiv:2610.31713v1",
+      "source_url": "https://arxiv.org/abs/2610.31713v1",
+      "note": "Qwen2.5-Omni 7B, unstarred zero-shot moderator. Unsafe-input recall on the indicated Omni-SafetyBench modality combination, native 0–1 scale, higher is better. A=audio, T=text, I=image, V=video. No fine-tuned or unsupported-modality results are imputed. Source row: A; column: Q7."
+    },
+    {
+      "benchmark": "omni-ubench",
+      "model": "qwen3-omni",
+      "metric": "Omni-SafetyBench A / Recall (0–1)",
+      "value": 0.95,
+      "source": "Table 3, arXiv:2610.31713v1",
+      "source_url": "https://arxiv.org/abs/2610.31713v1",
+      "note": "Qwen3-Omni 30B, unstarred zero-shot moderator. Unsafe-input recall on the indicated Omni-SafetyBench modality combination, native 0–1 scale, higher is better. A=audio, T=text, I=image, V=video. No fine-tuned or unsupported-modality results are imputed. Source row: A; column: Q30."
+    },
+    {
+      "benchmark": "omni-ubench",
+      "model": "minicpm-o-4-5",
+      "metric": "Omni-SafetyBench A / Recall (0–1)",
+      "value": 0.81,
+      "source": "Table 3, arXiv:2610.31713v1",
+      "source_url": "https://arxiv.org/abs/2610.31713v1",
+      "note": "MiniCPM-o 4.5, unstarred zero-shot moderator. Unsafe-input recall on the indicated Omni-SafetyBench modality combination, native 0–1 scale, higher is better. A=audio, T=text, I=image, V=video. No fine-tuned or unsupported-modality results are imputed. Source row: A; column: CPM."
+    },
+    {
+      "benchmark": "omni-ubench",
+      "model": "phi-4-multimodal",
+      "metric": "Omni-SafetyBench A / Recall (0–1)",
+      "value": 0.35,
+      "source": "Table 3, arXiv:2610.31713v1",
+      "source_url": "https://arxiv.org/abs/2610.31713v1",
+      "note": "Phi-4-multimodal, unstarred zero-shot moderator. Unsafe-input recall on the indicated Omni-SafetyBench modality combination, native 0–1 scale, higher is better. A=audio, T=text, I=image, V=video. No fine-tuned or unsupported-modality results are imputed. Source row: A; column: PHI."
+    },
+    {
+      "benchmark": "omni-ubench",
+      "model": "gemini-2-5-flash",
+      "metric": "Omni-SafetyBench A / Recall (0–1)",
+      "value": 0.93,
+      "source": "Table 3, arXiv:2610.31713v1",
+      "source_url": "https://arxiv.org/abs/2610.31713v1",
+      "note": "Gemini 2.5 Flash, unstarred zero-shot moderator. Unsafe-input recall on the indicated Omni-SafetyBench modality combination, native 0–1 scale, higher is better. A=audio, T=text, I=image, V=video. No fine-tuned or unsupported-modality results are imputed. Source row: A; column: GEM."
+    },
+    {
+      "benchmark": "omni-ubench",
+      "model": "mimo-v2-5",
+      "metric": "Omni-SafetyBench A / Recall (0–1)",
+      "value": 0.89,
+      "source": "Table 3, arXiv:2610.31713v1",
+      "source_url": "https://arxiv.org/abs/2610.31713v1",
+      "note": "MiMo-V2.5, unstarred zero-shot moderator. Unsafe-input recall on the indicated Omni-SafetyBench modality combination, native 0–1 scale, higher is better. A=audio, T=text, I=image, V=video. No fine-tuned or unsupported-modality results are imputed. Source row: A; column: MIM."
+    },
+    {
+      "benchmark": "omni-ubench",
+      "model": "qwen2-5-omni",
+      "metric": "Omni-SafetyBench T-A / Recall (0–1)",
+      "value": 0.92,
+      "source": "Table 3, arXiv:2610.31713v1",
+      "source_url": "https://arxiv.org/abs/2610.31713v1",
+      "note": "Qwen2.5-Omni 7B, unstarred zero-shot moderator. Unsafe-input recall on the indicated Omni-SafetyBench modality combination, native 0–1 scale, higher is better. A=audio, T=text, I=image, V=video. No fine-tuned or unsupported-modality results are imputed. Source row: T-A; column: Q7."
+    },
+    {
+      "benchmark": "omni-ubench",
+      "model": "qwen3-omni",
+      "metric": "Omni-SafetyBench T-A / Recall (0–1)",
+      "value": 0.89,
+      "source": "Table 3, arXiv:2610.31713v1",
+      "source_url": "https://arxiv.org/abs/2610.31713v1",
+      "note": "Qwen3-Omni 30B, unstarred zero-shot moderator. Unsafe-input recall on the indicated Omni-SafetyBench modality combination, native 0–1 scale, higher is better. A=audio, T=text, I=image, V=video. No fine-tuned or unsupported-modality results are imputed. Source row: T-A; column: Q30."
+    },
+    {
+      "benchmark": "omni-ubench",
+      "model": "minicpm-o-4-5",
+      "metric": "Omni-SafetyBench T-A / Recall (0–1)",
+      "value": 0.62,
+      "source": "Table 3, arXiv:2610.31713v1",
+      "source_url": "https://arxiv.org/abs/2610.31713v1",
+      "note": "MiniCPM-o 4.5, unstarred zero-shot moderator. Unsafe-input recall on the indicated Omni-SafetyBench modality combination, native 0–1 scale, higher is better. A=audio, T=text, I=image, V=video. No fine-tuned or unsupported-modality results are imputed. Source row: T-A; column: CPM."
+    },
+    {
+      "benchmark": "omni-ubench",
+      "model": "phi-4-multimodal",
+      "metric": "Omni-SafetyBench T-A / Recall (0–1)",
+      "value": 0.44,
+      "source": "Table 3, arXiv:2610.31713v1",
+      "source_url": "https://arxiv.org/abs/2610.31713v1",
+      "note": "Phi-4-multimodal, unstarred zero-shot moderator. Unsafe-input recall on the indicated Omni-SafetyBench modality combination, native 0–1 scale, higher is better. A=audio, T=text, I=image, V=video. No fine-tuned or unsupported-modality results are imputed. Source row: T-A; column: PHI."
+    },
+    {
+      "benchmark": "omni-ubench",
+      "model": "gemini-2-5-flash",
+      "metric": "Omni-SafetyBench T-A / Recall (0–1)",
+      "value": 0.96,
+      "source": "Table 3, arXiv:2610.31713v1",
+      "source_url": "https://arxiv.org/abs/2610.31713v1",
+      "note": "Gemini 2.5 Flash, unstarred zero-shot moderator. Unsafe-input recall on the indicated Omni-SafetyBench modality combination, native 0–1 scale, higher is better. A=audio, T=text, I=image, V=video. No fine-tuned or unsupported-modality results are imputed. Source row: T-A; column: GEM."
+    },
+    {
+      "benchmark": "omni-ubench",
+      "model": "mimo-v2-5",
+      "metric": "Omni-SafetyBench T-A / Recall (0–1)",
+      "value": 0.93,
+      "source": "Table 3, arXiv:2610.31713v1",
+      "source_url": "https://arxiv.org/abs/2610.31713v1",
+      "note": "MiMo-V2.5, unstarred zero-shot moderator. Unsafe-input recall on the indicated Omni-SafetyBench modality combination, native 0–1 scale, higher is better. A=audio, T=text, I=image, V=video. No fine-tuned or unsupported-modality results are imputed. Source row: T-A; column: MIM."
+    },
+    {
+      "benchmark": "omni-ubench",
+      "model": "qwen2-5-omni",
+      "metric": "Omni-SafetyBench T-I-A / Recall (0–1)",
+      "value": 0.89,
+      "source": "Table 3, arXiv:2610.31713v1",
+      "source_url": "https://arxiv.org/abs/2610.31713v1",
+      "note": "Qwen2.5-Omni 7B, unstarred zero-shot moderator. Unsafe-input recall on the indicated Omni-SafetyBench modality combination, native 0–1 scale, higher is better. A=audio, T=text, I=image, V=video. No fine-tuned or unsupported-modality results are imputed. Source row: T-I-A; column: Q7."
+    },
+    {
+      "benchmark": "omni-ubench",
+      "model": "qwen3-omni",
+      "metric": "Omni-SafetyBench T-I-A / Recall (0–1)",
+      "value": 0.9,
+      "source": "Table 3, arXiv:2610.31713v1",
+      "source_url": "https://arxiv.org/abs/2610.31713v1",
+      "note": "Qwen3-Omni 30B, unstarred zero-shot moderator. Unsafe-input recall on the indicated Omni-SafetyBench modality combination, native 0–1 scale, higher is better. A=audio, T=text, I=image, V=video. No fine-tuned or unsupported-modality results are imputed. Source row: T-I-A; column: Q30."
+    },
+    {
+      "benchmark": "omni-ubench",
+      "model": "minicpm-o-4-5",
+      "metric": "Omni-SafetyBench T-I-A / Recall (0–1)",
+      "value": 0.76,
+      "source": "Table 3, arXiv:2610.31713v1",
+      "source_url": "https://arxiv.org/abs/2610.31713v1",
+      "note": "MiniCPM-o 4.5, unstarred zero-shot moderator. Unsafe-input recall on the indicated Omni-SafetyBench modality combination, native 0–1 scale, higher is better. A=audio, T=text, I=image, V=video. No fine-tuned or unsupported-modality results are imputed. Source row: T-I-A; column: CPM."
+    },
+    {
+      "benchmark": "omni-ubench",
+      "model": "phi-4-multimodal",
+      "metric": "Omni-SafetyBench T-I-A / Recall (0–1)",
+      "value": 0.34,
+      "source": "Table 3, arXiv:2610.31713v1",
+      "source_url": "https://arxiv.org/abs/2610.31713v1",
+      "note": "Phi-4-multimodal, unstarred zero-shot moderator. Unsafe-input recall on the indicated Omni-SafetyBench modality combination, native 0–1 scale, higher is better. A=audio, T=text, I=image, V=video. No fine-tuned or unsupported-modality results are imputed. Source row: T-I-A; column: PHI."
+    },
+    {
+      "benchmark": "omni-ubench",
+      "model": "gemini-2-5-flash",
+      "metric": "Omni-SafetyBench T-I-A / Recall (0–1)",
+      "value": 0.98,
+      "source": "Table 3, arXiv:2610.31713v1",
+      "source_url": "https://arxiv.org/abs/2610.31713v1",
+      "note": "Gemini 2.5 Flash, unstarred zero-shot moderator. Unsafe-input recall on the indicated Omni-SafetyBench modality combination, native 0–1 scale, higher is better. A=audio, T=text, I=image, V=video. No fine-tuned or unsupported-modality results are imputed. Source row: T-I-A; column: GEM."
+    },
+    {
+      "benchmark": "omni-ubench",
+      "model": "mimo-v2-5",
+      "metric": "Omni-SafetyBench T-I-A / Recall (0–1)",
+      "value": 0.94,
+      "source": "Table 3, arXiv:2610.31713v1",
+      "source_url": "https://arxiv.org/abs/2610.31713v1",
+      "note": "MiMo-V2.5, unstarred zero-shot moderator. Unsafe-input recall on the indicated Omni-SafetyBench modality combination, native 0–1 scale, higher is better. A=audio, T=text, I=image, V=video. No fine-tuned or unsupported-modality results are imputed. Source row: T-I-A; column: MIM."
+    },
+    {
+      "benchmark": "omni-ubench",
+      "model": "qwen2-5-omni",
+      "metric": "Omni-SafetyBench T-V-A / Recall (0–1)",
+      "value": 0.93,
+      "source": "Table 3, arXiv:2610.31713v1",
+      "source_url": "https://arxiv.org/abs/2610.31713v1",
+      "note": "Qwen2.5-Omni 7B, unstarred zero-shot moderator. Unsafe-input recall on the indicated Omni-SafetyBench modality combination, native 0–1 scale, higher is better. A=audio, T=text, I=image, V=video. No fine-tuned or unsupported-modality results are imputed. Source row: T-V-A; column: Q7."
+    },
+    {
+      "benchmark": "omni-ubench",
+      "model": "qwen3-omni",
+      "metric": "Omni-SafetyBench T-V-A / Recall (0–1)",
+      "value": 0.93,
+      "source": "Table 3, arXiv:2610.31713v1",
+      "source_url": "https://arxiv.org/abs/2610.31713v1",
+      "note": "Qwen3-Omni 30B, unstarred zero-shot moderator. Unsafe-input recall on the indicated Omni-SafetyBench modality combination, native 0–1 scale, higher is better. A=audio, T=text, I=image, V=video. No fine-tuned or unsupported-modality results are imputed. Source row: T-V-A; column: Q30."
+    },
+    {
+      "benchmark": "omni-ubench",
+      "model": "minicpm-o-4-5",
+      "metric": "Omni-SafetyBench T-V-A / Recall (0–1)",
+      "value": 0.73,
+      "source": "Table 3, arXiv:2610.31713v1",
+      "source_url": "https://arxiv.org/abs/2610.31713v1",
+      "note": "MiniCPM-o 4.5, unstarred zero-shot moderator. Unsafe-input recall on the indicated Omni-SafetyBench modality combination, native 0–1 scale, higher is better. A=audio, T=text, I=image, V=video. No fine-tuned or unsupported-modality results are imputed. Source row: T-V-A; column: CPM."
+    },
+    {
+      "benchmark": "omni-ubench",
+      "model": "gemini-2-5-flash",
+      "metric": "Omni-SafetyBench T-V-A / Recall (0–1)",
+      "value": 0.96,
+      "source": "Table 3, arXiv:2610.31713v1",
+      "source_url": "https://arxiv.org/abs/2610.31713v1",
+      "note": "Gemini 2.5 Flash, unstarred zero-shot moderator. Unsafe-input recall on the indicated Omni-SafetyBench modality combination, native 0–1 scale, higher is better. A=audio, T=text, I=image, V=video. No fine-tuned or unsupported-modality results are imputed. Source row: T-V-A; column: GEM."
+    },
+    {
+      "benchmark": "omni-ubench",
+      "model": "mimo-v2-5",
+      "metric": "Omni-SafetyBench T-V-A / Recall (0–1)",
+      "value": 0.92,
+      "source": "Table 3, arXiv:2610.31713v1",
+      "source_url": "https://arxiv.org/abs/2610.31713v1",
+      "note": "MiMo-V2.5, unstarred zero-shot moderator. Unsafe-input recall on the indicated Omni-SafetyBench modality combination, native 0–1 scale, higher is better. A=audio, T=text, I=image, V=video. No fine-tuned or unsupported-modality results are imputed. Source row: T-V-A; column: MIM."
+    },
+    {
+      "benchmark": "musictwins-persona-eval",
+      "model": "audio-flamingo-next",
+      "metric": "Base / Musical response (0–100)",
+      "value": 45.5,
+      "source": "Table 1, arXiv:2610.32495v1",
+      "source_url": "https://arxiv.org/abs/2610.32495v1",
+      "note": "Audio Flamingo Next before MusicTwins training, with persona and retrieved-memory conditioning. n=600 questions from ten held-out personas. Equal-weight mean of the five musical-response objective groups, each contributing 20%; not a question-weighted mean. Native reported 0–100 scale; higher is better. Table 1 in the PDF and table caption is authoritative despite the HTML prose cross-reference to Table 3. The reported confidence intervals are for the training difference, not these baseline scores. Source row: Musical response; column: Base."
+    },
+    {
+      "benchmark": "musictwins-persona-eval",
+      "model": "audio-flamingo-next",
+      "metric": "Base / Recall (0–100)",
+      "value": 54.0,
+      "source": "Table 1, arXiv:2610.32495v1",
+      "source_url": "https://arxiv.org/abs/2610.32495v1",
+      "note": "Audio Flamingo Next before MusicTwins training, with persona and retrieved-memory conditioning. n=100 questions from ten held-out personas. Judge similarity originally rated 1–5 and rescaled by 25 × (score−1). Native reported 0–100 scale; higher is better. Table 1 in the PDF and table caption is authoritative despite the HTML prose cross-reference to Table 3. The reported confidence intervals are for the training difference, not these baseline scores. Source row: Recall; column: Base."
+    },
+    {
+      "benchmark": "musictwins-persona-eval",
+      "model": "audio-flamingo-next",
+      "metric": "Base / Recall and interpolation (0–100)",
+      "value": 64.0,
+      "source": "Table 1, arXiv:2610.32495v1",
+      "source_url": "https://arxiv.org/abs/2610.32495v1",
+      "note": "Audio Flamingo Next before MusicTwins training, with persona and retrieved-memory conditioning. n=50 questions from ten held-out personas. Judge similarity originally rated 1–5 and rescaled by 25 × (score−1). Native reported 0–100 scale; higher is better. Table 1 in the PDF and table caption is authoritative despite the HTML prose cross-reference to Table 3. The reported confidence intervals are for the training difference, not these baseline scores. Source row: Recall and interpolation; column: Base."
+    },
+    {
+      "benchmark": "musictwins-persona-eval",
+      "model": "audio-flamingo-next",
+      "metric": "Base / Interpolation (0–100)",
+      "value": 38.0,
+      "source": "Table 1, arXiv:2610.32495v1",
+      "source_url": "https://arxiv.org/abs/2610.32495v1",
+      "note": "Audio Flamingo Next before MusicTwins training, with persona and retrieved-memory conditioning. n=250 questions from ten held-out personas. Judge similarity originally rated 1–5 and rescaled by 25 × (score−1). Native reported 0–100 scale; higher is better. Table 1 in the PDF and table caption is authoritative despite the HTML prose cross-reference to Table 3. The reported confidence intervals are for the training difference, not these baseline scores. Source row: Interpolation; column: Base."
+    },
+    {
+      "benchmark": "musictwins-persona-eval",
+      "model": "audio-flamingo-next",
+      "metric": "Base / Extrapolation (0–100)",
+      "value": 31.5,
+      "source": "Table 1, arXiv:2610.32495v1",
+      "source_url": "https://arxiv.org/abs/2610.32495v1",
+      "note": "Audio Flamingo Next before MusicTwins training, with persona and retrieved-memory conditioning. n=150 questions from ten held-out personas. Judge similarity originally rated 1–5 and rescaled by 25 × (score−1). Native reported 0–100 scale; higher is better. Table 1 in the PDF and table caption is authoritative despite the HTML prose cross-reference to Table 3. The reported confidence intervals are for the training difference, not these baseline scores. Source row: Extrapolation; column: Base."
+    },
+    {
+      "benchmark": "musictwins-persona-eval",
+      "model": "audio-flamingo-next",
+      "metric": "Base / Anti-hallucination (0–100)",
+      "value": 40.0,
+      "source": "Table 1, arXiv:2610.32495v1",
+      "source_url": "https://arxiv.org/abs/2610.32495v1",
+      "note": "Audio Flamingo Next before MusicTwins training, with persona and retrieved-memory conditioning. n=50 questions from ten held-out personas. Judge accuracy on unsupported-premise questions. Native reported 0–100 scale; higher is better. Table 1 in the PDF and table caption is authoritative despite the HTML prose cross-reference to Table 3. The reported confidence intervals are for the training difference, not these baseline scores. Source row: Anti-hallucination; column: Base."
     }
   ]
 }

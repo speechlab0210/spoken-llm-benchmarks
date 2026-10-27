@@ -12130,6 +12130,220 @@
       ],
       "languages": [],
       "note": "Eight original baseline scores are extracted by PDF row and numeric column from Table 3, page 6. Signed values are preserved, including negatives. The paper also reports a separate physician preference study on 30 cases; that sample is not the size of this benchmark or evidence of clinical effectiveness."
+    },
+    {
+      "id": "decisiontracebench",
+      "name": "DecisionTraceBench",
+      "aka": [],
+      "full_title": "DecisionTraceBench: Tracking Decision-Critical Information in Multi-Party Spoken Conversations",
+      "arxiv_id": "2610.34746",
+      "arxiv_date": "2026-10",
+      "arxiv_date_full": "2026-10-26",
+      "url": "https://arxiv.org/abs/2610.34746",
+      "summary": "Evaluates decision-critical information state tracking in Chinese financial conversations with two to four speakers. A successful output must recover the full ordered decision-event chain with its speaker, scope and temporal evidence; recovering only the final value is insufficient.",
+      "categories": [
+        "reasoning",
+        "long-form",
+        "domain"
+      ],
+      "tasks": [
+        "decision-event trajectory recovery",
+        "speaker-attributed state tracking",
+        "temporal evidence localization"
+      ],
+      "io": "multi-party conversational speech → structured decision trajectories with speakers, scope and timestamps",
+      "metrics": [
+        "DCIST recording-macro trajectory F1"
+      ],
+      "languages": [
+        "Chinese"
+      ],
+      "note": "Human recordings are scripted performances, not naturally occurring financial meetings. Main Table 3 uses a fixed cohort of 25 human recordings and 293 gold trajectories, distinct from the full dataset. Its direct-audio Gemini-4-Argon and Gemini-3.8-Flash versions and ASR-plus-text cascades are not yet indexed as exact systems in this atlas, so no scores are mapped to older or similarly named models. Reference-script ablations are separate from audio evaluation.",
+      "size": "2,272 recordings: 2,246 synthetic (100.39 hours) and 26 human-performed (8.61 hours); 5,627 trajectories and 18,789 events"
+    },
+    {
+      "id": "compositional-audio-eval-icag",
+      "name": "Compositional audio evaluation (T2L-ICAG paper)",
+      "aka": [],
+      "full_title": "In-Context Adapter Generation for Compositional Generalization in Large Audio Language Models",
+      "arxiv_id": "2610.34413",
+      "arxiv_date": "2026-10",
+      "arxiv_date_full": "2026-10-25",
+      "url": "https://arxiv.org/abs/2610.34413",
+      "summary": "A controlled evaluation suite introduced with T2L-ICAG tests whether large audio-language models compose familiar speech functions into novel tasks. It spans atomic, comparative, selective, sequential and multi-function instructions using one to three audio inputs, including recognition, speaker selection and spoken question answering.",
+      "categories": [
+        "instruction-following",
+        "reasoning",
+        "holistic"
+      ],
+      "tasks": [
+        "compositional speech instruction following",
+        "cross-audio comparison and selection",
+        "sequenced and joint speech tasks"
+      ],
+      "io": "one to three speech clips plus textual instruction → text or structured answer",
+      "metrics": [
+        "relative performance score (RPS, %; reference-pool dependent)",
+        "task-specific accuracy and WER"
+      ],
+      "languages": [],
+      "note": "Descriptive catalogue label; the paper does not assign the suite a standalone benchmark name. It reuses held-out examples from LibriSpeech, MELD, MLS, SLUE SQA-5 and AudioBench CN-College-Listen. The 1,500-example EvalSIFT evaluation is separate. Table 2 RPS normalizes each task against the best of five compared systems before task-class averaging, so it is not absolute accuracy and changes with the comparison pool. Only the six unadapted Kimi-Audio 7B compositional columns are entered; LoRA and generated-adapter configurations are not merged with the baseline.",
+      "size": "29 tasks across five classes: 5 atomic, 5 comparative, 9 selective, 6 sequential and 4 multi-function"
+    },
+    {
+      "id": "long-session-full-duplex-eval",
+      "name": "Long-session full-duplex stability evaluation",
+      "aka": [],
+      "full_title": "Diagnosing and Mitigating Long-Session Degradation in Full-Duplex Speech Models",
+      "arxiv_id": "2610.34991",
+      "arxiv_date": "2026-10",
+      "arxiv_date_full": "2026-10-26",
+      "url": "https://arxiv.org/abs/2610.34991",
+      "summary": "A closed-loop spoken-dialogue evaluation framework measures how full-duplex models degrade during sustained sessions. A user simulator combines an LLM, TTS, ASR and voice-activity detection; subsequent user turns respond to the model, enabling minute-by-minute assessment of responsiveness, conversational content and voice stability.",
+      "categories": [
+        "interactivity",
+        "dialogue",
+        "long-form"
+      ],
+      "tasks": [
+        "long-session turn-taking stability",
+        "content-quality degradation",
+        "generated-speech and voice consistency"
+      ],
+      "io": "closed-loop streaming spoken conversation ↔ model speech and native generated text",
+      "metrics": [
+        "signed floor-transfer offset (ms)",
+        "response-timeout rate (%)",
+        "cumulative terminated sessions (%)",
+        "content quality (1–5)",
+        "WER (%)",
+        "speaker cosine similarity"
+      ],
+      "languages": [
+        "English"
+      ],
+      "note": "Descriptive label for the evaluation framework, distinct from the paper’s LoRA and two-resolution-context methods. Timing uses logical audio time and does not measure wall-clock inference latency. The user yields to model interruptions; no artificial backchannels are inserted. Table 15 baseline results retain minute windows, raw units and per-cell counts. Counts are not confidence intervals; dashes and first-minute speaker references are omitted. After-termination observations are excluded except cumulative termination, making late-minute comparisons conditional on surviving observations. Three exactly indexed baselines are entered; Raon-SpeechChat and adapted configurations are not silently mapped to another model.",
+      "size": "90 ten-minute English conversations per model: 3 user personas × 10 topics × 3 episodes"
+    },
+    {
+      "id": "adshot",
+      "name": "AdShot",
+      "aka": [],
+      "full_title": "AdShot: Benchmarking Multimodal Large Language Models for Video Advertisement Clipping",
+      "arxiv_id": "2610.33377",
+      "arxiv_date": "2026-10",
+      "arxiv_date_full": "2026-10-24",
+      "url": "https://arxiv.org/abs/2610.33377",
+      "summary": "Benchmarks constrained advertisement clipping by selecting whole source shots to match professional short edits. The audio-visual evaluation arm supplies each shot’s audio with its visual representation and metadata, testing general omni models on selection fidelity and adherence to a duration budget.",
+      "categories": [
+        "domain",
+        "audio-grounding",
+        "instruction-following"
+      ],
+      "tasks": [
+        "audio-visual shot-set selection",
+        "duration-constrained advertisement clipping"
+      ],
+      "io": "source-ad shots with per-shot audio, frames and metadata → selected shot identifiers",
+      "metrics": [
+        "shot-set precision, recall and F1 (0–1)",
+        "mean absolute duration error (seconds)",
+        "conditional overshoot/undershoot magnitude (seconds)"
+      ],
+      "languages": [],
+      "note": "Included for its two audio-visual general-model baselines; the 13 video-only baselines are outside this atlas’s result selection. Table 4 uses the default 1-FPS setup, with per-shot audio accompanied by the center frame. The task selects whole shots and does not evaluate unrestricted editing, reordering or audiovisual rendering. The target is 15 seconds with a 14–16-second tolerance, but shot F1 is calculated independently of that tolerance. MDEpos and MDEneg are conditional error means, not additive components. Exact model versions are Qwen2.5-Omni 7B and MiniCPM-o 2.6 8B.",
+      "size": "823 professionally edited 30-second/15-second advertisement pairs from 194 brands and 17 industries"
+    },
+    {
+      "id": "omni-ubench",
+      "name": "Omni-UBench",
+      "aka": [],
+      "full_title": "Omni-UBench: Benchmarking Omni-Modal LLM-based Guardrails Across Safety, Utility, and Reliability",
+      "arxiv_id": "2610.31713",
+      "arxiv_date": "2026-10",
+      "arxiv_date_full": "2026-10-22",
+      "url": "https://arxiv.org/abs/2610.31713",
+      "summary": "A unified safety, utility and reliability evaluation for omni-modal LLMs used as content moderators. It standardizes heterogeneous text, image, audio and video inputs under a shared risk taxonomy, and probes unsafe-content detection, benign-content preservation, jailbreaks, over-sensitivity and safety hallucination.",
+      "categories": [
+        "safety",
+        "hallucination",
+        "robustness"
+      ],
+      "tasks": [
+        "audio and cross-modal safety classification",
+        "benign-input preservation",
+        "false-positive and safety-hallucination detection"
+      ],
+      "io": "moderation instruction plus text/audio/image/video content → safe/unsafe judgment and risk category",
+      "metrics": [
+        "unsafe-input recall and F1 (0–1)",
+        "benign-classification accuracy (0–1)",
+        "false-positive rate (0–1; lower is better)",
+        "module composites"
+      ],
+      "languages": [],
+      "note": "The general omni LLMs are evaluated as zero-shot moderators; specialist and starred fine-tuned guardrails are separate systems. This is not a measure of harmful answer generation. Imported cells cover seven audio-related Table 2 rows and the audio-containing Table 3 modality combinations for six indexed unstarred models. VoiceBench accuracy here measures benign safety classification, not original response quality. FR/GH cells retain raw false-positive rates rather than 1−FPR; module-level 0–100 composites are not substituted. Unsupported modalities remain absent.",
+      "size": "183,977 samples assembled from more than 35 sources under ten harmful-risk categories plus benign inputs"
+    },
+    {
+      "id": "tag-bench-sure-tagger",
+      "name": "Tag-Bench (SURE-Tagger)",
+      "aka": [],
+      "full_title": "SURE-Tagger: Structured Speech Representations for Compositional Evaluation and Targeted Data Selection",
+      "arxiv_id": "2610.32198",
+      "arxiv_date": "2026-10",
+      "arxiv_date_full": "2026-10-23",
+      "url": "https://arxiv.org/abs/2610.32198",
+      "summary": "Introduced with SURE-Tagger to evaluate evidence-based structured speech descriptions across lexical content, speakers, timing, acoustic conditions and descriptive attributes. It combines recordings from existing speech/audio corpora with controlled synthetic scenes and supports explicit abstention where an attribute is not supported.",
+      "categories": [
+        "paralinguistics",
+        "auditory-perception",
+        "holistic"
+      ],
+      "tasks": [
+        "structured speech-attribute extraction",
+        "compositional speech description",
+        "evidence-aware abstention"
+      ],
+      "io": "speech recording → schema-constrained attributes and descriptions",
+      "metrics": [
+        "per-axis coverage/agreement with explicit-null partial credit",
+        "real, synthetic and recomputed pooled scores"
+      ],
+      "languages": [],
+      "note": "Reviewed against v2. Distinct from the temporal-audio-grounding TAG-Bench (arXiv:2609.01542). Real sources include AMI, FLEURS, LibriSpeech, DESED and FSD50K; synthetic references use actual rendering records and measurements, not intended scene descriptions alone. The real reference annotations combine model assistance and human checking. All compared observation pipelines use the same DeepSeek-V4-Pro schema-construction stage, so results are pipeline scores rather than standalone perception accuracy. Explicit null can receive half credit; 50% may reflect abstention. Pooled results are recomputed, not an unweighted mean of real/synthetic scores. Qwen3-Omni-Flash is not mapped to Qwen3-Omni or Qwen3.5-Omni-Flash, so no unmatched pipeline scores are imported.",
+      "size": "1,150 recordings: 650 real recordings and 500 synthetic scenes; 19 structured and 10 descriptive evaluation axes"
+    },
+    {
+      "id": "musictwins-persona-eval",
+      "name": "MusicTwins persona-fidelity evaluation",
+      "aka": [],
+      "full_title": "MusicTwins: Training Audio-Language Models to Listen like Their Persona",
+      "arxiv_id": "2610.32495",
+      "arxiv_date": "2026-10",
+      "arxiv_date_full": "2026-10-23",
+      "url": "https://arxiv.org/abs/2610.32495",
+      "summary": "An evaluation protocol introduced with MusicTwins tests whether general audio-language models reproduce a persona’s evidence-supported responses to music. Held-out question–answer–audio tuples require recalling personal evidence, combining it with a recording, interpolating or extrapolating preferences, and rejecting unsupported personal claims.",
+      "categories": [
+        "auditory-perception",
+        "reasoning",
+        "hallucination"
+      ],
+      "tasks": [
+        "persona-grounded music response",
+        "personal-evidence recall and interpolation",
+        "preference extrapolation",
+        "unsupported-premise rejection"
+      ],
+      "io": "music recording(s), question, persona summary and retrieved memory → textual response",
+      "metrics": [
+        "judge similarity rescaled from 1–5 to 0–100",
+        "anti-hallucination accuracy (%)",
+        "equal-weight musical-response composite (0–100)"
+      ],
+      "languages": [],
+      "note": "Included for its new held-out evaluation protocol, distinct from its training method. The music material is mainly classical due to licensing. Five groups contain 100 recall, 50 recall-plus-interpolation, 250 interpolation, 150 extrapolation and 50 anti-hallucination questions; each contributes 20% to the musical-response composite. Six Audio Flamingo Next Base scores are entered with persona/memory conditioning. Separate text-fidelity measures, existing music-QA controls and adapted MusicTwins scores are not conflated with these cells. The actual result table is PDF Table 1; HTML prose has an inconsistent Table 3 reference. Confidence intervals in that table describe the training delta, not baseline estimates.",
+      "size": "600 question–answer–audio tuples from 10 held-out personas; 536 with one recording and 64 with two to four"
     }
   ]
 }

@@ -1,6 +1,11 @@
 {
  "entries": [
   {
+   "date": "2026-10-28",
+   "change": "Reviewed all 18 pending candidates: admitted seven papers introducing seven evaluations (DecisionTraceBench, Compositional audio evaluation (T2L-ICAG paper), Long-session full-duplex stability evaluation, AdShot, Omni-UBench, Tag-Bench (SURE-Tagger), MusicTwins persona-fidelity evaluation) and recorded specific exclusion reasons for 11 papers. Added 262 result cells through programmatic table row/column extraction, checked against PDF tables, preserving model versions, native scales, minute windows and sample counts. Long-session timing is logical audio time; Omni-UBench scores are moderation judgments; compositional RPS is relative to the paper’s comparison pool. Unindexed DecisionTraceBench and Tag-Bench system versions are not mapped to similarly named models. First-page author affiliations and venue clues were checked; one lab host remains explicitly unresolved, unprinted author addresses remain unplaced, and no unverified venue acceptance is claimed.",
+   "source": "arXiv abstract records and versioned full texts; per-cell table locators in results; daily candidate-review ledger"
+  },
+  {
    "date": "2026-10-24",
    "change": "Reviewed all 43 new candidates from the successful 24 October crawl: admitted 10 papers introducing 11 benchmarks (MultiPartyTurnBench, VocalGrad, MAMath-Bench, DuplexLedger, MOSAIC, TRIAD, DIVE, SEA-HELM Audio, TRACE, MedVoice-Dial, MedVoice-AID) and recorded specific exclusion reasons for 33 papers. Added 293 source-located result cells from nine benchmarks by programmatic table row/column extraction, preserving native scales, confidence intervals and model/configuration boundaries. MAMath-Bench text-only table results and unindexed SEA-HELM Audio cascades are not entered as spoken-model scores. New author affiliations were checked against first-page PDFs; unprinted author locations remain unplaced, and one research-center identity remains explicitly unresolved. Venue records remain preprints where acceptance was not established.",
    "source": "arXiv abstract records and versioned full texts; per-cell table locators in results; daily candidate-review ledger"
