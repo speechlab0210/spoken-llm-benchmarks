@@ -1,6 +1,11 @@
 {
  "entries": [
   {
+   "date": "2026-10-30",
+   "change": "Reviewed all three pending candidates and recorded specific exclusion reasons. ETC-Bench evaluates text-only transcript canonicalization; AudioRSI introduces a training method evaluated on existing benchmarks; SMEBench evaluates specialized music-editing and generation systems. None meets all inclusion gates. Benchmark, model and result-cell totals are unchanged.",
+   "source": "arXiv v1 full texts: 2610.36527 (Sections 2.2–2.3 and 4.1), 2610.36578 (Sections 3–5), and 2610.36715 (Section 4.3); daily candidate-review ledger"
+  },
+  {
    "date": "2026-10-28",
    "change": "Reviewed all 18 pending candidates: admitted seven papers introducing seven evaluations (DecisionTraceBench, Compositional audio evaluation (T2L-ICAG paper), Long-session full-duplex stability evaluation, AdShot, Omni-UBench, Tag-Bench (SURE-Tagger), MusicTwins persona-fidelity evaluation) and recorded specific exclusion reasons for 11 papers. Added 262 result cells through programmatic table row/column extraction, checked against PDF tables, preserving model versions, native scales, minute windows and sample counts. Long-session timing is logical audio time; Omni-UBench scores are moderation judgments; compositional RPS is relative to the paper’s comparison pool. Unindexed DecisionTraceBench and Tag-Bench system versions are not mapped to similarly named models. First-page author affiliations and venue clues were checked; one lab host remains explicitly unresolved, unprinted author addresses remain unplaced, and no unverified venue acceptance is claimed.",
    "source": "arXiv abstract records and versioned full texts; per-cell table locators in results; daily candidate-review ledger"

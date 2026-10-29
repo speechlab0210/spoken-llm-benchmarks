@@ -21,7 +21,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2610.36527",
       "score": 39,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: evaluated systems are text-to-text transcript canonicalizers, including normalization modules and text-only LLM agents; inputs are written minimal pairs, not speech or audio for general spoken LLMs."
     },
     {
       "id": "2610.36578",
@@ -41,7 +41,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2610.36578",
       "score": 27,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: introduces a recursive self-critique reinforcement-learning method for audio reasoning, evaluated on existing MMAU, MMSU, MMAU-Pro and MMAR benchmarks; it does not introduce a new evaluation benchmark."
     },
     {
       "id": "2610.36715",
@@ -59,7 +59,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2610.36715",
       "score": 21,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: benchmarks specialized music-editing and generation systems built on AudioLDM2 and MusicGen, rather than general-purpose spoken or audio-language models."
     },
     {
       "id": "2610.34746",

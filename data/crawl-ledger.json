@@ -9,21 +9,24 @@
    "title": "SMEBENCH: Benchmarking Neural Music Editing with Synthetized MIDI Edits",
    "published": "2026-10-27T06:31:02Z",
    "score": 21,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: benchmarks specialized music-editing and generation systems built on AudioLDM2 and MusicGen, rather than general-purpose spoken or audio-language models."
   },
   {
    "id": "2610.36578",
    "title": "AudioRSI: Recursively Self-Improving Audio Reasoners",
    "published": "2026-10-27T03:33:35Z",
    "score": 27,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: introduces a recursive self-critique reinforcement-learning method for audio reasoning, evaluated on existing MMAU, MMSU, MMAU-Pro and MMAR benchmarks; it does not introduce a new evaluation benchmark."
   },
   {
    "id": "2610.36527",
    "title": "ETC-Bench: A Multilingual Benchmark for Evaluation-Side Transcript Canonicalization",
    "published": "2026-10-27T02:33:53Z",
    "score": 39,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: evaluated systems are text-to-text transcript canonicalizers, including normalization modules and text-only LLM agents; inputs are written minimal pairs, not speech or audio for general spoken LLMs."
   },
   {
    "id": "2610.35816",
