@@ -1,9 +1,66 @@
 {
-  "fetched_at": "2026-10-27T21:25:12Z",
+  "fetched_at": "2026-10-29T22:40:10Z",
   "window_days": 10,
-  "scanned": 159,
-  "flagged_today": 11,
+  "scanned": 144,
+  "flagged_today": 3,
   "candidates": [
+    {
+      "id": "2610.36527",
+      "title": "ETC-Bench: A Multilingual Benchmark for Evaluation-Side Transcript Canonicalization",
+      "abstract": "Written transcripts of the same speech can differ in ways that are not uniquely determined by the speech signal. We formulate evaluation-side transcript canonicalization (ETC), which maps multiple surface forms to a single canonical form when their differences are not determined by speech. To our knowledge, ETC-Bench is the first and most comprehensive multilingual benchmark for evaluation-side transcript canonicalization, covering 181 phenomenon types across 12 languages. Each instance is a minimal pair that shares a sentence context and differs only in a target span exhibiting one phenomenon. To evaluate both canonicalization success and semantic preservation, we propose Semantic-preserving Exact-match Normalization Accuracy (SENA), which combines exact agreement between independently canonicalized pair members with a pair-relative BERTScore constraint against information loss. We further introduce the Taxonomy-guided Agent Canonicalization Skill (TACS), which provides LLM agents with phenomenon descriptions and explicit canonicalization contracts. Experiments with five baseline configurations and three TACS-based agents show that the agents outperform the baseline systems on shared languages. ETC-Bench provides a systematic testbed for evaluation-side transcript canonicalization across languages.",
+      "published": "2026-10-27T02:33:53Z",
+      "authors": [
+        "Zhiheng Qian",
+        "Junhao Du",
+        "Jing Peng",
+        "Hanqi Li",
+        "Kunyang Peng",
+        "Feng Xue",
+        "Kai Yu"
+      ],
+      "primary_category": "cs.CL",
+      "url": "https://arxiv.org/abs/2610.36527",
+      "score": 39,
+      "status": "new — under review"
+    },
+    {
+      "id": "2610.36578",
+      "title": "AudioRSI: Recursively Self-Improving Audio Reasoners",
+      "abstract": "Reinforcement learning has made Audio Large Language Models (Audio LLMs) better reasoners, but the reward that drives it still comes from outside the model: a final-answer check, a hand-crafted process score, or an external LLM judge that stays fixed while the policy improves. We show that an Audio LLM can supply this reward itself, and can do so recursively: each improved model becomes the critic that trains its successor, so the training signal improves along with the model. We introduce AudioRSI (Recursively Self-Improving Audio Reasoners), a reinforcement learning framework in which a single model plays two roles: as an actor it generates reasoning paths, and as a critic it compares them pairwise, turning its own judgments into a process-level reward. The critic is periodically replaced by the current policy, which closes the recursive loop. Because the critic hears the same recording as the actor, it can reject reasoning that cites acoustic evidence the audio does not contain, rather than reward reasoning that merely sounds plausible. The recursion is what sustains progress: under a frozen external judge, out-of-distribution accuracy plateaus during training, while a critic refreshed from the improving policy keeps it rising. Across four out-of-distribution benchmarks, all disjoint from the AVQA training distribution, AudioRSI outperforms strong baselines including Audio Flamingo 3 and Gemini 2.5 Pro on MMAU test-mini, ranks first on MMSU, achieves a clear lead on the challenging Multi-Audio split of MMAU-Pro, and leads the 7B open-source tier on MMAR among methods without external reward models. With no reward specifying how to reason, AudioRSI also develops structured reasoning behaviors (logical reasoning, perception-aware analysis, and reduced hallucination), corroborated by an external LLM-as-Judge evaluation and a keyword-based behavior analysis.",
+      "published": "2026-10-27T03:33:35Z",
+      "authors": [
+        "Jiajun Fan",
+        "Roger Ren",
+        "Jingyuan Li",
+        "Rahul Pandey",
+        "Prashanth Gurunath Shivakumar",
+        "Ankur Gandhe",
+        "Yile Gu",
+        "Ge Liu"
+      ],
+      "primary_category": "cs.SD",
+      "url": "https://arxiv.org/abs/2610.36578",
+      "score": 27,
+      "status": "new — under review"
+    },
+    {
+      "id": "2610.36715",
+      "title": "SMEBENCH: Benchmarking Neural Music Editing with Synthetized MIDI Edits",
+      "abstract": "Neural music editing requires a system to perform a requested change while preserving the musical content that should remain unchanged. Existing evaluations often lack a paired target edit, making these requirements difficult to measure separately. We introduce SMEBench, a large-scale benchmark of controlled music edits constructed by modifying symbolic MIDI performances and rendering matched source and target audio. Each example contains a source, an instruction, a paired target, edit metadata, and complementary descriptions. The benchmark covers twelve instrumentation, articulation, dynamics, and pitch operations and includes a balanced 3,600-example test set together with a smaller real-audio complement derived from multitrack recordings. The paired targets allow source preservation, target agreement, and textual compatibility to be evaluated independently. We use these references to diagnose common audio-editing metrics and benchmark six representative editing systems, showing that the metric used to rank a system can materially change the conclusion. The dataset is available at our repository.",
+      "published": "2026-10-27T06:31:02Z",
+      "authors": [
+        "Matthieu Cervera",
+        "Francesco Paissan",
+        "Micael Antunes",
+        "Mirco Ravanelli",
+        "Ricard Marxer",
+        "Cem Subakan"
+      ],
+      "primary_category": "cs.SD",
+      "url": "https://arxiv.org/abs/2610.36715",
+      "score": 21,
+      "status": "new — under review"
+    },
     {
       "id": "2610.34746",
       "title": "DecisionTraceBench: Tracking Decision-Critical Information in Multi-Party Spoken Conversations",
@@ -1011,58 +1068,6 @@
       "url": "https://arxiv.org/abs/2610.27002",
       "score": 18,
       "status": "reviewed — out of scope: evaluates specialized Tibetan speech recognition and segmentation metrics"
-    },
-    {
-      "id": "2610.26821",
-      "title": "AfriBED: a Speech Recognition Bias Evaluation Dataset for Low Resource African Languages",
-      "abstract": "Despite advancements in automatic speech recognition systems (ASR), current systems exhibit speaker-attribute bias, i.e., their speech recognition performance is biased against certain speakers based on their demographic attributes such as gender, accents, and speaker type. However, accurately assessing speaker attribute bias in a given ASR system requires the availability of a bias evaluation dataset with comparable speech across subgroups of a speaker attribute. In this paper, we introduce African speech Bias Evaluation Dataset (AfriBED), a novel speech recognition bias evaluation dataset for two low resource African languages, Bemba and Nyanja, to detect and estimate gender and speaker-type bias for ASR systems. The dataset comprises 9 hours of speech with 3928 utterances recorded by 80 speakers for Bemba, while the Nyanja set includes 6260 utterances with approximately 18 hours of speech recorded by 127 speakers. The results of our baseline experiments demonstrate that the datasets are useful for examining gender and speaker-type attribute bias in the target languages.",
-      "published": "2026-10-19T17:53:32Z",
-      "authors": [
-        "Claytone Sikasote",
-        "Hussein Suleman",
-        "Jan Buys"
-      ],
-      "primary_category": "cs.CL",
-      "url": "https://arxiv.org/abs/2610.26821",
-      "score": 18,
-      "status": "reviewed — out of scope: AfriBED evaluates demographic bias in dedicated speech recognition systems"
-    },
-    {
-      "id": "2610.27103",
-      "title": "Omni-Woodpecker: Hallucination Correction via Evidence-Prior Rebalancing for Omni LLMs",
-      "abstract": "Recent Omni LLMs (OLLMs) have demonstrated remarkable capabilities in joint audio-visual reasoning, yet cross-modal hallucinations remain a major challenge. Existing mitigation methods mainly operate at the output level, overlooking the entanglement of grounding evidence and learned priors within fused representations. To address this issue, we propose Omni-Woodpecker (OWP), a training-free framework that shifts hallucination mitigation from output-level manipulation to conflict-conditioned representation rebalancing. Specifically, OWP first identifies cross-modal conflicts from complementary modality-specific views. It then employs orthogonal decomposition to separate grounding evidence from competing priors within the hidden states. Finally, OWP adaptively rebalances fused representations by suppressing misleading priors and restoring ignored evidence before decoding. Extensive experiments demonstrate the effectiveness and strong cross-architecture generalization of OWP. Using Qwen2.5-Omni-7B as the backbone, OWP improves performance by 12.9 and 8.6 points on CMM and AVHBench, respectively, while consistently achieving gains of 0.67-2.25 points across four general OLLM reasoning benchmarks. Furthermore, OWP generalizes effectively to VideoLLaMA2-AV, improving performance by 4.6 and 3.9 points on the same benchmarks. Code is publicly available at https://github.com/ZiiJianLiu/Omni-Woodpecker",
-      "published": "2026-10-19T18:01:40Z",
-      "authors": [
-        "Zijian Liu",
-        "Chaoyou Fu",
-        "Yan Yang",
-        "Caifeng Shan",
-        "Ran He"
-      ],
-      "primary_category": "cs.AI",
-      "url": "https://arxiv.org/abs/2610.27103",
-      "score": 18,
-      "status": "reviewed — out of scope: Omni-Woodpecker is a hallucination-correction method evaluated on existing benchmarks"
-    },
-    {
-      "id": "2610.28711",
-      "title": "Qwen-Audio-3.1-ASR Technical Report",
-      "abstract": "We present Qwen-Audio-3.1-ASR, a family of audio-language models that builds upon its predecesor Qwen-Audio-3.0-ASR with improved speech recognition and expanded capabilities in speaker-diarized transcription and general audio understanding. The family retains support for 30 languages and 16 Chinese dialects, together with instruction-controlled capabilities including historical-context conditioning, hierarchical hotword customization, and native transcription polishing. Speaker-diarized ASR produces structured outputs containing speaker labels, timestamps, and recognized text, maintaining consistent speaker labels across turns and the representation of overlapping speech. The general audio understanding capabilities cover audio-, speech-, and music-captioning, temporal grounding and sound event detection, as well as audio question answering and multiple-choice reasoning. These tasks broaden the application scope from recognizing spoken words to interpreting speakers, acoustic events, and their temporal relations. To accommodate different deployment requirements, the family includes variants for asynchronous file transcription, low-latency streaming, interactive voice input, and non-streaming recognition, with speaker-diarized transcription and general audio understanding available in certain variants. Evaluations span conventional ASR, multilingual and dialectal speech, speaker-diarized transcription, and general audio understanding, demonstrating the capabilities of the Qwen-Audio-3.1-ASR family across transcription and broader audio analysis tasks.",
-      "published": "2026-10-20T17:08:12Z",
-      "authors": [
-        "Chuanmeng Bian",
-        "Daren Chen",
-        "Peixin Chen",
-        "Zhigao Chen",
-        "Chong Deng",
-        "Zhiyun Fan",
-        "Zhifu Gao",
-        "Bo Gong"
-      ],
-      "primary_category": "cs.SD",
-      "url": "https://arxiv.org/abs/2610.28711",
-      "score": 18,
-      "status": "reviewed — out of scope: Qwen-Audio-3.1-ASR is a model report evaluated on existing recognition and audio-understanding benchmarks"
     }
   ],
   "warnings": []

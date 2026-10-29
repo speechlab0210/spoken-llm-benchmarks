@@ -1,9 +1,30 @@
 {
  "since": "2026-08-22",
  "what": "Every arXiv paper the daily crawl has flagged since launch (score at or above the threshold, not previously seen), with the reviewer's verdict as written in the feed and whether the paper entered the catalogue. \"published\" is the paper's arXiv date. See the Method section of the site.",
- "flagged": 293,
+ "flagged": 296,
  "admitted": 84,
  "entries": [
+  {
+   "id": "2610.36715",
+   "title": "SMEBENCH: Benchmarking Neural Music Editing with Synthetized MIDI Edits",
+   "published": "2026-10-27T06:31:02Z",
+   "score": 21,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.36578",
+   "title": "AudioRSI: Recursively Self-Improving Audio Reasoners",
+   "published": "2026-10-27T03:33:35Z",
+   "score": 27,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.36527",
+   "title": "ETC-Bench: A Multilingual Benchmark for Evaluation-Side Transcript Canonicalization",
+   "published": "2026-10-27T02:33:53Z",
+   "score": 39,
+   "outcome": "under review"
+  },
   {
    "id": "2610.35816",
    "title": "Multimodal Concert Video Editing: System Design and Exploratory Evaluation",
