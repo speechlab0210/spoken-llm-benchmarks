@@ -1,9 +1,84 @@
 {
-  "fetched_at": "2026-10-29T22:40:10Z",
+  "fetched_at": "2026-10-30T22:32:04Z",
   "window_days": 10,
-  "scanned": 144,
-  "flagged_today": 3,
+  "scanned": 151,
+  "flagged_today": 4,
   "candidates": [
+    {
+      "id": "2610.38276",
+      "title": "MixCards: Evaluating Structured Descriptions of Multi-Source Sound Scenes",
+      "abstract": "Audio captioning benchmarks typically evaluate a single unstructured free-text description of an audio scene, providing limited insight into how a model fails to understand polyphonic audio. A plausible caption may omit a source, or conflate multiple sources into one, or assign an attribute of one source to another, and conventional captioning evaluation cannot locate these errors. We introduce MixCardBench, a benchmark for structured captioning of polyphonic audio, which evaluates models in two stages: first, identifying and temporally localizing the sources in a scene, and second, generating a structured MixCard describing the semantic, temporal, and acoustic properties of each source. The benchmark contains 4884 ecologically plausible synthetic soundscapes with up to nine overlapping speech, music and sound effects sources built from high-quality recordings and source-level annotations, where each source has a reference MixCard. We evaluate six state-of-the-art large audio language models and find substantial limitations in current models, which struggle considerably with speech and sound effects timing and detection, with the strongest model reaching only around 60% mean card-field score. Performance varies significantly across attributes, exposing capability differences that are hidden by aggregate caption scores. We assess the quality and ecological validity of MixCardBench through human validation, distribution matching and a listening study, and show that human corrections have little effect on model rankings, and our synthesized soundscapes are closer to in-the-wild YouTube videos than source guided but otherwise random synthesis. The benchmark dataset and code are publicly available, and demo examples are at https://mixcards-anon.github.io/mixcards-demo/",
+      "published": "2026-10-28T04:46:23Z",
+      "authors": [
+        "Sripathi Sridhar",
+        "Yujin Kim",
+        "Giovana Morais",
+        "Liang-Yuan Wu",
+        "Mehmet Atilay Kucukoglu",
+        "Prem Seetharaman",
+        "Lloyd May",
+        "Mark Cartwright"
+      ],
+      "primary_category": "cs.SD",
+      "url": "https://arxiv.org/abs/2610.38276",
+      "score": 33,
+      "status": "new — under review"
+    },
+    {
+      "id": "2610.38570",
+      "title": "Do Audio LLMs HEAR Pain? Tracing Acoustic Evidence from Speech to Language Reasoning",
+      "abstract": "Large audio language models (LALMs) can process speech directly, but it remains unclear how well they use the non-lexical acoustic information that speech carries. We study this question through pain, using TAME-Pain, which contains pain-neutral Harvard sentences and spoken pain ratings recorded at different self-reported pain levels. We introduce HEAR, a four-stage diagnostic framework that traces pain-related information from the speech signal to the model's prediction, and apply it to seven closed-source and open-weight LALMs. On the Harvard sentences, where pain can only be inferred from the voice, all models perform at chance level, and same-speaker references or few-shot examples improve balanced accuracy by no more than six points. On the spoken ratings, the same models reach 87.5-99.7% balanced accuracy. Layer-wise probing of open-weight LALMs shows that pain can be decoded from early audio representations (74.1% balanced accuracy for binary prediction and 45.0% for three-class severity), but that this information, along with most pain-associated acoustic cues, decreases in deeper layers. In an acoustic perception test, weaker models cannot distinguish even large changes in these cues, whereas stronger models can but still fail to infer pain. Finally, we recover pain-related acoustic cues and directly reinject them as structured text into the prompt, which improves pairwise pain prediction by up to 32 points. These results indicate that current LALMs encode paralinguistic information in early layers that is largely unavailable when the model produces its answer.",
+      "published": "2026-10-28T10:05:41Z",
+      "authors": [
+        "Wenqi Li",
+        "Xiangjue Dong",
+        "Sulaiman Vesal"
+      ],
+      "primary_category": "cs.CL",
+      "url": "https://arxiv.org/abs/2610.38570",
+      "score": 33,
+      "status": "new — under review"
+    },
+    {
+      "id": "2610.39955",
+      "title": "Mind The Gap (MTG-AD): Dataset and Fine-grained Evaluation for End-to-End Inline Audio Descriptions",
+      "abstract": "Audio descriptions (AD) are essential for making visual media accessible to blind and low-vision (BLV) users. While Multimodal Large Language Models (MLLMs) offer a scalable solution for generating audio descriptions on-demand, their performance on ``inline'' audio descriptions -- which must fit within existing silences in a video -- remains under-explored, particularly for diverse user-generated content (UGC). We present a comprehensive investigation into MLLM-generated inline audio descriptions. First, we introduce MTG-AD, a professionally annotated dataset of 36 hours of videos, each averaging $\\sim$5 mins. and 8k+ descriptions in total, co-created by paired blind and sighted AD professionals to provide a high-quality benchmark for this task. Second, we propose MTG-AD-Eval, an evaluation framework based on audio description expert guidelines that provides fine-grained, reference-free actionable metrics for model improvement. Crucially, our framework evaluates the end-to-end task: it renders the generated scripts into audio tracks to assess their fit within the original video's natural silences, minimizing disruptive overlaps. Our analysis across frontier MLLMs reveals that while models accurately describe visual events and substantially reduce speech overlaps, gaps persist in narrative pacing and flow. Finally, we empirically validate that our automated and reference-free metrics correlate significantly with human quality ratings from sighted raters and 7 BLV participants, finding that while users narrowly prefer human-authored audio descriptions, they find MLLM-generated audio descriptions highly beneficial for comprehension. We provide actionable system design guidance and release MTG-AD at https://hf.co/datasets/google/mind-the-gap-inline-ad and MTG-AD-Eval at https://github.com/google/mtg-ad.",
+      "published": "2026-10-29T12:51:38Z",
+      "authors": [
+        "Subhashini Venugopalan",
+        "Jenny Tan",
+        "Taylor Roper",
+        "Jimmy Tobin",
+        "Anton Kast",
+        "Alicia Martin",
+        "Sam Sepah",
+        "Amy Pavel"
+      ],
+      "primary_category": "cs.CV",
+      "url": "https://arxiv.org/abs/2610.39955",
+      "score": 30,
+      "status": "new — under review"
+    },
+    {
+      "id": "2610.38109",
+      "title": "Who Called? V33DA: A Physically Verified Multimodal Benchmark for Vocal Attribution in Zebra Finch Groups",
+      "abstract": "Deciding which member of an animal group produced a vocalization and where that vocalization was produced are central to studying social communication but are rarely evaluated with physically verified ground truth. Existing resources either localize sounds without identifying the caller, or recognize individuals from isolated vocalizations without reliance on the 3D candidate geometry. We close this gap with V33DA, a dataset-centered multimodal benchmark for spatial vocal attribution in social zebra finches: it comprises 33,625 verified events coupling 5-channel audio with three camera views, calibrated 3D pose for every visible candidate, and per-bird radio telemetry across 10 individuals and three experiments. Caller identity is verified from an on-body accelerometer-derived vibration signal; this channel is withheld from benchmark models and used only by an on-body reference ceiling. Given a detected vocalization and the visible candidate birds, the task is to select the caller. We evaluate it under three regimes: session-disjoint testing on familiar birds from held-out recording dates, held-out-experiment transfer to a new cohort, and leave-one-individual-out evaluation on a bird whose vocalizations are held out from training. Reference methods expose a consistent gap between in-domain accuracy and transfer to unseen individuals: methods that can exploit familiar vocal identity perform well on known callers but degrade sharply on unseen ones, whereas candidate-aware methods preserving explicit spatial reasoning transfer substantially better. The on-body reference stays near-perfect across regimes, confirming the internal consistency of the accelerometer-verified labels. We release V33DA with fixed protocols and code for the evaluated methods, and V33DA++, an unevaluated companion set of verified overlapping-call events and +/-2 s context windows.",
+      "published": "2026-10-28T00:46:34Z",
+      "authors": [
+        "Maris Basha",
+        "Yuhang Wang",
+        "Xiaoran Chen",
+        "Longbiao Cheng",
+        "Luca Yapura",
+        "Anja T. Zai",
+        "Mathieu Salzmann",
+        "Richard Hahnloser"
+      ],
+      "primary_category": "cs.SD",
+      "url": "https://arxiv.org/abs/2610.38109",
+      "score": 21,
+      "status": "new — under review"
+    },
     {
       "id": "2610.36527",
       "title": "ETC-Bench: A Multilingual Benchmark for Evaluation-Side Transcript Canonicalization",
@@ -994,80 +1069,6 @@
       "url": "https://arxiv.org/abs/2610.21659",
       "score": 18,
       "status": "reviewed — out of scope: studies post-call timing and information leakage in financial NLP rather than evaluating general spoken LLMs"
-    },
-    {
-      "id": "2610.26891",
-      "title": "PW-Pruning: Phase-Aware Expert Selection for Speech-Centric Omni-Modal Models",
-      "abstract": "Sparse routing reduces per-token computation but leaves the full expert bank resident in memory. We study expert pruning for speech-centric omni-modal models, where pooling calibration statistics can obscure the different expert demands of acoustic-input processing and text-answer generation. We propose PW-Pruning, a phase-aware extension of DO-ACP that constructs separate importance-weighted kernels for acoustic-prefill and teacher-forced answer tokens, then combines phase-weighted log-determinant marginal gains to select one static expert bank. On Qwen3-Omni, retaining 32 of 128 experts per layer improves MMAU-mini and MMSU accuracy over matched pooled selection by 3.20 and 4.38 percentage points, respectively, after supervised fine-tuning, averaged over three runs. Single-phase and shuffled-label controls on this public backbone suggest that semantic phase information contributes to these gains. Experiments on a non-public Qwen3.5-Omni backbone and English-only zero-shot evaluation of Nemotron provide complementary evidence. Across the tested Qwen budgets, AU gains are larger under stronger pruning, without inference-time mask switching.",
-      "published": "2026-10-15T12:36:40Z",
-      "authors": [
-        "Junjie Cao",
-        "Fengping Tian",
-        "Wenjie Zhou",
-        "Xuanfan Ni",
-        "Chenyang Lyu",
-        "Siyou Liu",
-        "Longyue Wang",
-        "Weihua Luo"
-      ],
-      "primary_category": "eess.AS",
-      "url": "https://arxiv.org/abs/2610.26891",
-      "score": 18,
-      "status": "reviewed — out of scope: PW-Pruning is an expert-pruning method evaluated on existing audio benchmarks"
-    },
-    {
-      "id": "2610.22333",
-      "title": "Evaluation Awareness Beyond English: Do LLMs Act Differently When Tested in Indic Languages?",
-      "abstract": "Large language models (LLMs) can often tell when they are being tested. This ability, known as evaluation awareness, can lead models to act more cautiously during safety evaluations than in real use. Existing work has studied evaluation awareness almost entirely in English, although models serve users in many languages. Indic languages are spoken by over a billion people, yet evaluation awareness remains almost entirely unstudied in them. We test four instruction-tuned models from three families in five Indic languages alongside English. A set of cues varies whether the model is told that it is monitored and whether the monitoring is a safety test. Models refuse harmful requests more often when they are told that they are being tested. This increase appears in all four models and all six languages. In Indic languages, refusal of harmful requests rises by 14.4 percentage points on average. The test cue also brings Indic refusal of harmful requests level with English, but raises refusal of benign Indic requests from 6.9% to 11.3%. We release all 47,880 judged responses to support further work. These results suggest that safety evaluations in Indic languages may not reflect how models treat their everyday users.",
-      "published": "2026-10-15T17:53:33Z",
-      "authors": [
-        "Trizal Garg",
-        "Sibayan Mitra",
-        "Arya Karanjkar",
-        "Advait Singh",
-        "Jagat Sesh Challa",
-        "Yash Sinha",
-        "Siddharth Mehrotra",
-        "Dhruv Kumar"
-      ],
-      "primary_category": "cs.AI",
-      "url": "https://arxiv.org/abs/2610.22333",
-      "score": 18,
-      "status": "reviewed — out of scope: evaluates awareness of testing in text-only Indic-language prompts"
-    },
-    {
-      "id": "2610.23804",
-      "title": "Jarvis: Coordination Deserves a Brain of Its Own in Agentic Interactive Models",
-      "abstract": "Interactive models increasingly hand complex reasoning and tool use to a slow brain in the background, leaving a realtime front model free to sustain full-duplex dialogue. Yet the user may refine, cancel or replace a request while its task runs, so a plan or result that made sense a moment ago goes stale. Each new utterance must therefore be read against the work in flight, but the front model follows only the conversation and the back end sees only its own task. Coordination deserves a brain of its own, one that sees both. We introduce Jarvis, a coordination harness where models judge and code enforces. Its typed decision model, JEV, reads each turn against the live tasks and picks among operations built from a versioned task record. Code checks every choice against the current state before applying it, so no decision can act on a task version the user has replaced. Jarvis also rechecks plans before they execute and results before they are spoken, and counts an answer as delivered only once the user has heard it in full. We build two instances of this design. Jarvis-Audio runs unchanged on three full-duplex speech models. Jarvis-Omni adds vision and rechecks the evidence behind an answer before and during playback, since a scene can change while nobody speaks. With the front model and back end held fixed, replacing Qwen Audio Agent with Jarvis raises tau-Voice task success more than sixfold, from 29 to 192 of 278 tasks, and the gains hold on every benchmark and front model. Against published systems, Jarvis-Audio reaches 69% Pass1 on Full-Duplex-Bench v3 with an open 9B front model, versus 60% for GPT-Realtime. These results suggest that how the two brains are coordinated matters as much as how strong they are.",
-      "published": "2026-10-16T17:29:10Z",
-      "authors": [
-        "Yuxiang Wang",
-        "Shengbo Cai",
-        "Zhixian Zhao",
-        "Yingda Shen",
-        "Yuancheng Wang",
-        "Xueyao Zhang",
-        "Liqiang Zhang",
-        "Teddy Sun"
-      ],
-      "primary_category": "cs.SD",
-      "url": "https://arxiv.org/abs/2610.23804",
-      "score": 18,
-      "status": "reviewed — out of scope: Jarvis is a coordination harness compared on existing full-duplex and voice-agent benchmarks"
-    },
-    {
-      "id": "2610.27002",
-      "title": "Evaluating Tibetan Speech Recognition Across Dialects and Adaptation Regimes: A Multi-Granularity Analysis",
-      "abstract": "Tibetan speech recognition is usually evaluated with character or syllable error rates because the writing system does not mark word boundaries. These metrics can rank systems differently and respond differently to adaptation failures. We combine character error rate, syllable error rate, and segmented word error rate in one evaluation framework. We use dictionary-based, neural, and language-model-based segmentation and compare their boundaries with expert annotations. We evaluate five ASR architectures on Lhasa Tibetan, then test zero-shot transfer and target-corpus adaptation on five additional corpus subsets. We also vary LoRA rank and training-data size to examine adaptation failure. The results show that a lower character error does not always lead to a lower syllable or segmented-word error. These ranking differences persist across corpora. Metric correlations also weaken in some unsuccessful adaptation settings. Higher LoRA ranks improve syllable and segmented-word scores but remain worse than full fine-tuning in the tested range. A standardized phonological representation provides another view of spelling errors. These findings support evaluation at several linguistic levels and motivate better segmentation and adaptation methods for low-resource ASR.",
-      "published": "2026-10-19T09:44:36Z",
-      "authors": [
-        "Jacob Moore",
-        "Sheng Li"
-      ],
-      "primary_category": "cs.CL",
-      "url": "https://arxiv.org/abs/2610.27002",
-      "score": 18,
-      "status": "reviewed — out of scope: evaluates specialized Tibetan speech recognition and segmentation metrics"
     }
   ],
   "warnings": []

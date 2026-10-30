@@ -1,9 +1,37 @@
 {
  "since": "2026-08-22",
  "what": "Every arXiv paper the daily crawl has flagged since launch (score at or above the threshold, not previously seen), with the reviewer's verdict as written in the feed and whether the paper entered the catalogue. \"published\" is the paper's arXiv date. See the Method section of the site.",
- "flagged": 296,
+ "flagged": 300,
  "admitted": 84,
  "entries": [
+  {
+   "id": "2610.39955",
+   "title": "Mind The Gap (MTG-AD): Dataset and Fine-grained Evaluation for End-to-End Inline Audio Descriptions",
+   "published": "2026-10-29T12:51:38Z",
+   "score": 30,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.38570",
+   "title": "Do Audio LLMs HEAR Pain? Tracing Acoustic Evidence from Speech to Language Reasoning",
+   "published": "2026-10-28T10:05:41Z",
+   "score": 33,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.38276",
+   "title": "MixCards: Evaluating Structured Descriptions of Multi-Source Sound Scenes",
+   "published": "2026-10-28T04:46:23Z",
+   "score": 33,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.38109",
+   "title": "Who Called? V33DA: A Physically Verified Multimodal Benchmark for Vocal Attribution in Zebra Finch Groups",
+   "published": "2026-10-28T00:46:34Z",
+   "score": 21,
+   "outcome": "under review"
+  },
   {
    "id": "2610.36715",
    "title": "SMEBENCH: Benchmarking Neural Music Editing with Synthetized MIDI Edits",
