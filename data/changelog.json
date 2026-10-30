@@ -1,6 +1,11 @@
 {
  "entries": [
   {
+   "date": "2026-10-31",
+   "change": "Reviewed four papers and added MixCardBench, HEAR (pain reasoning) and MTG-AD / MTG-AD-Eval. Added 242 results: 54 source-detection and card scores, 144 pain-reasoning scores and 44 inline-description scores. MixCardBench links to its versioned HTML table. HEAR preserves the audio, transcript and cue conditions. MTG-AD records completion counts, judge versions and 95% confidence intervals. The NeurIPS program confirms MTG-AD as an accepted poster. V33DA evaluates specialized bird-call attribution systems.",
+   "source": "arXiv:2610.38276v1 HTML Table 15, arXiv:2610.38570v1 Tables 1 and 3, arXiv:2610.39955v1 Table 6 and NeurIPS 2026 poster 139386. V33DA scope checked against arXiv:2610.38109v1 Section 5."
+  },
+  {
    "date": "2026-10-30",
    "change": "Reviewed all three pending candidates and recorded specific exclusion reasons. ETC-Bench evaluates text-only transcript canonicalization; AudioRSI introduces a training method evaluated on existing benchmarks; SMEBench evaluates specialized music-editing and generation systems. None meets all inclusion gates. Benchmark, model and result-cell totals are unchanged.",
    "source": "arXiv v1 full texts: 2610.36527 (Sections 2.2–2.3 and 4.1), 2610.36578 (Sections 3–5), and 2610.36715 (Section 4.3); daily candidate-review ledger"

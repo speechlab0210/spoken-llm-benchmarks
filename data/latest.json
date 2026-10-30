@@ -22,7 +22,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2610.38276",
       "score": 33,
-      "status": "new — under review"
+      "status": "reviewed — included: Introduces MixCardBench and tests six general audio-language models on source detection and structured descriptions of sound mixtures."
     },
     {
       "id": "2610.38570",
@@ -37,7 +37,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2610.38570",
       "score": 33,
-      "status": "new — under review"
+      "status": "reviewed — included: Introduces HEAR, a four-stage diagnostic evaluation of how general audio-language models use acoustic and lexical evidence of pain."
     },
     {
       "id": "2610.39955",
@@ -57,7 +57,7 @@
       "primary_category": "cs.CV",
       "url": "https://arxiv.org/abs/2610.39955",
       "score": 30,
-      "status": "new — under review"
+      "status": "reviewed — included: Introduces MTG-AD and its evaluation protocol for timed audio descriptions, including tests of native audio-video models with transcript assistance."
     },
     {
       "id": "2610.38109",
@@ -77,7 +77,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2610.38109",
       "score": 21,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: V33DA evaluates specialized caller-attribution and localization systems on zebra finch calls, including array-based classifiers and frozen audio encoders. Its experiments do not test a general speech or audio-language model."
     },
     {
       "id": "2610.36527",

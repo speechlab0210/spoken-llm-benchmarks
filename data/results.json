@@ -149508,6 +149508,2184 @@
       "source": "Table 1, arXiv:2610.32495v1",
       "source_url": "https://arxiv.org/abs/2610.32495v1",
       "note": "Audio Flamingo Next before MusicTwins training, with persona and retrieved-memory conditioning. n=50 questions from ten held-out personas. Judge accuracy on unsupported-premise questions. Native reported 0–100 scale; higher is better. Table 1 in the PDF and table caption is authoritative despite the HTML prose cross-reference to Table 3. The reported confidence intervals are for the training difference, not these baseline scores. Source row: Anti-hallucination; column: Base."
+    },
+    {
+      "benchmark": "mixcardbench",
+      "model": "qwen3-omni",
+      "metric": "Segment F1 (100 ms) / speech (0–1)",
+      "value": 0.639,
+      "source": "HTML Table 15, arXiv:2610.38276v1, row Qwen3-Omni, Segment F1 (100 ms) / speech",
+      "source_url": "https://arxiv.org/html/2610.38276v1#A8.T15",
+      "note": "Zero-shot, two-stage evaluation on 4,884 scenes. Higher is better. The linked HTML table reports the category-specific values. The PDF uses different table numbering."
+    },
+    {
+      "benchmark": "mixcardbench",
+      "model": "qwen3-omni",
+      "metric": "Segment F1 (100 ms) / music (0–1)",
+      "value": 0.932,
+      "source": "HTML Table 15, arXiv:2610.38276v1, row Qwen3-Omni, Segment F1 (100 ms) / music",
+      "source_url": "https://arxiv.org/html/2610.38276v1#A8.T15",
+      "note": "Zero-shot, two-stage evaluation on 4,884 scenes. Higher is better. The linked HTML table reports the category-specific values. The PDF uses different table numbering."
+    },
+    {
+      "benchmark": "mixcardbench",
+      "model": "qwen3-omni",
+      "metric": "Segment F1 (100 ms) / sound effects (0–1)",
+      "value": 0.374,
+      "source": "HTML Table 15, arXiv:2610.38276v1, row Qwen3-Omni, Segment F1 (100 ms) / sound effects",
+      "source_url": "https://arxiv.org/html/2610.38276v1#A8.T15",
+      "note": "Zero-shot, two-stage evaluation on 4,884 scenes. Higher is better. The linked HTML table reports the category-specific values. The PDF uses different table numbering."
+    },
+    {
+      "benchmark": "mixcardbench",
+      "model": "qwen3-omni",
+      "metric": "Event F1 (1 s collar) / speech (0–1)",
+      "value": 0.51,
+      "source": "HTML Table 15, arXiv:2610.38276v1, row Qwen3-Omni, Event F1 (1 s collar) / speech",
+      "source_url": "https://arxiv.org/html/2610.38276v1#A8.T15",
+      "note": "Zero-shot, two-stage evaluation on 4,884 scenes. Higher is better. The linked HTML table reports the category-specific values. The PDF uses different table numbering."
+    },
+    {
+      "benchmark": "mixcardbench",
+      "model": "qwen3-omni",
+      "metric": "Event F1 (1 s collar) / music (0–1)",
+      "value": 0.858,
+      "source": "HTML Table 15, arXiv:2610.38276v1, row Qwen3-Omni, Event F1 (1 s collar) / music",
+      "source_url": "https://arxiv.org/html/2610.38276v1#A8.T15",
+      "note": "Zero-shot, two-stage evaluation on 4,884 scenes. Higher is better. The linked HTML table reports the category-specific values. The PDF uses different table numbering."
+    },
+    {
+      "benchmark": "mixcardbench",
+      "model": "qwen3-omni",
+      "metric": "Event F1 (1 s collar) / sound effects (0–1)",
+      "value": 0.239,
+      "source": "HTML Table 15, arXiv:2610.38276v1, row Qwen3-Omni, Event F1 (1 s collar) / sound effects",
+      "source_url": "https://arxiv.org/html/2610.38276v1#A8.T15",
+      "note": "Zero-shot, two-stage evaluation on 4,884 scenes. Higher is better. The linked HTML table reports the category-specific values. The PDF uses different table numbering."
+    },
+    {
+      "benchmark": "mixcardbench",
+      "model": "qwen3-omni",
+      "metric": "Mean card field score / speech (0–1)",
+      "value": 0.648,
+      "source": "HTML Table 15, arXiv:2610.38276v1, row Qwen3-Omni, Mean card field score / speech",
+      "source_url": "https://arxiv.org/html/2610.38276v1#A8.T15",
+      "note": "Zero-shot, two-stage evaluation on 4,884 scenes. Higher is better. The linked HTML table reports the category-specific values. The PDF uses different table numbering."
+    },
+    {
+      "benchmark": "mixcardbench",
+      "model": "qwen3-omni",
+      "metric": "Mean card field score / music (0–1)",
+      "value": 0.631,
+      "source": "HTML Table 15, arXiv:2610.38276v1, row Qwen3-Omni, Mean card field score / music",
+      "source_url": "https://arxiv.org/html/2610.38276v1#A8.T15",
+      "note": "Zero-shot, two-stage evaluation on 4,884 scenes. Higher is better. The linked HTML table reports the category-specific values. The PDF uses different table numbering."
+    },
+    {
+      "benchmark": "mixcardbench",
+      "model": "qwen3-omni",
+      "metric": "Mean card field score / sound effects (0–1)",
+      "value": 0.612,
+      "source": "HTML Table 15, arXiv:2610.38276v1, row Qwen3-Omni, Mean card field score / sound effects",
+      "source_url": "https://arxiv.org/html/2610.38276v1#A8.T15",
+      "note": "Zero-shot, two-stage evaluation on 4,884 scenes. Higher is better. The linked HTML table reports the category-specific values. The PDF uses different table numbering."
+    },
+    {
+      "benchmark": "mixcardbench",
+      "model": "qwen2-5-omni",
+      "metric": "Segment F1 (100 ms) / speech (0–1)",
+      "value": 0.599,
+      "source": "HTML Table 15, arXiv:2610.38276v1, row Qwen2.5-Omni, Segment F1 (100 ms) / speech",
+      "source_url": "https://arxiv.org/html/2610.38276v1#A8.T15",
+      "note": "Zero-shot, two-stage evaluation on 4,884 scenes. Higher is better. The linked HTML table reports the category-specific values. The PDF uses different table numbering."
+    },
+    {
+      "benchmark": "mixcardbench",
+      "model": "qwen2-5-omni",
+      "metric": "Segment F1 (100 ms) / music (0–1)",
+      "value": 0.886,
+      "source": "HTML Table 15, arXiv:2610.38276v1, row Qwen2.5-Omni, Segment F1 (100 ms) / music",
+      "source_url": "https://arxiv.org/html/2610.38276v1#A8.T15",
+      "note": "Zero-shot, two-stage evaluation on 4,884 scenes. Higher is better. The linked HTML table reports the category-specific values. The PDF uses different table numbering."
+    },
+    {
+      "benchmark": "mixcardbench",
+      "model": "qwen2-5-omni",
+      "metric": "Segment F1 (100 ms) / sound effects (0–1)",
+      "value": 0.276,
+      "source": "HTML Table 15, arXiv:2610.38276v1, row Qwen2.5-Omni, Segment F1 (100 ms) / sound effects",
+      "source_url": "https://arxiv.org/html/2610.38276v1#A8.T15",
+      "note": "Zero-shot, two-stage evaluation on 4,884 scenes. Higher is better. The linked HTML table reports the category-specific values. The PDF uses different table numbering."
+    },
+    {
+      "benchmark": "mixcardbench",
+      "model": "qwen2-5-omni",
+      "metric": "Event F1 (1 s collar) / speech (0–1)",
+      "value": 0.185,
+      "source": "HTML Table 15, arXiv:2610.38276v1, row Qwen2.5-Omni, Event F1 (1 s collar) / speech",
+      "source_url": "https://arxiv.org/html/2610.38276v1#A8.T15",
+      "note": "Zero-shot, two-stage evaluation on 4,884 scenes. Higher is better. The linked HTML table reports the category-specific values. The PDF uses different table numbering."
+    },
+    {
+      "benchmark": "mixcardbench",
+      "model": "qwen2-5-omni",
+      "metric": "Event F1 (1 s collar) / music (0–1)",
+      "value": 0.785,
+      "source": "HTML Table 15, arXiv:2610.38276v1, row Qwen2.5-Omni, Event F1 (1 s collar) / music",
+      "source_url": "https://arxiv.org/html/2610.38276v1#A8.T15",
+      "note": "Zero-shot, two-stage evaluation on 4,884 scenes. Higher is better. The linked HTML table reports the category-specific values. The PDF uses different table numbering."
+    },
+    {
+      "benchmark": "mixcardbench",
+      "model": "qwen2-5-omni",
+      "metric": "Event F1 (1 s collar) / sound effects (0–1)",
+      "value": 0.103,
+      "source": "HTML Table 15, arXiv:2610.38276v1, row Qwen2.5-Omni, Event F1 (1 s collar) / sound effects",
+      "source_url": "https://arxiv.org/html/2610.38276v1#A8.T15",
+      "note": "Zero-shot, two-stage evaluation on 4,884 scenes. Higher is better. The linked HTML table reports the category-specific values. The PDF uses different table numbering."
+    },
+    {
+      "benchmark": "mixcardbench",
+      "model": "qwen2-5-omni",
+      "metric": "Mean card field score / speech (0–1)",
+      "value": 0.466,
+      "source": "HTML Table 15, arXiv:2610.38276v1, row Qwen2.5-Omni, Mean card field score / speech",
+      "source_url": "https://arxiv.org/html/2610.38276v1#A8.T15",
+      "note": "Zero-shot, two-stage evaluation on 4,884 scenes. Higher is better. The linked HTML table reports the category-specific values. The PDF uses different table numbering."
+    },
+    {
+      "benchmark": "mixcardbench",
+      "model": "qwen2-5-omni",
+      "metric": "Mean card field score / music (0–1)",
+      "value": 0.456,
+      "source": "HTML Table 15, arXiv:2610.38276v1, row Qwen2.5-Omni, Mean card field score / music",
+      "source_url": "https://arxiv.org/html/2610.38276v1#A8.T15",
+      "note": "Zero-shot, two-stage evaluation on 4,884 scenes. Higher is better. The linked HTML table reports the category-specific values. The PDF uses different table numbering."
+    },
+    {
+      "benchmark": "mixcardbench",
+      "model": "qwen2-5-omni",
+      "metric": "Mean card field score / sound effects (0–1)",
+      "value": 0.517,
+      "source": "HTML Table 15, arXiv:2610.38276v1, row Qwen2.5-Omni, Mean card field score / sound effects",
+      "source_url": "https://arxiv.org/html/2610.38276v1#A8.T15",
+      "note": "Zero-shot, two-stage evaluation on 4,884 scenes. Higher is better. The linked HTML table reports the category-specific values. The PDF uses different table numbering."
+    },
+    {
+      "benchmark": "mixcardbench",
+      "model": "audio-flamingo-3",
+      "metric": "Segment F1 (100 ms) / speech (0–1)",
+      "value": 0.577,
+      "source": "HTML Table 15, arXiv:2610.38276v1, row AF 3, Segment F1 (100 ms) / speech",
+      "source_url": "https://arxiv.org/html/2610.38276v1#A8.T15",
+      "note": "Zero-shot, two-stage evaluation on 4,884 scenes. Higher is better. The linked HTML table reports the category-specific values. The PDF uses different table numbering."
+    },
+    {
+      "benchmark": "mixcardbench",
+      "model": "audio-flamingo-3",
+      "metric": "Segment F1 (100 ms) / music (0–1)",
+      "value": 0.858,
+      "source": "HTML Table 15, arXiv:2610.38276v1, row AF 3, Segment F1 (100 ms) / music",
+      "source_url": "https://arxiv.org/html/2610.38276v1#A8.T15",
+      "note": "Zero-shot, two-stage evaluation on 4,884 scenes. Higher is better. The linked HTML table reports the category-specific values. The PDF uses different table numbering."
+    },
+    {
+      "benchmark": "mixcardbench",
+      "model": "audio-flamingo-3",
+      "metric": "Segment F1 (100 ms) / sound effects (0–1)",
+      "value": 0.259,
+      "source": "HTML Table 15, arXiv:2610.38276v1, row AF 3, Segment F1 (100 ms) / sound effects",
+      "source_url": "https://arxiv.org/html/2610.38276v1#A8.T15",
+      "note": "Zero-shot, two-stage evaluation on 4,884 scenes. Higher is better. The linked HTML table reports the category-specific values. The PDF uses different table numbering."
+    },
+    {
+      "benchmark": "mixcardbench",
+      "model": "audio-flamingo-3",
+      "metric": "Event F1 (1 s collar) / speech (0–1)",
+      "value": 0.129,
+      "source": "HTML Table 15, arXiv:2610.38276v1, row AF 3, Event F1 (1 s collar) / speech",
+      "source_url": "https://arxiv.org/html/2610.38276v1#A8.T15",
+      "note": "Zero-shot, two-stage evaluation on 4,884 scenes. Higher is better. The linked HTML table reports the category-specific values. The PDF uses different table numbering."
+    },
+    {
+      "benchmark": "mixcardbench",
+      "model": "audio-flamingo-3",
+      "metric": "Event F1 (1 s collar) / music (0–1)",
+      "value": 0.676,
+      "source": "HTML Table 15, arXiv:2610.38276v1, row AF 3, Event F1 (1 s collar) / music",
+      "source_url": "https://arxiv.org/html/2610.38276v1#A8.T15",
+      "note": "Zero-shot, two-stage evaluation on 4,884 scenes. Higher is better. The linked HTML table reports the category-specific values. The PDF uses different table numbering."
+    },
+    {
+      "benchmark": "mixcardbench",
+      "model": "audio-flamingo-3",
+      "metric": "Event F1 (1 s collar) / sound effects (0–1)",
+      "value": 0.075,
+      "source": "HTML Table 15, arXiv:2610.38276v1, row AF 3, Event F1 (1 s collar) / sound effects",
+      "source_url": "https://arxiv.org/html/2610.38276v1#A8.T15",
+      "note": "Zero-shot, two-stage evaluation on 4,884 scenes. Higher is better. The linked HTML table reports the category-specific values. The PDF uses different table numbering."
+    },
+    {
+      "benchmark": "mixcardbench",
+      "model": "audio-flamingo-3",
+      "metric": "Mean card field score / speech (0–1)",
+      "value": 0.017,
+      "source": "HTML Table 15, arXiv:2610.38276v1, row AF 3, Mean card field score / speech",
+      "source_url": "https://arxiv.org/html/2610.38276v1#A8.T15",
+      "note": "Zero-shot, two-stage evaluation on 4,884 scenes. Higher is better. The linked HTML table reports the category-specific values. The PDF uses different table numbering."
+    },
+    {
+      "benchmark": "mixcardbench",
+      "model": "audio-flamingo-3",
+      "metric": "Mean card field score / music (0–1)",
+      "value": 0.039,
+      "source": "HTML Table 15, arXiv:2610.38276v1, row AF 3, Mean card field score / music",
+      "source_url": "https://arxiv.org/html/2610.38276v1#A8.T15",
+      "note": "Zero-shot, two-stage evaluation on 4,884 scenes. Higher is better. The linked HTML table reports the category-specific values. The PDF uses different table numbering."
+    },
+    {
+      "benchmark": "mixcardbench",
+      "model": "audio-flamingo-3",
+      "metric": "Mean card field score / sound effects (0–1)",
+      "value": 0.127,
+      "source": "HTML Table 15, arXiv:2610.38276v1, row AF 3, Mean card field score / sound effects",
+      "source_url": "https://arxiv.org/html/2610.38276v1#A8.T15",
+      "note": "Zero-shot, two-stage evaluation on 4,884 scenes. Higher is better. The linked HTML table reports the category-specific values. The PDF uses different table numbering."
+    },
+    {
+      "benchmark": "mixcardbench",
+      "model": "music-flamingo",
+      "metric": "Segment F1 (100 ms) / speech (0–1)",
+      "value": 0.334,
+      "source": "HTML Table 15, arXiv:2610.38276v1, row Music Flamingo, Segment F1 (100 ms) / speech",
+      "source_url": "https://arxiv.org/html/2610.38276v1#A8.T15",
+      "note": "Zero-shot, two-stage evaluation on 4,884 scenes. Higher is better. The linked HTML table reports the category-specific values. The PDF uses different table numbering."
+    },
+    {
+      "benchmark": "mixcardbench",
+      "model": "music-flamingo",
+      "metric": "Segment F1 (100 ms) / music (0–1)",
+      "value": 0.894,
+      "source": "HTML Table 15, arXiv:2610.38276v1, row Music Flamingo, Segment F1 (100 ms) / music",
+      "source_url": "https://arxiv.org/html/2610.38276v1#A8.T15",
+      "note": "Zero-shot, two-stage evaluation on 4,884 scenes. Higher is better. The linked HTML table reports the category-specific values. The PDF uses different table numbering."
+    },
+    {
+      "benchmark": "mixcardbench",
+      "model": "music-flamingo",
+      "metric": "Segment F1 (100 ms) / sound effects (0–1)",
+      "value": 0.084,
+      "source": "HTML Table 15, arXiv:2610.38276v1, row Music Flamingo, Segment F1 (100 ms) / sound effects",
+      "source_url": "https://arxiv.org/html/2610.38276v1#A8.T15",
+      "note": "Zero-shot, two-stage evaluation on 4,884 scenes. Higher is better. The linked HTML table reports the category-specific values. The PDF uses different table numbering."
+    },
+    {
+      "benchmark": "mixcardbench",
+      "model": "music-flamingo",
+      "metric": "Event F1 (1 s collar) / speech (0–1)",
+      "value": 0.065,
+      "source": "HTML Table 15, arXiv:2610.38276v1, row Music Flamingo, Event F1 (1 s collar) / speech",
+      "source_url": "https://arxiv.org/html/2610.38276v1#A8.T15",
+      "note": "Zero-shot, two-stage evaluation on 4,884 scenes. Higher is better. The linked HTML table reports the category-specific values. The PDF uses different table numbering."
+    },
+    {
+      "benchmark": "mixcardbench",
+      "model": "music-flamingo",
+      "metric": "Event F1 (1 s collar) / music (0–1)",
+      "value": 0.365,
+      "source": "HTML Table 15, arXiv:2610.38276v1, row Music Flamingo, Event F1 (1 s collar) / music",
+      "source_url": "https://arxiv.org/html/2610.38276v1#A8.T15",
+      "note": "Zero-shot, two-stage evaluation on 4,884 scenes. Higher is better. The linked HTML table reports the category-specific values. The PDF uses different table numbering."
+    },
+    {
+      "benchmark": "mixcardbench",
+      "model": "music-flamingo",
+      "metric": "Event F1 (1 s collar) / sound effects (0–1)",
+      "value": 0.03,
+      "source": "HTML Table 15, arXiv:2610.38276v1, row Music Flamingo, Event F1 (1 s collar) / sound effects",
+      "source_url": "https://arxiv.org/html/2610.38276v1#A8.T15",
+      "note": "Zero-shot, two-stage evaluation on 4,884 scenes. Higher is better. The linked HTML table reports the category-specific values. The PDF uses different table numbering."
+    },
+    {
+      "benchmark": "mixcardbench",
+      "model": "music-flamingo",
+      "metric": "Mean card field score / speech (0–1)",
+      "value": 0.309,
+      "source": "HTML Table 15, arXiv:2610.38276v1, row Music Flamingo, Mean card field score / speech",
+      "source_url": "https://arxiv.org/html/2610.38276v1#A8.T15",
+      "note": "Zero-shot, two-stage evaluation on 4,884 scenes. Higher is better. The linked HTML table reports the category-specific values. The PDF uses different table numbering."
+    },
+    {
+      "benchmark": "mixcardbench",
+      "model": "music-flamingo",
+      "metric": "Mean card field score / music (0–1)",
+      "value": 0.291,
+      "source": "HTML Table 15, arXiv:2610.38276v1, row Music Flamingo, Mean card field score / music",
+      "source_url": "https://arxiv.org/html/2610.38276v1#A8.T15",
+      "note": "Zero-shot, two-stage evaluation on 4,884 scenes. Higher is better. The linked HTML table reports the category-specific values. The PDF uses different table numbering."
+    },
+    {
+      "benchmark": "mixcardbench",
+      "model": "music-flamingo",
+      "metric": "Mean card field score / sound effects (0–1)",
+      "value": 0.319,
+      "source": "HTML Table 15, arXiv:2610.38276v1, row Music Flamingo, Mean card field score / sound effects",
+      "source_url": "https://arxiv.org/html/2610.38276v1#A8.T15",
+      "note": "Zero-shot, two-stage evaluation on 4,884 scenes. Higher is better. The linked HTML table reports the category-specific values. The PDF uses different table numbering."
+    },
+    {
+      "benchmark": "mixcardbench",
+      "model": "audio-flamingo-next",
+      "metric": "Segment F1 (100 ms) / speech (0–1)",
+      "value": 0.487,
+      "source": "HTML Table 15, arXiv:2610.38276v1, row AF Next, Segment F1 (100 ms) / speech",
+      "source_url": "https://arxiv.org/html/2610.38276v1#A8.T15",
+      "note": "Zero-shot, two-stage evaluation on 4,884 scenes. Higher is better. The linked HTML table reports the category-specific values. The PDF uses different table numbering."
+    },
+    {
+      "benchmark": "mixcardbench",
+      "model": "audio-flamingo-next",
+      "metric": "Segment F1 (100 ms) / music (0–1)",
+      "value": 0.937,
+      "source": "HTML Table 15, arXiv:2610.38276v1, row AF Next, Segment F1 (100 ms) / music",
+      "source_url": "https://arxiv.org/html/2610.38276v1#A8.T15",
+      "note": "Zero-shot, two-stage evaluation on 4,884 scenes. Higher is better. The linked HTML table reports the category-specific values. The PDF uses different table numbering."
+    },
+    {
+      "benchmark": "mixcardbench",
+      "model": "audio-flamingo-next",
+      "metric": "Segment F1 (100 ms) / sound effects (0–1)",
+      "value": 0.208,
+      "source": "HTML Table 15, arXiv:2610.38276v1, row AF Next, Segment F1 (100 ms) / sound effects",
+      "source_url": "https://arxiv.org/html/2610.38276v1#A8.T15",
+      "note": "Zero-shot, two-stage evaluation on 4,884 scenes. Higher is better. The linked HTML table reports the category-specific values. The PDF uses different table numbering."
+    },
+    {
+      "benchmark": "mixcardbench",
+      "model": "audio-flamingo-next",
+      "metric": "Event F1 (1 s collar) / speech (0–1)",
+      "value": 0.072,
+      "source": "HTML Table 15, arXiv:2610.38276v1, row AF Next, Event F1 (1 s collar) / speech",
+      "source_url": "https://arxiv.org/html/2610.38276v1#A8.T15",
+      "note": "Zero-shot, two-stage evaluation on 4,884 scenes. Higher is better. The linked HTML table reports the category-specific values. The PDF uses different table numbering."
+    },
+    {
+      "benchmark": "mixcardbench",
+      "model": "audio-flamingo-next",
+      "metric": "Event F1 (1 s collar) / music (0–1)",
+      "value": 0.674,
+      "source": "HTML Table 15, arXiv:2610.38276v1, row AF Next, Event F1 (1 s collar) / music",
+      "source_url": "https://arxiv.org/html/2610.38276v1#A8.T15",
+      "note": "Zero-shot, two-stage evaluation on 4,884 scenes. Higher is better. The linked HTML table reports the category-specific values. The PDF uses different table numbering."
+    },
+    {
+      "benchmark": "mixcardbench",
+      "model": "audio-flamingo-next",
+      "metric": "Event F1 (1 s collar) / sound effects (0–1)",
+      "value": 0.066,
+      "source": "HTML Table 15, arXiv:2610.38276v1, row AF Next, Event F1 (1 s collar) / sound effects",
+      "source_url": "https://arxiv.org/html/2610.38276v1#A8.T15",
+      "note": "Zero-shot, two-stage evaluation on 4,884 scenes. Higher is better. The linked HTML table reports the category-specific values. The PDF uses different table numbering."
+    },
+    {
+      "benchmark": "mixcardbench",
+      "model": "audio-flamingo-next",
+      "metric": "Mean card field score / speech (0–1)",
+      "value": 0.298,
+      "source": "HTML Table 15, arXiv:2610.38276v1, row AF Next, Mean card field score / speech",
+      "source_url": "https://arxiv.org/html/2610.38276v1#A8.T15",
+      "note": "Zero-shot, two-stage evaluation on 4,884 scenes. Higher is better. The linked HTML table reports the category-specific values. The PDF uses different table numbering."
+    },
+    {
+      "benchmark": "mixcardbench",
+      "model": "audio-flamingo-next",
+      "metric": "Mean card field score / music (0–1)",
+      "value": 0.324,
+      "source": "HTML Table 15, arXiv:2610.38276v1, row AF Next, Mean card field score / music",
+      "source_url": "https://arxiv.org/html/2610.38276v1#A8.T15",
+      "note": "Zero-shot, two-stage evaluation on 4,884 scenes. Higher is better. The linked HTML table reports the category-specific values. The PDF uses different table numbering."
+    },
+    {
+      "benchmark": "mixcardbench",
+      "model": "audio-flamingo-next",
+      "metric": "Mean card field score / sound effects (0–1)",
+      "value": 0.443,
+      "source": "HTML Table 15, arXiv:2610.38276v1, row AF Next, Mean card field score / sound effects",
+      "source_url": "https://arxiv.org/html/2610.38276v1#A8.T15",
+      "note": "Zero-shot, two-stage evaluation on 4,884 scenes. Higher is better. The linked HTML table reports the category-specific values. The PDF uses different table numbering."
+    },
+    {
+      "benchmark": "mixcardbench",
+      "model": "kimi-audio",
+      "metric": "Segment F1 (100 ms) / speech (0–1)",
+      "value": 0.218,
+      "source": "HTML Table 15, arXiv:2610.38276v1, row Kimi-Audio, Segment F1 (100 ms) / speech",
+      "source_url": "https://arxiv.org/html/2610.38276v1#A8.T15",
+      "note": "Zero-shot, two-stage evaluation on 4,884 scenes. Higher is better. The linked HTML table reports the category-specific values. The PDF uses different table numbering."
+    },
+    {
+      "benchmark": "mixcardbench",
+      "model": "kimi-audio",
+      "metric": "Segment F1 (100 ms) / music (0–1)",
+      "value": 0.87,
+      "source": "HTML Table 15, arXiv:2610.38276v1, row Kimi-Audio, Segment F1 (100 ms) / music",
+      "source_url": "https://arxiv.org/html/2610.38276v1#A8.T15",
+      "note": "Zero-shot, two-stage evaluation on 4,884 scenes. Higher is better. The linked HTML table reports the category-specific values. The PDF uses different table numbering."
+    },
+    {
+      "benchmark": "mixcardbench",
+      "model": "kimi-audio",
+      "metric": "Segment F1 (100 ms) / sound effects (0–1)",
+      "value": 0.2,
+      "source": "HTML Table 15, arXiv:2610.38276v1, row Kimi-Audio, Segment F1 (100 ms) / sound effects",
+      "source_url": "https://arxiv.org/html/2610.38276v1#A8.T15",
+      "note": "Zero-shot, two-stage evaluation on 4,884 scenes. Higher is better. The linked HTML table reports the category-specific values. The PDF uses different table numbering."
+    },
+    {
+      "benchmark": "mixcardbench",
+      "model": "kimi-audio",
+      "metric": "Event F1 (1 s collar) / speech (0–1)",
+      "value": 0.053,
+      "source": "HTML Table 15, arXiv:2610.38276v1, row Kimi-Audio, Event F1 (1 s collar) / speech",
+      "source_url": "https://arxiv.org/html/2610.38276v1#A8.T15",
+      "note": "Zero-shot, two-stage evaluation on 4,884 scenes. Higher is better. The linked HTML table reports the category-specific values. The PDF uses different table numbering."
+    },
+    {
+      "benchmark": "mixcardbench",
+      "model": "kimi-audio",
+      "metric": "Event F1 (1 s collar) / music (0–1)",
+      "value": 0.758,
+      "source": "HTML Table 15, arXiv:2610.38276v1, row Kimi-Audio, Event F1 (1 s collar) / music",
+      "source_url": "https://arxiv.org/html/2610.38276v1#A8.T15",
+      "note": "Zero-shot, two-stage evaluation on 4,884 scenes. Higher is better. The linked HTML table reports the category-specific values. The PDF uses different table numbering."
+    },
+    {
+      "benchmark": "mixcardbench",
+      "model": "kimi-audio",
+      "metric": "Event F1 (1 s collar) / sound effects (0–1)",
+      "value": 0.06,
+      "source": "HTML Table 15, arXiv:2610.38276v1, row Kimi-Audio, Event F1 (1 s collar) / sound effects",
+      "source_url": "https://arxiv.org/html/2610.38276v1#A8.T15",
+      "note": "Zero-shot, two-stage evaluation on 4,884 scenes. Higher is better. The linked HTML table reports the category-specific values. The PDF uses different table numbering."
+    },
+    {
+      "benchmark": "mixcardbench",
+      "model": "kimi-audio",
+      "metric": "Mean card field score / speech (0–1)",
+      "value": 0.421,
+      "source": "HTML Table 15, arXiv:2610.38276v1, row Kimi-Audio, Mean card field score / speech",
+      "source_url": "https://arxiv.org/html/2610.38276v1#A8.T15",
+      "note": "Zero-shot, two-stage evaluation on 4,884 scenes. Higher is better. The linked HTML table reports the category-specific values. The PDF uses different table numbering."
+    },
+    {
+      "benchmark": "mixcardbench",
+      "model": "kimi-audio",
+      "metric": "Mean card field score / music (0–1)",
+      "value": 0.364,
+      "source": "HTML Table 15, arXiv:2610.38276v1, row Kimi-Audio, Mean card field score / music",
+      "source_url": "https://arxiv.org/html/2610.38276v1#A8.T15",
+      "note": "Zero-shot, two-stage evaluation on 4,884 scenes. Higher is better. The linked HTML table reports the category-specific values. The PDF uses different table numbering."
+    },
+    {
+      "benchmark": "mixcardbench",
+      "model": "kimi-audio",
+      "metric": "Mean card field score / sound effects (0–1)",
+      "value": 0.327,
+      "source": "HTML Table 15, arXiv:2610.38276v1, row Kimi-Audio, Mean card field score / sound effects",
+      "source_url": "https://arxiv.org/html/2610.38276v1#A8.T15",
+      "note": "Zero-shot, two-stage evaluation on 4,884 scenes. Higher is better. The linked HTML table reports the category-specific values. The PDF uses different table numbering."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gpt-realtime",
+      "metric": "Binary / Neutral Harvard sentence / audio / balanced accuracy (%)",
+      "value": 49.6,
+      "source": "Table 1, arXiv:2610.38570v1, gpt-realtime, Binary / Neutral Harvard sentence / audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model gpt-realtime. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gpt-realtime",
+      "metric": "Binary / Neutral Harvard sentence / transcript + audio / balanced accuracy (%)",
+      "value": 50.7,
+      "source": "Table 1, arXiv:2610.38570v1, gpt-realtime, Binary / Neutral Harvard sentence / transcript + audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model gpt-realtime. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gpt-realtime",
+      "metric": "Binary / Spoken pain rating / audio / balanced accuracy (%)",
+      "value": 98.9,
+      "source": "Table 1, arXiv:2610.38570v1, gpt-realtime, Binary / Spoken pain rating / audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model gpt-realtime. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gpt-realtime",
+      "metric": "Binary / Spoken pain rating / transcript + audio / balanced accuracy (%)",
+      "value": 98.9,
+      "source": "Table 1, arXiv:2610.38570v1, gpt-realtime, Binary / Spoken pain rating / transcript + audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model gpt-realtime. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gpt-realtime",
+      "metric": "Binary / Neutral pairwise / audio / balanced accuracy (%)",
+      "value": 50.0,
+      "source": "Table 1, arXiv:2610.38570v1, gpt-realtime, Binary / Neutral pairwise / audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model gpt-realtime. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gpt-realtime",
+      "metric": "Binary / Neutral pairwise / transcript + audio / balanced accuracy (%)",
+      "value": 50.0,
+      "source": "Table 1, arXiv:2610.38570v1, gpt-realtime, Binary / Neutral pairwise / transcript + audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model gpt-realtime. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gpt-realtime",
+      "metric": "Binary / Neutral 20-shot / audio / balanced accuracy (%)",
+      "value": 54.0,
+      "source": "Table 1, arXiv:2610.38570v1, gpt-realtime, Binary / Neutral 20-shot / audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model gpt-realtime. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gpt-realtime",
+      "metric": "Binary / Neutral 20-shot / transcript + audio / balanced accuracy (%)",
+      "value": 48.5,
+      "source": "Table 1, arXiv:2610.38570v1, gpt-realtime, Binary / Neutral 20-shot / transcript + audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model gpt-realtime. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gemini-3-5-flash",
+      "metric": "Binary / Neutral Harvard sentence / audio / balanced accuracy (%)",
+      "value": 49.9,
+      "source": "Table 1, arXiv:2610.38570v1, gemini-3.5-flash, Binary / Neutral Harvard sentence / audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model gemini-3.5-flash. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gemini-3-5-flash",
+      "metric": "Binary / Neutral Harvard sentence / transcript + audio / balanced accuracy (%)",
+      "value": 50.0,
+      "source": "Table 1, arXiv:2610.38570v1, gemini-3.5-flash, Binary / Neutral Harvard sentence / transcript + audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model gemini-3.5-flash. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gemini-3-5-flash",
+      "metric": "Binary / Spoken pain rating / audio / balanced accuracy (%)",
+      "value": 99.2,
+      "source": "Table 1, arXiv:2610.38570v1, gemini-3.5-flash, Binary / Spoken pain rating / audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model gemini-3.5-flash. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gemini-3-5-flash",
+      "metric": "Binary / Spoken pain rating / transcript + audio / balanced accuracy (%)",
+      "value": 99.2,
+      "source": "Table 1, arXiv:2610.38570v1, gemini-3.5-flash, Binary / Spoken pain rating / transcript + audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model gemini-3.5-flash. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gemini-3-5-flash",
+      "metric": "Binary / Neutral pairwise / audio / balanced accuracy (%)",
+      "value": 40.9,
+      "source": "Table 1, arXiv:2610.38570v1, gemini-3.5-flash, Binary / Neutral pairwise / audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model gemini-3.5-flash. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gemini-3-5-flash",
+      "metric": "Binary / Neutral pairwise / transcript + audio / balanced accuracy (%)",
+      "value": 43.3,
+      "source": "Table 1, arXiv:2610.38570v1, gemini-3.5-flash, Binary / Neutral pairwise / transcript + audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model gemini-3.5-flash. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gemini-3-5-flash",
+      "metric": "Binary / Neutral 20-shot / audio / balanced accuracy (%)",
+      "value": 47.6,
+      "source": "Table 1, arXiv:2610.38570v1, gemini-3.5-flash, Binary / Neutral 20-shot / audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model gemini-3.5-flash. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gemini-3-5-flash",
+      "metric": "Binary / Neutral 20-shot / transcript + audio / balanced accuracy (%)",
+      "value": 47.2,
+      "source": "Table 1, arXiv:2610.38570v1, gemini-3.5-flash, Binary / Neutral 20-shot / transcript + audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model gemini-3.5-flash. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gemini-3-1-pro",
+      "metric": "Binary / Neutral Harvard sentence / audio / balanced accuracy (%)",
+      "value": 50.0,
+      "source": "Table 1, arXiv:2610.38570v1, gemini-3.1-pro-preview, Binary / Neutral Harvard sentence / audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model gemini-3.1-pro-preview. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gemini-3-1-pro",
+      "metric": "Binary / Neutral Harvard sentence / transcript + audio / balanced accuracy (%)",
+      "value": 50.0,
+      "source": "Table 1, arXiv:2610.38570v1, gemini-3.1-pro-preview, Binary / Neutral Harvard sentence / transcript + audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model gemini-3.1-pro-preview. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gemini-3-1-pro",
+      "metric": "Binary / Spoken pain rating / audio / balanced accuracy (%)",
+      "value": 99.7,
+      "source": "Table 1, arXiv:2610.38570v1, gemini-3.1-pro-preview, Binary / Spoken pain rating / audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model gemini-3.1-pro-preview. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gemini-3-1-pro",
+      "metric": "Binary / Spoken pain rating / transcript + audio / balanced accuracy (%)",
+      "value": 99.4,
+      "source": "Table 1, arXiv:2610.38570v1, gemini-3.1-pro-preview, Binary / Spoken pain rating / transcript + audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model gemini-3.1-pro-preview. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gemini-3-1-pro",
+      "metric": "Binary / Neutral pairwise / audio / balanced accuracy (%)",
+      "value": 52.4,
+      "source": "Table 1, arXiv:2610.38570v1, gemini-3.1-pro-preview, Binary / Neutral pairwise / audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model gemini-3.1-pro-preview. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gemini-3-1-pro",
+      "metric": "Binary / Neutral pairwise / transcript + audio / balanced accuracy (%)",
+      "value": 49.5,
+      "source": "Table 1, arXiv:2610.38570v1, gemini-3.1-pro-preview, Binary / Neutral pairwise / transcript + audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model gemini-3.1-pro-preview. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gemini-3-1-pro",
+      "metric": "Binary / Neutral 20-shot / audio / balanced accuracy (%)",
+      "value": 49.8,
+      "source": "Table 1, arXiv:2610.38570v1, gemini-3.1-pro-preview, Binary / Neutral 20-shot / audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model gemini-3.1-pro-preview. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gemini-3-1-pro",
+      "metric": "Binary / Neutral 20-shot / transcript + audio / balanced accuracy (%)",
+      "value": 51.9,
+      "source": "Table 1, arXiv:2610.38570v1, gemini-3.1-pro-preview, Binary / Neutral 20-shot / transcript + audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model gemini-3.1-pro-preview. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "qwen2-5-omni",
+      "metric": "Binary / Neutral Harvard sentence / audio / balanced accuracy (%)",
+      "value": 49.8,
+      "source": "Table 1, arXiv:2610.38570v1, Qwen2.5-Omni-7B, Binary / Neutral Harvard sentence / audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model Qwen2.5-Omni-7B. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "qwen2-5-omni",
+      "metric": "Binary / Neutral Harvard sentence / transcript + audio / balanced accuracy (%)",
+      "value": 50.0,
+      "source": "Table 1, arXiv:2610.38570v1, Qwen2.5-Omni-7B, Binary / Neutral Harvard sentence / transcript + audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model Qwen2.5-Omni-7B. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "qwen2-5-omni",
+      "metric": "Binary / Spoken pain rating / audio / balanced accuracy (%)",
+      "value": 98.8,
+      "source": "Table 1, arXiv:2610.38570v1, Qwen2.5-Omni-7B, Binary / Spoken pain rating / audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model Qwen2.5-Omni-7B. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "qwen2-5-omni",
+      "metric": "Binary / Spoken pain rating / transcript + audio / balanced accuracy (%)",
+      "value": 98.6,
+      "source": "Table 1, arXiv:2610.38570v1, Qwen2.5-Omni-7B, Binary / Spoken pain rating / transcript + audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model Qwen2.5-Omni-7B. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "qwen2-5-omni",
+      "metric": "Binary / Neutral pairwise / audio / balanced accuracy (%)",
+      "value": 50.5,
+      "source": "Table 1, arXiv:2610.38570v1, Qwen2.5-Omni-7B, Binary / Neutral pairwise / audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model Qwen2.5-Omni-7B. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "qwen2-5-omni",
+      "metric": "Binary / Neutral pairwise / transcript + audio / balanced accuracy (%)",
+      "value": 52.9,
+      "source": "Table 1, arXiv:2610.38570v1, Qwen2.5-Omni-7B, Binary / Neutral pairwise / transcript + audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model Qwen2.5-Omni-7B. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "qwen2-5-omni",
+      "metric": "Binary / Neutral 20-shot / audio / balanced accuracy (%)",
+      "value": 47.7,
+      "source": "Table 1, arXiv:2610.38570v1, Qwen2.5-Omni-7B, Binary / Neutral 20-shot / audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model Qwen2.5-Omni-7B. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "qwen2-5-omni",
+      "metric": "Binary / Neutral 20-shot / transcript + audio / balanced accuracy (%)",
+      "value": 48.9,
+      "source": "Table 1, arXiv:2610.38570v1, Qwen2.5-Omni-7B, Binary / Neutral 20-shot / transcript + audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model Qwen2.5-Omni-7B. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "qwen3-omni",
+      "metric": "Binary / Neutral Harvard sentence / audio / balanced accuracy (%)",
+      "value": 50.2,
+      "source": "Table 1, arXiv:2610.38570v1, Qwen3-Omni-30B-A3B-Instruct, Binary / Neutral Harvard sentence / audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model Qwen3-Omni-30B-A3B-Instruct. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "qwen3-omni",
+      "metric": "Binary / Neutral Harvard sentence / transcript + audio / balanced accuracy (%)",
+      "value": 50.1,
+      "source": "Table 1, arXiv:2610.38570v1, Qwen3-Omni-30B-A3B-Instruct, Binary / Neutral Harvard sentence / transcript + audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model Qwen3-Omni-30B-A3B-Instruct. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "qwen3-omni",
+      "metric": "Binary / Spoken pain rating / audio / balanced accuracy (%)",
+      "value": 99.5,
+      "source": "Table 1, arXiv:2610.38570v1, Qwen3-Omni-30B-A3B-Instruct, Binary / Spoken pain rating / audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model Qwen3-Omni-30B-A3B-Instruct. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "qwen3-omni",
+      "metric": "Binary / Spoken pain rating / transcript + audio / balanced accuracy (%)",
+      "value": 99.1,
+      "source": "Table 1, arXiv:2610.38570v1, Qwen3-Omni-30B-A3B-Instruct, Binary / Spoken pain rating / transcript + audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model Qwen3-Omni-30B-A3B-Instruct. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "qwen3-omni",
+      "metric": "Binary / Neutral pairwise / audio / balanced accuracy (%)",
+      "value": 51.9,
+      "source": "Table 1, arXiv:2610.38570v1, Qwen3-Omni-30B-A3B-Instruct, Binary / Neutral pairwise / audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model Qwen3-Omni-30B-A3B-Instruct. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "qwen3-omni",
+      "metric": "Binary / Neutral pairwise / transcript + audio / balanced accuracy (%)",
+      "value": 51.0,
+      "source": "Table 1, arXiv:2610.38570v1, Qwen3-Omni-30B-A3B-Instruct, Binary / Neutral pairwise / transcript + audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model Qwen3-Omni-30B-A3B-Instruct. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "qwen3-omni",
+      "metric": "Binary / Neutral 20-shot / audio / balanced accuracy (%)",
+      "value": 49.1,
+      "source": "Table 1, arXiv:2610.38570v1, Qwen3-Omni-30B-A3B-Instruct, Binary / Neutral 20-shot / audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model Qwen3-Omni-30B-A3B-Instruct. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "qwen3-omni",
+      "metric": "Binary / Neutral 20-shot / transcript + audio / balanced accuracy (%)",
+      "value": 47.6,
+      "source": "Table 1, arXiv:2610.38570v1, Qwen3-Omni-30B-A3B-Instruct, Binary / Neutral 20-shot / transcript + audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model Qwen3-Omni-30B-A3B-Instruct. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "kimi-audio",
+      "metric": "Binary / Neutral Harvard sentence / audio / balanced accuracy (%)",
+      "value": 50.0,
+      "source": "Table 1, arXiv:2610.38570v1, Kimi-Audio-7B-Instruct, Binary / Neutral Harvard sentence / audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model Kimi-Audio-7B-Instruct. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "kimi-audio",
+      "metric": "Binary / Neutral Harvard sentence / transcript + audio / balanced accuracy (%)",
+      "value": 50.5,
+      "source": "Table 1, arXiv:2610.38570v1, Kimi-Audio-7B-Instruct, Binary / Neutral Harvard sentence / transcript + audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model Kimi-Audio-7B-Instruct. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "kimi-audio",
+      "metric": "Binary / Spoken pain rating / audio / balanced accuracy (%)",
+      "value": 89.1,
+      "source": "Table 1, arXiv:2610.38570v1, Kimi-Audio-7B-Instruct, Binary / Spoken pain rating / audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model Kimi-Audio-7B-Instruct. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "kimi-audio",
+      "metric": "Binary / Spoken pain rating / transcript + audio / balanced accuracy (%)",
+      "value": 77.0,
+      "source": "Table 1, arXiv:2610.38570v1, Kimi-Audio-7B-Instruct, Binary / Spoken pain rating / transcript + audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model Kimi-Audio-7B-Instruct. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "kimi-audio",
+      "metric": "Binary / Neutral pairwise / audio / balanced accuracy (%)",
+      "value": 49.0,
+      "source": "Table 1, arXiv:2610.38570v1, Kimi-Audio-7B-Instruct, Binary / Neutral pairwise / audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model Kimi-Audio-7B-Instruct. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "kimi-audio",
+      "metric": "Binary / Neutral pairwise / transcript + audio / balanced accuracy (%)",
+      "value": 46.2,
+      "source": "Table 1, arXiv:2610.38570v1, Kimi-Audio-7B-Instruct, Binary / Neutral pairwise / transcript + audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model Kimi-Audio-7B-Instruct. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "kimi-audio",
+      "metric": "Binary / Neutral 20-shot / audio / balanced accuracy (%)",
+      "value": 51.3,
+      "source": "Table 1, arXiv:2610.38570v1, Kimi-Audio-7B-Instruct, Binary / Neutral 20-shot / audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model Kimi-Audio-7B-Instruct. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "kimi-audio",
+      "metric": "Binary / Neutral 20-shot / transcript + audio / balanced accuracy (%)",
+      "value": 48.5,
+      "source": "Table 1, arXiv:2610.38570v1, Kimi-Audio-7B-Instruct, Binary / Neutral 20-shot / transcript + audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model Kimi-Audio-7B-Instruct. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gpt-realtime",
+      "metric": "Three-class / Neutral Harvard sentence / audio / balanced accuracy (%)",
+      "value": 32.8,
+      "source": "Table 1, arXiv:2610.38570v1, gpt-realtime, Three-class / Neutral Harvard sentence / audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model gpt-realtime. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gpt-realtime",
+      "metric": "Three-class / Neutral Harvard sentence / transcript + audio / balanced accuracy (%)",
+      "value": 34.1,
+      "source": "Table 1, arXiv:2610.38570v1, gpt-realtime, Three-class / Neutral Harvard sentence / transcript + audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model gpt-realtime. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gpt-realtime",
+      "metric": "Three-class / Spoken pain rating / audio / balanced accuracy (%)",
+      "value": 98.9,
+      "source": "Table 1, arXiv:2610.38570v1, gpt-realtime, Three-class / Spoken pain rating / audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model gpt-realtime. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gpt-realtime",
+      "metric": "Three-class / Spoken pain rating / transcript + audio / balanced accuracy (%)",
+      "value": 99.3,
+      "source": "Table 1, arXiv:2610.38570v1, gpt-realtime, Three-class / Spoken pain rating / transcript + audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model gpt-realtime. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gpt-realtime",
+      "metric": "Three-class / Neutral pairwise / audio / balanced accuracy (%)",
+      "value": 35.1,
+      "source": "Table 1, arXiv:2610.38570v1, gpt-realtime, Three-class / Neutral pairwise / audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model gpt-realtime. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gpt-realtime",
+      "metric": "Three-class / Neutral pairwise / transcript + audio / balanced accuracy (%)",
+      "value": 33.1,
+      "source": "Table 1, arXiv:2610.38570v1, gpt-realtime, Three-class / Neutral pairwise / transcript + audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model gpt-realtime. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gpt-realtime",
+      "metric": "Three-class / Neutral 20-shot / audio / balanced accuracy (%)",
+      "value": 35.0,
+      "source": "Table 1, arXiv:2610.38570v1, gpt-realtime, Three-class / Neutral 20-shot / audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model gpt-realtime. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gpt-realtime",
+      "metric": "Three-class / Neutral 20-shot / transcript + audio / balanced accuracy (%)",
+      "value": 31.3,
+      "source": "Table 1, arXiv:2610.38570v1, gpt-realtime, Three-class / Neutral 20-shot / transcript + audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model gpt-realtime. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gemini-3-5-flash",
+      "metric": "Three-class / Neutral Harvard sentence / audio / balanced accuracy (%)",
+      "value": 33.3,
+      "source": "Table 1, arXiv:2610.38570v1, gemini-3.5-flash, Three-class / Neutral Harvard sentence / audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model gemini-3.5-flash. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gemini-3-5-flash",
+      "metric": "Three-class / Neutral Harvard sentence / transcript + audio / balanced accuracy (%)",
+      "value": 33.4,
+      "source": "Table 1, arXiv:2610.38570v1, gemini-3.5-flash, Three-class / Neutral Harvard sentence / transcript + audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model gemini-3.5-flash. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gemini-3-5-flash",
+      "metric": "Three-class / Spoken pain rating / audio / balanced accuracy (%)",
+      "value": 99.5,
+      "source": "Table 1, arXiv:2610.38570v1, gemini-3.5-flash, Three-class / Spoken pain rating / audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model gemini-3.5-flash. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gemini-3-5-flash",
+      "metric": "Three-class / Spoken pain rating / transcript + audio / balanced accuracy (%)",
+      "value": 99.1,
+      "source": "Table 1, arXiv:2610.38570v1, gemini-3.5-flash, Three-class / Spoken pain rating / transcript + audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model gemini-3.5-flash. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gemini-3-5-flash",
+      "metric": "Three-class / Neutral pairwise / audio / balanced accuracy (%)",
+      "value": 33.1,
+      "source": "Table 1, arXiv:2610.38570v1, gemini-3.5-flash, Three-class / Neutral pairwise / audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model gemini-3.5-flash. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gemini-3-5-flash",
+      "metric": "Three-class / Neutral pairwise / transcript + audio / balanced accuracy (%)",
+      "value": 31.6,
+      "source": "Table 1, arXiv:2610.38570v1, gemini-3.5-flash, Three-class / Neutral pairwise / transcript + audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model gemini-3.5-flash. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gemini-3-5-flash",
+      "metric": "Three-class / Neutral 20-shot / audio / balanced accuracy (%)",
+      "value": 35.2,
+      "source": "Table 1, arXiv:2610.38570v1, gemini-3.5-flash, Three-class / Neutral 20-shot / audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model gemini-3.5-flash. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gemini-3-5-flash",
+      "metric": "Three-class / Neutral 20-shot / transcript + audio / balanced accuracy (%)",
+      "value": 35.9,
+      "source": "Table 1, arXiv:2610.38570v1, gemini-3.5-flash, Three-class / Neutral 20-shot / transcript + audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model gemini-3.5-flash. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gemini-3-1-pro",
+      "metric": "Three-class / Neutral Harvard sentence / audio / balanced accuracy (%)",
+      "value": 33.2,
+      "source": "Table 1, arXiv:2610.38570v1, gemini-3.1-pro-preview, Three-class / Neutral Harvard sentence / audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model gemini-3.1-pro-preview. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gemini-3-1-pro",
+      "metric": "Three-class / Neutral Harvard sentence / transcript + audio / balanced accuracy (%)",
+      "value": 33.3,
+      "source": "Table 1, arXiv:2610.38570v1, gemini-3.1-pro-preview, Three-class / Neutral Harvard sentence / transcript + audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model gemini-3.1-pro-preview. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gemini-3-1-pro",
+      "metric": "Three-class / Spoken pain rating / audio / balanced accuracy (%)",
+      "value": 99.2,
+      "source": "Table 1, arXiv:2610.38570v1, gemini-3.1-pro-preview, Three-class / Spoken pain rating / audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model gemini-3.1-pro-preview. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gemini-3-1-pro",
+      "metric": "Three-class / Spoken pain rating / transcript + audio / balanced accuracy (%)",
+      "value": 99.3,
+      "source": "Table 1, arXiv:2610.38570v1, gemini-3.1-pro-preview, Three-class / Spoken pain rating / transcript + audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model gemini-3.1-pro-preview. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gemini-3-1-pro",
+      "metric": "Three-class / Neutral pairwise / audio / balanced accuracy (%)",
+      "value": 33.1,
+      "source": "Table 1, arXiv:2610.38570v1, gemini-3.1-pro-preview, Three-class / Neutral pairwise / audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model gemini-3.1-pro-preview. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gemini-3-1-pro",
+      "metric": "Three-class / Neutral pairwise / transcript + audio / balanced accuracy (%)",
+      "value": 31.7,
+      "source": "Table 1, arXiv:2610.38570v1, gemini-3.1-pro-preview, Three-class / Neutral pairwise / transcript + audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model gemini-3.1-pro-preview. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gemini-3-1-pro",
+      "metric": "Three-class / Neutral 20-shot / audio / balanced accuracy (%)",
+      "value": 36.1,
+      "source": "Table 1, arXiv:2610.38570v1, gemini-3.1-pro-preview, Three-class / Neutral 20-shot / audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model gemini-3.1-pro-preview. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gemini-3-1-pro",
+      "metric": "Three-class / Neutral 20-shot / transcript + audio / balanced accuracy (%)",
+      "value": 38.6,
+      "source": "Table 1, arXiv:2610.38570v1, gemini-3.1-pro-preview, Three-class / Neutral 20-shot / transcript + audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model gemini-3.1-pro-preview. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "qwen2-5-omni",
+      "metric": "Three-class / Neutral Harvard sentence / audio / balanced accuracy (%)",
+      "value": 33.4,
+      "source": "Table 1, arXiv:2610.38570v1, Qwen2.5-Omni-7B, Three-class / Neutral Harvard sentence / audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model Qwen2.5-Omni-7B. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "qwen2-5-omni",
+      "metric": "Three-class / Neutral Harvard sentence / transcript + audio / balanced accuracy (%)",
+      "value": 33.1,
+      "source": "Table 1, arXiv:2610.38570v1, Qwen2.5-Omni-7B, Three-class / Neutral Harvard sentence / transcript + audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model Qwen2.5-Omni-7B. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "qwen2-5-omni",
+      "metric": "Three-class / Spoken pain rating / audio / balanced accuracy (%)",
+      "value": 98.0,
+      "source": "Table 1, arXiv:2610.38570v1, Qwen2.5-Omni-7B, Three-class / Spoken pain rating / audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model Qwen2.5-Omni-7B. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "qwen2-5-omni",
+      "metric": "Three-class / Spoken pain rating / transcript + audio / balanced accuracy (%)",
+      "value": 93.3,
+      "source": "Table 1, arXiv:2610.38570v1, Qwen2.5-Omni-7B, Three-class / Spoken pain rating / transcript + audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model Qwen2.5-Omni-7B. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "qwen2-5-omni",
+      "metric": "Three-class / Neutral pairwise / audio / balanced accuracy (%)",
+      "value": 33.3,
+      "source": "Table 1, arXiv:2610.38570v1, Qwen2.5-Omni-7B, Three-class / Neutral pairwise / audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model Qwen2.5-Omni-7B. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "qwen2-5-omni",
+      "metric": "Three-class / Neutral pairwise / transcript + audio / balanced accuracy (%)",
+      "value": 33.3,
+      "source": "Table 1, arXiv:2610.38570v1, Qwen2.5-Omni-7B, Three-class / Neutral pairwise / transcript + audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model Qwen2.5-Omni-7B. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "qwen2-5-omni",
+      "metric": "Three-class / Neutral 20-shot / audio / balanced accuracy (%)",
+      "value": 29.4,
+      "source": "Table 1, arXiv:2610.38570v1, Qwen2.5-Omni-7B, Three-class / Neutral 20-shot / audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model Qwen2.5-Omni-7B. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "qwen2-5-omni",
+      "metric": "Three-class / Neutral 20-shot / transcript + audio / balanced accuracy (%)",
+      "value": 32.0,
+      "source": "Table 1, arXiv:2610.38570v1, Qwen2.5-Omni-7B, Three-class / Neutral 20-shot / transcript + audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model Qwen2.5-Omni-7B. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "qwen3-omni",
+      "metric": "Three-class / Neutral Harvard sentence / audio / balanced accuracy (%)",
+      "value": 33.4,
+      "source": "Table 1, arXiv:2610.38570v1, Qwen3-Omni-30B-A3B-Instruct, Three-class / Neutral Harvard sentence / audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model Qwen3-Omni-30B-A3B-Instruct. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "qwen3-omni",
+      "metric": "Three-class / Neutral Harvard sentence / transcript + audio / balanced accuracy (%)",
+      "value": 33.3,
+      "source": "Table 1, arXiv:2610.38570v1, Qwen3-Omni-30B-A3B-Instruct, Three-class / Neutral Harvard sentence / transcript + audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model Qwen3-Omni-30B-A3B-Instruct. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "qwen3-omni",
+      "metric": "Three-class / Spoken pain rating / audio / balanced accuracy (%)",
+      "value": 99.5,
+      "source": "Table 1, arXiv:2610.38570v1, Qwen3-Omni-30B-A3B-Instruct, Three-class / Spoken pain rating / audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model Qwen3-Omni-30B-A3B-Instruct. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "qwen3-omni",
+      "metric": "Three-class / Spoken pain rating / transcript + audio / balanced accuracy (%)",
+      "value": 97.8,
+      "source": "Table 1, arXiv:2610.38570v1, Qwen3-Omni-30B-A3B-Instruct, Three-class / Spoken pain rating / transcript + audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model Qwen3-Omni-30B-A3B-Instruct. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "qwen3-omni",
+      "metric": "Three-class / Neutral pairwise / audio / balanced accuracy (%)",
+      "value": 32.5,
+      "source": "Table 1, arXiv:2610.38570v1, Qwen3-Omni-30B-A3B-Instruct, Three-class / Neutral pairwise / audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model Qwen3-Omni-30B-A3B-Instruct. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "qwen3-omni",
+      "metric": "Three-class / Neutral pairwise / transcript + audio / balanced accuracy (%)",
+      "value": 33.0,
+      "source": "Table 1, arXiv:2610.38570v1, Qwen3-Omni-30B-A3B-Instruct, Three-class / Neutral pairwise / transcript + audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model Qwen3-Omni-30B-A3B-Instruct. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "qwen3-omni",
+      "metric": "Three-class / Neutral 20-shot / audio / balanced accuracy (%)",
+      "value": 34.6,
+      "source": "Table 1, arXiv:2610.38570v1, Qwen3-Omni-30B-A3B-Instruct, Three-class / Neutral 20-shot / audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model Qwen3-Omni-30B-A3B-Instruct. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "qwen3-omni",
+      "metric": "Three-class / Neutral 20-shot / transcript + audio / balanced accuracy (%)",
+      "value": 35.5,
+      "source": "Table 1, arXiv:2610.38570v1, Qwen3-Omni-30B-A3B-Instruct, Three-class / Neutral 20-shot / transcript + audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model Qwen3-Omni-30B-A3B-Instruct. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "kimi-audio",
+      "metric": "Three-class / Neutral Harvard sentence / audio / balanced accuracy (%)",
+      "value": 33.7,
+      "source": "Table 1, arXiv:2610.38570v1, Kimi-Audio-7B-Instruct, Three-class / Neutral Harvard sentence / audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model Kimi-Audio-7B-Instruct. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "kimi-audio",
+      "metric": "Three-class / Neutral Harvard sentence / transcript + audio / balanced accuracy (%)",
+      "value": 34.0,
+      "source": "Table 1, arXiv:2610.38570v1, Kimi-Audio-7B-Instruct, Three-class / Neutral Harvard sentence / transcript + audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model Kimi-Audio-7B-Instruct. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "kimi-audio",
+      "metric": "Three-class / Spoken pain rating / audio / balanced accuracy (%)",
+      "value": 87.5,
+      "source": "Table 1, arXiv:2610.38570v1, Kimi-Audio-7B-Instruct, Three-class / Spoken pain rating / audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model Kimi-Audio-7B-Instruct. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "kimi-audio",
+      "metric": "Three-class / Spoken pain rating / transcript + audio / balanced accuracy (%)",
+      "value": 81.0,
+      "source": "Table 1, arXiv:2610.38570v1, Kimi-Audio-7B-Instruct, Three-class / Spoken pain rating / transcript + audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model Kimi-Audio-7B-Instruct. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "kimi-audio",
+      "metric": "Three-class / Neutral pairwise / audio / balanced accuracy (%)",
+      "value": 33.3,
+      "source": "Table 1, arXiv:2610.38570v1, Kimi-Audio-7B-Instruct, Three-class / Neutral pairwise / audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model Kimi-Audio-7B-Instruct. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "kimi-audio",
+      "metric": "Three-class / Neutral pairwise / transcript + audio / balanced accuracy (%)",
+      "value": 33.3,
+      "source": "Table 1, arXiv:2610.38570v1, Kimi-Audio-7B-Instruct, Three-class / Neutral pairwise / transcript + audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model Kimi-Audio-7B-Instruct. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "kimi-audio",
+      "metric": "Three-class / Neutral 20-shot / audio / balanced accuracy (%)",
+      "value": 32.5,
+      "source": "Table 1, arXiv:2610.38570v1, Kimi-Audio-7B-Instruct, Three-class / Neutral 20-shot / audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model Kimi-Audio-7B-Instruct. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "kimi-audio",
+      "metric": "Three-class / Neutral 20-shot / transcript + audio / balanced accuracy (%)",
+      "value": 39.1,
+      "source": "Table 1, arXiv:2610.38570v1, Kimi-Audio-7B-Instruct, Three-class / Neutral 20-shot / transcript + audio",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=5",
+      "note": "TAME-Pain. Source model Kimi-Audio-7B-Instruct. Unparsed responses count as incorrect. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gpt-realtime",
+      "metric": "Binary / Neutral pairwise / audio + verbalized acoustic cues / balanced accuracy (%)",
+      "value": 53.8,
+      "source": "Table 3, arXiv:2610.38570v1, gpt-realtime, Binary / Neutral pairwise / audio + verbalized acoustic cues",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=8",
+      "note": "TAME-Pain. Source model gpt-realtime. Score after adding cues. Arrows in the source give the change from the baseline. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gpt-realtime",
+      "metric": "Binary / Neutral pairwise / transcript + audio + verbalized acoustic cues / balanced accuracy (%)",
+      "value": 51.9,
+      "source": "Table 3, arXiv:2610.38570v1, gpt-realtime, Binary / Neutral pairwise / transcript + audio + verbalized acoustic cues",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=8",
+      "note": "TAME-Pain. Source model gpt-realtime. Score after adding cues. Arrows in the source give the change from the baseline. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gpt-realtime",
+      "metric": "Binary / Neutral 20-shot / audio + verbalized acoustic cues / balanced accuracy (%)",
+      "value": 60.4,
+      "source": "Table 3, arXiv:2610.38570v1, gpt-realtime, Binary / Neutral 20-shot / audio + verbalized acoustic cues",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=8",
+      "note": "TAME-Pain. Source model gpt-realtime. Score after adding cues. Arrows in the source give the change from the baseline. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gpt-realtime",
+      "metric": "Binary / Neutral 20-shot / transcript + audio + verbalized acoustic cues / balanced accuracy (%)",
+      "value": 63.7,
+      "source": "Table 3, arXiv:2610.38570v1, gpt-realtime, Binary / Neutral 20-shot / transcript + audio + verbalized acoustic cues",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=8",
+      "note": "TAME-Pain. Source model gpt-realtime. Score after adding cues. Arrows in the source give the change from the baseline. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gpt-realtime",
+      "metric": "Three-class / Neutral pairwise / audio + verbalized acoustic cues / balanced accuracy (%)",
+      "value": 34.6,
+      "source": "Table 3, arXiv:2610.38570v1, gpt-realtime, Three-class / Neutral pairwise / audio + verbalized acoustic cues",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=8",
+      "note": "TAME-Pain. Source model gpt-realtime. Score after adding cues. Arrows in the source give the change from the baseline. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gpt-realtime",
+      "metric": "Three-class / Neutral pairwise / transcript + audio + verbalized acoustic cues / balanced accuracy (%)",
+      "value": 34.7,
+      "source": "Table 3, arXiv:2610.38570v1, gpt-realtime, Three-class / Neutral pairwise / transcript + audio + verbalized acoustic cues",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=8",
+      "note": "TAME-Pain. Source model gpt-realtime. Score after adding cues. Arrows in the source give the change from the baseline. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gpt-realtime",
+      "metric": "Three-class / Neutral 20-shot / audio + verbalized acoustic cues / balanced accuracy (%)",
+      "value": 38.3,
+      "source": "Table 3, arXiv:2610.38570v1, gpt-realtime, Three-class / Neutral 20-shot / audio + verbalized acoustic cues",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=8",
+      "note": "TAME-Pain. Source model gpt-realtime. Score after adding cues. Arrows in the source give the change from the baseline. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gpt-realtime",
+      "metric": "Three-class / Neutral 20-shot / transcript + audio + verbalized acoustic cues / balanced accuracy (%)",
+      "value": 37.9,
+      "source": "Table 3, arXiv:2610.38570v1, gpt-realtime, Three-class / Neutral 20-shot / transcript + audio + verbalized acoustic cues",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=8",
+      "note": "TAME-Pain. Source model gpt-realtime. Score after adding cues. Arrows in the source give the change from the baseline. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gemini-3-5-flash",
+      "metric": "Binary / Neutral pairwise / audio + verbalized acoustic cues / balanced accuracy (%)",
+      "value": 71.6,
+      "source": "Table 3, arXiv:2610.38570v1, gemini-3.5-flash, Binary / Neutral pairwise / audio + verbalized acoustic cues",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=8",
+      "note": "TAME-Pain. Source model gemini-3.5-flash. Score after adding cues. Arrows in the source give the change from the baseline. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gemini-3-5-flash",
+      "metric": "Binary / Neutral pairwise / transcript + audio + verbalized acoustic cues / balanced accuracy (%)",
+      "value": 61.5,
+      "source": "Table 3, arXiv:2610.38570v1, gemini-3.5-flash, Binary / Neutral pairwise / transcript + audio + verbalized acoustic cues",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=8",
+      "note": "TAME-Pain. Source model gemini-3.5-flash. Score after adding cues. Arrows in the source give the change from the baseline. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gemini-3-5-flash",
+      "metric": "Binary / Neutral 20-shot / audio + verbalized acoustic cues / balanced accuracy (%)",
+      "value": 54.5,
+      "source": "Table 3, arXiv:2610.38570v1, gemini-3.5-flash, Binary / Neutral 20-shot / audio + verbalized acoustic cues",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=8",
+      "note": "TAME-Pain. Source model gemini-3.5-flash. Score after adding cues. Arrows in the source give the change from the baseline. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gemini-3-5-flash",
+      "metric": "Binary / Neutral 20-shot / transcript + audio + verbalized acoustic cues / balanced accuracy (%)",
+      "value": 53.1,
+      "source": "Table 3, arXiv:2610.38570v1, gemini-3.5-flash, Binary / Neutral 20-shot / transcript + audio + verbalized acoustic cues",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=8",
+      "note": "TAME-Pain. Source model gemini-3.5-flash. Score after adding cues. Arrows in the source give the change from the baseline. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gemini-3-5-flash",
+      "metric": "Three-class / Neutral pairwise / audio + verbalized acoustic cues / balanced accuracy (%)",
+      "value": 40.0,
+      "source": "Table 3, arXiv:2610.38570v1, gemini-3.5-flash, Three-class / Neutral pairwise / audio + verbalized acoustic cues",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=8",
+      "note": "TAME-Pain. Source model gemini-3.5-flash. Score after adding cues. Arrows in the source give the change from the baseline. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gemini-3-5-flash",
+      "metric": "Three-class / Neutral pairwise / transcript + audio + verbalized acoustic cues / balanced accuracy (%)",
+      "value": 36.5,
+      "source": "Table 3, arXiv:2610.38570v1, gemini-3.5-flash, Three-class / Neutral pairwise / transcript + audio + verbalized acoustic cues",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=8",
+      "note": "TAME-Pain. Source model gemini-3.5-flash. Score after adding cues. Arrows in the source give the change from the baseline. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gemini-3-5-flash",
+      "metric": "Three-class / Neutral 20-shot / audio + verbalized acoustic cues / balanced accuracy (%)",
+      "value": 29.4,
+      "source": "Table 3, arXiv:2610.38570v1, gemini-3.5-flash, Three-class / Neutral 20-shot / audio + verbalized acoustic cues",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=8",
+      "note": "TAME-Pain. Source model gemini-3.5-flash. Score after adding cues. Arrows in the source give the change from the baseline. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gemini-3-5-flash",
+      "metric": "Three-class / Neutral 20-shot / transcript + audio + verbalized acoustic cues / balanced accuracy (%)",
+      "value": 33.8,
+      "source": "Table 3, arXiv:2610.38570v1, gemini-3.5-flash, Three-class / Neutral 20-shot / transcript + audio + verbalized acoustic cues",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=8",
+      "note": "TAME-Pain. Source model gemini-3.5-flash. Score after adding cues. Arrows in the source give the change from the baseline. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gemini-3-1-pro",
+      "metric": "Binary / Neutral pairwise / audio + verbalized acoustic cues / balanced accuracy (%)",
+      "value": 82.2,
+      "source": "Table 3, arXiv:2610.38570v1, gemini-3.1-pro-preview, Binary / Neutral pairwise / audio + verbalized acoustic cues",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=8",
+      "note": "TAME-Pain. Source model gemini-3.1-pro-preview. Score after adding cues. Arrows in the source give the change from the baseline. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gemini-3-1-pro",
+      "metric": "Binary / Neutral pairwise / transcript + audio + verbalized acoustic cues / balanced accuracy (%)",
+      "value": 81.7,
+      "source": "Table 3, arXiv:2610.38570v1, gemini-3.1-pro-preview, Binary / Neutral pairwise / transcript + audio + verbalized acoustic cues",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=8",
+      "note": "TAME-Pain. Source model gemini-3.1-pro-preview. Score after adding cues. Arrows in the source give the change from the baseline. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gemini-3-1-pro",
+      "metric": "Binary / Neutral 20-shot / audio + verbalized acoustic cues / balanced accuracy (%)",
+      "value": 60.7,
+      "source": "Table 3, arXiv:2610.38570v1, gemini-3.1-pro-preview, Binary / Neutral 20-shot / audio + verbalized acoustic cues",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=8",
+      "note": "TAME-Pain. Source model gemini-3.1-pro-preview. Score after adding cues. Arrows in the source give the change from the baseline. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gemini-3-1-pro",
+      "metric": "Binary / Neutral 20-shot / transcript + audio + verbalized acoustic cues / balanced accuracy (%)",
+      "value": 60.6,
+      "source": "Table 3, arXiv:2610.38570v1, gemini-3.1-pro-preview, Binary / Neutral 20-shot / transcript + audio + verbalized acoustic cues",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=8",
+      "note": "TAME-Pain. Source model gemini-3.1-pro-preview. Score after adding cues. Arrows in the source give the change from the baseline. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gemini-3-1-pro",
+      "metric": "Three-class / Neutral pairwise / audio + verbalized acoustic cues / balanced accuracy (%)",
+      "value": 33.3,
+      "source": "Table 3, arXiv:2610.38570v1, gemini-3.1-pro-preview, Three-class / Neutral pairwise / audio + verbalized acoustic cues",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=8",
+      "note": "TAME-Pain. Source model gemini-3.1-pro-preview. Score after adding cues. Arrows in the source give the change from the baseline. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gemini-3-1-pro",
+      "metric": "Three-class / Neutral pairwise / transcript + audio + verbalized acoustic cues / balanced accuracy (%)",
+      "value": 32.5,
+      "source": "Table 3, arXiv:2610.38570v1, gemini-3.1-pro-preview, Three-class / Neutral pairwise / transcript + audio + verbalized acoustic cues",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=8",
+      "note": "TAME-Pain. Source model gemini-3.1-pro-preview. Score after adding cues. Arrows in the source give the change from the baseline. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gemini-3-1-pro",
+      "metric": "Three-class / Neutral 20-shot / audio + verbalized acoustic cues / balanced accuracy (%)",
+      "value": 41.9,
+      "source": "Table 3, arXiv:2610.38570v1, gemini-3.1-pro-preview, Three-class / Neutral 20-shot / audio + verbalized acoustic cues",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=8",
+      "note": "TAME-Pain. Source model gemini-3.1-pro-preview. Score after adding cues. Arrows in the source give the change from the baseline. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "gemini-3-1-pro",
+      "metric": "Three-class / Neutral 20-shot / transcript + audio + verbalized acoustic cues / balanced accuracy (%)",
+      "value": 42.6,
+      "source": "Table 3, arXiv:2610.38570v1, gemini-3.1-pro-preview, Three-class / Neutral 20-shot / transcript + audio + verbalized acoustic cues",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=8",
+      "note": "TAME-Pain. Source model gemini-3.1-pro-preview. Score after adding cues. Arrows in the source give the change from the baseline. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "qwen2-5-omni",
+      "metric": "Binary / Neutral pairwise / audio + verbalized acoustic cues / balanced accuracy (%)",
+      "value": 55.8,
+      "source": "Table 3, arXiv:2610.38570v1, Qwen2.5-Omni-7B, Binary / Neutral pairwise / audio + verbalized acoustic cues",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=8",
+      "note": "TAME-Pain. Source model Qwen2.5-Omni-7B. Score after adding cues. Arrows in the source give the change from the baseline. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "qwen2-5-omni",
+      "metric": "Binary / Neutral pairwise / transcript + audio + verbalized acoustic cues / balanced accuracy (%)",
+      "value": 52.4,
+      "source": "Table 3, arXiv:2610.38570v1, Qwen2.5-Omni-7B, Binary / Neutral pairwise / transcript + audio + verbalized acoustic cues",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=8",
+      "note": "TAME-Pain. Source model Qwen2.5-Omni-7B. Score after adding cues. Arrows in the source give the change from the baseline. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "qwen2-5-omni",
+      "metric": "Binary / Neutral 20-shot / audio + verbalized acoustic cues / balanced accuracy (%)",
+      "value": 57.6,
+      "source": "Table 3, arXiv:2610.38570v1, Qwen2.5-Omni-7B, Binary / Neutral 20-shot / audio + verbalized acoustic cues",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=8",
+      "note": "TAME-Pain. Source model Qwen2.5-Omni-7B. Score after adding cues. Arrows in the source give the change from the baseline. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "qwen2-5-omni",
+      "metric": "Binary / Neutral 20-shot / transcript + audio + verbalized acoustic cues / balanced accuracy (%)",
+      "value": 58.4,
+      "source": "Table 3, arXiv:2610.38570v1, Qwen2.5-Omni-7B, Binary / Neutral 20-shot / transcript + audio + verbalized acoustic cues",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=8",
+      "note": "TAME-Pain. Source model Qwen2.5-Omni-7B. Score after adding cues. Arrows in the source give the change from the baseline. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "qwen2-5-omni",
+      "metric": "Three-class / Neutral pairwise / audio + verbalized acoustic cues / balanced accuracy (%)",
+      "value": 35.6,
+      "source": "Table 3, arXiv:2610.38570v1, Qwen2.5-Omni-7B, Three-class / Neutral pairwise / audio + verbalized acoustic cues",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=8",
+      "note": "TAME-Pain. Source model Qwen2.5-Omni-7B. Score after adding cues. Arrows in the source give the change from the baseline. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "qwen2-5-omni",
+      "metric": "Three-class / Neutral pairwise / transcript + audio + verbalized acoustic cues / balanced accuracy (%)",
+      "value": 35.2,
+      "source": "Table 3, arXiv:2610.38570v1, Qwen2.5-Omni-7B, Three-class / Neutral pairwise / transcript + audio + verbalized acoustic cues",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=8",
+      "note": "TAME-Pain. Source model Qwen2.5-Omni-7B. Score after adding cues. Arrows in the source give the change from the baseline. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "qwen2-5-omni",
+      "metric": "Three-class / Neutral 20-shot / audio + verbalized acoustic cues / balanced accuracy (%)",
+      "value": 38.8,
+      "source": "Table 3, arXiv:2610.38570v1, Qwen2.5-Omni-7B, Three-class / Neutral 20-shot / audio + verbalized acoustic cues",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=8",
+      "note": "TAME-Pain. Source model Qwen2.5-Omni-7B. Score after adding cues. Arrows in the source give the change from the baseline. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "qwen2-5-omni",
+      "metric": "Three-class / Neutral 20-shot / transcript + audio + verbalized acoustic cues / balanced accuracy (%)",
+      "value": 40.3,
+      "source": "Table 3, arXiv:2610.38570v1, Qwen2.5-Omni-7B, Three-class / Neutral 20-shot / transcript + audio + verbalized acoustic cues",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=8",
+      "note": "TAME-Pain. Source model Qwen2.5-Omni-7B. Score after adding cues. Arrows in the source give the change from the baseline. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "qwen3-omni",
+      "metric": "Binary / Neutral pairwise / audio + verbalized acoustic cues / balanced accuracy (%)",
+      "value": 69.7,
+      "source": "Table 3, arXiv:2610.38570v1, Qwen3-Omni-30B-A3B-Instruct, Binary / Neutral pairwise / audio + verbalized acoustic cues",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=8",
+      "note": "TAME-Pain. Source model Qwen3-Omni-30B-A3B-Instruct. Score after adding cues. Arrows in the source give the change from the baseline. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "qwen3-omni",
+      "metric": "Binary / Neutral pairwise / transcript + audio + verbalized acoustic cues / balanced accuracy (%)",
+      "value": 68.8,
+      "source": "Table 3, arXiv:2610.38570v1, Qwen3-Omni-30B-A3B-Instruct, Binary / Neutral pairwise / transcript + audio + verbalized acoustic cues",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=8",
+      "note": "TAME-Pain. Source model Qwen3-Omni-30B-A3B-Instruct. Score after adding cues. Arrows in the source give the change from the baseline. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "qwen3-omni",
+      "metric": "Binary / Neutral 20-shot / audio + verbalized acoustic cues / balanced accuracy (%)",
+      "value": 55.8,
+      "source": "Table 3, arXiv:2610.38570v1, Qwen3-Omni-30B-A3B-Instruct, Binary / Neutral 20-shot / audio + verbalized acoustic cues",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=8",
+      "note": "TAME-Pain. Source model Qwen3-Omni-30B-A3B-Instruct. Score after adding cues. Arrows in the source give the change from the baseline. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "qwen3-omni",
+      "metric": "Binary / Neutral 20-shot / transcript + audio + verbalized acoustic cues / balanced accuracy (%)",
+      "value": 54.2,
+      "source": "Table 3, arXiv:2610.38570v1, Qwen3-Omni-30B-A3B-Instruct, Binary / Neutral 20-shot / transcript + audio + verbalized acoustic cues",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=8",
+      "note": "TAME-Pain. Source model Qwen3-Omni-30B-A3B-Instruct. Score after adding cues. Arrows in the source give the change from the baseline. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "qwen3-omni",
+      "metric": "Three-class / Neutral pairwise / audio + verbalized acoustic cues / balanced accuracy (%)",
+      "value": 36.3,
+      "source": "Table 3, arXiv:2610.38570v1, Qwen3-Omni-30B-A3B-Instruct, Three-class / Neutral pairwise / audio + verbalized acoustic cues",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=8",
+      "note": "TAME-Pain. Source model Qwen3-Omni-30B-A3B-Instruct. Score after adding cues. Arrows in the source give the change from the baseline. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "qwen3-omni",
+      "metric": "Three-class / Neutral pairwise / transcript + audio + verbalized acoustic cues / balanced accuracy (%)",
+      "value": 32.0,
+      "source": "Table 3, arXiv:2610.38570v1, Qwen3-Omni-30B-A3B-Instruct, Three-class / Neutral pairwise / transcript + audio + verbalized acoustic cues",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=8",
+      "note": "TAME-Pain. Source model Qwen3-Omni-30B-A3B-Instruct. Score after adding cues. Arrows in the source give the change from the baseline. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "qwen3-omni",
+      "metric": "Three-class / Neutral 20-shot / audio + verbalized acoustic cues / balanced accuracy (%)",
+      "value": 37.9,
+      "source": "Table 3, arXiv:2610.38570v1, Qwen3-Omni-30B-A3B-Instruct, Three-class / Neutral 20-shot / audio + verbalized acoustic cues",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=8",
+      "note": "TAME-Pain. Source model Qwen3-Omni-30B-A3B-Instruct. Score after adding cues. Arrows in the source give the change from the baseline. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "qwen3-omni",
+      "metric": "Three-class / Neutral 20-shot / transcript + audio + verbalized acoustic cues / balanced accuracy (%)",
+      "value": 39.1,
+      "source": "Table 3, arXiv:2610.38570v1, Qwen3-Omni-30B-A3B-Instruct, Three-class / Neutral 20-shot / transcript + audio + verbalized acoustic cues",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=8",
+      "note": "TAME-Pain. Source model Qwen3-Omni-30B-A3B-Instruct. Score after adding cues. Arrows in the source give the change from the baseline. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "kimi-audio",
+      "metric": "Binary / Neutral pairwise / audio + verbalized acoustic cues / balanced accuracy (%)",
+      "value": 68.3,
+      "source": "Table 3, arXiv:2610.38570v1, Kimi-Audio-7B-Instruct, Binary / Neutral pairwise / audio + verbalized acoustic cues",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=8",
+      "note": "TAME-Pain. Source model Kimi-Audio-7B-Instruct. Score after adding cues. Arrows in the source give the change from the baseline. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "kimi-audio",
+      "metric": "Binary / Neutral pairwise / transcript + audio + verbalized acoustic cues / balanced accuracy (%)",
+      "value": 53.4,
+      "source": "Table 3, arXiv:2610.38570v1, Kimi-Audio-7B-Instruct, Binary / Neutral pairwise / transcript + audio + verbalized acoustic cues",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=8",
+      "note": "TAME-Pain. Source model Kimi-Audio-7B-Instruct. Score after adding cues. Arrows in the source give the change from the baseline. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "kimi-audio",
+      "metric": "Binary / Neutral 20-shot / audio + verbalized acoustic cues / balanced accuracy (%)",
+      "value": 54.2,
+      "source": "Table 3, arXiv:2610.38570v1, Kimi-Audio-7B-Instruct, Binary / Neutral 20-shot / audio + verbalized acoustic cues",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=8",
+      "note": "TAME-Pain. Source model Kimi-Audio-7B-Instruct. Score after adding cues. Arrows in the source give the change from the baseline. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "kimi-audio",
+      "metric": "Binary / Neutral 20-shot / transcript + audio + verbalized acoustic cues / balanced accuracy (%)",
+      "value": 56.4,
+      "source": "Table 3, arXiv:2610.38570v1, Kimi-Audio-7B-Instruct, Binary / Neutral 20-shot / transcript + audio + verbalized acoustic cues",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=8",
+      "note": "TAME-Pain. Source model Kimi-Audio-7B-Instruct. Score after adding cues. Arrows in the source give the change from the baseline. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "kimi-audio",
+      "metric": "Three-class / Neutral pairwise / audio + verbalized acoustic cues / balanced accuracy (%)",
+      "value": 35.5,
+      "source": "Table 3, arXiv:2610.38570v1, Kimi-Audio-7B-Instruct, Three-class / Neutral pairwise / audio + verbalized acoustic cues",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=8",
+      "note": "TAME-Pain. Source model Kimi-Audio-7B-Instruct. Score after adding cues. Arrows in the source give the change from the baseline. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "kimi-audio",
+      "metric": "Three-class / Neutral pairwise / transcript + audio + verbalized acoustic cues / balanced accuracy (%)",
+      "value": 35.2,
+      "source": "Table 3, arXiv:2610.38570v1, Kimi-Audio-7B-Instruct, Three-class / Neutral pairwise / transcript + audio + verbalized acoustic cues",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=8",
+      "note": "TAME-Pain. Source model Kimi-Audio-7B-Instruct. Score after adding cues. Arrows in the source give the change from the baseline. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "kimi-audio",
+      "metric": "Three-class / Neutral 20-shot / audio + verbalized acoustic cues / balanced accuracy (%)",
+      "value": 35.5,
+      "source": "Table 3, arXiv:2610.38570v1, Kimi-Audio-7B-Instruct, Three-class / Neutral 20-shot / audio + verbalized acoustic cues",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=8",
+      "note": "TAME-Pain. Source model Kimi-Audio-7B-Instruct. Score after adding cues. Arrows in the source give the change from the baseline. Higher is better."
+    },
+    {
+      "benchmark": "hear-pain",
+      "model": "kimi-audio",
+      "metric": "Three-class / Neutral 20-shot / transcript + audio + verbalized acoustic cues / balanced accuracy (%)",
+      "value": 34.9,
+      "source": "Table 3, arXiv:2610.38570v1, Kimi-Audio-7B-Instruct, Three-class / Neutral 20-shot / transcript + audio + verbalized acoustic cues",
+      "source_url": "https://arxiv.org/pdf/2610.38570v1#page=8",
+      "note": "TAME-Pain. Source model Kimi-Audio-7B-Instruct. Score after adding cues. Arrows in the source give the change from the baseline. Higher is better."
+    },
+    {
+      "benchmark": "mtg-ad",
+      "model": "gemini-2-5-flash",
+      "metric": "Prioritization, G1.1 (0–1)",
+      "value": 0.76,
+      "source": "Table 6, arXiv:2610.39955v1, Prioritization, G1.1, Gemini-2.5 Flash",
+      "source_url": "https://arxiv.org/pdf/2610.39955v1#page=15",
+      "note": "Guidelines + timing ASR prompt. Mean over 101 test videos with output, 95% CI ±0.04. Judge: Gemini-2.5 Flash. Higher is better."
+    },
+    {
+      "benchmark": "mtg-ad",
+      "model": "gemini-3-5-flash",
+      "metric": "Prioritization, G1.1 (0–1)",
+      "value": 0.93,
+      "source": "Table 6, arXiv:2610.39955v1, Prioritization, G1.1, Gemini-3.5 Flash",
+      "source_url": "https://arxiv.org/pdf/2610.39955v1#page=15",
+      "note": "Guidelines + timing ASR prompt. Mean over 101 test videos with output, 95% CI ±0.03. Judge: Gemini-3.5 Flash. Higher is better."
+    },
+    {
+      "benchmark": "mtg-ad",
+      "model": "qwen3-5-omni-flash",
+      "metric": "Prioritization, G1.1 (0–1)",
+      "value": 0.94,
+      "source": "Table 6, arXiv:2610.39955v1, Prioritization, G1.1, Qwen-3.5-Omni-Flash",
+      "source_url": "https://arxiv.org/pdf/2610.39955v1#page=15",
+      "note": "Guidelines + timing ASR prompt. Mean over 57 test videos with output, 95% CI ±0.02. Judge: Gemini-3.5 Flash. Higher is better."
+    },
+    {
+      "benchmark": "mtg-ad",
+      "model": "qwen3-5-omni-plus",
+      "metric": "Prioritization, G1.1 (0–1)",
+      "value": 0.79,
+      "source": "Table 6, arXiv:2610.39955v1, Prioritization, G1.1, Qwen-3.5-Omni-Plus",
+      "source_url": "https://arxiv.org/pdf/2610.39955v1#page=15",
+      "note": "Guidelines + timing ASR prompt. Mean over 99 test videos with output, 95% CI ±0.06. Judge: Gemini-3.5 Flash. Higher is better."
+    },
+    {
+      "benchmark": "mtg-ad",
+      "model": "gemini-2-5-flash",
+      "metric": "No Redundancy, G1.2 (0–1)",
+      "value": 0.7,
+      "source": "Table 6, arXiv:2610.39955v1, No Redundancy, G1.2, Gemini-2.5 Flash",
+      "source_url": "https://arxiv.org/pdf/2610.39955v1#page=15",
+      "note": "Guidelines + timing ASR prompt. Mean over 101 test videos with output, 95% CI ±0.05. Judge: Gemini-2.5 Flash. Higher is better."
+    },
+    {
+      "benchmark": "mtg-ad",
+      "model": "gemini-3-5-flash",
+      "metric": "No Redundancy, G1.2 (0–1)",
+      "value": 0.9,
+      "source": "Table 6, arXiv:2610.39955v1, No Redundancy, G1.2, Gemini-3.5 Flash",
+      "source_url": "https://arxiv.org/pdf/2610.39955v1#page=15",
+      "note": "Guidelines + timing ASR prompt. Mean over 101 test videos with output, 95% CI ±0.03. Judge: Gemini-3.5 Flash. Higher is better."
+    },
+    {
+      "benchmark": "mtg-ad",
+      "model": "qwen3-5-omni-flash",
+      "metric": "No Redundancy, G1.2 (0–1)",
+      "value": 0.88,
+      "source": "Table 6, arXiv:2610.39955v1, No Redundancy, G1.2, Qwen-3.5-Omni-Flash",
+      "source_url": "https://arxiv.org/pdf/2610.39955v1#page=15",
+      "note": "Guidelines + timing ASR prompt. Mean over 57 test videos with output, 95% CI ±0.05. Judge: Gemini-3.5 Flash. Higher is better."
+    },
+    {
+      "benchmark": "mtg-ad",
+      "model": "qwen3-5-omni-plus",
+      "metric": "No Redundancy, G1.2 (0–1)",
+      "value": 0.88,
+      "source": "Table 6, arXiv:2610.39955v1, No Redundancy, G1.2, Qwen-3.5-Omni-Plus",
+      "source_url": "https://arxiv.org/pdf/2610.39955v1#page=15",
+      "note": "Guidelines + timing ASR prompt. Mean over 99 test videos with output, 95% CI ±0.04. Judge: Gemini-3.5 Flash. Higher is better."
+    },
+    {
+      "benchmark": "mtg-ad",
+      "model": "gemini-2-5-flash",
+      "metric": "On-Screen Text, G1.3 (0–1)",
+      "value": 0.64,
+      "source": "Table 6, arXiv:2610.39955v1, On-Screen Text, G1.3, Gemini-2.5 Flash",
+      "source_url": "https://arxiv.org/pdf/2610.39955v1#page=15",
+      "note": "Guidelines + timing ASR prompt. Mean over 101 test videos with output, 95% CI ±0.06. Programmatic metric. Higher is better."
+    },
+    {
+      "benchmark": "mtg-ad",
+      "model": "gemini-3-5-flash",
+      "metric": "On-Screen Text, G1.3 (0–1)",
+      "value": 0.57,
+      "source": "Table 6, arXiv:2610.39955v1, On-Screen Text, G1.3, Gemini-3.5 Flash",
+      "source_url": "https://arxiv.org/pdf/2610.39955v1#page=15",
+      "note": "Guidelines + timing ASR prompt. Mean over 101 test videos with output, 95% CI ±0.05. Programmatic metric. Higher is better."
+    },
+    {
+      "benchmark": "mtg-ad",
+      "model": "qwen3-5-omni-flash",
+      "metric": "On-Screen Text, G1.3 (0–1)",
+      "value": 0.61,
+      "source": "Table 6, arXiv:2610.39955v1, On-Screen Text, G1.3, Qwen-3.5-Omni-Flash",
+      "source_url": "https://arxiv.org/pdf/2610.39955v1#page=15",
+      "note": "Guidelines + timing ASR prompt. Mean over 57 test videos with output, 95% CI ±0.06. Programmatic metric. Higher is better."
+    },
+    {
+      "benchmark": "mtg-ad",
+      "model": "qwen3-5-omni-plus",
+      "metric": "On-Screen Text, G1.3 (0–1)",
+      "value": 0.58,
+      "source": "Table 6, arXiv:2610.39955v1, On-Screen Text, G1.3, Qwen-3.5-Omni-Plus",
+      "source_url": "https://arxiv.org/pdf/2610.39955v1#page=15",
+      "note": "Guidelines + timing ASR prompt. Mean over 99 test videos with output, 95% CI ±0.06. Programmatic metric. Higher is better."
+    },
+    {
+      "benchmark": "mtg-ad",
+      "model": "gemini-2-5-flash",
+      "metric": "Timeliness, G2 (seconds)",
+      "value": 5.0,
+      "source": "Table 6, arXiv:2610.39955v1, Timeliness, G2, Gemini-2.5 Flash",
+      "source_url": "https://arxiv.org/pdf/2610.39955v1#page=15",
+      "note": "Guidelines + timing ASR prompt. Mean over 101 test videos with output, 95% CI ±3.07. Judge: Gemini-2.5 Flash. Lower is better."
+    },
+    {
+      "benchmark": "mtg-ad",
+      "model": "gemini-3-5-flash",
+      "metric": "Timeliness, G2 (seconds)",
+      "value": 2.99,
+      "source": "Table 6, arXiv:2610.39955v1, Timeliness, G2, Gemini-3.5 Flash",
+      "source_url": "https://arxiv.org/pdf/2610.39955v1#page=15",
+      "note": "Guidelines + timing ASR prompt. Mean over 101 test videos with output, 95% CI ±0.91. Judge: Gemini-3.5 Flash. Lower is better."
+    },
+    {
+      "benchmark": "mtg-ad",
+      "model": "qwen3-5-omni-flash",
+      "metric": "Timeliness, G2 (seconds)",
+      "value": 4.91,
+      "source": "Table 6, arXiv:2610.39955v1, Timeliness, G2, Qwen-3.5-Omni-Flash",
+      "source_url": "https://arxiv.org/pdf/2610.39955v1#page=15",
+      "note": "Guidelines + timing ASR prompt. Mean over 57 test videos with output, 95% CI ±3.64. Judge: Gemini-3.5 Flash. Lower is better."
+    },
+    {
+      "benchmark": "mtg-ad",
+      "model": "qwen3-5-omni-plus",
+      "metric": "Timeliness, G2 (seconds)",
+      "value": 2.67,
+      "source": "Table 6, arXiv:2610.39955v1, Timeliness, G2, Qwen-3.5-Omni-Plus",
+      "source_url": "https://arxiv.org/pdf/2610.39955v1#page=15",
+      "note": "Guidelines + timing ASR prompt. Mean over 99 test videos with output, 95% CI ±1.04. Judge: Gemini-3.5 Flash. Lower is better."
+    },
+    {
+      "benchmark": "mtg-ad",
+      "model": "gemini-2-5-flash",
+      "metric": "Audio Overlaps, G7 (seconds)",
+      "value": 8.92,
+      "source": "Table 6, arXiv:2610.39955v1, Audio Overlaps, G7, Gemini-2.5 Flash",
+      "source_url": "https://arxiv.org/pdf/2610.39955v1#page=15",
+      "note": "Guidelines + timing ASR prompt. Mean over 101 test videos with output, 95% CI ±5.62. Programmatic metric. Lower is better."
+    },
+    {
+      "benchmark": "mtg-ad",
+      "model": "gemini-3-5-flash",
+      "metric": "Audio Overlaps, G7 (seconds)",
+      "value": 0.26,
+      "source": "Table 6, arXiv:2610.39955v1, Audio Overlaps, G7, Gemini-3.5 Flash",
+      "source_url": "https://arxiv.org/pdf/2610.39955v1#page=15",
+      "note": "Guidelines + timing ASR prompt. Mean over 101 test videos with output, 95% CI ±0.13. Programmatic metric. Lower is better."
+    },
+    {
+      "benchmark": "mtg-ad",
+      "model": "qwen3-5-omni-flash",
+      "metric": "Audio Overlaps, G7 (seconds)",
+      "value": 52.14,
+      "source": "Table 6, arXiv:2610.39955v1, Audio Overlaps, G7, Qwen-3.5-Omni-Flash",
+      "source_url": "https://arxiv.org/pdf/2610.39955v1#page=15",
+      "note": "Guidelines + timing ASR prompt. Mean over 57 test videos with output, 95% CI ±15.89. Programmatic metric. Lower is better."
+    },
+    {
+      "benchmark": "mtg-ad",
+      "model": "qwen3-5-omni-plus",
+      "metric": "Audio Overlaps, G7 (seconds)",
+      "value": 30.45,
+      "source": "Table 6, arXiv:2610.39955v1, Audio Overlaps, G7, Qwen-3.5-Omni-Plus",
+      "source_url": "https://arxiv.org/pdf/2610.39955v1#page=15",
+      "note": "Guidelines + timing ASR prompt. Mean over 99 test videos with output, 95% CI ±8.69. Programmatic metric. Lower is better."
+    },
+    {
+      "benchmark": "mtg-ad",
+      "model": "gemini-2-5-flash",
+      "metric": "Audio Coverage, G8 (ratio)",
+      "value": 0.74,
+      "source": "Table 6, arXiv:2610.39955v1, Audio Coverage, G8, Gemini-2.5 Flash",
+      "source_url": "https://arxiv.org/pdf/2610.39955v1#page=15",
+      "note": "Guidelines + timing ASR prompt. Mean over 101 test videos with output, 95% CI ±0.07. Programmatic metric. Higher up to 1. Values above 1 exceed available silence."
+    },
+    {
+      "benchmark": "mtg-ad",
+      "model": "gemini-3-5-flash",
+      "metric": "Audio Coverage, G8 (ratio)",
+      "value": 0.45,
+      "source": "Table 6, arXiv:2610.39955v1, Audio Coverage, G8, Gemini-3.5 Flash",
+      "source_url": "https://arxiv.org/pdf/2610.39955v1#page=15",
+      "note": "Guidelines + timing ASR prompt. Mean over 101 test videos with output, 95% CI ±0.03. Programmatic metric. Higher up to 1. Values above 1 exceed available silence."
+    },
+    {
+      "benchmark": "mtg-ad",
+      "model": "qwen3-5-omni-flash",
+      "metric": "Audio Coverage, G8 (ratio)",
+      "value": 0.94,
+      "source": "Table 6, arXiv:2610.39955v1, Audio Coverage, G8, Qwen-3.5-Omni-Flash",
+      "source_url": "https://arxiv.org/pdf/2610.39955v1#page=15",
+      "note": "Guidelines + timing ASR prompt. Mean over 57 test videos with output, 95% CI ±0.20. Programmatic metric. Higher up to 1. Values above 1 exceed available silence."
+    },
+    {
+      "benchmark": "mtg-ad",
+      "model": "qwen3-5-omni-plus",
+      "metric": "Audio Coverage, G8 (ratio)",
+      "value": 0.72,
+      "source": "Table 6, arXiv:2610.39955v1, Audio Coverage, G8, Qwen-3.5-Omni-Plus",
+      "source_url": "https://arxiv.org/pdf/2610.39955v1#page=15",
+      "note": "Guidelines + timing ASR prompt. Mean over 99 test videos with output, 95% CI ±0.14. Programmatic metric. Higher up to 1. Values above 1 exceed available silence."
+    },
+    {
+      "benchmark": "mtg-ad",
+      "model": "gemini-2-5-flash",
+      "metric": "Avg. Silence, G8 (seconds)",
+      "value": 6.63,
+      "source": "Table 6, arXiv:2610.39955v1, Avg. Silence, G8, Gemini-2.5 Flash",
+      "source_url": "https://arxiv.org/pdf/2610.39955v1#page=15",
+      "note": "Guidelines + timing ASR prompt. Mean over 101 test videos with output, 95% CI ±2.16. Programmatic metric. Lower is better."
+    },
+    {
+      "benchmark": "mtg-ad",
+      "model": "gemini-3-5-flash",
+      "metric": "Avg. Silence, G8 (seconds)",
+      "value": 4.85,
+      "source": "Table 6, arXiv:2610.39955v1, Avg. Silence, G8, Gemini-3.5 Flash",
+      "source_url": "https://arxiv.org/pdf/2610.39955v1#page=15",
+      "note": "Guidelines + timing ASR prompt. Mean over 101 test videos with output, 95% CI ±1.20. Programmatic metric. Lower is better."
+    },
+    {
+      "benchmark": "mtg-ad",
+      "model": "qwen3-5-omni-flash",
+      "metric": "Avg. Silence, G8 (seconds)",
+      "value": 16.61,
+      "source": "Table 6, arXiv:2610.39955v1, Avg. Silence, G8, Qwen-3.5-Omni-Flash",
+      "source_url": "https://arxiv.org/pdf/2610.39955v1#page=15",
+      "note": "Guidelines + timing ASR prompt. Mean over 57 test videos with output, 95% CI ±11.88. Programmatic metric. Lower is better."
+    },
+    {
+      "benchmark": "mtg-ad",
+      "model": "qwen3-5-omni-plus",
+      "metric": "Avg. Silence, G8 (seconds)",
+      "value": 9.49,
+      "source": "Table 6, arXiv:2610.39955v1, Avg. Silence, G8, Qwen-3.5-Omni-Plus",
+      "source_url": "https://arxiv.org/pdf/2610.39955v1#page=15",
+      "note": "Guidelines + timing ASR prompt. Mean over 99 test videos with output, 95% CI ±2.12. Programmatic metric. Lower is better."
+    },
+    {
+      "benchmark": "mtg-ad",
+      "model": "gemini-2-5-flash",
+      "metric": "VideoA11y-Ref Descriptive (1–5)",
+      "value": 3.1,
+      "source": "Table 6, arXiv:2610.39955v1, VideoA11y-Ref Descriptive, Gemini-2.5 Flash",
+      "source_url": "https://arxiv.org/pdf/2610.39955v1#page=15",
+      "note": "Guidelines + timing ASR prompt. Mean over 101 test videos with output, 95% CI ±0.19. Judge: Gemini-2.5 Flash. Higher is better."
+    },
+    {
+      "benchmark": "mtg-ad",
+      "model": "gemini-3-5-flash",
+      "metric": "VideoA11y-Ref Descriptive (1–5)",
+      "value": 4.02,
+      "source": "Table 6, arXiv:2610.39955v1, VideoA11y-Ref Descriptive, Gemini-3.5 Flash",
+      "source_url": "https://arxiv.org/pdf/2610.39955v1#page=15",
+      "note": "Guidelines + timing ASR prompt. Mean over 101 test videos with output, 95% CI ±0.15. Judge: Gemini-3.5 Flash. Higher is better."
+    },
+    {
+      "benchmark": "mtg-ad",
+      "model": "qwen3-5-omni-flash",
+      "metric": "VideoA11y-Ref Descriptive (1–5)",
+      "value": 4.43,
+      "source": "Table 6, arXiv:2610.39955v1, VideoA11y-Ref Descriptive, Qwen-3.5-Omni-Flash",
+      "source_url": "https://arxiv.org/pdf/2610.39955v1#page=15",
+      "note": "Guidelines + timing ASR prompt. Mean over 57 test videos with output, 95% CI ±0.23. Judge: Gemini-3.5 Flash. Higher is better."
+    },
+    {
+      "benchmark": "mtg-ad",
+      "model": "qwen3-5-omni-plus",
+      "metric": "VideoA11y-Ref Descriptive (1–5)",
+      "value": 3.82,
+      "source": "Table 6, arXiv:2610.39955v1, VideoA11y-Ref Descriptive, Qwen-3.5-Omni-Plus",
+      "source_url": "https://arxiv.org/pdf/2610.39955v1#page=15",
+      "note": "Guidelines + timing ASR prompt. Mean over 99 test videos with output, 95% CI ±0.27. Judge: Gemini-3.5 Flash. Higher is better."
+    },
+    {
+      "benchmark": "mtg-ad",
+      "model": "gemini-2-5-flash",
+      "metric": "VideoA11y-Ref Objective (1–5)",
+      "value": 2.92,
+      "source": "Table 6, arXiv:2610.39955v1, VideoA11y-Ref Objective, Gemini-2.5 Flash",
+      "source_url": "https://arxiv.org/pdf/2610.39955v1#page=15",
+      "note": "Guidelines + timing ASR prompt. Mean over 101 test videos with output, 95% CI ±0.22. Judge: Gemini-2.5 Flash. Higher is better."
+    },
+    {
+      "benchmark": "mtg-ad",
+      "model": "gemini-3-5-flash",
+      "metric": "VideoA11y-Ref Objective (1–5)",
+      "value": 4.07,
+      "source": "Table 6, arXiv:2610.39955v1, VideoA11y-Ref Objective, Gemini-3.5 Flash",
+      "source_url": "https://arxiv.org/pdf/2610.39955v1#page=15",
+      "note": "Guidelines + timing ASR prompt. Mean over 101 test videos with output, 95% CI ±0.15. Judge: Gemini-3.5 Flash. Higher is better."
+    },
+    {
+      "benchmark": "mtg-ad",
+      "model": "qwen3-5-omni-flash",
+      "metric": "VideoA11y-Ref Objective (1–5)",
+      "value": 4.41,
+      "source": "Table 6, arXiv:2610.39955v1, VideoA11y-Ref Objective, Qwen-3.5-Omni-Flash",
+      "source_url": "https://arxiv.org/pdf/2610.39955v1#page=15",
+      "note": "Guidelines + timing ASR prompt. Mean over 57 test videos with output, 95% CI ±0.20. Judge: Gemini-3.5 Flash. Higher is better."
+    },
+    {
+      "benchmark": "mtg-ad",
+      "model": "qwen3-5-omni-plus",
+      "metric": "VideoA11y-Ref Objective (1–5)",
+      "value": 4.03,
+      "source": "Table 6, arXiv:2610.39955v1, VideoA11y-Ref Objective, Qwen-3.5-Omni-Plus",
+      "source_url": "https://arxiv.org/pdf/2610.39955v1#page=15",
+      "note": "Guidelines + timing ASR prompt. Mean over 99 test videos with output, 95% CI ±0.26. Judge: Gemini-3.5 Flash. Higher is better."
+    },
+    {
+      "benchmark": "mtg-ad",
+      "model": "gemini-2-5-flash",
+      "metric": "VideoA11y-Ref Accurate (1–5)",
+      "value": 1.63,
+      "source": "Table 6, arXiv:2610.39955v1, VideoA11y-Ref Accurate, Gemini-2.5 Flash",
+      "source_url": "https://arxiv.org/pdf/2610.39955v1#page=15",
+      "note": "Guidelines + timing ASR prompt. Mean over 101 test videos with output, 95% CI ±0.15. Judge: Gemini-2.5 Flash. Higher is better."
+    },
+    {
+      "benchmark": "mtg-ad",
+      "model": "gemini-3-5-flash",
+      "metric": "VideoA11y-Ref Accurate (1–5)",
+      "value": 3.79,
+      "source": "Table 6, arXiv:2610.39955v1, VideoA11y-Ref Accurate, Gemini-3.5 Flash",
+      "source_url": "https://arxiv.org/pdf/2610.39955v1#page=15",
+      "note": "Guidelines + timing ASR prompt. Mean over 101 test videos with output, 95% CI ±0.18. Judge: Gemini-3.5 Flash. Higher is better."
+    },
+    {
+      "benchmark": "mtg-ad",
+      "model": "qwen3-5-omni-flash",
+      "metric": "VideoA11y-Ref Accurate (1–5)",
+      "value": 3.98,
+      "source": "Table 6, arXiv:2610.39955v1, VideoA11y-Ref Accurate, Qwen-3.5-Omni-Flash",
+      "source_url": "https://arxiv.org/pdf/2610.39955v1#page=15",
+      "note": "Guidelines + timing ASR prompt. Mean over 57 test videos with output, 95% CI ±0.25. Judge: Gemini-3.5 Flash. Higher is better."
+    },
+    {
+      "benchmark": "mtg-ad",
+      "model": "qwen3-5-omni-plus",
+      "metric": "VideoA11y-Ref Accurate (1–5)",
+      "value": 3.23,
+      "source": "Table 6, arXiv:2610.39955v1, VideoA11y-Ref Accurate, Qwen-3.5-Omni-Plus",
+      "source_url": "https://arxiv.org/pdf/2610.39955v1#page=15",
+      "note": "Guidelines + timing ASR prompt. Mean over 99 test videos with output, 95% CI ±0.25. Judge: Gemini-3.5 Flash. Higher is better."
+    },
+    {
+      "benchmark": "mtg-ad",
+      "model": "gemini-2-5-flash",
+      "metric": "VideoA11y-Ref Clear (1–5)",
+      "value": 2.69,
+      "source": "Table 6, arXiv:2610.39955v1, VideoA11y-Ref Clear, Gemini-2.5 Flash",
+      "source_url": "https://arxiv.org/pdf/2610.39955v1#page=15",
+      "note": "Guidelines + timing ASR prompt. Mean over 101 test videos with output, 95% CI ±0.20. Judge: Gemini-2.5 Flash. Higher is better."
+    },
+    {
+      "benchmark": "mtg-ad",
+      "model": "gemini-3-5-flash",
+      "metric": "VideoA11y-Ref Clear (1–5)",
+      "value": 4.02,
+      "source": "Table 6, arXiv:2610.39955v1, VideoA11y-Ref Clear, Gemini-3.5 Flash",
+      "source_url": "https://arxiv.org/pdf/2610.39955v1#page=15",
+      "note": "Guidelines + timing ASR prompt. Mean over 101 test videos with output, 95% CI ±0.17. Judge: Gemini-3.5 Flash. Higher is better."
+    },
+    {
+      "benchmark": "mtg-ad",
+      "model": "qwen3-5-omni-flash",
+      "metric": "VideoA11y-Ref Clear (1–5)",
+      "value": 4.27,
+      "source": "Table 6, arXiv:2610.39955v1, VideoA11y-Ref Clear, Qwen-3.5-Omni-Flash",
+      "source_url": "https://arxiv.org/pdf/2610.39955v1#page=15",
+      "note": "Guidelines + timing ASR prompt. Mean over 57 test videos with output, 95% CI ±0.26. Judge: Gemini-3.5 Flash. Higher is better."
+    },
+    {
+      "benchmark": "mtg-ad",
+      "model": "qwen3-5-omni-plus",
+      "metric": "VideoA11y-Ref Clear (1–5)",
+      "value": 3.81,
+      "source": "Table 6, arXiv:2610.39955v1, VideoA11y-Ref Clear, Qwen-3.5-Omni-Plus",
+      "source_url": "https://arxiv.org/pdf/2610.39955v1#page=15",
+      "note": "Guidelines + timing ASR prompt. Mean over 99 test videos with output, 95% CI ±0.27. Judge: Gemini-3.5 Flash. Higher is better."
     }
   ]
 }

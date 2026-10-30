@@ -25851,6 +25851,148 @@
     }
    ],
    "verify_note": "Checked arXiv:2610.32495v1 first-page PDF visually against extracted text and arXiv author metadata. First/last author memberships follow the printed superscripts or author columns; lead is the first-listed affiliation of the first author. Only explicitly printed author addresses are placed. Registry geography is not author-location evidence."
+  },
+  "mixcardbench": {
+   "status": "ok",
+   "verified": "confirmed",
+   "publishable": true,
+   "countries_complete": false,
+   "n_authors": 9,
+   "institutions": [
+    {
+     "inst": "new-jersey-institute-of-technology",
+     "raw": "New Jersey Institute of Technology",
+     "unit": null,
+     "country": null,
+     "city": null,
+     "lat": null,
+     "lon": null,
+     "placed": "unplaced",
+     "printed_city": null,
+     "printed_country": null,
+     "lead": true,
+     "first_author": true,
+     "last": false,
+     "evidence": "printed"
+    },
+    {
+     "inst": "new-york-university",
+     "raw": "New York University",
+     "unit": null,
+     "country": null,
+     "city": null,
+     "lat": null,
+     "lon": null,
+     "placed": "unplaced",
+     "printed_city": null,
+     "printed_country": null,
+     "lead": false,
+     "first_author": false,
+     "last": true,
+     "evidence": "printed"
+    },
+    {
+     "inst": "adobe",
+     "raw": "Adobe Research",
+     "unit": "Adobe Research",
+     "country": null,
+     "city": null,
+     "lat": null,
+     "lon": null,
+     "placed": "unplaced",
+     "printed_city": null,
+     "printed_country": null,
+     "lead": false,
+     "first_author": false,
+     "last": false,
+     "evidence": "printed"
+    },
+    {
+     "inst": "monash-university",
+     "raw": "Monash University",
+     "unit": null,
+     "country": null,
+     "city": null,
+     "lat": null,
+     "lon": null,
+     "placed": "unplaced",
+     "printed_city": null,
+     "printed_country": null,
+     "lead": false,
+     "first_author": false,
+     "last": false,
+     "evidence": "printed"
+    }
+   ],
+   "verify_note": "Checked the first-page affiliation labels against the author byline and arXiv metadata. Lead follows the first-listed author. The byline gives no separate city or country address. Sridhar, Kim and Morais share equal contribution."
+  },
+  "hear-pain": {
+   "status": "ok",
+   "verified": "confirmed",
+   "publishable": true,
+   "countries_complete": false,
+   "n_authors": 3,
+   "institutions": [
+    {
+     "inst": "microsoft",
+     "raw": "Microsoft",
+     "unit": null,
+     "country": null,
+     "city": null,
+     "lat": null,
+     "lon": null,
+     "placed": "unplaced",
+     "printed_city": null,
+     "printed_country": null,
+     "lead": true,
+     "first_author": true,
+     "last": true,
+     "evidence": "printed"
+    }
+   ],
+   "verify_note": "Checked the first-page affiliation labels against the author byline and arXiv metadata. Lead follows the first-listed author. The byline gives no separate city or country address. Li and Dong share equal contribution."
+  },
+  "mtg-ad": {
+   "status": "ok",
+   "verified": "confirmed",
+   "publishable": true,
+   "countries_complete": false,
+   "n_authors": 8,
+   "institutions": [
+    {
+     "inst": "google",
+     "raw": "Google Research",
+     "unit": "Google Research",
+     "country": null,
+     "city": null,
+     "lat": null,
+     "lon": null,
+     "placed": "unplaced",
+     "printed_city": null,
+     "printed_country": null,
+     "lead": true,
+     "first_author": true,
+     "last": true,
+     "evidence": "printed"
+    },
+    {
+     "inst": "university-of-california-berkeley",
+     "raw": "UC Berkeley",
+     "unit": null,
+     "country": null,
+     "city": null,
+     "lat": null,
+     "lon": null,
+     "placed": "unplaced",
+     "printed_city": null,
+     "printed_country": null,
+     "lead": false,
+     "first_author": false,
+     "last": true,
+     "evidence": "printed"
+    }
+   ],
+   "verify_note": "Checked the first-page affiliation labels against the author byline and arXiv metadata. Lead follows the first-listed author. The byline gives no separate city or country address."
   }
  },
  "models": {

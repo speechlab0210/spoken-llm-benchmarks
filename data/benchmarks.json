@@ -12344,6 +12344,108 @@
       "languages": [],
       "note": "Included for its new held-out evaluation protocol, distinct from its training method. The music material is mainly classical due to licensing. Five groups contain 100 recall, 50 recall-plus-interpolation, 250 interpolation, 150 extrapolation and 50 anti-hallucination questions; each contributes 20% to the musical-response composite. Six Audio Flamingo Next Base scores are entered with persona/memory conditioning. Separate text-fidelity measures, existing music-QA controls and adapted MusicTwins scores are not conflated with these cells. The actual result table is PDF Table 1; HTML prose has an inconsistent Table 3 reference. Confidence intervals in that table describe the training delta, not baseline estimates.",
       "size": "600 question–answer–audio tuples from 10 held-out personas; 536 with one recording and 64 with two to four"
+    },
+    {
+      "id": "mixcardbench",
+      "name": "MixCardBench",
+      "aka": [
+        "MixCards benchmark"
+      ],
+      "categories": [
+        "auditory-perception",
+        "audio-grounding"
+      ],
+      "tasks": [
+        "sound source detection and localization",
+        "structured captioning of individual sources"
+      ],
+      "languages": [],
+      "size": "4,884 synthetic scenes with up to nine sources and 9,618 reference cards",
+      "io": "audio mixture → source labels and time intervals → one structured description per detected source",
+      "metrics": [
+        "event F1 with a 1-second onset and offset collar",
+        "segment F1 in 100-ms windows",
+        "normalized card field score (0–1)"
+      ],
+      "summary": "Can a model separate overlapping sounds well enough to describe each one? A model finds speech, music and sound effects in a mixture, marks when each source is audible, then fills in a card for each detected source. Separate scores show whether it missed the source or struggled to describe its properties.",
+      "note": "Six audio-language models follow the same zero-shot protocol. The catalogue reports category scores from the versioned HTML Table 15. The PDF numbers its tables differently. Reference cards come from isolated sources, and the paper also checks a human-validated subset.",
+      "code": "https://github.com/Sound-Captioning-for-Accessibility/mixcardbench",
+      "data": "https://doi.org/10.5281/zenodo.23702059",
+      "full_title": "MixCards: Evaluating Structured Descriptions of Multi-Source Sound Scenes",
+      "arxiv_id": "2610.38276",
+      "arxiv_date": "2026-10",
+      "arxiv_date_full": "2026-10-28",
+      "url": "https://arxiv.org/abs/2610.38276"
+    },
+    {
+      "id": "hear-pain",
+      "name": "HEAR (pain reasoning)",
+      "aka": [
+        "HEAR on TAME-Pain"
+      ],
+      "categories": [
+        "paralinguistics",
+        "auditory-perception",
+        "reasoning"
+      ],
+      "tasks": [
+        "recognition of pain from speech",
+        "pain-related acoustic cue discrimination",
+        "reasoning with verbalized acoustic cues"
+      ],
+      "languages": [],
+      "size": "4,658 retained TAME-Pain recordings from 51 speakers",
+      "io": "neutral sentence or spoken pain rating, with optional references, transcript or acoustic cues → pain classification",
+      "metrics": [
+        "binary balanced accuracy (%)",
+        "three-class balanced accuracy (%)",
+        "layer-wise probing and cue discrimination"
+      ],
+      "summary": "HEAR tests how an audio-language model uses vocal cues to infer pain. The same speakers read neutral sentences and give spoken pain ratings. Four stages examine the model’s answer, its internal representations, its ability to hear controlled acoustic changes, and its response when measurements are supplied as text.",
+      "note": "HEAR introduces an evaluation protocol using the existing TAME-Pain corpus. A spoken rating can reveal the answer in words. Pairwise and 20-shot conditions use recordings from the same speaker. Table 1 cells use inputs containing audio. Table 3 cells add verbalized acoustic features to those inputs. The paper names the Gemini 3.1 Pro endpoint as gemini-3.1-pro-preview. The unindexed gpt-realtime-mini is a separate model.",
+      "full_title": "Do Audio LLMs HEAR Pain? Tracing Acoustic Evidence from Speech to Language Reasoning",
+      "arxiv_id": "2610.38570",
+      "arxiv_date": "2026-10",
+      "arxiv_date_full": "2026-10-28",
+      "url": "https://arxiv.org/abs/2610.38570"
+    },
+    {
+      "id": "mtg-ad",
+      "name": "MTG-AD / MTG-AD-Eval",
+      "aka": [
+        "Mind the Gap inline audio descriptions",
+        "MTG-AD-Eval"
+      ],
+      "categories": [
+        "audio-grounding",
+        "instruction-following",
+        "long-form"
+      ],
+      "tasks": [
+        "inline audio description",
+        "speech-gap timing",
+        "selection of salient visual events"
+      ],
+      "languages": [
+        "English"
+      ],
+      "size": "433 videos (35.9 hours), comprising 332 validation videos and 101 test videos",
+      "io": "untrimmed video and optional timestamped transcript → timed description script → playback with synthesized narration",
+      "metrics": [
+        "content prioritization and on-screen text recall",
+        "timing error, overlap and silence in seconds",
+        "coverage of available silence",
+        "reference-based script quality (1–5)"
+      ],
+      "summary": "Given a full video, a model writes descriptions of important visual events that fit between spoken passages. The evaluator renders the script with a shared speech synthesizer to measure how long it talks over the original audio. Paired blind and sighted professionals supplied the reference descriptions.",
+      "note": "The audio-video models in Table 6 receive a timestamped ASR transcript with the video. The comparison tests script content and placement with a common TTS engine. Completion counts and judge versions vary across models and accompany each result. VideoA11y-Ref ratings measure agreement with the professional reference. Scores on this prompt do not isolate the contribution of raw audio.",
+      "code": "https://github.com/google/mtg-ad",
+      "data": "https://huggingface.co/datasets/google/mind-the-gap-inline-ad",
+      "full_title": "Mind The Gap (MTG-AD): Dataset and Fine-grained Evaluation for End-to-End Inline Audio Descriptions",
+      "arxiv_id": "2610.39955",
+      "arxiv_date": "2026-10",
+      "arxiv_date_full": "2026-10-29",
+      "url": "https://arxiv.org/abs/2610.39955"
     }
   ]
 }
