@@ -1,9 +1,116 @@
 {
-  "fetched_at": "2026-11-01T22:27:01Z",
+  "fetched_at": "2026-11-02T22:32:40Z",
   "window_days": 10,
-  "scanned": 109,
-  "flagged_today": 0,
+  "scanned": 104,
+  "flagged_today": 6,
   "candidates": [
+    {
+      "id": "2610.41292",
+      "title": "From Transcription to Reformulation: Defining and Benchmarking Grounded Generative Speech Recognition",
+      "abstract": "Speech language models have expanded automatic speech recognition (ASR) from transcription to general speech-to-text generation. Yet existing benchmarks still assume a single ground-truth transcript per utterance, an assumption that struggles when models produce readable, formatted, or structured outputs. In this work, we introduce Grounded Generative Speech Recognition (GSR), reformulating speech recognition as generating semantically grounded text instead of a single transcript. We define a grounded reformulation space that characterizes all valid textual realizations supported by the input speech, and establish a four-level hierarchy of reformulation capabilities, including literal transcription, canonical reformulation, semantic reformulation and speech-grounded structuring. Based on this formulation, we present GSR-Bench, the first comprehensive benchmark designed to evaluate generative speech recognition systems beyond exact transcript matching. GSR-Bench covers diverse scenarios including refined meeting transcription, cross-dialect translation, context-aware speech understanding, and robustness under silent or noisy acoustic conditions. To address the limitations of word-level evaluation metrics, we develop a multi-dimensional evaluation framework combining speech grounding assessment and LLM-based semantic judgment, whose reliability is validated through human preference studies. Extensive experiments across representative architectures, ranging from conventional ASR systems to end-to-end Speech-LLMs, reveal fundamental trade-offs between transcription fidelity and generative reformulation ability. Our analysis further identifies critical failure modes, including acoustic hallucination, unsupported generation, and instruction drift, providing insights into the design and evaluation of future grounded generative speech systems.",
+      "published": "2026-10-30T05:53:56Z",
+      "authors": [
+        "Qing Wang",
+        "Qihan Hu",
+        "Hang Lv",
+        "Yan Yang",
+        "Boqing Liu",
+        "Xuechao Zhu",
+        "Zehan Li",
+        "Hongjie Chen"
+      ],
+      "primary_category": "cs.CL",
+      "url": "https://arxiv.org/abs/2610.41292",
+      "score": 39,
+      "status": "new — under review"
+    },
+    {
+      "id": "2610.41390",
+      "title": "Hierarchical Dual-Graph Retrieval for Long-form Audio Reasoning",
+      "abstract": "Large audio language models (LALMs) struggle with long-form audio reasoning, as processing entire recordings often limits to capture query-relevant content distributed across distant segments while incurring substantial computational cost. We introduce AudioHelix, a hierarchical DualGraph framework tailored for LALMs' retrieval-augmented generation (RAG) systems. Unlike existing text-only or non-graph RAG approaches, AudioHelix connects related textual and acoustic evidence across temporally distant segments for multi-hop reasoning. Extensive experiments on TraceAV-Bench, MMAU-Pro, and AudioMarathon demonstrate that AudioHelix consistently outperforms full-audio processing and existing RAG methods. The project site is https://github.com/ewha-mmai/audiohelix.",
+      "published": "2026-10-30T08:00:43Z",
+      "authors": [
+        "Eunsang Lee",
+        "Taein Ju",
+        "Jiyoung Lee"
+      ],
+      "primary_category": "cs.SD",
+      "url": "https://arxiv.org/abs/2610.41390",
+      "score": 36,
+      "status": "new — under review"
+    },
+    {
+      "id": "2610.41539",
+      "title": "Scalable Audio-LLM System for Speech MOS Evaluation: A Diagnostic Case Study and Adaptation Roadmap",
+      "abstract": "The continuous deployment of enterprise voice systems creates a critical operational bottleneck: evaluating the acoustic quality of synthetic speech across high-volume production updates. While human Mean Opinion Score (MOS) remains the quality gold standard, it introduces severe operational costs and turn-around delays that make continuous integration infeasible. In this work, we present a system design case study for a scalable, low-cost and offline evaluation pipeline capable of scoring large batches of synthetic speech at marginal cost. First, we use Qwen2-Audio-7B-Instruct in a zero-shot setting for granular MOS estimation, noticing perceptual blind spots and inherent biases. Then, we analyze SOMOS dataset and construct a diagnostic benchmark that operationalizes two prosodic dimensions associated with human naturalness ratings. Finally, we adapt Qwen2-Audio-7B-Instruct through a parameter-efficient finetuning (LoRA) on the task of MOS evaluation, observing improvements over base model and widely used neural baselines like UTMOS and establishing a practical blueprint for enterprise-grade speech quality assurance.",
+      "published": "2026-10-30T10:37:06Z",
+      "authors": [
+        "Dimitrios Kokkinis",
+        "Panagiotis Kakoulidis",
+        "Nikolaos Ellinas",
+        "Chrysovalanti Lymperi",
+        "Alexandra Vioni",
+        "Georgios Vardaxoglou",
+        "Iakovi Alexiou",
+        "Myrsini Christidou"
+      ],
+      "primary_category": "cs.SD",
+      "url": "https://arxiv.org/abs/2610.41539",
+      "score": 30,
+      "status": "new — under review"
+    },
+    {
+      "id": "2610.40695",
+      "title": "JYVA at BeTraC: Audio-Based Medical Note Generation with SOAP Section-Specific Queries",
+      "abstract": "We present our submission to the Beyond Transcription Challenge (BeTraC) on medical note generation from doctor-patient audio conversations. We propose a section-aware approach based on Qwen2.5-Omni-3B, in which a lightweight Q-Former learns SOAP section-specific queries to extract compact clinical representations from speech. In the lightweight track, our system ranks fourth and substantially outperforms the challenge baseline, achieving a Concept F1 of 0.5005 on the official test set. The organizers' analysis and our heuristic evaluation suggest improved robustness to hallucinations, and better stability under difficult audio conditions. These results show that explicitly modeling SOAP structure through section-specific queries is an effective way to improve the faithfulness and reliability of audio-based medical note generation.",
+      "published": "2026-10-28T10:22:57Z",
+      "authors": [
+        "Youness Dkhissi",
+        "Valentin Vielzeuf",
+        "Antoine Caubrière",
+        "Jean-Emile Dartois"
+      ],
+      "primary_category": "cs.SD",
+      "url": "https://arxiv.org/abs/2610.40695",
+      "score": 21,
+      "status": "new — under review"
+    },
+    {
+      "id": "2610.40738",
+      "title": "Apriel Voice 27B Preview: An Open Model for Speech, Reasoning, and Tool Use",
+      "abstract": "A capable voice assistant must do more than recognize words; it must understand requests, reason over context, sustain conversations, and act through tools. We present Apriel Voice 27B Preview, an open speech-language model that unifies these capabilities within a shared reasoning backbone while retaining text and image input modalities. Built on the post-trained Gemma 4 26B-A4B checkpoint, Apriel Voice directly processes speech and generates both responses and tool calls without requiring a separate dialogue model. We introduce a two-stage training procedure to adapt the model to speech. The first stage establishes the speech interface, while the second jointly adapts the projector and backbone through supervised fine-tuning, text replay, and source-dependent cross-entropy and forward Kullback--Leibler divergence supervision. Automatically constructed speech-conditioned dialogues provide conversational training data, while local teacher serving, overlapping teacher and student computation, and fused full-vocabulary losses enable efficient online distillation. In thinking mode, Apriel Voice achieves a score of 98.90 on Big Bench Audio, 81.13 on Speech-BFCL, and a task success rate of 65.51% on $τ$-Voice, with a mean latency of 1.91 seconds. It also achieves 51.27% English EVA accuracy and 74.13% experience pass@1. Finally, we deploy Apriel Voice 27B Preview on a custom serving platform to support interactive voice interactions.",
+      "published": "2026-10-29T14:48:50Z",
+      "authors": [
+        "Aman Tiwari",
+        "Akshay Kalkunte",
+        "Akintunde Oladipo",
+        "Jash Shah",
+        "Tara Bogavelli",
+        "Hoang Nguyen",
+        "Nishanth Madhusudhan",
+        "Vishal Juneja"
+      ],
+      "primary_category": "cs.SD",
+      "url": "https://arxiv.org/abs/2610.40738",
+      "score": 18,
+      "status": "new — under review"
+    },
+    {
+      "id": "2610.41512",
+      "title": "Parameter-Efficient Fine-Tuning of Transformer Encoders for Audio-Image-Symbolic Music Retrieval",
+      "abstract": "Score-based multimodal music retrieval requires representations that are both discriminative within each modality and compatible across audio recordings, sheet music images, and symbolic scores. This paper investigates the effectiveness of parameter-efficient fine-tuning (PEFT) for adapting pretrained music encoders and examines whether modality-specific improvements translate into better multimodal representations. We compare full fine-tuning, LoRA, and QLoRA across nine pretrained audio, image, and symbolic score encoders on TriScore and the Musical Theme Dataset. Encoders are first evaluated and selected through supervised unimodal classification, using frozen-encoder linear probing as a reference. We then introduce a controlled 2x2 design crossing encoder adaptation with task-specific shared projection, comparing frozen and adapted representations before and after projection. LoRA or QLoRA is selected in 14 of 18 modality-target combinations, frequently matching or outperforming full fine-tuning while optimizing substantially fewer parameters. However, these unimodal gains do not transfer uniformly to multimodal classification. Adaptation and projection are complementary for composer classification on TriScore, largely redundant for TriScore instrument and the Musical Theme Dataset instrument and ensemble tasks, and partially interfering for composer classification on the Musical Theme Dataset. The final adapted-and-projected title representation on TriScore supports piece-level retrieval, reaching average Top-5 and Top-10 accuracies of 55.32 and 64.68, respectively. Cross-modal exclusion and neighborhood analyses further reveal strong modality-specific local structure in the projected spaces. Overall, PEFT provides an effective and computationally efficient alternative to full fine-tuning, but improved unimodal discrimination alone does not guarantee better multimodal organization.",
+      "published": "2026-10-30T10:02:14Z",
+      "authors": [
+        "Eliseo Fuentes-Martinez",
+        "Antonio Hidalgo-Centeno",
+        "Jorge Calvo-Zaragoza",
+        "Antonio Javier Gallego"
+      ],
+      "primary_category": "cs.CV",
+      "url": "https://arxiv.org/abs/2610.41512",
+      "score": 18,
+      "status": "new — under review"
+    },
     {
       "id": "2610.38276",
       "title": "MixCards: Evaluating Structured Descriptions of Multi-Source Sound Scenes",
@@ -966,109 +1073,6 @@
       "url": "https://arxiv.org/abs/2610.26258",
       "score": 21,
       "status": "reviewed — out of scope: AudioScorer is an audio-token pruning method tested on existing tasks"
-    },
-    {
-      "id": "2610.26448",
-      "title": "TeleASR-Amharic: A Benchmark for Robust Amharic ASR in Realistic Telecommunication Conditions",
-      "abstract": "The real-world usability of ASR models remains challenging, particularly for low-resource languages, where existing speech resources are often collected in clean studio environments. In this work, we introduce TeleASR-Amharic, a benchmark for evaluating Amharic ASR under various acoustic and telecommunication conditions. We analyze the major degradations observed in real telecommunications recordings and develop a benchmark that covers multiple channel conditions, environmental disturbances, and telecom-domain variations. Our results show that telecommunication degradation can substantially reduce recognition performance, making even high-performing ASR models impractical under severe conditions. For example, the WER of the best-performing model increases from 0.23 to 0.79 under severe telecommunication degradation, corresponding to a relative increase of 243% in recognition errors. We further investigate the effects of different noise and channel distortions and show that scaling training data and applying carefully designed telecommunication-aware augmentation substantially improve robustness. In particular, our best training configuration achieves a 23.6% relative WER reduction under extreme noise conditions. Together with the release of our telecommunications-domain data, these findings provide a reproducible benchmark for measuring progress in Amharic ASR while highlighting open challenges in developing robust speech technologies for real-world deployment.",
-      "published": "2026-10-19T14:06:28Z",
-      "authors": [
-        "Dagnachew Mekonnen Marilign",
-        "Enrique Molero",
-        "Abrham Haile",
-        "Louis Powell",
-        "Israel Abebe Azime"
-      ],
-      "primary_category": "cs.CL",
-      "url": "https://arxiv.org/abs/2610.26448",
-      "score": 21,
-      "status": "reviewed — out of scope: TeleASR-Amharic evaluates dedicated automatic speech recognition under telecom distortions"
-    },
-    {
-      "id": "2610.27459",
-      "title": "RealComm: Benchmarking and Adapting Audio Deepfake Detection over Real Communication Channels",
-      "abstract": "Acoustic capture, device processing, and transmission coding in real calls jointly alter speech signals and may affect the reliability of audio deepfake detection. To systematically evaluate these effects, we introduce RealComm, a dataset pairing digital speech with recordings of the same utterances transmitted through real mobile calls. The acquisition design covers acoustic and wired injection, handset and speakerphone operation, and caller-side denoising, with bona fide and synthetic speech recorded under matched conditions. The dataset includes RealCommBench for evaluation and RealCommTrain for adaptation. We further develop RealComm-Aug, a staged waveform augmentation pipeline for simulating acquisition and transmission effects, and investigate its combination with real-call training. Experiments with existing detectors reveal substantial degradation after call transmission, even for models with strong digital-domain performance; acoustic injection is particularly challenging. Paired quality and spectral analyses show that quality degradation is associated with poorer detection across recording conditions for the evaluated detectors, while high-frequency attenuation alone does not explain detection difficulty. Simulated augmentation and real-call training provide complementary benefits, with their combination achieving the lowest call-domain error for each of three evaluated detectors. For Teffic-Audio, the equal error rate decreases from 37.94% to 22.37%. The demo and benchmark access information are provided through the project repository.",
-      "published": "2026-10-20T01:19:17Z",
-      "authors": [
-        "Li Wang",
-        "Jindong Wang",
-        "Wan Lin",
-        "Kunyu Feng",
-        "Yufan Lin",
-        "Lei Wang",
-        "Rizhao Cai",
-        "Ce Fang"
-      ],
-      "primary_category": "eess.AS",
-      "url": "https://arxiv.org/abs/2610.27459",
-      "score": 21,
-      "status": "reviewed — out of scope: RealComm targets specialized audio-deepfake detection rather than general spoken LLMs"
-    },
-    {
-      "id": "2610.31252",
-      "title": "Query-Conditioned Liquid Temporal Grounding for Long-Form Audio",
-      "abstract": "Long-form temporal audio grounding (TAG) is challenging because target events often occupy only a small portion of a recording, while queries may impose multiple semantic constraints over a large temporal search space. We propose a query-conditioned liquid temporal grounding framework that injects query semantics through FiLM before a closed-form continuous-time (CfC) network models long-range temporal dependencies. Multiple query-relevant candidates are generated, from which a frozen large audio-language model selects the most compatible one for lightweight local boundary refinement. The pretrained backbone remains frozen, with only lightweight grounding modules optimized. Experiments on the English TAG subset of LAT-Bench show consistent improvements across MOSS-Audio and Qwen3-Omni, while ablations confirm the complementary roles of FiLM and CfC.",
-      "published": "2026-10-22T13:32:12Z",
-      "authors": [
-        "Yuelan Cheng",
-        "Yonggang Zhu",
-        "Yongqiang Chen",
-        "Peiwei Chang",
-        "Yingyi Chen",
-        "Wenwu Wang"
-      ],
-      "primary_category": "cs.SD",
-      "url": "https://arxiv.org/abs/2610.31252",
-      "score": 21,
-      "status": "reviewed — out of scope: proposes a temporal-grounding model and evaluates it on LAT-Bench rather than introducing a new benchmark"
-    },
-    {
-      "id": "2610.20085",
-      "title": "Designing Textual Interfaces To Enhance Llm Reasoning On Audio-Visual Question Answering",
-      "abstract": "Automatic prompt optimization (APO) has shown strong effectiveness for text-based LLMs and LLM systems, but its application to audio-visual understanding systems requires suitable textual interfaces through which multimodal reasoning can be exposed to text-based optimizers. We investigate how the design of textual interfaces affects prompt optimization for multimodal reasoning, on the audio-visual question answering task. We compare three interface designs, including a direct inference system consisting of a single omni-modal large language model (OmniLLM), a captioner-reasoner system, and an agentic architecture in which a primary agent orchestrates subagent OmniLLMs. Experiments with Qwen3-Omni and Gemini show that direct prompt optimization provides model-dependent gains; the captioner-reasoner system and the agentic system expose more interpretable optimization interfaces but are harder to optimize, where error analysis of cases affected by optimization is conducted. Our study highlights textual interface design as an important factor in making prompt optimization effective for omni-modal reasoning systems. Our implementation details are specified in GitHub repo.",
-      "published": "2026-10-14T12:23:59Z",
-      "authors": [
-        "Yi Wang",
-        "Tianzi Wang",
-        "Tong Lei",
-        "Dahan Wang",
-        "Peter Bell"
-      ],
-      "primary_category": "cs.AI",
-      "url": "https://arxiv.org/abs/2610.20085",
-      "score": 18,
-      "status": "reviewed — out of scope: studies textual interfaces for reasoning on existing audio-visual question-answering tasks, not a new benchmark"
-    },
-    {
-      "id": "2610.22405",
-      "title": "MedSonor: Learning to Use Clinical Audio in Medical LLMs",
-      "abstract": "Clinical audio conveys medical information that transcripts may not preserve, but using it in medical responses requires interpreting it alongside clinical requests and dialogue context. Existing medical audio supervision largely targets classification or recognition, while general audio-language models lack specialized medical knowledge and direct feedback for open-ended responses. We present MedSonor, a medical dialogue model integrating medical knowledge, spoken dialogue, and clinical audio understanding. We pair authentic medical audio with clinical requests and combine these audio-integrated dialogues with collected medical audio and synthesized spoken dialogues for supervised fine-tuning, followed by two stages of rubric-guided reinforcement learning. We introduce MedVoice-Dial and MedVoice?AID to evaluate responses within supplied multi-turn medical contexts and to requests involving clinical audio, respectively. Across seven medical benchmarks, MedSonor outperforms the evaluated general-purpose open-weight audio-language baselines and ranks highest in aggregate physician preference evaluation, while broadly retaining general speech capabilities.",
-      "published": "2026-10-14T14:04:43Z",
-      "authors": [
-        "Geyang Yu",
-        "Junying Chen",
-        "Benyou Wang"
-      ],
-      "primary_category": "cs.SD",
-      "url": "https://arxiv.org/abs/2610.22405",
-      "score": 18,
-      "status": "reviewed — included: MedVoice-Dial, MedVoice-AID introduce evaluation tasks for general speech/audio-language models; modality and protocol limitations are documented in the catalogue"
-    },
-    {
-      "id": "2610.21659",
-      "title": "When Does \"Post-Call\" Begin? An Availability Contract for Earnings-Call NLP Benchmarks",
-      "abstract": "Corporate financial disclosures often unfold over time, with announcements, prepared remarks, and discussion spanning multiple high-frequency return intervals. Financial NLP benchmarks can therefore suffer from a within-event timing mismatch when the prediction target begins before the textual or audio input used by a model could be complete. Chronological train--test splits do not prevent this mismatch, because it occurs inside individual events rather than across samples. We introduce an Availability Contract, which requires a benchmark to state the input boundary, evidence for input availability, the outcome start, and the claims supported by that evidence. We apply this framework to 552 earnings calls from 24 firms. For each call, we hold the return endpoint fixed and compare the previous close, a documentary call-start proxy, and a completion proxy based on reconstructed audio end plus a stipulated processing allowance. At this baseline, moving from the call-start proxy to the completion proxy flips return signs for 9.4% of calls. Holding completion-clock cutpoints fixed, 28.3% change quintile. In an independent release-session analysis of a public earnings-call volatility benchmark, shifting before-market target windows forward by one trading session raises three-day mean squared error by 18.1-21.4% across four frozen prediction streams, while their point rankings remain unchanged. Together, the results show that labels and losses can depend materially on the declared outcome clock even when model rankings appear stable. The Availability Contract makes this assumption explicit and ties post-input claims to the available timing evidence.",
-      "published": "2026-10-15T10:40:06Z",
-      "authors": [
-        "Xiaoyu Ma",
-        "Kelvin J. L. Koa",
-        "Yuncong Liu",
-        "Ke-Wei Huang"
-      ],
-      "primary_category": "q-fin.CP",
-      "url": "https://arxiv.org/abs/2610.21659",
-      "score": 18,
-      "status": "reviewed — out of scope: studies post-call timing and information leakage in financial NLP rather than evaluating general spoken LLMs"
     }
   ],
   "warnings": []

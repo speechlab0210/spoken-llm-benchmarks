@@ -1,9 +1,44 @@
 {
  "since": "2026-08-22",
  "what": "Every arXiv paper the daily crawl has flagged since launch (score at or above the threshold, not previously seen), with the reviewer's verdict as written in the feed and whether the paper entered the catalogue. \"published\" is the paper's arXiv date. See the Method section of the site.",
- "flagged": 300,
+ "flagged": 306,
  "admitted": 87,
  "entries": [
+  {
+   "id": "2610.41539",
+   "title": "Scalable Audio-LLM System for Speech MOS Evaluation: A Diagnostic Case Study and Adaptation Roadmap",
+   "published": "2026-10-30T10:37:06Z",
+   "score": 30,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.41512",
+   "title": "Parameter-Efficient Fine-Tuning of Transformer Encoders for Audio-Image-Symbolic Music Retrieval",
+   "published": "2026-10-30T10:02:14Z",
+   "score": 18,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.41390",
+   "title": "Hierarchical Dual-Graph Retrieval for Long-form Audio Reasoning",
+   "published": "2026-10-30T08:00:43Z",
+   "score": 36,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.41292",
+   "title": "From Transcription to Reformulation: Defining and Benchmarking Grounded Generative Speech Recognition",
+   "published": "2026-10-30T05:53:56Z",
+   "score": 39,
+   "outcome": "under review"
+  },
+  {
+   "id": "2610.40738",
+   "title": "Apriel Voice 27B Preview: An Open Model for Speech, Reasoning, and Tool Use",
+   "published": "2026-10-29T14:48:50Z",
+   "score": 18,
+   "outcome": "under review"
+  },
   {
    "id": "2610.39955",
    "title": "Mind The Gap (MTG-AD): Dataset and Fine-grained Evaluation for End-to-End Inline Audio Descriptions",
@@ -12,6 +47,13 @@
    "outcome": "admitted",
    "verdict": "reviewed — included: Introduces MTG-AD and its evaluation protocol for timed audio descriptions, including tests of native audio-video models with transcript assistance.",
    "catalogue_id": "mtg-ad"
+  },
+  {
+   "id": "2610.40695",
+   "title": "JYVA at BeTraC: Audio-Based Medical Note Generation with SOAP Section-Specific Queries",
+   "published": "2026-10-28T10:22:57Z",
+   "score": 21,
+   "outcome": "under review"
   },
   {
    "id": "2610.38570",
