@@ -2,42 +2,49 @@
  "since": "2026-08-22",
  "what": "Every arXiv paper the daily crawl has flagged since launch (score at or above the threshold, not previously seen), with the reviewer's verdict as written in the feed and whether the paper entered the catalogue. \"published\" is the paper's arXiv date. See the Method section of the site.",
  "flagged": 306,
- "admitted": 87,
+ "admitted": 89,
  "entries": [
   {
    "id": "2610.41539",
    "title": "Scalable Audio-LLM System for Speech MOS Evaluation: A Diagnostic Case Study and Adaptation Roadmap",
    "published": "2026-10-30T10:37:06Z",
    "score": 30,
-   "outcome": "under review"
+   "outcome": "admitted",
+   "verdict": "reviewed — included: Introduces three SOMOS-based diagnostic tasks and tests the general audio-language models Qwen2-Audio-7B-Instruct and Audio Flamingo 3.",
+   "catalogue_id": "somos-audio-diagnostics"
   },
   {
    "id": "2610.41512",
    "title": "Parameter-Efficient Fine-Tuning of Transformer Encoders for Audio-Image-Symbolic Music Retrieval",
    "published": "2026-10-30T10:02:14Z",
    "score": 18,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: Studies adaptation of specialized audio, image and symbolic-music encoders on existing TriScore and Musical Theme Dataset tasks, not general spoken LLMs."
   },
   {
    "id": "2610.41390",
    "title": "Hierarchical Dual-Graph Retrieval for Long-form Audio Reasoning",
    "published": "2026-10-30T08:00:43Z",
    "score": 36,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: Introduces the AudioHelix retrieval method, evaluated on existing TraceAV-Bench, MMAU-Pro and AudioMarathon; no new benchmark is introduced."
   },
   {
    "id": "2610.41292",
    "title": "From Transcription to Reformulation: Defining and Benchmarking Grounded Generative Speech Recognition",
    "published": "2026-10-30T05:53:56Z",
    "score": 39,
-   "outcome": "under review"
+   "outcome": "admitted",
+   "verdict": "reviewed — included: Introduces GSR-Bench and evaluates general audio-language models on grounded reformulation, summarization and acoustic hallucination.",
+   "catalogue_id": "gsr-bench"
   },
   {
    "id": "2610.40738",
    "title": "Apriel Voice 27B Preview: An Open Model for Speech, Reasoning, and Tool Use",
    "published": "2026-10-29T14:48:50Z",
    "score": 18,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: Introduces the Apriel Voice 27B Preview model and training/serving approach, evaluated on existing speech benchmarks; no new benchmark is introduced."
   },
   {
    "id": "2610.39955",
@@ -53,7 +60,8 @@
    "title": "JYVA at BeTraC: Audio-Based Medical Note Generation with SOAP Section-Specific Queries",
    "published": "2026-10-28T10:22:57Z",
    "score": 21,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: Describes a section-aware Q-Former submission to the existing BeTraC challenge; its contribution is a medical-note generation system, not a new benchmark."
   },
   {
    "id": "2610.38570",

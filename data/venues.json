@@ -11404,6 +11404,52 @@
     "official_program"
    ],
    "check_note": "Checked the official poster page, program item 139386 (Accept (poster), Evaluations and Datasets track), and the arXiv camera-ready record on 2026-10-31. The poster session is scheduled for December."
+  },
+  "gsr-bench": {
+   "status": "preprint",
+   "venue": null,
+   "venue_name_raw": null,
+   "venue_full": null,
+   "year": null,
+   "kind": null,
+   "track": null,
+   "parent_venue": null,
+   "display": null,
+   "evidence": "arxiv",
+   "evidence_raw": "arxiv",
+   "evidence_url": "https://arxiv.org/abs/2610.41292",
+   "evidence_quote": null,
+   "doi": null,
+   "confidence": "high",
+   "verified": "cannot_verify",
+   "publishable": true,
+   "note": "arXiv preprint; no journal reference, publication DOI or acceptance statement was found in the arXiv record or paper.",
+   "check_url": null,
+   "cross_checked": null,
+   "check_note": "Checked on 2026-11-03. venue_probe found no venue lead in arXiv or OpenAlex; Semantic Scholar returned 429 and DBLP did not return parseable JSON. No publication or acceptance claim is inferred."
+  },
+  "somos-audio-diagnostics": {
+   "status": "preprint",
+   "venue": null,
+   "venue_name_raw": null,
+   "venue_full": null,
+   "year": null,
+   "kind": null,
+   "track": null,
+   "parent_venue": null,
+   "display": null,
+   "evidence": "arxiv",
+   "evidence_raw": "arxiv",
+   "evidence_url": "https://arxiv.org/abs/2610.41539",
+   "evidence_quote": null,
+   "doi": null,
+   "confidence": "high",
+   "verified": "cannot_verify",
+   "publishable": true,
+   "note": "arXiv preprint; no journal reference, publication DOI or acceptance statement was found in the arXiv record or paper.",
+   "check_url": null,
+   "cross_checked": null,
+   "check_note": "Checked on 2026-11-03. venue_probe found no venue lead in arXiv or OpenAlex; Semantic Scholar returned 429 and DBLP did not return parseable JSON. No publication or acceptance claim is inferred."
   }
  }
 }

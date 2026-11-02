@@ -151686,6 +151686,402 @@
       "source": "Table 6, arXiv:2610.39955v1, VideoA11y-Ref Clear, Qwen-3.5-Omni-Plus",
       "source_url": "https://arxiv.org/pdf/2610.39955v1#page=15",
       "note": "Guidelines + timing ASR prompt. Mean over 99 test videos with output, 95% CI ±0.27. Judge: Gemini-3.5 Flash. Higher is better."
+    },
+    {
+      "benchmark": "gsr-bench",
+      "model": "step-audio-r1",
+      "metric": "GSR-Refine GPT-4o Fidelity (1–5)",
+      "value": 3.68,
+      "source": "Table 1, arXiv:2610.41292v1, GSR-Refine GPT-4o Fidelity (1–5)",
+      "source_url": "https://arxiv.org/pdf/2610.41292v1#page=7",
+      "note": "Original Table 1 scale and model label retained. CER is lower-is-better; judge ratings and the reported aggregate are higher-is-better. The Gemini checkpoint suffix is not specified in the paper."
+    },
+    {
+      "benchmark": "gsr-bench",
+      "model": "step-audio-r1",
+      "metric": "GSR-Refine GPT-4o Fluency (1–5)",
+      "value": 4.45,
+      "source": "Table 1, arXiv:2610.41292v1, GSR-Refine GPT-4o Fluency (1–5)",
+      "source_url": "https://arxiv.org/pdf/2610.41292v1#page=7",
+      "note": "Original Table 1 scale and model label retained. CER is lower-is-better; judge ratings and the reported aggregate are higher-is-better. The Gemini checkpoint suffix is not specified in the paper."
+    },
+    {
+      "benchmark": "gsr-bench",
+      "model": "step-audio-r1",
+      "metric": "GSR-Refine GPT-4o Readability (1–5)",
+      "value": 3.67,
+      "source": "Table 1, arXiv:2610.41292v1, GSR-Refine GPT-4o Readability (1–5)",
+      "source_url": "https://arxiv.org/pdf/2610.41292v1#page=7",
+      "note": "Original Table 1 scale and model label retained. CER is lower-is-better; judge ratings and the reported aggregate are higher-is-better. The Gemini checkpoint suffix is not specified in the paper."
+    },
+    {
+      "benchmark": "gsr-bench",
+      "model": "step-audio-r1",
+      "metric": "GSR-Refine DeepSeek-v4 Fidelity (1–5)",
+      "value": 3.65,
+      "source": "Table 1, arXiv:2610.41292v1, GSR-Refine DeepSeek-v4 Fidelity (1–5)",
+      "source_url": "https://arxiv.org/pdf/2610.41292v1#page=7",
+      "note": "Original Table 1 scale and model label retained. CER is lower-is-better; judge ratings and the reported aggregate are higher-is-better. The Gemini checkpoint suffix is not specified in the paper."
+    },
+    {
+      "benchmark": "gsr-bench",
+      "model": "step-audio-r1",
+      "metric": "GSR-Refine DeepSeek-v4 Fluency (1–5)",
+      "value": 4.62,
+      "source": "Table 1, arXiv:2610.41292v1, GSR-Refine DeepSeek-v4 Fluency (1–5)",
+      "source_url": "https://arxiv.org/pdf/2610.41292v1#page=7",
+      "note": "Original Table 1 scale and model label retained. CER is lower-is-better; judge ratings and the reported aggregate are higher-is-better. The Gemini checkpoint suffix is not specified in the paper."
+    },
+    {
+      "benchmark": "gsr-bench",
+      "model": "step-audio-r1",
+      "metric": "GSR-Refine DeepSeek-v4 Readability (1–5)",
+      "value": 3.7,
+      "source": "Table 1, arXiv:2610.41292v1, GSR-Refine DeepSeek-v4 Readability (1–5)",
+      "source_url": "https://arxiv.org/pdf/2610.41292v1#page=7",
+      "note": "Original Table 1 scale and model label retained. CER is lower-is-better; judge ratings and the reported aggregate are higher-is-better. The Gemini checkpoint suffix is not specified in the paper."
+    },
+    {
+      "benchmark": "gsr-bench",
+      "model": "step-audio-r1",
+      "metric": "GSR-Refine LLM-Score (1–5)",
+      "value": 3.96,
+      "source": "Table 1, arXiv:2610.41292v1, GSR-Refine LLM-Score (1–5)",
+      "source_url": "https://arxiv.org/pdf/2610.41292v1#page=7",
+      "note": "Original Table 1 scale and model label retained. CER is lower-is-better; judge ratings and the reported aggregate are higher-is-better. The Gemini checkpoint suffix is not specified in the paper."
+    },
+    {
+      "benchmark": "gsr-bench",
+      "model": "step-audio-r1",
+      "metric": "GSR-Refine CER (%)",
+      "value": 50.76,
+      "source": "Table 1, arXiv:2610.41292v1, GSR-Refine CER (%)",
+      "source_url": "https://arxiv.org/pdf/2610.41292v1#page=7",
+      "note": "Original Table 1 scale and model label retained. CER is lower-is-better; judge ratings and the reported aggregate are higher-is-better. The Gemini checkpoint suffix is not specified in the paper."
+    },
+    {
+      "benchmark": "gsr-bench",
+      "model": "gemini-3-1-pro",
+      "metric": "GSR-Refine GPT-4o Fidelity (1–5)",
+      "value": 4.14,
+      "source": "Table 1, arXiv:2610.41292v1, GSR-Refine GPT-4o Fidelity (1–5)",
+      "source_url": "https://arxiv.org/pdf/2610.41292v1#page=7",
+      "note": "Original Table 1 scale and model label retained. CER is lower-is-better; judge ratings and the reported aggregate are higher-is-better. The Gemini checkpoint suffix is not specified in the paper."
+    },
+    {
+      "benchmark": "gsr-bench",
+      "model": "gemini-3-1-pro",
+      "metric": "GSR-Refine GPT-4o Fluency (1–5)",
+      "value": 4.54,
+      "source": "Table 1, arXiv:2610.41292v1, GSR-Refine GPT-4o Fluency (1–5)",
+      "source_url": "https://arxiv.org/pdf/2610.41292v1#page=7",
+      "note": "Original Table 1 scale and model label retained. CER is lower-is-better; judge ratings and the reported aggregate are higher-is-better. The Gemini checkpoint suffix is not specified in the paper."
+    },
+    {
+      "benchmark": "gsr-bench",
+      "model": "gemini-3-1-pro",
+      "metric": "GSR-Refine GPT-4o Readability (1–5)",
+      "value": 4.09,
+      "source": "Table 1, arXiv:2610.41292v1, GSR-Refine GPT-4o Readability (1–5)",
+      "source_url": "https://arxiv.org/pdf/2610.41292v1#page=7",
+      "note": "Original Table 1 scale and model label retained. CER is lower-is-better; judge ratings and the reported aggregate are higher-is-better. The Gemini checkpoint suffix is not specified in the paper."
+    },
+    {
+      "benchmark": "gsr-bench",
+      "model": "gemini-3-1-pro",
+      "metric": "GSR-Refine DeepSeek-v4 Fidelity (1–5)",
+      "value": 3.86,
+      "source": "Table 1, arXiv:2610.41292v1, GSR-Refine DeepSeek-v4 Fidelity (1–5)",
+      "source_url": "https://arxiv.org/pdf/2610.41292v1#page=7",
+      "note": "Original Table 1 scale and model label retained. CER is lower-is-better; judge ratings and the reported aggregate are higher-is-better. The Gemini checkpoint suffix is not specified in the paper."
+    },
+    {
+      "benchmark": "gsr-bench",
+      "model": "gemini-3-1-pro",
+      "metric": "GSR-Refine DeepSeek-v4 Fluency (1–5)",
+      "value": 4.7,
+      "source": "Table 1, arXiv:2610.41292v1, GSR-Refine DeepSeek-v4 Fluency (1–5)",
+      "source_url": "https://arxiv.org/pdf/2610.41292v1#page=7",
+      "note": "Original Table 1 scale and model label retained. CER is lower-is-better; judge ratings and the reported aggregate are higher-is-better. The Gemini checkpoint suffix is not specified in the paper."
+    },
+    {
+      "benchmark": "gsr-bench",
+      "model": "gemini-3-1-pro",
+      "metric": "GSR-Refine DeepSeek-v4 Readability (1–5)",
+      "value": 3.9,
+      "source": "Table 1, arXiv:2610.41292v1, GSR-Refine DeepSeek-v4 Readability (1–5)",
+      "source_url": "https://arxiv.org/pdf/2610.41292v1#page=7",
+      "note": "Original Table 1 scale and model label retained. CER is lower-is-better; judge ratings and the reported aggregate are higher-is-better. The Gemini checkpoint suffix is not specified in the paper."
+    },
+    {
+      "benchmark": "gsr-bench",
+      "model": "gemini-3-1-pro",
+      "metric": "GSR-Refine LLM-Score (1–5)",
+      "value": 4.21,
+      "source": "Table 1, arXiv:2610.41292v1, GSR-Refine LLM-Score (1–5)",
+      "source_url": "https://arxiv.org/pdf/2610.41292v1#page=7",
+      "note": "Original Table 1 scale and model label retained. CER is lower-is-better; judge ratings and the reported aggregate are higher-is-better. The Gemini checkpoint suffix is not specified in the paper."
+    },
+    {
+      "benchmark": "gsr-bench",
+      "model": "gemini-3-1-pro",
+      "metric": "GSR-Refine CER (%)",
+      "value": 29.92,
+      "source": "Table 1, arXiv:2610.41292v1, GSR-Refine CER (%)",
+      "source_url": "https://arxiv.org/pdf/2610.41292v1#page=7",
+      "note": "Original Table 1 scale and model label retained. CER is lower-is-better; judge ratings and the reported aggregate are higher-is-better. The Gemini checkpoint suffix is not specified in the paper."
+    },
+    {
+      "benchmark": "gsr-bench",
+      "model": "gemini-3-1-pro",
+      "metric": "GSR-Summary Faithfulness (1–5)",
+      "value": 4.41,
+      "source": "Table 4, arXiv:2610.41292v1, GSR-Summary Faithfulness (1–5)",
+      "source_url": "https://arxiv.org/pdf/2610.41292v1#page=8",
+      "note": "Higher is better; speech-grounded summarization on 700 retained cases. The caption gives the 1–5 scale; Table 4 does not identify the judge checkpoint."
+    },
+    {
+      "benchmark": "gsr-bench",
+      "model": "step-audio-r1",
+      "metric": "GSR-Summary Faithfulness (1–5)",
+      "value": 3.79,
+      "source": "Table 4, arXiv:2610.41292v1, GSR-Summary Faithfulness (1–5)",
+      "source_url": "https://arxiv.org/pdf/2610.41292v1#page=8",
+      "note": "Higher is better; speech-grounded summarization on 700 retained cases. The caption gives the 1–5 scale; Table 4 does not identify the judge checkpoint."
+    },
+    {
+      "benchmark": "gsr-bench",
+      "model": "gemini-3-1-pro",
+      "metric": "GSR-Summary Coverage (1–5)",
+      "value": 4.85,
+      "source": "Table 4, arXiv:2610.41292v1, GSR-Summary Coverage (1–5)",
+      "source_url": "https://arxiv.org/pdf/2610.41292v1#page=8",
+      "note": "Higher is better; speech-grounded summarization on 700 retained cases. The caption gives the 1–5 scale; Table 4 does not identify the judge checkpoint."
+    },
+    {
+      "benchmark": "gsr-bench",
+      "model": "step-audio-r1",
+      "metric": "GSR-Summary Coverage (1–5)",
+      "value": 4.58,
+      "source": "Table 4, arXiv:2610.41292v1, GSR-Summary Coverage (1–5)",
+      "source_url": "https://arxiv.org/pdf/2610.41292v1#page=8",
+      "note": "Higher is better; speech-grounded summarization on 700 retained cases. The caption gives the 1–5 scale; Table 4 does not identify the judge checkpoint."
+    },
+    {
+      "benchmark": "gsr-bench",
+      "model": "gemini-3-1-pro",
+      "metric": "GSR-Summary Key Information (1–5)",
+      "value": 4.66,
+      "source": "Table 4, arXiv:2610.41292v1, GSR-Summary Key Information (1–5)",
+      "source_url": "https://arxiv.org/pdf/2610.41292v1#page=8",
+      "note": "Higher is better; speech-grounded summarization on 700 retained cases. The caption gives the 1–5 scale; Table 4 does not identify the judge checkpoint."
+    },
+    {
+      "benchmark": "gsr-bench",
+      "model": "step-audio-r1",
+      "metric": "GSR-Summary Key Information (1–5)",
+      "value": 4.18,
+      "source": "Table 4, arXiv:2610.41292v1, GSR-Summary Key Information (1–5)",
+      "source_url": "https://arxiv.org/pdf/2610.41292v1#page=8",
+      "note": "Higher is better; speech-grounded summarization on 700 retained cases. The caption gives the 1–5 scale; Table 4 does not identify the judge checkpoint."
+    },
+    {
+      "benchmark": "gsr-bench",
+      "model": "gemini-3-1-pro",
+      "metric": "GSR-Summary Conciseness (1–5)",
+      "value": 4.95,
+      "source": "Table 4, arXiv:2610.41292v1, GSR-Summary Conciseness (1–5)",
+      "source_url": "https://arxiv.org/pdf/2610.41292v1#page=8",
+      "note": "Higher is better; speech-grounded summarization on 700 retained cases. The caption gives the 1–5 scale; Table 4 does not identify the judge checkpoint."
+    },
+    {
+      "benchmark": "gsr-bench",
+      "model": "step-audio-r1",
+      "metric": "GSR-Summary Conciseness (1–5)",
+      "value": 4.84,
+      "source": "Table 4, arXiv:2610.41292v1, GSR-Summary Conciseness (1–5)",
+      "source_url": "https://arxiv.org/pdf/2610.41292v1#page=8",
+      "note": "Higher is better; speech-grounded summarization on 700 retained cases. The caption gives the 1–5 scale; Table 4 does not identify the judge checkpoint."
+    },
+    {
+      "benchmark": "gsr-bench",
+      "model": "gemini-3-1-pro",
+      "metric": "GSR-Summary Fluency (1–5)",
+      "value": 4.97,
+      "source": "Table 4, arXiv:2610.41292v1, GSR-Summary Fluency (1–5)",
+      "source_url": "https://arxiv.org/pdf/2610.41292v1#page=8",
+      "note": "Higher is better; speech-grounded summarization on 700 retained cases. The caption gives the 1–5 scale; Table 4 does not identify the judge checkpoint."
+    },
+    {
+      "benchmark": "gsr-bench",
+      "model": "step-audio-r1",
+      "metric": "GSR-Summary Fluency (1–5)",
+      "value": 4.87,
+      "source": "Table 4, arXiv:2610.41292v1, GSR-Summary Fluency (1–5)",
+      "source_url": "https://arxiv.org/pdf/2610.41292v1#page=8",
+      "note": "Higher is better; speech-grounded summarization on 700 retained cases. The caption gives the 1–5 scale; Table 4 does not identify the judge checkpoint."
+    },
+    {
+      "benchmark": "gsr-bench",
+      "model": "step-audio-r1",
+      "metric": "Acoustic stress HTR (%)",
+      "value": 5.4,
+      "source": "Table 5, arXiv:2610.41292v1, Acoustic stress HTR (%)",
+      "source_url": "https://arxiv.org/pdf/2610.41292v1#page=8",
+      "note": "Lower is better; the caption specifies 520 segments covering noise, silence, music and unintelligible weak speech, with non-empty output counted as hallucination. HTR and AHL retain the paper labels; Total Chars is a count, not a percentage."
+    },
+    {
+      "benchmark": "gsr-bench",
+      "model": "step-audio-r1",
+      "metric": "Acoustic stress AHL",
+      "value": 8.79,
+      "source": "Table 5, arXiv:2610.41292v1, Acoustic stress AHL",
+      "source_url": "https://arxiv.org/pdf/2610.41292v1#page=8",
+      "note": "Lower is better; the caption specifies 520 segments covering noise, silence, music and unintelligible weak speech, with non-empty output counted as hallucination. HTR and AHL retain the paper labels; Total Chars is a count, not a percentage."
+    },
+    {
+      "benchmark": "gsr-bench",
+      "model": "step-audio-r1",
+      "metric": "Acoustic stress Total Chars",
+      "value": 246.0,
+      "source": "Table 5, arXiv:2610.41292v1, Acoustic stress Total Chars",
+      "source_url": "https://arxiv.org/pdf/2610.41292v1#page=8",
+      "note": "Lower is better; the caption specifies 520 segments covering noise, silence, music and unintelligible weak speech, with non-empty output counted as hallucination. HTR and AHL retain the paper labels; Total Chars is a count, not a percentage."
+    },
+    {
+      "benchmark": "gsr-bench",
+      "model": "gemini-3-1-pro",
+      "metric": "Acoustic stress HTR (%)",
+      "value": 10.8,
+      "source": "Table 5, arXiv:2610.41292v1, Acoustic stress HTR (%)",
+      "source_url": "https://arxiv.org/pdf/2610.41292v1#page=8",
+      "note": "Lower is better; the caption specifies 520 segments covering noise, silence, music and unintelligible weak speech, with non-empty output counted as hallucination. HTR and AHL retain the paper labels; Total Chars is a count, not a percentage."
+    },
+    {
+      "benchmark": "gsr-bench",
+      "model": "gemini-3-1-pro",
+      "metric": "Acoustic stress AHL",
+      "value": 12.57,
+      "source": "Table 5, arXiv:2610.41292v1, Acoustic stress AHL",
+      "source_url": "https://arxiv.org/pdf/2610.41292v1#page=8",
+      "note": "Lower is better; the caption specifies 520 segments covering noise, silence, music and unintelligible weak speech, with non-empty output counted as hallucination. HTR and AHL retain the paper labels; Total Chars is a count, not a percentage."
+    },
+    {
+      "benchmark": "gsr-bench",
+      "model": "gemini-3-1-pro",
+      "metric": "Acoustic stress Total Chars",
+      "value": 704.0,
+      "source": "Table 5, arXiv:2610.41292v1, Acoustic stress Total Chars",
+      "source_url": "https://arxiv.org/pdf/2610.41292v1#page=8",
+      "note": "Lower is better; the caption specifies 520 segments covering noise, silence, music and unintelligible weak speech, with non-empty output counted as hallucination. HTR and AHL retain the paper labels; Total Chars is a count, not a percentage."
+    },
+    {
+      "benchmark": "somos-audio-diagnostics",
+      "model": "qwen2-audio",
+      "metric": "Main Speed macro-F1 (%)",
+      "value": 21.9,
+      "source": "Table 2, arXiv:2610.41539v1, Main Speed macro-F1 (%)",
+      "source_url": "https://arxiv.org/pdf/2610.41539v1#page=5",
+      "note": "Section 5.2.2 identifies the reported metric as macro-averaged F1, in percent. Main has three balanced classes (600 samples per task); Easy removes the middle class. Temperature 0.7. Paper model: Qwen2-Audio-7B-Instruct."
+    },
+    {
+      "benchmark": "somos-audio-diagnostics",
+      "model": "qwen2-audio",
+      "metric": "Main Expressive macro-F1 (%)",
+      "value": 26.5,
+      "source": "Table 2, arXiv:2610.41539v1, Main Expressive macro-F1 (%)",
+      "source_url": "https://arxiv.org/pdf/2610.41539v1#page=5",
+      "note": "Section 5.2.2 identifies the reported metric as macro-averaged F1, in percent. Main has three balanced classes (600 samples per task); Easy removes the middle class. Temperature 0.7. Paper model: Qwen2-Audio-7B-Instruct."
+    },
+    {
+      "benchmark": "somos-audio-diagnostics",
+      "model": "qwen2-audio",
+      "metric": "Main Content macro-F1 (%)",
+      "value": 29.5,
+      "source": "Table 2, arXiv:2610.41539v1, Main Content macro-F1 (%)",
+      "source_url": "https://arxiv.org/pdf/2610.41539v1#page=5",
+      "note": "Section 5.2.2 identifies the reported metric as macro-averaged F1, in percent. Main has three balanced classes (600 samples per task); Easy removes the middle class. Temperature 0.7. Paper model: Qwen2-Audio-7B-Instruct."
+    },
+    {
+      "benchmark": "somos-audio-diagnostics",
+      "model": "qwen2-audio",
+      "metric": "Easy Speed macro-F1 (%)",
+      "value": 33.0,
+      "source": "Table 2, arXiv:2610.41539v1, Easy Speed macro-F1 (%)",
+      "source_url": "https://arxiv.org/pdf/2610.41539v1#page=5",
+      "note": "Section 5.2.2 identifies the reported metric as macro-averaged F1, in percent. Main has three balanced classes (600 samples per task); Easy removes the middle class. Temperature 0.7. Paper model: Qwen2-Audio-7B-Instruct."
+    },
+    {
+      "benchmark": "somos-audio-diagnostics",
+      "model": "qwen2-audio",
+      "metric": "Easy Expressive macro-F1 (%)",
+      "value": 33.3,
+      "source": "Table 2, arXiv:2610.41539v1, Easy Expressive macro-F1 (%)",
+      "source_url": "https://arxiv.org/pdf/2610.41539v1#page=5",
+      "note": "Section 5.2.2 identifies the reported metric as macro-averaged F1, in percent. Main has three balanced classes (600 samples per task); Easy removes the middle class. Temperature 0.7. Paper model: Qwen2-Audio-7B-Instruct."
+    },
+    {
+      "benchmark": "somos-audio-diagnostics",
+      "model": "qwen2-audio",
+      "metric": "Easy Content macro-F1 (%)",
+      "value": 58.2,
+      "source": "Table 2, arXiv:2610.41539v1, Easy Content macro-F1 (%)",
+      "source_url": "https://arxiv.org/pdf/2610.41539v1#page=5",
+      "note": "Section 5.2.2 identifies the reported metric as macro-averaged F1, in percent. Main has three balanced classes (600 samples per task); Easy removes the middle class. Temperature 0.7. Paper model: Qwen2-Audio-7B-Instruct."
+    },
+    {
+      "benchmark": "somos-audio-diagnostics",
+      "model": "audio-flamingo-3",
+      "metric": "Main Speed macro-F1 (%)",
+      "value": 16.9,
+      "source": "Table 2, arXiv:2610.41539v1, Main Speed macro-F1 (%)",
+      "source_url": "https://arxiv.org/pdf/2610.41539v1#page=5",
+      "note": "Section 5.2.2 identifies the reported metric as macro-averaged F1, in percent. Main has three balanced classes (600 samples per task); Easy removes the middle class. Temperature 0.7. Paper model: Audio-Flamingo3."
+    },
+    {
+      "benchmark": "somos-audio-diagnostics",
+      "model": "audio-flamingo-3",
+      "metric": "Main Expressive macro-F1 (%)",
+      "value": 27.4,
+      "source": "Table 2, arXiv:2610.41539v1, Main Expressive macro-F1 (%)",
+      "source_url": "https://arxiv.org/pdf/2610.41539v1#page=5",
+      "note": "Section 5.2.2 identifies the reported metric as macro-averaged F1, in percent. Main has three balanced classes (600 samples per task); Easy removes the middle class. Temperature 0.7. Paper model: Audio-Flamingo3."
+    },
+    {
+      "benchmark": "somos-audio-diagnostics",
+      "model": "audio-flamingo-3",
+      "metric": "Main Content macro-F1 (%)",
+      "value": 36.5,
+      "source": "Table 2, arXiv:2610.41539v1, Main Content macro-F1 (%)",
+      "source_url": "https://arxiv.org/pdf/2610.41539v1#page=5",
+      "note": "Section 5.2.2 identifies the reported metric as macro-averaged F1, in percent. Main has three balanced classes (600 samples per task); Easy removes the middle class. Temperature 0.7. Paper model: Audio-Flamingo3."
+    },
+    {
+      "benchmark": "somos-audio-diagnostics",
+      "model": "audio-flamingo-3",
+      "metric": "Easy Speed macro-F1 (%)",
+      "value": 39.8,
+      "source": "Table 2, arXiv:2610.41539v1, Easy Speed macro-F1 (%)",
+      "source_url": "https://arxiv.org/pdf/2610.41539v1#page=5",
+      "note": "Section 5.2.2 identifies the reported metric as macro-averaged F1, in percent. Main has three balanced classes (600 samples per task); Easy removes the middle class. Temperature 0.7. Paper model: Audio-Flamingo3."
+    },
+    {
+      "benchmark": "somos-audio-diagnostics",
+      "model": "audio-flamingo-3",
+      "metric": "Easy Expressive macro-F1 (%)",
+      "value": 37.3,
+      "source": "Table 2, arXiv:2610.41539v1, Easy Expressive macro-F1 (%)",
+      "source_url": "https://arxiv.org/pdf/2610.41539v1#page=5",
+      "note": "Section 5.2.2 identifies the reported metric as macro-averaged F1, in percent. Main has three balanced classes (600 samples per task); Easy removes the middle class. Temperature 0.7. Paper model: Audio-Flamingo3."
+    },
+    {
+      "benchmark": "somos-audio-diagnostics",
+      "model": "audio-flamingo-3",
+      "metric": "Easy Content macro-F1 (%)",
+      "value": 42.3,
+      "source": "Table 2, arXiv:2610.41539v1, Easy Content macro-F1 (%)",
+      "source_url": "https://arxiv.org/pdf/2610.41539v1#page=5",
+      "note": "Section 5.2.2 identifies the reported metric as macro-averaged F1, in percent. Main has three balanced classes (600 samples per task); Easy removes the middle class. Temperature 0.7. Paper model: Audio-Flamingo3."
     }
   ]
 }

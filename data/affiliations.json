@@ -25993,6 +25993,90 @@
     }
    ],
    "verify_note": "Checked the first-page affiliation labels against the author byline and arXiv metadata. Lead follows the first-listed author. The byline gives no separate city or country address."
+  },
+  "gsr-bench": {
+   "status": "ok",
+   "verified": "confirmed",
+   "publishable": true,
+   "countries_complete": true,
+   "n_authors": 12,
+   "institutions": [
+    {
+     "inst": "china-telecom",
+     "raw": "Xingchen AGI Lab, China Telecom Artificial Intelligence Technology Co. Ltd, China",
+     "unit": "Xingchen AGI Lab",
+     "country": "CN",
+     "city": null,
+     "lat": null,
+     "lon": null,
+     "placed": "none",
+     "printed_city": null,
+     "printed_country": "China",
+     "lead": true,
+     "first_author": true,
+     "last": false,
+     "evidence": "printed"
+    },
+    {
+     "inst": "northwestern-polytechnical-university",
+     "raw": "Audio, Speech and Language Processing Group (ASLP@NPU), School of Computer Science, Northwestern Polytechnical University, Xi’an, China",
+     "unit": "ASLP@NPU, School of Computer Science",
+     "country": "CN",
+     "city": "Xi'an",
+     "lat": 34.34,
+     "lon": 108.94,
+     "placed": "city",
+     "printed_city": "Xi'an",
+     "printed_country": "China",
+     "lead": false,
+     "first_author": false,
+     "last": true,
+     "evidence": "printed"
+    }
+   ],
+   "verify_note": "PDF v1 first page checked against arXiv author metadata. Qing Wang and Qihan Hu share equal contribution and affiliation 1; last author Lei Xie has affiliation 2. No city is printed for China Telecom."
+  },
+  "somos-audio-diagnostics": {
+   "status": "ok",
+   "verified": "confirmed",
+   "publishable": true,
+   "countries_complete": true,
+   "n_authors": 13,
+   "institutions": [
+    {
+     "inst": "samsung-electronics",
+     "raw": "Innoetics, Samsung Electronics, Greece",
+     "unit": "Innoetics",
+     "country": "GR",
+     "city": null,
+     "lat": null,
+     "lon": null,
+     "placed": "none",
+     "printed_city": null,
+     "printed_country": "Greece",
+     "lead": true,
+     "first_author": true,
+     "last": true,
+     "evidence": "printed"
+    },
+    {
+     "inst": "samsung-electronics",
+     "raw": "Mobile eXperience Business, Samsung Electronics, Republic of Korea",
+     "unit": "Mobile eXperience Business",
+     "country": "KR",
+     "city": null,
+     "lat": null,
+     "lon": null,
+     "placed": "none",
+     "printed_city": null,
+     "printed_country": "Republic of Korea",
+     "lead": false,
+     "first_author": false,
+     "last": false,
+     "evidence": "printed"
+    }
+   ],
+   "verify_note": "PDF v1 first-page author superscripts checked against arXiv metadata. First and last authors belong to Innoetics. Countries follow the printed units in Greece and Korea; neither city is printed. The existing institution registry is reused without inferring a city from another Samsung office."
   }
  },
  "models": {

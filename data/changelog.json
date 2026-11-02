@@ -1,6 +1,11 @@
 {
  "entries": [
   {
+   "date": "2026-11-03",
+   "change": "Reviewed six candidates: added GSR-Bench and the SOMOS Audio-LLM Diagnostic Suite, with 44 source-located results (32 and 12 respectively). GSR results retain judge scales, CER, hallucination metrics and character counts. SOMOS results are macro-F1 percentages with Main and Easy conditions kept separate. Four method, model or specialized-encoder papers were excluded. Author affiliations were checked against PDF bylines; both additions remain preprints with venue verification limitations recorded.",
+   "source": "arXiv:2610.41292v1 Tables 1, 4 and 5; arXiv:2610.41539v1 Table 2 and Section 5.2; full texts 2610.41390v1, 2610.40695v1, 2610.40738v1 and 2610.41512v1."
+  },
+  {
    "date": "2026-10-31",
    "change": "Reviewed four papers and added MixCardBench, HEAR (pain reasoning) and MTG-AD / MTG-AD-Eval. Added 242 results: 54 source-detection and card scores, 144 pain-reasoning scores and 44 inline-description scores. MixCardBench links to its versioned HTML table. HEAR preserves the audio, transcript and cue conditions. MTG-AD records completion counts, judge versions and 95% confidence intervals. The NeurIPS program confirms MTG-AD as an accepted poster. V33DA evaluates specialized bird-call attribution systems.",
    "source": "arXiv:2610.38276v1 HTML Table 15, arXiv:2610.38570v1 Tables 1 and 3, arXiv:2610.39955v1 Table 6 and NeurIPS 2026 poster 139386. V33DA scope checked against arXiv:2610.38109v1 Section 5."

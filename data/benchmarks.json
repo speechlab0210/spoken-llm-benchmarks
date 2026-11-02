@@ -12446,6 +12446,84 @@
       "arxiv_date": "2026-10",
       "arxiv_date_full": "2026-10-29",
       "url": "https://arxiv.org/abs/2610.39955"
+    },
+    {
+      "id": "gsr-bench",
+      "name": "GSR-Bench",
+      "aka": [
+        "Grounded Generative Speech Recognition Benchmark"
+      ],
+      "categories": [
+        "holistic",
+        "instruction-following",
+        "hallucination",
+        "multilingual",
+        "long-form"
+      ],
+      "tasks": [
+        "context-conditioned transcription",
+        "canonical and semantic reformulation",
+        "dialect-to-Mandarin reformulation",
+        "speech-grounded summarization",
+        "acoustic hallucination stress tests"
+      ],
+      "languages": [
+        "Mandarin Chinese",
+        "Cantonese",
+        "Shanghainese",
+        "Sichuanese",
+        "Henan dialect"
+      ],
+      "size": "700 retained summarization cases and 520 acoustic-stress segments; other task sizes are not stated in the main text",
+      "io": "speech and optional context/instruction → transcript, reformulation, translation or summary",
+      "metrics": [
+        "CER (%)",
+        "LLM judge scores (1–5)",
+        "BLEU, COMET, BERTScore and Sentence-BERT",
+        "HTR (%), AHL and total generated characters"
+      ],
+      "summary": "Tests whether speech models can rewrite or summarize spoken content while preserving its meaning. Four levels span literal transcription, canonical rewriting, semantic reformulation and structured summaries, with a separate stress test for speech that is absent or unintelligible.",
+      "note": "Includes general audio-language models Gemini 3.1 Pro and StepAudio-R1 alongside specialized ASR systems. This catalogue records the general-model rows in Tables 1, 4 and 5, retaining each metric scale. GSR-Refine reuses WenetSpeech TestMeeting, and GSR-Summary filters ContextASR-Bench. Public release links are not given in the paper.",
+      "code": null,
+      "data": null,
+      "full_title": "From Transcription to Reformulation: Defining and Benchmarking Grounded Generative Speech Recognition",
+      "arxiv_id": "2610.41292",
+      "arxiv_date": "2026-10",
+      "arxiv_date_full": "2026-10-30",
+      "url": "https://arxiv.org/abs/2610.41292"
+    },
+    {
+      "id": "somos-audio-diagnostics",
+      "name": "SOMOS Audio-LLM Diagnostic Suite",
+      "aka": [
+        "SOMOS diagnostic benchmark (Kokkinis et al., 2026)"
+      ],
+      "categories": [
+        "paralinguistics",
+        "audio-grounding"
+      ],
+      "tasks": [
+        "speech-rate classification",
+        "expressiveness classification",
+        "paired-audio content alignment"
+      ],
+      "languages": [
+        "English"
+      ],
+      "size": "Three balanced tasks of 600 samples each (200 per class), using 2–20 second SOMOS utterances; Easy drops each middle class",
+      "io": "one speech clip or a pair of speech clips plus a question → categorical label",
+      "metrics": [
+        "macro-F1 (%) for Speed, Expressive and Content in Main and Easy settings"
+      ],
+      "summary": "Uses existing SOMOS speech to build three diagnostic tests for general audio-language models: recognizing speech rate, recognizing vocal expressiveness, and deciding whether two clips contain the same recording, the same words, or different content.",
+      "note": "Descriptive catalogue name: the paper does not assign the diagnostic suite a distinct proper name. Section 5.2.2 reports macro-F1, although the setup first discusses accuracy. Only the diagnostic Table 2 results are included; the paper also studies MOS prediction and specialized fine-tuning. No separate public release is linked.",
+      "code": null,
+      "data": null,
+      "full_title": "Scalable Audio-LLM System for Speech MOS Evaluation: A Diagnostic Case Study and Adaptation Roadmap",
+      "arxiv_id": "2610.41539",
+      "arxiv_date": "2026-10",
+      "arxiv_date_full": "2026-10-30",
+      "url": "https://arxiv.org/abs/2610.41539"
     }
   ]
 }

@@ -22,7 +22,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2610.41292",
       "score": 39,
-      "status": "new — under review"
+      "status": "reviewed — included: Introduces GSR-Bench and evaluates general audio-language models on grounded reformulation, summarization and acoustic hallucination."
     },
     {
       "id": "2610.41390",
@@ -37,7 +37,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2610.41390",
       "score": 36,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: Introduces the AudioHelix retrieval method, evaluated on existing TraceAV-Bench, MMAU-Pro and AudioMarathon; no new benchmark is introduced."
     },
     {
       "id": "2610.41539",
@@ -57,7 +57,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2610.41539",
       "score": 30,
-      "status": "new — under review"
+      "status": "reviewed — included: Introduces three SOMOS-based diagnostic tasks and tests the general audio-language models Qwen2-Audio-7B-Instruct and Audio Flamingo 3."
     },
     {
       "id": "2610.40695",
@@ -73,7 +73,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2610.40695",
       "score": 21,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: Describes a section-aware Q-Former submission to the existing BeTraC challenge; its contribution is a medical-note generation system, not a new benchmark."
     },
     {
       "id": "2610.40738",
@@ -93,7 +93,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2610.40738",
       "score": 18,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: Introduces the Apriel Voice 27B Preview model and training/serving approach, evaluated on existing speech benchmarks; no new benchmark is introduced."
     },
     {
       "id": "2610.41512",
@@ -109,7 +109,7 @@
       "primary_category": "cs.CV",
       "url": "https://arxiv.org/abs/2610.41512",
       "score": 18,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: Studies adaptation of specialized audio, image and symbolic-music encoders on existing TriScore and Musical Theme Dataset tasks, not general spoken LLMs."
     },
     {
       "id": "2610.38276",
