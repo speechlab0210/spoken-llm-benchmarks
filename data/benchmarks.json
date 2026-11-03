@@ -12524,6 +12524,87 @@
       "arxiv_date": "2026-10",
       "arxiv_date_full": "2026-10-30",
       "url": "https://arxiv.org/abs/2610.41539"
+    },
+    {
+      "id": "interactionbench",
+      "name": "InteractionBench",
+      "aka": [],
+      "categories": [
+        "interactivity",
+        "dialogue",
+        "instruction-following",
+        "paralinguistics"
+      ],
+      "tasks": [
+        "backchanneling",
+        "pause handling",
+        "turn taking",
+        "interruption response",
+        "spoken-task accuracy",
+        "whisper and volume control",
+        "long-conversation groundedness"
+      ],
+      "languages": [
+        "English"
+      ],
+      "size": "221 items per system across 13 scenarios; 1,519 graded runs across seven systems; ten groundedness conversations with 52 probes",
+      "io": "streamed user speech → timed spoken responses",
+      "metrics": [
+        "scenario pass rates (%) or 0–1",
+        "turn-taking latency (ms)",
+        "grounded-probe pass rate (%)",
+        "conversation coherence (0–100)"
+      ],
+      "summary": "Evaluates conversational timing, spoken tasks, whisper and volume behavior, and groundedness with a shared set of synthetic user utterances. Separate scenario scores distinguish speaking at the appropriate moment from giving the correct answer.",
+      "note": "Client-side timing includes network delay for hosted systems. Text instructions and turn-release rules differ across systems; the cascade uses simulated timing. The result matrix includes the exact Moshi, PersonaPlex and Freeze-Omni configurations in Tables 4–5. GPT-Live-1, GPT-Realtime-2.1, Gemini 3.1 Flash Live Preview and the custom cascade are not mapped to other model versions. The paper documents judge corrections and excluded groundedness probes.",
+      "code": "https://github.com/avera-labs/InteractionBench",
+      "data": null,
+      "full_title": "InteractionBench: Measuring Timing, Task Accuracy, Whisper and Volume, and Grounding in Real-Time Voice Systems",
+      "arxiv_id": "2611.02430",
+      "arxiv_date": "2026-11",
+      "arxiv_date_full": "2026-11-02",
+      "url": "https://arxiv.org/abs/2611.02430"
+    },
+    {
+      "id": "sac-bench",
+      "name": "SAC-Bench",
+      "aka": [
+        "Speech-Acoustic Conflict Benchmark"
+      ],
+      "categories": [
+        "audio-grounding",
+        "auditory-perception",
+        "robustness"
+      ],
+      "tasks": [
+        "event presence",
+        "event identity",
+        "temporal state",
+        "temporal order",
+        "static location",
+        "spherical motion",
+        "radial motion"
+      ],
+      "languages": [
+        "English"
+      ],
+      "size": "616,031 unique clips (2,069.9 hours), 188 event classes and seven tasks; 393,010 development clips and 223,021 evaluation clips",
+      "io": "environmental audio mixed with compatible or contradictory spoken claims plus a question → selected answer",
+      "metrics": [
+        "recording-level balanced accuracy (%)",
+        "acoustic accuracy (%)",
+        "compatible–conflict gap (percentage points)",
+        "speech-following rate (%)"
+      ],
+      "summary": "Tests whether audio-language models answer from environmental sounds when a spoken claim inside the same recording contradicts those sounds. Audio-only controls and compatible claims separate baseline acoustic competence from failures under conflict.",
+      "note": "Table 3 results retain neutral prompting and separate Presence, Identity and Temporal Order. SFR and conflict accuracy have different denominators; reduced SFR alone does not imply improved grounding. The result matrix covers four existing model entries, with checkpoint revisions stated per cell; Spatial-Omni SO30B and its FOA-only spatial case study are not conflated with another model. The paper provides English claim templates but no separate code or dataset release link.",
+      "code": null,
+      "data": null,
+      "full_title": "One Waveform, Two Stories: Benchmarking Speech-Acoustic Conflict in Audio-Language Models",
+      "arxiv_id": "2611.00325",
+      "arxiv_date": "2026-10",
+      "arxiv_date_full": "2026-10-30",
+      "url": "https://arxiv.org/abs/2611.00325"
     }
   ]
 }

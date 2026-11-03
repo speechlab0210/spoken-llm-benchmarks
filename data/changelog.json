@@ -1,6 +1,11 @@
 {
  "entries": [
   {
+   "date": "2026-11-04",
+   "change": "Reviewed eight candidates: added InteractionBench and SAC-Bench with 105 source-located results (45 and 60 respectively). InteractionBench retains printed pass counts, 0–1 timing rates and millisecond latency. SAC-Bench keeps neutral-prompt conditions, acoustic accuracy, percentage-point gaps and speech-following rates distinct. Results cover exact configurations of existing model entries; unmatched versions are not merged. Six method or specialized-system papers were excluded. Author affiliations were checked against PDF bylines; both additions remain preprints with venue verification limitations recorded.",
+   "source": "arXiv:2611.02430v1 Tables 3–5; arXiv:2611.00325v1 Tables 2–3 and 10, Section 4.4; full texts 2611.00333v1, 2611.00685v1, 2611.01261v1, 2611.01843v1, 2611.02593v1 and 2611.02903v1."
+  },
+  {
    "date": "2026-11-03",
    "change": "Reviewed six candidates: added GSR-Bench and the SOMOS Audio-LLM Diagnostic Suite, with 44 source-located results (32 and 12 respectively). GSR results retain judge scales, CER, hallucination metrics and character counts. SOMOS results are macro-F1 percentages with Main and Easy conditions kept separate. Four method, model or specialized-encoder papers were excluded. Author affiliations were checked against PDF bylines; both additions remain preprints with venue verification limitations recorded.",
    "source": "arXiv:2610.41292v1 Tables 1, 4 and 5; arXiv:2610.41539v1 Table 2 and Section 5.2; full texts 2610.41390v1, 2610.40695v1, 2610.40738v1 and 2610.41512v1."

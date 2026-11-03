@@ -26077,6 +26077,74 @@
     }
    ],
    "verify_note": "PDF v1 first-page author superscripts checked against arXiv metadata. First and last authors belong to Innoetics. Countries follow the printed units in Greece and Korea; neither city is printed. The existing institution registry is reused without inferring a city from another Samsung office."
+  },
+  "interactionbench": {
+   "status": "ok",
+   "verified": "confirmed",
+   "publishable": true,
+   "countries_complete": false,
+   "n_authors": 5,
+   "institutions": [
+    {
+     "inst": "avera-labs",
+     "raw": "AveraLabs",
+     "unit": null,
+     "country": null,
+     "city": null,
+     "lat": null,
+     "lon": null,
+     "placed": "none",
+     "printed_city": null,
+     "printed_country": null,
+     "lead": true,
+     "first_author": true,
+     "last": true,
+     "evidence": "printed"
+    }
+   ],
+   "verify_note": "PDF v1 first-page byline checked against arXiv HTML and metadata. All five authors share AveraLabs; no country or city is printed. Organisation type is not established by the byline."
+  },
+  "sac-bench": {
+   "status": "ok",
+   "verified": "confirmed",
+   "publishable": true,
+   "countries_complete": false,
+   "n_authors": 3,
+   "institutions": [
+    {
+     "inst": "university-of-osaka",
+     "raw": "The University of Osaka",
+     "unit": null,
+     "country": null,
+     "city": null,
+     "lat": null,
+     "lon": null,
+     "placed": "none",
+     "printed_city": null,
+     "printed_country": null,
+     "lead": true,
+     "first_author": true,
+     "last": true,
+     "evidence": "printed"
+    },
+    {
+     "inst": "university-of-wisconsin-madison",
+     "raw": "University of Wisconsin-Madison",
+     "unit": null,
+     "country": null,
+     "city": null,
+     "lat": null,
+     "lon": null,
+     "placed": "none",
+     "printed_city": null,
+     "printed_country": null,
+     "lead": false,
+     "first_author": false,
+     "last": false,
+     "evidence": "printed"
+    }
+   ],
+   "verify_note": "PDF v1 first-page author blocks checked against arXiv HTML and metadata. Wenbin Wang and Koichiro Yoshino have The University of Osaka; Yuheng Li has University of Wisconsin-Madison. Neither block prints a separate city or country; geography is not inferred from institutional names."
   }
  },
  "models": {

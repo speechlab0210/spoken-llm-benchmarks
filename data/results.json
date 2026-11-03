@@ -152082,6 +152082,951 @@
       "source": "Table 2, arXiv:2610.41539v1, Easy Content macro-F1 (%)",
       "source_url": "https://arxiv.org/pdf/2610.41539v1#page=5",
       "note": "Section 5.2.2 identifies the reported metric as macro-averaged F1, in percent. Main has three balanced classes (600 samples per task); Easy removes the middle class. Temperature 0.7. Paper model: Audio-Flamingo3."
+    },
+    {
+      "benchmark": "interactionbench",
+      "model": "moshi",
+      "metric": "Spoken-task pass (%)",
+      "value": 6.0,
+      "source": "Table 4, arXiv:2611.02430v1, Spoken-task pass (%)",
+      "source_url": "https://arxiv.org/pdf/2611.02430v1#page=9",
+      "note": "Paper configuration: kyutai/moshika-pytorch-bf16 revision a49141e. Higher is better. Printed numerator/denominator: 3/50; retain the rounded percentage, without recomputing it. Protocol and text-instruction differences limit cross-system comparisons."
+    },
+    {
+      "benchmark": "interactionbench",
+      "model": "moshi",
+      "metric": "Timing pass (%)",
+      "value": 41.0,
+      "source": "Table 4, arXiv:2611.02430v1, Timing pass (%)",
+      "source_url": "https://arxiv.org/pdf/2611.02430v1#page=9",
+      "note": "Paper configuration: kyutai/moshika-pytorch-bf16 revision a49141e. Higher is better. Printed numerator/denominator: 54/132; retain the rounded percentage, without recomputing it. Timing uses client arrival, including network delay for hosted systems. Protocol and text-instruction differences limit cross-system comparisons."
+    },
+    {
+      "benchmark": "interactionbench",
+      "model": "moshi",
+      "metric": "Whisper and volume pass (%)",
+      "value": 15.0,
+      "source": "Table 4, arXiv:2611.02430v1, Whisper and volume pass (%)",
+      "source_url": "https://arxiv.org/pdf/2611.02430v1#page=9",
+      "note": "Paper configuration: kyutai/moshika-pytorch-bf16 revision a49141e. Higher is better. Printed numerator/denominator: 3/20; retain the rounded percentage, without recomputing it. Protocol and text-instruction differences limit cross-system comparisons."
+    },
+    {
+      "benchmark": "interactionbench",
+      "model": "moshi",
+      "metric": "Grounded probes passed (%)",
+      "value": 14.0,
+      "source": "Table 4, arXiv:2611.02430v1, Grounded probes passed (%)",
+      "source_url": "https://arxiv.org/pdf/2611.02430v1#page=9",
+      "note": "Paper configuration: kyutai/moshika-pytorch-bf16 revision a49141e. Higher is better. Printed numerator/denominator: 7/50; retain the rounded percentage, without recomputing it. Denominators exclude probes whose premise no longer holds after a system reply. Protocol and text-instruction differences limit cross-system comparisons."
+    },
+    {
+      "benchmark": "interactionbench",
+      "model": "moshi",
+      "metric": "Conversation coherence (0–100)",
+      "value": 16.0,
+      "source": "Table 4, arXiv:2611.02430v1, Conversation coherence (0–100)",
+      "source_url": "https://arxiv.org/pdf/2611.02430v1#page=9",
+      "note": "Paper configuration: kyutai/moshika-pytorch-bf16 revision a49141e. Higher is better. Mean judge score across ten conversations; this is not a pass percentage. Protocol and text-instruction differences limit cross-system comparisons."
+    },
+    {
+      "benchmark": "interactionbench",
+      "model": "personaplex",
+      "metric": "Spoken-task pass (%)",
+      "value": 18.0,
+      "source": "Table 4, arXiv:2611.02430v1, Spoken-task pass (%)",
+      "source_url": "https://arxiv.org/pdf/2611.02430v1#page=9",
+      "note": "Paper configuration: nvidia/personaplex-7b-v1 revision fdaf409, voice prompt NATF0. Higher is better. Printed numerator/denominator: 9/50; retain the rounded percentage, without recomputing it. Protocol and text-instruction differences limit cross-system comparisons."
+    },
+    {
+      "benchmark": "interactionbench",
+      "model": "personaplex",
+      "metric": "Timing pass (%)",
+      "value": 68.0,
+      "source": "Table 4, arXiv:2611.02430v1, Timing pass (%)",
+      "source_url": "https://arxiv.org/pdf/2611.02430v1#page=9",
+      "note": "Paper configuration: nvidia/personaplex-7b-v1 revision fdaf409, voice prompt NATF0. Higher is better. Printed numerator/denominator: 90/132; retain the rounded percentage, without recomputing it. Timing uses client arrival, including network delay for hosted systems. Protocol and text-instruction differences limit cross-system comparisons."
+    },
+    {
+      "benchmark": "interactionbench",
+      "model": "personaplex",
+      "metric": "Whisper and volume pass (%)",
+      "value": 35.0,
+      "source": "Table 4, arXiv:2611.02430v1, Whisper and volume pass (%)",
+      "source_url": "https://arxiv.org/pdf/2611.02430v1#page=9",
+      "note": "Paper configuration: nvidia/personaplex-7b-v1 revision fdaf409, voice prompt NATF0. Higher is better. Printed numerator/denominator: 7/20; retain the rounded percentage, without recomputing it. Protocol and text-instruction differences limit cross-system comparisons."
+    },
+    {
+      "benchmark": "interactionbench",
+      "model": "personaplex",
+      "metric": "Grounded probes passed (%)",
+      "value": 30.0,
+      "source": "Table 4, arXiv:2611.02430v1, Grounded probes passed (%)",
+      "source_url": "https://arxiv.org/pdf/2611.02430v1#page=9",
+      "note": "Paper configuration: nvidia/personaplex-7b-v1 revision fdaf409, voice prompt NATF0. Higher is better. Printed numerator/denominator: 15/50; retain the rounded percentage, without recomputing it. Denominators exclude probes whose premise no longer holds after a system reply. Protocol and text-instruction differences limit cross-system comparisons."
+    },
+    {
+      "benchmark": "interactionbench",
+      "model": "personaplex",
+      "metric": "Conversation coherence (0–100)",
+      "value": 28.0,
+      "source": "Table 4, arXiv:2611.02430v1, Conversation coherence (0–100)",
+      "source_url": "https://arxiv.org/pdf/2611.02430v1#page=9",
+      "note": "Paper configuration: nvidia/personaplex-7b-v1 revision fdaf409, voice prompt NATF0. Higher is better. Mean judge score across ten conversations; this is not a pass percentage. Protocol and text-instruction differences limit cross-system comparisons."
+    },
+    {
+      "benchmark": "interactionbench",
+      "model": "freeze-omni",
+      "metric": "Spoken-task pass (%)",
+      "value": 8.0,
+      "source": "Table 4, arXiv:2611.02430v1, Spoken-task pass (%)",
+      "source_url": "https://arxiv.org/pdf/2611.02430v1#page=9",
+      "note": "Paper configuration: VITA-MLLM/Freeze-Omni revision c8b1918 with Qwen2-7B-Instruct revision f2826a0. Higher is better. Printed numerator/denominator: 4/50; retain the rounded percentage, without recomputing it. Protocol and text-instruction differences limit cross-system comparisons."
+    },
+    {
+      "benchmark": "interactionbench",
+      "model": "freeze-omni",
+      "metric": "Timing pass (%)",
+      "value": 57.0,
+      "source": "Table 4, arXiv:2611.02430v1, Timing pass (%)",
+      "source_url": "https://arxiv.org/pdf/2611.02430v1#page=9",
+      "note": "Paper configuration: VITA-MLLM/Freeze-Omni revision c8b1918 with Qwen2-7B-Instruct revision f2826a0. Higher is better. Printed numerator/denominator: 78/138; retain the rounded percentage, without recomputing it. Timing uses client arrival, including network delay for hosted systems. Protocol and text-instruction differences limit cross-system comparisons."
+    },
+    {
+      "benchmark": "interactionbench",
+      "model": "freeze-omni",
+      "metric": "Whisper and volume pass (%)",
+      "value": 15.0,
+      "source": "Table 4, arXiv:2611.02430v1, Whisper and volume pass (%)",
+      "source_url": "https://arxiv.org/pdf/2611.02430v1#page=9",
+      "note": "Paper configuration: VITA-MLLM/Freeze-Omni revision c8b1918 with Qwen2-7B-Instruct revision f2826a0. Higher is better. Printed numerator/denominator: 3/20; retain the rounded percentage, without recomputing it. Protocol and text-instruction differences limit cross-system comparisons."
+    },
+    {
+      "benchmark": "interactionbench",
+      "model": "freeze-omni",
+      "metric": "Grounded probes passed (%)",
+      "value": 35.0,
+      "source": "Table 4, arXiv:2611.02430v1, Grounded probes passed (%)",
+      "source_url": "https://arxiv.org/pdf/2611.02430v1#page=9",
+      "note": "Paper configuration: VITA-MLLM/Freeze-Omni revision c8b1918 with Qwen2-7B-Instruct revision f2826a0. Higher is better. Printed numerator/denominator: 18/51; retain the rounded percentage, without recomputing it. Denominators exclude probes whose premise no longer holds after a system reply. Protocol and text-instruction differences limit cross-system comparisons."
+    },
+    {
+      "benchmark": "interactionbench",
+      "model": "freeze-omni",
+      "metric": "Conversation coherence (0–100)",
+      "value": 39.0,
+      "source": "Table 4, arXiv:2611.02430v1, Conversation coherence (0–100)",
+      "source_url": "https://arxiv.org/pdf/2611.02430v1#page=9",
+      "note": "Paper configuration: VITA-MLLM/Freeze-Omni revision c8b1918 with Qwen2-7B-Instruct revision f2826a0. Higher is better. Mean judge score across ten conversations; this is not a pass percentage. Protocol and text-instruction differences limit cross-system comparisons."
+    },
+    {
+      "benchmark": "interactionbench",
+      "model": "moshi",
+      "metric": "Backchannel pass rate (0–1)",
+      "value": 0.78,
+      "source": "Table 5, arXiv:2611.02430v1, Backchannel pass rate (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.02430v1#page=9",
+      "note": "Paper configuration: kyutai/moshika-pytorch-bf16 revision a49141e. Higher is better. Rates retain the original 0–1 scale. Timing is measured on the client timeline. Scenario pass criteria are specified in Table 2; diagnostic rates are distinct from pass rates."
+    },
+    {
+      "benchmark": "interactionbench",
+      "model": "moshi",
+      "metric": "Backchannel floor-take rate (0–1)",
+      "value": 0.22,
+      "source": "Table 5, arXiv:2611.02430v1, Backchannel floor-take rate (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.02430v1#page=9",
+      "note": "Paper configuration: kyutai/moshika-pytorch-bf16 revision a49141e. Lower is better. Rates retain the original 0–1 scale. Timing is measured on the client timeline. Scenario pass criteria are specified in Table 2; diagnostic rates are distinct from pass rates."
+    },
+    {
+      "benchmark": "interactionbench",
+      "model": "moshi",
+      "metric": "Pause pass rate (0–1)",
+      "value": 0.29,
+      "source": "Table 5, arXiv:2611.02430v1, Pause pass rate (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.02430v1#page=9",
+      "note": "Paper configuration: kyutai/moshika-pytorch-bf16 revision a49141e. Higher is better. Rates retain the original 0–1 scale. Timing is measured on the client timeline. Scenario pass criteria are specified in Table 2; diagnostic rates are distinct from pass rates."
+    },
+    {
+      "benchmark": "interactionbench",
+      "model": "moshi",
+      "metric": "Pause barge-in rate (0–1)",
+      "value": 0.61,
+      "source": "Table 5, arXiv:2611.02430v1, Pause barge-in rate (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.02430v1#page=9",
+      "note": "Paper configuration: kyutai/moshika-pytorch-bf16 revision a49141e. Lower is better. Rates retain the original 0–1 scale. Timing is measured on the client timeline. Scenario pass criteria are specified in Table 2; diagnostic rates are distinct from pass rates."
+    },
+    {
+      "benchmark": "interactionbench",
+      "model": "moshi",
+      "metric": "Turn-taking pass rate (0–1)",
+      "value": 0.04,
+      "source": "Table 5, arXiv:2611.02430v1, Turn-taking pass rate (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.02430v1#page=9",
+      "note": "Paper configuration: kyutai/moshika-pytorch-bf16 revision a49141e. Higher is better. Rates retain the original 0–1 scale. Timing is measured on the client timeline. Scenario pass criteria are specified in Table 2; diagnostic rates are distinct from pass rates."
+    },
+    {
+      "benchmark": "interactionbench",
+      "model": "moshi",
+      "metric": "Turn-taking latency (ms)",
+      "value": 190.0,
+      "source": "Table 5, arXiv:2611.02430v1, Turn-taking latency (ms)",
+      "source_url": "https://arxiv.org/pdf/2611.02430v1#page=9",
+      "note": "Paper configuration: kyutai/moshika-pytorch-bf16 revision a49141e. Lower is better. Rates retain the original 0–1 scale. Timing is measured on the client timeline. Latency is the median onset of replies that do not start early; it should be interpreted with turn-taking pass rate."
+    },
+    {
+      "benchmark": "interactionbench",
+      "model": "moshi",
+      "metric": "User-backchannel pass rate (0–1)",
+      "value": 0.7,
+      "source": "Table 5, arXiv:2611.02430v1, User-backchannel pass rate (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.02430v1#page=9",
+      "note": "Paper configuration: kyutai/moshika-pytorch-bf16 revision a49141e. Higher is better. Rates retain the original 0–1 scale. Timing is measured on the client timeline. Scenario pass criteria are specified in Table 2; diagnostic rates are distinct from pass rates."
+    },
+    {
+      "benchmark": "interactionbench",
+      "model": "moshi",
+      "metric": "User-backchannel derail rate (0–1)",
+      "value": 0.3,
+      "source": "Table 5, arXiv:2611.02430v1, User-backchannel derail rate (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.02430v1#page=9",
+      "note": "Paper configuration: kyutai/moshika-pytorch-bf16 revision a49141e. Lower is better. Rates retain the original 0–1 scale. Timing is measured on the client timeline. Scenario pass criteria are specified in Table 2; diagnostic rates are distinct from pass rates."
+    },
+    {
+      "benchmark": "interactionbench",
+      "model": "moshi",
+      "metric": "Interruption pass rate (0–1)",
+      "value": 0.36,
+      "source": "Table 5, arXiv:2611.02430v1, Interruption pass rate (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.02430v1#page=9",
+      "note": "Paper configuration: kyutai/moshika-pytorch-bf16 revision a49141e. Higher is better. Rates retain the original 0–1 scale. Timing is measured on the client timeline. Scenario pass criteria are specified in Table 2; diagnostic rates are distinct from pass rates."
+    },
+    {
+      "benchmark": "interactionbench",
+      "model": "moshi",
+      "metric": "Interruption yielded rate (0–1)",
+      "value": 0.57,
+      "source": "Table 5, arXiv:2611.02430v1, Interruption yielded rate (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.02430v1#page=9",
+      "note": "Paper configuration: kyutai/moshika-pytorch-bf16 revision a49141e. Higher is better. Rates retain the original 0–1 scale. Timing is measured on the client timeline. Scenario pass criteria are specified in Table 2; diagnostic rates are distinct from pass rates."
+    },
+    {
+      "benchmark": "interactionbench",
+      "model": "personaplex",
+      "metric": "Backchannel pass rate (0–1)",
+      "value": 0.83,
+      "source": "Table 5, arXiv:2611.02430v1, Backchannel pass rate (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.02430v1#page=9",
+      "note": "Paper configuration: nvidia/personaplex-7b-v1 revision fdaf409, voice prompt NATF0. Higher is better. Rates retain the original 0–1 scale. Timing is measured on the client timeline. Scenario pass criteria are specified in Table 2; diagnostic rates are distinct from pass rates."
+    },
+    {
+      "benchmark": "interactionbench",
+      "model": "personaplex",
+      "metric": "Backchannel floor-take rate (0–1)",
+      "value": 0.11,
+      "source": "Table 5, arXiv:2611.02430v1, Backchannel floor-take rate (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.02430v1#page=9",
+      "note": "Paper configuration: nvidia/personaplex-7b-v1 revision fdaf409, voice prompt NATF0. Lower is better. Rates retain the original 0–1 scale. Timing is measured on the client timeline. Scenario pass criteria are specified in Table 2; diagnostic rates are distinct from pass rates."
+    },
+    {
+      "benchmark": "interactionbench",
+      "model": "personaplex",
+      "metric": "Pause pass rate (0–1)",
+      "value": 0.75,
+      "source": "Table 5, arXiv:2611.02430v1, Pause pass rate (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.02430v1#page=9",
+      "note": "Paper configuration: nvidia/personaplex-7b-v1 revision fdaf409, voice prompt NATF0. Higher is better. Rates retain the original 0–1 scale. Timing is measured on the client timeline. Scenario pass criteria are specified in Table 2; diagnostic rates are distinct from pass rates."
+    },
+    {
+      "benchmark": "interactionbench",
+      "model": "personaplex",
+      "metric": "Pause barge-in rate (0–1)",
+      "value": 0.21,
+      "source": "Table 5, arXiv:2611.02430v1, Pause barge-in rate (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.02430v1#page=9",
+      "note": "Paper configuration: nvidia/personaplex-7b-v1 revision fdaf409, voice prompt NATF0. Lower is better. Rates retain the original 0–1 scale. Timing is measured on the client timeline. Scenario pass criteria are specified in Table 2; diagnostic rates are distinct from pass rates."
+    },
+    {
+      "benchmark": "interactionbench",
+      "model": "personaplex",
+      "metric": "Turn-taking pass rate (0–1)",
+      "value": 0.18,
+      "source": "Table 5, arXiv:2611.02430v1, Turn-taking pass rate (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.02430v1#page=9",
+      "note": "Paper configuration: nvidia/personaplex-7b-v1 revision fdaf409, voice prompt NATF0. Higher is better. Rates retain the original 0–1 scale. Timing is measured on the client timeline. Scenario pass criteria are specified in Table 2; diagnostic rates are distinct from pass rates."
+    },
+    {
+      "benchmark": "interactionbench",
+      "model": "personaplex",
+      "metric": "Turn-taking latency (ms)",
+      "value": 3305.0,
+      "source": "Table 5, arXiv:2611.02430v1, Turn-taking latency (ms)",
+      "source_url": "https://arxiv.org/pdf/2611.02430v1#page=9",
+      "note": "Paper configuration: nvidia/personaplex-7b-v1 revision fdaf409, voice prompt NATF0. Lower is better. Rates retain the original 0–1 scale. Timing is measured on the client timeline. Latency is the median onset of replies that do not start early; it should be interpreted with turn-taking pass rate."
+    },
+    {
+      "benchmark": "interactionbench",
+      "model": "personaplex",
+      "metric": "User-backchannel pass rate (0–1)",
+      "value": 0.77,
+      "source": "Table 5, arXiv:2611.02430v1, User-backchannel pass rate (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.02430v1#page=9",
+      "note": "Paper configuration: nvidia/personaplex-7b-v1 revision fdaf409, voice prompt NATF0. Higher is better. Rates retain the original 0–1 scale. Timing is measured on the client timeline. Scenario pass criteria are specified in Table 2; diagnostic rates are distinct from pass rates."
+    },
+    {
+      "benchmark": "interactionbench",
+      "model": "personaplex",
+      "metric": "User-backchannel derail rate (0–1)",
+      "value": 0.23,
+      "source": "Table 5, arXiv:2611.02430v1, User-backchannel derail rate (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.02430v1#page=9",
+      "note": "Paper configuration: nvidia/personaplex-7b-v1 revision fdaf409, voice prompt NATF0. Lower is better. Rates retain the original 0–1 scale. Timing is measured on the client timeline. Scenario pass criteria are specified in Table 2; diagnostic rates are distinct from pass rates."
+    },
+    {
+      "benchmark": "interactionbench",
+      "model": "personaplex",
+      "metric": "Interruption pass rate (0–1)",
+      "value": 0.93,
+      "source": "Table 5, arXiv:2611.02430v1, Interruption pass rate (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.02430v1#page=9",
+      "note": "Paper configuration: nvidia/personaplex-7b-v1 revision fdaf409, voice prompt NATF0. Higher is better. Rates retain the original 0–1 scale. Timing is measured on the client timeline. Scenario pass criteria are specified in Table 2; diagnostic rates are distinct from pass rates."
+    },
+    {
+      "benchmark": "interactionbench",
+      "model": "personaplex",
+      "metric": "Interruption yielded rate (0–1)",
+      "value": 1.0,
+      "source": "Table 5, arXiv:2611.02430v1, Interruption yielded rate (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.02430v1#page=9",
+      "note": "Paper configuration: nvidia/personaplex-7b-v1 revision fdaf409, voice prompt NATF0. Higher is better. Rates retain the original 0–1 scale. Timing is measured on the client timeline. Scenario pass criteria are specified in Table 2; diagnostic rates are distinct from pass rates."
+    },
+    {
+      "benchmark": "interactionbench",
+      "model": "freeze-omni",
+      "metric": "Backchannel pass rate (0–1)",
+      "value": 0.0,
+      "source": "Table 5, arXiv:2611.02430v1, Backchannel pass rate (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.02430v1#page=9",
+      "note": "Paper configuration: VITA-MLLM/Freeze-Omni revision c8b1918 with Qwen2-7B-Instruct revision f2826a0. Higher is better. Rates retain the original 0–1 scale. Timing is measured on the client timeline. Scenario pass criteria are specified in Table 2; diagnostic rates are distinct from pass rates."
+    },
+    {
+      "benchmark": "interactionbench",
+      "model": "freeze-omni",
+      "metric": "Backchannel floor-take rate (0–1)",
+      "value": 0.39,
+      "source": "Table 5, arXiv:2611.02430v1, Backchannel floor-take rate (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.02430v1#page=9",
+      "note": "Paper configuration: VITA-MLLM/Freeze-Omni revision c8b1918 with Qwen2-7B-Instruct revision f2826a0. Lower is better. Rates retain the original 0–1 scale. Timing is measured on the client timeline. Scenario pass criteria are specified in Table 2; diagnostic rates are distinct from pass rates."
+    },
+    {
+      "benchmark": "interactionbench",
+      "model": "freeze-omni",
+      "metric": "Pause pass rate (0–1)",
+      "value": 0.5,
+      "source": "Table 5, arXiv:2611.02430v1, Pause pass rate (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.02430v1#page=9",
+      "note": "Paper configuration: VITA-MLLM/Freeze-Omni revision c8b1918 with Qwen2-7B-Instruct revision f2826a0. Higher is better. Rates retain the original 0–1 scale. Timing is measured on the client timeline. Scenario pass criteria are specified in Table 2; diagnostic rates are distinct from pass rates."
+    },
+    {
+      "benchmark": "interactionbench",
+      "model": "freeze-omni",
+      "metric": "Pause barge-in rate (0–1)",
+      "value": 0.3,
+      "source": "Table 5, arXiv:2611.02430v1, Pause barge-in rate (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.02430v1#page=9",
+      "note": "Paper configuration: VITA-MLLM/Freeze-Omni revision c8b1918 with Qwen2-7B-Instruct revision f2826a0. Lower is better. Rates retain the original 0–1 scale. Timing is measured on the client timeline. Scenario pass criteria are specified in Table 2; diagnostic rates are distinct from pass rates."
+    },
+    {
+      "benchmark": "interactionbench",
+      "model": "freeze-omni",
+      "metric": "Turn-taking pass rate (0–1)",
+      "value": 0.97,
+      "source": "Table 5, arXiv:2611.02430v1, Turn-taking pass rate (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.02430v1#page=9",
+      "note": "Paper configuration: VITA-MLLM/Freeze-Omni revision c8b1918 with Qwen2-7B-Instruct revision f2826a0. Higher is better. Rates retain the original 0–1 scale. Timing is measured on the client timeline. Scenario pass criteria are specified in Table 2; diagnostic rates are distinct from pass rates."
+    },
+    {
+      "benchmark": "interactionbench",
+      "model": "freeze-omni",
+      "metric": "Turn-taking latency (ms)",
+      "value": 1160.0,
+      "source": "Table 5, arXiv:2611.02430v1, Turn-taking latency (ms)",
+      "source_url": "https://arxiv.org/pdf/2611.02430v1#page=9",
+      "note": "Paper configuration: VITA-MLLM/Freeze-Omni revision c8b1918 with Qwen2-7B-Instruct revision f2826a0. Lower is better. Rates retain the original 0–1 scale. Timing is measured on the client timeline. Latency is the median onset of replies that do not start early; it should be interpreted with turn-taking pass rate."
+    },
+    {
+      "benchmark": "interactionbench",
+      "model": "freeze-omni",
+      "metric": "User-backchannel pass rate (0–1)",
+      "value": 0.4,
+      "source": "Table 5, arXiv:2611.02430v1, User-backchannel pass rate (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.02430v1#page=9",
+      "note": "Paper configuration: VITA-MLLM/Freeze-Omni revision c8b1918 with Qwen2-7B-Instruct revision f2826a0. Higher is better. Rates retain the original 0–1 scale. Timing is measured on the client timeline. Scenario pass criteria are specified in Table 2; diagnostic rates are distinct from pass rates."
+    },
+    {
+      "benchmark": "interactionbench",
+      "model": "freeze-omni",
+      "metric": "User-backchannel derail rate (0–1)",
+      "value": 0.6,
+      "source": "Table 5, arXiv:2611.02430v1, User-backchannel derail rate (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.02430v1#page=9",
+      "note": "Paper configuration: VITA-MLLM/Freeze-Omni revision c8b1918 with Qwen2-7B-Instruct revision f2826a0. Lower is better. Rates retain the original 0–1 scale. Timing is measured on the client timeline. Scenario pass criteria are specified in Table 2; diagnostic rates are distinct from pass rates."
+    },
+    {
+      "benchmark": "interactionbench",
+      "model": "freeze-omni",
+      "metric": "Interruption pass rate (0–1)",
+      "value": 0.73,
+      "source": "Table 5, arXiv:2611.02430v1, Interruption pass rate (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.02430v1#page=9",
+      "note": "Paper configuration: VITA-MLLM/Freeze-Omni revision c8b1918 with Qwen2-7B-Instruct revision f2826a0. Higher is better. Rates retain the original 0–1 scale. Timing is measured on the client timeline. Scenario pass criteria are specified in Table 2; diagnostic rates are distinct from pass rates."
+    },
+    {
+      "benchmark": "interactionbench",
+      "model": "freeze-omni",
+      "metric": "Interruption yielded rate (0–1)",
+      "value": 0.9,
+      "source": "Table 5, arXiv:2611.02430v1, Interruption yielded rate (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.02430v1#page=9",
+      "note": "Paper configuration: VITA-MLLM/Freeze-Omni revision c8b1918 with Qwen2-7B-Instruct revision f2826a0. Higher is better. Rates retain the original 0–1 scale. Timing is measured on the client timeline. Scenario pass criteria are specified in Table 2; diagnostic rates are distinct from pass rates."
+    },
+    {
+      "benchmark": "sac-bench",
+      "model": "moss-audio",
+      "metric": "Event Presence Audio-only balanced accuracy (%)",
+      "value": 81.2,
+      "source": "Table 3, arXiv:2611.00325v1, Event Presence Audio-only balanced accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.00325v1#page=8",
+      "note": "Neutral prompting; MOSS-Audio-8B-Instruct revision 66326e6. Higher acoustic accuracy is better. Presence averages balanced recall within recordings; Identity and Order score questions. Completed responses are scored; unparseable responses count as incorrect, while inference failures are excluded."
+    },
+    {
+      "benchmark": "sac-bench",
+      "model": "moss-audio",
+      "metric": "Event Presence Compatible balanced accuracy (%)",
+      "value": 78.5,
+      "source": "Table 3, arXiv:2611.00325v1, Event Presence Compatible balanced accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.00325v1#page=8",
+      "note": "Neutral prompting; MOSS-Audio-8B-Instruct revision 66326e6. Higher acoustic accuracy is better. Presence averages balanced recall within recordings; Identity and Order score questions. Completed responses are scored; unparseable responses count as incorrect, while inference failures are excluded."
+    },
+    {
+      "benchmark": "sac-bench",
+      "model": "moss-audio",
+      "metric": "Event Presence Conflict balanced accuracy (%)",
+      "value": 65.7,
+      "source": "Table 3, arXiv:2611.00325v1, Event Presence Conflict balanced accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.00325v1#page=8",
+      "note": "Neutral prompting; MOSS-Audio-8B-Instruct revision 66326e6. Higher acoustic accuracy is better. Presence averages balanced recall within recordings; Identity and Order score questions. Completed responses are scored; unparseable responses count as incorrect, while inference failures are excluded."
+    },
+    {
+      "benchmark": "sac-bench",
+      "model": "moss-audio",
+      "metric": "Event Presence compatible–conflict gap (pp)",
+      "value": 12.9,
+      "source": "Table 3, arXiv:2611.00325v1, Event Presence compatible–conflict gap (pp)",
+      "source_url": "https://arxiv.org/pdf/2611.00325v1#page=8",
+      "note": "Neutral prompting; MOSS-Audio-8B-Instruct revision 66326e6. Printed compatible-minus-conflict gap in percentage points, retained without recalculation from rounded columns; a smaller drop indicates less condition-associated degradation. Completed responses are scored; unparseable responses count as incorrect, while inference failures are excluded."
+    },
+    {
+      "benchmark": "sac-bench",
+      "model": "moss-audio",
+      "metric": "Event Presence conflict SFR (%)",
+      "value": 67.5,
+      "source": "Table 3, arXiv:2611.00325v1, Event Presence conflict SFR (%)",
+      "source_url": "https://arxiv.org/pdf/2611.00325v1#page=8",
+      "note": "Neutral prompting; MOSS-Audio-8B-Instruct revision 66326e6. SFR counts speech-implied answers only on eligible conflict questions. Lower SFR means fewer claim-aligned answers, but does not alone establish better acoustic grounding. Its denominator differs from conflict accuracy. Completed responses are scored; unparseable responses count as incorrect, while inference failures are excluded."
+    },
+    {
+      "benchmark": "sac-bench",
+      "model": "audio-flamingo-next",
+      "metric": "Event Presence Audio-only balanced accuracy (%)",
+      "value": 84.0,
+      "source": "Table 3, arXiv:2611.00325v1, Event Presence Audio-only balanced accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.00325v1#page=8",
+      "note": "Neutral prompting; audio-flamingo-next-hf revision 5634886. Higher acoustic accuracy is better. Presence averages balanced recall within recordings; Identity and Order score questions. Completed responses are scored; unparseable responses count as incorrect, while inference failures are excluded."
+    },
+    {
+      "benchmark": "sac-bench",
+      "model": "audio-flamingo-next",
+      "metric": "Event Presence Compatible balanced accuracy (%)",
+      "value": 85.2,
+      "source": "Table 3, arXiv:2611.00325v1, Event Presence Compatible balanced accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.00325v1#page=8",
+      "note": "Neutral prompting; audio-flamingo-next-hf revision 5634886. Higher acoustic accuracy is better. Presence averages balanced recall within recordings; Identity and Order score questions. Completed responses are scored; unparseable responses count as incorrect, while inference failures are excluded."
+    },
+    {
+      "benchmark": "sac-bench",
+      "model": "audio-flamingo-next",
+      "metric": "Event Presence Conflict balanced accuracy (%)",
+      "value": 71.1,
+      "source": "Table 3, arXiv:2611.00325v1, Event Presence Conflict balanced accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.00325v1#page=8",
+      "note": "Neutral prompting; audio-flamingo-next-hf revision 5634886. Higher acoustic accuracy is better. Presence averages balanced recall within recordings; Identity and Order score questions. Completed responses are scored; unparseable responses count as incorrect, while inference failures are excluded."
+    },
+    {
+      "benchmark": "sac-bench",
+      "model": "audio-flamingo-next",
+      "metric": "Event Presence compatible–conflict gap (pp)",
+      "value": 14.1,
+      "source": "Table 3, arXiv:2611.00325v1, Event Presence compatible–conflict gap (pp)",
+      "source_url": "https://arxiv.org/pdf/2611.00325v1#page=8",
+      "note": "Neutral prompting; audio-flamingo-next-hf revision 5634886. Printed compatible-minus-conflict gap in percentage points, retained without recalculation from rounded columns; a smaller drop indicates less condition-associated degradation. Completed responses are scored; unparseable responses count as incorrect, while inference failures are excluded."
+    },
+    {
+      "benchmark": "sac-bench",
+      "model": "audio-flamingo-next",
+      "metric": "Event Presence conflict SFR (%)",
+      "value": 67.8,
+      "source": "Table 3, arXiv:2611.00325v1, Event Presence conflict SFR (%)",
+      "source_url": "https://arxiv.org/pdf/2611.00325v1#page=8",
+      "note": "Neutral prompting; audio-flamingo-next-hf revision 5634886. SFR counts speech-implied answers only on eligible conflict questions. Lower SFR means fewer claim-aligned answers, but does not alone establish better acoustic grounding. Its denominator differs from conflict accuracy. Completed responses are scored; unparseable responses count as incorrect, while inference failures are excluded."
+    },
+    {
+      "benchmark": "sac-bench",
+      "model": "qwen3-omni",
+      "metric": "Event Presence Audio-only balanced accuracy (%)",
+      "value": 91.3,
+      "source": "Table 3, arXiv:2611.00325v1, Event Presence Audio-only balanced accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.00325v1#page=8",
+      "note": "Neutral prompting; Qwen3-Omni-30B-A3B-Instruct revision 26291f7. Higher acoustic accuracy is better. Presence averages balanced recall within recordings; Identity and Order score questions. Completed responses are scored; unparseable responses count as incorrect, while inference failures are excluded."
+    },
+    {
+      "benchmark": "sac-bench",
+      "model": "qwen3-omni",
+      "metric": "Event Presence Compatible balanced accuracy (%)",
+      "value": 89.0,
+      "source": "Table 3, arXiv:2611.00325v1, Event Presence Compatible balanced accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.00325v1#page=8",
+      "note": "Neutral prompting; Qwen3-Omni-30B-A3B-Instruct revision 26291f7. Higher acoustic accuracy is better. Presence averages balanced recall within recordings; Identity and Order score questions. Completed responses are scored; unparseable responses count as incorrect, while inference failures are excluded."
+    },
+    {
+      "benchmark": "sac-bench",
+      "model": "qwen3-omni",
+      "metric": "Event Presence Conflict balanced accuracy (%)",
+      "value": 79.3,
+      "source": "Table 3, arXiv:2611.00325v1, Event Presence Conflict balanced accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.00325v1#page=8",
+      "note": "Neutral prompting; Qwen3-Omni-30B-A3B-Instruct revision 26291f7. Higher acoustic accuracy is better. Presence averages balanced recall within recordings; Identity and Order score questions. Completed responses are scored; unparseable responses count as incorrect, while inference failures are excluded."
+    },
+    {
+      "benchmark": "sac-bench",
+      "model": "qwen3-omni",
+      "metric": "Event Presence compatible–conflict gap (pp)",
+      "value": 9.7,
+      "source": "Table 3, arXiv:2611.00325v1, Event Presence compatible–conflict gap (pp)",
+      "source_url": "https://arxiv.org/pdf/2611.00325v1#page=8",
+      "note": "Neutral prompting; Qwen3-Omni-30B-A3B-Instruct revision 26291f7. Printed compatible-minus-conflict gap in percentage points, retained without recalculation from rounded columns; a smaller drop indicates less condition-associated degradation. Completed responses are scored; unparseable responses count as incorrect, while inference failures are excluded."
+    },
+    {
+      "benchmark": "sac-bench",
+      "model": "qwen3-omni",
+      "metric": "Event Presence conflict SFR (%)",
+      "value": 64.2,
+      "source": "Table 3, arXiv:2611.00325v1, Event Presence conflict SFR (%)",
+      "source_url": "https://arxiv.org/pdf/2611.00325v1#page=8",
+      "note": "Neutral prompting; Qwen3-Omni-30B-A3B-Instruct revision 26291f7. SFR counts speech-implied answers only on eligible conflict questions. Lower SFR means fewer claim-aligned answers, but does not alone establish better acoustic grounding. Its denominator differs from conflict accuracy. Completed responses are scored; unparseable responses count as incorrect, while inference failures are excluded."
+    },
+    {
+      "benchmark": "sac-bench",
+      "model": "step-audio-2-mini",
+      "metric": "Event Presence Audio-only balanced accuracy (%)",
+      "value": 85.8,
+      "source": "Table 3, arXiv:2611.00325v1, Event Presence Audio-only balanced accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.00325v1#page=8",
+      "note": "Neutral prompting; Step-Audio-2-mini revision e36fdd5. Higher acoustic accuracy is better. Presence averages balanced recall within recordings; Identity and Order score questions. Completed responses are scored; unparseable responses count as incorrect, while inference failures are excluded."
+    },
+    {
+      "benchmark": "sac-bench",
+      "model": "step-audio-2-mini",
+      "metric": "Event Presence Compatible balanced accuracy (%)",
+      "value": 79.9,
+      "source": "Table 3, arXiv:2611.00325v1, Event Presence Compatible balanced accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.00325v1#page=8",
+      "note": "Neutral prompting; Step-Audio-2-mini revision e36fdd5. Higher acoustic accuracy is better. Presence averages balanced recall within recordings; Identity and Order score questions. Completed responses are scored; unparseable responses count as incorrect, while inference failures are excluded."
+    },
+    {
+      "benchmark": "sac-bench",
+      "model": "step-audio-2-mini",
+      "metric": "Event Presence Conflict balanced accuracy (%)",
+      "value": 67.8,
+      "source": "Table 3, arXiv:2611.00325v1, Event Presence Conflict balanced accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.00325v1#page=8",
+      "note": "Neutral prompting; Step-Audio-2-mini revision e36fdd5. Higher acoustic accuracy is better. Presence averages balanced recall within recordings; Identity and Order score questions. Completed responses are scored; unparseable responses count as incorrect, while inference failures are excluded."
+    },
+    {
+      "benchmark": "sac-bench",
+      "model": "step-audio-2-mini",
+      "metric": "Event Presence compatible–conflict gap (pp)",
+      "value": 12.0,
+      "source": "Table 3, arXiv:2611.00325v1, Event Presence compatible–conflict gap (pp)",
+      "source_url": "https://arxiv.org/pdf/2611.00325v1#page=8",
+      "note": "Neutral prompting; Step-Audio-2-mini revision e36fdd5. Printed compatible-minus-conflict gap in percentage points, retained without recalculation from rounded columns; a smaller drop indicates less condition-associated degradation. Completed responses are scored; unparseable responses count as incorrect, while inference failures are excluded."
+    },
+    {
+      "benchmark": "sac-bench",
+      "model": "step-audio-2-mini",
+      "metric": "Event Presence conflict SFR (%)",
+      "value": 74.7,
+      "source": "Table 3, arXiv:2611.00325v1, Event Presence conflict SFR (%)",
+      "source_url": "https://arxiv.org/pdf/2611.00325v1#page=8",
+      "note": "Neutral prompting; Step-Audio-2-mini revision e36fdd5. SFR counts speech-implied answers only on eligible conflict questions. Lower SFR means fewer claim-aligned answers, but does not alone establish better acoustic grounding. Its denominator differs from conflict accuracy. Completed responses are scored; unparseable responses count as incorrect, while inference failures are excluded."
+    },
+    {
+      "benchmark": "sac-bench",
+      "model": "moss-audio",
+      "metric": "Event Identity Audio-only accuracy (%)",
+      "value": 46.7,
+      "source": "Table 3, arXiv:2611.00325v1, Event Identity Audio-only accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.00325v1#page=8",
+      "note": "Neutral prompting; MOSS-Audio-8B-Instruct revision 66326e6. Higher acoustic accuracy is better. Presence averages balanced recall within recordings; Identity and Order score questions. Completed responses are scored; unparseable responses count as incorrect, while inference failures are excluded."
+    },
+    {
+      "benchmark": "sac-bench",
+      "model": "moss-audio",
+      "metric": "Event Identity Compatible accuracy (%)",
+      "value": 57.4,
+      "source": "Table 3, arXiv:2611.00325v1, Event Identity Compatible accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.00325v1#page=8",
+      "note": "Neutral prompting; MOSS-Audio-8B-Instruct revision 66326e6. Higher acoustic accuracy is better. Presence averages balanced recall within recordings; Identity and Order score questions. Completed responses are scored; unparseable responses count as incorrect, while inference failures are excluded."
+    },
+    {
+      "benchmark": "sac-bench",
+      "model": "moss-audio",
+      "metric": "Event Identity Conflict accuracy (%)",
+      "value": 29.1,
+      "source": "Table 3, arXiv:2611.00325v1, Event Identity Conflict accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.00325v1#page=8",
+      "note": "Neutral prompting; MOSS-Audio-8B-Instruct revision 66326e6. Higher acoustic accuracy is better. Presence averages balanced recall within recordings; Identity and Order score questions. Completed responses are scored; unparseable responses count as incorrect, while inference failures are excluded."
+    },
+    {
+      "benchmark": "sac-bench",
+      "model": "moss-audio",
+      "metric": "Event Identity compatible–conflict gap (pp)",
+      "value": 28.4,
+      "source": "Table 3, arXiv:2611.00325v1, Event Identity compatible–conflict gap (pp)",
+      "source_url": "https://arxiv.org/pdf/2611.00325v1#page=8",
+      "note": "Neutral prompting; MOSS-Audio-8B-Instruct revision 66326e6. Printed compatible-minus-conflict gap in percentage points, retained without recalculation from rounded columns; a smaller drop indicates less condition-associated degradation. Completed responses are scored; unparseable responses count as incorrect, while inference failures are excluded."
+    },
+    {
+      "benchmark": "sac-bench",
+      "model": "moss-audio",
+      "metric": "Event Identity conflict SFR (%)",
+      "value": 60.9,
+      "source": "Table 3, arXiv:2611.00325v1, Event Identity conflict SFR (%)",
+      "source_url": "https://arxiv.org/pdf/2611.00325v1#page=8",
+      "note": "Neutral prompting; MOSS-Audio-8B-Instruct revision 66326e6. SFR counts speech-implied answers only on eligible conflict questions. Lower SFR means fewer claim-aligned answers, but does not alone establish better acoustic grounding. Its denominator differs from conflict accuracy. Completed responses are scored; unparseable responses count as incorrect, while inference failures are excluded."
+    },
+    {
+      "benchmark": "sac-bench",
+      "model": "audio-flamingo-next",
+      "metric": "Event Identity Audio-only accuracy (%)",
+      "value": 81.4,
+      "source": "Table 3, arXiv:2611.00325v1, Event Identity Audio-only accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.00325v1#page=8",
+      "note": "Neutral prompting; audio-flamingo-next-hf revision 5634886. Higher acoustic accuracy is better. Presence averages balanced recall within recordings; Identity and Order score questions. Completed responses are scored; unparseable responses count as incorrect, while inference failures are excluded."
+    },
+    {
+      "benchmark": "sac-bench",
+      "model": "audio-flamingo-next",
+      "metric": "Event Identity Compatible accuracy (%)",
+      "value": 76.2,
+      "source": "Table 3, arXiv:2611.00325v1, Event Identity Compatible accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.00325v1#page=8",
+      "note": "Neutral prompting; audio-flamingo-next-hf revision 5634886. Higher acoustic accuracy is better. Presence averages balanced recall within recordings; Identity and Order score questions. Completed responses are scored; unparseable responses count as incorrect, while inference failures are excluded."
+    },
+    {
+      "benchmark": "sac-bench",
+      "model": "audio-flamingo-next",
+      "metric": "Event Identity Conflict accuracy (%)",
+      "value": 35.6,
+      "source": "Table 3, arXiv:2611.00325v1, Event Identity Conflict accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.00325v1#page=8",
+      "note": "Neutral prompting; audio-flamingo-next-hf revision 5634886. Higher acoustic accuracy is better. Presence averages balanced recall within recordings; Identity and Order score questions. Completed responses are scored; unparseable responses count as incorrect, while inference failures are excluded."
+    },
+    {
+      "benchmark": "sac-bench",
+      "model": "audio-flamingo-next",
+      "metric": "Event Identity compatible–conflict gap (pp)",
+      "value": 40.6,
+      "source": "Table 3, arXiv:2611.00325v1, Event Identity compatible–conflict gap (pp)",
+      "source_url": "https://arxiv.org/pdf/2611.00325v1#page=8",
+      "note": "Neutral prompting; audio-flamingo-next-hf revision 5634886. Printed compatible-minus-conflict gap in percentage points, retained without recalculation from rounded columns; a smaller drop indicates less condition-associated degradation. Completed responses are scored; unparseable responses count as incorrect, while inference failures are excluded."
+    },
+    {
+      "benchmark": "sac-bench",
+      "model": "audio-flamingo-next",
+      "metric": "Event Identity conflict SFR (%)",
+      "value": 71.5,
+      "source": "Table 3, arXiv:2611.00325v1, Event Identity conflict SFR (%)",
+      "source_url": "https://arxiv.org/pdf/2611.00325v1#page=8",
+      "note": "Neutral prompting; audio-flamingo-next-hf revision 5634886. SFR counts speech-implied answers only on eligible conflict questions. Lower SFR means fewer claim-aligned answers, but does not alone establish better acoustic grounding. Its denominator differs from conflict accuracy. Completed responses are scored; unparseable responses count as incorrect, while inference failures are excluded."
+    },
+    {
+      "benchmark": "sac-bench",
+      "model": "qwen3-omni",
+      "metric": "Event Identity Audio-only accuracy (%)",
+      "value": 84.6,
+      "source": "Table 3, arXiv:2611.00325v1, Event Identity Audio-only accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.00325v1#page=8",
+      "note": "Neutral prompting; Qwen3-Omni-30B-A3B-Instruct revision 26291f7. Higher acoustic accuracy is better. Presence averages balanced recall within recordings; Identity and Order score questions. Completed responses are scored; unparseable responses count as incorrect, while inference failures are excluded."
+    },
+    {
+      "benchmark": "sac-bench",
+      "model": "qwen3-omni",
+      "metric": "Event Identity Compatible accuracy (%)",
+      "value": 83.0,
+      "source": "Table 3, arXiv:2611.00325v1, Event Identity Compatible accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.00325v1#page=8",
+      "note": "Neutral prompting; Qwen3-Omni-30B-A3B-Instruct revision 26291f7. Higher acoustic accuracy is better. Presence averages balanced recall within recordings; Identity and Order score questions. Completed responses are scored; unparseable responses count as incorrect, while inference failures are excluded."
+    },
+    {
+      "benchmark": "sac-bench",
+      "model": "qwen3-omni",
+      "metric": "Event Identity Conflict accuracy (%)",
+      "value": 39.8,
+      "source": "Table 3, arXiv:2611.00325v1, Event Identity Conflict accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.00325v1#page=8",
+      "note": "Neutral prompting; Qwen3-Omni-30B-A3B-Instruct revision 26291f7. Higher acoustic accuracy is better. Presence averages balanced recall within recordings; Identity and Order score questions. Completed responses are scored; unparseable responses count as incorrect, while inference failures are excluded."
+    },
+    {
+      "benchmark": "sac-bench",
+      "model": "qwen3-omni",
+      "metric": "Event Identity compatible–conflict gap (pp)",
+      "value": 43.2,
+      "source": "Table 3, arXiv:2611.00325v1, Event Identity compatible–conflict gap (pp)",
+      "source_url": "https://arxiv.org/pdf/2611.00325v1#page=8",
+      "note": "Neutral prompting; Qwen3-Omni-30B-A3B-Instruct revision 26291f7. Printed compatible-minus-conflict gap in percentage points, retained without recalculation from rounded columns; a smaller drop indicates less condition-associated degradation. Completed responses are scored; unparseable responses count as incorrect, while inference failures are excluded."
+    },
+    {
+      "benchmark": "sac-bench",
+      "model": "qwen3-omni",
+      "metric": "Event Identity conflict SFR (%)",
+      "value": 70.5,
+      "source": "Table 3, arXiv:2611.00325v1, Event Identity conflict SFR (%)",
+      "source_url": "https://arxiv.org/pdf/2611.00325v1#page=8",
+      "note": "Neutral prompting; Qwen3-Omni-30B-A3B-Instruct revision 26291f7. SFR counts speech-implied answers only on eligible conflict questions. Lower SFR means fewer claim-aligned answers, but does not alone establish better acoustic grounding. Its denominator differs from conflict accuracy. Completed responses are scored; unparseable responses count as incorrect, while inference failures are excluded."
+    },
+    {
+      "benchmark": "sac-bench",
+      "model": "step-audio-2-mini",
+      "metric": "Event Identity Audio-only accuracy (%)",
+      "value": 88.0,
+      "source": "Table 3, arXiv:2611.00325v1, Event Identity Audio-only accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.00325v1#page=8",
+      "note": "Neutral prompting; Step-Audio-2-mini revision e36fdd5. Higher acoustic accuracy is better. Presence averages balanced recall within recordings; Identity and Order score questions. Completed responses are scored; unparseable responses count as incorrect, while inference failures are excluded."
+    },
+    {
+      "benchmark": "sac-bench",
+      "model": "step-audio-2-mini",
+      "metric": "Event Identity Compatible accuracy (%)",
+      "value": 79.4,
+      "source": "Table 3, arXiv:2611.00325v1, Event Identity Compatible accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.00325v1#page=8",
+      "note": "Neutral prompting; Step-Audio-2-mini revision e36fdd5. Higher acoustic accuracy is better. Presence averages balanced recall within recordings; Identity and Order score questions. Completed responses are scored; unparseable responses count as incorrect, while inference failures are excluded."
+    },
+    {
+      "benchmark": "sac-bench",
+      "model": "step-audio-2-mini",
+      "metric": "Event Identity Conflict accuracy (%)",
+      "value": 32.9,
+      "source": "Table 3, arXiv:2611.00325v1, Event Identity Conflict accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.00325v1#page=8",
+      "note": "Neutral prompting; Step-Audio-2-mini revision e36fdd5. Higher acoustic accuracy is better. Presence averages balanced recall within recordings; Identity and Order score questions. Completed responses are scored; unparseable responses count as incorrect, while inference failures are excluded."
+    },
+    {
+      "benchmark": "sac-bench",
+      "model": "step-audio-2-mini",
+      "metric": "Event Identity compatible–conflict gap (pp)",
+      "value": 46.5,
+      "source": "Table 3, arXiv:2611.00325v1, Event Identity compatible–conflict gap (pp)",
+      "source_url": "https://arxiv.org/pdf/2611.00325v1#page=8",
+      "note": "Neutral prompting; Step-Audio-2-mini revision e36fdd5. Printed compatible-minus-conflict gap in percentage points, retained without recalculation from rounded columns; a smaller drop indicates less condition-associated degradation. Completed responses are scored; unparseable responses count as incorrect, while inference failures are excluded."
+    },
+    {
+      "benchmark": "sac-bench",
+      "model": "step-audio-2-mini",
+      "metric": "Event Identity conflict SFR (%)",
+      "value": 80.8,
+      "source": "Table 3, arXiv:2611.00325v1, Event Identity conflict SFR (%)",
+      "source_url": "https://arxiv.org/pdf/2611.00325v1#page=8",
+      "note": "Neutral prompting; Step-Audio-2-mini revision e36fdd5. SFR counts speech-implied answers only on eligible conflict questions. Lower SFR means fewer claim-aligned answers, but does not alone establish better acoustic grounding. Its denominator differs from conflict accuracy. Completed responses are scored; unparseable responses count as incorrect, while inference failures are excluded."
+    },
+    {
+      "benchmark": "sac-bench",
+      "model": "moss-audio",
+      "metric": "Temporal Order Audio-only accuracy (%)",
+      "value": 94.0,
+      "source": "Table 3, arXiv:2611.00325v1, Temporal Order Audio-only accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.00325v1#page=8",
+      "note": "Neutral prompting; MOSS-Audio-8B-Instruct revision 66326e6. Higher acoustic accuracy is better. Presence averages balanced recall within recordings; Identity and Order score questions. Completed responses are scored; unparseable responses count as incorrect, while inference failures are excluded."
+    },
+    {
+      "benchmark": "sac-bench",
+      "model": "moss-audio",
+      "metric": "Temporal Order Compatible accuracy (%)",
+      "value": 94.2,
+      "source": "Table 3, arXiv:2611.00325v1, Temporal Order Compatible accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.00325v1#page=8",
+      "note": "Neutral prompting; MOSS-Audio-8B-Instruct revision 66326e6. Higher acoustic accuracy is better. Presence averages balanced recall within recordings; Identity and Order score questions. Completed responses are scored; unparseable responses count as incorrect, while inference failures are excluded."
+    },
+    {
+      "benchmark": "sac-bench",
+      "model": "moss-audio",
+      "metric": "Temporal Order Conflict accuracy (%)",
+      "value": 43.6,
+      "source": "Table 3, arXiv:2611.00325v1, Temporal Order Conflict accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.00325v1#page=8",
+      "note": "Neutral prompting; MOSS-Audio-8B-Instruct revision 66326e6. Higher acoustic accuracy is better. Presence averages balanced recall within recordings; Identity and Order score questions. Completed responses are scored; unparseable responses count as incorrect, while inference failures are excluded."
+    },
+    {
+      "benchmark": "sac-bench",
+      "model": "moss-audio",
+      "metric": "Temporal Order compatible–conflict gap (pp)",
+      "value": 50.7,
+      "source": "Table 3, arXiv:2611.00325v1, Temporal Order compatible–conflict gap (pp)",
+      "source_url": "https://arxiv.org/pdf/2611.00325v1#page=8",
+      "note": "Neutral prompting; MOSS-Audio-8B-Instruct revision 66326e6. Printed compatible-minus-conflict gap in percentage points, retained without recalculation from rounded columns; a smaller drop indicates less condition-associated degradation. Completed responses are scored; unparseable responses count as incorrect, while inference failures are excluded."
+    },
+    {
+      "benchmark": "sac-bench",
+      "model": "moss-audio",
+      "metric": "Temporal Order conflict SFR (%)",
+      "value": 56.4,
+      "source": "Table 3, arXiv:2611.00325v1, Temporal Order conflict SFR (%)",
+      "source_url": "https://arxiv.org/pdf/2611.00325v1#page=8",
+      "note": "Neutral prompting; MOSS-Audio-8B-Instruct revision 66326e6. SFR counts speech-implied answers only on eligible conflict questions. Lower SFR means fewer claim-aligned answers, but does not alone establish better acoustic grounding. Its denominator differs from conflict accuracy. Completed responses are scored; unparseable responses count as incorrect, while inference failures are excluded."
+    },
+    {
+      "benchmark": "sac-bench",
+      "model": "audio-flamingo-next",
+      "metric": "Temporal Order Audio-only accuracy (%)",
+      "value": 87.4,
+      "source": "Table 3, arXiv:2611.00325v1, Temporal Order Audio-only accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.00325v1#page=8",
+      "note": "Neutral prompting; audio-flamingo-next-hf revision 5634886. Higher acoustic accuracy is better. Presence averages balanced recall within recordings; Identity and Order score questions. Completed responses are scored; unparseable responses count as incorrect, while inference failures are excluded."
+    },
+    {
+      "benchmark": "sac-bench",
+      "model": "audio-flamingo-next",
+      "metric": "Temporal Order Compatible accuracy (%)",
+      "value": 89.6,
+      "source": "Table 3, arXiv:2611.00325v1, Temporal Order Compatible accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.00325v1#page=8",
+      "note": "Neutral prompting; audio-flamingo-next-hf revision 5634886. Higher acoustic accuracy is better. Presence averages balanced recall within recordings; Identity and Order score questions. Completed responses are scored; unparseable responses count as incorrect, while inference failures are excluded."
+    },
+    {
+      "benchmark": "sac-bench",
+      "model": "audio-flamingo-next",
+      "metric": "Temporal Order Conflict accuracy (%)",
+      "value": 27.6,
+      "source": "Table 3, arXiv:2611.00325v1, Temporal Order Conflict accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.00325v1#page=8",
+      "note": "Neutral prompting; audio-flamingo-next-hf revision 5634886. Higher acoustic accuracy is better. Presence averages balanced recall within recordings; Identity and Order score questions. Completed responses are scored; unparseable responses count as incorrect, while inference failures are excluded."
+    },
+    {
+      "benchmark": "sac-bench",
+      "model": "audio-flamingo-next",
+      "metric": "Temporal Order compatible–conflict gap (pp)",
+      "value": 62.0,
+      "source": "Table 3, arXiv:2611.00325v1, Temporal Order compatible–conflict gap (pp)",
+      "source_url": "https://arxiv.org/pdf/2611.00325v1#page=8",
+      "note": "Neutral prompting; audio-flamingo-next-hf revision 5634886. Printed compatible-minus-conflict gap in percentage points, retained without recalculation from rounded columns; a smaller drop indicates less condition-associated degradation. Completed responses are scored; unparseable responses count as incorrect, while inference failures are excluded."
+    },
+    {
+      "benchmark": "sac-bench",
+      "model": "audio-flamingo-next",
+      "metric": "Temporal Order conflict SFR (%)",
+      "value": 71.8,
+      "source": "Table 3, arXiv:2611.00325v1, Temporal Order conflict SFR (%)",
+      "source_url": "https://arxiv.org/pdf/2611.00325v1#page=8",
+      "note": "Neutral prompting; audio-flamingo-next-hf revision 5634886. SFR counts speech-implied answers only on eligible conflict questions. Lower SFR means fewer claim-aligned answers, but does not alone establish better acoustic grounding. Its denominator differs from conflict accuracy. Completed responses are scored; unparseable responses count as incorrect, while inference failures are excluded."
+    },
+    {
+      "benchmark": "sac-bench",
+      "model": "qwen3-omni",
+      "metric": "Temporal Order Audio-only accuracy (%)",
+      "value": 98.2,
+      "source": "Table 3, arXiv:2611.00325v1, Temporal Order Audio-only accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.00325v1#page=8",
+      "note": "Neutral prompting; Qwen3-Omni-30B-A3B-Instruct revision 26291f7. Higher acoustic accuracy is better. Presence averages balanced recall within recordings; Identity and Order score questions. Completed responses are scored; unparseable responses count as incorrect, while inference failures are excluded."
+    },
+    {
+      "benchmark": "sac-bench",
+      "model": "qwen3-omni",
+      "metric": "Temporal Order Compatible accuracy (%)",
+      "value": 99.7,
+      "source": "Table 3, arXiv:2611.00325v1, Temporal Order Compatible accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.00325v1#page=8",
+      "note": "Neutral prompting; Qwen3-Omni-30B-A3B-Instruct revision 26291f7. Higher acoustic accuracy is better. Presence averages balanced recall within recordings; Identity and Order score questions. Completed responses are scored; unparseable responses count as incorrect, while inference failures are excluded."
+    },
+    {
+      "benchmark": "sac-bench",
+      "model": "qwen3-omni",
+      "metric": "Temporal Order Conflict accuracy (%)",
+      "value": 58.4,
+      "source": "Table 3, arXiv:2611.00325v1, Temporal Order Conflict accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.00325v1#page=8",
+      "note": "Neutral prompting; Qwen3-Omni-30B-A3B-Instruct revision 26291f7. Higher acoustic accuracy is better. Presence averages balanced recall within recordings; Identity and Order score questions. Completed responses are scored; unparseable responses count as incorrect, while inference failures are excluded."
+    },
+    {
+      "benchmark": "sac-bench",
+      "model": "qwen3-omni",
+      "metric": "Temporal Order compatible–conflict gap (pp)",
+      "value": 41.3,
+      "source": "Table 3, arXiv:2611.00325v1, Temporal Order compatible–conflict gap (pp)",
+      "source_url": "https://arxiv.org/pdf/2611.00325v1#page=8",
+      "note": "Neutral prompting; Qwen3-Omni-30B-A3B-Instruct revision 26291f7. Printed compatible-minus-conflict gap in percentage points, retained without recalculation from rounded columns; a smaller drop indicates less condition-associated degradation. Completed responses are scored; unparseable responses count as incorrect, while inference failures are excluded."
+    },
+    {
+      "benchmark": "sac-bench",
+      "model": "qwen3-omni",
+      "metric": "Temporal Order conflict SFR (%)",
+      "value": 41.6,
+      "source": "Table 3, arXiv:2611.00325v1, Temporal Order conflict SFR (%)",
+      "source_url": "https://arxiv.org/pdf/2611.00325v1#page=8",
+      "note": "Neutral prompting; Qwen3-Omni-30B-A3B-Instruct revision 26291f7. SFR counts speech-implied answers only on eligible conflict questions. Lower SFR means fewer claim-aligned answers, but does not alone establish better acoustic grounding. Its denominator differs from conflict accuracy. Completed responses are scored; unparseable responses count as incorrect, while inference failures are excluded."
+    },
+    {
+      "benchmark": "sac-bench",
+      "model": "step-audio-2-mini",
+      "metric": "Temporal Order Audio-only accuracy (%)",
+      "value": 72.6,
+      "source": "Table 3, arXiv:2611.00325v1, Temporal Order Audio-only accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.00325v1#page=8",
+      "note": "Neutral prompting; Step-Audio-2-mini revision e36fdd5. Higher acoustic accuracy is better. Presence averages balanced recall within recordings; Identity and Order score questions. Completed responses are scored; unparseable responses count as incorrect, while inference failures are excluded."
+    },
+    {
+      "benchmark": "sac-bench",
+      "model": "step-audio-2-mini",
+      "metric": "Temporal Order Compatible accuracy (%)",
+      "value": 96.8,
+      "source": "Table 3, arXiv:2611.00325v1, Temporal Order Compatible accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.00325v1#page=8",
+      "note": "Neutral prompting; Step-Audio-2-mini revision e36fdd5. Higher acoustic accuracy is better. Presence averages balanced recall within recordings; Identity and Order score questions. Completed responses are scored; unparseable responses count as incorrect, while inference failures are excluded."
+    },
+    {
+      "benchmark": "sac-bench",
+      "model": "step-audio-2-mini",
+      "metric": "Temporal Order Conflict accuracy (%)",
+      "value": 7.5,
+      "source": "Table 3, arXiv:2611.00325v1, Temporal Order Conflict accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.00325v1#page=8",
+      "note": "Neutral prompting; Step-Audio-2-mini revision e36fdd5. Higher acoustic accuracy is better. Presence averages balanced recall within recordings; Identity and Order score questions. Completed responses are scored; unparseable responses count as incorrect, while inference failures are excluded."
+    },
+    {
+      "benchmark": "sac-bench",
+      "model": "step-audio-2-mini",
+      "metric": "Temporal Order compatible–conflict gap (pp)",
+      "value": 89.3,
+      "source": "Table 3, arXiv:2611.00325v1, Temporal Order compatible–conflict gap (pp)",
+      "source_url": "https://arxiv.org/pdf/2611.00325v1#page=8",
+      "note": "Neutral prompting; Step-Audio-2-mini revision e36fdd5. Printed compatible-minus-conflict gap in percentage points, retained without recalculation from rounded columns; a smaller drop indicates less condition-associated degradation. Completed responses are scored; unparseable responses count as incorrect, while inference failures are excluded."
+    },
+    {
+      "benchmark": "sac-bench",
+      "model": "step-audio-2-mini",
+      "metric": "Temporal Order conflict SFR (%)",
+      "value": 92.4,
+      "source": "Table 3, arXiv:2611.00325v1, Temporal Order conflict SFR (%)",
+      "source_url": "https://arxiv.org/pdf/2611.00325v1#page=8",
+      "note": "Neutral prompting; Step-Audio-2-mini revision e36fdd5. SFR counts speech-implied answers only on eligible conflict questions. Lower SFR means fewer claim-aligned answers, but does not alone establish better acoustic grounding. Its denominator differs from conflict accuracy. Completed responses are scored; unparseable responses count as incorrect, while inference failures are excluded."
     }
   ]
 }

@@ -14824,6 +14824,50 @@
      "note": "Affiliation 2 in arXiv:2610.34413v1 is retained literally; no parent or author location is printed. The existing Soochow University alias is itself explicitly uncertain and is not evidence for assigning this author group to that university. Canonical host remains unresolved."
     }
    ]
+  },
+  {
+   "id": "avera-labs",
+   "name": "AveraLabs",
+   "short": null,
+   "type": "unresolved",
+   "country": null,
+   "parent": null,
+   "confidence": "low",
+   "sites": [],
+   "aliases": [
+    {
+     "raw": "AveraLabs",
+     "country": null,
+     "city": null,
+     "lat": null,
+     "lon": null,
+     "type": "unresolved",
+     "confidence": "low",
+     "note": "Printed affiliation in arXiv:2611.02430v1. No author city or country is printed; location is left unassigned."
+    }
+   ]
+  },
+  {
+   "id": "university-of-osaka",
+   "name": "The University of Osaka",
+   "short": null,
+   "type": "academia",
+   "country": null,
+   "parent": null,
+   "confidence": "low",
+   "sites": [],
+   "aliases": [
+    {
+     "raw": "The University of Osaka",
+     "country": null,
+     "city": null,
+     "lat": null,
+     "lon": null,
+     "type": "academia",
+     "confidence": "low",
+     "note": "Printed affiliation in arXiv:2611.00325v1. No author city or country is printed; location is left unassigned."
+    }
+   ]
   }
  ]
 }

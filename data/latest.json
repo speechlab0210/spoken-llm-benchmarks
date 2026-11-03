@@ -19,7 +19,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2611.02430",
       "score": 60,
-      "status": "new — under review"
+      "status": "reviewed — included: Introduces InteractionBench to evaluate timing, spoken tasks, vocal behavior and groundedness across general real-time voice systems."
     },
     {
       "id": "2611.00325",
@@ -34,7 +34,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2611.00325",
       "score": 33,
-      "status": "new — under review"
+      "status": "reviewed — included: Introduces SAC-Bench and evaluates general audio-language models under compatible and contradictory speech-acoustic evidence."
     },
     {
       "id": "2611.00333",
@@ -52,7 +52,7 @@
       "primary_category": "cs.LG",
       "url": "https://arxiv.org/abs/2611.00333",
       "score": 24,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: Proposes the C3 KV-retrieval method. Concatenated MLS and synthetic passcode stress tests support its method evaluation alongside existing datasets; its primary contribution is a retrieval algorithm rather than a benchmark proposal."
     },
     {
       "id": "2611.00685",
@@ -70,7 +70,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2611.00685",
       "score": 21,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: Proposes structured-caption text-to-music generation and MusicDSG evaluation of specialized music generators, not general spoken LLMs."
     },
     {
       "id": "2611.01261",
@@ -85,7 +85,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2611.01261",
       "score": 21,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: Proposes the MedAstra speech-retrieval and diagnostic-grounding method for medical QA, rather than a new general spoken-LLM benchmark."
     },
     {
       "id": "2611.01843",
@@ -103,7 +103,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2611.01843",
       "score": 21,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: Introduces MEX for musical-expectation measures from specialized GIVT and DIF music models, not general spoken LLMs."
     },
     {
       "id": "2611.02593",
@@ -119,7 +119,7 @@
       "primary_category": "cs.CV",
       "url": "https://arxiv.org/abs/2611.02593",
       "score": 21,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: Benchmarks reconstruction of visual content from fMRI with image-generation and brain-decoding systems; spoken LLMs are not the evaluated systems."
     },
     {
       "id": "2611.02903",
@@ -137,7 +137,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2611.02903",
       "score": 18,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: Introduces a South African Sign Language video-to-text dataset and sign-translation baselines; the evaluated systems are not general spoken LLMs."
     },
     {
       "id": "2610.41292",
