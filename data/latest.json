@@ -1,9 +1,144 @@
 {
-  "fetched_at": "2026-11-02T22:32:40Z",
+  "fetched_at": "2026-11-03T22:27:37Z",
   "window_days": 10,
-  "scanned": 104,
-  "flagged_today": 6,
+  "scanned": 145,
+  "flagged_today": 8,
   "candidates": [
+    {
+      "id": "2611.02430",
+      "title": "InteractionBench: Measuring Timing, Task Accuracy, Whisper and Volume, and Grounding in Real-Time Voice Systems",
+      "abstract": "Most benchmarks for real-time voice systems focus on one aspect, such as turn-taking, instruction following, paralinguistic control, or conversational memory, each with its own data and set of systems. We present InteractionBench, a benchmark and evaluation harness that measures four dimensions on the same systems from the same recorded user audio: conversational timing, spoken-task accuracy, whisper and volume, and groundedness in conversations of more than twenty turns. The benchmark contains 221 items per system in thirteen scenarios. Before any system runs, we fix the expected floor-control actions for spoken tasks by rule and take the expected answers from scripted dialogues. We score whispering from the audio signal. We evaluate GPT-Live, GPT-Realtime, Gemini Live, Moshi, PersonaPlex, Freeze-Omni, and a turn-based cascade in 1,519 graded runs. Among the six full-duplex systems, timing and spoken-task accuracy are rank-correlated ($ρ= 0.83$), while the cascade has the highest spoken-task score (38/50) and the second-lowest timing score. No system corrects a user's grammar within the required window. Only Gemini Live whispers on most requests (8/10). Hosted systems pass 67-88% of groundedness probes, compared with 14-35% for open full-duplex models. Timing is measured where the client hears each system, so the timing of hosted systems includes network delay: for GPT-Live, whose server reports its own clock, removing a delay of about 1.5 s lowers its timing score from 86% to 56%. We also document where the protocol differs across systems, including the text instructions.",
+      "published": "2026-11-02T02:53:57Z",
+      "authors": [
+        "Richard Yucheng He",
+        "Chen Xu",
+        "Yihang Liu",
+        "Tairan Chen",
+        "Baodong Cao"
+      ],
+      "primary_category": "cs.SD",
+      "url": "https://arxiv.org/abs/2611.02430",
+      "score": 60,
+      "status": "new — under review"
+    },
+    {
+      "id": "2611.00325",
+      "title": "One Waveform, Two Stories: Benchmarking Speech-Acoustic Conflict in Audio-Language Models",
+      "abstract": "Audio-language models (ALMs) are evaluated on their understanding of both speech and environmental sounds. What remains underexplored is how they respond when spoken claims contradict acoustic evidence within the same recording. We introduce SAC-Bench, a benchmark of intra-audio speech--acoustic conflict comprising 616,031 unique clips from 188 sound-event classes across seven semantic, temporal, and spatial tasks. It pairs environmental recordings with compatible or contradictory synthesized spoken claims and includes audio-only controls where applicable. Across five open-weight ALMs evaluated on semantic and temporal tasks, high audio-only accuracy often coexists with large losses under conflicting claims; Event Identity accuracy is 24.8--46.5 percentage points lower in conflict than compatible conditions. Temporal Order failures persist even when speech follows the complete event sequence, so simultaneous speech--event masking cannot fully explain them. A spatial case study with Spatial-Omni finds lower motion accuracy associated with both spoken claims and the speech source's physical trajectory. Prompt interventions sometimes restore acoustic accuracy, but can also reduce claim-aligned answers without improving grounding or worsen performance. SAC-Bench thus separates acoustic competence, conflict robustness, and intervention effects.",
+      "published": "2026-10-30T19:47:54Z",
+      "authors": [
+        "Wenbin Wang",
+        "Yuheng Li",
+        "Koichiro Yoshino"
+      ],
+      "primary_category": "cs.SD",
+      "url": "https://arxiv.org/abs/2611.00325",
+      "score": 33,
+      "status": "new — under review"
+    },
+    {
+      "id": "2611.00333",
+      "title": "C3: Speech-Guided KV Retrieval for Long-Context SpeechLLM Inference",
+      "abstract": "Speech language models encode audio at a much higher rate than text, causing the KV cache to dominate the memory, bandwidth, and decoding cost of long-form generation. KV retrieval can reduce per-step access by attending to only a query-dependent subset of the cache, but existing methods are designed primarily for text and do not account for the structure of audio attention. We first show that retrieval errors may compound autoregressively into generation drift. We then analyze full audio attention during long-form generation and identify three properties relevant to retrieval: unequal attention concentration across query heads, non-contiguous audio support, and temporal continuity across decoding steps. Guided by these observations, we propose $C^3$(Cluster-Compete-Compete), which organizes audio KVs in a hierarchical key-space index, lets query heads sharing a KV head compete for a common retrieval budget, and adaptively reallocates retrieval resolution through paired split-merge updates. Across long-form speech recognition, translation, and summarization on four SpeechLLMs, $C^3$ achieves the strongest overall performance among retrieval methods under comparable final-KV access budgets, with particularly large gains in the tight-budget regime, while improving long-context decoding efficiency and accelerator-memory scaling.",
+      "published": "2026-10-30T20:07:20Z",
+      "authors": [
+        "Dancheng Liu",
+        "Markus Müller",
+        "Rupak Vignesh Swaminathan",
+        "Jing Liu",
+        "Srikanth Ronanki",
+        "Aram Galstyan"
+      ],
+      "primary_category": "cs.LG",
+      "url": "https://arxiv.org/abs/2611.00333",
+      "score": 24,
+      "status": "new — under review"
+    },
+    {
+      "id": "2611.00685",
+      "title": "Text-to-music Generation via Structured Captions AND Interpretable Evaluation",
+      "abstract": "Text descriptions of music are central to the performance of text-to-music generation (TTM) methods, but creation of paired text information for music generation is relatively under explored. Here, we propose training latent diffusion/flow-based music generation models conditioned on structured captions (SCAPs) and compare with typical free-form captions via a set of controlled ablations. We compare free-form vs. structured captions, partial vs. full information coverage, and global vs. temporal text information during training, by fine-tuning different configurations of a pretrained flow-based diffusion transformer (DiT) and using a multi-stage inference-time prompt rewriter. Further, we introduce a new text-alignment evaluation protocol inspired by Davidsonian Scene Graphs (DSGs) for a fine-grained, interpretable measure of faithfulness of TTM methods. With multiple metrics, we show 1) that fine-tuning our DiT on SCAPs significantly improves text-alignment on music generation outputs while also improving quality, and 2) our proposed Music DSG metric better correlates with human preference than CLAP.",
+      "published": "2026-10-31T06:24:49Z",
+      "authors": [
+        "Junkai Wu",
+        "Zhepei Wang",
+        "Ge Zhu",
+        "Sarah Hye-yeon Lee",
+        "Mari Ostendorf",
+        "Nicholas J. Bryan"
+      ],
+      "primary_category": "cs.SD",
+      "url": "https://arxiv.org/abs/2611.00685",
+      "score": 21,
+      "status": "new — under review"
+    },
+    {
+      "id": "2611.01261",
+      "title": "MedAstra: ASR-less Speech Retrieval with Diagnostic Grounding for Medical QA",
+      "abstract": "Spoken medical question answering can fail when automatic speech recognition (ASR) corrupts a clinically important term before retrieval. We present MedAstra, a framework that maps frozen WavLM speech representations through a lightweight adapter into a frozen E5 text embedding space. This enables a dense retrieval path that accepts a waveform without a query transcript. Retrieved passages and speech-linked textual metadata support answer generation with entity alternatives, diagnostic contrasts, relation heuristics, and bounded retrieval refinement. ASR-less refers to the initial speech retrieval interface; lexical retrieval, string-based entity correction, and the text generator require textual inputs. The deterministic speech embedding does not constitute a calibrated model of acoustic uncertainty. Reported retrieval results reach 87.6 Recall@10 for the speech-only retriever and 90.4 for the hybrid configuration, compared with 81.0 for transcript-first dense retrieval. Medical QA and ablations provide descriptive system comparisons, with input-provenance and evaluation limitations stated explicitly. We distinguish controlled synthetic acoustic tests from real clinical speech, qualify component attribution, and specify the remaining comparisons needed to assess speech-only QA and clinical generalization.",
+      "published": "2026-10-31T21:00:22Z",
+      "authors": [
+        "Elahe Khatibi",
+        "Ziyu Wang",
+        "Amir M. Rahmani"
+      ],
+      "primary_category": "cs.CL",
+      "url": "https://arxiv.org/abs/2611.01261",
+      "score": 21,
+      "status": "new — under review"
+    },
+    {
+      "id": "2611.01843",
+      "title": "MEX: The Musical Expectation Benchmark Suite",
+      "abstract": "We propose the Musical Expectation (MEX) benchmark suite for perceptually validating computational models of musical expectation, i.e., models that estimate music information dynamics (MID) measures of perceived musical expectations, such as surprisal or uncertainty from symbolic music or musical audio. MEX collects and extends tasks for evaluating such models previously proposed in music information retrieval and cognitive sciences using standard datasets, and evaluates whether: (1) proposed MID measures decrease with repetition due to in-context learning of the computational model, (2) peaks in such measures align with boundaries of music segments, (3) pitch surprisal and uncertainty estimated from audio are consistent with those modeled in event-based symbolic music, (4) proposed MID measures can predict electrophysiological responses to music. We stress that this benchmark suite does not provide an exhaustive computational characterization of music expectation. Rather, we envision this as an active, interdisciplinary initiative, with benchmarks evolving as our understanding of the underlying perceptual processes deepens. We provide open-access code https://github.com/musicperceptmodeling/mex to estimate surprisal and uncertainty from audio using baseline models, run the tasks on standard datasets, and include utilities for running the tasks with users' own data.",
+      "published": "2026-11-01T12:22:03Z",
+      "authors": [
+        "Mathias Rose Bjare",
+        "Augustin Bouquillard",
+        "Giorgia Cantisani",
+        "Seung-Goo Kim",
+        "Stefan Lattner",
+        "Gerhard Widmer"
+      ],
+      "primary_category": "cs.SD",
+      "url": "https://arxiv.org/abs/2611.01843",
+      "score": 21,
+      "status": "new — under review"
+    },
+    {
+      "id": "2611.02593",
+      "title": "AVID: A 5T fMRI Dataset for Benchmarking Auditory-induced Visual Mental Imagery Decoding",
+      "abstract": "Visual mental imagery (VMI) decoding uses brain activity to reconstruct internally generated visual scenes, providing a potential pathway for externalizing internal experiences and developing neuroprosthetic communication interfaces. However, progress is limited by the lack of dedicated, training-scale VMI datasets. Current VMI paradigms often rely on visual prompts or short-term memory images, introducing visual and mnemonic confounds that make it difficult to disentangle neural activity associated with endogenous image construction from signals driven by prior or concurrent visual input. Furthermore, existing VMI datasets offer limited descriptive control over individual visual attributes, making it difficult to systematically assess fine grained visual details. To address these gaps, we introduce AVID, the first dedicated training-scale 5.0 Tesla functional magnetic resonance imaging (fMRI) resource for auditory-induced VMI decoding. AVID comprises approximately 67 hours of dense recordings from nine participants. The dataset is structured into two complementary splits: a scene-level complex split using naturalistic Mandarin descriptions and a controlled simple split with explicitly specified visual attributes. We further formalize a standardized evaluation protocol that decouples source-image consistency from semantic alignment, allowing for a more nuanced assessment of imagery reconstruction. Baseline qualitative and quantitative results show that current reconstruction pipelines remain limited on AVID, although the most successful reconstructions preserve recognizable scene level semantics from spoken descriptions. By combining dedicated training-scale neural recordings and standardized evaluation resources, AVID provides both a data foundation for imagery-specific model development and a benchmark for evaluating VMI decoding with substantially reduced sensory contamination.",
+      "published": "2026-11-02T06:17:53Z",
+      "authors": [
+        "Shiqi Shen",
+        "Shurui Li",
+        "Xilin Zhang",
+        "Yuanning Li"
+      ],
+      "primary_category": "cs.CV",
+      "url": "https://arxiv.org/abs/2611.02593",
+      "score": 21,
+      "status": "new — under review"
+    },
+    {
+      "id": "2611.02903",
+      "title": "Maswao: An automatically collected, prepared, and benchmarked dataset for the South African Sign language",
+      "abstract": "Recent advancements in sign language processing can be attributed to developments in both large-scale dataset collection and algorithmic complexity in areas such as pose estimation techniques, signal processing through Transformer models, and model optimization. However, only a handful of sign languages, such as the American, British, and German, from over 200 globally recognized sign languages, reap the benefits of such advancements, while the rest lag behind. In this study, we aim to address this technological disparity by proposing a framework for the automatic collection and preparation of sign language datasets, with very minimal human-labour intervention, using the South African Sign Language (SASL) as a testbed. Specifically, we automatically collect SASL video content using public resources such as news broadcasts. Additionally, we convert their accompanying audio streams into text using available Automatic Speech Recognition (ASR) tools. Furthermore, we crop the sign language area in the videos and use gradient descent to locate valleys of non-motion to determine end-of-sentence points within long videos to create our weakly sentence-aligned parallel corpora -- the Maswao (Signs) dataset. Finally, we benchmark the weakly aligned dataset on the task of Sign-to-text Translation using Recurrent Neural Networks and Transformer models to compare their individual intricacies. Our results show that Transformer models proposed in the literature outperform recurrent baselines, with the best-performing Transformer achieving BLEU-1 to BLEU-4 scores of 13.78, 5.21, 2.52, and 1.54, respectively, as well as ChrF = 18.09 and ROUGE-L = 10.51. These results indicate that the task remains promising and warrants further investigations.",
+      "published": "2026-11-02T10:36:22Z",
+      "authors": [
+        "Thapelo Sindane",
+        "Unarine Netshifhefhe",
+        "Vukosi Marivate",
+        "Abiodun Modupe",
+        "Herkulaas Combrink",
+        "Ketro Sithole"
+      ],
+      "primary_category": "cs.CL",
+      "url": "https://arxiv.org/abs/2611.02903",
+      "score": 18,
+      "status": "new — under review"
+    },
     {
       "id": "2610.41292",
       "title": "From Transcription to Reformulation: Defining and Benchmarking Grounded Generative Speech Recognition",
@@ -945,134 +1080,6 @@
       "url": "https://arxiv.org/abs/2610.29031",
       "score": 24,
       "status": "reviewed — out of scope: KunSet targets forced alignment and rhyme retrieval in music, not general audio-language models"
-    },
-    {
-      "id": "2610.19704",
-      "title": "BANGLAPLAN: A Benchmark for Constraint-Based Planning and Decision-Making in Bangla",
-      "abstract": "Large language models (LLMs) increasingly help users arrange appointments, plan journeys, and allocate limited resources. These tasks require models to satisfy constraints on time, cost, capacity, and order, or determine that no feasible solution exists. Bangla is the world's seventh most widely spoken language, and existing benchmarks cover many language and reasoning tasks. However, benchmarks for evaluating planning and decision-making in Bangla under explicit constraints remain lacking. We introduce BANGLAPLAN, a benchmark of 1,000 problems across ten task families grounded in everyday life and institutions in Bangladesh. It includes feasible and infeasible problems in four language registers: everyday, formal, colloquial, and Bangla--English mixed. Answers cover eight structured types, including schedules, routes, allocations, and ordered steps, in a common JSON format. We construct the benchmark through language-model-assisted drafting and independent human validation. We evaluate 11 open-weight and proprietary model configurations using exact match, separately reporting feasible-case accuracy, infeasibility detection, and format errors. We find a large performance gap: GPT-6.1 Sol achieves 98.7% accuracy and Qwen3.5-27B with thinking reaches 80.3%, while direct-answer configurations score at most 30.9%. Seven of eleven configurations perform below the always-``infeasible'' baseline. Our findings also suggest that harder problems primarily reduce plan-construction accuracy, while infeasibility detection remains more robust. BANGLAPLAN provides a reproducible basis for evaluating planning and decision-making in Bangla. BANGLAPLAN is available at: https://github.com/mrayhanulmasud/banglaplan.",
-      "published": "2026-10-14T07:32:32Z",
-      "authors": [
-        "Md Rayhanul Masud",
-        "S M Maksudul Alam",
-        "Mohammad Jaminur Islam"
-      ],
-      "primary_category": "cs.CL",
-      "url": "https://arxiv.org/abs/2610.19704",
-      "score": 21,
-      "status": "reviewed — out of scope: BANGLAPLAN evaluates constraint-based planning in Bangla text, not speech input or output"
-    },
-    {
-      "id": "2610.19774",
-      "title": "Long-Prompt Zero-Shot TTS: Benchmarking Prosody Reproduction Beyond Voice Cloning",
-      "abstract": "Zero-shot text-to-speech (TTS) typically conditions on a short speech prompt, which conveys timbre but provides only limited evidence of a speaker's prosodic patterns. We formulate Long-Prompt Zero-Shot TTS, a task that uses long speech prompts at inference time to reproduce speaker-specific prosody without target-speaker fine-tuning. We introduce LP-TTS-Bench, a bilingual benchmark of 37 speakers with 63.95 prompt hours and 2,728 held-out test utterances. Beyond intelligibility and timbre similarity, LP-TTS-Bench evaluates timing, prominence, intonation, and model-based prosody metrics, enabling multidimensional evaluation of prosody reproduction. As a reference system, we develop LPTTS, whose hierarchical Long-Prompt Encoder compresses long speech prompts into a fixed number of continuous prosody vectors. Experiments show improvements in several prosodic dimensions over a short-prompt baseline, with overall gains as prompt duration increases up to approximately 10 minutes and saturation at longer durations.",
-      "published": "2026-10-14T08:23:44Z",
-      "authors": [
-        "Dekun Chen",
-        "Renjie Xu",
-        "Yingda Shen",
-        "Qinke Ni",
-        "Zhizheng Wu"
-      ],
-      "primary_category": "cs.SD",
-      "url": "https://arxiv.org/abs/2610.19774",
-      "score": 21,
-      "status": "reviewed — out of scope: LP-TTS-Bench evaluates dedicated text-to-speech generation systems"
-    },
-    {
-      "id": "2610.20310",
-      "title": "MUSEBENCH: A Benchmark for AI-Generated Music Detection and Artifact Analysis",
-      "abstract": "Advances in generative AI have made it possible to produce music that is nearly indistinguishable from human compositions, raising the question of whether such works can be reliably distinguished from human compositions. We present MUSEBENCH, a large-scale benchmark for AI-generated music detection and artifact analysis, comprising over 361K tracks. The dataset includes human compositions, stylistically matched music generated by ten state-of-the-art open-source and commercial models, such as Suno and Udio, as well as human-AI co-creations and variants processed with adversarial perturbations, compression, and acoustic post-processing. Using MUSEBENCH, we benchmark 11 automated detectors and evaluate their accuracy, generalization, and robustness, under default, out-of-domain, and transformed-variant experiment settings. We further conduct a comprehensive artifact analysis through acoustic feature inspection, identifying recurring signatures such as non-idiomatic harmonic progressions, upsampling induced spectral periodicities, and violations of physical performance constraints. Our findings reveal key strengths and vulnerabilities of existing detectors and provide practical insights for building more reliable AI music detection systems.",
-      "published": "2026-10-14T14:57:38Z",
-      "authors": [
-        "Yi Chen Liu",
-        "Syed Irfan Ali Meerza",
-        "Jiawei Yu",
-        "Xi Guo",
-        "Samuel Bright",
-        "Jian Liu"
-      ],
-      "primary_category": "cs.SD",
-      "url": "https://arxiv.org/abs/2610.20310",
-      "score": 21,
-      "status": "reviewed — out of scope: MUSEBENCH evaluates specialized AI-generated-music detectors, not general spoken LLMs"
-    },
-    {
-      "id": "2610.20370",
-      "title": "From Triage to Impact: A Multi-Hop Reasoning Benchmark for Explainable Persian Hate Speech",
-      "abstract": "Hate speech has become increasingly prevalent on social media, raising concerns about its detection, interpretation, and moderation. Persian, a relatively low-resource language, lacks sufficient annotated data and computational resources for fine-grained hate speech analysis. In this study, we introduce a fine-grained, multi-hop benchmark for explainable Persian hate speech analysis, covering content triage, target identification, hate tactic and moral foundation analysis, textual evidence extraction, harmful narrative inference, and severity assessment. By evaluating state-of-the-art large language models (LLMs), we find that performance generally declines as tasks require more fine-grained semantic and inferential reasoning. Proprietary models generally outperform open-weight models, while reasoning-oriented models show no consistent advantage. Incorporating intermediate reasoning steps substantially improves severity prediction compared with one-shot assessment. Our analysis further reveals that Incitement to Violence or Harm is most strongly associated with higher severity, while political-affiliation targets are particularly associated with subversion-based moral framing. Overall, this work provides insights into LLM-based hate speech analysis and supports more accountable moderation of Persian-language social media. The benchmark is publicly available at https://github.com/kalhorghazal/From-Triage-to-Impact.",
-      "published": "2026-10-14T15:42:15Z",
-      "authors": [
-        "Ghazal Kalhor",
-        "Sima Kamandloo",
-        "Mehrsa Shamsian",
-        "Behnam Bahrak"
-      ],
-      "primary_category": "cs.CL",
-      "url": "https://arxiv.org/abs/2610.20370",
-      "score": 21,
-      "status": "reviewed — out of scope: evaluates Persian hate-speech detection in social-media text rather than speech"
-    },
-    {
-      "id": "2610.26894",
-      "title": "TRACE: Trustworthy Reasoning from Acoustic Cues and Evidence",
-      "abstract": "We introduce TRACE (Trustworthy Reasoning from Acoustic Cues and Evidence), a benchmark for diagnosing the reliability of large audio-language models (LALMs) by revealing when, and under what acoustic conditions these models behave untrustworthily. Existing benchmarks primarily measure whether a model produces the correct answer, but correctness alone cannot determine whether the answer is grounded in acoustic evidence or instead reflects language and contextual priors. TRACE evaluates model behavior along three complementary dimensions: (1) task performance, whether the answer is correct; (2) evidence alignment, whether the model is attending to the audio regions required to answer the question; and (3) robustness, whether answers and attributed evidence respond coherently to controlled changes such as event order, overlap, signal-to-noise ratio, or background content. TRACE targets temporal ordering, counting, and event existence, three tasks that remain challenging for current models. We synthesize contextually informed acoustic scenes that allow us to test whether models hallucinate events associated with the context but absent from the audio. This synthesis also allows us to obtain a scalable benchmark for which we know the answers by design. For each scene, we create controlled variants in a programmatic way to stress-test model robustness. We introduce attribution-based metrics that quantify model attention at scale on target events and non-target events. Evaluation across five state-of-the-art models shows that current LALMs often detect where relevant sound evidence occurs, but they do not reliably interpret it, integrate it into the answer, or respond to controlled changes in that evidence. Our benchmark also shows that models still struggle the most with ordering and counting questions.",
-      "published": "2026-10-15T19:59:23Z",
-      "authors": [
-        "Giovana Morais",
-        "Yujin Kim",
-        "Atilay Kucukoglu",
-        "Magdalena Fuentes"
-      ],
-      "primary_category": "cs.SD",
-      "url": "https://arxiv.org/abs/2610.26894",
-      "score": 21,
-      "status": "reviewed — included: TRACE introduce evaluation tasks for general speech/audio-language models; modality and protocol limitations are documented in the catalogue"
-    },
-    {
-      "id": "2610.22989",
-      "title": "MUB: An Identity-Masked Benchmark for Music Understanding in Multimodal Language Models",
-      "abstract": "Evaluating musical perception in multimodal language models requires separating audio evidence from answers recoverable through metadata or external tools. We present the Music Understanding Benchmark (MUB), a locally assembled collection of 500 identity-masked recordings with existing annotations for tempo, key, time signature, and structural intervals. The collection covers all 24 major/minor key combinations, tempos of 47--180 beats per minute, and 4,676 annotated intervals. Original titles, artists, and platform identifiers are excluded from evaluation inputs. Relative to recent music question-answering and temporal-grounding work, MUB emphasizes scalar tempo prediction and full-recording interval outputs, together with a documented metadata-masking protocol. Saved baseline predictions yield 53.6\\% tempo accuracy for a simple DSP estimator and 98.4\\% time-signature accuracy for a constant 4/4 predictor. We identify important limitations, including an asymmetric legacy key metric, unverified independent annotation agreement, extreme metre imbalance, and unresolved recording-level rights clearance. No contemporary multimodal language model comparison has yet been completed. MUB is therefore an evaluation resource and protocol under validation, rather than a completed demonstration of model capabilities.",
-      "published": "2026-10-16T06:14:31Z",
-      "authors": [
-        "Kun Liu",
-        "Lyra Tao"
-      ],
-      "primary_category": "cs.SD",
-      "url": "https://arxiv.org/abs/2610.22989",
-      "score": 21,
-      "status": "reviewed — out of scope: MUB is a proposed music-understanding protocol validated with DSP/constant baselines; evaluation of contemporary general audio-language models is not established"
-    },
-    {
-      "id": "2610.26168",
-      "title": "VISAGENT: An Agent-Based End-to-End Voice Interaction System",
-      "abstract": "Voice-based public services have evolved from manual switchboards to intelligent platforms to meet modern user needs. However, current systems remain constrained by rigid menu-driven interaction, fragmented vertical services, and limited extensibility. To address these issues, we present VISAGENT, an agent-based end-to-end voice interaction system for large-scale public services that integrates end-to-end speech interaction, hierarchical agent routing, a scalable voice-agent marketplace, and user memory support. The system replaces menu-driven workflows with natural speech and dynamically dispatches user requests to either a general conversational model or specialized domain agents via a two-level routing paradigm that achieves sub-second intent-to-agent selection over hundreds of agents. User memory informs preference-aware agent selection and supplies relevant preferences and context to selected agents, supporting personalized task execution and reducing the need for users to repeat previously provided information. A voice-agent registration mechanism converts task agents into conversational entities, enabling dynamic onboarding and ecosystem-level extensibility. We validate VISAGENT through a real-world deployment in China's 114 hotline across multiple service domains. Experimental results demonstrate low-latency full-duplex interaction, robust routing scalability, and competitive speech naturalness. More broadly, this work advocates a shift from isolated voice assistants toward agent-centric conversational infrastructures, providing a general blueprint for building extensible voice-agent systems in public services and beyond.",
-      "published": "2026-10-19T10:59:45Z",
-      "authors": [
-        "Xiang Wang",
-        "Zhaoxiang Liu",
-        "Xiang Chen",
-        "Liqiang He",
-        "Kai Wang",
-        "Shiguo Lian"
-      ],
-      "primary_category": "cs.CL",
-      "url": "https://arxiv.org/abs/2610.26168",
-      "score": 21,
-      "status": "reviewed — out of scope: VISAGENT is a deployed assistance system, not a new reusable spoken LLM benchmark"
-    },
-    {
-      "id": "2610.26258",
-      "title": "AudioScorer: Learning Question-Aware Token Relevance for Large Audio Language Models",
-      "abstract": "Large Audio Language Models (LALMs) reason over speech, environmental sounds, music, and other acoustic information. However, their audio encoders produce dense token sequences that make long-form audio costly to process. Existing audio pruning methods reduce this cost using heuristics such as attention, representation similarity, or temporal sampling, but do not explicitly learn which tokens are most useful for a given question. We propose AudioScorer, a lightweight model that scores audio tokens according to the user question. It is trained by distilling the ranking of audio tokens under the frozen LALM's answer-gradient saliency, together with downstream answer supervision. Compared with other pruning methods, AudioScorer achieves the best or tied-best result at 10% token retention on 7 of 10 semantic and acoustic tasks, including speech recognition, emotion recognition, and audio-scene classification.",
-      "published": "2026-10-19T12:14:12Z",
-      "authors": [
-        "Marwan Farag",
-        "Bin Yang"
-      ],
-      "primary_category": "cs.SD",
-      "url": "https://arxiv.org/abs/2610.26258",
-      "score": 21,
-      "status": "reviewed — out of scope: AudioScorer is an audio-token pruning method tested on existing tasks"
     }
   ],
   "warnings": []

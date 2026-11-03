@@ -1,9 +1,65 @@
 {
  "since": "2026-08-22",
  "what": "Every arXiv paper the daily crawl has flagged since launch (score at or above the threshold, not previously seen), with the reviewer's verdict as written in the feed and whether the paper entered the catalogue. \"published\" is the paper's arXiv date. See the Method section of the site.",
- "flagged": 306,
+ "flagged": 314,
  "admitted": 89,
  "entries": [
+  {
+   "id": "2611.02903",
+   "title": "Maswao: An automatically collected, prepared, and benchmarked dataset for the South African Sign language",
+   "published": "2026-11-02T10:36:22Z",
+   "score": 18,
+   "outcome": "under review"
+  },
+  {
+   "id": "2611.02593",
+   "title": "AVID: A 5T fMRI Dataset for Benchmarking Auditory-induced Visual Mental Imagery Decoding",
+   "published": "2026-11-02T06:17:53Z",
+   "score": 21,
+   "outcome": "under review"
+  },
+  {
+   "id": "2611.02430",
+   "title": "InteractionBench: Measuring Timing, Task Accuracy, Whisper and Volume, and Grounding in Real-Time Voice Systems",
+   "published": "2026-11-02T02:53:57Z",
+   "score": 60,
+   "outcome": "under review"
+  },
+  {
+   "id": "2611.01843",
+   "title": "MEX: The Musical Expectation Benchmark Suite",
+   "published": "2026-11-01T12:22:03Z",
+   "score": 21,
+   "outcome": "under review"
+  },
+  {
+   "id": "2611.01261",
+   "title": "MedAstra: ASR-less Speech Retrieval with Diagnostic Grounding for Medical QA",
+   "published": "2026-10-31T21:00:22Z",
+   "score": 21,
+   "outcome": "under review"
+  },
+  {
+   "id": "2611.00685",
+   "title": "Text-to-music Generation via Structured Captions AND Interpretable Evaluation",
+   "published": "2026-10-31T06:24:49Z",
+   "score": 21,
+   "outcome": "under review"
+  },
+  {
+   "id": "2611.00333",
+   "title": "C3: Speech-Guided KV Retrieval for Long-Context SpeechLLM Inference",
+   "published": "2026-10-30T20:07:20Z",
+   "score": 24,
+   "outcome": "under review"
+  },
+  {
+   "id": "2611.00325",
+   "title": "One Waveform, Two Stories: Benchmarking Speech-Acoustic Conflict in Audio-Language Models",
+   "published": "2026-10-30T19:47:54Z",
+   "score": 33,
+   "outcome": "under review"
+  },
   {
    "id": "2610.41539",
    "title": "Scalable Audio-LLM System for Speech MOS Evaluation: A Diagnostic Case Study and Adaptation Roadmap",
