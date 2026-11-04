@@ -2,42 +2,50 @@
  "since": "2026-08-22",
  "what": "Every arXiv paper the daily crawl has flagged since launch (score at or above the threshold, not previously seen), with the reviewer's verdict as written in the feed and whether the paper entered the catalogue. \"published\" is the paper's arXiv date. See the Method section of the site.",
  "flagged": 320,
- "admitted": 91,
+ "admitted": 94,
  "entries": [
   {
    "id": "2611.04714",
    "title": "Hybrid acoustic and pretrained embedding feature fusion for unmanned aerial vehicle detection using stacking ensemble learning under a leakage-aware evaluation protocol",
    "published": "2026-11-03T11:36:38Z",
    "score": 18,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: Evaluates Random Forest and XGBoost stacks with acoustic descriptors and YAMNet features for binary drone detection, not general spoken LLMs."
   },
   {
    "id": "2611.04634",
    "title": "VeriSpoof: Beyond Real or Fake with One Audio LLM",
    "published": "2026-11-03T10:25:06Z",
    "score": 24,
-   "outcome": "under review"
+   "outcome": "admitted",
+   "verdict": "reviewed — included: Releases VeriSpoof-Bench and explicitly evaluates six general audio-language models zero-shot on authenticity, source verification and recording conditions.",
+   "catalogue_id": "verispoof-bench"
   },
   {
    "id": "2611.04580",
    "title": "Confidence-Aware Aggregation for Multimodal Audio Reasoning",
    "published": "2026-11-03T09:40:05Z",
    "score": 36,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: Proposes confidence-aware inference-time answer aggregation, evaluated on the existing MMAR dataset; it does not introduce a new benchmark."
   },
   {
    "id": "2611.04390",
    "title": "Do Multi-Turn Conversational Capabilities Carry Over from Text to Speech? A Parallel Multilingual Benchmark",
    "published": "2026-11-03T06:22:53Z",
    "score": 33,
-   "outcome": "under review"
+   "outcome": "admitted",
+   "verdict": "reviewed — included: Introduces the parallel ten-language Omnilingua-AudioMC benchmark and evaluates general speech-language models on fixed-context conversational capabilities.",
+   "catalogue_id": "omnilingua-audiomc"
   },
   {
    "id": "2611.03839",
    "title": "PianoBench: Evaluating Musical Perception and Reasoning in Language Models",
    "published": "2026-11-02T19:11:56Z",
    "score": 39,
-   "outcome": "under review"
+   "outcome": "admitted",
+   "verdict": "reviewed — included: Introduces 250 PianoBench questions and evaluates general audio-language models with matched piano audio, MIDI-text and no-music controls.",
+   "catalogue_id": "pianobench"
   },
   {
    "id": "2611.02903",
@@ -85,7 +93,8 @@
    "title": "NepTTS-Bench: Native-Speaker Benchmarking and NepaliMOS for Nepali Text-to-Speech",
    "published": "2026-10-31T18:58:38Z",
    "score": 36,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: Evaluates Nepali TTS configurations with native-listener MOS, ASR round-trip CER and quality predictors; no verified general spoken-LLM configuration is specified, and the Gemini Flash checkpoint is not identified."
   },
   {
    "id": "2611.00685",

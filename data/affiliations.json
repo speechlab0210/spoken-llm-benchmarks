@@ -26145,6 +26145,132 @@
     }
    ],
    "verify_note": "PDF v1 first-page author blocks checked against arXiv HTML and metadata. Wenbin Wang and Koichiro Yoshino have The University of Osaka; Yuheng Li has University of Wisconsin-Madison. Neither block prints a separate city or country; geography is not inferred from institutional names."
+  },
+  "pianobench": {
+   "status": "ok",
+   "verified": "confirmed",
+   "publishable": true,
+   "countries_complete": false,
+   "n_authors": 5,
+   "institutions": [
+    {
+     "inst": "queen-mary-university-of-london",
+     "raw": "Queen Mary University of London",
+     "unit": null,
+     "country": null,
+     "city": null,
+     "lat": null,
+     "lon": null,
+     "placed": "none",
+     "printed_city": null,
+     "printed_country": null,
+     "lead": true,
+     "first_author": true,
+     "last": false,
+     "evidence": "printed"
+    },
+    {
+     "inst": "carnegie-mellon-university",
+     "raw": "Carnegie Mellon University",
+     "unit": null,
+     "country": null,
+     "city": null,
+     "lat": null,
+     "lon": null,
+     "placed": "none",
+     "printed_city": null,
+     "printed_country": null,
+     "lead": false,
+     "first_author": false,
+     "last": true,
+     "evidence": "printed"
+    },
+    {
+     "inst": "cornell-university",
+     "raw": "Cornell University",
+     "unit": null,
+     "country": null,
+     "city": null,
+     "lat": null,
+     "lon": null,
+     "placed": "none",
+     "printed_city": null,
+     "printed_country": null,
+     "lead": false,
+     "first_author": false,
+     "last": false,
+     "evidence": "printed"
+    }
+   ],
+   "verify_note": "PDF v1 first-page superscripts checked against arXiv author metadata: Louis Bradshaw is at Queen Mary, Irmak Bukey and Chris Donahue at Carnegie Mellon, Daniel Chenyu Lin and John Thickstun at Cornell. No separate author city or country is printed; geography is not inferred from institution names."
+  },
+  "omnilingua-audiomc": {
+   "status": "ok",
+   "verified": "confirmed",
+   "publishable": true,
+   "countries_complete": false,
+   "n_authors": 6,
+   "institutions": [
+    {
+     "inst": "nankai-university",
+     "raw": "College of Computer Science, Nankai University",
+     "unit": "College of Computer Science",
+     "country": null,
+     "city": null,
+     "lat": null,
+     "lon": null,
+     "placed": "none",
+     "printed_city": null,
+     "printed_country": null,
+     "lead": true,
+     "first_author": true,
+     "last": true,
+     "evidence": "printed"
+    },
+    {
+     "inst": "alibaba-group",
+     "raw": "Alibaba Token Hub, Alibaba Group",
+     "unit": "Alibaba Token Hub",
+     "country": null,
+     "city": null,
+     "lat": null,
+     "lon": null,
+     "placed": "none",
+     "printed_city": null,
+     "printed_country": null,
+     "lead": false,
+     "first_author": true,
+     "last": false,
+     "evidence": "printed"
+    }
+   ],
+   "verify_note": "PDF v1 first-page superscripts checked against arXiv metadata. First author Jiaming Zhou has both affiliations; last author Yong Qin has Nankai University. The lead flag follows the catalogue rule: the first-listed affiliation, Nankai University. No separate author city or country is printed; geography is not inferred from institution names."
+  },
+  "verispoof-bench": {
+   "status": "ok",
+   "verified": "confirmed",
+   "publishable": true,
+   "countries_complete": false,
+   "n_authors": 2,
+   "institutions": [
+    {
+     "inst": "university-of-melbourne",
+     "raw": "The University of Melbourne",
+     "unit": null,
+     "country": null,
+     "city": null,
+     "lat": null,
+     "lon": null,
+     "placed": "none",
+     "printed_city": null,
+     "printed_country": null,
+     "lead": true,
+     "first_author": true,
+     "last": true,
+     "evidence": "printed"
+    }
+   ],
+   "verify_note": "PDF v1 first-page byline checked against arXiv metadata: Yang Xiao and Ting Dang share The University of Melbourne. No separate author city or country is printed; geography is not inferred from institution names."
   }
  },
  "models": {

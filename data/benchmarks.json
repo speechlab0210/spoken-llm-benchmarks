@@ -12605,6 +12605,126 @@
       "arxiv_date": "2026-10",
       "arxiv_date_full": "2026-10-30",
       "url": "https://arxiv.org/abs/2611.00325"
+    },
+    {
+      "id": "pianobench",
+      "name": "PianoBench",
+      "aka": [],
+      "categories": [
+        "auditory-perception",
+        "reasoning",
+        "audio-grounding",
+        "domain"
+      ],
+      "tasks": [
+        "musical-feature perception",
+        "reasoning about piano passages",
+        "audio versus symbolic music representation"
+      ],
+      "languages": [
+        "English"
+      ],
+      "size": "250 human-verified multiple-choice questions about piano passages from 162 videos",
+      "io": "piano stem audio, synthesized piano audio, MIDI-text, or no music plus a question → answer choice",
+      "metrics": [
+        "accuracy (%) by input representation",
+        "gain over no-music control (percentage points)"
+      ],
+      "summary": "Tests musical perception and reasoning with matched audio and symbolic representations of short piano passages. Source-separated piano, MIDI-rendered piano, MIDI-text and a no-music control separate acoustic perception from reasoning over explicit note events.",
+      "note": "PianoBench is the 250-question evaluation set, distinct from the much larger, 44-language PianoTalk training corpus. Result cells cover six general audio-language model configurations in Table 1; text-only and specialist systems are not pooled into them. The paper identifies one incorrect reference answer in Appendix C.3; original scores are retained. The author-reported project page could not be independently loaded during this review.",
+      "code": null,
+      "data": null,
+      "full_title": "PianoBench: Evaluating Musical Perception and Reasoning in Language Models",
+      "arxiv_id": "2611.03839",
+      "arxiv_date": "2026-11",
+      "arxiv_date_full": "2026-11-02",
+      "url": "https://arxiv.org/abs/2611.03839"
+    },
+    {
+      "id": "omnilingua-audiomc",
+      "name": "Omnilingua-AudioMC",
+      "aka": [
+        "Omnilingua Audio MultiChallenge"
+      ],
+      "categories": [
+        "dialogue",
+        "instruction-following",
+        "multilingual",
+        "audio-grounding"
+      ],
+      "tasks": [
+        "inference memory",
+        "instruction retention",
+        "self coherence",
+        "voice editing",
+        "history-versus-current-turn transcript substitution"
+      ],
+      "languages": [
+        "English",
+        "Chinese",
+        "Japanese",
+        "Spanish",
+        "French",
+        "Russian",
+        "German",
+        "Italian",
+        "Thai",
+        "Vietnamese"
+      ],
+      "size": "354 conversations, 1,827 user turns and 1,404 rubric items per aligned condition; ten languages plus a separate English TTS control",
+      "io": "fixed multi-turn history with user speech or transcripts and assistant text → a designated text response",
+      "metrics": [
+        "instance success (%)",
+        "rubric success (%)",
+        "reference-passing rubric survival (%)",
+        "cross-language population SD and range (points)"
+      ],
+      "summary": "Extends Audio MultiChallenge into parallel speech and transcript conditions in ten languages. Matched conversations test whether memory, persistent instructions, coherence and revisions survive the move from text to speech; transcript substitutions diagnose sensitivity to preceding and current user turns.",
+      "note": "This is fixed-context evaluation, not a free-running conversation. Instance success requires every rubric item to pass; it differs from rubric accuracy and from survival of reference-passing items. Results recorded here cover Gemini 3.1 Pro, Qwen3.5 Omni and Muse-Spark 1.2 from Tables 2, 4 and 5. Marginal and paired analyses can use different available-item denominators. The code URL is reported by the authors; its availability was not independently verified.",
+      "code": "https://github.com/QwenLM/Omnilingua-Bench/tree/main/Omnilingua-AudioMC",
+      "data": null,
+      "full_title": "Do Multi-Turn Conversational Capabilities Carry Over from Text to Speech? A Parallel Multilingual Benchmark",
+      "arxiv_id": "2611.04390",
+      "arxiv_date": "2026-11",
+      "arxiv_date_full": "2026-11-03",
+      "url": "https://arxiv.org/abs/2611.04390"
+    },
+    {
+      "id": "verispoof-bench",
+      "name": "VeriSpoof-Bench",
+      "aka": [],
+      "categories": [
+        "robustness",
+        "audio-grounding",
+        "paralinguistics"
+      ],
+      "tasks": [
+        "speech authenticity",
+        "generator attribution",
+        "same-source verification",
+        "recording-condition analysis",
+        "synthetic-span localization",
+        "grounded rationale and faithfulness checks"
+      ],
+      "languages": [],
+      "size": "54 subsets containing 177,852 items in six groups; general audio-LLM comparison uses 1,000 items per test set",
+      "io": "one speech recording or a pair plus a forensic question → closed-option answer or grounded rationale",
+      "metrics": [
+        "balanced accuracy (%)",
+        "EER (%)",
+        "attribution accuracy (%)",
+        "span IoU and token F1",
+        "rationale correctness and counterfactual follow/stay rates"
+      ],
+      "summary": "Provides paired forensic evaluation subsets for authenticity, source identity, recording conditions, localization and checkable rationales. A zero-shot comparison tests six general audio-language models on authenticity, same-source and recording-condition questions.",
+      "note": "The matrix records the three printed Mean rows for six general models in Table 5. Balanced accuracy is distinct from the specialized VeriSpoof models' EER on Speech-DF-Arena and SpoofRadar. Dataset language coverage varies by source corpus and is not enumerated as a unified benchmark language list. The official repository was verified; the author-linked dataset endpoint could not be independently loaded.",
+      "code": "https://github.com/swagshaw/verispoof",
+      "data": "https://huggingface.co/datasets/AustinXiao/VeriSpoof-Bench",
+      "full_title": "VeriSpoof: Beyond Real or Fake with One Audio LLM",
+      "arxiv_id": "2611.04634",
+      "arxiv_date": "2026-11",
+      "arxiv_date_full": "2026-11-03",
+      "url": "https://arxiv.org/abs/2611.04634"
     }
   ]
 }

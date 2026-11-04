@@ -1,6 +1,11 @@
 {
  "entries": [
   {
+   "date": "2026-11-05",
+   "change": "Reviewed six candidates: added PianoBench, Omnilingua-AudioMC and VeriSpoof-Bench with 118 source-located results (37, 63 and 18 respectively). PianoBench retains input conditions and reasoning modes; Omnilingua separates conversation success, reference-passing rubric survival and transcript substitutions; VeriSpoof records general-model balanced accuracies rather than specialized-detector EERs. Three TTS, method or specialized-classifier papers were excluded. PDF bylines and original result tables were checked; venue and release-link verification limits are recorded.",
+   "source": "arXiv:2611.03839v1 Tables 1 and 3, Appendix C.3; arXiv:2611.04390v1 Tables 2, 4 and 5; arXiv:2611.04634v1 Table 5 and Section 5; full texts 2611.03718v1, 2611.04580v1 and 2611.04714v1."
+  },
+  {
    "date": "2026-11-04",
    "change": "Reviewed eight candidates: added InteractionBench and SAC-Bench with 105 source-located results (45 and 60 respectively). InteractionBench retains printed pass counts, 0–1 timing rates and millisecond latency. SAC-Bench keeps neutral-prompt conditions, acoustic accuracy, percentage-point gaps and speech-following rates distinct. Results cover exact configurations of existing model entries; unmatched versions are not merged. Six method or specialized-system papers were excluded. Author affiliations were checked against PDF bylines; both additions remain preprints with venue verification limitations recorded.",
    "source": "arXiv:2611.02430v1 Tables 3–5; arXiv:2611.00325v1 Tables 2–3 and 10, Section 4.4; full texts 2611.00333v1, 2611.00685v1, 2611.01261v1, 2611.01843v1, 2611.02593v1 and 2611.02903v1."

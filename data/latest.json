@@ -19,7 +19,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2611.03839",
       "score": 39,
-      "status": "new — under review"
+      "status": "reviewed — included: Introduces 250 PianoBench questions and evaluates general audio-language models with matched piano audio, MIDI-text and no-music controls."
     },
     {
       "id": "2611.03718",
@@ -34,7 +34,7 @@
       "primary_category": "eess.AS",
       "url": "https://arxiv.org/abs/2611.03718",
       "score": 36,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: Evaluates Nepali TTS configurations with native-listener MOS, ASR round-trip CER and quality predictors; no verified general spoken-LLM configuration is specified, and the Gemini Flash checkpoint is not identified."
     },
     {
       "id": "2611.04580",
@@ -49,7 +49,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2611.04580",
       "score": 36,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: Proposes confidence-aware inference-time answer aggregation, evaluated on the existing MMAR dataset; it does not introduce a new benchmark."
     },
     {
       "id": "2611.04390",
@@ -67,7 +67,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2611.04390",
       "score": 33,
-      "status": "new — under review"
+      "status": "reviewed — included: Introduces the parallel ten-language Omnilingua-AudioMC benchmark and evaluates general speech-language models on fixed-context conversational capabilities."
     },
     {
       "id": "2611.04634",
@@ -81,7 +81,7 @@
       "primary_category": "eess.AS",
       "url": "https://arxiv.org/abs/2611.04634",
       "score": 24,
-      "status": "new — under review"
+      "status": "reviewed — included: Releases VeriSpoof-Bench and explicitly evaluates six general audio-language models zero-shot on authenticity, source verification and recording conditions."
     },
     {
       "id": "2611.04714",
@@ -94,7 +94,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2611.04714",
       "score": 18,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: Evaluates Random Forest and XGBoost stacks with acoustic descriptors and YAMNet features for binary drone detection, not general spoken LLMs."
     },
     {
       "id": "2611.02430",

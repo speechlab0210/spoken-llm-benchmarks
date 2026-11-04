@@ -153027,6 +153027,1068 @@
       "source": "Table 3, arXiv:2611.00325v1, Temporal Order conflict SFR (%)",
       "source_url": "https://arxiv.org/pdf/2611.00325v1#page=8",
       "note": "Neutral prompting; Step-Audio-2-mini revision e36fdd5. SFR counts speech-implied answers only on eligible conflict questions. Lower SFR means fewer claim-aligned answers, but does not alone establish better acoustic grounding. Its denominator differs from conflict accuracy. Completed responses are scored; unparseable responses count as incorrect, while inference failures are excluded."
+    },
+    {
+      "benchmark": "pianobench",
+      "model": "qwen3-omni-thinking",
+      "metric": "No-music control accuracy (%)",
+      "value": 42.4,
+      "source": "Table 1, arXiv:2611.03839v1, No-music control accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.03839v1#page=7",
+      "note": "Zero-shot evaluation on 250 MCQs; Qwen/Qwen3-Omni-30B-A3B-Thinking; temperature 0.6, top-p 0.95, thinking budget 1024. Higher accuracy is better; gains are printed percentage-point differences from that configuration's no-music control. Up to five attempts were allowed for unparseable answers. Appendix C.3 identifies one incorrect reference answer; reported values are retained without relabeling or recalculation."
+    },
+    {
+      "benchmark": "pianobench",
+      "model": "qwen3-omni-thinking",
+      "metric": "MIDI-text accuracy (%)",
+      "value": 47.6,
+      "source": "Table 1, arXiv:2611.03839v1, MIDI-text accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.03839v1#page=7",
+      "note": "Zero-shot evaluation on 250 MCQs; Qwen/Qwen3-Omni-30B-A3B-Thinking; temperature 0.6, top-p 0.95, thinking budget 1024. Higher accuracy is better; gains are printed percentage-point differences from that configuration's no-music control. Up to five attempts were allowed for unparseable answers. Appendix C.3 identifies one incorrect reference answer; reported values are retained without relabeling or recalculation."
+    },
+    {
+      "benchmark": "pianobench",
+      "model": "qwen3-omni-thinking",
+      "metric": "MIDI-text gain over no music (pp)",
+      "value": 5.2,
+      "source": "Table 1, arXiv:2611.03839v1, MIDI-text gain over no music (pp)",
+      "source_url": "https://arxiv.org/pdf/2611.03839v1#page=7",
+      "note": "Zero-shot evaluation on 250 MCQs; Qwen/Qwen3-Omni-30B-A3B-Thinking; temperature 0.6, top-p 0.95, thinking budget 1024. Higher accuracy is better; gains are printed percentage-point differences from that configuration's no-music control. Up to five attempts were allowed for unparseable answers. Appendix C.3 identifies one incorrect reference answer; reported values are retained without relabeling or recalculation."
+    },
+    {
+      "benchmark": "pianobench",
+      "model": "qwen3-omni-thinking",
+      "metric": "Piano-synth audio accuracy (%)",
+      "value": 48.4,
+      "source": "Table 1, arXiv:2611.03839v1, Piano-synth audio accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.03839v1#page=7",
+      "note": "Zero-shot evaluation on 250 MCQs; Qwen/Qwen3-Omni-30B-A3B-Thinking; temperature 0.6, top-p 0.95, thinking budget 1024. Higher accuracy is better; gains are printed percentage-point differences from that configuration's no-music control. Up to five attempts were allowed for unparseable answers. Appendix C.3 identifies one incorrect reference answer; reported values are retained without relabeling or recalculation."
+    },
+    {
+      "benchmark": "pianobench",
+      "model": "qwen3-omni-thinking",
+      "metric": "Piano-synth gain over no music (pp)",
+      "value": 6.0,
+      "source": "Table 1, arXiv:2611.03839v1, Piano-synth gain over no music (pp)",
+      "source_url": "https://arxiv.org/pdf/2611.03839v1#page=7",
+      "note": "Zero-shot evaluation on 250 MCQs; Qwen/Qwen3-Omni-30B-A3B-Thinking; temperature 0.6, top-p 0.95, thinking budget 1024. Higher accuracy is better; gains are printed percentage-point differences from that configuration's no-music control. Up to five attempts were allowed for unparseable answers. Appendix C.3 identifies one incorrect reference answer; reported values are retained without relabeling or recalculation."
+    },
+    {
+      "benchmark": "pianobench",
+      "model": "qwen3-omni-thinking",
+      "metric": "Piano-stem audio accuracy (%)",
+      "value": 46.8,
+      "source": "Table 1, arXiv:2611.03839v1, Piano-stem audio accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.03839v1#page=7",
+      "note": "Zero-shot evaluation on 250 MCQs; Qwen/Qwen3-Omni-30B-A3B-Thinking; temperature 0.6, top-p 0.95, thinking budget 1024. Higher accuracy is better; gains are printed percentage-point differences from that configuration's no-music control. Up to five attempts were allowed for unparseable answers. Appendix C.3 identifies one incorrect reference answer; reported values are retained without relabeling or recalculation."
+    },
+    {
+      "benchmark": "pianobench",
+      "model": "qwen3-omni-thinking",
+      "metric": "Piano-stem gain over no music (pp)",
+      "value": 4.4,
+      "source": "Table 1, arXiv:2611.03839v1, Piano-stem gain over no music (pp)",
+      "source_url": "https://arxiv.org/pdf/2611.03839v1#page=7",
+      "note": "Zero-shot evaluation on 250 MCQs; Qwen/Qwen3-Omni-30B-A3B-Thinking; temperature 0.6, top-p 0.95, thinking budget 1024. Higher accuracy is better; gains are printed percentage-point differences from that configuration's no-music control. Up to five attempts were allowed for unparseable answers. Appendix C.3 identifies one incorrect reference answer; reported values are retained without relabeling or recalculation."
+    },
+    {
+      "benchmark": "pianobench",
+      "model": "qwen3-omni",
+      "metric": "No-music control accuracy (%)",
+      "value": 44.8,
+      "source": "Table 1, arXiv:2611.03839v1, No-music control accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.03839v1#page=7",
+      "note": "Zero-shot evaluation on 250 MCQs; Qwen/Qwen3-Omni-30B-A3B-Instruct; greedy decoding. Higher accuracy is better; gains are printed percentage-point differences from that configuration's no-music control. Up to five attempts were allowed for unparseable answers. Appendix C.3 identifies one incorrect reference answer; reported values are retained without relabeling or recalculation."
+    },
+    {
+      "benchmark": "pianobench",
+      "model": "qwen3-omni",
+      "metric": "MIDI-text accuracy (%)",
+      "value": 47.2,
+      "source": "Table 1, arXiv:2611.03839v1, MIDI-text accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.03839v1#page=7",
+      "note": "Zero-shot evaluation on 250 MCQs; Qwen/Qwen3-Omni-30B-A3B-Instruct; greedy decoding. Higher accuracy is better; gains are printed percentage-point differences from that configuration's no-music control. Up to five attempts were allowed for unparseable answers. Appendix C.3 identifies one incorrect reference answer; reported values are retained without relabeling or recalculation."
+    },
+    {
+      "benchmark": "pianobench",
+      "model": "qwen3-omni",
+      "metric": "MIDI-text gain over no music (pp)",
+      "value": 2.4,
+      "source": "Table 1, arXiv:2611.03839v1, MIDI-text gain over no music (pp)",
+      "source_url": "https://arxiv.org/pdf/2611.03839v1#page=7",
+      "note": "Zero-shot evaluation on 250 MCQs; Qwen/Qwen3-Omni-30B-A3B-Instruct; greedy decoding. Higher accuracy is better; gains are printed percentage-point differences from that configuration's no-music control. Up to five attempts were allowed for unparseable answers. Appendix C.3 identifies one incorrect reference answer; reported values are retained without relabeling or recalculation."
+    },
+    {
+      "benchmark": "pianobench",
+      "model": "qwen3-omni",
+      "metric": "Piano-synth audio accuracy (%)",
+      "value": 50.8,
+      "source": "Table 1, arXiv:2611.03839v1, Piano-synth audio accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.03839v1#page=7",
+      "note": "Zero-shot evaluation on 250 MCQs; Qwen/Qwen3-Omni-30B-A3B-Instruct; greedy decoding. Higher accuracy is better; gains are printed percentage-point differences from that configuration's no-music control. Up to five attempts were allowed for unparseable answers. Appendix C.3 identifies one incorrect reference answer; reported values are retained without relabeling or recalculation."
+    },
+    {
+      "benchmark": "pianobench",
+      "model": "qwen3-omni",
+      "metric": "Piano-synth gain over no music (pp)",
+      "value": 6.0,
+      "source": "Table 1, arXiv:2611.03839v1, Piano-synth gain over no music (pp)",
+      "source_url": "https://arxiv.org/pdf/2611.03839v1#page=7",
+      "note": "Zero-shot evaluation on 250 MCQs; Qwen/Qwen3-Omni-30B-A3B-Instruct; greedy decoding. Higher accuracy is better; gains are printed percentage-point differences from that configuration's no-music control. Up to five attempts were allowed for unparseable answers. Appendix C.3 identifies one incorrect reference answer; reported values are retained without relabeling or recalculation."
+    },
+    {
+      "benchmark": "pianobench",
+      "model": "qwen3-omni",
+      "metric": "Piano-stem audio accuracy (%)",
+      "value": 49.2,
+      "source": "Table 1, arXiv:2611.03839v1, Piano-stem audio accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.03839v1#page=7",
+      "note": "Zero-shot evaluation on 250 MCQs; Qwen/Qwen3-Omni-30B-A3B-Instruct; greedy decoding. Higher accuracy is better; gains are printed percentage-point differences from that configuration's no-music control. Up to five attempts were allowed for unparseable answers. Appendix C.3 identifies one incorrect reference answer; reported values are retained without relabeling or recalculation."
+    },
+    {
+      "benchmark": "pianobench",
+      "model": "qwen3-omni",
+      "metric": "Piano-stem gain over no music (pp)",
+      "value": 4.4,
+      "source": "Table 1, arXiv:2611.03839v1, Piano-stem gain over no music (pp)",
+      "source_url": "https://arxiv.org/pdf/2611.03839v1#page=7",
+      "note": "Zero-shot evaluation on 250 MCQs; Qwen/Qwen3-Omni-30B-A3B-Instruct; greedy decoding. Higher accuracy is better; gains are printed percentage-point differences from that configuration's no-music control. Up to five attempts were allowed for unparseable answers. Appendix C.3 identifies one incorrect reference answer; reported values are retained without relabeling or recalculation."
+    },
+    {
+      "benchmark": "pianobench",
+      "model": "audio-flamingo-3",
+      "metric": "Piano-synth audio accuracy (%)",
+      "value": 38.8,
+      "source": "Table 1, arXiv:2611.03839v1, Piano-synth audio accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.03839v1#page=7",
+      "note": "Zero-shot evaluation on 250 MCQs; nvidia/audio-flamingo-3-hf; greedy decoding. Higher accuracy is better; gains are printed percentage-point differences from that configuration's no-music control. Up to five attempts were allowed for unparseable answers. The paper omits its text-only conditions because of inconsistent instruction following. Appendix C.3 identifies one incorrect reference answer; reported values are retained without relabeling or recalculation."
+    },
+    {
+      "benchmark": "pianobench",
+      "model": "audio-flamingo-3",
+      "metric": "Piano-stem audio accuracy (%)",
+      "value": 37.2,
+      "source": "Table 1, arXiv:2611.03839v1, Piano-stem audio accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.03839v1#page=7",
+      "note": "Zero-shot evaluation on 250 MCQs; nvidia/audio-flamingo-3-hf; greedy decoding. Higher accuracy is better; gains are printed percentage-point differences from that configuration's no-music control. Up to five attempts were allowed for unparseable answers. The paper omits its text-only conditions because of inconsistent instruction following. Appendix C.3 identifies one incorrect reference answer; reported values are retained without relabeling or recalculation."
+    },
+    {
+      "benchmark": "pianobench",
+      "model": "gemini-3-1-pro",
+      "metric": "No-music control accuracy (%)",
+      "value": 63.6,
+      "source": "Table 1, arXiv:2611.03839v1, No-music control accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.03839v1#page=7",
+      "note": "Zero-shot evaluation on 250 MCQs; google/gemini-3.1-pro-preview via OpenRouter; medium reasoning. Higher accuracy is better; gains are printed percentage-point differences from that configuration's no-music control. Up to five attempts were allowed for unparseable answers. Appendix C.3 identifies one incorrect reference answer; reported values are retained without relabeling or recalculation."
+    },
+    {
+      "benchmark": "pianobench",
+      "model": "gemini-3-1-pro",
+      "metric": "MIDI-text accuracy (%)",
+      "value": 89.2,
+      "source": "Table 1, arXiv:2611.03839v1, MIDI-text accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.03839v1#page=7",
+      "note": "Zero-shot evaluation on 250 MCQs; google/gemini-3.1-pro-preview via OpenRouter; medium reasoning. Higher accuracy is better; gains are printed percentage-point differences from that configuration's no-music control. Up to five attempts were allowed for unparseable answers. Appendix C.3 identifies one incorrect reference answer; reported values are retained without relabeling or recalculation."
+    },
+    {
+      "benchmark": "pianobench",
+      "model": "gemini-3-1-pro",
+      "metric": "MIDI-text gain over no music (pp)",
+      "value": 25.6,
+      "source": "Table 1, arXiv:2611.03839v1, MIDI-text gain over no music (pp)",
+      "source_url": "https://arxiv.org/pdf/2611.03839v1#page=7",
+      "note": "Zero-shot evaluation on 250 MCQs; google/gemini-3.1-pro-preview via OpenRouter; medium reasoning. Higher accuracy is better; gains are printed percentage-point differences from that configuration's no-music control. Up to five attempts were allowed for unparseable answers. Appendix C.3 identifies one incorrect reference answer; reported values are retained without relabeling or recalculation."
+    },
+    {
+      "benchmark": "pianobench",
+      "model": "gemini-3-1-pro",
+      "metric": "Piano-synth audio accuracy (%)",
+      "value": 78.4,
+      "source": "Table 1, arXiv:2611.03839v1, Piano-synth audio accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.03839v1#page=7",
+      "note": "Zero-shot evaluation on 250 MCQs; google/gemini-3.1-pro-preview via OpenRouter; medium reasoning. Higher accuracy is better; gains are printed percentage-point differences from that configuration's no-music control. Up to five attempts were allowed for unparseable answers. Appendix C.3 identifies one incorrect reference answer; reported values are retained without relabeling or recalculation."
+    },
+    {
+      "benchmark": "pianobench",
+      "model": "gemini-3-1-pro",
+      "metric": "Piano-synth gain over no music (pp)",
+      "value": 14.8,
+      "source": "Table 1, arXiv:2611.03839v1, Piano-synth gain over no music (pp)",
+      "source_url": "https://arxiv.org/pdf/2611.03839v1#page=7",
+      "note": "Zero-shot evaluation on 250 MCQs; google/gemini-3.1-pro-preview via OpenRouter; medium reasoning. Higher accuracy is better; gains are printed percentage-point differences from that configuration's no-music control. Up to five attempts were allowed for unparseable answers. Appendix C.3 identifies one incorrect reference answer; reported values are retained without relabeling or recalculation."
+    },
+    {
+      "benchmark": "pianobench",
+      "model": "gemini-3-1-pro",
+      "metric": "Piano-stem audio accuracy (%)",
+      "value": 80.4,
+      "source": "Table 1, arXiv:2611.03839v1, Piano-stem audio accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.03839v1#page=7",
+      "note": "Zero-shot evaluation on 250 MCQs; google/gemini-3.1-pro-preview via OpenRouter; medium reasoning. Higher accuracy is better; gains are printed percentage-point differences from that configuration's no-music control. Up to five attempts were allowed for unparseable answers. Appendix C.3 identifies one incorrect reference answer; reported values are retained without relabeling or recalculation."
+    },
+    {
+      "benchmark": "pianobench",
+      "model": "gemini-3-1-pro",
+      "metric": "Piano-stem gain over no music (pp)",
+      "value": 16.8,
+      "source": "Table 1, arXiv:2611.03839v1, Piano-stem gain over no music (pp)",
+      "source_url": "https://arxiv.org/pdf/2611.03839v1#page=7",
+      "note": "Zero-shot evaluation on 250 MCQs; google/gemini-3.1-pro-preview via OpenRouter; medium reasoning. Higher accuracy is better; gains are printed percentage-point differences from that configuration's no-music control. Up to five attempts were allowed for unparseable answers. Appendix C.3 identifies one incorrect reference answer; reported values are retained without relabeling or recalculation."
+    },
+    {
+      "benchmark": "pianobench",
+      "model": "qwen3-5-omni-plus",
+      "metric": "No-music control accuracy (%)",
+      "value": 52.0,
+      "source": "Table 1, arXiv:2611.03839v1, No-music control accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.03839v1#page=7",
+      "note": "Zero-shot evaluation on 250 MCQs; qwen3.5-omni-plus-2026-03-15 via Alibaba. Higher accuracy is better; gains are printed percentage-point differences from that configuration's no-music control. Up to five attempts were allowed for unparseable answers. Appendix C.3 identifies one incorrect reference answer; reported values are retained without relabeling or recalculation."
+    },
+    {
+      "benchmark": "pianobench",
+      "model": "qwen3-5-omni-plus",
+      "metric": "MIDI-text accuracy (%)",
+      "value": 57.2,
+      "source": "Table 1, arXiv:2611.03839v1, MIDI-text accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.03839v1#page=7",
+      "note": "Zero-shot evaluation on 250 MCQs; qwen3.5-omni-plus-2026-03-15 via Alibaba. Higher accuracy is better; gains are printed percentage-point differences from that configuration's no-music control. Up to five attempts were allowed for unparseable answers. Appendix C.3 identifies one incorrect reference answer; reported values are retained without relabeling or recalculation."
+    },
+    {
+      "benchmark": "pianobench",
+      "model": "qwen3-5-omni-plus",
+      "metric": "MIDI-text gain over no music (pp)",
+      "value": 5.2,
+      "source": "Table 1, arXiv:2611.03839v1, MIDI-text gain over no music (pp)",
+      "source_url": "https://arxiv.org/pdf/2611.03839v1#page=7",
+      "note": "Zero-shot evaluation on 250 MCQs; qwen3.5-omni-plus-2026-03-15 via Alibaba. Higher accuracy is better; gains are printed percentage-point differences from that configuration's no-music control. Up to five attempts were allowed for unparseable answers. Appendix C.3 identifies one incorrect reference answer; reported values are retained without relabeling or recalculation."
+    },
+    {
+      "benchmark": "pianobench",
+      "model": "qwen3-5-omni-plus",
+      "metric": "Piano-synth audio accuracy (%)",
+      "value": 62.4,
+      "source": "Table 1, arXiv:2611.03839v1, Piano-synth audio accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.03839v1#page=7",
+      "note": "Zero-shot evaluation on 250 MCQs; qwen3.5-omni-plus-2026-03-15 via Alibaba. Higher accuracy is better; gains are printed percentage-point differences from that configuration's no-music control. Up to five attempts were allowed for unparseable answers. Appendix C.3 identifies one incorrect reference answer; reported values are retained without relabeling or recalculation."
+    },
+    {
+      "benchmark": "pianobench",
+      "model": "qwen3-5-omni-plus",
+      "metric": "Piano-synth gain over no music (pp)",
+      "value": 10.4,
+      "source": "Table 1, arXiv:2611.03839v1, Piano-synth gain over no music (pp)",
+      "source_url": "https://arxiv.org/pdf/2611.03839v1#page=7",
+      "note": "Zero-shot evaluation on 250 MCQs; qwen3.5-omni-plus-2026-03-15 via Alibaba. Higher accuracy is better; gains are printed percentage-point differences from that configuration's no-music control. Up to five attempts were allowed for unparseable answers. Appendix C.3 identifies one incorrect reference answer; reported values are retained without relabeling or recalculation."
+    },
+    {
+      "benchmark": "pianobench",
+      "model": "qwen3-5-omni-plus",
+      "metric": "Piano-stem audio accuracy (%)",
+      "value": 63.2,
+      "source": "Table 1, arXiv:2611.03839v1, Piano-stem audio accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.03839v1#page=7",
+      "note": "Zero-shot evaluation on 250 MCQs; qwen3.5-omni-plus-2026-03-15 via Alibaba. Higher accuracy is better; gains are printed percentage-point differences from that configuration's no-music control. Up to five attempts were allowed for unparseable answers. Appendix C.3 identifies one incorrect reference answer; reported values are retained without relabeling or recalculation."
+    },
+    {
+      "benchmark": "pianobench",
+      "model": "qwen3-5-omni-plus",
+      "metric": "Piano-stem gain over no music (pp)",
+      "value": 11.2,
+      "source": "Table 1, arXiv:2611.03839v1, Piano-stem gain over no music (pp)",
+      "source_url": "https://arxiv.org/pdf/2611.03839v1#page=7",
+      "note": "Zero-shot evaluation on 250 MCQs; qwen3.5-omni-plus-2026-03-15 via Alibaba. Higher accuracy is better; gains are printed percentage-point differences from that configuration's no-music control. Up to five attempts were allowed for unparseable answers. Appendix C.3 identifies one incorrect reference answer; reported values are retained without relabeling or recalculation."
+    },
+    {
+      "benchmark": "pianobench",
+      "model": "muse-spark-1-2",
+      "metric": "No-music control accuracy (%)",
+      "value": 48.8,
+      "source": "Table 1, arXiv:2611.03839v1, No-music control accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.03839v1#page=7",
+      "note": "Zero-shot evaluation on 250 MCQs; meta/muse-spark-1.2 via OpenRouter; medium reasoning, temperature 0, top-p 1. Higher accuracy is better; gains are printed percentage-point differences from that configuration's no-music control. Up to five attempts were allowed for unparseable answers. Appendix C.3 identifies one incorrect reference answer; reported values are retained without relabeling or recalculation."
+    },
+    {
+      "benchmark": "pianobench",
+      "model": "muse-spark-1-2",
+      "metric": "MIDI-text accuracy (%)",
+      "value": 86.8,
+      "source": "Table 1, arXiv:2611.03839v1, MIDI-text accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.03839v1#page=7",
+      "note": "Zero-shot evaluation on 250 MCQs; meta/muse-spark-1.2 via OpenRouter; medium reasoning, temperature 0, top-p 1. Higher accuracy is better; gains are printed percentage-point differences from that configuration's no-music control. Up to five attempts were allowed for unparseable answers. Appendix C.3 identifies one incorrect reference answer; reported values are retained without relabeling or recalculation."
+    },
+    {
+      "benchmark": "pianobench",
+      "model": "muse-spark-1-2",
+      "metric": "MIDI-text gain over no music (pp)",
+      "value": 38.0,
+      "source": "Table 1, arXiv:2611.03839v1, MIDI-text gain over no music (pp)",
+      "source_url": "https://arxiv.org/pdf/2611.03839v1#page=7",
+      "note": "Zero-shot evaluation on 250 MCQs; meta/muse-spark-1.2 via OpenRouter; medium reasoning, temperature 0, top-p 1. Higher accuracy is better; gains are printed percentage-point differences from that configuration's no-music control. Up to five attempts were allowed for unparseable answers. Appendix C.3 identifies one incorrect reference answer; reported values are retained without relabeling or recalculation."
+    },
+    {
+      "benchmark": "pianobench",
+      "model": "muse-spark-1-2",
+      "metric": "Piano-synth audio accuracy (%)",
+      "value": 56.8,
+      "source": "Table 1, arXiv:2611.03839v1, Piano-synth audio accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.03839v1#page=7",
+      "note": "Zero-shot evaluation on 250 MCQs; meta/muse-spark-1.2 via OpenRouter; medium reasoning, temperature 0, top-p 1. Higher accuracy is better; gains are printed percentage-point differences from that configuration's no-music control. Up to five attempts were allowed for unparseable answers. Appendix C.3 identifies one incorrect reference answer; reported values are retained without relabeling or recalculation."
+    },
+    {
+      "benchmark": "pianobench",
+      "model": "muse-spark-1-2",
+      "metric": "Piano-synth gain over no music (pp)",
+      "value": 8.0,
+      "source": "Table 1, arXiv:2611.03839v1, Piano-synth gain over no music (pp)",
+      "source_url": "https://arxiv.org/pdf/2611.03839v1#page=7",
+      "note": "Zero-shot evaluation on 250 MCQs; meta/muse-spark-1.2 via OpenRouter; medium reasoning, temperature 0, top-p 1. Higher accuracy is better; gains are printed percentage-point differences from that configuration's no-music control. Up to five attempts were allowed for unparseable answers. Appendix C.3 identifies one incorrect reference answer; reported values are retained without relabeling or recalculation."
+    },
+    {
+      "benchmark": "pianobench",
+      "model": "muse-spark-1-2",
+      "metric": "Piano-stem audio accuracy (%)",
+      "value": 55.6,
+      "source": "Table 1, arXiv:2611.03839v1, Piano-stem audio accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.03839v1#page=7",
+      "note": "Zero-shot evaluation on 250 MCQs; meta/muse-spark-1.2 via OpenRouter; medium reasoning, temperature 0, top-p 1. Higher accuracy is better; gains are printed percentage-point differences from that configuration's no-music control. Up to five attempts were allowed for unparseable answers. Appendix C.3 identifies one incorrect reference answer; reported values are retained without relabeling or recalculation."
+    },
+    {
+      "benchmark": "pianobench",
+      "model": "muse-spark-1-2",
+      "metric": "Piano-stem gain over no music (pp)",
+      "value": 6.8,
+      "source": "Table 1, arXiv:2611.03839v1, Piano-stem gain over no music (pp)",
+      "source_url": "https://arxiv.org/pdf/2611.03839v1#page=7",
+      "note": "Zero-shot evaluation on 250 MCQs; meta/muse-spark-1.2 via OpenRouter; medium reasoning, temperature 0, top-p 1. Higher accuracy is better; gains are printed percentage-point differences from that configuration's no-music control. Up to five attempts were allowed for unparseable answers. Appendix C.3 identifies one incorrect reference answer; reported values are retained without relabeling or recalculation."
+    },
+    {
+      "benchmark": "omnilingua-audiomc",
+      "model": "gemini-3-1-pro",
+      "metric": "Direct Audio English instance success (%)",
+      "value": 60.2,
+      "source": "Table 2, arXiv:2611.04390v1, Direct Audio English instance success (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04390v1#page=5",
+      "note": "Instance success requires all rubric items of a conversation to pass. English uses human recordings; nine other languages use TTS. The mean weights languages equally; SD and range describe variation, not success rates. Marginal scores use available judgments. Paper model label: Gemini 3.1 Pro; no more specific checkpoint identifier is supplied."
+    },
+    {
+      "benchmark": "omnilingua-audiomc",
+      "model": "gemini-3-1-pro",
+      "metric": "Direct Audio Chinese instance success (%)",
+      "value": 50.8,
+      "source": "Table 2, arXiv:2611.04390v1, Direct Audio Chinese instance success (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04390v1#page=5",
+      "note": "Instance success requires all rubric items of a conversation to pass. English uses human recordings; nine other languages use TTS. The mean weights languages equally; SD and range describe variation, not success rates. Marginal scores use available judgments. Paper model label: Gemini 3.1 Pro; no more specific checkpoint identifier is supplied."
+    },
+    {
+      "benchmark": "omnilingua-audiomc",
+      "model": "gemini-3-1-pro",
+      "metric": "Direct Audio Japanese instance success (%)",
+      "value": 53.1,
+      "source": "Table 2, arXiv:2611.04390v1, Direct Audio Japanese instance success (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04390v1#page=5",
+      "note": "Instance success requires all rubric items of a conversation to pass. English uses human recordings; nine other languages use TTS. The mean weights languages equally; SD and range describe variation, not success rates. Marginal scores use available judgments. Paper model label: Gemini 3.1 Pro; no more specific checkpoint identifier is supplied."
+    },
+    {
+      "benchmark": "omnilingua-audiomc",
+      "model": "gemini-3-1-pro",
+      "metric": "Direct Audio Spanish instance success (%)",
+      "value": 57.6,
+      "source": "Table 2, arXiv:2611.04390v1, Direct Audio Spanish instance success (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04390v1#page=5",
+      "note": "Instance success requires all rubric items of a conversation to pass. English uses human recordings; nine other languages use TTS. The mean weights languages equally; SD and range describe variation, not success rates. Marginal scores use available judgments. Paper model label: Gemini 3.1 Pro; no more specific checkpoint identifier is supplied."
+    },
+    {
+      "benchmark": "omnilingua-audiomc",
+      "model": "gemini-3-1-pro",
+      "metric": "Direct Audio French instance success (%)",
+      "value": 54.8,
+      "source": "Table 2, arXiv:2611.04390v1, Direct Audio French instance success (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04390v1#page=5",
+      "note": "Instance success requires all rubric items of a conversation to pass. English uses human recordings; nine other languages use TTS. The mean weights languages equally; SD and range describe variation, not success rates. Marginal scores use available judgments. Paper model label: Gemini 3.1 Pro; no more specific checkpoint identifier is supplied."
+    },
+    {
+      "benchmark": "omnilingua-audiomc",
+      "model": "gemini-3-1-pro",
+      "metric": "Direct Audio Russian instance success (%)",
+      "value": 56.5,
+      "source": "Table 2, arXiv:2611.04390v1, Direct Audio Russian instance success (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04390v1#page=5",
+      "note": "Instance success requires all rubric items of a conversation to pass. English uses human recordings; nine other languages use TTS. The mean weights languages equally; SD and range describe variation, not success rates. Marginal scores use available judgments. Paper model label: Gemini 3.1 Pro; no more specific checkpoint identifier is supplied."
+    },
+    {
+      "benchmark": "omnilingua-audiomc",
+      "model": "gemini-3-1-pro",
+      "metric": "Direct Audio German instance success (%)",
+      "value": 53.7,
+      "source": "Table 2, arXiv:2611.04390v1, Direct Audio German instance success (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04390v1#page=5",
+      "note": "Instance success requires all rubric items of a conversation to pass. English uses human recordings; nine other languages use TTS. The mean weights languages equally; SD and range describe variation, not success rates. Marginal scores use available judgments. Paper model label: Gemini 3.1 Pro; no more specific checkpoint identifier is supplied."
+    },
+    {
+      "benchmark": "omnilingua-audiomc",
+      "model": "gemini-3-1-pro",
+      "metric": "Direct Audio Italian instance success (%)",
+      "value": 55.4,
+      "source": "Table 2, arXiv:2611.04390v1, Direct Audio Italian instance success (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04390v1#page=5",
+      "note": "Instance success requires all rubric items of a conversation to pass. English uses human recordings; nine other languages use TTS. The mean weights languages equally; SD and range describe variation, not success rates. Marginal scores use available judgments. Paper model label: Gemini 3.1 Pro; no more specific checkpoint identifier is supplied."
+    },
+    {
+      "benchmark": "omnilingua-audiomc",
+      "model": "gemini-3-1-pro",
+      "metric": "Direct Audio Thai instance success (%)",
+      "value": 50.3,
+      "source": "Table 2, arXiv:2611.04390v1, Direct Audio Thai instance success (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04390v1#page=5",
+      "note": "Instance success requires all rubric items of a conversation to pass. English uses human recordings; nine other languages use TTS. The mean weights languages equally; SD and range describe variation, not success rates. Marginal scores use available judgments. Paper model label: Gemini 3.1 Pro; no more specific checkpoint identifier is supplied."
+    },
+    {
+      "benchmark": "omnilingua-audiomc",
+      "model": "gemini-3-1-pro",
+      "metric": "Direct Audio Vietnamese instance success (%)",
+      "value": 51.4,
+      "source": "Table 2, arXiv:2611.04390v1, Direct Audio Vietnamese instance success (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04390v1#page=5",
+      "note": "Instance success requires all rubric items of a conversation to pass. English uses human recordings; nine other languages use TTS. The mean weights languages equally; SD and range describe variation, not success rates. Marginal scores use available judgments. Paper model label: Gemini 3.1 Pro; no more specific checkpoint identifier is supplied."
+    },
+    {
+      "benchmark": "omnilingua-audiomc",
+      "model": "gemini-3-1-pro",
+      "metric": "Direct Audio ten-language mean instance success (%)",
+      "value": 54.4,
+      "source": "Table 2, arXiv:2611.04390v1, Direct Audio ten-language mean instance success (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04390v1#page=5",
+      "note": "Instance success requires all rubric items of a conversation to pass. English uses human recordings; nine other languages use TTS. The mean weights languages equally; SD and range describe variation, not success rates. Marginal scores use available judgments. Paper model label: Gemini 3.1 Pro; no more specific checkpoint identifier is supplied."
+    },
+    {
+      "benchmark": "omnilingua-audiomc",
+      "model": "gemini-3-1-pro",
+      "metric": "Direct Audio cross-language population SD (pp)",
+      "value": 3.0,
+      "source": "Table 2, arXiv:2611.04390v1, Direct Audio cross-language population SD (pp)",
+      "source_url": "https://arxiv.org/pdf/2611.04390v1#page=5",
+      "note": "Instance success requires all rubric items of a conversation to pass. English uses human recordings; nine other languages use TTS. The mean weights languages equally; SD and range describe variation, not success rates. Marginal scores use available judgments. Paper model label: Gemini 3.1 Pro; no more specific checkpoint identifier is supplied."
+    },
+    {
+      "benchmark": "omnilingua-audiomc",
+      "model": "gemini-3-1-pro",
+      "metric": "Direct Audio cross-language range (pp)",
+      "value": 9.9,
+      "source": "Table 2, arXiv:2611.04390v1, Direct Audio cross-language range (pp)",
+      "source_url": "https://arxiv.org/pdf/2611.04390v1#page=5",
+      "note": "Instance success requires all rubric items of a conversation to pass. English uses human recordings; nine other languages use TTS. The mean weights languages equally; SD and range describe variation, not success rates. Marginal scores use available judgments. Paper model label: Gemini 3.1 Pro; no more specific checkpoint identifier is supplied."
+    },
+    {
+      "benchmark": "omnilingua-audiomc",
+      "model": "qwen3-5-omni",
+      "metric": "Direct Audio English instance success (%)",
+      "value": 42.9,
+      "source": "Table 2, arXiv:2611.04390v1, Direct Audio English instance success (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04390v1#page=5",
+      "note": "Instance success requires all rubric items of a conversation to pass. English uses human recordings; nine other languages use TTS. The mean weights languages equally; SD and range describe variation, not success rates. Marginal scores use available judgments. Paper model label: Qwen3.5 Omni; no more specific checkpoint identifier is supplied."
+    },
+    {
+      "benchmark": "omnilingua-audiomc",
+      "model": "qwen3-5-omni",
+      "metric": "Direct Audio Chinese instance success (%)",
+      "value": 39.8,
+      "source": "Table 2, arXiv:2611.04390v1, Direct Audio Chinese instance success (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04390v1#page=5",
+      "note": "Instance success requires all rubric items of a conversation to pass. English uses human recordings; nine other languages use TTS. The mean weights languages equally; SD and range describe variation, not success rates. Marginal scores use available judgments. Paper model label: Qwen3.5 Omni; no more specific checkpoint identifier is supplied."
+    },
+    {
+      "benchmark": "omnilingua-audiomc",
+      "model": "qwen3-5-omni",
+      "metric": "Direct Audio Japanese instance success (%)",
+      "value": 38.7,
+      "source": "Table 2, arXiv:2611.04390v1, Direct Audio Japanese instance success (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04390v1#page=5",
+      "note": "Instance success requires all rubric items of a conversation to pass. English uses human recordings; nine other languages use TTS. The mean weights languages equally; SD and range describe variation, not success rates. Marginal scores use available judgments. Paper model label: Qwen3.5 Omni; no more specific checkpoint identifier is supplied."
+    },
+    {
+      "benchmark": "omnilingua-audiomc",
+      "model": "qwen3-5-omni",
+      "metric": "Direct Audio Spanish instance success (%)",
+      "value": 38.4,
+      "source": "Table 2, arXiv:2611.04390v1, Direct Audio Spanish instance success (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04390v1#page=5",
+      "note": "Instance success requires all rubric items of a conversation to pass. English uses human recordings; nine other languages use TTS. The mean weights languages equally; SD and range describe variation, not success rates. Marginal scores use available judgments. Paper model label: Qwen3.5 Omni; no more specific checkpoint identifier is supplied."
+    },
+    {
+      "benchmark": "omnilingua-audiomc",
+      "model": "qwen3-5-omni",
+      "metric": "Direct Audio French instance success (%)",
+      "value": 37.3,
+      "source": "Table 2, arXiv:2611.04390v1, Direct Audio French instance success (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04390v1#page=5",
+      "note": "Instance success requires all rubric items of a conversation to pass. English uses human recordings; nine other languages use TTS. The mean weights languages equally; SD and range describe variation, not success rates. Marginal scores use available judgments. Paper model label: Qwen3.5 Omni; no more specific checkpoint identifier is supplied."
+    },
+    {
+      "benchmark": "omnilingua-audiomc",
+      "model": "qwen3-5-omni",
+      "metric": "Direct Audio Russian instance success (%)",
+      "value": 38.4,
+      "source": "Table 2, arXiv:2611.04390v1, Direct Audio Russian instance success (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04390v1#page=5",
+      "note": "Instance success requires all rubric items of a conversation to pass. English uses human recordings; nine other languages use TTS. The mean weights languages equally; SD and range describe variation, not success rates. Marginal scores use available judgments. Paper model label: Qwen3.5 Omni; no more specific checkpoint identifier is supplied."
+    },
+    {
+      "benchmark": "omnilingua-audiomc",
+      "model": "qwen3-5-omni",
+      "metric": "Direct Audio German instance success (%)",
+      "value": 37.6,
+      "source": "Table 2, arXiv:2611.04390v1, Direct Audio German instance success (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04390v1#page=5",
+      "note": "Instance success requires all rubric items of a conversation to pass. English uses human recordings; nine other languages use TTS. The mean weights languages equally; SD and range describe variation, not success rates. Marginal scores use available judgments. Paper model label: Qwen3.5 Omni; no more specific checkpoint identifier is supplied."
+    },
+    {
+      "benchmark": "omnilingua-audiomc",
+      "model": "qwen3-5-omni",
+      "metric": "Direct Audio Italian instance success (%)",
+      "value": 38.4,
+      "source": "Table 2, arXiv:2611.04390v1, Direct Audio Italian instance success (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04390v1#page=5",
+      "note": "Instance success requires all rubric items of a conversation to pass. English uses human recordings; nine other languages use TTS. The mean weights languages equally; SD and range describe variation, not success rates. Marginal scores use available judgments. Paper model label: Qwen3.5 Omni; no more specific checkpoint identifier is supplied."
+    },
+    {
+      "benchmark": "omnilingua-audiomc",
+      "model": "qwen3-5-omni",
+      "metric": "Direct Audio Thai instance success (%)",
+      "value": 36.2,
+      "source": "Table 2, arXiv:2611.04390v1, Direct Audio Thai instance success (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04390v1#page=5",
+      "note": "Instance success requires all rubric items of a conversation to pass. English uses human recordings; nine other languages use TTS. The mean weights languages equally; SD and range describe variation, not success rates. Marginal scores use available judgments. Paper model label: Qwen3.5 Omni; no more specific checkpoint identifier is supplied."
+    },
+    {
+      "benchmark": "omnilingua-audiomc",
+      "model": "qwen3-5-omni",
+      "metric": "Direct Audio Vietnamese instance success (%)",
+      "value": 33.6,
+      "source": "Table 2, arXiv:2611.04390v1, Direct Audio Vietnamese instance success (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04390v1#page=5",
+      "note": "Instance success requires all rubric items of a conversation to pass. English uses human recordings; nine other languages use TTS. The mean weights languages equally; SD and range describe variation, not success rates. Marginal scores use available judgments. Paper model label: Qwen3.5 Omni; no more specific checkpoint identifier is supplied."
+    },
+    {
+      "benchmark": "omnilingua-audiomc",
+      "model": "qwen3-5-omni",
+      "metric": "Direct Audio ten-language mean instance success (%)",
+      "value": 38.1,
+      "source": "Table 2, arXiv:2611.04390v1, Direct Audio ten-language mean instance success (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04390v1#page=5",
+      "note": "Instance success requires all rubric items of a conversation to pass. English uses human recordings; nine other languages use TTS. The mean weights languages equally; SD and range describe variation, not success rates. Marginal scores use available judgments. Paper model label: Qwen3.5 Omni; no more specific checkpoint identifier is supplied."
+    },
+    {
+      "benchmark": "omnilingua-audiomc",
+      "model": "qwen3-5-omni",
+      "metric": "Direct Audio cross-language population SD (pp)",
+      "value": 2.3,
+      "source": "Table 2, arXiv:2611.04390v1, Direct Audio cross-language population SD (pp)",
+      "source_url": "https://arxiv.org/pdf/2611.04390v1#page=5",
+      "note": "Instance success requires all rubric items of a conversation to pass. English uses human recordings; nine other languages use TTS. The mean weights languages equally; SD and range describe variation, not success rates. Marginal scores use available judgments. Paper model label: Qwen3.5 Omni; no more specific checkpoint identifier is supplied."
+    },
+    {
+      "benchmark": "omnilingua-audiomc",
+      "model": "qwen3-5-omni",
+      "metric": "Direct Audio cross-language range (pp)",
+      "value": 9.3,
+      "source": "Table 2, arXiv:2611.04390v1, Direct Audio cross-language range (pp)",
+      "source_url": "https://arxiv.org/pdf/2611.04390v1#page=5",
+      "note": "Instance success requires all rubric items of a conversation to pass. English uses human recordings; nine other languages use TTS. The mean weights languages equally; SD and range describe variation, not success rates. Marginal scores use available judgments. Paper model label: Qwen3.5 Omni; no more specific checkpoint identifier is supplied."
+    },
+    {
+      "benchmark": "omnilingua-audiomc",
+      "model": "muse-spark-1-2",
+      "metric": "Direct Audio English instance success (%)",
+      "value": 39.8,
+      "source": "Table 2, arXiv:2611.04390v1, Direct Audio English instance success (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04390v1#page=5",
+      "note": "Instance success requires all rubric items of a conversation to pass. English uses human recordings; nine other languages use TTS. The mean weights languages equally; SD and range describe variation, not success rates. Marginal scores use available judgments. Paper model label: Muse-Spark 1.2; no more specific checkpoint identifier is supplied."
+    },
+    {
+      "benchmark": "omnilingua-audiomc",
+      "model": "muse-spark-1-2",
+      "metric": "Direct Audio Chinese instance success (%)",
+      "value": 28.7,
+      "source": "Table 2, arXiv:2611.04390v1, Direct Audio Chinese instance success (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04390v1#page=5",
+      "note": "Instance success requires all rubric items of a conversation to pass. English uses human recordings; nine other languages use TTS. The mean weights languages equally; SD and range describe variation, not success rates. Marginal scores use available judgments. Paper model label: Muse-Spark 1.2; no more specific checkpoint identifier is supplied."
+    },
+    {
+      "benchmark": "omnilingua-audiomc",
+      "model": "muse-spark-1-2",
+      "metric": "Direct Audio Japanese instance success (%)",
+      "value": 29.4,
+      "source": "Table 2, arXiv:2611.04390v1, Direct Audio Japanese instance success (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04390v1#page=5",
+      "note": "Instance success requires all rubric items of a conversation to pass. English uses human recordings; nine other languages use TTS. The mean weights languages equally; SD and range describe variation, not success rates. Marginal scores use available judgments. Paper model label: Muse-Spark 1.2; no more specific checkpoint identifier is supplied."
+    },
+    {
+      "benchmark": "omnilingua-audiomc",
+      "model": "muse-spark-1-2",
+      "metric": "Direct Audio Spanish instance success (%)",
+      "value": 34.2,
+      "source": "Table 2, arXiv:2611.04390v1, Direct Audio Spanish instance success (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04390v1#page=5",
+      "note": "Instance success requires all rubric items of a conversation to pass. English uses human recordings; nine other languages use TTS. The mean weights languages equally; SD and range describe variation, not success rates. Marginal scores use available judgments. Paper model label: Muse-Spark 1.2; no more specific checkpoint identifier is supplied."
+    },
+    {
+      "benchmark": "omnilingua-audiomc",
+      "model": "muse-spark-1-2",
+      "metric": "Direct Audio French instance success (%)",
+      "value": 32.5,
+      "source": "Table 2, arXiv:2611.04390v1, Direct Audio French instance success (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04390v1#page=5",
+      "note": "Instance success requires all rubric items of a conversation to pass. English uses human recordings; nine other languages use TTS. The mean weights languages equally; SD and range describe variation, not success rates. Marginal scores use available judgments. Paper model label: Muse-Spark 1.2; no more specific checkpoint identifier is supplied."
+    },
+    {
+      "benchmark": "omnilingua-audiomc",
+      "model": "muse-spark-1-2",
+      "metric": "Direct Audio Russian instance success (%)",
+      "value": 37.9,
+      "source": "Table 2, arXiv:2611.04390v1, Direct Audio Russian instance success (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04390v1#page=5",
+      "note": "Instance success requires all rubric items of a conversation to pass. English uses human recordings; nine other languages use TTS. The mean weights languages equally; SD and range describe variation, not success rates. Marginal scores use available judgments. Paper model label: Muse-Spark 1.2; no more specific checkpoint identifier is supplied."
+    },
+    {
+      "benchmark": "omnilingua-audiomc",
+      "model": "muse-spark-1-2",
+      "metric": "Direct Audio German instance success (%)",
+      "value": 33.7,
+      "source": "Table 2, arXiv:2611.04390v1, Direct Audio German instance success (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04390v1#page=5",
+      "note": "Instance success requires all rubric items of a conversation to pass. English uses human recordings; nine other languages use TTS. The mean weights languages equally; SD and range describe variation, not success rates. Marginal scores use available judgments. Paper model label: Muse-Spark 1.2; no more specific checkpoint identifier is supplied."
+    },
+    {
+      "benchmark": "omnilingua-audiomc",
+      "model": "muse-spark-1-2",
+      "metric": "Direct Audio Italian instance success (%)",
+      "value": 32.6,
+      "source": "Table 2, arXiv:2611.04390v1, Direct Audio Italian instance success (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04390v1#page=5",
+      "note": "Instance success requires all rubric items of a conversation to pass. English uses human recordings; nine other languages use TTS. The mean weights languages equally; SD and range describe variation, not success rates. Marginal scores use available judgments. Paper model label: Muse-Spark 1.2; no more specific checkpoint identifier is supplied."
+    },
+    {
+      "benchmark": "omnilingua-audiomc",
+      "model": "muse-spark-1-2",
+      "metric": "Direct Audio Thai instance success (%)",
+      "value": 27.1,
+      "source": "Table 2, arXiv:2611.04390v1, Direct Audio Thai instance success (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04390v1#page=5",
+      "note": "Instance success requires all rubric items of a conversation to pass. English uses human recordings; nine other languages use TTS. The mean weights languages equally; SD and range describe variation, not success rates. Marginal scores use available judgments. Paper model label: Muse-Spark 1.2; no more specific checkpoint identifier is supplied."
+    },
+    {
+      "benchmark": "omnilingua-audiomc",
+      "model": "muse-spark-1-2",
+      "metric": "Direct Audio Vietnamese instance success (%)",
+      "value": 28.3,
+      "source": "Table 2, arXiv:2611.04390v1, Direct Audio Vietnamese instance success (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04390v1#page=5",
+      "note": "Instance success requires all rubric items of a conversation to pass. English uses human recordings; nine other languages use TTS. The mean weights languages equally; SD and range describe variation, not success rates. Marginal scores use available judgments. Paper model label: Muse-Spark 1.2; no more specific checkpoint identifier is supplied."
+    },
+    {
+      "benchmark": "omnilingua-audiomc",
+      "model": "muse-spark-1-2",
+      "metric": "Direct Audio ten-language mean instance success (%)",
+      "value": 32.4,
+      "source": "Table 2, arXiv:2611.04390v1, Direct Audio ten-language mean instance success (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04390v1#page=5",
+      "note": "Instance success requires all rubric items of a conversation to pass. English uses human recordings; nine other languages use TTS. The mean weights languages equally; SD and range describe variation, not success rates. Marginal scores use available judgments. Paper model label: Muse-Spark 1.2; no more specific checkpoint identifier is supplied."
+    },
+    {
+      "benchmark": "omnilingua-audiomc",
+      "model": "muse-spark-1-2",
+      "metric": "Direct Audio cross-language population SD (pp)",
+      "value": 4.0,
+      "source": "Table 2, arXiv:2611.04390v1, Direct Audio cross-language population SD (pp)",
+      "source_url": "https://arxiv.org/pdf/2611.04390v1#page=5",
+      "note": "Instance success requires all rubric items of a conversation to pass. English uses human recordings; nine other languages use TTS. The mean weights languages equally; SD and range describe variation, not success rates. Marginal scores use available judgments. Paper model label: Muse-Spark 1.2; no more specific checkpoint identifier is supplied."
+    },
+    {
+      "benchmark": "omnilingua-audiomc",
+      "model": "muse-spark-1-2",
+      "metric": "Direct Audio cross-language range (pp)",
+      "value": 12.7,
+      "source": "Table 2, arXiv:2611.04390v1, Direct Audio cross-language range (pp)",
+      "source_url": "https://arxiv.org/pdf/2611.04390v1#page=5",
+      "note": "Instance success requires all rubric items of a conversation to pass. English uses human recordings; nine other languages use TTS. The mean weights languages equally; SD and range describe variation, not success rates. Marginal scores use available judgments. Paper model label: Muse-Spark 1.2; no more specific checkpoint identifier is supplied."
+    },
+    {
+      "benchmark": "omnilingua-audiomc",
+      "model": "gemini-3-1-pro",
+      "metric": "Inference Memory reference-passing rubric survival (%)",
+      "value": 79.8,
+      "source": "Table 4, arXiv:2611.04390v1, Inference Memory reference-passing rubric survival (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04390v1#page=7",
+      "note": "Higher is better. Among paired rubric items passed under Reference Transcript, this is the share still passed under Direct Audio, pooled over ten languages. It is neither overall rubric accuracy nor instance success. Paper model label: Gemini 3.1 Pro."
+    },
+    {
+      "benchmark": "omnilingua-audiomc",
+      "model": "gemini-3-1-pro",
+      "metric": "Instruction Retention reference-passing rubric survival (%)",
+      "value": 82.7,
+      "source": "Table 4, arXiv:2611.04390v1, Instruction Retention reference-passing rubric survival (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04390v1#page=7",
+      "note": "Higher is better. Among paired rubric items passed under Reference Transcript, this is the share still passed under Direct Audio, pooled over ten languages. It is neither overall rubric accuracy nor instance success. Paper model label: Gemini 3.1 Pro."
+    },
+    {
+      "benchmark": "omnilingua-audiomc",
+      "model": "gemini-3-1-pro",
+      "metric": "Self Coherence reference-passing rubric survival (%)",
+      "value": 92.6,
+      "source": "Table 4, arXiv:2611.04390v1, Self Coherence reference-passing rubric survival (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04390v1#page=7",
+      "note": "Higher is better. Among paired rubric items passed under Reference Transcript, this is the share still passed under Direct Audio, pooled over ten languages. It is neither overall rubric accuracy nor instance success. Paper model label: Gemini 3.1 Pro."
+    },
+    {
+      "benchmark": "omnilingua-audiomc",
+      "model": "gemini-3-1-pro",
+      "metric": "Voice Editing reference-passing rubric survival (%)",
+      "value": 94.5,
+      "source": "Table 4, arXiv:2611.04390v1, Voice Editing reference-passing rubric survival (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04390v1#page=7",
+      "note": "Higher is better. Among paired rubric items passed under Reference Transcript, this is the share still passed under Direct Audio, pooled over ten languages. It is neither overall rubric accuracy nor instance success. Paper model label: Gemini 3.1 Pro."
+    },
+    {
+      "benchmark": "omnilingua-audiomc",
+      "model": "qwen3-5-omni",
+      "metric": "Inference Memory reference-passing rubric survival (%)",
+      "value": 81.9,
+      "source": "Table 4, arXiv:2611.04390v1, Inference Memory reference-passing rubric survival (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04390v1#page=7",
+      "note": "Higher is better. Among paired rubric items passed under Reference Transcript, this is the share still passed under Direct Audio, pooled over ten languages. It is neither overall rubric accuracy nor instance success. Paper model label: Qwen3.5 Omni."
+    },
+    {
+      "benchmark": "omnilingua-audiomc",
+      "model": "qwen3-5-omni",
+      "metric": "Instruction Retention reference-passing rubric survival (%)",
+      "value": 85.3,
+      "source": "Table 4, arXiv:2611.04390v1, Instruction Retention reference-passing rubric survival (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04390v1#page=7",
+      "note": "Higher is better. Among paired rubric items passed under Reference Transcript, this is the share still passed under Direct Audio, pooled over ten languages. It is neither overall rubric accuracy nor instance success. Paper model label: Qwen3.5 Omni."
+    },
+    {
+      "benchmark": "omnilingua-audiomc",
+      "model": "qwen3-5-omni",
+      "metric": "Self Coherence reference-passing rubric survival (%)",
+      "value": 91.4,
+      "source": "Table 4, arXiv:2611.04390v1, Self Coherence reference-passing rubric survival (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04390v1#page=7",
+      "note": "Higher is better. Among paired rubric items passed under Reference Transcript, this is the share still passed under Direct Audio, pooled over ten languages. It is neither overall rubric accuracy nor instance success. Paper model label: Qwen3.5 Omni."
+    },
+    {
+      "benchmark": "omnilingua-audiomc",
+      "model": "qwen3-5-omni",
+      "metric": "Voice Editing reference-passing rubric survival (%)",
+      "value": 92.1,
+      "source": "Table 4, arXiv:2611.04390v1, Voice Editing reference-passing rubric survival (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04390v1#page=7",
+      "note": "Higher is better. Among paired rubric items passed under Reference Transcript, this is the share still passed under Direct Audio, pooled over ten languages. It is neither overall rubric accuracy nor instance success. Paper model label: Qwen3.5 Omni."
+    },
+    {
+      "benchmark": "omnilingua-audiomc",
+      "model": "muse-spark-1-2",
+      "metric": "Inference Memory reference-passing rubric survival (%)",
+      "value": 61.3,
+      "source": "Table 4, arXiv:2611.04390v1, Inference Memory reference-passing rubric survival (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04390v1#page=7",
+      "note": "Higher is better. Among paired rubric items passed under Reference Transcript, this is the share still passed under Direct Audio, pooled over ten languages. It is neither overall rubric accuracy nor instance success. Paper model label: Muse-Spark 1.2."
+    },
+    {
+      "benchmark": "omnilingua-audiomc",
+      "model": "muse-spark-1-2",
+      "metric": "Instruction Retention reference-passing rubric survival (%)",
+      "value": 56.9,
+      "source": "Table 4, arXiv:2611.04390v1, Instruction Retention reference-passing rubric survival (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04390v1#page=7",
+      "note": "Higher is better. Among paired rubric items passed under Reference Transcript, this is the share still passed under Direct Audio, pooled over ten languages. It is neither overall rubric accuracy nor instance success. Paper model label: Muse-Spark 1.2."
+    },
+    {
+      "benchmark": "omnilingua-audiomc",
+      "model": "muse-spark-1-2",
+      "metric": "Self Coherence reference-passing rubric survival (%)",
+      "value": 84.6,
+      "source": "Table 4, arXiv:2611.04390v1, Self Coherence reference-passing rubric survival (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04390v1#page=7",
+      "note": "Higher is better. Among paired rubric items passed under Reference Transcript, this is the share still passed under Direct Audio, pooled over ten languages. It is neither overall rubric accuracy nor instance success. Paper model label: Muse-Spark 1.2."
+    },
+    {
+      "benchmark": "omnilingua-audiomc",
+      "model": "muse-spark-1-2",
+      "metric": "Voice Editing reference-passing rubric survival (%)",
+      "value": 68.0,
+      "source": "Table 4, arXiv:2611.04390v1, Voice Editing reference-passing rubric survival (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04390v1#page=7",
+      "note": "Higher is better. Among paired rubric items passed under Reference Transcript, this is the share still passed under Direct Audio, pooled over ten languages. It is neither overall rubric accuracy nor instance success. Paper model label: Muse-Spark 1.2."
+    },
+    {
+      "benchmark": "omnilingua-audiomc",
+      "model": "gemini-3-1-pro",
+      "metric": "Reference Transcript ten-language mean instance success (%)",
+      "value": 63.0,
+      "source": "Table 5, arXiv:2611.04390v1, Reference Transcript ten-language mean instance success (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04390v1#page=8",
+      "note": "Higher is better. Ten-language macro mean of instance success, using available judgments. Reference Transcript is a diagnostic baseline; the other conditions replace preceding user turns, the current user turn, or both with frozen model-generated transcripts. These descriptive marginal scores are distinct from paired common-item contrasts. Paper model label: Gemini 3.1 Pro."
+    },
+    {
+      "benchmark": "omnilingua-audiomc",
+      "model": "gemini-3-1-pro",
+      "metric": "History Transcript ten-language mean instance success (%)",
+      "value": 60.1,
+      "source": "Table 5, arXiv:2611.04390v1, History Transcript ten-language mean instance success (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04390v1#page=8",
+      "note": "Higher is better. Ten-language macro mean of instance success, using available judgments. Reference Transcript is a diagnostic baseline; the other conditions replace preceding user turns, the current user turn, or both with frozen model-generated transcripts. These descriptive marginal scores are distinct from paired common-item contrasts. Paper model label: Gemini 3.1 Pro."
+    },
+    {
+      "benchmark": "omnilingua-audiomc",
+      "model": "gemini-3-1-pro",
+      "metric": "Current Transcript ten-language mean instance success (%)",
+      "value": 57.1,
+      "source": "Table 5, arXiv:2611.04390v1, Current Transcript ten-language mean instance success (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04390v1#page=8",
+      "note": "Higher is better. Ten-language macro mean of instance success, using available judgments. Reference Transcript is a diagnostic baseline; the other conditions replace preceding user turns, the current user turn, or both with frozen model-generated transcripts. These descriptive marginal scores are distinct from paired common-item contrasts. Paper model label: Gemini 3.1 Pro."
+    },
+    {
+      "benchmark": "omnilingua-audiomc",
+      "model": "gemini-3-1-pro",
+      "metric": "Full Transcript ten-language mean instance success (%)",
+      "value": 60.8,
+      "source": "Table 5, arXiv:2611.04390v1, Full Transcript ten-language mean instance success (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04390v1#page=8",
+      "note": "Higher is better. Ten-language macro mean of instance success, using available judgments. Reference Transcript is a diagnostic baseline; the other conditions replace preceding user turns, the current user turn, or both with frozen model-generated transcripts. These descriptive marginal scores are distinct from paired common-item contrasts. Paper model label: Gemini 3.1 Pro."
+    },
+    {
+      "benchmark": "omnilingua-audiomc",
+      "model": "qwen3-5-omni",
+      "metric": "Reference Transcript ten-language mean instance success (%)",
+      "value": 40.1,
+      "source": "Table 5, arXiv:2611.04390v1, Reference Transcript ten-language mean instance success (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04390v1#page=8",
+      "note": "Higher is better. Ten-language macro mean of instance success, using available judgments. Reference Transcript is a diagnostic baseline; the other conditions replace preceding user turns, the current user turn, or both with frozen model-generated transcripts. These descriptive marginal scores are distinct from paired common-item contrasts. Paper model label: Qwen3.5 Omni."
+    },
+    {
+      "benchmark": "omnilingua-audiomc",
+      "model": "qwen3-5-omni",
+      "metric": "History Transcript ten-language mean instance success (%)",
+      "value": 39.8,
+      "source": "Table 5, arXiv:2611.04390v1, History Transcript ten-language mean instance success (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04390v1#page=8",
+      "note": "Higher is better. Ten-language macro mean of instance success, using available judgments. Reference Transcript is a diagnostic baseline; the other conditions replace preceding user turns, the current user turn, or both with frozen model-generated transcripts. These descriptive marginal scores are distinct from paired common-item contrasts. Paper model label: Qwen3.5 Omni."
+    },
+    {
+      "benchmark": "omnilingua-audiomc",
+      "model": "qwen3-5-omni",
+      "metric": "Current Transcript ten-language mean instance success (%)",
+      "value": 38.4,
+      "source": "Table 5, arXiv:2611.04390v1, Current Transcript ten-language mean instance success (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04390v1#page=8",
+      "note": "Higher is better. Ten-language macro mean of instance success, using available judgments. Reference Transcript is a diagnostic baseline; the other conditions replace preceding user turns, the current user turn, or both with frozen model-generated transcripts. These descriptive marginal scores are distinct from paired common-item contrasts. Paper model label: Qwen3.5 Omni."
+    },
+    {
+      "benchmark": "omnilingua-audiomc",
+      "model": "qwen3-5-omni",
+      "metric": "Full Transcript ten-language mean instance success (%)",
+      "value": 38.1,
+      "source": "Table 5, arXiv:2611.04390v1, Full Transcript ten-language mean instance success (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04390v1#page=8",
+      "note": "Higher is better. Ten-language macro mean of instance success, using available judgments. Reference Transcript is a diagnostic baseline; the other conditions replace preceding user turns, the current user turn, or both with frozen model-generated transcripts. These descriptive marginal scores are distinct from paired common-item contrasts. Paper model label: Qwen3.5 Omni."
+    },
+    {
+      "benchmark": "omnilingua-audiomc",
+      "model": "muse-spark-1-2",
+      "metric": "Reference Transcript ten-language mean instance success (%)",
+      "value": 64.0,
+      "source": "Table 5, arXiv:2611.04390v1, Reference Transcript ten-language mean instance success (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04390v1#page=8",
+      "note": "Higher is better. Ten-language macro mean of instance success, using available judgments. Reference Transcript is a diagnostic baseline; the other conditions replace preceding user turns, the current user turn, or both with frozen model-generated transcripts. These descriptive marginal scores are distinct from paired common-item contrasts. Paper model label: Muse-Spark 1.2."
+    },
+    {
+      "benchmark": "omnilingua-audiomc",
+      "model": "muse-spark-1-2",
+      "metric": "History Transcript ten-language mean instance success (%)",
+      "value": 52.5,
+      "source": "Table 5, arXiv:2611.04390v1, History Transcript ten-language mean instance success (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04390v1#page=8",
+      "note": "Higher is better. Ten-language macro mean of instance success, using available judgments. Reference Transcript is a diagnostic baseline; the other conditions replace preceding user turns, the current user turn, or both with frozen model-generated transcripts. These descriptive marginal scores are distinct from paired common-item contrasts. Paper model label: Muse-Spark 1.2."
+    },
+    {
+      "benchmark": "omnilingua-audiomc",
+      "model": "muse-spark-1-2",
+      "metric": "Current Transcript ten-language mean instance success (%)",
+      "value": 38.6,
+      "source": "Table 5, arXiv:2611.04390v1, Current Transcript ten-language mean instance success (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04390v1#page=8",
+      "note": "Higher is better. Ten-language macro mean of instance success, using available judgments. Reference Transcript is a diagnostic baseline; the other conditions replace preceding user turns, the current user turn, or both with frozen model-generated transcripts. These descriptive marginal scores are distinct from paired common-item contrasts. Paper model label: Muse-Spark 1.2."
+    },
+    {
+      "benchmark": "omnilingua-audiomc",
+      "model": "muse-spark-1-2",
+      "metric": "Full Transcript ten-language mean instance success (%)",
+      "value": 58.6,
+      "source": "Table 5, arXiv:2611.04390v1, Full Transcript ten-language mean instance success (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04390v1#page=8",
+      "note": "Higher is better. Ten-language macro mean of instance success, using available judgments. Reference Transcript is a diagnostic baseline; the other conditions replace preceding user turns, the current user turn, or both with frozen model-generated transcripts. These descriptive marginal scores are distinct from paired common-item contrasts. Paper model label: Muse-Spark 1.2."
+    },
+    {
+      "benchmark": "verispoof-bench",
+      "model": "qwen3-omni",
+      "metric": "Authenticity mean balanced accuracy (%)",
+      "value": 64.7,
+      "source": "Table 5, arXiv:2611.04634v1, Authenticity mean balanced accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04634v1#page=14",
+      "note": "Higher is better. Printed Mean row for Authenticity; 1,000 items per test set, zero-shot closed options and greedy decoding. The first named option is scored (parse rate at least 99.7%). Paired recordings are concatenated with one second of silence. Paper model: Qwen3-Omni-30B-A3B. These are balanced accuracies, not the EER figures for specialized detectors on separate public leaderboards."
+    },
+    {
+      "benchmark": "verispoof-bench",
+      "model": "minicpm-o-4-5",
+      "metric": "Authenticity mean balanced accuracy (%)",
+      "value": 61.5,
+      "source": "Table 5, arXiv:2611.04634v1, Authenticity mean balanced accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04634v1#page=14",
+      "note": "Higher is better. Printed Mean row for Authenticity; 1,000 items per test set, zero-shot closed options and greedy decoding. The first named option is scored (parse rate at least 99.7%). Paired recordings are concatenated with one second of silence. Paper model: MiniCPM-o 4.5. These are balanced accuracies, not the EER figures for specialized detectors on separate public leaderboards."
+    },
+    {
+      "benchmark": "verispoof-bench",
+      "model": "audio-flamingo-3",
+      "metric": "Authenticity mean balanced accuracy (%)",
+      "value": 53.1,
+      "source": "Table 5, arXiv:2611.04634v1, Authenticity mean balanced accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04634v1#page=14",
+      "note": "Higher is better. Printed Mean row for Authenticity; 1,000 items per test set, zero-shot closed options and greedy decoding. The first named option is scored (parse rate at least 99.7%). Paired recordings are concatenated with one second of silence. Paper model: Audio Flamingo 3. These are balanced accuracies, not the EER figures for specialized detectors on separate public leaderboards."
+    },
+    {
+      "benchmark": "verispoof-bench",
+      "model": "kimi-audio",
+      "metric": "Authenticity mean balanced accuracy (%)",
+      "value": 63.6,
+      "source": "Table 5, arXiv:2611.04634v1, Authenticity mean balanced accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04634v1#page=14",
+      "note": "Higher is better. Printed Mean row for Authenticity; 1,000 items per test set, zero-shot closed options and greedy decoding. The first named option is scored (parse rate at least 99.7%). Paired recordings are concatenated with one second of silence. Paper model: Kimi-Audio-7B. These are balanced accuracies, not the EER figures for specialized detectors on separate public leaderboards."
+    },
+    {
+      "benchmark": "verispoof-bench",
+      "model": "step-audio-2-mini",
+      "metric": "Authenticity mean balanced accuracy (%)",
+      "value": 52.1,
+      "source": "Table 5, arXiv:2611.04634v1, Authenticity mean balanced accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04634v1#page=14",
+      "note": "Higher is better. Printed Mean row for Authenticity; 1,000 items per test set, zero-shot closed options and greedy decoding. The first named option is scored (parse rate at least 99.7%). Paired recordings are concatenated with one second of silence. Paper model: Step-Audio-2-mini. These are balanced accuracies, not the EER figures for specialized detectors on separate public leaderboards."
+    },
+    {
+      "benchmark": "verispoof-bench",
+      "model": "mimo-audio",
+      "metric": "Authenticity mean balanced accuracy (%)",
+      "value": 59.9,
+      "source": "Table 5, arXiv:2611.04634v1, Authenticity mean balanced accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04634v1#page=14",
+      "note": "Higher is better. Printed Mean row for Authenticity; 1,000 items per test set, zero-shot closed options and greedy decoding. The first named option is scored (parse rate at least 99.7%). Paired recordings are concatenated with one second of silence. Paper model: MiMo-Audio-7B. These are balanced accuracies, not the EER figures for specialized detectors on separate public leaderboards."
+    },
+    {
+      "benchmark": "verispoof-bench",
+      "model": "qwen3-omni",
+      "metric": "Same-source verification mean balanced accuracy (%)",
+      "value": 52.3,
+      "source": "Table 5, arXiv:2611.04634v1, Same-source verification mean balanced accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04634v1#page=14",
+      "note": "Higher is better. Printed Mean row for Same-source verification; 1,000 items per test set, zero-shot closed options and greedy decoding. The first named option is scored (parse rate at least 99.7%). Paired recordings are concatenated with one second of silence. Paper model: Qwen3-Omni-30B-A3B. These are balanced accuracies, not the EER figures for specialized detectors on separate public leaderboards."
+    },
+    {
+      "benchmark": "verispoof-bench",
+      "model": "minicpm-o-4-5",
+      "metric": "Same-source verification mean balanced accuracy (%)",
+      "value": 53.3,
+      "source": "Table 5, arXiv:2611.04634v1, Same-source verification mean balanced accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04634v1#page=14",
+      "note": "Higher is better. Printed Mean row for Same-source verification; 1,000 items per test set, zero-shot closed options and greedy decoding. The first named option is scored (parse rate at least 99.7%). Paired recordings are concatenated with one second of silence. Paper model: MiniCPM-o 4.5. These are balanced accuracies, not the EER figures for specialized detectors on separate public leaderboards."
+    },
+    {
+      "benchmark": "verispoof-bench",
+      "model": "audio-flamingo-3",
+      "metric": "Same-source verification mean balanced accuracy (%)",
+      "value": 48.4,
+      "source": "Table 5, arXiv:2611.04634v1, Same-source verification mean balanced accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04634v1#page=14",
+      "note": "Higher is better. Printed Mean row for Same-source verification; 1,000 items per test set, zero-shot closed options and greedy decoding. The first named option is scored (parse rate at least 99.7%). Paired recordings are concatenated with one second of silence. Paper model: Audio Flamingo 3. These are balanced accuracies, not the EER figures for specialized detectors on separate public leaderboards."
+    },
+    {
+      "benchmark": "verispoof-bench",
+      "model": "kimi-audio",
+      "metric": "Same-source verification mean balanced accuracy (%)",
+      "value": 51.2,
+      "source": "Table 5, arXiv:2611.04634v1, Same-source verification mean balanced accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04634v1#page=14",
+      "note": "Higher is better. Printed Mean row for Same-source verification; 1,000 items per test set, zero-shot closed options and greedy decoding. The first named option is scored (parse rate at least 99.7%). Paired recordings are concatenated with one second of silence. Paper model: Kimi-Audio-7B. These are balanced accuracies, not the EER figures for specialized detectors on separate public leaderboards."
+    },
+    {
+      "benchmark": "verispoof-bench",
+      "model": "step-audio-2-mini",
+      "metric": "Same-source verification mean balanced accuracy (%)",
+      "value": 50.4,
+      "source": "Table 5, arXiv:2611.04634v1, Same-source verification mean balanced accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04634v1#page=14",
+      "note": "Higher is better. Printed Mean row for Same-source verification; 1,000 items per test set, zero-shot closed options and greedy decoding. The first named option is scored (parse rate at least 99.7%). Paired recordings are concatenated with one second of silence. Paper model: Step-Audio-2-mini. These are balanced accuracies, not the EER figures for specialized detectors on separate public leaderboards."
+    },
+    {
+      "benchmark": "verispoof-bench",
+      "model": "mimo-audio",
+      "metric": "Same-source verification mean balanced accuracy (%)",
+      "value": 52.2,
+      "source": "Table 5, arXiv:2611.04634v1, Same-source verification mean balanced accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04634v1#page=14",
+      "note": "Higher is better. Printed Mean row for Same-source verification; 1,000 items per test set, zero-shot closed options and greedy decoding. The first named option is scored (parse rate at least 99.7%). Paired recordings are concatenated with one second of silence. Paper model: MiMo-Audio-7B. These are balanced accuracies, not the EER figures for specialized detectors on separate public leaderboards."
+    },
+    {
+      "benchmark": "verispoof-bench",
+      "model": "qwen3-omni",
+      "metric": "Recording condition mean balanced accuracy (%)",
+      "value": 22.6,
+      "source": "Table 5, arXiv:2611.04634v1, Recording condition mean balanced accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04634v1#page=14",
+      "note": "Higher is better. Printed Mean row for Recording condition; 1,000 items per test set, zero-shot closed options and greedy decoding. The first named option is scored (parse rate at least 99.7%). Paired recordings are concatenated with one second of silence. Paper model: Qwen3-Omni-30B-A3B. These are balanced accuracies, not the EER figures for specialized detectors on separate public leaderboards."
+    },
+    {
+      "benchmark": "verispoof-bench",
+      "model": "minicpm-o-4-5",
+      "metric": "Recording condition mean balanced accuracy (%)",
+      "value": 20.0,
+      "source": "Table 5, arXiv:2611.04634v1, Recording condition mean balanced accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04634v1#page=14",
+      "note": "Higher is better. Printed Mean row for Recording condition; 1,000 items per test set, zero-shot closed options and greedy decoding. The first named option is scored (parse rate at least 99.7%). Paired recordings are concatenated with one second of silence. Paper model: MiniCPM-o 4.5. These are balanced accuracies, not the EER figures for specialized detectors on separate public leaderboards."
+    },
+    {
+      "benchmark": "verispoof-bench",
+      "model": "audio-flamingo-3",
+      "metric": "Recording condition mean balanced accuracy (%)",
+      "value": 16.4,
+      "source": "Table 5, arXiv:2611.04634v1, Recording condition mean balanced accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04634v1#page=14",
+      "note": "Higher is better. Printed Mean row for Recording condition; 1,000 items per test set, zero-shot closed options and greedy decoding. The first named option is scored (parse rate at least 99.7%). Paired recordings are concatenated with one second of silence. Paper model: Audio Flamingo 3. These are balanced accuracies, not the EER figures for specialized detectors on separate public leaderboards."
+    },
+    {
+      "benchmark": "verispoof-bench",
+      "model": "kimi-audio",
+      "metric": "Recording condition mean balanced accuracy (%)",
+      "value": 18.7,
+      "source": "Table 5, arXiv:2611.04634v1, Recording condition mean balanced accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04634v1#page=14",
+      "note": "Higher is better. Printed Mean row for Recording condition; 1,000 items per test set, zero-shot closed options and greedy decoding. The first named option is scored (parse rate at least 99.7%). Paired recordings are concatenated with one second of silence. Paper model: Kimi-Audio-7B. These are balanced accuracies, not the EER figures for specialized detectors on separate public leaderboards."
+    },
+    {
+      "benchmark": "verispoof-bench",
+      "model": "step-audio-2-mini",
+      "metric": "Recording condition mean balanced accuracy (%)",
+      "value": 17.8,
+      "source": "Table 5, arXiv:2611.04634v1, Recording condition mean balanced accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04634v1#page=14",
+      "note": "Higher is better. Printed Mean row for Recording condition; 1,000 items per test set, zero-shot closed options and greedy decoding. The first named option is scored (parse rate at least 99.7%). Paired recordings are concatenated with one second of silence. Paper model: Step-Audio-2-mini. These are balanced accuracies, not the EER figures for specialized detectors on separate public leaderboards."
+    },
+    {
+      "benchmark": "verispoof-bench",
+      "model": "mimo-audio",
+      "metric": "Recording condition mean balanced accuracy (%)",
+      "value": 20.4,
+      "source": "Table 5, arXiv:2611.04634v1, Recording condition mean balanced accuracy (%)",
+      "source_url": "https://arxiv.org/pdf/2611.04634v1#page=14",
+      "note": "Higher is better. Printed Mean row for Recording condition; 1,000 items per test set, zero-shot closed options and greedy decoding. The first named option is scored (parse rate at least 99.7%). Paired recordings are concatenated with one second of silence. Paper model: MiMo-Audio-7B. These are balanced accuracies, not the EER figures for specialized detectors on separate public leaderboards."
     }
   ]
 }
