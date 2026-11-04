@@ -1,9 +1,101 @@
 {
-  "fetched_at": "2026-11-03T22:27:37Z",
+  "fetched_at": "2026-11-04T22:35:48Z",
   "window_days": 10,
-  "scanned": 145,
-  "flagged_today": 8,
+  "scanned": 148,
+  "flagged_today": 6,
   "candidates": [
+    {
+      "id": "2611.03839",
+      "title": "PianoBench: Evaluating Musical Perception and Reasoning in Language Models",
+      "abstract": "Multimodal language models continue to improve on broad music understanding benchmarks, but which musical features can they perceive and reason about? We investigate this question by introducing PianoBench, a benchmark that tasks language models with reasoning about musical performances across congruent acoustic and symbolic input representations. PianoBench is derived from our new multimodal, training-scale dataset comprising more than 20,000 hours of interleaved transcripts of music and spoken musical commentary from instructional piano videos. Open-weight audio-language models achieve at most 52.8% accuracy on PianoBench, and at best only modestly outperform their accuracy on a no-audio control. In contrast, frontier models using chain of thought achieve up to 93.2% accuracy when provided transcripts of music as text, exposing a gap between perceiving musical features from audio and reasoning about musical events when they are given explicitly. We then test whether mid-training on interleaved musical instruction can improve question answering without chain of thought, raising Qwen 3.5 9B Base's zero-shot accuracy on PianoBench with music transcripts from 42.8% to 56.0% after instruction tuning. These experiments suggest that instructional videos may represent an overlooked source of multimodal supervision for music. Available: https://gclef-cmu.org/pianobench.",
+      "published": "2026-11-02T19:11:56Z",
+      "authors": [
+        "Louis Bradshaw",
+        "Irmak Bukey",
+        "Daniel Chenyu Lin",
+        "John Thickstun",
+        "Chris Donahue"
+      ],
+      "primary_category": "cs.SD",
+      "url": "https://arxiv.org/abs/2611.03839",
+      "score": 39,
+      "status": "new — under review"
+    },
+    {
+      "id": "2611.03718",
+      "title": "NepTTS-Bench: Native-Speaker Benchmarking and NepaliMOS for Nepali Text-to-Speech",
+      "abstract": "Nepali TTS has reached a point where multiple systems are available, but there is no shared evaluation to compare them. NepTTS-Bench was created to address what existing automated and manual evaluation systems lack for Nepali TTS. A controlled benchmark with phonological grounding which contains 205 sentences (77 minimal pairs targeting aspiration, retroflex/dental contrasts, nasalization, gemination, and schwa deletion) which is rated by 180 speakers. There are 6,962 ratings for 10 TTS configurations and two human references. Along with this 7 ASR systems were evaluated for round-trip CER. SCOREQ was also run as an automated baseline. The key finding is that automated evaluation like SCOREQ prefers proprietary systems like ElevenLabs but native listeners prefer Piper. This is contributed by the fact that most of the systems not properly tuned for Nepali tend to show Hindi phonological behaviour and our minimal pairs are designed to surface such contrasts. We also present NepaliMOS predictor which is fine tuned on collected ratings. NepaliMOS achieves system-level rho = 0.90 on the dense panel but drops to utterance-level rho = 0.43 under leave-one-system-out evaluation. This is statistically significant and confirms that NepaliMOS captures genuine signal but cross-provider transfer is limited. A human calibration is recommended for new systems for which we release a Python evaluation package for practitioners to run the benchmark against new systems.",
+      "published": "2026-10-31T18:58:38Z",
+      "authors": [
+        "Ashish Thapa",
+        "Rupak Ghimire",
+        "Lekhnath Sharma Pathak"
+      ],
+      "primary_category": "eess.AS",
+      "url": "https://arxiv.org/abs/2611.03718",
+      "score": 36,
+      "status": "new — under review"
+    },
+    {
+      "id": "2611.04580",
+      "title": "Confidence-Aware Aggregation for Multimodal Audio Reasoning",
+      "abstract": "Large Audio Language Models (LALMs) enable generative reasoning over complex acoustic scenes but often exhibit prediction instability. We show that this variability can serve as a reliability metric via inference-time self-consistency and confidence-aware aggregation. Using a log-probability--based scoring framework, candidate answers are weighted by model likelihoods, leveraging reasoning diversity and self-certainty without additional training. Experiments on four LALMs, including Qwen3-Omni and Audio Flamingo 3, demonstrate that confidence-aware aggregation improves accuracy and calibration, with additive methods like Borda voting outperforming classical Majority Vote, especially under high disagreement. This approach transforms LALM variability into a source of reliability for scalable and robust multimodal audio understanding. Project code is available at https://github.com/michelolzam/lalm-self-consistency.",
+      "published": "2026-11-03T09:40:05Z",
+      "authors": [
+        "Michel Olvera",
+        "Paraskevas Stamatiadis",
+        "Ga{ë}l Richard"
+      ],
+      "primary_category": "cs.SD",
+      "url": "https://arxiv.org/abs/2611.04580",
+      "score": 36,
+      "status": "new — under review"
+    },
+    {
+      "id": "2611.04390",
+      "title": "Do Multi-Turn Conversational Capabilities Carry Over from Text to Speech? A Parallel Multilingual Benchmark",
+      "abstract": "Successful multi-turn voice interaction requires models to retain information from earlier turns, follow persistent instructions, and track revisions to conversational state. These abilities are usually evaluated from transcripts, leaving open whether successes demonstrated from text carry over when the same turns are spoken, and whether this transfer is consistent across languages. We introduce Omnilingua-AudioMC, a strictly parallel multilingual extension of Audio MultiChallenge, to study this question. The benchmark contains 354 conversations and 1,404 rubric items across ten languages, with content, turn structure, cross-turn dependencies, and evaluation criteria aligned across transcript and speech conditions. Across six speech-language models, the shift from reference transcripts to direct speech input is strongly model- and language-dependent: models with similar transcript performance can diverge substantially under speech, and their relative strengths across languages can change. Paired rubric-level analysis shows that aggregate transcript-speech gaps can obscure which conversational requirements are preserved, because losses of transcript-demonstrated successes can be offset by gains on other items. Replacing preceding user turns, the current turn, or both with model-generated transcripts localizes recoverable degradation: for the two models with the largest gaps, history substitution yields a larger macro-level improvement than current-turn substitution in all ten languages, while the strongest direct-speech model gains little from either. These results show that transcript performance is an unreliable proxy for multilingual spoken conversational ability and identify the representation of preceding spoken context as an important source of recoverable degradation. Our code is publicly available at https://github.com/QwenLM/Omnilingua-Bench/tree/main/Omnilingua-AudioMC.",
+      "published": "2026-11-03T06:22:53Z",
+      "authors": [
+        "Jiaming Zhou",
+        "Pei Zhang",
+        "Shiwan Zhao",
+        "Zhijun Wang",
+        "Baosong Yang",
+        "Yong Qin"
+      ],
+      "primary_category": "cs.CL",
+      "url": "https://arxiv.org/abs/2611.04390",
+      "score": 33,
+      "status": "new — under review"
+    },
+    {
+      "id": "2611.04634",
+      "title": "VeriSpoof: Beyond Real or Fake with One Audio LLM",
+      "abstract": "A speech deepfake detector estimates whether a recording is synthetic, but a forensic analyst also asks which system produced it, whether recordings share a source, and what evidence supports each conclusion. We present VeriSpoof, an audio language model that unifies five tasks with shared weights: deepfake detection, generator attribution (generator, acoustic model and vocoder), recording-condition analysis, synthesized-span localisation, and source verification. Each decision is supported by grounded rationales whose statements can be independently verified. Answers are scored by sentence likelihood, allowing detection and source verification to be thresholded without separate heads. Rationale statements can be checked against waveform measurements, span labels, or generator metadata. Counterfactual examples train decisions to follow the stated evidence. Across the 14 Speech-DF-Arena test sets, VeriSpoof-Plus achieves 2.14% pooled EER, ranking third of 28 systems and first among open-weight systems. VeriSpoof-Base, trained only on official training splits of eight corpora, achieves 4.43% EER, less than half that of the next open-weight detector. With the same weights, VeriSpoof-Plus verifies whether recordings from generators unseen in training share a source at 6.2% EER. Controlled studies show that the audio representation governs detection, the LLM governs recording comparison, and source supervision is necessary for neural-codec fakes. Statement-checkable rationales catch partial fakes missed by one-step answers (99.6% vs. 78.4% on PartialEdit) and determine decisions under edits unseen in training (99.5%). Training updates only 29.7M of 2.85B parameters, fitting a single 24 GB GPU with gradient checkpointing. We release both models, inference code, a demo, and VeriSpoof-Bench, the evaluation suite covering these questions.",
+      "published": "2026-11-03T10:25:06Z",
+      "authors": [
+        "Yang Xiao",
+        "Ting Dang"
+      ],
+      "primary_category": "eess.AS",
+      "url": "https://arxiv.org/abs/2611.04634",
+      "score": 24,
+      "status": "new — under review"
+    },
+    {
+      "id": "2611.04714",
+      "title": "Hybrid acoustic and pretrained embedding feature fusion for unmanned aerial vehicle detection using stacking ensemble learning under a leakage-aware evaluation protocol",
+      "abstract": "Small multirotor drones produce a characteristic acoustic signature, and microphones offer a low-cost way to detect them. High accuracies have been reported on public drone audio benchmarks, often with random clip-level splits of datasets built from a few long recordings and pieces of existing sound collections, so pieces of one source can appear in both training and test data. We study the binary task of the public DroneAudioDataset (11,704 one-second clips). Its 1,332 drone clips come from 257 five-second chunks of 7 recordings, and 96.4% of its non-drone clips are pieces of the 2,000 clips of the ESC-50 sound dataset. A grouped, source-disjoint protocol (five folds, three repeats) is compared with a random split. Each clip is described by 57 hand-crafted acoustic descriptors, reduced by a hybrid minimum-redundancy maximum-relevance and ReliefF selection or by NSGA-II multi-objective search, and by a 1024-dimensional embedding from the pretrained YAMNet network. Random Forest and XGBoost learners on both views form a stacking ensemble. Under the grouped protocol, the two-view stack reached a mean accuracy of 95.29% (SD 1.62 points over 15 test folds), a specificity of 98.29% and an area under the ROC curve of 0.990, and it correctly classified 98.78% of unseen ESC-50 source clips as non-drone. The random split overstated accuracy by 1.89 to 3.22 points for the four models. Adding YAMNet embeddings to the hand-crafted view raised accuracy by 1.11 points (higher in 12 of 15 folds). Hybrid selection matched the accuracy of all 44 baseline descriptors with 16 to 18 features, and NSGA-II retained 4 to 6 features at lower accuracy. The stack took 51.0 ms per clip on one CPU thread. Source-disjoint evaluation is needed for a fair benchmark on this dataset, and fusing hand-crafted descriptors with pretrained embeddings gives a small but consistent gain at modest computational cost.",
+      "published": "2026-11-03T11:36:38Z",
+      "authors": [
+        "Zahid Iqbal"
+      ],
+      "primary_category": "cs.SD",
+      "url": "https://arxiv.org/abs/2611.04714",
+      "score": 18,
+      "status": "new — under review"
+    },
     {
       "id": "2611.02430",
       "title": "InteractionBench: Measuring Timing, Task Accuracy, Whisper and Volume, and Grounding in Real-Time Voice Systems",
@@ -967,119 +1059,6 @@
       "url": "https://arxiv.org/abs/2610.29455",
       "score": 27,
       "status": "reviewed — out of scope: Omnilingual-MsASR measures multi-speaker transcription, speaker attribution and timestamps rather than general spoken reasoning"
-    },
-    {
-      "id": "2610.19869",
-      "title": "SEA-HELM Audio: Evaluating Multilingual ASR-LLM Pipeline Performance Across SEA-HELM Subsets",
-      "abstract": "We introduce SEA-HELM Audio, a Southeast Asian (SEA) multilingual evaluation framework that extends the text-based SEA-HELM benchmark to assess performance degradation in cascaded automatic speech recognition and large language model (ASR-LLM) pipelines. Using synthesized speech, we compare speech-input and text-input performance across five languages (Chinese, English, Malay, Indonesian, and Tamil) on multiple-choice reasoning and instruction-following tasks. We evaluate open-weight and commercial ASR-LLM systems using identical verifiers and quantify the speech gap as the difference between text and speech accuracy. Results show substantial degradation, with accuracy drops of 9.00 to 18.50 percentage points for multiple-choice reasoning and 20.00 to 42.86 points for instruction following. Tamil exhibits the largest degradation, exceeding 40 percentage points. Our findings highlight the limitations of text-only benchmarks in predicting voice-agent reliability and demonstrate the value of SEA-HELM Audio for evaluating multilingual voice-agent systems.",
-      "published": "2026-10-14T09:29:36Z",
-      "authors": [
-        "Aulia Adila",
-        "Yixian Tan",
-        "Jonathan Heng",
-        "Kunat Pipatanakul",
-        "Donghang Wu",
-        "Anocha Sutaveephamochanon"
-      ],
-      "primary_category": "cs.SD",
-      "url": "https://arxiv.org/abs/2610.19869",
-      "score": 24,
-      "status": "reviewed — included: SEA-HELM Audio introduce evaluation tasks for general speech/audio-language models; modality and protocol limitations are documented in the catalogue"
-    },
-    {
-      "id": "2610.21440",
-      "title": "SITAR: A Situational Distortion Metric for Automatic Speech Recognition Evaluation",
-      "abstract": "In automatic speech recognition (ASR), transcription errors with similar lexical or semantic discrepancies can have markedly different consequences for the situation conveyed by speech. Capturing these differences requires not merely contextual assessment, but an understanding of what the spoken discourse describes, establishes, or seeks to bring about. However, relying on LLM judges introduces computational cost and scoring variability. We introduce SITAR, a situational distortion metric for ASR, realized through a comprehensive end-to-end construction framework. Specifically, this framework aggregates situational severity and cumulative extent into a unified score via a bounded recursive formulation. Using targets derived from this formulation with limited offline LLM support, we train SITAR as a lightweight BERT-family regressor that scores reference-hypothesis pairs in a single forward pass, entirely free of any prohibitive runtime costs. Recognizing that introducing a new metric demands rigorous justification, we formalize a principled validation protocol spanning both extrinsic validity, assessed at macro and micro levels, and intrinsic scorer reliability. The former, evaluated across diverse datasets and models, demonstrates that SITAR reliably tracks broad capability scaling while providing orthogonal diagnostic utility, whereas the latter, examined on a purpose-built controlled benchmark, confirms the operational soundness of the scoring instrument itself. Through systematic validation, we demonstrate that SITAR holds strong potential as a practical, lightweight complement to existing ASR metrics. We will release the full recipes (code, model weights, dataset, etc.) after the internal review to support community research.",
-      "published": "2026-10-15T07:48:03Z",
-      "authors": [
-        "Mingzhe Lu",
-        "Jinhao Liu",
-        "Yunpeng Li",
-        "Hang Su",
-        "Lichun Fan",
-        "Jian Luan"
-      ],
-      "primary_category": "cs.CL",
-      "url": "https://arxiv.org/abs/2610.21440",
-      "score": 24,
-      "status": "reviewed — out of scope: SITAR is an ASR evaluation metric for transcription errors rather than a general spoken LLM benchmark"
-    },
-    {
-      "id": "2610.22321",
-      "title": "AVC-Reward: Event-Centric Audio-Video Consistency Evaluation",
-      "abstract": "As joint audio-video generation models become more capable, they can generate audio-visual scenes exhibiting three forms of complexity: multi-event composition, multi-layer audio mixture, and asymmetric cross-modal relations. However, current evaluations largely reuse metrics from earlier simple and unidirectional tasks. They typically evaluate an audio-video clip as a whole and rely on simple predefined relations, making them unsuitable for these increasingly complex scenes. We propose an event-centric evaluation framework that disentangles audio and visual events at the event level, analyzes each event independently, cross-validates relations across modalities, and aggregates the judgments into a coarse-to-fine, three-level consistency metric. The metric assesses global narrative harmony, event-level temporal synchronization, and fine-grained attribute alignment, providing a general formulation for audio-video consistency evaluation across diverse generation settings and cross-modal relations. We instantiate the metric as AVC-Reward, a trainable audio-video reward model. To evaluate the agreement between automatic judgments and human perception across generation paradigms and relation complexities, we construct AVC-Benchmark, which is primarily built from diverse positive and negative samples generated by various types of audio-video generation models. AVC-Reward achieves state-of-the-art alignment with human judgment among automatic methods, provides interpretable rationales that localize failures, and improves the audio-video consistency of a joint generation model when used as an online reinforcement-learning signal. Project page: https://tsuki0512.github.io/AVC-Reward.github.io/",
-      "published": "2026-10-15T17:51:56Z",
-      "authors": [
-        "Yuruo Wu",
-        "Kaihang Pan",
-        "Kai Shen",
-        "Jiacheng Li",
-        "Shuyuan Tu",
-        "Jisheng Dang",
-        "Li Tuoyu",
-        "Juncheng Li"
-      ],
-      "primary_category": "cs.CV",
-      "url": "https://arxiv.org/abs/2610.22321",
-      "score": 24,
-      "status": "reviewed — out of scope: AVC-Benchmark targets consistency of generated audio-video clips and reward models, not general spoken LLM behavior"
-    },
-    {
-      "id": "2610.25767",
-      "title": "EvalRx: Agentic Diagnosis and Verified Repair of Foundation Models",
-      "abstract": "Model evaluation reveals where models fail, but rarely why or whether a proposed fix genuinely works. We introduce EvalRx, an open-source agentic framework for statistically grounded model diagnosis and repair. EvalRx discovers systematic failure modes, explores candidate mechanisms, formulates falsifiable hypotheses, and verifies them by executing frozen, pre-specified tests before using supported diagnoses to guide tiered repair. Candidate repairs are validated against the unchanged model and promoted only when they improve the target behavior without unacceptable regression. Across language, vision-language, and audio-language settings spanning Gemini, Qwen, Gemma, and Nemotron, EvalRx improves performance in all 12 evaluated model family-modality combinations, with gains ranging from +1.4 to +10.9 percentage points (+5.8 points on average). These results show that model evaluation can serve not only to measure failures, but to support an auditable process for diagnosing and repairing them.",
-      "published": "2026-10-19T04:28:22Z",
-      "authors": [
-        "Jiaqi Liu",
-        "Ruinan Jin",
-        "Yitong Tang",
-        "Beidi Zhao",
-        "Gexin Huang",
-        "Qiong Zhang",
-        "Xiaoxiao Li"
-      ],
-      "primary_category": "cs.AI",
-      "url": "https://arxiv.org/abs/2610.25767",
-      "score": 24,
-      "status": "reviewed — out of scope: EvalRx is an agentic diagnosis and repair method evaluated across existing tasks, not a new spoken LLM evaluation set"
-    },
-    {
-      "id": "2610.26059",
-      "title": "Honeyed Words, Hidden Daggers: Benchmarking and Training LLMs to See Through Mock Politeness",
-      "abstract": "The Chinese idiom \"kou mi fu jian\" (\"honeyed words, hidden daggers\") names speech that is polite in form but hostile in function. We present ZhenhuanBench, a 1,592-item benchmark built from expert commentary on Empresses in the Palace, covering speaker intent, emotion-language mismatch, and per-listener uptake. Text-only evaluation covers 34 LLMs. GPT-6 Astra leads the leaderboard at 73.48% overall, while its listener-reaction score is 58.37%. The annotations also supply supervised traces and string-verifiable training rewards. With 338 gold traces, an 8B model outperforms teacher distillation on identical items. Subsequent RL saturates, and chance correction reduces the estimated recoverable performance gap by a factor of 7.5. Our CPR-GRPO loop (Compress-Probe-Replenish) uses this estimate to weight gold supervision, reaching 67.0 on public multiple-choice tasks and 74.5 under the training-matched hidden protocol. Without target-task training, CPR outperforms Base, SFT, and GRPO across six Chinese and English pragmatic and sarcasm evaluations. On three external datasets, training with CPR yields higher mean Macro-F1 than SFT and GRPO.",
-      "published": "2026-10-19T09:19:38Z",
-      "authors": [
-        "Caixin Kang",
-        "Sitong Gong",
-        "Tianyu Yan",
-        "Kaipeng Zhang",
-        "Yoichi Sato",
-        "Yifei Huang"
-      ],
-      "primary_category": "cs.CL",
-      "url": "https://arxiv.org/abs/2610.26059",
-      "score": 24,
-      "status": "reviewed — out of scope: ZhenhuanBench evaluates text-only pragmatic reasoning; the tested LLMs do not receive speech"
-    },
-    {
-      "id": "2610.29031",
-      "title": "KunSet: A Corpus and Benchmark for Lyrics Alignment and Rhyme Retrieval in Kunqu Opera",
-      "abstract": "Kunqu is one of the oldest extant forms of Chinese opera, yet its digitization remains scarce and difficult to annotate, with two challenges standing out: first, close analysis of Kunqu performance demands syllable-level lyrics alignment; second, analyzing Kunqu pronunciation requires its phonological attributes (e.g., rhyme) to be linked with each syllable. To address these challenges, we present KunSet, the first Kunqu performance corpus comprising 482,164 fine-grained annotations of syllable-level lyrics and phonological attributes in total media duration of 155.2 h with 106.3 h annotated. To ensure annotation quality, KunSet was preannotated by an iterative ML-assisted pipeline and corrected by over 200 trained annotators via a purpose-built online annotation system under a two-round review process. To assess KunSet as a music information retrieval (MIR) benchmark, we evaluate two tasks: lyrics alignment, by finetuning a forced-alignment model with an acoustic anchor decoder; and same-rhyme retrieval, using frozen Chinese HuBERT features. Models built with KunSet outperform their baselines. We release KunSet and model checkpoints to support MIR research on traditional-music corpora.",
-      "published": "2026-10-21T01:05:22Z",
-      "authors": [
-        "Lejun Min",
-        "Siqi Chen",
-        "Delong Wang",
-        "Tong Zheng",
-        "Yunqi Lu",
-        "Zhishan Zhou",
-        "Ke Chen",
-        "Yuting Zhong"
-      ],
-      "primary_category": "cs.SD",
-      "url": "https://arxiv.org/abs/2610.29031",
-      "score": 24,
-      "status": "reviewed — out of scope: KunSet targets forced alignment and rhyme retrieval in music, not general audio-language models"
     }
   ],
   "warnings": []
