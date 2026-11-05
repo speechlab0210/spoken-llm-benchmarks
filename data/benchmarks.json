@@ -12725,6 +12725,40 @@
       "arxiv_date": "2026-11",
       "arxiv_date_full": "2026-11-03",
       "url": "https://arxiv.org/abs/2611.04634"
+    },
+    {
+      "id": "librispeech-real-qa",
+      "name": "LibriSpeech-Real-QA",
+      "aka": [],
+      "full_title": "LibriSpeech-Real-QA: A Benchmark for Streaming Question Answering",
+      "arxiv_id": "2611.06496",
+      "arxiv_date": "2026-11",
+      "arxiv_date_full": "2026-11-04",
+      "url": "https://arxiv.org/abs/2611.06496",
+      "categories": [
+        "interactivity",
+        "spoken-qa",
+        "instruction-following"
+      ],
+      "tasks": [
+        "lexical detection",
+        "lexical counting",
+        "semantic detection",
+        "semantic counting"
+      ],
+      "languages": [
+        "English"
+      ],
+      "size": "Four tasks over LibriSpeech test-clean and test-other, with separate training and development splits",
+      "io": "speech stream plus a target-word or semantic-class instruction → event-triggered word or running count",
+      "metrics": [
+        "event-level F1, recall and precision (0–1)",
+        "mean onset delay over matched hits (seconds)"
+      ],
+      "summary": "Tests whether a speech-language model can detect and count queried words or semantic classes while audio is still arriving. Event content and emission timing are scored together, exposing behavior that turn-level question answering does not measure.",
+      "note": "The matrix records 64 values from Tables 2–5 for Gemini Live 3.1 Flash and pretrained Qwen2.5-Omni-7B. API streaming and post-audio inference are labeled separately; post-audio timestamp errors are not streaming response latency. The paper also reports GPT-realtime-2.1-mini, Qwen Audio 3.0 realtime Flash/Plus, and finetuned offline/streaming variants; those distinct configurations are not mapped to other registry models here. The author-linked live demo could not be independently loaded during this review. Submitted to ICASSP 2027 is not an acceptance claim.",
+      "code": null,
+      "data": null
     }
   ]
 }

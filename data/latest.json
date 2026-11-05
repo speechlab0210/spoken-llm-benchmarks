@@ -20,7 +20,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2611.05422",
       "score": 39,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: Introduces a benchmark for joint text-to-audio-video generation, but its evaluated systems are audiovisual generators rather than general spoken LLMs; audio-language models serve as evaluators."
     },
     {
       "id": "2611.05638",
@@ -34,7 +34,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2611.05638",
       "score": 36,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: Introduces a human voice-identity benchmark, but evaluates speaker-verification encoders, self-supervised speech representations and Whisper embeddings, not general spoken LLMs."
     },
     {
       "id": "2611.06496",
@@ -54,7 +54,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2611.06496",
       "score": 27,
-      "status": "new — under review"
+      "status": "reviewed — included: Introduces LibriSpeech-Real-QA and evaluates general speech-language models on event-triggered lexical and semantic detection/counting, with content and timing metrics."
     },
     {
       "id": "2611.06501",
@@ -73,7 +73,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2611.06501",
       "score": 18,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: Proposes an actor-critic method for simultaneous speech translation and evaluates it on existing FLEURS, CoVoST2, MuST-C and ACL 60/60 benchmarks; no new benchmark is introduced."
     },
     {
       "id": "2611.03839",

@@ -154089,6 +154089,582 @@
       "source": "Table 5, arXiv:2611.04634v1, Recording condition mean balanced accuracy (%)",
       "source_url": "https://arxiv.org/pdf/2611.04634v1#page=14",
       "note": "Higher is better. Printed Mean row for Recording condition; 1,000 items per test set, zero-shot closed options and greedy decoding. The first named option is scored (parse rate at least 99.7%). Paired recordings are concatenated with one second of silence. Paper model: MiMo-Audio-7B. These are balanced accuracies, not the EER figures for specialized detectors on separate public leaderboards."
+    },
+    {
+      "benchmark": "librispeech-real-qa",
+      "model": "gemini-live-3-1-flash",
+      "metric": "API streaming: Lexical detection, test-clean, F1 (0–1)",
+      "value": 0.83,
+      "source": "Table 2, arXiv:2611.06496v1, row Gemini Live 3.1 Flash, test-clean, F1 (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.06496v1#page=3",
+      "note": "Fuzzy matching; original test-clean/test-other values are stored separately without percentage conversion. F1, recall and precision pool reference events within each split; higher is better. Mean onset delay averages predicted onset minus reference-word onset over matched hits; lower is better. Paper label: Gemini Live 3.1 Flash. API delay also reflects response policy and service conditions; the authors explicitly caution that it is not a controlled provider-latency comparison. The Win. column is a dash for this baseline; no +1c/+2c streaming-model window is assigned."
+    },
+    {
+      "benchmark": "librispeech-real-qa",
+      "model": "gemini-live-3-1-flash",
+      "metric": "API streaming: Lexical detection, test-other, F1 (0–1)",
+      "value": 0.87,
+      "source": "Table 2, arXiv:2611.06496v1, row Gemini Live 3.1 Flash, test-other, F1 (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.06496v1#page=3",
+      "note": "Fuzzy matching; original test-clean/test-other values are stored separately without percentage conversion. F1, recall and precision pool reference events within each split; higher is better. Mean onset delay averages predicted onset minus reference-word onset over matched hits; lower is better. Paper label: Gemini Live 3.1 Flash. API delay also reflects response policy and service conditions; the authors explicitly caution that it is not a controlled provider-latency comparison. The Win. column is a dash for this baseline; no +1c/+2c streaming-model window is assigned."
+    },
+    {
+      "benchmark": "librispeech-real-qa",
+      "model": "gemini-live-3-1-flash",
+      "metric": "API streaming: Lexical detection, test-clean, Recall (0–1)",
+      "value": 0.98,
+      "source": "Table 2, arXiv:2611.06496v1, row Gemini Live 3.1 Flash, test-clean, Recall (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.06496v1#page=3",
+      "note": "Fuzzy matching; original test-clean/test-other values are stored separately without percentage conversion. F1, recall and precision pool reference events within each split; higher is better. Mean onset delay averages predicted onset minus reference-word onset over matched hits; lower is better. Paper label: Gemini Live 3.1 Flash. API delay also reflects response policy and service conditions; the authors explicitly caution that it is not a controlled provider-latency comparison. The Win. column is a dash for this baseline; no +1c/+2c streaming-model window is assigned."
+    },
+    {
+      "benchmark": "librispeech-real-qa",
+      "model": "gemini-live-3-1-flash",
+      "metric": "API streaming: Lexical detection, test-other, Recall (0–1)",
+      "value": 0.96,
+      "source": "Table 2, arXiv:2611.06496v1, row Gemini Live 3.1 Flash, test-other, Recall (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.06496v1#page=3",
+      "note": "Fuzzy matching; original test-clean/test-other values are stored separately without percentage conversion. F1, recall and precision pool reference events within each split; higher is better. Mean onset delay averages predicted onset minus reference-word onset over matched hits; lower is better. Paper label: Gemini Live 3.1 Flash. API delay also reflects response policy and service conditions; the authors explicitly caution that it is not a controlled provider-latency comparison. The Win. column is a dash for this baseline; no +1c/+2c streaming-model window is assigned."
+    },
+    {
+      "benchmark": "librispeech-real-qa",
+      "model": "gemini-live-3-1-flash",
+      "metric": "API streaming: Lexical detection, test-clean, Precision (0–1)",
+      "value": 0.72,
+      "source": "Table 2, arXiv:2611.06496v1, row Gemini Live 3.1 Flash, test-clean, Precision (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.06496v1#page=3",
+      "note": "Fuzzy matching; original test-clean/test-other values are stored separately without percentage conversion. F1, recall and precision pool reference events within each split; higher is better. Mean onset delay averages predicted onset minus reference-word onset over matched hits; lower is better. Paper label: Gemini Live 3.1 Flash. API delay also reflects response policy and service conditions; the authors explicitly caution that it is not a controlled provider-latency comparison. The Win. column is a dash for this baseline; no +1c/+2c streaming-model window is assigned."
+    },
+    {
+      "benchmark": "librispeech-real-qa",
+      "model": "gemini-live-3-1-flash",
+      "metric": "API streaming: Lexical detection, test-other, Precision (0–1)",
+      "value": 0.79,
+      "source": "Table 2, arXiv:2611.06496v1, row Gemini Live 3.1 Flash, test-other, Precision (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.06496v1#page=3",
+      "note": "Fuzzy matching; original test-clean/test-other values are stored separately without percentage conversion. F1, recall and precision pool reference events within each split; higher is better. Mean onset delay averages predicted onset minus reference-word onset over matched hits; lower is better. Paper label: Gemini Live 3.1 Flash. API delay also reflects response policy and service conditions; the authors explicitly caution that it is not a controlled provider-latency comparison. The Win. column is a dash for this baseline; no +1c/+2c streaming-model window is assigned."
+    },
+    {
+      "benchmark": "librispeech-real-qa",
+      "model": "gemini-live-3-1-flash",
+      "metric": "API streaming: Lexical detection, test-clean, Mean onset delay (s)",
+      "value": 5.0,
+      "source": "Table 2, arXiv:2611.06496v1, row Gemini Live 3.1 Flash, test-clean, Mean onset delay (s)",
+      "source_url": "https://arxiv.org/pdf/2611.06496v1#page=3",
+      "note": "Fuzzy matching; original test-clean/test-other values are stored separately without percentage conversion. F1, recall and precision pool reference events within each split; higher is better. Mean onset delay averages predicted onset minus reference-word onset over matched hits; lower is better. Paper label: Gemini Live 3.1 Flash. API delay also reflects response policy and service conditions; the authors explicitly caution that it is not a controlled provider-latency comparison. The Win. column is a dash for this baseline; no +1c/+2c streaming-model window is assigned."
+    },
+    {
+      "benchmark": "librispeech-real-qa",
+      "model": "gemini-live-3-1-flash",
+      "metric": "API streaming: Lexical detection, test-other, Mean onset delay (s)",
+      "value": 4.35,
+      "source": "Table 2, arXiv:2611.06496v1, row Gemini Live 3.1 Flash, test-other, Mean onset delay (s)",
+      "source_url": "https://arxiv.org/pdf/2611.06496v1#page=3",
+      "note": "Fuzzy matching; original test-clean/test-other values are stored separately without percentage conversion. F1, recall and precision pool reference events within each split; higher is better. Mean onset delay averages predicted onset minus reference-word onset over matched hits; lower is better. Paper label: Gemini Live 3.1 Flash. API delay also reflects response policy and service conditions; the authors explicitly caution that it is not a controlled provider-latency comparison. The Win. column is a dash for this baseline; no +1c/+2c streaming-model window is assigned."
+    },
+    {
+      "benchmark": "librispeech-real-qa",
+      "model": "qwen2-5-omni",
+      "metric": "Post-audio: Lexical detection, test-clean, F1 (0–1)",
+      "value": 0.5,
+      "source": "Table 2, arXiv:2611.06496v1, row Qwen2.5-Omni-7B†, test-clean, F1 (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.06496v1#page=3",
+      "note": "Fuzzy matching; original test-clean/test-other values are stored separately without percentage conversion. F1, recall and precision pool reference events within each split; higher is better. Mean onset delay averages predicted onset minus reference-word onset over matched hits; lower is better. Pretrained Qwen2.5-Omni-7B receives the complete audio and predicts a timestamped event list. Its reported onset delay is timestamp localization error, not measured streaming response latency. It is not the paper's finetuned Offline or Streaming variant and must not be treated as a streaming latency comparison."
+    },
+    {
+      "benchmark": "librispeech-real-qa",
+      "model": "qwen2-5-omni",
+      "metric": "Post-audio: Lexical detection, test-other, F1 (0–1)",
+      "value": 0.51,
+      "source": "Table 2, arXiv:2611.06496v1, row Qwen2.5-Omni-7B†, test-other, F1 (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.06496v1#page=3",
+      "note": "Fuzzy matching; original test-clean/test-other values are stored separately without percentage conversion. F1, recall and precision pool reference events within each split; higher is better. Mean onset delay averages predicted onset minus reference-word onset over matched hits; lower is better. Pretrained Qwen2.5-Omni-7B receives the complete audio and predicts a timestamped event list. Its reported onset delay is timestamp localization error, not measured streaming response latency. It is not the paper's finetuned Offline or Streaming variant and must not be treated as a streaming latency comparison."
+    },
+    {
+      "benchmark": "librispeech-real-qa",
+      "model": "qwen2-5-omni",
+      "metric": "Post-audio: Lexical detection, test-clean, Recall (0–1)",
+      "value": 0.5,
+      "source": "Table 2, arXiv:2611.06496v1, row Qwen2.5-Omni-7B†, test-clean, Recall (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.06496v1#page=3",
+      "note": "Fuzzy matching; original test-clean/test-other values are stored separately without percentage conversion. F1, recall and precision pool reference events within each split; higher is better. Mean onset delay averages predicted onset minus reference-word onset over matched hits; lower is better. Pretrained Qwen2.5-Omni-7B receives the complete audio and predicts a timestamped event list. Its reported onset delay is timestamp localization error, not measured streaming response latency. It is not the paper's finetuned Offline or Streaming variant and must not be treated as a streaming latency comparison."
+    },
+    {
+      "benchmark": "librispeech-real-qa",
+      "model": "qwen2-5-omni",
+      "metric": "Post-audio: Lexical detection, test-other, Recall (0–1)",
+      "value": 0.5,
+      "source": "Table 2, arXiv:2611.06496v1, row Qwen2.5-Omni-7B†, test-other, Recall (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.06496v1#page=3",
+      "note": "Fuzzy matching; original test-clean/test-other values are stored separately without percentage conversion. F1, recall and precision pool reference events within each split; higher is better. Mean onset delay averages predicted onset minus reference-word onset over matched hits; lower is better. Pretrained Qwen2.5-Omni-7B receives the complete audio and predicts a timestamped event list. Its reported onset delay is timestamp localization error, not measured streaming response latency. It is not the paper's finetuned Offline or Streaming variant and must not be treated as a streaming latency comparison."
+    },
+    {
+      "benchmark": "librispeech-real-qa",
+      "model": "qwen2-5-omni",
+      "metric": "Post-audio: Lexical detection, test-clean, Precision (0–1)",
+      "value": 0.51,
+      "source": "Table 2, arXiv:2611.06496v1, row Qwen2.5-Omni-7B†, test-clean, Precision (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.06496v1#page=3",
+      "note": "Fuzzy matching; original test-clean/test-other values are stored separately without percentage conversion. F1, recall and precision pool reference events within each split; higher is better. Mean onset delay averages predicted onset minus reference-word onset over matched hits; lower is better. Pretrained Qwen2.5-Omni-7B receives the complete audio and predicts a timestamped event list. Its reported onset delay is timestamp localization error, not measured streaming response latency. It is not the paper's finetuned Offline or Streaming variant and must not be treated as a streaming latency comparison."
+    },
+    {
+      "benchmark": "librispeech-real-qa",
+      "model": "qwen2-5-omni",
+      "metric": "Post-audio: Lexical detection, test-other, Precision (0–1)",
+      "value": 0.52,
+      "source": "Table 2, arXiv:2611.06496v1, row Qwen2.5-Omni-7B†, test-other, Precision (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.06496v1#page=3",
+      "note": "Fuzzy matching; original test-clean/test-other values are stored separately without percentage conversion. F1, recall and precision pool reference events within each split; higher is better. Mean onset delay averages predicted onset minus reference-word onset over matched hits; lower is better. Pretrained Qwen2.5-Omni-7B receives the complete audio and predicts a timestamped event list. Its reported onset delay is timestamp localization error, not measured streaming response latency. It is not the paper's finetuned Offline or Streaming variant and must not be treated as a streaming latency comparison."
+    },
+    {
+      "benchmark": "librispeech-real-qa",
+      "model": "qwen2-5-omni",
+      "metric": "Post-audio: Lexical detection, test-clean, Mean onset delay (s)",
+      "value": 1.457,
+      "source": "Table 2, arXiv:2611.06496v1, row Qwen2.5-Omni-7B†, test-clean, Mean onset delay (s)",
+      "source_url": "https://arxiv.org/pdf/2611.06496v1#page=3",
+      "note": "Fuzzy matching; original test-clean/test-other values are stored separately without percentage conversion. F1, recall and precision pool reference events within each split; higher is better. Mean onset delay averages predicted onset minus reference-word onset over matched hits; lower is better. Pretrained Qwen2.5-Omni-7B receives the complete audio and predicts a timestamped event list. Its reported onset delay is timestamp localization error, not measured streaming response latency. It is not the paper's finetuned Offline or Streaming variant and must not be treated as a streaming latency comparison."
+    },
+    {
+      "benchmark": "librispeech-real-qa",
+      "model": "qwen2-5-omni",
+      "metric": "Post-audio: Lexical detection, test-other, Mean onset delay (s)",
+      "value": 1.328,
+      "source": "Table 2, arXiv:2611.06496v1, row Qwen2.5-Omni-7B†, test-other, Mean onset delay (s)",
+      "source_url": "https://arxiv.org/pdf/2611.06496v1#page=3",
+      "note": "Fuzzy matching; original test-clean/test-other values are stored separately without percentage conversion. F1, recall and precision pool reference events within each split; higher is better. Mean onset delay averages predicted onset minus reference-word onset over matched hits; lower is better. Pretrained Qwen2.5-Omni-7B receives the complete audio and predicts a timestamped event list. Its reported onset delay is timestamp localization error, not measured streaming response latency. It is not the paper's finetuned Offline or Streaming variant and must not be treated as a streaming latency comparison."
+    },
+    {
+      "benchmark": "librispeech-real-qa",
+      "model": "gemini-live-3-1-flash",
+      "metric": "API streaming: Lexical counting, test-clean, F1 (0–1)",
+      "value": 0.61,
+      "source": "Table 3, arXiv:2611.06496v1, row Gemini Live 3.1 Flash, test-clean, F1 (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.06496v1#page=3",
+      "note": "Fuzzy matching; original test-clean/test-other values are stored separately without percentage conversion. F1, recall and precision pool reference events within each split; higher is better. Mean onset delay averages predicted onset minus reference-word onset over matched hits; lower is better. Paper label: Gemini Live 3.1 Flash. API delay also reflects response policy and service conditions; the authors explicitly caution that it is not a controlled provider-latency comparison. The Win. column is a dash for this baseline; no +1c/+2c streaming-model window is assigned."
+    },
+    {
+      "benchmark": "librispeech-real-qa",
+      "model": "gemini-live-3-1-flash",
+      "metric": "API streaming: Lexical counting, test-other, F1 (0–1)",
+      "value": 0.68,
+      "source": "Table 3, arXiv:2611.06496v1, row Gemini Live 3.1 Flash, test-other, F1 (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.06496v1#page=3",
+      "note": "Fuzzy matching; original test-clean/test-other values are stored separately without percentage conversion. F1, recall and precision pool reference events within each split; higher is better. Mean onset delay averages predicted onset minus reference-word onset over matched hits; lower is better. Paper label: Gemini Live 3.1 Flash. API delay also reflects response policy and service conditions; the authors explicitly caution that it is not a controlled provider-latency comparison. The Win. column is a dash for this baseline; no +1c/+2c streaming-model window is assigned."
+    },
+    {
+      "benchmark": "librispeech-real-qa",
+      "model": "gemini-live-3-1-flash",
+      "metric": "API streaming: Lexical counting, test-clean, Recall (0–1)",
+      "value": 0.68,
+      "source": "Table 3, arXiv:2611.06496v1, row Gemini Live 3.1 Flash, test-clean, Recall (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.06496v1#page=3",
+      "note": "Fuzzy matching; original test-clean/test-other values are stored separately without percentage conversion. F1, recall and precision pool reference events within each split; higher is better. Mean onset delay averages predicted onset minus reference-word onset over matched hits; lower is better. Paper label: Gemini Live 3.1 Flash. API delay also reflects response policy and service conditions; the authors explicitly caution that it is not a controlled provider-latency comparison. The Win. column is a dash for this baseline; no +1c/+2c streaming-model window is assigned."
+    },
+    {
+      "benchmark": "librispeech-real-qa",
+      "model": "gemini-live-3-1-flash",
+      "metric": "API streaming: Lexical counting, test-other, Recall (0–1)",
+      "value": 0.68,
+      "source": "Table 3, arXiv:2611.06496v1, row Gemini Live 3.1 Flash, test-other, Recall (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.06496v1#page=3",
+      "note": "Fuzzy matching; original test-clean/test-other values are stored separately without percentage conversion. F1, recall and precision pool reference events within each split; higher is better. Mean onset delay averages predicted onset minus reference-word onset over matched hits; lower is better. Paper label: Gemini Live 3.1 Flash. API delay also reflects response policy and service conditions; the authors explicitly caution that it is not a controlled provider-latency comparison. The Win. column is a dash for this baseline; no +1c/+2c streaming-model window is assigned."
+    },
+    {
+      "benchmark": "librispeech-real-qa",
+      "model": "gemini-live-3-1-flash",
+      "metric": "API streaming: Lexical counting, test-clean, Precision (0–1)",
+      "value": 0.56,
+      "source": "Table 3, arXiv:2611.06496v1, row Gemini Live 3.1 Flash, test-clean, Precision (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.06496v1#page=3",
+      "note": "Fuzzy matching; original test-clean/test-other values are stored separately without percentage conversion. F1, recall and precision pool reference events within each split; higher is better. Mean onset delay averages predicted onset minus reference-word onset over matched hits; lower is better. Paper label: Gemini Live 3.1 Flash. API delay also reflects response policy and service conditions; the authors explicitly caution that it is not a controlled provider-latency comparison. The Win. column is a dash for this baseline; no +1c/+2c streaming-model window is assigned."
+    },
+    {
+      "benchmark": "librispeech-real-qa",
+      "model": "gemini-live-3-1-flash",
+      "metric": "API streaming: Lexical counting, test-other, Precision (0–1)",
+      "value": 0.69,
+      "source": "Table 3, arXiv:2611.06496v1, row Gemini Live 3.1 Flash, test-other, Precision (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.06496v1#page=3",
+      "note": "Fuzzy matching; original test-clean/test-other values are stored separately without percentage conversion. F1, recall and precision pool reference events within each split; higher is better. Mean onset delay averages predicted onset minus reference-word onset over matched hits; lower is better. Paper label: Gemini Live 3.1 Flash. API delay also reflects response policy and service conditions; the authors explicitly caution that it is not a controlled provider-latency comparison. The Win. column is a dash for this baseline; no +1c/+2c streaming-model window is assigned."
+    },
+    {
+      "benchmark": "librispeech-real-qa",
+      "model": "gemini-live-3-1-flash",
+      "metric": "API streaming: Lexical counting, test-clean, Mean onset delay (s)",
+      "value": 8.94,
+      "source": "Table 3, arXiv:2611.06496v1, row Gemini Live 3.1 Flash, test-clean, Mean onset delay (s)",
+      "source_url": "https://arxiv.org/pdf/2611.06496v1#page=3",
+      "note": "Fuzzy matching; original test-clean/test-other values are stored separately without percentage conversion. F1, recall and precision pool reference events within each split; higher is better. Mean onset delay averages predicted onset minus reference-word onset over matched hits; lower is better. Paper label: Gemini Live 3.1 Flash. API delay also reflects response policy and service conditions; the authors explicitly caution that it is not a controlled provider-latency comparison. The Win. column is a dash for this baseline; no +1c/+2c streaming-model window is assigned."
+    },
+    {
+      "benchmark": "librispeech-real-qa",
+      "model": "gemini-live-3-1-flash",
+      "metric": "API streaming: Lexical counting, test-other, Mean onset delay (s)",
+      "value": 7.15,
+      "source": "Table 3, arXiv:2611.06496v1, row Gemini Live 3.1 Flash, test-other, Mean onset delay (s)",
+      "source_url": "https://arxiv.org/pdf/2611.06496v1#page=3",
+      "note": "Fuzzy matching; original test-clean/test-other values are stored separately without percentage conversion. F1, recall and precision pool reference events within each split; higher is better. Mean onset delay averages predicted onset minus reference-word onset over matched hits; lower is better. Paper label: Gemini Live 3.1 Flash. API delay also reflects response policy and service conditions; the authors explicitly caution that it is not a controlled provider-latency comparison. The Win. column is a dash for this baseline; no +1c/+2c streaming-model window is assigned."
+    },
+    {
+      "benchmark": "librispeech-real-qa",
+      "model": "qwen2-5-omni",
+      "metric": "Post-audio: Lexical counting, test-clean, F1 (0–1)",
+      "value": 0.07,
+      "source": "Table 3, arXiv:2611.06496v1, row Qwen2.5-Omni-7B†, test-clean, F1 (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.06496v1#page=3",
+      "note": "Fuzzy matching; original test-clean/test-other values are stored separately without percentage conversion. F1, recall and precision pool reference events within each split; higher is better. Mean onset delay averages predicted onset minus reference-word onset over matched hits; lower is better. Pretrained Qwen2.5-Omni-7B receives the complete audio and predicts a timestamped event list. Its reported onset delay is timestamp localization error, not measured streaming response latency. It is not the paper's finetuned Offline or Streaming variant and must not be treated as a streaming latency comparison."
+    },
+    {
+      "benchmark": "librispeech-real-qa",
+      "model": "qwen2-5-omni",
+      "metric": "Post-audio: Lexical counting, test-other, F1 (0–1)",
+      "value": 0.08,
+      "source": "Table 3, arXiv:2611.06496v1, row Qwen2.5-Omni-7B†, test-other, F1 (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.06496v1#page=3",
+      "note": "Fuzzy matching; original test-clean/test-other values are stored separately without percentage conversion. F1, recall and precision pool reference events within each split; higher is better. Mean onset delay averages predicted onset minus reference-word onset over matched hits; lower is better. Pretrained Qwen2.5-Omni-7B receives the complete audio and predicts a timestamped event list. Its reported onset delay is timestamp localization error, not measured streaming response latency. It is not the paper's finetuned Offline or Streaming variant and must not be treated as a streaming latency comparison."
+    },
+    {
+      "benchmark": "librispeech-real-qa",
+      "model": "qwen2-5-omni",
+      "metric": "Post-audio: Lexical counting, test-clean, Recall (0–1)",
+      "value": 0.1,
+      "source": "Table 3, arXiv:2611.06496v1, row Qwen2.5-Omni-7B†, test-clean, Recall (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.06496v1#page=3",
+      "note": "Fuzzy matching; original test-clean/test-other values are stored separately without percentage conversion. F1, recall and precision pool reference events within each split; higher is better. Mean onset delay averages predicted onset minus reference-word onset over matched hits; lower is better. Pretrained Qwen2.5-Omni-7B receives the complete audio and predicts a timestamped event list. Its reported onset delay is timestamp localization error, not measured streaming response latency. It is not the paper's finetuned Offline or Streaming variant and must not be treated as a streaming latency comparison."
+    },
+    {
+      "benchmark": "librispeech-real-qa",
+      "model": "qwen2-5-omni",
+      "metric": "Post-audio: Lexical counting, test-other, Recall (0–1)",
+      "value": 0.13,
+      "source": "Table 3, arXiv:2611.06496v1, row Qwen2.5-Omni-7B†, test-other, Recall (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.06496v1#page=3",
+      "note": "Fuzzy matching; original test-clean/test-other values are stored separately without percentage conversion. F1, recall and precision pool reference events within each split; higher is better. Mean onset delay averages predicted onset minus reference-word onset over matched hits; lower is better. Pretrained Qwen2.5-Omni-7B receives the complete audio and predicts a timestamped event list. Its reported onset delay is timestamp localization error, not measured streaming response latency. It is not the paper's finetuned Offline or Streaming variant and must not be treated as a streaming latency comparison."
+    },
+    {
+      "benchmark": "librispeech-real-qa",
+      "model": "qwen2-5-omni",
+      "metric": "Post-audio: Lexical counting, test-clean, Precision (0–1)",
+      "value": 0.05,
+      "source": "Table 3, arXiv:2611.06496v1, row Qwen2.5-Omni-7B†, test-clean, Precision (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.06496v1#page=3",
+      "note": "Fuzzy matching; original test-clean/test-other values are stored separately without percentage conversion. F1, recall and precision pool reference events within each split; higher is better. Mean onset delay averages predicted onset minus reference-word onset over matched hits; lower is better. Pretrained Qwen2.5-Omni-7B receives the complete audio and predicts a timestamped event list. Its reported onset delay is timestamp localization error, not measured streaming response latency. It is not the paper's finetuned Offline or Streaming variant and must not be treated as a streaming latency comparison."
+    },
+    {
+      "benchmark": "librispeech-real-qa",
+      "model": "qwen2-5-omni",
+      "metric": "Post-audio: Lexical counting, test-other, Precision (0–1)",
+      "value": 0.06,
+      "source": "Table 3, arXiv:2611.06496v1, row Qwen2.5-Omni-7B†, test-other, Precision (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.06496v1#page=3",
+      "note": "Fuzzy matching; original test-clean/test-other values are stored separately without percentage conversion. F1, recall and precision pool reference events within each split; higher is better. Mean onset delay averages predicted onset minus reference-word onset over matched hits; lower is better. Pretrained Qwen2.5-Omni-7B receives the complete audio and predicts a timestamped event list. Its reported onset delay is timestamp localization error, not measured streaming response latency. It is not the paper's finetuned Offline or Streaming variant and must not be treated as a streaming latency comparison."
+    },
+    {
+      "benchmark": "librispeech-real-qa",
+      "model": "qwen2-5-omni",
+      "metric": "Post-audio: Lexical counting, test-clean, Mean onset delay (s)",
+      "value": 2.419,
+      "source": "Table 3, arXiv:2611.06496v1, row Qwen2.5-Omni-7B†, test-clean, Mean onset delay (s)",
+      "source_url": "https://arxiv.org/pdf/2611.06496v1#page=3",
+      "note": "Fuzzy matching; original test-clean/test-other values are stored separately without percentage conversion. F1, recall and precision pool reference events within each split; higher is better. Mean onset delay averages predicted onset minus reference-word onset over matched hits; lower is better. Pretrained Qwen2.5-Omni-7B receives the complete audio and predicts a timestamped event list. Its reported onset delay is timestamp localization error, not measured streaming response latency. It is not the paper's finetuned Offline or Streaming variant and must not be treated as a streaming latency comparison."
+    },
+    {
+      "benchmark": "librispeech-real-qa",
+      "model": "qwen2-5-omni",
+      "metric": "Post-audio: Lexical counting, test-other, Mean onset delay (s)",
+      "value": 2.99,
+      "source": "Table 3, arXiv:2611.06496v1, row Qwen2.5-Omni-7B†, test-other, Mean onset delay (s)",
+      "source_url": "https://arxiv.org/pdf/2611.06496v1#page=3",
+      "note": "Fuzzy matching; original test-clean/test-other values are stored separately without percentage conversion. F1, recall and precision pool reference events within each split; higher is better. Mean onset delay averages predicted onset minus reference-word onset over matched hits; lower is better. Pretrained Qwen2.5-Omni-7B receives the complete audio and predicts a timestamped event list. Its reported onset delay is timestamp localization error, not measured streaming response latency. It is not the paper's finetuned Offline or Streaming variant and must not be treated as a streaming latency comparison."
+    },
+    {
+      "benchmark": "librispeech-real-qa",
+      "model": "gemini-live-3-1-flash",
+      "metric": "API streaming: Semantic detection, test-clean, F1 (0–1)",
+      "value": 0.65,
+      "source": "Table 4, arXiv:2611.06496v1, row Gemini Live 3.1 Flash, test-clean, F1 (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.06496v1#page=4",
+      "note": "Fuzzy matching; original test-clean/test-other values are stored separately without percentage conversion. F1, recall and precision pool reference events within each split; higher is better. Mean onset delay averages predicted onset minus reference-word onset over matched hits; lower is better. Paper label: Gemini Live 3.1 Flash. API delay also reflects response policy and service conditions; the authors explicitly caution that it is not a controlled provider-latency comparison. The Win. column is a dash for this baseline; no +1c/+2c streaming-model window is assigned."
+    },
+    {
+      "benchmark": "librispeech-real-qa",
+      "model": "gemini-live-3-1-flash",
+      "metric": "API streaming: Semantic detection, test-other, F1 (0–1)",
+      "value": 0.61,
+      "source": "Table 4, arXiv:2611.06496v1, row Gemini Live 3.1 Flash, test-other, F1 (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.06496v1#page=4",
+      "note": "Fuzzy matching; original test-clean/test-other values are stored separately without percentage conversion. F1, recall and precision pool reference events within each split; higher is better. Mean onset delay averages predicted onset minus reference-word onset over matched hits; lower is better. Paper label: Gemini Live 3.1 Flash. API delay also reflects response policy and service conditions; the authors explicitly caution that it is not a controlled provider-latency comparison. The Win. column is a dash for this baseline; no +1c/+2c streaming-model window is assigned."
+    },
+    {
+      "benchmark": "librispeech-real-qa",
+      "model": "gemini-live-3-1-flash",
+      "metric": "API streaming: Semantic detection, test-clean, Recall (0–1)",
+      "value": 0.7,
+      "source": "Table 4, arXiv:2611.06496v1, row Gemini Live 3.1 Flash, test-clean, Recall (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.06496v1#page=4",
+      "note": "Fuzzy matching; original test-clean/test-other values are stored separately without percentage conversion. F1, recall and precision pool reference events within each split; higher is better. Mean onset delay averages predicted onset minus reference-word onset over matched hits; lower is better. Paper label: Gemini Live 3.1 Flash. API delay also reflects response policy and service conditions; the authors explicitly caution that it is not a controlled provider-latency comparison. The Win. column is a dash for this baseline; no +1c/+2c streaming-model window is assigned."
+    },
+    {
+      "benchmark": "librispeech-real-qa",
+      "model": "gemini-live-3-1-flash",
+      "metric": "API streaming: Semantic detection, test-other, Recall (0–1)",
+      "value": 0.65,
+      "source": "Table 4, arXiv:2611.06496v1, row Gemini Live 3.1 Flash, test-other, Recall (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.06496v1#page=4",
+      "note": "Fuzzy matching; original test-clean/test-other values are stored separately without percentage conversion. F1, recall and precision pool reference events within each split; higher is better. Mean onset delay averages predicted onset minus reference-word onset over matched hits; lower is better. Paper label: Gemini Live 3.1 Flash. API delay also reflects response policy and service conditions; the authors explicitly caution that it is not a controlled provider-latency comparison. The Win. column is a dash for this baseline; no +1c/+2c streaming-model window is assigned."
+    },
+    {
+      "benchmark": "librispeech-real-qa",
+      "model": "gemini-live-3-1-flash",
+      "metric": "API streaming: Semantic detection, test-clean, Precision (0–1)",
+      "value": 0.61,
+      "source": "Table 4, arXiv:2611.06496v1, row Gemini Live 3.1 Flash, test-clean, Precision (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.06496v1#page=4",
+      "note": "Fuzzy matching; original test-clean/test-other values are stored separately without percentage conversion. F1, recall and precision pool reference events within each split; higher is better. Mean onset delay averages predicted onset minus reference-word onset over matched hits; lower is better. Paper label: Gemini Live 3.1 Flash. API delay also reflects response policy and service conditions; the authors explicitly caution that it is not a controlled provider-latency comparison. The Win. column is a dash for this baseline; no +1c/+2c streaming-model window is assigned."
+    },
+    {
+      "benchmark": "librispeech-real-qa",
+      "model": "gemini-live-3-1-flash",
+      "metric": "API streaming: Semantic detection, test-other, Precision (0–1)",
+      "value": 0.57,
+      "source": "Table 4, arXiv:2611.06496v1, row Gemini Live 3.1 Flash, test-other, Precision (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.06496v1#page=4",
+      "note": "Fuzzy matching; original test-clean/test-other values are stored separately without percentage conversion. F1, recall and precision pool reference events within each split; higher is better. Mean onset delay averages predicted onset minus reference-word onset over matched hits; lower is better. Paper label: Gemini Live 3.1 Flash. API delay also reflects response policy and service conditions; the authors explicitly caution that it is not a controlled provider-latency comparison. The Win. column is a dash for this baseline; no +1c/+2c streaming-model window is assigned."
+    },
+    {
+      "benchmark": "librispeech-real-qa",
+      "model": "gemini-live-3-1-flash",
+      "metric": "API streaming: Semantic detection, test-clean, Mean onset delay (s)",
+      "value": 5.89,
+      "source": "Table 4, arXiv:2611.06496v1, row Gemini Live 3.1 Flash, test-clean, Mean onset delay (s)",
+      "source_url": "https://arxiv.org/pdf/2611.06496v1#page=4",
+      "note": "Fuzzy matching; original test-clean/test-other values are stored separately without percentage conversion. F1, recall and precision pool reference events within each split; higher is better. Mean onset delay averages predicted onset minus reference-word onset over matched hits; lower is better. Paper label: Gemini Live 3.1 Flash. API delay also reflects response policy and service conditions; the authors explicitly caution that it is not a controlled provider-latency comparison. The Win. column is a dash for this baseline; no +1c/+2c streaming-model window is assigned."
+    },
+    {
+      "benchmark": "librispeech-real-qa",
+      "model": "gemini-live-3-1-flash",
+      "metric": "API streaming: Semantic detection, test-other, Mean onset delay (s)",
+      "value": 5.09,
+      "source": "Table 4, arXiv:2611.06496v1, row Gemini Live 3.1 Flash, test-other, Mean onset delay (s)",
+      "source_url": "https://arxiv.org/pdf/2611.06496v1#page=4",
+      "note": "Fuzzy matching; original test-clean/test-other values are stored separately without percentage conversion. F1, recall and precision pool reference events within each split; higher is better. Mean onset delay averages predicted onset minus reference-word onset over matched hits; lower is better. Paper label: Gemini Live 3.1 Flash. API delay also reflects response policy and service conditions; the authors explicitly caution that it is not a controlled provider-latency comparison. The Win. column is a dash for this baseline; no +1c/+2c streaming-model window is assigned."
+    },
+    {
+      "benchmark": "librispeech-real-qa",
+      "model": "qwen2-5-omni",
+      "metric": "Post-audio: Semantic detection, test-clean, F1 (0–1)",
+      "value": 0.25,
+      "source": "Table 4, arXiv:2611.06496v1, row Qwen2.5-Omni-7B†, test-clean, F1 (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.06496v1#page=4",
+      "note": "Fuzzy matching; original test-clean/test-other values are stored separately without percentage conversion. F1, recall and precision pool reference events within each split; higher is better. Mean onset delay averages predicted onset minus reference-word onset over matched hits; lower is better. Pretrained Qwen2.5-Omni-7B receives the complete audio and predicts a timestamped event list. Its reported onset delay is timestamp localization error, not measured streaming response latency. It is not the paper's finetuned Offline or Streaming variant and must not be treated as a streaming latency comparison."
+    },
+    {
+      "benchmark": "librispeech-real-qa",
+      "model": "qwen2-5-omni",
+      "metric": "Post-audio: Semantic detection, test-other, F1 (0–1)",
+      "value": 0.24,
+      "source": "Table 4, arXiv:2611.06496v1, row Qwen2.5-Omni-7B†, test-other, F1 (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.06496v1#page=4",
+      "note": "Fuzzy matching; original test-clean/test-other values are stored separately without percentage conversion. F1, recall and precision pool reference events within each split; higher is better. Mean onset delay averages predicted onset minus reference-word onset over matched hits; lower is better. Pretrained Qwen2.5-Omni-7B receives the complete audio and predicts a timestamped event list. Its reported onset delay is timestamp localization error, not measured streaming response latency. It is not the paper's finetuned Offline or Streaming variant and must not be treated as a streaming latency comparison."
+    },
+    {
+      "benchmark": "librispeech-real-qa",
+      "model": "qwen2-5-omni",
+      "metric": "Post-audio: Semantic detection, test-clean, Recall (0–1)",
+      "value": 0.26,
+      "source": "Table 4, arXiv:2611.06496v1, row Qwen2.5-Omni-7B†, test-clean, Recall (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.06496v1#page=4",
+      "note": "Fuzzy matching; original test-clean/test-other values are stored separately without percentage conversion. F1, recall and precision pool reference events within each split; higher is better. Mean onset delay averages predicted onset minus reference-word onset over matched hits; lower is better. Pretrained Qwen2.5-Omni-7B receives the complete audio and predicts a timestamped event list. Its reported onset delay is timestamp localization error, not measured streaming response latency. It is not the paper's finetuned Offline or Streaming variant and must not be treated as a streaming latency comparison."
+    },
+    {
+      "benchmark": "librispeech-real-qa",
+      "model": "qwen2-5-omni",
+      "metric": "Post-audio: Semantic detection, test-other, Recall (0–1)",
+      "value": 0.23,
+      "source": "Table 4, arXiv:2611.06496v1, row Qwen2.5-Omni-7B†, test-other, Recall (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.06496v1#page=4",
+      "note": "Fuzzy matching; original test-clean/test-other values are stored separately without percentage conversion. F1, recall and precision pool reference events within each split; higher is better. Mean onset delay averages predicted onset minus reference-word onset over matched hits; lower is better. Pretrained Qwen2.5-Omni-7B receives the complete audio and predicts a timestamped event list. Its reported onset delay is timestamp localization error, not measured streaming response latency. It is not the paper's finetuned Offline or Streaming variant and must not be treated as a streaming latency comparison."
+    },
+    {
+      "benchmark": "librispeech-real-qa",
+      "model": "qwen2-5-omni",
+      "metric": "Post-audio: Semantic detection, test-clean, Precision (0–1)",
+      "value": 0.25,
+      "source": "Table 4, arXiv:2611.06496v1, row Qwen2.5-Omni-7B†, test-clean, Precision (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.06496v1#page=4",
+      "note": "Fuzzy matching; original test-clean/test-other values are stored separately without percentage conversion. F1, recall and precision pool reference events within each split; higher is better. Mean onset delay averages predicted onset minus reference-word onset over matched hits; lower is better. Pretrained Qwen2.5-Omni-7B receives the complete audio and predicts a timestamped event list. Its reported onset delay is timestamp localization error, not measured streaming response latency. It is not the paper's finetuned Offline or Streaming variant and must not be treated as a streaming latency comparison."
+    },
+    {
+      "benchmark": "librispeech-real-qa",
+      "model": "qwen2-5-omni",
+      "metric": "Post-audio: Semantic detection, test-other, Precision (0–1)",
+      "value": 0.25,
+      "source": "Table 4, arXiv:2611.06496v1, row Qwen2.5-Omni-7B†, test-other, Precision (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.06496v1#page=4",
+      "note": "Fuzzy matching; original test-clean/test-other values are stored separately without percentage conversion. F1, recall and precision pool reference events within each split; higher is better. Mean onset delay averages predicted onset minus reference-word onset over matched hits; lower is better. Pretrained Qwen2.5-Omni-7B receives the complete audio and predicts a timestamped event list. Its reported onset delay is timestamp localization error, not measured streaming response latency. It is not the paper's finetuned Offline or Streaming variant and must not be treated as a streaming latency comparison."
+    },
+    {
+      "benchmark": "librispeech-real-qa",
+      "model": "qwen2-5-omni",
+      "metric": "Post-audio: Semantic detection, test-clean, Mean onset delay (s)",
+      "value": 1.758,
+      "source": "Table 4, arXiv:2611.06496v1, row Qwen2.5-Omni-7B†, test-clean, Mean onset delay (s)",
+      "source_url": "https://arxiv.org/pdf/2611.06496v1#page=4",
+      "note": "Fuzzy matching; original test-clean/test-other values are stored separately without percentage conversion. F1, recall and precision pool reference events within each split; higher is better. Mean onset delay averages predicted onset minus reference-word onset over matched hits; lower is better. Pretrained Qwen2.5-Omni-7B receives the complete audio and predicts a timestamped event list. Its reported onset delay is timestamp localization error, not measured streaming response latency. It is not the paper's finetuned Offline or Streaming variant and must not be treated as a streaming latency comparison."
+    },
+    {
+      "benchmark": "librispeech-real-qa",
+      "model": "qwen2-5-omni",
+      "metric": "Post-audio: Semantic detection, test-other, Mean onset delay (s)",
+      "value": 1.716,
+      "source": "Table 4, arXiv:2611.06496v1, row Qwen2.5-Omni-7B†, test-other, Mean onset delay (s)",
+      "source_url": "https://arxiv.org/pdf/2611.06496v1#page=4",
+      "note": "Fuzzy matching; original test-clean/test-other values are stored separately without percentage conversion. F1, recall and precision pool reference events within each split; higher is better. Mean onset delay averages predicted onset minus reference-word onset over matched hits; lower is better. Pretrained Qwen2.5-Omni-7B receives the complete audio and predicts a timestamped event list. Its reported onset delay is timestamp localization error, not measured streaming response latency. It is not the paper's finetuned Offline or Streaming variant and must not be treated as a streaming latency comparison."
+    },
+    {
+      "benchmark": "librispeech-real-qa",
+      "model": "gemini-live-3-1-flash",
+      "metric": "API streaming: Semantic counting, test-clean, F1 (0–1)",
+      "value": 0.49,
+      "source": "Table 5, arXiv:2611.06496v1, row Gemini Live 3.1 Flash, test-clean, F1 (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.06496v1#page=4",
+      "note": "Fuzzy matching; original test-clean/test-other values are stored separately without percentage conversion. F1, recall and precision pool reference events within each split; higher is better. Mean onset delay averages predicted onset minus reference-word onset over matched hits; lower is better. Paper label: Gemini Live 3.1 Flash. API delay also reflects response policy and service conditions; the authors explicitly caution that it is not a controlled provider-latency comparison. The Win. column is a dash for this baseline; no +1c/+2c streaming-model window is assigned."
+    },
+    {
+      "benchmark": "librispeech-real-qa",
+      "model": "gemini-live-3-1-flash",
+      "metric": "API streaming: Semantic counting, test-other, F1 (0–1)",
+      "value": 0.54,
+      "source": "Table 5, arXiv:2611.06496v1, row Gemini Live 3.1 Flash, test-other, F1 (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.06496v1#page=4",
+      "note": "Fuzzy matching; original test-clean/test-other values are stored separately without percentage conversion. F1, recall and precision pool reference events within each split; higher is better. Mean onset delay averages predicted onset minus reference-word onset over matched hits; lower is better. Paper label: Gemini Live 3.1 Flash. API delay also reflects response policy and service conditions; the authors explicitly caution that it is not a controlled provider-latency comparison. The Win. column is a dash for this baseline; no +1c/+2c streaming-model window is assigned."
+    },
+    {
+      "benchmark": "librispeech-real-qa",
+      "model": "gemini-live-3-1-flash",
+      "metric": "API streaming: Semantic counting, test-clean, Recall (0–1)",
+      "value": 0.59,
+      "source": "Table 5, arXiv:2611.06496v1, row Gemini Live 3.1 Flash, test-clean, Recall (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.06496v1#page=4",
+      "note": "Fuzzy matching; original test-clean/test-other values are stored separately without percentage conversion. F1, recall and precision pool reference events within each split; higher is better. Mean onset delay averages predicted onset minus reference-word onset over matched hits; lower is better. Paper label: Gemini Live 3.1 Flash. API delay also reflects response policy and service conditions; the authors explicitly caution that it is not a controlled provider-latency comparison. The Win. column is a dash for this baseline; no +1c/+2c streaming-model window is assigned."
+    },
+    {
+      "benchmark": "librispeech-real-qa",
+      "model": "gemini-live-3-1-flash",
+      "metric": "API streaming: Semantic counting, test-other, Recall (0–1)",
+      "value": 0.54,
+      "source": "Table 5, arXiv:2611.06496v1, row Gemini Live 3.1 Flash, test-other, Recall (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.06496v1#page=4",
+      "note": "Fuzzy matching; original test-clean/test-other values are stored separately without percentage conversion. F1, recall and precision pool reference events within each split; higher is better. Mean onset delay averages predicted onset minus reference-word onset over matched hits; lower is better. Paper label: Gemini Live 3.1 Flash. API delay also reflects response policy and service conditions; the authors explicitly caution that it is not a controlled provider-latency comparison. The Win. column is a dash for this baseline; no +1c/+2c streaming-model window is assigned."
+    },
+    {
+      "benchmark": "librispeech-real-qa",
+      "model": "gemini-live-3-1-flash",
+      "metric": "API streaming: Semantic counting, test-clean, Precision (0–1)",
+      "value": 0.42,
+      "source": "Table 5, arXiv:2611.06496v1, row Gemini Live 3.1 Flash, test-clean, Precision (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.06496v1#page=4",
+      "note": "Fuzzy matching; original test-clean/test-other values are stored separately without percentage conversion. F1, recall and precision pool reference events within each split; higher is better. Mean onset delay averages predicted onset minus reference-word onset over matched hits; lower is better. Paper label: Gemini Live 3.1 Flash. API delay also reflects response policy and service conditions; the authors explicitly caution that it is not a controlled provider-latency comparison. The Win. column is a dash for this baseline; no +1c/+2c streaming-model window is assigned."
+    },
+    {
+      "benchmark": "librispeech-real-qa",
+      "model": "gemini-live-3-1-flash",
+      "metric": "API streaming: Semantic counting, test-other, Precision (0–1)",
+      "value": 0.54,
+      "source": "Table 5, arXiv:2611.06496v1, row Gemini Live 3.1 Flash, test-other, Precision (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.06496v1#page=4",
+      "note": "Fuzzy matching; original test-clean/test-other values are stored separately without percentage conversion. F1, recall and precision pool reference events within each split; higher is better. Mean onset delay averages predicted onset minus reference-word onset over matched hits; lower is better. Paper label: Gemini Live 3.1 Flash. API delay also reflects response policy and service conditions; the authors explicitly caution that it is not a controlled provider-latency comparison. The Win. column is a dash for this baseline; no +1c/+2c streaming-model window is assigned."
+    },
+    {
+      "benchmark": "librispeech-real-qa",
+      "model": "gemini-live-3-1-flash",
+      "metric": "API streaming: Semantic counting, test-clean, Mean onset delay (s)",
+      "value": 8.86,
+      "source": "Table 5, arXiv:2611.06496v1, row Gemini Live 3.1 Flash, test-clean, Mean onset delay (s)",
+      "source_url": "https://arxiv.org/pdf/2611.06496v1#page=4",
+      "note": "Fuzzy matching; original test-clean/test-other values are stored separately without percentage conversion. F1, recall and precision pool reference events within each split; higher is better. Mean onset delay averages predicted onset minus reference-word onset over matched hits; lower is better. Paper label: Gemini Live 3.1 Flash. API delay also reflects response policy and service conditions; the authors explicitly caution that it is not a controlled provider-latency comparison. The Win. column is a dash for this baseline; no +1c/+2c streaming-model window is assigned."
+    },
+    {
+      "benchmark": "librispeech-real-qa",
+      "model": "gemini-live-3-1-flash",
+      "metric": "API streaming: Semantic counting, test-other, Mean onset delay (s)",
+      "value": 8.04,
+      "source": "Table 5, arXiv:2611.06496v1, row Gemini Live 3.1 Flash, test-other, Mean onset delay (s)",
+      "source_url": "https://arxiv.org/pdf/2611.06496v1#page=4",
+      "note": "Fuzzy matching; original test-clean/test-other values are stored separately without percentage conversion. F1, recall and precision pool reference events within each split; higher is better. Mean onset delay averages predicted onset minus reference-word onset over matched hits; lower is better. Paper label: Gemini Live 3.1 Flash. API delay also reflects response policy and service conditions; the authors explicitly caution that it is not a controlled provider-latency comparison. The Win. column is a dash for this baseline; no +1c/+2c streaming-model window is assigned."
+    },
+    {
+      "benchmark": "librispeech-real-qa",
+      "model": "qwen2-5-omni",
+      "metric": "Post-audio: Semantic counting, test-clean, F1 (0–1)",
+      "value": 0.04,
+      "source": "Table 5, arXiv:2611.06496v1, row Qwen2.5-Omni-7B†, test-clean, F1 (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.06496v1#page=4",
+      "note": "Fuzzy matching; original test-clean/test-other values are stored separately without percentage conversion. F1, recall and precision pool reference events within each split; higher is better. Mean onset delay averages predicted onset minus reference-word onset over matched hits; lower is better. Pretrained Qwen2.5-Omni-7B receives the complete audio and predicts a timestamped event list. Its reported onset delay is timestamp localization error, not measured streaming response latency. It is not the paper's finetuned Offline or Streaming variant and must not be treated as a streaming latency comparison."
+    },
+    {
+      "benchmark": "librispeech-real-qa",
+      "model": "qwen2-5-omni",
+      "metric": "Post-audio: Semantic counting, test-other, F1 (0–1)",
+      "value": 0.02,
+      "source": "Table 5, arXiv:2611.06496v1, row Qwen2.5-Omni-7B†, test-other, F1 (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.06496v1#page=4",
+      "note": "Fuzzy matching; original test-clean/test-other values are stored separately without percentage conversion. F1, recall and precision pool reference events within each split; higher is better. Mean onset delay averages predicted onset minus reference-word onset over matched hits; lower is better. Pretrained Qwen2.5-Omni-7B receives the complete audio and predicts a timestamped event list. Its reported onset delay is timestamp localization error, not measured streaming response latency. It is not the paper's finetuned Offline or Streaming variant and must not be treated as a streaming latency comparison."
+    },
+    {
+      "benchmark": "librispeech-real-qa",
+      "model": "qwen2-5-omni",
+      "metric": "Post-audio: Semantic counting, test-clean, Recall (0–1)",
+      "value": 0.04,
+      "source": "Table 5, arXiv:2611.06496v1, row Qwen2.5-Omni-7B†, test-clean, Recall (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.06496v1#page=4",
+      "note": "Fuzzy matching; original test-clean/test-other values are stored separately without percentage conversion. F1, recall and precision pool reference events within each split; higher is better. Mean onset delay averages predicted onset minus reference-word onset over matched hits; lower is better. Pretrained Qwen2.5-Omni-7B receives the complete audio and predicts a timestamped event list. Its reported onset delay is timestamp localization error, not measured streaming response latency. It is not the paper's finetuned Offline or Streaming variant and must not be treated as a streaming latency comparison."
+    },
+    {
+      "benchmark": "librispeech-real-qa",
+      "model": "qwen2-5-omni",
+      "metric": "Post-audio: Semantic counting, test-other, Recall (0–1)",
+      "value": 0.01,
+      "source": "Table 5, arXiv:2611.06496v1, row Qwen2.5-Omni-7B†, test-other, Recall (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.06496v1#page=4",
+      "note": "Fuzzy matching; original test-clean/test-other values are stored separately without percentage conversion. F1, recall and precision pool reference events within each split; higher is better. Mean onset delay averages predicted onset minus reference-word onset over matched hits; lower is better. Pretrained Qwen2.5-Omni-7B receives the complete audio and predicts a timestamped event list. Its reported onset delay is timestamp localization error, not measured streaming response latency. It is not the paper's finetuned Offline or Streaming variant and must not be treated as a streaming latency comparison."
+    },
+    {
+      "benchmark": "librispeech-real-qa",
+      "model": "qwen2-5-omni",
+      "metric": "Post-audio: Semantic counting, test-clean, Precision (0–1)",
+      "value": 0.05,
+      "source": "Table 5, arXiv:2611.06496v1, row Qwen2.5-Omni-7B†, test-clean, Precision (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.06496v1#page=4",
+      "note": "Fuzzy matching; original test-clean/test-other values are stored separately without percentage conversion. F1, recall and precision pool reference events within each split; higher is better. Mean onset delay averages predicted onset minus reference-word onset over matched hits; lower is better. Pretrained Qwen2.5-Omni-7B receives the complete audio and predicts a timestamped event list. Its reported onset delay is timestamp localization error, not measured streaming response latency. It is not the paper's finetuned Offline or Streaming variant and must not be treated as a streaming latency comparison."
+    },
+    {
+      "benchmark": "librispeech-real-qa",
+      "model": "qwen2-5-omni",
+      "metric": "Post-audio: Semantic counting, test-other, Precision (0–1)",
+      "value": 0.03,
+      "source": "Table 5, arXiv:2611.06496v1, row Qwen2.5-Omni-7B†, test-other, Precision (0–1)",
+      "source_url": "https://arxiv.org/pdf/2611.06496v1#page=4",
+      "note": "Fuzzy matching; original test-clean/test-other values are stored separately without percentage conversion. F1, recall and precision pool reference events within each split; higher is better. Mean onset delay averages predicted onset minus reference-word onset over matched hits; lower is better. Pretrained Qwen2.5-Omni-7B receives the complete audio and predicts a timestamped event list. Its reported onset delay is timestamp localization error, not measured streaming response latency. It is not the paper's finetuned Offline or Streaming variant and must not be treated as a streaming latency comparison."
+    },
+    {
+      "benchmark": "librispeech-real-qa",
+      "model": "qwen2-5-omni",
+      "metric": "Post-audio: Semantic counting, test-clean, Mean onset delay (s)",
+      "value": 3.074,
+      "source": "Table 5, arXiv:2611.06496v1, row Qwen2.5-Omni-7B†, test-clean, Mean onset delay (s)",
+      "source_url": "https://arxiv.org/pdf/2611.06496v1#page=4",
+      "note": "Fuzzy matching; original test-clean/test-other values are stored separately without percentage conversion. F1, recall and precision pool reference events within each split; higher is better. Mean onset delay averages predicted onset minus reference-word onset over matched hits; lower is better. Pretrained Qwen2.5-Omni-7B receives the complete audio and predicts a timestamped event list. Its reported onset delay is timestamp localization error, not measured streaming response latency. It is not the paper's finetuned Offline or Streaming variant and must not be treated as a streaming latency comparison."
+    },
+    {
+      "benchmark": "librispeech-real-qa",
+      "model": "qwen2-5-omni",
+      "metric": "Post-audio: Semantic counting, test-other, Mean onset delay (s)",
+      "value": 1.748,
+      "source": "Table 5, arXiv:2611.06496v1, row Qwen2.5-Omni-7B†, test-other, Mean onset delay (s)",
+      "source_url": "https://arxiv.org/pdf/2611.06496v1#page=4",
+      "note": "Fuzzy matching; original test-clean/test-other values are stored separately without percentage conversion. F1, recall and precision pool reference events within each split; higher is better. Mean onset delay averages predicted onset minus reference-word onset over matched hits; lower is better. Pretrained Qwen2.5-Omni-7B receives the complete audio and predicts a timestamped event list. Its reported onset delay is timestamp localization error, not measured streaming response latency. It is not the paper's finetuned Offline or Streaming variant and must not be treated as a streaming latency comparison."
     }
   ]
 }

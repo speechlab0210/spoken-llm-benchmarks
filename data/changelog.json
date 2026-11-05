@@ -1,6 +1,11 @@
 {
  "entries": [
   {
+   "date": "2026-11-06",
+   "change": "Reviewed four candidates and added LibriSpeech-Real-QA with 64 source-located values from four tasks and two test splits. Results preserve the original 0–1 scales and distinguish Gemini Live streaming responses from pretrained Qwen2.5-Omni post-audio timestamp predictions. Three audiovisual-generation, speaker-embedding or method papers were excluded. PDF byline and result tables were checked; submission to ICASSP is retained as preprint status, without implying acceptance.",
+   "source": "arXiv:2611.06496v1 Tables 2–5 and Sections 2.3/4.1–4.2; full texts 2611.05422v1, 2611.05638v1 and 2611.06501v1."
+  },
+  {
    "date": "2026-11-05",
    "change": "Reviewed six candidates: added PianoBench, Omnilingua-AudioMC and VeriSpoof-Bench with 118 source-located results (37, 63 and 18 respectively). PianoBench retains input conditions and reasoning modes; Omnilingua separates conversation success, reference-passing rubric survival and transcript substitutions; VeriSpoof records general-model balanced accuracies rather than specialized-detector EERs. Three TTS, method or specialized-classifier papers were excluded. PDF bylines and original result tables were checked; venue and release-link verification limits are recorded.",
    "source": "arXiv:2611.03839v1 Tables 1 and 3, Appendix C.3; arXiv:2611.04390v1 Tables 2, 4 and 5; arXiv:2611.04634v1 Table 5 and Section 5; full texts 2611.03718v1, 2611.04580v1 and 2611.04714v1."

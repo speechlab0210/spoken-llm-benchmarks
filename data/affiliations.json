@@ -26271,6 +26271,64 @@
     }
    ],
    "verify_note": "PDF v1 first-page byline checked against arXiv metadata: Yang Xiao and Ting Dang share The University of Melbourne. No separate author city or country is printed; geography is not inferred from institution names."
+  },
+  "librispeech-real-qa": {
+   "status": "ok",
+   "verified": "confirmed",
+   "publishable": true,
+   "countries_complete": true,
+   "n_authors": 9,
+   "institutions": [
+    {
+     "inst": "tsinghua-university",
+     "raw": "Tsinghua University, China",
+     "unit": null,
+     "country": "CN",
+     "city": null,
+     "lat": null,
+     "lon": null,
+     "placed": "unplaced",
+     "printed_city": null,
+     "printed_country": "China",
+     "lead": true,
+     "first_author": true,
+     "last": true,
+     "evidence": "printed"
+    },
+    {
+     "inst": "the-chinese-university-of-hong-kong",
+     "raw": "The Chinese University of Hong Kong, China",
+     "unit": null,
+     "country": "CN",
+     "city": null,
+     "lat": null,
+     "lon": null,
+     "placed": "unplaced",
+     "printed_city": null,
+     "printed_country": "China",
+     "lead": false,
+     "first_author": false,
+     "last": false,
+     "evidence": "printed"
+    },
+    {
+     "inst": "sensetime",
+     "raw": "SenseTime Research, China",
+     "unit": null,
+     "country": "CN",
+     "city": null,
+     "lat": null,
+     "lon": null,
+     "placed": "unplaced",
+     "printed_city": null,
+     "printed_country": "China",
+     "lead": false,
+     "first_author": false,
+     "last": false,
+     "evidence": "printed"
+    }
+   ],
+   "verify_note": "PDF v1 page 1 superscripts and arXiv author metadata checked. First author Zewen Zhan and last author Zhiyong Wu have affiliation 1, Tsinghua University. Co-first author Hui Lu has affiliation 2, CUHK; the lead flag follows the first-listed author. All three printed affiliations explicitly say China; that printed country is retained without inferring a city from an institution name. No city coordinates are assigned."
   }
  },
  "models": {
