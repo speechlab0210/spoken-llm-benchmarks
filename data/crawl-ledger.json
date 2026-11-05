@@ -1,9 +1,30 @@
 {
  "since": "2026-08-22",
  "what": "Every arXiv paper the daily crawl has flagged since launch (score at or above the threshold, not previously seen), with the reviewer's verdict as written in the feed and whether the paper entered the catalogue. \"published\" is the paper's arXiv date. See the Method section of the site.",
- "flagged": 320,
+ "flagged": 324,
  "admitted": 94,
  "entries": [
+  {
+   "id": "2611.06501",
+   "title": "CRESiST: Self-Enhancing Explorative Policy Learning for Simultaneous Speech Translation",
+   "published": "2026-11-04T13:32:57Z",
+   "score": 18,
+   "outcome": "under review"
+  },
+  {
+   "id": "2611.06496",
+   "title": "LibriSpeech-Real-QA: A Benchmark for Streaming Question Answering",
+   "published": "2026-11-04T13:30:54Z",
+   "score": 27,
+   "outcome": "under review"
+  },
+  {
+   "id": "2611.05638",
+   "title": "VIPBench: A Human-Aligned Benchmark for Voice Identity Perception in the Age of Voice Cloning",
+   "published": "2026-11-03T21:21:59Z",
+   "score": 36,
+   "outcome": "under review"
+  },
   {
    "id": "2611.04714",
    "title": "Hybrid acoustic and pretrained embedding feature fusion for unmanned aerial vehicle detection using stacking ensemble learning under a leakage-aware evaluation protocol",
@@ -54,6 +75,13 @@
    "score": 18,
    "outcome": "not admitted",
    "verdict": "reviewed — out of scope: Introduces a South African Sign Language video-to-text dataset and sign-translation baselines; the evaluated systems are not general spoken LLMs."
+  },
+  {
+   "id": "2611.05422",
+   "title": "CAST-Bench: Tracing Every Sound to Its Source in Multi-Shot Audio-Video Generation",
+   "published": "2026-11-02T08:41:48Z",
+   "score": 39,
+   "outcome": "under review"
   },
   {
    "id": "2611.02593",
