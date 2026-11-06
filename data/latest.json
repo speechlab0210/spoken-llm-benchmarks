@@ -1,9 +1,64 @@
 {
-  "fetched_at": "2026-11-05T22:38:43Z",
+  "fetched_at": "2026-11-06T22:29:56Z",
   "window_days": 10,
-  "scanned": 140,
-  "flagged_today": 4,
+  "scanned": 122,
+  "flagged_today": 3,
   "candidates": [
+    {
+      "id": "2611.07420",
+      "title": "Adaptive and High-Fidelity Matching Algorithm for Retrieval-Based Accent Conversion",
+      "abstract": "Accent conversion (AC) aims to transform accent-related acoustic characteristics of the source speech to a target accent while preserving linguistic content and speaker identity. Unlike conventional generative AC models, the retrieval-based ones, which employ k-nearest neighbors (kNN) to directly retrieve acoustic features from target-accent speech and so do not need source-accent speech during training, are more effective. However, existing retrieval-based AC frameworks face three issues: limited intelligibility due to incomplete phoneme coverage from sequential matching pool construction, limited adaptability to source speech variations, and low spectral continuity from coarse-grained style modulation. To address these limitations, we propose Anisotropy-Aware Adaptive k-Nearest Neighbor Accent Conversion (AA-kNN-AC), an enhanced retrieval-based AC model. First, we design a phoneme coverage-based matching pool construction strategy, employing greedy selection with diversity-aware scoring to achieve balanced and near-complete phonetic representation under limited target accent data. Second, we propose an anisotropy-aware adaptive kNN retrieval mechanism that dynamically determines the neighborhood size according to the singular value decomposition (SVD)-based anisotropy analysis, enhancing adaptability to source speech variations. Third, we present a progressive Adaptive Instance Normalization (AdaIN)-based fine-grained decoder by integrating temporal up-sampling within AdaIN blocks, enhancing spectral continuity of the converted speech. Experimental results on the L2-ARCTIC and VCTK datasets demonstrate that the proposed method outperforms existing retrieval-based and generative baselines in both objective and subjective evaluations, achieving high intelligibility, speaker similarity, and naturalness. Demo page is available at https://aa-knn-ac.github.io/demo/.",
+      "published": "2026-11-05T04:16:24Z",
+      "authors": [
+        "Xinran Wang",
+        "Ning Chen",
+        "Yixin Luo",
+        "Hongqing Zhu",
+        "Li Tian"
+      ],
+      "primary_category": "cs.SD",
+      "url": "https://arxiv.org/abs/2611.07420",
+      "score": 21,
+      "status": "new — under review"
+    },
+    {
+      "id": "2611.07562",
+      "title": "FUSEMOS: Perceptual Evaluation of Text-to-Music Generation with Dual-Encoder Fusion and Ranking-Aware Composite Loss",
+      "abstract": "Perceptual evaluation of generated music is essential for developing text-to-music (TTM) generation systems. Existing automatic music perceptual evaluation methods rely solely on the contrastive language audio pretraining (CLAP) model to extract both audio and text features for predicting human-annotated mean opinion scores (MOS), particularly for overall musical impression (OMI) and textual alignment (TA). However, CLAP is limited in capturing fine-grained musical attributes such as timbre and expressiveness \\emph{etc}. To address this, we propose FUSEMOS, a dual-encoder fusion framework that integrates CLAP with MERT, a self-supervised model pretrained on large scale music audio, to better capture both high level semantic alignment and detailed musical characteristics for more accurate OMI and TA estimation. Furthermore, to overcome the limitations of conventional regression losses in measuring human preferred relative ranking of music segments, we design a novel ranking-aware composite loss function. Experiments conducted on the MusicEval benchmark demonstrate that our approach outperforms the existing SOTA methods in both mean squared error and rank correlation metrics by a large margin.",
+      "published": "2026-11-05T07:14:27Z",
+      "authors": [
+        "Jing Yang",
+        "Haoyu Wang",
+        "Ningning Pan",
+        "Zhao Wang",
+        "Jianxuan Yang",
+        "Gongping Huang"
+      ],
+      "primary_category": "eess.AS",
+      "url": "https://arxiv.org/abs/2611.07562",
+      "score": 21,
+      "status": "new — under review"
+    },
+    {
+      "id": "2611.06982",
+      "title": "Decode Before You Hear: Speculative Listening for Chunk-Interleaved Full-Duplex Speech Language Models",
+      "abstract": "Chunk-interleaved full-duplex speech language models listen and speak in fixed time chunks, and each chunk must be processed before the next one arrives. Their workload is asymmetric across chunks: listen chunks leave compute idle while awaiting audio, and speak and tool-call chunks require serial generation, which delays responses and tool calls. Using the idle compute for the next chunk requires decoding it before its audio arrives, under an assumed input. Taking silence as the assumed input and comparing the output with the output under real audio on four models, we observe two properties. First, the next audio chunk does not change the output in 95.3% of chunks. Second, 88% of changes begin at the first output token. Building on these properties, we propose Speculative Listening, a training-free, lossless framework for input-time self-speculative decoding. During idle time, the model drafts the next chunk under silence and, for changes at the first token, a second branch from the runner-up first token. It keeps all drafts in a cross-chunk hypothesis pool and verifies them when the audio arrives. On our eight-task benchmark TickTock-Bench, Speculative Listening speeds up speak chunks by 2.6-2.8x and tool-call chunks by up to 23.4x. On average, it reduces the decoding delay before a response starts by 73%, to 74-241 ms, close to the 200 ms gap between human turns, and the maximum lag behind real time by 94.4%.",
+      "published": "2026-11-04T15:16:15Z",
+      "authors": [
+        "Yutong Bian",
+        "Yanglin Zhang",
+        "Yuxiang Wang",
+        "Luoyuan Zhang",
+        "Rongshen He",
+        "Zihao Wang",
+        "Junwen Qiu",
+        "Jiaqi Li"
+      ],
+      "primary_category": "cs.SD",
+      "url": "https://arxiv.org/abs/2611.06982",
+      "score": 18,
+      "status": "new — under review"
+    },
     {
       "id": "2611.05422",
       "title": "CAST-Bench: Tracing Every Sound to Its Source in Multi-Shot Audio-Video Generation",
@@ -1007,55 +1062,6 @@
       "url": "https://arxiv.org/abs/2610.29249",
       "score": 33,
       "status": "reviewed — included: MOSAIC introduce evaluation tasks for general speech/audio-language models; modality and protocol limitations are documented in the catalogue"
-    },
-    {
-      "id": "2610.31083",
-      "title": "MQAScore: Fine-Grained Text-Music Alignment Evaluation via Large Audio Language Model",
-      "abstract": "Text-to-music alignment is commonly evaluated by the global similarity between text and audio embeddings, which collapses all described attributes into a single score and obscures which ones are missing. We instead introduce MQAScore, which verifies each atomic musical concept along five clip-level dimensions (genre, instrument, mood/theme, vocal, and usage) by the probability that a large audio language model (LALM) answers affirmatively to a binary question. To assess evaluator reliability, we construct verification labels from presence/absence annotations and LLM-guided concept substitutions, and propose the Sensitivity-Invariance Ratio, which measures how selectively an evaluator responds to meaning-changing substitutions. Experiments show that concept-level scoring improves both question-answering and similarity-based evaluators, and MQAScore can be a more reliable and interpretable fine-grained complement to global similarity for evaluating text-to-music alignment.",
-      "published": "2026-10-22T10:56:25Z",
-      "authors": [
-        "Wei-Jaw Lee",
-        "Chun-Ping Wang",
-        "Xuanjun Chen",
-        "Yi-Hsuan Yang"
-      ],
-      "primary_category": "cs.SD",
-      "url": "https://arxiv.org/abs/2610.31083",
-      "score": 33,
-      "status": "reviewed — out of scope: MQAScore evaluates text-to-music generation alignment and metric agreement, not a general spoken LLM task"
-    },
-    {
-      "id": "2610.24409",
-      "title": "Long Listening Thoughts: Eliciting Open Auditory Reasoning with Deliberative Perception and Cognitive Refinement",
-      "abstract": "We introduce Long Listening Thoughts (LLT), a framework for constructing post-training datasets that improves audio reasoning by pairing deliberate perceptual grounding with explicit cognitive behaviors. On audio understanding and reasoning benchmarks, large audio-language models (LALMs) are limited primarily by perceptual errors, yet existing post-training datasets rely on audio descriptions of limited diversity. Through a four-stage pipeline, LLT (1) builds multi-aspect dense audio descriptions spanning semantic, acoustic, and temporal information, (2) generates more challenging questions, (3) synthesizes incorrect reasoning traces, and (4) extends short reasoning traces into long ones via a thought-continuation strategy that elicits cognitive behaviors such as verification and backtracking. Using LLT, we synthesize 1.6M reasoning traces and train Qwen2.5-Omni-7B with a two-stage pipeline of supervised fine-tuning (SFT) followed by direct preference optimization (DPO). This improves accuracy on MMAU Test-mini (71.5 to 78.2), MMAR (56.7 to 63.7), and MMSU (60.6 to 66.0).",
-      "published": "2026-10-17T03:20:36Z",
-      "authors": [
-        "Jaeyeon Kim",
-        "Chao-Han Huck Yang",
-        "Luoyi Zhang",
-        "Chan-Jan Hsu",
-        "Fernando Ruiloba Portilla",
-        "Jinchuan Tian",
-        "Shinji Watanabe",
-        "Carlos Busso"
-      ],
-      "primary_category": "cs.SD",
-      "url": "https://arxiv.org/abs/2610.24409",
-      "score": 30,
-      "status": "reviewed — out of scope: introduces long listening-thought training and data for a model, with evaluation on existing benchmarks"
-    },
-    {
-      "id": "2610.28402",
-      "title": "StreamEval: Evaluating Interactive Streaming Video Generation Models",
-      "abstract": "As streaming video generation advances, enabling real-time interaction with generated video is becoming increasingly important. We introduce StreamEval, a unified benchmark for interactive streaming video generation spanning five tasks: avatar dialogue, avatar performance, world generation, instruction editing, and reference editing. StreamEval comprises 300 scripted test cases lasting 15-300s, each specifying initial assets, incrementally arriving multimodal requests, and explicit requirements for state changes and content preservation. Performance is assessed along four evaluation dimensions: task execution, state consistency, visual fidelity, and audiovisual coordination, instantiated through ten task-specific metrics on a 0-100 scale. Evaluating 37 distinct models across 300 test cases, we find that high visual quality and identity retention do not necessarily coincide with reliable request execution or sustained state consistency. In particular, request execution remains challenging: the highest task-specific scores are 36.90 for Following among seven avatar-performance models, 25.93 for Following in text-conditioned world generation, and 15.00 for Edit Success among three reported reference-editing models. These findings identify reliable request execution under timing and preservation constraints as a central challenge for advancing omni-modal real-time interactive systems. The leaderboard is available at https://streameval.ai",
-      "published": "2026-10-20T15:47:43Z",
-      "authors": [
-        " StreamEval Team"
-      ],
-      "primary_category": "cs.CV",
-      "url": "https://arxiv.org/abs/2610.28402",
-      "score": 30,
-      "status": "reviewed — out of scope: StreamEval targets interactive video/avatar generation systems rather than general spoken LLMs"
     }
   ],
   "warnings": []
