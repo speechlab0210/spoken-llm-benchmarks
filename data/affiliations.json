@@ -26329,6 +26329,48 @@
     }
    ],
    "verify_note": "PDF v1 page 1 superscripts and arXiv author metadata checked. First author Zewen Zhan and last author Zhiyong Wu have affiliation 1, Tsinghua University. Co-first author Hui Lu has affiliation 2, CUHK; the lead flag follows the first-listed author. All three printed affiliations explicitly say China; that printed country is retained without inferring a city from an institution name. No city coordinates are assigned."
+  },
+  "ticktock-bench": {
+   "status": "ok",
+   "verified": "confirmed",
+   "publishable": true,
+   "countries_complete": false,
+   "n_authors": 9,
+   "institutions": [
+    {
+     "inst": "the-chinese-university-of-hong-kong-shenzhen",
+     "raw": "The Chinese University of Hong Kong, Shenzhen, China",
+     "unit": null,
+     "country": "CN",
+     "city": "Shenzhen",
+     "lat": 22.69,
+     "lon": 114.21,
+     "placed": "named",
+     "printed_city": "Shenzhen",
+     "printed_country": "China",
+     "lead": true,
+     "first_author": true,
+     "last": true,
+     "evidence": "printed"
+    },
+    {
+     "inst": "amphion-technology-co-ltd",
+     "raw": "Amphion Technology Co., Ltd.",
+     "unit": null,
+     "country": null,
+     "city": null,
+     "lat": null,
+     "lon": null,
+     "placed": "unplaced",
+     "printed_city": null,
+     "printed_country": null,
+     "lead": false,
+     "first_author": true,
+     "last": true,
+     "evidence": "printed"
+    }
+   ],
+   "verify_note": "PDF v1 page 1 superscripts checked against arXiv metadata: first author Yutong Bian and last author Zhizheng Wu have affiliations 1 and 2. The first-listed affiliation, CUHK-Shenzhen, is the sole lead. Its printed Shenzhen, China location uses the existing institution coordinates; no location is printed for Amphion and none is inferred."
   }
  },
  "models": {

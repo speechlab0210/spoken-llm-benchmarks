@@ -11588,6 +11588,29 @@
    "check_url": null,
    "cross_checked": null,
    "check_note": "Checked 2026-11-06: arXiv and PDF v1 reviewed; no acceptance, journal reference or publication DOI. venue_probe found no OpenAlex venue lead; Semantic Scholar returned 400 and DBLP did not return parseable JSON. No venue claim is inferred."
+  },
+  "ticktock-bench": {
+   "status": "preprint",
+   "venue": null,
+   "venue_name_raw": null,
+   "venue_full": null,
+   "year": null,
+   "kind": null,
+   "track": null,
+   "parent_venue": null,
+   "display": null,
+   "evidence": "arxiv",
+   "evidence_raw": "arxiv",
+   "evidence_url": "https://arxiv.org/abs/2611.06982",
+   "evidence_quote": null,
+   "doi": null,
+   "confidence": "high",
+   "verified": "cannot_verify",
+   "publishable": true,
+   "note": "arXiv preprint; the record and PDF do not establish a conference acceptance or publication.",
+   "check_url": null,
+   "cross_checked": null,
+   "check_note": "Checked 2026-11-07: arXiv and PDF v1 reviewed. No journal reference or publication DOI; OpenAlex supplied no venue lead, Semantic Scholar returned 429, and DBLP did not return parseable JSON. No venue claim is inferred."
   }
  }
 }

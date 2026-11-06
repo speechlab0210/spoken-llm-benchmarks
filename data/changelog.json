@@ -1,6 +1,11 @@
 {
  "entries": [
   {
+   "date": "2026-11-07",
+   "change": "Reviewed three candidates: added TickTock-Bench, a 760-session, eight-task evaluation harness for full-duplex decoding under chunk deadlines; excluded two accent-conversion and music-scoring method papers. The entry distinguishes Thinker decoding latency from end-to-end speech latency. Four evaluated model configurations have no numeric matrix coverage yet; their scores are not assigned to backbone models. Author affiliations, protocol and preprint status were checked against the original paper.",
+   "source": "arXiv:2611.06982v1, Sections 4–5 and Appendix A, Tables 1–3 and 5; arXiv abstract metadata; full texts 2611.07420v1 and 2611.07562v1."
+  },
+  {
    "date": "2026-11-06",
    "change": "Reviewed four candidates and added LibriSpeech-Real-QA with 64 source-located values from four tasks and two test splits. Results preserve the original 0–1 scales and distinguish Gemini Live streaming responses from pretrained Qwen2.5-Omni post-audio timestamp predictions. Three audiovisual-generation, speaker-embedding or method papers were excluded. PDF byline and result tables were checked; submission to ICASSP is retained as preprint status, without implying acceptance.",
    "source": "arXiv:2611.06496v1 Tables 2–5 and Sections 2.3/4.1–4.2; full texts 2611.05422v1, 2611.05638v1 and 2611.06501v1."

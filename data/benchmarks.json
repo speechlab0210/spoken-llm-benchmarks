@@ -12759,6 +12759,42 @@
       "note": "The matrix records 64 values from Tables 2–5 for Gemini Live 3.1 Flash and pretrained Qwen2.5-Omni-7B. API streaming and post-audio inference are labeled separately; post-audio timestamp errors are not streaming response latency. The paper also reports GPT-realtime-2.1-mini, Qwen Audio 3.0 realtime Flash/Plus, and finetuned offline/streaming variants; those distinct configurations are not mapped to other registry models here. The author-linked live demo could not be independently loaded during this review. Submitted to ICASSP 2027 is not an acceptance claim.",
       "code": null,
       "data": null
+    },
+    {
+      "id": "ticktock-bench",
+      "name": "TickTock-Bench",
+      "aka": [],
+      "full_title": "Decode Before You Hear: Speculative Listening for Chunk-Interleaved Full-Duplex Speech Language Models",
+      "arxiv_id": "2611.06982",
+      "arxiv_date": "2026-11",
+      "arxiv_date_full": "2026-11-04",
+      "url": "https://arxiv.org/abs/2611.06982",
+      "categories": [
+        "interactivity",
+        "voice-agent",
+        "spoken-qa"
+      ],
+      "tasks": [
+        "chunk-deadline decoding evaluation",
+        "spoken question answering",
+        "conversational timing",
+        "overlapping speech",
+        "tool-call timing"
+      ],
+      "languages": [],
+      "size": "760 sessions and 15,883 one-second input chunks across eight tasks",
+      "io": "streaming speech sessions replayed through each full-duplex model runtime → timed text, speech and tool-call chunks",
+      "metrics": [
+        "post-audio decoding speedup relative to autoregressive decoding (times)",
+        "chunk deadline miss rate (%)",
+        "maximum accumulated lag per session (ms)",
+        "response onset and tool-call decoding latency (ms)",
+        "#MAT: output tokens per target forward pass, normalized to AR"
+      ],
+      "summary": "Introduces a shared replay harness for comparing decoding methods under fixed chunk deadlines in full-duplex speech-language models. Eight tasks combine spoken reasoning, conversational dynamics and agentic tool use, while the protocol tracks post-audio computation and accumulated delay.",
+      "note": "Measured on one NVIDIA A100, one session at a time, with one-second chunks, bfloat16, greedy decoding and batch size 1. Timings cover the Thinker and exclude the Talker speech synthesizer, so they are not complete audio response latency. Table 2 averages speedup over seven non-agentic tasks; FDB v3 uses tool-call chunks for Streaming SLM/Gander and speak chunks for Realtime-Venus/LWS. Numeric matrix coverage for these four distinct model configurations is pending; their values must not be assigned to the Qwen2.5-Omni or MiniCPM-o backbones. The paper announces manifests and evaluation scripts but supplies no dedicated release URL; combined language coverage is not enumerated.",
+      "code": null,
+      "data": null
     }
   ]
 }

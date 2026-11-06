@@ -2,28 +2,32 @@
  "since": "2026-08-22",
  "what": "Every arXiv paper the daily crawl has flagged since launch (score at or above the threshold, not previously seen), with the reviewer's verdict as written in the feed and whether the paper entered the catalogue. \"published\" is the paper's arXiv date. See the Method section of the site.",
  "flagged": 327,
- "admitted": 95,
+ "admitted": 96,
  "entries": [
   {
    "id": "2611.07562",
    "title": "FUSEMOS: Perceptual Evaluation of Text-to-Music Generation with Dual-Encoder Fusion and Ranking-Aware Composite Loss",
    "published": "2026-11-05T07:14:27Z",
    "score": 21,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: Proposes a dual-encoder predictor of music perceptual quality and text alignment, evaluated on the existing MusicEval dataset; it does not introduce a benchmark for general spoken LLMs."
   },
   {
    "id": "2611.07420",
    "title": "Adaptive and High-Fidelity Matching Algorithm for Retrieval-Based Accent Conversion",
    "published": "2026-11-05T04:16:24Z",
    "score": 21,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: Proposes an adaptive retrieval-based accent-conversion model and evaluates it on existing L2-ARCTIC and VCTK datasets; it neither introduces a new benchmark nor evaluates general spoken LLMs."
   },
   {
    "id": "2611.06982",
    "title": "Decode Before You Hear: Speculative Listening for Chunk-Interleaved Full-Duplex Speech Language Models",
    "published": "2026-11-04T15:16:15Z",
    "score": 18,
-   "outcome": "under review"
+   "outcome": "admitted",
+   "verdict": "reviewed — included: Introduces TickTock-Bench, an eight-task replay harness for comparing decoding methods under chunk deadlines in four general full-duplex speech-language models.",
+   "catalogue_id": "ticktock-bench"
   },
   {
    "id": "2611.06501",
