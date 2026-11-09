@@ -1,9 +1,39 @@
 {
-  "fetched_at": "2026-11-08T22:34:08Z",
+  "fetched_at": "2026-11-09T22:35:50Z",
   "window_days": 10,
-  "scanned": 95,
-  "flagged_today": 0,
+  "scanned": 94,
+  "flagged_today": 2,
   "candidates": [
+    {
+      "id": "2611.08797",
+      "title": "MotionBench-XAI: Benchmarking What Shapes Shapley Explanations in Spatiotemporal Machine Learning",
+      "abstract": "Predicting outcomes from spatiotemporal data, such as assessing Parkinson's severity from human motion, often requires explainability in addition to accuracy. Practitioners need to know what drove the prediction, whether it be spatial (a body joint), temporal (a specific window), or both. Shapley values are attributions computed by treating input features as players in a cooperative game and measuring how the model output changes as coalitions of players are removed. Computing them involves choosing what counts as players, how absent players are imputed, and how the game is evaluated. How these choices affect explanation quality is poorly understood for spatiotemporal data, and real data carries no ground-truth attributions to check against. We present MotionBench-XAI, a benchmark built on i) five synthetic spatiotemporal datasets with exact ground-truth Shapley values, ii) three real datasets across clinical gait, electrocardiogram, and audio, iii) ten attribution methods across three player sets, and iv) three trained architectures. We show that grouping features into players, across time, space, or both, matters more than the choice of imputer. Generative imputers improve explanations only when their conditional models are accurate. On real data, the standard proxy metrics select contradictory best methods. We distill these findings into practical insights and provide an open-source pipeline.",
+      "published": "2026-11-05T23:41:21Z",
+      "authors": [
+        "Mathilde Papillon",
+        "Louisa Cornelis",
+        "Nina Miolane"
+      ],
+      "primary_category": "cs.LG",
+      "url": "https://arxiv.org/abs/2611.08797",
+      "score": 36,
+      "status": "new — under review"
+    },
+    {
+      "id": "2611.09122",
+      "title": "Improving Large Audio-Language Model Embedding Baselines for Instruction-Aware Speech Retrieval",
+      "abstract": "Speech retrieval finds relevant spoken documents given a spoken query. The spoken query alone may not reveal the retrieval goal, such as finding an answer or matching speaker identity. Instruction-aware speech retrieval expresses this goal through a natural-language text instruction. Large audio-language models (LALMs) effectively process speech and text, and our analysis shows that different retrieval requirements favor hidden states from different audio-encoder layers. We introduce IRIS-Embed, which adapts LALMs into embedding models through contrastive training and instruction-aware audio layer weighting. We construct about 900K training samples from real data and synthetic data, with instructions expressing requirements for one or more speech attributes. On INSPIRE, an instruction-aware speech retrieval benchmark, IRIS-Embed consistently outperforms the corresponding LALM baselines. The best model achieves 62.92% macro-average Recall@50, surpassing the strongest baseline at 45.15%. Controlled comparisons demonstrate instruction awareness and the benefits of audio layer weighting. On MAEB, a massive audio embedding benchmark, macro-average gains of 9.4-19.8 points over the corresponding baselines show generalization beyond speech retrieval.",
+      "published": "2026-11-06T08:00:19Z",
+      "authors": [
+        "Chen-An Li",
+        "Cheng-Han Chiang",
+        "Hung-yi Lee"
+      ],
+      "primary_category": "cs.SD",
+      "url": "https://arxiv.org/abs/2611.09122",
+      "score": 33,
+      "status": "new — under review"
+    },
     {
       "id": "2611.07420",
       "title": "Adaptive and High-Fidelity Matching Algorithm for Retrieval-Based Accent Conversion",
@@ -1022,46 +1052,6 @@
       "url": "https://arxiv.org/abs/2610.26943",
       "score": 36,
       "status": "reviewed — included: MAMath-Bench introduce evaluation tasks for general speech/audio-language models; modality and protocol limitations are documented in the catalogue"
-    },
-    {
-      "id": "2610.27581",
-      "title": "DuplexLedger: Benchmarking Transactional Memory in Full-Duplex Speech Agents",
-      "abstract": "Full-duplex speech agents must update persistent memory while listening and speaking, yet it remains unclear which events should be stored, revised, or excluded. Existing benchmarks isolate interaction timing from memory outcomes, obscuring the state transitions behind a correct answer. We introduce DuplexLedger, a bilingual benchmark of 1,094 persistent sessions aligning four full-duplex scenarios with event-level Write/Update/Ignore/Retain supervision, explicit pre/post memory states, and 6,564 same-session questions and checks. Evaluating five full-duplex models reveals an interaction-memory gap: no system combines strong boundary control with coherent final-state memory, and the best final-state fact coverage is 2.01%. We propose ACT-Mem, an 8.92M-parameter sidecar comprising an event controller, a versioned transactional ledger, and a typed retriever coupled with a frozen MiniCPM-o 4.5 backbone. On 219 held-out sessions, ACT-Mem increases latest-value accuracy from 4.11% to 8.68% while reducing stale assertions and distractor adoption. It improves interaction boundaries but slows interruption stopping. These results motivate selective, auditable full-duplex memory rather than indiscriminate transcript retention. Code is available at https://github.com/lyx-researcher/DuplexLedger.",
-      "published": "2026-10-20T03:47:06Z",
-      "authors": [
-        "Yuxuan Li",
-        "Xiangchen Guan",
-        "Kunrong Li",
-        "Jin Wang",
-        "Kaiwen Luo",
-        "Yang Xiao",
-        "Yufei Guo",
-        "Zhisheng Chen"
-      ],
-      "primary_category": "cs.AI",
-      "url": "https://arxiv.org/abs/2610.27581",
-      "score": 36,
-      "status": "reviewed — included: DuplexLedger introduce evaluation tasks for general speech/audio-language models; modality and protocol limitations are documented in the catalogue"
-    },
-    {
-      "id": "2610.29249",
-      "title": "MOSAIC: An Omni-Modal Benchmark for Long-Term Memory and Cross-Modal Reasoning in Conversational Agents",
-      "abstract": "Omni-modal assistants must remember not only what users say, but also what they show and convey. Existing long-term memory benchmarks are mostly text-and-image or report a single end-to-end score, so they cannot locate whether evidence is lost when it is represented, retrieved, delivered, or read. We introduce MOSAIC, a benchmark of 923 questions over persona-grounded histories of 11-24 sessions spanning text, image, video, and audio. MOSAIC constructs targeted spatial, temporal, and prosodic signals rather than decorative media, with the strongest causal validation for spatial information and selector-level validation for annotated prosody, and pairs them with a matched diagnostic protocol that freezes the question, reader, prompt, and budget while intervening on representation, retrieval, and delivery. Matched decomposition shows that representation loss is modality-dependent, residual reading dominates even under gold evidence, and abstention remains weak on these controls: strong answerable scores coexist with failures to refuse. MOSAIC thus turns omni-modal memory evaluation from a leaderboard into a diagnosis of write, retrieve, deliver, and read failures.",
-      "published": "2026-10-21T05:55:20Z",
-      "authors": [
-        "Hong Ting Tsang",
-        "Boyi Zhang",
-        "Haoyu Huang",
-        "Jiaxin Bai",
-        "Yufei Li",
-        "Yisen Gao",
-        "Zhongwei Xie",
-        "Hongyu Luo"
-      ],
-      "primary_category": "cs.CL",
-      "url": "https://arxiv.org/abs/2610.29249",
-      "score": 33,
-      "status": "reviewed — included: MOSAIC introduce evaluation tasks for general speech/audio-language models; modality and protocol limitations are documented in the catalogue"
     }
   ],
   "warnings": []

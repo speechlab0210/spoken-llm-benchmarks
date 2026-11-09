@@ -1,9 +1,23 @@
 {
  "since": "2026-08-22",
  "what": "Every arXiv paper the daily crawl has flagged since launch (score at or above the threshold, not previously seen), with the reviewer's verdict as written in the feed and whether the paper entered the catalogue. \"published\" is the paper's arXiv date. See the Method section of the site.",
- "flagged": 327,
+ "flagged": 329,
  "admitted": 96,
  "entries": [
+  {
+   "id": "2611.09122",
+   "title": "Improving Large Audio-Language Model Embedding Baselines for Instruction-Aware Speech Retrieval",
+   "published": "2026-11-06T08:00:19Z",
+   "score": 33,
+   "outcome": "under review"
+  },
+  {
+   "id": "2611.08797",
+   "title": "MotionBench-XAI: Benchmarking What Shapes Shapley Explanations in Spatiotemporal Machine Learning",
+   "published": "2026-11-05T23:41:21Z",
+   "score": 36,
+   "outcome": "under review"
+  },
   {
    "id": "2611.07562",
    "title": "FUSEMOS: Perceptual Evaluation of Text-to-Music Generation with Dual-Encoder Fusion and Ranking-Aware Composite Loss",
