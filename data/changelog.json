@@ -1,6 +1,11 @@
 {
  "entries": [
   {
+   "date": "2026-11-10",
+   "change": "Reviewed two candidates and recorded specific exclusion reasons. MotionBench-XAI evaluates explanations of specialized spatiotemporal classifiers, including an environmental-audio classifier. IRIS-Embed introduces a retrieval method and training data evaluated on existing INSPIRE and MAEB benchmarks. Neither introduces an eligible new spoken-LLM benchmark; benchmark, model and result-cell totals are unchanged.",
+   "source": "arXiv:2611.08797v1 Sections 4.1-4.2 and 5; arXiv:2611.09122v1 Sections 3-5 and 6.5; arXiv abstract metadata and daily candidate-review ledger."
+  },
+  {
    "date": "2026-11-07",
    "change": "Reviewed three candidates: added TickTock-Bench, a 760-session, eight-task evaluation harness for full-duplex decoding under chunk deadlines; excluded two accent-conversion and music-scoring method papers. The entry distinguishes Thinker decoding latency from end-to-end speech latency. Four evaluated model configurations have no numeric matrix coverage yet; their scores are not assigned to backbone models. Author affiliations, protocol and preprint status were checked against the original paper.",
    "source": "arXiv:2611.06982v1, Sections 4–5 and Appendix A, Tables 1–3 and 5; arXiv abstract metadata; full texts 2611.07420v1 and 2611.07562v1."

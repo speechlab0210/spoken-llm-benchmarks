@@ -9,14 +9,16 @@
    "title": "Improving Large Audio-Language Model Embedding Baselines for Instruction-Aware Speech Retrieval",
    "published": "2026-11-06T08:00:19Z",
    "score": 33,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: introduces the IRIS-Embed retrieval method and training data, evaluated on the existing INSPIRE and MAEB benchmarks; it does not introduce a new benchmark (Sections 3-5 and 6.5)."
   },
   {
    "id": "2611.08797",
    "title": "MotionBench-XAI: Benchmarking What Shapes Shapley Explanations in Spatiotemporal Machine Learning",
    "published": "2026-11-05T23:41:21Z",
    "score": 36,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: evaluates Shapley explanations for specialized spatiotemporal classifiers, including an environmental-audio classifier, rather than general-purpose spoken LLMs (Sections 4.1-4.2 and 5)."
   },
   {
    "id": "2611.07562",

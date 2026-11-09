@@ -17,7 +17,7 @@
       "primary_category": "cs.LG",
       "url": "https://arxiv.org/abs/2611.08797",
       "score": 36,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: evaluates Shapley explanations for specialized spatiotemporal classifiers, including an environmental-audio classifier, rather than general-purpose spoken LLMs (Sections 4.1-4.2 and 5)."
     },
     {
       "id": "2611.09122",
@@ -32,7 +32,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2611.09122",
       "score": 33,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: introduces the IRIS-Embed retrieval method and training data, evaluated on the existing INSPIRE and MAEB benchmarks; it does not introduce a new benchmark (Sections 3-5 and 6.5)."
     },
     {
       "id": "2611.07420",
