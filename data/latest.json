@@ -1,9 +1,147 @@
 {
-  "fetched_at": "2026-11-09T22:35:50Z",
+  "fetched_at": "2026-11-10T22:26:59Z",
   "window_days": 10,
-  "scanned": 94,
-  "flagged_today": 2,
+  "scanned": 110,
+  "flagged_today": 8,
   "candidates": [
+    {
+      "id": "2611.12118",
+      "title": "Joi-Bench-Task: Benchmarking Task Coordination in Full-duplex Voice Agents through Interactive Simulation",
+      "abstract": "Full-duplex voice agents enable natural, hands-free interaction, allowing users to refine requests, redirect ongoing work, and seek clarification while the agent is speaking. However, existing voice-agent benchmarks insufficiently isolate coordination between task execution and conversation. We introduce a benchmark that assesses this coordination by examining whether agents track what is being executed, what has been completed, what has been communicated, and what remains to be reported as the conversation evolves. We propose an interactive user simulator that introduces configurable interventions at designated timing in tool execution and spoken result delivery, supporting controllable and reproducible evaluation conditions. We evaluate five leading commercial voice agents along three dimensions: execution responsiveness, coordination under request changes, and coordination under interruptions. Agent evaluations reveal persistent coordination failures. Under request changes, the highest result completion rate is only 55%, indicating difficulty for current voice agents adapting to new requests while preserving earlier obligations. After user interruption, four of the five agents exhibit average information omission rates of at least 23%. These findings highlight task coordination as a central challenge for current voice agents in complex, evolving conversations.",
+      "published": "2026-11-09T09:31:55Z",
+      "authors": [
+        "Xiangheng He",
+        "Mingjun Zhao",
+        "Zhehao Fan",
+        "Zhengjia Li",
+        "Xiaopeng Sun",
+        "Qingqing Xiao",
+        "Haolan Chen",
+        "Yu Xu"
+      ],
+      "primary_category": "cs.AI",
+      "url": "https://arxiv.org/abs/2611.12118",
+      "score": 51,
+      "status": "new — under review"
+    },
+    {
+      "id": "2611.10852",
+      "title": "KeyASRBench: Measuring Whole-Phrase Keyword Preservation in Real-World ASR",
+      "abstract": "Public automatic speech recognition (ASR) benchmarks increasingly report low sequence error rates, yet production systems still use hotword lists, contextual biasing, retrieval, and post-correction. This motivates a complementary question: does a transcript preserve selected names, products, technical terms, versions, and relational phrases? We present KeyASRBench, a bilingual pilot that operationalizes occurrence-based Keyword Error Rate (KER) over frozen whole-phrase annotations. The 10-hour model-conditioned challenge set contains 1,501 Chinese and English clips with 4,723 keyword occurrences. Across five locally inferred checkpoints and two official API systems, language-specific MER/WER ranges from 5.31% to 12.91%, while KER ranges from 13.61% to 33.81%. A disjoint 30-minute model-blind control yields KER of 10.65%-27.31%. The control confirms that selected-phrase errors extend beyond challenge-set selection.",
+      "published": "2026-11-07T17:02:21Z",
+      "authors": [
+        "Guanzheng Wei",
+        "Ziyi Zhao"
+      ],
+      "primary_category": "cs.CL",
+      "url": "https://arxiv.org/abs/2611.10852",
+      "score": 36,
+      "status": "new — under review"
+    },
+    {
+      "id": "2611.11987",
+      "title": "When Audio and Video Mislead: Evaluating Multimodal AI for Conversational Emotion Recognition",
+      "abstract": "Multimodal Emotion Recognition in Conversation (MERC) combines lexical, acoustic, visual and conversational cues, but accepting audio and video does not establish their effective or robust use. We audit off-the-shelf Omni models while holding the target transcript and prior textual context fixed and adding, removing or replacing target audio and video. In the primary evaluation of Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 on MELD and the full five-session six-class IEMOCAP set, T+A improves Accuracy in all six model-dataset pairs, with four gains significant after false discovery rate (FDR) correction. Across three source mappings, unrelated A/V (RandA/V) lowers Accuracy relative to Full in all 18 comparisons; all 18 remain significant under dialogue-cluster inference and BH-FDR correction, both on common-valid pairs and when invalid/OOM outcomes are treated as incorrect. Comparisons with modality-omission baselines further distinguish replacement penalties from mismatch-specific harm. A Qwen/MELD case study finds significantly greater gold-vs-best-candidate margin recovery in Late than Early or Middle under decision-query audio knockout, relative to an edge-count-matched Video-Sham control, using Holm-corrected tests. These results distinguish genuine-modality benefit from sensitivity and vulnerability to misleading input.",
+      "published": "2026-11-09T07:13:25Z",
+      "authors": [
+        "Youngseok Kim",
+        "Minjae Kim",
+        "Eunsoo Lee",
+        "Jihie Kim"
+      ],
+      "primary_category": "cs.CL",
+      "url": "https://arxiv.org/abs/2611.11987",
+      "score": 33,
+      "status": "new — under review"
+    },
+    {
+      "id": "2611.11573",
+      "title": "Beyond the Transcript: Measuring and Improving the Use of Acoustic Information in Audio Language Models",
+      "abstract": "Audio language model benchmarks provide comprehensive evaluation across diverse tasks. However, some tasks can be answered from the transcript or even the question alone, and benchmark scores can therefore confound acoustic understanding with language modeling ability. We distinguish lexical tasks, for which the transcript usually suffices, from global-attribute and within-recording-structure tasks, which require the model to analyse the recording beyond its words, either as a whole, for properties such as the speaker and emotion, or within it, for patterns such as stress and intonation. We evaluated 19 open models and Gemini 3.1 Pro on 92 tasks from 6 benchmarks and estimated the recording gain, the accuracy advantage of the original recording over references that retain its words, by comparing the recording with synthetic readings of its transcript and by adding it to the transcript. On attribute and structure tasks, the open models fall behind Gemini by 28.6 and 41.9 percentage points, and about half or more of each deficit lies in the recording gain. Nevertheless, linear probes in Gemma-4 12B and Qwen2.5-Omni-7B show that the acoustic information needed for answering is already readable in early language-model layers, while the readout of many cues declines in the layers that follow. We therefore constructed training data and trained LoRA adapters in these layers, with a content anchor, which raises attribute and structure accuracy by 12.8 to 44.4 points in the two models and keeps mean lexical accuracy within 1 point of the base model. Most of the improvement appears as larger recording gains. These results suggest that training improves the use of acoustic information that the models already encode.",
+      "published": "2026-11-08T19:37:55Z",
+      "authors": [
+        "Linkai Peng",
+        "Baorian Nuchged",
+        "Yuyang Yao"
+      ],
+      "primary_category": "cs.CL",
+      "url": "https://arxiv.org/abs/2611.11573",
+      "score": 30,
+      "status": "new — under review"
+    },
+    {
+      "id": "2611.10245",
+      "title": "From Weapons to Events: Evaluating Evidential Support in Multimodal AI for Policing",
+      "abstract": "Computer vision (CV) for policing has centred on recognising objects such as seized weapons, while body-worn video (BWV) is still reviewed by people, with existing AI tools using only its audio. Multimodal video AI could make BWV review faster and cheaper. At the object level, we present the KnifeHunter dataset, developed with UK law enforcement, with over 25,000 images of 543 knife classes and a protocol reflecting investigative conditions, and KHNet, a retrieval architecture fusing local and global features, which with about 125,000 distractor images attains 85.7% and 63.4% mean Average Precision (mAP) on the medium and hard protocols. At the event level, we present an evaluation protocol for video understanding pipelines, which describe a video as events and a transcript, that scores transcription, speaker attribution, event detection, temporal localisation and unsupported events. Whether each event is supported by the recording is labelled by a judge validated against blinded human labels. We apply it to complete pipelines, three 2026 omni-modal models and our hybrid NarrativeBridge-PAL-GPT-5 pipeline, on UKBWV-27, a pilot stress-test set of 27 publicly released UK BWV recordings (118 minutes). On this set the hybrid pipeline leads on five of six measures, yet it leaves 13.6% of predicted events unsupported and misattributes 27.7% of utterances, and every pipeline degrades on recordings from edited releases, long recordings and noisy audio. We propose readiness levels separating assistive tasks from those requiring verification of every output.",
+      "published": "2026-11-06T21:31:51Z",
+      "authors": [
+        "Armin Mustafa",
+        "Syed Sameed Husain"
+      ],
+      "primary_category": "cs.CV",
+      "url": "https://arxiv.org/abs/2611.10245",
+      "score": 27,
+      "status": "new — under review"
+    },
+    {
+      "id": "2611.10693",
+      "title": "Machine Hearing: Can Audio LLMs Generalize Beyond Human Auditory Perception?",
+      "abstract": "Multimodal LLMs have made remarkable progress in perceiving the physical world, while their perceptual scope remains largely human-centric, focusing on what humans can directly see or hear. This progress raises the prospect of perception beyond human limits, such as extending hearing to sounds that are inaudible to humans. More broadly, the physical world is full of waves, vibrations, and oscillations, only a small fraction of which are directly audible to humans. This invites the extension of multimodal LLMs toward a broader form of machine hearing, which remains largely underexplored. To investigate this direction, we introduce the Machine Hearing Benchmark (MHB), comprising 6,128 instances across 13 tasks and seven domains. MHB spans highly heterogeneous input regimes, with sampling rates from approximately $10^{-5}$ to $10^6$ Hz, sequence lengths from $10^1$ to $10^6$ samples, and both single- and multi-channel inputs. Evaluations of current open-source and proprietary Audio LLMs (ALLMs) reveal limited zero-shot transfer to machine hearing. Supervised adaptation on machine-hearing data alone does not close this gap, suggesting that the challenge extends beyond data exposure to a systematic mismatch between existing audio front ends and machine-hearing inputs. To address this mismatch, we introduce MachEar, a lightweight encoder extension that complements the pretrained Audio LLM for machine-hearing inputs. The results show that MachEar equips a pretrained Audio LLM with stronger machine-hearing capabilities while largely preserving its existing audio understanding performance.",
+      "published": "2026-11-07T12:23:08Z",
+      "authors": [
+        "Liwei Liu",
+        "Jun Tao",
+        "Xingyuan Li",
+        "Xuenan Xu",
+        "Chen Zhang",
+        "Junyi Wang",
+        "Boya Zhang",
+        "Xiaoyu Yang"
+      ],
+      "primary_category": "cs.SD",
+      "url": "https://arxiv.org/abs/2611.10693",
+      "score": 21,
+      "status": "new — under review"
+    },
+    {
+      "id": "2611.11125",
+      "title": "LongCap: Hour-Scale Timestamped Audio Captioning via Chunk-wise Processing",
+      "abstract": "Describing hours of audio requires accurate event timing and sustained descriptive detail throughout the recording. We present LongCap, a framework for timestamped audio captioning (TAC), with the human-annotated LongCapBench and three diarization-inspired metrics: Timeline Error Rate (TER), Granularity Error Rate (GER), and Caption Similarity (tcpCapSim). LongCap interleaves audio chunks with structured event captions, using relative timestamps and retained context to support length extrapolation within a 1M-token inference context window. Event-level reannotation restores caption detail, while systematic studies examine model scaling, dependency supervision, and self-distillation. LongCap-Diar achieves strong benchmark results and extrapolates to 16 hours of concatenated audio despite training on recordings no longer than 40 minutes. Our TAC models are competitive with Qwen3.5-Omni-Plus on short clips, outperform evaluated baselines in caption similarity and timeline accuracy in segment-level comparisons on LongCapBench-TAC-Long, and caption full recordings approaching two hours. On LongCapBench-TAC, 9B and 35B-A3B offer favorable size-performance tradeoffs, while 122B-A10B substantially improves event-dependency recovery. These findings support long-horizon general audio understanding and provide a foundation for always-on voice agents.",
+      "published": "2026-11-08T04:23:37Z",
+      "authors": [
+        "Jinchuan Tian",
+        "Sen Chen",
+        "Wenbin Huang",
+        "Chao Weng",
+        "Zhengwei Huang",
+        "Jiatong Shi",
+        "Yichen Lu",
+        "Haoran Wang"
+      ],
+      "primary_category": "cs.CL",
+      "url": "https://arxiv.org/abs/2611.11125",
+      "score": 21,
+      "status": "new — under review"
+    },
+    {
+      "id": "2611.11137",
+      "title": "GlobalTap: Globally Diverse Beat Tracking Benchmark via Crowdsourced Tapping",
+      "abstract": "Existing beat-tracking benchmarks draw from a narrow range of musical cultures, predominantly Western, and are difficult to scale due to reliance on expert annotation. We address both limits with GlobalTap, a benchmark of 200 popular-music excerpts spanning 59 countries, annotated by 746 participants recruited across ten countries. The benchmark is created using a scalable online tapping pipeline that records taps via audio for high temporal precision, aggregates pooled tap times into consensus beat annotations, and computes intrinsic quality measures that flag perceptually difficult excerpts without requiring a reference. In a separate study on a different 240-excerpt validation set, tapped by an additional 733 participants, an independent group of 130 listeners rated how well the resulting beat tracks lined up with the music, and we detected no overall difference between our annotations and existing reference annotations. Crowd-derived annotations occasionally diverged from the references in phase and metrical interpretation, yet listeners did not consistently prefer the reference versions, suggesting that crowd-derived and existing reference annotations can reflect different perceptual or structural interpretations. The disagreements were often systematic rather than random, and metrical-level choices differed across the ten recruitment countries. We release GlobalTap together with open-source pipeline code as a listener-derived resource for evaluating beat-tracking systems on culturally diverse music.",
+      "published": "2026-11-08T05:07:02Z",
+      "authors": [
+        "William T. Botticelli-Wells",
+        "Manuel Anglada-Tort",
+        "Elif Celen",
+        "Rena Far",
+        "Harin Lee",
+        "Peter M. C. Harrison",
+        "Nori Jacoby"
+      ],
+      "primary_category": "cs.SD",
+      "url": "https://arxiv.org/abs/2611.11137",
+      "score": 21,
+      "status": "new — under review"
+    },
     {
       "id": "2611.08797",
       "title": "MotionBench-XAI: Benchmarking What Shapes Shapley Explanations in Spatiotemporal Machine Learning",
@@ -910,148 +1048,6 @@
       "url": "https://arxiv.org/abs/2610.31966",
       "score": 18,
       "status": "reviewed — out of scope: Studies text dependency parsing on Universal Dependencies English data; the evaluated systems and task are not speech/audio-language models."
-    },
-    {
-      "id": "2610.32198",
-      "title": "SURE-Tagger: Structured Speech Representations for Compositional Evaluation and Targeted Data Selection",
-      "abstract": "Speech conveys linguistic content, speaker characteristics, temporal interactions, paralinguistic cues, and acoustic environments. While recent speech captioning models describe these dimensions in natural language, inconsistent attribute coverage and ambiguous omissions hinder systematic analysis across recordings. We introduce SURE-Tagger, a framework that constructs semi-structured speech representations with explicit attribute values, supplementary descriptions, and abstention under insufficient evidence. By integrating specialist observations through language-model reasoning, SURE-Tagger enables speech conditions to be consistently identified and jointly queried across datasets. We further introduce Tag-Bench, combining real recordings with controlled, agentically synthesized speech scenes and verified attribute annotations. On Tag-Bench, SURE-Tagger achieves the highest scores on 25 of 29 evaluated dimensions for real speech and 24 of 29 for synthetic speech, outperforming caption-based baselines across structural and descriptive attributes. Beyond annotation, we use these representations to construct cross-dataset evaluation subsets and reveal condition-specific ASR errors. Using a separate candidate pool, SURE-Tagger-guided selection reduces the overall ASR error rate of Qwen3-ASR-1.7B by 14.3% relative to the unadapted model under a one-hour fine-tuning budget, while caption-guided and random selection increase error in the same setting. These results demonstrate how structured speech representations can connect rich annotation, compositional evaluation, and targeted model improvement.",
-      "published": "2026-10-23T05:50:42Z",
-      "authors": [
-        "Jing Peng",
-        "Huifei Wang",
-        "Weihan Chen",
-        "Shuo Gao",
-        "Bicheng Zhang",
-        "Junhao Du",
-        "Hanqi Li",
-        "Chaolei Liu"
-      ],
-      "primary_category": "eess.AS",
-      "url": "https://arxiv.org/abs/2610.32198",
-      "score": 18,
-      "status": "reviewed — included: Tag-Bench (SURE-Tagger) introduces an evaluation set or protocol for general speech/audio-language models; modality, score and configuration limits are documented in the catalogue"
-    },
-    {
-      "id": "2610.32495",
-      "title": "MusicTwins: Training Audio-Language Models to Listen like Their Persona",
-      "abstract": "People differ in how they perceive music, what associations they make with it, what they like about it, and how they respond to it. Computational models intended to simulate people in environments that include music should account for these differences. Although LLMs have been shown to reproduce aspects of human behavior, whether audio-language models (ALMs) can reproduce a specific person's responses to textual and musical stimuli remains underexplored. We introduce MusicTwins, a framework that combines persona summaries, personal memory, and post-training to generate person-specific responses. We construct persona representations from human writings, capturing background, views, personality, writing style, and a musical profile, and post-train Audio Flamingo Next through supervised fine-tuning and reinforcement learning. Evaluation on ten held-out personas shows notable improvements for Audio Flamingo Next in persona fidelity, including personality, writing style, and responses to music, supporting MusicTwins as a foundation for training audio-language models to listen like their persona.",
-      "published": "2026-10-23T11:11:45Z",
-      "authors": [
-        "Milan Liessens Dujardin",
-        "Kevin Miao"
-      ],
-      "primary_category": "cs.SD",
-      "url": "https://arxiv.org/abs/2610.32495",
-      "score": 18,
-      "status": "reviewed — included: MusicTwins persona-fidelity evaluation introduces an evaluation set or protocol for general speech/audio-language models; modality, score and configuration limits are documented in the catalogue"
-    },
-    {
-      "id": "2610.20172",
-      "title": "MultiPartyTurnBench: Benchmarking Floor Control in Multi-Party Spoken Dialogue",
-      "abstract": "Full-duplex speech systems must decide when to enter, hold, or relinquish the conversational floor, even as multiple speakers overlap or backchannel without taking it. Existing evaluations study dyadic turn-taking or end-to-end agent behavior, but lack a unified, controlled evaluation of genuine floor transitions against confusable non-events in multi-party settings. We introduce MultiPartyTurnBench (MPTB), a benchmark of 240 synthetically generated, channel-separated conversations spanning two to five speakers and six interaction types. MPTB evaluates two complementary tasks: End-of-Turn (EOT) detection distinguishes genuine turn completion from temporary holds, while Interruption (INT) detection distinguishes successful floor takeovers from non-floor-taking speech. Exact event-conditioned annotations enable causal evaluation using false-positive-constrained recall and signed latency. Across acoustic, semantic, and turn-projection baselines, we find a stark asymmetry: learned systems achieve 82.5-92.6% EOT recall at 4.3-11.8% false-positive rates, while INT detection suffers from missed takeovers or excessive false activations. This asymmetry extends to five full-duplex agents which achieve 86.1-95.8% balanced accuracy on turn entry, yet perform near chance (46.9-54.7%) on selective interruption handling. Gemini-3.8-Live yields to 97.7% of backchannels, whereas MiniCPM-o-4.5 yields to only 1.4% of genuine interruptions. These findings establish selective floor control as a distinct, unresolved challenge for reliable multi-party voice interaction.",
-      "published": "2026-10-14T13:20:14Z",
-      "authors": [
-        "Puneet Mathur",
-        "Dinesh Manocha"
-      ],
-      "primary_category": "cs.SD",
-      "url": "https://arxiv.org/abs/2610.20172",
-      "score": 54,
-      "status": "reviewed — included: MultiPartyTurnBench introduce evaluation tasks for general speech/audio-language models; modality and protocol limitations are documented in the catalogue"
-    },
-    {
-      "id": "2610.20830",
-      "title": "PEDBench: Can Speech Models Detect Phonetic Errors?",
-      "abstract": "Phonetic error detection (PED) aims to identify phoneme-level substitutions, deletions, and insertions and is essential for educational and clinical speech assessment and intervention. Despite recent advances in speech models for phoneme recognition, their ability to reliably detect fine-grained phonetic errors remains unclear because of a lack of high-quality evaluation data. To address this gap, we introduce PEDBench, the first PED benchmark spanning a continuum from natural to controlled speech. It comprises real-world recordings of spoken errors made by children (N=334), scripted error productions by human actors (N=1,188), and synthetic error productions generated using phone-conditioned text-to-speech (N=1,083). All phonetic annotations were transcribed and verified by two phonetically trained annotators. Our evaluation of 13 state-of-the-art speech models shows that they fail to reliably detect phonetic errors, even under controlled conditions with acted and synthetic speech, where acoustic variability is reduced. The models also exhibit low precision, frequently misclassifying correctly pronounced phonemes as errors. Our speech-language models, fine-tuned on synthetic data, outperform commercial and open-source baselines on word-level PED, although a sim-to-real domain gap remains. We plan to publicly release our code and recipes, along with our acted and synthetic datasets, to support the development of more accurate PED systems.",
-      "published": "2026-10-14T19:15:48Z",
-      "authors": [
-        "Zhonghao Shi",
-        "Zackary Rackauckas",
-        "Jasmine Yip",
-        "Savannah Halpern",
-        "Simon Campos",
-        "Lauren Brace",
-        "Emma Yang",
-        "Tiantian Feng"
-      ],
-      "primary_category": "cs.CL",
-      "url": "https://arxiv.org/abs/2610.20830",
-      "score": 42,
-      "status": "reviewed — out of scope: phonetic-error detection is scored through phoneme recognition/edit operations; this is a specialized speech-recognition evaluation, including task-adapted SLMs"
-    },
-    {
-      "id": "2610.23745",
-      "title": "VocalGrad: Evaluating Acoustic Perception in Audio Language Models",
-      "abstract": "Recent large audio language models (LALMs) have extended their capabilities beyond lexical speech understanding to tasks requiring paralinguistic and non-linguistic audio understanding, such as emotion recognition. However, these models still struggle to reliably utilize acoustic information, particularly when it co-occurs with spoken linguistic content. Existing benchmarks do not clearly distinguish acoustic perception from higher-level reasoning, making it difficult to identify the source of these failures. To address this issue, we introduce VocalGrad, a benchmark designed to evaluate LALMs' ability to perceive low-level acoustic variations. VocalGrad formulates this problem as a simple binary classification of temporal change direction, enabling evaluation largely independent of higher-level reasoning or semantic understanding. Our benchmark results reveal a substantial gap in acoustic perception between human annotators and state-of-the-art LALMs: while human annotators achieve high accuracy, LALMs perform at near-chance levels. We further conduct linear probing to identify structural bottlenecks in these models. Our analysis reveals two distinct failure modes: for some categories, task-relevant information is preserved in internal representations but not utilized by the language model head; for others, the information becomes progressively less linearly decodable across model layers. Overall, our results reveal substantial limitations of LALMs in modeling acoustic variation under controlled settings and expose representation differences not observable from text outputs.",
-      "published": "2026-10-16T16:54:35Z",
-      "authors": [
-        "Koki Ryu",
-        "Hitomi Yanaka"
-      ],
-      "primary_category": "cs.SD",
-      "url": "https://arxiv.org/abs/2610.23745",
-      "score": 42,
-      "status": "reviewed — included: VocalGrad introduce evaluation tasks for general speech/audio-language models; modality and protocol limitations are documented in the catalogue"
-    },
-    {
-      "id": "2610.25824",
-      "title": "MS-Bench: A Condition-Stratified Multi-Speaker ASR Benchmark",
-      "abstract": "Multi-speaker automatic speech recognition (MSASR) has advanced rapidly with end-to-end speech large language models. However, existing benchmarks cover limited ranges of specific multi-speaker conditions and scenarios, making it difficult to reveal system limitations under diverse conditions and scenarios. We introduce MS-Bench\\footnote{\\href{https://aslp-lab.github.io/MS-Bench/}{Demo page: https://aslp-lab.github.io/MS-Bench/}}, a condition-stratified benchmark for fine-grained MSASR evaluation. MS-Bench integrates both public and internal benchmarks and characterizes each recording along five dimensions: speaker number, overlap ratio, speaker similarity, speaker turn interval, and acoustic quality. We stratify these dimensions into condition ranges and construct MS-Bench with broad coverage of conditions, scenarios, languages, and recording devices. Evaluating representative commercial, open-source, and cascaded systems, we find that overlap affects both lexical recognition and speaker attribution, while other factors exhibit more task-specific effects on recognition, attribution, or temporal prediction. These results demonstrate that aggregate metrics alone obscure important MSASR failure modes and highlight the value of condition-stratified evaluation. MS-Bench aims to reveal condition-specific limitations of current MSASR systems and guide future improvements.",
-      "published": "2026-10-19T05:37:31Z",
-      "authors": [
-        "Chunjiang He",
-        "Zheng Zi",
-        "Bingshen Mu",
-        "Yurun Li",
-        "Jingyi Wang",
-        "Zhonghua Fu",
-        "Shuai Wang",
-        "Liumeng Xue"
-      ],
-      "primary_category": "eess.AS",
-      "url": "https://arxiv.org/abs/2610.25824",
-      "score": 42,
-      "status": "reviewed — out of scope: MS-Bench evaluates speaker-attributed transcription with ASR/diarization error rates rather than general spoken interaction"
-    },
-    {
-      "id": "2610.28146",
-      "title": "SKAD: Sketch-Guided Audio-Contrastive Decoding for Reasoning in Large Audio-Language Models",
-      "abstract": "Large Audio-Language Models (LALMs) have shown increasing potential in audio understanding and reasoning by generating intermediate reasoning steps before answering. However, directly eliciting long-form reasoning from audio does not always lead to more reliable predictions. Even reasoning-oriented LALMs may gradually shift from acoustic evidence to language-continuation patterns during generation. A natural solution is to use contrastive decoding with an audio-masked branch, but directly applying this strategy to plain chain-of-thought reasoning is often ineffective, since the masked branch lacks sufficient audio-related context and provides an unstable reference. To address this issue, we propose \\textbf{SKAD} (\\textbf{Sk}etch-Guided \\textbf{A}udio-Contrastive \\textbf{D}ecoding), a training-free inference-time method for audio reasoning. SKAD first constructs an acoustic evidence sketch that summarizes question-relevant auditory information. It then performs contrastive decoding between an audio-conditioned reasoning branch and a sketch-only branch. By using the sketch as a shared semantic scaffold, SKAD makes the masked branch more informative and encourages decoding decisions that are more dependent on the original audio. We evaluate SKAD on Qwen2.5-Omni-7B and Step-Audio-R1 across three audio understanding and reasoning benchmarks: MMAR, MMAU, and MMSU. Experimental results show that SKAD consistently improves the average accuracy of both models across all benchmarks. Further ablations show that direct contrastive decoding without the acoustic evidence sketch provides limited or negative gains, confirming the importance of constructing a reliable contrastive reference before audio-contrastive decoding.",
-      "published": "2026-10-20T12:51:48Z",
-      "authors": [
-        "Junyu Wang",
-        "Peiyuan Jiang",
-        "Siyuan Zhang",
-        "Jian Zong",
-        "Tianrui Wang",
-        "Zikang Huang",
-        "Meng Ge",
-        "Longbiao Wang"
-      ],
-      "primary_category": "eess.AS",
-      "url": "https://arxiv.org/abs/2610.28146",
-      "score": 39,
-      "status": "reviewed — out of scope: SKAD is a training method evaluated on existing audio reasoning benchmarks, not a new benchmark"
-    },
-    {
-      "id": "2610.26943",
-      "title": "MAMath-Bench: Process-Aware and Robust Evaluation of Multimodal Multi-Agent Mathematical Reasoning",
-      "abstract": "Mathematical reasoning is a fundamental capability for educational applications of Large Language Models (LLMs), where reliable problem solving requires not only correct answers but also coherent and verifiable reasoning processes. Multi-agent systems (MASs) have shown growing potential in this domain by leveraging collaboration and verification among multiple LLM agents. However, existing evaluations primarily focus on the correctness of final answers in text-only settings, offering limited insight into multimodal reasoning capabilities, the reliability of intermediate reasoning steps, and robustness against reasoning errors. To address these limitations, we introduce MAMath-Bench, a process-aware benchmark designed to evaluate the multimodal mathematical reasoning capabilities of MASs. MAMath-Bench comprises 1,003 problems spanning 11 mathematical categories, multiple difficulty levels, and several modalities, including text, images, and audio. It features fine-grained milestone annotations to evaluate systems across three dimensions: problem-solving correctness, reasoning-process reliability, and robustness to adversarial reasoning-chain perturbations. Our evaluation yields three key findings. First, multi-agent collaboration does not consistently improve final-answer accuracy over strong single LLMs. Second, collaboration can substantially enhance the coverage of intermediate reasoning, but such gains may come at the cost of increased reasoning redundancy. Third, current systems remain vulnerable to adversarial reasoning errors, particularly those involving subtle structural perturbations. The dataset is available at https://github.com/mira-ai-lab/AgentMath.",
-      "published": "2026-10-18T04:32:06Z",
-      "authors": [
-        "Xinping Wang",
-        "Jie Ma",
-        "Rui Xing",
-        "Wensong Guo",
-        "Xiayi Zhang",
-        "Jianhao Deng",
-        "Zihao Zhou",
-        "Boqian Yang"
-      ],
-      "primary_category": "cs.AI",
-      "url": "https://arxiv.org/abs/2610.26943",
-      "score": 36,
-      "status": "reviewed — included: MAMath-Bench introduce evaluation tasks for general speech/audio-language models; modality and protocol limitations are documented in the catalogue"
     }
   ],
   "warnings": []

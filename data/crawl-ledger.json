@@ -1,9 +1,65 @@
 {
  "since": "2026-08-22",
  "what": "Every arXiv paper the daily crawl has flagged since launch (score at or above the threshold, not previously seen), with the reviewer's verdict as written in the feed and whether the paper entered the catalogue. \"published\" is the paper's arXiv date. See the Method section of the site.",
- "flagged": 329,
+ "flagged": 337,
  "admitted": 96,
  "entries": [
+  {
+   "id": "2611.12118",
+   "title": "Joi-Bench-Task: Benchmarking Task Coordination in Full-duplex Voice Agents through Interactive Simulation",
+   "published": "2026-11-09T09:31:55Z",
+   "score": 51,
+   "outcome": "under review"
+  },
+  {
+   "id": "2611.11987",
+   "title": "When Audio and Video Mislead: Evaluating Multimodal AI for Conversational Emotion Recognition",
+   "published": "2026-11-09T07:13:25Z",
+   "score": 33,
+   "outcome": "under review"
+  },
+  {
+   "id": "2611.11573",
+   "title": "Beyond the Transcript: Measuring and Improving the Use of Acoustic Information in Audio Language Models",
+   "published": "2026-11-08T19:37:55Z",
+   "score": 30,
+   "outcome": "under review"
+  },
+  {
+   "id": "2611.11137",
+   "title": "GlobalTap: Globally Diverse Beat Tracking Benchmark via Crowdsourced Tapping",
+   "published": "2026-11-08T05:07:02Z",
+   "score": 21,
+   "outcome": "under review"
+  },
+  {
+   "id": "2611.11125",
+   "title": "LongCap: Hour-Scale Timestamped Audio Captioning via Chunk-wise Processing",
+   "published": "2026-11-08T04:23:37Z",
+   "score": 21,
+   "outcome": "under review"
+  },
+  {
+   "id": "2611.10852",
+   "title": "KeyASRBench: Measuring Whole-Phrase Keyword Preservation in Real-World ASR",
+   "published": "2026-11-07T17:02:21Z",
+   "score": 36,
+   "outcome": "under review"
+  },
+  {
+   "id": "2611.10693",
+   "title": "Machine Hearing: Can Audio LLMs Generalize Beyond Human Auditory Perception?",
+   "published": "2026-11-07T12:23:08Z",
+   "score": 21,
+   "outcome": "under review"
+  },
+  {
+   "id": "2611.10245",
+   "title": "From Weapons to Events: Evaluating Evidential Support in Multimodal AI for Policing",
+   "published": "2026-11-06T21:31:51Z",
+   "score": 27,
+   "outcome": "under review"
+  },
   {
    "id": "2611.09122",
    "title": "Improving Large Audio-Language Model Embedding Baselines for Instruction-Aware Speech Retrieval",
