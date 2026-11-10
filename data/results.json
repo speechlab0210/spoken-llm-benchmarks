@@ -154665,6 +154665,1689 @@
       "source": "Table 5, arXiv:2611.06496v1, row Qwen2.5-Omni-7B†, test-other, Mean onset delay (s)",
       "source_url": "https://arxiv.org/pdf/2611.06496v1#page=4",
       "note": "Fuzzy matching; original test-clean/test-other values are stored separately without percentage conversion. F1, recall and precision pool reference events within each split; higher is better. Mean onset delay averages predicted onset minus reference-word onset over matched hits; lower is better. Pretrained Qwen2.5-Omni-7B receives the complete audio and predicts a timestamped event list. Its reported onset delay is timestamp localization error, not measured streaming response latency. It is not the paper's finetuned Offline or Streaming variant and must not be treated as a streaming latency comparison."
+    },
+    {
+      "benchmark": "joi-bench-task",
+      "model": "gpt-realtime-2",
+      "metric": "Overall: Single-tool tool start latency (s)",
+      "value": 3.91,
+      "source": "Table 4, arXiv:2611.12118v1, row Realtime 2, column Tool start latency Single-tool",
+      "source_url": "https://arxiv.org/pdf/2611.12118v1#page=7",
+      "note": "GPT Realtime 2 (2026-05-07), interactive simulation with English synthesized user speech, simulated tools and shared-clock playback logs. Semantic annotations are checked by a second model; timings are computed from validated annotations. S/M means single-tool/multi-tool. Table 4 overall aggregates are retained as published, separately from the condition-specific Tables 6–7; no aggregate is recomputed. Latency is in seconds; lower is better."
+    },
+    {
+      "benchmark": "joi-bench-task",
+      "model": "gpt-realtime-2",
+      "metric": "Overall: Multi-tool tool start latency (s)",
+      "value": 5.37,
+      "source": "Table 4, arXiv:2611.12118v1, row Realtime 2, column Tool start latency Multi-tool",
+      "source_url": "https://arxiv.org/pdf/2611.12118v1#page=7",
+      "note": "GPT Realtime 2 (2026-05-07), interactive simulation with English synthesized user speech, simulated tools and shared-clock playback logs. Semantic annotations are checked by a second model; timings are computed from validated annotations. S/M means single-tool/multi-tool. Table 4 overall aggregates are retained as published, separately from the condition-specific Tables 6–7; no aggregate is recomputed. Latency is in seconds; lower is better."
+    },
+    {
+      "benchmark": "joi-bench-task",
+      "model": "gpt-realtime-2",
+      "metric": "Overall: Single-tool announcement latency (s)",
+      "value": 7.33,
+      "source": "Table 4, arXiv:2611.12118v1, row Realtime 2, column Announcement latency Single-tool",
+      "source_url": "https://arxiv.org/pdf/2611.12118v1#page=7",
+      "note": "GPT Realtime 2 (2026-05-07), interactive simulation with English synthesized user speech, simulated tools and shared-clock playback logs. Semantic annotations are checked by a second model; timings are computed from validated annotations. S/M means single-tool/multi-tool. Table 4 overall aggregates are retained as published, separately from the condition-specific Tables 6–7; no aggregate is recomputed. Latency is in seconds; lower is better."
+    },
+    {
+      "benchmark": "joi-bench-task",
+      "model": "gpt-realtime-2",
+      "metric": "Overall: Multi-tool announcement latency (s)",
+      "value": 17.59,
+      "source": "Table 4, arXiv:2611.12118v1, row Realtime 2, column Announcement latency Multi-tool",
+      "source_url": "https://arxiv.org/pdf/2611.12118v1#page=7",
+      "note": "GPT Realtime 2 (2026-05-07), interactive simulation with English synthesized user speech, simulated tools and shared-clock playback logs. Semantic annotations are checked by a second model; timings are computed from validated annotations. S/M means single-tool/multi-tool. Table 4 overall aggregates are retained as published, separately from the condition-specific Tables 6–7; no aggregate is recomputed. Latency is in seconds; lower is better."
+    },
+    {
+      "benchmark": "joi-bench-task",
+      "model": "gpt-realtime-2",
+      "metric": "Overall: Status inquiry response (%)",
+      "value": 97.37,
+      "source": "Table 4, arXiv:2611.12118v1, row Realtime 2, column Status inquiry response (%)",
+      "source_url": "https://arxiv.org/pdf/2611.12118v1#page=7",
+      "note": "GPT Realtime 2 (2026-05-07), interactive simulation with English synthesized user speech, simulated tools and shared-clock playback logs. Semantic annotations are checked by a second model; timings are computed from validated annotations. S/M means single-tool/multi-tool. Table 4 overall aggregates are retained as published, separately from the condition-specific Tables 6–7; no aggregate is recomputed. Information omission and latency are lower-is-better; other rates are higher-is-better."
+    },
+    {
+      "benchmark": "joi-bench-task",
+      "model": "gpt-realtime-2",
+      "metric": "Overall: Request change success (%)",
+      "value": 10.0,
+      "source": "Table 4, arXiv:2611.12118v1, row Realtime 2, column Request change success (%)",
+      "source_url": "https://arxiv.org/pdf/2611.12118v1#page=7",
+      "note": "GPT Realtime 2 (2026-05-07), interactive simulation with English synthesized user speech, simulated tools and shared-clock playback logs. Semantic annotations are checked by a second model; timings are computed from validated annotations. S/M means single-tool/multi-tool. Table 4 overall aggregates are retained as published, separately from the condition-specific Tables 6–7; no aggregate is recomputed. Information omission and latency are lower-is-better; other rates are higher-is-better."
+    },
+    {
+      "benchmark": "joi-bench-task",
+      "model": "gpt-realtime-2",
+      "metric": "Overall: Result completion (%)",
+      "value": 40.0,
+      "source": "Table 4, arXiv:2611.12118v1, row Realtime 2, column Result completion (%)",
+      "source_url": "https://arxiv.org/pdf/2611.12118v1#page=7",
+      "note": "GPT Realtime 2 (2026-05-07), interactive simulation with English synthesized user speech, simulated tools and shared-clock playback logs. Semantic annotations are checked by a second model; timings are computed from validated annotations. S/M means single-tool/multi-tool. Table 4 overall aggregates are retained as published, separately from the condition-specific Tables 6–7; no aggregate is recomputed. Information omission and latency are lower-is-better; other rates are higher-is-better."
+    },
+    {
+      "benchmark": "joi-bench-task",
+      "model": "gpt-realtime-2",
+      "metric": "Overall: Information omission (%)",
+      "value": 79.0,
+      "source": "Table 4, arXiv:2611.12118v1, row Realtime 2, column Information omission (%)",
+      "source_url": "https://arxiv.org/pdf/2611.12118v1#page=7",
+      "note": "GPT Realtime 2 (2026-05-07), interactive simulation with English synthesized user speech, simulated tools and shared-clock playback logs. Semantic annotations are checked by a second model; timings are computed from validated annotations. S/M means single-tool/multi-tool. Table 4 overall aggregates are retained as published, separately from the condition-specific Tables 6–7; no aggregate is recomputed. Information omission and latency are lower-is-better; other rates are higher-is-better."
+    },
+    {
+      "benchmark": "joi-bench-task",
+      "model": "gpt-realtime-2",
+      "metric": "Overall: Resumption (%)",
+      "value": 0.0,
+      "source": "Table 4, arXiv:2611.12118v1, row Realtime 2, column Resumption (%)",
+      "source_url": "https://arxiv.org/pdf/2611.12118v1#page=7",
+      "note": "GPT Realtime 2 (2026-05-07), interactive simulation with English synthesized user speech, simulated tools and shared-clock playback logs. Semantic annotations are checked by a second model; timings are computed from validated annotations. S/M means single-tool/multi-tool. Table 4 overall aggregates are retained as published, separately from the condition-specific Tables 6–7; no aggregate is recomputed. Information omission and latency are lower-is-better; other rates are higher-is-better."
+    },
+    {
+      "benchmark": "joi-bench-task",
+      "model": "gpt-realtime-2",
+      "metric": "Overall: Interruption latency (s)",
+      "value": 1.07,
+      "source": "Table 4, arXiv:2611.12118v1, row Realtime 2, column Interruption latency (s)",
+      "source_url": "https://arxiv.org/pdf/2611.12118v1#page=7",
+      "note": "GPT Realtime 2 (2026-05-07), interactive simulation with English synthesized user speech, simulated tools and shared-clock playback logs. Semantic annotations are checked by a second model; timings are computed from validated annotations. S/M means single-tool/multi-tool. Table 4 overall aggregates are retained as published, separately from the condition-specific Tables 6–7; no aggregate is recomputed. Information omission and latency are lower-is-better; other rates are higher-is-better."
+    },
+    {
+      "benchmark": "joi-bench-task",
+      "model": "gpt-realtime-2",
+      "metric": "Multi-tool: Concurrency met (%)",
+      "value": 100.0,
+      "source": "Table 5, arXiv:2611.12118v1, row Realtime 2, column Concurrency met",
+      "source_url": "https://arxiv.org/pdf/2611.12118v1#page=7",
+      "note": "GPT Realtime 2 (2026-05-07), interactive simulation with English synthesized user speech, simulated tools and shared-clock playback logs. Semantic annotations are checked by a second model; timings are computed from validated annotations. S/M means single-tool/multi-tool. Table 4 overall aggregates are retained as published, separately from the condition-specific Tables 6–7; no aggregate is recomputed."
+    },
+    {
+      "benchmark": "joi-bench-task",
+      "model": "gpt-realtime-2",
+      "metric": "Single-tool: Pass@1 (%)",
+      "value": 98.33,
+      "source": "Table 5, arXiv:2611.12118v1, row Realtime 2, column Pass@1 Single-tool",
+      "source_url": "https://arxiv.org/pdf/2611.12118v1#page=7",
+      "note": "GPT Realtime 2 (2026-05-07), interactive simulation with English synthesized user speech, simulated tools and shared-clock playback logs. Semantic annotations are checked by a second model; timings are computed from validated annotations. S/M means single-tool/multi-tool. Table 4 overall aggregates are retained as published, separately from the condition-specific Tables 6–7; no aggregate is recomputed."
+    },
+    {
+      "benchmark": "joi-bench-task",
+      "model": "gpt-realtime-2",
+      "metric": "Multi-tool: Pass@1 (%)",
+      "value": 86.25,
+      "source": "Table 5, arXiv:2611.12118v1, row Realtime 2, column Pass@1 Multi-tool",
+      "source_url": "https://arxiv.org/pdf/2611.12118v1#page=7",
+      "note": "GPT Realtime 2 (2026-05-07), interactive simulation with English synthesized user speech, simulated tools and shared-clock playback logs. Semantic annotations are checked by a second model; timings are computed from validated annotations. S/M means single-tool/multi-tool. Table 4 overall aggregates are retained as published, separately from the condition-specific Tables 6–7; no aggregate is recomputed."
+    },
+    {
+      "benchmark": "joi-bench-task",
+      "model": "gpt-realtime-2",
+      "metric": "Request changes: Baseline result completion (%)",
+      "value": 85.0,
+      "source": "Table 6, arXiv:2611.12118v1, row Realtime 2, column Baseline result completion",
+      "source_url": "https://arxiv.org/pdf/2611.12118v1#page=8",
+      "note": "GPT Realtime 2 (2026-05-07), interactive simulation with English synthesized user speech, simulated tools and shared-clock playback logs. Semantic annotations are checked by a second model; timings are computed from validated annotations. S/M means single-tool/multi-tool. Table 4 overall aggregates are retained as published, separately from the condition-specific Tables 6–7; no aggregate is recomputed."
+    },
+    {
+      "benchmark": "joi-bench-task",
+      "model": "gpt-realtime-2",
+      "metric": "Request changes: Priority-change result completion (%)",
+      "value": 75.0,
+      "source": "Table 6, arXiv:2611.12118v1, row Realtime 2, column Priority-change result completion",
+      "source_url": "https://arxiv.org/pdf/2611.12118v1#page=8",
+      "note": "GPT Realtime 2 (2026-05-07), interactive simulation with English synthesized user speech, simulated tools and shared-clock playback logs. Semantic annotations are checked by a second model; timings are computed from validated annotations. S/M means single-tool/multi-tool. Table 4 overall aggregates are retained as published, separately from the condition-specific Tables 6–7; no aggregate is recomputed."
+    },
+    {
+      "benchmark": "joi-bench-task",
+      "model": "gpt-realtime-2",
+      "metric": "Request changes: Task-withdraw result completion (%)",
+      "value": 85.0,
+      "source": "Table 6, arXiv:2611.12118v1, row Realtime 2, column Task-withdraw result completion",
+      "source_url": "https://arxiv.org/pdf/2611.12118v1#page=8",
+      "note": "GPT Realtime 2 (2026-05-07), interactive simulation with English synthesized user speech, simulated tools and shared-clock playback logs. Semantic annotations are checked by a second model; timings are computed from validated annotations. S/M means single-tool/multi-tool. Table 4 overall aggregates are retained as published, separately from the condition-specific Tables 6–7; no aggregate is recomputed."
+    },
+    {
+      "benchmark": "joi-bench-task",
+      "model": "gpt-realtime-2",
+      "metric": "Request changes: Task-addition result completion (%)",
+      "value": 65.0,
+      "source": "Table 6, arXiv:2611.12118v1, row Realtime 2, column Task-addition result completion",
+      "source_url": "https://arxiv.org/pdf/2611.12118v1#page=8",
+      "note": "GPT Realtime 2 (2026-05-07), interactive simulation with English synthesized user speech, simulated tools and shared-clock playback logs. Semantic annotations are checked by a second model; timings are computed from validated annotations. S/M means single-tool/multi-tool. Table 4 overall aggregates are retained as published, separately from the condition-specific Tables 6–7; no aggregate is recomputed."
+    },
+    {
+      "benchmark": "joi-bench-task",
+      "model": "gpt-realtime-2",
+      "metric": "Request changes: Priority-change success (%)",
+      "value": 10.0,
+      "source": "Table 6, arXiv:2611.12118v1, row Realtime 2, column Priority-change success",
+      "source_url": "https://arxiv.org/pdf/2611.12118v1#page=8",
+      "note": "GPT Realtime 2 (2026-05-07), interactive simulation with English synthesized user speech, simulated tools and shared-clock playback logs. Semantic annotations are checked by a second model; timings are computed from validated annotations. S/M means single-tool/multi-tool. Table 4 overall aggregates are retained as published, separately from the condition-specific Tables 6–7; no aggregate is recomputed."
+    },
+    {
+      "benchmark": "joi-bench-task",
+      "model": "gpt-realtime-2",
+      "metric": "Request changes: Task-withdraw success (%)",
+      "value": 95.0,
+      "source": "Table 6, arXiv:2611.12118v1, row Realtime 2, column Task-withdraw success",
+      "source_url": "https://arxiv.org/pdf/2611.12118v1#page=8",
+      "note": "GPT Realtime 2 (2026-05-07), interactive simulation with English synthesized user speech, simulated tools and shared-clock playback logs. Semantic annotations are checked by a second model; timings are computed from validated annotations. S/M means single-tool/multi-tool. Table 4 overall aggregates are retained as published, separately from the condition-specific Tables 6–7; no aggregate is recomputed."
+    },
+    {
+      "benchmark": "joi-bench-task",
+      "model": "gpt-realtime-2",
+      "metric": "Request changes: Task-addition success (%)",
+      "value": 95.0,
+      "source": "Table 6, arXiv:2611.12118v1, row Realtime 2, column Task-addition success",
+      "source_url": "https://arxiv.org/pdf/2611.12118v1#page=8",
+      "note": "GPT Realtime 2 (2026-05-07), interactive simulation with English synthesized user speech, simulated tools and shared-clock playback logs. Semantic annotations are checked by a second model; timings are computed from validated annotations. S/M means single-tool/multi-tool. Table 4 overall aggregates are retained as published, separately from the condition-specific Tables 6–7; no aggregate is recomputed."
+    },
+    {
+      "benchmark": "joi-bench-task",
+      "model": "gpt-realtime-2",
+      "metric": "Pause-resume: Resumption (%)",
+      "value": 5.0,
+      "source": "Table 7, arXiv:2611.12118v1, row Realtime 2, column Resumption, Pause-resume",
+      "source_url": "https://arxiv.org/pdf/2611.12118v1#page=8",
+      "note": "GPT Realtime 2 (2026-05-07), interactive simulation with English synthesized user speech, simulated tools and shared-clock playback logs. Semantic annotations are checked by a second model; timings are computed from validated annotations. S/M means single-tool/multi-tool. Table 4 overall aggregates are retained as published, separately from the condition-specific Tables 6–7; no aggregate is recomputed."
+    },
+    {
+      "benchmark": "joi-bench-task",
+      "model": "gpt-realtime-2",
+      "metric": "Inquiry-resume: Resumption (%)",
+      "value": 0.0,
+      "source": "Table 7, arXiv:2611.12118v1, row Realtime 2, column Resumption, Inquiry-resume",
+      "source_url": "https://arxiv.org/pdf/2611.12118v1#page=8",
+      "note": "GPT Realtime 2 (2026-05-07), interactive simulation with English synthesized user speech, simulated tools and shared-clock playback logs. Semantic annotations are checked by a second model; timings are computed from validated annotations. S/M means single-tool/multi-tool. Table 4 overall aggregates are retained as published, separately from the condition-specific Tables 6–7; no aggregate is recomputed."
+    },
+    {
+      "benchmark": "joi-bench-task",
+      "model": "gpt-realtime-2",
+      "metric": "Pause-resume: Information omission (%)",
+      "value": 78.0,
+      "source": "Table 7, arXiv:2611.12118v1, row Realtime 2, column Information omission, Pause-resume",
+      "source_url": "https://arxiv.org/pdf/2611.12118v1#page=8",
+      "note": "GPT Realtime 2 (2026-05-07), interactive simulation with English synthesized user speech, simulated tools and shared-clock playback logs. Semantic annotations are checked by a second model; timings are computed from validated annotations. S/M means single-tool/multi-tool. Table 4 overall aggregates are retained as published, separately from the condition-specific Tables 6–7; no aggregate is recomputed."
+    },
+    {
+      "benchmark": "joi-bench-task",
+      "model": "gpt-realtime-2",
+      "metric": "Inquiry-resume: Information omission (%)",
+      "value": 80.0,
+      "source": "Table 7, arXiv:2611.12118v1, row Realtime 2, column Information omission, Inquiry-resume",
+      "source_url": "https://arxiv.org/pdf/2611.12118v1#page=8",
+      "note": "GPT Realtime 2 (2026-05-07), interactive simulation with English synthesized user speech, simulated tools and shared-clock playback logs. Semantic annotations are checked by a second model; timings are computed from validated annotations. S/M means single-tool/multi-tool. Table 4 overall aggregates are retained as published, separately from the condition-specific Tables 6–7; no aggregate is recomputed."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "qwen2-5-omni",
+      "metric": "MELD: Text, Accuracy (%)",
+      "value": 61.88,
+      "source": "Table 2, arXiv:2611.11987v1, row MELD, Qwen, Acc., column Text",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; MELD, 2,610 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "qwen2-5-omni",
+      "metric": "MELD: T+A, Accuracy (%)",
+      "value": 63.22,
+      "source": "Table 2, arXiv:2611.11987v1, row MELD, Qwen, Acc., column T+A",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; MELD, 2,610 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "qwen2-5-omni",
+      "metric": "MELD: T+V, Accuracy (%)",
+      "value": 61.0,
+      "source": "Table 2, arXiv:2611.11987v1, row MELD, Qwen, Acc., column T+V",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; MELD, 2,610 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "qwen2-5-omni",
+      "metric": "MELD: Full, Accuracy (%)",
+      "value": 62.84,
+      "source": "Table 2, arXiv:2611.11987v1, row MELD, Qwen, Acc., column Full",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; MELD, 2,610 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "qwen2-5-omni",
+      "metric": "MELD: RandA, Accuracy (%)",
+      "value": 59.0,
+      "source": "Table 2, arXiv:2611.11987v1, row MELD, Qwen, Acc., column RandA",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; MELD, 2,610 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "qwen2-5-omni",
+      "metric": "MELD: RandV, Accuracy (%)",
+      "value": 62.34,
+      "source": "Table 2, arXiv:2611.11987v1, row MELD, Qwen, Acc., column RandV",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; MELD, 2,610 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "qwen2-5-omni",
+      "metric": "MELD: RandA/V, Accuracy (%)",
+      "value": 58.16,
+      "source": "Table 2, arXiv:2611.11987v1, row MELD, Qwen, Acc., column RandA/V",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; MELD, 2,610 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "qwen2-5-omni",
+      "metric": "MELD: Text, Weighted F1 (%)",
+      "value": 60.22,
+      "source": "Table 2, arXiv:2611.11987v1, row MELD, Qwen, WF1, column Text",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; MELD, 2,610 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "qwen2-5-omni",
+      "metric": "MELD: T+A, Weighted F1 (%)",
+      "value": 61.1,
+      "source": "Table 2, arXiv:2611.11987v1, row MELD, Qwen, WF1, column T+A",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; MELD, 2,610 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "qwen2-5-omni",
+      "metric": "MELD: T+V, Weighted F1 (%)",
+      "value": 58.39,
+      "source": "Table 2, arXiv:2611.11987v1, row MELD, Qwen, WF1, column T+V",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; MELD, 2,610 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "qwen2-5-omni",
+      "metric": "MELD: Full, Weighted F1 (%)",
+      "value": 60.17,
+      "source": "Table 2, arXiv:2611.11987v1, row MELD, Qwen, WF1, column Full",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; MELD, 2,610 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "qwen2-5-omni",
+      "metric": "MELD: RandA, Weighted F1 (%)",
+      "value": 55.41,
+      "source": "Table 2, arXiv:2611.11987v1, row MELD, Qwen, WF1, column RandA",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; MELD, 2,610 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "qwen2-5-omni",
+      "metric": "MELD: RandV, Weighted F1 (%)",
+      "value": 59.23,
+      "source": "Table 2, arXiv:2611.11987v1, row MELD, Qwen, WF1, column RandV",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; MELD, 2,610 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "qwen2-5-omni",
+      "metric": "MELD: RandA/V, Weighted F1 (%)",
+      "value": 54.02,
+      "source": "Table 2, arXiv:2611.11987v1, row MELD, Qwen, WF1, column RandA/V",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; MELD, 2,610 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "baichuan-omni-1-5",
+      "metric": "MELD: Text, Accuracy (%)",
+      "value": 36.63,
+      "source": "Table 2, arXiv:2611.11987v1, row MELD, Baichuan, Acc., column Text",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; MELD, 2,610 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "baichuan-omni-1-5",
+      "metric": "MELD: T+A, Accuracy (%)",
+      "value": 40.73,
+      "source": "Table 2, arXiv:2611.11987v1, row MELD, Baichuan, Acc., column T+A",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; MELD, 2,610 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "baichuan-omni-1-5",
+      "metric": "MELD: T+V, Accuracy (%)",
+      "value": 36.9,
+      "source": "Table 2, arXiv:2611.11987v1, row MELD, Baichuan, Acc., column T+V",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; MELD, 2,610 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "baichuan-omni-1-5",
+      "metric": "MELD: Full, Accuracy (%)",
+      "value": 36.63,
+      "source": "Table 2, arXiv:2611.11987v1, row MELD, Baichuan, Acc., column Full",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; MELD, 2,610 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "baichuan-omni-1-5",
+      "metric": "MELD: RandA, Accuracy (%)",
+      "value": 34.71,
+      "source": "Table 2, arXiv:2611.11987v1, row MELD, Baichuan, Acc., column RandA",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; MELD, 2,610 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "baichuan-omni-1-5",
+      "metric": "MELD: RandV, Accuracy (%)",
+      "value": 33.14,
+      "source": "Table 2, arXiv:2611.11987v1, row MELD, Baichuan, Acc., column RandV",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; MELD, 2,610 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "baichuan-omni-1-5",
+      "metric": "MELD: RandA/V, Accuracy (%)",
+      "value": 32.95,
+      "source": "Table 2, arXiv:2611.11987v1, row MELD, Baichuan, Acc., column RandA/V",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; MELD, 2,610 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "baichuan-omni-1-5",
+      "metric": "MELD: Text, Weighted F1 (%)",
+      "value": 35.6,
+      "source": "Table 2, arXiv:2611.11987v1, row MELD, Baichuan, WF1, column Text",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; MELD, 2,610 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "baichuan-omni-1-5",
+      "metric": "MELD: T+A, Weighted F1 (%)",
+      "value": 39.89,
+      "source": "Table 2, arXiv:2611.11987v1, row MELD, Baichuan, WF1, column T+A",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; MELD, 2,610 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "baichuan-omni-1-5",
+      "metric": "MELD: T+V, Weighted F1 (%)",
+      "value": 35.95,
+      "source": "Table 2, arXiv:2611.11987v1, row MELD, Baichuan, WF1, column T+V",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; MELD, 2,610 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "baichuan-omni-1-5",
+      "metric": "MELD: Full, Weighted F1 (%)",
+      "value": 34.96,
+      "source": "Table 2, arXiv:2611.11987v1, row MELD, Baichuan, WF1, column Full",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; MELD, 2,610 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "baichuan-omni-1-5",
+      "metric": "MELD: RandA, Weighted F1 (%)",
+      "value": 33.65,
+      "source": "Table 2, arXiv:2611.11987v1, row MELD, Baichuan, WF1, column RandA",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; MELD, 2,610 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "baichuan-omni-1-5",
+      "metric": "MELD: RandV, Weighted F1 (%)",
+      "value": 30.91,
+      "source": "Table 2, arXiv:2611.11987v1, row MELD, Baichuan, WF1, column RandV",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; MELD, 2,610 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "baichuan-omni-1-5",
+      "metric": "MELD: RandA/V, Weighted F1 (%)",
+      "value": 31.8,
+      "source": "Table 2, arXiv:2611.11987v1, row MELD, Baichuan, WF1, column RandA/V",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; MELD, 2,610 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "minicpm-o",
+      "metric": "MELD: Text, Accuracy (%)",
+      "value": 43.1,
+      "source": "Table 2, arXiv:2611.11987v1, row MELD, MiniCPM, Acc., column Text",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; MELD, 2,610 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "minicpm-o",
+      "metric": "MELD: T+A, Accuracy (%)",
+      "value": 43.41,
+      "source": "Table 2, arXiv:2611.11987v1, row MELD, MiniCPM, Acc., column T+A",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; MELD, 2,610 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "minicpm-o",
+      "metric": "MELD: T+V, Accuracy (%)",
+      "value": 41.88,
+      "source": "Table 2, arXiv:2611.11987v1, row MELD, MiniCPM, Acc., column T+V",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; MELD, 2,610 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "minicpm-o",
+      "metric": "MELD: Full, Accuracy (%)",
+      "value": 44.48,
+      "source": "Table 2, arXiv:2611.11987v1, row MELD, MiniCPM, Acc., column Full",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; MELD, 2,610 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "minicpm-o",
+      "metric": "MELD: RandA, Accuracy (%)",
+      "value": 43.3,
+      "source": "Table 2, arXiv:2611.11987v1, row MELD, MiniCPM, Acc., column RandA",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; MELD, 2,610 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "minicpm-o",
+      "metric": "MELD: RandV, Accuracy (%)",
+      "value": 44.56,
+      "source": "Table 2, arXiv:2611.11987v1, row MELD, MiniCPM, Acc., column RandV",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; MELD, 2,610 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "minicpm-o",
+      "metric": "MELD: RandA/V, Accuracy (%)",
+      "value": 41.61,
+      "source": "Table 2, arXiv:2611.11987v1, row MELD, MiniCPM, Acc., column RandA/V",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; MELD, 2,610 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "minicpm-o",
+      "metric": "MELD: Text, Weighted F1 (%)",
+      "value": 43.37,
+      "source": "Table 2, arXiv:2611.11987v1, row MELD, MiniCPM, WF1, column Text",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; MELD, 2,610 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "minicpm-o",
+      "metric": "MELD: T+A, Weighted F1 (%)",
+      "value": 43.45,
+      "source": "Table 2, arXiv:2611.11987v1, row MELD, MiniCPM, WF1, column T+A",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; MELD, 2,610 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "minicpm-o",
+      "metric": "MELD: T+V, Weighted F1 (%)",
+      "value": 42.1,
+      "source": "Table 2, arXiv:2611.11987v1, row MELD, MiniCPM, WF1, column T+V",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; MELD, 2,610 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "minicpm-o",
+      "metric": "MELD: Full, Weighted F1 (%)",
+      "value": 44.7,
+      "source": "Table 2, arXiv:2611.11987v1, row MELD, MiniCPM, WF1, column Full",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; MELD, 2,610 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "minicpm-o",
+      "metric": "MELD: RandA, Weighted F1 (%)",
+      "value": 43.69,
+      "source": "Table 2, arXiv:2611.11987v1, row MELD, MiniCPM, WF1, column RandA",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; MELD, 2,610 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "minicpm-o",
+      "metric": "MELD: RandV, Weighted F1 (%)",
+      "value": 44.83,
+      "source": "Table 2, arXiv:2611.11987v1, row MELD, MiniCPM, WF1, column RandV",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; MELD, 2,610 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "minicpm-o",
+      "metric": "MELD: RandA/V, Weighted F1 (%)",
+      "value": 41.64,
+      "source": "Table 2, arXiv:2611.11987v1, row MELD, MiniCPM, WF1, column RandA/V",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; MELD, 2,610 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "qwen2-5-omni",
+      "metric": "IEMOCAP: Text, Accuracy (%)",
+      "value": 49.82,
+      "source": "Table 2, arXiv:2611.11987v1, row IEMOCAP, Qwen, Acc., column Text",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; IEMOCAP, 7,380 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "qwen2-5-omni",
+      "metric": "IEMOCAP: T+A, Accuracy (%)",
+      "value": 51.41,
+      "source": "Table 2, arXiv:2611.11987v1, row IEMOCAP, Qwen, Acc., column T+A",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; IEMOCAP, 7,380 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "qwen2-5-omni",
+      "metric": "IEMOCAP: T+V, Accuracy (%)",
+      "value": 48.21,
+      "source": "Table 2, arXiv:2611.11987v1, row IEMOCAP, Qwen, Acc., column T+V",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; IEMOCAP, 7,380 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "qwen2-5-omni",
+      "metric": "IEMOCAP: Full, Accuracy (%)",
+      "value": 50.42,
+      "source": "Table 2, arXiv:2611.11987v1, row IEMOCAP, Qwen, Acc., column Full",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; IEMOCAP, 7,380 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "qwen2-5-omni",
+      "metric": "IEMOCAP: RandA, Accuracy (%)",
+      "value": 46.59,
+      "source": "Table 2, arXiv:2611.11987v1, row IEMOCAP, Qwen, Acc., column RandA",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; IEMOCAP, 7,380 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "qwen2-5-omni",
+      "metric": "IEMOCAP: RandV, Accuracy (%)",
+      "value": 49.66,
+      "source": "Table 2, arXiv:2611.11987v1, row IEMOCAP, Qwen, Acc., column RandV",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; IEMOCAP, 7,380 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "qwen2-5-omni",
+      "metric": "IEMOCAP: RandA/V, Accuracy (%)",
+      "value": 45.42,
+      "source": "Table 2, arXiv:2611.11987v1, row IEMOCAP, Qwen, Acc., column RandA/V",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; IEMOCAP, 7,380 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "qwen2-5-omni",
+      "metric": "IEMOCAP: Text, Weighted F1 (%)",
+      "value": 47.16,
+      "source": "Table 2, arXiv:2611.11987v1, row IEMOCAP, Qwen, WF1, column Text",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; IEMOCAP, 7,380 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "qwen2-5-omni",
+      "metric": "IEMOCAP: T+A, Weighted F1 (%)",
+      "value": 48.98,
+      "source": "Table 2, arXiv:2611.11987v1, row IEMOCAP, Qwen, WF1, column T+A",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; IEMOCAP, 7,380 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "qwen2-5-omni",
+      "metric": "IEMOCAP: T+V, Weighted F1 (%)",
+      "value": 45.54,
+      "source": "Table 2, arXiv:2611.11987v1, row IEMOCAP, Qwen, WF1, column T+V",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; IEMOCAP, 7,380 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "qwen2-5-omni",
+      "metric": "IEMOCAP: Full, Weighted F1 (%)",
+      "value": 47.95,
+      "source": "Table 2, arXiv:2611.11987v1, row IEMOCAP, Qwen, WF1, column Full",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; IEMOCAP, 7,380 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "qwen2-5-omni",
+      "metric": "IEMOCAP: RandA, Weighted F1 (%)",
+      "value": 43.49,
+      "source": "Table 2, arXiv:2611.11987v1, row IEMOCAP, Qwen, WF1, column RandA",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; IEMOCAP, 7,380 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "qwen2-5-omni",
+      "metric": "IEMOCAP: RandV, Weighted F1 (%)",
+      "value": 47.35,
+      "source": "Table 2, arXiv:2611.11987v1, row IEMOCAP, Qwen, WF1, column RandV",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; IEMOCAP, 7,380 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "qwen2-5-omni",
+      "metric": "IEMOCAP: RandA/V, Weighted F1 (%)",
+      "value": 42.42,
+      "source": "Table 2, arXiv:2611.11987v1, row IEMOCAP, Qwen, WF1, column RandA/V",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; IEMOCAP, 7,380 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "baichuan-omni-1-5",
+      "metric": "IEMOCAP: Text, Accuracy (%)",
+      "value": 46.34,
+      "source": "Table 2, arXiv:2611.11987v1, row IEMOCAP, Baichuan, Acc., column Text",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; IEMOCAP, 7,380 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "baichuan-omni-1-5",
+      "metric": "IEMOCAP: T+A, Accuracy (%)",
+      "value": 50.46,
+      "source": "Table 2, arXiv:2611.11987v1, row IEMOCAP, Baichuan, Acc., column T+A",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; IEMOCAP, 7,380 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "baichuan-omni-1-5",
+      "metric": "IEMOCAP: T+V, Accuracy (%)",
+      "value": 45.53,
+      "source": "Table 2, arXiv:2611.11987v1, row IEMOCAP, Baichuan, Acc., column T+V",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; IEMOCAP, 7,380 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "baichuan-omni-1-5",
+      "metric": "IEMOCAP: Full, Accuracy (%)",
+      "value": 49.2,
+      "source": "Table 2, arXiv:2611.11987v1, row IEMOCAP, Baichuan, Acc., column Full",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; IEMOCAP, 7,380 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "baichuan-omni-1-5",
+      "metric": "IEMOCAP: RandA, Accuracy (%)",
+      "value": 45.11,
+      "source": "Table 2, arXiv:2611.11987v1, row IEMOCAP, Baichuan, Acc., column RandA",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; IEMOCAP, 7,380 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "baichuan-omni-1-5",
+      "metric": "IEMOCAP: RandV, Accuracy (%)",
+      "value": 47.21,
+      "source": "Table 2, arXiv:2611.11987v1, row IEMOCAP, Baichuan, Acc., column RandV",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; IEMOCAP, 7,380 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "baichuan-omni-1-5",
+      "metric": "IEMOCAP: RandA/V, Accuracy (%)",
+      "value": 43.02,
+      "source": "Table 2, arXiv:2611.11987v1, row IEMOCAP, Baichuan, Acc., column RandA/V",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; IEMOCAP, 7,380 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "baichuan-omni-1-5",
+      "metric": "IEMOCAP: Text, Weighted F1 (%)",
+      "value": 45.2,
+      "source": "Table 2, arXiv:2611.11987v1, row IEMOCAP, Baichuan, WF1, column Text",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; IEMOCAP, 7,380 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "baichuan-omni-1-5",
+      "metric": "IEMOCAP: T+A, Weighted F1 (%)",
+      "value": 49.79,
+      "source": "Table 2, arXiv:2611.11987v1, row IEMOCAP, Baichuan, WF1, column T+A",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; IEMOCAP, 7,380 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "baichuan-omni-1-5",
+      "metric": "IEMOCAP: T+V, Weighted F1 (%)",
+      "value": 44.04,
+      "source": "Table 2, arXiv:2611.11987v1, row IEMOCAP, Baichuan, WF1, column T+V",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; IEMOCAP, 7,380 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "baichuan-omni-1-5",
+      "metric": "IEMOCAP: Full, Weighted F1 (%)",
+      "value": 48.02,
+      "source": "Table 2, arXiv:2611.11987v1, row IEMOCAP, Baichuan, WF1, column Full",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; IEMOCAP, 7,380 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "baichuan-omni-1-5",
+      "metric": "IEMOCAP: RandA, Weighted F1 (%)",
+      "value": 43.74,
+      "source": "Table 2, arXiv:2611.11987v1, row IEMOCAP, Baichuan, WF1, column RandA",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; IEMOCAP, 7,380 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "baichuan-omni-1-5",
+      "metric": "IEMOCAP: RandV, Weighted F1 (%)",
+      "value": 46.2,
+      "source": "Table 2, arXiv:2611.11987v1, row IEMOCAP, Baichuan, WF1, column RandV",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; IEMOCAP, 7,380 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "baichuan-omni-1-5",
+      "metric": "IEMOCAP: RandA/V, Weighted F1 (%)",
+      "value": 41.71,
+      "source": "Table 2, arXiv:2611.11987v1, row IEMOCAP, Baichuan, WF1, column RandA/V",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; IEMOCAP, 7,380 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "minicpm-o",
+      "metric": "IEMOCAP: Text, Accuracy (%)",
+      "value": 45.07,
+      "source": "Table 2, arXiv:2611.11987v1, row IEMOCAP, MiniCPM, Acc., column Text",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; IEMOCAP, 7,380 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "minicpm-o",
+      "metric": "IEMOCAP: T+A, Accuracy (%)",
+      "value": 48.63,
+      "source": "Table 2, arXiv:2611.11987v1, row IEMOCAP, MiniCPM, Acc., column T+A",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; IEMOCAP, 7,380 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "minicpm-o",
+      "metric": "IEMOCAP: T+V, Accuracy (%)",
+      "value": 46.02,
+      "source": "Table 2, arXiv:2611.11987v1, row IEMOCAP, MiniCPM, Acc., column T+V",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; IEMOCAP, 7,380 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "minicpm-o",
+      "metric": "IEMOCAP: Full, Accuracy (%)",
+      "value": 47.76,
+      "source": "Table 2, arXiv:2611.11987v1, row IEMOCAP, MiniCPM, Acc., column Full",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; IEMOCAP, 7,380 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "minicpm-o",
+      "metric": "IEMOCAP: RandA, Accuracy (%)",
+      "value": 46.78,
+      "source": "Table 2, arXiv:2611.11987v1, row IEMOCAP, MiniCPM, Acc., column RandA",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; IEMOCAP, 7,380 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "minicpm-o",
+      "metric": "IEMOCAP: RandV, Accuracy (%)",
+      "value": 47.43,
+      "source": "Table 2, arXiv:2611.11987v1, row IEMOCAP, MiniCPM, Acc., column RandV",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; IEMOCAP, 7,380 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "minicpm-o",
+      "metric": "IEMOCAP: RandA/V, Accuracy (%)",
+      "value": 46.04,
+      "source": "Table 2, arXiv:2611.11987v1, row IEMOCAP, MiniCPM, Acc., column RandA/V",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; IEMOCAP, 7,380 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "minicpm-o",
+      "metric": "IEMOCAP: Text, Weighted F1 (%)",
+      "value": 42.97,
+      "source": "Table 2, arXiv:2611.11987v1, row IEMOCAP, MiniCPM, WF1, column Text",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; IEMOCAP, 7,380 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "minicpm-o",
+      "metric": "IEMOCAP: T+A, Weighted F1 (%)",
+      "value": 46.72,
+      "source": "Table 2, arXiv:2611.11987v1, row IEMOCAP, MiniCPM, WF1, column T+A",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; IEMOCAP, 7,380 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "minicpm-o",
+      "metric": "IEMOCAP: T+V, Weighted F1 (%)",
+      "value": 43.96,
+      "source": "Table 2, arXiv:2611.11987v1, row IEMOCAP, MiniCPM, WF1, column T+V",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; IEMOCAP, 7,380 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "minicpm-o",
+      "metric": "IEMOCAP: Full, Weighted F1 (%)",
+      "value": 45.49,
+      "source": "Table 2, arXiv:2611.11987v1, row IEMOCAP, MiniCPM, WF1, column Full",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; IEMOCAP, 7,380 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "minicpm-o",
+      "metric": "IEMOCAP: RandA, Weighted F1 (%)",
+      "value": 44.38,
+      "source": "Table 2, arXiv:2611.11987v1, row IEMOCAP, MiniCPM, WF1, column RandA",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; IEMOCAP, 7,380 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "minicpm-o",
+      "metric": "IEMOCAP: RandV, Weighted F1 (%)",
+      "value": 45.09,
+      "source": "Table 2, arXiv:2611.11987v1, row IEMOCAP, MiniCPM, WF1, column RandV",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; IEMOCAP, 7,380 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "merc-modality-reliance",
+      "model": "minicpm-o",
+      "metric": "IEMOCAP: RandA/V, Weighted F1 (%)",
+      "value": 43.92,
+      "source": "Table 2, arXiv:2611.11987v1, row IEMOCAP, MiniCPM, WF1, column RandA/V",
+      "source_url": "https://arxiv.org/pdf/2611.11987v1#page=8",
+      "note": "Primary source mapping seed 42; IEMOCAP, 7,380 expected targets. Aggregate scores include all expected targets; invalid/OOM responses contribute no true positives and remain in gold-class support. These are not the common-valid paired effects in Table 3. Target transcript and up to ten prior text turns are fixed; RandA/RandV replace the indicated target modality with an unrelated source. Models are Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 without finetuning. Percent, higher is better."
+    },
+    {
+      "benchmark": "beyond-transcript-recording-gain",
+      "model": "qwen2-5-omni",
+      "metric": "Lexical: Original-recording accuracy O (%)",
+      "value": 83.4,
+      "source": "Table 2, arXiv:2611.11573v1, row Qwen2.5-Omni-7B, Base, column Lexical: Original-recording accuracy O (%)",
+      "source_url": "https://arxiv.org/pdf/2611.11573v1#page=6",
+      "note": "Class means give each task equal weight after averaging items within a task; 92 tasks from six benchmarks. O uses original audio; A uses its Whisper transcript; T averages female and male synthetic transcript readings; AO combines transcript and original audio. S=O−T and H=AO−A are percentage-point differences, not percentages or isolated causal effects. Only the base Qwen2.5-Omni-7B configuration is mapped here; repaired LoRA variants are distinct."
+    },
+    {
+      "benchmark": "beyond-transcript-recording-gain",
+      "model": "qwen2-5-omni",
+      "metric": "Global attribute: Original-recording accuracy O (%)",
+      "value": 56.7,
+      "source": "Table 2, arXiv:2611.11573v1, row Qwen2.5-Omni-7B, Base, column Global attribute: Original-recording accuracy O (%)",
+      "source_url": "https://arxiv.org/pdf/2611.11573v1#page=6",
+      "note": "Class means give each task equal weight after averaging items within a task; 92 tasks from six benchmarks. O uses original audio; A uses its Whisper transcript; T averages female and male synthetic transcript readings; AO combines transcript and original audio. S=O−T and H=AO−A are percentage-point differences, not percentages or isolated causal effects. Only the base Qwen2.5-Omni-7B configuration is mapped here; repaired LoRA variants are distinct."
+    },
+    {
+      "benchmark": "beyond-transcript-recording-gain",
+      "model": "qwen2-5-omni",
+      "metric": "Global attribute: Recording gain S (pp)",
+      "value": 18.3,
+      "source": "Table 2, arXiv:2611.11573v1, row Qwen2.5-Omni-7B, Base, column Global attribute: Recording gain S (pp)",
+      "source_url": "https://arxiv.org/pdf/2611.11573v1#page=6",
+      "note": "Class means give each task equal weight after averaging items within a task; 92 tasks from six benchmarks. O uses original audio; A uses its Whisper transcript; T averages female and male synthetic transcript readings; AO combines transcript and original audio. S=O−T and H=AO−A are percentage-point differences, not percentages or isolated causal effects. Only the base Qwen2.5-Omni-7B configuration is mapped here; repaired LoRA variants are distinct."
+    },
+    {
+      "benchmark": "beyond-transcript-recording-gain",
+      "model": "qwen2-5-omni",
+      "metric": "Global attribute: Recording gain H (pp)",
+      "value": 14.9,
+      "source": "Table 2, arXiv:2611.11573v1, row Qwen2.5-Omni-7B, Base, column Global attribute: Recording gain H (pp)",
+      "source_url": "https://arxiv.org/pdf/2611.11573v1#page=6",
+      "note": "Class means give each task equal weight after averaging items within a task; 92 tasks from six benchmarks. O uses original audio; A uses its Whisper transcript; T averages female and male synthetic transcript readings; AO combines transcript and original audio. S=O−T and H=AO−A are percentage-point differences, not percentages or isolated causal effects. Only the base Qwen2.5-Omni-7B configuration is mapped here; repaired LoRA variants are distinct."
+    },
+    {
+      "benchmark": "beyond-transcript-recording-gain",
+      "model": "qwen2-5-omni",
+      "metric": "Within-recording structure: Original-recording accuracy O (%)",
+      "value": 34.0,
+      "source": "Table 2, arXiv:2611.11573v1, row Qwen2.5-Omni-7B, Base, column Within-recording structure: Original-recording accuracy O (%)",
+      "source_url": "https://arxiv.org/pdf/2611.11573v1#page=6",
+      "note": "Class means give each task equal weight after averaging items within a task; 92 tasks from six benchmarks. O uses original audio; A uses its Whisper transcript; T averages female and male synthetic transcript readings; AO combines transcript and original audio. S=O−T and H=AO−A are percentage-point differences, not percentages or isolated causal effects. Only the base Qwen2.5-Omni-7B configuration is mapped here; repaired LoRA variants are distinct."
+    },
+    {
+      "benchmark": "beyond-transcript-recording-gain",
+      "model": "qwen2-5-omni",
+      "metric": "Within-recording structure: Recording gain S (pp)",
+      "value": 1.8,
+      "source": "Table 2, arXiv:2611.11573v1, row Qwen2.5-Omni-7B, Base, column Within-recording structure: Recording gain S (pp)",
+      "source_url": "https://arxiv.org/pdf/2611.11573v1#page=6",
+      "note": "Class means give each task equal weight after averaging items within a task; 92 tasks from six benchmarks. O uses original audio; A uses its Whisper transcript; T averages female and male synthetic transcript readings; AO combines transcript and original audio. S=O−T and H=AO−A are percentage-point differences, not percentages or isolated causal effects. Only the base Qwen2.5-Omni-7B configuration is mapped here; repaired LoRA variants are distinct."
+    },
+    {
+      "benchmark": "beyond-transcript-recording-gain",
+      "model": "qwen2-5-omni",
+      "metric": "Within-recording structure: Recording gain H (pp)",
+      "value": 2.7,
+      "source": "Table 2, arXiv:2611.11573v1, row Qwen2.5-Omni-7B, Base, column Within-recording structure: Recording gain H (pp)",
+      "source_url": "https://arxiv.org/pdf/2611.11573v1#page=6",
+      "note": "Class means give each task equal weight after averaging items within a task; 92 tasks from six benchmarks. O uses original audio; A uses its Whisper transcript; T averages female and male synthetic transcript readings; AO combines transcript and original audio. S=O−T and H=AO−A are percentage-point differences, not percentages or isolated causal effects. Only the base Qwen2.5-Omni-7B configuration is mapped here; repaired LoRA variants are distinct."
+    },
+    {
+      "benchmark": "beyond-transcript-recording-gain",
+      "model": "gemini-3-1-pro",
+      "metric": "Lexical: Original-recording accuracy O (%)",
+      "value": 90.2,
+      "source": "Table 2, arXiv:2611.11573v1, row Gemini 3.1 Pro, column Lexical: Original-recording accuracy O (%)",
+      "source_url": "https://arxiv.org/pdf/2611.11573v1#page=6",
+      "note": "Class means give each task equal weight after averaging items within a task; 92 tasks from six benchmarks. O uses original audio; A uses its Whisper transcript; T averages female and male synthetic transcript readings; AO combines transcript and original audio. S=O−T and H=AO−A are percentage-point differences, not percentages or isolated causal effects. Only the base Qwen2.5-Omni-7B configuration is mapped here; repaired LoRA variants are distinct."
+    },
+    {
+      "benchmark": "beyond-transcript-recording-gain",
+      "model": "gemini-3-1-pro",
+      "metric": "Global attribute: Original-recording accuracy O (%)",
+      "value": 75.3,
+      "source": "Table 2, arXiv:2611.11573v1, row Gemini 3.1 Pro, column Global attribute: Original-recording accuracy O (%)",
+      "source_url": "https://arxiv.org/pdf/2611.11573v1#page=6",
+      "note": "Class means give each task equal weight after averaging items within a task; 92 tasks from six benchmarks. O uses original audio; A uses its Whisper transcript; T averages female and male synthetic transcript readings; AO combines transcript and original audio. S=O−T and H=AO−A are percentage-point differences, not percentages or isolated causal effects. Only the base Qwen2.5-Omni-7B configuration is mapped here; repaired LoRA variants are distinct."
+    },
+    {
+      "benchmark": "beyond-transcript-recording-gain",
+      "model": "gemini-3-1-pro",
+      "metric": "Global attribute: Recording gain S (pp)",
+      "value": 27.7,
+      "source": "Table 2, arXiv:2611.11573v1, row Gemini 3.1 Pro, column Global attribute: Recording gain S (pp)",
+      "source_url": "https://arxiv.org/pdf/2611.11573v1#page=6",
+      "note": "Class means give each task equal weight after averaging items within a task; 92 tasks from six benchmarks. O uses original audio; A uses its Whisper transcript; T averages female and male synthetic transcript readings; AO combines transcript and original audio. S=O−T and H=AO−A are percentage-point differences, not percentages or isolated causal effects. Only the base Qwen2.5-Omni-7B configuration is mapped here; repaired LoRA variants are distinct."
+    },
+    {
+      "benchmark": "beyond-transcript-recording-gain",
+      "model": "gemini-3-1-pro",
+      "metric": "Global attribute: Recording gain H (pp)",
+      "value": 23.8,
+      "source": "Table 2, arXiv:2611.11573v1, row Gemini 3.1 Pro, column Global attribute: Recording gain H (pp)",
+      "source_url": "https://arxiv.org/pdf/2611.11573v1#page=6",
+      "note": "Class means give each task equal weight after averaging items within a task; 92 tasks from six benchmarks. O uses original audio; A uses its Whisper transcript; T averages female and male synthetic transcript readings; AO combines transcript and original audio. S=O−T and H=AO−A are percentage-point differences, not percentages or isolated causal effects. Only the base Qwen2.5-Omni-7B configuration is mapped here; repaired LoRA variants are distinct."
+    },
+    {
+      "benchmark": "beyond-transcript-recording-gain",
+      "model": "gemini-3-1-pro",
+      "metric": "Within-recording structure: Original-recording accuracy O (%)",
+      "value": 75.4,
+      "source": "Table 2, arXiv:2611.11573v1, row Gemini 3.1 Pro, column Within-recording structure: Original-recording accuracy O (%)",
+      "source_url": "https://arxiv.org/pdf/2611.11573v1#page=6",
+      "note": "Class means give each task equal weight after averaging items within a task; 92 tasks from six benchmarks. O uses original audio; A uses its Whisper transcript; T averages female and male synthetic transcript readings; AO combines transcript and original audio. S=O−T and H=AO−A are percentage-point differences, not percentages or isolated causal effects. Only the base Qwen2.5-Omni-7B configuration is mapped here; repaired LoRA variants are distinct."
+    },
+    {
+      "benchmark": "beyond-transcript-recording-gain",
+      "model": "gemini-3-1-pro",
+      "metric": "Within-recording structure: Recording gain S (pp)",
+      "value": 26.4,
+      "source": "Table 2, arXiv:2611.11573v1, row Gemini 3.1 Pro, column Within-recording structure: Recording gain S (pp)",
+      "source_url": "https://arxiv.org/pdf/2611.11573v1#page=6",
+      "note": "Class means give each task equal weight after averaging items within a task; 92 tasks from six benchmarks. O uses original audio; A uses its Whisper transcript; T averages female and male synthetic transcript readings; AO combines transcript and original audio. S=O−T and H=AO−A are percentage-point differences, not percentages or isolated causal effects. Only the base Qwen2.5-Omni-7B configuration is mapped here; repaired LoRA variants are distinct."
+    },
+    {
+      "benchmark": "beyond-transcript-recording-gain",
+      "model": "gemini-3-1-pro",
+      "metric": "Within-recording structure: Recording gain H (pp)",
+      "value": 22.6,
+      "source": "Table 2, arXiv:2611.11573v1, row Gemini 3.1 Pro, column Within-recording structure: Recording gain H (pp)",
+      "source_url": "https://arxiv.org/pdf/2611.11573v1#page=6",
+      "note": "Class means give each task equal weight after averaging items within a task; 92 tasks from six benchmarks. O uses original audio; A uses its Whisper transcript; T averages female and male synthetic transcript readings; AO combines transcript and original audio. S=O−T and H=AO−A are percentage-point differences, not percentages or isolated causal effects. Only the base Qwen2.5-Omni-7B configuration is mapped here; repaired LoRA variants are distinct."
+    },
+    {
+      "benchmark": "machine-hearing-benchmark",
+      "model": "qwen2-5-omni",
+      "metric": "GWOSC: Zero-shot Macro-F1 (%)",
+      "value": 38.11,
+      "source": "Table 1, arXiv:2611.10693v1, row Qwen2.5-Omni-7B, column GWOSC",
+      "source_url": "https://arxiv.org/pdf/2611.10693v1#page=6",
+      "note": "Unified zero-shot prompting on the Machine Hearing Benchmark. Macro-F1 is computed over all task instances, with invalid responses treated as incorrect; it is distinct from parseable-label Success Rate. Inputs span physical time series as well as audible signals, with model-specific frontend handling. No MachEar or finetuned variant is mapped to the base models. Doubao-2.0-Lite is doubao-seed-2-0-lite-260215, explicitly identified in Appendix B.1. Percent, higher is better."
+    },
+    {
+      "benchmark": "machine-hearing-benchmark",
+      "model": "qwen2-5-omni",
+      "metric": "LEAVES: Zero-shot Macro-F1 (%)",
+      "value": 0.0,
+      "source": "Table 1, arXiv:2611.10693v1, row Qwen2.5-Omni-7B, column LEAVES",
+      "source_url": "https://arxiv.org/pdf/2611.10693v1#page=6",
+      "note": "Unified zero-shot prompting on the Machine Hearing Benchmark. Macro-F1 is computed over all task instances, with invalid responses treated as incorrect; it is distinct from parseable-label Success Rate. Inputs span physical time series as well as audible signals, with model-specific frontend handling. No MachEar or finetuned variant is mapped to the base models. Doubao-2.0-Lite is doubao-seed-2-0-lite-260215, explicitly identified in Appendix B.1. Percent, higher is better."
+    },
+    {
+      "benchmark": "machine-hearing-benchmark",
+      "model": "qwen2-5-omni",
+      "metric": "Iquique: Zero-shot Macro-F1 (%)",
+      "value": 24.78,
+      "source": "Table 1, arXiv:2611.10693v1, row Qwen2.5-Omni-7B, column Iquique",
+      "source_url": "https://arxiv.org/pdf/2611.10693v1#page=6",
+      "note": "Unified zero-shot prompting on the Machine Hearing Benchmark. Macro-F1 is computed over all task instances, with invalid responses treated as incorrect; it is distinct from parseable-label Success Rate. Inputs span physical time series as well as audible signals, with model-specific frontend handling. No MachEar or finetuned variant is mapped to the base models. Doubao-2.0-Lite is doubao-seed-2-0-lite-260215, explicitly identified in Appendix B.1. Percent, higher is better."
+    },
+    {
+      "benchmark": "machine-hearing-benchmark",
+      "model": "qwen2-5-omni",
+      "metric": "Llaima: Zero-shot Macro-F1 (%)",
+      "value": 3.75,
+      "source": "Table 1, arXiv:2611.10693v1, row Qwen2.5-Omni-7B, column Llaima",
+      "source_url": "https://arxiv.org/pdf/2611.10693v1#page=6",
+      "note": "Unified zero-shot prompting on the Machine Hearing Benchmark. Macro-F1 is computed over all task instances, with invalid responses treated as incorrect; it is distinct from parseable-label Success Rate. Inputs span physical time series as well as audible signals, with model-specific frontend handling. No MachEar or finetuned variant is mapped to the base models. Doubao-2.0-Lite is doubao-seed-2-0-lite-260215, explicitly identified in Appendix B.1. Percent, higher is better."
+    },
+    {
+      "benchmark": "machine-hearing-benchmark",
+      "model": "qwen2-5-omni",
+      "metric": "Yaseen: Zero-shot Macro-F1 (%)",
+      "value": 12.06,
+      "source": "Table 1, arXiv:2611.10693v1, row Qwen2.5-Omni-7B, column Yaseen",
+      "source_url": "https://arxiv.org/pdf/2611.10693v1#page=6",
+      "note": "Unified zero-shot prompting on the Machine Hearing Benchmark. Macro-F1 is computed over all task instances, with invalid responses treated as incorrect; it is distinct from parseable-label Success Rate. Inputs span physical time series as well as audible signals, with model-specific frontend handling. No MachEar or finetuned variant is mapped to the base models. Doubao-2.0-Lite is doubao-seed-2-0-lite-260215, explicitly identified in Appendix B.1. Percent, higher is better."
+    },
+    {
+      "benchmark": "machine-hearing-benchmark",
+      "model": "qwen2-5-omni",
+      "metric": "CirCor-loc: Zero-shot Macro-F1 (%)",
+      "value": 18.65,
+      "source": "Table 1, arXiv:2611.10693v1, row Qwen2.5-Omni-7B, column CirCor-loc",
+      "source_url": "https://arxiv.org/pdf/2611.10693v1#page=6",
+      "note": "Unified zero-shot prompting on the Machine Hearing Benchmark. Macro-F1 is computed over all task instances, with invalid responses treated as incorrect; it is distinct from parseable-label Success Rate. Inputs span physical time series as well as audible signals, with model-specific frontend handling. No MachEar or finetuned variant is mapped to the base models. Doubao-2.0-Lite is doubao-seed-2-0-lite-260215, explicitly identified in Appendix B.1. Percent, higher is better."
+    },
+    {
+      "benchmark": "machine-hearing-benchmark",
+      "model": "audio-flamingo-3",
+      "metric": "GWOSC: Zero-shot Macro-F1 (%)",
+      "value": 49.83,
+      "source": "Table 1, arXiv:2611.10693v1, row Audio-Flamingo-3-7B, column GWOSC",
+      "source_url": "https://arxiv.org/pdf/2611.10693v1#page=6",
+      "note": "Unified zero-shot prompting on the Machine Hearing Benchmark. Macro-F1 is computed over all task instances, with invalid responses treated as incorrect; it is distinct from parseable-label Success Rate. Inputs span physical time series as well as audible signals, with model-specific frontend handling. No MachEar or finetuned variant is mapped to the base models. Doubao-2.0-Lite is doubao-seed-2-0-lite-260215, explicitly identified in Appendix B.1. Percent, higher is better."
+    },
+    {
+      "benchmark": "machine-hearing-benchmark",
+      "model": "audio-flamingo-3",
+      "metric": "LEAVES: Zero-shot Macro-F1 (%)",
+      "value": 0.22,
+      "source": "Table 1, arXiv:2611.10693v1, row Audio-Flamingo-3-7B, column LEAVES",
+      "source_url": "https://arxiv.org/pdf/2611.10693v1#page=6",
+      "note": "Unified zero-shot prompting on the Machine Hearing Benchmark. Macro-F1 is computed over all task instances, with invalid responses treated as incorrect; it is distinct from parseable-label Success Rate. Inputs span physical time series as well as audible signals, with model-specific frontend handling. No MachEar or finetuned variant is mapped to the base models. Doubao-2.0-Lite is doubao-seed-2-0-lite-260215, explicitly identified in Appendix B.1. Percent, higher is better."
+    },
+    {
+      "benchmark": "machine-hearing-benchmark",
+      "model": "audio-flamingo-3",
+      "metric": "Iquique: Zero-shot Macro-F1 (%)",
+      "value": 34.77,
+      "source": "Table 1, arXiv:2611.10693v1, row Audio-Flamingo-3-7B, column Iquique",
+      "source_url": "https://arxiv.org/pdf/2611.10693v1#page=6",
+      "note": "Unified zero-shot prompting on the Machine Hearing Benchmark. Macro-F1 is computed over all task instances, with invalid responses treated as incorrect; it is distinct from parseable-label Success Rate. Inputs span physical time series as well as audible signals, with model-specific frontend handling. No MachEar or finetuned variant is mapped to the base models. Doubao-2.0-Lite is doubao-seed-2-0-lite-260215, explicitly identified in Appendix B.1. Percent, higher is better."
+    },
+    {
+      "benchmark": "machine-hearing-benchmark",
+      "model": "audio-flamingo-3",
+      "metric": "Llaima: Zero-shot Macro-F1 (%)",
+      "value": 3.75,
+      "source": "Table 1, arXiv:2611.10693v1, row Audio-Flamingo-3-7B, column Llaima",
+      "source_url": "https://arxiv.org/pdf/2611.10693v1#page=6",
+      "note": "Unified zero-shot prompting on the Machine Hearing Benchmark. Macro-F1 is computed over all task instances, with invalid responses treated as incorrect; it is distinct from parseable-label Success Rate. Inputs span physical time series as well as audible signals, with model-specific frontend handling. No MachEar or finetuned variant is mapped to the base models. Doubao-2.0-Lite is doubao-seed-2-0-lite-260215, explicitly identified in Appendix B.1. Percent, higher is better."
+    },
+    {
+      "benchmark": "machine-hearing-benchmark",
+      "model": "audio-flamingo-3",
+      "metric": "Yaseen: Zero-shot Macro-F1 (%)",
+      "value": 7.74,
+      "source": "Table 1, arXiv:2611.10693v1, row Audio-Flamingo-3-7B, column Yaseen",
+      "source_url": "https://arxiv.org/pdf/2611.10693v1#page=6",
+      "note": "Unified zero-shot prompting on the Machine Hearing Benchmark. Macro-F1 is computed over all task instances, with invalid responses treated as incorrect; it is distinct from parseable-label Success Rate. Inputs span physical time series as well as audible signals, with model-specific frontend handling. No MachEar or finetuned variant is mapped to the base models. Doubao-2.0-Lite is doubao-seed-2-0-lite-260215, explicitly identified in Appendix B.1. Percent, higher is better."
+    },
+    {
+      "benchmark": "machine-hearing-benchmark",
+      "model": "audio-flamingo-3",
+      "metric": "CirCor-loc: Zero-shot Macro-F1 (%)",
+      "value": 17.83,
+      "source": "Table 1, arXiv:2611.10693v1, row Audio-Flamingo-3-7B, column CirCor-loc",
+      "source_url": "https://arxiv.org/pdf/2611.10693v1#page=6",
+      "note": "Unified zero-shot prompting on the Machine Hearing Benchmark. Macro-F1 is computed over all task instances, with invalid responses treated as incorrect; it is distinct from parseable-label Success Rate. Inputs span physical time series as well as audible signals, with model-specific frontend handling. No MachEar or finetuned variant is mapped to the base models. Doubao-2.0-Lite is doubao-seed-2-0-lite-260215, explicitly identified in Appendix B.1. Percent, higher is better."
+    },
+    {
+      "benchmark": "machine-hearing-benchmark",
+      "model": "gemini-3-flash",
+      "metric": "GWOSC: Zero-shot Macro-F1 (%)",
+      "value": 35.62,
+      "source": "Table 1, arXiv:2611.10693v1, row Gemini-3-Flash, column GWOSC",
+      "source_url": "https://arxiv.org/pdf/2611.10693v1#page=6",
+      "note": "Unified zero-shot prompting on the Machine Hearing Benchmark. Macro-F1 is computed over all task instances, with invalid responses treated as incorrect; it is distinct from parseable-label Success Rate. Inputs span physical time series as well as audible signals, with model-specific frontend handling. No MachEar or finetuned variant is mapped to the base models. Doubao-2.0-Lite is doubao-seed-2-0-lite-260215, explicitly identified in Appendix B.1. Percent, higher is better."
+    },
+    {
+      "benchmark": "machine-hearing-benchmark",
+      "model": "gemini-3-flash",
+      "metric": "LEAVES: Zero-shot Macro-F1 (%)",
+      "value": 0.0,
+      "source": "Table 1, arXiv:2611.10693v1, row Gemini-3-Flash, column LEAVES",
+      "source_url": "https://arxiv.org/pdf/2611.10693v1#page=6",
+      "note": "Unified zero-shot prompting on the Machine Hearing Benchmark. Macro-F1 is computed over all task instances, with invalid responses treated as incorrect; it is distinct from parseable-label Success Rate. Inputs span physical time series as well as audible signals, with model-specific frontend handling. No MachEar or finetuned variant is mapped to the base models. Doubao-2.0-Lite is doubao-seed-2-0-lite-260215, explicitly identified in Appendix B.1. Percent, higher is better."
+    },
+    {
+      "benchmark": "machine-hearing-benchmark",
+      "model": "gemini-3-flash",
+      "metric": "Iquique: Zero-shot Macro-F1 (%)",
+      "value": 31.88,
+      "source": "Table 1, arXiv:2611.10693v1, row Gemini-3-Flash, column Iquique",
+      "source_url": "https://arxiv.org/pdf/2611.10693v1#page=6",
+      "note": "Unified zero-shot prompting on the Machine Hearing Benchmark. Macro-F1 is computed over all task instances, with invalid responses treated as incorrect; it is distinct from parseable-label Success Rate. Inputs span physical time series as well as audible signals, with model-specific frontend handling. No MachEar or finetuned variant is mapped to the base models. Doubao-2.0-Lite is doubao-seed-2-0-lite-260215, explicitly identified in Appendix B.1. Percent, higher is better."
+    },
+    {
+      "benchmark": "machine-hearing-benchmark",
+      "model": "gemini-3-flash",
+      "metric": "Llaima: Zero-shot Macro-F1 (%)",
+      "value": 23.16,
+      "source": "Table 1, arXiv:2611.10693v1, row Gemini-3-Flash, column Llaima",
+      "source_url": "https://arxiv.org/pdf/2611.10693v1#page=6",
+      "note": "Unified zero-shot prompting on the Machine Hearing Benchmark. Macro-F1 is computed over all task instances, with invalid responses treated as incorrect; it is distinct from parseable-label Success Rate. Inputs span physical time series as well as audible signals, with model-specific frontend handling. No MachEar or finetuned variant is mapped to the base models. Doubao-2.0-Lite is doubao-seed-2-0-lite-260215, explicitly identified in Appendix B.1. Percent, higher is better."
+    },
+    {
+      "benchmark": "machine-hearing-benchmark",
+      "model": "gemini-3-flash",
+      "metric": "Yaseen: Zero-shot Macro-F1 (%)",
+      "value": 16.05,
+      "source": "Table 1, arXiv:2611.10693v1, row Gemini-3-Flash, column Yaseen",
+      "source_url": "https://arxiv.org/pdf/2611.10693v1#page=6",
+      "note": "Unified zero-shot prompting on the Machine Hearing Benchmark. Macro-F1 is computed over all task instances, with invalid responses treated as incorrect; it is distinct from parseable-label Success Rate. Inputs span physical time series as well as audible signals, with model-specific frontend handling. No MachEar or finetuned variant is mapped to the base models. Doubao-2.0-Lite is doubao-seed-2-0-lite-260215, explicitly identified in Appendix B.1. Percent, higher is better."
+    },
+    {
+      "benchmark": "machine-hearing-benchmark",
+      "model": "gemini-3-flash",
+      "metric": "CirCor-loc: Zero-shot Macro-F1 (%)",
+      "value": 15.68,
+      "source": "Table 1, arXiv:2611.10693v1, row Gemini-3-Flash, column CirCor-loc",
+      "source_url": "https://arxiv.org/pdf/2611.10693v1#page=6",
+      "note": "Unified zero-shot prompting on the Machine Hearing Benchmark. Macro-F1 is computed over all task instances, with invalid responses treated as incorrect; it is distinct from parseable-label Success Rate. Inputs span physical time series as well as audible signals, with model-specific frontend handling. No MachEar or finetuned variant is mapped to the base models. Doubao-2.0-Lite is doubao-seed-2-0-lite-260215, explicitly identified in Appendix B.1. Percent, higher is better."
+    },
+    {
+      "benchmark": "machine-hearing-benchmark",
+      "model": "gpt-audio-mini",
+      "metric": "GWOSC: Zero-shot Macro-F1 (%)",
+      "value": 2.75,
+      "source": "Table 1, arXiv:2611.10693v1, row GPT-Audio-Mini, column GWOSC",
+      "source_url": "https://arxiv.org/pdf/2611.10693v1#page=6",
+      "note": "Unified zero-shot prompting on the Machine Hearing Benchmark. Macro-F1 is computed over all task instances, with invalid responses treated as incorrect; it is distinct from parseable-label Success Rate. Inputs span physical time series as well as audible signals, with model-specific frontend handling. No MachEar or finetuned variant is mapped to the base models. Doubao-2.0-Lite is doubao-seed-2-0-lite-260215, explicitly identified in Appendix B.1. Percent, higher is better."
+    },
+    {
+      "benchmark": "machine-hearing-benchmark",
+      "model": "gpt-audio-mini",
+      "metric": "LEAVES: Zero-shot Macro-F1 (%)",
+      "value": 0.0,
+      "source": "Table 1, arXiv:2611.10693v1, row GPT-Audio-Mini, column LEAVES",
+      "source_url": "https://arxiv.org/pdf/2611.10693v1#page=6",
+      "note": "Unified zero-shot prompting on the Machine Hearing Benchmark. Macro-F1 is computed over all task instances, with invalid responses treated as incorrect; it is distinct from parseable-label Success Rate. Inputs span physical time series as well as audible signals, with model-specific frontend handling. No MachEar or finetuned variant is mapped to the base models. Doubao-2.0-Lite is doubao-seed-2-0-lite-260215, explicitly identified in Appendix B.1. Percent, higher is better."
+    },
+    {
+      "benchmark": "machine-hearing-benchmark",
+      "model": "gpt-audio-mini",
+      "metric": "Iquique: Zero-shot Macro-F1 (%)",
+      "value": 15.64,
+      "source": "Table 1, arXiv:2611.10693v1, row GPT-Audio-Mini, column Iquique",
+      "source_url": "https://arxiv.org/pdf/2611.10693v1#page=6",
+      "note": "Unified zero-shot prompting on the Machine Hearing Benchmark. Macro-F1 is computed over all task instances, with invalid responses treated as incorrect; it is distinct from parseable-label Success Rate. Inputs span physical time series as well as audible signals, with model-specific frontend handling. No MachEar or finetuned variant is mapped to the base models. Doubao-2.0-Lite is doubao-seed-2-0-lite-260215, explicitly identified in Appendix B.1. Percent, higher is better."
+    },
+    {
+      "benchmark": "machine-hearing-benchmark",
+      "model": "gpt-audio-mini",
+      "metric": "Llaima: Zero-shot Macro-F1 (%)",
+      "value": 9.14,
+      "source": "Table 1, arXiv:2611.10693v1, row GPT-Audio-Mini, column Llaima",
+      "source_url": "https://arxiv.org/pdf/2611.10693v1#page=6",
+      "note": "Unified zero-shot prompting on the Machine Hearing Benchmark. Macro-F1 is computed over all task instances, with invalid responses treated as incorrect; it is distinct from parseable-label Success Rate. Inputs span physical time series as well as audible signals, with model-specific frontend handling. No MachEar or finetuned variant is mapped to the base models. Doubao-2.0-Lite is doubao-seed-2-0-lite-260215, explicitly identified in Appendix B.1. Percent, higher is better."
+    },
+    {
+      "benchmark": "machine-hearing-benchmark",
+      "model": "gpt-audio-mini",
+      "metric": "Yaseen: Zero-shot Macro-F1 (%)",
+      "value": 16.96,
+      "source": "Table 1, arXiv:2611.10693v1, row GPT-Audio-Mini, column Yaseen",
+      "source_url": "https://arxiv.org/pdf/2611.10693v1#page=6",
+      "note": "Unified zero-shot prompting on the Machine Hearing Benchmark. Macro-F1 is computed over all task instances, with invalid responses treated as incorrect; it is distinct from parseable-label Success Rate. Inputs span physical time series as well as audible signals, with model-specific frontend handling. No MachEar or finetuned variant is mapped to the base models. Doubao-2.0-Lite is doubao-seed-2-0-lite-260215, explicitly identified in Appendix B.1. Percent, higher is better."
+    },
+    {
+      "benchmark": "machine-hearing-benchmark",
+      "model": "gpt-audio-mini",
+      "metric": "CirCor-loc: Zero-shot Macro-F1 (%)",
+      "value": 18.57,
+      "source": "Table 1, arXiv:2611.10693v1, row GPT-Audio-Mini, column CirCor-loc",
+      "source_url": "https://arxiv.org/pdf/2611.10693v1#page=6",
+      "note": "Unified zero-shot prompting on the Machine Hearing Benchmark. Macro-F1 is computed over all task instances, with invalid responses treated as incorrect; it is distinct from parseable-label Success Rate. Inputs span physical time series as well as audible signals, with model-specific frontend handling. No MachEar or finetuned variant is mapped to the base models. Doubao-2.0-Lite is doubao-seed-2-0-lite-260215, explicitly identified in Appendix B.1. Percent, higher is better."
+    },
+    {
+      "benchmark": "machine-hearing-benchmark",
+      "model": "doubao-seed-2-0-lite",
+      "metric": "GWOSC: Zero-shot Macro-F1 (%)",
+      "value": 33.1,
+      "source": "Table 1, arXiv:2611.10693v1, row Doubao-2.0-Lite, column GWOSC",
+      "source_url": "https://arxiv.org/pdf/2611.10693v1#page=6",
+      "note": "Unified zero-shot prompting on the Machine Hearing Benchmark. Macro-F1 is computed over all task instances, with invalid responses treated as incorrect; it is distinct from parseable-label Success Rate. Inputs span physical time series as well as audible signals, with model-specific frontend handling. No MachEar or finetuned variant is mapped to the base models. Doubao-2.0-Lite is doubao-seed-2-0-lite-260215, explicitly identified in Appendix B.1. Percent, higher is better."
+    },
+    {
+      "benchmark": "machine-hearing-benchmark",
+      "model": "doubao-seed-2-0-lite",
+      "metric": "LEAVES: Zero-shot Macro-F1 (%)",
+      "value": 0.0,
+      "source": "Table 1, arXiv:2611.10693v1, row Doubao-2.0-Lite, column LEAVES",
+      "source_url": "https://arxiv.org/pdf/2611.10693v1#page=6",
+      "note": "Unified zero-shot prompting on the Machine Hearing Benchmark. Macro-F1 is computed over all task instances, with invalid responses treated as incorrect; it is distinct from parseable-label Success Rate. Inputs span physical time series as well as audible signals, with model-specific frontend handling. No MachEar or finetuned variant is mapped to the base models. Doubao-2.0-Lite is doubao-seed-2-0-lite-260215, explicitly identified in Appendix B.1. Percent, higher is better."
+    },
+    {
+      "benchmark": "machine-hearing-benchmark",
+      "model": "doubao-seed-2-0-lite",
+      "metric": "Iquique: Zero-shot Macro-F1 (%)",
+      "value": 31.36,
+      "source": "Table 1, arXiv:2611.10693v1, row Doubao-2.0-Lite, column Iquique",
+      "source_url": "https://arxiv.org/pdf/2611.10693v1#page=6",
+      "note": "Unified zero-shot prompting on the Machine Hearing Benchmark. Macro-F1 is computed over all task instances, with invalid responses treated as incorrect; it is distinct from parseable-label Success Rate. Inputs span physical time series as well as audible signals, with model-specific frontend handling. No MachEar or finetuned variant is mapped to the base models. Doubao-2.0-Lite is doubao-seed-2-0-lite-260215, explicitly identified in Appendix B.1. Percent, higher is better."
+    },
+    {
+      "benchmark": "machine-hearing-benchmark",
+      "model": "doubao-seed-2-0-lite",
+      "metric": "Llaima: Zero-shot Macro-F1 (%)",
+      "value": 16.47,
+      "source": "Table 1, arXiv:2611.10693v1, row Doubao-2.0-Lite, column Llaima",
+      "source_url": "https://arxiv.org/pdf/2611.10693v1#page=6",
+      "note": "Unified zero-shot prompting on the Machine Hearing Benchmark. Macro-F1 is computed over all task instances, with invalid responses treated as incorrect; it is distinct from parseable-label Success Rate. Inputs span physical time series as well as audible signals, with model-specific frontend handling. No MachEar or finetuned variant is mapped to the base models. Doubao-2.0-Lite is doubao-seed-2-0-lite-260215, explicitly identified in Appendix B.1. Percent, higher is better."
+    },
+    {
+      "benchmark": "machine-hearing-benchmark",
+      "model": "doubao-seed-2-0-lite",
+      "metric": "Yaseen: Zero-shot Macro-F1 (%)",
+      "value": 7.74,
+      "source": "Table 1, arXiv:2611.10693v1, row Doubao-2.0-Lite, column Yaseen",
+      "source_url": "https://arxiv.org/pdf/2611.10693v1#page=6",
+      "note": "Unified zero-shot prompting on the Machine Hearing Benchmark. Macro-F1 is computed over all task instances, with invalid responses treated as incorrect; it is distinct from parseable-label Success Rate. Inputs span physical time series as well as audible signals, with model-specific frontend handling. No MachEar or finetuned variant is mapped to the base models. Doubao-2.0-Lite is doubao-seed-2-0-lite-260215, explicitly identified in Appendix B.1. Percent, higher is better."
+    },
+    {
+      "benchmark": "machine-hearing-benchmark",
+      "model": "doubao-seed-2-0-lite",
+      "metric": "CirCor-loc: Zero-shot Macro-F1 (%)",
+      "value": 21.53,
+      "source": "Table 1, arXiv:2611.10693v1, row Doubao-2.0-Lite, column CirCor-loc",
+      "source_url": "https://arxiv.org/pdf/2611.10693v1#page=6",
+      "note": "Unified zero-shot prompting on the Machine Hearing Benchmark. Macro-F1 is computed over all task instances, with invalid responses treated as incorrect; it is distinct from parseable-label Success Rate. Inputs span physical time series as well as audible signals, with model-specific frontend handling. No MachEar or finetuned variant is mapped to the base models. Doubao-2.0-Lite is doubao-seed-2-0-lite-260215, explicitly identified in Appendix B.1. Percent, higher is better."
+    },
+    {
+      "benchmark": "machine-hearing-benchmark",
+      "model": "qwen2-5-omni",
+      "metric": "RadSeg: Zero-shot Macro-F1 (%)",
+      "value": 8.25,
+      "source": "Table 1, arXiv:2611.10693v1, row Qwen2.5-Omni-7B, column RadSeg",
+      "source_url": "https://arxiv.org/pdf/2611.10693v1#page=6",
+      "note": "Unified zero-shot prompting on the Machine Hearing Benchmark. Macro-F1 is computed over all task instances, with invalid responses treated as incorrect; it is distinct from parseable-label Success Rate. Inputs span physical time series as well as audible signals, with model-specific frontend handling. No MachEar or finetuned variant is mapped to the base models. Doubao-2.0-Lite is doubao-seed-2-0-lite-260215, explicitly identified in Appendix B.1. Percent, higher is better."
+    },
+    {
+      "benchmark": "machine-hearing-benchmark",
+      "model": "qwen2-5-omni",
+      "metric": "RadioML: Zero-shot Macro-F1 (%)",
+      "value": 0.0,
+      "source": "Table 1, arXiv:2611.10693v1, row Qwen2.5-Omni-7B, column RadioML",
+      "source_url": "https://arxiv.org/pdf/2611.10693v1#page=6",
+      "note": "Unified zero-shot prompting on the Machine Hearing Benchmark. Macro-F1 is computed over all task instances, with invalid responses treated as incorrect; it is distinct from parseable-label Success Rate. Inputs span physical time series as well as audible signals, with model-specific frontend handling. No MachEar or finetuned variant is mapped to the base models. Doubao-2.0-Lite is doubao-seed-2-0-lite-260215, explicitly identified in Appendix B.1. Percent, higher is better."
+    },
+    {
+      "benchmark": "machine-hearing-benchmark",
+      "model": "qwen2-5-omni",
+      "metric": "ShipsEar: Zero-shot Macro-F1 (%)",
+      "value": 1.11,
+      "source": "Table 1, arXiv:2611.10693v1, row Qwen2.5-Omni-7B, column ShipsEar",
+      "source_url": "https://arxiv.org/pdf/2611.10693v1#page=6",
+      "note": "Unified zero-shot prompting on the Machine Hearing Benchmark. Macro-F1 is computed over all task instances, with invalid responses treated as incorrect; it is distinct from parseable-label Success Rate. Inputs span physical time series as well as audible signals, with model-specific frontend handling. No MachEar or finetuned variant is mapped to the base models. Doubao-2.0-Lite is doubao-seed-2-0-lite-260215, explicitly identified in Appendix B.1. Percent, higher is better."
+    },
+    {
+      "benchmark": "machine-hearing-benchmark",
+      "model": "qwen2-5-omni",
+      "metric": "DeepShip: Zero-shot Macro-F1 (%)",
+      "value": 8.76,
+      "source": "Table 1, arXiv:2611.10693v1, row Qwen2.5-Omni-7B, column DeepShip",
+      "source_url": "https://arxiv.org/pdf/2611.10693v1#page=6",
+      "note": "Unified zero-shot prompting on the Machine Hearing Benchmark. Macro-F1 is computed over all task instances, with invalid responses treated as incorrect; it is distinct from parseable-label Success Rate. Inputs span physical time series as well as audible signals, with model-specific frontend handling. No MachEar or finetuned variant is mapped to the base models. Doubao-2.0-Lite is doubao-seed-2-0-lite-260215, explicitly identified in Appendix B.1. Percent, higher is better."
+    },
+    {
+      "benchmark": "machine-hearing-benchmark",
+      "model": "qwen2-5-omni",
+      "metric": "MarmAudio: Zero-shot Macro-F1 (%)",
+      "value": 9.7,
+      "source": "Table 1, arXiv:2611.10693v1, row Qwen2.5-Omni-7B, column MarmAudio",
+      "source_url": "https://arxiv.org/pdf/2611.10693v1#page=6",
+      "note": "Unified zero-shot prompting on the Machine Hearing Benchmark. Macro-F1 is computed over all task instances, with invalid responses treated as incorrect; it is distinct from parseable-label Success Rate. Inputs span physical time series as well as audible signals, with model-specific frontend handling. No MachEar or finetuned variant is mapped to the base models. Doubao-2.0-Lite is doubao-seed-2-0-lite-260215, explicitly identified in Appendix B.1. Percent, higher is better."
+    },
+    {
+      "benchmark": "machine-hearing-benchmark",
+      "model": "qwen2-5-omni",
+      "metric": "SDUST-bear: Zero-shot Macro-F1 (%)",
+      "value": 3.44,
+      "source": "Table 1, arXiv:2611.10693v1, row Qwen2.5-Omni-7B, column SDUST-bear",
+      "source_url": "https://arxiv.org/pdf/2611.10693v1#page=6",
+      "note": "Unified zero-shot prompting on the Machine Hearing Benchmark. Macro-F1 is computed over all task instances, with invalid responses treated as incorrect; it is distinct from parseable-label Success Rate. Inputs span physical time series as well as audible signals, with model-specific frontend handling. No MachEar or finetuned variant is mapped to the base models. Doubao-2.0-Lite is doubao-seed-2-0-lite-260215, explicitly identified in Appendix B.1. Percent, higher is better."
+    },
+    {
+      "benchmark": "machine-hearing-benchmark",
+      "model": "qwen2-5-omni",
+      "metric": "PU-cur: Zero-shot Macro-F1 (%)",
+      "value": 20.81,
+      "source": "Table 1, arXiv:2611.10693v1, row Qwen2.5-Omni-7B, column PU-cur",
+      "source_url": "https://arxiv.org/pdf/2611.10693v1#page=6",
+      "note": "Unified zero-shot prompting on the Machine Hearing Benchmark. Macro-F1 is computed over all task instances, with invalid responses treated as incorrect; it is distinct from parseable-label Success Rate. Inputs span physical time series as well as audible signals, with model-specific frontend handling. No MachEar or finetuned variant is mapped to the base models. Doubao-2.0-Lite is doubao-seed-2-0-lite-260215, explicitly identified in Appendix B.1. Percent, higher is better."
+    },
+    {
+      "benchmark": "machine-hearing-benchmark",
+      "model": "audio-flamingo-3",
+      "metric": "RadSeg: Zero-shot Macro-F1 (%)",
+      "value": 6.64,
+      "source": "Table 1, arXiv:2611.10693v1, row Audio-Flamingo-3-7B, column RadSeg",
+      "source_url": "https://arxiv.org/pdf/2611.10693v1#page=6",
+      "note": "Unified zero-shot prompting on the Machine Hearing Benchmark. Macro-F1 is computed over all task instances, with invalid responses treated as incorrect; it is distinct from parseable-label Success Rate. Inputs span physical time series as well as audible signals, with model-specific frontend handling. No MachEar or finetuned variant is mapped to the base models. Doubao-2.0-Lite is doubao-seed-2-0-lite-260215, explicitly identified in Appendix B.1. Percent, higher is better."
+    },
+    {
+      "benchmark": "machine-hearing-benchmark",
+      "model": "audio-flamingo-3",
+      "metric": "RadioML: Zero-shot Macro-F1 (%)",
+      "value": 1.52,
+      "source": "Table 1, arXiv:2611.10693v1, row Audio-Flamingo-3-7B, column RadioML",
+      "source_url": "https://arxiv.org/pdf/2611.10693v1#page=6",
+      "note": "Unified zero-shot prompting on the Machine Hearing Benchmark. Macro-F1 is computed over all task instances, with invalid responses treated as incorrect; it is distinct from parseable-label Success Rate. Inputs span physical time series as well as audible signals, with model-specific frontend handling. No MachEar or finetuned variant is mapped to the base models. Doubao-2.0-Lite is doubao-seed-2-0-lite-260215, explicitly identified in Appendix B.1. Percent, higher is better."
+    },
+    {
+      "benchmark": "machine-hearing-benchmark",
+      "model": "audio-flamingo-3",
+      "metric": "ShipsEar: Zero-shot Macro-F1 (%)",
+      "value": 0.83,
+      "source": "Table 1, arXiv:2611.10693v1, row Audio-Flamingo-3-7B, column ShipsEar",
+      "source_url": "https://arxiv.org/pdf/2611.10693v1#page=6",
+      "note": "Unified zero-shot prompting on the Machine Hearing Benchmark. Macro-F1 is computed over all task instances, with invalid responses treated as incorrect; it is distinct from parseable-label Success Rate. Inputs span physical time series as well as audible signals, with model-specific frontend handling. No MachEar or finetuned variant is mapped to the base models. Doubao-2.0-Lite is doubao-seed-2-0-lite-260215, explicitly identified in Appendix B.1. Percent, higher is better."
+    },
+    {
+      "benchmark": "machine-hearing-benchmark",
+      "model": "audio-flamingo-3",
+      "metric": "DeepShip: Zero-shot Macro-F1 (%)",
+      "value": 0.0,
+      "source": "Table 1, arXiv:2611.10693v1, row Audio-Flamingo-3-7B, column DeepShip",
+      "source_url": "https://arxiv.org/pdf/2611.10693v1#page=6",
+      "note": "Unified zero-shot prompting on the Machine Hearing Benchmark. Macro-F1 is computed over all task instances, with invalid responses treated as incorrect; it is distinct from parseable-label Success Rate. Inputs span physical time series as well as audible signals, with model-specific frontend handling. No MachEar or finetuned variant is mapped to the base models. Doubao-2.0-Lite is doubao-seed-2-0-lite-260215, explicitly identified in Appendix B.1. Percent, higher is better."
+    },
+    {
+      "benchmark": "machine-hearing-benchmark",
+      "model": "audio-flamingo-3",
+      "metric": "MarmAudio: Zero-shot Macro-F1 (%)",
+      "value": 6.09,
+      "source": "Table 1, arXiv:2611.10693v1, row Audio-Flamingo-3-7B, column MarmAudio",
+      "source_url": "https://arxiv.org/pdf/2611.10693v1#page=6",
+      "note": "Unified zero-shot prompting on the Machine Hearing Benchmark. Macro-F1 is computed over all task instances, with invalid responses treated as incorrect; it is distinct from parseable-label Success Rate. Inputs span physical time series as well as audible signals, with model-specific frontend handling. No MachEar or finetuned variant is mapped to the base models. Doubao-2.0-Lite is doubao-seed-2-0-lite-260215, explicitly identified in Appendix B.1. Percent, higher is better."
+    },
+    {
+      "benchmark": "machine-hearing-benchmark",
+      "model": "audio-flamingo-3",
+      "metric": "SDUST-bear: Zero-shot Macro-F1 (%)",
+      "value": 4.84,
+      "source": "Table 1, arXiv:2611.10693v1, row Audio-Flamingo-3-7B, column SDUST-bear",
+      "source_url": "https://arxiv.org/pdf/2611.10693v1#page=6",
+      "note": "Unified zero-shot prompting on the Machine Hearing Benchmark. Macro-F1 is computed over all task instances, with invalid responses treated as incorrect; it is distinct from parseable-label Success Rate. Inputs span physical time series as well as audible signals, with model-specific frontend handling. No MachEar or finetuned variant is mapped to the base models. Doubao-2.0-Lite is doubao-seed-2-0-lite-260215, explicitly identified in Appendix B.1. Percent, higher is better."
+    },
+    {
+      "benchmark": "machine-hearing-benchmark",
+      "model": "audio-flamingo-3",
+      "metric": "PU-cur: Zero-shot Macro-F1 (%)",
+      "value": 23.16,
+      "source": "Table 1, arXiv:2611.10693v1, row Audio-Flamingo-3-7B, column PU-cur",
+      "source_url": "https://arxiv.org/pdf/2611.10693v1#page=6",
+      "note": "Unified zero-shot prompting on the Machine Hearing Benchmark. Macro-F1 is computed over all task instances, with invalid responses treated as incorrect; it is distinct from parseable-label Success Rate. Inputs span physical time series as well as audible signals, with model-specific frontend handling. No MachEar or finetuned variant is mapped to the base models. Doubao-2.0-Lite is doubao-seed-2-0-lite-260215, explicitly identified in Appendix B.1. Percent, higher is better."
+    },
+    {
+      "benchmark": "machine-hearing-benchmark",
+      "model": "gemini-3-flash",
+      "metric": "RadSeg: Zero-shot Macro-F1 (%)",
+      "value": 10.6,
+      "source": "Table 1, arXiv:2611.10693v1, row Gemini-3-Flash, column RadSeg",
+      "source_url": "https://arxiv.org/pdf/2611.10693v1#page=6",
+      "note": "Unified zero-shot prompting on the Machine Hearing Benchmark. Macro-F1 is computed over all task instances, with invalid responses treated as incorrect; it is distinct from parseable-label Success Rate. Inputs span physical time series as well as audible signals, with model-specific frontend handling. No MachEar or finetuned variant is mapped to the base models. Doubao-2.0-Lite is doubao-seed-2-0-lite-260215, explicitly identified in Appendix B.1. Percent, higher is better."
+    },
+    {
+      "benchmark": "machine-hearing-benchmark",
+      "model": "gemini-3-flash",
+      "metric": "RadioML: Zero-shot Macro-F1 (%)",
+      "value": 6.11,
+      "source": "Table 1, arXiv:2611.10693v1, row Gemini-3-Flash, column RadioML",
+      "source_url": "https://arxiv.org/pdf/2611.10693v1#page=6",
+      "note": "Unified zero-shot prompting on the Machine Hearing Benchmark. Macro-F1 is computed over all task instances, with invalid responses treated as incorrect; it is distinct from parseable-label Success Rate. Inputs span physical time series as well as audible signals, with model-specific frontend handling. No MachEar or finetuned variant is mapped to the base models. Doubao-2.0-Lite is doubao-seed-2-0-lite-260215, explicitly identified in Appendix B.1. Percent, higher is better."
+    },
+    {
+      "benchmark": "machine-hearing-benchmark",
+      "model": "gemini-3-flash",
+      "metric": "ShipsEar: Zero-shot Macro-F1 (%)",
+      "value": 8.92,
+      "source": "Table 1, arXiv:2611.10693v1, row Gemini-3-Flash, column ShipsEar",
+      "source_url": "https://arxiv.org/pdf/2611.10693v1#page=6",
+      "note": "Unified zero-shot prompting on the Machine Hearing Benchmark. Macro-F1 is computed over all task instances, with invalid responses treated as incorrect; it is distinct from parseable-label Success Rate. Inputs span physical time series as well as audible signals, with model-specific frontend handling. No MachEar or finetuned variant is mapped to the base models. Doubao-2.0-Lite is doubao-seed-2-0-lite-260215, explicitly identified in Appendix B.1. Percent, higher is better."
+    },
+    {
+      "benchmark": "machine-hearing-benchmark",
+      "model": "gemini-3-flash",
+      "metric": "DeepShip: Zero-shot Macro-F1 (%)",
+      "value": 16.26,
+      "source": "Table 1, arXiv:2611.10693v1, row Gemini-3-Flash, column DeepShip",
+      "source_url": "https://arxiv.org/pdf/2611.10693v1#page=6",
+      "note": "Unified zero-shot prompting on the Machine Hearing Benchmark. Macro-F1 is computed over all task instances, with invalid responses treated as incorrect; it is distinct from parseable-label Success Rate. Inputs span physical time series as well as audible signals, with model-specific frontend handling. No MachEar or finetuned variant is mapped to the base models. Doubao-2.0-Lite is doubao-seed-2-0-lite-260215, explicitly identified in Appendix B.1. Percent, higher is better."
+    },
+    {
+      "benchmark": "machine-hearing-benchmark",
+      "model": "gemini-3-flash",
+      "metric": "MarmAudio: Zero-shot Macro-F1 (%)",
+      "value": 13.77,
+      "source": "Table 1, arXiv:2611.10693v1, row Gemini-3-Flash, column MarmAudio",
+      "source_url": "https://arxiv.org/pdf/2611.10693v1#page=6",
+      "note": "Unified zero-shot prompting on the Machine Hearing Benchmark. Macro-F1 is computed over all task instances, with invalid responses treated as incorrect; it is distinct from parseable-label Success Rate. Inputs span physical time series as well as audible signals, with model-specific frontend handling. No MachEar or finetuned variant is mapped to the base models. Doubao-2.0-Lite is doubao-seed-2-0-lite-260215, explicitly identified in Appendix B.1. Percent, higher is better."
+    },
+    {
+      "benchmark": "machine-hearing-benchmark",
+      "model": "gemini-3-flash",
+      "metric": "SDUST-bear: Zero-shot Macro-F1 (%)",
+      "value": 11.46,
+      "source": "Table 1, arXiv:2611.10693v1, row Gemini-3-Flash, column SDUST-bear",
+      "source_url": "https://arxiv.org/pdf/2611.10693v1#page=6",
+      "note": "Unified zero-shot prompting on the Machine Hearing Benchmark. Macro-F1 is computed over all task instances, with invalid responses treated as incorrect; it is distinct from parseable-label Success Rate. Inputs span physical time series as well as audible signals, with model-specific frontend handling. No MachEar or finetuned variant is mapped to the base models. Doubao-2.0-Lite is doubao-seed-2-0-lite-260215, explicitly identified in Appendix B.1. Percent, higher is better."
+    },
+    {
+      "benchmark": "machine-hearing-benchmark",
+      "model": "gemini-3-flash",
+      "metric": "PU-cur: Zero-shot Macro-F1 (%)",
+      "value": 27.51,
+      "source": "Table 1, arXiv:2611.10693v1, row Gemini-3-Flash, column PU-cur",
+      "source_url": "https://arxiv.org/pdf/2611.10693v1#page=6",
+      "note": "Unified zero-shot prompting on the Machine Hearing Benchmark. Macro-F1 is computed over all task instances, with invalid responses treated as incorrect; it is distinct from parseable-label Success Rate. Inputs span physical time series as well as audible signals, with model-specific frontend handling. No MachEar or finetuned variant is mapped to the base models. Doubao-2.0-Lite is doubao-seed-2-0-lite-260215, explicitly identified in Appendix B.1. Percent, higher is better."
+    },
+    {
+      "benchmark": "machine-hearing-benchmark",
+      "model": "gpt-audio-mini",
+      "metric": "RadSeg: Zero-shot Macro-F1 (%)",
+      "value": 0.0,
+      "source": "Table 1, arXiv:2611.10693v1, row GPT-Audio-Mini, column RadSeg",
+      "source_url": "https://arxiv.org/pdf/2611.10693v1#page=6",
+      "note": "Unified zero-shot prompting on the Machine Hearing Benchmark. Macro-F1 is computed over all task instances, with invalid responses treated as incorrect; it is distinct from parseable-label Success Rate. Inputs span physical time series as well as audible signals, with model-specific frontend handling. No MachEar or finetuned variant is mapped to the base models. Doubao-2.0-Lite is doubao-seed-2-0-lite-260215, explicitly identified in Appendix B.1. Percent, higher is better."
+    },
+    {
+      "benchmark": "machine-hearing-benchmark",
+      "model": "gpt-audio-mini",
+      "metric": "RadioML: Zero-shot Macro-F1 (%)",
+      "value": 0.0,
+      "source": "Table 1, arXiv:2611.10693v1, row GPT-Audio-Mini, column RadioML",
+      "source_url": "https://arxiv.org/pdf/2611.10693v1#page=6",
+      "note": "Unified zero-shot prompting on the Machine Hearing Benchmark. Macro-F1 is computed over all task instances, with invalid responses treated as incorrect; it is distinct from parseable-label Success Rate. Inputs span physical time series as well as audible signals, with model-specific frontend handling. No MachEar or finetuned variant is mapped to the base models. Doubao-2.0-Lite is doubao-seed-2-0-lite-260215, explicitly identified in Appendix B.1. Percent, higher is better."
+    },
+    {
+      "benchmark": "machine-hearing-benchmark",
+      "model": "gpt-audio-mini",
+      "metric": "ShipsEar: Zero-shot Macro-F1 (%)",
+      "value": 5.57,
+      "source": "Table 1, arXiv:2611.10693v1, row GPT-Audio-Mini, column ShipsEar",
+      "source_url": "https://arxiv.org/pdf/2611.10693v1#page=6",
+      "note": "Unified zero-shot prompting on the Machine Hearing Benchmark. Macro-F1 is computed over all task instances, with invalid responses treated as incorrect; it is distinct from parseable-label Success Rate. Inputs span physical time series as well as audible signals, with model-specific frontend handling. No MachEar or finetuned variant is mapped to the base models. Doubao-2.0-Lite is doubao-seed-2-0-lite-260215, explicitly identified in Appendix B.1. Percent, higher is better."
+    },
+    {
+      "benchmark": "machine-hearing-benchmark",
+      "model": "gpt-audio-mini",
+      "metric": "DeepShip: Zero-shot Macro-F1 (%)",
+      "value": 5.76,
+      "source": "Table 1, arXiv:2611.10693v1, row GPT-Audio-Mini, column DeepShip",
+      "source_url": "https://arxiv.org/pdf/2611.10693v1#page=6",
+      "note": "Unified zero-shot prompting on the Machine Hearing Benchmark. Macro-F1 is computed over all task instances, with invalid responses treated as incorrect; it is distinct from parseable-label Success Rate. Inputs span physical time series as well as audible signals, with model-specific frontend handling. No MachEar or finetuned variant is mapped to the base models. Doubao-2.0-Lite is doubao-seed-2-0-lite-260215, explicitly identified in Appendix B.1. Percent, higher is better."
+    },
+    {
+      "benchmark": "machine-hearing-benchmark",
+      "model": "gpt-audio-mini",
+      "metric": "MarmAudio: Zero-shot Macro-F1 (%)",
+      "value": 0.0,
+      "source": "Table 1, arXiv:2611.10693v1, row GPT-Audio-Mini, column MarmAudio",
+      "source_url": "https://arxiv.org/pdf/2611.10693v1#page=6",
+      "note": "Unified zero-shot prompting on the Machine Hearing Benchmark. Macro-F1 is computed over all task instances, with invalid responses treated as incorrect; it is distinct from parseable-label Success Rate. Inputs span physical time series as well as audible signals, with model-specific frontend handling. No MachEar or finetuned variant is mapped to the base models. Doubao-2.0-Lite is doubao-seed-2-0-lite-260215, explicitly identified in Appendix B.1. Percent, higher is better."
+    },
+    {
+      "benchmark": "machine-hearing-benchmark",
+      "model": "gpt-audio-mini",
+      "metric": "SDUST-bear: Zero-shot Macro-F1 (%)",
+      "value": 4.5,
+      "source": "Table 1, arXiv:2611.10693v1, row GPT-Audio-Mini, column SDUST-bear",
+      "source_url": "https://arxiv.org/pdf/2611.10693v1#page=6",
+      "note": "Unified zero-shot prompting on the Machine Hearing Benchmark. Macro-F1 is computed over all task instances, with invalid responses treated as incorrect; it is distinct from parseable-label Success Rate. Inputs span physical time series as well as audible signals, with model-specific frontend handling. No MachEar or finetuned variant is mapped to the base models. Doubao-2.0-Lite is doubao-seed-2-0-lite-260215, explicitly identified in Appendix B.1. Percent, higher is better."
+    },
+    {
+      "benchmark": "machine-hearing-benchmark",
+      "model": "gpt-audio-mini",
+      "metric": "PU-cur: Zero-shot Macro-F1 (%)",
+      "value": 14.75,
+      "source": "Table 1, arXiv:2611.10693v1, row GPT-Audio-Mini, column PU-cur",
+      "source_url": "https://arxiv.org/pdf/2611.10693v1#page=6",
+      "note": "Unified zero-shot prompting on the Machine Hearing Benchmark. Macro-F1 is computed over all task instances, with invalid responses treated as incorrect; it is distinct from parseable-label Success Rate. Inputs span physical time series as well as audible signals, with model-specific frontend handling. No MachEar or finetuned variant is mapped to the base models. Doubao-2.0-Lite is doubao-seed-2-0-lite-260215, explicitly identified in Appendix B.1. Percent, higher is better."
+    },
+    {
+      "benchmark": "machine-hearing-benchmark",
+      "model": "doubao-seed-2-0-lite",
+      "metric": "RadSeg: Zero-shot Macro-F1 (%)",
+      "value": 0.0,
+      "source": "Table 1, arXiv:2611.10693v1, row Doubao-2.0-Lite, column RadSeg",
+      "source_url": "https://arxiv.org/pdf/2611.10693v1#page=6",
+      "note": "Unified zero-shot prompting on the Machine Hearing Benchmark. Macro-F1 is computed over all task instances, with invalid responses treated as incorrect; it is distinct from parseable-label Success Rate. Inputs span physical time series as well as audible signals, with model-specific frontend handling. No MachEar or finetuned variant is mapped to the base models. Doubao-2.0-Lite is doubao-seed-2-0-lite-260215, explicitly identified in Appendix B.1. Percent, higher is better."
+    },
+    {
+      "benchmark": "machine-hearing-benchmark",
+      "model": "doubao-seed-2-0-lite",
+      "metric": "RadioML: Zero-shot Macro-F1 (%)",
+      "value": 0.0,
+      "source": "Table 1, arXiv:2611.10693v1, row Doubao-2.0-Lite, column RadioML",
+      "source_url": "https://arxiv.org/pdf/2611.10693v1#page=6",
+      "note": "Unified zero-shot prompting on the Machine Hearing Benchmark. Macro-F1 is computed over all task instances, with invalid responses treated as incorrect; it is distinct from parseable-label Success Rate. Inputs span physical time series as well as audible signals, with model-specific frontend handling. No MachEar or finetuned variant is mapped to the base models. Doubao-2.0-Lite is doubao-seed-2-0-lite-260215, explicitly identified in Appendix B.1. Percent, higher is better."
+    },
+    {
+      "benchmark": "machine-hearing-benchmark",
+      "model": "doubao-seed-2-0-lite",
+      "metric": "ShipsEar: Zero-shot Macro-F1 (%)",
+      "value": 8.91,
+      "source": "Table 1, arXiv:2611.10693v1, row Doubao-2.0-Lite, column ShipsEar",
+      "source_url": "https://arxiv.org/pdf/2611.10693v1#page=6",
+      "note": "Unified zero-shot prompting on the Machine Hearing Benchmark. Macro-F1 is computed over all task instances, with invalid responses treated as incorrect; it is distinct from parseable-label Success Rate. Inputs span physical time series as well as audible signals, with model-specific frontend handling. No MachEar or finetuned variant is mapped to the base models. Doubao-2.0-Lite is doubao-seed-2-0-lite-260215, explicitly identified in Appendix B.1. Percent, higher is better."
+    },
+    {
+      "benchmark": "machine-hearing-benchmark",
+      "model": "doubao-seed-2-0-lite",
+      "metric": "DeepShip: Zero-shot Macro-F1 (%)",
+      "value": 16.8,
+      "source": "Table 1, arXiv:2611.10693v1, row Doubao-2.0-Lite, column DeepShip",
+      "source_url": "https://arxiv.org/pdf/2611.10693v1#page=6",
+      "note": "Unified zero-shot prompting on the Machine Hearing Benchmark. Macro-F1 is computed over all task instances, with invalid responses treated as incorrect; it is distinct from parseable-label Success Rate. Inputs span physical time series as well as audible signals, with model-specific frontend handling. No MachEar or finetuned variant is mapped to the base models. Doubao-2.0-Lite is doubao-seed-2-0-lite-260215, explicitly identified in Appendix B.1. Percent, higher is better."
+    },
+    {
+      "benchmark": "machine-hearing-benchmark",
+      "model": "doubao-seed-2-0-lite",
+      "metric": "MarmAudio: Zero-shot Macro-F1 (%)",
+      "value": 19.51,
+      "source": "Table 1, arXiv:2611.10693v1, row Doubao-2.0-Lite, column MarmAudio",
+      "source_url": "https://arxiv.org/pdf/2611.10693v1#page=6",
+      "note": "Unified zero-shot prompting on the Machine Hearing Benchmark. Macro-F1 is computed over all task instances, with invalid responses treated as incorrect; it is distinct from parseable-label Success Rate. Inputs span physical time series as well as audible signals, with model-specific frontend handling. No MachEar or finetuned variant is mapped to the base models. Doubao-2.0-Lite is doubao-seed-2-0-lite-260215, explicitly identified in Appendix B.1. Percent, higher is better."
+    },
+    {
+      "benchmark": "machine-hearing-benchmark",
+      "model": "doubao-seed-2-0-lite",
+      "metric": "SDUST-bear: Zero-shot Macro-F1 (%)",
+      "value": 2.21,
+      "source": "Table 1, arXiv:2611.10693v1, row Doubao-2.0-Lite, column SDUST-bear",
+      "source_url": "https://arxiv.org/pdf/2611.10693v1#page=6",
+      "note": "Unified zero-shot prompting on the Machine Hearing Benchmark. Macro-F1 is computed over all task instances, with invalid responses treated as incorrect; it is distinct from parseable-label Success Rate. Inputs span physical time series as well as audible signals, with model-specific frontend handling. No MachEar or finetuned variant is mapped to the base models. Doubao-2.0-Lite is doubao-seed-2-0-lite-260215, explicitly identified in Appendix B.1. Percent, higher is better."
+    },
+    {
+      "benchmark": "machine-hearing-benchmark",
+      "model": "doubao-seed-2-0-lite",
+      "metric": "PU-cur: Zero-shot Macro-F1 (%)",
+      "value": 11.26,
+      "source": "Table 1, arXiv:2611.10693v1, row Doubao-2.0-Lite, column PU-cur",
+      "source_url": "https://arxiv.org/pdf/2611.10693v1#page=6",
+      "note": "Unified zero-shot prompting on the Machine Hearing Benchmark. Macro-F1 is computed over all task instances, with invalid responses treated as incorrect; it is distinct from parseable-label Success Rate. Inputs span physical time series as well as audible signals, with model-specific frontend handling. No MachEar or finetuned variant is mapped to the base models. Doubao-2.0-Lite is doubao-seed-2-0-lite-260215, explicitly identified in Appendix B.1. Percent, higher is better."
     }
   ]
 }

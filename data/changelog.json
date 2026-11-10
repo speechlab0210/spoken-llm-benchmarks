@@ -1,6 +1,11 @@
 {
  "entries": [
   {
+   "date": "2026-11-11",
+   "change": "Reviewed eight candidates: added Joi-Bench-Task, the MERC Modality-Reliance Audit, Beyond the Transcript recording-gain evaluation, UKBWV-27, Machine Hearing Benchmark and LongCapBench; excluded KeyASRBench (specialized ASR) and GlobalTap (beat tracking). Added 187 source-located result cells for exact existing model configurations, plus printed affiliations and conservative venue records. Compound pipelines, unmatched model variants and plot-only comparisons are not assigned misleading base-model values. Totals: 481 benchmarks, 261 models and 18,537 result cells.",
+   "source": "arXiv:2611.12118v1 Tables 4–7; 2611.11987v1 Table 2; 2611.11573v1 Table 2; 2611.10245v1 event protocol and pipeline appendix; 2611.10693v1 Table 1; 2611.11125v1 LongCapBench; 2611.10852v1 and 2611.11137v1 scope review. Full text, PDF bylines, arXiv metadata and author-linked releases checked."
+  },
+  {
    "date": "2026-11-10",
    "change": "Reviewed two candidates and recorded specific exclusion reasons. MotionBench-XAI evaluates explanations of specialized spatiotemporal classifiers, including an environmental-audio classifier. IRIS-Embed introduces a retrieval method and training data evaluated on existing INSPIRE and MAEB benchmarks. Neither introduces an eligible new spoken-LLM benchmark; benchmark, model and result-cell totals are unchanged.",
    "source": "arXiv:2611.08797v1 Sections 4.1-4.2 and 5; arXiv:2611.09122v1 Sections 3-5 and 6.5; arXiv abstract metadata and daily candidate-review ledger."

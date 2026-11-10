@@ -22,7 +22,7 @@
       "primary_category": "cs.AI",
       "url": "https://arxiv.org/abs/2611.12118",
       "score": 51,
-      "status": "new — under review"
+      "status": "reviewed — added: Joi-Bench-Task (joi-bench-task); introduces an evaluation framework or benchmark for general-purpose audio/spoken models."
     },
     {
       "id": "2611.10852",
@@ -36,7 +36,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2611.10852",
       "score": 36,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: introduces a keyword-preservation benchmark for automatic speech recognition; its systems and KER/MER/WER protocol assess specialized transcription, not general-purpose spoken-LLM capabilities (Sections 3–5)."
     },
     {
       "id": "2611.11987",
@@ -52,7 +52,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2611.11987",
       "score": 33,
-      "status": "new — under review"
+      "status": "reviewed — added: MERC Modality-Reliance Audit (merc-modality-reliance); introduces an evaluation framework or benchmark for general-purpose audio/spoken models."
     },
     {
       "id": "2611.11573",
@@ -67,7 +67,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2611.11573",
       "score": 30,
-      "status": "new — under review"
+      "status": "reviewed — added: Beyond the Transcript: Recording-Gain Evaluation (beyond-transcript-recording-gain); introduces an evaluation framework or benchmark for general-purpose audio/spoken models."
     },
     {
       "id": "2611.10245",
@@ -81,7 +81,7 @@
       "primary_category": "cs.CV",
       "url": "https://arxiv.org/abs/2611.10245",
       "score": 27,
-      "status": "new — under review"
+      "status": "reviewed — added: UKBWV-27 Event-Support Evaluation (ukbwv-27); introduces an evaluation framework or benchmark for general-purpose audio/spoken models."
     },
     {
       "id": "2611.10693",
@@ -101,7 +101,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2611.10693",
       "score": 21,
-      "status": "new — under review"
+      "status": "reviewed — added: Machine Hearing Benchmark (machine-hearing-benchmark); introduces an evaluation framework or benchmark for general-purpose audio/spoken models."
     },
     {
       "id": "2611.11125",
@@ -121,7 +121,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2611.11125",
       "score": 21,
-      "status": "new — under review"
+      "status": "reviewed — added: LongCapBench (longcapbench); introduces an evaluation framework or benchmark for general-purpose audio/spoken models."
     },
     {
       "id": "2611.11137",
@@ -140,7 +140,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2611.11137",
       "score": 21,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: introduces crowdsourced beat-track annotations and validates beat alignment with listeners; the evaluated task is specialized musical beat tracking, not general-purpose spoken LLMs (Methods and Results)."
     },
     {
       "id": "2611.08797",

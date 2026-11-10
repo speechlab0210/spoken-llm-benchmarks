@@ -12795,6 +12795,224 @@
       "note": "Measured on one NVIDIA A100, one session at a time, with one-second chunks, bfloat16, greedy decoding and batch size 1. Timings cover the Thinker and exclude the Talker speech synthesizer, so they are not complete audio response latency. Table 2 averages speedup over seven non-agentic tasks; FDB v3 uses tool-call chunks for Streaming SLM/Gander and speak chunks for Realtime-Venus/LWS. Numeric matrix coverage for these four distinct model configurations is pending; their values must not be assigned to the Qwen2.5-Omni or MiniCPM-o backbones. The paper announces manifests and evaluation scripts but supplies no dedicated release URL; combined language coverage is not enumerated.",
       "code": null,
       "data": null
+    },
+    {
+      "id": "joi-bench-task",
+      "name": "Joi-Bench-Task",
+      "aka": [],
+      "full_title": "Joi-Bench-Task: Benchmarking Task Coordination in Full-duplex Voice Agents through Interactive Simulation",
+      "arxiv_id": "2611.12118",
+      "arxiv_date": "2026-11",
+      "arxiv_date_full": "2026-11-09",
+      "url": "https://arxiv.org/abs/2611.12118",
+      "categories": [
+        "voice-agent",
+        "interactivity",
+        "instruction-following"
+      ],
+      "tasks": [
+        "multi-tool scheduling",
+        "request reprioritization",
+        "task withdrawal and addition",
+        "interrupted result delivery"
+      ],
+      "languages": [
+        "English"
+      ],
+      "size": "60 scenarios in six domains, expanded to 140 cases across seven interaction conditions",
+      "io": "live user speech and timed simulated tool results → spoken responses and tool calls",
+      "metrics": [
+        "tool-start, announcement and interruption latency (seconds)",
+        "first-attempt tool-call pass rate (%)",
+        "request-change success and result completion (%)",
+        "resumption and information omission (%)"
+      ],
+      "summary": "Tests how full-duplex voice agents coordinate tools while users change priorities, withdraw or add tasks, and interrupt spoken results. A shared clock aligns playback, requests and tool execution.",
+      "note": "Tables 4–7 supply 24 cells for GPT Realtime 2 (2026-05-07). Single-tool and multi-tool timings are separate. Published overall aggregates are preserved separately from condition-specific rates, even where they do not agree. Other tested commercial versions are not mapped to older registry models. Tool execution is simulated; model-judged semantic annotations receive a second model review. No dedicated release URL is supplied.",
+      "code": null,
+      "data": null
+    },
+    {
+      "id": "merc-modality-reliance",
+      "name": "MERC Modality-Reliance Audit",
+      "aka": [
+        "When Audio and Video Mislead"
+      ],
+      "full_title": "When Audio and Video Mislead: Evaluating Multimodal AI for Conversational Emotion Recognition",
+      "arxiv_id": "2611.11987",
+      "arxiv_date": "2026-11",
+      "arxiv_date_full": "2026-11-09",
+      "url": "https://arxiv.org/abs/2611.11987",
+      "categories": [
+        "paralinguistics",
+        "audio-grounding",
+        "robustness"
+      ],
+      "tasks": [
+        "conversational emotion classification",
+        "modality omission",
+        "unrelated audio/video replacement"
+      ],
+      "languages": [
+        "English"
+      ],
+      "size": "2,610 MELD targets (seven classes) and 7,380 IEMOCAP targets (six classes, all five sessions); seven input conditions",
+      "io": "fixed target transcript and prior textual context, with optional original or unrelated target audio/video → emotion label",
+      "metrics": [
+        "aggregate Accuracy (%)",
+        "aggregate Weighted F1 (%)",
+        "common-valid paired Accuracy effects (percentage points)",
+        "prediction change rate (%)"
+      ],
+      "summary": "Introduces a controlled evaluation of emotion recognition that separates useful audio/video evidence from sensitivity to unrelated inputs. It holds transcript and conversation context fixed across seven modality conditions.",
+      "note": "Table 2 contributes 84 cells for Qwen2.5-Omni-7B, Baichuan-Omni-1.5 and MiniCPM-o 2.6 using source-mapping seed 42. Aggregate denominators include invalid and out-of-memory outcomes; paired-effect analyses use different common-valid denominators. This is a new audit protocol over existing datasets. The authors report AICompS 2026 acceptance, but no venue-owned confirmation was found. The linked Zenodo release returned HTTP 403 during review.",
+      "code": null,
+      "data": null
+    },
+    {
+      "id": "beyond-transcript-recording-gain",
+      "name": "Beyond the Transcript: Recording-Gain Evaluation",
+      "aka": [
+        "Beyond the Transcript"
+      ],
+      "full_title": "Beyond the Transcript: Measuring and Improving the Use of Acoustic Information in Audio Language Models",
+      "arxiv_id": "2611.11573",
+      "arxiv_date": "2026-11",
+      "arxiv_date_full": "2026-11-08",
+      "url": "https://arxiv.org/abs/2611.11573",
+      "categories": [
+        "audio-grounding",
+        "paralinguistics",
+        "holistic"
+      ],
+      "tasks": [
+        "lexical understanding",
+        "global acoustic attributes",
+        "within-recording structure",
+        "transcript and synthetic-reading controls"
+      ],
+      "languages": [],
+      "size": "92 tasks and 13,707 items drawn from six existing audio benchmarks",
+      "io": "matched questions with question-only, transcript, synthetic reading, original recording, or transcript-plus-recording inputs → answer",
+      "metrics": [
+        "original-recording accuracy O (%)",
+        "recording gain S=O−T (percentage points)",
+        "recording gain H=AO−A (percentage points)"
+      ],
+      "summary": "Defines a recording-gain framework to test what audio models use beyond the transcript. Paired input controls separate lexical, global-attribute and within-recording-structure tasks.",
+      "note": "Table 2 contributes 14 class-level cells for base Qwen2.5-Omni-7B and Gemini 3.1 Pro. Accuracy is averaged within each task and then equally across tasks in a class. S compares original audio with two synthetic transcript readings; H measures adding audio to its transcript. Both are percentage-point differences with distinct confounds. Repaired LoRA variants, Gemma-4 12B and the pooled 19-model mean are not assigned to other model IDs. No dedicated release URL is supplied.",
+      "code": null,
+      "data": null
+    },
+    {
+      "id": "ukbwv-27",
+      "name": "UKBWV-27 Event-Support Evaluation",
+      "aka": [
+        "UKBWV-27"
+      ],
+      "full_title": "From Weapons to Events: Evaluating Evidential Support in Multimodal AI for Policing",
+      "arxiv_id": "2611.10245",
+      "arxiv_date": "2026-11",
+      "arxiv_date_full": "2026-11-06",
+      "url": "https://arxiv.org/abs/2611.10245",
+      "categories": [
+        "domain",
+        "hallucination",
+        "auditory-perception",
+        "long-form"
+      ],
+      "tasks": [
+        "body-worn-video transcription",
+        "speaker attribution",
+        "event detection and localization",
+        "evidential support assessment"
+      ],
+      "languages": [
+        "English"
+      ],
+      "size": "27 publicly released UK body-worn-video recordings totaling 118 minutes; a pilot stress-test set",
+      "io": "body-worn audio/video → transcript and temporally localized event descriptions",
+      "metrics": [
+        "word error rate (%)",
+        "speaker attribution accuracy (%)",
+        "event F1 (%)",
+        "temporal intersection-over-union (0–1)",
+        "unsupported events (%)",
+        "wall-clock latency (seconds per minute of footage)"
+      ],
+      "summary": "Introduces a protocol for checking whether transcripts, speakers and narrated events are supported by body-worn recordings. Human-validated judging accompanies temporal and event-level metrics.",
+      "note": "Only the audio/video event protocol is included; the paper’s KnifeHunter image-retrieval benchmark is outside this entry. UKBWV-27 is a small, selected stress test, not a representative deployment sample. All reported systems include a common GPT-5 text/taxonomy stage, including the commercial omni-model pipelines. Their scores are not assigned to standalone model IDs; exact pipeline coverage remains pending. No public dataset download URL is supplied.",
+      "code": null,
+      "data": null
+    },
+    {
+      "id": "machine-hearing-benchmark",
+      "name": "Machine Hearing Benchmark",
+      "aka": [
+        "MHB"
+      ],
+      "full_title": "Machine Hearing: Can Audio LLMs Generalize Beyond Human Auditory Perception?",
+      "arxiv_id": "2611.10693",
+      "arxiv_date": "2026-11",
+      "arxiv_date_full": "2026-11-07",
+      "url": "https://arxiv.org/abs/2611.10693",
+      "categories": [
+        "auditory-perception",
+        "domain",
+        "robustness"
+      ],
+      "tasks": [
+        "physical-signal classification",
+        "non-audible time-series understanding",
+        "zero-shot domain transfer"
+      ],
+      "languages": [],
+      "size": "6,128 instances across 13 tasks and seven domains",
+      "io": "waves, vibrations and oscillatory signals through audio-model frontends plus a task prompt → class label",
+      "metrics": [
+        "Macro-F1 (%)",
+        "valid and parseable response Success Rate (%)"
+      ],
+      "summary": "Tests whether general audio language models can interpret physical signals beyond ordinary human-audible content, spanning astronomy, earth science, healthcare, electromagnetic signals, underwater acoustics, bioacoustics and manufacturing.",
+      "note": "Table 1 contributes 65 zero-shot Macro-F1 cells for five exact registry models. Invalid outputs count as incorrect; parseable-label Success Rate is a different measure. Doubao Lite uses doubao-seed-2-0-lite-260215. Qwen2.5-Omni-3B and Doubao Mini are not mapped to different sizes or variants. MachEar and other trained configurations are excluded from base-model cells. The author-linked model card points to the verified dataset release.",
+      "code": null,
+      "data": "https://huggingface.co/datasets/OpenTSLab/MachineHearing"
+    },
+    {
+      "id": "longcapbench",
+      "name": "LongCapBench",
+      "aka": [
+        "LongCapBench-TAC",
+        "LongCapBench-TAC-Long"
+      ],
+      "full_title": "LongCap: Hour-Scale Timestamped Audio Captioning via Chunk-wise Processing",
+      "arxiv_id": "2611.11125",
+      "arxiv_date": "2026-11",
+      "arxiv_date_full": "2026-11-08",
+      "url": "https://arxiv.org/abs/2611.11125",
+      "categories": [
+        "auditory-perception",
+        "long-form",
+        "audio-grounding"
+      ],
+      "tasks": [
+        "timestamped audio captioning",
+        "event timing",
+        "event granularity",
+        "caption semantic alignment"
+      ],
+      "languages": [],
+      "size": "TAC-Short: 1,500 recordings, 18.50 hours, 9,380 events; TAC-Long: four recordings, 7.05 hours, 6,520 events",
+      "io": "short or hour-scale audio recordings → event captions with start/end timestamps",
+      "metrics": [
+        "Timeline Error Rate TER (%)",
+        "Granularity Error Rate GER (%)",
+        "time-constrained permutation caption similarity tcpCapSim (%)"
+      ],
+      "summary": "Introduces annotated timestamped-captioning tests and metrics that separately examine timeline coverage, event granularity and caption meaning on short and long recordings.",
+      "note": "This entry covers timestamped captioning; companion diarization splits are described separately in the paper. The longest natural TAC recording is 117.05 minutes; the 16-hour extrapolation test concatenates recordings. Long-form references use human-reviewed Qwen3.5-Omni-Plus drafts. General-model comparisons are chiefly plots, while tabulated LongCap variants are distinct trained configurations; no plot estimates or misassigned base-model cells are added. The author project links code and the verified TAC-Long release.",
+      "code": "https://github.com/jctian98/longcap-code",
+      "data": "https://huggingface.co/datasets/JinchuanTian/LongCapBench-TAC-Long"
     }
   ]
 }

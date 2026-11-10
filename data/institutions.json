@@ -14868,6 +14868,64 @@
      "note": "Printed affiliation in arXiv:2611.00325v1. No author city or country is printed; location is left unassigned."
     }
    ]
+  },
+  {
+   "id": "dongguk-university",
+   "name": "Dongguk University",
+   "short": null,
+   "type": "academia",
+   "country": "KR",
+   "parent": null,
+   "confidence": "high",
+   "sites": [
+    {
+     "city": "Seoul",
+     "lat": 37.56,
+     "lon": 126.99,
+     "country": "KR"
+    }
+   ],
+   "aliases": [
+    {
+     "raw": "Dongguk University",
+     "country": "KR",
+     "city": "Seoul",
+     "lat": 37.56,
+     "lon": 126.99,
+     "type": "academia",
+     "confidence": "high",
+     "note": "Paper arXiv:2611.11987v1 prints Seoul, Republic of Korea; coordinates approximate the named city."
+    }
+   ]
+  },
+  {
+   "id": "incubator-for-ai",
+   "name": "Incubator for AI (i.AI)",
+   "short": null,
+   "type": "government",
+   "country": "GB",
+   "parent": null,
+   "confidence": "medium",
+   "sites": [
+    {
+     "city": "London",
+     "lat": 51.51,
+     "lon": -0.13,
+     "country": "GB"
+    }
+   ],
+   "aliases": [
+    {
+     "raw": "Incubator for AI (i.AI)",
+     "country": "GB",
+     "city": "London",
+     "lat": 51.51,
+     "lon": -0.13,
+     "type": "government",
+     "confidence": "medium",
+     "note": "Paper arXiv:2611.10245v1 prints London, United Kingdom. Preserve its department wording in the raw affiliation; no current parent-department relationship is inferred. Coordinates approximate the named city."
+    }
+   ]
   }
  ]
 }
