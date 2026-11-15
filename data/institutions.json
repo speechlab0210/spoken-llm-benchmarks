@@ -14926,6 +14926,57 @@
      "note": "Paper arXiv:2611.10245v1 prints London, United Kingdom. Preserve its department wording in the raw affiliation; no current parent-department relationship is inferred. Coordinates approximate the named city."
     }
    ]
+  },
+  {
+   "id": "shanghaitech-university",
+   "name": "ShanghaiTech University",
+   "short": "ShanghaiTech",
+   "type": "academia",
+   "country": "CN",
+   "parent": null,
+   "confidence": "high",
+   "sites": [
+    {
+     "city": "Shanghai",
+     "lat": 31.23,
+     "lon": 121.47,
+     "country": "CN"
+    }
+   ],
+   "aliases": [
+    {
+     "raw": "ShanghaiTech University",
+     "country": "CN",
+     "city": "Shanghai",
+     "lat": 31.23,
+     "lon": 121.47,
+     "type": "academia",
+     "confidence": "high",
+     "note": "Identity from printed paper affiliation; no unprinted site is assigned."
+    }
+   ]
+  },
+  {
+   "id": "zhejiang-merit-interactive-research-institute",
+   "name": "Zhejiang Merit Interactive Research Institute Co., Ltd.",
+   "short": "Merit Interactive Research Institute",
+   "type": "industry",
+   "country": null,
+   "parent": null,
+   "confidence": "high",
+   "sites": [],
+   "aliases": [
+    {
+     "raw": "Zhejiang Merit Interactive Research Institute Co., Ltd.",
+     "country": null,
+     "city": null,
+     "lat": null,
+     "lon": null,
+     "type": "industry",
+     "confidence": "high",
+     "note": "Identity from printed paper affiliation; no unprinted site is assigned."
+    }
+   ]
   }
  ]
 }

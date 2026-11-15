@@ -2,77 +2,90 @@
  "since": "2026-08-22",
  "what": "Every arXiv paper the daily crawl has flagged since launch (score at or above the threshold, not previously seen), with the reviewer's verdict as written in the feed and whether the paper entered the catalogue. \"published\" is the paper's arXiv date. See the Method section of the site.",
  "flagged": 348,
- "admitted": 102,
+ "admitted": 105,
  "entries": [
   {
    "id": "2611.17070",
    "title": "Evaluation of Music Version Retrieval Methods for Setlist Identification in Live Concerts",
    "published": "2026-11-12T16:42:35Z",
    "score": 18,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: evaluates specialist music-version retrieval methods for concert setlists on ASID, not general-purpose spoken LLMs (Section 3)."
   },
   {
    "id": "2611.16787",
    "title": "MESH: Multi-receiver Evaluation of Spatial Hearing across Egocentric and Allocentric Views",
    "published": "2026-11-12T13:34:47Z",
    "score": 24,
-   "outcome": "under review"
+   "outcome": "admitted",
+   "verdict": "reviewed — added: MESH (mesh-spatial-hearing); introduces a benchmark or evaluation protocol used with general-purpose audio/spoken models.",
+   "catalogue_id": "mesh-spatial-hearing"
   },
   {
    "id": "2611.16500",
    "title": "EvenVLM: A Text and Multimodal Dataset for the Even Language with Vision-Language Fine-Tuning",
    "published": "2026-11-12T09:03:06Z",
    "score": 24,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: introduces Even-language text and image VQA resources; its evaluation uses text/vision models without an audio-input or speech-output protocol (Section 7)."
   },
   {
    "id": "2611.15691",
    "title": "Dynamic Block-Online Streaming ASR for Low-Resource Agglutinative Code-Switching Speech with Morphology-Aware Evaluation",
    "published": "2026-11-11T16:30:22Z",
    "score": 24,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: introduces a streaming ASR method and morphology-aware transcription evaluation for Bangla–English code-switching; the evaluated capability is specialized speech recognition, not general-purpose spoken-LLM behavior (Section 3)."
   },
   {
    "id": "2611.15439",
    "title": "DeALR: Decoupled Audio-Latent Optimization with Acoustic Backtracking for Test-Time Reasoning",
    "published": "2026-11-11T13:12:41Z",
    "score": 21,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: introduces the DeALR test-time reasoning method and evaluates on existing MMAR, MMAU and AudioMCQ benchmarks; it does not introduce a new benchmark (Experimental Setup)."
   },
   {
    "id": "2611.15161",
    "title": "CineMME: From Dialogue Grounding to Narrative Reasoning in Multimodal Video Understanding",
    "published": "2026-11-11T07:58:17Z",
    "score": 27,
-   "outcome": "under review"
+   "outcome": "admitted",
+   "verdict": "reviewed — added: CineMME (cinemme); introduces a benchmark or evaluation protocol used with general-purpose audio/spoken models.",
+   "catalogue_id": "cinemme"
   },
   {
    "id": "2611.14929",
    "title": "Speech Tokenizers are Vulnerable: Transferable Semantic Attack and Robust Tokenizer",
    "published": "2026-11-11T02:33:00Z",
    "score": 18,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: introduces a semantic attack and robust speech tokenizer, using LibriTTS and Seed-TTS-Eval samples for attack evaluation; it does not introduce an independent benchmark (Sections 6–7)."
   },
   {
    "id": "2611.14443",
    "title": "Assessing Alignment in Automatic Piano Transcription Datasets: A Benchmark for Scoring Methods",
    "published": "2026-11-10T18:13:47Z",
    "score": 21,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: benchmarks audio–MIDI alignment scoring and automatic piano transcription methods, not general-purpose spoken LLMs (Sections 2–3)."
   },
   {
    "id": "2611.13777",
    "title": "Omni-JEV: Text and Dual-Stream Speech Decisions",
    "published": "2026-11-10T09:15:58Z",
    "score": 24,
-   "outcome": "under review"
+   "outcome": "admitted",
+   "verdict": "reviewed — added: Omni-JEV Interaction-Action Evaluation (omni-jev-action-evaluation); introduces a benchmark or evaluation protocol used with general-purpose audio/spoken models.",
+   "catalogue_id": "omni-jev-action-evaluation"
   },
   {
    "id": "2611.13689",
    "title": "Walrus Technical Report",
    "published": "2026-11-10T07:37:38Z",
    "score": 30,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: introduces the Walrus model and training curriculum, evaluated on existing speech/audio benchmarks and internal ASR sets; it does not introduce an independent general-purpose spoken-LLM evaluation benchmark (Section 4)."
   },
   {
    "id": "2611.12118",
@@ -131,7 +144,8 @@
    "title": "TrustMod-SM: A Multi-Axis Benchmark for Evaluating Trustworthiness of LLMs in Social Media Content Moderation",
    "published": "2026-11-07T16:37:46Z",
    "score": 21,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: introduces a social-media moderation benchmark for text LLMs and vision-language models; no spoken/audio model evaluation is defined (Sections 3–4 and Appendix A)."
   },
   {
    "id": "2611.10693",

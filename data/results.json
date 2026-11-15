@@ -156348,6 +156348,1554 @@
       "source": "Table 1, arXiv:2611.10693v1, row Doubao-2.0-Lite, column PU-cur",
       "source_url": "https://arxiv.org/pdf/2611.10693v1#page=6",
       "note": "Unified zero-shot prompting on the Machine Hearing Benchmark. Macro-F1 is computed over all task instances, with invalid responses treated as incorrect; it is distinct from parseable-label Success Rate. Inputs span physical time series as well as audible signals, with model-specific frontend handling. No MachEar or finetuned variant is mapped to the base models. Doubao-2.0-Lite is doubao-seed-2-0-lite-260215, explicitly identified in Appendix B.1. Percent, higher is better."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "minicpm-o",
+      "metric": "Reasoning: Narrative MCQ accuracy (%)",
+      "value": 20.0,
+      "source": "Table 2, arXiv:2611.15161v1, row MiniCPM-o-2.6, column Narrative",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=8",
+      "note": "Audio+video input; Table 2 frame sampling 1 FPS. MCQ accuracy is conditional on extractable answers; 1600/1600 MCQs scored. OEQ is the mean valid judge rating on 0–10 multiplied by ten, not an accuracy; 316/316 OEQs scored. Table 21 gives model-dependent coverage; category-specific denominators are not supplied. These are not equal-coverage comparisons. Qwen3.5-Omni-Plus also has content-moderation failures."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "minicpm-o",
+      "metric": "Reasoning: Perception MCQ accuracy (%)",
+      "value": 23.13,
+      "source": "Table 2, arXiv:2611.15161v1, row MiniCPM-o-2.6, column Perception",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=8",
+      "note": "Audio+video input; Table 2 frame sampling 1 FPS. MCQ accuracy is conditional on extractable answers; 1600/1600 MCQs scored. OEQ is the mean valid judge rating on 0–10 multiplied by ten, not an accuracy; 316/316 OEQs scored. Table 21 gives model-dependent coverage; category-specific denominators are not supplied. These are not equal-coverage comparisons. Qwen3.5-Omni-Plus also has content-moderation failures."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "minicpm-o",
+      "metric": "Reasoning: Scene MCQ accuracy (%)",
+      "value": 22.92,
+      "source": "Table 2, arXiv:2611.15161v1, row MiniCPM-o-2.6, column Scene",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=8",
+      "note": "Audio+video input; Table 2 frame sampling 1 FPS. MCQ accuracy is conditional on extractable answers; 1600/1600 MCQs scored. OEQ is the mean valid judge rating on 0–10 multiplied by ten, not an accuracy; 316/316 OEQs scored. Table 21 gives model-dependent coverage; category-specific denominators are not supplied. These are not equal-coverage comparisons. Qwen3.5-Omni-Plus also has content-moderation failures."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "minicpm-o",
+      "metric": "Reasoning: Social MCQ accuracy (%)",
+      "value": 19.57,
+      "source": "Table 2, arXiv:2611.15161v1, row MiniCPM-o-2.6, column Social",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=8",
+      "note": "Audio+video input; Table 2 frame sampling 1 FPS. MCQ accuracy is conditional on extractable answers; 1600/1600 MCQs scored. OEQ is the mean valid judge rating on 0–10 multiplied by ten, not an accuracy; 316/316 OEQs scored. Table 21 gives model-dependent coverage; category-specific denominators are not supplied. These are not equal-coverage comparisons. Qwen3.5-Omni-Plus also has content-moderation failures."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "minicpm-o",
+      "metric": "Reasoning: Audio MCQ accuracy (%)",
+      "value": 27.18,
+      "source": "Table 2, arXiv:2611.15161v1, row MiniCPM-o-2.6, column Audio",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=8",
+      "note": "Audio+video input; Table 2 frame sampling 1 FPS. MCQ accuracy is conditional on extractable answers; 1600/1600 MCQs scored. OEQ is the mean valid judge rating on 0–10 multiplied by ten, not an accuracy; 316/316 OEQs scored. Table 21 gives model-dependent coverage; category-specific denominators are not supplied. These are not equal-coverage comparisons. Qwen3.5-Omni-Plus also has content-moderation failures."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "minicpm-o",
+      "metric": "Reasoning: Avg. MCQ accuracy (%)",
+      "value": 22.44,
+      "source": "Table 2, arXiv:2611.15161v1, row MiniCPM-o-2.6, column Avg.",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=8",
+      "note": "Audio+video input; Table 2 frame sampling 1 FPS. MCQ accuracy is conditional on extractable answers; 1600/1600 MCQs scored. OEQ is the mean valid judge rating on 0–10 multiplied by ten, not an accuracy; 316/316 OEQs scored. Table 21 gives model-dependent coverage; category-specific denominators are not supplied. These are not equal-coverage comparisons. Qwen3.5-Omni-Plus also has content-moderation failures."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "minicpm-o",
+      "metric": "Reasoning: OEQ judge score (0–100)",
+      "value": 26.99,
+      "source": "Table 2, arXiv:2611.15161v1, row MiniCPM-o-2.6, column OEQ",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=8",
+      "note": "Audio+video input; Table 2 frame sampling 1 FPS. MCQ accuracy is conditional on extractable answers; 1600/1600 MCQs scored. OEQ is the mean valid judge rating on 0–10 multiplied by ten, not an accuracy; 316/316 OEQs scored. Table 21 gives model-dependent coverage; category-specific denominators are not supplied. These are not equal-coverage comparisons. Qwen3.5-Omni-Plus also has content-moderation failures."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "omnivinci",
+      "metric": "Reasoning: Narrative MCQ accuracy (%)",
+      "value": 22.35,
+      "source": "Table 2, arXiv:2611.15161v1, row Omnivinci, column Narrative",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=8",
+      "note": "Audio+video input; Table 2 frame sampling 1 FPS. MCQ accuracy is conditional on extractable answers; 1597/1600 MCQs scored. OEQ is the mean valid judge rating on 0–10 multiplied by ten, not an accuracy; 304/316 OEQs scored. Table 21 gives model-dependent coverage; category-specific denominators are not supplied. These are not equal-coverage comparisons. Qwen3.5-Omni-Plus also has content-moderation failures."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "omnivinci",
+      "metric": "Reasoning: Perception MCQ accuracy (%)",
+      "value": 34.08,
+      "source": "Table 2, arXiv:2611.15161v1, row Omnivinci, column Perception",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=8",
+      "note": "Audio+video input; Table 2 frame sampling 1 FPS. MCQ accuracy is conditional on extractable answers; 1597/1600 MCQs scored. OEQ is the mean valid judge rating on 0–10 multiplied by ten, not an accuracy; 304/316 OEQs scored. Table 21 gives model-dependent coverage; category-specific denominators are not supplied. These are not equal-coverage comparisons. Qwen3.5-Omni-Plus also has content-moderation failures."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "omnivinci",
+      "metric": "Reasoning: Scene MCQ accuracy (%)",
+      "value": 32.66,
+      "source": "Table 2, arXiv:2611.15161v1, row Omnivinci, column Scene",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=8",
+      "note": "Audio+video input; Table 2 frame sampling 1 FPS. MCQ accuracy is conditional on extractable answers; 1597/1600 MCQs scored. OEQ is the mean valid judge rating on 0–10 multiplied by ten, not an accuracy; 304/316 OEQs scored. Table 21 gives model-dependent coverage; category-specific denominators are not supplied. These are not equal-coverage comparisons. Qwen3.5-Omni-Plus also has content-moderation failures."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "omnivinci",
+      "metric": "Reasoning: Social MCQ accuracy (%)",
+      "value": 25.54,
+      "source": "Table 2, arXiv:2611.15161v1, row Omnivinci, column Social",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=8",
+      "note": "Audio+video input; Table 2 frame sampling 1 FPS. MCQ accuracy is conditional on extractable answers; 1597/1600 MCQs scored. OEQ is the mean valid judge rating on 0–10 multiplied by ten, not an accuracy; 304/316 OEQs scored. Table 21 gives model-dependent coverage; category-specific denominators are not supplied. These are not equal-coverage comparisons. Qwen3.5-Omni-Plus also has content-moderation failures."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "omnivinci",
+      "metric": "Reasoning: Audio MCQ accuracy (%)",
+      "value": 33.22,
+      "source": "Table 2, arXiv:2611.15161v1, row Omnivinci, column Audio",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=8",
+      "note": "Audio+video input; Table 2 frame sampling 1 FPS. MCQ accuracy is conditional on extractable answers; 1597/1600 MCQs scored. OEQ is the mean valid judge rating on 0–10 multiplied by ten, not an accuracy; 304/316 OEQs scored. Table 21 gives model-dependent coverage; category-specific denominators are not supplied. These are not equal-coverage comparisons. Qwen3.5-Omni-Plus also has content-moderation failures."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "omnivinci",
+      "metric": "Reasoning: Avg. MCQ accuracy (%)",
+      "value": 29.49,
+      "source": "Table 2, arXiv:2611.15161v1, row Omnivinci, column Avg.",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=8",
+      "note": "Audio+video input; Table 2 frame sampling 1 FPS. MCQ accuracy is conditional on extractable answers; 1597/1600 MCQs scored. OEQ is the mean valid judge rating on 0–10 multiplied by ten, not an accuracy; 304/316 OEQs scored. Table 21 gives model-dependent coverage; category-specific denominators are not supplied. These are not equal-coverage comparisons. Qwen3.5-Omni-Plus also has content-moderation failures."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "omnivinci",
+      "metric": "Reasoning: OEQ judge score (0–100)",
+      "value": 28.52,
+      "source": "Table 2, arXiv:2611.15161v1, row Omnivinci, column OEQ",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=8",
+      "note": "Audio+video input; Table 2 frame sampling 1 FPS. MCQ accuracy is conditional on extractable answers; 1597/1600 MCQs scored. OEQ is the mean valid judge rating on 0–10 multiplied by ten, not an accuracy; 304/316 OEQs scored. Table 21 gives model-dependent coverage; category-specific denominators are not supplied. These are not equal-coverage comparisons. Qwen3.5-Omni-Plus also has content-moderation failures."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "qwen2-5-omni",
+      "metric": "Reasoning: Narrative MCQ accuracy (%)",
+      "value": 21.26,
+      "source": "Table 2, arXiv:2611.15161v1, row Qwen2.5-Omni, column Narrative",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=8",
+      "note": "Audio+video input; Table 2 frame sampling 0.5 FPS. MCQ accuracy is conditional on extractable answers; 1596/1600 MCQs scored. OEQ is the mean valid judge rating on 0–10 multiplied by ten, not an accuracy; 316/316 OEQs scored. Table 21 gives model-dependent coverage; category-specific denominators are not supplied. These are not equal-coverage comparisons. Qwen3.5-Omni-Plus also has content-moderation failures."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "qwen2-5-omni",
+      "metric": "Reasoning: Perception MCQ accuracy (%)",
+      "value": 20.97,
+      "source": "Table 2, arXiv:2611.15161v1, row Qwen2.5-Omni, column Perception",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=8",
+      "note": "Audio+video input; Table 2 frame sampling 0.5 FPS. MCQ accuracy is conditional on extractable answers; 1596/1600 MCQs scored. OEQ is the mean valid judge rating on 0–10 multiplied by ten, not an accuracy; 316/316 OEQs scored. Table 21 gives model-dependent coverage; category-specific denominators are not supplied. These are not equal-coverage comparisons. Qwen3.5-Omni-Plus also has content-moderation failures."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "qwen2-5-omni",
+      "metric": "Reasoning: Scene MCQ accuracy (%)",
+      "value": 22.92,
+      "source": "Table 2, arXiv:2611.15161v1, row Qwen2.5-Omni, column Scene",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=8",
+      "note": "Audio+video input; Table 2 frame sampling 0.5 FPS. MCQ accuracy is conditional on extractable answers; 1596/1600 MCQs scored. OEQ is the mean valid judge rating on 0–10 multiplied by ten, not an accuracy; 316/316 OEQs scored. Table 21 gives model-dependent coverage; category-specific denominators are not supplied. These are not equal-coverage comparisons. Qwen3.5-Omni-Plus also has content-moderation failures."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "qwen2-5-omni",
+      "metric": "Reasoning: Social MCQ accuracy (%)",
+      "value": 25.36,
+      "source": "Table 2, arXiv:2611.15161v1, row Qwen2.5-Omni, column Social",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=8",
+      "note": "Audio+video input; Table 2 frame sampling 0.5 FPS. MCQ accuracy is conditional on extractable answers; 1596/1600 MCQs scored. OEQ is the mean valid judge rating on 0–10 multiplied by ten, not an accuracy; 316/316 OEQs scored. Table 21 gives model-dependent coverage; category-specific denominators are not supplied. These are not equal-coverage comparisons. Qwen3.5-Omni-Plus also has content-moderation failures."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "qwen2-5-omni",
+      "metric": "Reasoning: Audio MCQ accuracy (%)",
+      "value": 28.9,
+      "source": "Table 2, arXiv:2611.15161v1, row Qwen2.5-Omni, column Audio",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=8",
+      "note": "Audio+video input; Table 2 frame sampling 0.5 FPS. MCQ accuracy is conditional on extractable answers; 1596/1600 MCQs scored. OEQ is the mean valid judge rating on 0–10 multiplied by ten, not an accuracy; 316/316 OEQs scored. Table 21 gives model-dependent coverage; category-specific denominators are not supplied. These are not equal-coverage comparisons. Qwen3.5-Omni-Plus also has content-moderation failures."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "qwen2-5-omni",
+      "metric": "Reasoning: Avg. MCQ accuracy (%)",
+      "value": 24.12,
+      "source": "Table 2, arXiv:2611.15161v1, row Qwen2.5-Omni, column Avg.",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=8",
+      "note": "Audio+video input; Table 2 frame sampling 0.5 FPS. MCQ accuracy is conditional on extractable answers; 1596/1600 MCQs scored. OEQ is the mean valid judge rating on 0–10 multiplied by ten, not an accuracy; 316/316 OEQs scored. Table 21 gives model-dependent coverage; category-specific denominators are not supplied. These are not equal-coverage comparisons. Qwen3.5-Omni-Plus also has content-moderation failures."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "qwen2-5-omni",
+      "metric": "Reasoning: OEQ judge score (0–100)",
+      "value": 17.66,
+      "source": "Table 2, arXiv:2611.15161v1, row Qwen2.5-Omni, column OEQ",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=8",
+      "note": "Audio+video input; Table 2 frame sampling 0.5 FPS. MCQ accuracy is conditional on extractable answers; 1596/1600 MCQs scored. OEQ is the mean valid judge rating on 0–10 multiplied by ten, not an accuracy; 316/316 OEQs scored. Table 21 gives model-dependent coverage; category-specific denominators are not supplied. These are not equal-coverage comparisons. Qwen3.5-Omni-Plus also has content-moderation failures."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "qwen3-omni",
+      "metric": "Reasoning: Narrative MCQ accuracy (%)",
+      "value": 30.98,
+      "source": "Table 2, arXiv:2611.15161v1, row Qwen3-Omni, column Narrative",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=8",
+      "note": "Audio+video input; Table 2 frame sampling 1 FPS. MCQ accuracy is conditional on extractable answers; 1599/1600 MCQs scored. OEQ is the mean valid judge rating on 0–10 multiplied by ten, not an accuracy; 316/316 OEQs scored. Table 21 gives model-dependent coverage; category-specific denominators are not supplied. These are not equal-coverage comparisons. Qwen3.5-Omni-Plus also has content-moderation failures."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "qwen3-omni",
+      "metric": "Reasoning: Perception MCQ accuracy (%)",
+      "value": 47.57,
+      "source": "Table 2, arXiv:2611.15161v1, row Qwen3-Omni, column Perception",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=8",
+      "note": "Audio+video input; Table 2 frame sampling 1 FPS. MCQ accuracy is conditional on extractable answers; 1599/1600 MCQs scored. OEQ is the mean valid judge rating on 0–10 multiplied by ten, not an accuracy; 316/316 OEQs scored. Table 21 gives model-dependent coverage; category-specific denominators are not supplied. These are not equal-coverage comparisons. Qwen3.5-Omni-Plus also has content-moderation failures."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "qwen3-omni",
+      "metric": "Reasoning: Scene MCQ accuracy (%)",
+      "value": 37.54,
+      "source": "Table 2, arXiv:2611.15161v1, row Qwen3-Omni, column Scene",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=8",
+      "note": "Audio+video input; Table 2 frame sampling 1 FPS. MCQ accuracy is conditional on extractable answers; 1599/1600 MCQs scored. OEQ is the mean valid judge rating on 0–10 multiplied by ten, not an accuracy; 316/316 OEQs scored. Table 21 gives model-dependent coverage; category-specific denominators are not supplied. These are not equal-coverage comparisons. Qwen3.5-Omni-Plus also has content-moderation failures."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "qwen3-omni",
+      "metric": "Reasoning: Social MCQ accuracy (%)",
+      "value": 37.47,
+      "source": "Table 2, arXiv:2611.15161v1, row Qwen3-Omni, column Social",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=8",
+      "note": "Audio+video input; Table 2 frame sampling 1 FPS. MCQ accuracy is conditional on extractable answers; 1599/1600 MCQs scored. OEQ is the mean valid judge rating on 0–10 multiplied by ten, not an accuracy; 316/316 OEQs scored. Table 21 gives model-dependent coverage; category-specific denominators are not supplied. These are not equal-coverage comparisons. Qwen3.5-Omni-Plus also has content-moderation failures."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "qwen3-omni",
+      "metric": "Reasoning: Audio MCQ accuracy (%)",
+      "value": 38.51,
+      "source": "Table 2, arXiv:2611.15161v1, row Qwen3-Omni, column Audio",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=8",
+      "note": "Audio+video input; Table 2 frame sampling 1 FPS. MCQ accuracy is conditional on extractable answers; 1599/1600 MCQs scored. OEQ is the mean valid judge rating on 0–10 multiplied by ten, not an accuracy; 316/316 OEQs scored. Table 21 gives model-dependent coverage; category-specific denominators are not supplied. These are not equal-coverage comparisons. Qwen3.5-Omni-Plus also has content-moderation failures."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "qwen3-omni",
+      "metric": "Reasoning: Avg. MCQ accuracy (%)",
+      "value": 38.34,
+      "source": "Table 2, arXiv:2611.15161v1, row Qwen3-Omni, column Avg.",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=8",
+      "note": "Audio+video input; Table 2 frame sampling 1 FPS. MCQ accuracy is conditional on extractable answers; 1599/1600 MCQs scored. OEQ is the mean valid judge rating on 0–10 multiplied by ten, not an accuracy; 316/316 OEQs scored. Table 21 gives model-dependent coverage; category-specific denominators are not supplied. These are not equal-coverage comparisons. Qwen3.5-Omni-Plus also has content-moderation failures."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "qwen3-omni",
+      "metric": "Reasoning: OEQ judge score (0–100)",
+      "value": 29.62,
+      "source": "Table 2, arXiv:2611.15161v1, row Qwen3-Omni, column OEQ",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=8",
+      "note": "Audio+video input; Table 2 frame sampling 1 FPS. MCQ accuracy is conditional on extractable answers; 1599/1600 MCQs scored. OEQ is the mean valid judge rating on 0–10 multiplied by ten, not an accuracy; 316/316 OEQs scored. Table 21 gives model-dependent coverage; category-specific denominators are not supplied. These are not equal-coverage comparisons. Qwen3.5-Omni-Plus also has content-moderation failures."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "minicpm-o-4-5",
+      "metric": "Reasoning: Narrative MCQ accuracy (%)",
+      "value": 26.19,
+      "source": "Table 2, arXiv:2611.15161v1, row MiniCPM-o-4.5, column Narrative",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=8",
+      "note": "Audio+video input; Table 2 frame sampling 128 FPV. MCQ accuracy is conditional on extractable answers; 1575/1600 MCQs scored. OEQ is the mean valid judge rating on 0–10 multiplied by ten, not an accuracy; 314/316 OEQs scored. Table 21 gives model-dependent coverage; category-specific denominators are not supplied. These are not equal-coverage comparisons. Qwen3.5-Omni-Plus also has content-moderation failures."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "minicpm-o-4-5",
+      "metric": "Reasoning: Perception MCQ accuracy (%)",
+      "value": 34.87,
+      "source": "Table 2, arXiv:2611.15161v1, row MiniCPM-o-4.5, column Perception",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=8",
+      "note": "Audio+video input; Table 2 frame sampling 128 FPV. MCQ accuracy is conditional on extractable answers; 1575/1600 MCQs scored. OEQ is the mean valid judge rating on 0–10 multiplied by ten, not an accuracy; 314/316 OEQs scored. Table 21 gives model-dependent coverage; category-specific denominators are not supplied. These are not equal-coverage comparisons. Qwen3.5-Omni-Plus also has content-moderation failures."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "minicpm-o-4-5",
+      "metric": "Reasoning: Scene MCQ accuracy (%)",
+      "value": 31.98,
+      "source": "Table 2, arXiv:2611.15161v1, row MiniCPM-o-4.5, column Scene",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=8",
+      "note": "Audio+video input; Table 2 frame sampling 128 FPV. MCQ accuracy is conditional on extractable answers; 1575/1600 MCQs scored. OEQ is the mean valid judge rating on 0–10 multiplied by ten, not an accuracy; 314/316 OEQs scored. Table 21 gives model-dependent coverage; category-specific denominators are not supplied. These are not equal-coverage comparisons. Qwen3.5-Omni-Plus also has content-moderation failures."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "minicpm-o-4-5",
+      "metric": "Reasoning: Social MCQ accuracy (%)",
+      "value": 28.88,
+      "source": "Table 2, arXiv:2611.15161v1, row MiniCPM-o-4.5, column Social",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=8",
+      "note": "Audio+video input; Table 2 frame sampling 128 FPV. MCQ accuracy is conditional on extractable answers; 1575/1600 MCQs scored. OEQ is the mean valid judge rating on 0–10 multiplied by ten, not an accuracy; 314/316 OEQs scored. Table 21 gives model-dependent coverage; category-specific denominators are not supplied. These are not equal-coverage comparisons. Qwen3.5-Omni-Plus also has content-moderation failures."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "minicpm-o-4-5",
+      "metric": "Reasoning: Audio MCQ accuracy (%)",
+      "value": 34.97,
+      "source": "Table 2, arXiv:2611.15161v1, row MiniCPM-o-4.5, column Audio",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=8",
+      "note": "Audio+video input; Table 2 frame sampling 128 FPV. MCQ accuracy is conditional on extractable answers; 1575/1600 MCQs scored. OEQ is the mean valid judge rating on 0–10 multiplied by ten, not an accuracy; 314/316 OEQs scored. Table 21 gives model-dependent coverage; category-specific denominators are not supplied. These are not equal-coverage comparisons. Qwen3.5-Omni-Plus also has content-moderation failures."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "minicpm-o-4-5",
+      "metric": "Reasoning: Avg. MCQ accuracy (%)",
+      "value": 31.3,
+      "source": "Table 2, arXiv:2611.15161v1, row MiniCPM-o-4.5, column Avg.",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=8",
+      "note": "Audio+video input; Table 2 frame sampling 128 FPV. MCQ accuracy is conditional on extractable answers; 1575/1600 MCQs scored. OEQ is the mean valid judge rating on 0–10 multiplied by ten, not an accuracy; 314/316 OEQs scored. Table 21 gives model-dependent coverage; category-specific denominators are not supplied. These are not equal-coverage comparisons. Qwen3.5-Omni-Plus also has content-moderation failures."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "minicpm-o-4-5",
+      "metric": "Reasoning: OEQ judge score (0–100)",
+      "value": 33.85,
+      "source": "Table 2, arXiv:2611.15161v1, row MiniCPM-o-4.5, column OEQ",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=8",
+      "note": "Audio+video input; Table 2 frame sampling 128 FPV. MCQ accuracy is conditional on extractable answers; 1575/1600 MCQs scored. OEQ is the mean valid judge rating on 0–10 multiplied by ten, not an accuracy; 314/316 OEQs scored. Table 21 gives model-dependent coverage; category-specific denominators are not supplied. These are not equal-coverage comparisons. Qwen3.5-Omni-Plus also has content-moderation failures."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "mimo-v2-5",
+      "metric": "Reasoning: Narrative MCQ accuracy (%)",
+      "value": 60.78,
+      "source": "Table 2, arXiv:2611.15161v1, row MiMo-v2.5, column Narrative",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=8",
+      "note": "Audio+video input; Table 2 frame sampling 1 FPS. MCQ accuracy is conditional on extractable answers; 1600/1600 MCQs scored. OEQ is the mean valid judge rating on 0–10 multiplied by ten, not an accuracy; 315/316 OEQs scored. Table 21 gives model-dependent coverage; category-specific denominators are not supplied. These are not equal-coverage comparisons. Qwen3.5-Omni-Plus also has content-moderation failures."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "mimo-v2-5",
+      "metric": "Reasoning: Perception MCQ accuracy (%)",
+      "value": 66.79,
+      "source": "Table 2, arXiv:2611.15161v1, row MiMo-v2.5, column Perception",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=8",
+      "note": "Audio+video input; Table 2 frame sampling 1 FPS. MCQ accuracy is conditional on extractable answers; 1600/1600 MCQs scored. OEQ is the mean valid judge rating on 0–10 multiplied by ten, not an accuracy; 315/316 OEQs scored. Table 21 gives model-dependent coverage; category-specific denominators are not supplied. These are not equal-coverage comparisons. Qwen3.5-Omni-Plus also has content-moderation failures."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "mimo-v2-5",
+      "metric": "Reasoning: Scene MCQ accuracy (%)",
+      "value": 50.14,
+      "source": "Table 2, arXiv:2611.15161v1, row MiMo-v2.5, column Scene",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=8",
+      "note": "Audio+video input; Table 2 frame sampling 1 FPS. MCQ accuracy is conditional on extractable answers; 1600/1600 MCQs scored. OEQ is the mean valid judge rating on 0–10 multiplied by ten, not an accuracy; 315/316 OEQs scored. Table 21 gives model-dependent coverage; category-specific denominators are not supplied. These are not equal-coverage comparisons. Qwen3.5-Omni-Plus also has content-moderation failures."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "mimo-v2-5",
+      "metric": "Reasoning: Social MCQ accuracy (%)",
+      "value": 55.61,
+      "source": "Table 2, arXiv:2611.15161v1, row MiMo-v2.5, column Social",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=8",
+      "note": "Audio+video input; Table 2 frame sampling 1 FPS. MCQ accuracy is conditional on extractable answers; 1600/1600 MCQs scored. OEQ is the mean valid judge rating on 0–10 multiplied by ten, not an accuracy; 315/316 OEQs scored. Table 21 gives model-dependent coverage; category-specific denominators are not supplied. These are not equal-coverage comparisons. Qwen3.5-Omni-Plus also has content-moderation failures."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "mimo-v2-5",
+      "metric": "Reasoning: Audio MCQ accuracy (%)",
+      "value": 62.46,
+      "source": "Table 2, arXiv:2611.15161v1, row MiMo-v2.5, column Audio",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=8",
+      "note": "Audio+video input; Table 2 frame sampling 1 FPS. MCQ accuracy is conditional on extractable answers; 1600/1600 MCQs scored. OEQ is the mean valid judge rating on 0–10 multiplied by ten, not an accuracy; 315/316 OEQs scored. Table 21 gives model-dependent coverage; category-specific denominators are not supplied. These are not equal-coverage comparisons. Qwen3.5-Omni-Plus also has content-moderation failures."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "mimo-v2-5",
+      "metric": "Reasoning: Avg. MCQ accuracy (%)",
+      "value": 58.44,
+      "source": "Table 2, arXiv:2611.15161v1, row MiMo-v2.5, column Avg.",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=8",
+      "note": "Audio+video input; Table 2 frame sampling 1 FPS. MCQ accuracy is conditional on extractable answers; 1600/1600 MCQs scored. OEQ is the mean valid judge rating on 0–10 multiplied by ten, not an accuracy; 315/316 OEQs scored. Table 21 gives model-dependent coverage; category-specific denominators are not supplied. These are not equal-coverage comparisons. Qwen3.5-Omni-Plus also has content-moderation failures."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "mimo-v2-5",
+      "metric": "Reasoning: OEQ judge score (0–100)",
+      "value": 42.25,
+      "source": "Table 2, arXiv:2611.15161v1, row MiMo-v2.5, column OEQ",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=8",
+      "note": "Audio+video input; Table 2 frame sampling 1 FPS. MCQ accuracy is conditional on extractable answers; 1600/1600 MCQs scored. OEQ is the mean valid judge rating on 0–10 multiplied by ten, not an accuracy; 315/316 OEQs scored. Table 21 gives model-dependent coverage; category-specific denominators are not supplied. These are not equal-coverage comparisons. Qwen3.5-Omni-Plus also has content-moderation failures."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "qwen3-5-omni-plus",
+      "metric": "Reasoning: Narrative MCQ accuracy (%)",
+      "value": 57.79,
+      "source": "Table 2, arXiv:2611.15161v1, row Qwen3.5-Omni-Plus, column Narrative",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=8",
+      "note": "Audio+video input; Table 2 frame sampling 1 FPS. MCQ accuracy is conditional on extractable answers; 982/1600 MCQs scored. OEQ is the mean valid judge rating on 0–10 multiplied by ten, not an accuracy; the paper does not give the effective OEQ count. Table 21 gives model-dependent coverage; category-specific denominators are not supplied. These are not equal-coverage comparisons. Qwen3.5-Omni-Plus also has content-moderation failures."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "qwen3-5-omni-plus",
+      "metric": "Reasoning: Perception MCQ accuracy (%)",
+      "value": 66.87,
+      "source": "Table 2, arXiv:2611.15161v1, row Qwen3.5-Omni-Plus, column Perception",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=8",
+      "note": "Audio+video input; Table 2 frame sampling 1 FPS. MCQ accuracy is conditional on extractable answers; 982/1600 MCQs scored. OEQ is the mean valid judge rating on 0–10 multiplied by ten, not an accuracy; the paper does not give the effective OEQ count. Table 21 gives model-dependent coverage; category-specific denominators are not supplied. These are not equal-coverage comparisons. Qwen3.5-Omni-Plus also has content-moderation failures."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "qwen3-5-omni-plus",
+      "metric": "Reasoning: Scene MCQ accuracy (%)",
+      "value": 58.96,
+      "source": "Table 2, arXiv:2611.15161v1, row Qwen3.5-Omni-Plus, column Scene",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=8",
+      "note": "Audio+video input; Table 2 frame sampling 1 FPS. MCQ accuracy is conditional on extractable answers; 982/1600 MCQs scored. OEQ is the mean valid judge rating on 0–10 multiplied by ten, not an accuracy; the paper does not give the effective OEQ count. Table 21 gives model-dependent coverage; category-specific denominators are not supplied. These are not equal-coverage comparisons. Qwen3.5-Omni-Plus also has content-moderation failures."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "qwen3-5-omni-plus",
+      "metric": "Reasoning: Social MCQ accuracy (%)",
+      "value": 55.69,
+      "source": "Table 2, arXiv:2611.15161v1, row Qwen3.5-Omni-Plus, column Social",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=8",
+      "note": "Audio+video input; Table 2 frame sampling 1 FPS. MCQ accuracy is conditional on extractable answers; 982/1600 MCQs scored. OEQ is the mean valid judge rating on 0–10 multiplied by ten, not an accuracy; the paper does not give the effective OEQ count. Table 21 gives model-dependent coverage; category-specific denominators are not supplied. These are not equal-coverage comparisons. Qwen3.5-Omni-Plus also has content-moderation failures."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "qwen3-5-omni-plus",
+      "metric": "Reasoning: Audio MCQ accuracy (%)",
+      "value": 68.72,
+      "source": "Table 2, arXiv:2611.15161v1, row Qwen3.5-Omni-Plus, column Audio",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=8",
+      "note": "Audio+video input; Table 2 frame sampling 1 FPS. MCQ accuracy is conditional on extractable answers; 982/1600 MCQs scored. OEQ is the mean valid judge rating on 0–10 multiplied by ten, not an accuracy; the paper does not give the effective OEQ count. Table 21 gives model-dependent coverage; category-specific denominators are not supplied. These are not equal-coverage comparisons. Qwen3.5-Omni-Plus also has content-moderation failures."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "qwen3-5-omni-plus",
+      "metric": "Reasoning: Avg. MCQ accuracy (%)",
+      "value": 61.2,
+      "source": "Table 2, arXiv:2611.15161v1, row Qwen3.5-Omni-Plus, column Avg.",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=8",
+      "note": "Audio+video input; Table 2 frame sampling 1 FPS. MCQ accuracy is conditional on extractable answers; 982/1600 MCQs scored. OEQ is the mean valid judge rating on 0–10 multiplied by ten, not an accuracy; the paper does not give the effective OEQ count. Table 21 gives model-dependent coverage; category-specific denominators are not supplied. These are not equal-coverage comparisons. Qwen3.5-Omni-Plus also has content-moderation failures."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "qwen3-5-omni-plus",
+      "metric": "Reasoning: OEQ judge score (0–100)",
+      "value": 43.87,
+      "source": "Table 2, arXiv:2611.15161v1, row Qwen3.5-Omni-Plus, column OEQ",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=8",
+      "note": "Audio+video input; Table 2 frame sampling 1 FPS. MCQ accuracy is conditional on extractable answers; 982/1600 MCQs scored. OEQ is the mean valid judge rating on 0–10 multiplied by ten, not an accuracy; the paper does not give the effective OEQ count. Table 21 gives model-dependent coverage; category-specific denominators are not supplied. These are not equal-coverage comparisons. Qwen3.5-Omni-Plus also has content-moderation failures."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "gemini-3-pro",
+      "metric": "Reasoning: Narrative MCQ accuracy (%)",
+      "value": 65.74,
+      "source": "Table 2, arXiv:2611.15161v1, row Gemini-3 Pro, column Narrative",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=8",
+      "note": "Audio+video input; Table 2 frame sampling 1 FPS. MCQ accuracy is conditional on extractable answers; 1574/1600 MCQs scored. OEQ is the mean valid judge rating on 0–10 multiplied by ten, not an accuracy; 305/316 OEQs scored. Table 21 gives model-dependent coverage; category-specific denominators are not supplied. These are not equal-coverage comparisons. Qwen3.5-Omni-Plus also has content-moderation failures."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "gemini-3-pro",
+      "metric": "Reasoning: Perception MCQ accuracy (%)",
+      "value": 79.39,
+      "source": "Table 2, arXiv:2611.15161v1, row Gemini-3 Pro, column Perception",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=8",
+      "note": "Audio+video input; Table 2 frame sampling 1 FPS. MCQ accuracy is conditional on extractable answers; 1574/1600 MCQs scored. OEQ is the mean valid judge rating on 0–10 multiplied by ten, not an accuracy; 305/316 OEQs scored. Table 21 gives model-dependent coverage; category-specific denominators are not supplied. These are not equal-coverage comparisons. Qwen3.5-Omni-Plus also has content-moderation failures."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "gemini-3-pro",
+      "metric": "Reasoning: Scene MCQ accuracy (%)",
+      "value": 59.25,
+      "source": "Table 2, arXiv:2611.15161v1, row Gemini-3 Pro, column Scene",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=8",
+      "note": "Audio+video input; Table 2 frame sampling 1 FPS. MCQ accuracy is conditional on extractable answers; 1574/1600 MCQs scored. OEQ is the mean valid judge rating on 0–10 multiplied by ten, not an accuracy; 305/316 OEQs scored. Table 21 gives model-dependent coverage; category-specific denominators are not supplied. These are not equal-coverage comparisons. Qwen3.5-Omni-Plus also has content-moderation failures."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "gemini-3-pro",
+      "metric": "Reasoning: Social MCQ accuracy (%)",
+      "value": 68.04,
+      "source": "Table 2, arXiv:2611.15161v1, row Gemini-3 Pro, column Social",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=8",
+      "note": "Audio+video input; Table 2 frame sampling 1 FPS. MCQ accuracy is conditional on extractable answers; 1574/1600 MCQs scored. OEQ is the mean valid judge rating on 0–10 multiplied by ten, not an accuracy; 305/316 OEQs scored. Table 21 gives model-dependent coverage; category-specific denominators are not supplied. These are not equal-coverage comparisons. Qwen3.5-Omni-Plus also has content-moderation failures."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "gemini-3-pro",
+      "metric": "Reasoning: Audio MCQ accuracy (%)",
+      "value": 68.21,
+      "source": "Table 2, arXiv:2611.15161v1, row Gemini-3 Pro, column Audio",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=8",
+      "note": "Audio+video input; Table 2 frame sampling 1 FPS. MCQ accuracy is conditional on extractable answers; 1574/1600 MCQs scored. OEQ is the mean valid judge rating on 0–10 multiplied by ten, not an accuracy; 305/316 OEQs scored. Table 21 gives model-dependent coverage; category-specific denominators are not supplied. These are not equal-coverage comparisons. Qwen3.5-Omni-Plus also has content-moderation failures."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "gemini-3-pro",
+      "metric": "Reasoning: Avg. MCQ accuracy (%)",
+      "value": 67.66,
+      "source": "Table 2, arXiv:2611.15161v1, row Gemini-3 Pro, column Avg.",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=8",
+      "note": "Audio+video input; Table 2 frame sampling 1 FPS. MCQ accuracy is conditional on extractable answers; 1574/1600 MCQs scored. OEQ is the mean valid judge rating on 0–10 multiplied by ten, not an accuracy; 305/316 OEQs scored. Table 21 gives model-dependent coverage; category-specific denominators are not supplied. These are not equal-coverage comparisons. Qwen3.5-Omni-Plus also has content-moderation failures."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "gemini-3-pro",
+      "metric": "Reasoning: OEQ judge score (0–100)",
+      "value": 45.64,
+      "source": "Table 2, arXiv:2611.15161v1, row Gemini-3 Pro, column OEQ",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=8",
+      "note": "Audio+video input; Table 2 frame sampling 1 FPS. MCQ accuracy is conditional on extractable answers; 1574/1600 MCQs scored. OEQ is the mean valid judge rating on 0–10 multiplied by ten, not an accuracy; 305/316 OEQs scored. Table 21 gives model-dependent coverage; category-specific denominators are not supplied. These are not equal-coverage comparisons. Qwen3.5-Omni-Plus also has content-moderation failures."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "minicpm-o",
+      "metric": "Grounding: tIoU (%)",
+      "value": 34.32,
+      "source": "Table 3, arXiv:2611.15161v1, row MiniCPM-o-2.6, column tIoU",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=9",
+      "note": "Zero-shot audio+video dialogue grounding, 1 FPS; outputs are transcript, timestamps and active-speaker face boxes. Scores are macro averages over parsed predictions, not all videos. Table 21: 5/546 parsed grounding videos; vIoU uses 5/540 videos with annotated face boxes. Missing parses are excluded; coverage differs strongly across models. Higher tIoU/vIoU and lower WER are better. Percent scale."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "minicpm-o",
+      "metric": "Grounding: vIoU (%)",
+      "value": 0.24,
+      "source": "Table 3, arXiv:2611.15161v1, row MiniCPM-o-2.6, column vIoU",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=9",
+      "note": "Zero-shot audio+video dialogue grounding, 1 FPS; outputs are transcript, timestamps and active-speaker face boxes. Scores are macro averages over parsed predictions, not all videos. Table 21: 5/546 parsed grounding videos; vIoU uses 5/540 videos with annotated face boxes. Missing parses are excluded; coverage differs strongly across models. Higher tIoU/vIoU and lower WER are better. Percent scale."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "minicpm-o",
+      "metric": "Grounding: WER (%)",
+      "value": 96.76,
+      "source": "Table 3, arXiv:2611.15161v1, row MiniCPM-o-2.6, column WER",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=9",
+      "note": "Zero-shot audio+video dialogue grounding, 1 FPS; outputs are transcript, timestamps and active-speaker face boxes. Scores are macro averages over parsed predictions, not all videos. Table 21: 5/546 parsed grounding videos; vIoU uses 5/540 videos with annotated face boxes. Missing parses are excluded; coverage differs strongly across models. Higher tIoU/vIoU and lower WER are better. Percent scale."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "omnivinci",
+      "metric": "Grounding: tIoU (%)",
+      "value": 5.13,
+      "source": "Table 3, arXiv:2611.15161v1, row OmniVinci, column tIoU",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=9",
+      "note": "Zero-shot audio+video dialogue grounding, 1 FPS; outputs are transcript, timestamps and active-speaker face boxes. Scores are macro averages over parsed predictions, not all videos. Table 21: 320/546 parsed grounding videos; vIoU uses 315/540 videos with annotated face boxes. Missing parses are excluded; coverage differs strongly across models. Higher tIoU/vIoU and lower WER are better. Percent scale."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "omnivinci",
+      "metric": "Grounding: vIoU (%)",
+      "value": 0.09,
+      "source": "Table 3, arXiv:2611.15161v1, row OmniVinci, column vIoU",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=9",
+      "note": "Zero-shot audio+video dialogue grounding, 1 FPS; outputs are transcript, timestamps and active-speaker face boxes. Scores are macro averages over parsed predictions, not all videos. Table 21: 320/546 parsed grounding videos; vIoU uses 315/540 videos with annotated face boxes. Missing parses are excluded; coverage differs strongly across models. Higher tIoU/vIoU and lower WER are better. Percent scale."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "omnivinci",
+      "metric": "Grounding: WER (%)",
+      "value": 98.91,
+      "source": "Table 3, arXiv:2611.15161v1, row OmniVinci, column WER",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=9",
+      "note": "Zero-shot audio+video dialogue grounding, 1 FPS; outputs are transcript, timestamps and active-speaker face boxes. Scores are macro averages over parsed predictions, not all videos. Table 21: 320/546 parsed grounding videos; vIoU uses 315/540 videos with annotated face boxes. Missing parses are excluded; coverage differs strongly across models. Higher tIoU/vIoU and lower WER are better. Percent scale."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "phi-4-multimodal",
+      "metric": "Grounding: tIoU (%)",
+      "value": 16.96,
+      "source": "Table 3, arXiv:2611.15161v1, row Phi-4-multimodal, column tIoU",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=9",
+      "note": "Zero-shot audio+video dialogue grounding, 64 FPV; outputs are transcript, timestamps and active-speaker face boxes. Scores are macro averages over parsed predictions, not all videos. Table 21: 79/546 parsed grounding videos; vIoU uses 79/540 videos with annotated face boxes. Missing parses are excluded; coverage differs strongly across models. Higher tIoU/vIoU and lower WER are better. Percent scale."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "phi-4-multimodal",
+      "metric": "Grounding: vIoU (%)",
+      "value": 0.09,
+      "source": "Table 3, arXiv:2611.15161v1, row Phi-4-multimodal, column vIoU",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=9",
+      "note": "Zero-shot audio+video dialogue grounding, 64 FPV; outputs are transcript, timestamps and active-speaker face boxes. Scores are macro averages over parsed predictions, not all videos. Table 21: 79/546 parsed grounding videos; vIoU uses 79/540 videos with annotated face boxes. Missing parses are excluded; coverage differs strongly across models. Higher tIoU/vIoU and lower WER are better. Percent scale."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "phi-4-multimodal",
+      "metric": "Grounding: WER (%)",
+      "value": 98.22,
+      "source": "Table 3, arXiv:2611.15161v1, row Phi-4-multimodal, column WER",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=9",
+      "note": "Zero-shot audio+video dialogue grounding, 64 FPV; outputs are transcript, timestamps and active-speaker face boxes. Scores are macro averages over parsed predictions, not all videos. Table 21: 79/546 parsed grounding videos; vIoU uses 79/540 videos with annotated face boxes. Missing parses are excluded; coverage differs strongly across models. Higher tIoU/vIoU and lower WER are better. Percent scale."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "qwen2-5-omni",
+      "metric": "Grounding: tIoU (%)",
+      "value": 24.72,
+      "source": "Table 3, arXiv:2611.15161v1, row Qwen2.5-Omni, column tIoU",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=9",
+      "note": "Zero-shot audio+video dialogue grounding, 0.5 FPS; outputs are transcript, timestamps and active-speaker face boxes. Scores are macro averages over parsed predictions, not all videos. Table 21: 501/546 parsed grounding videos; vIoU uses 495/540 videos with annotated face boxes. Missing parses are excluded; coverage differs strongly across models. Higher tIoU/vIoU and lower WER are better. Percent scale."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "qwen2-5-omni",
+      "metric": "Grounding: vIoU (%)",
+      "value": 0.38,
+      "source": "Table 3, arXiv:2611.15161v1, row Qwen2.5-Omni, column vIoU",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=9",
+      "note": "Zero-shot audio+video dialogue grounding, 0.5 FPS; outputs are transcript, timestamps and active-speaker face boxes. Scores are macro averages over parsed predictions, not all videos. Table 21: 501/546 parsed grounding videos; vIoU uses 495/540 videos with annotated face boxes. Missing parses are excluded; coverage differs strongly across models. Higher tIoU/vIoU and lower WER are better. Percent scale."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "qwen2-5-omni",
+      "metric": "Grounding: WER (%)",
+      "value": 93.31,
+      "source": "Table 3, arXiv:2611.15161v1, row Qwen2.5-Omni, column WER",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=9",
+      "note": "Zero-shot audio+video dialogue grounding, 0.5 FPS; outputs are transcript, timestamps and active-speaker face boxes. Scores are macro averages over parsed predictions, not all videos. Table 21: 501/546 parsed grounding videos; vIoU uses 495/540 videos with annotated face boxes. Missing parses are excluded; coverage differs strongly across models. Higher tIoU/vIoU and lower WER are better. Percent scale."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "qwen3-omni",
+      "metric": "Grounding: tIoU (%)",
+      "value": 49.25,
+      "source": "Table 3, arXiv:2611.15161v1, row Qwen3-Omni, column tIoU",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=9",
+      "note": "Zero-shot audio+video dialogue grounding, 1 FPS; outputs are transcript, timestamps and active-speaker face boxes. Scores are macro averages over parsed predictions, not all videos. Table 21: 433/546 parsed grounding videos; vIoU uses 429/540 videos with annotated face boxes. Missing parses are excluded; coverage differs strongly across models. Higher tIoU/vIoU and lower WER are better. Percent scale."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "qwen3-omni",
+      "metric": "Grounding: vIoU (%)",
+      "value": 3.18,
+      "source": "Table 3, arXiv:2611.15161v1, row Qwen3-Omni, column vIoU",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=9",
+      "note": "Zero-shot audio+video dialogue grounding, 1 FPS; outputs are transcript, timestamps and active-speaker face boxes. Scores are macro averages over parsed predictions, not all videos. Table 21: 433/546 parsed grounding videos; vIoU uses 429/540 videos with annotated face boxes. Missing parses are excluded; coverage differs strongly across models. Higher tIoU/vIoU and lower WER are better. Percent scale."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "qwen3-omni",
+      "metric": "Grounding: WER (%)",
+      "value": 75.79,
+      "source": "Table 3, arXiv:2611.15161v1, row Qwen3-Omni, column WER",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=9",
+      "note": "Zero-shot audio+video dialogue grounding, 1 FPS; outputs are transcript, timestamps and active-speaker face boxes. Scores are macro averages over parsed predictions, not all videos. Table 21: 433/546 parsed grounding videos; vIoU uses 429/540 videos with annotated face boxes. Missing parses are excluded; coverage differs strongly across models. Higher tIoU/vIoU and lower WER are better. Percent scale."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "minicpm-o-4-5",
+      "metric": "Grounding: tIoU (%)",
+      "value": 7.76,
+      "source": "Table 3, arXiv:2611.15161v1, row MiniCPM-o-4.5, column tIoU",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=9",
+      "note": "Zero-shot audio+video dialogue grounding, 128 FPV; outputs are transcript, timestamps and active-speaker face boxes. Scores are macro averages over parsed predictions, not all videos. Table 21: 361/546 parsed grounding videos; vIoU uses 357/540 videos with annotated face boxes. Missing parses are excluded; coverage differs strongly across models. Higher tIoU/vIoU and lower WER are better. Percent scale."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "minicpm-o-4-5",
+      "metric": "Grounding: vIoU (%)",
+      "value": 0.12,
+      "source": "Table 3, arXiv:2611.15161v1, row MiniCPM-o-4.5, column vIoU",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=9",
+      "note": "Zero-shot audio+video dialogue grounding, 128 FPV; outputs are transcript, timestamps and active-speaker face boxes. Scores are macro averages over parsed predictions, not all videos. Table 21: 361/546 parsed grounding videos; vIoU uses 357/540 videos with annotated face boxes. Missing parses are excluded; coverage differs strongly across models. Higher tIoU/vIoU and lower WER are better. Percent scale."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "minicpm-o-4-5",
+      "metric": "Grounding: WER (%)",
+      "value": 99.49,
+      "source": "Table 3, arXiv:2611.15161v1, row MiniCPM-o-4.5, column WER",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=9",
+      "note": "Zero-shot audio+video dialogue grounding, 128 FPV; outputs are transcript, timestamps and active-speaker face boxes. Scores are macro averages over parsed predictions, not all videos. Table 21: 361/546 parsed grounding videos; vIoU uses 357/540 videos with annotated face boxes. Missing parses are excluded; coverage differs strongly across models. Higher tIoU/vIoU and lower WER are better. Percent scale."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "mimo-v2-5",
+      "metric": "Grounding: tIoU (%)",
+      "value": 65.33,
+      "source": "Table 3, arXiv:2611.15161v1, row MiMo-v2.5, column tIoU",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=9",
+      "note": "Zero-shot audio+video dialogue grounding, 1 FPS; outputs are transcript, timestamps and active-speaker face boxes. Scores are macro averages over parsed predictions, not all videos. Table 21: 493/546 parsed grounding videos; vIoU uses 487/540 videos with annotated face boxes. Missing parses are excluded; coverage differs strongly across models. Higher tIoU/vIoU and lower WER are better. Percent scale."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "mimo-v2-5",
+      "metric": "Grounding: vIoU (%)",
+      "value": 4.9,
+      "source": "Table 3, arXiv:2611.15161v1, row MiMo-v2.5, column vIoU",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=9",
+      "note": "Zero-shot audio+video dialogue grounding, 1 FPS; outputs are transcript, timestamps and active-speaker face boxes. Scores are macro averages over parsed predictions, not all videos. Table 21: 493/546 parsed grounding videos; vIoU uses 487/540 videos with annotated face boxes. Missing parses are excluded; coverage differs strongly across models. Higher tIoU/vIoU and lower WER are better. Percent scale."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "mimo-v2-5",
+      "metric": "Grounding: WER (%)",
+      "value": 38.12,
+      "source": "Table 3, arXiv:2611.15161v1, row MiMo-v2.5, column WER",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=9",
+      "note": "Zero-shot audio+video dialogue grounding, 1 FPS; outputs are transcript, timestamps and active-speaker face boxes. Scores are macro averages over parsed predictions, not all videos. Table 21: 493/546 parsed grounding videos; vIoU uses 487/540 videos with annotated face boxes. Missing parses are excluded; coverage differs strongly across models. Higher tIoU/vIoU and lower WER are better. Percent scale."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "gemini-3-pro",
+      "metric": "Grounding: tIoU (%)",
+      "value": 68.34,
+      "source": "Table 3, arXiv:2611.15161v1, row Gemini-3 Pro, column tIoU",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=9",
+      "note": "Zero-shot audio+video dialogue grounding, 1 FPS; outputs are transcript, timestamps and active-speaker face boxes. Scores are macro averages over parsed predictions, not all videos. Table 21: 546/546 parsed grounding videos; vIoU uses 540/540 videos with annotated face boxes. Missing parses are excluded; coverage differs strongly across models. Higher tIoU/vIoU and lower WER are better. Percent scale."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "gemini-3-pro",
+      "metric": "Grounding: vIoU (%)",
+      "value": 7.74,
+      "source": "Table 3, arXiv:2611.15161v1, row Gemini-3 Pro, column vIoU",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=9",
+      "note": "Zero-shot audio+video dialogue grounding, 1 FPS; outputs are transcript, timestamps and active-speaker face boxes. Scores are macro averages over parsed predictions, not all videos. Table 21: 546/546 parsed grounding videos; vIoU uses 540/540 videos with annotated face boxes. Missing parses are excluded; coverage differs strongly across models. Higher tIoU/vIoU and lower WER are better. Percent scale."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "gemini-3-pro",
+      "metric": "Grounding: WER (%)",
+      "value": 28.99,
+      "source": "Table 3, arXiv:2611.15161v1, row Gemini-3 Pro, column WER",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=9",
+      "note": "Zero-shot audio+video dialogue grounding, 1 FPS; outputs are transcript, timestamps and active-speaker face boxes. Scores are macro averages over parsed predictions, not all videos. Table 21: 546/546 parsed grounding videos; vIoU uses 540/540 videos with annotated face boxes. Missing parses are excluded; coverage differs strongly across models. Higher tIoU/vIoU and lower WER are better. Percent scale."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "qwen3-5-omni-plus",
+      "metric": "Grounding: tIoU (%)",
+      "value": 68.74,
+      "source": "Table 3, arXiv:2611.15161v1, row Qwen3.5-Omni-Plus, column tIoU",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=9",
+      "note": "Zero-shot audio+video dialogue grounding, 1 FPS; outputs are transcript, timestamps and active-speaker face boxes. Scores are macro averages over parsed predictions, not all videos. Table 21: 245/546 parsed grounding videos; vIoU uses 243/540 videos with annotated face boxes. Missing parses are excluded; coverage differs strongly across models. Higher tIoU/vIoU and lower WER are better. Percent scale."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "qwen3-5-omni-plus",
+      "metric": "Grounding: vIoU (%)",
+      "value": 6.45,
+      "source": "Table 3, arXiv:2611.15161v1, row Qwen3.5-Omni-Plus, column vIoU",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=9",
+      "note": "Zero-shot audio+video dialogue grounding, 1 FPS; outputs are transcript, timestamps and active-speaker face boxes. Scores are macro averages over parsed predictions, not all videos. Table 21: 245/546 parsed grounding videos; vIoU uses 243/540 videos with annotated face boxes. Missing parses are excluded; coverage differs strongly across models. Higher tIoU/vIoU and lower WER are better. Percent scale."
+    },
+    {
+      "benchmark": "cinemme",
+      "model": "qwen3-5-omni-plus",
+      "metric": "Grounding: WER (%)",
+      "value": 28.87,
+      "source": "Table 3, arXiv:2611.15161v1, row Qwen3.5-Omni-Plus, column WER",
+      "source_url": "https://arxiv.org/pdf/2611.15161v1#page=9",
+      "note": "Zero-shot audio+video dialogue grounding, 1 FPS; outputs are transcript, timestamps and active-speaker face boxes. Scores are macro averages over parsed predictions, not all videos. Table 21: 245/546 parsed grounding videos; vIoU uses 243/540 videos with annotated face boxes. Missing parses are excluded; coverage differs strongly across models. Higher tIoU/vIoU and lower WER are better. Percent scale."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "qwen3-omni",
+      "metric": "Egocentric ES-Dir / FOA-W: threshold accuracy (%)",
+      "value": 11.34,
+      "source": "Table 2, arXiv:2611.16787v1, row Qwen3-Omni / FOA-W, column ES-Dir",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH egocentric view, FOA-W input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "qwen3-omni",
+      "metric": "Egocentric ES-Dist / FOA-W: relative-distance accuracy (%)",
+      "value": 18.79,
+      "source": "Table 2, arXiv:2611.16787v1, row Qwen3-Omni / FOA-W, column ES-Dist",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH egocentric view, FOA-W input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "qwen3-omni",
+      "metric": "Egocentric ES-CDir / FOA-W: threshold accuracy (%)",
+      "value": 10.15,
+      "source": "Table 2, arXiv:2611.16787v1, row Qwen3-Omni / FOA-W, column ES-CDir",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH egocentric view, FOA-W input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "qwen3-omni",
+      "metric": "Egocentric ES-CDist / FOA-W: relative-distance accuracy (%)",
+      "value": 20.52,
+      "source": "Table 2, arXiv:2611.16787v1, row Qwen3-Omni / FOA-W, column ES-CDist",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH egocentric view, FOA-W input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "qwen3-omni",
+      "metric": "Egocentric ES-Trans / FOA-W: WER (%)",
+      "value": 96.53,
+      "source": "Table 2, arXiv:2611.16787v1, row Qwen3-Omni / FOA-W, column ES-Trans",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH egocentric view, FOA-W input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "qwen3-omni",
+      "metric": "Egocentric ED-Dir / FOA-W: threshold accuracy (%)",
+      "value": 3.34,
+      "source": "Table 2, arXiv:2611.16787v1, row Qwen3-Omni / FOA-W, column ED-Dir",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH egocentric view, FOA-W input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "qwen3-omni",
+      "metric": "Egocentric ED-Dist / FOA-W: relative-distance accuracy (%)",
+      "value": 20.73,
+      "source": "Table 2, arXiv:2611.16787v1, row Qwen3-Omni / FOA-W, column ED-Dist",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH egocentric view, FOA-W input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "qwen3-omni",
+      "metric": "Egocentric ED-Trans / FOA-W: WER (%)",
+      "value": 128.0,
+      "source": "Table 2, arXiv:2611.16787v1, row Qwen3-Omni / FOA-W, column ED-Trans",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH egocentric view, FOA-W input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "qwen3-omni",
+      "metric": "Egocentric Overall / FOA-W: Overall score (0–100)",
+      "value": 20.56,
+      "source": "Table 2, arXiv:2611.16787v1, row Qwen3-Omni / FOA-W, column Overall",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH egocentric view, FOA-W input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "qwen3-omni",
+      "metric": "Egocentric ES-Dir / FOA-sep: threshold accuracy (%)",
+      "value": 13.07,
+      "source": "Table 2, arXiv:2611.16787v1, row Qwen3-Omni / FOA-sep, column ES-Dir",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH egocentric view, FOA-sep input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "qwen3-omni",
+      "metric": "Egocentric ES-Dist / FOA-sep: relative-distance accuracy (%)",
+      "value": 19.61,
+      "source": "Table 2, arXiv:2611.16787v1, row Qwen3-Omni / FOA-sep, column ES-Dist",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH egocentric view, FOA-sep input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "qwen3-omni",
+      "metric": "Egocentric ES-CDir / FOA-sep: threshold accuracy (%)",
+      "value": 8.71,
+      "source": "Table 2, arXiv:2611.16787v1, row Qwen3-Omni / FOA-sep, column ES-CDir",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH egocentric view, FOA-sep input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "qwen3-omni",
+      "metric": "Egocentric ES-CDist / FOA-sep: relative-distance accuracy (%)",
+      "value": 21.68,
+      "source": "Table 2, arXiv:2611.16787v1, row Qwen3-Omni / FOA-sep, column ES-CDist",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH egocentric view, FOA-sep input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "qwen3-omni",
+      "metric": "Egocentric ES-Trans / FOA-sep: WER (%)",
+      "value": 93.55,
+      "source": "Table 2, arXiv:2611.16787v1, row Qwen3-Omni / FOA-sep, column ES-Trans",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH egocentric view, FOA-sep input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "qwen3-omni",
+      "metric": "Egocentric ED-Dir / FOA-sep: threshold accuracy (%)",
+      "value": 4.07,
+      "source": "Table 2, arXiv:2611.16787v1, row Qwen3-Omni / FOA-sep, column ED-Dir",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH egocentric view, FOA-sep input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "qwen3-omni",
+      "metric": "Egocentric ED-Dist / FOA-sep: relative-distance accuracy (%)",
+      "value": 19.52,
+      "source": "Table 2, arXiv:2611.16787v1, row Qwen3-Omni / FOA-sep, column ED-Dist",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH egocentric view, FOA-sep input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "qwen3-omni",
+      "metric": "Egocentric ED-Trans / FOA-sep: WER (%)",
+      "value": 123.7,
+      "source": "Table 2, arXiv:2611.16787v1, row Qwen3-Omni / FOA-sep, column ED-Trans",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH egocentric view, FOA-sep input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "qwen3-omni",
+      "metric": "Egocentric Overall / FOA-sep: Overall score (0–100)",
+      "value": 21.41,
+      "source": "Table 2, arXiv:2611.16787v1, row Qwen3-Omni / FOA-sep, column Overall",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH egocentric view, FOA-sep input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "qwen3-5-omni-plus",
+      "metric": "Egocentric ES-Dir / FOA-W: threshold accuracy (%)",
+      "value": 18.13,
+      "source": "Table 2, arXiv:2611.16787v1, row Qwen3.5-Omni-Plus / FOA-W, column ES-Dir",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH egocentric view, FOA-W input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "qwen3-5-omni-plus",
+      "metric": "Egocentric ES-Dist / FOA-W: relative-distance accuracy (%)",
+      "value": 21.34,
+      "source": "Table 2, arXiv:2611.16787v1, row Qwen3.5-Omni-Plus / FOA-W, column ES-Dist",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH egocentric view, FOA-W input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "qwen3-5-omni-plus",
+      "metric": "Egocentric ES-CDir / FOA-W: threshold accuracy (%)",
+      "value": 9.37,
+      "source": "Table 2, arXiv:2611.16787v1, row Qwen3.5-Omni-Plus / FOA-W, column ES-CDir",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH egocentric view, FOA-W input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "qwen3-5-omni-plus",
+      "metric": "Egocentric ES-CDist / FOA-W: relative-distance accuracy (%)",
+      "value": 20.77,
+      "source": "Table 2, arXiv:2611.16787v1, row Qwen3.5-Omni-Plus / FOA-W, column ES-CDist",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH egocentric view, FOA-W input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "qwen3-5-omni-plus",
+      "metric": "Egocentric ES-Trans / FOA-W: WER (%)",
+      "value": 80.74,
+      "source": "Table 2, arXiv:2611.16787v1, row Qwen3.5-Omni-Plus / FOA-W, column ES-Trans",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH egocentric view, FOA-W input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "qwen3-5-omni-plus",
+      "metric": "Egocentric ED-Dir / FOA-W: threshold accuracy (%)",
+      "value": 6.56,
+      "source": "Table 2, arXiv:2611.16787v1, row Qwen3.5-Omni-Plus / FOA-W, column ED-Dir",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH egocentric view, FOA-W input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "qwen3-5-omni-plus",
+      "metric": "Egocentric ED-Dist / FOA-W: relative-distance accuracy (%)",
+      "value": 22.24,
+      "source": "Table 2, arXiv:2611.16787v1, row Qwen3.5-Omni-Plus / FOA-W, column ED-Dist",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH egocentric view, FOA-W input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "qwen3-5-omni-plus",
+      "metric": "Egocentric ED-Trans / FOA-W: WER (%)",
+      "value": 78.0,
+      "source": "Table 2, arXiv:2611.16787v1, row Qwen3.5-Omni-Plus / FOA-W, column ED-Trans",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH egocentric view, FOA-W input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "qwen3-5-omni-plus",
+      "metric": "Egocentric Overall / FOA-W: Overall score (0–100)",
+      "value": 24.75,
+      "source": "Table 2, arXiv:2611.16787v1, row Qwen3.5-Omni-Plus / FOA-W, column Overall",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH egocentric view, FOA-W input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "qwen3-5-omni-plus",
+      "metric": "Egocentric ES-Dir / FOA-sep: threshold accuracy (%)",
+      "value": 17.33,
+      "source": "Table 2, arXiv:2611.16787v1, row Qwen3.5-Omni-Plus / FOA-sep, column ES-Dir",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH egocentric view, FOA-sep input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "qwen3-5-omni-plus",
+      "metric": "Egocentric ES-Dist / FOA-sep: relative-distance accuracy (%)",
+      "value": 21.9,
+      "source": "Table 2, arXiv:2611.16787v1, row Qwen3.5-Omni-Plus / FOA-sep, column ES-Dist",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH egocentric view, FOA-sep input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "qwen3-5-omni-plus",
+      "metric": "Egocentric ES-CDir / FOA-sep: threshold accuracy (%)",
+      "value": 9.15,
+      "source": "Table 2, arXiv:2611.16787v1, row Qwen3.5-Omni-Plus / FOA-sep, column ES-CDir",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH egocentric view, FOA-sep input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "qwen3-5-omni-plus",
+      "metric": "Egocentric ES-CDist / FOA-sep: relative-distance accuracy (%)",
+      "value": 20.65,
+      "source": "Table 2, arXiv:2611.16787v1, row Qwen3.5-Omni-Plus / FOA-sep, column ES-CDist",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH egocentric view, FOA-sep input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "qwen3-5-omni-plus",
+      "metric": "Egocentric ES-Trans / FOA-sep: WER (%)",
+      "value": 72.14,
+      "source": "Table 2, arXiv:2611.16787v1, row Qwen3.5-Omni-Plus / FOA-sep, column ES-Trans",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH egocentric view, FOA-sep input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "qwen3-5-omni-plus",
+      "metric": "Egocentric ED-Dir / FOA-sep: threshold accuracy (%)",
+      "value": 7.64,
+      "source": "Table 2, arXiv:2611.16787v1, row Qwen3.5-Omni-Plus / FOA-sep, column ED-Dir",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH egocentric view, FOA-sep input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "qwen3-5-omni-plus",
+      "metric": "Egocentric ED-Dist / FOA-sep: relative-distance accuracy (%)",
+      "value": 19.4,
+      "source": "Table 2, arXiv:2611.16787v1, row Qwen3.5-Omni-Plus / FOA-sep, column ED-Dist",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH egocentric view, FOA-sep input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "qwen3-5-omni-plus",
+      "metric": "Egocentric ED-Trans / FOA-sep: WER (%)",
+      "value": 73.1,
+      "source": "Table 2, arXiv:2611.16787v1, row Qwen3.5-Omni-Plus / FOA-sep, column ED-Trans",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH egocentric view, FOA-sep input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "qwen3-5-omni-plus",
+      "metric": "Egocentric Overall / FOA-sep: Overall score (0–100)",
+      "value": 26.52,
+      "source": "Table 2, arXiv:2611.16787v1, row Qwen3.5-Omni-Plus / FOA-sep, column Overall",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH egocentric view, FOA-sep input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "bat",
+      "metric": "Egocentric ES-Dir / Binaural: threshold accuracy (%)",
+      "value": 0.0,
+      "source": "Table 2, arXiv:2611.16787v1, row BAT / Binaural, column ES-Dir",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH egocentric view, Binaural input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "bat",
+      "metric": "Egocentric ES-Dist / Binaural: relative-distance accuracy (%)",
+      "value": 0.0,
+      "source": "Table 2, arXiv:2611.16787v1, row BAT / Binaural, column ES-Dist",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH egocentric view, Binaural input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "bat",
+      "metric": "Egocentric ES-CDir / Binaural: threshold accuracy (%)",
+      "value": 0.0,
+      "source": "Table 2, arXiv:2611.16787v1, row BAT / Binaural, column ES-CDir",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH egocentric view, Binaural input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "bat",
+      "metric": "Egocentric ES-CDist / Binaural: relative-distance accuracy (%)",
+      "value": 0.0,
+      "source": "Table 2, arXiv:2611.16787v1, row BAT / Binaural, column ES-CDist",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH egocentric view, Binaural input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "bat",
+      "metric": "Egocentric ES-Trans / Binaural: WER (%)",
+      "value": 99.89,
+      "source": "Table 2, arXiv:2611.16787v1, row BAT / Binaural, column ES-Trans",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH egocentric view, Binaural input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "bat",
+      "metric": "Egocentric ED-Dir / Binaural: threshold accuracy (%)",
+      "value": 0.0,
+      "source": "Table 2, arXiv:2611.16787v1, row BAT / Binaural, column ED-Dir",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH egocentric view, Binaural input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "bat",
+      "metric": "Egocentric ED-Dist / Binaural: relative-distance accuracy (%)",
+      "value": 0.0,
+      "source": "Table 2, arXiv:2611.16787v1, row BAT / Binaural, column ED-Dist",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH egocentric view, Binaural input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "bat",
+      "metric": "Egocentric ED-Trans / Binaural: WER (%)",
+      "value": 99.82,
+      "source": "Table 2, arXiv:2611.16787v1, row BAT / Binaural, column ED-Trans",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH egocentric view, Binaural input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "bat",
+      "metric": "Egocentric Overall / Binaural: Overall score (0–100)",
+      "value": 0.07,
+      "source": "Table 2, arXiv:2611.16787v1, row BAT / Binaural, column Overall",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH egocentric view, Binaural input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "qwen3-omni",
+      "metric": "Allocentric AS-Pos / FOA-W: threshold accuracy (%)",
+      "value": 1.19,
+      "source": "Table 3, arXiv:2611.16787v1, row Qwen3-Omni / FOA-W, column AS-Pos",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH allocentric view, FOA-W input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "qwen3-omni",
+      "metric": "Allocentric AS-CPos / FOA-W: threshold accuracy (%)",
+      "value": 0.31,
+      "source": "Table 3, arXiv:2611.16787v1, row Qwen3-Omni / FOA-W, column AS-CPos",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH allocentric view, FOA-W input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "qwen3-omni",
+      "metric": "Allocentric AS-Trans / FOA-W: WER (%)",
+      "value": 104.0,
+      "source": "Table 3, arXiv:2611.16787v1, row Qwen3-Omni / FOA-W, column AS-Trans",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH allocentric view, FOA-W input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "qwen3-omni",
+      "metric": "Allocentric AD-CPos / FOA-W: threshold accuracy (%)",
+      "value": 6.48,
+      "source": "Table 3, arXiv:2611.16787v1, row Qwen3-Omni / FOA-W, column AD-CPos",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH allocentric view, FOA-W input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "qwen3-omni",
+      "metric": "Allocentric AD-Trans / FOA-W: WER (%)",
+      "value": 95.1,
+      "source": "Table 3, arXiv:2611.16787v1, row Qwen3-Omni / FOA-W, column AD-Trans",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH allocentric view, FOA-W input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "qwen3-omni",
+      "metric": "Allocentric Overall / FOA-W: Overall score (0–100)",
+      "value": 13.77,
+      "source": "Table 3, arXiv:2611.16787v1, row Qwen3-Omni / FOA-W, column Overall",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH allocentric view, FOA-W input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "qwen3-omni",
+      "metric": "Allocentric AS-Pos / FOA-sep: threshold accuracy (%)",
+      "value": 1.19,
+      "source": "Table 3, arXiv:2611.16787v1, row Qwen3-Omni / FOA-sep, column AS-Pos",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH allocentric view, FOA-sep input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "qwen3-omni",
+      "metric": "Allocentric AS-CPos / FOA-sep: threshold accuracy (%)",
+      "value": 0.06,
+      "source": "Table 3, arXiv:2611.16787v1, row Qwen3-Omni / FOA-sep, column AS-CPos",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH allocentric view, FOA-sep input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "qwen3-omni",
+      "metric": "Allocentric AS-Trans / FOA-sep: WER (%)",
+      "value": 109.59,
+      "source": "Table 3, arXiv:2611.16787v1, row Qwen3-Omni / FOA-sep, column AS-Trans",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH allocentric view, FOA-sep input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "qwen3-omni",
+      "metric": "Allocentric AD-CPos / FOA-sep: threshold accuracy (%)",
+      "value": 6.45,
+      "source": "Table 3, arXiv:2611.16787v1, row Qwen3-Omni / FOA-sep, column AD-CPos",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH allocentric view, FOA-sep input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "qwen3-omni",
+      "metric": "Allocentric AD-Trans / FOA-sep: WER (%)",
+      "value": 92.06,
+      "source": "Table 3, arXiv:2611.16787v1, row Qwen3-Omni / FOA-sep, column AD-Trans",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH allocentric view, FOA-sep input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "qwen3-omni",
+      "metric": "Allocentric Overall / FOA-sep: Overall score (0–100)",
+      "value": 14.22,
+      "source": "Table 3, arXiv:2611.16787v1, row Qwen3-Omni / FOA-sep, column Overall",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH allocentric view, FOA-sep input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "qwen3-5-omni-plus",
+      "metric": "Allocentric AS-Pos / FOA-W: threshold accuracy (%)",
+      "value": 9.49,
+      "source": "Table 3, arXiv:2611.16787v1, row Qwen3.5-Omni-Plus / FOA-W, column AS-Pos",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH allocentric view, FOA-W input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "qwen3-5-omni-plus",
+      "metric": "Allocentric AS-CPos / FOA-W: threshold accuracy (%)",
+      "value": 7.62,
+      "source": "Table 3, arXiv:2611.16787v1, row Qwen3.5-Omni-Plus / FOA-W, column AS-CPos",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH allocentric view, FOA-W input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "qwen3-5-omni-plus",
+      "metric": "Allocentric AS-Trans / FOA-W: WER (%)",
+      "value": 71.06,
+      "source": "Table 3, arXiv:2611.16787v1, row Qwen3.5-Omni-Plus / FOA-W, column AS-Trans",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH allocentric view, FOA-W input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "qwen3-5-omni-plus",
+      "metric": "Allocentric AD-CPos / FOA-W: threshold accuracy (%)",
+      "value": 6.93,
+      "source": "Table 3, arXiv:2611.16787v1, row Qwen3.5-Omni-Plus / FOA-W, column AD-CPos",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH allocentric view, FOA-W input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "qwen3-5-omni-plus",
+      "metric": "Allocentric AD-Trans / FOA-W: WER (%)",
+      "value": 74.1,
+      "source": "Table 3, arXiv:2611.16787v1, row Qwen3.5-Omni-Plus / FOA-W, column AD-Trans",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH allocentric view, FOA-W input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "qwen3-5-omni-plus",
+      "metric": "Allocentric Overall / FOA-W: Overall score (0–100)",
+      "value": 19.45,
+      "source": "Table 3, arXiv:2611.16787v1, row Qwen3.5-Omni-Plus / FOA-W, column Overall",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH allocentric view, FOA-W input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "qwen3-5-omni-plus",
+      "metric": "Allocentric AS-Pos / FOA-sep: threshold accuracy (%)",
+      "value": 10.99,
+      "source": "Table 3, arXiv:2611.16787v1, row Qwen3.5-Omni-Plus / FOA-sep, column AS-Pos",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH allocentric view, FOA-sep input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "qwen3-5-omni-plus",
+      "metric": "Allocentric AS-CPos / FOA-sep: threshold accuracy (%)",
+      "value": 11.37,
+      "source": "Table 3, arXiv:2611.16787v1, row Qwen3.5-Omni-Plus / FOA-sep, column AS-CPos",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH allocentric view, FOA-sep input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "qwen3-5-omni-plus",
+      "metric": "Allocentric AS-Trans / FOA-sep: WER (%)",
+      "value": 72.65,
+      "source": "Table 3, arXiv:2611.16787v1, row Qwen3.5-Omni-Plus / FOA-sep, column AS-Trans",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH allocentric view, FOA-sep input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "qwen3-5-omni-plus",
+      "metric": "Allocentric AD-CPos / FOA-sep: threshold accuracy (%)",
+      "value": 6.41,
+      "source": "Table 3, arXiv:2611.16787v1, row Qwen3.5-Omni-Plus / FOA-sep, column AD-CPos",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH allocentric view, FOA-sep input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "qwen3-5-omni-plus",
+      "metric": "Allocentric AD-Trans / FOA-sep: WER (%)",
+      "value": 68.91,
+      "source": "Table 3, arXiv:2611.16787v1, row Qwen3.5-Omni-Plus / FOA-sep, column AD-Trans",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH allocentric view, FOA-sep input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "qwen3-5-omni-plus",
+      "metric": "Allocentric Overall / FOA-sep: Overall score (0–100)",
+      "value": 21.86,
+      "source": "Table 3, arXiv:2611.16787v1, row Qwen3.5-Omni-Plus / FOA-sep, column Overall",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH allocentric view, FOA-sep input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "bat",
+      "metric": "Allocentric AS-Pos / Binaural: threshold accuracy (%)",
+      "value": 0.0,
+      "source": "Table 3, arXiv:2611.16787v1, row BAT / Binaural, column AS-Pos",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH allocentric view, Binaural input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "bat",
+      "metric": "Allocentric AS-CPos / Binaural: threshold accuracy (%)",
+      "value": 0.0,
+      "source": "Table 3, arXiv:2611.16787v1, row BAT / Binaural, column AS-CPos",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH allocentric view, Binaural input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "bat",
+      "metric": "Allocentric AS-Trans / Binaural: WER (%)",
+      "value": 99.89,
+      "source": "Table 3, arXiv:2611.16787v1, row BAT / Binaural, column AS-Trans",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH allocentric view, Binaural input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "bat",
+      "metric": "Allocentric AD-CPos / Binaural: threshold accuracy (%)",
+      "value": 0.0,
+      "source": "Table 3, arXiv:2611.16787v1, row BAT / Binaural, column AD-CPos",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH allocentric view, Binaural input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "bat",
+      "metric": "Allocentric AD-Trans / Binaural: WER (%)",
+      "value": 99.98,
+      "source": "Table 3, arXiv:2611.16787v1, row BAT / Binaural, column AD-Trans",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH allocentric view, Binaural input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "mesh-spatial-hearing",
+      "model": "bat",
+      "metric": "Allocentric Overall / Binaural: Overall score (0–100)",
+      "value": 0.04,
+      "source": "Table 3, arXiv:2611.16787v1, row BAT / Binaural, column Overall",
+      "source_url": "https://arxiv.org/pdf/2611.16787v1#page=7",
+      "note": "MESH allocentric view, Binaural input. FOA-W supplies only the omnidirectional channel; FOA-sep presents WXYZ as separate audio clips; BAT uses binaural audio. Spatial correctness thresholds: 20 degrees direction, 20% relative distance, 2 m world position; dynamic predictions use speech-active 0.5-second frames. Invalid predictions count as failures. Corpus WER is lower-better and may exceed 100%; it is not clipped. Overall (Eq. 4) equally weights the question-level localization and transcription groups, with per-question transcription credit max(0,1-WER), and separate empty-answer credit. Overall is not a simple mean of table columns."
+    },
+    {
+      "benchmark": "omni-jev-action-evaluation",
+      "model": "qwen3-omni",
+      "metric": "Audio accuracy (%)",
+      "value": 26.43,
+      "source": "Table 5, arXiv:2611.13777v2, row Qwen3-Omni, column Audio accuracy",
+      "source_url": "https://arxiv.org/pdf/2611.13777v2#page=11",
+      "note": "Frozen test, zero-shot external model; scope full test, N=34,860, Fail/invalid=0/0. Audio uses all 24,287 audio examples and text uses all 10,573 text examples where supported. User-only audio plus text context, assistant state and fixed action definitions; adapted Omni-JEV additionally has assistant-reference audio, so its scores are not equal-input base-model comparisons. Greedy local decoding with a 64-token limit; invalid or unresolved answers remain errors in the denominator. Text has four supported actions and no Recover examples. Percent, higher is better."
+    },
+    {
+      "benchmark": "omni-jev-action-evaluation",
+      "model": "qwen3-omni",
+      "metric": "Audio Macro-F1 (%)",
+      "value": 13.17,
+      "source": "Table 5, arXiv:2611.13777v2, row Qwen3-Omni, column Audio Macro-F1",
+      "source_url": "https://arxiv.org/pdf/2611.13777v2#page=11",
+      "note": "Frozen test, zero-shot external model; scope full test, N=34,860, Fail/invalid=0/0. Audio uses all 24,287 audio examples and text uses all 10,573 text examples where supported. User-only audio plus text context, assistant state and fixed action definitions; adapted Omni-JEV additionally has assistant-reference audio, so its scores are not equal-input base-model comparisons. Greedy local decoding with a 64-token limit; invalid or unresolved answers remain errors in the denominator. Text has four supported actions and no Recover examples. Percent, higher is better."
+    },
+    {
+      "benchmark": "omni-jev-action-evaluation",
+      "model": "qwen3-omni",
+      "metric": "Text accuracy (%)",
+      "value": 77.53,
+      "source": "Table 5, arXiv:2611.13777v2, row Qwen3-Omni, column Text accuracy",
+      "source_url": "https://arxiv.org/pdf/2611.13777v2#page=11",
+      "note": "Frozen test, zero-shot external model; scope full test, N=34,860, Fail/invalid=0/0. Audio uses all 24,287 audio examples and text uses all 10,573 text examples where supported. User-only audio plus text context, assistant state and fixed action definitions; adapted Omni-JEV additionally has assistant-reference audio, so its scores are not equal-input base-model comparisons. Greedy local decoding with a 64-token limit; invalid or unresolved answers remain errors in the denominator. Text has four supported actions and no Recover examples. Percent, higher is better."
+    },
+    {
+      "benchmark": "omni-jev-action-evaluation",
+      "model": "qwen3-omni",
+      "metric": "Text Macro-F1 (%)",
+      "value": 58.18,
+      "source": "Table 5, arXiv:2611.13777v2, row Qwen3-Omni, column Text Macro-F1",
+      "source_url": "https://arxiv.org/pdf/2611.13777v2#page=11",
+      "note": "Frozen test, zero-shot external model; scope full test, N=34,860, Fail/invalid=0/0. Audio uses all 24,287 audio examples and text uses all 10,573 text examples where supported. User-only audio plus text context, assistant state and fixed action definitions; adapted Omni-JEV additionally has assistant-reference audio, so its scores are not equal-input base-model comparisons. Greedy local decoding with a 64-token limit; invalid or unresolved answers remain errors in the denominator. Text has four supported actions and no Recover examples. Percent, higher is better."
+    },
+    {
+      "benchmark": "omni-jev-action-evaluation",
+      "model": "minicpm-o-4-5",
+      "metric": "Audio accuracy (%)",
+      "value": 47.4,
+      "source": "Table 5, arXiv:2611.13777v2, row MiniCPM-o4.5, column Audio accuracy",
+      "source_url": "https://arxiv.org/pdf/2611.13777v2#page=11",
+      "note": "Frozen test, zero-shot external model; scope full test, N=34,860, Fail/invalid=0/0. Audio uses all 24,287 audio examples and text uses all 10,573 text examples where supported. User-only audio plus text context, assistant state and fixed action definitions; adapted Omni-JEV additionally has assistant-reference audio, so its scores are not equal-input base-model comparisons. Greedy local decoding with a 64-token limit; invalid or unresolved answers remain errors in the denominator. Text has four supported actions and no Recover examples. Percent, higher is better."
+    },
+    {
+      "benchmark": "omni-jev-action-evaluation",
+      "model": "minicpm-o-4-5",
+      "metric": "Audio Macro-F1 (%)",
+      "value": 23.28,
+      "source": "Table 5, arXiv:2611.13777v2, row MiniCPM-o4.5, column Audio Macro-F1",
+      "source_url": "https://arxiv.org/pdf/2611.13777v2#page=11",
+      "note": "Frozen test, zero-shot external model; scope full test, N=34,860, Fail/invalid=0/0. Audio uses all 24,287 audio examples and text uses all 10,573 text examples where supported. User-only audio plus text context, assistant state and fixed action definitions; adapted Omni-JEV additionally has assistant-reference audio, so its scores are not equal-input base-model comparisons. Greedy local decoding with a 64-token limit; invalid or unresolved answers remain errors in the denominator. Text has four supported actions and no Recover examples. Percent, higher is better."
+    },
+    {
+      "benchmark": "omni-jev-action-evaluation",
+      "model": "minicpm-o-4-5",
+      "metric": "Text accuracy (%)",
+      "value": 83.58,
+      "source": "Table 5, arXiv:2611.13777v2, row MiniCPM-o4.5, column Text accuracy",
+      "source_url": "https://arxiv.org/pdf/2611.13777v2#page=11",
+      "note": "Frozen test, zero-shot external model; scope full test, N=34,860, Fail/invalid=0/0. Audio uses all 24,287 audio examples and text uses all 10,573 text examples where supported. User-only audio plus text context, assistant state and fixed action definitions; adapted Omni-JEV additionally has assistant-reference audio, so its scores are not equal-input base-model comparisons. Greedy local decoding with a 64-token limit; invalid or unresolved answers remain errors in the denominator. Text has four supported actions and no Recover examples. Percent, higher is better."
+    },
+    {
+      "benchmark": "omni-jev-action-evaluation",
+      "model": "minicpm-o-4-5",
+      "metric": "Text Macro-F1 (%)",
+      "value": 65.51,
+      "source": "Table 5, arXiv:2611.13777v2, row MiniCPM-o4.5, column Text Macro-F1",
+      "source_url": "https://arxiv.org/pdf/2611.13777v2#page=11",
+      "note": "Frozen test, zero-shot external model; scope full test, N=34,860, Fail/invalid=0/0. Audio uses all 24,287 audio examples and text uses all 10,573 text examples where supported. User-only audio plus text context, assistant state and fixed action definitions; adapted Omni-JEV additionally has assistant-reference audio, so its scores are not equal-input base-model comparisons. Greedy local decoding with a 64-token limit; invalid or unresolved answers remain errors in the denominator. Text has four supported actions and no Recover examples. Percent, higher is better."
+    },
+    {
+      "benchmark": "omni-jev-action-evaluation",
+      "model": "step-audio-2-mini",
+      "metric": "Audio accuracy (%)",
+      "value": 16.54,
+      "source": "Table 5, arXiv:2611.13777v2, row Step-Audio2-mini, column Audio accuracy",
+      "source_url": "https://arxiv.org/pdf/2611.13777v2#page=11",
+      "note": "Frozen test, zero-shot external model; scope full test, N=34,860, Fail/invalid=0/12941. Audio uses all 24,287 audio examples and text uses all 10,573 text examples where supported. User-only audio plus text context, assistant state and fixed action definitions; adapted Omni-JEV additionally has assistant-reference audio, so its scores are not equal-input base-model comparisons. Greedy local decoding with a 64-token limit; invalid or unresolved answers remain errors in the denominator. Text has four supported actions and no Recover examples. Percent, higher is better."
+    },
+    {
+      "benchmark": "omni-jev-action-evaluation",
+      "model": "step-audio-2-mini",
+      "metric": "Audio Macro-F1 (%)",
+      "value": 12.13,
+      "source": "Table 5, arXiv:2611.13777v2, row Step-Audio2-mini, column Audio Macro-F1",
+      "source_url": "https://arxiv.org/pdf/2611.13777v2#page=11",
+      "note": "Frozen test, zero-shot external model; scope full test, N=34,860, Fail/invalid=0/12941. Audio uses all 24,287 audio examples and text uses all 10,573 text examples where supported. User-only audio plus text context, assistant state and fixed action definitions; adapted Omni-JEV additionally has assistant-reference audio, so its scores are not equal-input base-model comparisons. Greedy local decoding with a 64-token limit; invalid or unresolved answers remain errors in the denominator. Text has four supported actions and no Recover examples. Percent, higher is better."
+    },
+    {
+      "benchmark": "omni-jev-action-evaluation",
+      "model": "step-audio-2-mini",
+      "metric": "Text accuracy (%)",
+      "value": 40.4,
+      "source": "Table 5, arXiv:2611.13777v2, row Step-Audio2-mini, column Text accuracy",
+      "source_url": "https://arxiv.org/pdf/2611.13777v2#page=11",
+      "note": "Frozen test, zero-shot external model; scope full test, N=34,860, Fail/invalid=0/12941. Audio uses all 24,287 audio examples and text uses all 10,573 text examples where supported. User-only audio plus text context, assistant state and fixed action definitions; adapted Omni-JEV additionally has assistant-reference audio, so its scores are not equal-input base-model comparisons. Greedy local decoding with a 64-token limit; invalid or unresolved answers remain errors in the denominator. Text has four supported actions and no Recover examples. Percent, higher is better."
+    },
+    {
+      "benchmark": "omni-jev-action-evaluation",
+      "model": "step-audio-2-mini",
+      "metric": "Text Macro-F1 (%)",
+      "value": 38.21,
+      "source": "Table 5, arXiv:2611.13777v2, row Step-Audio2-mini, column Text Macro-F1",
+      "source_url": "https://arxiv.org/pdf/2611.13777v2#page=11",
+      "note": "Frozen test, zero-shot external model; scope full test, N=34,860, Fail/invalid=0/12941. Audio uses all 24,287 audio examples and text uses all 10,573 text examples where supported. User-only audio plus text context, assistant state and fixed action definitions; adapted Omni-JEV additionally has assistant-reference audio, so its scores are not equal-input base-model comparisons. Greedy local decoding with a 64-token limit; invalid or unresolved answers remain errors in the denominator. Text has four supported actions and no Recover examples. Percent, higher is better."
+    },
+    {
+      "benchmark": "omni-jev-action-evaluation",
+      "model": "firered-audio",
+      "metric": "Audio accuracy (%)",
+      "value": 37.44,
+      "source": "Table 5, arXiv:2611.13777v2, row FireRedAudio, column Audio accuracy",
+      "source_url": "https://arxiv.org/pdf/2611.13777v2#page=11",
+      "note": "Frozen test, zero-shot external model; scope full audio, N=24,287, Fail/invalid=0/0. Audio uses all 24,287 audio examples and text uses all 10,573 text examples where supported. User-only audio plus text context, assistant state and fixed action definitions; adapted Omni-JEV additionally has assistant-reference audio, so its scores are not equal-input base-model comparisons. Greedy local decoding with a 64-token limit; invalid or unresolved answers remain errors in the denominator. Text has four supported actions and no Recover examples. Percent, higher is better."
+    },
+    {
+      "benchmark": "omni-jev-action-evaluation",
+      "model": "firered-audio",
+      "metric": "Audio Macro-F1 (%)",
+      "value": 30.99,
+      "source": "Table 5, arXiv:2611.13777v2, row FireRedAudio, column Audio Macro-F1",
+      "source_url": "https://arxiv.org/pdf/2611.13777v2#page=11",
+      "note": "Frozen test, zero-shot external model; scope full audio, N=24,287, Fail/invalid=0/0. Audio uses all 24,287 audio examples and text uses all 10,573 text examples where supported. User-only audio plus text context, assistant state and fixed action definitions; adapted Omni-JEV additionally has assistant-reference audio, so its scores are not equal-input base-model comparisons. Greedy local decoding with a 64-token limit; invalid or unresolved answers remain errors in the denominator. Text has four supported actions and no Recover examples. Percent, higher is better."
     }
   ]
 }

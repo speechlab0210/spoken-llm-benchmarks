@@ -9676,7 +9676,9 @@
       ],
       "io": "speech in, speech out",
       "size": "1,862 synthetic spoken queries (AudioCRAG-Synthetic) + 618 human-recorded spoken queries (AudioCRAG-Human)",
-      "metrics": "accuracy under CRAG's LLM-judge methodology (responses split into accurate / hallucinated / missing); first-token latency and percentage latency saving",
+      "metrics": [
+        "accuracy under CRAG's LLM-judge methodology (responses split into accurate / hallucinated / missing); first-token latency and percentage latency saving"
+      ],
       "languages": [
         "English"
       ],
@@ -13013,6 +13015,116 @@
       "note": "This entry covers timestamped captioning; companion diarization splits are described separately in the paper. The longest natural TAC recording is 117.05 minutes; the 16-hour extrapolation test concatenates recordings. Long-form references use human-reviewed Qwen3.5-Omni-Plus drafts. General-model comparisons are chiefly plots, while tabulated LongCap variants are distinct trained configurations; no plot estimates or misassigned base-model cells are added. The author project links code and the verified TAC-Long release.",
       "code": "https://github.com/jctian98/longcap-code",
       "data": "https://huggingface.co/datasets/JinchuanTian/LongCapBench-TAC-Long"
+    },
+    {
+      "id": "cinemme",
+      "name": "CineMME",
+      "aka": [
+        "CineMME-Reasoning",
+        "CineMME-Grounding"
+      ],
+      "full_title": "CineMME: From Dialogue Grounding to Narrative Reasoning in Multimodal Video Understanding",
+      "arxiv_id": "2611.15161",
+      "arxiv_date": "2026-11",
+      "arxiv_date_full": "2026-11-11",
+      "url": "https://arxiv.org/abs/2611.15161",
+      "categories": [
+        "reasoning",
+        "audio-grounding",
+        "auditory-perception",
+        "paralinguistics"
+      ],
+      "tasks": [
+        "narrative video question answering",
+        "dialogue transcription and temporal localization",
+        "active-speaker face grounding"
+      ],
+      "languages": [],
+      "size": "975 distinct short narrative clips; reasoning: 667 videos, 1,600 MCQs and 316 open-ended questions; grounding: 546 videos with 13,554 dialogue segments and 33,083 speaker face boxes. Tracks overlap.",
+      "io": "audio+video and question → answer, or dialogue transcript with timestamps and speaker face boxes",
+      "metrics": [
+        "MCQ accuracy (%)",
+        "open-ended judge score (0–100)",
+        "temporal IoU (%)",
+        "visual IoU (%)",
+        "word error rate (%)"
+      ],
+      "summary": "Pairs dialogue-level who/what/when grounding with narrative, perception, scene, social and audio reasoning. Evaluates general audio-capable multimodal models alongside vision-only controls.",
+      "note": "Tables 2–3 contribute 83 cells from audio-capable configurations. Scores are conditional on valid answers or parsed videos; Table 21 shows sharply different effective denominators, including only 5/546 parsed grounding videos for MiniCPM-o-2.6. OEQ ratings are multiplied by ten from a 0–10 judge scale, not percentages of correct answers. Qwen3.5-Omni-Plus has moderation-related omissions and no reported OEQ sample count. Sampling and per-model coverage are retained in cell notes. The July 2026 video-availability audit is separate from score denominators; it does not establish current source availability.",
+      "code": null,
+      "data": null
+    },
+    {
+      "id": "mesh-spatial-hearing",
+      "name": "MESH",
+      "aka": [],
+      "full_title": "MESH: Multi-receiver Evaluation of Spatial Hearing across Egocentric and Allocentric Views",
+      "arxiv_id": "2611.16787",
+      "arxiv_date": "2026-11",
+      "arxiv_date_full": "2026-11-12",
+      "url": "https://arxiv.org/abs/2611.16787",
+      "categories": [
+        "auditory-perception",
+        "reasoning",
+        "audio-grounding"
+      ],
+      "tasks": [
+        "source direction and distance localization",
+        "world-coordinate source localization",
+        "spatially cued transcription",
+        "dynamic source tracking"
+      ],
+      "languages": [],
+      "size": "39,999 questions (19,117 static and 20,882 dynamic) over 13 tasks; 800 static and 1,600 dynamic realizations, with 4,761 receiver recordings",
+      "io": "spatial audio recordings, permitted receiver metadata and query → coordinates, trajectories or target transcript",
+      "metrics": [
+        "threshold localization accuracy (%)",
+        "relative-distance accuracy (%)",
+        "word error rate (%)",
+        "question-weighted Overall score (0–100)"
+      ],
+      "summary": "Tests spatial hearing in egocentric and allocentric coordinates using multi-receiver acoustic scenes, distinguishing local listening with peer metadata from synchronized recordings. Eight egocentric and five allocentric tasks cover static and moving sources.",
+      "note": "Tables 2–3 contribute 75 cells for Qwen3-Omni, Qwen3.5-Omni-Plus and BAT. FOA-W, FOA-sep and binaural inputs remain distinct. WER can exceed 100% and is retained as printed. Overall equally weights localization and transcription question groups with clipped per-question transcription credit; it is not mean accuracy across task columns. Spatial-Omni sizes, MiDasheng-Spatial, JAEGER variants, Qwen3.8-Omni-Flash and the specialist tool-calling MESH-agent require distinct model records before their values can be added.",
+      "code": "https://github.com/Wenanzhi/MESH-Benchmark",
+      "data": "https://huggingface.co/datasets/Heiheihaha17/MESH-Benchmark"
+    },
+    {
+      "id": "omni-jev-action-evaluation",
+      "name": "Omni-JEV Interaction-Action Evaluation",
+      "aka": [
+        "Omni-JEV action test"
+      ],
+      "full_title": "Omni-JEV: Text and Dual-Stream Speech Decisions",
+      "arxiv_id": "2611.13777",
+      "arxiv_date": "2026-11",
+      "arxiv_date_full": "2026-11-10",
+      "url": "https://arxiv.org/abs/2611.13777",
+      "categories": [
+        "interactivity",
+        "instruction-following",
+        "multilingual"
+      ],
+      "tasks": [
+        "endpoint interaction-action classification",
+        "assistant-state-conditioned response decisions",
+        "action-probability evaluation"
+      ],
+      "languages": [
+        "English",
+        "Chinese"
+      ],
+      "size": "34,860 frozen test examples: 24,287 audio and 10,573 text; five audio actions, with four actions represented in the text split",
+      "io": "user speech or text plus assistant state and context → Listen, Start, Continue, Stop or Recover action",
+      "metrics": [
+        "accuracy (%)",
+        "macro-F1 (%)",
+        "Brier score",
+        "negative log likelihood"
+      ],
+      "summary": "Introduces a bilingual, source-linked interaction-action test and shared decision protocol for collected-segment endpoints. General audio models are evaluated zero-shot on the frozen test, while task-adapted Omni-JEV can additionally use assistant-reference speech.",
+      "note": "Table 5 of v2 contributes 14 cells for four existing model records. Invalid or unresolved answers remain in the denominator; Step-Audio2-mini has 12,941 invalid outputs. This is endpoint classification, not a streaming latency or closed-loop conversation benchmark. Adaptation and available input roles differ across systems. Qwen3.1-Realtime uses a differently sampled 2,000-example subset; it and MOSS-Audio-4B-Instruct are not mapped to other model versions. The paper does not distribute the complete action-label corpus, derived audio or weights, and notes heterogeneous source permissions; no public dataset download is claimed.",
+      "code": null,
+      "data": null
     }
   ]
 }

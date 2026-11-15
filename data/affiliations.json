@@ -26671,6 +26671,148 @@
     }
    ],
    "verify_note": "PDF v1 page 1 visually checked against arXiv author metadata. Jinchuan Tian, Haoran Wang and Shinji Watanabe have affiliation 1 (CMU). The other seven authors, including last author Cong Zhou, are explicitly independent researchers; no institution is invented for them. No city or country is printed."
+  },
+  "cinemme": {
+   "status": "ok",
+   "verified": "confirmed",
+   "publishable": true,
+   "countries_complete": true,
+   "n_authors": 10,
+   "institutions": [
+    {
+     "inst": "shanghaitech-university",
+     "raw": "School of Information Science and Technology, ShanghaiTech University, Shanghai, China",
+     "unit": "School of Information Science and Technology",
+     "country": "CN",
+     "city": "Shanghai",
+     "lat": 31.23,
+     "lon": 121.47,
+     "placed": "named",
+     "printed_city": "Shanghai",
+     "printed_country": "China",
+     "lead": true,
+     "first_author": true,
+     "last": false,
+     "evidence": "printed"
+    },
+    {
+     "inst": "institute-of-automation-chinese-academy-of-sciences",
+     "raw": "MAIS & NLPR, Institute of Automation, Chinese Academy of Sciences, Beijing, China",
+     "unit": "MAIS & NLPR",
+     "country": "CN",
+     "city": "Beijing",
+     "lat": 39.9,
+     "lon": 116.4,
+     "placed": "named",
+     "printed_city": "Beijing",
+     "printed_country": "China",
+     "lead": false,
+     "first_author": true,
+     "last": false,
+     "evidence": "printed"
+    },
+    {
+     "inst": "university-of-chinese-academy-of-sciences",
+     "raw": "School of Artificial Intelligence, University of Chinese Academy of Sciences, Beijing, China",
+     "unit": "School of Artificial Intelligence",
+     "country": "CN",
+     "city": "Beijing",
+     "lat": 39.9,
+     "lon": 116.4,
+     "placed": "named",
+     "printed_city": "Beijing",
+     "printed_country": "China",
+     "lead": false,
+     "first_author": false,
+     "last": false,
+     "evidence": "printed"
+    },
+    {
+     "inst": "bytedance",
+     "raw": "ByteDance, San Jose, USA",
+     "unit": null,
+     "country": "US",
+     "city": "San Jose",
+     "lat": 37.34,
+     "lon": -121.89,
+     "placed": "named",
+     "printed_city": "San Jose",
+     "printed_country": "USA",
+     "lead": false,
+     "first_author": true,
+     "last": true,
+     "evidence": "printed"
+    }
+   ],
+   "verify_note": "PDF v1 page 1 visually checked against arXiv author metadata. First author Jin Liu has affiliations 1, 2 and 4; affiliation 1 is the sole lead. Last author Zhenfang Chen has affiliation 4. All cities and countries are printed; coordinates normalize the named cities. The ByteDance occurrence is San Jose, not the registry default Beijing site."
+  },
+  "mesh-spatial-hearing": {
+   "status": "ok",
+   "verified": "confirmed",
+   "publishable": true,
+   "countries_complete": false,
+   "n_authors": 7,
+   "institutions": [
+    {
+     "inst": "shanghai-jiao-tong-university",
+     "raw": "Shanghai Jiao Tong University",
+     "unit": null,
+     "country": null,
+     "city": null,
+     "lat": null,
+     "lon": null,
+     "placed": "unplaced",
+     "printed_city": null,
+     "printed_country": null,
+     "lead": true,
+     "first_author": true,
+     "last": true,
+     "evidence": "printed"
+    },
+    {
+     "inst": "nanjing-university",
+     "raw": "Nanjing University",
+     "unit": null,
+     "country": null,
+     "city": null,
+     "lat": null,
+     "lon": null,
+     "placed": "unplaced",
+     "printed_city": null,
+     "printed_country": null,
+     "lead": false,
+     "first_author": false,
+     "last": false,
+     "evidence": "printed"
+    }
+   ],
+   "verify_note": "PDF v1 page 1 visually checked against arXiv author metadata. First author Wen Wen and last author Kai Yu have affiliation 1; co-first author Bohan Li also has affiliation 1. Shuai Wang has affiliation 2. No city or country is separately printed; institution-name words are not treated as printed locations."
+  },
+  "omni-jev-action-evaluation": {
+   "status": "ok",
+   "verified": "confirmed",
+   "publishable": true,
+   "countries_complete": false,
+   "n_authors": 1,
+   "institutions": [
+    {
+     "inst": "zhejiang-merit-interactive-research-institute",
+     "raw": "Zhejiang Merit Interactive Research Institute Co., Ltd.",
+     "unit": null,
+     "country": null,
+     "city": null,
+     "lat": null,
+     "lon": null,
+     "placed": "unplaced",
+     "printed_city": null,
+     "printed_country": null,
+     "lead": true,
+     "first_author": true,
+     "last": true,
+     "evidence": "printed"
+    }
+   ],
+   "verify_note": "Current PDF v2 page 1 visually checked against arXiv v2 HTML byline and author metadata. Sole author Shengzhou Kong has the printed company affiliation. The shorter v1 wording is not substituted for v2. No city or country is printed; no location or parent-company relationship is inferred from the company name or email domain."
   }
  },
  "models": {

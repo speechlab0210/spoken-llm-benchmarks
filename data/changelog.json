@@ -1,6 +1,11 @@
 {
  "entries": [
   {
+   "date": "2026-11-15",
+   "change": "Reviewed 11 candidates: added CineMME, MESH and the Omni-JEV Interaction-Action Evaluation; excluded eight model/method or non-spoken-LLM studies with specific reasons. Added 172 source-located result cells, printed affiliations and conservative venue records. CineMME valid-response denominators, MESH input configurations and WER above 100%, and Omni-JEV invalid-answer penalties remain explicit. CineMME acceptance is supported by the official NeurIPS 2026 listing; it is not marked published. Totals: 484 benchmarks, 261 models and 18,709 result cells. Repaired AudioCRAG’s legacy metrics field from a string to a one-item list without changing its text; this restores catalogue search.",
+   "source": "arXiv:2611.15161v1 Tables 2, 3 and 21; 2611.16787v1 Tables 2–3 and Eq. 4; 2611.13777v2 Table 5 and Sections 6–8. All 11 full texts, matching PDF bylines, arXiv metadata, author-linked MESH releases and the venue-owned NeurIPS listing checked."
+  },
+  {
    "date": "2026-11-11",
    "change": "Reviewed eight candidates: added Joi-Bench-Task, the MERC Modality-Reliance Audit, Beyond the Transcript recording-gain evaluation, UKBWV-27, Machine Hearing Benchmark and LongCapBench; excluded KeyASRBench (specialized ASR) and GlobalTap (beat tracking). Added 187 source-located result cells for exact existing model configurations, plus printed affiliations and conservative venue records. Compound pipelines, unmatched model variants and plot-only comparisons are not assigned misleading base-model values. Totals: 481 benchmarks, 261 models and 18,537 result cells.",
    "source": "arXiv:2611.12118v1 Tables 4–7; 2611.11987v1 Table 2; 2611.11573v1 Table 2; 2611.10245v1 event protocol and pipeline appendix; 2611.10693v1 Table 1; 2611.11125v1 LongCapBench; 2611.10852v1 and 2611.11137v1 scope review. Full text, PDF bylines, arXiv metadata and author-linked releases checked."
