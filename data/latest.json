@@ -1,9 +1,197 @@
 {
-  "fetched_at": "2026-11-10T22:26:59Z",
+  "fetched_at": "2026-11-15T00:10:07Z",
   "window_days": 10,
-  "scanned": 110,
-  "flagged_today": 8,
+  "scanned": 97,
+  "flagged_today": 11,
   "candidates": [
+    {
+      "id": "2611.13689",
+      "title": "Walrus Technical Report",
+      "abstract": "We present Walrus, a unified 8B speech-and-audio foundation model handling speech recognition (including code-switching and multi-talker speech), speech-to-text and speech-to-speech translation, text-to-speech, emotion recognition, audio captioning, and general audio understanding. Our main contribution is not a new architecture but a data-centric training recipe; we use a standard decoder-only backbone initialized from Gemma 4, so that gains can be traced to the data. For speech generation, Walrus predicts low-bitrate discrete speech tokens, and a lightweight token-to-waveform decoder converts them into high-fidelity audio. The recipe is a three-stage data curriculum that moves from broad multilingual data to multi-talker, code-switching, and domain-specific data. At each stage, task-aware and dataset-aware weighting balances tasks with very different token budgets and protects core skills from forgetting. Trained on over 600M samples covering more than 20 tasks and 100 languages, Walrus leads on most multilingual, multi-talker, and code-switching ASR, speech translation, and audio understanding benchmarks, outperforming both open speech language models of comparable size and dedicated task-specific models. On most benchmarks, it even matches or surpasses the $4\\times$ larger Qwen3-Omni's performance. Results suggest that data engineering is a primary driver of quality in multi-task speech and audio modeling.",
+      "published": "2026-11-10T07:37:38Z",
+      "authors": [
+        "Alkis Koudounas",
+        "Osamu Take",
+        "Hayato Futami",
+        "Quentin Jodelet",
+        "Emiru Tsunoo"
+      ],
+      "primary_category": "eess.AS",
+      "url": "https://arxiv.org/abs/2611.13689",
+      "score": 30,
+      "status": "new — under review"
+    },
+    {
+      "id": "2611.15161",
+      "title": "CineMME: From Dialogue Grounding to Narrative Reasoning in Multimodal Video Understanding",
+      "abstract": "Narrative video understanding requires more than recognizing visible events: models must extract evidence from dialogue, bind it to speakers, and use it to infer narrative meaning. Existing video benchmarks evaluate aspects of this problem, including video question answering, audio-visual reasoning, and temporal grounding, but rarely test whether these abilities form a coherent dialogue-to-plot evidence chain within the same clips. We introduce \\textbf{CineMME}, a human-verified benchmark designed to diagnose dialogue-grounded plot understanding, supported by approximately $1,600$ expert person-hours of annotation. CineMME contains $975$ curated short narrative video clips and two linked tracks: \\textit{CineMME-Grounding}, with $13,554$ timestamped speech segments and $33,083$ speaker face boxes for temporal dialogue localization, transcription, and active-speaker grounding; and \\textit{CineMME-Reasoning}, with $1,600$ multiple-choice and $316$ open-ended questions spanning perception, audio, narrative, social, and scene-presentation understanding. Our main evaluation compares $20$ MLLMs on reasoning and $9$ omni-modal models on grounding. The results reveal a pronounced who-what-when decoupling: Gemini-3 Pro localizes dialogue in time ($68.34\\%$ tIoU) and transcribes it with a WER of $28.99\\%$, yet achieves only $7.74\\%$ vIoU for active-speaker grounding while achieving $67.66\\%$ MCQ accuracy on questions with extractable answers. Modality ablations further show that vision is not uniformly beneficial: it improves performance on perception-heavy questions but can hurt dialogue-centric reasoning. CineMME provides a compact diagnostic testbed for evaluating how multimodal video models connect dialogue, speakers, visual evidence, and narrative meaning.",
+      "published": "2026-11-11T07:58:17Z",
+      "authors": [
+        "Jin Liu",
+        "Dawei Du",
+        "Yexiang Liu",
+        "Sijie Zhu",
+        "Fan Chen",
+        "Junxian Duan",
+        "Huaibo Huang",
+        "Ran He"
+      ],
+      "primary_category": "cs.CV",
+      "url": "https://arxiv.org/abs/2611.15161",
+      "score": 27,
+      "status": "new — under review"
+    },
+    {
+      "id": "2611.13777",
+      "title": "Omni-JEV: Text and Dual-Stream Speech Decisions",
+      "abstract": "A user utterance does not uniquely determine the next action in full-duplex dialogue: its consequences depend on the assistant's response state and interaction history. Speech activity, utterance completion, and interruption intent provide related evidence, whose implications for a response require an explicit action policy. We formulate this task at collected-segment endpoints and introduce Omni-JEV, which maps text or role-indexed user and assistant-reference speech to probabilities over five interaction actions. An aligned speech-to-speech understanding backbone encodes the acoustic roles separately and shares its candidate readout with text inputs. Bilingual weak supervision supports cross-entropy fine-tuning followed by reinforcement learning for probability-sensitive decisions (RLCD). We compare Gaussian-logit and categorical Choice RLCD from the same supervised initialization under matched training exposure, observing different trade-offs between classification and probability quality. Gaussian Omni-JEV achieves test accuracies of 84.08% for audio and 96.55% for text. This common action interface supports decisions about when a full-duplex voice assistant should respond, preserve ongoing speech, interrupt, or resume an interrupted response.",
+      "published": "2026-11-10T09:15:58Z",
+      "authors": [
+        "Shengzhou Kong"
+      ],
+      "primary_category": "cs.LG",
+      "url": "https://arxiv.org/abs/2611.13777",
+      "score": 24,
+      "status": "new — under review"
+    },
+    {
+      "id": "2611.15691",
+      "title": "Dynamic Block-Online Streaming ASR for Low-Resource Agglutinative Code-Switching Speech with Morphology-Aware Evaluation",
+      "abstract": "Low-resource, agglutinative languages challenge low-latency ASR, as fixed lookahead windows fail when grapheme order diverges, suffixes cross code-switch boundaries, or code-switching data is imbalanced. We present the first comprehensive study of streaming ASR for intra-sentential Bangla-English code-switching, identifying a mismatch between strict causal streaming and long-range morphological dependencies. We introduce a Dynamic Block-Online framework with VAD-aligned inference that balances semantics, latency, and context, enabling global bidirectional attention to preserve morphological integrity. To mitigate data scarcity, we propose Script-Anchored Loanword Injection, augmenting training text with English loanwords to model phonotactic transitions. We introduce CS-WER to diagnose switch, root, and suffix errors, and show that flexible latency budgets enhance recognition of agglutinative and mixed-language speech, with successful transfer to menstrual-medical domains.",
+      "published": "2026-11-11T16:30:22Z",
+      "authors": [
+        "Kazi Rafat",
+        "Afifa Imran",
+        "Md. Ismail Hossain",
+        "Md. Romzan Ali",
+        "Fuad Rahman",
+        "Sifat Momen",
+        "Shafin Rahman",
+        "Nabeel Mohammed"
+      ],
+      "primary_category": "cs.CL",
+      "url": "https://arxiv.org/abs/2611.15691",
+      "score": 24,
+      "status": "new — under review"
+    },
+    {
+      "id": "2611.16500",
+      "title": "EvenVLM: A Text and Multimodal Dataset for the Even Language with Vision-Language Fine-Tuning",
+      "abstract": "We present EvenVLM, the first text and multimodal (VQA) dataset for Even (Lamut), an endangered Northern Tungusic language spoken by approximately 6,800 people in Siberia. Our dataset comprises 50,521 structured Even-Russian entries extracted from dictionary and phrasebook sources via GPT-4o Mini-based parsing, from which we synthetically generate 107,543 training examples spanning translation, grammar, reading comprehension, and semantic classification. To address tokenization inefficiency on Even's agglutinative morphology, we propose a three-step tokenizer expansion algorithm that adds Even-specific graphemes (eng, oe, o-umlaut), whitelisted vocabulary, and BPE merges, reducing average tokens per word by 27% (4.99 to 3.64). Using LoRA fine-tuning of Qwen3-VL-4B, we adapt the model for text tasks (0.53% trainable parameters, rank 32) and separately for visual question answering (rank 64, frozen vision encoder). Our best configuration achieves 11.4% exact match and a 13.6 weighted score on text benchmarks, 0.1283 chrF for sentence translation, and 65% accuracy on VQA (up from 0% for the base model and text-only fine-tuning). We release our datasets, evaluation benchmarks, and training pipeline to support further research on Even and other low-resource languages.",
+      "published": "2026-11-12T09:03:06Z",
+      "authors": [
+        "Daniil Makovetskii",
+        "Ivan Bondarenko"
+      ],
+      "primary_category": "cs.CL",
+      "url": "https://arxiv.org/abs/2611.16500",
+      "score": 24,
+      "status": "new — under review"
+    },
+    {
+      "id": "2611.16787",
+      "title": "MESH: Multi-receiver Evaluation of Spatial Hearing across Egocentric and Allocentric Views",
+      "abstract": "Spatial hearing in multi-receiver environments requires identifying who speaks, where they are, and how they move. Existing benchmarks evaluate spatial prediction, transcription, tracking, and distributed speech processing, but offer limited evaluation of whether speech signal remains associated with the correct physical source across receivers and motion. We introduce MESH, which evaluates this association through egocentric and allocentric views of shared acoustic scenes. The egocentric view uses local recordings and peer metadata, while the allocentric view combines synchronized recordings from multiple receivers in a shared 3D world frame. MESH contains nearly 40,000 questions across 13 static and dynamic localization and spatial transcription tasks. We evaluate eleven audio-model configurations and a language-model agent using specialist tools. The best static distance-estimation and dynamic direction-tracking accuracies are only 21.90% and 41.54%, respectively, while the lowest word error rates across four transcription tasks range from 59.15% to 73.10%. Ablation studies and additional experiments reveal that existing models are not yet able to effectively leverage peer information and struggle to handle multi-speaker and dynamic scenarios. These findings highlight the gap between access to distributed acoustic information and its effective use for spatial speech understanding. We release the dataset and evaluation code to support further research on collaborative and distributed spatial hearing.",
+      "published": "2026-11-12T13:34:47Z",
+      "authors": [
+        "Wen Wen",
+        "Bohan Li",
+        "KwanHo Tam",
+        "Yu Xi",
+        "Jing Peng",
+        "Shuai Wang",
+        "Kai Yu"
+      ],
+      "primary_category": "eess.AS",
+      "url": "https://arxiv.org/abs/2611.16787",
+      "score": 24,
+      "status": "new — under review"
+    },
+    {
+      "id": "2611.12970",
+      "title": "TrustMod-SM: A Multi-Axis Benchmark for Evaluating Trustworthiness of LLMs in Social Media Content Moderation",
+      "abstract": "Large Language Models (LLMs) show strong potential for social media content moderation, but their trustworthiness beyond overall accuracy remains underexplored. We introduce TrustMod-SM, a benchmark of roughly 29,000 instances across eight datasets, to evaluate LLM moderators on five dimensions: trustfulness, fairness, safety, robustness, and context integrity. Evaluating 16 open-weight models (0.5B-284B parameters, spanning text-only and vision-language architectures) and one closed frontier model, we find persistent trustworthiness gaps. Higher detection accuracy often coincides with greater demographic disparity, and models frequently comply with concealment or exaggeration prompts, assign high confidence to wrong predictions, rarely escalate ambiguous cases, and struggle to separate hate speech from counter-speech or reclaimed language (especially below 8B parameters). Scaling does not uniformly resolve these issues, and no single model excels across all five dimensions.",
+      "published": "2026-11-07T16:37:46Z",
+      "authors": [
+        "Aizan Zafar",
+        "Sreekantam Sai Venkata",
+        "Gathik Jindal",
+        "Ritu Raj Sharma",
+        "Zishan Ahmad",
+        "Tulika Saha",
+        "Srinath Srinivasa"
+      ],
+      "primary_category": "cs.AI",
+      "url": "https://arxiv.org/abs/2611.12970",
+      "score": 21,
+      "status": "new — under review"
+    },
+    {
+      "id": "2611.14443",
+      "title": "Assessing Alignment in Automatic Piano Transcription Datasets: A Benchmark for Scoring Methods",
+      "abstract": "Automatic Music Transcription (AMT) relies on paired audio--MIDI datasets, implicitly assuming near-perfect temporal alignment. However, widely used piano datasets have been shown to contain alignment errors that may bias model evaluation and training. We propose a framework for evaluating audio--MIDI alignment scoring methods through controlled temporal, pitch, and structural MIDI corruptions. We also introduce STI, a scoring method built on AMT models, and benchmark it against existing alignment scoring approaches. Our results show that STI, together with methods based on CENS and spectrograms, achieves the strongest overall performance, with STI exhibiting the highest sensitivity to fine-grained temporal misalignments, the main alignment error in AMT datasets. We then apply the best-performing methods to widely used piano AMT datasets and identify trends in their relative alignment quality. These results support more informed dataset curation, model training, and AMT evaluation.",
+      "published": "2026-11-10T18:13:47Z",
+      "authors": [
+        "Lucas de Souza Brandão",
+        "Lucas Gris",
+        "Joaquim Cavalcante",
+        "Chukwuemeka Nkama",
+        "Andrea Poltronieri"
+      ],
+      "primary_category": "cs.SD",
+      "url": "https://arxiv.org/abs/2611.14443",
+      "score": 21,
+      "status": "new — under review"
+    },
+    {
+      "id": "2611.15439",
+      "title": "DeALR: Decoupled Audio-Latent Optimization with Acoustic Backtracking for Test-Time Reasoning",
+      "abstract": "Large audio-language models (LALMs) typically encode audio once and conduct subsequent multi-step reasoning in a language-dominated space, weakening access to fine-grained acoustic evidence. Although recent multimodal approaches have explored re-engaging perceptual inputs during reasoning, whether a frozen LALM can actively revisit crucial acoustic evidence in the latent space at test time remains underexplored. To bridge this gap, we introduce Decoupled Audio Latent Reasoning (DeALR), a novel test-time latent reasoning framework that shifts the paradigm from text-dominated deliberation to active audio-latent interaction. Inspired by the human cognitive process of \"backtracking\" to specific acoustic cues during complex listening tasks, DeALR establishes a dynamic interaction between learnable thought tokens and acoustic segments. Specifically, we introduce Span-Level Acoustic Backtracking, which traces initial attention distributions to dynamically isolate contiguous, key acoustic spans. Furthermore, we propose Decoupled Audio-Latent Optimization (DALO), a test-time reinforcement learning algorithm that jointly refines thought vectors and acoustic patches via confidence-guided policy gradients. Crucially, DALO explicitly decouples trajectory search from response generation by reinstating uncorrupted, high-fidelity audio embeddings prior to text synthesis, entirely eliminating optimization-induced distribution drift while retaining the navigation of the refined thoughts. Comprehensive experiments on benchmarks demonstrate that DeALR consistently outperforms prior test-time optimization approaches, delivering substantial improvements in both confidence calibration and reasoning accuracy.",
+      "published": "2026-11-11T13:12:41Z",
+      "authors": [
+        "Haoyu He",
+        "Yan Rong",
+        "Li Liu"
+      ],
+      "primary_category": "cs.SD",
+      "url": "https://arxiv.org/abs/2611.15439",
+      "score": 21,
+      "status": "new — under review"
+    },
+    {
+      "id": "2611.14929",
+      "title": "Speech Tokenizers are Vulnerable: Transferable Semantic Attack and Robust Tokenizer",
+      "abstract": "Speech tokenizers serve as speech front ends, encoding input speech signals into representations for downstream models, such as automatic speech recognition (ASR) systems and large audio-language models (LALMs). In this paper, we find that speech tokenizers are fragile at the semantic level: small perturbations can disrupt their semantic encoding process and consequently cause severe degradation in downstream ASR and LALM performance. To study this vulnerability, we propose T-SemAttack, a transferable semantic attack based on a semantic encoder ensemble. By jointly drifting the representation spaces of multiple semantic encoders, T-SemAttack effectively disrupts the semantic content of speech while preserving perceptual quality, thereby inducing error features. We further analyze layer-wise representation drift and cross-model gradient alignment. Our findings show that perturbations can induce substantial shifts in deep semantic representations and that the input gradients of different surrogate encoders exhibit directional alignment. These observations suggest that shared adversarially sensitive directions in the input space may be a key factor underlying cross-model attack transferability. Building on these, we introduce ROSETok, a robust speech tokenizer that combines noisy training with robust semantic distillation to improve reconstruction fidelity and downstream SpeechLLM robustness. Extensive experiments on multiple datasets, 9 open-source and black-box ASR systems, and 4 LALMs demonstrate that T-SemAttack achieves strong transferable attack performance, while the proposed Robust Speech Tokenizer exhibits robustness under high-fidelity reconstruction and downstream tasks. Our code and demo are available at https://wxzyd123.github.io/t-semattack.",
+      "published": "2026-11-11T02:33:00Z",
+      "authors": [
+        "Zhisheng Zhang",
+        "Yifan Mi",
+        "Yixuan Zhou",
+        "Haiyun Li",
+        "Shengbo Cai",
+        "Dongfu Song",
+        "Ziang Xu",
+        "Jie Hao"
+      ],
+      "primary_category": "eess.AS",
+      "url": "https://arxiv.org/abs/2611.14929",
+      "score": 18,
+      "status": "new — under review"
+    },
+    {
+      "id": "2611.17070",
+      "title": "Evaluation of Music Version Retrieval Methods for Setlist Identification in Live Concerts",
+      "abstract": "Automatic setlist identification aims to identify the songs performed in live concert recordings by matching noisy and variable-quality audio against a database of reference tracks. This task presents challenges beyond conventional music version identification, including substantial arrangement differences, background noise, and the need to process continuous recordings efficiently at large scale. In this work, we evaluate modern music version retrieval methods for setlist identification using the ASID benchmark, comparing the established Re-MOVE system with CLEWS and NAVE, an internal neural audio version embedding model. Our results show that NAVE and CLEWS substantially outperform Re-MOVE. Notably, NAVE uses 256-dimensional embeddings, compared with 1024 dimensions for CLEWS, providing a four-fold reduction in embedding storage while achieving better retrieval performance. We further evaluate music/non-music gating and find modest improvements in detection and temporal coverage, while qualitative analysis suggests that such preprocessing can improve recognition boundaries beyond what the standard ASID metrics capture. Overall, the results demonstrate that segment-level audio embeddings provide a strong basis for scalable setlist identification and that compact representations can achieve strong accuracy under realistic live-concert conditions at much lower storage and serving cost.",
+      "published": "2026-11-12T16:42:35Z",
+      "authors": [
+        "Andres Ferraro",
+        "Albin Correya"
+      ],
+      "primary_category": "cs.IR",
+      "url": "https://arxiv.org/abs/2611.17070",
+      "score": 18,
+      "status": "new — under review"
+    },
     {
       "id": "2611.12118",
       "title": "Joi-Bench-Task: Benchmarking Task Coordination in Full-duplex Voice Agents through Interactive Simulation",
@@ -851,203 +1039,6 @@
       "url": "https://arxiv.org/abs/2610.34991",
       "score": 24,
       "status": "reviewed — included: Long-session full-duplex stability evaluation introduces an evaluation set or protocol for general speech/audio-language models; modality, score and configuration limits are documented in the catalogue"
-    },
-    {
-      "id": "2610.35138",
-      "title": "Co-Design Bench: Multimodal Collaborative Coding Evaluation for Agentic Models",
-      "abstract": "Evaluating human-AI co-design requires testing whether coding agents can translate real users' multimodal requests into working application revisions. We introduce Co-Design Bench, a reference-free benchmark of 273 tasks curated from 37,463 deduplicated queries across 26,314 real user coding sessions. Its two tracks, Multimodal Editing (ME) and Repository Editing (RE), cover localized edits with optional image, audio, video, or document inputs and coordinated repository revisions. Tasks span three capability dimensions: Grounded Understanding, UI Transformation, and Functional Implementation. The tasks pair normalized requests and runnable pre-edit applications with 2,331 hidden expert-authored acceptance criteria. Our judge-then-refute protocol grades criteria using source and browser evidence, challenges positive verdicts with a separate LLM verifier, and audits visual and interaction claims without gold code or target screenshots. Under a shared agentic harness, the strongest of ten model endpoints passes an average of 69.9% of criteria per task but fully satisfies only 26.4% of tasks. All ten endpoints achieve lower criterion completion on repository edits spanning three or four change types than on those spanning one or two. Co-Design Bench provides a testbed for studying the gap between partial requirement satisfaction and complete task success under agentic execution for real-user application revisions.",
-      "published": "2026-10-26T10:10:21Z",
-      "authors": [
-        "Xilin Wei",
-        "Shengyuan Ding",
-        "Xinyu Fang",
-        "Tiancheng Gu",
-        "Yuchi Wang",
-        "Zhixun Li",
-        "Ziyu Liu",
-        "Yuhang Zang"
-      ],
-      "primary_category": "cs.AI",
-      "url": "https://arxiv.org/abs/2610.35138",
-      "score": 24,
-      "status": "reviewed — out of scope: Co-DesignBench evaluates coding agents making application revisions; optional audio handled through tools is not a standardized evaluation of a general spoken LLM."
-    },
-    {
-      "id": "2610.33377",
-      "title": "AdShot: Benchmarking Multimodal Large Language Models for Video Advertisement Clipping",
-      "abstract": "Advertisers routinely create multiple duration variants of ads to meet marketing budgets and viewer preferences, a labor-intensive and costly process. While multimodal large language models (MLLMs) excel at general video understanding, their ability to perform specialized editorial tasks remains unexplored. We introduce AdShot, a benchmark for evaluating MLLMs on shot selection for ad clipping. It contains 823 professionally edited ad pairs (30-sec sources and 15-sec edits) across 194 brands and 17 industries, annotated with shot-level boundaries and content features (action, emotion, information, imagery). We evaluate 13 state-of-the-art video-only MLLMs and 2 audio-visual MLLMs (7B-72B parameters) on shot selection accuracy (Precision, Recall, F1), duration constraints (15s), and content preservation, including an audio ablation. We find: (1) model architecture matters more than scale, with smaller models often matching or exceeding larger ones; performance is strongest for target ads with 6-10 shots; (2) models exhibit a mean absolute duration error of 5.39s, with most tending to overshoot the 15s target, though they can still substantially reduce human editing effort; (3) all models exhibit systematic content biases, favoring information-rich and emotion-focused shots while under-selecting action and imagery. We publicly release our benchmark to facilitate research at the intersection of multimodal AI and computational advertising.",
-      "published": "2026-10-24T00:14:26Z",
-      "authors": [
-        "Wen Xie",
-        "Om Rastogi",
-        "Sai Siddhartha Vivek Dhir Rangoju",
-        "Gijs Overgoor",
-        "Yakov Bart",
-        "Sarah Ostadabbas"
-      ],
-      "primary_category": "cs.MM",
-      "url": "https://arxiv.org/abs/2610.33377",
-      "score": 21,
-      "status": "reviewed — included: AdShot introduces an evaluation set or protocol for general speech/audio-language models; modality, score and configuration limits are documented in the catalogue"
-    },
-    {
-      "id": "2610.34688",
-      "title": "From Speech Tokens to Stolen Voices: Attacker-Chosen-Text Speaker Impersonation via Representation Inversion",
-      "abstract": "Speech interaction systems have gradually evolved from traditional cascaded systems that use text as intermediate information to end-to-end speech language models that directly process speech representations. In some applications, the speech frontend runs on the user's device and sends speech representations to a remote server for inference, while the original audio remains local. However, these representations may still contain speaker identity information. If an attacker obtains them, it may use this information to imitate the user's voice, threatening their voice privacy. To investigate this risk, we propose \\stia, a Speech Token Inversion Attack that generates speech with attacker-specified text in a victim's voice using a single short leaked representation, without access to the original audio or its transcript. Specifically, \\stia converts discrete, continuous, or mixed speech representations into conditioning sequences and trains a conditional flow-matching speech generation model using pairs of different utterances from the same speaker in public speech datasets. The model combines speaker characteristics contained in the leaked representation with the specified text to generate speech in the victim's voice. Experiments show that, with a Moshi representation leak corresponding to 3 seconds of speech, \\stia achieves an average CAM++ speaker cosine similarity of 0.78 and a target-text word error rate of 3.80\\%. These results show that speech frontend representations reveal reusable speaker identity information and highlight the need to consider privacy risks when designing speech frontend representation methods.",
-      "published": "2026-10-26T01:24:54Z",
-      "authors": [
-        "Ye Lu",
-        "Shen Wang",
-        "Runze Liu",
-        "Zhitao Ou",
-        "Haonan Huang",
-        "Yihan Yan",
-        "Fanghui Sun",
-        "Zhaoyang Zhang"
-      ],
-      "primary_category": "cs.SD",
-      "url": "https://arxiv.org/abs/2610.34688",
-      "score": 21,
-      "status": "reviewed — out of scope: Introduces a representation-inversion and voice-impersonation attack method, not a new benchmark for general speech/audio-language models."
-    },
-    {
-      "id": "2610.35125",
-      "title": "When Fusion Order Matters: Insights on Progressive Multimodal Representation Learning for Cross-modal Retrieval",
-      "abstract": "Multimodal video retrieval combines visual, acoustic, and speech information, yet how their fusion order should depend on the data and the retrieval query remains unclear. We introduce Unified Progressive Representation Learning for Order Analysis, or UniPRO, to investigate this question through configurable fusion schedules with matched model components and training settings. Starting from text-to-video retrieval, we find that the tested one-by-one schedules outperform stacked fusion, while changing the order within one-by-one fusion also changes performance. To guide order selection, we examine two complementary considerations: learning difficulty under unequal modality availability and preservation of information relevant to the query. Complete-modality controls show that missing inputs alone cannot explain order sensitivity. At R@1, text and audio retrieval favor schedules that introduce the modality matching the query last. Controlled speech missingness during training and testing reverses the preferred order in both R@1 and SumR, with different crossover points. These findings motivate balancing the two considerations when selecting a fusion path. We then use them to predict a visual-last schedule for image queries, which achieves 97.9 R@1, the highest among the evaluated orders on MSR-VTT-9k. Main experiments on four text-to-video benchmarks establish the effectiveness of UniPRO, with component ablations assessing its supporting design. Together, the results identify fusion order as a task-dependent choice that should account jointly for modality availability and the retrieval query.",
-      "published": "2026-10-26T10:00:45Z",
-      "authors": [
-        "Haoxiang Zhao",
-        "Bin Wang",
-        "Yaofei Wang",
-        "Xiao Lan",
-        "Yunfeng Diao",
-        "Xu Wang"
-      ],
-      "primary_category": "cs.AI",
-      "url": "https://arxiv.org/abs/2610.35125",
-      "score": 21,
-      "status": "reviewed — out of scope: Introduces a multimodal retrieval method and fusion-order analysis evaluated on existing retrieval datasets, not a new spoken-LLM benchmark."
-    },
-    {
-      "id": "2610.34609",
-      "title": "Audio-R1: Audio Reasoning through Reinforcement Learning on Self-Supervised Tasks",
-      "abstract": "Reasoning is increasingly important for large audio-language models (LALMs), yet remains relatively underexplored compared with text-only and vision-language models. We introduce Audio-R1, a reinforcement learning (RL) post-training framework that revisits audio self-supervised learning as a source of verifiable rewards for improving audio understanding and reasoning task performance. Audio-R1 uses answers automatically determined during the construction of self-supervised tasks to verify model responses and compute rewards. Experiments across multiple LALMs and diverse audio benchmarks show consistent performance gains, while ablations demonstrate the benefits of each self-supervised task and additional gains from joint training. While both supervised fine-tuning and Audio-R1 improve self-supervised task accuracy, Audio-R1 further improves performance on downstream tasks distinct from the training tasks. These results highlight the potential of RL post-training with self-supervised audio tasks to improve downstream performance and reasoning-trace quality.",
-      "published": "2026-10-25T22:17:04Z",
-      "authors": [
-        "Jihoon Jeong",
-        "Mirco Ravanelli",
-        "Zhepei Wang",
-        "Cem Subakan"
-      ],
-      "primary_category": "cs.SD",
-      "url": "https://arxiv.org/abs/2610.34609",
-      "score": 18,
-      "status": "reviewed — out of scope: Audio-R1 is a reinforcement-learning post-training method evaluated on existing audio benchmarks; its training reward tasks are not a new evaluation benchmark."
-    },
-    {
-      "id": "2610.35816",
-      "title": "Multimodal Concert Video Editing: System Design and Exploratory Evaluation",
-      "abstract": "Editing multi-camera concerts requires coordinated decisions about musical relevance, visual quality and cut timing. We present a modular framework that combines instrument activity from multitrack audio, visible instruments and image sharpness with beat-based timing and probabilistic camera selection. An interpretable scoring model links these components to the choice of views over complete shot intervals. Component tests and an exploratory expert study on a four-camera concert yield mixed assessments across the editing variants. The findings motivate extending local audiovisual relevance with contextual and sequence-level criteria. The architecture provides a basis for testing these extensions and studying how component behaviour affects the quality of complete edits.",
-      "published": "2026-10-26T17:43:58Z",
-      "authors": [
-        "Lennart Schiweck",
-        "Adrian Kempf",
-        "Michelle Retig",
-        "Moritz Feucht",
-        "Tim Mangliers",
-        "Benjamin Himpel"
-      ],
-      "primary_category": "cs.MM",
-      "url": "https://arxiv.org/abs/2610.35816",
-      "score": 18,
-      "status": "reviewed — out of scope: Presents a concert-editing system and an exploratory expert study, not a benchmark of general speech/audio-language models."
-    },
-    {
-      "id": "2610.31713",
-      "title": "Omni-UBench: Benchmarking Omni-Modal LLM-based Guardrails Across Safety, Utility, and Reliability",
-      "abstract": "Advances in Omni-modal Large Language Models (OLLMs) have enabled increasingly seamless human-AI interaction, but their unified processing of heterogeneous modalities also expands the attack surface, allowing adversaries to exploit richer input compositions to circumvent safety alignment. To counter such risks, omni-modal guardrails have been proposed to detect and filter unsafe queries across arbitrary modalities. However, their capabilities and limitations remain insufficiently understood due to the absence of a comprehensive evaluation benchmark. In this paper, we present Omni-UBench, the first comprehensive framework for omni-modal safety assessment, evaluating guardrail models along three critical dimensions, i.e., safety, utility, and reliability. Omni-UBench curates over 183k samples drawn from 35+ heterogeneous sources spanning text, image, audio, video, and their cross-modal combinations, annotated with safety labels under a unified risk taxonomy. Benchmarking under Omni-UBench on 15 representative OLLMs and omni-modal guardrails yields several key findings, including: (1) modern OLLMs exhibit strong content moderation potential even without guardrail-specific tuning; (2) existing guardrails still struggle to identify cross-modal queries that conceal harmful intent or involve sophisticated jailbreaks; (3) they further exhibit substantial safety hallucination and over-sensitivity to textual patterns, revealing a deficient understanding of cross-modal safety semantics. Our findings provide valuable insights for developing more trustworthy omni-modal guardrails in future research.",
-      "published": "2026-10-22T04:20:51Z",
-      "authors": [
-        "Junhao Wang",
-        "Yidou Chen",
-        "Li Lu",
-        "Hongwei Yao",
-        "Xiaodan Li",
-        "Mengjie Wu",
-        "Yuefeng Chen",
-        "Zhan Qin"
-      ],
-      "primary_category": "cs.CR",
-      "url": "https://arxiv.org/abs/2610.31713",
-      "score": 45,
-      "status": "reviewed — included: Omni-UBench introduces an evaluation set or protocol for general speech/audio-language models; modality, score and configuration limits are documented in the catalogue"
-    },
-    {
-      "id": "2610.31796",
-      "title": "DRAMA-Eval: A Benchmark for Context-Aware, Multi-Turn, Multi-Speaker Speech Generation",
-      "abstract": "Recent advances in speech generation are shifting toward context-aware, multi-turn, and multi-speaker synthesis. While these capabilities are in high demand for applications such as audiobook and audio drama production, evaluation has not kept pace with these advances. Beyond traditional zero-shot Text-to-Speech (TTS), modern systems in this domain primarily fall into three categories: instruction-controllable generation models, multi-turn dialogue models, and the audio branches of audio-visual generation models. However, existing benchmarks evaluate these paradigms in isolation, failing to provide a unified assessment of context modeling, instruction following, and multi-speaker generation. Meanwhile, recent progress in audio understanding models has made it feasible to evaluate such complex scenarios using LLM-as-a-Judge approaches. To bridge this gap, we introduce DRAMA-Eval, a comprehensive benchmark for evaluating such systems. DRAMA-Eval utilizes structured script contexts and offers a holistic evaluation framework covering objective, local, and global aspects of generation quality, enabling the assessment of acoustic fidelity, sentence-level execution, and long-range coherence. We benchmark leading open-source and commercial models on a human?verified dataset. The results reveal critical weaknesses in long-range speaker consistency and implicit instruction following that require deep contextual understanding. To facilitate reproducible research, we release a 12-hour bilingual (Chinese-English) test set of manually corrected real-world scripts, accompanied by ground-truth audio, evaluation code, and benchmark results.",
-      "published": "2026-10-22T18:38:39Z",
-      "authors": [
-        "Jingbin Hu",
-        "Zihang Yang",
-        "Xiaoge Peng",
-        "Haoyu Zhang",
-        "Ziyu Zhang",
-        "Qirui Zhan",
-        "Huakang Chen",
-        "Zhao Guo"
-      ],
-      "primary_category": "eess.AS",
-      "url": "https://arxiv.org/abs/2610.31796",
-      "score": 27,
-      "status": "reviewed — out of scope: DRAMA-Eval evaluates scripted speech synthesis from supplied target utterances; the evaluated task is TTS/audio-drama generation, outside the general spoken-LLM scope."
-    },
-    {
-      "id": "2610.31768",
-      "title": "Efficient Omni-modal Large Language Model Inference via Per-Query Modality Selection",
-      "abstract": "Omni-modal large language models (Omni-LLMs) can jointly process a broad range of modalities, such as text, audio, and video, enabling stronger multimodal understanding and reasoning capabilities, but often at substantial inference cost. We observe that the benefit of additional modalities varies across queries, indicating that a fixed modality configuration can be inefficient. Motivated by this, we study query-wise modality selection, which keeps the underlying Omni-LLM fixed while adaptively selecting which modalities to provide for each query. We formulate the problem as an accuracy-cost optimization problem and develop a cost-sensitive learning approach for modality selection. We evaluate our approach on WorldSense using Qwen2.5-Omni and Qwen3-Omni under three inference-cost measures: input tokens, latency, and monetary cost. Across both models, query-wise modality selection consistently improves the accuracy-cost trade-off and can even outperform the standard setting in which all available modalities are provided to the Omni-LLM. For Qwen2.5-Omni, our cost-sensitive approach matches or exceeds this full-modality accuracy while requiring only approximately 41% of the input tokens, 39% of the latency, and 61% of the monetary cost.",
-      "published": "2026-10-22T18:06:37Z",
-      "authors": [
-        "Shuqi Liu",
-        "Yuzhou Cao",
-        "Luke Ong"
-      ],
-      "primary_category": "cs.LG",
-      "url": "https://arxiv.org/abs/2610.31768",
-      "score": 21,
-      "status": "reviewed — out of scope: Proposes per-query modality selection using an existing benchmark, rather than introducing a new speech/audio-language evaluation set."
-    },
-    {
-      "id": "2610.32411",
-      "title": "A Broader Look into MLLM's Retrieval Heads",
-      "abstract": "Locating relevant evidence in long inputs is a core capability of Multimodal Large Language Models. Prior studies attribute this capability to retrieval heads, a sparse set of attention heads that transfer information from the context to the output. However, these analyses are confined to a limited set of modalities and the corresponding models. Moreover, how retrieval heads can be leveraged to enhance the model calls for further exploration. In this paper, we ask whether this mechanism expands together with the input modalities of the model. Taking audio-visual input as a newly added modality, we construct paired inputs in which the same answer is either spoken or shown on screen. With the evidence content fixed, retrieval heads remain sparse in the new modality and are shared to a large extent across modalities. Across 18 language, vision-language, and omni-modal checkpoints, omni-modal models largely preserve the retrieval heads of their backbones. Ablating these heads eliminates nearly all audio-visual retrieval. The heads shared across modalities make up fewer than 2\\% of all heads, yet ablating them also degrades document understanding, spatial perception, and visual mathematics. Building on these findings, we turn retrieval heads into a target of optimization by training their attention with a ranking objective. This raises the page Recall@1 of Qwen3-VL-8B on MMDocIR by 6.03 points and improves document retrieval across three model families. Functional attention heads can thus serve both as a lens on multimodal models and as a target for improving them.",
-      "published": "2026-10-23T09:37:28Z",
-      "authors": [
-        "Jia Wang",
-        "Yuqing Li",
-        "Jiangnan Li",
-        "Zheng Lin",
-        "Mo Yu"
-      ],
-      "primary_category": "cs.CL",
-      "url": "https://arxiv.org/abs/2610.32411",
-      "score": 21,
-      "status": "reviewed — out of scope: Analyzes retrieval heads with an adapted AV-NIAH probe from prior work; the contribution is mechanistic analysis and head selection, not a new standalone spoken-LLM benchmark."
-    },
-    {
-      "id": "2610.31966",
-      "title": "POS-Signature Demonstration Retrieval for In-Context Dependency Parsing",
-      "abstract": "Demonstrations for in-context learning are often retrieved by semantic similarity, which may be a poor proxy for relevance in structured prediction. We study demonstration selection for Universal Dependencies parsing with a POS-signature policy that represents sentences with weighted part-of-speech statistics and retrieves three length-compatible, gold-parsed examples from the labeled training split. We evaluate two open-weight language models without fine-tuning on all 2,077 sentences of the UD English Web Treebank test set, comparing the policy with shot- and format-matched fixed and semantic three-shot baselines, as well as zero-shot, chain-of-thought, and critique-refinement systems. POS-signature retrieval yields the highest labeled attachment score among the tested prompting systems for both models (72.4 and 73.2), outperforming semantic retrieval by 1.9 and 2.7 points; paired-bootstrap 95% confidence intervals exclude zero for both contrasts. Chain-of-thought and refinement comparisons vary across models. These exploratory results favor the tested POS-signature retrieval approach on English-EWT. We release the prompts, archived outputs, and evaluation code.",
-      "published": "2026-10-22T22:15:48Z",
-      "authors": [
-        "Muhammad Azam Afridi",
-        "Rajab Ali",
-        "Marco Passarotti"
-      ],
-      "primary_category": "cs.CL",
-      "url": "https://arxiv.org/abs/2610.31966",
-      "score": 18,
-      "status": "reviewed — out of scope: Studies text dependency parsing on Universal Dependencies English data; the evaluated systems and task are not speech/audio-language models."
     }
   ],
   "warnings": []
