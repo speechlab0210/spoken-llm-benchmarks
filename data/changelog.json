@@ -1,6 +1,11 @@
 {
  "entries": [
   {
+   "date": "2026-11-19",
+   "change": "Reviewed two candidates: added Social Signal Bench and excluded RehearsalBench because it evaluates management planning and forecasting rather than spoken-LLM input/output. Added 16 source-located Table S10 cells and five printed institutions. Audio and Video tests and untuned versus post-trained systems remain distinct. Totals: 489 benchmarks, 262 models and 18,835 result cells.",
+   "source": "arXiv:2611.22704v1 Sections 3–8 and Appendix F/G, Table S10 (PDF page 23), printed byline (page 1), arXiv metadata and author-owned Hugging Face dataset card; arXiv:2611.22480v1 Sections 4.2 and 5. Numeric values extracted by table row/column and visually checked against PDF."
+  },
+  {
    "date": "2026-11-18",
    "change": "Reviewed nine candidates: added WebArena-Pro, Omni-Workspace, SpheraQA and the Clinical Voice-Agent Frustration Evaluation; excluded five method or non-spoken-LLM studies with specific reasons. Added SpheraAudio, printed affiliations and 110 source-located result cells. Native audio and ASR-assisted agents, paper and release versions, and clinical prompt/sample conditions remain distinct. WebArena-Pro acceptance is verified against the official NeurIPS program; unverified clinical venue claims remain marked as such. Totals: 488 benchmarks, 262 models and 18,819 result cells.",
    "source": "arXiv:2611.17955v1 Tables 5–7; 2611.19202v1 Tables 1 and 9; 2611.18112v1 Table 1; 2611.21001v1 Table 4. All nine full texts reviewed, numerical columns extracted programmatically, selected result tables and affiliations visually checked in PDFs, and arXiv dates and venue evidence checked."

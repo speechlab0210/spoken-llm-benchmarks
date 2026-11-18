@@ -2,21 +2,24 @@
  "since": "2026-08-22",
  "what": "Every arXiv paper the daily crawl has flagged since launch (score at or above the threshold, not previously seen), with the reviewer's verdict as written in the feed and whether the paper entered the catalogue. \"published\" is the paper's arXiv date. See the Method section of the site.",
  "flagged": 359,
- "admitted": 109,
+ "admitted": 110,
  "entries": [
   {
    "id": "2611.22704",
    "title": "Social Signal Bench: Evidence-Weighted Evaluation of Co-occurring Social Signals in Video and Audio",
    "published": "2026-11-17T12:49:04Z",
    "score": 21,
-   "outcome": "under review"
+   "outcome": "admitted",
+   "verdict": "reviewed — added: Social Signal Bench (social-signal-bench); introduces audio and audiovisual social-signal evaluation for general-purpose multimodal models, with separate modality-specific tests.",
+   "catalogue_id": "social-signal-bench"
   },
   {
    "id": "2611.22480",
    "title": "RehearsalBench: Can AI Predict What Happens When You Change a Company?",
    "published": "2026-11-17T09:38:01Z",
    "score": 39,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: the evaluated LLMs read management reports and submit operational plans and forecasts; voice agents are simulated interventions, not evaluated speech-input/output systems (Sections 4.2 and 5)."
   },
   {
    "id": "2611.21399",

@@ -15101,6 +15101,116 @@
      "note": "Identity and any location from the printed paper affiliation. Unprinted locations are left unassigned."
     }
    ]
+  },
+  {
+   "id": "interhuman-ai",
+   "name": "Interhuman AI",
+   "short": "Interhuman AI",
+   "type": "industry",
+   "country": null,
+   "parent": null,
+   "confidence": "high",
+   "sites": [],
+   "aliases": [
+    {
+     "raw": "Interhuman AI",
+     "country": null,
+     "city": null,
+     "lat": null,
+     "lon": null,
+     "type": "industry",
+     "confidence": "high",
+     "note": "Printed affiliation on arXiv:2611.22704v1 page 1. No standalone location is printed; place names within institution names are not treated as location evidence."
+    }
+   ]
+  },
+  {
+   "id": "universidad-de-alicante",
+   "name": "Universidad de Alicante",
+   "short": "Universidad de Alicante",
+   "type": "academia",
+   "country": null,
+   "parent": null,
+   "confidence": "high",
+   "sites": [],
+   "aliases": [
+    {
+     "raw": "Universidad de Alicante",
+     "country": null,
+     "city": null,
+     "lat": null,
+     "lon": null,
+     "type": "academia",
+     "confidence": "high",
+     "note": "Printed affiliation on arXiv:2611.22704v1 page 1. No standalone location is printed; place names within institution names are not treated as location evidence."
+    }
+   ]
+  },
+  {
+   "id": "ecole-polytechnique",
+   "name": "École Polytechnique",
+   "short": "École Polytechnique",
+   "type": "academia",
+   "country": null,
+   "parent": null,
+   "confidence": "high",
+   "sites": [],
+   "aliases": [
+    {
+     "raw": "École Polytechnique",
+     "country": null,
+     "city": null,
+     "lat": null,
+     "lon": null,
+     "type": "academia",
+     "confidence": "high",
+     "note": "Printed affiliation on arXiv:2611.22704v1 page 1. No standalone location is printed; place names within institution names are not treated as location evidence."
+    }
+   ]
+  },
+  {
+   "id": "institut-superieure-d-electronique-de-paris",
+   "name": "Institut Supérieure d’Electronique de Paris",
+   "short": "Institut Supérieure d’Electronique de Paris",
+   "type": "academia",
+   "country": null,
+   "parent": null,
+   "confidence": "high",
+   "sites": [],
+   "aliases": [
+    {
+     "raw": "Institut Supérieure d’Electronique de Paris",
+     "country": null,
+     "city": null,
+     "lat": null,
+     "lon": null,
+     "type": "academia",
+     "confidence": "high",
+     "note": "Printed affiliation on arXiv:2611.22704v1 page 1. No standalone location is printed; place names within institution names are not treated as location evidence."
+    }
+   ]
+  },
+  {
+   "id": "university-of-copenhagen",
+   "name": "University of Copenhagen",
+   "short": "University of Copenhagen",
+   "type": "academia",
+   "country": null,
+   "parent": null,
+   "confidence": "high",
+   "sites": [],
+   "aliases": [
+    {
+     "raw": "University of Copenhagen",
+     "country": null,
+     "city": null,
+     "lat": null,
+     "lon": null,
+     "type": "academia",
+     "confidence": "high",
+     "note": "Printed affiliation on arXiv:2611.22704v1 page 1. No standalone location is printed; place names within institution names are not treated as location evidence."
+    }
+   ]
   }
  ]
 }

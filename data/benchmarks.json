@@ -13237,6 +13237,33 @@
       ],
       "summary": "A curated evaluation set and controlled protocol for general audio-language models on frustration in deployed clinical voice-agent calls. Audio and transcript conditions are compared by turn length, model and prompt, with an acted-speech control and a larger call-level extension.",
       "note": "This is a study-specific evaluation protocol, not a public downloadable benchmark. Patient recordings are proprietary and cannot be shared. The six-call balanced set is triple-annotated; the 24 added calls are single-annotated and differ in prevalence. The 12 imported Table 4 cells cover Gemini 2.5 Flash, Gemini 2.5 Pro and Voxtral Mini 3B on six calls only, with input-specific and identical prompts separated. They do not represent the full 30-call set. Qwen2.5-Omni-7B Q8_0 and Gemini 3.8 Flash rows are deferred pending exact model records; no clinical deployment recommendation is inferred."
+    },
+    {
+      "id": "social-signal-bench",
+      "name": "Social Signal Bench",
+      "full_title": "Social Signal Bench: Evidence-Weighted Evaluation of Co-occurring Social Signals in Video and Audio",
+      "arxiv_id": "2611.22704",
+      "arxiv_date": "2026-11",
+      "arxiv_date_full": "2026-11-17",
+      "url": "https://arxiv.org/abs/2611.22704",
+      "data": "https://huggingface.co/datasets/Interhuman/social-signal-bench",
+      "categories": [
+        "paralinguistics",
+        "audio-grounding"
+      ],
+      "tasks": [
+        "co-occurring social-signal recognition",
+        "engagement classification",
+        "audio/video ablation"
+      ],
+      "size": "Video: 10,173 clips / 25.1 h, including 2,372 private test clips; Audio: 8,392 clips / 22.0 h, including 1,094 private test clips",
+      "io": "English conversational audio or video with audio → a set of perceived social signals and engagement status",
+      "metrics": [
+        "Evidence-Weighted F1 (EW-F1, 0–100)",
+        "engagement macro-F1 (0–100)"
+      ],
+      "summary": "Evaluates perceived social signals in short conversations with expert annotations and an evidence-weighted, taxonomy-aware F1. Video covers ten signals and Audio six; engagement is scored separately. Each modality has public training data and a private test set spanning four conversational domains.",
+      "note": "16 Table S10 cells cover seven existing general-purpose model records, with Video and Audio kept separate. Scores are not comparable across modalities. Qwen2.5-Omni-7B and Qwen2-Audio-7B-Instruct use their untuned rows; task-specific post-trained rows are not assigned to the base models. Muse Spark 1.3, Gemini 3.8 Flash, Gemini 4 Argon, GPT-6.1 Sol, Gemma-4-31B-it and Ultravox-v0.5-Llama-3.1-8B await exact model/configuration records. Some omitted video baselines receive transcripts instead of audio. The labels describe observer perceptions, not ground-truth mental states; annotators had more conversational context than evaluated models. Test data stay private. Public training combines expert and teacher pseudo-labels; model results are single runs. The dataset card confirms public training access, with labels/code under CC BY-NC 4.0 and source media under CC BY 3.0."
     }
   ]
 }

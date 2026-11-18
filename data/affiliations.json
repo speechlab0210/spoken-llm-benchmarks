@@ -27157,6 +27157,96 @@
     }
    ],
    "verify_note": "PDF v1 page 1 visually checked against arXiv byline. First author Annika Michael and last author Jared Joselowitz are at Ufonia Limited; Samuel Thio at King’s College London; Spencer Hazel at Newcastle University. Cities and UK are printed; GB and coordinates normalize those printed locations."
+  },
+  "social-signal-bench": {
+   "status": "ok",
+   "verified": "confirmed",
+   "publishable": true,
+   "countries_complete": false,
+   "n_authors": 8,
+   "institutions": [
+    {
+     "inst": "interhuman-ai",
+     "raw": "Interhuman AI",
+     "unit": null,
+     "country": null,
+     "city": null,
+     "lat": null,
+     "lon": null,
+     "placed": "unplaced",
+     "printed_city": null,
+     "printed_country": null,
+     "lead": true,
+     "first_author": true,
+     "last": false,
+     "evidence": "printed"
+    },
+    {
+     "inst": "universidad-de-alicante",
+     "raw": "Universidad de Alicante",
+     "unit": null,
+     "country": null,
+     "city": null,
+     "lat": null,
+     "lon": null,
+     "placed": "unplaced",
+     "printed_city": null,
+     "printed_country": null,
+     "lead": false,
+     "first_author": true,
+     "last": false,
+     "evidence": "printed"
+    },
+    {
+     "inst": "ecole-polytechnique",
+     "raw": "École Polytechnique",
+     "unit": null,
+     "country": null,
+     "city": null,
+     "lat": null,
+     "lon": null,
+     "placed": "unplaced",
+     "printed_city": null,
+     "printed_country": null,
+     "lead": false,
+     "first_author": false,
+     "last": false,
+     "evidence": "printed"
+    },
+    {
+     "inst": "institut-superieure-d-electronique-de-paris",
+     "raw": "Institut Supérieure d’Electronique de Paris",
+     "unit": null,
+     "country": null,
+     "city": null,
+     "lat": null,
+     "lon": null,
+     "placed": "unplaced",
+     "printed_city": null,
+     "printed_country": null,
+     "lead": false,
+     "first_author": false,
+     "last": false,
+     "evidence": "printed"
+    },
+    {
+     "inst": "university-of-copenhagen",
+     "raw": "University of Copenhagen",
+     "unit": null,
+     "country": null,
+     "city": null,
+     "lat": null,
+     "lon": null,
+     "placed": "unplaced",
+     "printed_city": null,
+     "printed_country": null,
+     "lead": false,
+     "first_author": false,
+     "last": true,
+     "evidence": "printed"
+    }
+   ],
+   "verify_note": "PDF v1 page 1 visually checked against arXiv byline and HTML affiliations. First author Siddharth Ravi has affiliations 1 (Interhuman AI, primary lead) and 2 (Universidad de Alicante); Hugo Anselme has 1, 3 and 4; last author Line H. Clemmensen has 5 (University of Copenhagen). Printed institutional spelling is preserved. No standalone city or country is printed."
   }
  },
  "models": {
