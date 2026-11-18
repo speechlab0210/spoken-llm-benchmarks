@@ -1,9 +1,43 @@
 {
-  "fetched_at": "2026-11-18T01:37:02Z",
+  "fetched_at": "2026-11-18T22:32:34Z",
   "window_days": 10,
-  "scanned": 108,
-  "flagged_today": 9,
+  "scanned": 109,
+  "flagged_today": 2,
   "candidates": [
+    {
+      "id": "2611.22480",
+      "title": "RehearsalBench: Can AI Predict What Happens When You Change a Company?",
+      "abstract": "Organizations increasingly ask AI systems what will happen if they change how they operate: which work to automate, which team to resize, what a voice agent will do to waiting times. We introduce RehearsalBench, a benchmark that measures whether AI models can diagnose an operation, choose an intervention, and forecast its consequences. Each model is placed in a simulated bank contact center fitted to real call-level records, sees only what a manager would see, and submits a plan and forecasts that are then played out across 200 seeded futures and three plausible versions of the organization. Decisions are scored in dollars at the stakeholders' stated valuations; forecasts are scored on the effect of each change relative to doing nothing. Ten models made 280 attempts across 14 organizations. The best model, GPT-6 Astra, improved on doing nothing by 6.8% of the no-change cost and made 77% less forecast error than a forecaster who always predicts no effect. On average, every model forecast the direction of every specified effect correctly, but models erred on the size of the same effects in the same direction, overstating a voice agent's effect on repeat contacts about five-fold. No model ever recommended holding off when doing nothing was the right choice. To test external validity, twelve models forecast 33 real organizational changes with known outcomes. Under verdict rules fixed in advance, the benchmark's forecast ranking agreed with the real-world ranking (Spearman $ρ= 0.92$, 95% lower bound 0.50). We report the result alongside an inconclusive first test, the analysis choices made after outcomes were seen, and evidence that part of the agreement reflects how well models size their uncertainty.",
+      "published": "2026-11-17T09:38:01Z",
+      "authors": [
+        "Mika Siddiqui",
+        "Tharaka Perera"
+      ],
+      "primary_category": "cs.AI",
+      "url": "https://arxiv.org/abs/2611.22480",
+      "score": 39,
+      "status": "new — under review"
+    },
+    {
+      "id": "2611.22704",
+      "title": "Social Signal Bench: Evidence-Weighted Evaluation of Co-occurring Social Signals in Video and Audio",
+      "abstract": "Recognizing social signals such as interest and hesitation requires interpreting context-dependent behaviors that may co-occur in conversation. Existing affective computing benchmarks rarely evaluate such co-occurring signals, and conventional multi-label F1 overlooks semantic relationships and annotator disagreement. We introduce Social Signal Bench, a 47-hour densely annotated benchmark for the evaluation of social signal recognition and engagement, comprising two datasets: Social Signal Bench Video (25 hours), covering ten social signals in audiovisual recordings, and Social Signal Bench Audio (22 hours), covering six signals in audio-only recordings. Each dataset pairs a public training set of online conversational video, of which 10 hours are expert-annotated and the remainder pseudo-labeled, with a private expert-labeled test set spanning four conversational domains. We also propose Evidence-Weighted F1 (EW-F1), which weights reference labels by annotator evidence and assigns graded credit to semantically related predictions through optimal per-clip matching. Controlled perturbations demonstrate that EW-F1 distinguishes semantically related errors from unrelated ones, unlike conventional F1. Under a shared evaluation protocol, 7B open models post-trained on Social Signal Bench outperform general-purpose frontier models on video and match them on audio.",
+      "published": "2026-11-17T12:49:04Z",
+      "authors": [
+        "Siddharth Ravi",
+        "Anders R. Bargum",
+        "Hugo Anselme",
+        "Patrizio Cugia di Sant'Orsola",
+        "Alberto Cardaci",
+        "Flora Kincso Parragi",
+        "Vincent Borowiec",
+        "Line H. Clemmensen"
+      ],
+      "primary_category": "cs.CV",
+      "url": "https://arxiv.org/abs/2611.22704",
+      "score": 21,
+      "status": "new — under review"
+    },
     {
       "id": "2611.17955",
       "title": "WebArena-Pro: A Heterogeneous, Multimodal, Reproducible Benchmark for Web Agents",
@@ -1002,41 +1036,6 @@
       "url": "https://arxiv.org/abs/2610.38276",
       "score": 33,
       "status": "reviewed — included: Introduces MixCardBench and tests six general audio-language models on source detection and structured descriptions of sound mixtures."
-    },
-    {
-      "id": "2610.38570",
-      "title": "Do Audio LLMs HEAR Pain? Tracing Acoustic Evidence from Speech to Language Reasoning",
-      "abstract": "Large audio language models (LALMs) can process speech directly, but it remains unclear how well they use the non-lexical acoustic information that speech carries. We study this question through pain, using TAME-Pain, which contains pain-neutral Harvard sentences and spoken pain ratings recorded at different self-reported pain levels. We introduce HEAR, a four-stage diagnostic framework that traces pain-related information from the speech signal to the model's prediction, and apply it to seven closed-source and open-weight LALMs. On the Harvard sentences, where pain can only be inferred from the voice, all models perform at chance level, and same-speaker references or few-shot examples improve balanced accuracy by no more than six points. On the spoken ratings, the same models reach 87.5-99.7% balanced accuracy. Layer-wise probing of open-weight LALMs shows that pain can be decoded from early audio representations (74.1% balanced accuracy for binary prediction and 45.0% for three-class severity), but that this information, along with most pain-associated acoustic cues, decreases in deeper layers. In an acoustic perception test, weaker models cannot distinguish even large changes in these cues, whereas stronger models can but still fail to infer pain. Finally, we recover pain-related acoustic cues and directly reinject them as structured text into the prompt, which improves pairwise pain prediction by up to 32 points. These results indicate that current LALMs encode paralinguistic information in early layers that is largely unavailable when the model produces its answer.",
-      "published": "2026-10-28T10:05:41Z",
-      "authors": [
-        "Wenqi Li",
-        "Xiangjue Dong",
-        "Sulaiman Vesal"
-      ],
-      "primary_category": "cs.CL",
-      "url": "https://arxiv.org/abs/2610.38570",
-      "score": 33,
-      "status": "reviewed — included: Introduces HEAR, a four-stage diagnostic evaluation of how general audio-language models use acoustic and lexical evidence of pain."
-    },
-    {
-      "id": "2610.39955",
-      "title": "Mind The Gap (MTG-AD): Dataset and Fine-grained Evaluation for End-to-End Inline Audio Descriptions",
-      "abstract": "Audio descriptions (AD) are essential for making visual media accessible to blind and low-vision (BLV) users. While Multimodal Large Language Models (MLLMs) offer a scalable solution for generating audio descriptions on-demand, their performance on ``inline'' audio descriptions -- which must fit within existing silences in a video -- remains under-explored, particularly for diverse user-generated content (UGC). We present a comprehensive investigation into MLLM-generated inline audio descriptions. First, we introduce MTG-AD, a professionally annotated dataset of 36 hours of videos, each averaging $\\sim$5 mins. and 8k+ descriptions in total, co-created by paired blind and sighted AD professionals to provide a high-quality benchmark for this task. Second, we propose MTG-AD-Eval, an evaluation framework based on audio description expert guidelines that provides fine-grained, reference-free actionable metrics for model improvement. Crucially, our framework evaluates the end-to-end task: it renders the generated scripts into audio tracks to assess their fit within the original video's natural silences, minimizing disruptive overlaps. Our analysis across frontier MLLMs reveals that while models accurately describe visual events and substantially reduce speech overlaps, gaps persist in narrative pacing and flow. Finally, we empirically validate that our automated and reference-free metrics correlate significantly with human quality ratings from sighted raters and 7 BLV participants, finding that while users narrowly prefer human-authored audio descriptions, they find MLLM-generated audio descriptions highly beneficial for comprehension. We provide actionable system design guidance and release MTG-AD at https://hf.co/datasets/google/mind-the-gap-inline-ad and MTG-AD-Eval at https://github.com/google/mtg-ad.",
-      "published": "2026-10-29T12:51:38Z",
-      "authors": [
-        "Subhashini Venugopalan",
-        "Jenny Tan",
-        "Taylor Roper",
-        "Jimmy Tobin",
-        "Anton Kast",
-        "Alicia Martin",
-        "Sam Sepah",
-        "Amy Pavel"
-      ],
-      "primary_category": "cs.CV",
-      "url": "https://arxiv.org/abs/2610.39955",
-      "score": 30,
-      "status": "reviewed — included: Introduces MTG-AD and its evaluation protocol for timed audio descriptions, including tests of native audio-video models with transcript assistance."
     }
   ],
   "warnings": []
