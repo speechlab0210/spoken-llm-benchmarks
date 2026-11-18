@@ -2,70 +2,83 @@
  "since": "2026-08-22",
  "what": "Every arXiv paper the daily crawl has flagged since launch (score at or above the threshold, not previously seen), with the reviewer's verdict as written in the feed and whether the paper entered the catalogue. \"published\" is the paper's arXiv date. See the Method section of the site.",
  "flagged": 357,
- "admitted": 105,
+ "admitted": 109,
  "entries": [
   {
    "id": "2611.21399",
    "title": "MegNIST, A Benchmark for Non-Invasive Inner Speech Decoding",
    "published": "2026-11-16T16:52:25Z",
    "score": 18,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: benchmarks imagined-digit classification from MEG brain signals using dedicated classifiers, not speech/audio input or output by general-purpose spoken LLMs (Section 4.1)."
   },
   {
    "id": "2611.21300",
    "title": "LATTE-WordSeg-Lite: Multi-Granularity Thai Word Segmentation on a CPU, with a Reproducible Benchmark",
    "published": "2026-11-16T16:03:17Z",
    "score": 18,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: introduces a Thai text segmenter and a reproducible word-segmentation comparison; evaluated systems process text boundaries, not general-purpose spoken-LLM behavior (Sections 4–5)."
   },
   {
    "id": "2611.21083",
    "title": "Think2Listen: Evidence-Centric Learning For Agentic Audio Understanding With LALMS",
    "published": "2026-11-16T13:32:21Z",
    "score": 21,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: proposes an audio-agent learning method evaluated on the existing MMAU-test-mini and MMAR benchmarks; its constructed examples are for policy training, not a new benchmark (Section 5.1)."
   },
   {
    "id": "2611.21001",
    "title": "Does the Voice Matter? Evaluating Frustration Detection on Deployed Clinical Voice-Agent Calls",
    "published": "2026-11-16T12:27:56Z",
    "score": 27,
-   "outcome": "under review"
+   "outcome": "admitted",
+   "verdict": "reviewed — added: Clinical Voice-Agent Frustration Evaluation (clinical-frustration-evaluation); introduces an evaluation set or protocol used with general-purpose audio/spoken models.",
+   "catalogue_id": "clinical-frustration-evaluation"
   },
   {
    "id": "2611.20725",
    "title": "Post-fusion Event-aware Time-Frequency Refinement for Audio Moment Retrieval",
    "published": "2026-11-16T08:31:04Z",
    "score": 21,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: proposes an audio moment retrieval method evaluated on existing datasets, including CASTELLA; it does not introduce a new general-purpose spoken-LLM benchmark (Section 3.1)."
   },
   {
    "id": "2611.19202",
    "title": "Omni-Workspace: Benchmarking Omni-Modal AI Assistants on Multimodal Workspace Tasks",
    "published": "2026-11-14T06:49:09Z",
    "score": 27,
-   "outcome": "under review"
+   "outcome": "admitted",
+   "verdict": "reviewed — added: Omni-Workspace (omni-workspace); introduces an evaluation set or protocol used with general-purpose audio/spoken models.",
+   "catalogue_id": "omni-workspace"
   },
   {
    "id": "2611.18112",
    "title": "Any Channel Count, One Token Stream: Incorporating Spatial Audio Understanding and Reasoning into Large Audio-Language Models",
    "published": "2026-11-13T12:35:41Z",
    "score": 24,
-   "outcome": "under review"
+   "outcome": "admitted",
+   "verdict": "reviewed — added: SpheraQA (spheraqa); introduces an evaluation set or protocol used with general-purpose audio/spoken models.",
+   "catalogue_id": "spheraqa"
   },
   {
    "id": "2611.17955",
    "title": "WebArena-Pro: A Heterogeneous, Multimodal, Reproducible Benchmark for Web Agents",
    "published": "2026-11-13T09:44:48Z",
    "score": 33,
-   "outcome": "under review"
+   "outcome": "admitted",
+   "verdict": "reviewed — added: WebArena-Pro (webarena-pro); introduces an evaluation set or protocol used with general-purpose audio/spoken models.",
+   "catalogue_id": "webarena-pro"
   },
   {
    "id": "2611.17573",
    "title": "CamSpokenNLI: A Pilot Resource for Cross-Variety Transfer Evaluation in Cameroon Pidgin English and Camfranglais",
    "published": "2026-11-12T22:51:31Z",
    "score": 21,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: the NLI experiments use reference text with XLM-RoBERTa, and audio is evaluated separately with Whisper ASR; no general-purpose spoken-LLM or end-to-end spoken-NLI evaluation is reported (Sections 3–5)."
   },
   {
    "id": "2611.17070",

@@ -1,6 +1,11 @@
 {
  "entries": [
   {
+   "date": "2026-11-18",
+   "change": "Reviewed nine candidates: added WebArena-Pro, Omni-Workspace, SpheraQA and the Clinical Voice-Agent Frustration Evaluation; excluded five method or non-spoken-LLM studies with specific reasons. Added SpheraAudio, printed affiliations and 110 source-located result cells. Native audio and ASR-assisted agents, paper and release versions, and clinical prompt/sample conditions remain distinct. WebArena-Pro acceptance is verified against the official NeurIPS program; unverified clinical venue claims remain marked as such. Totals: 488 benchmarks, 262 models and 18,819 result cells.",
+   "source": "arXiv:2611.17955v1 Tables 5–7; 2611.19202v1 Tables 1 and 9; 2611.18112v1 Table 1; 2611.21001v1 Table 4. All nine full texts reviewed, numerical columns extracted programmatically, selected result tables and affiliations visually checked in PDFs, and arXiv dates and venue evidence checked."
+  },
+  {
    "date": "2026-11-15",
    "change": "Reviewed 11 candidates: added CineMME, MESH and the Omni-JEV Interaction-Action Evaluation; excluded eight model/method or non-spoken-LLM studies with specific reasons. Added 172 source-located result cells, printed affiliations and conservative venue records. CineMME valid-response denominators, MESH input configurations and WER above 100%, and Omni-JEV invalid-answer penalties remain explicit. CineMME acceptance is supported by the official NeurIPS 2026 listing; it is not marked published. Totals: 484 benchmarks, 261 models and 18,709 result cells. Repaired AudioCRAG’s legacy metrics field from a string to a one-item list without changing its text; this restores catalogue search.",
    "source": "arXiv:2611.15161v1 Tables 2, 3 and 21; 2611.16787v1 Tables 2–3 and Eq. 4; 2611.13777v2 Table 5 and Sections 6–8. All 11 full texts, matching PDF bylines, arXiv metadata, author-linked MESH releases and the venue-owned NeurIPS listing checked."

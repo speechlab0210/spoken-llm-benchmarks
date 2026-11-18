@@ -14977,6 +14977,130 @@
      "note": "Identity from printed paper affiliation; no unprinted site is assigned."
     }
    ]
+  },
+  {
+   "id": "insa-lyon",
+   "name": "INSA Lyon",
+   "short": "INSA Lyon",
+   "type": "academia",
+   "country": null,
+   "parent": null,
+   "confidence": "high",
+   "sites": [],
+   "aliases": [
+    {
+     "raw": "INSA Lyon",
+     "country": null,
+     "city": null,
+     "lat": null,
+     "lon": null,
+     "type": "academia",
+     "confidence": "high",
+     "note": "Identity and any location from the printed paper affiliation. Unprinted locations are left unassigned."
+    }
+   ]
+  },
+  {
+   "id": "esker",
+   "name": "Esker",
+   "short": "Esker",
+   "type": "industry",
+   "country": null,
+   "parent": null,
+   "confidence": "high",
+   "sites": [],
+   "aliases": [
+    {
+     "raw": "Esker",
+     "country": null,
+     "city": null,
+     "lat": null,
+     "lon": null,
+     "type": "industry",
+     "confidence": "high",
+     "note": "Identity and any location from the printed paper affiliation. Unprinted locations are left unassigned."
+    }
+   ]
+  },
+  {
+   "id": "canada-cifar-ai-chair",
+   "name": "Canada CIFAR AI Chair",
+   "short": "Canada CIFAR AI Chair",
+   "type": "other",
+   "country": null,
+   "parent": null,
+   "confidence": "high",
+   "sites": [],
+   "aliases": [
+    {
+     "raw": "Canada CIFAR AI Chair",
+     "country": null,
+     "city": null,
+     "lat": null,
+     "lon": null,
+     "type": "other",
+     "confidence": "high",
+     "note": "Identity and any location from the printed paper affiliation. Unprinted locations are left unassigned."
+    }
+   ]
+  },
+  {
+   "id": "ufonia-limited",
+   "name": "Ufonia Limited",
+   "short": "Ufonia Limited",
+   "type": "industry",
+   "country": "GB",
+   "parent": null,
+   "confidence": "high",
+   "sites": [
+    {
+     "city": "London",
+     "lat": 51.51,
+     "lon": -0.13,
+     "country": "GB"
+    }
+   ],
+   "aliases": [
+    {
+     "raw": "Ufonia Limited",
+     "country": "GB",
+     "city": "London",
+     "lat": 51.51,
+     "lon": -0.13,
+     "type": "industry",
+     "confidence": "high",
+     "note": "Identity and any location from the printed paper affiliation. Unprinted locations are left unassigned."
+    }
+   ]
+  },
+  {
+   "id": "newcastle-university",
+   "name": "Newcastle University",
+   "short": "Newcastle University",
+   "type": "academia",
+   "country": "GB",
+   "parent": null,
+   "confidence": "high",
+   "sites": [
+    {
+     "city": "Newcastle upon Tyne",
+     "lat": 54.98,
+     "lon": -1.61,
+     "country": "GB"
+    }
+   ],
+   "aliases": [
+    {
+     "raw": "Newcastle University",
+     "country": "GB",
+     "city": "Newcastle upon Tyne",
+     "lat": 54.98,
+     "lon": -1.61,
+     "type": "academia",
+     "confidence": "high",
+     "note": "Identity and any location from the printed paper affiliation. Unprinted locations are left unassigned."
+    }
+   ]
   }
  ]
 }

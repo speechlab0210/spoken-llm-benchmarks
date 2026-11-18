@@ -22,7 +22,7 @@
       "primary_category": "cs.AI",
       "url": "https://arxiv.org/abs/2611.17955",
       "score": 33,
-      "status": "new — under review"
+      "status": "reviewed — added: WebArena-Pro (webarena-pro); introduces an evaluation set or protocol used with general-purpose audio/spoken models."
     },
     {
       "id": "2611.19202",
@@ -42,7 +42,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2611.19202",
       "score": 27,
-      "status": "new — under review"
+      "status": "reviewed — added: Omni-Workspace (omni-workspace); introduces an evaluation set or protocol used with general-purpose audio/spoken models."
     },
     {
       "id": "2611.21001",
@@ -61,7 +61,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2611.21001",
       "score": 27,
-      "status": "new — under review"
+      "status": "reviewed — added: Clinical Voice-Agent Frustration Evaluation (clinical-frustration-evaluation); introduces an evaluation set or protocol used with general-purpose audio/spoken models."
     },
     {
       "id": "2611.18112",
@@ -78,7 +78,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2611.18112",
       "score": 24,
-      "status": "new — under review"
+      "status": "reviewed — added: SpheraQA (spheraqa); introduces an evaluation set or protocol used with general-purpose audio/spoken models."
     },
     {
       "id": "2611.17573",
@@ -91,7 +91,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2611.17573",
       "score": 21,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: the NLI experiments use reference text with XLM-RoBERTa, and audio is evaluated separately with Whisper ASR; no general-purpose spoken-LLM or end-to-end spoken-NLI evaluation is reported (Sections 3–5)."
     },
     {
       "id": "2611.20725",
@@ -110,7 +110,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2611.20725",
       "score": 21,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: proposes an audio moment retrieval method evaluated on existing datasets, including CASTELLA; it does not introduce a new general-purpose spoken-LLM benchmark (Section 3.1)."
     },
     {
       "id": "2611.21083",
@@ -130,7 +130,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2611.21083",
       "score": 21,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: proposes an audio-agent learning method evaluated on the existing MMAU-test-mini and MMAR benchmarks; its constructed examples are for policy training, not a new benchmark (Section 5.1)."
     },
     {
       "id": "2611.21300",
@@ -145,7 +145,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2611.21300",
       "score": 18,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: introduces a Thai text segmenter and a reproducible word-segmentation comparison; evaluated systems process text boundaries, not general-purpose spoken-LLM behavior (Sections 4–5)."
     },
     {
       "id": "2611.21399",
@@ -165,7 +165,7 @@
       "primary_category": "cs.LG",
       "url": "https://arxiv.org/abs/2611.21399",
       "score": 18,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: benchmarks imagined-digit classification from MEG brain signals using dedicated classifiers, not speech/audio input or output by general-purpose spoken LLMs (Section 4.1)."
     },
     {
       "id": "2611.13689",

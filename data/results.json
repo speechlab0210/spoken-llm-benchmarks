@@ -157896,6 +157896,886 @@
       "source": "Table 5, arXiv:2611.13777v2, row FireRedAudio, column Audio Macro-F1",
       "source_url": "https://arxiv.org/pdf/2611.13777v2#page=11",
       "note": "Frozen test, zero-shot external model; scope full audio, N=24,287, Fail/invalid=0/0. Audio uses all 24,287 audio examples and text uses all 10,573 text examples where supported. User-only audio plus text context, assistant state and fixed action definitions; adapted Omni-JEV additionally has assistant-reference audio, so its scores are not equal-input base-model comparisons. Greedy local decoding with a 64-token limit; invalid or unresolved answers remain errors in the denominator. Text has four supported actions and no Recover examples. Percent, higher is better."
+    },
+    {
+      "benchmark": "webarena-pro",
+      "model": "gemini-3-1-pro",
+      "metric": "Productivity task success (%) [GenericAgent native omni, 50 steps]",
+      "value": 26.4,
+      "source": "arXiv:2611.17955v1 Table 5; row Gemini 3.1 Pro omni†, column Productivity; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.17955v1#page=9"
+    },
+    {
+      "benchmark": "webarena-pro",
+      "model": "gemini-3-1-pro",
+      "metric": "Communication task success (%) [GenericAgent native omni, 50 steps]",
+      "value": 27.3,
+      "source": "arXiv:2611.17955v1 Table 5; row Gemini 3.1 Pro omni†, column Communication; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.17955v1#page=9"
+    },
+    {
+      "benchmark": "webarena-pro",
+      "model": "gemini-3-1-pro",
+      "metric": "Analytics task success (%) [GenericAgent native omni, 50 steps]",
+      "value": 43.8,
+      "source": "arXiv:2611.17955v1 Table 5; row Gemini 3.1 Pro omni†, column Analytics; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.17955v1#page=9"
+    },
+    {
+      "benchmark": "webarena-pro",
+      "model": "gemini-3-1-pro",
+      "metric": "Business Operations task success (%) [GenericAgent native omni, 50 steps]",
+      "value": 20.6,
+      "source": "arXiv:2611.17955v1 Table 5; row Gemini 3.1 Pro omni†, column Business Operations; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.17955v1#page=9"
+    },
+    {
+      "benchmark": "webarena-pro",
+      "model": "gemini-3-1-pro",
+      "metric": "Design and Media task success (%) [GenericAgent native omni, 50 steps]",
+      "value": 38.8,
+      "source": "arXiv:2611.17955v1 Table 5; row Gemini 3.1 Pro omni†, column Design and Media; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.17955v1#page=9"
+    },
+    {
+      "benchmark": "webarena-pro",
+      "model": "gemini-3-1-pro",
+      "metric": "Travel task success (%) [GenericAgent native omni, 50 steps]",
+      "value": 26.9,
+      "source": "arXiv:2611.17955v1 Table 5; row Gemini 3.1 Pro omni†, column Travel; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.17955v1#page=9"
+    },
+    {
+      "benchmark": "webarena-pro",
+      "model": "gemini-3-1-pro",
+      "metric": "Overall task success (%) [GenericAgent native omni, 50 steps]",
+      "value": 30.3,
+      "source": "arXiv:2611.17955v1 Table 5; row Gemini 3.1 Pro omni†, column Overall; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.17955v1#page=9"
+    },
+    {
+      "benchmark": "webarena-pro",
+      "model": "gemini-3-1-pro",
+      "metric": "Single-site task success (%) [GenericAgent native omni, 50 steps]",
+      "value": 35.8,
+      "source": "arXiv:2611.17955v1 Table 6; row Gemini 3.1 Pro omni, column Single-site; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.17955v1#page=10"
+    },
+    {
+      "benchmark": "webarena-pro",
+      "model": "gemini-3-1-pro",
+      "metric": "Cross-site task success (%) [GenericAgent native omni, 50 steps]",
+      "value": 18.8,
+      "source": "arXiv:2611.17955v1 Table 6; row Gemini 3.1 Pro omni, column Cross-site; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.17955v1#page=10"
+    },
+    {
+      "benchmark": "webarena-pro",
+      "model": "gemini-3-1-pro",
+      "metric": "Text/Vision task success (%) [GenericAgent native omni, 50 steps]",
+      "value": 26.2,
+      "source": "arXiv:2611.17955v1 Table 6; row Gemini 3.1 Pro omni, column Text/Vision; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.17955v1#page=10"
+    },
+    {
+      "benchmark": "webarena-pro",
+      "model": "gemini-3-1-pro",
+      "metric": "Audio/Video task success (%) [GenericAgent native omni, 50 steps]",
+      "value": 41.8,
+      "source": "arXiv:2611.17955v1 Table 6; row Gemini 3.1 Pro omni, column Audio/Video; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.17955v1#page=10"
+    },
+    {
+      "benchmark": "webarena-pro",
+      "model": "gemini-3-1-pro",
+      "metric": "AcidWave, n=35 success (%) [native watch/listen, 50 steps]",
+      "value": 25.7,
+      "source": "arXiv:2611.17955v1 Table 7; row W/L only, column AcidWave, n=35; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.17955v1#page=10"
+    },
+    {
+      "benchmark": "webarena-pro",
+      "model": "gemini-3-1-pro",
+      "metric": "YT-Lite, n=44 success (%) [native watch/listen, 50 steps]",
+      "value": 54.5,
+      "source": "arXiv:2611.17955v1 Table 7; row W/L only, column YT-Lite, n=44; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.17955v1#page=10"
+    },
+    {
+      "benchmark": "webarena-pro",
+      "model": "gemini-3-1-pro",
+      "metric": "Media sites overall, n=79 success (%) [native watch/listen, 50 steps]",
+      "value": 41.8,
+      "source": "arXiv:2611.17955v1 Table 7; row W/L only, column Media sites overall, n=79; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.17955v1#page=10"
+    },
+    {
+      "benchmark": "webarena-pro",
+      "model": "gemini-3-1-pro",
+      "metric": "Content-dependent audio, n=20 success (%) [native watch/listen, 50 steps]",
+      "value": 10.0,
+      "source": "arXiv:2611.17955v1 Table 7; row W/L only, column Content-dependent audio, n=20; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.17955v1#page=10"
+    },
+    {
+      "benchmark": "webarena-pro",
+      "model": "gemini-3-1-pro",
+      "metric": "Content-dependent video, n=23 success (%) [native watch/listen, 50 steps]",
+      "value": 56.5,
+      "source": "arXiv:2611.17955v1 Table 7; row W/L only, column Content-dependent video, n=23; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.17955v1#page=10"
+    },
+    {
+      "benchmark": "webarena-pro",
+      "model": "gemini-3-1-pro",
+      "metric": "Content-dependent overall, n=43 success (%) [native watch/listen, 50 steps]",
+      "value": 34.9,
+      "source": "arXiv:2611.17955v1 Table 7; row W/L only, column Content-dependent overall, n=43; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.17955v1#page=10"
+    },
+    {
+      "benchmark": "omni-workspace",
+      "model": "gemini-3-5-flash",
+      "metric": "V+A+I+T task score (0–100) [native audio, 50 steps, content weight 0.9]",
+      "value": 68.29,
+      "source": "arXiv:2611.19202v1 Table 1; row Gemini 3.5 Flash, column V+A+I+T; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.19202v1#page=6"
+    },
+    {
+      "benchmark": "omni-workspace",
+      "model": "gemini-3-5-flash",
+      "metric": "V+A+T task score (0–100) [native audio, 50 steps, content weight 0.9]",
+      "value": 61.72,
+      "source": "arXiv:2611.19202v1 Table 1; row Gemini 3.5 Flash, column V+A+T; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.19202v1#page=6"
+    },
+    {
+      "benchmark": "omni-workspace",
+      "model": "gemini-3-5-flash",
+      "metric": "V+I+T task score (0–100) [native audio, 50 steps, content weight 0.9]",
+      "value": 65.52,
+      "source": "arXiv:2611.19202v1 Table 1; row Gemini 3.5 Flash, column V+I+T; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.19202v1#page=6"
+    },
+    {
+      "benchmark": "omni-workspace",
+      "model": "gemini-3-5-flash",
+      "metric": "A+I+T task score (0–100) [native audio, 50 steps, content weight 0.9]",
+      "value": 68.42,
+      "source": "arXiv:2611.19202v1 Table 1; row Gemini 3.5 Flash, column A+I+T; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.19202v1#page=6"
+    },
+    {
+      "benchmark": "omni-workspace",
+      "model": "gemini-3-5-flash",
+      "metric": "L1 task score (0–100) [native audio, 50 steps, content weight 0.9]",
+      "value": 72.77,
+      "source": "arXiv:2611.19202v1 Table 1; row Gemini 3.5 Flash, column L1; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.19202v1#page=6"
+    },
+    {
+      "benchmark": "omni-workspace",
+      "model": "gemini-3-5-flash",
+      "metric": "L2 task score (0–100) [native audio, 50 steps, content weight 0.9]",
+      "value": 57.38,
+      "source": "arXiv:2611.19202v1 Table 1; row Gemini 3.5 Flash, column L2; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.19202v1#page=6"
+    },
+    {
+      "benchmark": "omni-workspace",
+      "model": "gemini-3-5-flash",
+      "metric": "All 380 tasks task score (0–100) [native audio, 50 steps, content weight 0.9]",
+      "value": 65.93,
+      "source": "arXiv:2611.19202v1 Table 1; row Gemini 3.5 Flash, column All 380 tasks; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.19202v1#page=6"
+    },
+    {
+      "benchmark": "omni-workspace",
+      "model": "gemini-2-5-pro",
+      "metric": "V+A+I+T task score (0–100) [native audio, 50 steps, content weight 0.9]",
+      "value": 52.36,
+      "source": "arXiv:2611.19202v1 Table 1; row Gemini 2.5 Pro, column V+A+I+T; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.19202v1#page=6"
+    },
+    {
+      "benchmark": "omni-workspace",
+      "model": "gemini-2-5-pro",
+      "metric": "V+A+T task score (0–100) [native audio, 50 steps, content weight 0.9]",
+      "value": 44.53,
+      "source": "arXiv:2611.19202v1 Table 1; row Gemini 2.5 Pro, column V+A+T; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.19202v1#page=6"
+    },
+    {
+      "benchmark": "omni-workspace",
+      "model": "gemini-2-5-pro",
+      "metric": "V+I+T task score (0–100) [native audio, 50 steps, content weight 0.9]",
+      "value": 47.06,
+      "source": "arXiv:2611.19202v1 Table 1; row Gemini 2.5 Pro, column V+I+T; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.19202v1#page=6"
+    },
+    {
+      "benchmark": "omni-workspace",
+      "model": "gemini-2-5-pro",
+      "metric": "A+I+T task score (0–100) [native audio, 50 steps, content weight 0.9]",
+      "value": 49.65,
+      "source": "arXiv:2611.19202v1 Table 1; row Gemini 2.5 Pro, column A+I+T; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.19202v1#page=6"
+    },
+    {
+      "benchmark": "omni-workspace",
+      "model": "gemini-2-5-pro",
+      "metric": "L1 task score (0–100) [native audio, 50 steps, content weight 0.9]",
+      "value": 53.5,
+      "source": "arXiv:2611.19202v1 Table 1; row Gemini 2.5 Pro, column L1; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.19202v1#page=6"
+    },
+    {
+      "benchmark": "omni-workspace",
+      "model": "gemini-2-5-pro",
+      "metric": "L2 task score (0–100) [native audio, 50 steps, content weight 0.9]",
+      "value": 41.93,
+      "source": "arXiv:2611.19202v1 Table 1; row Gemini 2.5 Pro, column L2; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.19202v1#page=6"
+    },
+    {
+      "benchmark": "omni-workspace",
+      "model": "gemini-2-5-pro",
+      "metric": "All 380 tasks task score (0–100) [native audio, 50 steps, content weight 0.9]",
+      "value": 48.35,
+      "source": "arXiv:2611.19202v1 Table 1; row Gemini 2.5 Pro, column All 380 tasks; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.19202v1#page=6"
+    },
+    {
+      "benchmark": "omni-workspace",
+      "model": "mimo-v2-5",
+      "metric": "V+A+I+T task score (0–100) [native audio, 50 steps, content weight 0.9]",
+      "value": 52.4,
+      "source": "arXiv:2611.19202v1 Table 1; row MiMo-V2.5, column V+A+I+T; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.19202v1#page=6"
+    },
+    {
+      "benchmark": "omni-workspace",
+      "model": "mimo-v2-5",
+      "metric": "V+A+T task score (0–100) [native audio, 50 steps, content weight 0.9]",
+      "value": 42.82,
+      "source": "arXiv:2611.19202v1 Table 1; row MiMo-V2.5, column V+A+T; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.19202v1#page=6"
+    },
+    {
+      "benchmark": "omni-workspace",
+      "model": "mimo-v2-5",
+      "metric": "V+I+T task score (0–100) [native audio, 50 steps, content weight 0.9]",
+      "value": 42.11,
+      "source": "arXiv:2611.19202v1 Table 1; row MiMo-V2.5, column V+I+T; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.19202v1#page=6"
+    },
+    {
+      "benchmark": "omni-workspace",
+      "model": "mimo-v2-5",
+      "metric": "A+I+T task score (0–100) [native audio, 50 steps, content weight 0.9]",
+      "value": 48.51,
+      "source": "arXiv:2611.19202v1 Table 1; row MiMo-V2.5, column A+I+T; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.19202v1#page=6"
+    },
+    {
+      "benchmark": "omni-workspace",
+      "model": "mimo-v2-5",
+      "metric": "L1 task score (0–100) [native audio, 50 steps, content weight 0.9]",
+      "value": 53.02,
+      "source": "arXiv:2611.19202v1 Table 1; row MiMo-V2.5, column L1; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.19202v1#page=6"
+    },
+    {
+      "benchmark": "omni-workspace",
+      "model": "mimo-v2-5",
+      "metric": "L2 task score (0–100) [native audio, 50 steps, content weight 0.9]",
+      "value": 38.23,
+      "source": "arXiv:2611.19202v1 Table 1; row MiMo-V2.5, column L2; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.19202v1#page=6"
+    },
+    {
+      "benchmark": "omni-workspace",
+      "model": "mimo-v2-5",
+      "metric": "All 380 tasks task score (0–100) [native audio, 50 steps, content weight 0.9]",
+      "value": 46.44,
+      "source": "arXiv:2611.19202v1 Table 1; row MiMo-V2.5, column All 380 tasks; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.19202v1#page=6"
+    },
+    {
+      "benchmark": "omni-workspace",
+      "model": "qwen3-5-omni-plus",
+      "metric": "V+A+I+T task score (0–100) [native audio, 50 steps, content weight 0.9]",
+      "value": 42.9,
+      "source": "arXiv:2611.19202v1 Table 1; row Qwen3.5 Omni Plus, column V+A+I+T; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.19202v1#page=6"
+    },
+    {
+      "benchmark": "omni-workspace",
+      "model": "qwen3-5-omni-plus",
+      "metric": "V+A+T task score (0–100) [native audio, 50 steps, content weight 0.9]",
+      "value": 35.27,
+      "source": "arXiv:2611.19202v1 Table 1; row Qwen3.5 Omni Plus, column V+A+T; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.19202v1#page=6"
+    },
+    {
+      "benchmark": "omni-workspace",
+      "model": "qwen3-5-omni-plus",
+      "metric": "V+I+T task score (0–100) [native audio, 50 steps, content weight 0.9]",
+      "value": 39.87,
+      "source": "arXiv:2611.19202v1 Table 1; row Qwen3.5 Omni Plus, column V+I+T; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.19202v1#page=6"
+    },
+    {
+      "benchmark": "omni-workspace",
+      "model": "qwen3-5-omni-plus",
+      "metric": "A+I+T task score (0–100) [native audio, 50 steps, content weight 0.9]",
+      "value": 39.76,
+      "source": "arXiv:2611.19202v1 Table 1; row Qwen3.5 Omni Plus, column A+I+T; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.19202v1#page=6"
+    },
+    {
+      "benchmark": "omni-workspace",
+      "model": "qwen3-5-omni-plus",
+      "metric": "L1 task score (0–100) [native audio, 50 steps, content weight 0.9]",
+      "value": 44.53,
+      "source": "arXiv:2611.19202v1 Table 1; row Qwen3.5 Omni Plus, column L1; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.19202v1#page=6"
+    },
+    {
+      "benchmark": "omni-workspace",
+      "model": "qwen3-5-omni-plus",
+      "metric": "L2 task score (0–100) [native audio, 50 steps, content weight 0.9]",
+      "value": 32.95,
+      "source": "arXiv:2611.19202v1 Table 1; row Qwen3.5 Omni Plus, column L2; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.19202v1#page=6"
+    },
+    {
+      "benchmark": "omni-workspace",
+      "model": "qwen3-5-omni-plus",
+      "metric": "All 380 tasks task score (0–100) [native audio, 50 steps, content weight 0.9]",
+      "value": 39.38,
+      "source": "arXiv:2611.19202v1 Table 1; row Qwen3.5 Omni Plus, column All 380 tasks; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.19202v1#page=6"
+    },
+    {
+      "benchmark": "omni-workspace",
+      "model": "qwen3-5-omni-flash",
+      "metric": "V+A+I+T task score (0–100) [native audio, 50 steps, content weight 0.9]",
+      "value": 26.71,
+      "source": "arXiv:2611.19202v1 Table 1; row Qwen3.5 Omni Flash, column V+A+I+T; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.19202v1#page=6"
+    },
+    {
+      "benchmark": "omni-workspace",
+      "model": "qwen3-5-omni-flash",
+      "metric": "V+A+T task score (0–100) [native audio, 50 steps, content weight 0.9]",
+      "value": 14.92,
+      "source": "arXiv:2611.19202v1 Table 1; row Qwen3.5 Omni Flash, column V+A+T; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.19202v1#page=6"
+    },
+    {
+      "benchmark": "omni-workspace",
+      "model": "qwen3-5-omni-flash",
+      "metric": "V+I+T task score (0–100) [native audio, 50 steps, content weight 0.9]",
+      "value": 28.98,
+      "source": "arXiv:2611.19202v1 Table 1; row Qwen3.5 Omni Flash, column V+I+T; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.19202v1#page=6"
+    },
+    {
+      "benchmark": "omni-workspace",
+      "model": "qwen3-5-omni-flash",
+      "metric": "A+I+T task score (0–100) [native audio, 50 steps, content weight 0.9]",
+      "value": 34.01,
+      "source": "arXiv:2611.19202v1 Table 1; row Qwen3.5 Omni Flash, column A+I+T; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.19202v1#page=6"
+    },
+    {
+      "benchmark": "omni-workspace",
+      "model": "qwen3-5-omni-flash",
+      "metric": "L1 task score (0–100) [native audio, 50 steps, content weight 0.9]",
+      "value": 30.6,
+      "source": "arXiv:2611.19202v1 Table 1; row Qwen3.5 Omni Flash, column L1; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.19202v1#page=6"
+    },
+    {
+      "benchmark": "omni-workspace",
+      "model": "qwen3-5-omni-flash",
+      "metric": "L2 task score (0–100) [native audio, 50 steps, content weight 0.9]",
+      "value": 20.2,
+      "source": "arXiv:2611.19202v1 Table 1; row Qwen3.5 Omni Flash, column L2; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.19202v1#page=6"
+    },
+    {
+      "benchmark": "omni-workspace",
+      "model": "qwen3-5-omni-flash",
+      "metric": "All 380 tasks task score (0–100) [native audio, 50 steps, content weight 0.9]",
+      "value": 25.97,
+      "source": "arXiv:2611.19202v1 Table 1; row Qwen3.5 Omni Flash, column All 380 tasks; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.19202v1#page=6"
+    },
+    {
+      "benchmark": "omni-workspace",
+      "model": "minicpm-o-4-5",
+      "metric": "V+A+I+T task score (0–100) [native audio, 50 steps, content weight 0.9]",
+      "value": 14.74,
+      "source": "arXiv:2611.19202v1 Table 1; row MiniCPM-o-4.5, column V+A+I+T; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.19202v1#page=6"
+    },
+    {
+      "benchmark": "omni-workspace",
+      "model": "minicpm-o-4-5",
+      "metric": "V+A+T task score (0–100) [native audio, 50 steps, content weight 0.9]",
+      "value": 14.96,
+      "source": "arXiv:2611.19202v1 Table 1; row MiniCPM-o-4.5, column V+A+T; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.19202v1#page=6"
+    },
+    {
+      "benchmark": "omni-workspace",
+      "model": "minicpm-o-4-5",
+      "metric": "V+I+T task score (0–100) [native audio, 50 steps, content weight 0.9]",
+      "value": 11.28,
+      "source": "arXiv:2611.19202v1 Table 1; row MiniCPM-o-4.5, column V+I+T; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.19202v1#page=6"
+    },
+    {
+      "benchmark": "omni-workspace",
+      "model": "minicpm-o-4-5",
+      "metric": "A+I+T task score (0–100) [native audio, 50 steps, content weight 0.9]",
+      "value": 12.96,
+      "source": "arXiv:2611.19202v1 Table 1; row MiniCPM-o-4.5, column A+I+T; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.19202v1#page=6"
+    },
+    {
+      "benchmark": "omni-workspace",
+      "model": "minicpm-o-4-5",
+      "metric": "L1 task score (0–100) [native audio, 50 steps, content weight 0.9]",
+      "value": 15.43,
+      "source": "arXiv:2611.19202v1 Table 1; row MiniCPM-o-4.5, column L1; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.19202v1#page=6"
+    },
+    {
+      "benchmark": "omni-workspace",
+      "model": "minicpm-o-4-5",
+      "metric": "L2 task score (0–100) [native audio, 50 steps, content weight 0.9]",
+      "value": 11.14,
+      "source": "arXiv:2611.19202v1 Table 1; row MiniCPM-o-4.5, column L2; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.19202v1#page=6"
+    },
+    {
+      "benchmark": "omni-workspace",
+      "model": "minicpm-o-4-5",
+      "metric": "All 380 tasks task score (0–100) [native audio, 50 steps, content weight 0.9]",
+      "value": 13.52,
+      "source": "arXiv:2611.19202v1 Table 1; row MiniCPM-o-4.5, column All 380 tasks; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.19202v1#page=6"
+    },
+    {
+      "benchmark": "omni-workspace",
+      "model": "qwen3-omni",
+      "metric": "V+A+I+T task score (0–100) [native audio, 50 steps, content weight 0.9]",
+      "value": 5.29,
+      "source": "arXiv:2611.19202v1 Table 1; row Qwen3-Omni-Instruct, column V+A+I+T; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.19202v1#page=6"
+    },
+    {
+      "benchmark": "omni-workspace",
+      "model": "qwen3-omni",
+      "metric": "V+A+T task score (0–100) [native audio, 50 steps, content weight 0.9]",
+      "value": 4.96,
+      "source": "arXiv:2611.19202v1 Table 1; row Qwen3-Omni-Instruct, column V+A+T; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.19202v1#page=6"
+    },
+    {
+      "benchmark": "omni-workspace",
+      "model": "qwen3-omni",
+      "metric": "V+I+T task score (0–100) [native audio, 50 steps, content weight 0.9]",
+      "value": 6.6,
+      "source": "arXiv:2611.19202v1 Table 1; row Qwen3-Omni-Instruct, column V+I+T; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.19202v1#page=6"
+    },
+    {
+      "benchmark": "omni-workspace",
+      "model": "qwen3-omni",
+      "metric": "A+I+T task score (0–100) [native audio, 50 steps, content weight 0.9]",
+      "value": 5.73,
+      "source": "arXiv:2611.19202v1 Table 1; row Qwen3-Omni-Instruct, column A+I+T; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.19202v1#page=6"
+    },
+    {
+      "benchmark": "omni-workspace",
+      "model": "qwen3-omni",
+      "metric": "L1 task score (0–100) [native audio, 50 steps, content weight 0.9]",
+      "value": 6.05,
+      "source": "arXiv:2611.19202v1 Table 1; row Qwen3-Omni-Instruct, column L1; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.19202v1#page=6"
+    },
+    {
+      "benchmark": "omni-workspace",
+      "model": "qwen3-omni",
+      "metric": "L2 task score (0–100) [native audio, 50 steps, content weight 0.9]",
+      "value": 5.09,
+      "source": "arXiv:2611.19202v1 Table 1; row Qwen3-Omni-Instruct, column L2; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.19202v1#page=6"
+    },
+    {
+      "benchmark": "omni-workspace",
+      "model": "qwen3-omni",
+      "metric": "All 380 tasks task score (0–100) [native audio, 50 steps, content weight 0.9]",
+      "value": 5.63,
+      "source": "arXiv:2611.19202v1 Table 1; row Qwen3-Omni-Instruct, column All 380 tasks; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.19202v1#page=6"
+    },
+    {
+      "benchmark": "omni-workspace",
+      "model": "gemini-3-5-flash",
+      "metric": "Non-speech information (NSI) task score (0–100) [native audio]",
+      "value": 62.39,
+      "source": "arXiv:2611.19202v1 Table 9; row Gemini 3.5 Flash (native), column Non-speech information (NSI); reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.19202v1#page=22"
+    },
+    {
+      "benchmark": "omni-workspace",
+      "model": "gemini-3-5-flash",
+      "metric": "Multi-speaker understanding (MSU) task score (0–100) [native audio]",
+      "value": 66.77,
+      "source": "arXiv:2611.19202v1 Table 9; row Gemini 3.5 Flash (native), column Multi-speaker understanding (MSU); reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.19202v1#page=22"
+    },
+    {
+      "benchmark": "spheraqa",
+      "model": "gemini-3-1-pro",
+      "metric": "Azimuth whole-answer accuracy (%) [paper set, mono W channel]",
+      "value": 9.72,
+      "source": "arXiv:2611.18112v1 Table 1; row Azimuth, column Gemini 3.1 Pro; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.18112v1#page=7"
+    },
+    {
+      "benchmark": "spheraqa",
+      "model": "spheraaudio",
+      "metric": "Azimuth whole-answer accuracy (%) [paper set, multichannel]",
+      "value": 55.6,
+      "source": "arXiv:2611.18112v1 Table 1; row Azimuth, column SpheraAudio; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.18112v1#page=7"
+    },
+    {
+      "benchmark": "spheraqa",
+      "model": "gemini-3-1-pro",
+      "metric": "Elevation whole-answer accuracy (%) [paper set, mono W channel]",
+      "value": 32.46,
+      "source": "arXiv:2611.18112v1 Table 1; row Elevation, column Gemini 3.1 Pro; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.18112v1#page=7"
+    },
+    {
+      "benchmark": "spheraqa",
+      "model": "spheraaudio",
+      "metric": "Elevation whole-answer accuracy (%) [paper set, multichannel]",
+      "value": 69.34,
+      "source": "arXiv:2611.18112v1 Table 1; row Elevation, column SpheraAudio; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.18112v1#page=7"
+    },
+    {
+      "benchmark": "spheraqa",
+      "model": "gemini-3-1-pro",
+      "metric": "Distance whole-answer accuracy (%) [paper set, mono W channel]",
+      "value": 55.75,
+      "source": "arXiv:2611.18112v1 Table 1; row Distance, column Gemini 3.1 Pro; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.18112v1#page=7"
+    },
+    {
+      "benchmark": "spheraqa",
+      "model": "spheraaudio",
+      "metric": "Distance whole-answer accuracy (%) [paper set, multichannel]",
+      "value": 74.81,
+      "source": "arXiv:2611.18112v1 Table 1; row Distance, column SpheraAudio; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.18112v1#page=7"
+    },
+    {
+      "benchmark": "spheraqa",
+      "model": "gemini-3-1-pro",
+      "metric": "Source count whole-answer accuracy (%) [paper set, mono W channel]",
+      "value": 54.29,
+      "source": "arXiv:2611.18112v1 Table 1; row Source count, column Gemini 3.1 Pro; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.18112v1#page=7"
+    },
+    {
+      "benchmark": "spheraqa",
+      "model": "spheraaudio",
+      "metric": "Source count whole-answer accuracy (%) [paper set, multichannel]",
+      "value": 60.7,
+      "source": "arXiv:2611.18112v1 Table 1; row Source count, column SpheraAudio; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.18112v1#page=7"
+    },
+    {
+      "benchmark": "spheraqa",
+      "model": "gemini-3-1-pro",
+      "metric": "Lateral position whole-answer accuracy (%) [paper set, mono W channel]",
+      "value": 44.64,
+      "source": "arXiv:2611.18112v1 Table 1; row Lateral position, column Gemini 3.1 Pro; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.18112v1#page=7"
+    },
+    {
+      "benchmark": "spheraqa",
+      "model": "spheraaudio",
+      "metric": "Lateral position whole-answer accuracy (%) [paper set, multichannel]",
+      "value": 41.52,
+      "source": "arXiv:2611.18112v1 Table 1; row Lateral position, column SpheraAudio; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.18112v1#page=7"
+    },
+    {
+      "benchmark": "spheraqa",
+      "model": "gemini-3-1-pro",
+      "metric": "Motion status whole-answer accuracy (%) [paper set, mono W channel]",
+      "value": 73.94,
+      "source": "arXiv:2611.18112v1 Table 1; row Motion status, column Gemini 3.1 Pro; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.18112v1#page=7"
+    },
+    {
+      "benchmark": "spheraqa",
+      "model": "spheraaudio",
+      "metric": "Motion status whole-answer accuracy (%) [paper set, multichannel]",
+      "value": 73.38,
+      "source": "arXiv:2611.18112v1 Table 1; row Motion status, column SpheraAudio; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.18112v1#page=7"
+    },
+    {
+      "benchmark": "spheraqa",
+      "model": "gemini-3-1-pro",
+      "metric": "Motion direction whole-answer accuracy (%) [paper set, mono W channel]",
+      "value": 49.39,
+      "source": "arXiv:2611.18112v1 Table 1; row Motion direction, column Gemini 3.1 Pro; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.18112v1#page=7"
+    },
+    {
+      "benchmark": "spheraqa",
+      "model": "spheraaudio",
+      "metric": "Motion direction whole-answer accuracy (%) [paper set, multichannel]",
+      "value": 34.93,
+      "source": "arXiv:2611.18112v1 Table 1; row Motion direction, column SpheraAudio; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.18112v1#page=7"
+    },
+    {
+      "benchmark": "spheraqa",
+      "model": "gemini-3-1-pro",
+      "metric": "Spatial categories whole-answer accuracy (%) [paper set, mono W channel]",
+      "value": 56.49,
+      "source": "arXiv:2611.18112v1 Table 1; row Spatial categories, column Gemini 3.1 Pro; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.18112v1#page=7"
+    },
+    {
+      "benchmark": "spheraqa",
+      "model": "spheraaudio",
+      "metric": "Spatial categories whole-answer accuracy (%) [paper set, multichannel]",
+      "value": 74.57,
+      "source": "arXiv:2611.18112v1 Table 1; row Spatial categories, column SpheraAudio; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.18112v1#page=7"
+    },
+    {
+      "benchmark": "spheraqa",
+      "model": "gemini-3-1-pro",
+      "metric": "Coordinates whole-answer accuracy (%) [paper set, mono W channel]",
+      "value": 1.31,
+      "source": "arXiv:2611.18112v1 Table 1; row Coordinates, column Gemini 3.1 Pro; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.18112v1#page=7"
+    },
+    {
+      "benchmark": "spheraqa",
+      "model": "spheraaudio",
+      "metric": "Coordinates whole-answer accuracy (%) [paper set, multichannel]",
+      "value": 35.91,
+      "source": "arXiv:2611.18112v1 Table 1; row Coordinates, column SpheraAudio; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.18112v1#page=7"
+    },
+    {
+      "benchmark": "spheraqa",
+      "model": "gemini-3-1-pro",
+      "metric": "Trajectory whole-answer accuracy (%) [paper set, mono W channel]",
+      "value": 0.45,
+      "source": "arXiv:2611.18112v1 Table 1; row Trajectory, column Gemini 3.1 Pro; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.18112v1#page=7"
+    },
+    {
+      "benchmark": "spheraqa",
+      "model": "spheraaudio",
+      "metric": "Trajectory whole-answer accuracy (%) [paper set, multichannel]",
+      "value": 36.12,
+      "source": "arXiv:2611.18112v1 Table 1; row Trajectory, column SpheraAudio; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.18112v1#page=7"
+    },
+    {
+      "benchmark": "spheraqa",
+      "model": "gemini-3-1-pro",
+      "metric": "Distance comparison whole-answer accuracy (%) [paper set, mono W channel]",
+      "value": 37.43,
+      "source": "arXiv:2611.18112v1 Table 1; row Distance comparison, column Gemini 3.1 Pro; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.18112v1#page=7"
+    },
+    {
+      "benchmark": "spheraqa",
+      "model": "spheraaudio",
+      "metric": "Distance comparison whole-answer accuracy (%) [paper set, multichannel]",
+      "value": 32.04,
+      "source": "arXiv:2611.18112v1 Table 1; row Distance comparison, column SpheraAudio; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.18112v1#page=7"
+    },
+    {
+      "benchmark": "spheraqa",
+      "model": "gemini-3-1-pro",
+      "metric": "Relative position whole-answer accuracy (%) [paper set, mono W channel]",
+      "value": 41.05,
+      "source": "arXiv:2611.18112v1 Table 1; row Relative position, column Gemini 3.1 Pro; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.18112v1#page=7"
+    },
+    {
+      "benchmark": "spheraqa",
+      "model": "spheraaudio",
+      "metric": "Relative position whole-answer accuracy (%) [paper set, multichannel]",
+      "value": 32.75,
+      "source": "arXiv:2611.18112v1 Table 1; row Relative position, column SpheraAudio; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.18112v1#page=7"
+    },
+    {
+      "benchmark": "spheraqa",
+      "model": "gemini-3-1-pro",
+      "metric": "Navigation whole-answer accuracy (%) [paper set, mono W channel]",
+      "value": 39.28,
+      "source": "arXiv:2611.18112v1 Table 1; row Navigation, column Gemini 3.1 Pro; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.18112v1#page=7"
+    },
+    {
+      "benchmark": "spheraqa",
+      "model": "spheraaudio",
+      "metric": "Navigation whole-answer accuracy (%) [paper set, multichannel]",
+      "value": 58.83,
+      "source": "arXiv:2611.18112v1 Table 1; row Navigation, column SpheraAudio; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.18112v1#page=7"
+    },
+    {
+      "benchmark": "spheraqa",
+      "model": "gemini-3-1-pro",
+      "metric": "Spatial Reasoning whole-answer accuracy (%) [paper set, mono W channel]",
+      "value": 27.5,
+      "source": "arXiv:2611.18112v1 Table 1; row Spatial Reasoning, column Gemini 3.1 Pro; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.18112v1#page=7"
+    },
+    {
+      "benchmark": "spheraqa",
+      "model": "spheraaudio",
+      "metric": "Spatial Reasoning whole-answer accuracy (%) [paper set, multichannel]",
+      "value": 30.0,
+      "source": "arXiv:2611.18112v1 Table 1; row Spatial Reasoning, column SpheraAudio; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.18112v1#page=7"
+    },
+    {
+      "benchmark": "spheraqa",
+      "model": "gemini-3-1-pro",
+      "metric": "Overall whole-answer accuracy (%) [paper set, mono W channel]",
+      "value": 42.73,
+      "source": "arXiv:2611.18112v1 Table 1; row SpheraQA, column Gemini 3.1 Pro; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.18112v1#page=7"
+    },
+    {
+      "benchmark": "spheraqa",
+      "model": "spheraaudio",
+      "metric": "Overall whole-answer accuracy (%) [paper set, multichannel]",
+      "value": 60.18,
+      "source": "arXiv:2611.18112v1 Table 1; row SpheraQA, column SpheraAudio; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.18112v1#page=7"
+    },
+    {
+      "benchmark": "clinical-frustration-evaluation",
+      "model": "gemini-2-5-flash",
+      "metric": "Audio balanced accuracy (%) [six calls, input-specific prompts]",
+      "value": 71.3,
+      "source": "arXiv:2611.21001v1 Table 4; row Gemini 2.5 Flash, column Audio; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.21001v1#page=12"
+    },
+    {
+      "benchmark": "clinical-frustration-evaluation",
+      "model": "gemini-2-5-flash",
+      "metric": "Text balanced accuracy (%) [six calls, input-specific prompts]",
+      "value": 66.7,
+      "source": "arXiv:2611.21001v1 Table 4; row Gemini 2.5 Flash, column Text; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.21001v1#page=12"
+    },
+    {
+      "benchmark": "clinical-frustration-evaluation",
+      "model": "gemini-2-5-flash",
+      "metric": "Audio balanced accuracy (%) [six calls, identical prompts]",
+      "value": 66.0,
+      "source": "arXiv:2611.21001v1 Table 4; row Gemini 2.5 Flash, column Audio; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.21001v1#page=12"
+    },
+    {
+      "benchmark": "clinical-frustration-evaluation",
+      "model": "gemini-2-5-flash",
+      "metric": "Text balanced accuracy (%) [six calls, identical prompts]",
+      "value": 67.3,
+      "source": "arXiv:2611.21001v1 Table 4; row Gemini 2.5 Flash, column Text; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.21001v1#page=12"
+    },
+    {
+      "benchmark": "clinical-frustration-evaluation",
+      "model": "gemini-2-5-pro",
+      "metric": "Audio balanced accuracy (%) [six calls, input-specific prompts]",
+      "value": 67.3,
+      "source": "arXiv:2611.21001v1 Table 4; row Gemini 2.5 Pro, column Audio; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.21001v1#page=12"
+    },
+    {
+      "benchmark": "clinical-frustration-evaluation",
+      "model": "gemini-2-5-pro",
+      "metric": "Text balanced accuracy (%) [six calls, input-specific prompts]",
+      "value": 64.0,
+      "source": "arXiv:2611.21001v1 Table 4; row Gemini 2.5 Pro, column Text; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.21001v1#page=12"
+    },
+    {
+      "benchmark": "clinical-frustration-evaluation",
+      "model": "gemini-2-5-pro",
+      "metric": "Audio balanced accuracy (%) [six calls, identical prompts]",
+      "value": 67.3,
+      "source": "arXiv:2611.21001v1 Table 4; row Gemini 2.5 Pro, column Audio; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.21001v1#page=12"
+    },
+    {
+      "benchmark": "clinical-frustration-evaluation",
+      "model": "gemini-2-5-pro",
+      "metric": "Text balanced accuracy (%) [six calls, identical prompts]",
+      "value": 66.7,
+      "source": "arXiv:2611.21001v1 Table 4; row Gemini 2.5 Pro, column Text; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.21001v1#page=12"
+    },
+    {
+      "benchmark": "clinical-frustration-evaluation",
+      "model": "voxtral-mini",
+      "metric": "Audio balanced accuracy (%) [six calls, input-specific prompts]",
+      "value": 52.7,
+      "source": "arXiv:2611.21001v1 Table 4; row Voxtral Mini 3B, column Audio; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.21001v1#page=12"
+    },
+    {
+      "benchmark": "clinical-frustration-evaluation",
+      "model": "voxtral-mini",
+      "metric": "Text balanced accuracy (%) [six calls, input-specific prompts]",
+      "value": 66.0,
+      "source": "arXiv:2611.21001v1 Table 4; row Voxtral Mini 3B, column Text; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.21001v1#page=12"
+    },
+    {
+      "benchmark": "clinical-frustration-evaluation",
+      "model": "voxtral-mini",
+      "metric": "Audio balanced accuracy (%) [six calls, identical prompts]",
+      "value": 62.0,
+      "source": "arXiv:2611.21001v1 Table 4; row Voxtral Mini 3B, column Audio; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.21001v1#page=12"
+    },
+    {
+      "benchmark": "clinical-frustration-evaluation",
+      "model": "voxtral-mini",
+      "metric": "Text balanced accuracy (%) [six calls, identical prompts]",
+      "value": 65.3,
+      "source": "arXiv:2611.21001v1 Table 4; row Voxtral Mini 3B, column Text; reported table value.",
+      "source_url": "https://arxiv.org/pdf/2611.21001v1#page=12"
     }
   ]
 }

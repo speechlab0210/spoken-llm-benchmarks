@@ -1564,6 +1564,12 @@
       "name": "Grok Voice Think Fast 1.0",
       "org": "xAI",
       "type": "e2e"
+    },
+    {
+      "id": "spheraaudio",
+      "name": "SpheraAudio",
+      "org": "Alibaba Group / Zhejiang University",
+      "type": "e2e"
     }
   ]
 }

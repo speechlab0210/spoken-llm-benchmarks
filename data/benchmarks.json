@@ -13125,6 +13125,118 @@
       "note": "Table 5 of v2 contributes 14 cells for four existing model records. Invalid or unresolved answers remain in the denominator; Step-Audio2-mini has 12,941 invalid outputs. This is endpoint classification, not a streaming latency or closed-loop conversation benchmark. Adaptation and available input roles differ across systems. Qwen3.1-Realtime uses a differently sampled 2,000-example subset; it and MOSS-Audio-4B-Instruct are not mapped to other model versions. The paper does not distribute the complete action-label corpus, derived audio or weights, and notes heterogeneous source permissions; no public dataset download is claimed.",
       "code": null,
       "data": null
+    },
+    {
+      "id": "webarena-pro",
+      "name": "WebArena-Pro",
+      "full_title": "WebArena-Pro: A Heterogeneous, Multimodal, Reproducible Benchmark for Web Agents",
+      "arxiv_id": "2611.17955",
+      "arxiv_date": "2026-11",
+      "arxiv_date_full": "2026-11-13",
+      "url": "https://arxiv.org/abs/2611.17955",
+      "categories": [
+        "voice-agent",
+        "audio-grounding",
+        "reasoning"
+      ],
+      "tasks": [
+        "multimodal web task completion",
+        "audio/video evidence use",
+        "cross-site workflows"
+      ],
+      "size": "300 test tasks over 20 self-hosted applications; 79 audio/video tasks and a post hoc 43-task media-content-dependent subset",
+      "io": "task, browser observations and audio/video media → browser actions and completed application state",
+      "metrics": [
+        "full-task success rate (%)",
+        "partial completion score"
+      ],
+      "summary": "A reproducible browser-agent benchmark with isolated application state and explicit audio/video actions. Native omni agents can listen to recordings and watch videos; other configurations use transcription and frame extraction. Rubrics evaluate task completion across six application domains.",
+      "note": "17 cells from Tables 5–7 cover Gemini 3.1 Pro with GenericAgent and native watch/listen access at a 50-step limit. They are not coding-agent or ASR-assisted results. The 43-task content-dependent subset is post hoc and distinct from all 79 media-site tasks. Full success requires final reward 1; partial-credit scores are not substituted. Other agent/model combinations remain in the paper."
+    },
+    {
+      "id": "omni-workspace",
+      "name": "Omni-Workspace",
+      "full_title": "Omni-Workspace: Benchmarking Omni-Modal AI Assistants on Multimodal Workspace Tasks",
+      "arxiv_id": "2611.19202",
+      "arxiv_date": "2026-11",
+      "arxiv_date_full": "2026-11-14",
+      "url": "https://arxiv.org/abs/2611.19202",
+      "categories": [
+        "voice-agent",
+        "reasoning",
+        "long-form"
+      ],
+      "tasks": [
+        "multimodal workspace task completion",
+        "cross-file evidence integration",
+        "non-speech and multi-speaker understanding"
+      ],
+      "size": "380 tasks across four workspace modality combinations and two difficulty levels",
+      "io": "text instruction and workspace video/audio/image/text files → required output artifacts",
+      "metrics": [
+        "task score (0–100)",
+        "content score (0–100)",
+        "format score (0–100)"
+      ],
+      "summary": "Evaluates sustained tool use over multimodal workspaces, including native audio understanding, external retrieval and artifact creation. Required files are checked before atomic content and format rubrics are scored; a missing or unreadable required file makes the entire task score zero.",
+      "note": "51 cells from Tables 1 and 9 cover seven existing native-audio model records. Main scores use a 50-step budget and 0.9 content / 0.1 format weighting. Workspace types include a video/image/text subset without separate audio files. The native-audio and VLM+ASR interfaces differ. Gemini Preview rows, Nemotron-3-Nano-Omni and ASR-assisted configurations await exact model/configuration records; they are not mapped to other variants. Qwen3-Omni uses the Instruct configuration with thinking disabled. OmniFocus intervention results are not mixed with the baseline harness."
+    },
+    {
+      "id": "spheraqa",
+      "name": "SpheraQA",
+      "full_title": "Any Channel Count, One Token Stream: Incorporating Spatial Audio Understanding and Reasoning into Large Audio-Language Models",
+      "arxiv_id": "2611.18112",
+      "arxiv_date": "2026-11",
+      "arxiv_date_full": "2026-11-13",
+      "url": "https://arxiv.org/abs/2611.18112",
+      "categories": [
+        "auditory-perception",
+        "reasoning",
+        "audio-grounding"
+      ],
+      "tasks": [
+        "spatial attribute perception",
+        "source-relation comparison",
+        "geometric audio reasoning",
+        "localization and trajectory answering"
+      ],
+      "size": "Paper evaluation: 20,492 questions over 7,059 recordings (24.92 hours); public release: 22,197 questions over 7,686 recordings",
+      "io": "spatial audio recording and question → numeric, categorical or structured answer",
+      "metrics": [
+        "whole-answer accuracy (%)"
+      ],
+      "summary": "Introduced with SpheraAudio to evaluate spatial hearing from source attributes through cross-source relations and multi-step geometric reasoning. Simulated scenes and annotated LOCATA/STARSS23 recordings support programmatic scoring with numerical tolerances and whole-answer checks.",
+      "note": "30 Table 1 cells cover SpheraAudio and Gemini 3.1 Pro on the paper version. SpheraAudio receives multichannel recordings; Gemini receives only the omnidirectional W channel, so input information differs. The current public release has a different question count and is not the denominator for paper scores. GPT-4o extracts free-form answers before programmatic scoring. Spatial-Omni-7B requires its own verified model record; its cells are deferred.",
+      "code": "https://github.com/Konoyo-014/SpheraQA",
+      "data": "https://modelscope.cn/datasets/Konoyo/SpheraQA"
+    },
+    {
+      "id": "clinical-frustration-evaluation",
+      "name": "Clinical Voice-Agent Frustration Evaluation",
+      "full_title": "Does the Voice Matter? Evaluating Frustration Detection on Deployed Clinical Voice-Agent Calls",
+      "arxiv_id": "2611.21001",
+      "arxiv_date": "2026-11",
+      "arxiv_date_full": "2026-11-16",
+      "url": "https://arxiv.org/abs/2611.21001",
+      "categories": [
+        "paralinguistics",
+        "domain",
+        "audio-grounding"
+      ],
+      "tasks": [
+        "turn-level frustration detection",
+        "audio versus transcript comparison",
+        "prompt-controlled emotion evaluation"
+      ],
+      "size": "150 balanced patient turns from six calls plus 150 acted IEMOCAP controls; extension to 714 turns from 30 calls",
+      "io": "patient speech or transcript, under a specified prompt → frustration label and confidence",
+      "metrics": [
+        "balanced accuracy (%)",
+        "frustrated-turn recall",
+        "confident-clearance error rate"
+      ],
+      "summary": "A curated evaluation set and controlled protocol for general audio-language models on frustration in deployed clinical voice-agent calls. Audio and transcript conditions are compared by turn length, model and prompt, with an acted-speech control and a larger call-level extension.",
+      "note": "This is a study-specific evaluation protocol, not a public downloadable benchmark. Patient recordings are proprietary and cannot be shared. The six-call balanced set is triple-annotated; the 24 added calls are single-annotated and differ in prevalence. The 12 imported Table 4 cells cover Gemini 2.5 Flash, Gemini 2.5 Pro and Voxtral Mini 3B on six calls only, with input-specific and identical prompts separated. They do not represent the full 30-call set. Qwen2.5-Omni-7B Q8_0 and Gemini 3.8 Flash rows are deferred pending exact model records; no clinical deployment recommendation is inferred."
     }
   ]
 }
