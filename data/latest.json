@@ -1,9 +1,172 @@
 {
-  "fetched_at": "2026-11-15T22:27:43Z",
+  "fetched_at": "2026-11-18T01:37:02Z",
   "window_days": 10,
-  "scanned": 87,
-  "flagged_today": 0,
+  "scanned": 108,
+  "flagged_today": 9,
   "candidates": [
+    {
+      "id": "2611.17955",
+      "title": "WebArena-Pro: A Heterogeneous, Multimodal, Reproducible Benchmark for Web Agents",
+      "abstract": "Web agents powered by large language and vision-language models are increasingly applied to realistic browser work that spans heterogeneous applications, multimodal content, and stateful workflows. However, existing reproducible web-agent benchmarks cover only a small number of web applications drawn from a few software categories, and restrict modality to text and vision. Live benchmarks broaden site coverage but sacrifice reproducibility, since pages and data drift between runs. Moreover, existing benchmarks do not meaningfully evaluate whether agents can understand and use audio and video content embedded within web tasks. To address these gaps, we introduce WebArena-Pro, a benchmark comprising 300 tasks across 20 self-hosted web applications in six domain categories, spanning distinct interface conventions, workflows, and data models. Across the evaluated agents, the best performance is achieved by both Codex with GPT 6.1 Sol and Claude Code with Claude Opus 5.5 at 62.3%, followed by OpenCode with Kimi 3.1 Pro at 60.7%. The strongest GenericAgent configurations, Gemini 3.1 Pro omni and Gemma4 31B, both achieve 30.3%. Among reproducible, human-curated web agent benchmarks, WebArena-Pro provides the broadest application coverage and the most comprehensive multimodal support to date. The benchmark treats audio and video as core observations alongside text and vision, with dedicated actions for extracting information from each. WebArena-Pro runs each task in isolation and supports reproducible, parallel evaluation. Tasks are authored through a dedicated annotator interface, filtered by LLM-assisted triage, and finally validated by humans before release. Project page: https://webarena-pro.github.io",
+      "published": "2026-11-13T09:44:48Z",
+      "authors": [
+        "Imene Kerboua",
+        "Fatemeh Pesaran Zadeh",
+        "Xing Han Lù",
+        "Weijian Qi",
+        "Alexander Miller",
+        "Junyi Song",
+        "Yunjia Tian",
+        "Dongjin Kang"
+      ],
+      "primary_category": "cs.AI",
+      "url": "https://arxiv.org/abs/2611.17955",
+      "score": 33,
+      "status": "new — under review"
+    },
+    {
+      "id": "2611.19202",
+      "title": "Omni-Workspace: Benchmarking Omni-Modal AI Assistants on Multimodal Workspace Tasks",
+      "abstract": "Omni-modal agents are expected to move beyond multimodal understanding toward completing complex tasks in realistic multimodal environments. In these settings, information is distributed across heterogeneous files and modalities, with cross-file and cross-modal dependencies requiring agents to continually coordinate perception, reasoning, and tool use as newly gathered evidence informs subsequent actions. However, existing omni-modal benchmarks primarily focus on multimodal perception and understanding, leaving complex task completion through sustained interaction with multimodal workspaces underexplored. We introduce Omni-Workspace, a benchmark comprising 380 deep-research-style tasks across four multimodal workspace types and two difficulty levels. These tasks require agents to inspect and process workspace files, retrieve external information when needed, integrate evidence across files and modalities, and produce artifacts satisfying explicit requirements. Evaluating 18 representative models reveals limitations in long-horizon multimodal workspace execution, with the best model scoring only 65.93 on average. Further analysis identifies multimodal context inflation and task-state drift as recurring challenges. Motivated by these findings, we further propose OmniFocus, a lightweight approach combining multimodal working-memory management with explicit task-state tracking to improve performance and efficiency. Omni-Workspace advances the evaluation and development of omni-modal agents toward autonomous completion of complex tasks in multimodal workspaces.",
+      "published": "2026-11-14T06:49:09Z",
+      "authors": [
+        "Yuhao Wang",
+        "Yucheng Zhao",
+        "Yiran Zhong",
+        "Feida Zhu",
+        "Hongcheng Liu",
+        "Qichao Wang",
+        "Ming Ma",
+        "Yu Wang"
+      ],
+      "primary_category": "cs.CL",
+      "url": "https://arxiv.org/abs/2611.19202",
+      "score": 27,
+      "status": "new — under review"
+    },
+    {
+      "id": "2611.21001",
+      "title": "Does the Voice Matter? Evaluating Frustration Detection on Deployed Clinical Voice-Agent Calls",
+      "abstract": "Autonomous voice agents now conduct routine clinical follow-up calls, so some automated triage is unavoidable. A patient becoming frustrated is one thing that triage should catch. These systems typically read only the transcript the speech-to-text stage produces, not the voice, and whether that is enough is largely untested on real clinical speech. We study per-turn frustration detection on real patient calls from a deployed clinical voice agent: 150 turns from six calls labelled by three annotators, with a length-matched acted corpus as a control, and 714 turns from 30 calls. Patient turns are overwhelmingly short: across the deployed calls, roughly 59% are one or two words, against 13% in the full acted corpus, and a corpus accuracy gap remains even after the acted set is length-matched. On one-word turns, transcript-only detection does not exclude chance. Across five audio-capable language models, the transcript flags 3 or 4 of the 39 frustrated one-word turns in the 30 calls, and a classifier given only the word count reaches 57.3%. Whether audio helps depends on the model and on the instruction. Asked to attend to delivery, two Gemini 2.5 models gain 3.0 pp over the transcript across 30 calls (-1.0 to 7.5 pp). Of the turns they confidently clear, 6.9% were in fact frustrated for audio against 13.0% for the transcript, a difference of 6.1 pp (2.2 to 10.4 pp). Across the 30 calls, given one prompt identical for both inputs, no model's audio-text interval excludes zero. Under the input-specific prompts, a newer Gemini model and two smaller open models do worse with audio than with the transcript (-3.5, -8.6 and -10.6 pp). A WavLM probe trained on the clinical calls matches the best prompted model overall (71.6%) but misses every frustrated one-word turn in the 24 added calls. When a patient's turn is short, the transcript alone is not enough to rule out frustration.",
+      "published": "2026-11-16T12:27:56Z",
+      "authors": [
+        "Annika Michael",
+        "Zachary Ellis",
+        "Yuxiang Zhou",
+        "Samuel Thio",
+        "Yajie Vera He",
+        "Spencer Hazel",
+        "Jared Joselowitz"
+      ],
+      "primary_category": "cs.CL",
+      "url": "https://arxiv.org/abs/2611.21001",
+      "score": 27,
+      "status": "new — under review"
+    },
+    {
+      "id": "2611.18112",
+      "title": "Any Channel Count, One Token Stream: Incorporating Spatial Audio Understanding and Reasoning into Large Audio-Language Models",
+      "abstract": "Audio phase relations encode source locations, yet existing large audio-language models (LALM) reduce audio to single-channel content to stabilise general audio understanding, leaving spatial information for direction, distance, and source-relation questions unused. We present SpheraAudio, which accepts recordings with any channel count -- mono, stereo, First-Order Ambisonics (FOA), or higher -- and maps them into a single token stream. A spatial encoder turns complex multichannel spectra into spatial tokens interleaved with audio tokens at corresponding temporal positions. Spatial Multimodal RoPE (SMRoPE) makes each token's modality identity and temporal slot visible to rotary attention without altering the language model's original RoPE. Training runs in three stages -- spatial-encoder pretraining, projector alignment, and joint supervised-and-reinforcement learning -- progressing from geometric supervision to language-based spatial decisions, with answers trained as explicit spatial chain-of-thought: step-by-step geometric reasoning over the heard scene. Current benchmarks tie questions to a fixed channel-count format and score answers without spatial reasoning evidence. We introduce SpheraQA, which spans mono, stereo, and FOA recordings and organises questions hierarchically from single-attribute perception through cross-source relations to multi-step reasoning, scored programmatically against simulated scene geometry and real-recording annotations with step-by-step solution references. Across SpheraQA and public spatial-audio benchmarks, SpheraAudio sets a new performance standard for spatial audio understanding. It supports high-precision localisation, tracking, and reasoning over static and moving sound sources while preserving strong general-audio capabilities. We will release code, SpheraQA, and evaluation metrics to support reproducibility.",
+      "published": "2026-11-13T12:35:41Z",
+      "authors": [
+        "Yuhuan You",
+        "Wenxiang Guo",
+        "Zhifang Guo",
+        "Yuxuan Wang",
+        "Jin Xu"
+      ],
+      "primary_category": "cs.SD",
+      "url": "https://arxiv.org/abs/2611.18112",
+      "score": 24,
+      "status": "new — under review"
+    },
+    {
+      "id": "2611.17573",
+      "title": "CamSpokenNLI: A Pilot Resource for Cross-Variety Transfer Evaluation in Cameroon Pidgin English and Camfranglais",
+      "abstract": "Cameroon Pidgin English (a West African Pidgin English variety) and Camfranglais are widely used in Cameroon, yet to our knowledge, neither has a dedicated spoken Natural Language Inference (NLI) resource. We introduce CamSpokenNLI, a pilot dataset of 114 scenario-matched spoken NLI items in each variety (228 in total), recorded by one native speaker from Buea. Each item pairs premise audio and text with a hypothesis, an NLI label, and English glosses. The author assigned labels, so the dataset is an exploratory resource rather than a mature benchmark. The NLI experiments use the reference text; the audio is evaluated separately. XLM-RoBERTa baselines with five-fold item-level cross-validation reach 44.7% on Pidgin and 46.2% on Camfranglais (chance 33.3%). Still, neither is statistically distinguishable from hypothesis-only input, so hypothesis wording may account for much of the accuracy. Under disjoint-item cross-variety transfer, where a test item's counterpart is never seen in training, accuracy is 40.1% (Pidgin to Camfranglais) and 45.6% (Camfranglais to Pidgin). A counterpart-leak audit raises this to 60-64%, illustrating how counterpart leakage can overstate transfer. Zero-shot Whisper transcription of the recordings performs poorly: the best word error rates are 66.6% for Pidgin and 45.5% for Camfranglais, and with automatic language identification, Whisper Large-v3 labels 93 of 114 Pidgin recordings as Yoruba or Swahili. Together, the results suggest that such resources need disjoint-item evaluation and hypothesis-only controls, and that speech recognition must be adapted to these varieties before spoken NLI can be tested end to end.",
+      "published": "2026-11-12T22:51:31Z",
+      "authors": [
+        "Tiani Pekins Ebika"
+      ],
+      "primary_category": "cs.CL",
+      "url": "https://arxiv.org/abs/2611.17573",
+      "score": 21,
+      "status": "new — under review"
+    },
+    {
+      "id": "2611.20725",
+      "title": "Post-fusion Event-aware Time-Frequency Refinement for Audio Moment Retrieval",
+      "abstract": "Audio Moment Retrieval (AMR) aims to locate the temporal segment within a long audio recording that semantically corresponds to a natural-language query. This task is particularly challenging because query-related audio events are often sparsely distributed and embedded in complex acoustic environments, where background sounds and acoustically similar events can easily obscure the target moments. Existing methods mainly strengthen audio-text semantic interaction to enhance the query-related information in audio frames, but seldom refine the resulting audio representations before temporal localization, limiting their ability to accurately distinguish target events from irrelevant acoustic interference. To address this issue, we propose ETR-AMR, a post-fusion event-aware time-frequency refinement framework for AMR. Specifically, an event-aware time-frequency refinement (ETR) strategy is proposed after audio-text interaction to refine fused audio frame features before temporal moment localization. ETR consists of two complementary mechanisms: time frame gating and frequency refinement. The time frame gating mechanism estimates frame-wise event relevance to emphasize query-related audio frames and suppress redundant temporal responses, while frequency refinement applies learnable time-frequency reweighting to enhance discriminative event-related frequency patterns and reduce background-dominant interference. By jointly refining fused audio frame features in the temporal and frequency domains, ETR produces more discriminative event-aware features for accurate temporal boundary prediction. Experiments on four AMR datasets demonstrate that ETR-AMR achieves superior performance compared with existing methods, especially on the high-quality CASTELLA benchmark. Duration-wise analysis further confirms the effectiveness of ETR for medium and long audio moments.",
+      "published": "2026-11-16T08:31:04Z",
+      "authors": [
+        "Feiyang Xiao",
+        "Li'ang Luo",
+        "Kejia Zhang",
+        "Qiaoxi Zhu",
+        "Guangjun He",
+        "Pengming Feng",
+        "Jian Guan"
+      ],
+      "primary_category": "cs.SD",
+      "url": "https://arxiv.org/abs/2611.20725",
+      "score": 21,
+      "status": "new — under review"
+    },
+    {
+      "id": "2611.21083",
+      "title": "Think2Listen: Evidence-Centric Learning For Agentic Audio Understanding With LALMS",
+      "abstract": "Recent advances in large audio-language models (LALMs) have broadened audio understanding across speech, sound, and music, with tool-based agents further supporting these tasks by invoking predefined audio tools. However, a persistent gap remains between perceiving acoustic content and using it as evidence for reasoning: recognizing what is audible does not ensure that a model can identify which cues resolve an uncertain decision. To bridge this gap, we propose Think2Listen, an evidence-centric learning framework for agentic audio understanding. Guided by evidence before commitment, Think2Listen couples iterative reasoning with a targeted LALM interaction to actively seek acoustic cues that distinguish competing hypotheses and revise candidate judgments based on the observations returned. It learns what to ask, how to use evidence, and when to stop, using observation-induced changes in candidate-state to inform training credit. Extensive evaluations on two benchmarks spanning seven audio categories demonstrate that Think2Listen achieves (I) enhanced multi-step audio reasoning, with gains in overall accuracy of 5.08%--17.67% over competing audio agents; and (II) improved audio understanding and reasoning across speech, sound, and music, boosting overall accuracy by 2.29%--13.10% over the corresponding baselines. The source code is available at https://github.com/JinWang79/Think2Listen.",
+      "published": "2026-11-16T13:32:21Z",
+      "authors": [
+        "Jin Wang",
+        "Liang Lin",
+        "Kaiwen Luo",
+        "Weiliu Wang",
+        "Yuxuan Li",
+        "Zengxin Han",
+        "Gan Zhang",
+        "Jingtong Wu"
+      ],
+      "primary_category": "cs.SD",
+      "url": "https://arxiv.org/abs/2611.21083",
+      "score": 21,
+      "status": "new — under review"
+    },
+    {
+      "id": "2611.21300",
+      "title": "LATTE-WordSeg-Lite: Multi-Granularity Thai Word Segmentation on a CPU, with a Reproducible Benchmark",
+      "abstract": "Large language models read Thai through subword tokens, without a word segmenter. Yet Thai treebanks, speech metrics and morphological resources are built on words, often at several granularities, and word boundaries resolve ambiguities that subword tokens leave open. LATTE (Lattice ATTentive Encoding) reads a text at several granularities at once, through a lattice of dictionary words, but it is a large GPU model. We distil it into LATTE-WordSeg-Lite, a CPU segmenter of 1.17M parameters that keeps the lattice as features. It outputs compounds, words and morphemes in one pass, and learns only from annotated data and text whose licences allow commercial use. To compare it with other tools, published Thai scores do not suffice, as they come from different files, splits and scorers. We therefore rebuild seven test sets from pinned sources and score twelve systems under one protocol. With the unit that fits each test set, LATTE-WordSeg-Lite scores above DeepCut on five sets, four of them from corpora that its teachers learnt from. Called line by line on one CPU thread, it runs 23 times as fast as DeepCut. We release the model, the benchmark scripts and all predictions.",
+      "published": "2026-11-16T16:03:17Z",
+      "authors": [
+        "Thodsaporn Chay-intr",
+        "Kobkrit Viriyayudhakorn",
+        "Thanaruk Theeramunkong"
+      ],
+      "primary_category": "cs.CL",
+      "url": "https://arxiv.org/abs/2611.21300",
+      "score": 18,
+      "status": "new — under review"
+    },
+    {
+      "id": "2611.21399",
+      "title": "MegNIST, A Benchmark for Non-Invasive Inner Speech Decoding",
+      "abstract": "MegNIST is a benchmark dataset for developing and evaluating machine learning methods for inner speech decoding from magnetoencephalography (MEG). The dataset comprises 12,000 trials of a single participant imagining speaking the digits zero through nine, recorded across four sessions. Each trial contains 306-channel MEG recordings sampled at 250 Hz, preprocessed using signal space separation, filtering, and downsampling. Data are provided as pre-defined training (10,000 trials), validation (1,000 trials), and test (1,000 trials) splits, with entire experimental runs assigned to each split to preserve temporal independence. The dataset is available in both BIDS format for neuroimaging analysis and as serialised tensors for machine learning workflows. Baseline classification results demonstrate that imagined digits can be decoded significantly above chance. Standardised splits, validated baselines, example code, and a PyTorch-compatible loader in the pnpl Python library enable straightforward integration with machine learning frameworks, lowering barriers for researchers to rapidly develop and benchmark inner speech decoding methods for non-invasive brain-computer interfaces.",
+      "published": "2026-11-16T16:52:25Z",
+      "authors": [
+        "Teyun Kwon",
+        "Pratik Somaiya",
+        "Gereon Elvers",
+        "Francesco Mantegna",
+        "Anna Camera",
+        "Sven Braeutigam",
+        "Mark Woolrich",
+        "Oiwi Parker Jones"
+      ],
+      "primary_category": "cs.LG",
+      "url": "https://arxiv.org/abs/2611.21399",
+      "score": 18,
+      "status": "new — under review"
+    },
     {
       "id": "2611.13689",
       "title": "Walrus Technical Report",
@@ -874,171 +1037,6 @@
       "url": "https://arxiv.org/abs/2610.39955",
       "score": 30,
       "status": "reviewed — included: Introduces MTG-AD and its evaluation protocol for timed audio descriptions, including tests of native audio-video models with transcript assistance."
-    },
-    {
-      "id": "2610.38109",
-      "title": "Who Called? V33DA: A Physically Verified Multimodal Benchmark for Vocal Attribution in Zebra Finch Groups",
-      "abstract": "Deciding which member of an animal group produced a vocalization and where that vocalization was produced are central to studying social communication but are rarely evaluated with physically verified ground truth. Existing resources either localize sounds without identifying the caller, or recognize individuals from isolated vocalizations without reliance on the 3D candidate geometry. We close this gap with V33DA, a dataset-centered multimodal benchmark for spatial vocal attribution in social zebra finches: it comprises 33,625 verified events coupling 5-channel audio with three camera views, calibrated 3D pose for every visible candidate, and per-bird radio telemetry across 10 individuals and three experiments. Caller identity is verified from an on-body accelerometer-derived vibration signal; this channel is withheld from benchmark models and used only by an on-body reference ceiling. Given a detected vocalization and the visible candidate birds, the task is to select the caller. We evaluate it under three regimes: session-disjoint testing on familiar birds from held-out recording dates, held-out-experiment transfer to a new cohort, and leave-one-individual-out evaluation on a bird whose vocalizations are held out from training. Reference methods expose a consistent gap between in-domain accuracy and transfer to unseen individuals: methods that can exploit familiar vocal identity perform well on known callers but degrade sharply on unseen ones, whereas candidate-aware methods preserving explicit spatial reasoning transfer substantially better. The on-body reference stays near-perfect across regimes, confirming the internal consistency of the accelerometer-verified labels. We release V33DA with fixed protocols and code for the evaluated methods, and V33DA++, an unevaluated companion set of verified overlapping-call events and +/-2 s context windows.",
-      "published": "2026-10-28T00:46:34Z",
-      "authors": [
-        "Maris Basha",
-        "Yuhang Wang",
-        "Xiaoran Chen",
-        "Longbiao Cheng",
-        "Luca Yapura",
-        "Anja T. Zai",
-        "Mathieu Salzmann",
-        "Richard Hahnloser"
-      ],
-      "primary_category": "cs.SD",
-      "url": "https://arxiv.org/abs/2610.38109",
-      "score": 21,
-      "status": "reviewed — out of scope: V33DA evaluates specialized caller-attribution and localization systems on zebra finch calls, including array-based classifiers and frozen audio encoders. Its experiments do not test a general speech or audio-language model."
-    },
-    {
-      "id": "2610.36527",
-      "title": "ETC-Bench: A Multilingual Benchmark for Evaluation-Side Transcript Canonicalization",
-      "abstract": "Written transcripts of the same speech can differ in ways that are not uniquely determined by the speech signal. We formulate evaluation-side transcript canonicalization (ETC), which maps multiple surface forms to a single canonical form when their differences are not determined by speech. To our knowledge, ETC-Bench is the first and most comprehensive multilingual benchmark for evaluation-side transcript canonicalization, covering 181 phenomenon types across 12 languages. Each instance is a minimal pair that shares a sentence context and differs only in a target span exhibiting one phenomenon. To evaluate both canonicalization success and semantic preservation, we propose Semantic-preserving Exact-match Normalization Accuracy (SENA), which combines exact agreement between independently canonicalized pair members with a pair-relative BERTScore constraint against information loss. We further introduce the Taxonomy-guided Agent Canonicalization Skill (TACS), which provides LLM agents with phenomenon descriptions and explicit canonicalization contracts. Experiments with five baseline configurations and three TACS-based agents show that the agents outperform the baseline systems on shared languages. ETC-Bench provides a systematic testbed for evaluation-side transcript canonicalization across languages.",
-      "published": "2026-10-27T02:33:53Z",
-      "authors": [
-        "Zhiheng Qian",
-        "Junhao Du",
-        "Jing Peng",
-        "Hanqi Li",
-        "Kunyang Peng",
-        "Feng Xue",
-        "Kai Yu"
-      ],
-      "primary_category": "cs.CL",
-      "url": "https://arxiv.org/abs/2610.36527",
-      "score": 39,
-      "status": "reviewed — out of scope: evaluated systems are text-to-text transcript canonicalizers, including normalization modules and text-only LLM agents; inputs are written minimal pairs, not speech or audio for general spoken LLMs."
-    },
-    {
-      "id": "2610.36578",
-      "title": "AudioRSI: Recursively Self-Improving Audio Reasoners",
-      "abstract": "Reinforcement learning has made Audio Large Language Models (Audio LLMs) better reasoners, but the reward that drives it still comes from outside the model: a final-answer check, a hand-crafted process score, or an external LLM judge that stays fixed while the policy improves. We show that an Audio LLM can supply this reward itself, and can do so recursively: each improved model becomes the critic that trains its successor, so the training signal improves along with the model. We introduce AudioRSI (Recursively Self-Improving Audio Reasoners), a reinforcement learning framework in which a single model plays two roles: as an actor it generates reasoning paths, and as a critic it compares them pairwise, turning its own judgments into a process-level reward. The critic is periodically replaced by the current policy, which closes the recursive loop. Because the critic hears the same recording as the actor, it can reject reasoning that cites acoustic evidence the audio does not contain, rather than reward reasoning that merely sounds plausible. The recursion is what sustains progress: under a frozen external judge, out-of-distribution accuracy plateaus during training, while a critic refreshed from the improving policy keeps it rising. Across four out-of-distribution benchmarks, all disjoint from the AVQA training distribution, AudioRSI outperforms strong baselines including Audio Flamingo 3 and Gemini 2.5 Pro on MMAU test-mini, ranks first on MMSU, achieves a clear lead on the challenging Multi-Audio split of MMAU-Pro, and leads the 7B open-source tier on MMAR among methods without external reward models. With no reward specifying how to reason, AudioRSI also develops structured reasoning behaviors (logical reasoning, perception-aware analysis, and reduced hallucination), corroborated by an external LLM-as-Judge evaluation and a keyword-based behavior analysis.",
-      "published": "2026-10-27T03:33:35Z",
-      "authors": [
-        "Jiajun Fan",
-        "Roger Ren",
-        "Jingyuan Li",
-        "Rahul Pandey",
-        "Prashanth Gurunath Shivakumar",
-        "Ankur Gandhe",
-        "Yile Gu",
-        "Ge Liu"
-      ],
-      "primary_category": "cs.SD",
-      "url": "https://arxiv.org/abs/2610.36578",
-      "score": 27,
-      "status": "reviewed — out of scope: introduces a recursive self-critique reinforcement-learning method for audio reasoning, evaluated on existing MMAU, MMSU, MMAU-Pro and MMAR benchmarks; it does not introduce a new evaluation benchmark."
-    },
-    {
-      "id": "2610.36715",
-      "title": "SMEBENCH: Benchmarking Neural Music Editing with Synthetized MIDI Edits",
-      "abstract": "Neural music editing requires a system to perform a requested change while preserving the musical content that should remain unchanged. Existing evaluations often lack a paired target edit, making these requirements difficult to measure separately. We introduce SMEBench, a large-scale benchmark of controlled music edits constructed by modifying symbolic MIDI performances and rendering matched source and target audio. Each example contains a source, an instruction, a paired target, edit metadata, and complementary descriptions. The benchmark covers twelve instrumentation, articulation, dynamics, and pitch operations and includes a balanced 3,600-example test set together with a smaller real-audio complement derived from multitrack recordings. The paired targets allow source preservation, target agreement, and textual compatibility to be evaluated independently. We use these references to diagnose common audio-editing metrics and benchmark six representative editing systems, showing that the metric used to rank a system can materially change the conclusion. The dataset is available at our repository.",
-      "published": "2026-10-27T06:31:02Z",
-      "authors": [
-        "Matthieu Cervera",
-        "Francesco Paissan",
-        "Micael Antunes",
-        "Mirco Ravanelli",
-        "Ricard Marxer",
-        "Cem Subakan"
-      ],
-      "primary_category": "cs.SD",
-      "url": "https://arxiv.org/abs/2610.36715",
-      "score": 21,
-      "status": "reviewed — out of scope: benchmarks specialized music-editing and generation systems built on AudioLDM2 and MusicGen, rather than general-purpose spoken or audio-language models."
-    },
-    {
-      "id": "2610.34746",
-      "title": "DecisionTraceBench: Tracking Decision-Critical Information in Multi-Party Spoken Conversations",
-      "abstract": "In high-stakes domains such as finance, critical information evolves through multi-party interaction. Recovering these changes and their sources is fundamental to reliable speech understanding. Existing speech benchmarks focus on transcription, local understanding, and turn-level state prediction, leaving joint decision evolution across speakers insufficiently evaluated. We introduce DecisionTraceBench, a speech state-tracking benchmark for Decision-Critical Information State Tracking (DCIST). It jointly evaluates decision event sequences, speaker attribution, scope, and temporal evidence, using trajectory-level F1 to measure complete event-chain recovery. Our dataset comprises Chinese financial dialogues involving two to four speakers, with 100.39 hours of synthetic audio and 8.61 hours of human-performed recordings. On a fixed cohort of human-performed recordings, five cascaded systems and two direct-audio models achieve DCIST scores of 5.73% to 21.35%. Ablations with speaker-labeled reference scripts and no temporal localization requirements yield a maximum score of only 38.72%. Audio perturbation experiments further show that overall transcription error rates do not adequately reflect complete trajectory recovery. These findings reveal limitations in jointly understanding information provenance and state evolution, providing a benchmark for evaluating decision-process understanding and decision traceability in high-stakes speech applications.",
-      "published": "2026-10-26T02:46:07Z",
-      "authors": [
-        "Wenchao Du",
-        "Fangxin Shang",
-        "Long Wu",
-        "Runze Cui",
-        "Qing Yang",
-        "Yehui Yang"
-      ],
-      "primary_category": "cs.CL",
-      "url": "https://arxiv.org/abs/2610.34746",
-      "score": 36,
-      "status": "reviewed — included: DecisionTraceBench introduces an evaluation set or protocol for general speech/audio-language models; modality, score and configuration limits are documented in the catalogue"
-    },
-    {
-      "id": "2610.34616",
-      "title": "CSI-TextBench: A Dataset and Benchmark for Language-Grounded Ambient Sensing Perception",
-      "abstract": "Indoor context deciphered by ambient sensing underpins many applications, from assisted living to smart buildings, yet remains weakly connected to the language-aligned paradigm of modern multimodal systems. Through billions of IoT devices, ambient WiFi Channel State Information (CSI) captures the indoor context of human activity and environmental dynamics passively via ubiquitous, always-on infrastructure. However, unlike vision or audio, CSI lacks naturally paired text like captions or transcripts, limiting its integration with language-driven AI systems. We present CSI-TextBench, a large-scale dataset and benchmark for aligning CSI data with natural language, unifying 3 sensing benchmarks into 285,790 samples across 7 tasks and pairing them with 2,291 hierarchically structured, label-derived descriptions via many-to-many assignment to construct 2.0 million CSI-text training tuples. Benchmarking 5 alignment methods from 4 paradigm families, we show that contrastive CSI-text alignment matches supervised classifiers without class labels, adapts to unseen classes with few samples, and responds to open-vocabulary natural-language prompts. A single unified model supports compositional scene understanding, answering joint queries over activity, proximity, and identity, achieving 86.9% top-1 accuracy on 140 composite scenes, outperforming task-specific classifier ensembles. CSI-TextBench enables ubiquitous ambient sensing as a language-indexed perception layer, enabling indoor contextual awareness in language-driven AI systems.",
-      "published": "2026-10-25T22:27:32Z",
-      "authors": [
-        "Guozhen Zhu",
-        "Yuqian Hu",
-        "Sakila S Jayaweera",
-        "Wei-Hsiang Wang",
-        "Beibei Wang",
-        "K. J. Ray Liu"
-      ],
-      "primary_category": "cs.AI",
-      "url": "https://arxiv.org/abs/2610.34616",
-      "score": 33,
-      "status": "reviewed — out of scope: The proposed benchmark evaluates WiFi CSI-to-text sensing alignment, not general speech/audio-language models."
-    },
-    {
-      "id": "2610.34413",
-      "title": "In-Context Adapter Generation for Compositional Generalization in Large Audio Language Models",
-      "abstract": "Large audio language models (LALMs) have achieved strong performance on standard speech and audio understanding tasks, yet their ability to systematically generalize to novel task compositions remains underexplored. Taking a meta-learning view, we extend Text-to-LoRA (T2L) to LALMs, generating instruction-conditioned LoRA adapters with a Transformer hypernetwork rather than learning a single fixed adapter shared across instructions. To exploit fine-grained task information, we introduce in-context adapter generation (ICAG), a token-level hypernetwork architecture; we call the resulting method T2L-ICAG. We evaluate this approach on two representative LALMs using SIFT-50M for supervised fine-tuning and construct a controlled compositional evaluation suite covering five task classes. Across two LALM backbones, T2L-ICAG consistently improves over static LoRA and also the global embedding-based T2L baseline. Coverage and capacity analyses further show that these gains are larger on structurally out-of-domain tasks and cannot be explained by parameter count alone. These results suggest that generating task-specific adapters from instructions is a promising direction for improving compositional generalization of LALMs.",
-      "published": "2026-10-25T16:10:49Z",
-      "authors": [
-        "Yiwei Guo",
-        "Siqi Huang",
-        "Bohan Li",
-        "Jing Peng",
-        "Hankun Wang",
-        "Zhihan Li",
-        "Kai Yu"
-      ],
-      "primary_category": "eess.AS",
-      "url": "https://arxiv.org/abs/2610.34413",
-      "score": 27,
-      "status": "reviewed — included: Compositional audio evaluation (T2L-ICAG paper) introduces an evaluation set or protocol for general speech/audio-language models; modality, score and configuration limits are documented in the catalogue"
-    },
-    {
-      "id": "2610.35725",
-      "title": "The Watchtower Imperative: Lifespan-Calibrated Evaluation for Frontier AI",
-      "abstract": "The gap between AI capability deployment and safety assurance is structural and cannot be closed through internal evaluations alone. Analyzing documented harms (2017-2026) across the human lifespan reveals that disparate incidents --- from voice assistants endangering children to AI companions implicated in adolescent suicide and automated care denials for the elderly --- reflect a single failure: evaluating systems against an implicit adult user model. We introduce five developmental moderators structured into a Lifespan Vulnerability Matrix across six life stages. The matrix reveals a nonmonotonic risk distribution: vulnerability peaks at both ends of the lifespan, governance coverage is asymmetrical, and authority to convert model errors into real-world impact is scrutinized least. We then propose a set of lifespan design principles generalizing existing child-protective instruments, and an institution-agnostic, three-tier external evaluation framework --- comprising automated simulation, expert red teaming, and post-deployment monitoring --- indexed directly to matrix risk cells.",
-      "published": "2026-10-26T16:44:50Z",
-      "authors": [
-        "Casey M. Williams",
-        "Jennifer Victoria Scurrell"
-      ],
-      "primary_category": "cs.CY",
-      "url": "https://arxiv.org/abs/2610.35725",
-      "score": 27,
-      "status": "reviewed — out of scope: Presents a conceptual governance and safety framework, without an operational benchmark or evaluation set for general speech/audio-language models."
-    },
-    {
-      "id": "2610.34991",
-      "title": "Diagnosing and Mitigating Long-Session Degradation in Full-Duplex Speech Models",
-      "abstract": "End-to-end full-duplex spoken dialogue models enable natural, real-time spoken interactions with interruptions, backchannels, and overlapping speech. Prior evaluations have assessed diverse interaction capabilities and identified some degradation patterns across conversational turns. However, how model behavior evolves over extended sessions remains insufficiently understood. In this work, we address this gap by systematically characterizing long-session degradation and developing efficient methods to mitigate it. We introduce a closed-loop evaluation framework for long-session stability and apply it to several publicly available full-duplex speech models, revealing degradation over time in responsiveness, spoken content quality, and voice consistency. To mitigate this degradation, we propose a self-distillation-based training framework for lightweight LoRA adaptation that improves long-session stability with a small amount of additional training. We further introduce a two-resolution context (TRC) architecture that preserves recent interactions in full detail while compressing older interaction history into key-value representations. We evaluate our methods on three models with distinct architectures, assessing long-session stability, information retention, and computational efficiency. Across all three models, we show that LoRA adaptation mitigates performance degradation over ten-minute sessions, while adding TRC extends these gains beyond the training session length and reduces KV-cache growth by more than 90%.",
-      "published": "2026-10-26T08:03:01Z",
-      "authors": [
-        "Junho Kim",
-        "CheHyun Lee",
-        "Donghun Kang",
-        "Youngho Cho",
-        "Dongwook Lee",
-        "Heeseung Kim",
-        "Sungroh Yoon"
-      ],
-      "primary_category": "cs.CL",
-      "url": "https://arxiv.org/abs/2610.34991",
-      "score": 24,
-      "status": "reviewed — included: Long-session full-duplex stability evaluation introduces an evaluation set or protocol for general speech/audio-language models; modality, score and configuration limits are documented in the catalogue"
     }
   ],
   "warnings": []
