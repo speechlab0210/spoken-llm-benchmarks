@@ -2,14 +2,16 @@
  "since": "2026-08-22",
  "what": "Every arXiv paper the daily crawl has flagged since launch (score at or above the threshold, not previously seen), with the reviewer's verdict as written in the feed and whether the paper entered the catalogue. \"published\" is the paper's arXiv date. See the Method section of the site.",
  "flagged": 360,
- "admitted": 110,
+ "admitted": 111,
  "entries": [
   {
    "id": "2611.24706",
    "title": "Can Omni-modal LLMs Understand Spoken Intentions?",
    "published": "2026-11-18T16:31:52Z",
    "score": 21,
-   "outcome": "under review"
+   "outcome": "admitted",
+   "verdict": "reviewed — added: O-IN-Bench (o-in-bench); introduces native audio-video spoken-intention evaluation for general-purpose omni-modal models, with separate request, content and silence judgments.",
+   "catalogue_id": "o-in-bench"
   },
   {
    "id": "2611.22704",

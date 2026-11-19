@@ -158904,6 +158904,1838 @@
       "value": 32.9,
       "source": "arXiv:2611.22704v1 Table S10; Audio panel, row Audio-Flamingo-3, column Engagement macro-F1; reported table value on the private test set.",
       "source_url": "https://arxiv.org/pdf/2611.22704v1#page=23"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen3-5-omni-flash",
+      "metric": "DSR: Direct Scene-based Request sample score (0–100) [native AV; Qwen3.5-Omni-Flash; default thinking]",
+      "value": 45.3,
+      "source": "arXiv:2611.24706v1 Table 2; row Qwen3.5-Omni-Flash, column DSR; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen3-5-omni-flash",
+      "metric": "SR: Spatial Reference sample score (0–100) [native AV; Qwen3.5-Omni-Flash; default thinking]",
+      "value": 42.2,
+      "source": "arXiv:2611.24706v1 Table 2; row Qwen3.5-Omni-Flash, column SR; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen3-5-omni-flash",
+      "metric": "TR: Temporal Reference sample score (0–100) [native AV; Qwen3.5-Omni-Flash; default thinking]",
+      "value": 42.0,
+      "source": "arXiv:2611.24706v1 Table 2; row Qwen3.5-Omni-Flash, column TR; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen3-5-omni-flash",
+      "metric": "MSA: Multi-Speaker Attribution sample score (0–100) [native AV; Qwen3.5-Omni-Flash; default thinking]",
+      "value": 13.5,
+      "source": "arXiv:2611.24706v1 Table 2; row Qwen3.5-Omni-Flash, column MSA; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen3-5-omni-flash",
+      "metric": "AST: Addressee Shift Tracking sample score (0–100) [native AV; Qwen3.5-Omni-Flash; default thinking]",
+      "value": 17.5,
+      "source": "arXiv:2611.24706v1 Table 2; row Qwen3.5-Omni-Flash, column AST; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen3-5-omni-flash",
+      "metric": "BIF: Background Information Filtering sample score (0–100) [native AV; Qwen3.5-Omni-Flash; default thinking]",
+      "value": 37.1,
+      "source": "arXiv:2611.24706v1 Table 2; row Qwen3.5-Omni-Flash, column BIF; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen3-5-omni-flash",
+      "metric": "CA: Conditional Assistance sample score (0–100) [native AV; Qwen3.5-Omni-Flash; default thinking]",
+      "value": 32.3,
+      "source": "arXiv:2611.24706v1 Table 2; row Qwen3.5-Omni-Flash, column CA; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen3-5-omni-flash",
+      "metric": "TD: Trouble Discernment sample score (0–100) [native AV; Qwen3.5-Omni-Flash; default thinking]",
+      "value": 39.9,
+      "source": "arXiv:2611.24706v1 Table 2; row Qwen3.5-Omni-Flash, column TD; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen3-5-omni-flash",
+      "metric": "VCR: Visual Contextual Reasoning sample score (0–100) [native AV; Qwen3.5-Omni-Flash; default thinking]",
+      "value": 43.4,
+      "source": "arXiv:2611.24706v1 Table 2; row Qwen3.5-Omni-Flash, column VCR; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen3-5-omni-flash",
+      "metric": "MER: Multimodal Emotion Recognition sample score (0–100) [native AV; Qwen3.5-Omni-Flash; default thinking]",
+      "value": 74.5,
+      "source": "arXiv:2611.24706v1 Table 2; row Qwen3.5-Omni-Flash, column MER; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen3-5-omni-flash",
+      "metric": "RRT: Request Revision Tracking sample score (0–100) [native AV; Qwen3.5-Omni-Flash; default thinking]",
+      "value": 39.6,
+      "source": "arXiv:2611.24706v1 Table 2; row Qwen3.5-Omni-Flash, column RRT; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen3-5-omni-flash",
+      "metric": "MCI: Multimodal Constraint Integration sample score (0–100) [native AV; Qwen3.5-Omni-Flash; default thinking]",
+      "value": 18.6,
+      "source": "arXiv:2611.24706v1 Table 2; row Qwen3.5-Omni-Flash, column MCI; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen3-5-omni-flash",
+      "metric": "MPR: Multi-Party Reconciliation sample score (0–100) [native AV; Qwen3.5-Omni-Flash; default thinking]",
+      "value": 3.7,
+      "source": "arXiv:2611.24706v1 Table 2; row Qwen3.5-Omni-Flash, column MPR; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen3-5-omni-flash",
+      "metric": "RD: Request Disambiguation sample score (0–100) [native AV; Qwen3.5-Omni-Flash; default thinking]",
+      "value": 24.4,
+      "source": "arXiv:2611.24706v1 Table 2; row Qwen3.5-Omni-Flash, column RD; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen3-5-omni-flash",
+      "metric": "ESA: Evidence Sufficiency Assessment sample score (0–100) [native AV; Qwen3.5-Omni-Flash; default thinking]",
+      "value": 38.0,
+      "source": "arXiv:2611.24706v1 Table 2; row Qwen3.5-Omni-Flash, column ESA; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen3-5-omni-flash",
+      "metric": "FPC: False Premise Correction sample score (0–100) [native AV; Qwen3.5-Omni-Flash; default thinking]",
+      "value": 30.1,
+      "source": "arXiv:2611.24706v1 Table 2; row Qwen3.5-Omni-Flash, column FPC; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen3-5-omni-flash",
+      "metric": "Overall sample score (0–100) [native AV; Qwen3.5-Omni-Flash; default thinking]",
+      "value": 34.2,
+      "source": "arXiv:2611.24706v1 Table 2; row Qwen3.5-Omni-Flash, column Overall; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-2-5-flash-lite",
+      "metric": "DSR: Direct Scene-based Request sample score (0–100) [native AV; Gemini2.5-Flash-Lite; default thinking]",
+      "value": 48.0,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini2.5-Flash-Lite, column DSR; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-2-5-flash-lite",
+      "metric": "SR: Spatial Reference sample score (0–100) [native AV; Gemini2.5-Flash-Lite; default thinking]",
+      "value": 46.7,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini2.5-Flash-Lite, column SR; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-2-5-flash-lite",
+      "metric": "TR: Temporal Reference sample score (0–100) [native AV; Gemini2.5-Flash-Lite; default thinking]",
+      "value": 33.0,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini2.5-Flash-Lite, column TR; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-2-5-flash-lite",
+      "metric": "MSA: Multi-Speaker Attribution sample score (0–100) [native AV; Gemini2.5-Flash-Lite; default thinking]",
+      "value": 33.8,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini2.5-Flash-Lite, column MSA; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-2-5-flash-lite",
+      "metric": "AST: Addressee Shift Tracking sample score (0–100) [native AV; Gemini2.5-Flash-Lite; default thinking]",
+      "value": 47.6,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini2.5-Flash-Lite, column AST; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-2-5-flash-lite",
+      "metric": "BIF: Background Information Filtering sample score (0–100) [native AV; Gemini2.5-Flash-Lite; default thinking]",
+      "value": 25.7,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini2.5-Flash-Lite, column BIF; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-2-5-flash-lite",
+      "metric": "CA: Conditional Assistance sample score (0–100) [native AV; Gemini2.5-Flash-Lite; default thinking]",
+      "value": 59.7,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini2.5-Flash-Lite, column CA; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-2-5-flash-lite",
+      "metric": "TD: Trouble Discernment sample score (0–100) [native AV; Gemini2.5-Flash-Lite; default thinking]",
+      "value": 14.9,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini2.5-Flash-Lite, column TD; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-2-5-flash-lite",
+      "metric": "VCR: Visual Contextual Reasoning sample score (0–100) [native AV; Gemini2.5-Flash-Lite; default thinking]",
+      "value": 38.0,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini2.5-Flash-Lite, column VCR; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-2-5-flash-lite",
+      "metric": "MER: Multimodal Emotion Recognition sample score (0–100) [native AV; Gemini2.5-Flash-Lite; default thinking]",
+      "value": 57.5,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini2.5-Flash-Lite, column MER; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-2-5-flash-lite",
+      "metric": "RRT: Request Revision Tracking sample score (0–100) [native AV; Gemini2.5-Flash-Lite; default thinking]",
+      "value": 35.4,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini2.5-Flash-Lite, column RRT; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-2-5-flash-lite",
+      "metric": "MCI: Multimodal Constraint Integration sample score (0–100) [native AV; Gemini2.5-Flash-Lite; default thinking]",
+      "value": 11.6,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini2.5-Flash-Lite, column MCI; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-2-5-flash-lite",
+      "metric": "MPR: Multi-Party Reconciliation sample score (0–100) [native AV; Gemini2.5-Flash-Lite; default thinking]",
+      "value": 1.9,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini2.5-Flash-Lite, column MPR; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-2-5-flash-lite",
+      "metric": "RD: Request Disambiguation sample score (0–100) [native AV; Gemini2.5-Flash-Lite; default thinking]",
+      "value": 36.0,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini2.5-Flash-Lite, column RD; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-2-5-flash-lite",
+      "metric": "ESA: Evidence Sufficiency Assessment sample score (0–100) [native AV; Gemini2.5-Flash-Lite; default thinking]",
+      "value": 29.3,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini2.5-Flash-Lite, column ESA; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-2-5-flash-lite",
+      "metric": "FPC: False Premise Correction sample score (0–100) [native AV; Gemini2.5-Flash-Lite; default thinking]",
+      "value": 35.5,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini2.5-Flash-Lite, column FPC; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-2-5-flash-lite",
+      "metric": "Overall sample score (0–100) [native AV; Gemini2.5-Flash-Lite; default thinking]",
+      "value": 36.3,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini2.5-Flash-Lite, column Overall; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-2-5-flash",
+      "metric": "DSR: Direct Scene-based Request sample score (0–100) [native AV; Gemini2.5-Flash; default thinking]",
+      "value": 57.4,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini2.5-Flash, column DSR; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-2-5-flash",
+      "metric": "SR: Spatial Reference sample score (0–100) [native AV; Gemini2.5-Flash; default thinking]",
+      "value": 47.8,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini2.5-Flash, column SR; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-2-5-flash",
+      "metric": "TR: Temporal Reference sample score (0–100) [native AV; Gemini2.5-Flash; default thinking]",
+      "value": 47.7,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini2.5-Flash, column TR; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-2-5-flash",
+      "metric": "MSA: Multi-Speaker Attribution sample score (0–100) [native AV; Gemini2.5-Flash; default thinking]",
+      "value": 43.2,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini2.5-Flash, column MSA; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-2-5-flash",
+      "metric": "AST: Addressee Shift Tracking sample score (0–100) [native AV; Gemini2.5-Flash; default thinking]",
+      "value": 67.5,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini2.5-Flash, column AST; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-2-5-flash",
+      "metric": "BIF: Background Information Filtering sample score (0–100) [native AV; Gemini2.5-Flash; default thinking]",
+      "value": 41.4,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini2.5-Flash, column BIF; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-2-5-flash",
+      "metric": "CA: Conditional Assistance sample score (0–100) [native AV; Gemini2.5-Flash; default thinking]",
+      "value": 67.7,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini2.5-Flash, column CA; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-2-5-flash",
+      "metric": "TD: Trouble Discernment sample score (0–100) [native AV; Gemini2.5-Flash; default thinking]",
+      "value": 32.1,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini2.5-Flash, column TD; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-2-5-flash",
+      "metric": "VCR: Visual Contextual Reasoning sample score (0–100) [native AV; Gemini2.5-Flash; default thinking]",
+      "value": 56.0,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini2.5-Flash, column VCR; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-2-5-flash",
+      "metric": "MER: Multimodal Emotion Recognition sample score (0–100) [native AV; Gemini2.5-Flash; default thinking]",
+      "value": 69.8,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini2.5-Flash, column MER; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-2-5-flash",
+      "metric": "RRT: Request Revision Tracking sample score (0–100) [native AV; Gemini2.5-Flash; default thinking]",
+      "value": 56.1,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini2.5-Flash, column RRT; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-2-5-flash",
+      "metric": "MCI: Multimodal Constraint Integration sample score (0–100) [native AV; Gemini2.5-Flash; default thinking]",
+      "value": 18.6,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini2.5-Flash, column MCI; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-2-5-flash",
+      "metric": "MPR: Multi-Party Reconciliation sample score (0–100) [native AV; Gemini2.5-Flash; default thinking]",
+      "value": 3.7,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini2.5-Flash, column MPR; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-2-5-flash",
+      "metric": "RD: Request Disambiguation sample score (0–100) [native AV; Gemini2.5-Flash; default thinking]",
+      "value": 38.4,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini2.5-Flash, column RD; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-2-5-flash",
+      "metric": "ESA: Evidence Sufficiency Assessment sample score (0–100) [native AV; Gemini2.5-Flash; default thinking]",
+      "value": 35.9,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini2.5-Flash, column ESA; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-2-5-flash",
+      "metric": "FPC: False Premise Correction sample score (0–100) [native AV; Gemini2.5-Flash; default thinking]",
+      "value": 41.0,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini2.5-Flash, column FPC; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-2-5-flash",
+      "metric": "Overall sample score (0–100) [native AV; Gemini2.5-Flash; default thinking]",
+      "value": 47.7,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini2.5-Flash, column Overall; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-2-5-pro",
+      "metric": "DSR: Direct Scene-based Request sample score (0–100) [native AV; Gemini2.5-Pro; default thinking]",
+      "value": 65.5,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini2.5-Pro, column DSR; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-2-5-pro",
+      "metric": "SR: Spatial Reference sample score (0–100) [native AV; Gemini2.5-Pro; default thinking]",
+      "value": 43.3,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini2.5-Pro, column SR; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-2-5-pro",
+      "metric": "TR: Temporal Reference sample score (0–100) [native AV; Gemini2.5-Pro; default thinking]",
+      "value": 50.0,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini2.5-Pro, column TR; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-2-5-pro",
+      "metric": "MSA: Multi-Speaker Attribution sample score (0–100) [native AV; Gemini2.5-Pro; default thinking]",
+      "value": 31.8,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini2.5-Pro, column MSA; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-2-5-pro",
+      "metric": "AST: Addressee Shift Tracking sample score (0–100) [native AV; Gemini2.5-Pro; default thinking]",
+      "value": 60.8,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini2.5-Pro, column AST; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-2-5-pro",
+      "metric": "BIF: Background Information Filtering sample score (0–100) [native AV; Gemini2.5-Pro; default thinking]",
+      "value": 32.9,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini2.5-Pro, column BIF; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-2-5-pro",
+      "metric": "CA: Conditional Assistance sample score (0–100) [native AV; Gemini2.5-Pro; default thinking]",
+      "value": 62.1,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini2.5-Pro, column CA; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-2-5-pro",
+      "metric": "TD: Trouble Discernment sample score (0–100) [native AV; Gemini2.5-Pro; default thinking]",
+      "value": 55.4,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini2.5-Pro, column TD; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-2-5-pro",
+      "metric": "VCR: Visual Contextual Reasoning sample score (0–100) [native AV; Gemini2.5-Pro; default thinking]",
+      "value": 31.3,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini2.5-Pro, column VCR; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-2-5-pro",
+      "metric": "MER: Multimodal Emotion Recognition sample score (0–100) [native AV; Gemini2.5-Pro; default thinking]",
+      "value": 69.8,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini2.5-Pro, column MER; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-2-5-pro",
+      "metric": "RRT: Request Revision Tracking sample score (0–100) [native AV; Gemini2.5-Pro; default thinking]",
+      "value": 55.5,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini2.5-Pro, column RRT; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-2-5-pro",
+      "metric": "MCI: Multimodal Constraint Integration sample score (0–100) [native AV; Gemini2.5-Pro; default thinking]",
+      "value": 22.1,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini2.5-Pro, column MCI; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-2-5-pro",
+      "metric": "MPR: Multi-Party Reconciliation sample score (0–100) [native AV; Gemini2.5-Pro; default thinking]",
+      "value": 14.8,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini2.5-Pro, column MPR; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-2-5-pro",
+      "metric": "RD: Request Disambiguation sample score (0–100) [native AV; Gemini2.5-Pro; default thinking]",
+      "value": 42.1,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini2.5-Pro, column RD; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-2-5-pro",
+      "metric": "ESA: Evidence Sufficiency Assessment sample score (0–100) [native AV; Gemini2.5-Pro; default thinking]",
+      "value": 41.3,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini2.5-Pro, column ESA; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-2-5-pro",
+      "metric": "FPC: False Premise Correction sample score (0–100) [native AV; Gemini2.5-Pro; default thinking]",
+      "value": 37.3,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini2.5-Pro, column FPC; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-2-5-pro",
+      "metric": "Overall sample score (0–100) [native AV; Gemini2.5-Pro; default thinking]",
+      "value": 46.7,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini2.5-Pro, column Overall; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-3-1-flash-lite",
+      "metric": "DSR: Direct Scene-based Request sample score (0–100) [native AV; Gemini3.1-Flash-Lite; default thinking]",
+      "value": 54.7,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini3.1-Flash-Lite, column DSR; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-3-1-flash-lite",
+      "metric": "SR: Spatial Reference sample score (0–100) [native AV; Gemini3.1-Flash-Lite; default thinking]",
+      "value": 44.4,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini3.1-Flash-Lite, column SR; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-3-1-flash-lite",
+      "metric": "TR: Temporal Reference sample score (0–100) [native AV; Gemini3.1-Flash-Lite; default thinking]",
+      "value": 46.6,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini3.1-Flash-Lite, column TR; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-3-1-flash-lite",
+      "metric": "MSA: Multi-Speaker Attribution sample score (0–100) [native AV; Gemini3.1-Flash-Lite; default thinking]",
+      "value": 28.4,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini3.1-Flash-Lite, column MSA; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-3-1-flash-lite",
+      "metric": "AST: Addressee Shift Tracking sample score (0–100) [native AV; Gemini3.1-Flash-Lite; default thinking]",
+      "value": 48.8,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini3.1-Flash-Lite, column AST; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-3-1-flash-lite",
+      "metric": "BIF: Background Information Filtering sample score (0–100) [native AV; Gemini3.1-Flash-Lite; default thinking]",
+      "value": 34.3,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini3.1-Flash-Lite, column BIF; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-3-1-flash-lite",
+      "metric": "CA: Conditional Assistance sample score (0–100) [native AV; Gemini3.1-Flash-Lite; default thinking]",
+      "value": 49.2,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini3.1-Flash-Lite, column CA; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-3-1-flash-lite",
+      "metric": "TD: Trouble Discernment sample score (0–100) [native AV; Gemini3.1-Flash-Lite; default thinking]",
+      "value": 58.9,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini3.1-Flash-Lite, column TD; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-3-1-flash-lite",
+      "metric": "VCR: Visual Contextual Reasoning sample score (0–100) [native AV; Gemini3.1-Flash-Lite; default thinking]",
+      "value": 50.0,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini3.1-Flash-Lite, column VCR; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-3-1-flash-lite",
+      "metric": "MER: Multimodal Emotion Recognition sample score (0–100) [native AV; Gemini3.1-Flash-Lite; default thinking]",
+      "value": 66.0,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini3.1-Flash-Lite, column MER; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-3-1-flash-lite",
+      "metric": "RRT: Request Revision Tracking sample score (0–100) [native AV; Gemini3.1-Flash-Lite; default thinking]",
+      "value": 39.6,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini3.1-Flash-Lite, column RRT; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-3-1-flash-lite",
+      "metric": "MCI: Multimodal Constraint Integration sample score (0–100) [native AV; Gemini3.1-Flash-Lite; default thinking]",
+      "value": 19.8,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini3.1-Flash-Lite, column MCI; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-3-1-flash-lite",
+      "metric": "MPR: Multi-Party Reconciliation sample score (0–100) [native AV; Gemini3.1-Flash-Lite; default thinking]",
+      "value": 7.4,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini3.1-Flash-Lite, column MPR; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-3-1-flash-lite",
+      "metric": "RD: Request Disambiguation sample score (0–100) [native AV; Gemini3.1-Flash-Lite; default thinking]",
+      "value": 36.6,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini3.1-Flash-Lite, column RD; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-3-1-flash-lite",
+      "metric": "ESA: Evidence Sufficiency Assessment sample score (0–100) [native AV; Gemini3.1-Flash-Lite; default thinking]",
+      "value": 42.4,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini3.1-Flash-Lite, column ESA; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-3-1-flash-lite",
+      "metric": "FPC: False Premise Correction sample score (0–100) [native AV; Gemini3.1-Flash-Lite; default thinking]",
+      "value": 42.8,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini3.1-Flash-Lite, column FPC; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-3-1-flash-lite",
+      "metric": "Overall sample score (0–100) [native AV; Gemini3.1-Flash-Lite; default thinking]",
+      "value": 43.9,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini3.1-Flash-Lite, column Overall; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-3-5-flash",
+      "metric": "DSR: Direct Scene-based Request sample score (0–100) [native AV; Gemini3.5-Flash; default thinking]",
+      "value": 72.3,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini3.5-Flash, column DSR; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-3-5-flash",
+      "metric": "SR: Spatial Reference sample score (0–100) [native AV; Gemini3.5-Flash; default thinking]",
+      "value": 60.0,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini3.5-Flash, column SR; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-3-5-flash",
+      "metric": "TR: Temporal Reference sample score (0–100) [native AV; Gemini3.5-Flash; default thinking]",
+      "value": 58.0,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini3.5-Flash, column TR; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-3-5-flash",
+      "metric": "MSA: Multi-Speaker Attribution sample score (0–100) [native AV; Gemini3.5-Flash; default thinking]",
+      "value": 44.6,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini3.5-Flash, column MSA; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-3-5-flash",
+      "metric": "AST: Addressee Shift Tracking sample score (0–100) [native AV; Gemini3.5-Flash; default thinking]",
+      "value": 75.9,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini3.5-Flash, column AST; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-3-5-flash",
+      "metric": "BIF: Background Information Filtering sample score (0–100) [native AV; Gemini3.5-Flash; default thinking]",
+      "value": 48.6,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini3.5-Flash, column BIF; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-3-5-flash",
+      "metric": "CA: Conditional Assistance sample score (0–100) [native AV; Gemini3.5-Flash; default thinking]",
+      "value": 81.5,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini3.5-Flash, column CA; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-3-5-flash",
+      "metric": "TD: Trouble Discernment sample score (0–100) [native AV; Gemini3.5-Flash; default thinking]",
+      "value": 78.0,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini3.5-Flash, column TD; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-3-5-flash",
+      "metric": "VCR: Visual Contextual Reasoning sample score (0–100) [native AV; Gemini3.5-Flash; default thinking]",
+      "value": 52.4,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini3.5-Flash, column VCR; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-3-5-flash",
+      "metric": "MER: Multimodal Emotion Recognition sample score (0–100) [native AV; Gemini3.5-Flash; default thinking]",
+      "value": 56.6,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini3.5-Flash, column MER; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-3-5-flash",
+      "metric": "RRT: Request Revision Tracking sample score (0–100) [native AV; Gemini3.5-Flash; default thinking]",
+      "value": 68.3,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini3.5-Flash, column RRT; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-3-5-flash",
+      "metric": "MCI: Multimodal Constraint Integration sample score (0–100) [native AV; Gemini3.5-Flash; default thinking]",
+      "value": 33.7,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini3.5-Flash, column MCI; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-3-5-flash",
+      "metric": "MPR: Multi-Party Reconciliation sample score (0–100) [native AV; Gemini3.5-Flash; default thinking]",
+      "value": 11.1,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini3.5-Flash, column MPR; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-3-5-flash",
+      "metric": "RD: Request Disambiguation sample score (0–100) [native AV; Gemini3.5-Flash; default thinking]",
+      "value": 52.4,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini3.5-Flash, column RD; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-3-5-flash",
+      "metric": "ESA: Evidence Sufficiency Assessment sample score (0–100) [native AV; Gemini3.5-Flash; default thinking]",
+      "value": 42.4,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini3.5-Flash, column ESA; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-3-5-flash",
+      "metric": "FPC: False Premise Correction sample score (0–100) [native AV; Gemini3.5-Flash; default thinking]",
+      "value": 42.8,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini3.5-Flash, column FPC; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-3-5-flash",
+      "metric": "Overall sample score (0–100) [native AV; Gemini3.5-Flash; default thinking]",
+      "value": 58.0,
+      "source": "arXiv:2611.24706v1 Table 2; row Gemini3.5-Flash, column Overall; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "omnivinci",
+      "metric": "DSR: Direct Scene-based Request sample score (0–100) [native AV; OmniVinci-9B]",
+      "value": 0.0,
+      "source": "arXiv:2611.24706v1 Table 2; row OmniVinci-9B, column DSR; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "omnivinci",
+      "metric": "SR: Spatial Reference sample score (0–100) [native AV; OmniVinci-9B]",
+      "value": 1.1,
+      "source": "arXiv:2611.24706v1 Table 2; row OmniVinci-9B, column SR; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "omnivinci",
+      "metric": "TR: Temporal Reference sample score (0–100) [native AV; OmniVinci-9B]",
+      "value": 0.0,
+      "source": "arXiv:2611.24706v1 Table 2; row OmniVinci-9B, column TR; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "omnivinci",
+      "metric": "MSA: Multi-Speaker Attribution sample score (0–100) [native AV; OmniVinci-9B]",
+      "value": 0.0,
+      "source": "arXiv:2611.24706v1 Table 2; row OmniVinci-9B, column MSA; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "omnivinci",
+      "metric": "AST: Addressee Shift Tracking sample score (0–100) [native AV; OmniVinci-9B]",
+      "value": 0.0,
+      "source": "arXiv:2611.24706v1 Table 2; row OmniVinci-9B, column AST; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "omnivinci",
+      "metric": "BIF: Background Information Filtering sample score (0–100) [native AV; OmniVinci-9B]",
+      "value": 0.0,
+      "source": "arXiv:2611.24706v1 Table 2; row OmniVinci-9B, column BIF; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "omnivinci",
+      "metric": "CA: Conditional Assistance sample score (0–100) [native AV; OmniVinci-9B]",
+      "value": 0.0,
+      "source": "arXiv:2611.24706v1 Table 2; row OmniVinci-9B, column CA; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "omnivinci",
+      "metric": "TD: Trouble Discernment sample score (0–100) [native AV; OmniVinci-9B]",
+      "value": 0.0,
+      "source": "arXiv:2611.24706v1 Table 2; row OmniVinci-9B, column TD; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "omnivinci",
+      "metric": "VCR: Visual Contextual Reasoning sample score (0–100) [native AV; OmniVinci-9B]",
+      "value": 0.0,
+      "source": "arXiv:2611.24706v1 Table 2; row OmniVinci-9B, column VCR; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "omnivinci",
+      "metric": "MER: Multimodal Emotion Recognition sample score (0–100) [native AV; OmniVinci-9B]",
+      "value": 0.0,
+      "source": "arXiv:2611.24706v1 Table 2; row OmniVinci-9B, column MER; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "omnivinci",
+      "metric": "RRT: Request Revision Tracking sample score (0–100) [native AV; OmniVinci-9B]",
+      "value": 1.2,
+      "source": "arXiv:2611.24706v1 Table 2; row OmniVinci-9B, column RRT; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "omnivinci",
+      "metric": "MCI: Multimodal Constraint Integration sample score (0–100) [native AV; OmniVinci-9B]",
+      "value": 0.0,
+      "source": "arXiv:2611.24706v1 Table 2; row OmniVinci-9B, column MCI; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "omnivinci",
+      "metric": "MPR: Multi-Party Reconciliation sample score (0–100) [native AV; OmniVinci-9B]",
+      "value": 0.0,
+      "source": "arXiv:2611.24706v1 Table 2; row OmniVinci-9B, column MPR; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "omnivinci",
+      "metric": "RD: Request Disambiguation sample score (0–100) [native AV; OmniVinci-9B]",
+      "value": 0.6,
+      "source": "arXiv:2611.24706v1 Table 2; row OmniVinci-9B, column RD; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "omnivinci",
+      "metric": "ESA: Evidence Sufficiency Assessment sample score (0–100) [native AV; OmniVinci-9B]",
+      "value": 0.0,
+      "source": "arXiv:2611.24706v1 Table 2; row OmniVinci-9B, column ESA; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "omnivinci",
+      "metric": "FPC: False Premise Correction sample score (0–100) [native AV; OmniVinci-9B]",
+      "value": 0.0,
+      "source": "arXiv:2611.24706v1 Table 2; row OmniVinci-9B, column FPC; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "omnivinci",
+      "metric": "Overall sample score (0–100) [native AV; OmniVinci-9B]",
+      "value": 0.2,
+      "source": "arXiv:2611.24706v1 Table 2; row OmniVinci-9B, column Overall; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "minicpm-o-4-5",
+      "metric": "DSR: Direct Scene-based Request sample score (0–100) [native AV; MiniCPM-o-4.5-9B]",
+      "value": 43.9,
+      "source": "arXiv:2611.24706v1 Table 2; row MiniCPM-o-4.5-9B, column DSR; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "minicpm-o-4-5",
+      "metric": "SR: Spatial Reference sample score (0–100) [native AV; MiniCPM-o-4.5-9B]",
+      "value": 37.8,
+      "source": "arXiv:2611.24706v1 Table 2; row MiniCPM-o-4.5-9B, column SR; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "minicpm-o-4-5",
+      "metric": "TR: Temporal Reference sample score (0–100) [native AV; MiniCPM-o-4.5-9B]",
+      "value": 31.8,
+      "source": "arXiv:2611.24706v1 Table 2; row MiniCPM-o-4.5-9B, column TR; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "minicpm-o-4-5",
+      "metric": "MSA: Multi-Speaker Attribution sample score (0–100) [native AV; MiniCPM-o-4.5-9B]",
+      "value": 12.8,
+      "source": "arXiv:2611.24706v1 Table 2; row MiniCPM-o-4.5-9B, column MSA; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "minicpm-o-4-5",
+      "metric": "AST: Addressee Shift Tracking sample score (0–100) [native AV; MiniCPM-o-4.5-9B]",
+      "value": 15.1,
+      "source": "arXiv:2611.24706v1 Table 2; row MiniCPM-o-4.5-9B, column AST; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "minicpm-o-4-5",
+      "metric": "BIF: Background Information Filtering sample score (0–100) [native AV; MiniCPM-o-4.5-9B]",
+      "value": 31.4,
+      "source": "arXiv:2611.24706v1 Table 2; row MiniCPM-o-4.5-9B, column BIF; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "minicpm-o-4-5",
+      "metric": "CA: Conditional Assistance sample score (0–100) [native AV; MiniCPM-o-4.5-9B]",
+      "value": 46.0,
+      "source": "arXiv:2611.24706v1 Table 2; row MiniCPM-o-4.5-9B, column CA; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "minicpm-o-4-5",
+      "metric": "TD: Trouble Discernment sample score (0–100) [native AV; MiniCPM-o-4.5-9B]",
+      "value": 5.4,
+      "source": "arXiv:2611.24706v1 Table 2; row MiniCPM-o-4.5-9B, column TD; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "minicpm-o-4-5",
+      "metric": "VCR: Visual Contextual Reasoning sample score (0–100) [native AV; MiniCPM-o-4.5-9B]",
+      "value": 40.4,
+      "source": "arXiv:2611.24706v1 Table 2; row MiniCPM-o-4.5-9B, column VCR; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "minicpm-o-4-5",
+      "metric": "MER: Multimodal Emotion Recognition sample score (0–100) [native AV; MiniCPM-o-4.5-9B]",
+      "value": 68.9,
+      "source": "arXiv:2611.24706v1 Table 2; row MiniCPM-o-4.5-9B, column MER; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "minicpm-o-4-5",
+      "metric": "RRT: Request Revision Tracking sample score (0–100) [native AV; MiniCPM-o-4.5-9B]",
+      "value": 34.8,
+      "source": "arXiv:2611.24706v1 Table 2; row MiniCPM-o-4.5-9B, column RRT; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "minicpm-o-4-5",
+      "metric": "MCI: Multimodal Constraint Integration sample score (0–100) [native AV; MiniCPM-o-4.5-9B]",
+      "value": 14.0,
+      "source": "arXiv:2611.24706v1 Table 2; row MiniCPM-o-4.5-9B, column MCI; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "minicpm-o-4-5",
+      "metric": "MPR: Multi-Party Reconciliation sample score (0–100) [native AV; MiniCPM-o-4.5-9B]",
+      "value": 3.7,
+      "source": "arXiv:2611.24706v1 Table 2; row MiniCPM-o-4.5-9B, column MPR; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "minicpm-o-4-5",
+      "metric": "RD: Request Disambiguation sample score (0–100) [native AV; MiniCPM-o-4.5-9B]",
+      "value": 25.0,
+      "source": "arXiv:2611.24706v1 Table 2; row MiniCPM-o-4.5-9B, column RD; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "minicpm-o-4-5",
+      "metric": "ESA: Evidence Sufficiency Assessment sample score (0–100) [native AV; MiniCPM-o-4.5-9B]",
+      "value": 32.6,
+      "source": "arXiv:2611.24706v1 Table 2; row MiniCPM-o-4.5-9B, column ESA; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "minicpm-o-4-5",
+      "metric": "FPC: False Premise Correction sample score (0–100) [native AV; MiniCPM-o-4.5-9B]",
+      "value": 26.5,
+      "source": "arXiv:2611.24706v1 Table 2; row MiniCPM-o-4.5-9B, column FPC; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "minicpm-o-4-5",
+      "metric": "Overall sample score (0–100) [native AV; MiniCPM-o-4.5-9B]",
+      "value": 29.3,
+      "source": "arXiv:2611.24706v1 Table 2; row MiniCPM-o-4.5-9B, column Overall; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen2-5-omni",
+      "metric": "DSR: Direct Scene-based Request sample score (0–100) [native AV; Qwen2.5-Omni-7B]",
+      "value": 43.9,
+      "source": "arXiv:2611.24706v1 Table 2; row Qwen2.5-Omni-7B, column DSR; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen2-5-omni",
+      "metric": "SR: Spatial Reference sample score (0–100) [native AV; Qwen2.5-Omni-7B]",
+      "value": 36.7,
+      "source": "arXiv:2611.24706v1 Table 2; row Qwen2.5-Omni-7B, column SR; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen2-5-omni",
+      "metric": "TR: Temporal Reference sample score (0–100) [native AV; Qwen2.5-Omni-7B]",
+      "value": 31.8,
+      "source": "arXiv:2611.24706v1 Table 2; row Qwen2.5-Omni-7B, column TR; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen2-5-omni",
+      "metric": "MSA: Multi-Speaker Attribution sample score (0–100) [native AV; Qwen2.5-Omni-7B]",
+      "value": 15.5,
+      "source": "arXiv:2611.24706v1 Table 2; row Qwen2.5-Omni-7B, column MSA; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen2-5-omni",
+      "metric": "AST: Addressee Shift Tracking sample score (0–100) [native AV; Qwen2.5-Omni-7B]",
+      "value": 17.5,
+      "source": "arXiv:2611.24706v1 Table 2; row Qwen2.5-Omni-7B, column AST; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen2-5-omni",
+      "metric": "BIF: Background Information Filtering sample score (0–100) [native AV; Qwen2.5-Omni-7B]",
+      "value": 18.6,
+      "source": "arXiv:2611.24706v1 Table 2; row Qwen2.5-Omni-7B, column BIF; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen2-5-omni",
+      "metric": "CA: Conditional Assistance sample score (0–100) [native AV; Qwen2.5-Omni-7B]",
+      "value": 3.2,
+      "source": "arXiv:2611.24706v1 Table 2; row Qwen2.5-Omni-7B, column CA; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen2-5-omni",
+      "metric": "TD: Trouble Discernment sample score (0–100) [native AV; Qwen2.5-Omni-7B]",
+      "value": 29.8,
+      "source": "arXiv:2611.24706v1 Table 2; row Qwen2.5-Omni-7B, column TD; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen2-5-omni",
+      "metric": "VCR: Visual Contextual Reasoning sample score (0–100) [native AV; Qwen2.5-Omni-7B]",
+      "value": 38.6,
+      "source": "arXiv:2611.24706v1 Table 2; row Qwen2.5-Omni-7B, column VCR; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen2-5-omni",
+      "metric": "MER: Multimodal Emotion Recognition sample score (0–100) [native AV; Qwen2.5-Omni-7B]",
+      "value": 61.3,
+      "source": "arXiv:2611.24706v1 Table 2; row Qwen2.5-Omni-7B, column MER; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen2-5-omni",
+      "metric": "RRT: Request Revision Tracking sample score (0–100) [native AV; Qwen2.5-Omni-7B]",
+      "value": 26.2,
+      "source": "arXiv:2611.24706v1 Table 2; row Qwen2.5-Omni-7B, column RRT; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen2-5-omni",
+      "metric": "MCI: Multimodal Constraint Integration sample score (0–100) [native AV; Qwen2.5-Omni-7B]",
+      "value": 19.8,
+      "source": "arXiv:2611.24706v1 Table 2; row Qwen2.5-Omni-7B, column MCI; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen2-5-omni",
+      "metric": "MPR: Multi-Party Reconciliation sample score (0–100) [native AV; Qwen2.5-Omni-7B]",
+      "value": 1.9,
+      "source": "arXiv:2611.24706v1 Table 2; row Qwen2.5-Omni-7B, column MPR; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen2-5-omni",
+      "metric": "RD: Request Disambiguation sample score (0–100) [native AV; Qwen2.5-Omni-7B]",
+      "value": 29.3,
+      "source": "arXiv:2611.24706v1 Table 2; row Qwen2.5-Omni-7B, column RD; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen2-5-omni",
+      "metric": "ESA: Evidence Sufficiency Assessment sample score (0–100) [native AV; Qwen2.5-Omni-7B]",
+      "value": 30.4,
+      "source": "arXiv:2611.24706v1 Table 2; row Qwen2.5-Omni-7B, column ESA; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen2-5-omni",
+      "metric": "FPC: False Premise Correction sample score (0–100) [native AV; Qwen2.5-Omni-7B]",
+      "value": 20.5,
+      "source": "arXiv:2611.24706v1 Table 2; row Qwen2.5-Omni-7B, column FPC; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen2-5-omni",
+      "metric": "Overall sample score (0–100) [native AV; Qwen2.5-Omni-7B]",
+      "value": 27.3,
+      "source": "arXiv:2611.24706v1 Table 2; row Qwen2.5-Omni-7B, column Overall; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen3-omni",
+      "metric": "DSR: Direct Scene-based Request sample score (0–100) [native AV; Qwen3-Omni-Instruct-30B-A3B]",
+      "value": 51.4,
+      "source": "arXiv:2611.24706v1 Table 2; row Qwen3-Omni-Instruct-30B-A3B, column DSR; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen3-omni",
+      "metric": "SR: Spatial Reference sample score (0–100) [native AV; Qwen3-Omni-Instruct-30B-A3B]",
+      "value": 44.4,
+      "source": "arXiv:2611.24706v1 Table 2; row Qwen3-Omni-Instruct-30B-A3B, column SR; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen3-omni",
+      "metric": "TR: Temporal Reference sample score (0–100) [native AV; Qwen3-Omni-Instruct-30B-A3B]",
+      "value": 44.3,
+      "source": "arXiv:2611.24706v1 Table 2; row Qwen3-Omni-Instruct-30B-A3B, column TR; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen3-omni",
+      "metric": "MSA: Multi-Speaker Attribution sample score (0–100) [native AV; Qwen3-Omni-Instruct-30B-A3B]",
+      "value": 25.0,
+      "source": "arXiv:2611.24706v1 Table 2; row Qwen3-Omni-Instruct-30B-A3B, column MSA; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen3-omni",
+      "metric": "AST: Addressee Shift Tracking sample score (0–100) [native AV; Qwen3-Omni-Instruct-30B-A3B]",
+      "value": 24.7,
+      "source": "arXiv:2611.24706v1 Table 2; row Qwen3-Omni-Instruct-30B-A3B, column AST; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen3-omni",
+      "metric": "BIF: Background Information Filtering sample score (0–100) [native AV; Qwen3-Omni-Instruct-30B-A3B]",
+      "value": 28.6,
+      "source": "arXiv:2611.24706v1 Table 2; row Qwen3-Omni-Instruct-30B-A3B, column BIF; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen3-omni",
+      "metric": "CA: Conditional Assistance sample score (0–100) [native AV; Qwen3-Omni-Instruct-30B-A3B]",
+      "value": 14.5,
+      "source": "arXiv:2611.24706v1 Table 2; row Qwen3-Omni-Instruct-30B-A3B, column CA; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen3-omni",
+      "metric": "TD: Trouble Discernment sample score (0–100) [native AV; Qwen3-Omni-Instruct-30B-A3B]",
+      "value": 48.8,
+      "source": "arXiv:2611.24706v1 Table 2; row Qwen3-Omni-Instruct-30B-A3B, column TD; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen3-omni",
+      "metric": "VCR: Visual Contextual Reasoning sample score (0–100) [native AV; Qwen3-Omni-Instruct-30B-A3B]",
+      "value": 38.0,
+      "source": "arXiv:2611.24706v1 Table 2; row Qwen3-Omni-Instruct-30B-A3B, column VCR; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen3-omni",
+      "metric": "MER: Multimodal Emotion Recognition sample score (0–100) [native AV; Qwen3-Omni-Instruct-30B-A3B]",
+      "value": 73.6,
+      "source": "arXiv:2611.24706v1 Table 2; row Qwen3-Omni-Instruct-30B-A3B, column MER; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen3-omni",
+      "metric": "RRT: Request Revision Tracking sample score (0–100) [native AV; Qwen3-Omni-Instruct-30B-A3B]",
+      "value": 40.2,
+      "source": "arXiv:2611.24706v1 Table 2; row Qwen3-Omni-Instruct-30B-A3B, column RRT; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen3-omni",
+      "metric": "MCI: Multimodal Constraint Integration sample score (0–100) [native AV; Qwen3-Omni-Instruct-30B-A3B]",
+      "value": 17.4,
+      "source": "arXiv:2611.24706v1 Table 2; row Qwen3-Omni-Instruct-30B-A3B, column MCI; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen3-omni",
+      "metric": "MPR: Multi-Party Reconciliation sample score (0–100) [native AV; Qwen3-Omni-Instruct-30B-A3B]",
+      "value": 9.3,
+      "source": "arXiv:2611.24706v1 Table 2; row Qwen3-Omni-Instruct-30B-A3B, column MPR; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen3-omni",
+      "metric": "RD: Request Disambiguation sample score (0–100) [native AV; Qwen3-Omni-Instruct-30B-A3B]",
+      "value": 26.2,
+      "source": "arXiv:2611.24706v1 Table 2; row Qwen3-Omni-Instruct-30B-A3B, column RD; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen3-omni",
+      "metric": "ESA: Evidence Sufficiency Assessment sample score (0–100) [native AV; Qwen3-Omni-Instruct-30B-A3B]",
+      "value": 38.0,
+      "source": "arXiv:2611.24706v1 Table 2; row Qwen3-Omni-Instruct-30B-A3B, column ESA; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen3-omni",
+      "metric": "FPC: False Premise Correction sample score (0–100) [native AV; Qwen3-Omni-Instruct-30B-A3B]",
+      "value": 33.1,
+      "source": "arXiv:2611.24706v1 Table 2; row Qwen3-Omni-Instruct-30B-A3B, column FPC; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen3-omni",
+      "metric": "Overall sample score (0–100) [native AV; Qwen3-Omni-Instruct-30B-A3B]",
+      "value": 35.7,
+      "source": "arXiv:2611.24706v1 Table 2; row Qwen3-Omni-Instruct-30B-A3B, column Overall; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen3-omni-thinking",
+      "metric": "DSR: Direct Scene-based Request sample score (0–100) [native AV; Qwen3-Omni-Thinking-30B-A3B; default thinking]",
+      "value": 56.1,
+      "source": "arXiv:2611.24706v1 Table 2; row Qwen3-Omni-Thinking-30B-A3B†, column DSR; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen3-omni-thinking",
+      "metric": "SR: Spatial Reference sample score (0–100) [native AV; Qwen3-Omni-Thinking-30B-A3B; default thinking]",
+      "value": 46.7,
+      "source": "arXiv:2611.24706v1 Table 2; row Qwen3-Omni-Thinking-30B-A3B†, column SR; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen3-omni-thinking",
+      "metric": "TR: Temporal Reference sample score (0–100) [native AV; Qwen3-Omni-Thinking-30B-A3B; default thinking]",
+      "value": 31.8,
+      "source": "arXiv:2611.24706v1 Table 2; row Qwen3-Omni-Thinking-30B-A3B†, column TR; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen3-omni-thinking",
+      "metric": "MSA: Multi-Speaker Attribution sample score (0–100) [native AV; Qwen3-Omni-Thinking-30B-A3B; default thinking]",
+      "value": 28.4,
+      "source": "arXiv:2611.24706v1 Table 2; row Qwen3-Omni-Thinking-30B-A3B†, column MSA; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen3-omni-thinking",
+      "metric": "AST: Addressee Shift Tracking sample score (0–100) [native AV; Qwen3-Omni-Thinking-30B-A3B; default thinking]",
+      "value": 37.3,
+      "source": "arXiv:2611.24706v1 Table 2; row Qwen3-Omni-Thinking-30B-A3B†, column AST; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen3-omni-thinking",
+      "metric": "BIF: Background Information Filtering sample score (0–100) [native AV; Qwen3-Omni-Thinking-30B-A3B; default thinking]",
+      "value": 54.3,
+      "source": "arXiv:2611.24706v1 Table 2; row Qwen3-Omni-Thinking-30B-A3B†, column BIF; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen3-omni-thinking",
+      "metric": "CA: Conditional Assistance sample score (0–100) [native AV; Qwen3-Omni-Thinking-30B-A3B; default thinking]",
+      "value": 59.7,
+      "source": "arXiv:2611.24706v1 Table 2; row Qwen3-Omni-Thinking-30B-A3B†, column CA; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen3-omni-thinking",
+      "metric": "TD: Trouble Discernment sample score (0–100) [native AV; Qwen3-Omni-Thinking-30B-A3B; default thinking]",
+      "value": 51.2,
+      "source": "arXiv:2611.24706v1 Table 2; row Qwen3-Omni-Thinking-30B-A3B†, column TD; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen3-omni-thinking",
+      "metric": "VCR: Visual Contextual Reasoning sample score (0–100) [native AV; Qwen3-Omni-Thinking-30B-A3B; default thinking]",
+      "value": 50.0,
+      "source": "arXiv:2611.24706v1 Table 2; row Qwen3-Omni-Thinking-30B-A3B†, column VCR; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen3-omni-thinking",
+      "metric": "MER: Multimodal Emotion Recognition sample score (0–100) [native AV; Qwen3-Omni-Thinking-30B-A3B; default thinking]",
+      "value": 67.9,
+      "source": "arXiv:2611.24706v1 Table 2; row Qwen3-Omni-Thinking-30B-A3B†, column MER; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen3-omni-thinking",
+      "metric": "RRT: Request Revision Tracking sample score (0–100) [native AV; Qwen3-Omni-Thinking-30B-A3B; default thinking]",
+      "value": 52.4,
+      "source": "arXiv:2611.24706v1 Table 2; row Qwen3-Omni-Thinking-30B-A3B†, column RRT; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen3-omni-thinking",
+      "metric": "MCI: Multimodal Constraint Integration sample score (0–100) [native AV; Qwen3-Omni-Thinking-30B-A3B; default thinking]",
+      "value": 24.4,
+      "source": "arXiv:2611.24706v1 Table 2; row Qwen3-Omni-Thinking-30B-A3B†, column MCI; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen3-omni-thinking",
+      "metric": "MPR: Multi-Party Reconciliation sample score (0–100) [native AV; Qwen3-Omni-Thinking-30B-A3B; default thinking]",
+      "value": 13.0,
+      "source": "arXiv:2611.24706v1 Table 2; row Qwen3-Omni-Thinking-30B-A3B†, column MPR; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen3-omni-thinking",
+      "metric": "RD: Request Disambiguation sample score (0–100) [native AV; Qwen3-Omni-Thinking-30B-A3B; default thinking]",
+      "value": 42.1,
+      "source": "arXiv:2611.24706v1 Table 2; row Qwen3-Omni-Thinking-30B-A3B†, column RD; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen3-omni-thinking",
+      "metric": "ESA: Evidence Sufficiency Assessment sample score (0–100) [native AV; Qwen3-Omni-Thinking-30B-A3B; default thinking]",
+      "value": 39.1,
+      "source": "arXiv:2611.24706v1 Table 2; row Qwen3-Omni-Thinking-30B-A3B†, column ESA; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen3-omni-thinking",
+      "metric": "FPC: False Premise Correction sample score (0–100) [native AV; Qwen3-Omni-Thinking-30B-A3B; default thinking]",
+      "value": 39.8,
+      "source": "arXiv:2611.24706v1 Table 2; row Qwen3-Omni-Thinking-30B-A3B†, column FPC; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen3-omni-thinking",
+      "metric": "Overall sample score (0–100) [native AV; Qwen3-Omni-Thinking-30B-A3B; default thinking]",
+      "value": 44.8,
+      "source": "arXiv:2611.24706v1 Table 2; row Qwen3-Omni-Thinking-30B-A3B†, column Overall; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "mimo-v2-5",
+      "metric": "DSR: Direct Scene-based Request sample score (0–100) [native AV; MiMo-V2.5-310B-A15B; default thinking]",
+      "value": 57.4,
+      "source": "arXiv:2611.24706v1 Table 2; row MiMo-V2.5-310B-A15B†, column DSR; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "mimo-v2-5",
+      "metric": "SR: Spatial Reference sample score (0–100) [native AV; MiMo-V2.5-310B-A15B; default thinking]",
+      "value": 45.6,
+      "source": "arXiv:2611.24706v1 Table 2; row MiMo-V2.5-310B-A15B†, column SR; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "mimo-v2-5",
+      "metric": "TR: Temporal Reference sample score (0–100) [native AV; MiMo-V2.5-310B-A15B; default thinking]",
+      "value": 47.7,
+      "source": "arXiv:2611.24706v1 Table 2; row MiMo-V2.5-310B-A15B†, column TR; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "mimo-v2-5",
+      "metric": "MSA: Multi-Speaker Attribution sample score (0–100) [native AV; MiMo-V2.5-310B-A15B; default thinking]",
+      "value": 40.5,
+      "source": "arXiv:2611.24706v1 Table 2; row MiMo-V2.5-310B-A15B†, column MSA; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "mimo-v2-5",
+      "metric": "AST: Addressee Shift Tracking sample score (0–100) [native AV; MiMo-V2.5-310B-A15B; default thinking]",
+      "value": 60.8,
+      "source": "arXiv:2611.24706v1 Table 2; row MiMo-V2.5-310B-A15B†, column AST; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "mimo-v2-5",
+      "metric": "BIF: Background Information Filtering sample score (0–100) [native AV; MiMo-V2.5-310B-A15B; default thinking]",
+      "value": 50.0,
+      "source": "arXiv:2611.24706v1 Table 2; row MiMo-V2.5-310B-A15B†, column BIF; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "mimo-v2-5",
+      "metric": "CA: Conditional Assistance sample score (0–100) [native AV; MiMo-V2.5-310B-A15B; default thinking]",
+      "value": 57.3,
+      "source": "arXiv:2611.24706v1 Table 2; row MiMo-V2.5-310B-A15B†, column CA; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "mimo-v2-5",
+      "metric": "TD: Trouble Discernment sample score (0–100) [native AV; MiMo-V2.5-310B-A15B; default thinking]",
+      "value": 58.9,
+      "source": "arXiv:2611.24706v1 Table 2; row MiMo-V2.5-310B-A15B†, column TD; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "mimo-v2-5",
+      "metric": "VCR: Visual Contextual Reasoning sample score (0–100) [native AV; MiMo-V2.5-310B-A15B; default thinking]",
+      "value": 49.4,
+      "source": "arXiv:2611.24706v1 Table 2; row MiMo-V2.5-310B-A15B†, column VCR; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "mimo-v2-5",
+      "metric": "MER: Multimodal Emotion Recognition sample score (0–100) [native AV; MiMo-V2.5-310B-A15B; default thinking]",
+      "value": 83.0,
+      "source": "arXiv:2611.24706v1 Table 2; row MiMo-V2.5-310B-A15B†, column MER; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "mimo-v2-5",
+      "metric": "RRT: Request Revision Tracking sample score (0–100) [native AV; MiMo-V2.5-310B-A15B; default thinking]",
+      "value": 50.0,
+      "source": "arXiv:2611.24706v1 Table 2; row MiMo-V2.5-310B-A15B†, column RRT; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "mimo-v2-5",
+      "metric": "MCI: Multimodal Constraint Integration sample score (0–100) [native AV; MiMo-V2.5-310B-A15B; default thinking]",
+      "value": 30.2,
+      "source": "arXiv:2611.24706v1 Table 2; row MiMo-V2.5-310B-A15B†, column MCI; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "mimo-v2-5",
+      "metric": "MPR: Multi-Party Reconciliation sample score (0–100) [native AV; MiMo-V2.5-310B-A15B; default thinking]",
+      "value": 16.7,
+      "source": "arXiv:2611.24706v1 Table 2; row MiMo-V2.5-310B-A15B†, column MPR; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "mimo-v2-5",
+      "metric": "RD: Request Disambiguation sample score (0–100) [native AV; MiMo-V2.5-310B-A15B; default thinking]",
+      "value": 50.6,
+      "source": "arXiv:2611.24706v1 Table 2; row MiMo-V2.5-310B-A15B†, column RD; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "mimo-v2-5",
+      "metric": "ESA: Evidence Sufficiency Assessment sample score (0–100) [native AV; MiMo-V2.5-310B-A15B; default thinking]",
+      "value": 37.0,
+      "source": "arXiv:2611.24706v1 Table 2; row MiMo-V2.5-310B-A15B†, column ESA; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "mimo-v2-5",
+      "metric": "FPC: False Premise Correction sample score (0–100) [native AV; MiMo-V2.5-310B-A15B; default thinking]",
+      "value": 39.8,
+      "source": "arXiv:2611.24706v1 Table 2; row MiMo-V2.5-310B-A15B†, column FPC; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "mimo-v2-5",
+      "metric": "Overall sample score (0–100) [native AV; MiMo-V2.5-310B-A15B; default thinking]",
+      "value": 50.2,
+      "source": "arXiv:2611.24706v1 Table 2; row MiMo-V2.5-310B-A15B†, column Overall; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=6"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-3-5-flash",
+      "metric": "Both samples fully correct (%) [147 contrastive pairs; native AV; Gemini3.5-Flash; default thinking]",
+      "value": 17.0,
+      "source": "arXiv:2611.24706v1 Table 3; row Gemini3.5-Flash, column Pair Accuracy / Both; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=8"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-3-5-flash",
+      "metric": "MSA same decision despite opposite response requirement (%) [lower is better; native AV; Gemini3.5-Flash; default thinking]",
+      "value": 88.9,
+      "source": "arXiv:2611.24706v1 Table 3; row Gemini3.5-Flash, column Same Decision / MSA; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=8"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-3-5-flash",
+      "metric": "AST same decision despite opposite response requirement (%) [lower is better; native AV; Gemini3.5-Flash; default thinking]",
+      "value": 10.5,
+      "source": "arXiv:2611.24706v1 Table 3; row Gemini3.5-Flash, column Same Decision / AST; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=8"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-3-5-flash",
+      "metric": "CA same decision despite opposite response requirement (%) [lower is better; native AV; Gemini3.5-Flash; default thinking]",
+      "value": 30.0,
+      "source": "arXiv:2611.24706v1 Table 3; row Gemini3.5-Flash, column Same Decision / CA; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=8"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "gemini-3-5-flash",
+      "metric": "All same decision despite opposite response requirement (%) [lower is better; native AV; Gemini3.5-Flash; default thinking]",
+      "value": 44.7,
+      "source": "arXiv:2611.24706v1 Table 3; row Gemini3.5-Flash, column Same Decision / All; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=8"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "mimo-v2-5",
+      "metric": "Both samples fully correct (%) [147 contrastive pairs; native AV; MiMo-V2.5-310B-A15B; default thinking]",
+      "value": 8.2,
+      "source": "arXiv:2611.24706v1 Table 3; row MiMo-V2.5†, column Pair Accuracy / Both; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=8"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "mimo-v2-5",
+      "metric": "MSA same decision despite opposite response requirement (%) [lower is better; native AV; MiMo-V2.5-310B-A15B; default thinking]",
+      "value": 66.7,
+      "source": "arXiv:2611.24706v1 Table 3; row MiMo-V2.5†, column Same Decision / MSA; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=8"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "mimo-v2-5",
+      "metric": "AST same decision despite opposite response requirement (%) [lower is better; native AV; MiMo-V2.5-310B-A15B; default thinking]",
+      "value": 42.1,
+      "source": "arXiv:2611.24706v1 Table 3; row MiMo-V2.5†, column Same Decision / AST; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=8"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "mimo-v2-5",
+      "metric": "CA same decision despite opposite response requirement (%) [lower is better; native AV; MiMo-V2.5-310B-A15B; default thinking]",
+      "value": 60.0,
+      "source": "arXiv:2611.24706v1 Table 3; row MiMo-V2.5†, column Same Decision / CA; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=8"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "mimo-v2-5",
+      "metric": "All same decision despite opposite response requirement (%) [lower is better; native AV; MiMo-V2.5-310B-A15B; default thinking]",
+      "value": 55.3,
+      "source": "arXiv:2611.24706v1 Table 3; row MiMo-V2.5†, column Same Decision / All; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=8"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen3-omni-thinking",
+      "metric": "Both samples fully correct (%) [147 contrastive pairs; native AV; Qwen3-Omni-Thinking-30B-A3B; default thinking]",
+      "value": 5.4,
+      "source": "arXiv:2611.24706v1 Table 3; row Qwen3-Omni-Thinking†, column Pair Accuracy / Both; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=8"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen3-omni-thinking",
+      "metric": "MSA same decision despite opposite response requirement (%) [lower is better; native AV; Qwen3-Omni-Thinking-30B-A3B; default thinking]",
+      "value": 100.0,
+      "source": "arXiv:2611.24706v1 Table 3; row Qwen3-Omni-Thinking†, column Same Decision / MSA; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=8"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen3-omni-thinking",
+      "metric": "AST same decision despite opposite response requirement (%) [lower is better; native AV; Qwen3-Omni-Thinking-30B-A3B; default thinking]",
+      "value": 94.7,
+      "source": "arXiv:2611.24706v1 Table 3; row Qwen3-Omni-Thinking†, column Same Decision / AST; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=8"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen3-omni-thinking",
+      "metric": "CA same decision despite opposite response requirement (%) [lower is better; native AV; Qwen3-Omni-Thinking-30B-A3B; default thinking]",
+      "value": 40.0,
+      "source": "arXiv:2611.24706v1 Table 3; row Qwen3-Omni-Thinking†, column Same Decision / CA; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=8"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen3-omni-thinking",
+      "metric": "All same decision despite opposite response requirement (%) [lower is better; native AV; Qwen3-Omni-Thinking-30B-A3B; default thinking]",
+      "value": 85.1,
+      "source": "arXiv:2611.24706v1 Table 3; row Qwen3-Omni-Thinking†, column Same Decision / All; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=8"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen3-omni",
+      "metric": "Both samples fully correct (%) [147 contrastive pairs; native AV; Qwen3-Omni-Instruct-30B-A3B]",
+      "value": 0.7,
+      "source": "arXiv:2611.24706v1 Table 3; row Qwen3-Omni-Instruct, column Pair Accuracy / Both; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=8"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen3-omni",
+      "metric": "MSA same decision despite opposite response requirement (%) [lower is better; native AV; Qwen3-Omni-Instruct-30B-A3B]",
+      "value": 100.0,
+      "source": "arXiv:2611.24706v1 Table 3; row Qwen3-Omni-Instruct, column Same Decision / MSA; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=8"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen3-omni",
+      "metric": "AST same decision despite opposite response requirement (%) [lower is better; native AV; Qwen3-Omni-Instruct-30B-A3B]",
+      "value": 100.0,
+      "source": "arXiv:2611.24706v1 Table 3; row Qwen3-Omni-Instruct, column Same Decision / AST; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=8"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen3-omni",
+      "metric": "CA same decision despite opposite response requirement (%) [lower is better; native AV; Qwen3-Omni-Instruct-30B-A3B]",
+      "value": 90.0,
+      "source": "arXiv:2611.24706v1 Table 3; row Qwen3-Omni-Instruct, column Same Decision / CA; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=8"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen3-omni",
+      "metric": "All same decision despite opposite response requirement (%) [lower is better; native AV; Qwen3-Omni-Instruct-30B-A3B]",
+      "value": 97.9,
+      "source": "arXiv:2611.24706v1 Table 3; row Qwen3-Omni-Instruct, column Same Decision / All; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=8"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen2-5-omni",
+      "metric": "Both samples fully correct (%) [147 contrastive pairs; native AV; Qwen2.5-Omni-7B]",
+      "value": 3.4,
+      "source": "arXiv:2611.24706v1 Table 3; row Qwen2.5-Omni-7B, column Pair Accuracy / Both; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=8"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen2-5-omni",
+      "metric": "MSA same decision despite opposite response requirement (%) [lower is better; native AV; Qwen2.5-Omni-7B]",
+      "value": 100.0,
+      "source": "arXiv:2611.24706v1 Table 3; row Qwen2.5-Omni-7B, column Same Decision / MSA; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=8"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen2-5-omni",
+      "metric": "AST same decision despite opposite response requirement (%) [lower is better; native AV; Qwen2.5-Omni-7B]",
+      "value": 94.7,
+      "source": "arXiv:2611.24706v1 Table 3; row Qwen2.5-Omni-7B, column Same Decision / AST; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=8"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen2-5-omni",
+      "metric": "CA same decision despite opposite response requirement (%) [lower is better; native AV; Qwen2.5-Omni-7B]",
+      "value": 100.0,
+      "source": "arXiv:2611.24706v1 Table 3; row Qwen2.5-Omni-7B, column Same Decision / CA; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=8"
+    },
+    {
+      "benchmark": "o-in-bench",
+      "model": "qwen2-5-omni",
+      "metric": "All same decision despite opposite response requirement (%) [lower is better; native AV; Qwen2.5-Omni-7B]",
+      "value": 97.9,
+      "source": "arXiv:2611.24706v1 Table 3; row Qwen2.5-Omni-7B, column Same Decision / All; reported value with native video and audio input.",
+      "source_url": "https://arxiv.org/pdf/2611.24706v1#page=8"
     }
   ]
 }

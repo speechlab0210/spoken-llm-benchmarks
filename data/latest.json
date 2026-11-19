@@ -22,7 +22,7 @@
       "primary_category": "cs.CV",
       "url": "https://arxiv.org/abs/2611.24706",
       "score": 21,
-      "status": "new — under review"
+      "status": "reviewed — added: O-IN-Bench (o-in-bench); introduces native audio-video spoken-intention evaluation for general-purpose omni-modal models, with separate request, content and silence judgments."
     },
     {
       "id": "2611.22480",

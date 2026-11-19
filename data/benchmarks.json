@@ -13264,6 +13264,36 @@
       ],
       "summary": "Evaluates perceived social signals in short conversations with expert annotations and an evidence-weighted, taxonomy-aware F1. Video covers ten signals and Audio six; engagement is scored separately. Each modality has public training data and a private test set spanning four conversational domains.",
       "note": "16 Table S10 cells cover seven existing general-purpose model records, with Video and Audio kept separate. Scores are not comparable across modalities. Qwen2.5-Omni-7B and Qwen2-Audio-7B-Instruct use their untuned rows; task-specific post-trained rows are not assigned to the base models. Muse Spark 1.3, Gemini 3.8 Flash, Gemini 4 Argon, GPT-6.1 Sol, Gemma-4-31B-it and Ultravox-v0.5-Llama-3.1-8B await exact model/configuration records. Some omitted video baselines receive transcripts instead of audio. The labels describe observer perceptions, not ground-truth mental states; annotators had more conversational context than evaluated models. Test data stay private. Public training combines expert and teacher pseudo-labels; model results are single runs. The dataset card confirms public training access, with labels/code under CC BY-NC 4.0 and source media under CC BY 3.0."
+    },
+    {
+      "id": "o-in-bench",
+      "name": "O-IN-Bench",
+      "full_title": "Can Omni-modal LLMs Understand Spoken Intentions?",
+      "arxiv_id": "2611.24706",
+      "arxiv_date": "2026-11",
+      "arxiv_date_full": "2026-11-18",
+      "url": "https://arxiv.org/abs/2611.24706",
+      "categories": [
+        "instruction-following",
+        "reasoning",
+        "audio-grounding",
+        "multilingual"
+      ],
+      "tasks": [
+        "spoken intention understanding",
+        "context-dependent response or silence",
+        "request and constraint integration",
+        "contrastive response consistency"
+      ],
+      "size": "1,000 Chinese and English samples; 5 categories / 16 subcategories; 147 contrastive pairs; 11.3% of samples require silence",
+      "io": "complete generated video with native speech and shared instruction → one text response or exact [SILENCE]",
+      "metrics": [
+        "sample score (0–100)",
+        "both-sample pair accuracy (%)",
+        "same-decision rate on opposite-response pairs (%, lower is better)"
+      ],
+      "summary": "Tests whether an assistant detects a spoken request and supplies appropriate help in its audiovisual context. Generated scenes include implicit requests, revised instructions, nonverbal constraints, clarification and appropriate silence. Separate language, intent and content judgments distinguish recognizing a request from satisfying it.",
+      "note": "229 cells cover 12 existing model records: 204 Table 2 sample-average scores and 25 Table 3 observed pair diagnostics. A response sample earns L×I×(1+C)/2; silence samples require exact [SILENCE]. Overall is the unweighted sample mean, not a holistic pass rate. GPT-6-Luna is the text evaluator. Proprietary and dagger-marked configurations use default thinking; checkpoint sizes and modes remain in metric labels. No ASR or added-text-query ablation is mixed into these native-audio results. Table 3 Both uses 147 pairs; Same Decision covers 47 opposite-response pairs across MSA, AST and CA and is lower-is-better. Eighteen configurations lack exact catalogue mappings, including Preview/snapshot variants and MiniCPM-o-2.6, whose generic catalogue record has later-version attribution. These rows are deferred, not assigned to nearby models. The project URL returned HTTP 404 on 2026-11-20; supplementary prompts, preprocessing, manual-review scope and dataset access could not be verified. This is an offline single-response evaluation, not a live latency test."
     }
   ]
 }

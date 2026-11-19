@@ -11939,6 +11939,29 @@
    "check_url": "https://arxiv.org/abs/2611.22704",
    "cross_checked": null,
    "check_note": "Checked 2026-11-19: arXiv abstract, v1 PDF and the author-owned dataset card identify a preprint. venue_probe.py returned no publication DOI or journal reference; DBLP returned unparseable content. No publication status is inferred from bibliographic aggregators."
+  },
+  "o-in-bench": {
+   "status": "preprint",
+   "venue": null,
+   "venue_name_raw": null,
+   "venue_full": null,
+   "year": null,
+   "kind": null,
+   "track": null,
+   "parent_venue": null,
+   "display": null,
+   "evidence": "arxiv",
+   "evidence_raw": "arxiv",
+   "evidence_url": "https://arxiv.org/abs/2611.24706",
+   "evidence_quote": null,
+   "doi": null,
+   "confidence": "high",
+   "verified": "cannot_verify",
+   "publishable": true,
+   "note": "Entry checked 2026-11-20. arXiv preprint; no venue-owned acceptance or publication evidence was found.",
+   "check_url": "https://arxiv.org/abs/2611.24706",
+   "cross_checked": null,
+   "check_note": "Checked 2026-11-20: arXiv abstract and v1 PDF reviewed. venue_probe.py returned no publication DOI or journal reference; Semantic Scholar returned HTTP 429 and DBLP unparseable content. The author project URL returned HTTP 404. No venue status is inferred from aggregators."
   }
  }
 }

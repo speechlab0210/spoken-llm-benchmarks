@@ -27247,6 +27247,48 @@
     }
    ],
    "verify_note": "PDF v1 page 1 visually checked against arXiv byline and HTML affiliations. First author Siddharth Ravi has affiliations 1 (Interhuman AI, primary lead) and 2 (Universidad de Alicante); Hugo Anselme has 1, 3 and 4; last author Line H. Clemmensen has 5 (University of Copenhagen). Printed institutional spelling is preserved. No standalone city or country is printed."
+  },
+  "o-in-bench": {
+   "status": "ok",
+   "verified": "confirmed",
+   "publishable": true,
+   "countries_complete": false,
+   "n_authors": 8,
+   "institutions": [
+    {
+     "inst": "renmin-university-of-china",
+     "raw": "Renmin University of China",
+     "unit": null,
+     "country": null,
+     "city": null,
+     "lat": null,
+     "lon": null,
+     "placed": "unplaced",
+     "printed_city": null,
+     "printed_country": null,
+     "lead": true,
+     "first_author": true,
+     "last": true,
+     "evidence": "printed"
+    },
+    {
+     "inst": "tencent",
+     "raw": "WeChat Vision, Tencent Inc.",
+     "unit": "WeChat Vision",
+     "country": null,
+     "city": null,
+     "lat": null,
+     "lon": null,
+     "placed": "unplaced",
+     "printed_city": null,
+     "printed_country": null,
+     "lead": false,
+     "first_author": false,
+     "last": false,
+     "evidence": "printed"
+    }
+   ],
+   "verify_note": "PDF v1 page 1 visually checked against arXiv byline and HTML. First author Zijie Xin and last author Xirong Li have affiliation 1 (Renmin University of China); affiliation 2 is WeChat Vision, Tencent Inc. The first-author internship footnote does not replace the printed affiliation. No standalone city or country is printed; institution-name words are not used as geographic evidence."
   }
  },
  "models": {
