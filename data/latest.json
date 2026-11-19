@@ -1,9 +1,29 @@
 {
-  "fetched_at": "2026-11-18T22:32:34Z",
+  "fetched_at": "2026-11-19T22:35:42Z",
   "window_days": 10,
-  "scanned": 109,
-  "flagged_today": 2,
+  "scanned": 104,
+  "flagged_today": 1,
   "candidates": [
+    {
+      "id": "2611.24706",
+      "title": "Can Omni-modal LLMs Understand Spoken Intentions?",
+      "abstract": "Omni-modal large language models (omni-modal LLMs) can respond to spoken requests directly through voice and video calls. Such requests rely on the scene shared by the user and the assistant, so the same utterance may call for different help or for no response. Most audio-visual benchmarks provide questions as separate text input, and interactive benchmarks mostly score a response as a whole. It thus remains unclear whether a model recognizes when the user is asking for help, and whether its reply meets the user's need once the request is recognized. We propose O-IN-Bench to evaluate how well omni-modal LLMs understand spoken intentions. A model watches a complete video with native speech and outputs one text response, or [SILENCE] when no response is needed. O-IN-Bench contains 1,000 Chinese and English samples in five categories and 16 subcategories. Contrastive pairs combine the same request with different scene conditions to test whether the response changes with the context. A sample-specific rubric judges language, intent, and content separately, and O-IN-Engine verifies each rubric against the video. Across 30 omni-modal model configurations, the best overall score is 59.6, achieved by Gemini3.7-Flash. Gemini3.7-Flash passes 74.4% of the intent judgments but only 42.6% of the content judgments. When the speech is a conversation between peers rather than a request to the assistant, even strong models often keep responding. When a reply must satisfy several people, the best score is only 25.9. These results indicate that recognizing a request and meeting its requirements are separate abilities, and O-IN-Bench measures each of them.",
+      "published": "2026-11-18T16:31:52Z",
+      "authors": [
+        "Zijie Xin",
+        "Tianyi Wang",
+        "Daoze Zhang",
+        "Jie Yang",
+        "Changli Tang",
+        "Qijie Wei",
+        "Fengyun Rao",
+        "Xirong Li"
+      ],
+      "primary_category": "cs.CV",
+      "url": "https://arxiv.org/abs/2611.24706",
+      "score": 21,
+      "status": "new — under review"
+    },
     {
       "id": "2611.22480",
       "title": "RehearsalBench: Can AI Predict What Happens When You Change a Company?",
@@ -1016,26 +1036,6 @@
       "url": "https://arxiv.org/abs/2610.41512",
       "score": 18,
       "status": "reviewed — out of scope: Studies adaptation of specialized audio, image and symbolic-music encoders on existing TriScore and Musical Theme Dataset tasks, not general spoken LLMs."
-    },
-    {
-      "id": "2610.38276",
-      "title": "MixCards: Evaluating Structured Descriptions of Multi-Source Sound Scenes",
-      "abstract": "Audio captioning benchmarks typically evaluate a single unstructured free-text description of an audio scene, providing limited insight into how a model fails to understand polyphonic audio. A plausible caption may omit a source, or conflate multiple sources into one, or assign an attribute of one source to another, and conventional captioning evaluation cannot locate these errors. We introduce MixCardBench, a benchmark for structured captioning of polyphonic audio, which evaluates models in two stages: first, identifying and temporally localizing the sources in a scene, and second, generating a structured MixCard describing the semantic, temporal, and acoustic properties of each source. The benchmark contains 4884 ecologically plausible synthetic soundscapes with up to nine overlapping speech, music and sound effects sources built from high-quality recordings and source-level annotations, where each source has a reference MixCard. We evaluate six state-of-the-art large audio language models and find substantial limitations in current models, which struggle considerably with speech and sound effects timing and detection, with the strongest model reaching only around 60% mean card-field score. Performance varies significantly across attributes, exposing capability differences that are hidden by aggregate caption scores. We assess the quality and ecological validity of MixCardBench through human validation, distribution matching and a listening study, and show that human corrections have little effect on model rankings, and our synthesized soundscapes are closer to in-the-wild YouTube videos than source guided but otherwise random synthesis. The benchmark dataset and code are publicly available, and demo examples are at https://mixcards-anon.github.io/mixcards-demo/",
-      "published": "2026-10-28T04:46:23Z",
-      "authors": [
-        "Sripathi Sridhar",
-        "Yujin Kim",
-        "Giovana Morais",
-        "Liang-Yuan Wu",
-        "Mehmet Atilay Kucukoglu",
-        "Prem Seetharaman",
-        "Lloyd May",
-        "Mark Cartwright"
-      ],
-      "primary_category": "cs.SD",
-      "url": "https://arxiv.org/abs/2610.38276",
-      "score": 33,
-      "status": "reviewed — included: Introduces MixCardBench and tests six general audio-language models on source detection and structured descriptions of sound mixtures."
     }
   ],
   "warnings": []
