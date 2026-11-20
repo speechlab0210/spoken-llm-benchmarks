@@ -1,9 +1,29 @@
 {
-  "fetched_at": "2026-11-19T22:35:42Z",
+  "fetched_at": "2026-11-20T22:35:27Z",
   "window_days": 10,
-  "scanned": 104,
+  "scanned": 99,
   "flagged_today": 1,
   "candidates": [
+    {
+      "id": "2611.26409",
+      "title": "WeMM-Video: Pushing the Frontiers of Open-Source Omni-Modal Video Understanding",
+      "abstract": "Video understanding, particularly with accompanying audio, remains a central challenge in multimodal intelligence. In this report, we introduce \\textbf{WeMM-Video}, a family of Chinese-English bilingual omni-modal foundation models spanning 2B, 4B, 9B, and 35B-A3B variants. Centering on joint audio-visual perception and reasoning, WeMM-Video unifies text, image, audio, and video processing within a hybrid-thinking paradigm, seamlessly supporting both a non-thinking instruct mode for fast, direct responses and a thinking mode for explicit step-by-step reasoning. The models are trained on a large-scale multimodal corpus of approximately 1.2 trillion tokens through progressive pre-training and a multi-stage post-training pipeline incorporating multi-teacher OPD, anti-repetition MrDPO, and specialist RL. Evaluated across more than 120 benchmarks, WeMM-Video demonstrates superior performance in omni-modal video understanding and reasoning, while maintaining highly competitive capabilities across general audio, silent video, image, and text tasks. Specifically, in omni-modal video evaluations, our flagship WeMM-Video-35B-A3B establishes a new open-source state of the art, substantially outperforming proprietary models such as Qwen3.5-Omni-Flash and Seed2.0-Mini-0428 while narrowing the gap with the strong Gemini-3.0-Flash, and our compact WeMM-Video-9B surpasses the larger open-source Qwen3-Omni-30B-A3B-Instruct. We publicly release the WeMM-Video family along with our evaluation and reproduction pipeline to foster further research and development in the open-source community.",
+      "published": "2026-11-19T16:58:15Z",
+      "authors": [
+        "Changli Tang",
+        "Jie Yang",
+        "Tianyi Wang",
+        "Lei Li",
+        "Daoze Zhang",
+        "Zijie Xin",
+        "Zhan Liu",
+        "Li Li"
+      ],
+      "primary_category": "cs.CV",
+      "url": "https://arxiv.org/abs/2611.26409",
+      "score": 27,
+      "status": "new — under review"
+    },
     {
       "id": "2611.24706",
       "title": "Can Omni-modal LLMs Understand Spoken Intentions?",
@@ -1020,22 +1040,6 @@
       "url": "https://arxiv.org/abs/2610.40738",
       "score": 18,
       "status": "reviewed — out of scope: Introduces the Apriel Voice 27B Preview model and training/serving approach, evaluated on existing speech benchmarks; no new benchmark is introduced."
-    },
-    {
-      "id": "2610.41512",
-      "title": "Parameter-Efficient Fine-Tuning of Transformer Encoders for Audio-Image-Symbolic Music Retrieval",
-      "abstract": "Score-based multimodal music retrieval requires representations that are both discriminative within each modality and compatible across audio recordings, sheet music images, and symbolic scores. This paper investigates the effectiveness of parameter-efficient fine-tuning (PEFT) for adapting pretrained music encoders and examines whether modality-specific improvements translate into better multimodal representations. We compare full fine-tuning, LoRA, and QLoRA across nine pretrained audio, image, and symbolic score encoders on TriScore and the Musical Theme Dataset. Encoders are first evaluated and selected through supervised unimodal classification, using frozen-encoder linear probing as a reference. We then introduce a controlled 2x2 design crossing encoder adaptation with task-specific shared projection, comparing frozen and adapted representations before and after projection. LoRA or QLoRA is selected in 14 of 18 modality-target combinations, frequently matching or outperforming full fine-tuning while optimizing substantially fewer parameters. However, these unimodal gains do not transfer uniformly to multimodal classification. Adaptation and projection are complementary for composer classification on TriScore, largely redundant for TriScore instrument and the Musical Theme Dataset instrument and ensemble tasks, and partially interfering for composer classification on the Musical Theme Dataset. The final adapted-and-projected title representation on TriScore supports piece-level retrieval, reaching average Top-5 and Top-10 accuracies of 55.32 and 64.68, respectively. Cross-modal exclusion and neighborhood analyses further reveal strong modality-specific local structure in the projected spaces. Overall, PEFT provides an effective and computationally efficient alternative to full fine-tuning, but improved unimodal discrimination alone does not guarantee better multimodal organization.",
-      "published": "2026-10-30T10:02:14Z",
-      "authors": [
-        "Eliseo Fuentes-Martinez",
-        "Antonio Hidalgo-Centeno",
-        "Jorge Calvo-Zaragoza",
-        "Antonio Javier Gallego"
-      ],
-      "primary_category": "cs.CV",
-      "url": "https://arxiv.org/abs/2610.41512",
-      "score": 18,
-      "status": "reviewed — out of scope: Studies adaptation of specialized audio, image and symbolic-music encoders on existing TriScore and Musical Theme Dataset tasks, not general spoken LLMs."
     }
   ],
   "warnings": []

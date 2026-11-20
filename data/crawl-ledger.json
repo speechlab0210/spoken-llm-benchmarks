@@ -1,9 +1,16 @@
 {
  "since": "2026-08-22",
  "what": "Every arXiv paper the daily crawl has flagged since launch (score at or above the threshold, not previously seen), with the reviewer's verdict as written in the feed and whether the paper entered the catalogue. \"published\" is the paper's arXiv date. See the Method section of the site.",
- "flagged": 360,
+ "flagged": 361,
  "admitted": 111,
  "entries": [
+  {
+   "id": "2611.26409",
+   "title": "WeMM-Video: Pushing the Frontiers of Open-Source Omni-Modal Video Understanding",
+   "published": "2026-11-19T16:58:15Z",
+   "score": 27,
+   "outcome": "under review"
+  },
   {
    "id": "2611.24706",
    "title": "Can Omni-modal LLMs Understand Spoken Intentions?",
