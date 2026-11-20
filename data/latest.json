@@ -22,7 +22,7 @@
       "primary_category": "cs.CV",
       "url": "https://arxiv.org/abs/2611.26409",
       "score": 27,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: introduces the WeMM-Video model family and training pipeline; Sections 5.1–5.5 evaluate it on existing benchmarks rather than introducing a new benchmark or evaluation set."
     },
     {
       "id": "2611.24706",

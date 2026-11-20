@@ -1,6 +1,11 @@
 {
  "entries": [
   {
+   "date": "2026-11-21",
+   "change": "Reviewed WeMM-Video and excluded it from the benchmark catalogue: this is a model-family and training report evaluated on existing benchmarks, not a new benchmark or evaluation set. The full-text decision is retained in the feed and permanent review ledger. Totals remain 490 benchmarks, 262 models and 19,064 result cells.",
+   "source": "arXiv:2611.26409v1 Abstract, Sections 1, 5.1–5.5 and 6; official arXiv submission metadata. No benchmark records or numerical results changed."
+  },
+  {
    "date": "2026-11-20",
    "change": "Added O-IN-Bench after full-text review: 229 source-located result cells covering 12 existing models, with exact configuration labels, native audio-video input, sample scores and contrastive-pair diagnostics kept distinct. Added printed affiliations. The project URL is unavailable, and supplemental implementation details and unmatched model configurations remain explicitly unverified. Totals: 490 benchmarks, 262 models and 19,064 result cells.",
    "source": "arXiv:2611.24706v1 Sections 3–4, Figure 3, Tables 2 and 3 (PDF pages 6 and 8), printed byline (page 1) and arXiv submission metadata. Numeric cells extracted programmatically by row/column and visually checked against PDF."
