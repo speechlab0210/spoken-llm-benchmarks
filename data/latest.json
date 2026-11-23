@@ -1,9 +1,54 @@
 {
-  "fetched_at": "2026-11-22T22:36:59Z",
+  "fetched_at": "2026-11-23T22:35:20Z",
   "window_days": 10,
-  "scanned": 76,
-  "flagged_today": 0,
+  "scanned": 74,
+  "flagged_today": 3,
   "candidates": [
+    {
+      "id": "2611.27810",
+      "title": "SLP-Bench: Evaluating and Improving Acoustic Claims of Reasoning Audio Language Models on Clinical Speech",
+      "abstract": "Audio language models (ALMs) can answer clinical questions from speech, outperforming baselines built on handcrafted acoustic features. Reasoning ALMs generate a chain of thought that refers to properties of the speaker's voice before predicting. Each statement the model makes about the voice needs to be checked against clinicians' perceptual ratings of the same recording. On clinical speech, existing evaluations score only the final answer. We introduce Speech Language Pathologist Bench (SLP-Bench), a benchmark grading each acoustic claim in the chain of thought against clinicians' perceptual ratings of the same recording. It covers five clinician-rated datasets and 25 perceptual dimensions, and assesses claims for factuality, stability under resampling, and consistency across reworded and different questions. Across ten open-weight reasoning ALMs evaluated zero-shot, claim balanced accuracy ranges from 0.52 to 0.58, claims change under resampling and rewording, and the most consistent models are not the most factual. Fine-tuning a 7B ALM with GRPO on a reward for claims that agree with clinicians raises its claim balanced accuracy from 0.54 to 0.60 and its mean kappa from 0.39 to 0.61, while preserving answer accuracy on per-dimension questions. SLP-Bench is available upon request, subject to approval by the providers of each dataset.",
+      "published": "2026-11-20T16:36:57Z",
+      "authors": [
+        "Côme Hosxe",
+        "Rachid Riad",
+        "Quentin Spinat"
+      ],
+      "primary_category": "cs.AI",
+      "url": "https://arxiv.org/abs/2611.27810",
+      "score": 42,
+      "status": "new — under review"
+    },
+    {
+      "id": "2611.27059",
+      "title": "NightmareDiscourseBench: A Benchmark Dataset for Fictional Direct Discourse Identification Pipelines",
+      "abstract": "In this paper we introduce a new benchmark dataset, NightmareDiscourseBench, for testing NLP pipelines that identify forms of direct discourse in English-language fiction. We first review existing publicly available benchmarks (providing summary statistics and reviewing available metadata) for this task, identifying theoretical inconsistency and exclusive focus on speech as primary issues in this domain. We then overview our narrative theory-based framework for classifying and evaluating different forms of direct discourse, and finally describe NightmareDiscourseBench, a new benchmark test set of 12 text samples accompanied by metadata pertinent to the task of direct discourse identification.",
+      "published": "2026-11-20T03:27:29Z",
+      "authors": [
+        "Claudia Carroll",
+        "Gabi Kirilloff",
+        "Dashiell Leigh"
+      ],
+      "primary_category": "cs.CL",
+      "url": "https://arxiv.org/abs/2611.27059",
+      "score": 36,
+      "status": "new — under review"
+    },
+    {
+      "id": "2611.27215",
+      "title": "Neural Defend Ranks #1 in Global Audio Deepfake Detection Benchmark - ARCAS on the Podonos Independent Leaderboard",
+      "abstract": "Commercial detectors of AI-generated audio are usually promoted with results on internal test sets that buyers cannot inspect. Independent benchmarks with private labels give a more reliable comparison. We report the results of Neural Defend's ARCAS foundation models on the Podonos audio deepfake detection benchmark, an independent leaderboard that scores commercial detection APIs and open-source detectors on one held-out set of real speech and speech from current text-to-speech and voice-cloning systems, delivered in six file formats, against labels that only Podonos holds. In the release of 29 October 2026, which covers 28 systems from 16 commercial vendors and the leading open models, ARCAS 290M and the smaller ARCAS 90M share first place, ahead of every other commercial system, including Resemble AI, Hiya, Pindrop, Hive, and Reality Defender. Both models make fewer errors than any other system by a statistically clear margin, keep false positives and false negatives in balance at their default threshold, process every submitted file without rejection, and sit on the accuracy--latency frontier of the leaderboard. As for every commercial system added since Podonos retired its API runner, the ARCAS predictions were submitted by Neural Defend and scored by Podonos against its private labels. We describe the benchmark's construction and protocol in full, reproduce the complete leaderboard and its history across five releases, and analyse error balance, statistical separation, speed, and the gap between commercial and open-source detectors. The results agree with the companion evaluation of ARCAS 290M on the complete test sets of ten public benchmarks and establish ARCAS as the most accurate AI-generated audio detector evaluated on this independent benchmark.",
+      "published": "2026-11-20T07:07:38Z",
+      "authors": [
+        "Sivashankar Selvarajan",
+        "Piyush Verma",
+        "Sumit Singh"
+      ],
+      "primary_category": "cs.SD",
+      "url": "https://arxiv.org/abs/2611.27215",
+      "score": 21,
+      "status": "new — under review"
+    },
     {
       "id": "2611.26409",
       "title": "WeMM-Video: Pushing the Frontiers of Open-Source Omni-Modal Video Understanding",
@@ -984,62 +1029,6 @@
       "url": "https://arxiv.org/abs/2610.41390",
       "score": 36,
       "status": "reviewed — out of scope: Introduces the AudioHelix retrieval method, evaluated on existing TraceAV-Bench, MMAU-Pro and AudioMarathon; no new benchmark is introduced."
-    },
-    {
-      "id": "2610.41539",
-      "title": "Scalable Audio-LLM System for Speech MOS Evaluation: A Diagnostic Case Study and Adaptation Roadmap",
-      "abstract": "The continuous deployment of enterprise voice systems creates a critical operational bottleneck: evaluating the acoustic quality of synthetic speech across high-volume production updates. While human Mean Opinion Score (MOS) remains the quality gold standard, it introduces severe operational costs and turn-around delays that make continuous integration infeasible. In this work, we present a system design case study for a scalable, low-cost and offline evaluation pipeline capable of scoring large batches of synthetic speech at marginal cost. First, we use Qwen2-Audio-7B-Instruct in a zero-shot setting for granular MOS estimation, noticing perceptual blind spots and inherent biases. Then, we analyze SOMOS dataset and construct a diagnostic benchmark that operationalizes two prosodic dimensions associated with human naturalness ratings. Finally, we adapt Qwen2-Audio-7B-Instruct through a parameter-efficient finetuning (LoRA) on the task of MOS evaluation, observing improvements over base model and widely used neural baselines like UTMOS and establishing a practical blueprint for enterprise-grade speech quality assurance.",
-      "published": "2026-10-30T10:37:06Z",
-      "authors": [
-        "Dimitrios Kokkinis",
-        "Panagiotis Kakoulidis",
-        "Nikolaos Ellinas",
-        "Chrysovalanti Lymperi",
-        "Alexandra Vioni",
-        "Georgios Vardaxoglou",
-        "Iakovi Alexiou",
-        "Myrsini Christidou"
-      ],
-      "primary_category": "cs.SD",
-      "url": "https://arxiv.org/abs/2610.41539",
-      "score": 30,
-      "status": "reviewed — included: Introduces three SOMOS-based diagnostic tasks and tests the general audio-language models Qwen2-Audio-7B-Instruct and Audio Flamingo 3."
-    },
-    {
-      "id": "2610.40695",
-      "title": "JYVA at BeTraC: Audio-Based Medical Note Generation with SOAP Section-Specific Queries",
-      "abstract": "We present our submission to the Beyond Transcription Challenge (BeTraC) on medical note generation from doctor-patient audio conversations. We propose a section-aware approach based on Qwen2.5-Omni-3B, in which a lightweight Q-Former learns SOAP section-specific queries to extract compact clinical representations from speech. In the lightweight track, our system ranks fourth and substantially outperforms the challenge baseline, achieving a Concept F1 of 0.5005 on the official test set. The organizers' analysis and our heuristic evaluation suggest improved robustness to hallucinations, and better stability under difficult audio conditions. These results show that explicitly modeling SOAP structure through section-specific queries is an effective way to improve the faithfulness and reliability of audio-based medical note generation.",
-      "published": "2026-10-28T10:22:57Z",
-      "authors": [
-        "Youness Dkhissi",
-        "Valentin Vielzeuf",
-        "Antoine Caubrière",
-        "Jean-Emile Dartois"
-      ],
-      "primary_category": "cs.SD",
-      "url": "https://arxiv.org/abs/2610.40695",
-      "score": 21,
-      "status": "reviewed — out of scope: Describes a section-aware Q-Former submission to the existing BeTraC challenge; its contribution is a medical-note generation system, not a new benchmark."
-    },
-    {
-      "id": "2610.40738",
-      "title": "Apriel Voice 27B Preview: An Open Model for Speech, Reasoning, and Tool Use",
-      "abstract": "A capable voice assistant must do more than recognize words; it must understand requests, reason over context, sustain conversations, and act through tools. We present Apriel Voice 27B Preview, an open speech-language model that unifies these capabilities within a shared reasoning backbone while retaining text and image input modalities. Built on the post-trained Gemma 4 26B-A4B checkpoint, Apriel Voice directly processes speech and generates both responses and tool calls without requiring a separate dialogue model. We introduce a two-stage training procedure to adapt the model to speech. The first stage establishes the speech interface, while the second jointly adapts the projector and backbone through supervised fine-tuning, text replay, and source-dependent cross-entropy and forward Kullback--Leibler divergence supervision. Automatically constructed speech-conditioned dialogues provide conversational training data, while local teacher serving, overlapping teacher and student computation, and fused full-vocabulary losses enable efficient online distillation. In thinking mode, Apriel Voice achieves a score of 98.90 on Big Bench Audio, 81.13 on Speech-BFCL, and a task success rate of 65.51% on $τ$-Voice, with a mean latency of 1.91 seconds. It also achieves 51.27% English EVA accuracy and 74.13% experience pass@1. Finally, we deploy Apriel Voice 27B Preview on a custom serving platform to support interactive voice interactions.",
-      "published": "2026-10-29T14:48:50Z",
-      "authors": [
-        "Aman Tiwari",
-        "Akshay Kalkunte",
-        "Akintunde Oladipo",
-        "Jash Shah",
-        "Tara Bogavelli",
-        "Hoang Nguyen",
-        "Nishanth Madhusudhan",
-        "Vishal Juneja"
-      ],
-      "primary_category": "cs.SD",
-      "url": "https://arxiv.org/abs/2610.40738",
-      "score": 18,
-      "status": "reviewed — out of scope: Introduces the Apriel Voice 27B Preview model and training/serving approach, evaluated on existing speech benchmarks; no new benchmark is introduced."
     }
   ],
   "warnings": []

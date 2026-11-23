@@ -1,9 +1,30 @@
 {
  "since": "2026-08-22",
  "what": "Every arXiv paper the daily crawl has flagged since launch (score at or above the threshold, not previously seen), with the reviewer's verdict as written in the feed and whether the paper entered the catalogue. \"published\" is the paper's arXiv date. See the Method section of the site.",
- "flagged": 361,
+ "flagged": 364,
  "admitted": 111,
  "entries": [
+  {
+   "id": "2611.27810",
+   "title": "SLP-Bench: Evaluating and Improving Acoustic Claims of Reasoning Audio Language Models on Clinical Speech",
+   "published": "2026-11-20T16:36:57Z",
+   "score": 42,
+   "outcome": "under review"
+  },
+  {
+   "id": "2611.27215",
+   "title": "Neural Defend Ranks #1 in Global Audio Deepfake Detection Benchmark - ARCAS on the Podonos Independent Leaderboard",
+   "published": "2026-11-20T07:07:38Z",
+   "score": 21,
+   "outcome": "under review"
+  },
+  {
+   "id": "2611.27059",
+   "title": "NightmareDiscourseBench: A Benchmark Dataset for Fictional Direct Discourse Identification Pipelines",
+   "published": "2026-11-20T03:27:29Z",
+   "score": 36,
+   "outcome": "under review"
+  },
   {
    "id": "2611.26409",
    "title": "WeMM-Video: Pushing the Frontiers of Open-Source Omni-Modal Video Understanding",
