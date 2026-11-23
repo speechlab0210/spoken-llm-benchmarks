@@ -15211,6 +15211,35 @@
      "note": "Printed affiliation on arXiv:2611.22704v1 page 1. No standalone location is printed; place names within institution names are not treated as location evidence."
     }
    ]
+  },
+  {
+   "id": "callyope",
+   "name": "Callyope",
+   "short": "Callyope",
+   "type": "company",
+   "country": "FR",
+   "parent": null,
+   "confidence": "high",
+   "sites": [
+    {
+     "city": "Paris",
+     "lat": 48.86,
+     "lon": 2.35,
+     "country": "FR"
+    }
+   ],
+   "aliases": [
+    {
+     "raw": "Callyope, Paris, France",
+     "country": "FR",
+     "city": "Paris",
+     "lat": 48.86,
+     "lon": 2.35,
+     "type": "company",
+     "confidence": "high",
+     "note": "Printed affiliation in arXiv:2611.27810v1 page 1; acknowledgments identify all authors as company employees. Coordinates normalize the printed city."
+    }
+   ]
   }
  ]
 }

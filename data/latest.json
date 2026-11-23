@@ -17,7 +17,7 @@
       "primary_category": "cs.AI",
       "url": "https://arxiv.org/abs/2611.27810",
       "score": 42,
-      "status": "new — under review"
+      "status": "reviewed — added: SLP-Bench (slp-bench); evaluates the factuality and consistency of acoustic claims made by general-purpose reasoning audio language models against clinician ratings."
     },
     {
       "id": "2611.27059",
@@ -32,7 +32,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2611.27059",
       "score": 36,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: evaluates direct-discourse identification in written fiction with BookNLP; the input is text, not speech, and the evaluated pipeline is not a general-purpose spoken LLM (Sections 4–5)."
     },
     {
       "id": "2611.27215",
@@ -47,7 +47,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2611.27215",
       "score": 21,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: evaluates dedicated audio-deepfake detectors on the Podonos leaderboard, not general-purpose spoken LLMs (Sections 3.4 and 5.2–5.3)."
     },
     {
       "id": "2611.26409",

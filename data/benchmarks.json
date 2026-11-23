@@ -13294,6 +13294,37 @@
       ],
       "summary": "Tests whether an assistant detects a spoken request and supplies appropriate help in its audiovisual context. Generated scenes include implicit requests, revised instructions, nonverbal constraints, clarification and appropriate silence. Separate language, intent and content judgments distinguish recognizing a request from satisfying it.",
       "note": "229 cells cover 12 existing model records: 204 Table 2 sample-average scores and 25 Table 3 observed pair diagnostics. A response sample earns L×I×(1+C)/2; silence samples require exact [SILENCE]. Overall is the unweighted sample mean, not a holistic pass rate. GPT-6-Luna is the text evaluator. Proprietary and dagger-marked configurations use default thinking; checkpoint sizes and modes remain in metric labels. No ASR or added-text-query ablation is mixed into these native-audio results. Table 3 Both uses 147 pairs; Same Decision covers 47 opposite-response pairs across MSA, AST and CA and is lower-is-better. Eighteen configurations lack exact catalogue mappings, including Preview/snapshot variants and MiniCPM-o-2.6, whose generic catalogue record has later-version attribution. These rows are deferred, not assigned to nearby models. The project URL returned HTTP 404 on 2026-11-20; supplementary prompts, preprocessing, manual-review scope and dataset access could not be verified. This is an offline single-response evaluation, not a live latency test."
+    },
+    {
+      "id": "slp-bench",
+      "name": "SLP-Bench",
+      "full_title": "SLP-Bench: Evaluating and Improving Acoustic Claims of Reasoning Audio Language Models on Clinical Speech",
+      "arxiv_id": "2611.27810",
+      "arxiv_date": "2026-11",
+      "arxiv_date_full": "2026-11-20",
+      "url": "https://arxiv.org/abs/2611.27810",
+      "categories": [
+        "paralinguistics",
+        "reasoning",
+        "hallucination",
+        "multilingual",
+        "domain"
+      ],
+      "tasks": [
+        "acoustic claim factuality in reasoning chains",
+        "claim stability across sampling seeds",
+        "paraphrase and cross-question consistency",
+        "clinical endpoint question answering"
+      ],
+      "size": "794 test clips from 260 patients; 3,452 prompts; 25 perceptual dimensions; five clinical speech datasets",
+      "io": "speech clip and text prompt → reasoning chain plus yes/no answer, or voice description",
+      "metrics": [
+        "acoustic-claim balanced accuracy (0–1)",
+        "Cohen’s kappa for stability and consistency",
+        "clinical endpoint balanced accuracy (0–1)"
+      ],
+      "summary": "Checks whether acoustic assertions in reasoning audio language models agree with clinician ratings, and whether the assertions remain consistent across seeds and questions. It combines SAP, HeyJay, NeuroVoz, PVQD and Bridge2AI to evaluate ten general-purpose open-weight reasoning models zero-shot, with clinical fine-tuning experiments kept separate.",
+      "note": "Four cells cover three existing models and only the explicitly labelled best zero-shot endpoint clinical BA values in Figure 4: HeyJay and PVQD for Qwen3-Omni Thinking, NeuroVoz for Step-Audio-R1, and Bridge2AI for Audio Flamingo 3 Think. These are selected per-dataset endpoint results, not a complete model comparison or acoustic-claim factuality scores. The SAP winner is Step-Audio-R1.1, which lacks an exact catalogue record. The five labelled GRPO claims results belong to a clinical derivative and are not assigned to its untuned base. Unlabelled factuality and kappa plot coordinates are not converted into scores. Clinical BA measures answers; claim factuality BA compares extracted assertions with clinician ratings and averages eligible dataset–dimension cells weighted by graded-claim count. Consistency uses Cohen’s kappa across repeated seeds, paraphrases and different questions. The 3,452 prompts comprise 1,864 simple questions, 794 endpoint questions and 794 descriptions. Clips are capped at 30 seconds and resampled to 16 kHz. NeuroVoz is Spanish; the other corpora are English. Some clinician ratings apply at session level to every associated clip. Qwen3-30B-A3B-Instruct-2507 extracts claims from reasoning text without the audio, prompt or labels; its reported validation includes LLM-annotated claims, so the automatic grading is imperfect. Data are available upon request subject to provider approval; no public download or code release was verified. All models receive one user turn in their documented reasoning mode; this is not a live voice-agent test."
     }
   ]
 }

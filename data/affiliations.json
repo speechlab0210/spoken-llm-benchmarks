@@ -27289,6 +27289,32 @@
     }
    ],
    "verify_note": "PDF v1 page 1 visually checked against arXiv byline and HTML. First author Zijie Xin and last author Xirong Li have affiliation 1 (Renmin University of China); affiliation 2 is WeChat Vision, Tencent Inc. The first-author internship footnote does not replace the printed affiliation. No standalone city or country is printed; institution-name words are not used as geographic evidence."
+  },
+  "slp-bench": {
+   "status": "ok",
+   "verified": "confirmed",
+   "publishable": true,
+   "countries_complete": true,
+   "n_authors": 3,
+   "institutions": [
+    {
+     "inst": "callyope",
+     "raw": "Callyope, Paris, France",
+     "unit": null,
+     "country": "FR",
+     "city": "Paris",
+     "lat": 48.86,
+     "lon": 2.35,
+     "placed": "named",
+     "printed_city": "Paris",
+     "printed_country": "France",
+     "lead": true,
+     "first_author": true,
+     "last": true,
+     "evidence": "printed"
+    }
+   ],
+   "verify_note": "PDF v1 page 1 visually checked against HTML and arXiv byline. Côme Hosxe, Rachid Riad and Quentin Spinat share the printed Callyope, Paris, France affiliation. The first and last authors therefore share this institution."
   }
  },
  "models": {

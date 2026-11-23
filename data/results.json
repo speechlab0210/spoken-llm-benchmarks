@@ -160736,6 +160736,38 @@
       "value": 97.9,
       "source": "arXiv:2611.24706v1 Table 3; row Qwen2.5-Omni-7B, column Same Decision / All; reported value with native video and audio input.",
       "source_url": "https://arxiv.org/pdf/2611.24706v1#page=8"
+    },
+    {
+      "benchmark": "slp-bench",
+      "model": "qwen3-omni-thinking",
+      "metric": "Clinical endpoint balanced accuracy (0–1) / HeyJay [zero-shot; reasoning mode]",
+      "value": 0.55,
+      "source": "arXiv:2611.27810v1 Figure 4, bottom labelled endpoint clinical BA block; best zero-shot row, HeyJay column. green upward triangle identifies Qwen3-Omni; full reasoning configuration in Section 4.1.",
+      "source_url": "https://arxiv.org/pdf/2611.27810v1#page=4"
+    },
+    {
+      "benchmark": "slp-bench",
+      "model": "step-audio-r1",
+      "metric": "Clinical endpoint balanced accuracy (0–1) / NeuroVoz [zero-shot; reasoning mode]",
+      "value": 0.57,
+      "source": "arXiv:2611.27810v1 Figure 4, bottom labelled endpoint clinical BA block; best zero-shot row, NeuroVoz column. orange circle identifies Step-Audio-R1; full reasoning configuration in Section 4.1.",
+      "source_url": "https://arxiv.org/pdf/2611.27810v1#page=4"
+    },
+    {
+      "benchmark": "slp-bench",
+      "model": "qwen3-omni-thinking",
+      "metric": "Clinical endpoint balanced accuracy (0–1) / PVQD [zero-shot; reasoning mode]",
+      "value": 0.7,
+      "source": "arXiv:2611.27810v1 Figure 4, bottom labelled endpoint clinical BA block; best zero-shot row, PVQD column. green upward triangle identifies Qwen3-Omni; full reasoning configuration in Section 4.1.",
+      "source_url": "https://arxiv.org/pdf/2611.27810v1#page=4"
+    },
+    {
+      "benchmark": "slp-bench",
+      "model": "audio-flamingo-3-think",
+      "metric": "Clinical endpoint balanced accuracy (0–1) / Bridge2AI [zero-shot; reasoning mode]",
+      "value": 0.56,
+      "source": "arXiv:2611.27810v1 Figure 4, bottom labelled endpoint clinical BA block; best zero-shot row, Bridge2AI column. gray hexagon identifies AF3; full reasoning configuration in Section 4.1.",
+      "source_url": "https://arxiv.org/pdf/2611.27810v1#page=4"
     }
   ]
 }

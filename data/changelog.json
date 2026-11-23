@@ -1,6 +1,11 @@
 {
  "entries": [
   {
+   "date": "2026-11-24",
+   "change": "Added SLP-Bench after full-text review, with four explicitly labelled clinical endpoint result cells covering three existing reasoning audio models and the printed Callyope affiliation. Acoustic-claim factuality, consistency and endpoint answering remain distinct. Unlabelled plot points and unmatched model variants are not assigned scores; data access requires provider approval. Excluded NightmareDiscourseBench (written-fiction discourse identification with BookNLP) and Neural Defend (dedicated audio-deepfake detectors). Totals: 491 benchmarks, 262 models and 19,068 result cells.",
+   "source": "arXiv:2611.27810v1 Sections 2–5, Figure 4 labelled endpoint BA block and legend (PDF page 4), printed byline (page 1), and arXiv submission metadata; 2611.27059v1 Sections 4–5; 2611.27215v1 Sections 3.4 and 5.2–5.3. Numeric values extracted programmatically by PDF row/column positions and visually checked."
+  },
+  {
    "date": "2026-11-21",
    "change": "Reviewed WeMM-Video and excluded it from the benchmark catalogue: this is a model-family and training report evaluated on existing benchmarks, not a new benchmark or evaluation set. The full-text decision is retained in the feed and permanent review ledger. Totals remain 490 benchmarks, 262 models and 19,064 result cells.",
    "source": "arXiv:2611.26409v1 Abstract, Sections 1, 5.1–5.5 and 6; official arXiv submission metadata. No benchmark records or numerical results changed."

@@ -2,28 +2,32 @@
  "since": "2026-08-22",
  "what": "Every arXiv paper the daily crawl has flagged since launch (score at or above the threshold, not previously seen), with the reviewer's verdict as written in the feed and whether the paper entered the catalogue. \"published\" is the paper's arXiv date. See the Method section of the site.",
  "flagged": 364,
- "admitted": 111,
+ "admitted": 112,
  "entries": [
   {
    "id": "2611.27810",
    "title": "SLP-Bench: Evaluating and Improving Acoustic Claims of Reasoning Audio Language Models on Clinical Speech",
    "published": "2026-11-20T16:36:57Z",
    "score": 42,
-   "outcome": "under review"
+   "outcome": "admitted",
+   "verdict": "reviewed — added: SLP-Bench (slp-bench); evaluates the factuality and consistency of acoustic claims made by general-purpose reasoning audio language models against clinician ratings.",
+   "catalogue_id": "slp-bench"
   },
   {
    "id": "2611.27215",
    "title": "Neural Defend Ranks #1 in Global Audio Deepfake Detection Benchmark - ARCAS on the Podonos Independent Leaderboard",
    "published": "2026-11-20T07:07:38Z",
    "score": 21,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: evaluates dedicated audio-deepfake detectors on the Podonos leaderboard, not general-purpose spoken LLMs (Sections 3.4 and 5.2–5.3)."
   },
   {
    "id": "2611.27059",
    "title": "NightmareDiscourseBench: A Benchmark Dataset for Fictional Direct Discourse Identification Pipelines",
    "published": "2026-11-20T03:27:29Z",
    "score": 36,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: evaluates direct-discourse identification in written fiction with BookNLP; the input is text, not speech, and the evaluated pipeline is not a general-purpose spoken LLM (Sections 4–5)."
   },
   {
    "id": "2611.26409",
