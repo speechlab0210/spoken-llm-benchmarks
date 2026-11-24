@@ -15240,6 +15240,204 @@
      "note": "Printed affiliation in arXiv:2611.27810v1 page 1; acknowledgments identify all authors as company employees. Coordinates normalize the printed city."
     }
    ]
+  },
+  {
+   "id": "university-of-venice",
+   "name": "University of Venice",
+   "short": "University of Venice",
+   "type": "academia",
+   "country": null,
+   "parent": null,
+   "confidence": "low",
+   "sites": [],
+   "aliases": [
+    {
+     "raw": "University of Venice",
+     "country": null,
+     "city": null,
+     "lat": null,
+     "lon": null,
+     "type": "academia",
+     "confidence": "low",
+     "note": "Name printed in the reviewed v1 paper; no separate city or country printed, so geographic placement is not inferred."
+    }
+   ]
+  },
+  {
+   "id": "epfl",
+   "name": "EPFL",
+   "short": "EPFL",
+   "type": "academia",
+   "country": null,
+   "parent": null,
+   "confidence": "low",
+   "sites": [],
+   "aliases": [
+    {
+     "raw": "EPFL",
+     "country": null,
+     "city": null,
+     "lat": null,
+     "lon": null,
+     "type": "academia",
+     "confidence": "low",
+     "note": "Name printed in the reviewed v1 paper; no separate city or country printed, so geographic placement is not inferred."
+    }
+   ]
+  },
+  {
+   "id": "china-university-of-mining-and-technology-beijing",
+   "name": "China University of Mining and Technology-Beijing",
+   "short": "China University of Mining and Technology-Beijing",
+   "type": "academia",
+   "country": null,
+   "parent": null,
+   "confidence": "low",
+   "sites": [],
+   "aliases": [
+    {
+     "raw": "China University of Mining and Technology-Beijing",
+     "country": null,
+     "city": null,
+     "lat": null,
+     "lon": null,
+     "type": "academia",
+     "confidence": "low",
+     "note": "Name printed in the reviewed v1 paper; no separate city or country printed, so geographic placement is not inferred."
+    }
+   ]
+  },
+  {
+   "id": "politecnico-di-torino",
+   "name": "Politecnico di Torino",
+   "short": "Politecnico di Torino",
+   "type": "academia",
+   "country": null,
+   "parent": null,
+   "confidence": "low",
+   "sites": [],
+   "aliases": [
+    {
+     "raw": "Politecnico di Torino",
+     "country": null,
+     "city": null,
+     "lat": null,
+     "lon": null,
+     "type": "academia",
+     "confidence": "low",
+     "note": "Name printed in the reviewed v1 paper; no separate city or country printed, so geographic placement is not inferred."
+    }
+   ]
+  },
+  {
+   "id": "university-of-trento",
+   "name": "University of Trento",
+   "short": "University of Trento",
+   "type": "academia",
+   "country": null,
+   "parent": null,
+   "confidence": "low",
+   "sites": [],
+   "aliases": [
+    {
+     "raw": "University of Trento",
+     "country": null,
+     "city": null,
+     "lat": null,
+     "lon": null,
+     "type": "academia",
+     "confidence": "low",
+     "note": "Name printed in the reviewed v1 paper; no separate city or country printed, so geographic placement is not inferred."
+    }
+   ]
+  },
+  {
+   "id": "insight-labs",
+   "name": "inSIght Labs",
+   "short": "inSIght Labs",
+   "type": "unknown",
+   "country": null,
+   "parent": null,
+   "confidence": "low",
+   "sites": [],
+   "aliases": [
+    {
+     "raw": "inSIght Labs",
+     "country": null,
+     "city": null,
+     "lat": null,
+     "lon": null,
+     "type": "unknown",
+     "confidence": "low",
+     "note": "Name printed in the reviewed v1 paper; no separate city or country printed, so geographic placement is not inferred."
+    }
+   ]
+  },
+  {
+   "id": "moscow-institute-of-physics-and-technology",
+   "name": "Moscow Institute of Physics and Technology",
+   "short": "Moscow Institute of Physics and Technology",
+   "type": "academia",
+   "country": null,
+   "parent": null,
+   "confidence": "low",
+   "sites": [],
+   "aliases": [
+    {
+     "raw": "Moscow Institute of Physics and Technology",
+     "country": null,
+     "city": null,
+     "lat": null,
+     "lon": null,
+     "type": "academia",
+     "confidence": "low",
+     "note": "Name printed in the reviewed v1 paper; no separate city or country printed, so geographic placement is not inferred."
+    }
+   ]
+  },
+  {
+   "id": "hse-university",
+   "name": "HSE University",
+   "short": "HSE University",
+   "type": "academia",
+   "country": null,
+   "parent": null,
+   "confidence": "low",
+   "sites": [],
+   "aliases": [
+    {
+     "raw": "HSE University",
+     "country": null,
+     "city": null,
+     "lat": null,
+     "lon": null,
+     "type": "academia",
+     "confidence": "low",
+     "note": "Name printed in the reviewed v1 paper; no separate city or country printed, so geographic placement is not inferred."
+    }
+   ]
+  },
+  {
+   "id": "chelyabinsk-state-university",
+   "name": "Chelyabinsk State University",
+   "short": "Chelyabinsk State University",
+   "type": "academia",
+   "country": null,
+   "parent": null,
+   "confidence": "low",
+   "sites": [],
+   "aliases": [
+    {
+     "raw": "Chelyabinsk State University",
+     "country": null,
+     "city": null,
+     "lat": null,
+     "lon": null,
+     "type": "academia",
+     "confidence": "low",
+     "note": "Name printed in the reviewed v1 paper; no separate city or country printed, so geographic placement is not inferred."
+    }
+   ]
   }
  ]
 }

@@ -160768,6 +160768,1942 @@
       "value": 0.56,
       "source": "arXiv:2611.27810v1 Figure 4, bottom labelled endpoint clinical BA block; best zero-shot row, Bridge2AI column. gray hexagon identifies AF3; full reasoning configuration in Section 4.1.",
       "source_url": "https://arxiv.org/pdf/2611.27810v1#page=4"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "qwen2-audio",
+      "metric": "Clean accuracy (%) / Melody [rendered; zero-shot]",
+      "value": 46.0,
+      "source": "arXiv:2611.29375v1 Table 2, Qwen2-Audio row, column 1 (Mel.); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "qwen2-audio",
+      "metric": "Clean accuracy (%) / Harmony [rendered; zero-shot]",
+      "value": 50.4,
+      "source": "arXiv:2611.29375v1 Table 2, Qwen2-Audio row, column 2 (Har.); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "qwen2-audio",
+      "metric": "Clean accuracy (%) / Timbre [rendered; zero-shot]",
+      "value": 43.2,
+      "source": "arXiv:2611.29375v1 Table 2, Qwen2-Audio row, column 3 (Tim.); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "qwen2-audio",
+      "metric": "Clean accuracy (%) / Rhythm [rendered; zero-shot]",
+      "value": 49.2,
+      "source": "arXiv:2611.29375v1 Table 2, Qwen2-Audio row, column 4 (Rhy.); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "qwen2-audio",
+      "metric": "Clean accuracy (%) / All [rendered; zero-shot]",
+      "value": 47.2,
+      "source": "arXiv:2611.29375v1 Table 2, Qwen2-Audio row, column 5 (All); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "qwen2-audio",
+      "metric": "FLIP/STAY accuracy (%) / All [rendered; zero-shot]",
+      "value": 50.7,
+      "source": "arXiv:2611.29375v1 Table 2, Qwen2-Audio row, column 6 (AccFS\\mathrm{Acc}_{\\mathrm{FS}}); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "qwen2-audio",
+      "metric": "Miss rate (%) ↓ [rendered; zero-shot]",
+      "value": 47.7,
+      "source": "arXiv:2611.29375v1 Table 2, Qwen2-Audio row, column 7 (MR); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "qwen2-audio",
+      "metric": "False-flip rate (%) ↓ [rendered; zero-shot]",
+      "value": 50.9,
+      "source": "arXiv:2611.29375v1 Table 2, Qwen2-Audio row, column 8 (FFR); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "qwen2-5-omni",
+      "metric": "Clean accuracy (%) / Melody [rendered; zero-shot]",
+      "value": 68.8,
+      "source": "arXiv:2611.29375v1 Table 2, Qwen2.5-Omni row, column 1 (Mel.); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "qwen2-5-omni",
+      "metric": "Clean accuracy (%) / Harmony [rendered; zero-shot]",
+      "value": 59.2,
+      "source": "arXiv:2611.29375v1 Table 2, Qwen2.5-Omni row, column 2 (Har.); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "qwen2-5-omni",
+      "metric": "Clean accuracy (%) / Timbre [rendered; zero-shot]",
+      "value": 66.8,
+      "source": "arXiv:2611.29375v1 Table 2, Qwen2.5-Omni row, column 3 (Tim.); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "qwen2-5-omni",
+      "metric": "Clean accuracy (%) / Rhythm [rendered; zero-shot]",
+      "value": 50.0,
+      "source": "arXiv:2611.29375v1 Table 2, Qwen2.5-Omni row, column 4 (Rhy.); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "qwen2-5-omni",
+      "metric": "Clean accuracy (%) / All [rendered; zero-shot]",
+      "value": 61.2,
+      "source": "arXiv:2611.29375v1 Table 2, Qwen2.5-Omni row, column 5 (All); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "qwen2-5-omni",
+      "metric": "FLIP/STAY accuracy (%) / All [rendered; zero-shot]",
+      "value": 61.2,
+      "source": "arXiv:2611.29375v1 Table 2, Qwen2.5-Omni row, column 6 (AccFS\\mathrm{Acc}_{\\mathrm{FS}}); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "qwen2-5-omni",
+      "metric": "Miss rate (%) ↓ [rendered; zero-shot]",
+      "value": 36.7,
+      "source": "arXiv:2611.29375v1 Table 2, Qwen2.5-Omni row, column 7 (MR); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "qwen2-5-omni",
+      "metric": "False-flip rate (%) ↓ [rendered; zero-shot]",
+      "value": 41.0,
+      "source": "arXiv:2611.29375v1 Table 2, Qwen2.5-Omni row, column 8 (FFR); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "audio-flamingo-3",
+      "metric": "Clean accuracy (%) / Melody [rendered; zero-shot]",
+      "value": 51.2,
+      "source": "arXiv:2611.29375v1 Table 2, Audio Flamingo 3 row, column 1 (Mel.); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "audio-flamingo-3",
+      "metric": "Clean accuracy (%) / Harmony [rendered; zero-shot]",
+      "value": 48.8,
+      "source": "arXiv:2611.29375v1 Table 2, Audio Flamingo 3 row, column 2 (Har.); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "audio-flamingo-3",
+      "metric": "Clean accuracy (%) / Timbre [rendered; zero-shot]",
+      "value": 58.0,
+      "source": "arXiv:2611.29375v1 Table 2, Audio Flamingo 3 row, column 3 (Tim.); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "audio-flamingo-3",
+      "metric": "Clean accuracy (%) / Rhythm [rendered; zero-shot]",
+      "value": 52.8,
+      "source": "arXiv:2611.29375v1 Table 2, Audio Flamingo 3 row, column 4 (Rhy.); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "audio-flamingo-3",
+      "metric": "Clean accuracy (%) / All [rendered; zero-shot]",
+      "value": 52.7,
+      "source": "arXiv:2611.29375v1 Table 2, Audio Flamingo 3 row, column 5 (All); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "audio-flamingo-3",
+      "metric": "FLIP/STAY accuracy (%) / All [rendered; zero-shot]",
+      "value": 51.4,
+      "source": "arXiv:2611.29375v1 Table 2, Audio Flamingo 3 row, column 6 (AccFS\\mathrm{Acc}_{\\mathrm{FS}}); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "audio-flamingo-3",
+      "metric": "Miss rate (%) ↓ [rendered; zero-shot]",
+      "value": 49.6,
+      "source": "arXiv:2611.29375v1 Table 2, Audio Flamingo 3 row, column 7 (MR); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "audio-flamingo-3",
+      "metric": "False-flip rate (%) ↓ [rendered; zero-shot]",
+      "value": 47.6,
+      "source": "arXiv:2611.29375v1 Table 2, Audio Flamingo 3 row, column 8 (FFR); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "phi-4-multimodal",
+      "metric": "Clean accuracy (%) / Melody [rendered; zero-shot]",
+      "value": 54.4,
+      "source": "arXiv:2611.29375v1 Table 2, Phi-4-multimodal row, column 1 (Mel.); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "phi-4-multimodal",
+      "metric": "Clean accuracy (%) / Harmony [rendered; zero-shot]",
+      "value": 47.2,
+      "source": "arXiv:2611.29375v1 Table 2, Phi-4-multimodal row, column 2 (Har.); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "phi-4-multimodal",
+      "metric": "Clean accuracy (%) / Timbre [rendered; zero-shot]",
+      "value": 56.8,
+      "source": "arXiv:2611.29375v1 Table 2, Phi-4-multimodal row, column 3 (Tim.); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "phi-4-multimodal",
+      "metric": "Clean accuracy (%) / Rhythm [rendered; zero-shot]",
+      "value": 50.8,
+      "source": "arXiv:2611.29375v1 Table 2, Phi-4-multimodal row, column 4 (Rhy.); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "phi-4-multimodal",
+      "metric": "Clean accuracy (%) / All [rendered; zero-shot]",
+      "value": 52.3,
+      "source": "arXiv:2611.29375v1 Table 2, Phi-4-multimodal row, column 5 (All); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "phi-4-multimodal",
+      "metric": "FLIP/STAY accuracy (%) / All [rendered; zero-shot]",
+      "value": 49.1,
+      "source": "arXiv:2611.29375v1 Table 2, Phi-4-multimodal row, column 6 (AccFS\\mathrm{Acc}_{\\mathrm{FS}}); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "phi-4-multimodal",
+      "metric": "Miss rate (%) ↓ [rendered; zero-shot]",
+      "value": 53.5,
+      "source": "arXiv:2611.29375v1 Table 2, Phi-4-multimodal row, column 7 (MR); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "phi-4-multimodal",
+      "metric": "False-flip rate (%) ↓ [rendered; zero-shot]",
+      "value": 48.3,
+      "source": "arXiv:2611.29375v1 Table 2, Phi-4-multimodal row, column 8 (FFR); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "kimi-audio",
+      "metric": "Clean accuracy (%) / Melody [rendered; zero-shot]",
+      "value": 57.6,
+      "source": "arXiv:2611.29375v1 Table 2, Kimi-Audio row, column 1 (Mel.); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "kimi-audio",
+      "metric": "Clean accuracy (%) / Harmony [rendered; zero-shot]",
+      "value": 47.2,
+      "source": "arXiv:2611.29375v1 Table 2, Kimi-Audio row, column 2 (Har.); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "kimi-audio",
+      "metric": "Clean accuracy (%) / Timbre [rendered; zero-shot]",
+      "value": 53.2,
+      "source": "arXiv:2611.29375v1 Table 2, Kimi-Audio row, column 3 (Tim.); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "kimi-audio",
+      "metric": "Clean accuracy (%) / Rhythm [rendered; zero-shot]",
+      "value": 52.8,
+      "source": "arXiv:2611.29375v1 Table 2, Kimi-Audio row, column 4 (Rhy.); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "kimi-audio",
+      "metric": "Clean accuracy (%) / All [rendered; zero-shot]",
+      "value": 52.7,
+      "source": "arXiv:2611.29375v1 Table 2, Kimi-Audio row, column 5 (All); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "kimi-audio",
+      "metric": "FLIP/STAY accuracy (%) / All [rendered; zero-shot]",
+      "value": 51.0,
+      "source": "arXiv:2611.29375v1 Table 2, Kimi-Audio row, column 6 (AccFS\\mathrm{Acc}_{\\mathrm{FS}}); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "kimi-audio",
+      "metric": "Miss rate (%) ↓ [rendered; zero-shot]",
+      "value": 52.3,
+      "source": "arXiv:2611.29375v1 Table 2, Kimi-Audio row, column 7 (MR); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "kimi-audio",
+      "metric": "False-flip rate (%) ↓ [rendered; zero-shot]",
+      "value": 45.7,
+      "source": "arXiv:2611.29375v1 Table 2, Kimi-Audio row, column 8 (FFR); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "mimo-audio",
+      "metric": "Clean accuracy (%) / Melody [rendered; zero-shot]",
+      "value": 54.0,
+      "source": "arXiv:2611.29375v1 Table 2, MiMo-Audio row, column 1 (Mel.); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "mimo-audio",
+      "metric": "Clean accuracy (%) / Harmony [rendered; zero-shot]",
+      "value": 54.4,
+      "source": "arXiv:2611.29375v1 Table 2, MiMo-Audio row, column 2 (Har.); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "mimo-audio",
+      "metric": "Clean accuracy (%) / Timbre [rendered; zero-shot]",
+      "value": 58.0,
+      "source": "arXiv:2611.29375v1 Table 2, MiMo-Audio row, column 3 (Tim.); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "mimo-audio",
+      "metric": "Clean accuracy (%) / Rhythm [rendered; zero-shot]",
+      "value": 59.6,
+      "source": "arXiv:2611.29375v1 Table 2, MiMo-Audio row, column 4 (Rhy.); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "mimo-audio",
+      "metric": "Clean accuracy (%) / All [rendered; zero-shot]",
+      "value": 56.5,
+      "source": "arXiv:2611.29375v1 Table 2, MiMo-Audio row, column 5 (All); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "mimo-audio",
+      "metric": "FLIP/STAY accuracy (%) / All [rendered; zero-shot]",
+      "value": 52.2,
+      "source": "arXiv:2611.29375v1 Table 2, MiMo-Audio row, column 6 (AccFS\\mathrm{Acc}_{\\mathrm{FS}}); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "mimo-audio",
+      "metric": "Miss rate (%) ↓ [rendered; zero-shot]",
+      "value": 49.4,
+      "source": "arXiv:2611.29375v1 Table 2, MiMo-Audio row, column 7 (MR); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "mimo-audio",
+      "metric": "False-flip rate (%) ↓ [rendered; zero-shot]",
+      "value": 46.1,
+      "source": "arXiv:2611.29375v1 Table 2, MiMo-Audio row, column 8 (FFR); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "fun-audio-chat",
+      "metric": "Clean accuracy (%) / Melody [rendered; zero-shot]",
+      "value": 50.0,
+      "source": "arXiv:2611.29375v1 Table 2, Fun-Audio-Chat row, column 1 (Mel.); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "fun-audio-chat",
+      "metric": "Clean accuracy (%) / Harmony [rendered; zero-shot]",
+      "value": 51.6,
+      "source": "arXiv:2611.29375v1 Table 2, Fun-Audio-Chat row, column 2 (Har.); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "fun-audio-chat",
+      "metric": "Clean accuracy (%) / Timbre [rendered; zero-shot]",
+      "value": 60.0,
+      "source": "arXiv:2611.29375v1 Table 2, Fun-Audio-Chat row, column 3 (Tim.); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "fun-audio-chat",
+      "metric": "Clean accuracy (%) / Rhythm [rendered; zero-shot]",
+      "value": 49.6,
+      "source": "arXiv:2611.29375v1 Table 2, Fun-Audio-Chat row, column 4 (Rhy.); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "fun-audio-chat",
+      "metric": "Clean accuracy (%) / All [rendered; zero-shot]",
+      "value": 52.8,
+      "source": "arXiv:2611.29375v1 Table 2, Fun-Audio-Chat row, column 5 (All); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "fun-audio-chat",
+      "metric": "FLIP/STAY accuracy (%) / All [rendered; zero-shot]",
+      "value": 53.6,
+      "source": "arXiv:2611.29375v1 Table 2, Fun-Audio-Chat row, column 6 (AccFS\\mathrm{Acc}_{\\mathrm{FS}}); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "fun-audio-chat",
+      "metric": "Miss rate (%) ↓ [rendered; zero-shot]",
+      "value": 46.6,
+      "source": "arXiv:2611.29375v1 Table 2, Fun-Audio-Chat row, column 7 (MR); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "fun-audio-chat",
+      "metric": "False-flip rate (%) ↓ [rendered; zero-shot]",
+      "value": 46.1,
+      "source": "arXiv:2611.29375v1 Table 2, Fun-Audio-Chat row, column 8 (FFR); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "step-audio-2-mini",
+      "metric": "Clean accuracy (%) / Melody [rendered; zero-shot]",
+      "value": 52.4,
+      "source": "arXiv:2611.29375v1 Table 2, Step-Audio 2 row, column 1 (Mel.); rendered; zero-shot. Appendix C identifies Step-Audio 2 as stepfun-ai/Step-Audio-2-mini (e36fdd5).",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "step-audio-2-mini",
+      "metric": "Clean accuracy (%) / Harmony [rendered; zero-shot]",
+      "value": 50.0,
+      "source": "arXiv:2611.29375v1 Table 2, Step-Audio 2 row, column 2 (Har.); rendered; zero-shot. Appendix C identifies Step-Audio 2 as stepfun-ai/Step-Audio-2-mini (e36fdd5).",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "step-audio-2-mini",
+      "metric": "Clean accuracy (%) / Timbre [rendered; zero-shot]",
+      "value": 62.8,
+      "source": "arXiv:2611.29375v1 Table 2, Step-Audio 2 row, column 3 (Tim.); rendered; zero-shot. Appendix C identifies Step-Audio 2 as stepfun-ai/Step-Audio-2-mini (e36fdd5).",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "step-audio-2-mini",
+      "metric": "Clean accuracy (%) / Rhythm [rendered; zero-shot]",
+      "value": 52.4,
+      "source": "arXiv:2611.29375v1 Table 2, Step-Audio 2 row, column 4 (Rhy.); rendered; zero-shot. Appendix C identifies Step-Audio 2 as stepfun-ai/Step-Audio-2-mini (e36fdd5).",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "step-audio-2-mini",
+      "metric": "Clean accuracy (%) / All [rendered; zero-shot]",
+      "value": 54.4,
+      "source": "arXiv:2611.29375v1 Table 2, Step-Audio 2 row, column 5 (All); rendered; zero-shot. Appendix C identifies Step-Audio 2 as stepfun-ai/Step-Audio-2-mini (e36fdd5).",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "step-audio-2-mini",
+      "metric": "FLIP/STAY accuracy (%) / All [rendered; zero-shot]",
+      "value": 52.7,
+      "source": "arXiv:2611.29375v1 Table 2, Step-Audio 2 row, column 6 (AccFS\\mathrm{Acc}_{\\mathrm{FS}}); rendered; zero-shot. Appendix C identifies Step-Audio 2 as stepfun-ai/Step-Audio-2-mini (e36fdd5).",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "step-audio-2-mini",
+      "metric": "Miss rate (%) ↓ [rendered; zero-shot]",
+      "value": 49.1,
+      "source": "arXiv:2611.29375v1 Table 2, Step-Audio 2 row, column 7 (MR); rendered; zero-shot. Appendix C identifies Step-Audio 2 as stepfun-ai/Step-Audio-2-mini (e36fdd5).",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "step-audio-2-mini",
+      "metric": "False-flip rate (%) ↓ [rendered; zero-shot]",
+      "value": 45.5,
+      "source": "arXiv:2611.29375v1 Table 2, Step-Audio 2 row, column 8 (FFR); rendered; zero-shot. Appendix C identifies Step-Audio 2 as stepfun-ai/Step-Audio-2-mini (e36fdd5).",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "gpt-audio-mini",
+      "metric": "Clean accuracy (%) / Melody [rendered; zero-shot]",
+      "value": 47.6,
+      "source": "arXiv:2611.29375v1 Table 2, GPT-Audio-mini row, column 1 (Mel.); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "gpt-audio-mini",
+      "metric": "Clean accuracy (%) / Harmony [rendered; zero-shot]",
+      "value": 51.6,
+      "source": "arXiv:2611.29375v1 Table 2, GPT-Audio-mini row, column 2 (Har.); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "gpt-audio-mini",
+      "metric": "Clean accuracy (%) / Timbre [rendered; zero-shot]",
+      "value": 54.4,
+      "source": "arXiv:2611.29375v1 Table 2, GPT-Audio-mini row, column 3 (Tim.); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "gpt-audio-mini",
+      "metric": "Clean accuracy (%) / Rhythm [rendered; zero-shot]",
+      "value": 50.8,
+      "source": "arXiv:2611.29375v1 Table 2, GPT-Audio-mini row, column 4 (Rhy.); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "gpt-audio-mini",
+      "metric": "Clean accuracy (%) / All [rendered; zero-shot]",
+      "value": 51.1,
+      "source": "arXiv:2611.29375v1 Table 2, GPT-Audio-mini row, column 5 (All); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "gpt-audio-mini",
+      "metric": "FLIP/STAY accuracy (%) / All [rendered; zero-shot]",
+      "value": 49.6,
+      "source": "arXiv:2611.29375v1 Table 2, GPT-Audio-mini row, column 6 (AccFS\\mathrm{Acc}_{\\mathrm{FS}}); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "gpt-audio-mini",
+      "metric": "Miss rate (%) ↓ [rendered; zero-shot]",
+      "value": 50.6,
+      "source": "arXiv:2611.29375v1 Table 2, GPT-Audio-mini row, column 7 (MR); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "gpt-audio-mini",
+      "metric": "False-flip rate (%) ↓ [rendered; zero-shot]",
+      "value": 50.3,
+      "source": "arXiv:2611.29375v1 Table 2, GPT-Audio-mini row, column 8 (FFR); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "gpt-audio-1-5",
+      "metric": "Clean accuracy (%) / Melody [rendered; zero-shot]",
+      "value": 45.6,
+      "source": "arXiv:2611.29375v1 Table 2, GPT-Audio-1.5 row, column 1 (Mel.); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "gpt-audio-1-5",
+      "metric": "Clean accuracy (%) / Harmony [rendered; zero-shot]",
+      "value": 47.6,
+      "source": "arXiv:2611.29375v1 Table 2, GPT-Audio-1.5 row, column 2 (Har.); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "gpt-audio-1-5",
+      "metric": "Clean accuracy (%) / Timbre [rendered; zero-shot]",
+      "value": 52.0,
+      "source": "arXiv:2611.29375v1 Table 2, GPT-Audio-1.5 row, column 3 (Tim.); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "gpt-audio-1-5",
+      "metric": "Clean accuracy (%) / Rhythm [rendered; zero-shot]",
+      "value": 44.0,
+      "source": "arXiv:2611.29375v1 Table 2, GPT-Audio-1.5 row, column 4 (Rhy.); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "gpt-audio-1-5",
+      "metric": "Clean accuracy (%) / All [rendered; zero-shot]",
+      "value": 47.3,
+      "source": "arXiv:2611.29375v1 Table 2, GPT-Audio-1.5 row, column 5 (All); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "gpt-audio-1-5",
+      "metric": "FLIP/STAY accuracy (%) / All [rendered; zero-shot]",
+      "value": 52.1,
+      "source": "arXiv:2611.29375v1 Table 2, GPT-Audio-1.5 row, column 6 (AccFS\\mathrm{Acc}_{\\mathrm{FS}}); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "gpt-audio-1-5",
+      "metric": "Miss rate (%) ↓ [rendered; zero-shot]",
+      "value": 45.8,
+      "source": "arXiv:2611.29375v1 Table 2, GPT-Audio-1.5 row, column 7 (MR); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "gpt-audio-1-5",
+      "metric": "False-flip rate (%) ↓ [rendered; zero-shot]",
+      "value": 50.1,
+      "source": "arXiv:2611.29375v1 Table 2, GPT-Audio-1.5 row, column 8 (FFR); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "gemini-2-5-pro",
+      "metric": "Clean accuracy (%) / Melody [rendered; zero-shot]",
+      "value": 80.0,
+      "source": "arXiv:2611.29375v1 Table 2, Gemini 2.5 Pro row, column 1 (Mel.); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "gemini-2-5-pro",
+      "metric": "Clean accuracy (%) / Harmony [rendered; zero-shot]",
+      "value": 68.8,
+      "source": "arXiv:2611.29375v1 Table 2, Gemini 2.5 Pro row, column 2 (Har.); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "gemini-2-5-pro",
+      "metric": "Clean accuracy (%) / Timbre [rendered; zero-shot]",
+      "value": 88.4,
+      "source": "arXiv:2611.29375v1 Table 2, Gemini 2.5 Pro row, column 3 (Tim.); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "gemini-2-5-pro",
+      "metric": "Clean accuracy (%) / Rhythm [rendered; zero-shot]",
+      "value": 79.6,
+      "source": "arXiv:2611.29375v1 Table 2, Gemini 2.5 Pro row, column 4 (Rhy.); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "gemini-2-5-pro",
+      "metric": "Clean accuracy (%) / All [rendered; zero-shot]",
+      "value": 79.2,
+      "source": "arXiv:2611.29375v1 Table 2, Gemini 2.5 Pro row, column 5 (All); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "gemini-2-5-pro",
+      "metric": "FLIP/STAY accuracy (%) / All [rendered; zero-shot]",
+      "value": 74.2,
+      "source": "arXiv:2611.29375v1 Table 2, Gemini 2.5 Pro row, column 6 (AccFS\\mathrm{Acc}_{\\mathrm{FS}}); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "gemini-2-5-pro",
+      "metric": "Miss rate (%) ↓ [rendered; zero-shot]",
+      "value": 24.7,
+      "source": "arXiv:2611.29375v1 Table 2, Gemini 2.5 Pro row, column 7 (MR); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "gemini-2-5-pro",
+      "metric": "False-flip rate (%) ↓ [rendered; zero-shot]",
+      "value": 26.9,
+      "source": "arXiv:2611.29375v1 Table 2, Gemini 2.5 Pro row, column 8 (FFR); rendered; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=7"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "qwen2-audio",
+      "metric": "Clean accuracy (%) / Melody [real recordings; zero-shot]",
+      "value": 49.3,
+      "source": "arXiv:2611.29375v1 Table 39, Qwen2-Audio row, column 1 (Mel.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "qwen2-audio",
+      "metric": "Clean accuracy (%) / Harmony [real recordings; zero-shot]",
+      "value": 50.0,
+      "source": "arXiv:2611.29375v1 Table 39, Qwen2-Audio row, column 2 (Har.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "qwen2-audio",
+      "metric": "Clean accuracy (%) / Timbre [real recordings; zero-shot]",
+      "value": 50.0,
+      "source": "arXiv:2611.29375v1 Table 39, Qwen2-Audio row, column 3 (Tim.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "qwen2-audio",
+      "metric": "Clean accuracy (%) / Rhythm [real recordings; zero-shot]",
+      "value": 44.0,
+      "source": "arXiv:2611.29375v1 Table 39, Qwen2-Audio row, column 4 (Rhy.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "qwen2-audio",
+      "metric": "Clean accuracy (%) / All [real recordings; zero-shot]",
+      "value": 48.3,
+      "source": "arXiv:2611.29375v1 Table 39, Qwen2-Audio row, column 5 (All); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "qwen2-audio",
+      "metric": "FLIP/STAY accuracy (%) / Melody [real recordings; zero-shot]",
+      "value": 50.0,
+      "source": "arXiv:2611.29375v1 Table 39, Qwen2-Audio row, column 6 (Mel.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "qwen2-audio",
+      "metric": "FLIP/STAY accuracy (%) / Harmony [real recordings; zero-shot]",
+      "value": 50.0,
+      "source": "arXiv:2611.29375v1 Table 39, Qwen2-Audio row, column 7 (Har.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "qwen2-audio",
+      "metric": "FLIP/STAY accuracy (%) / Timbre [real recordings; zero-shot]",
+      "value": 50.0,
+      "source": "arXiv:2611.29375v1 Table 39, Qwen2-Audio row, column 8 (Tim.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "qwen2-audio",
+      "metric": "FLIP/STAY accuracy (%) / Rhythm [real recordings; zero-shot]",
+      "value": 48.3,
+      "source": "arXiv:2611.29375v1 Table 39, Qwen2-Audio row, column 9 (Rhy.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "qwen2-audio",
+      "metric": "FLIP/STAY accuracy (%) / All [real recordings; zero-shot]",
+      "value": 49.6,
+      "source": "arXiv:2611.29375v1 Table 39, Qwen2-Audio row, column 10 (AccFS\\mathrm{Acc}_{\\mathrm{FS}}); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "qwen2-audio",
+      "metric": "Miss rate (%) ↓ [real recordings; zero-shot]",
+      "value": 48.5,
+      "source": "arXiv:2611.29375v1 Table 39, Qwen2-Audio row, column 11 (MR); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "qwen2-audio",
+      "metric": "False-flip rate (%) ↓ [real recordings; zero-shot]",
+      "value": 52.3,
+      "source": "arXiv:2611.29375v1 Table 39, Qwen2-Audio row, column 12 (FFR); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "qwen2-5-omni",
+      "metric": "Clean accuracy (%) / Melody [real recordings; zero-shot]",
+      "value": 44.7,
+      "source": "arXiv:2611.29375v1 Table 39, Qwen2.5-Omni row, column 1 (Mel.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "qwen2-5-omni",
+      "metric": "Clean accuracy (%) / Harmony [real recordings; zero-shot]",
+      "value": 52.7,
+      "source": "arXiv:2611.29375v1 Table 39, Qwen2.5-Omni row, column 2 (Har.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "qwen2-5-omni",
+      "metric": "Clean accuracy (%) / Timbre [real recordings; zero-shot]",
+      "value": 62.7,
+      "source": "arXiv:2611.29375v1 Table 39, Qwen2.5-Omni row, column 3 (Tim.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "qwen2-5-omni",
+      "metric": "Clean accuracy (%) / Rhythm [real recordings; zero-shot]",
+      "value": 48.7,
+      "source": "arXiv:2611.29375v1 Table 39, Qwen2.5-Omni row, column 4 (Rhy.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "qwen2-5-omni",
+      "metric": "Clean accuracy (%) / All [real recordings; zero-shot]",
+      "value": 52.2,
+      "source": "arXiv:2611.29375v1 Table 39, Qwen2.5-Omni row, column 5 (All); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "qwen2-5-omni",
+      "metric": "FLIP/STAY accuracy (%) / Melody [real recordings; zero-shot]",
+      "value": 47.7,
+      "source": "arXiv:2611.29375v1 Table 39, Qwen2.5-Omni row, column 6 (Mel.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "qwen2-5-omni",
+      "metric": "FLIP/STAY accuracy (%) / Harmony [real recordings; zero-shot]",
+      "value": 49.7,
+      "source": "arXiv:2611.29375v1 Table 39, Qwen2.5-Omni row, column 7 (Har.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "qwen2-5-omni",
+      "metric": "FLIP/STAY accuracy (%) / Timbre [real recordings; zero-shot]",
+      "value": 58.7,
+      "source": "arXiv:2611.29375v1 Table 39, Qwen2.5-Omni row, column 8 (Tim.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "qwen2-5-omni",
+      "metric": "FLIP/STAY accuracy (%) / Rhythm [real recordings; zero-shot]",
+      "value": 52.3,
+      "source": "arXiv:2611.29375v1 Table 39, Qwen2.5-Omni row, column 9 (Rhy.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "qwen2-5-omni",
+      "metric": "FLIP/STAY accuracy (%) / All [real recordings; zero-shot]",
+      "value": 52.1,
+      "source": "arXiv:2611.29375v1 Table 39, Qwen2.5-Omni row, column 10 (AccFS\\mathrm{Acc}_{\\mathrm{FS}}); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "qwen2-5-omni",
+      "metric": "Miss rate (%) ↓ [real recordings; zero-shot]",
+      "value": 46.5,
+      "source": "arXiv:2611.29375v1 Table 39, Qwen2.5-Omni row, column 11 (MR); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "qwen2-5-omni",
+      "metric": "False-flip rate (%) ↓ [real recordings; zero-shot]",
+      "value": 49.3,
+      "source": "arXiv:2611.29375v1 Table 39, Qwen2.5-Omni row, column 12 (FFR); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "audio-flamingo-3",
+      "metric": "Clean accuracy (%) / Melody [real recordings; zero-shot]",
+      "value": 55.3,
+      "source": "arXiv:2611.29375v1 Table 39, Audio Flamingo 3 row, column 1 (Mel.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "audio-flamingo-3",
+      "metric": "Clean accuracy (%) / Harmony [real recordings; zero-shot]",
+      "value": 56.0,
+      "source": "arXiv:2611.29375v1 Table 39, Audio Flamingo 3 row, column 2 (Har.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "audio-flamingo-3",
+      "metric": "Clean accuracy (%) / Timbre [real recordings; zero-shot]",
+      "value": 64.0,
+      "source": "arXiv:2611.29375v1 Table 39, Audio Flamingo 3 row, column 3 (Tim.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "audio-flamingo-3",
+      "metric": "Clean accuracy (%) / Rhythm [real recordings; zero-shot]",
+      "value": 52.7,
+      "source": "arXiv:2611.29375v1 Table 39, Audio Flamingo 3 row, column 4 (Rhy.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "audio-flamingo-3",
+      "metric": "Clean accuracy (%) / All [real recordings; zero-shot]",
+      "value": 57.0,
+      "source": "arXiv:2611.29375v1 Table 39, Audio Flamingo 3 row, column 5 (All); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "audio-flamingo-3",
+      "metric": "FLIP/STAY accuracy (%) / Melody [real recordings; zero-shot]",
+      "value": 54.0,
+      "source": "arXiv:2611.29375v1 Table 39, Audio Flamingo 3 row, column 6 (Mel.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "audio-flamingo-3",
+      "metric": "FLIP/STAY accuracy (%) / Harmony [real recordings; zero-shot]",
+      "value": 53.0,
+      "source": "arXiv:2611.29375v1 Table 39, Audio Flamingo 3 row, column 7 (Har.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "audio-flamingo-3",
+      "metric": "FLIP/STAY accuracy (%) / Timbre [real recordings; zero-shot]",
+      "value": 65.3,
+      "source": "arXiv:2611.29375v1 Table 39, Audio Flamingo 3 row, column 8 (Tim.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "audio-flamingo-3",
+      "metric": "FLIP/STAY accuracy (%) / Rhythm [real recordings; zero-shot]",
+      "value": 49.7,
+      "source": "arXiv:2611.29375v1 Table 39, Audio Flamingo 3 row, column 9 (Rhy.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "audio-flamingo-3",
+      "metric": "FLIP/STAY accuracy (%) / All [real recordings; zero-shot]",
+      "value": 55.5,
+      "source": "arXiv:2611.29375v1 Table 39, Audio Flamingo 3 row, column 10 (AccFS\\mathrm{Acc}_{\\mathrm{FS}}); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "audio-flamingo-3",
+      "metric": "Miss rate (%) ↓ [real recordings; zero-shot]",
+      "value": 44.5,
+      "source": "arXiv:2611.29375v1 Table 39, Audio Flamingo 3 row, column 11 (MR); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "audio-flamingo-3",
+      "metric": "False-flip rate (%) ↓ [real recordings; zero-shot]",
+      "value": 44.5,
+      "source": "arXiv:2611.29375v1 Table 39, Audio Flamingo 3 row, column 12 (FFR); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "phi-4-multimodal",
+      "metric": "Clean accuracy (%) / Melody [real recordings; zero-shot]",
+      "value": 50.7,
+      "source": "arXiv:2611.29375v1 Table 39, Phi-4-multimodal row, column 1 (Mel.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "phi-4-multimodal",
+      "metric": "Clean accuracy (%) / Harmony [real recordings; zero-shot]",
+      "value": 49.3,
+      "source": "arXiv:2611.29375v1 Table 39, Phi-4-multimodal row, column 2 (Har.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "phi-4-multimodal",
+      "metric": "Clean accuracy (%) / Timbre [real recordings; zero-shot]",
+      "value": 50.0,
+      "source": "arXiv:2611.29375v1 Table 39, Phi-4-multimodal row, column 3 (Tim.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "phi-4-multimodal",
+      "metric": "Clean accuracy (%) / Rhythm [real recordings; zero-shot]",
+      "value": 56.0,
+      "source": "arXiv:2611.29375v1 Table 39, Phi-4-multimodal row, column 4 (Rhy.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "phi-4-multimodal",
+      "metric": "Clean accuracy (%) / All [real recordings; zero-shot]",
+      "value": 51.5,
+      "source": "arXiv:2611.29375v1 Table 39, Phi-4-multimodal row, column 5 (All); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "phi-4-multimodal",
+      "metric": "FLIP/STAY accuracy (%) / Melody [real recordings; zero-shot]",
+      "value": 50.0,
+      "source": "arXiv:2611.29375v1 Table 39, Phi-4-multimodal row, column 6 (Mel.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "phi-4-multimodal",
+      "metric": "FLIP/STAY accuracy (%) / Harmony [real recordings; zero-shot]",
+      "value": 52.3,
+      "source": "arXiv:2611.29375v1 Table 39, Phi-4-multimodal row, column 7 (Har.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "phi-4-multimodal",
+      "metric": "FLIP/STAY accuracy (%) / Timbre [real recordings; zero-shot]",
+      "value": 50.0,
+      "source": "arXiv:2611.29375v1 Table 39, Phi-4-multimodal row, column 8 (Tim.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "phi-4-multimodal",
+      "metric": "FLIP/STAY accuracy (%) / Rhythm [real recordings; zero-shot]",
+      "value": 51.7,
+      "source": "arXiv:2611.29375v1 Table 39, Phi-4-multimodal row, column 9 (Rhy.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "phi-4-multimodal",
+      "metric": "FLIP/STAY accuracy (%) / All [real recordings; zero-shot]",
+      "value": 51.0,
+      "source": "arXiv:2611.29375v1 Table 39, Phi-4-multimodal row, column 10 (AccFS\\mathrm{Acc}_{\\mathrm{FS}}); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "phi-4-multimodal",
+      "metric": "Miss rate (%) ↓ [real recordings; zero-shot]",
+      "value": 50.2,
+      "source": "arXiv:2611.29375v1 Table 39, Phi-4-multimodal row, column 11 (MR); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "phi-4-multimodal",
+      "metric": "False-flip rate (%) ↓ [real recordings; zero-shot]",
+      "value": 47.8,
+      "source": "arXiv:2611.29375v1 Table 39, Phi-4-multimodal row, column 12 (FFR); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "kimi-audio",
+      "metric": "Clean accuracy (%) / Melody [real recordings; zero-shot]",
+      "value": 50.0,
+      "source": "arXiv:2611.29375v1 Table 39, Kimi-Audio row, column 1 (Mel.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "kimi-audio",
+      "metric": "Clean accuracy (%) / Harmony [real recordings; zero-shot]",
+      "value": 48.0,
+      "source": "arXiv:2611.29375v1 Table 39, Kimi-Audio row, column 2 (Har.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "kimi-audio",
+      "metric": "Clean accuracy (%) / Timbre [real recordings; zero-shot]",
+      "value": 50.0,
+      "source": "arXiv:2611.29375v1 Table 39, Kimi-Audio row, column 3 (Tim.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "kimi-audio",
+      "metric": "Clean accuracy (%) / Rhythm [real recordings; zero-shot]",
+      "value": 52.0,
+      "source": "arXiv:2611.29375v1 Table 39, Kimi-Audio row, column 4 (Rhy.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "kimi-audio",
+      "metric": "Clean accuracy (%) / All [real recordings; zero-shot]",
+      "value": 50.0,
+      "source": "arXiv:2611.29375v1 Table 39, Kimi-Audio row, column 5 (All); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "kimi-audio",
+      "metric": "FLIP/STAY accuracy (%) / Melody [real recordings; zero-shot]",
+      "value": 48.3,
+      "source": "arXiv:2611.29375v1 Table 39, Kimi-Audio row, column 6 (Mel.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "kimi-audio",
+      "metric": "FLIP/STAY accuracy (%) / Harmony [real recordings; zero-shot]",
+      "value": 52.3,
+      "source": "arXiv:2611.29375v1 Table 39, Kimi-Audio row, column 7 (Har.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "kimi-audio",
+      "metric": "FLIP/STAY accuracy (%) / Timbre [real recordings; zero-shot]",
+      "value": 50.7,
+      "source": "arXiv:2611.29375v1 Table 39, Kimi-Audio row, column 8 (Tim.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "kimi-audio",
+      "metric": "FLIP/STAY accuracy (%) / Rhythm [real recordings; zero-shot]",
+      "value": 50.7,
+      "source": "arXiv:2611.29375v1 Table 39, Kimi-Audio row, column 9 (Rhy.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "kimi-audio",
+      "metric": "FLIP/STAY accuracy (%) / All [real recordings; zero-shot]",
+      "value": 50.5,
+      "source": "arXiv:2611.29375v1 Table 39, Kimi-Audio row, column 10 (AccFS\\mathrm{Acc}_{\\mathrm{FS}}); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "kimi-audio",
+      "metric": "Miss rate (%) ↓ [real recordings; zero-shot]",
+      "value": 50.3,
+      "source": "arXiv:2611.29375v1 Table 39, Kimi-Audio row, column 11 (MR); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "kimi-audio",
+      "metric": "False-flip rate (%) ↓ [real recordings; zero-shot]",
+      "value": 48.7,
+      "source": "arXiv:2611.29375v1 Table 39, Kimi-Audio row, column 12 (FFR); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "mimo-audio",
+      "metric": "Clean accuracy (%) / Melody [real recordings; zero-shot]",
+      "value": 50.7,
+      "source": "arXiv:2611.29375v1 Table 39, MiMo-Audio row, column 1 (Mel.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "mimo-audio",
+      "metric": "Clean accuracy (%) / Harmony [real recordings; zero-shot]",
+      "value": 46.0,
+      "source": "arXiv:2611.29375v1 Table 39, MiMo-Audio row, column 2 (Har.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "mimo-audio",
+      "metric": "Clean accuracy (%) / Timbre [real recordings; zero-shot]",
+      "value": 54.0,
+      "source": "arXiv:2611.29375v1 Table 39, MiMo-Audio row, column 3 (Tim.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "mimo-audio",
+      "metric": "Clean accuracy (%) / Rhythm [real recordings; zero-shot]",
+      "value": 60.0,
+      "source": "arXiv:2611.29375v1 Table 39, MiMo-Audio row, column 4 (Rhy.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "mimo-audio",
+      "metric": "Clean accuracy (%) / All [real recordings; zero-shot]",
+      "value": 52.7,
+      "source": "arXiv:2611.29375v1 Table 39, MiMo-Audio row, column 5 (All); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "mimo-audio",
+      "metric": "FLIP/STAY accuracy (%) / Melody [real recordings; zero-shot]",
+      "value": 50.0,
+      "source": "arXiv:2611.29375v1 Table 39, MiMo-Audio row, column 6 (Mel.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "mimo-audio",
+      "metric": "FLIP/STAY accuracy (%) / Harmony [real recordings; zero-shot]",
+      "value": 51.3,
+      "source": "arXiv:2611.29375v1 Table 39, MiMo-Audio row, column 7 (Har.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "mimo-audio",
+      "metric": "FLIP/STAY accuracy (%) / Timbre [real recordings; zero-shot]",
+      "value": 52.7,
+      "source": "arXiv:2611.29375v1 Table 39, MiMo-Audio row, column 8 (Tim.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "mimo-audio",
+      "metric": "FLIP/STAY accuracy (%) / Rhythm [real recordings; zero-shot]",
+      "value": 54.3,
+      "source": "arXiv:2611.29375v1 Table 39, MiMo-Audio row, column 9 (Rhy.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "mimo-audio",
+      "metric": "FLIP/STAY accuracy (%) / All [real recordings; zero-shot]",
+      "value": 52.1,
+      "source": "arXiv:2611.29375v1 Table 39, MiMo-Audio row, column 10 (AccFS\\mathrm{Acc}_{\\mathrm{FS}}); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "mimo-audio",
+      "metric": "Miss rate (%) ↓ [real recordings; zero-shot]",
+      "value": 49.3,
+      "source": "arXiv:2611.29375v1 Table 39, MiMo-Audio row, column 11 (MR); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "mimo-audio",
+      "metric": "False-flip rate (%) ↓ [real recordings; zero-shot]",
+      "value": 46.5,
+      "source": "arXiv:2611.29375v1 Table 39, MiMo-Audio row, column 12 (FFR); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "fun-audio-chat",
+      "metric": "Clean accuracy (%) / Melody [real recordings; zero-shot]",
+      "value": 48.0,
+      "source": "arXiv:2611.29375v1 Table 39, Fun-Audio-Chat row, column 1 (Mel.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "fun-audio-chat",
+      "metric": "Clean accuracy (%) / Harmony [real recordings; zero-shot]",
+      "value": 58.0,
+      "source": "arXiv:2611.29375v1 Table 39, Fun-Audio-Chat row, column 2 (Har.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "fun-audio-chat",
+      "metric": "Clean accuracy (%) / Timbre [real recordings; zero-shot]",
+      "value": 56.0,
+      "source": "arXiv:2611.29375v1 Table 39, Fun-Audio-Chat row, column 3 (Tim.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "fun-audio-chat",
+      "metric": "Clean accuracy (%) / Rhythm [real recordings; zero-shot]",
+      "value": 56.0,
+      "source": "arXiv:2611.29375v1 Table 39, Fun-Audio-Chat row, column 4 (Rhy.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "fun-audio-chat",
+      "metric": "Clean accuracy (%) / All [real recordings; zero-shot]",
+      "value": 54.5,
+      "source": "arXiv:2611.29375v1 Table 39, Fun-Audio-Chat row, column 5 (All); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "fun-audio-chat",
+      "metric": "FLIP/STAY accuracy (%) / Melody [real recordings; zero-shot]",
+      "value": 49.3,
+      "source": "arXiv:2611.29375v1 Table 39, Fun-Audio-Chat row, column 6 (Mel.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "fun-audio-chat",
+      "metric": "FLIP/STAY accuracy (%) / Harmony [real recordings; zero-shot]",
+      "value": 53.0,
+      "source": "arXiv:2611.29375v1 Table 39, Fun-Audio-Chat row, column 7 (Har.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "fun-audio-chat",
+      "metric": "FLIP/STAY accuracy (%) / Timbre [real recordings; zero-shot]",
+      "value": 57.7,
+      "source": "arXiv:2611.29375v1 Table 39, Fun-Audio-Chat row, column 8 (Tim.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "fun-audio-chat",
+      "metric": "FLIP/STAY accuracy (%) / Rhythm [real recordings; zero-shot]",
+      "value": 58.3,
+      "source": "arXiv:2611.29375v1 Table 39, Fun-Audio-Chat row, column 9 (Rhy.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "fun-audio-chat",
+      "metric": "FLIP/STAY accuracy (%) / All [real recordings; zero-shot]",
+      "value": 54.6,
+      "source": "arXiv:2611.29375v1 Table 39, Fun-Audio-Chat row, column 10 (AccFS\\mathrm{Acc}_{\\mathrm{FS}}); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "fun-audio-chat",
+      "metric": "Miss rate (%) ↓ [real recordings; zero-shot]",
+      "value": 45.2,
+      "source": "arXiv:2611.29375v1 Table 39, Fun-Audio-Chat row, column 11 (MR); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "fun-audio-chat",
+      "metric": "False-flip rate (%) ↓ [real recordings; zero-shot]",
+      "value": 45.7,
+      "source": "arXiv:2611.29375v1 Table 39, Fun-Audio-Chat row, column 12 (FFR); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "step-audio-2-mini",
+      "metric": "Clean accuracy (%) / Melody [real recordings; zero-shot]",
+      "value": 49.3,
+      "source": "arXiv:2611.29375v1 Table 39, Step-Audio 2 row, column 1 (Mel.); real recordings; zero-shot. Appendix C identifies Step-Audio 2 as stepfun-ai/Step-Audio-2-mini (e36fdd5).",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "step-audio-2-mini",
+      "metric": "Clean accuracy (%) / Harmony [real recordings; zero-shot]",
+      "value": 53.3,
+      "source": "arXiv:2611.29375v1 Table 39, Step-Audio 2 row, column 2 (Har.); real recordings; zero-shot. Appendix C identifies Step-Audio 2 as stepfun-ai/Step-Audio-2-mini (e36fdd5).",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "step-audio-2-mini",
+      "metric": "Clean accuracy (%) / Timbre [real recordings; zero-shot]",
+      "value": 63.3,
+      "source": "arXiv:2611.29375v1 Table 39, Step-Audio 2 row, column 3 (Tim.); real recordings; zero-shot. Appendix C identifies Step-Audio 2 as stepfun-ai/Step-Audio-2-mini (e36fdd5).",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "step-audio-2-mini",
+      "metric": "Clean accuracy (%) / Rhythm [real recordings; zero-shot]",
+      "value": 58.0,
+      "source": "arXiv:2611.29375v1 Table 39, Step-Audio 2 row, column 4 (Rhy.); real recordings; zero-shot. Appendix C identifies Step-Audio 2 as stepfun-ai/Step-Audio-2-mini (e36fdd5).",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "step-audio-2-mini",
+      "metric": "Clean accuracy (%) / All [real recordings; zero-shot]",
+      "value": 56.0,
+      "source": "arXiv:2611.29375v1 Table 39, Step-Audio 2 row, column 5 (All); real recordings; zero-shot. Appendix C identifies Step-Audio 2 as stepfun-ai/Step-Audio-2-mini (e36fdd5).",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "step-audio-2-mini",
+      "metric": "FLIP/STAY accuracy (%) / Melody [real recordings; zero-shot]",
+      "value": 47.7,
+      "source": "arXiv:2611.29375v1 Table 39, Step-Audio 2 row, column 6 (Mel.); real recordings; zero-shot. Appendix C identifies Step-Audio 2 as stepfun-ai/Step-Audio-2-mini (e36fdd5).",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "step-audio-2-mini",
+      "metric": "FLIP/STAY accuracy (%) / Harmony [real recordings; zero-shot]",
+      "value": 47.0,
+      "source": "arXiv:2611.29375v1 Table 39, Step-Audio 2 row, column 7 (Har.); real recordings; zero-shot. Appendix C identifies Step-Audio 2 as stepfun-ai/Step-Audio-2-mini (e36fdd5).",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "step-audio-2-mini",
+      "metric": "FLIP/STAY accuracy (%) / Timbre [real recordings; zero-shot]",
+      "value": 54.7,
+      "source": "arXiv:2611.29375v1 Table 39, Step-Audio 2 row, column 8 (Tim.); real recordings; zero-shot. Appendix C identifies Step-Audio 2 as stepfun-ai/Step-Audio-2-mini (e36fdd5).",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "step-audio-2-mini",
+      "metric": "FLIP/STAY accuracy (%) / Rhythm [real recordings; zero-shot]",
+      "value": 43.7,
+      "source": "arXiv:2611.29375v1 Table 39, Step-Audio 2 row, column 9 (Rhy.); real recordings; zero-shot. Appendix C identifies Step-Audio 2 as stepfun-ai/Step-Audio-2-mini (e36fdd5).",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "step-audio-2-mini",
+      "metric": "FLIP/STAY accuracy (%) / All [real recordings; zero-shot]",
+      "value": 48.3,
+      "source": "arXiv:2611.29375v1 Table 39, Step-Audio 2 row, column 10 (AccFS\\mathrm{Acc}_{\\mathrm{FS}}); real recordings; zero-shot. Appendix C identifies Step-Audio 2 as stepfun-ai/Step-Audio-2-mini (e36fdd5).",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "step-audio-2-mini",
+      "metric": "Miss rate (%) ↓ [real recordings; zero-shot]",
+      "value": 53.8,
+      "source": "arXiv:2611.29375v1 Table 39, Step-Audio 2 row, column 11 (MR); real recordings; zero-shot. Appendix C identifies Step-Audio 2 as stepfun-ai/Step-Audio-2-mini (e36fdd5).",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "step-audio-2-mini",
+      "metric": "False-flip rate (%) ↓ [real recordings; zero-shot]",
+      "value": 49.7,
+      "source": "arXiv:2611.29375v1 Table 39, Step-Audio 2 row, column 12 (FFR); real recordings; zero-shot. Appendix C identifies Step-Audio 2 as stepfun-ai/Step-Audio-2-mini (e36fdd5).",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "gpt-audio-mini",
+      "metric": "Clean accuracy (%) / Melody [real recordings; zero-shot]",
+      "value": 48.0,
+      "source": "arXiv:2611.29375v1 Table 39, GPT-Audio-mini row, column 1 (Mel.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "gpt-audio-mini",
+      "metric": "Clean accuracy (%) / Harmony [real recordings; zero-shot]",
+      "value": 26.7,
+      "source": "arXiv:2611.29375v1 Table 39, GPT-Audio-mini row, column 2 (Har.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "gpt-audio-mini",
+      "metric": "Clean accuracy (%) / Timbre [real recordings; zero-shot]",
+      "value": 36.0,
+      "source": "arXiv:2611.29375v1 Table 39, GPT-Audio-mini row, column 3 (Tim.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "gpt-audio-mini",
+      "metric": "Clean accuracy (%) / Rhythm [real recordings; zero-shot]",
+      "value": 4.7,
+      "source": "arXiv:2611.29375v1 Table 39, GPT-Audio-mini row, column 4 (Rhy.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "gpt-audio-mini",
+      "metric": "Clean accuracy (%) / All [real recordings; zero-shot]",
+      "value": 28.8,
+      "source": "arXiv:2611.29375v1 Table 39, GPT-Audio-mini row, column 5 (All); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "gpt-audio-mini",
+      "metric": "FLIP/STAY accuracy (%) / Melody [real recordings; zero-shot]",
+      "value": 45.3,
+      "source": "arXiv:2611.29375v1 Table 39, GPT-Audio-mini row, column 6 (Mel.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "gpt-audio-mini",
+      "metric": "FLIP/STAY accuracy (%) / Harmony [real recordings; zero-shot]",
+      "value": 30.7,
+      "source": "arXiv:2611.29375v1 Table 39, GPT-Audio-mini row, column 7 (Har.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "gpt-audio-mini",
+      "metric": "FLIP/STAY accuracy (%) / Timbre [real recordings; zero-shot]",
+      "value": 32.3,
+      "source": "arXiv:2611.29375v1 Table 39, GPT-Audio-mini row, column 8 (Tim.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "gpt-audio-mini",
+      "metric": "FLIP/STAY accuracy (%) / Rhythm [real recordings; zero-shot]",
+      "value": 4.0,
+      "source": "arXiv:2611.29375v1 Table 39, GPT-Audio-mini row, column 9 (Rhy.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "gpt-audio-mini",
+      "metric": "FLIP/STAY accuracy (%) / All [real recordings; zero-shot]",
+      "value": 28.1,
+      "source": "arXiv:2611.29375v1 Table 39, GPT-Audio-mini row, column 10 (AccFS\\mathrm{Acc}_{\\mathrm{FS}}); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "gpt-audio-mini",
+      "metric": "Miss rate (%) ↓ [real recordings; zero-shot]",
+      "value": 71.5,
+      "source": "arXiv:2611.29375v1 Table 39, GPT-Audio-mini row, column 11 (MR); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "gpt-audio-mini",
+      "metric": "False-flip rate (%) ↓ [real recordings; zero-shot]",
+      "value": 72.3,
+      "source": "arXiv:2611.29375v1 Table 39, GPT-Audio-mini row, column 12 (FFR); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "gpt-audio-1-5",
+      "metric": "Clean accuracy (%) / Melody [real recordings; zero-shot]",
+      "value": 49.3,
+      "source": "arXiv:2611.29375v1 Table 39, GPT-Audio-1.5 row, column 1 (Mel.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "gpt-audio-1-5",
+      "metric": "Clean accuracy (%) / Harmony [real recordings; zero-shot]",
+      "value": 42.0,
+      "source": "arXiv:2611.29375v1 Table 39, GPT-Audio-1.5 row, column 2 (Har.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "gpt-audio-1-5",
+      "metric": "Clean accuracy (%) / Timbre [real recordings; zero-shot]",
+      "value": 54.7,
+      "source": "arXiv:2611.29375v1 Table 39, GPT-Audio-1.5 row, column 3 (Tim.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "gpt-audio-1-5",
+      "metric": "Clean accuracy (%) / Rhythm [real recordings; zero-shot]",
+      "value": 38.0,
+      "source": "arXiv:2611.29375v1 Table 39, GPT-Audio-1.5 row, column 4 (Rhy.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "gpt-audio-1-5",
+      "metric": "Clean accuracy (%) / All [real recordings; zero-shot]",
+      "value": 46.0,
+      "source": "arXiv:2611.29375v1 Table 39, GPT-Audio-1.5 row, column 5 (All); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "gpt-audio-1-5",
+      "metric": "FLIP/STAY accuracy (%) / Melody [real recordings; zero-shot]",
+      "value": 47.3,
+      "source": "arXiv:2611.29375v1 Table 39, GPT-Audio-1.5 row, column 6 (Mel.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "gpt-audio-1-5",
+      "metric": "FLIP/STAY accuracy (%) / Harmony [real recordings; zero-shot]",
+      "value": 43.7,
+      "source": "arXiv:2611.29375v1 Table 39, GPT-Audio-1.5 row, column 7 (Har.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "gpt-audio-1-5",
+      "metric": "FLIP/STAY accuracy (%) / Timbre [real recordings; zero-shot]",
+      "value": 53.0,
+      "source": "arXiv:2611.29375v1 Table 39, GPT-Audio-1.5 row, column 8 (Tim.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "gpt-audio-1-5",
+      "metric": "FLIP/STAY accuracy (%) / Rhythm [real recordings; zero-shot]",
+      "value": 42.7,
+      "source": "arXiv:2611.29375v1 Table 39, GPT-Audio-1.5 row, column 9 (Rhy.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "gpt-audio-1-5",
+      "metric": "FLIP/STAY accuracy (%) / All [real recordings; zero-shot]",
+      "value": 46.7,
+      "source": "arXiv:2611.29375v1 Table 39, GPT-Audio-1.5 row, column 10 (AccFS\\mathrm{Acc}_{\\mathrm{FS}}); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "gpt-audio-1-5",
+      "metric": "Miss rate (%) ↓ [real recordings; zero-shot]",
+      "value": 53.2,
+      "source": "arXiv:2611.29375v1 Table 39, GPT-Audio-1.5 row, column 11 (MR); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "gpt-audio-1-5",
+      "metric": "False-flip rate (%) ↓ [real recordings; zero-shot]",
+      "value": 53.5,
+      "source": "arXiv:2611.29375v1 Table 39, GPT-Audio-1.5 row, column 12 (FFR); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "gemini-2-5-pro",
+      "metric": "Clean accuracy (%) / Melody [real recordings; zero-shot]",
+      "value": 72.7,
+      "source": "arXiv:2611.29375v1 Table 39, Gemini 2.5 Pro row, column 1 (Mel.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "gemini-2-5-pro",
+      "metric": "Clean accuracy (%) / Harmony [real recordings; zero-shot]",
+      "value": 64.0,
+      "source": "arXiv:2611.29375v1 Table 39, Gemini 2.5 Pro row, column 2 (Har.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "gemini-2-5-pro",
+      "metric": "Clean accuracy (%) / Timbre [real recordings; zero-shot]",
+      "value": 76.0,
+      "source": "arXiv:2611.29375v1 Table 39, Gemini 2.5 Pro row, column 3 (Tim.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "gemini-2-5-pro",
+      "metric": "Clean accuracy (%) / Rhythm [real recordings; zero-shot]",
+      "value": 88.7,
+      "source": "arXiv:2611.29375v1 Table 39, Gemini 2.5 Pro row, column 4 (Rhy.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "gemini-2-5-pro",
+      "metric": "Clean accuracy (%) / All [real recordings; zero-shot]",
+      "value": 75.3,
+      "source": "arXiv:2611.29375v1 Table 39, Gemini 2.5 Pro row, column 5 (All); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "gemini-2-5-pro",
+      "metric": "FLIP/STAY accuracy (%) / Melody [real recordings; zero-shot]",
+      "value": 67.3,
+      "source": "arXiv:2611.29375v1 Table 39, Gemini 2.5 Pro row, column 6 (Mel.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "gemini-2-5-pro",
+      "metric": "FLIP/STAY accuracy (%) / Harmony [real recordings; zero-shot]",
+      "value": 60.3,
+      "source": "arXiv:2611.29375v1 Table 39, Gemini 2.5 Pro row, column 7 (Har.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "gemini-2-5-pro",
+      "metric": "FLIP/STAY accuracy (%) / Timbre [real recordings; zero-shot]",
+      "value": 75.7,
+      "source": "arXiv:2611.29375v1 Table 39, Gemini 2.5 Pro row, column 8 (Tim.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "gemini-2-5-pro",
+      "metric": "FLIP/STAY accuracy (%) / Rhythm [real recordings; zero-shot]",
+      "value": 91.7,
+      "source": "arXiv:2611.29375v1 Table 39, Gemini 2.5 Pro row, column 9 (Rhy.); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "gemini-2-5-pro",
+      "metric": "FLIP/STAY accuracy (%) / All [real recordings; zero-shot]",
+      "value": 73.8,
+      "source": "arXiv:2611.29375v1 Table 39, Gemini 2.5 Pro row, column 10 (AccFS\\mathrm{Acc}_{\\mathrm{FS}}); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "gemini-2-5-pro",
+      "metric": "Miss rate (%) ↓ [real recordings; zero-shot]",
+      "value": 25.3,
+      "source": "arXiv:2611.29375v1 Table 39, Gemini 2.5 Pro row, column 11 (MR); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "musiclistenbench",
+      "model": "gemini-2-5-pro",
+      "metric": "False-flip rate (%) ↓ [real recordings; zero-shot]",
+      "value": 27.2,
+      "source": "arXiv:2611.29375v1 Table 39, Gemini 2.5 Pro row, column 12 (FFR); real recordings; zero-shot. Checkpoint and decoding configuration: Appendix C.",
+      "source_url": "https://arxiv.org/pdf/2611.29375v1#page=44"
+    },
+    {
+      "benchmark": "speech-qa-unanswerability",
+      "model": "qwen2-audio",
+      "metric": "Hallucination (%) ↓ / C (n=40) [diagnostic synthetic; untrimmed; plain; 8-bit greedy]",
+      "value": 92.5,
+      "source": "arXiv:2611.29393v1 Table 2, Qwen2-Audio / plain row, column 2 (zero-based after row splitting); diagnostic synthetic; untrimmed. Qwen2-Audio-7B-Instruct, 8-bit quantization and greedy decoding; definitions and denominators in caption and Appendix G.",
+      "source_url": "https://arxiv.org/pdf/2611.29393v1#page=15"
+    },
+    {
+      "benchmark": "speech-qa-unanswerability",
+      "model": "qwen2-audio",
+      "metric": "Answer accuracy (%) / A (n=30) [diagnostic synthetic; untrimmed; plain; 8-bit greedy]",
+      "value": 33.3,
+      "source": "arXiv:2611.29393v1 Table 2, Qwen2-Audio / plain row, column 3 (zero-based after row splitting); diagnostic synthetic; untrimmed. Qwen2-Audio-7B-Instruct, 8-bit quantization and greedy decoding; definitions and denominators in caption and Appendix G.",
+      "source_url": "https://arxiv.org/pdf/2611.29393v1#page=15"
+    },
+    {
+      "benchmark": "speech-qa-unanswerability",
+      "model": "qwen2-audio",
+      "metric": "Answer accuracy (%) / B (n=30) [diagnostic synthetic; untrimmed; plain; 8-bit greedy]",
+      "value": 26.7,
+      "source": "arXiv:2611.29393v1 Table 2, Qwen2-Audio / plain row, column 4 (zero-based after row splitting); diagnostic synthetic; untrimmed. Qwen2-Audio-7B-Instruct, 8-bit quantization and greedy decoding; definitions and denominators in caption and Appendix G.",
+      "source_url": "https://arxiv.org/pdf/2611.29393v1#page=15"
+    },
+    {
+      "benchmark": "speech-qa-unanswerability",
+      "model": "qwen2-audio",
+      "metric": "Over-refusal (%) ↓ / A+B (n=60) [diagnostic synthetic; untrimmed; plain; 8-bit greedy]",
+      "value": 6.7,
+      "source": "arXiv:2611.29393v1 Table 2, Qwen2-Audio / plain row, column 5 (zero-based after row splitting); diagnostic synthetic; untrimmed. Qwen2-Audio-7B-Instruct, 8-bit quantization and greedy decoding; definitions and denominators in caption and Appendix G.",
+      "source_url": "https://arxiv.org/pdf/2611.29393v1#page=15"
+    },
+    {
+      "benchmark": "speech-qa-unanswerability",
+      "model": "qwen2-audio",
+      "metric": "Hallucination (%) ↓ / C (n=40) [diagnostic synthetic; untrimmed; IDK; 8-bit greedy]",
+      "value": 17.5,
+      "source": "arXiv:2611.29393v1 Table 2, Qwen2-Audio / IDK row, column 2 (zero-based after row splitting); diagnostic synthetic; untrimmed. Qwen2-Audio-7B-Instruct, 8-bit quantization and greedy decoding; definitions and denominators in caption and Appendix G.",
+      "source_url": "https://arxiv.org/pdf/2611.29393v1#page=15"
+    },
+    {
+      "benchmark": "speech-qa-unanswerability",
+      "model": "qwen2-audio",
+      "metric": "Answer accuracy (%) / A (n=30) [diagnostic synthetic; untrimmed; IDK; 8-bit greedy]",
+      "value": 23.3,
+      "source": "arXiv:2611.29393v1 Table 2, Qwen2-Audio / IDK row, column 3 (zero-based after row splitting); diagnostic synthetic; untrimmed. Qwen2-Audio-7B-Instruct, 8-bit quantization and greedy decoding; definitions and denominators in caption and Appendix G.",
+      "source_url": "https://arxiv.org/pdf/2611.29393v1#page=15"
+    },
+    {
+      "benchmark": "speech-qa-unanswerability",
+      "model": "qwen2-audio",
+      "metric": "Answer accuracy (%) / B (n=30) [diagnostic synthetic; untrimmed; IDK; 8-bit greedy]",
+      "value": 6.7,
+      "source": "arXiv:2611.29393v1 Table 2, Qwen2-Audio / IDK row, column 4 (zero-based after row splitting); diagnostic synthetic; untrimmed. Qwen2-Audio-7B-Instruct, 8-bit quantization and greedy decoding; definitions and denominators in caption and Appendix G.",
+      "source_url": "https://arxiv.org/pdf/2611.29393v1#page=15"
+    },
+    {
+      "benchmark": "speech-qa-unanswerability",
+      "model": "qwen2-audio",
+      "metric": "Over-refusal (%) ↓ / A+B (n=60) [diagnostic synthetic; untrimmed; IDK; 8-bit greedy]",
+      "value": 61.7,
+      "source": "arXiv:2611.29393v1 Table 2, Qwen2-Audio / IDK row, column 5 (zero-based after row splitting); diagnostic synthetic; untrimmed. Qwen2-Audio-7B-Instruct, 8-bit quantization and greedy decoding; definitions and denominators in caption and Appendix G.",
+      "source_url": "https://arxiv.org/pdf/2611.29393v1#page=15"
+    },
+    {
+      "benchmark": "speech-qa-unanswerability",
+      "model": "qwen2-audio",
+      "metric": "Hallucination (%) ↓ / C (n=235) [validation human; 30 s; plain; 8-bit greedy]",
+      "value": 94.0,
+      "source": "arXiv:2611.29393v1 Table 3, Qwen2-Audio / plain row, column 2 (zero-based after row splitting); validation human; 30 s. Qwen2-Audio-7B-Instruct, 8-bit quantization and greedy decoding; definitions and denominators in caption and Appendix G.",
+      "source_url": "https://arxiv.org/pdf/2611.29393v1#page=15"
+    },
+    {
+      "benchmark": "speech-qa-unanswerability",
+      "model": "qwen2-audio",
+      "metric": "Answer accuracy (%) / A (n=141) [validation human; 30 s; plain; 8-bit greedy]",
+      "value": 80.1,
+      "source": "arXiv:2611.29393v1 Table 3, Qwen2-Audio / plain row, column 3 (zero-based after row splitting); validation human; 30 s. Qwen2-Audio-7B-Instruct, 8-bit quantization and greedy decoding; definitions and denominators in caption and Appendix G.",
+      "source_url": "https://arxiv.org/pdf/2611.29393v1#page=15"
+    },
+    {
+      "benchmark": "speech-qa-unanswerability",
+      "model": "qwen2-audio",
+      "metric": "Over-refusal (%) ↓ / A (n=141) [validation human; 30 s; plain; 8-bit greedy]",
+      "value": 0.0,
+      "source": "arXiv:2611.29393v1 Table 3, Qwen2-Audio / plain row, column 4 (zero-based after row splitting); validation human; 30 s. Qwen2-Audio-7B-Instruct, 8-bit quantization and greedy decoding; definitions and denominators in caption and Appendix G.",
+      "source_url": "https://arxiv.org/pdf/2611.29393v1#page=15"
+    },
+    {
+      "benchmark": "speech-qa-unanswerability",
+      "model": "qwen2-audio",
+      "metric": "Hallucination (%) ↓ / C (n=235) [validation human; 30 s; IDK; 8-bit greedy]",
+      "value": 69.8,
+      "source": "arXiv:2611.29393v1 Table 3, Qwen2-Audio / IDK row, column 2 (zero-based after row splitting); validation human; 30 s. Qwen2-Audio-7B-Instruct, 8-bit quantization and greedy decoding; definitions and denominators in caption and Appendix G.",
+      "source_url": "https://arxiv.org/pdf/2611.29393v1#page=15"
+    },
+    {
+      "benchmark": "speech-qa-unanswerability",
+      "model": "qwen2-audio",
+      "metric": "Answer accuracy (%) / A (n=141) [validation human; 30 s; IDK; 8-bit greedy]",
+      "value": 79.4,
+      "source": "arXiv:2611.29393v1 Table 3, Qwen2-Audio / IDK row, column 3 (zero-based after row splitting); validation human; 30 s. Qwen2-Audio-7B-Instruct, 8-bit quantization and greedy decoding; definitions and denominators in caption and Appendix G.",
+      "source_url": "https://arxiv.org/pdf/2611.29393v1#page=15"
+    },
+    {
+      "benchmark": "speech-qa-unanswerability",
+      "model": "qwen2-audio",
+      "metric": "Over-refusal (%) ↓ / A (n=141) [validation human; 30 s; IDK; 8-bit greedy]",
+      "value": 0.7,
+      "source": "arXiv:2611.29393v1 Table 3, Qwen2-Audio / IDK row, column 4 (zero-based after row splitting); validation human; 30 s. Qwen2-Audio-7B-Instruct, 8-bit quantization and greedy decoding; definitions and denominators in caption and Appendix G.",
+      "source_url": "https://arxiv.org/pdf/2611.29393v1#page=15"
+    },
+    {
+      "benchmark": "speech-qa-unanswerability",
+      "model": "qwen2-audio",
+      "metric": "Hallucination (%) ↓ / synthetic C (n=126) [twin paired; 30 s; plain; 8-bit greedy]",
+      "value": 92.1,
+      "source": "arXiv:2611.29393v1 Table 4, Qwen2-Audio / plain row, column 2 (zero-based after row splitting); twin paired; 30 s. Qwen2-Audio-7B-Instruct, 8-bit quantization and greedy decoding; definitions and denominators in caption and Appendix G.",
+      "source_url": "https://arxiv.org/pdf/2611.29393v1#page=16"
+    },
+    {
+      "benchmark": "speech-qa-unanswerability",
+      "model": "qwen2-audio",
+      "metric": "Hallucination (%) ↓ / human C (n=126) [twin paired; 30 s; plain; 8-bit greedy]",
+      "value": 92.9,
+      "source": "arXiv:2611.29393v1 Table 4, Qwen2-Audio / plain row, column 3 (zero-based after row splitting); twin paired; 30 s. Qwen2-Audio-7B-Instruct, 8-bit quantization and greedy decoding; definitions and denominators in caption and Appendix G.",
+      "source_url": "https://arxiv.org/pdf/2611.29393v1#page=16"
+    },
+    {
+      "benchmark": "speech-qa-unanswerability",
+      "model": "qwen2-audio",
+      "metric": "Answer accuracy (%) / synthetic A (n=88) [twin paired; 30 s; plain; 8-bit greedy]",
+      "value": 90.9,
+      "source": "arXiv:2611.29393v1 Table 4, Qwen2-Audio / plain row, column 5 (zero-based after row splitting); twin paired; 30 s. Qwen2-Audio-7B-Instruct, 8-bit quantization and greedy decoding; definitions and denominators in caption and Appendix G.",
+      "source_url": "https://arxiv.org/pdf/2611.29393v1#page=16"
+    },
+    {
+      "benchmark": "speech-qa-unanswerability",
+      "model": "qwen2-audio",
+      "metric": "Answer accuracy (%) / human A (n=88) [twin paired; 30 s; plain; 8-bit greedy]",
+      "value": 81.8,
+      "source": "arXiv:2611.29393v1 Table 4, Qwen2-Audio / plain row, column 6 (zero-based after row splitting); twin paired; 30 s. Qwen2-Audio-7B-Instruct, 8-bit quantization and greedy decoding; definitions and denominators in caption and Appendix G.",
+      "source_url": "https://arxiv.org/pdf/2611.29393v1#page=16"
+    },
+    {
+      "benchmark": "speech-qa-unanswerability",
+      "model": "qwen2-audio",
+      "metric": "Hallucination (%) ↓ / synthetic C (n=126) [twin paired; 30 s; IDK; 8-bit greedy]",
+      "value": 78.6,
+      "source": "arXiv:2611.29393v1 Table 4, Qwen2-Audio / IDK row, column 2 (zero-based after row splitting); twin paired; 30 s. Qwen2-Audio-7B-Instruct, 8-bit quantization and greedy decoding; definitions and denominators in caption and Appendix G.",
+      "source_url": "https://arxiv.org/pdf/2611.29393v1#page=16"
+    },
+    {
+      "benchmark": "speech-qa-unanswerability",
+      "model": "qwen2-audio",
+      "metric": "Hallucination (%) ↓ / human C (n=126) [twin paired; 30 s; IDK; 8-bit greedy]",
+      "value": 72.2,
+      "source": "arXiv:2611.29393v1 Table 4, Qwen2-Audio / IDK row, column 3 (zero-based after row splitting); twin paired; 30 s. Qwen2-Audio-7B-Instruct, 8-bit quantization and greedy decoding; definitions and denominators in caption and Appendix G.",
+      "source_url": "https://arxiv.org/pdf/2611.29393v1#page=16"
+    },
+    {
+      "benchmark": "speech-qa-unanswerability",
+      "model": "qwen2-audio",
+      "metric": "Answer accuracy (%) / synthetic A (n=88) [twin paired; 30 s; IDK; 8-bit greedy]",
+      "value": 87.5,
+      "source": "arXiv:2611.29393v1 Table 4, Qwen2-Audio / IDK row, column 5 (zero-based after row splitting); twin paired; 30 s. Qwen2-Audio-7B-Instruct, 8-bit quantization and greedy decoding; definitions and denominators in caption and Appendix G.",
+      "source_url": "https://arxiv.org/pdf/2611.29393v1#page=16"
+    },
+    {
+      "benchmark": "speech-qa-unanswerability",
+      "model": "qwen2-audio",
+      "metric": "Answer accuracy (%) / human A (n=88) [twin paired; 30 s; IDK; 8-bit greedy]",
+      "value": 79.5,
+      "source": "arXiv:2611.29393v1 Table 4, Qwen2-Audio / IDK row, column 6 (zero-based after row splitting); twin paired; 30 s. Qwen2-Audio-7B-Instruct, 8-bit quantization and greedy decoding; definitions and denominators in caption and Appendix G.",
+      "source_url": "https://arxiv.org/pdf/2611.29393v1#page=16"
     }
   ]
 }

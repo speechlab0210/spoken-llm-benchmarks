@@ -17,7 +17,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2611.29375",
       "score": 66,
-      "status": "new — under review"
+      "status": "reviewed — added: MusicListenBench (musiclistenbench); a new paired-listening benchmark for general-purpose audio LLMs, with musical FLIP and sound-only STAY controls."
     },
     {
       "id": "2611.30157",
@@ -37,7 +37,7 @@
       "primary_category": "cs.CV",
       "url": "https://arxiv.org/abs/2611.30157",
       "score": 45,
-      "status": "new — under review"
+      "status": "reviewed — added: UUBench (uubench), v0.1 Preview; a new audiovisual response benchmark for general-purpose multimodal systems. The present single-response protocol does not establish full-duplex interaction."
     },
     {
       "id": "2611.28902",
@@ -57,7 +57,7 @@
       "primary_category": "cs.AI",
       "url": "https://arxiv.org/abs/2611.28902",
       "score": 36,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: StudioBench evaluates director-agent tool orchestration from text briefs. Speech is produced or transcribed by fixed external tools; the tested policy is not evaluated as a general-purpose speech-input/output model (Sections 3–4 and Appendix C)."
     },
     {
       "id": "2611.29750",
@@ -73,7 +73,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2611.29750",
       "score": 36,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: RASA-Bench evaluates revision of written Hindi drafts for audio-fiction scripts; the evaluated LLM input/output is text, not speech (task and evaluation sections)."
     },
     {
       "id": "2611.29557",
@@ -88,7 +88,7 @@
       "primary_category": "eess.AS",
       "url": "https://arxiv.org/abs/2611.29557",
       "score": 27,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: S2SCORE introduces a learned evaluation metric for speech-to-speech translation; its dedicated translation and cascaded ASR/TTS systems are not general-purpose spoken LLMs (Section III)."
     },
     {
       "id": "2611.29393",
@@ -104,7 +104,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2611.29393",
       "score": 24,
-      "status": "new — under review"
+      "status": "reviewed — added: Speech QA Unanswerability Diagnostic (speech-qa-unanswerability); a new diagnostic protocol and paired evaluation resource for abstention by general-purpose speech LLMs."
     },
     {
       "id": "2611.29658",
@@ -119,7 +119,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2611.29658",
       "score": 24,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: Evaluates written audio-description scripts generated from video by a video-LLM/text-LLM pipeline, not general-purpose spoken LLM audio input/output (Section 3.2)."
     },
     {
       "id": "2611.28929",
@@ -133,7 +133,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2611.28929",
       "score": 21,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: DG-ICL is a definition-guided fine-tuning method evaluated on existing SLU datasets, not a newly introduced benchmark (Sections 3–4)."
     },
     {
       "id": "2611.28080",
@@ -147,7 +147,7 @@
       "primary_category": "cs.CV",
       "url": "https://arxiv.org/abs/2611.28080",
       "score": 18,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: Proposes a task-specific audiovisual violence classifier using CLIP/BEATs and a fusion Transformer on XD-Violence and AIRTLab; neither a new spoken-LLM benchmark nor a general-purpose evaluated model (Section 3)."
     },
     {
       "id": "2611.28248",
@@ -167,7 +167,7 @@
       "primary_category": "eess.AS",
       "url": "https://arxiv.org/abs/2611.28248",
       "score": 18,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: Granary-v2 is a training-data curation resource and reusable preparation pipeline, with ASR-system evaluation; it does not introduce a benchmark for general-purpose spoken LLMs (Sections 4–5)."
     },
     {
       "id": "2611.28263",
@@ -181,7 +181,7 @@
       "primary_category": "cs.AI",
       "url": "https://arxiv.org/abs/2611.28263",
       "score": 18,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: The new Nepali-accented English dataset evaluates dedicated Conformer and Whisper ASR models, not general-purpose spoken LLMs (Section 5)."
     },
     {
       "id": "2611.28765",
@@ -201,7 +201,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2611.28765",
       "score": 18,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: Introduces multi-view alignment and split-decontamination methods for symbolic MIDI music collections, not a benchmark of general-purpose spoken LLMs (methods and experiments)."
     },
     {
       "id": "2611.28960",
@@ -220,7 +220,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2611.28960",
       "score": 18,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: EmoRouter is an inference-time modality-routing method tested on four existing emotion-recognition benchmarks, not a new benchmark (Sections 3–4)."
     },
     {
       "id": "2611.27810",

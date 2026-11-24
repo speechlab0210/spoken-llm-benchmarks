@@ -13325,6 +13325,98 @@
       ],
       "summary": "Checks whether acoustic assertions in reasoning audio language models agree with clinician ratings, and whether the assertions remain consistent across seeds and questions. It combines SAP, HeyJay, NeuroVoz, PVQD and Bridge2AI to evaluate ten general-purpose open-weight reasoning models zero-shot, with clinical fine-tuning experiments kept separate.",
       "note": "Four cells cover three existing models and only the explicitly labelled best zero-shot endpoint clinical BA values in Figure 4: HeyJay and PVQD for Qwen3-Omni Thinking, NeuroVoz for Step-Audio-R1, and Bridge2AI for Audio Flamingo 3 Think. These are selected per-dataset endpoint results, not a complete model comparison or acoustic-claim factuality scores. The SAP winner is Step-Audio-R1.1, which lacks an exact catalogue record. The five labelled GRPO claims results belong to a clinical derivative and are not assigned to its untuned base. Unlabelled factuality and kappa plot coordinates are not converted into scores. Clinical BA measures answers; claim factuality BA compares extracted assertions with clinician ratings and averages eligible dataset–dimension cells weighted by graded-claim count. Consistency uses Cohen’s kappa across repeated seeds, paraphrases and different questions. The 3,452 prompts comprise 1,864 simple questions, 794 endpoint questions and 794 descriptions. Clips are capped at 30 seconds and resampled to 16 kHz. NeuroVoz is Spanish; the other corpora are English. Some clinician ratings apply at session level to every associated clip. Qwen3-30B-A3B-Instruct-2507 extracts claims from reasoning text without the audio, prompt or labels; its reported validation includes LLM-annotated claims, so the automatic grading is imperfect. Data are available upon request subject to provider approval; no public download or code release was verified. All models receive one user turn in their documented reasoning mode; this is not a live voice-agent test."
+    },
+    {
+      "id": "musiclistenbench",
+      "name": "MusicListenBench",
+      "full_title": "MusicListenBench: Can Audio LLMs Hear the Difference Yet?",
+      "arxiv_id": "2611.29375",
+      "arxiv_date": "2026-11",
+      "arxiv_date_full": "2026-11-22",
+      "url": "https://arxiv.org/abs/2611.29375",
+      "categories": [
+        "auditory-perception",
+        "audio-grounding",
+        "robustness"
+      ],
+      "tasks": [
+        "paired melody, harmony, timbre and rhythm discrimination",
+        "FLIP sensitivity to musical changes",
+        "STAY invariance to sound-only changes"
+      ],
+      "size": "10,000 training items; 3,000 rendered test items; 1,800 real-recording test items across four tasks",
+      "io": "two music clips concatenated with one second of silence, plus a written question → A/B answer",
+      "metrics": [
+        "clean accuracy (%)",
+        "FLIP/STAY accuracy (%)",
+        "miss rate (%) ↓",
+        "false-flip rate (%) ↓"
+      ],
+      "code": "https://github.com/AMAAI-Lab/MusicListenBench",
+      "data": "https://huggingface.co/datasets/amaai-lab/MusicListenBench",
+      "homepage": "https://amaai-lab.github.io/MusicListenBench/",
+      "summary": "Tests whether general-purpose audio language models hear differences between two short music clips. FLIP variants change the music and therefore the answer; STAY variants change the rendering while preserving the musical relation. Four tasks cover melody, harmony, timbre and rhythm, with held-out pitch ranges and soundfonts and a separate real-recording test.",
+      "note": "The 220 imported cells cover 11 existing model records: rendered zero-shot results in Table 2 and real-recording zero-shot results in Table 39. Appendix C identifies the Step-Audio 2 row as Step-Audio-2-mini, not the full Step-Audio-2 model. Gemini 3.8 Flash lacks an exact catalogue record and is deferred; trained derivatives and human references are not assigned to untuned models. Rendered clean accuracy uses 250 items per task (1,000 overall), followed by 2,000 FLIP/STAY items. The real test uses 150 clean and 300 FLIP/STAY items per task (600 and 1,200 overall). MR measures errors on FLIP items; FFR measures errors on all STAY items, not only those whose clean counterpart was correct. Invalid API replies fall back to A on the rendered test but count as errors on the real test, so the conditions remain separate. API results are the paper’s September 2026 runs. The 12-listener human reference uses 288 answers rather than the full model test. Short controlled clips and stems do not establish full-song or full-mix understanding. The verified repository provides evaluation code through its release branch; real-recording manifests and preparation scripts do not redistribute restricted source audio."
+    },
+    {
+      "id": "uubench",
+      "name": "UUBench (v0.1 Preview)",
+      "full_title": "UUBench: Understanding the Unspoken toward Full-Duplex Multimodal Interaction",
+      "arxiv_id": "2611.30157",
+      "arxiv_date": "2026-11",
+      "arxiv_date_full": "2026-11-23",
+      "url": "https://arxiv.org/abs/2611.30157",
+      "categories": [
+        "paralinguistics",
+        "reasoning",
+        "generation-quality"
+      ],
+      "tasks": [
+        "implicit communicative intent fulfillment",
+        "evidence-grounded audiovisual response assessment",
+        "audio-only, visual-only and audiovisual outcome scoring"
+      ],
+      "size": "216 curated user clips from 28,548 candidates; nine complete systems; 1,944 audiovisual responses",
+      "io": "user audiovisual clip → one digital-human audiovisual response; hidden intent and primitive annotations used for evaluation",
+      "metrics": [
+        "process score S (−3 to 3)",
+        "eight primitive scores (−3 to 3)",
+        "outcome score Q (−3 to 3)",
+        "nine outcome criteria scores (−3 to 3)"
+      ],
+      "summary": "Evaluates whether multimodal systems respond appropriately to implicit needs conveyed through speech, prosody, expressions and gestures. Process-oriented scoring measures fulfillment of needs grounded in eight auditory and visual primitives; outcome-oriented scoring judges the response’s naturalness, appropriateness and human-likeness under three modality conditions.",
+      "note": "This is the v0.1 Preview and a single-response protocol; it does not yet establish multi-turn interaction, interruption handling or full-duplex competence. Process score S weights primitive scores by their relevance to source evidence; primitive-column means and S therefore have different denominators. Outcome score Q averages nine criteria (three criteria under audio, visual and audiovisual conditions). All quality scores use −3 to 3, higher is better, and S and Q are separate. JEV version jev-1.14.0 scores structured timestamped observations. The preview has not independently validated judge agreement or weighting against human assessments, and planned ablations remain incomplete. Table 3 compares complete systems including avatar renderers: Emma, Tavus, Vidu, D-ID, bitHuman, CyberVerse/SoulX-LiveAct, OpenAvatarChat/LiteAvatar, Open-LLM-VTuber/Live2D and EmpaAva/GaussianAvatars. Their scores are not assigned to standalone Qwen3-Omni or other base models; exact system records and builder evidence are still needed. Closed-system response latency and open-system offline generation/rendering time are not directly comparable. Code and data release are planned subject to permissions and privacy; no public download was verified."
+    },
+    {
+      "id": "speech-qa-unanswerability",
+      "name": "Speech QA Unanswerability Diagnostic",
+      "full_title": "Can Speech LLMs Recognize When Audio Evidence Is Insufficient? A Diagnostic Study and a Pre-Generation Probing Mitigation",
+      "arxiv_id": "2611.29393",
+      "arxiv_date": "2026-11",
+      "arxiv_date_full": "2026-11-22",
+      "url": "https://arxiv.org/abs/2611.29393",
+      "categories": [
+        "spoken-qa",
+        "hallucination",
+        "audio-grounding",
+        "robustness"
+      ],
+      "tasks": [
+        "answerability and abstention in spoken question answering",
+        "matched synthetic-versus-human audio comparison",
+        "pre-generation error probing"
+      ],
+      "size": "100-item synthetic diagnostic; 376-item human-read validation; 214-question paired synthetic/human subset",
+      "io": "spoken passage plus written question → text answer, abstention or hedge",
+      "metrics": [
+        "hallucination on unanswerable questions (%) ↓",
+        "accuracy on answerable questions (%)",
+        "over-refusal on answerable questions (%) ↓",
+        "probe AUROC (0–1)"
+      ],
+      "code": "https://github.com/ladnlav/slm-audio-evidence",
+      "summary": "Introduces a diagnostic protocol and paired evaluation resource for questions whose answer is unsupported by the audio. It separates stated facts, inferable answers and unanswerable questions, then tests whether conclusions from generated questions and synthesized speech survive native SQuAD 2.0 questions with human-read audio.",
+      "note": "The catalogue name is descriptive; the paper does not name a standalone benchmark acronym. The 22 imported cells are Qwen2-Audio-7B-Instruct in 8-bit greedy decoding under plain and explicit abstention (IDK) prompts, from v1 Tables 2–4. The 100-item diagnostic has 30 stated-fact A, 30 inferable B and 40 unanswerable C items. Validation has 141 A and 235 C items; the paired subset has 88 A and 126 C questions asked of both synthetic and human recordings. Hallucination counts substantive answers to C regardless of truth; hedges are neither answers nor abstentions. Accuracy and over-refusal use answerable denominators, and category B is manually graded. Other answer correctness uses a Qwen3-8B judge with reported 88/93 agreement on a separate calibration sample. Diagnostic passages are untrimmed (31–55 seconds), exceeding Qwen2-Audio’s 30-second encoder window; validation and paired recordings are trimmed and answerable questions filtered for audibility. Thus the diagnostic and validation scores do not isolate synthesis alone. The paired experiment controls question identity, but all speech is English read speech and only two prompts and one synthesizer were tested. Whisper-medium plus Qwen2.5-7B-Instruct cascade results are deferred pending an exact system record. Probe AUROC measures error prediction, not answer accuracy or a deployed refusal gate; the best of 16 configurations is optimistic. Repository README pilot results precede this expanded v1 analysis; imported values use the paper tables, not the older README."
     }
   ]
 }

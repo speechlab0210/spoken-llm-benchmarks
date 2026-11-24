@@ -2,91 +2,106 @@
  "since": "2026-08-22",
  "what": "Every arXiv paper the daily crawl has flagged since launch (score at or above the threshold, not previously seen), with the reviewer's verdict as written in the feed and whether the paper entered the catalogue. \"published\" is the paper's arXiv date. See the Method section of the site.",
  "flagged": 377,
- "admitted": 112,
+ "admitted": 115,
  "entries": [
   {
    "id": "2611.30157",
    "title": "UUBench: Understanding the Unspoken toward Full-Duplex Multimodal Interaction",
    "published": "2026-11-23T07:03:50Z",
    "score": 45,
-   "outcome": "under review"
+   "outcome": "admitted",
+   "verdict": "reviewed — added: UUBench (uubench), v0.1 Preview; a new audiovisual response benchmark for general-purpose multimodal systems. The present single-response protocol does not establish full-duplex interaction.",
+   "catalogue_id": "uubench"
   },
   {
    "id": "2611.29750",
    "title": "Refine, Don't Reinvent: RASA-Bench for Source-Grounded Hindi Prose Refinement",
    "published": "2026-11-22T20:25:42Z",
    "score": 36,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: RASA-Bench evaluates revision of written Hindi drafts for audio-fiction scripts; the evaluated LLM input/output is text, not speech (task and evaluation sections)."
   },
   {
    "id": "2611.29658",
    "title": "How Reliable is AI-Generated Audio Description? A Multilingual Expert Evaluation",
    "published": "2026-11-22T18:01:37Z",
    "score": 24,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: Evaluates written audio-description scripts generated from video by a video-LLM/text-LLM pipeline, not general-purpose spoken LLM audio input/output (Section 3.2)."
   },
   {
    "id": "2611.29557",
    "title": "S$2$SCORE: A Textless Unified Evaluation Metric for Speech-to-Speech Translation Systems",
    "published": "2026-11-22T15:36:48Z",
    "score": 27,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: S2SCORE introduces a learned evaluation metric for speech-to-speech translation; its dedicated translation and cascaded ASR/TTS systems are not general-purpose spoken LLMs (Section III)."
   },
   {
    "id": "2611.29393",
    "title": "Can Speech LLMs Recognize When Audio Evidence Is Insufficient? A Diagnostic Study and a Pre-Generation Probing Mitigation",
    "published": "2026-11-22T11:08:50Z",
    "score": 24,
-   "outcome": "under review"
+   "outcome": "admitted",
+   "verdict": "reviewed — added: Speech QA Unanswerability Diagnostic (speech-qa-unanswerability); a new diagnostic protocol and paired evaluation resource for abstention by general-purpose speech LLMs.",
+   "catalogue_id": "speech-qa-unanswerability"
   },
   {
    "id": "2611.29375",
    "title": "MusicListenBench: Can Audio LLMs Hear the Difference Yet?",
    "published": "2026-11-22T10:31:49Z",
    "score": 66,
-   "outcome": "under review"
+   "outcome": "admitted",
+   "verdict": "reviewed — added: MusicListenBench (musiclistenbench); a new paired-listening benchmark for general-purpose audio LLMs, with musical FLIP and sound-only STAY controls.",
+   "catalogue_id": "musiclistenbench"
   },
   {
    "id": "2611.28960",
    "title": "EmoRouter: Adaptive Modality Cascading for Multimodal Emotion Recognition",
    "published": "2026-11-21T17:52:45Z",
    "score": 18,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: EmoRouter is an inference-time modality-routing method tested on four existing emotion-recognition benchmarks, not a new benchmark (Sections 3–4)."
   },
   {
    "id": "2611.28929",
    "title": "Definition-Guided In-Context Learning for Zero-Shot Spoken Language Understanding",
    "published": "2026-11-21T17:03:52Z",
    "score": 21,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: DG-ICL is a definition-guided fine-tuning method evaluated on existing SLU datasets, not a newly introduced benchmark (Sections 3–4)."
   },
   {
    "id": "2611.28902",
    "title": "StudioBench: Benchmarking Agentic Multimodal Large Language Models for Productive Audiovisual Creation",
    "published": "2026-11-21T16:28:08Z",
    "score": 36,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: StudioBench evaluates director-agent tool orchestration from text briefs. Speech is produced or transcribed by fixed external tools; the tested policy is not evaluated as a general-purpose speech-input/output model (Sections 3–4 and Appendix C)."
   },
   {
    "id": "2611.28765",
    "title": "Beyond File-Level Splits: Rethinking Symbolic Music Evaluation via Multi-View Alignment",
    "published": "2026-11-21T12:17:29Z",
    "score": 18,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: Introduces multi-view alignment and split-decontamination methods for symbolic MIDI music collections, not a benchmark of general-purpose spoken LLMs (methods and experiments)."
   },
   {
    "id": "2611.28263",
    "title": "A Nepali-Accented English Evaluation Dataset for Automatic Speech Recognition",
    "published": "2026-11-20T19:48:18Z",
    "score": 18,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: The new Nepali-accented English dataset evaluates dedicated Conformer and Whisper ASR models, not general-purpose spoken LLMs (Section 5)."
   },
   {
    "id": "2611.28248",
    "title": "Granary-v2: Scalable Multilingual Speech Data Curation for Predictable and Controllable Model Outputs",
    "published": "2026-11-20T19:31:14Z",
    "score": 18,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: Granary-v2 is a training-data curation resource and reusable preparation pipeline, with ASR-system evaluation; it does not introduce a benchmark for general-purpose spoken LLMs (Sections 4–5)."
   },
   {
    "id": "2611.27810",
@@ -193,7 +208,8 @@
    "title": "Multimodal Violence Understanding and Temporal Retrieval in Movies with Adaptive Audio-Visual Fusion",
    "published": "2026-11-16T03:16:29Z",
    "score": 18,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: Proposes a task-specific audiovisual violence classifier using CLIP/BEATs and a fusion Transformer on XD-Violence and AIRTLab; neither a new spoken-LLM benchmark nor a general-purpose evaluated model (Section 3)."
   },
   {
    "id": "2611.19202",

@@ -1,6 +1,11 @@
 {
  "entries": [
   {
+   "date": "2026-11-25",
+   "change": "Reviewed 13 candidates and added MusicListenBench, UUBench (v0.1 Preview), and the Speech QA Unanswerability Diagnostic. Added 242 source-verified result cells: 220 zero-shot music-listening results for 11 existing models and 22 speech-QA results for Qwen2-Audio under distinct prompts and audio conditions. UUBench quality scores belong to complete avatar systems and await exact system records; its preview does not establish full-duplex interaction. Preserved unmatched model variants, cascade configurations and trained derivatives outside the score matrix. Recorded printed affiliations and excluded ten papers that fail benchmark or general-purpose spoken-model scope. Totals: 494 benchmarks, 262 models and 19,310 result cells.",
+   "source": "arXiv:2611.29375v1 Sections 3–7, Appendix C, Tables 2 and 39; 2611.30157v1 Sections 3–6 and Table 3; 2611.29393v1 Sections 2–5, Appendices F–J and Tables 2–4. Values extracted by row and column, with rendered PDF tables checked. Printed author blocks and arXiv metadata verified; all 13 candidate full texts reviewed."
+  },
+  {
    "date": "2026-11-24",
    "change": "Added SLP-Bench after full-text review, with four explicitly labelled clinical endpoint result cells covering three existing reasoning audio models and the printed Callyope affiliation. Acoustic-claim factuality, consistency and endpoint answering remain distinct. Unlabelled plot points and unmatched model variants are not assigned scores; data access requires provider approval. Excluded NightmareDiscourseBench (written-fiction discourse identification with BookNLP) and Neural Defend (dedicated audio-deepfake detectors). Totals: 491 benchmarks, 262 models and 19,068 result cells.",
    "source": "arXiv:2611.27810v1 Sections 2–5, Figure 4 labelled endpoint BA block and legend (PDF page 4), printed byline (page 1), and arXiv submission metadata; 2611.27059v1 Sections 4–5; 2611.27215v1 Sections 3.4 and 5.2–5.3. Numeric values extracted programmatically by PDF row/column positions and visually checked."
