@@ -13417,6 +13417,65 @@
       "code": "https://github.com/ladnlav/slm-audio-evidence",
       "summary": "Introduces a diagnostic protocol and paired evaluation resource for questions whose answer is unsupported by the audio. It separates stated facts, inferable answers and unanswerable questions, then tests whether conclusions from generated questions and synthesized speech survive native SQuAD 2.0 questions with human-read audio.",
       "note": "The catalogue name is descriptive; the paper does not name a standalone benchmark acronym. The 22 imported cells are Qwen2-Audio-7B-Instruct in 8-bit greedy decoding under plain and explicit abstention (IDK) prompts, from v1 Tables 2–4. The 100-item diagnostic has 30 stated-fact A, 30 inferable B and 40 unanswerable C items. Validation has 141 A and 235 C items; the paired subset has 88 A and 126 C questions asked of both synthetic and human recordings. Hallucination counts substantive answers to C regardless of truth; hedges are neither answers nor abstentions. Accuracy and over-refusal use answerable denominators, and category B is manually graded. Other answer correctness uses a Qwen3-8B judge with reported 88/93 agreement on a separate calibration sample. Diagnostic passages are untrimmed (31–55 seconds), exceeding Qwen2-Audio’s 30-second encoder window; validation and paired recordings are trimmed and answerable questions filtered for audibility. Thus the diagnostic and validation scores do not isolate synthesis alone. The paired experiment controls question identity, but all speech is English read speech and only two prompts and one synthesizer were tested. Whisper-medium plus Qwen2.5-7B-Instruct cascade results are deferred pending an exact system record. Probe AUROC measures error prediction, not answer accuracy or a deployed refusal gate; the best of 16 configurations is optimistic. Repository README pilot results precede this expanded v1 analysis; imported values use the paper tables, not the older README."
+    },
+    {
+      "id": "mozaic",
+      "name": "MOZAIC",
+      "full_title": "MOZAIC: An Audio-Video Deepfake Benchmark for Telling What Is Fake",
+      "arxiv_id": "2611.31301",
+      "arxiv_date": "2026-11",
+      "arxiv_date_full": "2026-11-21",
+      "url": "https://arxiv.org/abs/2611.31301",
+      "categories": [
+        "robustness",
+        "paralinguistics",
+        "audio-grounding"
+      ],
+      "tasks": [
+        "audiovisual authenticity classification",
+        "video-only manipulation type classification",
+        "face or voice authenticity and identity comparison",
+        "evidence-based audiovisual manipulation explanations"
+      ],
+      "size": "137,745 clips from 15,014 source pairs; 1,000 identity IDs; 20,235 test clips; 16,995-clip MOZAIC-Small subset",
+      "io": "short audiovisual clip, video-only clip, or query/reference face-or-voice pair plus question → class label or explanation",
+      "metrics": [
+        "accuracy (%)",
+        "macro-F1 (%)",
+        "joint authenticity and identity accuracy (%)",
+        "explanation judge score (0–10)",
+        "explanation ROUGE-L (%)"
+      ],
+      "code": "https://github.com/VectorInstitute/mozaic",
+      "data": "https://huggingface.co/datasets/vector-institute/Mozaic",
+      "summary": "Tests whether general-purpose audiovisual language models can identify manipulated faces and voices, localize the kind of manipulation and explain their decisions. Identity-disjoint splits combine three video generators with one voice-conversion system and include vocoder-processed real speech controls. Four tasks separate audiovisual authenticity, video-only manipulation type, face-or-voice identity comparison and audiovisual explanations.",
+      "note": "The 96 imported cells are v1 Table 2 zero-shot results for six existing exact model records, with full-test and MOZAIC-Small conditions separate. T2 is video-only; T3 asks about faces and voices in separate questions, and joint accuracy requires both authenticity and identity correct. T4 uses only MOZAIC-Small; its 0–10 judge score averages video and audio parts, whereas ROUGE-L is reported on the paper’s percentage scale. Native interfaces use 32 sampled frames, but OmniVinci averages groups of eight frames into four internal images. MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola use constrained valid-answer decoding for T1–T3; invalid replies otherwise count as wrong. Unmapped model versions, trained derivatives and specialist detectors are not assigned to base models. Table 2 and Table S5 disagree on VideoLLaMA2.1-AV’s T4 standard/nopad configuration; that row is deferred. Clips are 3.08 or 6.12 seconds at 224 pixels, 25 fps and 16 kHz mono; short interviews, one voice converter and three video generators limit generalization. The 6-second subset lacks one video generator, confounding duration comparisons. Quality-control thresholds partly informed by an initial batch retained in the data and residual conversion/encoding artifacts are additional limits. LLM-drafted reference explanations had a 400-item manual check; the judge was reviewed on 400 answers without a reported formal human–judge agreement statistic. An always-real explanation baseline scores 4.76, so judge scores should not be treated as calibrated detection accuracy. There are 1,000 source identity IDs but 999 distinct people. The verified data card requires manual access approval and restricts use to research/education under CC BY-NC 4.0; it is not an unrestricted public download."
+    },
+    {
+      "id": "pazabench",
+      "name": "PazaBench",
+      "full_title": "PazaBench: Large-Scale ASR Benchmark for Low-Resource Languages in Africa",
+      "arxiv_id": "2611.31578",
+      "arxiv_date": "2026-11",
+      "arxiv_date_full": "2026-11-23",
+      "url": "https://arxiv.org/abs/2611.31578",
+      "categories": [
+        "multilingual"
+      ],
+      "tasks": [
+        "harmonized transcription across African languages",
+        "inference efficiency comparison under a common hardware protocol"
+      ],
+      "size": "199,438 utterances; 60 dataset–language splits; 39 African languages; six source corpora; 52 evaluated systems",
+      "io": "16 kHz mono speech, with language conditioning where required → transcription",
+      "metrics": [
+        "median character error rate (ratio) ↓",
+        "word error rate (ratio) ↓",
+        "RTFx (speed multiple) ↑"
+      ],
+      "leaderboard": "https://huggingface.co/spaces/microsoft/paza-bench",
+      "summary": "Introduces a common evaluation framework for transcription across low-resource African languages. It harmonizes six public corpora, text normalization, hardware and decoding conventions, and evaluates dedicated ASR systems alongside general-purpose audio language models, including Qwen2-Audio and Phi-4 multimodal.",
+      "note": "The nine imported cells are v1 Table 8 results for Qwen2-Audio-7B-Instruct, Phi-4 multimodal-instruct and Granite Speech 3.3 8B, mapped to existing exact records. This is a selected general-purpose-model comparison, not a reproduction of the full 52-system leaderboard. Base Qwen2-Audio-7B, adapted paza-Phi-4-MM and Granite 3.3 2B are distinct and are not merged into those records. Table 8 ranks median CER across languages; WER and RTFx retain their reported aggregate values because the table does not separately specify their aggregation operator. CER and WER are error ratios, may exceed 1 and are not percentages or accuracies. RTFx is a speed multiple, higher is faster, not response latency. Runs use one A100 80 GB, batch size 1 and official default decoding. Text scoring removes punctuation, case-folds and normalizes whitespace; datasets without an official split use a 3% sample. Language coverage differs between the 33 multilingual and 19 English-only systems, and unknown training overlap, including transcripts, limits generalization claims. The framework assesses transcription and efficiency, not dialogue, acoustic robustness or demographic fairness. The linked Microsoft Hugging Face Space is the paper-linked leaderboard entry; its interactive runtime was not independently validated. The printed author affiliation is Microsoft Research Africa, Nairobi. No country is printed; country attribution remains unverified and is excluded from geographic counts."
     }
   ]
 }

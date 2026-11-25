@@ -15438,6 +15438,28 @@
      "note": "Name printed in the reviewed v1 paper; no separate city or country printed, so geographic placement is not inferred."
     }
    ]
+  },
+  {
+   "id": "ontario-tech-university",
+   "name": "Ontario Tech University",
+   "short": "Ontario Tech",
+   "type": "academia",
+   "country": "CA",
+   "parent": null,
+   "confidence": "high",
+   "sites": [],
+   "aliases": [
+    {
+     "raw": "Ontario Tech University, Canada",
+     "country": "CA",
+     "city": null,
+     "lat": null,
+     "lon": null,
+     "type": "academia",
+     "confidence": "high",
+     "note": "Institution and country printed on MOZAIC v1 PDF page 1; no city printed."
+    }
+   ]
   }
  ]
 }

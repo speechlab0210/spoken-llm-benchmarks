@@ -2,28 +2,32 @@
  "since": "2026-08-22",
  "what": "Every arXiv paper the daily crawl has flagged since launch (score at or above the threshold, not previously seen), with the reviewer's verdict as written in the feed and whether the paper entered the catalogue. \"published\" is the paper's arXiv date. See the Method section of the site.",
  "flagged": 381,
- "admitted": 115,
+ "admitted": 117,
  "entries": [
   {
    "id": "2611.32795",
    "title": "Is Prosody Encoded in the Neural Audio Codec Mimi?",
    "published": "2026-11-24T15:21:18Z",
    "score": 21,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: Probes prosody representations in the Mimi neural audio codec using kernel CCA and nearest-neighbor classification on resynthesized speech and TIMIT (Sections 3–4); it does not introduce a benchmark evaluating general-purpose spoken LLMs."
   },
   {
    "id": "2611.32012",
    "title": "Marketing-Bench: Evaluating Frontier Models and Agents on Real-World Marketing Capabilities",
    "published": "2026-11-24T05:57:13Z",
    "score": 42,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: Marketing-Bench evaluates text-based web-audit agents using HTML, page search and written diagnosis/fixes; brand voice is writing style, not speech input/output (Sections 2–3). The evaluated task is not a spoken-LLM benchmark."
   },
   {
    "id": "2611.31578",
    "title": "PazaBench: Large-Scale ASR Benchmark for Low-Resource Languages in Africa",
    "published": "2026-11-23T21:19:43Z",
    "score": 39,
-   "outcome": "under review"
+   "outcome": "admitted",
+   "verdict": "reviewed — added: PazaBench (pazabench); a new harmonized African-language transcription framework that evaluates general-purpose audio language models as well as dedicated ASR systems. Imported results retain exact model variants and raw error-ratio scales.",
+   "catalogue_id": "pazabench"
   },
   {
    "id": "2611.30157",
@@ -105,7 +109,9 @@
    "title": "MOZAIC: An Audio-Video Deepfake Benchmark for Telling What Is Fake",
    "published": "2026-11-21T16:27:38Z",
    "score": 37,
-   "outcome": "under review"
+   "outcome": "admitted",
+   "verdict": "reviewed — added: MOZAIC (mozaic); a new audiovisual deepfake benchmark evaluating general-purpose audiovisual language models on authenticity, identity and explanations. Video-only and audiovisual tasks remain explicitly distinguished.",
+   "catalogue_id": "mozaic"
   },
   {
    "id": "2611.28765",

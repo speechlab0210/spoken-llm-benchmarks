@@ -162704,6 +162704,846 @@
       "value": 79.5,
       "source": "arXiv:2611.29393v1 Table 4, Qwen2-Audio / IDK row, column 6 (zero-based after row splitting); twin paired; 30 s. Qwen2-Audio-7B-Instruct, 8-bit quantization and greedy decoding; definitions and denominators in caption and Appendix G.",
       "source_url": "https://arxiv.org/pdf/2611.29393v1#page=16"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "qwen3-omni",
+      "metric": "T1 audiovisual authenticity accuracy (%) [full test; zero-shot]",
+      "value": 18.5,
+      "source": "arXiv:2611.31301v1 Table 2, Qwen3-Omni row, numeric column 1 of 16. Exact checkpoint Qwen/Qwen3-Omni-30B-A3B-Instruct; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "qwen3-omni",
+      "metric": "T1 audiovisual authenticity macro-F1 (%) [full test; zero-shot]",
+      "value": 13.8,
+      "source": "arXiv:2611.31301v1 Table 2, Qwen3-Omni row, numeric column 2 of 16. Exact checkpoint Qwen/Qwen3-Omni-30B-A3B-Instruct; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "qwen3-omni",
+      "metric": "T2 video-only manipulation accuracy (%) [full test; zero-shot]",
+      "value": 34.1,
+      "source": "arXiv:2611.31301v1 Table 2, Qwen3-Omni row, numeric column 3 of 16. Exact checkpoint Qwen/Qwen3-Omni-30B-A3B-Instruct; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "qwen3-omni",
+      "metric": "T2 video-only manipulation macro-F1 (%) [full test; zero-shot]",
+      "value": 20.5,
+      "source": "arXiv:2611.31301v1 Table 2, Qwen3-Omni row, numeric column 4 of 16. Exact checkpoint Qwen/Qwen3-Omni-30B-A3B-Instruct; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "qwen3-omni",
+      "metric": "T3 face-or-voice authenticity accuracy (%) [full test; zero-shot]",
+      "value": 40.9,
+      "source": "arXiv:2611.31301v1 Table 2, Qwen3-Omni row, numeric column 5 of 16. Exact checkpoint Qwen/Qwen3-Omni-30B-A3B-Instruct; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "qwen3-omni",
+      "metric": "T3 face-or-voice identity accuracy (%) [full test; zero-shot]",
+      "value": 64.5,
+      "source": "arXiv:2611.31301v1 Table 2, Qwen3-Omni row, numeric column 6 of 16. Exact checkpoint Qwen/Qwen3-Omni-30B-A3B-Instruct; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "qwen3-omni",
+      "metric": "T3 face-or-voice joint accuracy (%) [full test; zero-shot]",
+      "value": 28.2,
+      "source": "arXiv:2611.31301v1 Table 2, Qwen3-Omni row, numeric column 7 of 16. Exact checkpoint Qwen/Qwen3-Omni-30B-A3B-Instruct; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "qwen3-omni",
+      "metric": "T1 audiovisual authenticity accuracy (%) [Small test; zero-shot]",
+      "value": 18.9,
+      "source": "arXiv:2611.31301v1 Table 2, Qwen3-Omni row, numeric column 8 of 16. Exact checkpoint Qwen/Qwen3-Omni-30B-A3B-Instruct; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "qwen3-omni",
+      "metric": "T1 audiovisual authenticity macro-F1 (%) [Small test; zero-shot]",
+      "value": 14.4,
+      "source": "arXiv:2611.31301v1 Table 2, Qwen3-Omni row, numeric column 9 of 16. Exact checkpoint Qwen/Qwen3-Omni-30B-A3B-Instruct; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "qwen3-omni",
+      "metric": "T2 video-only manipulation accuracy (%) [Small test; zero-shot]",
+      "value": 33.8,
+      "source": "arXiv:2611.31301v1 Table 2, Qwen3-Omni row, numeric column 10 of 16. Exact checkpoint Qwen/Qwen3-Omni-30B-A3B-Instruct; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "qwen3-omni",
+      "metric": "T2 video-only manipulation macro-F1 (%) [Small test; zero-shot]",
+      "value": 20.2,
+      "source": "arXiv:2611.31301v1 Table 2, Qwen3-Omni row, numeric column 11 of 16. Exact checkpoint Qwen/Qwen3-Omni-30B-A3B-Instruct; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "qwen3-omni",
+      "metric": "T3 face-or-voice authenticity accuracy (%) [Small test; zero-shot]",
+      "value": 41.2,
+      "source": "arXiv:2611.31301v1 Table 2, Qwen3-Omni row, numeric column 12 of 16. Exact checkpoint Qwen/Qwen3-Omni-30B-A3B-Instruct; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "qwen3-omni",
+      "metric": "T3 face-or-voice identity accuracy (%) [Small test; zero-shot]",
+      "value": 64.1,
+      "source": "arXiv:2611.31301v1 Table 2, Qwen3-Omni row, numeric column 13 of 16. Exact checkpoint Qwen/Qwen3-Omni-30B-A3B-Instruct; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "qwen3-omni",
+      "metric": "T3 face-or-voice joint accuracy (%) [Small test; zero-shot]",
+      "value": 28.3,
+      "source": "arXiv:2611.31301v1 Table 2, Qwen3-Omni row, numeric column 14 of 16. Exact checkpoint Qwen/Qwen3-Omni-30B-A3B-Instruct; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "qwen3-omni",
+      "metric": "T4 explanation judge score (0–10) [Small test; zero-shot]",
+      "value": 4.22,
+      "source": "arXiv:2611.31301v1 Table 2, Qwen3-Omni row, numeric column 15 of 16. Exact checkpoint Qwen/Qwen3-Omni-30B-A3B-Instruct; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "qwen3-omni",
+      "metric": "T4 explanation ROUGE-L (%) [Small test; zero-shot]",
+      "value": 25.3,
+      "source": "arXiv:2611.31301v1 Table 2, Qwen3-Omni row, numeric column 16 of 16. Exact checkpoint Qwen/Qwen3-Omni-30B-A3B-Instruct; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "qwen2-5-omni",
+      "metric": "T1 audiovisual authenticity accuracy (%) [full test; zero-shot]",
+      "value": 19.6,
+      "source": "arXiv:2611.31301v1 Table 2, Qwen2.5-Omni row, numeric column 1 of 16. Exact checkpoint Qwen/Qwen2.5-Omni-7B; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "qwen2-5-omni",
+      "metric": "T1 audiovisual authenticity macro-F1 (%) [full test; zero-shot]",
+      "value": 13.3,
+      "source": "arXiv:2611.31301v1 Table 2, Qwen2.5-Omni row, numeric column 2 of 16. Exact checkpoint Qwen/Qwen2.5-Omni-7B; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "qwen2-5-omni",
+      "metric": "T2 video-only manipulation accuracy (%) [full test; zero-shot]",
+      "value": 33.6,
+      "source": "arXiv:2611.31301v1 Table 2, Qwen2.5-Omni row, numeric column 3 of 16. Exact checkpoint Qwen/Qwen2.5-Omni-7B; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "qwen2-5-omni",
+      "metric": "T2 video-only manipulation macro-F1 (%) [full test; zero-shot]",
+      "value": 17.2,
+      "source": "arXiv:2611.31301v1 Table 2, Qwen2.5-Omni row, numeric column 4 of 16. Exact checkpoint Qwen/Qwen2.5-Omni-7B; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "qwen2-5-omni",
+      "metric": "T3 face-or-voice authenticity accuracy (%) [full test; zero-shot]",
+      "value": 57.2,
+      "source": "arXiv:2611.31301v1 Table 2, Qwen2.5-Omni row, numeric column 5 of 16. Exact checkpoint Qwen/Qwen2.5-Omni-7B; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "qwen2-5-omni",
+      "metric": "T3 face-or-voice identity accuracy (%) [full test; zero-shot]",
+      "value": 56.8,
+      "source": "arXiv:2611.31301v1 Table 2, Qwen2.5-Omni row, numeric column 6 of 16. Exact checkpoint Qwen/Qwen2.5-Omni-7B; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "qwen2-5-omni",
+      "metric": "T3 face-or-voice joint accuracy (%) [full test; zero-shot]",
+      "value": 32.2,
+      "source": "arXiv:2611.31301v1 Table 2, Qwen2.5-Omni row, numeric column 7 of 16. Exact checkpoint Qwen/Qwen2.5-Omni-7B; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "qwen2-5-omni",
+      "metric": "T1 audiovisual authenticity accuracy (%) [Small test; zero-shot]",
+      "value": 19.5,
+      "source": "arXiv:2611.31301v1 Table 2, Qwen2.5-Omni row, numeric column 8 of 16. Exact checkpoint Qwen/Qwen2.5-Omni-7B; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "qwen2-5-omni",
+      "metric": "T1 audiovisual authenticity macro-F1 (%) [Small test; zero-shot]",
+      "value": 12.9,
+      "source": "arXiv:2611.31301v1 Table 2, Qwen2.5-Omni row, numeric column 9 of 16. Exact checkpoint Qwen/Qwen2.5-Omni-7B; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "qwen2-5-omni",
+      "metric": "T2 video-only manipulation accuracy (%) [Small test; zero-shot]",
+      "value": 32.3,
+      "source": "arXiv:2611.31301v1 Table 2, Qwen2.5-Omni row, numeric column 10 of 16. Exact checkpoint Qwen/Qwen2.5-Omni-7B; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "qwen2-5-omni",
+      "metric": "T2 video-only manipulation macro-F1 (%) [Small test; zero-shot]",
+      "value": 16.3,
+      "source": "arXiv:2611.31301v1 Table 2, Qwen2.5-Omni row, numeric column 11 of 16. Exact checkpoint Qwen/Qwen2.5-Omni-7B; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "qwen2-5-omni",
+      "metric": "T3 face-or-voice authenticity accuracy (%) [Small test; zero-shot]",
+      "value": 56.8,
+      "source": "arXiv:2611.31301v1 Table 2, Qwen2.5-Omni row, numeric column 12 of 16. Exact checkpoint Qwen/Qwen2.5-Omni-7B; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "qwen2-5-omni",
+      "metric": "T3 face-or-voice identity accuracy (%) [Small test; zero-shot]",
+      "value": 57.0,
+      "source": "arXiv:2611.31301v1 Table 2, Qwen2.5-Omni row, numeric column 13 of 16. Exact checkpoint Qwen/Qwen2.5-Omni-7B; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "qwen2-5-omni",
+      "metric": "T3 face-or-voice joint accuracy (%) [Small test; zero-shot]",
+      "value": 32.1,
+      "source": "arXiv:2611.31301v1 Table 2, Qwen2.5-Omni row, numeric column 14 of 16. Exact checkpoint Qwen/Qwen2.5-Omni-7B; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "qwen2-5-omni",
+      "metric": "T4 explanation judge score (0–10) [Small test; zero-shot]",
+      "value": 4.42,
+      "source": "arXiv:2611.31301v1 Table 2, Qwen2.5-Omni row, numeric column 15 of 16. Exact checkpoint Qwen/Qwen2.5-Omni-7B; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "qwen2-5-omni",
+      "metric": "T4 explanation ROUGE-L (%) [Small test; zero-shot]",
+      "value": 25.1,
+      "source": "arXiv:2611.31301v1 Table 2, Qwen2.5-Omni row, numeric column 16 of 16. Exact checkpoint Qwen/Qwen2.5-Omni-7B; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "minicpm-o-4-5",
+      "metric": "T1 audiovisual authenticity accuracy (%) [full test; zero-shot]",
+      "value": 24.0,
+      "source": "arXiv:2611.31301v1 Table 2, MiniCPM-o 4.5 row, numeric column 1 of 16. Exact checkpoint openbmb/MiniCPM-o-4_5; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "minicpm-o-4-5",
+      "metric": "T1 audiovisual authenticity macro-F1 (%) [full test; zero-shot]",
+      "value": 18.0,
+      "source": "arXiv:2611.31301v1 Table 2, MiniCPM-o 4.5 row, numeric column 2 of 16. Exact checkpoint openbmb/MiniCPM-o-4_5; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "minicpm-o-4-5",
+      "metric": "T2 video-only manipulation accuracy (%) [full test; zero-shot]",
+      "value": 33.5,
+      "source": "arXiv:2611.31301v1 Table 2, MiniCPM-o 4.5 row, numeric column 3 of 16. Exact checkpoint openbmb/MiniCPM-o-4_5; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "minicpm-o-4-5",
+      "metric": "T2 video-only manipulation macro-F1 (%) [full test; zero-shot]",
+      "value": 15.3,
+      "source": "arXiv:2611.31301v1 Table 2, MiniCPM-o 4.5 row, numeric column 4 of 16. Exact checkpoint openbmb/MiniCPM-o-4_5; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "minicpm-o-4-5",
+      "metric": "T3 face-or-voice authenticity accuracy (%) [full test; zero-shot]",
+      "value": 58.3,
+      "source": "arXiv:2611.31301v1 Table 2, MiniCPM-o 4.5 row, numeric column 5 of 16. Exact checkpoint openbmb/MiniCPM-o-4_5; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "minicpm-o-4-5",
+      "metric": "T3 face-or-voice identity accuracy (%) [full test; zero-shot]",
+      "value": 56.2,
+      "source": "arXiv:2611.31301v1 Table 2, MiniCPM-o 4.5 row, numeric column 6 of 16. Exact checkpoint openbmb/MiniCPM-o-4_5; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "minicpm-o-4-5",
+      "metric": "T3 face-or-voice joint accuracy (%) [full test; zero-shot]",
+      "value": 32.3,
+      "source": "arXiv:2611.31301v1 Table 2, MiniCPM-o 4.5 row, numeric column 7 of 16. Exact checkpoint openbmb/MiniCPM-o-4_5; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "minicpm-o-4-5",
+      "metric": "T1 audiovisual authenticity accuracy (%) [Small test; zero-shot]",
+      "value": 23.7,
+      "source": "arXiv:2611.31301v1 Table 2, MiniCPM-o 4.5 row, numeric column 8 of 16. Exact checkpoint openbmb/MiniCPM-o-4_5; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "minicpm-o-4-5",
+      "metric": "T1 audiovisual authenticity macro-F1 (%) [Small test; zero-shot]",
+      "value": 18.0,
+      "source": "arXiv:2611.31301v1 Table 2, MiniCPM-o 4.5 row, numeric column 9 of 16. Exact checkpoint openbmb/MiniCPM-o-4_5; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "minicpm-o-4-5",
+      "metric": "T2 video-only manipulation accuracy (%) [Small test; zero-shot]",
+      "value": 33.0,
+      "source": "arXiv:2611.31301v1 Table 2, MiniCPM-o 4.5 row, numeric column 10 of 16. Exact checkpoint openbmb/MiniCPM-o-4_5; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "minicpm-o-4-5",
+      "metric": "T2 video-only manipulation macro-F1 (%) [Small test; zero-shot]",
+      "value": 14.9,
+      "source": "arXiv:2611.31301v1 Table 2, MiniCPM-o 4.5 row, numeric column 11 of 16. Exact checkpoint openbmb/MiniCPM-o-4_5; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "minicpm-o-4-5",
+      "metric": "T3 face-or-voice authenticity accuracy (%) [Small test; zero-shot]",
+      "value": 58.8,
+      "source": "arXiv:2611.31301v1 Table 2, MiniCPM-o 4.5 row, numeric column 12 of 16. Exact checkpoint openbmb/MiniCPM-o-4_5; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "minicpm-o-4-5",
+      "metric": "T3 face-or-voice identity accuracy (%) [Small test; zero-shot]",
+      "value": 57.0,
+      "source": "arXiv:2611.31301v1 Table 2, MiniCPM-o 4.5 row, numeric column 13 of 16. Exact checkpoint openbmb/MiniCPM-o-4_5; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "minicpm-o-4-5",
+      "metric": "T3 face-or-voice joint accuracy (%) [Small test; zero-shot]",
+      "value": 32.8,
+      "source": "arXiv:2611.31301v1 Table 2, MiniCPM-o 4.5 row, numeric column 14 of 16. Exact checkpoint openbmb/MiniCPM-o-4_5; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "minicpm-o-4-5",
+      "metric": "T4 explanation judge score (0–10) [Small test; zero-shot]",
+      "value": 4.39,
+      "source": "arXiv:2611.31301v1 Table 2, MiniCPM-o 4.5 row, numeric column 15 of 16. Exact checkpoint openbmb/MiniCPM-o-4_5; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "minicpm-o-4-5",
+      "metric": "T4 explanation ROUGE-L (%) [Small test; zero-shot]",
+      "value": 22.5,
+      "source": "arXiv:2611.31301v1 Table 2, MiniCPM-o 4.5 row, numeric column 16 of 16. Exact checkpoint openbmb/MiniCPM-o-4_5; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "omnivinci",
+      "metric": "T1 audiovisual authenticity accuracy (%) [full test; zero-shot]",
+      "value": 16.6,
+      "source": "arXiv:2611.31301v1 Table 2, OmniVinci row, numeric column 1 of 16. Exact checkpoint nvidia/omnivinci; Appendix D and Table S5 specify native-interface zero-shot configuration. OmniVinci averages groups of eight of the 32 sampled frames into four internal images.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "omnivinci",
+      "metric": "T1 audiovisual authenticity macro-F1 (%) [full test; zero-shot]",
+      "value": 8.7,
+      "source": "arXiv:2611.31301v1 Table 2, OmniVinci row, numeric column 2 of 16. Exact checkpoint nvidia/omnivinci; Appendix D and Table S5 specify native-interface zero-shot configuration. OmniVinci averages groups of eight of the 32 sampled frames into four internal images.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "omnivinci",
+      "metric": "T2 video-only manipulation accuracy (%) [full test; zero-shot]",
+      "value": 30.0,
+      "source": "arXiv:2611.31301v1 Table 2, OmniVinci row, numeric column 3 of 16. Exact checkpoint nvidia/omnivinci; Appendix D and Table S5 specify native-interface zero-shot configuration. OmniVinci averages groups of eight of the 32 sampled frames into four internal images.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "omnivinci",
+      "metric": "T2 video-only manipulation macro-F1 (%) [full test; zero-shot]",
+      "value": 11.8,
+      "source": "arXiv:2611.31301v1 Table 2, OmniVinci row, numeric column 4 of 16. Exact checkpoint nvidia/omnivinci; Appendix D and Table S5 specify native-interface zero-shot configuration. OmniVinci averages groups of eight of the 32 sampled frames into four internal images.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "omnivinci",
+      "metric": "T3 face-or-voice authenticity accuracy (%) [full test; zero-shot]",
+      "value": 60.1,
+      "source": "arXiv:2611.31301v1 Table 2, OmniVinci row, numeric column 5 of 16. Exact checkpoint nvidia/omnivinci; Appendix D and Table S5 specify native-interface zero-shot configuration. OmniVinci averages groups of eight of the 32 sampled frames into four internal images.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "omnivinci",
+      "metric": "T3 face-or-voice identity accuracy (%) [full test; zero-shot]",
+      "value": 50.5,
+      "source": "arXiv:2611.31301v1 Table 2, OmniVinci row, numeric column 6 of 16. Exact checkpoint nvidia/omnivinci; Appendix D and Table S5 specify native-interface zero-shot configuration. OmniVinci averages groups of eight of the 32 sampled frames into four internal images.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "omnivinci",
+      "metric": "T3 face-or-voice joint accuracy (%) [full test; zero-shot]",
+      "value": 30.0,
+      "source": "arXiv:2611.31301v1 Table 2, OmniVinci row, numeric column 7 of 16. Exact checkpoint nvidia/omnivinci; Appendix D and Table S5 specify native-interface zero-shot configuration. OmniVinci averages groups of eight of the 32 sampled frames into four internal images.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "omnivinci",
+      "metric": "T1 audiovisual authenticity accuracy (%) [Small test; zero-shot]",
+      "value": 16.6,
+      "source": "arXiv:2611.31301v1 Table 2, OmniVinci row, numeric column 8 of 16. Exact checkpoint nvidia/omnivinci; Appendix D and Table S5 specify native-interface zero-shot configuration. OmniVinci averages groups of eight of the 32 sampled frames into four internal images.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "omnivinci",
+      "metric": "T1 audiovisual authenticity macro-F1 (%) [Small test; zero-shot]",
+      "value": 8.6,
+      "source": "arXiv:2611.31301v1 Table 2, OmniVinci row, numeric column 9 of 16. Exact checkpoint nvidia/omnivinci; Appendix D and Table S5 specify native-interface zero-shot configuration. OmniVinci averages groups of eight of the 32 sampled frames into four internal images.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "omnivinci",
+      "metric": "T2 video-only manipulation accuracy (%) [Small test; zero-shot]",
+      "value": 30.0,
+      "source": "arXiv:2611.31301v1 Table 2, OmniVinci row, numeric column 10 of 16. Exact checkpoint nvidia/omnivinci; Appendix D and Table S5 specify native-interface zero-shot configuration. OmniVinci averages groups of eight of the 32 sampled frames into four internal images.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "omnivinci",
+      "metric": "T2 video-only manipulation macro-F1 (%) [Small test; zero-shot]",
+      "value": 11.9,
+      "source": "arXiv:2611.31301v1 Table 2, OmniVinci row, numeric column 11 of 16. Exact checkpoint nvidia/omnivinci; Appendix D and Table S5 specify native-interface zero-shot configuration. OmniVinci averages groups of eight of the 32 sampled frames into four internal images.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "omnivinci",
+      "metric": "T3 face-or-voice authenticity accuracy (%) [Small test; zero-shot]",
+      "value": 60.0,
+      "source": "arXiv:2611.31301v1 Table 2, OmniVinci row, numeric column 12 of 16. Exact checkpoint nvidia/omnivinci; Appendix D and Table S5 specify native-interface zero-shot configuration. OmniVinci averages groups of eight of the 32 sampled frames into four internal images.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "omnivinci",
+      "metric": "T3 face-or-voice identity accuracy (%) [Small test; zero-shot]",
+      "value": 50.8,
+      "source": "arXiv:2611.31301v1 Table 2, OmniVinci row, numeric column 13 of 16. Exact checkpoint nvidia/omnivinci; Appendix D and Table S5 specify native-interface zero-shot configuration. OmniVinci averages groups of eight of the 32 sampled frames into four internal images.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "omnivinci",
+      "metric": "T3 face-or-voice joint accuracy (%) [Small test; zero-shot]",
+      "value": 30.0,
+      "source": "arXiv:2611.31301v1 Table 2, OmniVinci row, numeric column 14 of 16. Exact checkpoint nvidia/omnivinci; Appendix D and Table S5 specify native-interface zero-shot configuration. OmniVinci averages groups of eight of the 32 sampled frames into four internal images.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "omnivinci",
+      "metric": "T4 explanation judge score (0–10) [Small test; zero-shot]",
+      "value": 4.17,
+      "source": "arXiv:2611.31301v1 Table 2, OmniVinci row, numeric column 15 of 16. Exact checkpoint nvidia/omnivinci; Appendix D and Table S5 specify native-interface zero-shot configuration. OmniVinci averages groups of eight of the 32 sampled frames into four internal images.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "omnivinci",
+      "metric": "T4 explanation ROUGE-L (%) [Small test; zero-shot]",
+      "value": 23.5,
+      "source": "arXiv:2611.31301v1 Table 2, OmniVinci row, numeric column 16 of 16. Exact checkpoint nvidia/omnivinci; Appendix D and Table S5 specify native-interface zero-shot configuration. OmniVinci averages groups of eight of the 32 sampled frames into four internal images.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "uni-moe-2-omni",
+      "metric": "T1 audiovisual authenticity accuracy (%) [full test; zero-shot]",
+      "value": 29.8,
+      "source": "arXiv:2611.31301v1 Table 2, Uni-MoE-2.0-Omni row, numeric column 1 of 16. Exact checkpoint HIT-TMG/Uni-MoE-2.0-Omni; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "uni-moe-2-omni",
+      "metric": "T1 audiovisual authenticity macro-F1 (%) [full test; zero-shot]",
+      "value": 22.1,
+      "source": "arXiv:2611.31301v1 Table 2, Uni-MoE-2.0-Omni row, numeric column 2 of 16. Exact checkpoint HIT-TMG/Uni-MoE-2.0-Omni; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "uni-moe-2-omni",
+      "metric": "T2 video-only manipulation accuracy (%) [full test; zero-shot]",
+      "value": 31.2,
+      "source": "arXiv:2611.31301v1 Table 2, Uni-MoE-2.0-Omni row, numeric column 3 of 16. Exact checkpoint HIT-TMG/Uni-MoE-2.0-Omni; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "uni-moe-2-omni",
+      "metric": "T2 video-only manipulation macro-F1 (%) [full test; zero-shot]",
+      "value": 18.5,
+      "source": "arXiv:2611.31301v1 Table 2, Uni-MoE-2.0-Omni row, numeric column 4 of 16. Exact checkpoint HIT-TMG/Uni-MoE-2.0-Omni; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "uni-moe-2-omni",
+      "metric": "T3 face-or-voice authenticity accuracy (%) [full test; zero-shot]",
+      "value": 48.4,
+      "source": "arXiv:2611.31301v1 Table 2, Uni-MoE-2.0-Omni row, numeric column 5 of 16. Exact checkpoint HIT-TMG/Uni-MoE-2.0-Omni; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "uni-moe-2-omni",
+      "metric": "T3 face-or-voice identity accuracy (%) [full test; zero-shot]",
+      "value": 53.5,
+      "source": "arXiv:2611.31301v1 Table 2, Uni-MoE-2.0-Omni row, numeric column 6 of 16. Exact checkpoint HIT-TMG/Uni-MoE-2.0-Omni; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "uni-moe-2-omni",
+      "metric": "T3 face-or-voice joint accuracy (%) [full test; zero-shot]",
+      "value": 26.1,
+      "source": "arXiv:2611.31301v1 Table 2, Uni-MoE-2.0-Omni row, numeric column 7 of 16. Exact checkpoint HIT-TMG/Uni-MoE-2.0-Omni; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "uni-moe-2-omni",
+      "metric": "T1 audiovisual authenticity accuracy (%) [Small test; zero-shot]",
+      "value": 29.4,
+      "source": "arXiv:2611.31301v1 Table 2, Uni-MoE-2.0-Omni row, numeric column 8 of 16. Exact checkpoint HIT-TMG/Uni-MoE-2.0-Omni; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "uni-moe-2-omni",
+      "metric": "T1 audiovisual authenticity macro-F1 (%) [Small test; zero-shot]",
+      "value": 21.3,
+      "source": "arXiv:2611.31301v1 Table 2, Uni-MoE-2.0-Omni row, numeric column 9 of 16. Exact checkpoint HIT-TMG/Uni-MoE-2.0-Omni; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "uni-moe-2-omni",
+      "metric": "T2 video-only manipulation accuracy (%) [Small test; zero-shot]",
+      "value": 30.5,
+      "source": "arXiv:2611.31301v1 Table 2, Uni-MoE-2.0-Omni row, numeric column 10 of 16. Exact checkpoint HIT-TMG/Uni-MoE-2.0-Omni; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "uni-moe-2-omni",
+      "metric": "T2 video-only manipulation macro-F1 (%) [Small test; zero-shot]",
+      "value": 17.6,
+      "source": "arXiv:2611.31301v1 Table 2, Uni-MoE-2.0-Omni row, numeric column 11 of 16. Exact checkpoint HIT-TMG/Uni-MoE-2.0-Omni; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "uni-moe-2-omni",
+      "metric": "T3 face-or-voice authenticity accuracy (%) [Small test; zero-shot]",
+      "value": 48.2,
+      "source": "arXiv:2611.31301v1 Table 2, Uni-MoE-2.0-Omni row, numeric column 12 of 16. Exact checkpoint HIT-TMG/Uni-MoE-2.0-Omni; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "uni-moe-2-omni",
+      "metric": "T3 face-or-voice identity accuracy (%) [Small test; zero-shot]",
+      "value": 54.8,
+      "source": "arXiv:2611.31301v1 Table 2, Uni-MoE-2.0-Omni row, numeric column 13 of 16. Exact checkpoint HIT-TMG/Uni-MoE-2.0-Omni; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "uni-moe-2-omni",
+      "metric": "T3 face-or-voice joint accuracy (%) [Small test; zero-shot]",
+      "value": 26.4,
+      "source": "arXiv:2611.31301v1 Table 2, Uni-MoE-2.0-Omni row, numeric column 14 of 16. Exact checkpoint HIT-TMG/Uni-MoE-2.0-Omni; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "uni-moe-2-omni",
+      "metric": "T4 explanation judge score (0–10) [Small test; zero-shot]",
+      "value": 4.33,
+      "source": "arXiv:2611.31301v1 Table 2, Uni-MoE-2.0-Omni row, numeric column 15 of 16. Exact checkpoint HIT-TMG/Uni-MoE-2.0-Omni; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "uni-moe-2-omni",
+      "metric": "T4 explanation ROUGE-L (%) [Small test; zero-shot]",
+      "value": 23.5,
+      "source": "arXiv:2611.31301v1 Table 2, Uni-MoE-2.0-Omni row, numeric column 16 of 16. Exact checkpoint HIT-TMG/Uni-MoE-2.0-Omni; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "ola",
+      "metric": "T1 audiovisual authenticity accuracy (%) [full test; zero-shot]",
+      "value": 32.5,
+      "source": "arXiv:2611.31301v1 Table 2, Ola row, numeric column 1 of 16. Exact checkpoint THUdyh/Ola-7b; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "ola",
+      "metric": "T1 audiovisual authenticity macro-F1 (%) [full test; zero-shot]",
+      "value": 13.7,
+      "source": "arXiv:2611.31301v1 Table 2, Ola row, numeric column 2 of 16. Exact checkpoint THUdyh/Ola-7b; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "ola",
+      "metric": "T2 video-only manipulation accuracy (%) [full test; zero-shot]",
+      "value": 32.7,
+      "source": "arXiv:2611.31301v1 Table 2, Ola row, numeric column 3 of 16. Exact checkpoint THUdyh/Ola-7b; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "ola",
+      "metric": "T2 video-only manipulation macro-F1 (%) [full test; zero-shot]",
+      "value": 18.7,
+      "source": "arXiv:2611.31301v1 Table 2, Ola row, numeric column 4 of 16. Exact checkpoint THUdyh/Ola-7b; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "ola",
+      "metric": "T3 face-or-voice authenticity accuracy (%) [full test; zero-shot]",
+      "value": 39.9,
+      "source": "arXiv:2611.31301v1 Table 2, Ola row, numeric column 5 of 16. Exact checkpoint THUdyh/Ola-7b; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "ola",
+      "metric": "T3 face-or-voice identity accuracy (%) [full test; zero-shot]",
+      "value": 53.5,
+      "source": "arXiv:2611.31301v1 Table 2, Ola row, numeric column 6 of 16. Exact checkpoint THUdyh/Ola-7b; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "ola",
+      "metric": "T3 face-or-voice joint accuracy (%) [full test; zero-shot]",
+      "value": 22.4,
+      "source": "arXiv:2611.31301v1 Table 2, Ola row, numeric column 7 of 16. Exact checkpoint THUdyh/Ola-7b; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "ola",
+      "metric": "T1 audiovisual authenticity accuracy (%) [Small test; zero-shot]",
+      "value": 32.7,
+      "source": "arXiv:2611.31301v1 Table 2, Ola row, numeric column 8 of 16. Exact checkpoint THUdyh/Ola-7b; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "ola",
+      "metric": "T1 audiovisual authenticity macro-F1 (%) [Small test; zero-shot]",
+      "value": 13.9,
+      "source": "arXiv:2611.31301v1 Table 2, Ola row, numeric column 9 of 16. Exact checkpoint THUdyh/Ola-7b; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "ola",
+      "metric": "T2 video-only manipulation accuracy (%) [Small test; zero-shot]",
+      "value": 32.3,
+      "source": "arXiv:2611.31301v1 Table 2, Ola row, numeric column 10 of 16. Exact checkpoint THUdyh/Ola-7b; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "ola",
+      "metric": "T2 video-only manipulation macro-F1 (%) [Small test; zero-shot]",
+      "value": 18.3,
+      "source": "arXiv:2611.31301v1 Table 2, Ola row, numeric column 11 of 16. Exact checkpoint THUdyh/Ola-7b; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "ola",
+      "metric": "T3 face-or-voice authenticity accuracy (%) [Small test; zero-shot]",
+      "value": 39.9,
+      "source": "arXiv:2611.31301v1 Table 2, Ola row, numeric column 12 of 16. Exact checkpoint THUdyh/Ola-7b; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "ola",
+      "metric": "T3 face-or-voice identity accuracy (%) [Small test; zero-shot]",
+      "value": 53.1,
+      "source": "arXiv:2611.31301v1 Table 2, Ola row, numeric column 13 of 16. Exact checkpoint THUdyh/Ola-7b; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "ola",
+      "metric": "T3 face-or-voice joint accuracy (%) [Small test; zero-shot]",
+      "value": 22.2,
+      "source": "arXiv:2611.31301v1 Table 2, Ola row, numeric column 14 of 16. Exact checkpoint THUdyh/Ola-7b; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "ola",
+      "metric": "T4 explanation judge score (0–10) [Small test; zero-shot]",
+      "value": 4.02,
+      "source": "arXiv:2611.31301v1 Table 2, Ola row, numeric column 15 of 16. Exact checkpoint THUdyh/Ola-7b; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "mozaic",
+      "model": "ola",
+      "metric": "T4 explanation ROUGE-L (%) [Small test; zero-shot]",
+      "value": 23.2,
+      "source": "arXiv:2611.31301v1 Table 2, Ola row, numeric column 16 of 16. Exact checkpoint THUdyh/Ola-7b; Appendix D and Table S5 specify native-interface zero-shot configuration. Nominal 32 sampled frames; constrained valid-answer decoding for MiniCPM-o 4.5, Uni-MoE-2.0-Omni and Ola on T1–T3.",
+      "source_url": "https://arxiv.org/pdf/2611.31301v1#page=5"
+    },
+    {
+      "benchmark": "pazabench",
+      "model": "qwen2-audio",
+      "metric": "Median CER across languages (ratio) ↓ [harmonized ASR; A100; batch 1]",
+      "value": 0.77,
+      "source": "arXiv:2611.31578v1 Table 8, Qwen2-Audio-7B-Instruct row, CER column. Single A100 80 GB, batch 1, official default decoding. Table 8 ranks median CER; the WER and RTFx aggregation operator is not independently specified in its header/caption. Exact named variant retained.",
+      "source_url": "https://arxiv.org/pdf/2611.31578v1#page=9"
+    },
+    {
+      "benchmark": "pazabench",
+      "model": "qwen2-audio",
+      "metric": "Reported WER (ratio) ↓ [harmonized ASR; A100; batch 1]",
+      "value": 1.04,
+      "source": "arXiv:2611.31578v1 Table 8, Qwen2-Audio-7B-Instruct row, WER column. Single A100 80 GB, batch 1, official default decoding. Table 8 ranks median CER; the WER and RTFx aggregation operator is not independently specified in its header/caption. Exact named variant retained.",
+      "source_url": "https://arxiv.org/pdf/2611.31578v1#page=9"
+    },
+    {
+      "benchmark": "pazabench",
+      "model": "qwen2-audio",
+      "metric": "Reported RTFx (speed multiple) ↑ [harmonized ASR; A100; batch 1]",
+      "value": 17.4,
+      "source": "arXiv:2611.31578v1 Table 8, Qwen2-Audio-7B-Instruct row, RTFx column. Single A100 80 GB, batch 1, official default decoding. Table 8 ranks median CER; the WER and RTFx aggregation operator is not independently specified in its header/caption. Exact named variant retained.",
+      "source_url": "https://arxiv.org/pdf/2611.31578v1#page=9"
+    },
+    {
+      "benchmark": "pazabench",
+      "model": "phi-4-multimodal",
+      "metric": "Median CER across languages (ratio) ↓ [harmonized ASR; A100; batch 1]",
+      "value": 0.85,
+      "source": "arXiv:2611.31578v1 Table 8, Phi-4-MM row, CER column. Single A100 80 GB, batch 1, official default decoding. Table 8 ranks median CER; the WER and RTFx aggregation operator is not independently specified in its header/caption. Section 2 identifies Phi-4 multimodal-instruct; this is not the adapted paza-Phi-4-MM row.",
+      "source_url": "https://arxiv.org/pdf/2611.31578v1#page=9"
+    },
+    {
+      "benchmark": "pazabench",
+      "model": "phi-4-multimodal",
+      "metric": "Reported WER (ratio) ↓ [harmonized ASR; A100; batch 1]",
+      "value": 1.23,
+      "source": "arXiv:2611.31578v1 Table 8, Phi-4-MM row, WER column. Single A100 80 GB, batch 1, official default decoding. Table 8 ranks median CER; the WER and RTFx aggregation operator is not independently specified in its header/caption. Section 2 identifies Phi-4 multimodal-instruct; this is not the adapted paza-Phi-4-MM row.",
+      "source_url": "https://arxiv.org/pdf/2611.31578v1#page=9"
+    },
+    {
+      "benchmark": "pazabench",
+      "model": "phi-4-multimodal",
+      "metric": "Reported RTFx (speed multiple) ↑ [harmonized ASR; A100; batch 1]",
+      "value": 27.2,
+      "source": "arXiv:2611.31578v1 Table 8, Phi-4-MM row, RTFx column. Single A100 80 GB, batch 1, official default decoding. Table 8 ranks median CER; the WER and RTFx aggregation operator is not independently specified in its header/caption. Section 2 identifies Phi-4 multimodal-instruct; this is not the adapted paza-Phi-4-MM row.",
+      "source_url": "https://arxiv.org/pdf/2611.31578v1#page=9"
+    },
+    {
+      "benchmark": "pazabench",
+      "model": "granite-speech",
+      "metric": "Median CER across languages (ratio) ↓ [harmonized ASR; A100; batch 1]",
+      "value": 0.72,
+      "source": "arXiv:2611.31578v1 Table 8, granite-speech-3.3-8b row, CER column. Single A100 80 GB, batch 1, official default decoding. Table 8 ranks median CER; the WER and RTFx aggregation operator is not independently specified in its header/caption. Exact named variant retained.",
+      "source_url": "https://arxiv.org/pdf/2611.31578v1#page=9"
+    },
+    {
+      "benchmark": "pazabench",
+      "model": "granite-speech",
+      "metric": "Reported WER (ratio) ↓ [harmonized ASR; A100; batch 1]",
+      "value": 1.12,
+      "source": "arXiv:2611.31578v1 Table 8, granite-speech-3.3-8b row, WER column. Single A100 80 GB, batch 1, official default decoding. Table 8 ranks median CER; the WER and RTFx aggregation operator is not independently specified in its header/caption. Exact named variant retained.",
+      "source_url": "https://arxiv.org/pdf/2611.31578v1#page=9"
+    },
+    {
+      "benchmark": "pazabench",
+      "model": "granite-speech",
+      "metric": "Reported RTFx (speed multiple) ↑ [harmonized ASR; A100; batch 1]",
+      "value": 32.7,
+      "source": "arXiv:2611.31578v1 Table 8, granite-speech-3.3-8b row, RTFx column. Single A100 80 GB, batch 1, official default decoding. Table 8 ranks median CER; the WER and RTFx aggregation operator is not independently specified in its header/caption. Exact named variant retained.",
+      "source_url": "https://arxiv.org/pdf/2611.31578v1#page=9"
     }
   ]
 }
