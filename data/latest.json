@@ -1,9 +1,75 @@
 {
-  "fetched_at": "2026-11-24T22:34:30Z",
+  "fetched_at": "2026-11-25T22:26:33Z",
   "window_days": 10,
-  "scanned": 113,
-  "flagged_today": 13,
+  "scanned": 118,
+  "flagged_today": 4,
   "candidates": [
+    {
+      "id": "2611.32012",
+      "title": "Marketing-Bench: Evaluating Frontier Models and Agents on Real-World Marketing Capabilities",
+      "abstract": "As frontier AI models and agents are deployed more broadly in the real world, marketing is emerging as one of their largest applications. Marketing teams use AI models to produce brand assets like website copy and social media posts, while consumers' agents autonomously discover products, research purchases, and navigate websites. However, evaluating marketing capability is difficult because unlike areas like software development, customer support, or legal review where ground truth is more objectively defined, marketing is subjective, and output quality is judged based on taste and brand. We introduce Marketing-Bench, the first open-source marketing benchmark, which pairs discriminative tasks (detecting brand anomalies) with generative tasks (remediation), while keeping answers verifiable. Marketing-Bench tests five key pillars: factuality, consistency, coherence, structure, and brand voice, all crucial elements for good brand content on the web. We find that frontier models are far from solving the benchmark: the average model corrects only about half of the introduced issues (53.1%), whereas a marketing expert corrects nearly all of them. Even the strongest, GPT-6 Astra, reaches only 74.8%, with Claude Opus and Fable, Gemini Argon, and GPT-6 Sol falling well short. These findings suggest that marketing capabilities are less mature than adoption implies, and that principled evaluation should precede further scaling of usage. Marketing-Bench is a first step toward \"frontier marketing models\" with superhuman marketing performance.",
+      "published": "2026-11-24T05:57:13Z",
+      "authors": [
+        "Sumanth Balaji",
+        "Siddharth Gupta",
+        "Ameet Deshpande",
+        "Vishvak Murahari",
+        "Karthik Narasimhan"
+      ],
+      "primary_category": "cs.AI",
+      "url": "https://arxiv.org/abs/2611.32012",
+      "score": 42,
+      "status": "new — under review"
+    },
+    {
+      "id": "2611.31578",
+      "title": "PazaBench: Large-Scale ASR Benchmark for Low-Resource Languages in Africa",
+      "abstract": "Low-resource languages remain underrepresented in ASR benchmarks, limiting the ability to reliably assess and compare model performance. We present a large-scale benchmark for automatic speech recognition (ASR) on low-resource languages in Africa. The benchmark harmonizes six public corpora into a unified, reproducible evaluation framework and evaluates 52 state-of-the-art ASR models spanning three model architectural paradigms across 39 African languages on diverse datasets. Models are evaluated using standard accuracy and efficiency metrics, word error rate (WER), character error rate (CER), and inverse real-time factor (RTFx). This benchmark introduces architecture-aware comparison that systematically analyzes both individual models and broader model families. In addition, we quantify linguistic variance across language families, revealing how these factors shape ASR performance across diverse African languages. We also provide a comprehensive accuracy and efficiency trade-off analysis directly relevant to deployment in low-resource settings. Together, the benchmark, evaluation pipeline, and results support transparent, reproducible, and deployment-aware evaluation of ASR models for low-resource languages.",
+      "published": "2026-11-23T21:19:43Z",
+      "authors": [
+        "Mercy Muchai",
+        "Nick Mumero Mwangi",
+        "Kevin Chege",
+        "Samuel Chege Maina"
+      ],
+      "primary_category": "cs.CL",
+      "url": "https://arxiv.org/abs/2611.31578",
+      "score": 39,
+      "status": "new — under review"
+    },
+    {
+      "id": "2611.31301",
+      "title": "MOZAIC: An Audio-Video Deepfake Benchmark for Telling What Is Fake",
+      "abstract": "Audio-video (AV) deepfakes can fake the face, the voice, or both. Most benchmarks only ask whether a clip is real or fake, so they cannot show whether a detector relies on the picture, the voice, or encoding traces. We present MOZAIC, a paired benchmark with a 4-way label in which every source clip is released in all four combinations of real or fake video and real or fake audio so each modality contribution can be measured directly. Fakes cover inner-face swapping, whole-frame video diffusion and voice conversion. MOZAIC has 137,745 clips from 15,014 source pairs and four tasks: T1 AV authenticity, T2 manipulation type, T3 identity verification and T4 explanation. We evaluate 12 AV multimodal LLMs (MLLMs), train four detectors and fine-tune MLLMs with LoRA. Overall, the best MLLM reaches only 35.6% on the four-way T1 and catches far more video-only fakes than voice-only fakes (43.6% vs 7.5%). Trained detectors reach 98.4% on T1, and LoRA fine-tuning raises explanation scores (OmniVinci 4.17 to 7.40, Qwen2.5-Omni 4.42 to 6.98), but the best T1 detector falls to 78.3% when the face-swap generator is held out of training, so generalization and explanation remain open. We release the dataset, the compact MOZAIC-SMALL split, the code and the prompts. https://vectorinstitute.github.io/mozaic/",
+      "published": "2026-11-21T16:27:38Z",
+      "authors": [
+        "Shaina Raza",
+        "Mohamed Hafez",
+        "Ahmed Y. Radwan",
+        "Khalid Elgazzar",
+        "Kathryn Hume"
+      ],
+      "primary_category": "cs.AI",
+      "url": "https://arxiv.org/abs/2611.31301",
+      "score": 37,
+      "status": "new — under review"
+    },
+    {
+      "id": "2611.32795",
+      "title": "Is Prosody Encoded in the Neural Audio Codec Mimi?",
+      "abstract": "Neural audio codecs (NACs) have become a fundamental infrastructure for modern speech-language models, discretizing continuous speech signals into token sequences that enable large language models to process and generate audio. Most research evaluates codec quality at the decoding phase, assessing the naturalness of reconstructed speech. However, little research investigates what phonetic information is captured during encoding. In this paper, we investigated the potential correlates of prosody in the NAC Mimi, a codec used by conversational speech agents such as Moshi and Sesame and used in downstream tasks such as speech-to-speech translation (Hibiki).",
+      "published": "2026-11-24T15:21:18Z",
+      "authors": [
+        "Nicolas Ballier",
+        "Artem Saloev",
+        "Erin Pacquetet",
+        "Taylor Arnold"
+      ],
+      "primary_category": "cs.CL",
+      "url": "https://arxiv.org/abs/2611.32795",
+      "score": 21,
+      "status": "new — under review"
+    },
     {
       "id": "2611.29375",
       "title": "MusicListenBench: Can Audio LLMs Hear the Difference Yet?",
@@ -966,72 +1032,6 @@
       "url": "https://arxiv.org/abs/2611.06496",
       "score": 27,
       "status": "reviewed — included: Introduces LibriSpeech-Real-QA and evaluates general speech-language models on event-triggered lexical and semantic detection/counting, with content and timing metrics."
-    },
-    {
-      "id": "2611.06501",
-      "title": "CRESiST: Self-Enhancing Explorative Policy Learning for Simultaneous Speech Translation",
-      "abstract": "Simultaneous Speech Translation (SimulST) requires balancing translation quality and latency. While Large Language Models (LLMs) excel in offline translation, current LLM-based SimulST systems predominantly rely on prefix-incremental generation. This paradigm suffers from redundant Key-Value cache recomputation and necessitates external Voice Activity Detection to process unbounded streams. To overcome these bottlenecks, we propose an end-to-end interleaved read-write framework built upon an omni-modal LLM. By interleaving speech chunks and text tokens, our architecture achieves full KV cache reuse, natively supporting segmentation-free, infinite-length inference. Furthermore, to learn optimal streaming policies without rigid offline alignments, we introduce a novel Actor-Critic self-enhancement pipeline. An RNN-T Actor dynamically samples read-write trajectories, while an LLM-based Critic evaluates these paths via intrinsic semantic and latency rewards, distilling the optimal policy back to the Actor. Extensive experiments on sentence-level (FLEURS, CoVoST2) and document-level (MuST-C, ACL 60/60) benchmarks demonstrate that our model establishes new state-of-the-art quality-latency Pareto frontiers, substantially outperforming existing cascaded and static-alignment baselines.",
-      "published": "2026-11-04T13:32:57Z",
-      "authors": [
-        "Chenyang Le",
-        "Pei Zhang",
-        "Yuxiang Chen",
-        "Bing Han",
-        "Derek F. Wong",
-        "Baosong Yang",
-        "Yanmin Qian"
-      ],
-      "primary_category": "cs.CL",
-      "url": "https://arxiv.org/abs/2611.06501",
-      "score": 18,
-      "status": "reviewed — out of scope: Proposes an actor-critic method for simultaneous speech translation and evaluates it on existing FLEURS, CoVoST2, MuST-C and ACL 60/60 benchmarks; no new benchmark is introduced."
-    },
-    {
-      "id": "2611.03839",
-      "title": "PianoBench: Evaluating Musical Perception and Reasoning in Language Models",
-      "abstract": "Multimodal language models continue to improve on broad music understanding benchmarks, but which musical features can they perceive and reason about? We investigate this question by introducing PianoBench, a benchmark that tasks language models with reasoning about musical performances across congruent acoustic and symbolic input representations. PianoBench is derived from our new multimodal, training-scale dataset comprising more than 20,000 hours of interleaved transcripts of music and spoken musical commentary from instructional piano videos. Open-weight audio-language models achieve at most 52.8% accuracy on PianoBench, and at best only modestly outperform their accuracy on a no-audio control. In contrast, frontier models using chain of thought achieve up to 93.2% accuracy when provided transcripts of music as text, exposing a gap between perceiving musical features from audio and reasoning about musical events when they are given explicitly. We then test whether mid-training on interleaved musical instruction can improve question answering without chain of thought, raising Qwen 3.5 9B Base's zero-shot accuracy on PianoBench with music transcripts from 42.8% to 56.0% after instruction tuning. These experiments suggest that instructional videos may represent an overlooked source of multimodal supervision for music. Available: https://gclef-cmu.org/pianobench.",
-      "published": "2026-11-02T19:11:56Z",
-      "authors": [
-        "Louis Bradshaw",
-        "Irmak Bukey",
-        "Daniel Chenyu Lin",
-        "John Thickstun",
-        "Chris Donahue"
-      ],
-      "primary_category": "cs.SD",
-      "url": "https://arxiv.org/abs/2611.03839",
-      "score": 39,
-      "status": "reviewed — included: Introduces 250 PianoBench questions and evaluates general audio-language models with matched piano audio, MIDI-text and no-music controls."
-    },
-    {
-      "id": "2611.03718",
-      "title": "NepTTS-Bench: Native-Speaker Benchmarking and NepaliMOS for Nepali Text-to-Speech",
-      "abstract": "Nepali TTS has reached a point where multiple systems are available, but there is no shared evaluation to compare them. NepTTS-Bench was created to address what existing automated and manual evaluation systems lack for Nepali TTS. A controlled benchmark with phonological grounding which contains 205 sentences (77 minimal pairs targeting aspiration, retroflex/dental contrasts, nasalization, gemination, and schwa deletion) which is rated by 180 speakers. There are 6,962 ratings for 10 TTS configurations and two human references. Along with this 7 ASR systems were evaluated for round-trip CER. SCOREQ was also run as an automated baseline. The key finding is that automated evaluation like SCOREQ prefers proprietary systems like ElevenLabs but native listeners prefer Piper. This is contributed by the fact that most of the systems not properly tuned for Nepali tend to show Hindi phonological behaviour and our minimal pairs are designed to surface such contrasts. We also present NepaliMOS predictor which is fine tuned on collected ratings. NepaliMOS achieves system-level rho = 0.90 on the dense panel but drops to utterance-level rho = 0.43 under leave-one-system-out evaluation. This is statistically significant and confirms that NepaliMOS captures genuine signal but cross-provider transfer is limited. A human calibration is recommended for new systems for which we release a Python evaluation package for practitioners to run the benchmark against new systems.",
-      "published": "2026-10-31T18:58:38Z",
-      "authors": [
-        "Ashish Thapa",
-        "Rupak Ghimire",
-        "Lekhnath Sharma Pathak"
-      ],
-      "primary_category": "eess.AS",
-      "url": "https://arxiv.org/abs/2611.03718",
-      "score": 36,
-      "status": "reviewed — out of scope: Evaluates Nepali TTS configurations with native-listener MOS, ASR round-trip CER and quality predictors; no verified general spoken-LLM configuration is specified, and the Gemini Flash checkpoint is not identified."
-    },
-    {
-      "id": "2611.04580",
-      "title": "Confidence-Aware Aggregation for Multimodal Audio Reasoning",
-      "abstract": "Large Audio Language Models (LALMs) enable generative reasoning over complex acoustic scenes but often exhibit prediction instability. We show that this variability can serve as a reliability metric via inference-time self-consistency and confidence-aware aggregation. Using a log-probability--based scoring framework, candidate answers are weighted by model likelihoods, leveraging reasoning diversity and self-certainty without additional training. Experiments on four LALMs, including Qwen3-Omni and Audio Flamingo 3, demonstrate that confidence-aware aggregation improves accuracy and calibration, with additive methods like Borda voting outperforming classical Majority Vote, especially under high disagreement. This approach transforms LALM variability into a source of reliability for scalable and robust multimodal audio understanding. Project code is available at https://github.com/michelolzam/lalm-self-consistency.",
-      "published": "2026-11-03T09:40:05Z",
-      "authors": [
-        "Michel Olvera",
-        "Paraskevas Stamatiadis",
-        "Ga{ë}l Richard"
-      ],
-      "primary_category": "cs.SD",
-      "url": "https://arxiv.org/abs/2611.04580",
-      "score": 36,
-      "status": "reviewed — out of scope: Proposes confidence-aware inference-time answer aggregation, evaluated on the existing MMAR dataset; it does not introduce a new benchmark."
     }
   ],
   "warnings": []
