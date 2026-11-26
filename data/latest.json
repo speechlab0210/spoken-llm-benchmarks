@@ -1,9 +1,95 @@
 {
-  "fetched_at": "2026-11-25T22:26:33Z",
+  "fetched_at": "2026-11-26T22:34:07Z",
   "window_days": 10,
   "scanned": 118,
-  "flagged_today": 4,
+  "flagged_today": 5,
   "candidates": [
+    {
+      "id": "2611.34920",
+      "title": "$μ$-Bench: Benchmarking Multi-User Task Completion in Shared Interaction Voice Agents",
+      "abstract": "Voice agents in shared spaces must satisfy interdependent multi-user requests while upholding per-user authority, privacy, and task constraints. Existing evaluations offer limited coverage when participants react throughout a session. We introduce $μ$-Bench, a benchmark for joint task completion in closed-loop, full-duplex multi-user voice interaction. Simulated participants act from isolated profiles of goals, knowledge, and permissions, adapting to the agent's speech and tool outcomes. Across 20 domains, 100 scenarios vary group size, acoustics, and follow-up demands to form 800 cases (408 tool-augmented, 392 tool-free). Joint Task Success (JTS) requires all user goals, privacy boundaries, and terminal states to hold jointly, while Pure JTS further disallows unauthorized tool calls; Attribution, Threading, and Coordination (ATC) diagnostics localize failures. Across 13 voice agents, proprietary systems peak at 62.24\\% tool-free and 65.44\\% tool-augmented success, while open-weight models remain below 20\\%. ATC diagnostics show that open-weight models lag primarily in multi-turn attribution and threading, and controlled contrasts reveal that larger groups consistently degrade joint task success across capable systems. By coupling reactive multi-user simulation with verifiable session-level outcomes, $μ$-Bench provides a rigorous testbed for shared voice agents.",
+      "published": "2026-11-25T18:58:42Z",
+      "authors": [
+        "Qihao Lin",
+        "Guanxu Chen",
+        "Shuhang Zheng",
+        "Xiaoya Lu",
+        "Jingyi Yang",
+        "Terumi Chiba",
+        "Wenyi Yu",
+        "Chao Zhang"
+      ],
+      "primary_category": "cs.CL",
+      "url": "https://arxiv.org/abs/2611.34920",
+      "score": 39,
+      "status": "new — under review"
+    },
+    {
+      "id": "2611.34347",
+      "title": "AIRIS: Benchmarking Social Embodied Intelligence in Egocentric Streaming Videos",
+      "abstract": "Embodied agents operating around people must not only recognize social cues, but also decide when the available evidence is sufficient, whether to intervene, and how to respond without violating social norms. Existing benchmarks typically evaluate these abilities in isolation or with access to completed videos, obscuring where an online social decision fails. We introduce AIRIS, a causal streaming benchmark that formulates social embodied intelligence as a time-anchored chain of Attention, Intention, Reaction, and Interaction (A-I-R-I). AIRIS contains 8,000 expert-curated questions grounded in 357 egocentric clips across 11 context categories and 36 capability dimensions. At each query, models receive only the observation prefix available at that time; decision-aware metrics reward calibrated waiting and complete reactions while penalizing premature commitment. Evaluating 45 proprietary and open-source general-purpose, embodied, streaming-video, and omni-modal models reveals fragmented and temporally miscalibrated competence. General-purpose VLMs excel at passive cue grounding and intent recognition, whereas embodied specialists lead on isolated reaction sub-decisions; yet across all families, models frequently guess intents before sufficient evidence emerges and fail to jointly align intervention timing, action domain, and concrete execution within the same episode. AIRIS thus provides a diagnostic foundation for bridging the gap between passive social perception and reliable embodied interaction.",
+      "published": "2026-11-25T13:18:30Z",
+      "authors": [
+        "Yuchen Zhou",
+        "Hongsheng Wu",
+        "Jiayu Tang",
+        "Yunxuan Mao",
+        "Hanjing Ye",
+        "Shenghao Zhang",
+        "Jing Tang",
+        "Chun-Kai Fan"
+      ],
+      "primary_category": "cs.CV",
+      "url": "https://arxiv.org/abs/2611.34347",
+      "score": 30,
+      "status": "new — under review"
+    },
+    {
+      "id": "2611.33247",
+      "title": "Line-Level Singer Diarization in Multi-Member Pop Songs: A Benchmark, Lead-Vocal Isolation, and Song-Level Decoding",
+      "abstract": "Fans of multi-member pop groups annotate songs line by line with the member who sings each line, but speech diarization does not transfer to this setting: a commercial diarizer finds one or two speakers in songs by groups of four to eight. We study line-level singer diarization: given a song and its lyric-line timings, group the lines by singer with no prior knowledge of the group. We release ColorCoded-SD, a benchmark of 43 K-pop songs (1,740 lines, 3-8 singers per song) built from crowd annotations verified by independent annotators, together with alignment and scoring tools, and we derive line labels for the IdolSongsJp corpus from its per-singer solo renditions for evaluation on unseen singers. Combining lead-vocal isolation with a karaoke separator, singing-adapted speaker embeddings, and two training-free song-level decoders (a sticky Viterbi pass over line order and unsupervised linking of a group's songs) improves B-cubed F1 over the standard pipeline (vocal separation, speaker embeddings, per-song clustering) by +0.058 on ColorCoded-SD (p=0.001) and by +0.066 on IdolSongsJp (p=0.003). Isolating the lead is the largest single factor wherever the separator leaves a lead voice (+0.04 to +0.06 on the same lines), and with the singers' dry studio takes two different encoders become indistinguishable; the remaining errors concentrate on short lines that carry too little audio for a voiceprint. We also report negative results (more or cleaner training data, weight editing, a song-context model, and target-singer extraction) that bound where further gains can come from.",
+      "published": "2026-11-24T16:02:05Z",
+      "authors": [
+        "Allen Ng"
+      ],
+      "primary_category": "cs.SD",
+      "url": "https://arxiv.org/abs/2611.33247",
+      "score": 21,
+      "status": "new — under review"
+    },
+    {
+      "id": "2611.34162",
+      "title": "Modality-Shift Contrastive Decoding for Temporally Grounded Audio-Visual Understanding",
+      "abstract": "Audio-visual large language models (AV-LLMs) are designed to represent the temporal structure of audio and video, yet it remains unclear how effectively they use this temporal information to relate sounds to visual events. To examine this, we probe an AV-LLM on an audio-visual synchronization task by shifting the audio so that the queried sound overlaps a different visual event. We observe that the model still favors the originally aligned event over the newly aligned one, indicating limited sensitivity to changes in audio-visual temporal alignment. To address this, we propose Modality-Shift Contrastive Decoding (MSCD), a training-free decoding method that emphasizes audio-visual temporal alignment in model predictions. MSCD contrasts logits under preserved and disrupted temporal alignment to favor predictions supported by aligned audio and video. We disrupt this alignment by temporally shifting either the audio or the video, while keeping the other modality fixed. Extensive evaluations with two AV-LLMs across three benchmarks demonstrate the effectiveness of MSCD for temporally grounded audio-visual understanding. In particular, MSCD improves accuracy over the base models on Daily-Omni by 2.2 and 2.8 percentage points for OmniVinci and video-SALMONN 2+, respectively, suggesting that emphasizing temporal alignment can also benefit broader audio-visual understanding.",
+      "published": "2026-11-25T10:56:14Z",
+      "authors": [
+        "Minyeong Jeong",
+        "Yeonju Kim",
+        "Yong Man Ro"
+      ],
+      "primary_category": "cs.CV",
+      "url": "https://arxiv.org/abs/2611.34162",
+      "score": 21,
+      "status": "new — under review"
+    },
+    {
+      "id": "2611.33786",
+      "title": "Evaluating Cine and Tagged MRI-to-Speech Synthesis with Complementary Metrics and MRI-Free Controls",
+      "abstract": "Relating tongue motion measured with dynamic MRI to the speech it produces could inform rehabilitation after glossectomy. Prior studies have translated cine or tagged MRI into log-mel spectrograms and used the two-dimensional Pearson correlation between predicted and recorded spectrograms (Corr2D) to quantify the acoustic information captured by each imaging modality. However, Corr2D has not been calibrated against MRI-free predictors that preserve basic acoustic structure. Our contribution is an evaluation framework for speech synthesis from cine MRI, tagged MRI and their combination; the synthesis network is held fixed. On identical leave-one-subject-out folds, we compare four trained input configurations with two MRI-free controls: a static mean-spectrum baseline and a time-aligned cohort template. Across 44 subjects (18 after glossectomy) producing two utterances, the cohort template, which never sees an MRI, reached a Corr2D of 0.745 and 0.664. The static baseline, which contains no timing, reached 87 to 89% of that score. No trained configuration outperformed the template on Corr2D, a cepstral distance or ESTOI; seven of the eight fell significantly short on Corr2D. For cine MRI this held across three positional encodings, an encoder temporal-attention module and a training objective matched to the metric. Cine and tagged MRI differed consistently within subjects, although the direction depended on the metric. Absolute Corr2D alone therefore does not show that a model recovers acoustics from the MRI. The two controls are a reusable method: any study can compute them from its own training recordings, so a model's margin over them measures what its images contribute.",
+      "published": "2026-11-25T05:12:42Z",
+      "authors": [
+        "Karlo Vrancic",
+        "Fangxu Xing",
+        "Jiachen Zhuo",
+        "Maureen Stone",
+        "Jerry L. Prince",
+        "Jonghye Woo"
+      ],
+      "primary_category": "eess.IV",
+      "url": "https://arxiv.org/abs/2611.33786",
+      "score": 18,
+      "status": "new — under review"
+    },
     {
       "id": "2611.32012",
       "title": "Marketing-Bench: Evaluating Frontier Models and Agents on Real-World Marketing Capabilities",
@@ -942,96 +1028,6 @@
       "url": "https://arxiv.org/abs/2611.07420",
       "score": 21,
       "status": "reviewed — out of scope: Proposes an adaptive retrieval-based accent-conversion model and evaluates it on existing L2-ARCTIC and VCTK datasets; it neither introduces a new benchmark nor evaluates general spoken LLMs."
-    },
-    {
-      "id": "2611.07562",
-      "title": "FUSEMOS: Perceptual Evaluation of Text-to-Music Generation with Dual-Encoder Fusion and Ranking-Aware Composite Loss",
-      "abstract": "Perceptual evaluation of generated music is essential for developing text-to-music (TTM) generation systems. Existing automatic music perceptual evaluation methods rely solely on the contrastive language audio pretraining (CLAP) model to extract both audio and text features for predicting human-annotated mean opinion scores (MOS), particularly for overall musical impression (OMI) and textual alignment (TA). However, CLAP is limited in capturing fine-grained musical attributes such as timbre and expressiveness \\emph{etc}. To address this, we propose FUSEMOS, a dual-encoder fusion framework that integrates CLAP with MERT, a self-supervised model pretrained on large scale music audio, to better capture both high level semantic alignment and detailed musical characteristics for more accurate OMI and TA estimation. Furthermore, to overcome the limitations of conventional regression losses in measuring human preferred relative ranking of music segments, we design a novel ranking-aware composite loss function. Experiments conducted on the MusicEval benchmark demonstrate that our approach outperforms the existing SOTA methods in both mean squared error and rank correlation metrics by a large margin.",
-      "published": "2026-11-05T07:14:27Z",
-      "authors": [
-        "Jing Yang",
-        "Haoyu Wang",
-        "Ningning Pan",
-        "Zhao Wang",
-        "Jianxuan Yang",
-        "Gongping Huang"
-      ],
-      "primary_category": "eess.AS",
-      "url": "https://arxiv.org/abs/2611.07562",
-      "score": 21,
-      "status": "reviewed — out of scope: Proposes a dual-encoder predictor of music perceptual quality and text alignment, evaluated on the existing MusicEval dataset; it does not introduce a benchmark for general spoken LLMs."
-    },
-    {
-      "id": "2611.06982",
-      "title": "Decode Before You Hear: Speculative Listening for Chunk-Interleaved Full-Duplex Speech Language Models",
-      "abstract": "Chunk-interleaved full-duplex speech language models listen and speak in fixed time chunks, and each chunk must be processed before the next one arrives. Their workload is asymmetric across chunks: listen chunks leave compute idle while awaiting audio, and speak and tool-call chunks require serial generation, which delays responses and tool calls. Using the idle compute for the next chunk requires decoding it before its audio arrives, under an assumed input. Taking silence as the assumed input and comparing the output with the output under real audio on four models, we observe two properties. First, the next audio chunk does not change the output in 95.3% of chunks. Second, 88% of changes begin at the first output token. Building on these properties, we propose Speculative Listening, a training-free, lossless framework for input-time self-speculative decoding. During idle time, the model drafts the next chunk under silence and, for changes at the first token, a second branch from the runner-up first token. It keeps all drafts in a cross-chunk hypothesis pool and verifies them when the audio arrives. On our eight-task benchmark TickTock-Bench, Speculative Listening speeds up speak chunks by 2.6-2.8x and tool-call chunks by up to 23.4x. On average, it reduces the decoding delay before a response starts by 73%, to 74-241 ms, close to the 200 ms gap between human turns, and the maximum lag behind real time by 94.4%.",
-      "published": "2026-11-04T15:16:15Z",
-      "authors": [
-        "Yutong Bian",
-        "Yanglin Zhang",
-        "Yuxiang Wang",
-        "Luoyuan Zhang",
-        "Rongshen He",
-        "Zihao Wang",
-        "Junwen Qiu",
-        "Jiaqi Li"
-      ],
-      "primary_category": "cs.SD",
-      "url": "https://arxiv.org/abs/2611.06982",
-      "score": 18,
-      "status": "reviewed — included: Introduces TickTock-Bench, an eight-task replay harness for comparing decoding methods under chunk deadlines in four general full-duplex speech-language models."
-    },
-    {
-      "id": "2611.05422",
-      "title": "CAST-Bench: Tracing Every Sound to Its Source in Multi-Shot Audio-Video Generation",
-      "abstract": "Existing benchmarks for joint text-to-audio-video (T2AV) generation evaluate perceptual quality and audiovisual alignment, but balanced sound-source sam?pling and separate reporting by shot structure remain limited. This makes it dif?ficult to determine whether a specific sound is missing, attributed to the wrong source, or lost across shot transitions. To address this, we introduce CAST?BENCH, a benchmark designed to trace every generated sound back to its in?tended source in multi-shot audio-video generation. The core idea is to formu?late T2AV correctness as an audiovisual contract in which each requested sound must be emitted by the right source, synchronized with the corresponding visual action, and carry the right semantic content. Concretely, the benchmark orga?nizes 900 prompts into 9 sound-source categories, with 100 prompts per cate?gory, spanning speech, animals, instruments, ambient sounds, and other emitter types. The prompts include 439 single-shot and 461 multi-shot narratives, each derived from a structured specification that links every audio event to its emit?ter, subject, and temporal slot. The benchmark provides an 18-metric evaluation suite covering three dimensions: Visual Performance, Content Consistency, and Audio & Semantic Alignment. We further benchmark 12 representative gen?erators and find that visual quality is nearly saturated across leading systems, yet audio semantic scores still differ markedly. Across the nine shared mod?els, multi-shot prompts receive lower aggregate scores under the subset-specific scoring rules and yield different model rankings. Multi-person speech, con?sistent speaker identity across shots, and cross-shot event retention remain the main unresolved challenges. All prompts and evaluation code are available at https://github.com/yucong-liu/CAST-Bench-public.",
-      "published": "2026-11-02T08:41:48Z",
-      "authors": [
-        "Yucong Liu",
-        "Qi Tian",
-        "Shuyuan Tu",
-        "Kaihang Pan",
-        "Weijie Kong",
-        "Chao Pan"
-      ],
-      "primary_category": "cs.SD",
-      "url": "https://arxiv.org/abs/2611.05422",
-      "score": 39,
-      "status": "reviewed — out of scope: Introduces a benchmark for joint text-to-audio-video generation, but its evaluated systems are audiovisual generators rather than general spoken LLMs; audio-language models serve as evaluators."
-    },
-    {
-      "id": "2611.05638",
-      "title": "VIPBench: A Human-Aligned Benchmark for Voice Identity Perception in the Age of Voice Cloning",
-      "abstract": "Speaker-recognition benchmarks test how accurately a model recovers the speaker label of a recording, treating voice identity as a property of the person who produced it. However, these benchmarks do not evaluate how humans perceive voice identity. Whether a listener hears two voices as the same person has consequences for intellectual property rights, cybersecurity, and everyday life. We introduce the Voice Identity Perception benchmark (VIPBench), which contains 124,876 same-or-different judgments from 1,290 listeners on 9,800 recording pairs from 100 public figures. The pairs include real recordings, voice clones generated by a text-to-speech system, and morphs between two speakers' voices. We also define four tasks that evaluate the alignment between speaker-representation models and human identity perception. The first two tasks measure how well a model's similarity score predicts the proportion of listeners who respond \"same\" and the majority response. The other two measure whether a model and listeners find the same speaker pairs similar, and whether a model's relationship to listener judgments holds equally for real and synthetic recordings. We evaluate eleven publicly available speech models. Listener judgments diverge from speaker labels most often for voice clones: in 41% of responses, listeners judged a clone and a real recording of the same speaker to be different people. No model reaches the noise ceiling; the best model explains 61% of the explainable variance. Models trained with speaker labels align with listeners better than self-supervised models do, yet a model with a 12% error rate on speaker labels aligns with listeners as well as models with error rates below 2%. VIPBench enables the evaluation of speaker models against human perception on real, cloned, and morphed speech, and our results motivate training speaker models directly on listener judgments.",
-      "published": "2026-11-03T21:21:59Z",
-      "authors": [
-        "Xudong Tang",
-        "Matthew Groh"
-      ],
-      "primary_category": "cs.SD",
-      "url": "https://arxiv.org/abs/2611.05638",
-      "score": 36,
-      "status": "reviewed — out of scope: Introduces a human voice-identity benchmark, but evaluates speaker-verification encoders, self-supervised speech representations and Whisper embeddings, not general spoken LLMs."
-    },
-    {
-      "id": "2611.06496",
-      "title": "LibriSpeech-Real-QA: A Benchmark for Streaming Question Answering",
-      "abstract": "Most speech large language models (SLMs) still process speech in an offline manner. They only start responding after they receive the complete speech segment. However, many real-world applications require streaming speech interaction, for which the audio continuously flows in and the machine is required to answer questions based on the so far received audio chunks. For example, a user may ask the system to continuously count how many times a person's name has been mentioned while they are speaking. We observe a lack of benchmarks and evaluation protocols for real-time speech interaction. Motivated by this, we propose LibriSpeech-Real-QA, a dataset and a benchmark for real-time speech interaction. We construct different types of real-time question-answer pairs from LibriSpeech to evaluate whether speech LLMs can identify target words in streaming audio. We evaluate several popular real-time commercial models and find that they still tend to respond only after the speech turn has finished. We demonstrate that we can enable a pretrained SLM to perform this task, where we explore several modeling designs and establish a solid baseline for future research.",
-      "published": "2026-11-04T13:30:54Z",
-      "authors": [
-        "Zewen Zhan",
-        "Hui Lu",
-        "Xueyuan Chen",
-        "Huimeng Wang",
-        "Yikai Huang",
-        "Xixin Wu",
-        "Shiyin Kang",
-        "Bin Xia"
-      ],
-      "primary_category": "cs.CL",
-      "url": "https://arxiv.org/abs/2611.06496",
-      "score": 27,
-      "status": "reviewed — included: Introduces LibriSpeech-Real-QA and evaluates general speech-language models on event-triggered lexical and semantic detection/counting, with content and timing metrics."
     }
   ],
   "warnings": []
