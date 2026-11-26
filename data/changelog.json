@@ -1,6 +1,11 @@
 {
  "entries": [
   {
+   "date": "2026-11-27",
+   "change": "Reviewed five candidates and added μ-Bench and AIRIS. Added 76 source-verified result cells: 24 multi-user task/diagnostic scores for five existing voice-model records and 52 causal audiovisual scores for four existing omni-modal records. Preserved Tool-Free versus Tool-Augmented conditions, native audio versus ASR transcripts, and percentage versus 0–1 scales. Recorded printed affiliations; AIRIS geography is withheld rather than inferred from Tencent’s headquarters. Excluded singer clustering, an inference method on existing benchmarks, and specialized MRI-to-speech evaluation. Totals: 498 benchmarks, 262 models and 19,491 result cells.",
+   "source": "arXiv:2611.34920v1 Sections 3–5, Appendix B and Table 2 (PDF page 7); 2611.34347v1 Sections 2–3, Appendices C.2/D.1 and Table 2 (PDF page 8). Values extracted by table row/column and checked against rendered PDF tables. Numbered author blocks and arXiv metadata checked; all five candidate full-text methods reviewed."
+  },
+  {
    "date": "2026-11-26",
    "change": "Reviewed four candidates and added MOZAIC and PazaBench. Added 105 source-verified result cells: 96 zero-shot MOZAIC results for six existing exact model records and nine PazaBench transcription/efficiency results for three existing records. Kept full and Small splits, video-only tasks, error ratios and judge-score scales explicit. Deferred unmatched variants and a conflicting VideoLLaMA2.1-AV protocol. Recorded printed affiliations; PazaBench’s Nairobi lab is withheld from geographic counts rather than assigned its parent-company country. Excluded a text-web marketing benchmark and a codec-probing study. Totals: 496 benchmarks, 262 models and 19,415 result cells.",
    "source": "arXiv:2611.31301v1 Sections 3–6, Appendix D, Tables 2 and S5; 2611.31578v1 Sections 2–4 and Table 8. Numeric values extracted by table row and column; rendered PDF tables and author blocks checked. All four candidate full texts and arXiv metadata reviewed."

@@ -2,42 +2,49 @@
  "since": "2026-08-22",
  "what": "Every arXiv paper the daily crawl has flagged since launch (score at or above the threshold, not previously seen), with the reviewer's verdict as written in the feed and whether the paper entered the catalogue. \"published\" is the paper's arXiv date. See the Method section of the site.",
  "flagged": 386,
- "admitted": 117,
+ "admitted": 119,
  "entries": [
   {
    "id": "2611.34920",
    "title": "$μ$-Bench: Benchmarking Multi-User Task Completion in Shared Interaction Voice Agents",
    "published": "2026-11-25T18:58:42Z",
    "score": 39,
-   "outcome": "under review"
+   "outcome": "admitted",
+   "verdict": "reviewed — added: μ-Bench (mu-bench); a new closed-loop benchmark for general-purpose full-duplex voice agents serving multiple users, with separate spoken and tool-augmented task-completion tracks.",
+   "catalogue_id": "mu-bench"
   },
   {
    "id": "2611.34347",
    "title": "AIRIS: Benchmarking Social Embodied Intelligence in Egocentric Streaming Videos",
    "published": "2026-11-25T13:18:30Z",
    "score": 30,
-   "outcome": "under review"
+   "outcome": "admitted",
+   "verdict": "reviewed — added: AIRIS (airis); a new causal audiovisual social-reasoning benchmark with raw-audio evaluation of general-purpose omni-modal models. Recorded-prefix multiple-choice evaluation is distinguished from live dialogue or embodied execution.",
+   "catalogue_id": "airis"
   },
   {
    "id": "2611.34162",
    "title": "Modality-Shift Contrastive Decoding for Temporally Grounded Audio-Visual Understanding",
    "published": "2026-11-25T10:56:14Z",
    "score": 21,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: Proposes Modality-Shift Contrastive Decoding and an alignment probe, evaluated on the existing DAVE, Daily-Omni and AVUT benchmarks (Sections 3–4); it does not introduce a new spoken-LLM benchmark."
   },
   {
    "id": "2611.33786",
    "title": "Evaluating Cine and Tagged MRI-to-Speech Synthesis with Complementary Metrics and MRI-Free Controls",
    "published": "2026-11-25T05:12:42Z",
    "score": 18,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: Evaluates dedicated MRI-to-spectrogram synthesis networks and MRI-free acoustic controls across patient/healthy-subject folds (Section 2.2); the tested models are not general-purpose spoken LLMs."
   },
   {
    "id": "2611.33247",
    "title": "Line-Level Singer Diarization in Multi-Member Pop Songs: A Benchmark, Lead-Vocal Isolation, and Song-Level Decoding",
    "published": "2026-11-24T16:02:05Z",
    "score": 21,
-   "outcome": "under review"
+   "outcome": "not admitted",
+   "verdict": "reviewed — out of scope: ColorCoded-SD evaluates line-level singer clustering using vocal separation, ECAPA/ResNet speaker encoders and song-level decoders (Sections 4–6); the evaluated systems are not general-purpose spoken LLMs."
   },
   {
    "id": "2611.32795",

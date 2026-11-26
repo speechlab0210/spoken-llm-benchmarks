@@ -22,7 +22,7 @@
       "primary_category": "cs.CL",
       "url": "https://arxiv.org/abs/2611.34920",
       "score": 39,
-      "status": "new — under review"
+      "status": "reviewed — added: μ-Bench (mu-bench); a new closed-loop benchmark for general-purpose full-duplex voice agents serving multiple users, with separate spoken and tool-augmented task-completion tracks."
     },
     {
       "id": "2611.34347",
@@ -42,7 +42,7 @@
       "primary_category": "cs.CV",
       "url": "https://arxiv.org/abs/2611.34347",
       "score": 30,
-      "status": "new — under review"
+      "status": "reviewed — added: AIRIS (airis); a new causal audiovisual social-reasoning benchmark with raw-audio evaluation of general-purpose omni-modal models. Recorded-prefix multiple-choice evaluation is distinguished from live dialogue or embodied execution."
     },
     {
       "id": "2611.33247",
@@ -55,7 +55,7 @@
       "primary_category": "cs.SD",
       "url": "https://arxiv.org/abs/2611.33247",
       "score": 21,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: ColorCoded-SD evaluates line-level singer clustering using vocal separation, ECAPA/ResNet speaker encoders and song-level decoders (Sections 4–6); the evaluated systems are not general-purpose spoken LLMs."
     },
     {
       "id": "2611.34162",
@@ -70,7 +70,7 @@
       "primary_category": "cs.CV",
       "url": "https://arxiv.org/abs/2611.34162",
       "score": 21,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: Proposes Modality-Shift Contrastive Decoding and an alignment probe, evaluated on the existing DAVE, Daily-Omni and AVUT benchmarks (Sections 3–4); it does not introduce a new spoken-LLM benchmark."
     },
     {
       "id": "2611.33786",
@@ -88,7 +88,7 @@
       "primary_category": "eess.IV",
       "url": "https://arxiv.org/abs/2611.33786",
       "score": 18,
-      "status": "new — under review"
+      "status": "reviewed — out of scope: Evaluates dedicated MRI-to-spectrogram synthesis networks and MRI-free acoustic controls across patient/healthy-subject folds (Section 2.2); the tested models are not general-purpose spoken LLMs."
     },
     {
       "id": "2611.32012",

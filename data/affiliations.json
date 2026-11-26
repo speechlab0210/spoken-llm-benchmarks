@@ -27733,6 +27733,122 @@
     }
    ],
    "verify_note": "All four authors share the printed affiliation Microsoft Research Africa, Nairobi on v1 PDF page 1. Canonical parent Microsoft and the named Nairobi site are recorded; no country is printed. Excluded from geographic counts because the current schema cannot express a known affiliation with an explicitly unknown occurrence country without falling back to Microsoft’s US country. Do not infer a US affiliation or create a duplicate regional company. This does not block benchmark or result publication."
+  },
+  "mu-bench": {
+   "status": "ok",
+   "verified": "confirmed",
+   "publishable": true,
+   "countries_complete": true,
+   "n_authors": 10,
+   "institutions": [
+    {
+     "inst": "shanghai-artificial-intelligence-laboratory",
+     "raw": "Shanghai Artificial Intelligence Laboratory, Shanghai, China",
+     "unit": null,
+     "country": "CN",
+     "city": "Shanghai",
+     "lat": 31.23,
+     "lon": 121.47,
+     "placed": "named",
+     "printed_city": "Shanghai",
+     "printed_country": "China",
+     "lead": true,
+     "first_author": true,
+     "last": true,
+     "evidence": "printed"
+    },
+    {
+     "inst": "shanghai-jiao-tong-university",
+     "raw": "Shanghai Jiao Tong University, Shanghai, China",
+     "unit": null,
+     "country": "CN",
+     "city": "Shanghai",
+     "lat": 31.23,
+     "lon": 121.47,
+     "placed": "named",
+     "printed_city": "Shanghai",
+     "printed_country": "China",
+     "lead": false,
+     "first_author": true,
+     "last": false,
+     "evidence": "printed"
+    },
+    {
+     "inst": "university-of-chinese-academy-of-sciences",
+     "raw": "University of Chinese Academy of Sciences, Beijing, China",
+     "unit": null,
+     "country": "CN",
+     "city": "Beijing",
+     "lat": 39.9,
+     "lon": 116.4,
+     "placed": "named",
+     "printed_city": "Beijing",
+     "printed_country": "China",
+     "lead": false,
+     "first_author": false,
+     "last": false,
+     "evidence": "printed"
+    },
+    {
+     "inst": "fudan-university",
+     "raw": "Fudan University, Shanghai, China",
+     "unit": null,
+     "country": "CN",
+     "city": "Shanghai",
+     "lat": 31.23,
+     "lon": 121.47,
+     "placed": "named",
+     "printed_city": "Shanghai",
+     "printed_country": "China",
+     "lead": false,
+     "first_author": false,
+     "last": false,
+     "evidence": "printed"
+    },
+    {
+     "inst": "tsinghua-university",
+     "raw": "Tsinghua University, Beijing, China",
+     "unit": null,
+     "country": "CN",
+     "city": "Beijing",
+     "lat": 39.9,
+     "lon": 116.4,
+     "placed": "named",
+     "printed_city": "Beijing",
+     "printed_country": "China",
+     "lead": false,
+     "first_author": false,
+     "last": false,
+     "evidence": "printed"
+    }
+   ],
+   "verify_note": "PDF v1 page 1 author superscripts and numbered affiliation key visually checked against HTML. First author Qihao Lin has affiliations 1 and 2; PDF key 1 is Shanghai Artificial Intelligence Laboratory and 2 is Shanghai Jiao Tong University, although HTML presents the names in a different order. The numbered PDF order determines the single lead institution. Last author Jing Shao has affiliation 1. All five institutions print Shanghai or Beijing and China."
+  },
+  "airis": {
+   "status": "partial",
+   "verified": "confirmed",
+   "publishable": false,
+   "countries_complete": false,
+   "n_authors": 11,
+   "institutions": [
+    {
+     "inst": "tencent",
+     "raw": "Tencent Robotics X Lab",
+     "unit": "Robotics X Lab",
+     "country": null,
+     "city": null,
+     "lat": null,
+     "lon": null,
+     "placed": "unplaced",
+     "printed_city": null,
+     "printed_country": null,
+     "lead": true,
+     "first_author": true,
+     "last": true,
+     "evidence": "printed"
+    }
+   ],
+   "verify_note": "PDF v1 page 1 and HTML print the shared affiliation Tencent Robotics X Lab for all 11 authors, without a city or country. Parent mapping to Tencent is confirmed. Geographic publication is held because the current schema substitutes the parent country for an explicitly unknown occurrence country; no headquarters location is inferred. Same representation limitation as PazaBench, already recorded in STATE; benchmark/results publication remains independent."
   }
  },
  "models": {

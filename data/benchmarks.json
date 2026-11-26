@@ -13476,6 +13476,74 @@
       "leaderboard": "https://huggingface.co/spaces/microsoft/paza-bench",
       "summary": "Introduces a common evaluation framework for transcription across low-resource African languages. It harmonizes six public corpora, text normalization, hardware and decoding conventions, and evaluates dedicated ASR systems alongside general-purpose audio language models, including Qwen2-Audio and Phi-4 multimodal.",
       "note": "The nine imported cells are v1 Table 8 results for Qwen2-Audio-7B-Instruct, Phi-4 multimodal-instruct and Granite Speech 3.3 8B, mapped to existing exact records. This is a selected general-purpose-model comparison, not a reproduction of the full 52-system leaderboard. Base Qwen2-Audio-7B, adapted paza-Phi-4-MM and Granite 3.3 2B are distinct and are not merged into those records. Table 8 ranks median CER across languages; WER and RTFx retain their reported aggregate values because the table does not separately specify their aggregation operator. CER and WER are error ratios, may exceed 1 and are not percentages or accuracies. RTFx is a speed multiple, higher is faster, not response latency. Runs use one A100 80 GB, batch size 1 and official default decoding. Text scoring removes punctuation, case-folds and normalizes whitespace; datasets without an official split use a 3% sample. Language coverage differs between the 33 multilingual and 19 English-only systems, and unknown training overlap, including transcripts, limits generalization claims. The framework assesses transcription and efficiency, not dialogue, acoustic robustness or demographic fairness. The linked Microsoft Hugging Face Space is the paper-linked leaderboard entry; its interactive runtime was not independently validated. The printed author affiliation is Microsoft Research Africa, Nairobi. No country is printed; country attribution remains unverified and is excluded from geographic counts."
+    },
+    {
+      "id": "mu-bench",
+      "name": "μ-Bench",
+      "full_title": "μ-Bench: Benchmarking Multi-User Task Completion in Shared Interaction Voice Agents",
+      "arxiv_id": "2611.34920",
+      "arxiv_date": "2026-11",
+      "arxiv_date_full": "2026-11-25",
+      "url": "https://arxiv.org/abs/2611.34920",
+      "aka": [
+        "Mu-Bench"
+      ],
+      "categories": [
+        "voice-agent",
+        "dialogue",
+        "interactivity",
+        "robustness"
+      ],
+      "tasks": [
+        "closed-loop multi-user voice task completion",
+        "speaker-scoped goal and thread tracking",
+        "authorization and privacy during shared tool use"
+      ],
+      "size": "800 cases from 100 base scenarios across 20 domains; 392 Tool-Free and 408 Tool-Augmented cases",
+      "io": "shared full-duplex audio from reactive simulated participants → speech and, for tool-capable systems, virtual backend actions",
+      "metrics": [
+        "Joint Task Success (%)",
+        "Attribution (%)",
+        "Threading (%)",
+        "Coordination (%)",
+        "Pure Joint Task Success (%)"
+      ],
+      "code": "https://github.com/lqh1106/mu-bench",
+      "data": "https://huggingface.co/datasets/linqihao/mu-bench",
+      "leaderboard": "https://lqh1106.github.io/mu-bench/#leaderboard",
+      "summary": "Evaluates whether a voice agent jointly resolves several people’s interdependent requests while respecting their separate knowledge, permissions and privacy. Reactive participants adapt to the agent’s played speech and tool outcomes. Eight variants of each scenario vary group size, clean versus disfluent speech, and follow-up demands; separate tracks test spoken coordination and actual virtual-tool execution.",
+      "note": "The 24 imported cells are v1 Table 2 baseline results for five existing model records: MiniCPM-o 4.5, PersonaPlex, Moshi and Freeze-Omni on 392 Tool-Free cases, plus GPT-Realtime-2 on both tracks. Dashes mean unevaluated, not zero. Exact native integrations include the moshika checkpoint for Moshi, the community PersonaPlex 7B v1 checkpoint with NATF0 voice, and Freeze-Omni with Qwen2-7B-Instruct. Unmapped versions and serialized/identity/semantic-assisted ablations are kept separate. Joint Task Success requires all contract goals, terminal effects and privacy obligations to hold in one session; it can still conceal unauthorized requester attribution. Pure JTS additionally requires zero contradicted tool-call provenance incidents and is not interchangeable with Table 2 JTS. Coordination averages boundary compliance and service equity only where equity applies; high compliance can coexist with failure to remember or complete tasks. ATC diagnostics use applicable assertions and are not joint task success. Groups contain 2–3 or 4–7 simulated users. Speech is synthesized at 16 kHz; logical time pauses during planning, ASR and synthesis, so this is not a wall-clock latency measurement or a study of unscripted human groups. The same LLM family supplies participant scripts, two independent-context semantic reviews and arbitration; independence of context is not independent-model or human validation. One valid run per model–case is reported, with technical failures rerun. Main scores use the paper’s percentage scale; repository component outputs use 0–1. The public release describes 800 baseline cases plus three 392-case ablation catalogs, not 1,976 independent scenarios. Its HF page exposes a data card but reports an empty Dataset Viewer; a complete downloadable snapshot was not validated."
+    },
+    {
+      "id": "airis",
+      "name": "AIRIS",
+      "full_title": "AIRIS: Benchmarking Social Embodied Intelligence in Egocentric Streaming Videos",
+      "arxiv_id": "2611.34347",
+      "arxiv_date": "2026-11",
+      "arxiv_date_full": "2026-11-25",
+      "url": "https://arxiv.org/abs/2611.34347",
+      "categories": [
+        "paralinguistics",
+        "reasoning"
+      ],
+      "tasks": [
+        "causal social-cue grounding",
+        "timed intent inference with abstention",
+        "engagement and action selection",
+        "interaction outcome and norm assessment"
+      ],
+      "size": "8,000 questions, 2,000 per stage; 357 egocentric clips from 276 source videos; 36 capabilities across 11 contexts",
+      "io": "causal audiovisual prefix plus closed-set question → option keys; standard VLM comparisons use frames and aligned ASR transcripts",
+      "metrics": [
+        "stage question-micro score (0–1)",
+        "four-stage overall mean (0–1)",
+        "Intent Anticipation Score (0–1)",
+        "engagement macro-F1 (0–1)",
+        "reaction joint exact match (0–1)"
+      ],
+      "code": "https://github.com/AIRIS-bench/AIRIS",
+      "summary": "Evaluates social decisions as evidence arrives in first-person video: noticing a cue, inferring intent, deciding whether and how to respond, and judging the exchange. Queries expose only observations available at their timestamp; insufficient evidence is the correct intent answer before an annotated decidability point. Native audio-capable models are evaluated alongside models receiving aligned speech transcripts.",
+      "note": "The 52 imported cells are v1 Table 2 results for four exact omni-modal records: Qwen2.5-Omni-7B, Qwen3-Omni-30B-A3B-Instruct, OmniVinci and Phi-4-Multimodal-Instruct. These use raw audio with causal visual input; frame-plus-ASR standard-VLM results are not mixed into the same condition. Qwen2.5-Omni-3B is a distinct unmapped variant. Table 2 contains 37 representative systems from a 45-model pool; this entry imports the selected native-audio rows, not the complete leaderboard. All scores retain 0–1 units. Overall equally averages four question-micro stage scores; single-choice, yes/no and box selection use exact match, multi-choice uses set F1, and invalid answers score zero. Intent Anticipation Score combines stable correctness after intent becomes decidable with a penalty for premature commitment; it is neither latency nor ordinary accuracy. Reaction joint exact match requires all applicable action-chain decisions to agree. This is closed-set evaluation on recorded observation prefixes, not live embodied execution, open-ended dialogue or demonstrated full-duplex interaction. Eleven trained annotators reviewed model-assisted labels and questions. The public repository supplies annotations, source references and reconstruction/scoring code, but not videos, audio or extracted frames; changing source availability and transcodes prevent guaranteed byte-identical reconstruction. Public gold answers make this a reproducible evaluation resource rather than a hidden-answer challenge. The paper prints Tencent Robotics X Lab for all 11 authors but no city or country; geographic attribution remains excluded from counts until the absent location can be represented without inheriting a headquarters location."
     }
   ]
 }
